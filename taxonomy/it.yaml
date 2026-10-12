@@ -1,0 +1,103 @@
+id: it
+labels:
+  vi: Công nghệ thông tin
+  en: Information Technology
+children:
+  - id: software-engineering
+    labels:
+      vi: Kỹ thuật phần mềm
+      en: Software engineering
+    children:
+      - id: programming-concepts
+        labels:
+          vi: Khái niệm lập trình
+          en: Programming concepts
+      - id: architecture
+        labels:
+          vi: Kiến trúc
+          en: Architecture
+      - id: testing
+        labels:
+          vi: Kiểm thử
+          en: Testing
+      - id: devops
+        labels:
+          vi: DevOps
+          en: DevOps
+  - id: web
+    labels:
+      vi: Web
+      en: Web
+    children:
+      - id: frontend
+        labels:
+          vi: Frontend
+          en: Frontend
+      - id: backend
+        labels:
+          vi: Backend
+          en: Backend
+      - id: api
+        labels:
+          vi: API
+          en: API
+  - id: data
+    labels:
+      vi: Dữ liệu
+      en: Data
+    children:
+      - id: database
+        labels:
+          vi: Cơ sở dữ liệu
+          en: Databases
+      - id: analytics
+        labels:
+          vi: Phân tích
+          en: Analytics
+      - id: data-engineering
+        labels:
+          vi: Kỹ thuật dữ liệu
+          en: Data engineering
+  - id: ai-ml
+    labels:
+      vi: AI và học máy
+      en: AI and machine learning
+    children:
+      - id: foundations
+        labels:
+          vi: Khái niệm nền
+          en: Foundations
+      - id: llm-agents
+        labels:
+          vi: Mô hình ngôn ngữ và agent
+          en: Language models and agents
+  - id: infrastructure
+    labels:
+      vi: Hạ tầng và đám mây
+      en: Infrastructure and cloud
+    children:
+      - id: cloud
+        labels:
+          vi: Điện toán đám mây
+          en: Cloud computing
+      - id: networking
+        labels:
+          vi: Mạng
+          en: Networking
+  - id: security
+    labels:
+      vi: Bảo mật
+      en: Security
+    children:
+      - id: authentication
+        labels:
+          vi: Xác thực
+          en: Authentication
+      - id: cryptography
+        labels:
+          vi: Mã hóa
+          en: Cryptography
+      - id: vulnerabilities
+        labels:
+          vi: Lỗ hổng
+          en: Vulnerabilities

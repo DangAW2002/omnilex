@@ -1,0 +1,19 @@
+name: Propose New Domain
+description: Propose a new domain or expansion to the taxonomy
+title: "domain: [Proposed Domain]"
+labels: ["new-domain", "taxonomy"]
+body:
+  - type: input
+    id: domain_id
+    attributes:
+      label: Domain ID (kebab-case)
+      placeholder: "e.g. law"
+    validations:
+      required: true
+  - type: textarea
+    id: rationale
+    attributes:
+      label: Domain hierarchy and priority rationale
+      placeholder: "List subdomains and why this domain is needed."
+    validations:
+      required: true

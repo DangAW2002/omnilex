@@ -1,0 +1,64 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://termbridge.org/schema/concept.schema.json",
+  "title": "Termbridge Concept Schema",
+  "type": "object",
+  "required": ["id", "domains", "level", "status", "provenance"],
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^[a-z0-9-]+$",
+      "maxLength": 48,
+      "description": "Unique, immutable kebab-case concept identifier"
+    },
+    "domains": {
+      "type": "array",
+      "items": { "type": "string" },
+      "minItems": 1,
+      "maxItems": 4,
+      "description": "Hierarchical domain paths, the first being the primary domain"
+    },
+    "level": {
+      "type": "integer",
+      "enum": [1, 2, 3],
+      "description": "Difficulty level: 1 beginner, 2 intermediate, 3 advanced"
+    },
+    "relations": {
+      "type": "object",
+      "properties": {
+        "prerequisites": { "type": "array", "items": { "type": "string" } },
+        "broader": { "type": "array", "items": { "type": "string" } },
+        "narrower": { "type": "array", "items": { "type": "string" } },
+        "confusable": { "type": "array", "items": { "type": "string" } },
+        "related": { "type": "array", "items": { "type": "string" } }
+      },
+      "additionalProperties": false
+    },
+    "status": {
+      "type": "string",
+      "enum": ["draft", "reviewed", "verified", "deprecated"]
+    },
+    "provenance": {
+      "type": "object",
+      "required": ["drafted_by"],
+      "properties": {
+        "drafted_by": { "type": "string" },
+        "reviewed_by": {
+          "type": "array",
+          "items": { "type": "string" }
+        },
+        "reviewed_at": { "type": "string" }
+      },
+      "additionalProperties": false
+    },
+    "sources": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "replaced_by": {
+      "type": "string",
+      "pattern": "^[a-z0-9-]+$"
+    }
+  },
+  "additionalProperties": false
+}

@@ -1,0 +1,19 @@
+domains:
+  - id: finance
+    name:
+      vi: Tài chính
+      en: Finance
+    priority: 1
+    file: taxonomy/finance.yaml
+  - id: media
+    name:
+      vi: Media
+      en: Media
+    priority: 2
+    file: taxonomy/media.yaml
+  - id: it
+    name:
+      vi: Công nghệ thông tin
+      en: Information Technology
+    priority: 3
+    file: taxonomy/it.yaml

@@ -1,0 +1,13 @@
+id: interest-rate
+domains:
+  - finance/economics/interest-rates-monetary-policy
+  - finance/banking/deposits
+level: 1
+relations:
+  related: [principal, simple-interest, compound-interest]
+status: reviewed
+provenance:
+  drafted_by: ai
+  reviewed_by: ["@dang"]
+  reviewed_at: "2026-10-12"
+sources: []

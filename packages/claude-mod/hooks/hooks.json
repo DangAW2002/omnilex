@@ -1,0 +1,8 @@
+{
+  "ui.render": [
+    {
+      "target": "AssistantMessage",
+      "handler": "./register.js#renderAssistantMessage"
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+id: compound-interest
+domains:
+  - finance/personal-finance/saving
+  - finance/investing/portfolio-risk
+level: 1
+relations:
+  prerequisites: [interest-rate, principal]
+  confusable: [simple-interest]
+status: reviewed
+provenance:
+  drafted_by: ai
+  reviewed_by: ["@dang"]
+  reviewed_at: "2026-10-12"
+sources: []

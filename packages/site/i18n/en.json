@@ -1,0 +1,16 @@
+{
+  "site_title": "Termbridge — Open Multilingual Terminology",
+  "search_placeholder": "Describe what you want to say in plain words...",
+  "search_button": "Search",
+  "select_domain": "All Domains",
+  "prerequisites": "Prerequisites",
+  "confusables": "Easily Confused Terms",
+  "follow_up_prompt": "Follow-up AI Prompts",
+  "copy_prompt": "Copy Prompt for AI",
+  "provenance_draft": "Draft (Unreviewed)",
+  "provenance_reviewed": "Community Reviewed",
+  "provenance_verified": "Expert Verified",
+  "level_1": "Beginner",
+  "level_2": "Intermediate",
+  "level_3": "Advanced"
+}

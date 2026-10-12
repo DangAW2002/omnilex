@@ -1,0 +1,27 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://termbridge.org/schema/domains.schema.json",
+  "title": "Termbridge Domains Configuration Schema",
+  "type": "object",
+  "required": ["domains"],
+  "properties": {
+    "domains": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["id", "name", "priority", "file"],
+        "properties": {
+          "id": { "type": "string" },
+          "name": {
+            "type": "object",
+            "additionalProperties": { "type": "string" }
+          },
+          "priority": { "type": "integer" },
+          "file": { "type": "string" }
+        },
+        "additionalProperties": false
+      }
+    }
+  },
+  "additionalProperties": false
+}

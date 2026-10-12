@@ -1,0 +1,6 @@
+{
+  "name": "termbridge-mod",
+  "version": "0.1.0",
+  "description": "Termbridge Claude Code mod: interactive pane and automatic terminology links",
+  "hooks": "./hooks/hooks.json"
+}

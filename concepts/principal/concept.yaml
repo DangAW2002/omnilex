@@ -1,0 +1,13 @@
+id: principal
+domains:
+  - finance/personal-finance/saving
+  - finance/banking/lending
+level: 1
+relations:
+  related: [interest-rate, simple-interest, compound-interest]
+status: reviewed
+provenance:
+  drafted_by: ai
+  reviewed_by: ["@dang"]
+  reviewed_at: "2026-10-12"
+sources: []

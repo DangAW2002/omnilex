@@ -1,0 +1,24 @@
+{
+  "name": "@termbridge/cli",
+  "version": "0.1.0",
+  "description": "tb command line tool for Termbridge",
+  "bin": {
+    "tb": "./dist/index.js"
+  },
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "type": "module",
+  "scripts": {
+    "build": "tsc",
+    "tb": "node ./dist/index.js"
+  },
+  "dependencies": {
+    "@termbridge/core": "workspace:*",
+    "commander": "^13.0.0",
+    "picocolors": "^1.1.1"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.2",
+    "typescript": "^5.7.2"
+  }
+}

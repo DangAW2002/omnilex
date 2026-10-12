@@ -1,0 +1,12 @@
+id: token-crypto
+domains:
+  - finance/investing/digital-assets
+level: 2
+relations:
+  confusable: [token-llm, token-auth]
+status: reviewed
+provenance:
+  drafted_by: ai
+  reviewed_by: ["@dang"]
+  reviewed_at: "2026-10-12"
+sources: []

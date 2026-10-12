@@ -1,0 +1,52 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://termbridge.org/schema/locale-entry.schema.json",
+  "title": "Termbridge Locale Entry Schema",
+  "type": "object",
+  "required": ["label", "plain_descriptions", "summary"],
+  "properties": {
+    "label": {
+      "type": "string",
+      "description": "Canonical terminology label in this locale"
+    },
+    "qualifier": {
+      "type": "string",
+      "description": "Short disambiguation qualifier when label collides (e.g., '(AI)', '(finance)')"
+    },
+    "aliases": {
+      "type": "array",
+      "items": { "type": "string" },
+      "description": "Alternative names or acronyms"
+    },
+    "loanwords": {
+      "type": "array",
+      "items": { "type": "string" },
+      "description": "Loanwords commonly retained untranslated in this locale"
+    },
+    "plain_descriptions": {
+      "type": "array",
+      "items": { "type": "string" },
+      "minItems": 1,
+      "description": "Colloquial/plain descriptions used for reverse lookups"
+    },
+    "summary": {
+      "type": "string",
+      "description": "Single-sentence plain summary"
+    },
+    "confusable_notes": {
+      "type": "object",
+      "additionalProperties": { "type": "string" },
+      "description": "Keyed by confusable concept ID, explaining the specific distinction"
+    },
+    "follow_up_questions": {
+      "type": "array",
+      "items": { "type": "string" },
+      "description": "Suggested follow-up prompt questions for AI"
+    },
+    "translation": {
+      "type": "string",
+      "enum": ["native", "translated", "machine"]
+    }
+  },
+  "additionalProperties": false
+}

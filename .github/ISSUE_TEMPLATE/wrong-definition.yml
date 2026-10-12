@@ -1,0 +1,28 @@
+name: Report Incorrect Definition or Confusable Boundary
+description: Report an inaccurate definition, misleading example, or missing confusable distinction
+title: "fix: inaccurate definition for [Concept ID]"
+labels: ["wrong-definition", "content-review"]
+body:
+  - type: input
+    id: concept_id
+    attributes:
+      label: Concept ID
+      placeholder: "e.g. compound-interest"
+    validations:
+      required: true
+  - type: dropdown
+    id: locale
+    attributes:
+      label: Affected Locale
+      options:
+        - vi (Vietnamese)
+        - en (English)
+    validations:
+      required: true
+  - type: textarea
+    id: issue_detail
+    attributes:
+      label: What is inaccurate or misleading?
+      placeholder: "Describe the issue and provide authoritative citations or corrections."
+    validations:
+      required: true

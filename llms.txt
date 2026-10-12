@@ -1,0 +1,24 @@
+# Termbridge Knowledge Repository Map for LLMs
+
+> Termbridge is an open-source multilingual, multi-domain terminology repository.
+> Source of truth: YAML/Markdown files in Git.
+> Standard workflow: Read index files first, then open targeted concepts.
+
+## Primary Locales
+- Vietnamese (vi): [indexes/vi/_all.md](indexes/vi/_all.md)
+- English (en): [indexes/en/_all.md](indexes/en/_all.md)
+
+## Domain Indexes
+- Finance (vi): [indexes/vi/finance.md](indexes/vi/finance.md) | (en): [indexes/en/finance.md](indexes/en/finance.md)
+- Media (vi): [indexes/vi/media.md](indexes/vi/media.md) | (en): [indexes/en/media.md](indexes/en/media.md)
+- Information Technology (vi): [indexes/vi/it.md](indexes/vi/it.md) | (en): [indexes/en/it.md](indexes/en/it.md)
+
+## Disambiguation
+- Homonyms Index (vi): [indexes/vi/_homonyms.md](indexes/vi/_homonyms.md)
+- Homonyms Index (en): [indexes/en/_homonyms.md](indexes/en/_homonyms.md)
+
+## Concept Directories
+Each concept lives under `concepts/<concept-id>/` containing:
+- `concept.yaml`: Language-neutral metadata, domain tags, relations.
+- `vi.md`: Vietnamese layered explanations and plain descriptors.
+- `en.md`: English layered explanations and plain descriptors.

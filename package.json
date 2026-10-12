@@ -1,0 +1,24 @@
+{
+  "name": "termbridge",
+  "version": "0.1.0",
+  "description": "Multi-lingual, multi-domain open terminology repository for humans and AI agents",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "pnpm --filter @termbridge/core build && pnpm --filter @termbridge/cli build && pnpm --filter @termbridge/cli tb build",
+    "test": "vitest run",
+    "typecheck": "tsc -b",
+    "validate": "pnpm --filter @termbridge/cli tb validate",
+    "validate:strict": "pnpm --filter @termbridge/cli tb validate --strict",
+    "tb": "pnpm --filter @termbridge/cli tb"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.2",
+    "typescript": "^5.7.2",
+    "vitest": "^2.1.8"
+  },
+  "packageManager": "pnpm@11.22.0",
+  "engines": {
+    "node": ">=20.0.0"
+  }
+}

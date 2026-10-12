@@ -1,0 +1,29 @@
+name: Propose New Term
+description: Propose a new terminology concept to be added to Termbridge
+title: "term: [Proposed Concept ID]"
+labels: ["new-term", "needs-triage"]
+body:
+  - type: markdown
+    attributes:
+      value: Thank you for proposing a new term to Termbridge!
+  - type: input
+    id: concept_id
+    attributes:
+      label: Proposed Concept ID (kebab-case)
+      placeholder: "e.g. liquidity-pool"
+    validations:
+      required: true
+  - type: input
+    id: domains
+    attributes:
+      label: Target Taxonomy Domains
+      placeholder: "e.g. finance/investing/digital-assets"
+    validations:
+      required: true
+  - type: textarea
+    id: plain_descriptions
+    attributes:
+      label: Everyday Plain Descriptions (Vietnamese / English)
+      placeholder: "How would an everyday person describe this without using jargon?"
+    validations:
+      required: true

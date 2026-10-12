@@ -1,0 +1,16 @@
+reviewers:
+  finance:
+    - handle: "@dang"
+      name: Dang
+      email: nhutdang2803@gmail.com
+      role: Lead Reviewer
+  media:
+    - handle: "@dang"
+      name: Dang
+      email: nhutdang2803@gmail.com
+      role: Lead Reviewer
+  it:
+    - handle: "@dang"
+      name: Dang
+      email: nhutdang2803@gmail.com
+      role: Lead Reviewer

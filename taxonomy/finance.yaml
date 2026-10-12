@@ -1,0 +1,123 @@
+id: finance
+labels:
+  vi: Tài chính
+  en: Finance
+children:
+  - id: personal-finance
+    labels:
+      vi: Tài chính cá nhân
+      en: Personal finance
+    children:
+      - id: budget
+        labels:
+          vi: Ngân sách
+          en: Budget
+      - id: saving
+        labels:
+          vi: Tiết kiệm
+          en: Saving
+      - id: debt-credit
+        labels:
+          vi: Nợ và tín dụng
+          en: Debt and credit
+      - id: insurance
+        labels:
+          vi: Bảo hiểm
+          en: Insurance
+      - id: tax
+        labels:
+          vi: Thuế cá nhân
+          en: Personal tax
+  - id: banking
+    labels:
+      vi: Ngân hàng
+      en: Banking
+    children:
+      - id: deposits
+        labels:
+          vi: Tiền gửi
+          en: Deposits
+      - id: lending
+        labels:
+          vi: Cho vay
+          en: Lending
+      - id: payments
+        labels:
+          vi: Thanh toán
+          en: Payments
+  - id: investing
+    labels:
+      vi: Đầu tư
+      en: Investing
+    children:
+      - id: stocks
+        labels:
+          vi: Cổ phiếu
+          en: Stocks
+      - id: bonds
+        labels:
+          vi: Trái phiếu
+          en: Bonds
+      - id: funds
+        labels:
+          vi: Quỹ
+          en: Funds
+      - id: digital-assets
+        labels:
+          vi: Tài sản số
+          en: Digital assets
+      - id: valuation
+        labels:
+          vi: Định giá
+          en: Valuation
+      - id: portfolio-risk
+        labels:
+          vi: Danh mục và rủi ro
+          en: Portfolio and risk
+  - id: corporate-finance
+    labels:
+      vi: Tài chính doanh nghiệp
+      en: Corporate finance
+    children:
+      - id: financial-statements
+        labels:
+          vi: Báo cáo tài chính
+          en: Financial statements
+      - id: capital-structure
+        labels:
+          vi: Cấu trúc vốn
+          en: Capital structure
+      - id: fundraising
+        labels:
+          vi: Gọi vốn
+          en: Fundraising
+  - id: accounting
+    labels:
+      vi: Kế toán
+      en: Accounting
+    children:
+      - id: bookkeeping
+        labels:
+          vi: Ghi sổ
+          en: Bookkeeping
+      - id: standards
+        labels:
+          vi: Chuẩn mực báo cáo
+          en: Accounting standards
+  - id: economics
+    labels:
+      vi: Kinh tế và thị trường
+      en: Economics and markets
+    children:
+      - id: inflation
+        labels:
+          vi: Lạm phát
+          en: Inflation
+      - id: interest-rates-monetary-policy
+        labels:
+          vi: Lãi suất và chính sách tiền tệ
+          en: Interest rates and monetary policy
+      - id: exchange-rates
+        labels:
+          vi: Tỷ giá
+          en: Exchange rates

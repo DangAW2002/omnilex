@@ -1,0 +1,167 @@
+---
+import viI18n from '../../i18n/vi.json';
+import enI18n from '../../i18n/en.json';
+
+export function getStaticPaths() {
+  return [
+    { params: { locale: 'vi' } },
+    { params: { locale: 'en' } },
+  ];
+}
+
+const { locale } = Astro.params;
+const strings = locale === 'vi' ? viI18n : enI18n;
+---
+
+<!DOCTYPE html>
+<html lang={locale}>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{strings.site_title}</title>
+    <style>
+      :root {
+        --bg: #0f172a;
+        --card-bg: #1e293b;
+        --text: #f8fafc;
+        --text-muted: #94a3b8;
+        --primary: #38bdf8;
+        --accent: #818cf8;
+        --border: #334155;
+      }
+      body {
+        margin: 0;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+        background-color: var(--bg);
+        color: var(--text);
+        padding: 2rem 1rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      .container {
+        max-width: 800px;
+        width: 100%;
+      }
+      header {
+        text-align: center;
+        margin-bottom: 2.5rem;
+      }
+      h1 {
+        font-size: 2.5rem;
+        margin-bottom: 0.5rem;
+        background: linear-gradient(135deg, var(--primary), var(--accent));
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+      .search-box {
+        display: flex;
+        gap: 0.5rem;
+        margin-bottom: 2rem;
+      }
+      input {
+        flex: 1;
+        padding: 0.85rem 1.25rem;
+        border-radius: 9999px;
+        border: 1px solid var(--border);
+        background: var(--card-bg);
+        color: var(--text);
+        font-size: 1rem;
+        outline: none;
+      }
+      input:focus {
+        border-color: var(--primary);
+      }
+      .quick-links {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+        gap: 1rem;
+      }
+      .card {
+        background: var(--card-bg);
+        padding: 1.25rem;
+        border-radius: 0.75rem;
+        border: 1px solid var(--border);
+        text-decoration: none;
+        color: inherit;
+        transition: transform 0.15s ease, border-color 0.15s ease;
+      }
+      .card:hover {
+        transform: translateY(-2px);
+        border-color: var(--primary);
+      }
+      .card h3 {
+        margin: 0 0 0.5rem 0;
+        color: var(--primary);
+      }
+      .card p {
+        margin: 0;
+        font-size: 0.875rem;
+        color: var(--text-muted);
+      }
+      .badge {
+        display: inline-block;
+        padding: 0.2rem 0.5rem;
+        font-size: 0.75rem;
+        border-radius: 0.25rem;
+        background: #334155;
+        color: #cbd5e1;
+        margin-top: 0.5rem;
+      }
+      .locales-switch {
+        margin-bottom: 1.5rem;
+        text-align: right;
+      }
+      .locales-switch a {
+        color: var(--text-muted);
+        text-decoration: none;
+        margin-left: 0.75rem;
+      }
+      .locales-switch a.active {
+        color: var(--primary);
+        font-weight: bold;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="locales-switch">
+        <a href="/vi/" class={locale === 'vi' ? 'active' : ''}>Tiếng Việt</a>
+        <a href="/en/" class={locale === 'en' ? 'active' : ''}>English</a>
+      </div>
+
+      <header>
+        <h1>Termbridge</h1>
+        <p style="color: var(--text-muted);">{strings.site_title}</p>
+      </header>
+
+      <div class="search-box">
+        <input type="text" placeholder={strings.search_placeholder} id="search-input" />
+      </div>
+
+      <h2>{locale === 'vi' ? 'Thuật ngữ tiêu biểu' : 'Featured Concepts'}</h2>
+      <div class="quick-links">
+        <a href={`/${locale}/c/compound-interest`} class="card">
+          <h3>{locale === 'vi' ? 'Lãi kép' : 'Compound Interest'}</h3>
+          <p>{locale === 'vi' ? 'Tiền lãi cộng dồn vào gốc sinh lãi tiếp.' : 'Interest calculated on accumulated interest.'}</p>
+          <span class="badge">finance</span>
+        </a>
+        <a href={`/${locale}/c/token-llm`} class="card">
+          <h3>Token {locale === 'vi' ? '(AI)' : '(AI)'}</h3>
+          <p>{locale === 'vi' ? 'Mẩu từ ngữ mô hình AI dùng để đọc và tính chi phí.' : 'Text units processed by language models.'}</p>
+          <span class="badge">it/ai-ml</span>
+        </a>
+        <a href={`/${locale}/c/roi`} class="card">
+          <h3>{locale === 'vi' ? 'Tỷ suất hoàn vốn (ROI)' : 'Return on Investment'}</h3>
+          <p>{locale === 'vi' ? 'Hiệu quả tài chính so với chi phí ban đầu.' : 'Profitability ratio relative to cost.'}</p>
+          <span class="badge">finance & marketing</span>
+        </a>
+        <a href={`/${locale}/c/cookie`} class="card">
+          <h3>Cookie</h3>
+          <p>{locale === 'vi' ? 'Mẩu tin lưu trạng thái người dùng trên web.' : 'Small web browser state packet.'}</p>
+          <span class="badge">web & marketing</span>
+        </a>
+      </div>
+    </div>
+  </body>
+</html>

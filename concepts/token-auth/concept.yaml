@@ -1,0 +1,13 @@
+id: token-auth
+domains:
+  - it/security/authentication
+  - it/web/api
+level: 2
+relations:
+  confusable: [token-llm, token-crypto]
+status: reviewed
+provenance:
+  drafted_by: ai
+  reviewed_by: ["@dang"]
+  reviewed_at: "2026-10-12"
+sources: []

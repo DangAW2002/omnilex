@@ -1,0 +1,16 @@
+{
+  "site_title": "Termbridge — Kho thuật ngữ mở đa ngôn ngữ",
+  "search_placeholder": "Mô tả điều bạn muốn nói (ví dụ: tiền lãi lại sinh ra lãi)...",
+  "search_button": "Tìm kiếm",
+  "select_domain": "Tất cả lĩnh vực",
+  "prerequisites": "Kiến thức nền cần biết trước",
+  "confusables": "Các từ dễ nhầm lẫn",
+  "follow_up_prompt": "Câu hỏi gợi ý hỏi AI",
+  "copy_prompt": "Sao chép câu hỏi cho AI",
+  "provenance_draft": "Bản nháp (chưa duyệt)",
+  "provenance_reviewed": "Đã duyệt bởi cộng đồng",
+  "provenance_verified": "Đã xác nhận bởi chuyên gia",
+  "level_1": "Cơ bản",
+  "level_2": "Trung cấp",
+  "level_3": "Nâng cao"
+}

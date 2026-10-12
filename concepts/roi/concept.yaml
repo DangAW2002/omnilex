@@ -1,0 +1,13 @@
+id: roi
+domains:
+  - finance/investing/valuation
+  - media/digital-marketing/metrics-analytics
+level: 1
+relations:
+  related: [principal]
+status: reviewed
+provenance:
+  drafted_by: ai
+  reviewed_by: ["@dang"]
+  reviewed_at: "2026-10-12"
+sources: []

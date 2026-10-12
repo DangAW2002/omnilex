@@ -1,0 +1,16 @@
+pivot: en
+locales:
+  - code: vi
+    name: Tiếng Việt
+    status: primary
+  - code: en
+    name: English
+    status: primary
+  - code: ja
+    name: 日本語
+    status: planned
+fallback:
+  vi:
+    - en
+  ja:
+    - en

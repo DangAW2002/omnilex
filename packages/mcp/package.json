@@ -1,0 +1,21 @@
+{
+  "name": "@termbridge/mcp",
+  "version": "0.1.0",
+  "description": "Model Context Protocol server for Termbridge",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "type": "module",
+  "bin": {
+    "termbridge-mcp": "./dist/index.js"
+  },
+  "scripts": {
+    "build": "tsc"
+  },
+  "dependencies": {
+    "@termbridge/core": "workspace:*"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.2",
+    "typescript": "^5.7.2"
+  }
+}

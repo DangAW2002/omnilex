@@ -1,0 +1,94 @@
+id: media
+labels:
+  vi: Media
+  en: Media
+children:
+  - id: journalism
+    labels:
+      vi: Báo chí
+      en: Journalism
+    children:
+      - id: reporting
+        labels:
+          vi: Tác nghiệp
+          en: Reporting
+      - id: ethics
+        labels:
+          vi: Đạo đức nghề
+          en: Ethics
+      - id: genres
+        labels:
+          vi: Thể loại
+          en: Genres
+  - id: content-production
+    labels:
+      vi: Sản xuất nội dung
+      en: Content production
+    children:
+      - id: video
+        labels:
+          vi: Video
+          en: Video
+      - id: audio-podcasts
+        labels:
+          vi: Âm thanh và podcast
+          en: Audio and podcasts
+      - id: editing
+        labels:
+          vi: Biên tập
+          en: Editing
+      - id: visual-design
+        labels:
+          vi: Thiết kế hình ảnh
+          en: Visual design
+  - id: digital-marketing
+    labels:
+      vi: Marketing số
+      en: Digital marketing
+    children:
+      - id: seo
+        labels:
+          vi: SEO
+          en: SEO
+      - id: social-media
+        labels:
+          vi: Mạng xã hội
+          en: Social media
+      - id: paid-ads
+        labels:
+          vi: Quảng cáo trả phí
+          en: Paid advertising
+      - id: metrics-analytics
+        labels:
+          vi: Đo lường và chỉ số
+          en: Metrics and analytics
+      - id: email
+        labels:
+          vi: Email marketing
+          en: Email marketing
+  - id: publishing
+    labels:
+      vi: Phát hành và bản quyền
+      en: Publishing and copyright
+    children:
+      - id: distribution-platforms
+        labels:
+          vi: Nền tảng phân phối
+          en: Distribution platforms
+      - id: copyright-licensing
+        labels:
+          vi: Bản quyền và cấp phép
+          en: Copyright and licensing
+  - id: pr-communications
+    labels:
+      vi: Truyền thông và PR
+      en: PR and communications
+    children:
+      - id: media-relations
+        labels:
+          vi: Quan hệ báo chí
+          en: Media relations
+      - id: crisis-communications
+        labels:
+          vi: Khủng hoảng truyền thông
+          en: Crisis communications

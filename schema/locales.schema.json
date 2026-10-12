@@ -1,0 +1,31 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://termbridge.org/schema/locales.schema.json",
+  "title": "Termbridge Locales Configuration Schema",
+  "type": "object",
+  "required": ["pivot", "locales", "fallback"],
+  "properties": {
+    "pivot": { "type": "string" },
+    "locales": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["code", "name", "status"],
+        "properties": {
+          "code": { "type": "string" },
+          "name": { "type": "string" },
+          "status": { "type": "string", "enum": ["primary", "beta", "planned"] }
+        },
+        "additionalProperties": false
+      }
+    },
+    "fallback": {
+      "type": "object",
+      "additionalProperties": {
+        "type": "array",
+        "items": { "type": "string" }
+      }
+    }
+  },
+  "additionalProperties": false
+}

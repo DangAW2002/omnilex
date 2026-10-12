@@ -1,0 +1,13 @@
+id: cookie
+domains:
+  - it/web/frontend
+  - media/digital-marketing/paid-ads
+level: 1
+relations:
+  related: [token-auth]
+status: reviewed
+provenance:
+  drafted_by: ai
+  reviewed_by: ["@dang"]
+  reviewed_at: "2026-10-12"
+sources: []

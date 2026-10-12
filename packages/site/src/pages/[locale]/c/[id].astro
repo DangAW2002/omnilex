@@ -1,0 +1,171 @@
+---
+import fs from 'node:fs';
+import path from 'node:path';
+import viI18n from '../../../i18n/vi.json';
+import enI18n from '../../../i18n/en.json';
+
+export function getStaticPaths() {
+  const rootDir = path.resolve(process.cwd(), '../../');
+  const conceptsDir = path.join(rootDir, 'concepts');
+  const conceptIds = fs.existsSync(conceptsDir)
+    ? fs.readdirSync(conceptsDir, { withFileTypes: true }).filter((d) => d.isDirectory()).map((d) => d.name)
+    : [];
+
+  const paths = [];
+  for (const locale of ['vi', 'en']) {
+    for (const id of conceptIds) {
+      paths.push({ params: { locale, id } });
+    }
+  }
+  return paths;
+}
+
+const { locale, id } = Astro.params;
+const rootDir = path.resolve(process.cwd(), '../../');
+const distConceptFile = path.join(rootDir, 'dist', locale, 'concepts', `${id}.json`);
+const fallbackDistFile = path.join(rootDir, 'dist', 'en', 'concepts', `${id}.json`);
+
+let metadata: any = { id, domains: [], level: 1, status: 'draft', relations: {} };
+let frontmatter: any = { label: id, plain_descriptions: [], summary: '', confusable_notes: {}, follow_up_questions: [] };
+let bodyContent = '';
+
+const activeJsonFile = fs.existsSync(distConceptFile) ? distConceptFile : fallbackDistFile;
+if (fs.existsSync(activeJsonFile)) {
+  const data = JSON.parse(fs.readFileSync(activeJsonFile, 'utf-8'));
+  metadata = data.metadata || metadata;
+  frontmatter = data.entry?.frontmatter || frontmatter;
+  bodyContent = data.entry?.content || '';
+}
+
+const strings = locale === 'vi' ? viI18n : enI18n;
+---
+
+<!DOCTYPE html>
+<html lang={locale}>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{frontmatter.label} — Termbridge</title>
+    <style>
+      :root {
+        --bg: #0f172a;
+        --card-bg: #1e293b;
+        --text: #f8fafc;
+        --text-muted: #94a3b8;
+        --primary: #38bdf8;
+        --border: #334155;
+      }
+      body {
+        margin: 0;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+        background-color: var(--bg);
+        color: var(--text);
+        padding: 2rem 1rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      .container {
+        max-width: 760px;
+        width: 100%;
+      }
+      a.back {
+        color: var(--primary);
+        text-decoration: none;
+        display: inline-block;
+        margin-bottom: 1.5rem;
+      }
+      header {
+        border-bottom: 1px solid var(--border);
+        padding-bottom: 1.5rem;
+        margin-bottom: 2rem;
+      }
+      h1 {
+        font-size: 2.25rem;
+        margin: 0 0 0.5rem 0;
+        color: var(--primary);
+      }
+      .meta {
+        font-size: 0.875rem;
+        color: var(--text-muted);
+        display: flex;
+        gap: 1rem;
+        flex-wrap: wrap;
+        margin-top: 0.5rem;
+      }
+      .summary-box {
+        background: #1e293b;
+        border-left: 4px solid var(--primary);
+        padding: 1rem 1.25rem;
+        border-radius: 0.5rem;
+        margin-bottom: 2rem;
+        font-size: 1.1rem;
+      }
+      .section {
+        background: var(--card-bg);
+        border: 1px solid var(--border);
+        border-radius: 0.75rem;
+        padding: 1.5rem;
+        margin-bottom: 1.5rem;
+      }
+      .section h2 {
+        margin-top: 0;
+        color: #e2e8f0;
+        font-size: 1.25rem;
+      }
+      .content-body {
+        line-height: 1.7;
+        color: #cbd5e1;
+        white-space: pre-line;
+      }
+      .prompt-box {
+        background: #020617;
+        border: 1px dashed #475569;
+        padding: 1rem;
+        border-radius: 0.5rem;
+        margin-top: 1rem;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <a href={`/${locale}/`} class="back">← {locale === 'vi' ? 'Quay lại tìm kiếm' : 'Back to search'}</a>
+
+      <header>
+        <h1>{frontmatter.label} {frontmatter.qualifier && <small style="color: var(--text-muted); font-size: 1.2rem;">{frontmatter.qualifier}</small>}</h1>
+        <div class="meta">
+          <span><strong>ID:</strong> {id}</span>
+          <span><strong>{locale === 'vi' ? 'Độ khó' : 'Level'}:</strong> {metadata.level}</span>
+          <span><strong>{locale === 'vi' ? 'Trạng thái' : 'Status'}:</strong> {metadata.status}</span>
+          <span><strong>{locale === 'vi' ? 'Lĩnh vực' : 'Domains'}:</strong> {metadata.domains?.join(', ')}</span>
+        </div>
+      </header>
+
+      <div class="summary-box">
+        <strong>{locale === 'vi' ? 'Tóm tắt:' : 'Summary:'}</strong> {frontmatter.summary}
+      </div>
+
+      <div class="section">
+        <h2>{locale === 'vi' ? 'Giải thích chi tiết theo tầng' : 'Layered Explanation'}</h2>
+        <div class="content-body">
+          {bodyContent}
+        </div>
+      </div>
+
+      {frontmatter.follow_up_questions?.length > 0 && (
+        <div class="section">
+          <h2>{strings.follow_up_prompt}</h2>
+          <ul>
+            {frontmatter.follow_up_questions.map((q: string) => (
+              <li>
+                <div class="prompt-box">
+                  <code>{q}</code>
+                </div>
+              </li>
+            ))}
+          </ul>
+        </div>
+      )}
+    </div>
+  </body>
+</html>

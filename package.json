@@ -10,7 +10,10 @@
     "typecheck": "tsc -b",
     "validate": "pnpm --filter @termbridge/cli tb validate",
     "validate:strict": "pnpm --filter @termbridge/cli tb validate --strict",
-    "tb": "pnpm --filter @termbridge/cli tb"
+    "tb": "pnpm --filter @termbridge/cli tb",
+    "check:deterministic": "node scripts/check-deterministic.js",
+    "bench": "tsc -p bench && node bench/dist/run.js",
+    "bench:check": "tsc -p bench && node bench/dist/run.js --sizes 1000 --check"
   },
   "devDependencies": {
     "@types/node": "^22.10.2",

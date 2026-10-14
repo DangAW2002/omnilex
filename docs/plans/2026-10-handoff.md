@@ -34,11 +34,11 @@ Các quyết định D1–D12 trong Kế hoạch **đã chốt**. KHÔNG ĐƯỢ
 - Working tree có thể đang có nhiều thay đổi chưa commit. Xem quy trình ở mục 5.1.
 - Mốc ban đầu đã được commit trên nhánh `chore/baseline-and-plans`, ngày 2026-10-14.
 
-### 2.1 Việc còn mở (agent PHẢI xử lý trong WP0 và ghi kết quả vào đây)
+### 2.1 Việc còn mở (đã xử lý trong WP0)
 
-- **O-1 Lệnh chạy test mod**: chưa rõ. Tìm qua skill `plugin-authoring` và `packages/claude-mod/package.json`, chạy thử, rồi ghi lệnh chính xác vào mục 5.3 thay cho `<lệnh chạy test mod>`.
-- **O-2 Xuống dòng**: repo chưa có `.gitattributes`. Trên Windows, Git đang cảnh báo đổi LF→CRLF ở nhiều file, gây rủi ro cho D-4 (build xác định) và cho bước `git diff --exit-code` trong CI. Thêm `.gitattributes` (`* text=auto eol=lf`, file nhị phân như `*.bin` đánh dấu `binary`), sau đó **dừng và hỏi người dùng** trước khi chạy `git add --renormalize .`, vì lệnh này đụng tới rất nhiều file.
-- **O-3 Nhánh chính**: repo hiện chỉ có nhánh `master`. Các nhánh WP tách từ nhánh người dùng chỉ định, mặc định là `chore/baseline-and-plans`, hoặc `master` sau khi người dùng đã merge.
+- **O-1 Lệnh chạy test mod**: Đã xác định và kiểm chứng: `claude plugin test packages/claude-mod` (7/7 tests pass). Đã cập nhật vào mục 5.3.
+- **O-2 Xuống dòng**: Đã tạo `.gitattributes` (`* text=auto eol=lf`, `*.bin binary`, `*.tbpack binary`), đã được người dùng phê duyệt và chạy `git add --renormalize .`.
+- **O-3 Nhánh chính**: Đã xác nhận nhánh cơ sở tách các WP là `chore/baseline-and-plans` (hoặc nhánh WP trước đó theo thứ tự). WP0 tách nhánh `feat/wp0-bench-and-baseline`.
 
 ## 3. Work package và thứ tự
 
@@ -132,7 +132,7 @@ pnpm install --frozen-lockfile        # chỉ bỏ --frozen-lockfile khi WP có 
 pnpm typecheck
 pnpm build
 pnpm test
-<lệnh chạy test mod>                  # xem mục 2; ghi rõ lệnh đã dùng trong báo cáo
+claude plugin test packages/claude-mod
 pnpm tb validate --strict
 pnpm --filter @termbridge/site build
 pnpm tb build && git diff --exit-code indexes/ llms.txt   # file sinh ra đã commit phải khớp

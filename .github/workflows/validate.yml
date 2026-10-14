@@ -44,3 +44,9 @@ jobs:
       - name: Check for uncommitted build drift
         run: |
           git diff --exit-code indexes/ llms.txt
+
+      - name: Check build determinism (D-4)
+        run: pnpm check:deterministic
+
+      - name: Check performance budget (T-B2)
+        run: pnpm bench:check

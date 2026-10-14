@@ -58,7 +58,7 @@ const TOOLS = [
   }
 ];
 
-function handleToolCall(name: string, args: any) {
+export function handleToolCall(name: string, args: any) {
   if (name === 'find_term') {
     const results = findConcepts(repoData, args.description, {
       locale: args.locale || 'vi',
@@ -135,10 +135,10 @@ function handleToolCall(name: string, args: any) {
   throw new Error(`Unknown tool: ${name}`);
 }
 
-// JSON-RPC stdio loop
-const rl = readline.createInterface({ input: process.stdin, output: process.stdout, terminal: false });
+if (!process.env.VITEST) {
+  const rl = readline.createInterface({ input: process.stdin, output: process.stdout, terminal: false });
 
-rl.on('line', (line) => {
+  rl.on('line', (line) => {
   if (!line.trim()) return;
   try {
     const msg = JSON.parse(line);
@@ -178,3 +178,4 @@ rl.on('line', (line) => {
     // Ignore malformed input
   }
 });
+}

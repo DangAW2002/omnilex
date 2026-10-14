@@ -3,6 +3,7 @@ const MAX_BADGES = 4
 
 let terms = []
 let concepts = []
+let conceptsById = new Map()
 let explanations = new Map()
 let query = ''
 let selectedId = null
@@ -58,7 +59,7 @@ function buildMatchers() {
         `(?<![\\p{L}\\p{N}])${escapeRegex(term.key)}(?![\\p{L}\\p{N}])`,
         term.match === 'exact-case' ? 'gu' : 'giu',
       ),
-      concept: concepts.find((item) => item.id === term.concepts[0].id) || term.concepts[0],
+      concept: conceptsById.get(term.concepts[0].id) || term.concepts[0],
     }))
 }
 
@@ -67,7 +68,13 @@ function selectLocale(value) {
   if (!data) return false
   locale = value
   concepts = data.concepts
-  explanations = data.explanations
+  conceptsById = new Map(concepts.map((item) => [item.id, item]))
+  for (const c of concepts) {
+    if (!c.normalized_descriptions && c.plain_descriptions) {
+      c.normalized_descriptions = c.plain_descriptions.map(normalize)
+    }
+  }
+  explanations = data.explanations || new Map()
   buildMatchers()
   return true
 }
@@ -379,12 +386,8 @@ function canRenderInline(text, columns) {
 
 function forwardSpans(text) {
   const candidates = []
-  for (const term of terms) {
-    if (!term.autolink || term.concepts.length !== 1) continue
-    const flags = term.match === 'exact-case' ? 'gu' : 'giu'
-    const pattern = new RegExp(`(?<![\\p{L}\\p{N}])${escapeRegex(term.key)}(?![\\p{L}\\p{N}])`, flags)
-    for (const match of text.matchAll(pattern)) {
-      const concept = concepts.find((item) => item.id === term.concepts[0].id) || term.concepts[0]
+  for (const { regex, concept } of matchers) {
+    for (const match of text.matchAll(regex)) {
       candidates.push({ start: match.index, end: match.index + match[0].length, concept })
     }
   }
@@ -476,32 +479,45 @@ function findConcepts(input) {
 
 function reverseHints(text) {
   const normalized = normalize(text)
-  return concepts.filter((concept) =>
-    concept.plain_descriptions.some((description) => {
-      const phrase = normalize(description)
-      return phrase.length >= 12 && normalized.includes(phrase)
-    })
-  ).slice(0, MAX_BADGES)
+  return concepts.filter((concept) => {
+    const list = concept.normalized_descriptions || concept.plain_descriptions
+    return list.some((phrase) => phrase.length >= 12 && normalized.includes(phrase))
+  }).slice(0, MAX_BADGES)
+}
+
+async function ensureExplanations($, loc) {
+  if (localized[loc] && localized[loc].explanations) {
+    explanations = localized[loc].explanations
+    return
+  }
+  try {
+    const raw = await $.fs.read(`${$.plugin.root}/data/concepts-${loc}.json`)
+    const parsed = JSON.parse(raw)
+    const map = new Map(parsed.map((item) => [item.id, item.content]))
+    if (localized[loc]) localized[loc].explanations = map
+    if (locale === loc) explanations = map
+  } catch {
+    if (localized[loc]) localized[loc].explanations = new Map()
+    if (locale === loc) explanations = new Map()
+  }
 }
 
 async function loadData($) {
   try {
-    const [viTerms, enTerms, viConcepts, enConcepts, viExplanations, enExplanations] = await Promise.all([
+    const [viTerms, enTerms, viConcepts, enConcepts] = await Promise.all([
       $.fs.read(`${$.plugin.root}/data/terms-vi.json`),
       $.fs.read(`${$.plugin.root}/data/terms-en.json`),
       $.fs.read(`${$.plugin.root}/data/search-vi.json`),
       $.fs.read(`${$.plugin.root}/data/search-en.json`),
-      $.fs.read(`${$.plugin.root}/data/concepts-vi.json`),
-      $.fs.read(`${$.plugin.root}/data/concepts-en.json`),
     ])
     localized = {
       vi: {
         concepts: JSON.parse(viConcepts),
-        explanations: new Map(JSON.parse(viExplanations).map((item) => [item.id, item.content])),
+        explanations: null,
       },
       en: {
         concepts: JSON.parse(enConcepts),
-        explanations: new Map(JSON.parse(enExplanations).map((item) => [item.id, item.content])),
+        explanations: null,
       },
     }
     const grouped = new Map()
@@ -715,9 +731,10 @@ export function register(on) {
 
   on('ui.render', { component: 'Pane' }, async ($, e, next) => {
     if (e.requestId !== PANE_ID) return next(e)
+    await ensureExplanations($, locale)
     const { Box, Text, Button, Input, Markdown } = $.ui.resolve(e)
     const strings = UI_TEXT[locale]
-    const selected = concepts.find((item) => item.id === selectedId)
+    const selected = conceptsById.get(selectedId)
     const redraw = () => $.ui.invalidate('ui.render')
     const resultRows = findConcepts(query).map((concept, index) =>
       Box({

@@ -8,6 +8,7 @@ import {
   validateRepository,
   buildArtifacts,
   findConcepts,
+  findConceptsFromDocs,
   lookupConcepts,
   generateLocaleReport,
   generateReviewReport,
@@ -176,6 +177,56 @@ program
     console.log(`  - dist/ (search.json, terms.json, graph.json, concepts/)`);
   });
 
+export function findAction(
+  rootDir: string,
+  query: string,
+  options: { locale: string; domain?: string },
+  deps = { loadAll, findConcepts, findConceptsFromDocs, fs }
+): { results: any[]; usedPrebuilt: boolean } {
+  const targetLocale = options.locale || 'vi';
+  const prebuiltPath = path.join(rootDir, 'dist', targetLocale, 'search.json');
+  const conceptsDir = path.join(rootDir, 'concepts');
+
+  let usePrebuilt = false;
+  if (deps.fs.existsSync(prebuiltPath)) {
+    try {
+      const distStat = deps.fs.statSync(prebuiltPath);
+      let isStale = false;
+      if (deps.fs.existsSync(conceptsDir)) {
+        const conceptsStat = deps.fs.statSync(conceptsDir);
+        if (conceptsStat.mtimeMs > distStat.mtimeMs) {
+          isStale = true;
+        }
+      }
+      if (isStale) {
+        console.warn(pc.yellow(`⚠ dist/${targetLocale}/search.json cũ hơn concepts/. Đang quay về quét concepts/ trực tiếp.`));
+      } else {
+        usePrebuilt = true;
+      }
+    } catch {
+      usePrebuilt = false;
+    }
+  }
+
+  if (usePrebuilt) {
+    try {
+      const raw = deps.fs.readFileSync(prebuiltPath, 'utf8');
+      const docs = JSON.parse(raw);
+      const results = deps.findConceptsFromDocs(docs, query, {
+        domain: options.domain,
+        cacheKey: `cli-dist:${targetLocale}`,
+      });
+      return { results, usedPrebuilt: true };
+    } catch {
+      // Fallback nếu parse JSON lỗi
+    }
+  }
+
+  const repoData = deps.loadAll(rootDir);
+  const results = deps.findConcepts(repoData, query, { locale: options.locale, domain: options.domain });
+  return { results, usedPrebuilt: false };
+}
+
 // tb find "<query>" [--locale vi] [--domain finance]
 program
   .command('find <query>')
@@ -184,8 +235,7 @@ program
   .option('-d, --domain <domain>', 'Filter by domain prefix')
   .action((query: string, options: { locale: string; domain?: string }) => {
     const rootDir = resolveRootDir();
-    const repoData = loadAll(rootDir);
-    const results = findConcepts(repoData, query, { locale: options.locale, domain: options.domain });
+    const { results } = findAction(rootDir, query, options);
 
     if (results.length === 0) {
       console.log(pc.yellow(`\n⚠ Không tìm thấy khái niệm nào khớp với: "${pc.bold(query)}" (${options.locale})`));
@@ -305,4 +355,6 @@ reportCmd
     console.table(rows);
   });
 
-program.parse(process.argv);
+if (!process.env.VITEST) {
+  program.parse(process.argv);
+}

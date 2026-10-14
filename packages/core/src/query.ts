@@ -11,35 +11,72 @@ export interface FindResult {
   score: number;
 }
 
+export interface SearchDoc {
+  id: string;
+  label: string;
+  qualifier?: string;
+  aliases?: string;
+  loanwords?: string;
+  plain_descriptions?: string;
+  summary: string;
+  domains: string[];
+  level?: number;
+  status?: string;
+}
+
 export function normalizeSearchTerm(value: string): string {
   return value.normalize('NFD').replace(/\p{M}/gu, '').replace(/đ/gi, 'd').toLowerCase();
 }
 
-export function findConcepts(
-  repoData: RepositoryData,
-  query: string,
-  options: { locale?: string; domain?: string } = {}
-): FindResult[] {
-  const targetLocale = options.locale || repoData.localesConfig.pivot;
-  const targetDomain = options.domain;
+export const SEARCH_INDEX_OPTIONS = {
+  fields: ['id', 'label', 'aliases', 'loanwords', 'plain_descriptions', 'summary'],
+  storeFields: ['id', 'label', 'qualifier', 'summary', 'domains', 'plain_descriptions'],
+  processTerm: normalizeSearchTerm,
+  searchOptions: {
+    boost: { id: 3, plain_descriptions: 3, label: 3, aliases: 2, summary: 1 },
+    combineWith: 'AND' as const,
+    fuzzy: 0.15,
+    prefix: true,
+  },
+};
 
-  const docs: Array<{
-    id: string;
-    label: string;
-    qualifier?: string;
-    aliases: string;
-    loanwords: string;
-    plain_descriptions: string;
-    summary: string;
-    domains: string[];
-  }> = [];
+export function createSearchIndex(docs: SearchDoc[]): MiniSearch {
+  const miniSearch = new MiniSearch(SEARCH_INDEX_OPTIONS);
+  miniSearch.addAll(docs);
+  return miniSearch;
+}
 
+export function searchIndexToJSON(index: MiniSearch): string {
+  return JSON.stringify(index.toJSON());
+}
+
+export function loadSearchIndex(json: string | object): MiniSearch {
+  if (typeof json === 'string') {
+    return MiniSearch.loadJSON(json, SEARCH_INDEX_OPTIONS);
+  }
+  return MiniSearch.loadJS(json as any, SEARCH_INDEX_OPTIONS);
+}
+
+// In-process cache for MiniSearch instances per locale/pack (T-S4)
+const searchIndexCache = new Map<string, MiniSearch>();
+
+export function getCachedSearchIndex(cacheKey: string, docsProvider: () => SearchDoc[]): MiniSearch {
+  let index = searchIndexCache.get(cacheKey);
+  if (!index) {
+    const docs = docsProvider();
+    index = createSearchIndex(docs);
+    searchIndexCache.set(cacheKey, index);
+  }
+  return index;
+}
+
+export function clearSearchIndexCache(): void {
+  searchIndexCache.clear();
+}
+
+export function buildSearchDocsFromRepo(repoData: RepositoryData, targetLocale: string): SearchDoc[] {
+  const docs: SearchDoc[] = [];
   for (const record of repoData.concepts.values()) {
-    if (targetDomain) {
-      const inDomain = record.metadata.domains.some((d) => d.startsWith(targetDomain));
-      if (!inDomain) continue;
-    }
-
     const entry = record.locales[targetLocale] || record.locales[repoData.localesConfig.pivot];
     if (!entry) continue;
 
@@ -53,26 +90,36 @@ export function findConcepts(
       plain_descriptions: (fm.plain_descriptions || []).join(' '),
       summary: fm.summary || '',
       domains: record.metadata.domains,
+      level: record.metadata.level,
+      status: record.metadata.status,
     });
   }
+  return docs;
+}
 
-  const miniSearch = new MiniSearch({
-    fields: ['id', 'label', 'aliases', 'loanwords', 'plain_descriptions', 'summary'],
-    storeFields: ['id', 'label', 'qualifier', 'summary', 'domains', 'plain_descriptions'],
-    processTerm: normalizeSearchTerm,
-    searchOptions: {
-      boost: { id: 3, plain_descriptions: 3, label: 3, aliases: 2, summary: 1 },
-      combineWith: 'AND',
-      fuzzy: 0.15,
-      prefix: true,
-    },
-  });
+export function findConceptsFromDocs(
+  docs: SearchDoc[],
+  query: string,
+  options: { domain?: string; cacheKey?: string } = {}
+): FindResult[] {
+  let index: MiniSearch;
+  if (options.cacheKey) {
+    index = getCachedSearchIndex(options.cacheKey, () => docs);
+  } else {
+    index = createSearchIndex(docs);
+  }
 
-  miniSearch.addAll(docs);
-  const rawResults = miniSearch.search(query);
-
+  const rawResults = index.search(query);
   const bestScore = rawResults[0]?.score || 0;
-  return rawResults.filter((r) => r.score >= bestScore * 0.35).slice(0, 5).map((r) => ({
+  let filtered = rawResults.filter((r) => r.score >= bestScore * 0.35);
+
+  if (options.domain) {
+    filtered = filtered.filter((r) =>
+      Array.isArray(r.domains) && r.domains.some((d: string) => d.startsWith(options.domain!))
+    );
+  }
+
+  return filtered.slice(0, 5).map((r) => ({
     id: r.id,
     label: r.label,
     qualifier: r.qualifier,
@@ -82,6 +129,17 @@ export function findConcepts(
   }));
 }
 
+export function findConcepts(
+  repoData: RepositoryData,
+  query: string,
+  options: { locale?: string; domain?: string } = {}
+): FindResult[] {
+  const targetLocale = options.locale || repoData.localesConfig.pivot;
+  const cacheKey = `repo:${targetLocale}`;
+  const docs = buildSearchDocsFromRepo(repoData, targetLocale);
+  return findConceptsFromDocs(docs, query, { domain: options.domain, cacheKey });
+}
+
 export function lookupConcepts(
   repoData: RepositoryData,
   idOrLabel: string,
@@ -89,15 +147,20 @@ export function lookupConcepts(
 ): Array<{ record: ConceptRecord; localeEntry?: any; rawMarkdown?: string }> {
   const targetLocale = options.locale || repoData.localesConfig.pivot;
   const explicitId = idOrLabel.startsWith('id:') ? idOrLabel.slice(3) : null;
-  const matches = explicitId ? [repoData.concepts.get(explicitId)].filter((record): record is ConceptRecord => !!record)
+  const normalized = normalizeSearchTerm(idOrLabel.trim());
+
+  const matches = explicitId
+    ? [repoData.concepts.get(explicitId)].filter((record): record is ConceptRecord => !!record)
     : Array.from(repoData.concepts.values()).filter((record) => {
-    const entry = record.locales[targetLocale] || record.locales[repoData.localesConfig.pivot];
-    const normalized = normalizeSearchTerm(idOrLabel.trim());
-    return entry && (
-      normalizeSearchTerm(entry.frontmatter.label) === normalized ||
-      entry.frontmatter.aliases?.some((alias) => normalizeSearchTerm(alias) === normalized)
-    );
-  });
+        const entry = record.locales[targetLocale] || record.locales[repoData.localesConfig.pivot];
+        return (
+          entry &&
+          (normalizeSearchTerm(entry.frontmatter.label) === normalized ||
+            entry.frontmatter.aliases?.some((alias) => normalizeSearchTerm(alias) === normalized) ||
+            entry.frontmatter.loanwords?.some((loanword) => normalizeSearchTerm(loanword) === normalized))
+        );
+      });
+
   if (!explicitId && matches.length === 0) {
     const direct = repoData.concepts.get(idOrLabel);
     if (direct) matches.push(direct);

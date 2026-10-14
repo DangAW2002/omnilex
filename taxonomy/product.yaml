@@ -1,0 +1,21 @@
+id: product
+labels:
+  vi: Quản trị sản phẩm và dự án
+  en: Product and Project Management
+children:
+  - id: product-management
+    labels:
+      vi: Quản lý sản phẩm
+      en: Product management
+  - id: agile-scrum
+    labels:
+      vi: Agile và Scrum
+      en: Agile and Scrum
+  - id: delivery-planning
+    labels:
+      vi: Lập kế hoạch bàn giao
+      en: Delivery and planning
+  - id: metrics
+    labels:
+      vi: Chỉ số đo lường
+      en: Metrics

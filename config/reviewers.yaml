@@ -14,3 +14,13 @@ reviewers:
       name: Dang
       email: nhutdang2803@gmail.com
       role: Lead Reviewer
+  iot:
+    - handle: "@dang"
+      name: Dang
+      email: nhutdang2803@gmail.com
+      role: Lead Reviewer
+  product:
+    - handle: "@dang"
+      name: Dang
+      email: nhutdang2803@gmail.com
+      role: Lead Reviewer

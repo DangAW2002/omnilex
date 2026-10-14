@@ -20,10 +20,43 @@ children:
         labels:
           vi: Kiểm thử
           en: Testing
+      - id: version-control
+        labels:
+          vi: Quản lý phiên bản
+          en: Version control
+      - id: practices
+        labels:
+          vi: Thực hành kỹ thuật
+          en: Engineering practices
       - id: devops
         labels:
           vi: DevOps
           en: DevOps
+  - id: devops
+    labels:
+      vi: DevOps
+      en: DevOps
+    children:
+      - id: ci-cd
+        labels:
+          vi: CI/CD
+          en: CI/CD
+      - id: containers
+        labels:
+          vi: Container
+          en: Containers
+      - id: observability
+        labels:
+          vi: Khả năng quan sát
+          en: Observability
+      - id: sre-operations
+        labels:
+          vi: Vận hành và SRE
+          en: SRE and operations
+      - id: iac
+        labels:
+          vi: Hạ tầng dưới dạng mã
+          en: Infrastructure as code
   - id: web
     labels:
       vi: Web
@@ -71,6 +104,22 @@ children:
         labels:
           vi: Mô hình ngôn ngữ và agent
           en: Language models and agents
+      - id: mlops
+        labels:
+          vi: MLOps
+          en: MLOps
+      - id: nlp
+        labels:
+          vi: Xử lý ngôn ngữ tự nhiên
+          en: Natural language processing
+      - id: computer-vision
+        labels:
+          vi: Thị giác máy tính
+          en: Computer vision
+      - id: ai-safety-governance
+        labels:
+          vi: An toàn và quản trị AI
+          en: AI safety and governance
   - id: infrastructure
     labels:
       vi: Hạ tầng và đám mây

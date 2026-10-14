@@ -45,6 +45,6 @@ describe('Query and Reporting Engine', () => {
     const repoData = loadAll(rootDir);
     const report = generateLocaleReport(repoData);
 
-    expect(report.length).toBe(3); // finance, media, it
+    expect(report.length).toBe(repoData.domainsConfig.domains.length);
   });
 });

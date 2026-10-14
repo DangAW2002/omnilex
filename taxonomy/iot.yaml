@@ -1,0 +1,21 @@
+id: iot
+labels:
+  vi: Internet vạn vật
+  en: Internet of Things
+children:
+  - id: devices-sensors
+    labels:
+      vi: Thiết bị và cảm biến
+      en: Devices and sensors
+  - id: connectivity-protocols
+    labels:
+      vi: Giao thức kết nối
+      en: Connectivity protocols
+  - id: edge-cloud
+    labels:
+      vi: Biên và đám mây
+      en: Edge and cloud
+  - id: industrial
+    labels:
+      vi: IoT công nghiệp
+      en: Industrial IoT

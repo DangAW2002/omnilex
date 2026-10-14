@@ -17,3 +17,15 @@ domains:
       en: Information Technology
     priority: 3
     file: taxonomy/it.yaml
+  - id: iot
+    name:
+      vi: Internet vạn vật
+      en: Internet of Things
+    priority: 4
+    file: taxonomy/iot.yaml
+  - id: product
+    name:
+      vi: Quản trị sản phẩm và dự án
+      en: Product and Project Management
+    priority: 5
+    file: taxonomy/product.yaml

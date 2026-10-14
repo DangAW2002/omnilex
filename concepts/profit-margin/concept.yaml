@@ -1,0 +1,12 @@
+id: profit-margin
+domains:
+  - finance/corporate-finance/financial-statements
+level: 2
+relations:
+  confusable: [margin]
+  related: [roi]
+status: draft
+provenance:
+  drafted_by: ai
+sources:
+  - https://www.sec.gov/about/reports-publications/investorpubsbegfinstmtguide

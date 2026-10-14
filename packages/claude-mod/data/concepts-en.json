@@ -1,0 +1,46 @@
+[
+  {
+    "id": "compound-interest",
+    "content": "\n## Easy explanation\nLike a rolling snowball: as it tumbles down the hill, it picks up snow faster and faster because it keeps getting bigger.\n\n## Details\nEvery compounding period, accrued interest is added to the principal balance. Subsequent calculations determine interest from the enlarged sum, resulting in exponential growth over time.\n\n## Technical definition\nThe addition of interest to the principal sum of a loan or deposit, so that the added interest also earns interest from that point forward.\n\n## Examples\nInvesting $10,000 at 7% annual compounding produces:\n- Year 1: $10,700\n- Year 2: $11,449 (an extra $49 from interest on interest)\n- Year 10: $19,671.51\n"
+  },
+  {
+    "id": "cookie",
+    "content": "\n## Easy explanation\nLike a coat-check ticket handed to you at a club: when you return to the counter, handing back the ticket proves which coat is yours.\n\n## Details\nManaged via HTTP headers (`Set-Cookie` and `Cookie`), cookies maintain persistent sessions, store preferences, and enable cross-site tracking when not restricted by SameSite flags.\n\n## Technical definition\nA localized data packet conforming to RFC 6265 exchanged between a web server and client browser to enable state management over stateless HTTP.\n\n## Examples\nPreserving items inside an e-commerce shopping cart across page reloads.\n"
+  },
+  {
+    "id": "interest-rate",
+    "content": "\n## Easy explanation\nAn interest rate is the cost of renting someone else's money over time.\n\n## Details\nExpressed as an annual percentage, interest rates compensate lenders for opportunity costs, inflation risk, and default risk.\n\n## Technical definition\nThe contractual ratio of interest paid or received to principal balance over a specified measurement epoch.\n\n## Examples\nA 5% annual interest rate on a $1,000 balance yields $50 per year before compounding adjustments.\n"
+  },
+  {
+    "id": "margin",
+    "content": "\n## Easy explanation\nAn investor can use assets in a brokerage account as collateral to borrow more money to buy securities. This is trading on margin.\n\n## Details\nThe broker lends money against the account. Borrowing increases purchasing power and can also increase losses. Interest is generally charged on the loan.\n\n## Technical definition\nIn securities trading, margin is the equity or collateral held in a brokerage account that supports a broker loan.\n\n## Examples\nAn investor has $5,000 in an account and borrows another $5,000 to purchase $10,000 of securities. The loan remains payable even if the securities fall in value.\n"
+  },
+  {
+    "id": "principal",
+    "content": "\n## Easy explanation\nPrincipal is the original money you put in or borrow, like the initial seed before any financial fruit grows.\n\n## Details\nIn lending and investing, principal serves as the basis for interest calculation. Over time, payments may reduce this initial principal balance.\n\n## Technical definition\nThe primary capital sum placed into an investment or owed on a debt instrument, distinct from interest, dividends, or fees.\n\n## Examples\nIf you deposit $1,000 into a savings account, that $1,000 is your principal.\n"
+  },
+  {
+    "id": "profit-margin",
+    "content": "\n## Easy explanation\nProfit margin shows how much profit a company retains from each dollar of revenue, using a stated measure of profit.\n\n## Details\nThere are several profit margins. Gross margin divides gross profit by revenue, where gross profit is revenue less the cost of goods sold. Other margins use profit figures after additional expenses.\n\n## Technical definition\nProfit margin is the ratio of a specified profit measure to the corresponding revenue, usually expressed as a percentage. The type of profit must be stated for a meaningful comparison.\n\n## Examples\nRevenue of $100 and cost of goods sold of $60 produce gross profit of $40 and a gross margin of 40%.\n"
+  },
+  {
+    "id": "roi",
+    "content": "\n## Easy explanation\nFor every dollar spent, how many dollars of net profit came back into your pocket.\n\n## Details\nCalculated as (Net Profit / Cost of Investment) * 100%. Widely used in capital allocation decisions and performance marketing evaluations.\n\n## Technical definition\nA financial metric expressed as a percentage that assesses the return on capital relative to initial asset expenditure.\n\n## Examples\nSpending $5,000 on infrastructure yielding $15,000 in operational savings results in a 200% ROI.\n"
+  },
+  {
+    "id": "simple-interest",
+    "content": "\n## Easy explanation\nSimple interest pays you the exact same flat fee every period based on what you started with.\n\n## Details\nCalculated using the formula I = P * r * t. Because accrued interest is never reinvested, returns grow linearly rather than exponentially.\n\n## Technical definition\nNon-capitalizing interest calculated strictly upon original principal for the duration of the contractual tenure.\n\n## Examples\nA $10,000 bond paying 5% simple annual interest produces $500 each year regardless of holding period.\n"
+  },
+  {
+    "id": "token-auth",
+    "content": "\n## Easy explanation\nLike an all-day wristband at a festival: you show it at every stage entrance without re-checking your passport each time.\n\n## Details\nIssued by an authentication server after validating credentials, commonly formatted as a JSON Web Token (JWT) bearing cryptographic signatures and expiration timestamps.\n\n## Technical definition\nA compact, verifiable claim container passed in request headers (e.g., HTTP `Authorization: Bearer <token>`) providing stateless authorization.\n\n## Examples\nAn OAuth 2.0 bearer token attached to API requests to access private user profile resources.\n"
+  },
+  {
+    "id": "token-crypto",
+    "content": "\n## Easy explanation\nLike arcade tokens: you convert regular currency into custom tokens usable only within specific decentralized game systems or platforms.\n\n## Details\nUnlike native network coins (such as BTC or ETH), tokens rely on underlying smart contract standards such as ERC-20 or SPL on Solana.\n\n## Technical definition\nA fungible or non-fungible programmable cryptographic ledger entry administered by smart contracts on a distributed ledger.\n\n## Examples\nThe UNI governance token or the USDC stablecoin smart contract deployed on the Ethereum blockchain.\n"
+  },
+  {
+    "id": "token-llm",
+    "content": "\n## Easy explanation\nAI does not read complete words like people do; it chops words into Lego-like bricks called tokens to calculate next-word probabilities.\n\n## Details\nIn English, 1,000 tokens equal roughly 750 words. Model context limits and API pricing tiers are measured strictly in token counts.\n\n## Technical definition\nThe atomic sequence unit generated by a tokenizer (e.g. BPE) fed into the transformer embedding layer.\n\n## Examples\nThe word \"unbelievable\" might be split into tokens: [\"un\", \"believ\", \"able\"].\n"
+  }
+]

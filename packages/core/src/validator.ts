@@ -1,6 +1,8 @@
 import fs from 'node:fs';
 import path from 'node:path';
+import os from 'node:os';
 import Ajv from 'ajv';
+import { buildArtifacts } from './builder.js';
 import type {
   ConceptRecord,
   RepositoryData,
@@ -52,26 +54,47 @@ export function validateRepository(
   repoData: RepositoryData,
   options: ValidationOptions = {}
 ): ValidationReport {
-  const { concepts, validDomainPaths, localesConfig, rootDir } = repoData;
+  const { concepts, validDomainPaths, localesConfig, reviewersConfig, rootDir } = repoData;
   const issues: ValidationIssue[] = [];
 
   // Setup Ajv schemas
   const AjvClass: any = (Ajv as any).default || Ajv;
   const ajv = new AjvClass({ allErrors: true });
-  const conceptSchemaPath = path.join(rootDir, 'schema', 'concept.schema.json');
-  const localeSchemaPath = path.join(rootDir, 'schema', 'locale-entry.schema.json');
+  const compileSchema = (name: string): any => {
+    const schemaPath = path.join(rootDir, 'schema', `${name}.schema.json`);
+    if (!fs.existsSync(schemaPath)) {
+      issues.push({ ruleId: 1, severity: 'error', file: schemaPath, message: `Missing schema ${name}.schema.json` });
+      return null;
+    }
+    return ajv.compile(JSON.parse(fs.readFileSync(schemaPath, 'utf-8')));
+  };
+  const validateConceptSchema = compileSchema('concept');
+  const validateLocaleSchema = compileSchema('locale-entry');
+  const validateLocalesSchema = compileSchema('locales');
+  const validateDomainsSchema = compileSchema('domains');
+  const validateTaxonomySchema = compileSchema('taxonomy');
 
-  let validateConceptSchema: any = null;
-  let validateLocaleSchema: any = null;
-
-  if (fs.existsSync(conceptSchemaPath)) {
-    const raw = JSON.parse(fs.readFileSync(conceptSchemaPath, 'utf-8'));
-    validateConceptSchema = ajv.compile(raw);
+  const checkSchema = (validate: any, value: unknown, file: string) => {
+    if (validate && !validate(value)) {
+      for (const error of validate.errors || []) {
+        issues.push({ ruleId: 1, severity: 'error', file,
+          message: `${file} schema error at ${error.instancePath || 'root'}: ${error.message}` });
+      }
+    }
+  };
+  checkSchema(validateLocalesSchema, localesConfig, path.join(rootDir, 'config', 'locales.yaml'));
+  checkSchema(validateDomainsSchema, repoData.domainsConfig, path.join(rootDir, 'config', 'domains.yaml'));
+  for (const domain of repoData.domainsConfig?.domains || []) {
+    const taxonomyFile = path.join(rootDir, domain.file);
+    const tree = repoData.taxonomy.get(domain.id);
+    if (!fs.existsSync(taxonomyFile) || !tree) {
+      issues.push({ ruleId: 1, severity: 'error', file: taxonomyFile,
+        message: `Missing taxonomy for domain '${domain.id}'` });
+    } else {
+      checkSchema(validateTaxonomySchema, tree, taxonomyFile);
+    }
   }
-  if (fs.existsSync(localeSchemaPath)) {
-    const raw = JSON.parse(fs.readFileSync(localeSchemaPath, 'utf-8'));
-    validateLocaleSchema = ajv.compile(raw);
-  }
+  if (issues.length > 0) return { valid: false, errors: issues, warnings: [] };
 
   const primaryLocales = localesConfig.locales
     .filter((l) => l.status === 'primary')
@@ -111,13 +134,13 @@ export function validateRepository(
     }
 
     // Rule 2: ID format and directory match
-    const idRegex = /^[a-z0-9-]+$/;
+    const idRegex = /^[a-z0-9]+(?:-[a-z0-9]+)*$/;
     if (!id || !idRegex.test(id) || id.length > 48) {
       issues.push({
         ruleId: 2,
         severity: 'error',
         conceptId: id,
-        message: `Concept id '${id}' must be kebab-case [a-z0-9-], max 48 characters`,
+        message: `Concept id '${id}' must be kebab-case, max 48 characters`,
       });
     }
     if (id !== dirName) {
@@ -189,17 +212,28 @@ export function validateRepository(
       });
     }
 
-    // Rule 7: Verified status requirements
-    if (metadata.status === 'verified') {
+    // Rule 7: reviewed and verified statuses need accountable human reviewers.
+    if (metadata.status === 'reviewed' || metadata.status === 'verified') {
       const reviewers = metadata.provenance?.reviewed_by || [];
       const sources = metadata.sources || [];
-      if (reviewers.length === 0 || sources.length === 0) {
+      if (reviewers.length === 0 || !metadata.provenance?.reviewed_at) {
         issues.push({
           ruleId: 7,
           severity: 'error',
           conceptId: id,
-          message: `Verified concept must declare at least one reviewer in provenance.reviewed_by and at least one source in sources`,
+          message: `Reviewed or verified concept must declare provenance.reviewed_by and provenance.reviewed_at`,
         });
+      }
+      for (const domain of new Set((metadata.domains || []).map((domainPath) => domainPath.split('/')[0]))) {
+        const allowed = reviewersConfig.reviewers[domain] || [];
+        if (!reviewers.some((handle) => allowed.some((reviewer) => reviewer.handle === handle))) {
+          issues.push({ ruleId: 7, severity: 'error', conceptId: id,
+            message: `No reviewer for domain '${domain}' is listed in config/reviewers.yaml` });
+        }
+      }
+      if (metadata.status === 'verified' && (new Set(reviewers).size < 2 || sources.length === 0)) {
+        issues.push({ ruleId: 7, severity: 'error', conceptId: id,
+          message: `Verified concept requires two distinct reviewers and at least one source` });
       }
     }
 
@@ -312,6 +346,47 @@ export function validateRepository(
             });
           }
         }
+      }
+    }
+  }
+
+  // Rule 8: committed discovery files must match a fresh build from source data.
+  if (options.checkIndexDrift !== false && !issues.some((issue) => issue.severity === 'error')) {
+    const tempRoot = fs.mkdtempSync(path.join(os.tmpdir(), 'termbridge-validate-'));
+    try {
+      const generated = buildArtifacts({ ...repoData, rootDir: tempRoot });
+      const expectedPaths = new Set(
+        [...generated.indexesGenerated, path.join(tempRoot, 'llms.txt')]
+          .map((file) => path.relative(tempRoot, file).replaceAll('\\', '/'))
+      );
+
+      for (const relativePath of expectedPaths) {
+        const expected = fs.readFileSync(path.join(tempRoot, relativePath), 'utf-8').replace(/\r\n/g, '\n');
+        const actualPath = path.join(rootDir, relativePath);
+        if (!fs.existsSync(actualPath) || fs.readFileSync(actualPath, 'utf-8').replace(/\r\n/g, '\n') !== expected) {
+          issues.push({ ruleId: 8, severity: 'error', file: actualPath,
+            message: `Generated file '${relativePath}' is missing or out of date; run pnpm tb build` });
+        }
+      }
+
+      const actualIndexes = path.join(rootDir, 'indexes');
+      if (fs.existsSync(actualIndexes)) {
+        for (const localeDir of fs.readdirSync(actualIndexes, { withFileTypes: true })) {
+          if (!localeDir.isDirectory()) continue;
+          const localePath = path.join(actualIndexes, localeDir.name);
+          for (const indexFile of fs.readdirSync(localePath, { withFileTypes: true })) {
+            if (!indexFile.isFile()) continue;
+            const relativePath = `indexes/${localeDir.name}/${indexFile.name}`;
+            if (!expectedPaths.has(relativePath)) {
+              issues.push({ ruleId: 8, severity: 'error', file: path.join(rootDir, relativePath),
+                message: `Stale generated file '${relativePath}'; run pnpm tb build` });
+            }
+          }
+        }
+      }
+    } finally {
+      if (path.dirname(path.resolve(tempRoot)) === path.resolve(os.tmpdir()) && path.basename(tempRoot).startsWith('termbridge-validate-')) {
+        fs.rmSync(tempRoot, { recursive: true, force: true });
       }
     }
   }

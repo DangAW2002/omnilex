@@ -12,6 +12,8 @@ export function buildArtifacts(repoData: RepositoryData): BuildOutputs {
 
   const indexesGenerated: string[] = [];
   const distGenerated: string[] = [];
+  const conceptLink = (record: ConceptRecord, locale: string) =>
+    `../../concepts/${record.id}/${record.locales[locale] ? locale : localesConfig.pivot}.md`;
 
   const primaryLocales = localesConfig.locales.map((l) => l.code);
   const indexesDir = path.join(rootDir, 'indexes');
@@ -31,7 +33,7 @@ export function buildArtifacts(repoData: RepositoryData): BuildOutputs {
     fs.mkdirSync(localeConceptsDistDir, { recursive: true });
 
     // Track homonyms in this locale
-    const labelGroups = new Map<string, Array<{ record: ConceptRecord; label: string; qualifier?: string; summary: string }>>();
+    const labelGroups = new Map<string, { term: string; entries: Array<{ record: ConceptRecord; label: string; qualifier?: string; summary: string }> }>();
 
     // Group concepts by domain
     const domainMap = new Map<string, ConceptRecord[]>();
@@ -42,6 +44,7 @@ export function buildArtifacts(repoData: RepositoryData): BuildOutputs {
     const allConceptsInLocale: Array<{ record: ConceptRecord; label: string; summary: string }> = [];
     const searchEntries: any[] = [];
     const termsEntries: any[] = [];
+    const modConcepts: any[] = [];
 
     for (const record of concepts.values()) {
       const entry = record.locales[locale];
@@ -55,17 +58,15 @@ export function buildArtifacts(repoData: RepositoryData): BuildOutputs {
       const summary = fm.summary || '';
       const qualifier = fm.qualifier;
 
-      // Group homonyms
-      const normLabel = label.trim().toLowerCase();
-      if (!labelGroups.has(normLabel)) {
-        labelGroups.set(normLabel, []);
+      // Labels and aliases can both identify an ambiguous term.
+      for (const term of new Set([label, ...(fm.aliases || [])])) {
+        const key = term.trim().toLowerCase();
+        if (!labelGroups.has(key)) labelGroups.set(key, { term, entries: [] });
+        const group = labelGroups.get(key)!;
+        if (!group.entries.some((item) => item.record.id === record.id)) {
+          group.entries.push({ record, label, qualifier, summary });
+        }
       }
-      labelGroups.get(normLabel)!.push({
-        record,
-        label,
-        qualifier,
-        summary,
-      });
 
       // Domain assignment
       for (const d of record.metadata.domains) {
@@ -90,6 +91,10 @@ export function buildArtifacts(repoData: RepositoryData): BuildOutputs {
         level: record.metadata.level,
         status: record.metadata.status,
       });
+
+      if (locale === 'vi' || locale === 'en') {
+        modConcepts.push({ id: record.id, content: activeEntry.content });
+      }
 
       // Build terms.json entry
       const termConcept = {
@@ -129,6 +134,7 @@ export function buildArtifacts(repoData: RepositoryData): BuildOutputs {
             id: record.id,
             metadata: record.metadata,
             locale,
+            content_locale: entry ? locale : (record.locales[localesConfig.pivot] ? localesConfig.pivot : fallbackEntry?.locale),
             entry: activeEntry,
           },
           null,
@@ -154,7 +160,7 @@ export function buildArtifacts(repoData: RepositoryData): BuildOutputs {
           const q = e?.frontmatter.qualifier ? ` ${e.frontmatter.qualifier}` : '';
           const plains = (e?.frontmatter.plain_descriptions || []).join('; ');
           const s = e?.frontmatter.summary || '';
-          mdContent += `- [**${l}${q}**](${rec.id}): ${plains ? `*${plains}* — ` : ''}${s}\n`;
+          mdContent += `- [**${l}${q}**](${conceptLink(rec, locale)}): ${plains ? `*${plains}* — ` : ''}${s}\n`;
         }
       }
 
@@ -170,22 +176,22 @@ export function buildArtifacts(repoData: RepositoryData): BuildOutputs {
       const e = rec.locales[locale] || rec.locales[localesConfig.pivot];
       const q = e?.frontmatter.qualifier ? ` ${e.frontmatter.qualifier}` : '';
       const plains = (e?.frontmatter.plain_descriptions || []).join(', ');
-      allMdContent += `- [**${item.label}${q}**](${rec.id}) [${rec.metadata.domains.join(', ')}]: ${plains ? `*${plains}* — ` : ''}${item.summary}\n`;
+      allMdContent += `- [**${item.label}${q}**](${conceptLink(rec, locale)}) [${rec.metadata.domains.join(', ')}]: ${plains ? `*${plains}* — ` : ''}${item.summary}\n`;
     }
     const allIndexPath = path.join(localeIndexDir, '_all.md');
     fs.writeFileSync(allIndexPath, allMdContent, 'utf-8');
     indexesGenerated.push(allIndexPath);
 
     // Write indexes/<locale>/_homonyms.md
-    let homonymsMd = `# Homonyms Index (${locale})\n\nTerms sharing identical labels distinguished by qualifiers and context:\n\n`;
+    let homonymsMd = `# Homonyms Index (${locale})\n\nTerms sharing a label or alias, distinguished by context:\n\n`;
     let hasHomonym = false;
-    for (const [key, group] of labelGroups.entries()) {
-      if (group.length > 1) {
+    for (const group of labelGroups.values()) {
+      if (group.entries.length > 1) {
         hasHomonym = true;
-        homonymsMd += `## ${group[0].label}\n`;
-        for (const g of group) {
+        homonymsMd += `## ${group.term}\n`;
+        for (const g of group.entries) {
           const q = g.qualifier ? ` ${g.qualifier}` : '';
-          homonymsMd += `- [**${g.label}${q}**](${g.record.id}) [${g.record.metadata.domains.join(', ')}]: ${g.summary}\n`;
+          homonymsMd += `- [**${g.label}${q}**](${conceptLink(g.record, locale)}) [${g.record.metadata.domains.join(', ')}]: ${g.summary}\n`;
         }
         homonymsMd += `\n`;
       }
@@ -202,16 +208,51 @@ export function buildArtifacts(repoData: RepositoryData): BuildOutputs {
     fs.writeFileSync(searchDistPath, JSON.stringify(searchEntries, null, 2), 'utf-8');
     distGenerated.push(searchDistPath);
 
+    // Never auto-link a term that points to multiple concepts.
+    const groupedTerms = new Map<string, any>();
+    for (const term of termsEntries) {
+      const key = term.key.trim().toLowerCase();
+      const existing = groupedTerms.get(key);
+      if (existing) {
+        for (const concept of term.concepts) {
+          if (!existing.concepts.some((item: { id: string }) => item.id === concept.id)) existing.concepts.push(concept);
+        }
+        if (term.match === 'exact-case') existing.match = 'exact-case';
+      } else {
+        groupedTerms.set(key, { ...term, concepts: [...term.concepts] });
+      }
+    }
+    const uniqueTerms = Array.from(groupedTerms.values()).map((term) => ({
+      ...term,
+      autolink: term.autolink && term.concepts.length === 1 && !/^(margin|token)$/i.test(term.key),
+    }));
+
     // Write dist/<locale>/terms.json
     const termsDistPath = path.join(localeDistDir, 'terms.json');
-    fs.writeFileSync(termsDistPath, JSON.stringify(termsEntries, null, 2), 'utf-8');
+    fs.writeFileSync(termsDistPath, JSON.stringify(uniqueTerms, null, 2), 'utf-8');
     distGenerated.push(termsDistPath);
 
-    // If locale is primary or Vietnamese/English, copy terms.json into packages/claude-mod/data/
+    // Bundle lookup data so the mod also works outside this repository.
     const claudeModDataDir = path.join(rootDir, 'packages', 'claude-mod', 'data');
-    if (fs.existsSync(claudeModDataDir) && locale === 'vi') {
-      fs.writeFileSync(path.join(claudeModDataDir, 'terms.json'), JSON.stringify(termsEntries, null, 2), 'utf-8');
+    if (fs.existsSync(claudeModDataDir) && (locale === 'vi' || locale === 'en')) {
+      fs.writeFileSync(path.join(claudeModDataDir, `terms-${locale}.json`), JSON.stringify(uniqueTerms, null, 2), 'utf-8');
+      fs.writeFileSync(path.join(claudeModDataDir, `search-${locale}.json`), JSON.stringify(searchEntries, null, 2), 'utf-8');
+      fs.writeFileSync(path.join(claudeModDataDir, `concepts-${locale}.json`), JSON.stringify(modConcepts, null, 2), 'utf-8');
+      if (locale === 'vi') {
+        fs.writeFileSync(path.join(claudeModDataDir, 'terms.json'), JSON.stringify(uniqueTerms, null, 2), 'utf-8');
+      }
     }
+  }
+
+  const expectedIndexes = new Set(indexesGenerated.map((file) => path.resolve(file)));
+  for (const localeDir of fs.readdirSync(indexesDir, { withFileTypes: true })) {
+    if (!localeDir.isDirectory()) continue;
+    const localePath = path.join(indexesDir, localeDir.name);
+    for (const entry of fs.readdirSync(localePath, { withFileTypes: true })) {
+      const filePath = path.join(localePath, entry.name);
+      if (entry.isFile() && !expectedIndexes.has(path.resolve(filePath))) fs.unlinkSync(filePath);
+    }
+    if (fs.readdirSync(localePath).length === 0) fs.rmdirSync(localePath);
   }
 
   // 2. Generate dist/graph.json

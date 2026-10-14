@@ -1,8 +1,4 @@
 {
-  "ui.render": [
-    {
-      "target": "AssistantMessage",
-      "handler": "./register.js#renderAssistantMessage"
-    }
-  ]
+  "description": "Termbridge lookup mod",
+  "modules": ["./register.js"]
 }

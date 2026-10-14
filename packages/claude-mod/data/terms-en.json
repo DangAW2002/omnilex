@@ -1,0 +1,394 @@
+[
+  {
+    "key": "Compound Interest",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "compound-interest",
+        "label": "Compound Interest",
+        "summary": "Interest calculated on both the initial principal and the accumulated interest from previous periods.",
+        "domains": [
+          "finance/personal-finance/saving",
+          "finance/investing/portfolio-risk"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "compounding interest",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "compound-interest",
+        "label": "Compound Interest",
+        "summary": "Interest calculated on both the initial principal and the accumulated interest from previous periods.",
+        "domains": [
+          "finance/personal-finance/saving",
+          "finance/investing/portfolio-risk"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Cookie",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "cookie",
+        "label": "Cookie",
+        "summary": "A small piece of data stored on the user's browser by websites to retain state and track browsing activity.",
+        "domains": [
+          "it/web/frontend",
+          "media/digital-marketing/paid-ads"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "HTTP cookie",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "cookie",
+        "label": "Cookie",
+        "summary": "A small piece of data stored on the user's browser by websites to retain state and track browsing activity.",
+        "domains": [
+          "it/web/frontend",
+          "media/digital-marketing/paid-ads"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "browser cookie",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "cookie",
+        "label": "Cookie",
+        "summary": "A small piece of data stored on the user's browser by websites to retain state and track browsing activity.",
+        "domains": [
+          "it/web/frontend",
+          "media/digital-marketing/paid-ads"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Interest Rate",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "interest-rate",
+        "label": "Interest Rate",
+        "summary": "The proportion of an amount loaned which a lender charges as interest to the borrower, typically expressed as an annual percentage.",
+        "domains": [
+          "finance/economics/interest-rates-monetary-policy",
+          "finance/banking/deposits"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "annual percentage rate",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "interest-rate",
+        "label": "Interest Rate",
+        "summary": "The proportion of an amount loaned which a lender charges as interest to the borrower, typically expressed as an annual percentage.",
+        "domains": [
+          "finance/economics/interest-rates-monetary-policy",
+          "finance/banking/deposits"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Margin",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "margin",
+        "label": "Margin",
+        "summary": "Assets in a brokerage account support a loan used to buy securities.",
+        "domains": [
+          "finance/investing/stocks"
+        ]
+      },
+      {
+        "id": "profit-margin",
+        "label": "Profit margin",
+        "summary": "A percentage comparing a specified measure of profit with the corresponding revenue.",
+        "domains": [
+          "finance/corporate-finance/financial-statements"
+        ]
+      }
+    ],
+    "autolink": false
+  },
+  {
+    "key": "margin trading",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "margin",
+        "label": "Margin",
+        "summary": "Assets in a brokerage account support a loan used to buy securities.",
+        "domains": [
+          "finance/investing/stocks"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "trading on margin",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "margin",
+        "label": "Margin",
+        "summary": "Assets in a brokerage account support a loan used to buy securities.",
+        "domains": [
+          "finance/investing/stocks"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Principal",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "principal",
+        "label": "Principal",
+        "summary": "The original sum of money lent, invested, or borrowed before interest accrues.",
+        "domains": [
+          "finance/personal-finance/saving",
+          "finance/banking/lending"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "principal amount",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "principal",
+        "label": "Principal",
+        "summary": "The original sum of money lent, invested, or borrowed before interest accrues.",
+        "domains": [
+          "finance/personal-finance/saving",
+          "finance/banking/lending"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Profit margin",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "profit-margin",
+        "label": "Profit margin",
+        "summary": "A percentage comparing a specified measure of profit with the corresponding revenue.",
+        "domains": [
+          "finance/corporate-finance/financial-statements"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "profitability margin",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "profit-margin",
+        "label": "Profit margin",
+        "summary": "A percentage comparing a specified measure of profit with the corresponding revenue.",
+        "domains": [
+          "finance/corporate-finance/financial-statements"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Return on Investment",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "roi",
+        "label": "Return on Investment",
+        "summary": "A performance metric used to evaluate the efficiency or profitability of an investment relative to its cost.",
+        "domains": [
+          "finance/investing/valuation",
+          "media/digital-marketing/metrics-analytics"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "ROI",
+    "match": "exact-case",
+    "concepts": [
+      {
+        "id": "roi",
+        "label": "Return on Investment",
+        "summary": "A performance metric used to evaluate the efficiency or profitability of an investment relative to its cost.",
+        "domains": [
+          "finance/investing/valuation",
+          "media/digital-marketing/metrics-analytics"
+        ]
+      }
+    ],
+    "autolink": false
+  },
+  {
+    "key": "Simple Interest",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "simple-interest",
+        "label": "Simple Interest",
+        "summary": "Interest calculated exclusively on the original principal amount for the entirety of the loan or deposit period.",
+        "domains": [
+          "finance/personal-finance/saving",
+          "finance/banking/lending"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Token",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "token-auth",
+        "label": "Token",
+        "qualifier": "(Authentication)",
+        "summary": "A cryptographically signed string presented to servers to prove identity and authorization permissions.",
+        "domains": [
+          "it/security/authentication",
+          "it/web/api"
+        ]
+      },
+      {
+        "id": "token-crypto",
+        "label": "Token",
+        "qualifier": "(Cryptocurrency)",
+        "summary": "A digital unit of value issued on top of an existing smart contract blockchain platform.",
+        "domains": [
+          "finance/investing/digital-assets"
+        ]
+      },
+      {
+        "id": "token-llm",
+        "label": "Token",
+        "qualifier": "(AI)",
+        "summary": "Small chunk of text, typically subword units, processed by large language models.",
+        "domains": [
+          "it/ai-ml/llm-agents"
+        ]
+      }
+    ],
+    "autolink": false
+  },
+  {
+    "key": "access token",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "token-auth",
+        "label": "Token",
+        "qualifier": "(Authentication)",
+        "summary": "A cryptographically signed string presented to servers to prove identity and authorization permissions.",
+        "domains": [
+          "it/security/authentication",
+          "it/web/api"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "bearer token",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "token-auth",
+        "label": "Token",
+        "qualifier": "(Authentication)",
+        "summary": "A cryptographically signed string presented to servers to prove identity and authorization permissions.",
+        "domains": [
+          "it/security/authentication",
+          "it/web/api"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "crypto token",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "token-crypto",
+        "label": "Token",
+        "qualifier": "(Cryptocurrency)",
+        "summary": "A digital unit of value issued on top of an existing smart contract blockchain platform.",
+        "domains": [
+          "finance/investing/digital-assets"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "digital token",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "token-crypto",
+        "label": "Token",
+        "qualifier": "(Cryptocurrency)",
+        "summary": "A digital unit of value issued on top of an existing smart contract blockchain platform.",
+        "domains": [
+          "finance/investing/digital-assets"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "LLM token",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "token-llm",
+        "label": "Token",
+        "qualifier": "(AI)",
+        "summary": "Small chunk of text, typically subword units, processed by large language models.",
+        "domains": [
+          "it/ai-ml/llm-agents"
+        ]
+      }
+    ],
+    "autolink": true
+  }
+]

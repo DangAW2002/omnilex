@@ -96,51 +96,53 @@
     "autolink": true
   },
   {
-    "key": "Ký quỹ và biên lợi nhuận",
+    "key": "Ký quỹ",
     "match": "any-case",
     "concepts": [
       {
         "id": "margin",
-        "label": "Ký quỹ và biên lợi nhuận",
-        "qualifier": "(Tài chính)",
-        "summary": "Khoản tiền bảo đảm dùng để vay thêm vốn giao dịch đòn bẩy hoặc tỷ lệ chênh lệch giữa giá bán và giá thành sản phẩm.",
+        "label": "Ký quỹ",
+        "summary": "Tài sản trong tài khoản được dùng làm bảo đảm khi nhà đầu tư vay tiền từ công ty chứng khoán để giao dịch.",
         "domains": [
-          "finance/investing/digital-assets",
-          "finance/corporate-finance/financial-statements"
+          "finance/investing/stocks"
         ]
       }
     ],
     "autolink": true
   },
   {
-    "key": "Margin",
+    "key": "margin",
     "match": "any-case",
     "concepts": [
       {
         "id": "margin",
-        "label": "Ký quỹ và biên lợi nhuận",
-        "qualifier": "(Tài chính)",
-        "summary": "Khoản tiền bảo đảm dùng để vay thêm vốn giao dịch đòn bẩy hoặc tỷ lệ chênh lệch giữa giá bán và giá thành sản phẩm.",
+        "label": "Ký quỹ",
+        "summary": "Tài sản trong tài khoản được dùng làm bảo đảm khi nhà đầu tư vay tiền từ công ty chứng khoán để giao dịch.",
         "domains": [
-          "finance/investing/digital-assets",
+          "finance/investing/stocks"
+        ]
+      },
+      {
+        "id": "profit-margin",
+        "label": "Biên lợi nhuận",
+        "summary": "Tỷ lệ phần trăm cho biết doanh nghiệp giữ lại bao nhiêu lợi nhuận từ doanh thu theo cách tính được chọn.",
+        "domains": [
           "finance/corporate-finance/financial-statements"
         ]
       }
     ],
-    "autolink": true
+    "autolink": false
   },
   {
-    "key": "biên tỷ suất",
+    "key": "giao dịch ký quỹ",
     "match": "any-case",
     "concepts": [
       {
         "id": "margin",
-        "label": "Ký quỹ và biên lợi nhuận",
-        "qualifier": "(Tài chính)",
-        "summary": "Khoản tiền bảo đảm dùng để vay thêm vốn giao dịch đòn bẩy hoặc tỷ lệ chênh lệch giữa giá bán và giá thành sản phẩm.",
+        "label": "Ký quỹ",
+        "summary": "Tài sản trong tài khoản được dùng làm bảo đảm khi nhà đầu tư vay tiền từ công ty chứng khoán để giao dịch.",
         "domains": [
-          "finance/investing/digital-assets",
-          "finance/corporate-finance/financial-statements"
+          "finance/investing/stocks"
         ]
       }
     ],
@@ -189,6 +191,36 @@
         "domains": [
           "finance/personal-finance/saving",
           "finance/banking/lending"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Biên lợi nhuận",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "profit-margin",
+        "label": "Biên lợi nhuận",
+        "summary": "Tỷ lệ phần trăm cho biết doanh nghiệp giữ lại bao nhiêu lợi nhuận từ doanh thu theo cách tính được chọn.",
+        "domains": [
+          "finance/corporate-finance/financial-statements"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "tỷ suất lợi nhuận trên doanh thu",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "profit-margin",
+        "label": "Biên lợi nhuận",
+        "summary": "Tỷ lệ phần trăm cho biết doanh nghiệp giữ lại bao nhiêu lợi nhuận từ doanh thu theo cách tính được chọn.",
+        "domains": [
+          "finance/corporate-finance/financial-statements"
         ]
       }
     ],
@@ -287,9 +319,27 @@
           "it/security/authentication",
           "it/web/api"
         ]
+      },
+      {
+        "id": "token-crypto",
+        "label": "Token",
+        "qualifier": "(Tiền mã hóa)",
+        "summary": "Đơn vị tài sản kỹ thuật số được tạo ra và quản lý bằng hợp đồng thông minh trên một mạng blockchain sẵn có.",
+        "domains": [
+          "finance/investing/digital-assets"
+        ]
+      },
+      {
+        "id": "token-llm",
+        "label": "Token",
+        "qualifier": "(AI)",
+        "summary": "Mẩu văn bản nhỏ, thường là một phần của từ, mà mô hình AI đọc và viết.",
+        "domains": [
+          "it/ai-ml/llm-agents"
+        ]
       }
     ],
-    "autolink": true
+    "autolink": false
   },
   {
     "key": "mã xác thực",
@@ -326,22 +376,6 @@
     "autolink": true
   },
   {
-    "key": "Token",
-    "match": "any-case",
-    "concepts": [
-      {
-        "id": "token-crypto",
-        "label": "Token",
-        "qualifier": "(Tiền mã hóa)",
-        "summary": "Đơn vị tài sản kỹ thuật số được tạo ra và quản lý bằng hợp đồng thông minh trên một mạng blockchain sẵn có.",
-        "domains": [
-          "finance/investing/digital-assets"
-        ]
-      }
-    ],
-    "autolink": true
-  },
-  {
     "key": "đồng token",
     "match": "any-case",
     "concepts": [
@@ -368,22 +402,6 @@
         "summary": "Đơn vị tài sản kỹ thuật số được tạo ra và quản lý bằng hợp đồng thông minh trên một mạng blockchain sẵn có.",
         "domains": [
           "finance/investing/digital-assets"
-        ]
-      }
-    ],
-    "autolink": true
-  },
-  {
-    "key": "Token",
-    "match": "any-case",
-    "concepts": [
-      {
-        "id": "token-llm",
-        "label": "Token",
-        "qualifier": "(AI)",
-        "summary": "Mẩu văn bản nhỏ, thường là một phần của từ, mà mô hình AI đọc và viết.",
-        "domains": [
-          "it/ai-ml/llm-agents"
         ]
       }
     ],

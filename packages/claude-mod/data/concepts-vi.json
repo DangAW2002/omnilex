@@ -1,0 +1,46 @@
+[
+  {
+    "id": "compound-interest",
+    "content": "\n## Giải thích dễ hiểu\nGiống quả cầu tuyết lăn: càng lăn lâu, phần dính thêm càng lớn vì bề mặt cầu ngày càng phình to ra.\n\n## Chi tiết\nMỗi kỳ, lãi của kỳ trước được nhập vào gốc. Thời gian càng dài, khoảng cách tăng trưởng so với lãi đơn càng lớn do hiệu ứng hàm mũ.\n\n## Định nghĩa chuyên ngành\nPhương thức tính lãi trong đó lãi phát sinh mỗi kỳ được vốn hóa vào gốc để tính lãi cho kỳ tiếp theo.\n\n## Ví dụ\nGửi 100 triệu, lãi 6%/năm, trong 3 năm:\n- Lãi đơn: 18 triệu.\n- Lãi kép (ghép lãi hằng năm): khoảng 19,1 triệu.\n"
+  },
+  {
+    "id": "cookie",
+    "content": "\n## Giải thích dễ hiểu\nGiống như chiếc vé giữ xe hoặc mẩu giấy ghi nhớ mà bảo vệ kẹp vào giỏ xe của bạn: khi quay lại cổng, họ nhìn mẩu giấy là biết xe của bạn và bạn đã vào từ lúc nào.\n\n## Chi tiết\nCookie được gửi qua tiêu đề HTTP `Set-Cookie` và trình duyệt tự động gửi lại qua tiêu đề `Cookie` ở mỗi yêu cầu tiếp theo đến cùng tên miền (nếu hợp lệ về domain, path và hạn sử dụng).\n\n## Định nghĩa chuyên ngành\nChuỗi mẩu tin trạng thái nhỏ (HTTP State Management Mechanism) được trao đổi giữa máy chủ web và tác tử người dùng để duy trì tính liên tục cho giao thức HTTP phi trạng thái.\n\n## Ví dụ\nLưu trạng thái đăng nhập hoặc ghi nhớ danh sách giỏ hàng khi người dùng tắt trình duyệt rồi mở lại.\n"
+  },
+  {
+    "id": "interest-rate",
+    "content": "\n## Giải thích dễ hiểu\nLãi suất là cái giá của tiền theo thời gian: bạn cho người khác mượn tiền thì họ phải trả thêm một khoản phí tính theo phần trăm mỗi năm.\n\n## Chi tiết\nLãi suất thường được công bố theo năm (%/năm). Nó phản ánh chi phí cơ hội của vốn và bù đắp rủi ro lạm phát cũng như rủi ro vỡ nợ.\n\n## Định nghĩa chuyên ngành\nTỷ lệ giữa tiền lãi thu được (hoặc phải trả) so với số tiền gốc trong một đơn vị thời gian xác định (thường là một năm).\n\n## Ví dụ\nGửi tiết kiệm với lãi suất 6%/năm nghĩa là sau 1 năm bạn nhận thêm 6 đồng tiền lời cho mỗi 100 đồng tiền gửi.\n"
+  },
+  {
+    "id": "margin",
+    "content": "\n## Giải thích dễ hiểu\nBạn có thể dùng tài sản trong tài khoản làm bảo đảm để vay thêm tiền mua chứng khoán. Đó là giao dịch ký quỹ.\n\n## Chi tiết\nCông ty chứng khoán cho nhà đầu tư vay tiền, dùng tài sản trong tài khoản làm bảo đảm. Vay tiền làm tăng sức mua nhưng cũng có thể làm khoản lỗ lớn hơn; khoản vay thường phát sinh lãi.\n\n## Định nghĩa chuyên ngành\nTrong giao dịch chứng khoán, ký quỹ là phần vốn hoặc tài sản bảo đảm trong tài khoản giao dịch có vay tiền từ công ty môi giới.\n\n## Ví dụ\nNhà đầu tư có 50 triệu đồng trong tài khoản và vay thêm 50 triệu đồng để mua chứng khoán trị giá 100 triệu đồng. Số tiền vay vẫn phải hoàn trả, kể cả khi giá chứng khoán giảm.\n"
+  },
+  {
+    "id": "principal",
+    "content": "\n## Giải thích dễ hiểu\nTiền gốc là số tiền bạn thực sự bỏ ra từ đầu, giống như hạt giống bạn gieo xuống trước khi cây ra trái (tiền lãi).\n\n## Chi tiết\nTrong vay nợ hay gửi tiết kiệm, tiền gốc là căn cứ ban đầu để áp dụng lãi suất. Khi trả nợ, mỗi kỳ trả có thể gồm một phần tiền gốc và một phần tiền lãi.\n\n## Định nghĩa chuyên ngành\nKhoản tiền gốc ban đầu được cho vay hoặc đầu tư, là cơ sở để tính lãi suất và nghĩa vụ tài chính phát sinh.\n\n## Ví dụ\nBạn gửi tiết kiệm 50 triệu đồng vào ngân hàng, 50 triệu đó chính là tiền gốc.\n"
+  },
+  {
+    "id": "profit-margin",
+    "content": "\n## Giải thích dễ hiểu\nBiên lợi nhuận cho biết trong mỗi 100 đồng doanh thu, doanh nghiệp còn bao nhiêu đồng lợi nhuận theo loại lợi nhuận đang xét.\n\n## Chi tiết\nCó nhiều loại biên lợi nhuận. Biên lợi nhuận gộp dùng lợi nhuận gộp chia cho doanh thu; lợi nhuận gộp là doanh thu trừ giá vốn hàng bán. Các loại biên khác dùng mức lợi nhuận sau khi trừ thêm những khoản chi phí khác.\n\n## Định nghĩa chuyên ngành\nBiên lợi nhuận là tỷ số giữa một chỉ tiêu lợi nhuận và doanh thu tương ứng, thường biểu diễn dưới dạng phần trăm. Cần nêu rõ loại lợi nhuận khi so sánh.\n\n## Ví dụ\nDoanh thu 100 triệu đồng, giá vốn hàng bán 60 triệu đồng: lợi nhuận gộp là 40 triệu đồng và biên lợi nhuận gộp là 40%.\n"
+  },
+  {
+    "id": "roi",
+    "content": "\n## Giải thích dễ hiểu\nBỏ ra một số tiền thì mang về lại được bao nhiêu tiền lời so với vốn; số này càng cao nghĩa là vụ làm ăn càng lời.\n\n## Chi tiết\nCông thức: ROI = (Doanh thu ròng - Chi phí) / Chi phí * 100%. Được sử dụng phổ biến trong cả quyết định mua sắm tài sản doanh nghiệp lẫn đánh giá ngân sách chạy quảng cáo marketing.\n\n## Định nghĩa chuyên ngành\nChỉ số tài chính đo lường tỷ lệ giữa lợi nhuận ròng thu được so với tổng chi phí đầu tư ban đầu trong một chu kỳ kế toán hoặc chiến dịch.\n\n## Ví dụ\nChi 10 triệu chạy quảng cáo thu về 25 triệu doanh thu (lợi nhuận ròng 15 triệu), ROI = (15 / 10) * 100% = 150%.\n"
+  },
+  {
+    "id": "simple-interest",
+    "content": "\n## Giải thích dễ hiểu\nGiống như mỗi năm bạn nhận đúng một rổ quả từ cái cây trồng ban đầu; số quả thu hoạch đem cất đi chứ không gieo thêm cây mới.\n\n## Chi tiết\nCông thức tính: I = P * r * t (Tiền lãi = Gốc * Lãi suất * Thời gian). Do tiền gốc cố định, số tiền lãi nhận được ở mỗi kỳ là như nhau.\n\n## Định nghĩa chuyên ngành\nKhoản lãi được xác định độc quyền trên số vốn gốc sơ cấp trong toàn bộ chu kỳ tín dụng hoặc đầu tư.\n\n## Ví dụ\nGửi 100 triệu với lãi đơn 6%/năm trong 3 năm: mỗi năm nhận đúng 6 triệu, tổng lãi sau 3 năm là 18 triệu.\n"
+  },
+  {
+    "id": "token-auth",
+    "content": "\n## Giải thích dễ hiểu\nGiống như chiếc vé điện tử quét mã vạch ở cổng khu vui chơi: bạn chỉ cần trình vé này ra ở mỗi trò chơi mà không cần phải chìa chứng minh thư mỗi lần.\n\n## Chi tiết\nSau khi người dùng đăng nhập bằng mật khẩu, máy chủ cấp một token (như JSON Web Token - JWT). Client lưu trữ và gửi kèm token trong tiêu đề `Authorization` của các yêu cầu HTTP sau đó.\n\n## Định nghĩa chuyên ngành\nChuỗi dữ liệu an toàn đại diện cho ngữ cảnh phiên làm việc hoặc quyền hạn được ủy quyền trong giao thức xác thực không lưu trạng thái (stateless authentication).\n\n## Ví dụ\nChuỗi header HTTP: `Authorization: Bearer eyJhbGciOi...`\n"
+  },
+  {
+    "id": "token-crypto",
+    "content": "\n## Giải thích dễ hiểu\nGiống như xèng chơi game trong trung tâm giải trí: bạn dùng tiền thật để đổi lấy xèng, và dùng xèng đó để chơi các trò chơi bên trong khu vực đó.\n\n## Chi tiết\nKhác với Coin (có blockchain riêng như Bitcoin, Ethereum), Token được phát hành dựa trên smart contract của một blockchain sẵn có (ví dụ chuẩn ERC-20 trên Ethereum).\n\n## Định nghĩa chuyên ngành\nĐơn vị giá trị kỹ thuật số có thể lập trình, được phát hành và chuyển giao thông qua giao thức hợp đồng thông minh trên nền tảng sổ cái phân tán.\n\n## Ví dụ\nUNI (token quản trị của Uniswap) hoặc USDT phát hành trên mạng lưới Ethereum.\n"
+  },
+  {
+    "id": "token-llm",
+    "content": "\n## Giải thích dễ hiểu\nAI không đọc nguyên cả từ như con người, mà chia chữ thành các mảnh ghép lego nhỏ gọi là token để ghép vần và tính toán xác suất.\n\n## Chi tiết\nMỗi token tương đương khoảng 4 ký tự hoặc 0.75 từ tiếng Anh. Với tiếng Việt có dấu, số lượng token thường nhiều hơn do thuật toán tách từ phụ thuộc vào bộ mã hóa (BPE / WordPiece).\n\n## Định nghĩa chuyên ngành\nĐơn vị cơ bản của chuỗi văn bản đầu vào và đầu ra sau khi qua khâu tokenization của mô hình ngôn ngữ lớn (LLM).\n\n## Ví dụ\nCâu \"Xin chào thế giới\" có thể được chia thành 4 đến 5 token tùy theo tokenizer của GPT hoặc Claude.\n"
+  }
+]

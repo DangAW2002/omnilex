@@ -25,5 +25,30 @@ describe('Artifact Builder Engine', () => {
 
     const llmsFile = path.join(rootDir, 'llms.txt');
     expect(fs.existsSync(llmsFile)).toBe(true);
+
+    for (const indexPath of outputs.indexesGenerated) {
+      const markdown = fs.readFileSync(indexPath, 'utf-8');
+      for (const match of markdown.matchAll(/\]\(([^)]+\.md)\)/g)) {
+        expect(fs.existsSync(path.resolve(path.dirname(indexPath), match[1]))).toBe(true);
+      }
+    }
+
+    const terms = JSON.parse(fs.readFileSync(path.join(rootDir, 'dist', 'vi', 'terms.json'), 'utf-8'));
+    const ambiguousMargin = terms.find((term: { key: string }) => term.key.toLowerCase() === 'margin');
+    expect(ambiguousMargin.concepts.map((concept: { id: string }) => concept.id).sort()).toEqual(['margin', 'profit-margin']);
+    expect(ambiguousMargin.autolink).toBe(false);
+
+    const modData = path.join(rootDir, 'packages', 'claude-mod', 'data');
+    const englishTerms = JSON.parse(fs.readFileSync(path.join(modData, 'terms-en.json'), 'utf-8'));
+    const vietnameseConcepts = JSON.parse(fs.readFileSync(path.join(modData, 'concepts-vi.json'), 'utf-8'));
+    const englishSearch = JSON.parse(fs.readFileSync(path.join(modData, 'search-en.json'), 'utf-8'));
+    const englishConcepts = JSON.parse(fs.readFileSync(path.join(modData, 'concepts-en.json'), 'utf-8'));
+    expect(englishTerms.some((term: { key: string }) => term.key === 'Compound Interest')).toBe(true);
+    expect(vietnameseConcepts.find((concept: { id: string }) => concept.id === 'compound-interest').content)
+      .toContain('Giải thích dễ hiểu');
+    expect(englishSearch.find((concept: { id: string }) => concept.id === 'compound-interest').label)
+      .toBe('Compound Interest');
+    expect(englishConcepts.find((concept: { id: string }) => concept.id === 'compound-interest').content)
+      .toContain('Easy explanation');
   });
 });

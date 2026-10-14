@@ -58,7 +58,7 @@ export function loadTaxonomy(rootDir: string): {
     return { trees, validDomainPaths };
   }
 
-  const files = fs.readdirSync(taxonomyDir).filter((f) => f.endsWith('.yaml') || f.endsWith('.yml'));
+  const files = fs.readdirSync(taxonomyDir).filter((f) => f.endsWith('.yaml') || f.endsWith('.yml')).sort();
   for (const file of files) {
     const filePath = path.join(taxonomyDir, file);
     const content = fs.readFileSync(filePath, 'utf-8');
@@ -83,20 +83,23 @@ export function loadConcepts(rootDir: string): Map<string, ConceptRecord> {
     return concepts;
   }
 
-  const entries = fs.readdirSync(conceptsDir, { withFileTypes: true });
+  const entries = fs.readdirSync(conceptsDir, { withFileTypes: true }).sort((a, b) => a.name < b.name ? -1 : a.name > b.name ? 1 : 0);
   for (const entry of entries) {
     if (!entry.isDirectory()) continue;
     const dirPath = path.join(conceptsDir, entry.name);
     const conceptYamlPath = path.join(dirPath, 'concept.yaml');
 
-    if (!fs.existsSync(conceptYamlPath)) continue;
+    if (!fs.existsSync(conceptYamlPath)) {
+      concepts.set(entry.name, { id: entry.name, dirPath, metadata: { id: entry.name } as any, locales: {} });
+      continue;
+    }
 
     try {
       const rawYaml = fs.readFileSync(conceptYamlPath, 'utf-8');
       const metadata = yaml.load(rawYaml) as ConceptMetadata;
 
       const locales: Record<string, LocaleEntry> = {};
-      const dirFiles = fs.readdirSync(dirPath);
+      const dirFiles = fs.readdirSync(dirPath).sort();
       for (const file of dirFiles) {
         if (file.endsWith('.md')) {
           const locale = path.basename(file, '.md');

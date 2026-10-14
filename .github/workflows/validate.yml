@@ -2,9 +2,9 @@ name: Validate Data and Packages
 
 on:
   push:
-    branches: [main]
+    branches: [main, master]
   pull_request:
-    branches: [main]
+    branches: [main, master]
 
 jobs:
   validate:
@@ -21,7 +21,7 @@ jobs:
       - name: Setup pnpm
         uses: pnpm/action-setup@v3
         with:
-          version: 9
+          version: 11.22.0
 
       - name: Install dependencies
         run: pnpm install --frozen-lockfile
@@ -29,13 +29,18 @@ jobs:
       - name: Typecheck
         run: pnpm typecheck
 
+      - name: Build core, CLI, and artifacts
+        run: pnpm build
+
       - name: Run Unit Tests
         run: pnpm test
 
       - name: Run Termbridge Validation (Strict)
         run: pnpm tb validate --strict
 
+      - name: Build site
+        run: pnpm --filter @termbridge/site build
+
       - name: Check for uncommitted build drift
         run: |
-          pnpm tb build
           git diff --exit-code indexes/ llms.txt

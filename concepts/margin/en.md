@@ -1,26 +1,26 @@
 ---
 label: Margin
-qualifier: (Finance)
-aliases: [margin trading, profit margin]
+aliases: [margin trading, trading on margin]
 loanwords: []
 plain_descriptions:
-  - borrowing money from a broker to purchase more stocks
-  - difference between selling price and production cost
-summary: Collateral deposited with a broker to cover credit risk in leveraged trading, or the ratio between profit and revenue.
-confusable_notes: {}
+  - using assets in a brokerage account as collateral to borrow money for securities
+  - the equity required in an account when buying securities with borrowed money
+summary: Assets in a brokerage account support a loan used to buy securities.
+confusable_notes:
+  profit-margin: Profit margin measures profit relative to revenue; trading margin concerns borrowing and collateral in a brokerage account.
 follow_up_questions:
-  - Under what market conditions does a broker issue a margin call?
+  - How can losses grow when an investor trades on margin?
 translation: native
 ---
 
 ## Easy explanation
-Two primary meanings in finance: collateral cash deposited to buy more assets on borrowed money, or the profit slice left over after paying costs.
+An investor can use assets in a brokerage account as collateral to borrow more money to buy securities. This is trading on margin.
 
 ## Details
-In trading, margin is the equity an investor deposits with a broker to borrow funds for investment positions. In corporate accounting, margin measures profitability ratios (e.g. gross margin, operating margin).
+The broker lends money against the account. Borrowing increases purchasing power and can also increase losses. Interest is generally charged on the loan.
 
 ## Technical definition
-The collateral required by a broker to cover counterparty credit risk for leveraged positions; or the proportional spread between financial sales revenue and costs.
+In securities trading, margin is the equity or collateral held in a brokerage account that supports a broker loan.
 
 ## Examples
-Depositing $5,000 into a margin trading account to establish a $10,000 equity position.
+An investor has $5,000 in an account and borrows another $5,000 to purchase $10,000 of securities. The loan remains payable even if the securities fall in value.

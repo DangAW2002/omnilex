@@ -1,0 +1,213 @@
+[
+  {
+    "id": "compound-interest",
+    "label": "Compound Interest",
+    "aliases": [
+      "compounding interest"
+    ],
+    "loanwords": [],
+    "plain_descriptions": [
+      "interest on interest",
+      "money snowballing because earnings get added back to the pile"
+    ],
+    "summary": "Interest calculated on both the initial principal and the accumulated interest from previous periods.",
+    "domains": [
+      "finance/personal-finance/saving",
+      "finance/investing/portfolio-risk"
+    ],
+    "level": 1,
+    "status": "reviewed"
+  },
+  {
+    "id": "cookie",
+    "label": "Cookie",
+    "aliases": [
+      "HTTP cookie",
+      "browser cookie"
+    ],
+    "loanwords": [],
+    "plain_descriptions": [
+      "small browser file websites save to remember your login",
+      "web tracker banner you click accept on"
+    ],
+    "summary": "A small piece of data stored on the user's browser by websites to retain state and track browsing activity.",
+    "domains": [
+      "it/web/frontend",
+      "media/digital-marketing/paid-ads"
+    ],
+    "level": 1,
+    "status": "reviewed"
+  },
+  {
+    "id": "interest-rate",
+    "label": "Interest Rate",
+    "aliases": [
+      "annual percentage rate"
+    ],
+    "loanwords": [],
+    "plain_descriptions": [
+      "percentage fee charged for borrowing money",
+      "percentage reward earned on savings per year"
+    ],
+    "summary": "The proportion of an amount loaned which a lender charges as interest to the borrower, typically expressed as an annual percentage.",
+    "domains": [
+      "finance/economics/interest-rates-monetary-policy",
+      "finance/banking/deposits"
+    ],
+    "level": 1,
+    "status": "reviewed"
+  },
+  {
+    "id": "margin",
+    "label": "Margin",
+    "aliases": [
+      "margin trading",
+      "trading on margin"
+    ],
+    "loanwords": [],
+    "plain_descriptions": [
+      "using assets in a brokerage account as collateral to borrow money for securities",
+      "the equity required in an account when buying securities with borrowed money"
+    ],
+    "summary": "Assets in a brokerage account support a loan used to buy securities.",
+    "domains": [
+      "finance/investing/stocks"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
+    "id": "principal",
+    "label": "Principal",
+    "aliases": [
+      "principal amount"
+    ],
+    "loanwords": [],
+    "plain_descriptions": [
+      "original sum of money borrowed or invested",
+      "money before any interest gets calculated"
+    ],
+    "summary": "The original sum of money lent, invested, or borrowed before interest accrues.",
+    "domains": [
+      "finance/personal-finance/saving",
+      "finance/banking/lending"
+    ],
+    "level": 1,
+    "status": "reviewed"
+  },
+  {
+    "id": "profit-margin",
+    "label": "Profit margin",
+    "aliases": [
+      "margin",
+      "profitability margin"
+    ],
+    "loanwords": [],
+    "plain_descriptions": [
+      "how much profit a company keeps from each dollar of revenue",
+      "the percentage of sales that remains as profit"
+    ],
+    "summary": "A percentage comparing a specified measure of profit with the corresponding revenue.",
+    "domains": [
+      "finance/corporate-finance/financial-statements"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
+    "id": "roi",
+    "label": "Return on Investment",
+    "aliases": [
+      "ROI"
+    ],
+    "loanwords": [],
+    "plain_descriptions": [
+      "how much money you make back compared to what you spent",
+      "performance metric measuring profitability of an expense"
+    ],
+    "summary": "A performance metric used to evaluate the efficiency or profitability of an investment relative to its cost.",
+    "domains": [
+      "finance/investing/valuation",
+      "media/digital-marketing/metrics-analytics"
+    ],
+    "level": 1,
+    "status": "reviewed"
+  },
+  {
+    "id": "simple-interest",
+    "label": "Simple Interest",
+    "aliases": [],
+    "loanwords": [],
+    "plain_descriptions": [
+      "interest calculated solely on the initial deposit",
+      "fixed interest payment that never compounds"
+    ],
+    "summary": "Interest calculated exclusively on the original principal amount for the entirety of the loan or deposit period.",
+    "domains": [
+      "finance/personal-finance/saving",
+      "finance/banking/lending"
+    ],
+    "level": 1,
+    "status": "reviewed"
+  },
+  {
+    "id": "token-auth",
+    "label": "Token",
+    "qualifier": "(Authentication)",
+    "aliases": [
+      "access token",
+      "bearer token"
+    ],
+    "loanwords": [],
+    "plain_descriptions": [
+      "digital access pass sent with web requests",
+      "encoded string proving you are logged in"
+    ],
+    "summary": "A cryptographically signed string presented to servers to prove identity and authorization permissions.",
+    "domains": [
+      "it/security/authentication",
+      "it/web/api"
+    ],
+    "level": 2,
+    "status": "reviewed"
+  },
+  {
+    "id": "token-crypto",
+    "label": "Token",
+    "qualifier": "(Cryptocurrency)",
+    "aliases": [
+      "crypto token",
+      "digital token"
+    ],
+    "loanwords": [],
+    "plain_descriptions": [
+      "digital asset issued on an existing blockchain",
+      "utility or governance coin within a decentralized app"
+    ],
+    "summary": "A digital unit of value issued on top of an existing smart contract blockchain platform.",
+    "domains": [
+      "finance/investing/digital-assets"
+    ],
+    "level": 2,
+    "status": "reviewed"
+  },
+  {
+    "id": "token-llm",
+    "label": "Token",
+    "qualifier": "(AI)",
+    "aliases": [
+      "LLM token"
+    ],
+    "loanwords": [],
+    "plain_descriptions": [
+      "unit AI uses to count text chunks",
+      "why AI charges per prompt length"
+    ],
+    "summary": "Small chunk of text, typically subword units, processed by large language models.",
+    "domains": [
+      "it/ai-ml/llm-agents"
+    ],
+    "level": 1,
+    "status": "reviewed"
+  }
+]

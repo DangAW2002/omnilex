@@ -1,16 +1,20 @@
 ---
+import fs from 'node:fs';
+import path from 'node:path';
 import viI18n from '../../i18n/vi.json';
 import enI18n from '../../i18n/en.json';
 
 export function getStaticPaths() {
-  return [
-    { params: { locale: 'vi' } },
-    { params: { locale: 'en' } },
-  ];
+  return [{ params: { locale: 'vi' } }, { params: { locale: 'en' } }];
 }
 
 const { locale } = Astro.params;
 const strings = locale === 'vi' ? viI18n : enI18n;
+const basePath = import.meta.env.BASE_URL;
+const rootDir = path.resolve(process.cwd(), '../../');
+const searchFile = path.join(rootDir, 'dist', locale!, 'search.json');
+const entries = JSON.parse(fs.readFileSync(searchFile, 'utf-8'));
+const safeJson = JSON.stringify(entries).replace(/</g, '\\u003c');
 ---
 
 <!DOCTYPE html>
@@ -20,148 +24,108 @@ const strings = locale === 'vi' ? viI18n : enI18n;
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>{strings.site_title}</title>
     <style>
-      :root {
-        --bg: #0f172a;
-        --card-bg: #1e293b;
-        --text: #f8fafc;
-        --text-muted: #94a3b8;
-        --primary: #38bdf8;
-        --accent: #818cf8;
-        --border: #334155;
-      }
-      body {
-        margin: 0;
-        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-        background-color: var(--bg);
-        color: var(--text);
-        padding: 2rem 1rem;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-      }
-      .container {
-        max-width: 800px;
-        width: 100%;
-      }
-      header {
-        text-align: center;
-        margin-bottom: 2.5rem;
-      }
-      h1 {
-        font-size: 2.5rem;
-        margin-bottom: 0.5rem;
-        background: linear-gradient(135deg, var(--primary), var(--accent));
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-      }
-      .search-box {
-        display: flex;
-        gap: 0.5rem;
-        margin-bottom: 2rem;
-      }
-      input {
-        flex: 1;
-        padding: 0.85rem 1.25rem;
-        border-radius: 9999px;
-        border: 1px solid var(--border);
-        background: var(--card-bg);
-        color: var(--text);
-        font-size: 1rem;
-        outline: none;
-      }
-      input:focus {
-        border-color: var(--primary);
-      }
-      .quick-links {
-        display: grid;
-        grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
-        gap: 1rem;
-      }
-      .card {
-        background: var(--card-bg);
-        padding: 1.25rem;
-        border-radius: 0.75rem;
-        border: 1px solid var(--border);
-        text-decoration: none;
-        color: inherit;
-        transition: transform 0.15s ease, border-color 0.15s ease;
-      }
-      .card:hover {
-        transform: translateY(-2px);
-        border-color: var(--primary);
-      }
-      .card h3 {
-        margin: 0 0 0.5rem 0;
-        color: var(--primary);
-      }
-      .card p {
-        margin: 0;
-        font-size: 0.875rem;
-        color: var(--text-muted);
-      }
-      .badge {
-        display: inline-block;
-        padding: 0.2rem 0.5rem;
-        font-size: 0.75rem;
-        border-radius: 0.25rem;
-        background: #334155;
-        color: #cbd5e1;
-        margin-top: 0.5rem;
-      }
-      .locales-switch {
-        margin-bottom: 1.5rem;
-        text-align: right;
-      }
-      .locales-switch a {
-        color: var(--text-muted);
-        text-decoration: none;
-        margin-left: 0.75rem;
-      }
-      .locales-switch a.active {
-        color: var(--primary);
-        font-weight: bold;
-      }
+      :root { font-family: system-ui, sans-serif; color: #e8edf5; background: #0d1524; }
+      * { box-sizing: border-box; }
+      body { margin: 0; }
+      main { max-width: 900px; margin: auto; padding: 2rem 1.25rem 5rem; }
+      nav { display: flex; justify-content: flex-end; gap: 1rem; }
+      a { color: #77d3f5; }
+      nav a[aria-current="page"] { color: white; font-weight: 700; }
+      header { padding: 3rem 0 2rem; }
+      h1 { font-size: clamp(2.5rem, 7vw, 4rem); letter-spacing: -.04em; margin: 0; }
+      header p { max-width: 640px; color: #b7c7d9; font-size: 1.15rem; line-height: 1.6; }
+      .search { display: grid; grid-template-columns: 1fr auto; gap: .75rem; }
+      input, select { background: #17263a; color: white; border: 1px solid #456077; border-radius: .65rem; padding: .85rem 1rem; font: inherit; }
+      input { width: 100%; }
+      input:focus, select:focus { outline: 2px solid #77d3f5; outline-offset: 2px; }
+      .hint { color: #aabdd0; font-size: .9rem; margin: 1rem 0 2rem; }
+      .results { display: grid; gap: .85rem; }
+      .result { display: block; color: inherit; text-decoration: none; background: #17263a; border: 1px solid #334b63; border-radius: .8rem; padding: 1.15rem 1.3rem; }
+      .result:hover, .result:focus { border-color: #77d3f5; }
+      .result h3 { color: #83d8f6; margin: 0 0 .4rem; }
+      .result p { color: #d1dce9; line-height: 1.5; margin: .35rem 0; }
+      .meta { color: #aabdd0; font-size: .85rem; }
+      .draft { color: #ffd18b; }
+      @media (max-width: 600px) { .search { grid-template-columns: 1fr; } header { padding-top: 2rem; } }
     </style>
   </head>
   <body>
-    <div class="container">
-      <div class="locales-switch">
-        <a href="/vi/" class={locale === 'vi' ? 'active' : ''}>Tiếng Việt</a>
-        <a href="/en/" class={locale === 'en' ? 'active' : ''}>English</a>
-      </div>
-
+    <main id="app" data-locale={locale} data-base={basePath}>
+      <nav aria-label={locale === 'vi' ? 'Ngôn ngữ' : 'Languages'}>
+        <a href={`${basePath}vi/`} aria-current={locale === 'vi' ? 'page' : undefined}>Tiếng Việt</a>
+        <a href={`${basePath}en/`} aria-current={locale === 'en' ? 'page' : undefined}>English</a>
+      </nav>
       <header>
         <h1>Termbridge</h1>
-        <p style="color: var(--text-muted);">{strings.site_title}</p>
+        <p>{locale === 'vi' ? 'Mô tả điều bạn muốn nói để tìm đúng thuật ngữ, hoặc chọn một khái niệm để đọc giải thích.' : 'Describe an idea in plain words to find the right term, or browse a concept to learn more.'}</p>
       </header>
-
-      <div class="search-box">
-        <input type="text" placeholder={strings.search_placeholder} id="search-input" />
+      <div class="search">
+        <input id="search-input" type="search" autocomplete="off" placeholder={strings.search_placeholder} aria-label={strings.search_button} />
+        <select id="domain-select" aria-label={strings.select_domain}>
+          <option value="">{strings.select_domain}</option>
+          <option value="finance">{locale === 'vi' ? 'Tài chính' : 'Finance'}</option>
+          <option value="media">Media</option>
+          <option value="it">{locale === 'vi' ? 'Công nghệ thông tin' : 'IT'}</option>
+        </select>
       </div>
+      <p class="hint" id="result-count" aria-live="polite"></p>
+      <section class="results" id="results" aria-label={locale === 'vi' ? 'Kết quả tra cứu' : 'Search results'}></section>
+      <script id="search-data" type="application/json" set:html={safeJson}></script>
+    </main>
+    <script>
+      import MiniSearch from 'minisearch';
 
-      <h2>{locale === 'vi' ? 'Thuật ngữ tiêu biểu' : 'Featured Concepts'}</h2>
-      <div class="quick-links">
-        <a href={`/${locale}/c/compound-interest`} class="card">
-          <h3>{locale === 'vi' ? 'Lãi kép' : 'Compound Interest'}</h3>
-          <p>{locale === 'vi' ? 'Tiền lãi cộng dồn vào gốc sinh lãi tiếp.' : 'Interest calculated on accumulated interest.'}</p>
-          <span class="badge">finance</span>
-        </a>
-        <a href={`/${locale}/c/token-llm`} class="card">
-          <h3>Token {locale === 'vi' ? '(AI)' : '(AI)'}</h3>
-          <p>{locale === 'vi' ? 'Mẩu từ ngữ mô hình AI dùng để đọc và tính chi phí.' : 'Text units processed by language models.'}</p>
-          <span class="badge">it/ai-ml</span>
-        </a>
-        <a href={`/${locale}/c/roi`} class="card">
-          <h3>{locale === 'vi' ? 'Tỷ suất hoàn vốn (ROI)' : 'Return on Investment'}</h3>
-          <p>{locale === 'vi' ? 'Hiệu quả tài chính so với chi phí ban đầu.' : 'Profitability ratio relative to cost.'}</p>
-          <span class="badge">finance & marketing</span>
-        </a>
-        <a href={`/${locale}/c/cookie`} class="card">
-          <h3>Cookie</h3>
-          <p>{locale === 'vi' ? 'Mẩu tin lưu trạng thái người dùng trên web.' : 'Small web browser state packet.'}</p>
-          <span class="badge">web & marketing</span>
-        </a>
-      </div>
-    </div>
+      const app = document.querySelector<HTMLElement>('#app')!;
+      const input = document.querySelector<HTMLInputElement>('#search-input')!;
+      const domainSelect = document.querySelector<HTMLSelectElement>('#domain-select')!;
+      const results = document.querySelector<HTMLElement>('#results')!;
+      const count = document.querySelector<HTMLElement>('#result-count')!;
+      const locale = app.dataset.locale || 'vi';
+      const base = app.dataset.base || '/';
+      const data = JSON.parse(document.querySelector('#search-data')!.textContent || '[]');
+      const normalize = (value: string) => value.normalize('NFD').replace(/\p{M}/gu, '').replace(/đ/gi, 'd').toLowerCase();
+      const search = new MiniSearch({
+        fields: ['id', 'label', 'aliases', 'loanwords', 'plain_descriptions', 'summary'],
+        storeFields: ['id', 'label', 'qualifier', 'summary', 'domains', 'status'],
+        processTerm: normalize,
+        searchOptions: { boost: { id: 3, label: 3, plain_descriptions: 3, aliases: 2 }, combineWith: 'AND', fuzzy: 0.15, prefix: true },
+      });
+      search.addAll(data.map((entry: any) => ({ ...entry, aliases: entry.aliases.join(' '), loanwords: entry.loanwords.join(' '), plain_descriptions: entry.plain_descriptions.join(' ') })));
+
+      function draw() {
+        const query = input.value.trim();
+        const domain = domainSelect.value;
+        const matches = query ? search.search(query) : data;
+        const bestScore = query ? (matches[0]?.score || 0) : 0;
+        const filtered = matches.filter((entry: any) =>
+          (!query || entry.score >= bestScore * 0.35) &&
+          (!domain || entry.domains.some((path: string) => path === domain || path.startsWith(`${domain}/`)))
+        ).slice(0, query ? 10 : 12);
+
+        count.textContent = query
+          ? (locale === 'vi' ? `${filtered.length} kết quả phù hợp` : `${filtered.length} matching results`)
+          : (locale === 'vi' ? `${filtered.length} khái niệm` : `${filtered.length} concepts`);
+        results.replaceChildren();
+        for (const entry of filtered) {
+          const link = document.createElement('a');
+          link.className = 'result';
+          link.href = `${base}${locale}/c/${encodeURIComponent(entry.id)}/`;
+          const title = document.createElement('h3');
+          title.textContent = `${entry.label}${entry.qualifier ? ` ${entry.qualifier}` : ''}`;
+          const summary = document.createElement('p');
+          summary.textContent = entry.summary;
+          const meta = document.createElement('div');
+          meta.className = 'meta';
+          meta.textContent = `${entry.domains.join(' · ')} · ${entry.status}`;
+          if (entry.status === 'draft') meta.classList.add('draft');
+          link.append(title, summary, meta);
+          results.append(link);
+        }
+      }
+
+      input.addEventListener('input', draw);
+      domainSelect.addEventListener('change', draw);
+      draw();
+    </script>
   </body>
 </html>

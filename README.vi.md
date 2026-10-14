@@ -23,7 +23,7 @@ Termbridge là kho thuật ngữ đa ngôn ngữ, đa lĩnh vực, mã nguồn m
 
 ### Cài đặt
 
-Yêu cầu Node.js >= 20 và pnpm >= 9:
+Yêu cầu Node.js >= 20 và pnpm 11.22.0:
 
 ```bash
 pnpm install
@@ -47,10 +47,18 @@ pnpm tb find "tiền lãi lại sinh ra lãi" --locale vi
 # Tra xuôi xem giải thích khái niệm
 pnpm tb show compound-interest --locale vi
 
+# Từ nhiều nghĩa: xem các lựa chọn, rồi chọn ID cụ thể
+pnpm tb show Token --locale vi
+pnpm tb show id:token-llm --locale vi
+
 # Báo cáo độ phủ và trạng thái
 pnpm tb report locales
 pnpm tb report review
 ```
+
+### Dùng trong Claude Code
+
+Mod Termbridge thêm nhãn tra cứu và thẻ tóm tắt khi hover dưới câu trả lời hoặc câu hỏi, cùng pane `/termbridge` để tra ngược bằng lời thường. Xem [hướng dẫn cài đặt và giới hạn hiện tại](packages/claude-mod/README.md).
 
 ## Giấy phép
 

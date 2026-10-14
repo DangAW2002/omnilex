@@ -1,6 +1,6 @@
 {
   "name": "termbridge-mod",
   "version": "0.1.0",
-  "description": "Termbridge Claude Code mod: interactive pane and automatic terminology links",
-  "hooks": "./hooks/hooks.json"
+  "description": "Termbridge terminology lookup pane and hover summaries for Claude Code",
+  "author": { "name": "Termbridge contributors" }
 }

@@ -12,6 +12,7 @@
   "dependencies": {
     "@astrojs/check": "^0.9.4",
     "astro": "^5.0.0",
+    "micromark": "4.0.2",
     "minisearch": "^7.1.1"
   },
   "devDependencies": {

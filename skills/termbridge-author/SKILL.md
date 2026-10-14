@@ -16,7 +16,7 @@ Follow this standardized procedure when creating new terminology entries in Term
 ### 2. Scaffold New Concept
 Run the CLI generator:
 ```bash
-pnpm tb new <kebab-case-id> --domain <domain/subdomain/leaf> --locales vi,en
+pnpm tb new <kebab-case-id> --domain <domain/subdomain/leaf> --locales vi,en --drafted-by ai
 ```
 
 ### 3. Complete Concept Metadata (`concepts/<id>/concept.yaml`)

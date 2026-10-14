@@ -2,7 +2,7 @@ name: Deploy Site to GitHub Pages
 
 on:
   push:
-    branches: [main]
+    branches: [master]
   workflow_dispatch:
 
 permissions:
@@ -29,14 +29,14 @@ jobs:
       - name: Setup pnpm
         uses: pnpm/action-setup@v3
         with:
-          version: 9
+          version: 11.22.0
 
       - name: Install dependencies
         run: pnpm install --frozen-lockfile
 
       - name: Build Termbridge artifacts and Astro site
         run: |
-          pnpm tb build
+          pnpm build
           pnpm --filter @termbridge/site build
 
       - name: Upload Pages artifact

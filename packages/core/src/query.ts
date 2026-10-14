@@ -11,6 +11,10 @@ export interface FindResult {
   score: number;
 }
 
+export function normalizeSearchTerm(value: string): string {
+  return value.normalize('NFD').replace(/\p{M}/gu, '').replace(/đ/gi, 'd').toLowerCase();
+}
+
 export function findConcepts(
   repoData: RepositoryData,
   query: string,
@@ -53,11 +57,13 @@ export function findConcepts(
   }
 
   const miniSearch = new MiniSearch({
-    fields: ['label', 'aliases', 'loanwords', 'plain_descriptions', 'summary'],
+    fields: ['id', 'label', 'aliases', 'loanwords', 'plain_descriptions', 'summary'],
     storeFields: ['id', 'label', 'qualifier', 'summary', 'domains', 'plain_descriptions'],
+    processTerm: normalizeSearchTerm,
     searchOptions: {
-      boost: { plain_descriptions: 3, label: 2, aliases: 2, summary: 1 },
-      fuzzy: 0.2,
+      boost: { id: 3, plain_descriptions: 3, label: 3, aliases: 2, summary: 1 },
+      combineWith: 'AND',
+      fuzzy: 0.15,
       prefix: true,
     },
   });
@@ -65,7 +71,8 @@ export function findConcepts(
   miniSearch.addAll(docs);
   const rawResults = miniSearch.search(query);
 
-  return rawResults.slice(0, 10).map((r) => ({
+  const bestScore = rawResults[0]?.score || 0;
+  return rawResults.filter((r) => r.score >= bestScore * 0.35).slice(0, 5).map((r) => ({
     id: r.id,
     label: r.label,
     qualifier: r.qualifier,
@@ -75,42 +82,40 @@ export function findConcepts(
   }));
 }
 
+export function lookupConcepts(
+  repoData: RepositoryData,
+  idOrLabel: string,
+  options: { locale?: string } = {}
+): Array<{ record: ConceptRecord; localeEntry?: any; rawMarkdown?: string }> {
+  const targetLocale = options.locale || repoData.localesConfig.pivot;
+  const explicitId = idOrLabel.startsWith('id:') ? idOrLabel.slice(3) : null;
+  const matches = explicitId ? [repoData.concepts.get(explicitId)].filter((record): record is ConceptRecord => !!record)
+    : Array.from(repoData.concepts.values()).filter((record) => {
+    const entry = record.locales[targetLocale] || record.locales[repoData.localesConfig.pivot];
+    const normalized = normalizeSearchTerm(idOrLabel.trim());
+    return entry && (
+      normalizeSearchTerm(entry.frontmatter.label) === normalized ||
+      entry.frontmatter.aliases?.some((alias) => normalizeSearchTerm(alias) === normalized)
+    );
+  });
+  if (!explicitId && matches.length === 0) {
+    const direct = repoData.concepts.get(idOrLabel);
+    if (direct) matches.push(direct);
+  }
+
+  return matches.map((record) => {
+    const localeEntry = record.locales[targetLocale] || record.locales[repoData.localesConfig.pivot];
+    return { record, localeEntry, rawMarkdown: localeEntry?.content };
+  });
+}
+
 export function showConcept(
   repoData: RepositoryData,
   idOrLabel: string,
   options: { locale?: string } = {}
 ): { record: ConceptRecord; localeEntry?: any; rawMarkdown?: string } | null {
-  const targetLocale = options.locale || repoData.localesConfig.pivot;
-
-  // Direct lookup by ID
-  let record = repoData.concepts.get(idOrLabel);
-
-  // If not found by ID, look up by label or alias
-  if (!record) {
-    const norm = idOrLabel.trim().toLowerCase();
-    for (const r of repoData.concepts.values()) {
-      const entry = r.locales[targetLocale] || r.locales[repoData.localesConfig.pivot];
-      if (entry) {
-        if (entry.frontmatter.label.toLowerCase() === norm) {
-          record = r;
-          break;
-        }
-        if (entry.frontmatter.aliases?.some((a) => a.toLowerCase() === norm)) {
-          record = r;
-          break;
-        }
-      }
-    }
-  }
-
-  if (!record) return null;
-
-  const localeEntry = record.locales[targetLocale] || record.locales[repoData.localesConfig.pivot];
-  return {
-    record,
-    localeEntry,
-    rawMarkdown: localeEntry?.content,
-  };
+  const matches = lookupConcepts(repoData, idOrLabel, options);
+  return matches.length === 1 ? matches[0] : null;
 }
 
 export interface LocaleReportRow {

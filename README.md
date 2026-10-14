@@ -25,7 +25,7 @@ Termbridge serves two core bidirectional workflows on a single underlying knowle
 
 ### Installation
 
-Requires Node.js >= 20 and pnpm >= 9:
+Requires Node.js >= 20 and pnpm 11.22.0:
 
 ```bash
 pnpm install
@@ -49,6 +49,10 @@ pnpm tb find "tiền lãi lại sinh ra lãi" --locale vi
 # Forward lookup (explain a concept)
 pnpm tb show compound-interest --locale vi
 
+# Ambiguous term: list meanings, then choose an exact ID
+pnpm tb show Token --locale vi
+pnpm tb show id:token-llm --locale vi
+
 # Reporting
 pnpm tb report locales
 pnpm tb report review
@@ -67,6 +71,8 @@ pnpm tb report review
 - `packages/site`: Astro web application.
 - `packages/mcp`: Model Context Protocol server.
 - `packages/claude-mod`: Claude Code terminal UI adapter.
+
+To use the Claude Code mod, see [its setup guide](packages/claude-mod/README.md).
 
 ## License
 

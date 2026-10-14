@@ -1,6 +1,7 @@
 ---
 import fs from 'node:fs';
 import path from 'node:path';
+import { micromark } from 'micromark';
 import viI18n from '../../../i18n/vi.json';
 import enI18n from '../../../i18n/en.json';
 
@@ -21,6 +22,7 @@ export function getStaticPaths() {
 }
 
 const { locale, id } = Astro.params;
+const basePath = import.meta.env.BASE_URL;
 const rootDir = path.resolve(process.cwd(), '../../');
 const distConceptFile = path.join(rootDir, 'dist', locale, 'concepts', `${id}.json`);
 const fallbackDistFile = path.join(rootDir, 'dist', 'en', 'concepts', `${id}.json`);
@@ -28,6 +30,7 @@ const fallbackDistFile = path.join(rootDir, 'dist', 'en', 'concepts', `${id}.jso
 let metadata: any = { id, domains: [], level: 1, status: 'draft', relations: {} };
 let frontmatter: any = { label: id, plain_descriptions: [], summary: '', confusable_notes: {}, follow_up_questions: [] };
 let bodyContent = '';
+let contentLocale = locale;
 
 const activeJsonFile = fs.existsSync(distConceptFile) ? distConceptFile : fallbackDistFile;
 if (fs.existsSync(activeJsonFile)) {
@@ -35,9 +38,11 @@ if (fs.existsSync(activeJsonFile)) {
   metadata = data.metadata || metadata;
   frontmatter = data.entry?.frontmatter || frontmatter;
   bodyContent = data.entry?.content || '';
+  contentLocale = data.content_locale || locale;
 }
 
 const strings = locale === 'vi' ? viI18n : enI18n;
+const bodyHtml = micromark(bodyContent);
 ---
 
 <!DOCTYPE html>
@@ -116,8 +121,13 @@ const strings = locale === 'vi' ? viI18n : enI18n;
       .content-body {
         line-height: 1.7;
         color: #cbd5e1;
-        white-space: pre-line;
+        overflow-wrap: anywhere;
       }
+      .content-body h2 { color: #e2e8f0; margin-top: 1.6rem; }
+      .content-body p, .content-body li { line-height: 1.7; }
+      .draft-note { color: #ffd18b; }
+      .related-links { display: flex; gap: .75rem; flex-wrap: wrap; }
+      .related-links a { color: var(--primary); }
       .prompt-box {
         background: #020617;
         border: 1px dashed #475569;
@@ -129,17 +139,20 @@ const strings = locale === 'vi' ? viI18n : enI18n;
   </head>
   <body>
     <div class="container">
-      <a href={`/${locale}/`} class="back">← {locale === 'vi' ? 'Quay lại tìm kiếm' : 'Back to search'}</a>
+      <a href={`${basePath}${locale}/`} class="back">← {locale === 'vi' ? 'Quay lại tìm kiếm' : 'Back to search'}</a>
 
       <header>
         <h1>{frontmatter.label} {frontmatter.qualifier && <small style="color: var(--text-muted); font-size: 1.2rem;">{frontmatter.qualifier}</small>}</h1>
         <div class="meta">
           <span><strong>ID:</strong> {id}</span>
           <span><strong>{locale === 'vi' ? 'Độ khó' : 'Level'}:</strong> {metadata.level}</span>
-          <span><strong>{locale === 'vi' ? 'Trạng thái' : 'Status'}:</strong> {metadata.status}</span>
+          <span><strong>{locale === 'vi' ? 'Trạng thái' : 'Status'}:</strong> {metadata.status === 'draft' ? strings.provenance_draft : metadata.status === 'reviewed' ? strings.provenance_reviewed : metadata.status === 'verified' ? strings.provenance_verified : metadata.status}</span>
           <span><strong>{locale === 'vi' ? 'Lĩnh vực' : 'Domains'}:</strong> {metadata.domains?.join(', ')}</span>
         </div>
       </header>
+
+      {metadata.status === 'draft' && <p class="draft-note">{strings.provenance_draft}</p>}
+      {contentLocale !== locale && <p class="draft-note">{locale === 'vi' ? `Chưa có bản tiếng Việt; đang hiển thị bản ${contentLocale}.` : `This entry is displayed in ${contentLocale}.`}</p>}
 
       <div class="summary-box">
         <strong>{locale === 'vi' ? 'Tóm tắt:' : 'Summary:'}</strong> {frontmatter.summary}
@@ -148,9 +161,23 @@ const strings = locale === 'vi' ? viI18n : enI18n;
       <div class="section">
         <h2>{locale === 'vi' ? 'Giải thích chi tiết theo tầng' : 'Layered Explanation'}</h2>
         <div class="content-body">
-          {bodyContent}
+          <Fragment set:html={bodyHtml} />
         </div>
       </div>
+
+      {metadata.relations?.prerequisites?.length > 0 && (
+        <div class="section">
+          <h2>{strings.prerequisites}</h2>
+          <div class="related-links">{metadata.relations.prerequisites.map((relatedId: string) => <a href={`${basePath}${locale}/c/${relatedId}/`}>{relatedId}</a>)}</div>
+        </div>
+      )}
+
+      {Object.keys(frontmatter.confusable_notes || {}).length > 0 && (
+        <div class="section">
+          <h2>{strings.confusables}</h2>
+          <ul>{Object.entries(frontmatter.confusable_notes).map(([relatedId, note]) => <li><a href={`${basePath}${locale}/c/${relatedId}/`}>{relatedId}</a>: {String(note)}</li>)}</ul>
+        </div>
+      )}
 
       {frontmatter.follow_up_questions?.length > 0 && (
         <div class="section">
@@ -160,6 +187,7 @@ const strings = locale === 'vi' ? viI18n : enI18n;
               <li>
                 <div class="prompt-box">
                   <code>{q}</code>
+                  <button type="button" data-copy-prompt={q}>{strings.copy_prompt}</button>
                 </div>
               </li>
             ))}
@@ -167,5 +195,13 @@ const strings = locale === 'vi' ? viI18n : enI18n;
         </div>
       )}
     </div>
+    <script>
+      document.querySelectorAll<HTMLButtonElement>('[data-copy-prompt]').forEach((button) => {
+        button.addEventListener('click', async () => {
+          await navigator.clipboard.writeText(button.dataset.copyPrompt || '');
+          button.textContent = document.documentElement.lang === 'vi' ? 'Đã sao chép' : 'Copied';
+        });
+      });
+    </script>
   </body>
 </html>

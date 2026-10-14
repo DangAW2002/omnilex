@@ -1,0 +1,426 @@
+[
+  {
+    "key": "Lãi kép",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "compound-interest",
+        "label": "Lãi kép",
+        "summary": "Tiền lãi được cộng vào gốc, kỳ sau tính lãi trên cả gốc lẫn lãi cũ.",
+        "domains": [
+          "finance/personal-finance/saving",
+          "finance/investing/portfolio-risk"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "lãi nhập gốc",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "compound-interest",
+        "label": "Lãi kép",
+        "summary": "Tiền lãi được cộng vào gốc, kỳ sau tính lãi trên cả gốc lẫn lãi cũ.",
+        "domains": [
+          "finance/personal-finance/saving",
+          "finance/investing/portfolio-risk"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Cookie",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "cookie",
+        "label": "Cookie",
+        "summary": "Tệp dữ liệu nhỏ được máy chủ gửi và lưu trên trình duyệt của người dùng để ghi nhớ thông tin phiên và theo dõi hành vi.",
+        "domains": [
+          "it/web/frontend",
+          "media/digital-marketing/paid-ads"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "tệp cookie trình duyệt",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "cookie",
+        "label": "Cookie",
+        "summary": "Tệp dữ liệu nhỏ được máy chủ gửi và lưu trên trình duyệt của người dùng để ghi nhớ thông tin phiên và theo dõi hành vi.",
+        "domains": [
+          "it/web/frontend",
+          "media/digital-marketing/paid-ads"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Lãi suất",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "interest-rate",
+        "label": "Lãi suất",
+        "summary": "Tỷ lệ phần trăm tính trên tiền gốc mà người vay phải trả hoặc người gửi được nhận trong một khoảng thời gian.",
+        "domains": [
+          "finance/economics/interest-rates-monetary-policy",
+          "finance/banking/deposits"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "tỷ lệ lãi",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "interest-rate",
+        "label": "Lãi suất",
+        "summary": "Tỷ lệ phần trăm tính trên tiền gốc mà người vay phải trả hoặc người gửi được nhận trong một khoảng thời gian.",
+        "domains": [
+          "finance/economics/interest-rates-monetary-policy",
+          "finance/banking/deposits"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Ký quỹ",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "margin",
+        "label": "Ký quỹ",
+        "summary": "Tài sản trong tài khoản được dùng làm bảo đảm khi nhà đầu tư vay tiền từ công ty chứng khoán để giao dịch.",
+        "domains": [
+          "finance/investing/stocks"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "margin",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "margin",
+        "label": "Ký quỹ",
+        "summary": "Tài sản trong tài khoản được dùng làm bảo đảm khi nhà đầu tư vay tiền từ công ty chứng khoán để giao dịch.",
+        "domains": [
+          "finance/investing/stocks"
+        ]
+      },
+      {
+        "id": "profit-margin",
+        "label": "Biên lợi nhuận",
+        "summary": "Tỷ lệ phần trăm cho biết doanh nghiệp giữ lại bao nhiêu lợi nhuận từ doanh thu theo cách tính được chọn.",
+        "domains": [
+          "finance/corporate-finance/financial-statements"
+        ]
+      }
+    ],
+    "autolink": false
+  },
+  {
+    "key": "giao dịch ký quỹ",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "margin",
+        "label": "Ký quỹ",
+        "summary": "Tài sản trong tài khoản được dùng làm bảo đảm khi nhà đầu tư vay tiền từ công ty chứng khoán để giao dịch.",
+        "domains": [
+          "finance/investing/stocks"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Tiền gốc",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "principal",
+        "label": "Tiền gốc",
+        "summary": "Số tiền ban đầu gửi tiết kiệm, đầu tư hoặc vay trước khi phát sinh lãi.",
+        "domains": [
+          "finance/personal-finance/saving",
+          "finance/banking/lending"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "vốn gốc",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "principal",
+        "label": "Tiền gốc",
+        "summary": "Số tiền ban đầu gửi tiết kiệm, đầu tư hoặc vay trước khi phát sinh lãi.",
+        "domains": [
+          "finance/personal-finance/saving",
+          "finance/banking/lending"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "số tiền ban đầu",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "principal",
+        "label": "Tiền gốc",
+        "summary": "Số tiền ban đầu gửi tiết kiệm, đầu tư hoặc vay trước khi phát sinh lãi.",
+        "domains": [
+          "finance/personal-finance/saving",
+          "finance/banking/lending"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Biên lợi nhuận",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "profit-margin",
+        "label": "Biên lợi nhuận",
+        "summary": "Tỷ lệ phần trăm cho biết doanh nghiệp giữ lại bao nhiêu lợi nhuận từ doanh thu theo cách tính được chọn.",
+        "domains": [
+          "finance/corporate-finance/financial-statements"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "tỷ suất lợi nhuận trên doanh thu",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "profit-margin",
+        "label": "Biên lợi nhuận",
+        "summary": "Tỷ lệ phần trăm cho biết doanh nghiệp giữ lại bao nhiêu lợi nhuận từ doanh thu theo cách tính được chọn.",
+        "domains": [
+          "finance/corporate-finance/financial-statements"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Tỷ suất hoàn vốn",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "roi",
+        "label": "Tỷ suất hoàn vốn",
+        "summary": "Tỷ lệ phần trăm đo lường mức độ sinh lời hoặc hiệu quả tài chính tương đối so với chi phí ban đầu đã bỏ ra.",
+        "domains": [
+          "finance/investing/valuation",
+          "media/digital-marketing/metrics-analytics"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "ROI",
+    "match": "exact-case",
+    "concepts": [
+      {
+        "id": "roi",
+        "label": "Tỷ suất hoàn vốn",
+        "summary": "Tỷ lệ phần trăm đo lường mức độ sinh lời hoặc hiệu quả tài chính tương đối so với chi phí ban đầu đã bỏ ra.",
+        "domains": [
+          "finance/investing/valuation",
+          "media/digital-marketing/metrics-analytics"
+        ]
+      }
+    ],
+    "autolink": false
+  },
+  {
+    "key": "tỷ lệ sinh lời trên chi phí",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "roi",
+        "label": "Tỷ suất hoàn vốn",
+        "summary": "Tỷ lệ phần trăm đo lường mức độ sinh lời hoặc hiệu quả tài chính tương đối so với chi phí ban đầu đã bỏ ra.",
+        "domains": [
+          "finance/investing/valuation",
+          "media/digital-marketing/metrics-analytics"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Lãi đơn",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "simple-interest",
+        "label": "Lãi đơn",
+        "summary": "Phương thức tính tiền lãi chỉ dựa trên số vốn gốc ban đầu, tiền lãi sinh ra không được cộng dồn để sinh lãi tiếp.",
+        "domains": [
+          "finance/personal-finance/saving",
+          "finance/banking/lending"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "lãi không nhập gốc",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "simple-interest",
+        "label": "Lãi đơn",
+        "summary": "Phương thức tính tiền lãi chỉ dựa trên số vốn gốc ban đầu, tiền lãi sinh ra không được cộng dồn để sinh lãi tiếp.",
+        "domains": [
+          "finance/personal-finance/saving",
+          "finance/banking/lending"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Token",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "token-auth",
+        "label": "Token",
+        "qualifier": "(Xác thực)",
+        "summary": "Chuỗi mã hóa gửi kèm theo mỗi yêu cầu để chứng minh danh tính và quyền hạn của người dùng hoặc ứng dụng.",
+        "domains": [
+          "it/security/authentication",
+          "it/web/api"
+        ]
+      },
+      {
+        "id": "token-crypto",
+        "label": "Token",
+        "qualifier": "(Tiền mã hóa)",
+        "summary": "Đơn vị tài sản kỹ thuật số được tạo ra và quản lý bằng hợp đồng thông minh trên một mạng blockchain sẵn có.",
+        "domains": [
+          "finance/investing/digital-assets"
+        ]
+      },
+      {
+        "id": "token-llm",
+        "label": "Token",
+        "qualifier": "(AI)",
+        "summary": "Mẩu văn bản nhỏ, thường là một phần của từ, mà mô hình AI đọc và viết.",
+        "domains": [
+          "it/ai-ml/llm-agents"
+        ]
+      }
+    ],
+    "autolink": false
+  },
+  {
+    "key": "mã xác thực",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "token-auth",
+        "label": "Token",
+        "qualifier": "(Xác thực)",
+        "summary": "Chuỗi mã hóa gửi kèm theo mỗi yêu cầu để chứng minh danh tính và quyền hạn của người dùng hoặc ứng dụng.",
+        "domains": [
+          "it/security/authentication",
+          "it/web/api"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "access token",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "token-auth",
+        "label": "Token",
+        "qualifier": "(Xác thực)",
+        "summary": "Chuỗi mã hóa gửi kèm theo mỗi yêu cầu để chứng minh danh tính và quyền hạn của người dùng hoặc ứng dụng.",
+        "domains": [
+          "it/security/authentication",
+          "it/web/api"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "đồng token",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "token-crypto",
+        "label": "Token",
+        "qualifier": "(Tiền mã hóa)",
+        "summary": "Đơn vị tài sản kỹ thuật số được tạo ra và quản lý bằng hợp đồng thông minh trên một mạng blockchain sẵn có.",
+        "domains": [
+          "finance/investing/digital-assets"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "tài sản số",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "token-crypto",
+        "label": "Token",
+        "qualifier": "(Tiền mã hóa)",
+        "summary": "Đơn vị tài sản kỹ thuật số được tạo ra và quản lý bằng hợp đồng thông minh trên một mạng blockchain sẵn có.",
+        "domains": [
+          "finance/investing/digital-assets"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "mẩu từ AI",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "token-llm",
+        "label": "Token",
+        "qualifier": "(AI)",
+        "summary": "Mẩu văn bản nhỏ, thường là một phần của từ, mà mô hình AI đọc và viết.",
+        "domains": [
+          "it/ai-ml/llm-agents"
+        ]
+      }
+    ],
+    "autolink": true
+  }
+]

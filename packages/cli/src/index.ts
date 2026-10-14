@@ -8,7 +8,7 @@ import {
   validateRepository,
   buildArtifacts,
   findConcepts,
-  showConcept,
+  lookupConcepts,
   generateLocaleReport,
   generateReviewReport,
 } from '@termbridge/core';
@@ -37,8 +37,32 @@ program
   .description('Create a new concept directory from template')
   .requiredOption('-d, --domain <path>', 'Primary taxonomy domain path (e.g., finance/investing/stocks)')
   .option('-l, --locales <locales>', 'Comma-separated locale codes', 'vi,en')
-  .action((id: string, options: { domain: string; locales: string }) => {
+  .option('--drafted-by <author>', 'Draft author: human or ai', 'human')
+  .action((id: string, options: { domain: string; locales: string; draftedBy: string }) => {
     const rootDir = resolveRootDir();
+    const repoData = loadAll(rootDir);
+    const locales = options.locales.split(',').map((s) => s.trim());
+    const allowedLocales = new Set(repoData.localesConfig.locales.map((locale) => locale.code));
+    if (!/^[a-z0-9]+(?:-[a-z0-9]+)*$/.test(id) || id.length > 48) {
+      console.error(pc.red('Error: id must be kebab-case, at most 48 characters.'));
+      process.exit(1);
+    }
+    if (!repoData.validDomainPaths.has(options.domain)) {
+      console.error(pc.red(`Error: Unknown taxonomy path '${options.domain}'.`));
+      process.exit(1);
+    }
+    if (locales.length === 0 || locales.some((locale) => !allowedLocales.has(locale)) || new Set(locales).size !== locales.length) {
+      console.error(pc.red('Error: --locales must contain unique locale codes from config/locales.yaml.'));
+      process.exit(1);
+    }
+    if (!locales.some((locale) => repoData.localesConfig.locales.some((configured) => configured.code === locale && configured.status === 'primary'))) {
+      console.error(pc.red('Error: Include at least one primary locale.'));
+      process.exit(1);
+    }
+    if (!['ai', 'human'].includes(options.draftedBy)) {
+      console.error(pc.red('Error: --drafted-by must be ai or human.'));
+      process.exit(1);
+    }
     const conceptDir = path.join(rootDir, 'concepts', id);
 
     if (fs.existsSync(conceptDir)) {
@@ -59,13 +83,12 @@ relations:
   related: []
 status: draft
 provenance:
-  drafted_by: human
+  drafted_by: ${options.draftedBy}
 sources: []
 `;
     fs.writeFileSync(path.join(conceptDir, 'concept.yaml'), conceptYaml, 'utf-8');
 
     // 2. Write locale files
-    const locales = options.locales.split(',').map((s) => s.trim());
     for (const loc of locales) {
       const isVi = loc === 'vi';
       const mdContent = `---
@@ -165,11 +188,15 @@ program
     const results = findConcepts(repoData, query, { locale: options.locale, domain: options.domain });
 
     if (results.length === 0) {
-      console.log(pc.yellow(`No concepts matched: "${query}"`));
+      console.log(pc.yellow(`\n⚠ Không tìm thấy khái niệm nào khớp với: "${pc.bold(query)}" (${options.locale})`));
+      console.log(pc.dim(`\nGợi ý:`));
+      console.log(pc.dim(`  - Dùng mô tả đời thường ngắn gọn hơn (ví dụ: "lãi nhập gốc", "mẩu từ AI").`));
+      console.log(pc.dim(`  - Tra cứu toàn bộ mục từ tại: indexes/${options.locale}/_all.md`));
+      console.log(pc.dim(`  - Đề xuất tạo mới bằng lệnh: pnpm tb new <id> --domain <lĩnh-vực>\n`));
       return;
     }
 
-    console.log(pc.bold(`\nSearch Results for "${pc.cyan(query)}" (${options.locale}):\n`));
+    console.log(pc.bold(`\nKết quả tra cứu cho "${pc.cyan(query)}" (${options.locale}):\n`));
     for (const r of results) {
       const q = r.qualifier ? ` ${pc.dim(r.qualifier)}` : '';
       console.log(`- ${pc.bold(pc.green(r.label))}${q} (${pc.cyan(r.id)}) [${r.domains.join(', ')}]`);
@@ -185,11 +212,39 @@ program
   .action((target: string, options: { locale: string }) => {
     const rootDir = resolveRootDir();
     const repoData = loadAll(rootDir);
-    const res = showConcept(repoData, target, { locale: options.locale });
+    const matches = lookupConcepts(repoData, target, { locale: options.locale });
+    if (matches.length > 1) {
+      console.log(pc.yellow(`\n"${target}" có nhiều nghĩa. Hãy chọn một ID:\n`));
+      for (const { record, localeEntry } of matches) {
+        console.log(`  pnpm tb show id:${record.id} --locale ${options.locale} — ${localeEntry?.frontmatter.label} ${localeEntry?.frontmatter.qualifier || ''}`);
+        console.log(`    ${localeEntry?.frontmatter.summary || ''}`);
+      }
+      return;
+    }
+    const res = matches[0] || null;
 
     if (!res) {
-      console.error(pc.red(`Concept not found: "${target}"`));
-      process.exit(1);
+      console.log(pc.yellow(`\n⚠ Khái niệm "${pc.bold(target)}" chưa có trong Termbridge.\n`));
+
+      // Attempt fuzzy/keyword fallback to suggest related concepts
+      const suggestions = findConcepts(repoData, target, { locale: options.locale });
+      if (suggestions.length > 0) {
+        console.log(pc.bold(pc.cyan(`Gợi ý các khái niệm liên quan:`)));
+        for (const s of suggestions.slice(0, 3)) {
+          const q = s.qualifier ? ` ${pc.dim(s.qualifier)}` : '';
+          console.log(`  • ${pc.bold(pc.green(s.label))}${q} (id: ${pc.cyan(s.id)})`);
+          console.log(`    ${pc.dim(s.summary)}`);
+        }
+        console.log(pc.dim(`\nXem chi tiết gợi ý:`));
+        console.log(pc.dim(`  pnpm tb show ${suggestions[0].id} --locale ${options.locale}\n`));
+      } else {
+        console.log(pc.dim(`Gợi ý tiếp theo:`));
+        console.log(pc.dim(`  - Tra cứu mô tả: pnpm tb find "<mô tả ý định>"`));
+        console.log(pc.dim(`  - Xem danh mục có sẵn: indexes/${options.locale}/_all.md`));
+        const kebabCandidate = target.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '') || 'new-term';
+        console.log(pc.dim(`  - Thêm khái niệm này: pnpm tb new ${kebabCandidate} --domain <taxonomy-path>\n`));
+      }
+      return;
     }
 
     const { record, localeEntry } = res;

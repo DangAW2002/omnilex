@@ -2,7 +2,7 @@
 import readline from 'node:readline';
 import path from 'node:path';
 import fs from 'node:fs';
-import { loadAll, findConcepts, showConcept } from '@termbridge/core';
+import { loadAll, findConcepts, showConcept, lookupConcepts } from '@termbridge/core';
 
 function resolveRootDir(): string {
   let curr = process.cwd();
@@ -76,6 +76,19 @@ function handleToolCall(name: string, args: any) {
   }
 
   if (name === 'explain_term') {
+    const matches = lookupConcepts(repoData, args.term, { locale: args.locale || 'vi' });
+    if (matches.length > 1) {
+      return {
+        ambiguous: true,
+        candidates: matches.map(({ record, localeEntry }) => ({
+          id: record.id,
+          label: localeEntry?.frontmatter.label,
+          qualifier: localeEntry?.frontmatter.qualifier,
+          summary: localeEntry?.frontmatter.summary,
+          domains: record.metadata.domains
+        }))
+      };
+    }
     const res = showConcept(repoData, args.term, { locale: args.locale || 'vi' });
     if (!res) {
       return { error: `Concept not found: "${args.term}"` };

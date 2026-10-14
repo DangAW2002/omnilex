@@ -8,7 +8,7 @@ Each concept is stored in a flat directory under `concepts/` using its immutable
 
 | Field | Type | Required | Description |
 |---|---|---|---|
-| `id` | string | Yes | Unique identifier matching regex `^[a-z0-9-]+$`, max 48 characters, strictly matching directory name. |
+| `id` | string | Yes | Unique identifier matching regex `^[a-z0-9]+(?:-[a-z0-9]+)*$`, max 48 characters, strictly matching directory name. |
 | `domains` | string[] | Yes | 1 to 4 hierarchical taxonomy paths (e.g. `finance/personal-finance/saving`). The first element is the primary domain. |
 | `level` | integer (1, 2, 3) | Yes | Difficulty: 1 (basic), 2 (intermediate), 3 (advanced). |
 | `relations.prerequisites` | string[] | No | Concept IDs that must be understood prior to this concept. Must form a DAG (no cycles). |
@@ -17,8 +17,8 @@ Each concept is stored in a flat directory under `concepts/` using its immutable
 | `relations.confusable` | string[] | No | Confusable concepts (symmetric relationship recommended). |
 | `relations.related` | string[] | No | Other related concepts. |
 | `status` | enum | Yes | `draft` \| `reviewed` \| `verified` \| `deprecated`. |
-| `provenance` | object | Yes | Audit metadata: `drafted_by`, optional `reviewed_by`, `reviewed_at`. |
-| `sources` | string[] | Conditional | Mandatory when `status` is `verified`. |
+| `provenance` | object | Yes | Audit metadata: `drafted_by`; `reviewed_by` and `reviewed_at` are required for `reviewed` or `verified`. Reviewers must be listed for every domain in `config/reviewers.yaml`. |
+| `sources` | string[] | Conditional | Mandatory when `status` is `verified`, which also requires two distinct reviewers. |
 | `replaced_by` | string | No | Concept ID pointing to replacement when deprecated. |
 
 ## 2. Localized Content (`concepts/<id>/<locale>.md`)

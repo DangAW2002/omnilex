@@ -1,3 +1,5 @@
+import { createMatcher, createReverseMatcher } from './runtime/matcher.js'
+
 const PANE_ID = 'termbridge-lookup'
 const MAX_BADGES = 4
 
@@ -7,7 +9,9 @@ let conceptsById = new Map()
 let explanations = new Map()
 let query = ''
 let selectedId = null
-let matchers = []
+let trieMatcher = null
+let reverseMatcher = null
+const scanCache = new Map()
 let repoRoot = ''
 let localized = {}
 
@@ -52,15 +56,13 @@ function escapeRegex(value) {
 }
 
 function buildMatchers() {
-  matchers = terms
-    .filter((term) => term.autolink && term.concepts.length === 1)
-    .map((term) => ({
-      regex: new RegExp(
-        `(?<![\\p{L}\\p{N}])${escapeRegex(term.key)}(?![\\p{L}\\p{N}])`,
-        term.match === 'exact-case' ? 'gu' : 'giu',
-      ),
-      concept: conceptsById.get(term.concepts[0].id) || term.concepts[0],
-    }))
+  const localizedTerms = terms.map((term) => ({
+    ...term,
+    concepts: term.concepts.map((c) => conceptsById.get(c.id) || c),
+  }))
+  trieMatcher = createMatcher(localizedTerms)
+  reverseMatcher = createReverseMatcher(concepts)
+  scanCache.clear()
 }
 
 function selectLocale(value) {
@@ -79,36 +81,22 @@ function selectLocale(value) {
   return true
 }
 
-function matchedConcepts(text) {
-  const visible = cleanTranscript(text)
-  const found = []
-  const usedIds = new Set()
-  for (const { regex, concept } of matchers) {
-    if (usedIds.has(concept.id) || visible.search(regex) === -1) continue
-    usedIds.add(concept.id)
-    found.push(concept)
-    if (found.length >= MAX_BADGES) break
+function matchedConcepts(text, requestId) {
+  if (!trieMatcher) return []
+  if (requestId) {
+    const key = `${requestId}:matched`
+    if (scanCache.has(key)) return scanCache.get(key)
+    const res = trieMatcher.matchedConcepts(text, MAX_BADGES)
+    scanCache.set(key, res)
+    return res
   }
-  return found
+  return trieMatcher.matchedConcepts(text, MAX_BADGES)
 }
 
 // Hits of every term in `text`, longest key first, none inside `blocked` ranges.
 function termHits(text, blocked = []) {
-  const candidates = []
-  for (const { regex, concept } of matchers) {
-    for (const hit of text.matchAll(regex)) {
-      const start = hit.index
-      const end = start + hit[0].length
-      if (!blocked.some((range) => start < range.end && end > range.start)) {
-        candidates.push({ start, end, concept })
-      }
-    }
-  }
-  const chosen = []
-  for (const candidate of candidates.sort((a, b) => a.start - b.start || b.end - a.end)) {
-    if (!chosen.some((item) => candidate.start < item.end && candidate.end > item.start)) chosen.push(candidate)
-  }
-  return chosen
+  if (!trieMatcher) return []
+  return trieMatcher.termHits(text, blocked)
 }
 
 function charWidth(cp) {
@@ -385,36 +373,13 @@ function canRenderInline(text, columns) {
 }
 
 function forwardSpans(text) {
-  const candidates = []
-  for (const { regex, concept } of matchers) {
-    for (const match of text.matchAll(regex)) {
-      candidates.push({ start: match.index, end: match.index + match[0].length, concept })
-    }
-  }
-  return selectSpans(candidates)
+  if (!trieMatcher) return []
+  return trieMatcher.forwardSpans(text, MAX_BADGES)
 }
 
 function reverseSpans(text, hints) {
-  const candidates = []
-  const lower = text.toLocaleLowerCase()
-  for (const concept of hints) {
-    for (const description of concept.plain_descriptions) {
-      const phrase = description.toLocaleLowerCase()
-      const start = lower.indexOf(phrase)
-      if (start !== -1) candidates.push({ start, end: start + description.length, concept })
-    }
-  }
-  return selectSpans(candidates)
-}
-
-function selectSpans(candidates) {
-  const chosen = []
-  for (const candidate of candidates.sort((a, b) => a.start - b.start || b.end - a.end)) {
-    if (chosen.some((item) => candidate.start < item.end)) continue
-    chosen.push(candidate)
-    if (chosen.length >= MAX_BADGES) break
-  }
-  return chosen
+  if (!reverseMatcher) return []
+  return reverseMatcher.reverseSpans(text, hints, MAX_BADGES)
 }
 
 function inlineTree(elements, text, spans, requestId, prefix, hintFor, openConcept) {
@@ -478,11 +443,8 @@ function findConcepts(input) {
 }
 
 function reverseHints(text) {
-  const normalized = normalize(text)
-  return concepts.filter((concept) => {
-    const list = concept.normalized_descriptions || concept.plain_descriptions
-    return list.some((phrase) => phrase.length >= 12 && normalized.includes(phrase))
-  }).slice(0, MAX_BADGES)
+  if (!reverseMatcher) return []
+  return reverseMatcher.reverseHints(text, MAX_BADGES)
 }
 
 async function ensureExplanations($, loc) {
@@ -592,7 +554,7 @@ export function register(on) {
 
   on('ui.render', { component: 'AssistantMessage' }, async ($, e, next) => {
     if (e.props.isSummary) return next(e)
-    const matches = matchedConcepts(e.props.text)
+    const matches = matchedConcepts(e.props.text, e.requestId)
     if (matches.length === 0) return next(e)
     const openConcept = async (id) => {
       selectedId = id

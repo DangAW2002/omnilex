@@ -274,6 +274,20 @@ export function buildArtifacts(repoData: RepositoryData): BuildOutputs {
     }
   }
 
+  // Generate packages/claude-mod/hooks/runtime/matcher.js
+  const claudeModHooksDir = path.join(rootDir, 'packages', 'claude-mod', 'hooks');
+  const claudeModRuntimeDir = path.join(claudeModHooksDir, 'runtime');
+  if (fs.existsSync(claudeModHooksDir)) {
+    fs.mkdirSync(claudeModRuntimeDir, { recursive: true });
+    const distMatcherPath = path.join(rootDir, 'packages', 'core', 'dist', 'matcher.js');
+    if (fs.existsSync(distMatcherPath)) {
+      const matcherCode = fs.readFileSync(distMatcherPath, 'utf-8').replace(/\r\n/g, '\n');
+      const runtimeMatcherPath = path.join(claudeModRuntimeDir, 'matcher.js');
+      fs.writeFileSync(runtimeMatcherPath, matcherCode, 'utf-8');
+      distGenerated.push(runtimeMatcherPath);
+    }
+  }
+
   const expectedIndexes = new Set(indexesGenerated.map((file) => path.resolve(file)));
   for (const localeDir of fs.readdirSync(indexesDir, { withFileTypes: true })) {
     if (!localeDir.isDirectory()) continue;

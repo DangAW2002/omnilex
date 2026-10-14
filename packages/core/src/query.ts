@@ -1,5 +1,6 @@
 import MiniSearch from 'minisearch';
 import type { ConceptRecord, RepositoryData } from './types.js';
+import { normalizeSearchTerm } from './matcher.js';
 
 export interface FindResult {
   id: string;
@@ -22,10 +23,6 @@ export interface SearchDoc {
   domains: string[];
   level?: number;
   status?: string;
-}
-
-export function normalizeSearchTerm(value: string): string {
-  return value.normalize('NFD').replace(/\p{M}/gu, '').replace(/đ/gi, 'd').toLowerCase();
 }
 
 export const SEARCH_INDEX_OPTIONS = {

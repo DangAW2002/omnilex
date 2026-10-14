@@ -25,4 +25,4 @@ This file defines the strict operational contract for all autonomous and pair-pr
 ## 3. Tooling & Build Integrity
 
 - **Never edit generated files by hand:** Do NOT edit files under `indexes/`, `dist/`, or `llms.txt` directly. Run `pnpm tb build` to regenerate them deterministically from `concepts/`, `taxonomy/`, and `config/`.
-- **Always validate before finishing:** Run `pnpm tb validate` (or `pnpm tb validate --strict`) to ensure all 13 integrity rules pass cleanly.
+- **Always validate before finishing:** Run `pnpm tb validate` (or `pnpm tb validate --strict`) to ensure all 18 integrity rules pass cleanly.

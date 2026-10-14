@@ -13,6 +13,10 @@ follow_up_questions:
   - Kỳ ghép lãi theo tháng và theo năm khác nhau bao nhiêu?
   - Quy tắc 72 dùng để ước tính điều gì trong lãi kép?
 translation: native
+label_evidence:
+  - ref: wikipedia-vi
+    locator: https://vi.wikipedia.org/wiki/L%C3%A3i_k%C3%A9p
+    accessed: '2026-10-14'
 ---
 
 ## Giải thích dễ hiểu

@@ -11,6 +11,10 @@ follow_up_questions:
   - Tiền gốc có được bảo hiểm tiền gửi bảo vệ toàn bộ không?
   - Trả nợ theo phương thức trừ dần tiền gốc tính như thế nào?
 translation: native
+label_evidence:
+  - ref: wikipedia-vi
+    locator: https://vi.wikipedia.org/wiki/Ti%E1%BB%81n_g%E1%BB%91c
+    accessed: '2026-10-14'
 ---
 
 ## Giải thích dễ hiểu

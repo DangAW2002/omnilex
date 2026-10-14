@@ -1,0 +1,247 @@
+# Termbridge Source Catalog (config/sources.yaml)
+# Adheres to Rule 14, 16, 17 and Decision D12
+
+nist-csrc:
+  title: NIST Computer Security Resource Center Glossary
+  publisher: National Institute of Standards and Technology
+  url: https://csrc.nist.gov/glossary
+  type: glossary
+  tier: A
+  languages: [en]
+  license: public-domain-us-gov
+  reuse: adapt
+  domains: [it/security]
+  verified_license_at: "2026-10-14"
+  license_evidence: https://www.nist.gov/oism/copyrights
+
+ietf:
+  title: IETF RFC Database
+  publisher: Internet Engineering Task Force
+  url: https://www.rfc-editor.org
+  type: spec
+  tier: A
+  languages: [en]
+  license: ietf-trust
+  reuse: paraphrase-only
+  domains: [it/infrastructure, it/web]
+  verified_license_at: "2026-10-14"
+
+w3c:
+  title: W3C Standards and Technical Reports
+  publisher: World Wide Web Consortium
+  url: https://www.w3.org/TR/
+  type: spec
+  tier: A
+  languages: [en]
+  license: w3c-document-license
+  reuse: paraphrase-only
+  domains: [it/web]
+  verified_license_at: "2026-10-14"
+
+iso-iec:
+  title: ISO/IEC International Standards (2382, 24765)
+  publisher: International Organization for Standardization
+  url: https://www.iso.org/standards.html
+  type: standard
+  tier: A
+  languages: [en]
+  license: copyright-iso-iec
+  reuse: cite-only
+  domains: [it/software-engineering, it/data]
+  verified_license_at: "2026-10-14"
+
+k8s-glossary:
+  title: Kubernetes Standard Glossary
+  publisher: Cloud Native Computing Foundation
+  url: https://kubernetes.io/docs/reference/glossary/
+  type: glossary
+  tier: A
+  languages: [en, vi]
+  license: CC-BY-4.0
+  reuse: adapt
+  domains: [it/infrastructure, it/devops]
+  verified_license_at: "2026-10-14"
+  license_evidence: https://github.com/kubernetes/website/blob/main/LICENSE
+
+scrum-guide:
+  title: The Scrum Guide
+  publisher: Ken Schwaber and Jeff Sutherland
+  url: https://scrumguides.org
+  type: standard
+  tier: A
+  languages: [en, vi]
+  license: CC-BY-SA-4.0
+  reuse: paraphrase-only
+  domains: [product/agile-scrum, it/software-engineering]
+  verified_license_at: "2026-10-14"
+
+microsoft-learn:
+  title: Microsoft Learn Technical Documentation
+  publisher: Microsoft Corporation
+  url: https://learn.microsoft.com
+  type: docs
+  tier: B
+  languages: [en, vi]
+  license: CC-BY-4.0
+  reuse: paraphrase-only
+  domains: [it/software-engineering, it/infrastructure, it/data]
+  verified_license_at: "2026-10-14"
+
+google-cloud-docs:
+  title: Google Cloud Documentation
+  publisher: Google LLC
+  url: https://cloud.google.com/docs
+  type: docs
+  tier: B
+  languages: [en]
+  license: proprietary-docs
+  reuse: paraphrase-only
+  domains: [it/infrastructure, it/ai-ml]
+  verified_license_at: "2026-10-14"
+
+aws-docs:
+  title: Amazon Web Services Documentation
+  publisher: Amazon Web Services, Inc.
+  url: https://docs.aws.amazon.com
+  type: docs
+  tier: B
+  languages: [en, vi]
+  license: proprietary-docs
+  reuse: paraphrase-only
+  domains: [it/infrastructure, it/devops]
+  verified_license_at: "2026-10-14"
+
+mdn:
+  title: MDN Web Docs
+  publisher: Mozilla Corporation
+  url: https://developer.mozilla.org
+  type: docs
+  tier: B
+  languages: [en]
+  license: CC-BY-SA-2.5
+  reuse: paraphrase-only
+  domains: [it/web]
+  verified_license_at: "2026-10-14"
+
+owasp:
+  title: OWASP Foundation Documentation & Cheatsheets
+  publisher: Open Worldwide Application Security Project
+  url: https://owasp.org
+  type: docs
+  tier: B
+  languages: [en]
+  license: CC-BY-SA-4.0
+  reuse: paraphrase-only
+  domains: [it/security]
+  verified_license_at: "2026-10-14"
+
+mitre-cwe:
+  title: MITRE Common Weakness Enumeration
+  publisher: The MITRE Corporation
+  url: https://cwe.mitre.org
+  type: glossary
+  tier: B
+  languages: [en]
+  license: mitre-terms-of-use
+  reuse: paraphrase-only
+  domains: [it/security]
+  verified_license_at: "2026-10-14"
+
+investor-gov:
+  title: U.S. SEC Investor.gov Educational Glossary
+  publisher: U.S. Securities and Exchange Commission
+  url: https://www.investor.gov
+  type: glossary
+  tier: B
+  languages: [en]
+  license: public-domain-us-gov
+  reuse: adapt
+  domains: [finance/personal-finance, finance/investing]
+  verified_license_at: "2026-10-14"
+  license_evidence: https://www.sec.gov/privacy
+
+sec-gov:
+  title: U.S. Securities and Exchange Commission Publications
+  publisher: U.S. Securities and Exchange Commission
+  url: https://www.sec.gov
+  type: docs
+  tier: B
+  languages: [en]
+  license: public-domain-us-gov
+  reuse: adapt
+  domains: [finance/corporate-finance, finance/investing]
+  verified_license_at: "2026-10-14"
+  license_evidence: https://www.sec.gov/privacy
+
+wikipedia-en:
+  title: Wikipedia (English)
+  publisher: Wikimedia Foundation
+  url: https://en.wikipedia.org
+  type: encyclopedia
+  tier: C
+  languages: [en]
+  license: CC-BY-SA-4.0
+  reuse: paraphrase-only
+  domains: [finance, it]
+  verified_license_at: "2026-10-14"
+
+wikipedia-vi:
+  title: Wikipedia (Tiếng Việt)
+  publisher: Wikimedia Foundation
+  url: https://vi.wikipedia.org
+  type: encyclopedia
+  tier: C
+  languages: [vi]
+  license: CC-BY-SA-4.0
+  reuse: paraphrase-only
+  domains: [finance, it]
+  verified_license_at: "2026-10-14"
+
+wiktionary-vi:
+  title: Wiktionary (Tiếng Việt)
+  publisher: Wikimedia Foundation
+  url: https://vi.wiktionary.org
+  type: glossary
+  tier: C
+  languages: [vi]
+  license: CC-BY-SA-4.0
+  reuse: paraphrase-only
+  domains: [finance, it]
+  verified_license_at: "2026-10-14"
+
+viblo:
+  title: Viblo Community Knowledge Base
+  publisher: Sun* Inc.
+  url: https://viblo.asia
+  type: community
+  tier: D
+  languages: [vi]
+  license: community-terms
+  reuse: paraphrase-only
+  domains: [it/software-engineering, it/web]
+  verified_license_at: "2026-10-14"
+
+vn-law-cyber:
+  title: Văn bản Quy phạm Pháp luật Việt Nam về Công nghệ và An ninh mạng
+  publisher: Quốc hội & Chính phủ Việt Nam
+  url: https://thuvienphapluat.vn
+  type: law
+  tier: A
+  languages: [vi]
+  license: public-domain-vn-law
+  reuse: adapt
+  domains: [it/security]
+  verified_license_at: "2026-10-14"
+  license_evidence: Khoản 2 Điều 19 Luật Sở hữu trí tuệ Việt Nam
+
+unknown:
+  title: Placeholder cho nguồn chưa phân loại
+  publisher: Unknown
+  url: https://unknown.local
+  type: community
+  tier: D
+  languages: [en, vi]
+  license: unknown
+  reuse: paraphrase-only
+  domains: [it, finance]
+  verified_license_at: "2026-10-14"

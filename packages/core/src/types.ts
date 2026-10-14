@@ -14,6 +14,30 @@ export interface ConceptProvenance {
   reviewed_at?: string;
 }
 
+export interface ConceptSource {
+  ref: string;
+  locator: string;
+  title?: string;
+  language?: string;
+  accessed: string;
+  retrieved_by?: 'ai' | 'human';
+  supports?: Array<'definition' | 'summary' | 'example'>;
+  quote?: string;
+  archive?: string;
+}
+
+export interface LabelEvidence {
+  ref: string;
+  locator: string;
+  accessed?: string;
+  note?: string;
+}
+
+export interface AutolinkConfig {
+  label?: 'always' | 'never' | 'auto';
+  aliases?: Record<string, 'always' | 'never' | 'auto'>;
+}
+
 export interface ConceptMetadata {
   id: string;
   domains: string[];
@@ -21,7 +45,7 @@ export interface ConceptMetadata {
   relations?: ConceptRelations;
   status: ConceptStatus;
   provenance: ConceptProvenance;
-  sources?: string[];
+  sources?: Array<string | ConceptSource>;
   replaced_by?: string;
 }
 
@@ -35,6 +59,13 @@ export interface LocaleEntryFrontmatter {
   confusable_notes?: Record<string, string>;
   follow_up_questions?: string[];
   translation?: 'native' | 'translated' | 'machine';
+  translated_from?: string;
+  translated_by?: string;
+  translated_at?: string;
+  coined?: boolean;
+  autolink?: AutolinkConfig;
+  label_evidence?: LabelEvidence[];
+  sources?: Array<string | ConceptSource>;
 }
 
 export interface LocaleEntry {
@@ -87,6 +118,23 @@ export interface ReviewersConfig {
   }>>;
 }
 
+export interface SourceCatalogEntry {
+  title: string;
+  publisher?: string;
+  url: string;
+  type: 'standard' | 'spec' | 'glossary' | 'docs' | 'textbook' | 'paper' | 'encyclopedia' | 'law' | 'community';
+  tier: 'A' | 'B' | 'C' | 'D';
+  languages: string[];
+  license: string;
+  reuse: 'adapt' | 'paraphrase-only' | 'cite-only';
+  domains: string[];
+  verified_license_at?: string;
+  license_evidence?: string;
+  license_verified_by?: string;
+}
+
+export type SourcesConfig = Record<string, SourceCatalogEntry>;
+
 export interface RepositoryData {
   rootDir: string;
   concepts: Map<string, ConceptRecord>;
@@ -95,6 +143,8 @@ export interface RepositoryData {
   localesConfig: LocalesConfig;
   domainsConfig: DomainsConfig;
   reviewersConfig: ReviewersConfig;
+  sourcesConfig?: SourcesConfig;
+  commonWords?: Record<string, Set<string>>;
 }
 
 export type ValidationSeverity = 'error' | 'warning';

@@ -12,6 +12,8 @@ import {
   lookupConcepts,
   generateLocaleReport,
   generateReviewReport,
+  loadSourcesConfig,
+  migrateAllSources,
 } from '@termbridge/core';
 
 const program = new Command();
@@ -353,6 +355,53 @@ reportCmd
       return;
     }
     console.table(rows);
+  });
+
+// tb sources <subcommand>
+const sourcesCmd = program.command('sources').description('Manage and inspect external evidence sources');
+
+sourcesCmd
+  .command('list')
+  .description('List all registered sources from config/sources.yaml')
+  .action(() => {
+    const rootDir = resolveRootDir();
+    const sourcesConfig = loadSourcesConfig(rootDir);
+    const entries = Object.entries(sourcesConfig);
+
+    console.log(pc.bold(`\nTermbridge Registered Sources (${entries.length}):\n`));
+    console.table(
+      entries.map(([ref, entry]) => ({
+        Ref: ref,
+        Title: entry.title,
+        Tier: entry.tier,
+        Type: entry.type,
+        Reuse: entry.reuse,
+        License: entry.license,
+        Languages: entry.languages.join(', '),
+      }))
+    );
+  });
+
+sourcesCmd
+  .command('migrate')
+  .description('Migrate string URL sources in concept.yaml files to structured source objects')
+  .action(() => {
+    const rootDir = resolveRootDir();
+    const result = migrateAllSources(rootDir);
+
+    console.log(pc.bold(`\nTermbridge Sources Migration:\n`));
+    console.log(`- Total concepts inspected: ${result.totalConcepts}`);
+    console.log(`- Concepts modified: ${result.migratedConcepts}`);
+    console.log(`- Source URLs migrated: ${result.migratedSourcesCount}`);
+
+    if (result.warnings.length > 0) {
+      console.log(pc.yellow(`\nWarnings (${result.warnings.length}):`));
+      for (const w of result.warnings) {
+        console.log(`  ${pc.yellow('⚠')} ${w}`);
+      }
+    }
+
+    console.log(pc.green(`\n✔ Migration complete!\n`));
   });
 
 if (!process.env.VITEST) {

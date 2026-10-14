@@ -4,7 +4,9 @@ import os from 'node:os';
 import Ajv from 'ajv';
 import { buildArtifacts } from './builder.js';
 import type {
+  ConceptMetadata,
   ConceptRecord,
+  ConceptSource,
   RepositoryData,
   ValidationIssue,
   ValidationReport,
@@ -12,6 +14,7 @@ import type {
 
 export interface ValidationOptions {
   checkIndexDrift?: boolean;
+  strict?: boolean;
 }
 
 export function detectPrerequisiteCycles(concepts: Map<string, ConceptRecord>): string[][] {
@@ -55,6 +58,9 @@ export function validateRepository(
   options: ValidationOptions = {}
 ): ValidationReport {
   const { concepts, validDomainPaths, localesConfig, reviewersConfig, rootDir } = repoData;
+  const isStrict = options.strict === true;
+  const sourcesConfig = repoData.sourcesConfig || {};
+  const commonWords = repoData.commonWords || {};
   const issues: ValidationIssue[] = [];
 
   // Setup Ajv schemas
@@ -277,6 +283,155 @@ export function validateRepository(
       });
     }
 
+    // Collect all sources for Rule 14, 16, 17
+    const conceptSources: Array<string | ConceptSource> = [...(metadata?.sources || [])];
+    for (const localeEntry of Object.values(locales)) {
+      if (localeEntry.frontmatter?.sources) {
+        conceptSources.push(...localeEntry.frontmatter.sources);
+      }
+    }
+
+    // Rule 14 & Rule 16: Check individual sources
+    for (const s of conceptSources) {
+      if (typeof s === 'string') {
+        if (isStrict) {
+          issues.push({
+            ruleId: 14,
+            severity: 'error',
+            conceptId: id,
+            message: `String source '${s}' must be migrated to structured source object; run 'tb sources migrate'`,
+          });
+        } else {
+          issues.push({
+            ruleId: 14,
+            severity: 'warning',
+            conceptId: id,
+            message: `String source '${s}' should be migrated to structured source object; run 'tb sources migrate'`,
+          });
+        }
+      } else if (typeof s === 'object' && s !== null) {
+        if (!s.ref || !sourcesConfig[s.ref]) {
+          issues.push({
+            ruleId: 14,
+            severity: 'error',
+            conceptId: id,
+            message: `Source ref '${s.ref}' not found in config/sources.yaml`,
+          });
+        }
+        if (!s.locator || typeof s.locator !== 'string' || !s.locator.trim()) {
+          issues.push({
+            ruleId: 14,
+            severity: 'error',
+            conceptId: id,
+            message: `Source '${s.ref || 'unknown'}' missing required field 'locator'`,
+          });
+        }
+        if (!s.accessed || !/^\d{4}-\d{2}-\d{2}$/.test(s.accessed)) {
+          issues.push({
+            ruleId: 14,
+            severity: 'error',
+            conceptId: id,
+            message: `Source '${s.ref || 'unknown'}' missing or invalid required field 'accessed' (must be YYYY-MM-DD)`,
+          });
+        }
+        if (!s.language || typeof s.language !== 'string' || !s.language.trim()) {
+          issues.push({
+            ruleId: 14,
+            severity: 'error',
+            conceptId: id,
+            message: `Source '${s.ref || 'unknown'}' missing required field 'language'`,
+          });
+        }
+
+        // Rule 16: Quote word limit and cite-only restriction
+        if (s.quote && typeof s.quote === 'string') {
+          const wordCount = s.quote.trim().split(/\s+/).filter(Boolean).length;
+          if (wordCount > 30) {
+            issues.push({
+              ruleId: 16,
+              severity: 'error',
+              conceptId: id,
+              message: `Source quote exceeds 30 words (${wordCount} words): '${s.quote.slice(0, 50)}...'`,
+            });
+          }
+          const catalogEntry = sourcesConfig[s.ref];
+          if (catalogEntry && catalogEntry.reuse === 'cite-only') {
+            issues.push({
+              ruleId: 16,
+              severity: 'error',
+              conceptId: id,
+              message: `Source '${s.ref}' has reuse 'cite-only' which forbids 'quote'`,
+            });
+          }
+        }
+      }
+    }
+
+    // Rule 17: Source tier requirements by status
+    const structuredSources = conceptSources.filter((s): s is ConceptSource => typeof s === 'object' && s !== null);
+    if (metadata.status === 'draft') {
+      if (conceptSources.length === 0) {
+        issues.push({
+          ruleId: 17,
+          severity: 'error',
+          conceptId: id,
+          message: `Draft concept must have at least 1 source`,
+        });
+      } else if (structuredSources.length > 0 && structuredSources.every((s) => ['C', 'D'].includes(sourcesConfig[s.ref]?.tier || 'D'))) {
+        issues.push({
+          ruleId: 17,
+          severity: 'warning',
+          conceptId: id,
+          message: `Draft concept only has tier C/D sources; tier A/B preferred`,
+        });
+      }
+    } else if (metadata.status === 'reviewed') {
+      const hasDefAB = structuredSources.some((s) =>
+        ['A', 'B'].includes(sourcesConfig[s.ref]?.tier || '') && Array.isArray(s.supports) && s.supports.includes('definition')
+      );
+      if (!hasDefAB) {
+        issues.push({
+          ruleId: 17,
+          severity: 'error',
+          conceptId: id,
+          message: `Reviewed concept requires at least 1 tier A or B source with supports: definition`,
+        });
+      }
+    } else if (metadata.status === 'verified') {
+      const distinctRefs = new Set(structuredSources.map((s) => s.ref));
+      const hasTierA = structuredSources.some((s) => sourcesConfig[s.ref]?.tier === 'A');
+      if (distinctRefs.size < 2 || !hasTierA) {
+        issues.push({
+          ruleId: 17,
+          severity: 'error',
+          conceptId: id,
+          message: `Verified concept requires at least 2 independent sources with at least 1 tier A source`,
+        });
+      }
+    }
+
+    // Rule 15: Vietnamese label evidence
+    const viEntry = locales['vi'];
+    const enEntry = locales['en'];
+    if (viEntry && enEntry) {
+      const viLabel = viEntry.frontmatter?.label?.trim();
+      const enLabel = enEntry.frontmatter?.label?.trim();
+      if (viLabel && enLabel && viLabel.toLowerCase() !== enLabel.toLowerCase()) {
+        const loanwords = (viEntry.frontmatter?.loanwords || []).map((l) => l.trim().toLowerCase());
+        const isLoanword = loanwords.includes(viLabel.toLowerCase());
+        const hasEvidence = Array.isArray(viEntry.frontmatter?.label_evidence) && viEntry.frontmatter.label_evidence.length > 0;
+        if (!isLoanword && !hasEvidence) {
+          issues.push({
+            ruleId: 15,
+            severity: 'warning',
+            conceptId: id,
+            locale: 'vi',
+            message: `Vietnamese label '${viLabel}' differs from English '${enLabel}' and is not a loanword, but lacks 'label_evidence'`,
+          });
+        }
+      }
+    }
+
     // Inspect individual locale files
     for (const [localeCode, localeEntry] of Object.entries(locales)) {
       const fm = localeEntry.frontmatter;
@@ -309,6 +464,46 @@ export function validateRepository(
             locale: localeCode,
             message: `Reviewed concept in '${localeCode}' has fewer than 2 plain_descriptions (found ${descriptions.length})`,
           });
+        }
+      }
+
+      // Rule 18: Translated locale entry must have translated_from and translated_by
+      if (fm?.translation === 'translated') {
+        if (!fm.translated_from || !fm.translated_by) {
+          issues.push({
+            ruleId: 18,
+            severity: 'error',
+            conceptId: id,
+            locale: localeCode,
+            message: `Locale entry with 'translation: translated' requires 'translated_from' and 'translated_by'`,
+          });
+        }
+      }
+
+      // Autolink check against common words (Warning)
+      const localeCommonWords = commonWords[localeCode];
+      if (localeCommonWords && fm?.label) {
+        const normLabel = fm.label.trim().toLowerCase();
+        if (localeCommonWords.has(normLabel) && !fm.autolink?.label) {
+          issues.push({
+            ruleId: 14,
+            severity: 'warning',
+            conceptId: id,
+            locale: localeCode,
+            message: `Label '${fm.label}' is a common word in '${localeCode}'; declare explicit 'autolink.label: always | never'`,
+          });
+        }
+        for (const alias of fm.aliases || []) {
+          const normAlias = alias.trim().toLowerCase();
+          if (localeCommonWords.has(normAlias) && !fm.autolink?.aliases?.[alias]) {
+            issues.push({
+              ruleId: 14,
+              severity: 'warning',
+              conceptId: id,
+              locale: localeCode,
+              message: `Alias '${alias}' is a common word in '${localeCode}'; declare explicit 'autolink.aliases.${alias}: always | never'`,
+            });
+          }
         }
       }
 

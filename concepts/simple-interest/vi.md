@@ -11,6 +11,10 @@ confusable_notes:
 follow_up_questions:
   - Khi nào hợp đồng vay tín dụng sử dụng phương pháp lãi đơn?
 translation: native
+label_evidence:
+  - ref: wikipedia-vi
+    locator: https://vi.wikipedia.org/wiki/L%C3%A3i_%C4%91%C6%A1n
+    accessed: '2026-10-14'
 ---
 
 ## Giải thích dễ hiểu

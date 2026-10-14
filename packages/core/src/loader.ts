@@ -11,8 +11,38 @@ import type {
   LocalesConfig,
   RepositoryData,
   ReviewersConfig,
+  SourcesConfig,
   TaxonomyNode,
 } from './types.js';
+
+export function loadSourcesConfig(rootDir: string): SourcesConfig {
+  const filePath = path.join(rootDir, 'config', 'sources.yaml');
+  if (!fs.existsSync(filePath)) {
+    return {};
+  }
+  const content = fs.readFileSync(filePath, 'utf-8');
+  return (yaml.load(content) as SourcesConfig) || {};
+}
+
+export function loadCommonWords(rootDir: string): Record<string, Set<string>> {
+  const configDir = path.join(rootDir, 'config');
+  const result: Record<string, Set<string>> = {};
+  if (!fs.existsSync(configDir)) return result;
+
+  for (const file of fs.readdirSync(configDir)) {
+    const match = file.match(/^common-words\.([a-z0-9_-]+)\.txt$/i);
+    if (match) {
+      const locale = match[1];
+      const filePath = path.join(configDir, file);
+      const lines = fs.readFileSync(filePath, 'utf-8')
+        .split('\n')
+        .map((l) => l.trim().toLowerCase())
+        .filter((l) => l.length > 0 && !l.startsWith('#'));
+      result[locale] = new Set(lines);
+    }
+  }
+  return result;
+}
 
 export function loadLocalesConfig(rootDir: string): LocalesConfig {
   const filePath = path.join(rootDir, 'config', 'locales.yaml');
@@ -141,6 +171,8 @@ export function loadAll(rootDir: string): RepositoryData {
   const reviewersConfig = loadReviewersConfig(rootDir);
   const { trees, validDomainPaths } = loadTaxonomy(rootDir);
   const concepts = loadConcepts(rootDir);
+  const sourcesConfig = loadSourcesConfig(rootDir);
+  const commonWords = loadCommonWords(rootDir);
 
   return {
     rootDir,
@@ -150,5 +182,7 @@ export function loadAll(rootDir: string): RepositoryData {
     localesConfig,
     domainsConfig,
     reviewersConfig,
+    sourcesConfig,
+    commonWords,
   };
 }

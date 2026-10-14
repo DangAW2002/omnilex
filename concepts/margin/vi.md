@@ -11,6 +11,10 @@ confusable_notes:
 follow_up_questions:
   - Giao dịch ký quỹ có những rủi ro nào khi giá chứng khoán giảm?
 translation: native
+label_evidence:
+  - ref: wikipedia-vi
+    locator: https://vi.wikipedia.org/wiki/K%C3%BD_qu%E1%BB%B9
+    accessed: '2026-10-14'
 ---
 
 ## Giải thích dễ hiểu

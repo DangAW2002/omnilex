@@ -1,0 +1,24 @@
+# Common Vietnamese tech words that may cause over-autolinking without explicit decision
+nhánh
+bản phát hành
+nút
+hàng đợi
+ngăn xếp
+luồng
+khóa
+mô hình
+ảnh
+dịch vụ
+máy chủ
+máy khách
+cụm
+cổng
+liên kết
+khung
+phiên
+tệp
+thư mục
+lưu trữ
+phiếu
+mã
+thẻ

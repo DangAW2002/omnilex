@@ -106,21 +106,37 @@ export function buildArtifacts(repoData: RepositoryData): BuildOutputs {
       };
 
       // Add main label
+      const labelAutolinkConfig = fm.autolink?.label;
+      const labelAutolink = labelAutolinkConfig === 'always'
+        ? true
+        : labelAutolinkConfig === 'never'
+        ? false
+        : label.length > 3;
+
       termsEntries.push({
         key: label,
         match: label.length <= 4 && label === label.toUpperCase() ? 'exact-case' : 'any-case',
         concepts: [termConcept],
-        autolink: label.length > 3,
+        autolink: labelAutolink,
+        autolinkConfig: labelAutolinkConfig,
       });
 
       // Add aliases
       if (fm.aliases) {
         for (const alias of fm.aliases) {
+          const aliasAutolinkConfig = fm.autolink?.aliases?.[alias];
+          const aliasAutolink = aliasAutolinkConfig === 'always'
+            ? true
+            : aliasAutolinkConfig === 'never'
+            ? false
+            : alias.length > 3;
+
           termsEntries.push({
             key: alias,
             match: alias.length <= 4 && alias === alias.toUpperCase() ? 'exact-case' : 'any-case',
             concepts: [termConcept],
-            autolink: alias.length > 3,
+            autolink: aliasAutolink,
+            autolinkConfig: aliasAutolinkConfig,
           });
         }
       }
@@ -218,14 +234,28 @@ export function buildArtifacts(repoData: RepositoryData): BuildOutputs {
           if (!existing.concepts.some((item: { id: string }) => item.id === concept.id)) existing.concepts.push(concept);
         }
         if (term.match === 'exact-case') existing.match = 'exact-case';
+        if (term.autolinkConfig === 'always') existing.autolinkConfig = 'always';
+        if (term.autolinkConfig === 'never') existing.autolinkConfig = 'never';
+        existing.autolink = existing.autolink && term.autolink;
       } else {
         groupedTerms.set(key, { ...term, concepts: [...term.concepts] });
       }
     }
-    const uniqueTerms = Array.from(groupedTerms.values()).map((term) => ({
-      ...term,
-      autolink: term.autolink && term.concepts.length === 1 && !/^(margin|token)$/i.test(term.key),
-    }));
+    const uniqueTerms = Array.from(groupedTerms.values()).map((term) => {
+      const explicitAlways = term.autolinkConfig === 'always';
+      const explicitNever = term.autolinkConfig === 'never';
+      const shouldAutolink = explicitNever
+        ? false
+        : explicitAlways
+        ? term.concepts.length === 1
+        : term.autolink && term.concepts.length === 1 && !/^(margin|token)$/i.test(term.key);
+
+      const { autolinkConfig, ...rest } = term;
+      return {
+        ...rest,
+        autolink: shouldAutolink,
+      };
+    });
 
     // Write dist/<locale>/terms.json
     const termsDistPath = path.join(localeDistDir, 'terms.json');

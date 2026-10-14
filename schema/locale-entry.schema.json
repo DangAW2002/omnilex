@@ -46,6 +46,71 @@
     "translation": {
       "type": "string",
       "enum": ["native", "translated", "machine"]
+    },
+    "translated_from": {
+      "type": "string"
+    },
+    "translated_by": {
+      "type": "string"
+    },
+    "translated_at": {
+      "type": "string",
+      "pattern": "^\\d{4}-\\d{2}-\\d{2}$"
+    },
+    "coined": {
+      "type": "boolean"
+    },
+    "autolink": {
+      "type": "object",
+      "properties": {
+        "label": { "type": "string", "enum": ["always", "never", "auto"] },
+        "aliases": {
+          "type": "object",
+          "additionalProperties": { "type": "string", "enum": ["always", "never", "auto"] }
+        }
+      },
+      "additionalProperties": false
+    },
+    "label_evidence": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["ref", "locator"],
+        "properties": {
+          "ref": { "type": "string" },
+          "locator": { "type": "string" },
+          "accessed": { "type": "string", "pattern": "^\\d{4}-\\d{2}-\\d{2}$" },
+          "note": { "type": "string" }
+        },
+        "additionalProperties": false
+      }
+    },
+    "sources": {
+      "type": "array",
+      "items": {
+        "oneOf": [
+          { "type": "string" },
+          {
+            "type": "object",
+            "required": ["ref", "locator", "accessed", "language"],
+            "properties": {
+              "ref": { "type": "string" },
+              "locator": { "type": "string" },
+              "title": { "type": "string" },
+              "language": { "type": "string" },
+              "accessed": { "type": "string", "pattern": "^\\d{4}-\\d{2}-\\d{2}$" },
+              "retrieved_by": { "type": "string", "enum": ["ai", "human"] },
+              "supports": {
+                "type": "array",
+                "items": { "type": "string", "enum": ["definition", "summary", "example"] }
+              },
+              "quote": { "type": "string" },
+              "archive": { "type": "string" }
+            },
+            "additionalProperties": false
+          }
+        ]
+      }
     }
   },
   "additionalProperties": false

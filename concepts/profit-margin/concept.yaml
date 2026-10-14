@@ -3,10 +3,20 @@ domains:
   - finance/corporate-finance/financial-statements
 level: 2
 relations:
-  confusable: [margin]
-  related: [roi]
+  confusable:
+    - margin
+  related:
+    - roi
 status: draft
 provenance:
   drafted_by: ai
 sources:
-  - https://www.sec.gov/about/reports-publications/investorpubsbegfinstmtguide
+  - ref: sec-gov
+    locator: https://www.sec.gov/about/reports-publications/investorpubsbegfinstmtguide
+    title: U.S. Securities and Exchange Commission Publications
+    language: en
+    accessed: '2026-10-14'
+    retrieved_by: ai
+    supports:
+      - definition
+      - summary

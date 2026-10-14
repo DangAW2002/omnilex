@@ -11,4 +11,13 @@ provenance:
   drafted_by: ai
   reviewed_by: ["@dang"]
   reviewed_at: "2026-10-12"
-sources: []
+sources:
+  - ref: investor-gov
+    locator: https://www.investor.gov/financial-tools-calculators/calculators/compound-interest-calculator
+    title: Compound Interest Calculator and Definition
+    language: en
+    accessed: '2026-10-14'
+    retrieved_by: ai
+    supports:
+      - definition
+      - summary

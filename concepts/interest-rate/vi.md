@@ -11,6 +11,10 @@ follow_up_questions:
   - Lãi suất thực tế và lãi suất danh nghĩa khác nhau thế nào khi có lạm phát?
   - Ngân hàng nhà nước điều chỉnh lãi suất cơ bản ảnh hưởng gì đến thị trường?
 translation: native
+label_evidence:
+  - ref: wikipedia-vi
+    locator: https://vi.wikipedia.org/wiki/L%C3%A3i_su%E1%BA%A5t
+    accessed: '2026-10-14'
 ---
 
 ## Giải thích dễ hiểu

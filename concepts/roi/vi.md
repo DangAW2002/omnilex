@@ -10,6 +10,10 @@ confusable_notes: {}
 follow_up_questions:
   - Phân biệt ROI trong đầu tư tài chính dài hạn và ROAS trong chạy quảng cáo ngắn hạn?
 translation: native
+label_evidence:
+  - ref: wikipedia-vi
+    locator: https://vi.wikipedia.org/wiki/T%E1%BB%B7_su%E1%BA%A5t_ho%C3%A0n_v%E1%BB%91n
+    accessed: '2026-10-14'
 ---
 
 ## Giải thích dễ hiểu

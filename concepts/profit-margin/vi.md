@@ -11,6 +11,10 @@ confusable_notes:
 follow_up_questions:
   - Biên lợi nhuận gộp và biên lợi nhuận ròng khác nhau ở những khoản chi phí nào?
 translation: native
+label_evidence:
+  - ref: wikipedia-vi
+    locator: https://vi.wikipedia.org/wiki/Bi%C3%AAn_l%E1%BB%A3i_nhu%E1%BA%ADn
+    accessed: '2026-10-14'
 ---
 
 ## Giải thích dễ hiểu

@@ -11,7 +11,7 @@ describe('T-S3: tb find does not call loadAll() when dist is fresh', () => {
     },
   ];
 
-  it('uses prebuilt dist/vi/search.json directly and never calls loadAll when dist is fresh', () => {
+  it('uses prebuilt dist/vi/search.json directly and never calls loadAll when dist is fresh', async () => {
     const mockLoadAll = vi.fn();
     const mockFindConcepts = vi.fn();
     const mockFindConceptsFromDocs = vi.fn().mockReturnValue([
@@ -29,7 +29,7 @@ describe('T-S3: tb find does not call loadAll() when dist is fresh', () => {
       readFileSync: vi.fn().mockReturnValue(JSON.stringify(fakeDocs)),
     } as any;
 
-    const { results, usedPrebuilt } = findAction(
+    const { results, usedPrebuilt } = await findAction(
       '/mock/root',
       'lãi kép',
       { locale: 'vi' },
@@ -52,7 +52,7 @@ describe('T-S3: tb find does not call loadAll() when dist is fresh', () => {
     expect(results[0].id).toBe('compound-interest');
   });
 
-  it('falls back to loadAll() with warning when dist is stale (concepts newer than dist)', () => {
+  it('falls back to loadAll() with warning when dist is stale (concepts newer than dist)', async () => {
     const mockLoadAll = vi.fn().mockReturnValue({ concepts: new Map() });
     const mockFindConcepts = vi.fn().mockReturnValue([
       { id: 'compound-interest', label: 'Lãi kép', score: 1.0 },
@@ -72,7 +72,7 @@ describe('T-S3: tb find does not call loadAll() when dist is fresh', () => {
 
     const warnSpy = vi.spyOn(console, 'warn').mockImplementation(() => {});
 
-    const { results, usedPrebuilt } = findAction(
+    const { results, usedPrebuilt } = await findAction(
       '/mock/root',
       'lãi kép',
       { locale: 'vi' },

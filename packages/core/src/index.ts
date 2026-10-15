@@ -5,4 +5,5 @@ export * from './builder.js';
 export * from './query.js';
 export * from './sources.js';
 export * from './matcher.js';
+export * from './lookup.js';
 export { default as MiniSearch } from 'minisearch';

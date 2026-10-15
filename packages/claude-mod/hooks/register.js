@@ -1,4 +1,5 @@
 import { createMatcher, createReverseMatcher } from './runtime/matcher.js'
+import { createLookupIndex } from './runtime/lookup.js'
 
 const PANE_ID = 'termbridge-lookup'
 const MAX_BADGES = 4
@@ -14,10 +15,12 @@ let reverseMatcher = null
 const scanCache = new Map()
 let repoRoot = ''
 let localized = {}
+let lookupIndex = null
 
 const MODES = ['hover', 'links', 'badges']
 const LOCALES = ['vi', 'en']
 const MAX_INLINE_TERMS = 30
+const MAX_SCAN_CACHE_ENTRIES = 256
 let mode = 'hover'
 let locale = 'vi'
 const UI_TEXT = {
@@ -39,10 +42,6 @@ const UI_TEXT = {
   },
 }
 
-function normalize(value) {
-  return value.normalize('NFD').replace(/\p{M}/gu, '').replace(/đ/gi, 'd').toLowerCase()
-}
-
 function cleanTranscript(text) {
   return text
     .replace(/```[\s\S]*?```/g, ' ')
@@ -62,6 +61,7 @@ function buildMatchers() {
   }))
   trieMatcher = createMatcher(localizedTerms)
   reverseMatcher = createReverseMatcher(concepts)
+  lookupIndex = createLookupIndex(concepts)
   scanCache.clear()
 }
 
@@ -71,11 +71,6 @@ function selectLocale(value) {
   locale = value
   concepts = data.concepts
   conceptsById = new Map(concepts.map((item) => [item.id, item]))
-  for (const c of concepts) {
-    if (!c.normalized_descriptions && c.plain_descriptions) {
-      c.normalized_descriptions = c.plain_descriptions.map(normalize)
-    }
-  }
   explanations = data.explanations || new Map()
   buildMatchers()
   return true
@@ -84,13 +79,34 @@ function selectLocale(value) {
 function matchedConcepts(text, requestId) {
   if (!trieMatcher) return []
   if (requestId) {
-    const key = `${requestId}:matched`
-    if (scanCache.has(key)) return scanCache.get(key)
+    const key = String(requestId)
+    const signature = transcriptSignature(text)
+    const cached = scanCache.get(key)
+    if (cached?.signature === signature) {
+      scanCache.delete(key)
+      scanCache.set(key, cached)
+      return cached.concepts
+    }
     const res = trieMatcher.matchedConcepts(text, MAX_BADGES)
-    scanCache.set(key, res)
+    scanCache.delete(key)
+    scanCache.set(key, { signature, concepts: res })
+    while (scanCache.size > MAX_SCAN_CACHE_ENTRIES) {
+      scanCache.delete(scanCache.keys().next().value)
+    }
     return res
   }
   return trieMatcher.matchedConcepts(text, MAX_BADGES)
+}
+
+function transcriptSignature(text) {
+  let first = 0x811c9dc5
+  let second = 0x9e3779b9
+  for (let i = 0; i < text.length; i++) {
+    const code = text.charCodeAt(i)
+    first = Math.imul(first ^ code, 0x01000193)
+    second = Math.imul(second ^ (code + i), 0x85ebca6b)
+  }
+  return `${text.length}:${first >>> 0}:${second >>> 0}`
 }
 
 // Hits of every term in `text`, longest key first, none inside `blocked` ranges.
@@ -174,7 +190,7 @@ function termRuns(segments) {
     placed.some((segment) => hit.start >= segment.start && hit.end <= segment.end))
   const runs = []
   for (const segment of placed) {
-    const style = { bold: segment.bold, italic: segment.italic, code: segment.code }
+    const style = { bold: segment.bold, italic: segment.italic, code: segment.code, link: segment.link }
     let cursor = segment.start
     for (const hit of hits.filter((item) => item.start >= segment.start && item.end <= segment.end)) {
       if (hit.start > cursor) runs.push({ text: plain.slice(cursor, hit.start), style })
@@ -190,7 +206,7 @@ function termRuns(segments) {
 function wrapRuns(runs, width) {
   const atoms = []
   for (const run of runs) {
-    if (run.concept) { atoms.push({ ...run, width: textWidth(run.text) }); continue }
+    if (run.concept || run.style?.link) { atoms.push({ ...run, width: textWidth(run.text) }); continue }
     for (const part of run.text.split(/(\s+)/)) {
       if (part) atoms.push({ text: part, style: run.style, space: /^\s/.test(part), width: textWidth(part) })
     }
@@ -256,7 +272,7 @@ function hoverCard(elements, concept, col, width) {
 }
 
 function unitRows(elements, unit, width, keyBase, open) {
-  const { Box, Text, Button } = elements
+  const { Box, Text, Button, Markdown } = elements
   const prefix = unit.kind === 'item'
     ? `${' '.repeat(unit.indent)}${/\d/.test(unit.marker) ? unit.marker : '-'} `
     : ''
@@ -273,7 +289,14 @@ function unitRows(elements, unit, width, keyBase, open) {
       else pieces.push({ ...atom })
     }
     const children = pieces.map((piece, index) => {
-      if (!piece.concept) return Text({ ...textStyle(piece.style), children: [piece.text] })
+      if (!piece.concept) {
+        if (piece.style?.link) {
+          const label = piece.text.replace(/([\\[\]])/g, '\\$1')
+          const href = piece.style.link.replace(/[()\\]/g, '\\$&')
+          return Markdown({ text: `[${label}](${href})` })
+        }
+        return Text({ ...textStyle(piece.style), children: [piece.text] })
+      }
       const key = `${keyBase}-${lineIndex}-${index}`
       return Box({
         key, position: 'relative',
@@ -412,34 +435,7 @@ function inlineTree(elements, text, spans, requestId, prefix, hintFor, openConce
 }
 
 function findConcepts(input) {
-  const needle = normalize(input.trim())
-  if (!needle) return []
-  const tokens = [...new Set(needle.split(/[^\p{L}\p{N}]+/u).filter(Boolean))]
-  return concepts
-    .map((concept) => {
-      const fields = [
-        [concept.label, 4],
-        ...concept.plain_descriptions.map((part) => [part, 4]),
-        ...concept.aliases.map((part) => [part, 3]),
-        ...concept.loanwords.map((part) => [part, 3]),
-        [concept.summary, 1],
-      ]
-      let score = 0
-      for (const [value, weight] of fields) {
-        const normalized = normalize(value)
-        if (normalized === needle) score = Math.max(score, weight * 20)
-        else if (normalized.includes(needle)) score = Math.max(score, weight * 10)
-        else {
-          const hits = tokens.filter((token) => normalized.includes(token)).length
-          if (hits) score = Math.max(score, weight * hits / tokens.length)
-        }
-      }
-      return { concept, score }
-    })
-    .filter((item) => item.score >= 0.5)
-    .sort((a, b) => b.score - a.score || a.concept.label.localeCompare(b.concept.label))
-    .slice(0, 5)
-    .map((item) => item.concept)
+  return lookupIndex?.search(input, 5) || []
 }
 
 function reverseHints(text) {
@@ -484,7 +480,7 @@ async function loadData($) {
     }
     const grouped = new Map()
     for (const term of [...JSON.parse(viTerms), ...JSON.parse(enTerms)]) {
-      const key = normalize(term.key)
+      const key = term.key.normalize('NFC').toLowerCase()
       if (!grouped.has(key)) grouped.set(key, { ...term, concepts: [...term.concepts] })
       else {
         const current = grouped.get(key)
@@ -501,6 +497,7 @@ async function loadData($) {
     terms = []
     matchers = []
     concepts = []
+    lookupIndex = null
     explanations = new Map()
     localized = {}
     $.ui.log('Termbridge: run pnpm tb build to generate mod lookup data')

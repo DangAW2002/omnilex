@@ -3,18 +3,6 @@ import { Command } from 'commander';
 import path from 'node:path';
 import fs from 'node:fs';
 import pc from 'picocolors';
-import {
-  loadAll,
-  validateRepository,
-  buildArtifacts,
-  findConcepts,
-  findConceptsFromDocs,
-  lookupConcepts,
-  generateLocaleReport,
-  generateReviewReport,
-  loadSourcesConfig,
-  migrateAllSources,
-} from '@termbridge/core';
 
 const program = new Command();
 
@@ -41,8 +29,9 @@ program
   .requiredOption('-d, --domain <path>', 'Primary taxonomy domain path (e.g., finance/investing/stocks)')
   .option('-l, --locales <locales>', 'Comma-separated locale codes', 'vi,en')
   .option('--drafted-by <author>', 'Draft author: human or ai', 'human')
-  .action((id: string, options: { domain: string; locales: string; draftedBy: string }) => {
+  .action(async (id: string, options: { domain: string; locales: string; draftedBy: string }) => {
     const rootDir = resolveRootDir();
+    const { loadAll } = await import('@termbridge/core');
     const repoData = loadAll(rootDir);
     const locales = options.locales.split(',').map((s) => s.trim());
     const allowedLocales = new Set(repoData.localesConfig.locales.map((locale) => locale.code));
@@ -134,8 +123,9 @@ program
   .command('validate')
   .description('Run all 13 integrity validation rules')
   .option('-s, --strict', 'Treat warnings as errors', false)
-  .action((options: { strict: boolean }) => {
+  .action(async (options: { strict: boolean }) => {
     const rootDir = resolveRootDir();
+    const { loadAll, validateRepository } = await import('@termbridge/core');
     const repoData = loadAll(rootDir);
     const report = validateRepository(repoData);
 
@@ -168,8 +158,9 @@ program
 program
   .command('build')
   .description('Generate indexes/, llms.txt, and dist/ artifacts')
-  .action(() => {
+  .action(async () => {
     const rootDir = resolveRootDir();
+    const { loadAll, buildArtifacts } = await import('@termbridge/core');
     const repoData = loadAll(rootDir);
     const outputs = buildArtifacts(repoData);
 
@@ -179,23 +170,24 @@ program
     console.log(`  - dist/ (search.json, terms.json, graph.json, concepts/)`);
   });
 
-export function findAction(
+export async function findAction(
   rootDir: string,
   query: string,
   options: { locale: string; domain?: string },
-  deps = { loadAll, findConcepts, findConceptsFromDocs, fs }
-): { results: any[]; usedPrebuilt: boolean } {
+  deps: any = {}
+): Promise<{ results: any[]; usedPrebuilt: boolean }> {
+  const filesystem = deps.fs || fs;
   const targetLocale = options.locale || 'vi';
   const prebuiltPath = path.join(rootDir, 'dist', targetLocale, 'search.json');
   const conceptsDir = path.join(rootDir, 'concepts');
 
   let usePrebuilt = false;
-  if (deps.fs.existsSync(prebuiltPath)) {
+  if (filesystem.existsSync(prebuiltPath)) {
     try {
-      const distStat = deps.fs.statSync(prebuiltPath);
+      const distStat = filesystem.statSync(prebuiltPath);
       let isStale = false;
-      if (deps.fs.existsSync(conceptsDir)) {
-        const conceptsStat = deps.fs.statSync(conceptsDir);
+      if (filesystem.existsSync(conceptsDir)) {
+        const conceptsStat = filesystem.statSync(conceptsDir);
         if (conceptsStat.mtimeMs > distStat.mtimeMs) {
           isStale = true;
         }
@@ -212,9 +204,12 @@ export function findAction(
 
   if (usePrebuilt) {
     try {
-      const raw = deps.fs.readFileSync(prebuiltPath, 'utf8');
+      const raw = filesystem.readFileSync(prebuiltPath, 'utf8');
       const docs = JSON.parse(raw);
-      const results = deps.findConceptsFromDocs(docs, query, {
+      const { findConceptsFromDocs } = deps.findConceptsFromDocs
+        ? deps
+        : await import('@termbridge/core/dist/query.js');
+      const results = findConceptsFromDocs(docs, query, {
         domain: options.domain,
         cacheKey: `cli-dist:${targetLocale}`,
       });
@@ -224,8 +219,14 @@ export function findAction(
     }
   }
 
-  const repoData = deps.loadAll(rootDir);
-  const results = deps.findConcepts(repoData, query, { locale: options.locale, domain: options.domain });
+  const { loadAll } = deps.loadAll
+    ? deps
+    : await import('@termbridge/core/dist/loader.js');
+  const { findConcepts } = deps.findConcepts
+    ? deps
+    : await import('@termbridge/core/dist/query.js');
+  const repoData = loadAll(rootDir);
+  const results = findConcepts(repoData, query, { locale: options.locale, domain: options.domain });
   return { results, usedPrebuilt: false };
 }
 
@@ -235,9 +236,9 @@ program
   .description('Reverse lookup: search concepts by plain words or colloquial descriptions')
   .option('-l, --locale <locale>', 'Target locale', 'vi')
   .option('-d, --domain <domain>', 'Filter by domain prefix')
-  .action((query: string, options: { locale: string; domain?: string }) => {
+  .action(async (query: string, options: { locale: string; domain?: string }) => {
     const rootDir = resolveRootDir();
-    const { results } = findAction(rootDir, query, options);
+    const { results } = await findAction(rootDir, query, options);
 
     if (results.length === 0) {
       console.log(pc.yellow(`\n⚠ Không tìm thấy khái niệm nào khớp với: "${pc.bold(query)}" (${options.locale})`));
@@ -261,8 +262,9 @@ program
   .command('show <target>')
   .description('Forward lookup: display layered explanations for a concept')
   .option('-l, --locale <locale>', 'Target locale', 'vi')
-  .action((target: string, options: { locale: string }) => {
+  .action(async (target: string, options: { locale: string }) => {
     const rootDir = resolveRootDir();
+    const { loadAll, findConcepts, lookupConcepts } = await import('@termbridge/core');
     const repoData = loadAll(rootDir);
     const matches = lookupConcepts(repoData, target, { locale: options.locale });
     if (matches.length > 1) {
@@ -324,8 +326,9 @@ const reportCmd = program.command('report').description('Generate diagnostic and
 reportCmd
   .command('locales')
   .description('Report terminology coverage across locales and domains')
-  .action(() => {
+  .action(async () => {
     const rootDir = resolveRootDir();
+    const { loadAll, generateLocaleReport } = await import('@termbridge/core');
     const repoData = loadAll(rootDir);
     const rows = generateLocaleReport(repoData);
 
@@ -344,8 +347,9 @@ reportCmd
 reportCmd
   .command('review')
   .description('List all draft concepts needing review, grouped by domain')
-  .action(() => {
+  .action(async () => {
     const rootDir = resolveRootDir();
+    const { loadAll, generateReviewReport } = await import('@termbridge/core');
     const repoData = loadAll(rootDir);
     const rows = generateReviewReport(repoData);
 
@@ -363,8 +367,9 @@ const sourcesCmd = program.command('sources').description('Manage and inspect ex
 sourcesCmd
   .command('list')
   .description('List all registered sources from config/sources.yaml')
-  .action(() => {
+  .action(async () => {
     const rootDir = resolveRootDir();
+    const { loadSourcesConfig } = await import('@termbridge/core');
     const sourcesConfig = loadSourcesConfig(rootDir);
     const entries = Object.entries(sourcesConfig);
 
@@ -385,8 +390,9 @@ sourcesCmd
 sourcesCmd
   .command('migrate')
   .description('Migrate string URL sources in concept.yaml files to structured source objects')
-  .action(() => {
+  .action(async () => {
     const rootDir = resolveRootDir();
+    const { migrateAllSources } = await import('@termbridge/core');
     const result = migrateAllSources(rootDir);
 
     console.log(pc.bold(`\nTermbridge Sources Migration:\n`));

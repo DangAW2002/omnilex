@@ -81,3 +81,35 @@ Tốc độ quét lần đầu ở quy mô 1.000 khái niệm giảm ngoạn m�
 | Hiệu năng (P-1, P-2) | Đạt | Quét text 0,36 ms (1k) và 0,64 ms (10k), vượt xa ngân sách |
 | Build xác định (D-4) | Đạt | `pnpm check:deterministic` 48/48 artifacts identical sha256 |
 | Bảo mật/an toàn dữ liệu (D-9, 5.4) | Đạt | Thuần chuỗi ký tự, không eval, không I/O ngoài adapter |
+
+## Rủi ro còn lại và việc chưa làm
+- Ngân sách 1.7 ở 10.000 khái niệm **chưa đạt** sau khi đo lại trung thực (xem phụ lục). Phần trie (dò lần đầu, dò sau) đạt; phần nạp dữ liệu và tìm kiếm phụ thuộc định dạng gói và chỉ mục dựng sẵn, chuyển sang WP5 (P3) và WP6 (profile, resolver).
+
+## Phụ lục (2026-10-15): bổ sung sau commit WP4 và đo lại
+### Thay đổi bổ sung
+| File | Loại | Ghi chú |
+|---|---|---|
+| `packages/core/src/lookup.ts` | Tạo mới | `ConceptLookupIndex`: chỉ mục trigram + token cho pane tra cứu của mod; mỗi lần gõ chỉ chấm điểm các khái niệm ứng viên thay vì quét toàn bộ |
+| `packages/core/test/lookup.test.ts` | Tạo mới | Tra cứu có/không dấu, truy vấn không liên quan trả rỗng |
+| `packages/core/src/builder.ts` | Sửa | Sinh thêm `hooks/runtime/lookup.js` |
+| `packages/core/src/matcher.ts` | Sửa | `ReverseMatcher.reverseSpans` khớp sau khi bỏ dấu/NFD và ánh xạ offset về chuỗi gốc theo grapheme; hàng đợi BFS không dùng `shift()`; chọn khoảng không chồng lấn O(n) |
+| `packages/claude-mod/hooks/register.js` | Sửa | Dùng `createLookupIndex`; bỏ `normalize` riêng (D-2); cache quét theo requestId có chữ ký nội dung và giới hạn LRU 256; link markdown giữ nguyên khi xuống dòng |
+| `packages/cli/src/index.ts` | Sửa | Import `@termbridge/core` lười trong từng lệnh để giảm thời gian khởi động; `findAction` thành async |
+| `bench/run.ts` | Sửa | Đo trung thực hơn: nạp cả hai locale và dựng chỉ mục như mod; `tb find` lạnh chạy `findAction` thật trên thư mục tạm; thêm thời gian khởi động tiến trình CLI (tham khảo); 10k không áp ngân sách dung lượng 5 MB vì ngân sách đó dành cho profile `lite` một gói |
+
+Lệch hành vi đã biết: trong pane tra cứu, token ngắn hơn 3 ký tự chỉ khớp nguyên từ (trước đây khớp chuỗi con).
+
+### Cổng kiểm tra (chạy lại trên trạng thái này)
+Đều đạt: install, typecheck, build (`22 index files and 42 dist artifacts`), test (`14 passed / 54 passed`), `claude plugin test` (`10 pass, 0 fail`), validate strict, site build (`25 page(s)`), diff file sinh sạch, `check:deterministic` (`All 49 artifacts`), `bench --sizes 1000 --check` (`Scale 1000 PASSED`).
+
+### Số đo lại
+| Chỉ số | 1.000 | 10.000 | Ngân sách 10k | Đạt (10k)? |
+|---|---|---|---|---|
+| Mod: nạp (JSON 2 locale + dựng chỉ mục) | 134,64 ms | 1.333,7 ms | ≤ 300 ms | ✗ |
+| Mod: dò lần đầu | 0,53 ms | 0,63 ms | ≤ 20 ms | ☑ |
+| Mod: dò sau | 0,15 ms | 0,17 ms | ≤ 2 ms | ☑ |
+| `tb find` lạnh (đọc + dựng chỉ mục + truy vấn) | 57,74 ms | 564,2 ms | ≤ 200 ms | ✗ |
+| MCP `find` nóng | 2,44 ms | 15,9 ms | ≤ 10 ms | ✗ |
+| Dữ liệu (2 locale, mọi khái niệm) | 1,90 MB | 19,19 MB | 5 MB (lite, 1 gói) | – |
+
+Các số 10k trong phần "Hiệu năng" ở trên (194,51 ms; 9,86 ms) đo bằng bench cũ chỉ parse JSON một locale, nên thấp hơn thực tế. Số đúng là bảng này. Kết quả nguyên văn: `❌ Scale 10000 FAILED performance budget: Mod load time: 1333.7ms > budget 300ms; CLI find cold: 564.2ms > budget 200ms; MCP find warm: 15.9ms > budget 10ms`.

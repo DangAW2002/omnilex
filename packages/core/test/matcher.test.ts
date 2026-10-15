@@ -386,5 +386,17 @@ describe('Aho-Corasick Trie Matcher (WP4)', () => {
     const spans = reverseMatcher.reverseSpans(textWithAccents, hints1);
     expect(spans.length).toBe(1);
     expect(textWithAccents.slice(spans[0].start, spans[0].end)).toBe('tiền lãi lại sinh ra lãi');
+
+    const spansWithoutAccents = reverseMatcher.reverseSpans(textWithoutAccents, hints2);
+    expect(spansWithoutAccents).toHaveLength(1);
+    expect(textWithoutAccents.slice(spansWithoutAccents[0].start, spansWithoutAccents[0].end))
+      .toBe('tien lai lai sinh ra lai');
+
+    const nfdText = 'Tôi muốn biết về tiền lãi lại sinh ra lãi trong đầu tư';
+    const nfdHints = reverseMatcher.reverseHints(nfdText);
+    const nfdSpans = reverseMatcher.reverseSpans(nfdText, nfdHints);
+    expect(nfdSpans).toHaveLength(1);
+    expect(nfdText.slice(nfdSpans[0].start, nfdSpans[0].end).normalize('NFC'))
+      .toBe('tiền lãi lại sinh ra lãi');
   });
 });

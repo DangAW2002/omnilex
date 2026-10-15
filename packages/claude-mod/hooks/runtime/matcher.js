@@ -74,8 +74,9 @@ export class TrieMatcher {
         for (const [, next] of this.nodes[0].transitions) {
             queue.push(next);
         }
-        while (queue.length > 0) {
-            const curr = queue.shift();
+        let queueHead = 0;
+        while (queueHead < queue.length) {
+            const curr = queue[queueHead++];
             for (const [ch, next] of this.nodes[curr].transitions) {
                 let f = this.nodes[curr].fail;
                 while (f !== 0 && !this.nodes[f].transitions.has(ch)) {
@@ -220,9 +221,13 @@ export class TrieMatcher {
         resolvable.sort((a, b) => a.start - b.start || b.end - a.end);
         // Pick non-overlapping spans
         const chosen = [];
+        let lastChosenEnd = -1;
         for (const cand of resolvable) {
-            if (!chosen.some((item) => cand.start < item.end && cand.end > item.start)) {
+            // Candidates are already ordered by start, then longest first. Only the
+            // most recently chosen span can overlap the next candidate.
+            if (cand.start >= lastChosenEnd) {
                 chosen.push(cand);
+                lastChosenEnd = cand.end;
             }
         }
         return chosen;
@@ -286,8 +291,9 @@ export class ReverseMatcher {
         for (const [, next] of this.nodes[0].transitions) {
             queue.push(next);
         }
-        while (queue.length > 0) {
-            const curr = queue.shift();
+        let queueHead = 0;
+        while (queueHead < queue.length) {
+            const curr = queue[queueHead++];
             for (const [ch, next] of this.nodes[curr].transitions) {
                 let f = this.nodes[curr].fail;
                 while (f !== 0 && !this.nodes[f].transitions.has(ch)) {
@@ -329,33 +335,56 @@ export class ReverseMatcher {
         return found;
     }
     reverseSpans(text, hints, maxBadges = 4) {
+        const normalized = normalizeSearchTextWithMap(text);
         const candidates = [];
-        const lower = text.toLocaleLowerCase();
         for (const concept of hints) {
             for (const description of concept.plain_descriptions || []) {
-                const phrase = description.toLocaleLowerCase();
-                let idx = lower.indexOf(phrase);
+                const phrase = normalizeSearchTerm(description);
+                if (!phrase)
+                    continue;
+                let idx = normalized.text.indexOf(phrase);
                 while (idx !== -1) {
+                    const start = normalized.starts[idx];
+                    const end = normalized.ends[idx + phrase.length - 1];
+                    if (start === undefined || end === undefined)
+                        break;
                     candidates.push({
-                        start: idx,
-                        end: idx + description.length,
+                        start,
+                        end,
                         concept
                     });
-                    idx = lower.indexOf(phrase, idx + phrase.length);
+                    idx = normalized.text.indexOf(phrase, idx + phrase.length);
                 }
             }
         }
         candidates.sort((a, b) => a.start - b.start || b.end - a.end);
         const chosen = [];
+        let lastChosenEnd = -1;
         for (const cand of candidates) {
-            if (!chosen.some((item) => cand.start < item.end && cand.end > item.start)) {
+            if (cand.start >= lastChosenEnd) {
                 chosen.push(cand);
+                lastChosenEnd = cand.end;
                 if (chosen.length >= maxBadges)
                     break;
             }
         }
         return chosen;
     }
+}
+function normalizeSearchTextWithMap(value) {
+    let text = '';
+    const starts = [];
+    const ends = [];
+    const segmenter = new Intl.Segmenter(undefined, { granularity: 'grapheme' });
+    for (const { segment, index } of segmenter.segment(value)) {
+        const normalized = normalizeSearchTerm(segment);
+        text += normalized;
+        for (let i = 0; i < normalized.length; i++) {
+            starts.push(index);
+            ends.push(index + segment.length);
+        }
+    }
+    return { text, starts, ends };
 }
 export function createMatcher(terms) {
     return new TrieMatcher(terms);

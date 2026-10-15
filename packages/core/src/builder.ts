@@ -286,6 +286,14 @@ export function buildArtifacts(repoData: RepositoryData): BuildOutputs {
       fs.writeFileSync(runtimeMatcherPath, matcherCode, 'utf-8');
       distGenerated.push(runtimeMatcherPath);
     }
+
+    const distLookupPath = path.join(rootDir, 'packages', 'core', 'dist', 'lookup.js');
+    if (fs.existsSync(distLookupPath)) {
+      const lookupCode = fs.readFileSync(distLookupPath, 'utf-8').replace(/\r\n/g, '\n');
+      const runtimeLookupPath = path.join(claudeModRuntimeDir, 'lookup.js');
+      fs.writeFileSync(runtimeLookupPath, lookupCode, 'utf-8');
+      distGenerated.push(runtimeLookupPath);
+    }
   }
 
   const expectedIndexes = new Set(indexesGenerated.map((file) => path.resolve(file)));

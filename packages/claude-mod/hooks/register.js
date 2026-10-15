@@ -1,8 +1,13 @@
 import { createMatcher, createReverseMatcher } from './runtime/matcher.js'
 import { createLookupIndex } from './runtime/lookup.js'
+import { openProject } from './runtime/project.js'
+import { PackStore, PrefetchIO } from './runtime/pack-reader.js'
+import { mergeTerms } from './runtime/pack-format.js'
+import { searchConfigHash } from './runtime/search-config.js'
 
 const PANE_ID = 'termbridge-lookup'
 const MAX_BADGES = 4
+const PROFILES = ['lite', 'standard', 'semantic']
 
 let terms = []
 let concepts = []
@@ -12,10 +17,22 @@ let query = ''
 let selectedId = null
 let trieMatcher = null
 let reverseMatcher = null
+// Concepts the reverse matcher is still to be built from (see ensureReverse).
+let reverseSource = null
 const scanCache = new Map()
 let repoRoot = ''
 let localized = {}
 let lookupIndex = null
+// Packs resolved for the session's project (Plan 3.3, D11); null means the
+// data bundled with the plugin is in use.
+let packs = null
+let sessionCwd = ''
+let sessionPacks = null
+let sessionProfile = null
+let notices = []
+let paneResults = { key: '', results: [] }
+let selectFirstResult = false
+const explanationCache = new Map()
 
 const MODES = ['hover', 'links', 'badges']
 const LOCALES = ['vi', 'en']
@@ -60,8 +77,10 @@ function buildMatchers() {
     concepts: term.concepts.map((c) => conceptsById.get(c.id) || c),
   }))
   trieMatcher = createMatcher(localizedTerms)
-  reverseMatcher = createReverseMatcher(concepts)
-  lookupIndex = createLookupIndex(concepts)
+  reverseMatcher = null
+  reverseSource = concepts
+  // With packs the pane searches the pack indexes, loaded on first use.
+  lookupIndex = packs ? null : createLookupIndex(concepts)
   scanCache.clear()
 }
 
@@ -401,7 +420,7 @@ function forwardSpans(text) {
 }
 
 function reverseSpans(text, hints) {
-  if (!reverseMatcher) return []
+  if (!ensureReverse()) return []
   return reverseMatcher.reverseSpans(text, hints, MAX_BADGES)
 }
 
@@ -434,13 +453,88 @@ function inlineTree(elements, text, spans, requestId, prefix, hintFor, openConce
   return Box({ flexDirection: 'row', children: row })
 }
 
-function findConcepts(input) {
-  return lookupIndex?.search(input, 5) || []
+// Pane search: the pack indexes (standard), exact lookup (lite), or the
+// bundled trigram index. Results are cached for the current query.
+async function paneSearch(input) {
+  const text = input.trim()
+  const key = `${locale}|${text}`
+  if (paneResults.key === key) return paneResults.results
+  let results = []
+  if (!text) results = []
+  else if (!packs) results = lookupIndex?.search(text, 5) || []
+  else {
+    try {
+      const lite = packs.ctx.plan.profile === 'lite'
+      const hits = await packs.io.run(() => lite
+        ? packs.store.lookup(text, { locale })
+        : packs.store.find(text, { locale, limit: 5 }))
+      results = hits.map((hit) => conceptsById.get(hit.id) || hit)
+    } catch {
+      results = []
+    }
+  }
+  paneResults = { key, results }
+  return results
+}
+
+// The reverse matcher is the slowest index to build, and only a reply needs
+// it: it is built right after session.start, or by the first reply before that.
+function ensureReverse() {
+  if (!reverseMatcher && reverseSource) {
+    reverseMatcher = createReverseMatcher(reverseSource)
+    reverseSource = null
+  }
+  return reverseMatcher
+}
+
+function warmReverse($) {
+  try {
+    $.clock.after(0, () => ensureReverse())
+  } catch {
+    // Without a clock the first reply builds it.
+  }
+}
+
+function statusText() {
+  if (!packs) {
+    return [
+      'Termbridge: dữ liệu đóng kèm plugin (data/*.json) / bundled plugin data',
+      ...notices.map((notice) => `  ⚠ ${notice}`),
+    ].join('\n')
+  }
+  const { ctx } = packs
+  const total = ctx.plan.packs.reduce((sum, item) => sum + item.pack.concepts, 0)
+  const lines = [
+    `Termbridge: project ${ctx.projectDir || '(none)'} · profile ${ctx.plan.profile} · ${ctx.plan.packs.length} gói / packs · ${total} khái niệm / concepts · ~${ctx.plan.estimateMB.toFixed(1)} MB${ctx.plan.limitMB ? ` / ${ctx.plan.limitMB} MB` : ''}`,
+    ...ctx.plan.packs.map(({ pack, tiers }) =>
+      `  ${pack.id}@${pack.version} (${pack.sourceId === 'store' ? 'store' : 'dev'}) terms=${tiers.terms} cards=${tiers.cards} search=${tiers.search} explanations=${tiers.explanations}`),
+    ...ctx.plan.dropped.map((pack) => `  ${pack.id}: bỏ do giới hạn / dropped by limits`),
+    ...notices.map((notice) => `  ⚠ ${notice}`),
+  ]
+  return lines.join('\n')
 }
 
 function reverseHints(text) {
-  if (!reverseMatcher) return []
+  if (!ensureReverse()) return []
   return reverseMatcher.reverseHints(text, MAX_BADGES)
+}
+
+// Explanations load when a concept is opened, never before (lazy tier).
+async function explanationFor($, id) {
+  if (!packs) {
+    await ensureExplanations($, locale)
+    return explanations.get(id)
+  }
+  const key = `${locale}|${id}`
+  if (!explanationCache.has(key)) {
+    try {
+      const record = await packs.io.run(() => packs.store.explanation(id, locale))
+      explanationCache.set(key, record?.entry?.content || '')
+    } catch {
+      explanationCache.set(key, '')
+    }
+  }
+  return explanationCache.get(key)
 }
 
 async function ensureExplanations($, loc) {
@@ -460,7 +554,104 @@ async function ensureExplanations($, loc) {
   }
 }
 
+async function homeDir($) {
+  const read = async (get) => { try { return await get() } catch { return undefined } }
+  const explicit = await read(() => $.env.get('TERMBRIDGE_HOME'))
+  if (explicit) return explicit.replace(/\\/g, '/')
+  const home = (await read(() => $.env.get('HOME'))) || (await read(() => $.env.get('USERPROFILE'))) || ''
+  return `${home.replace(/\\/g, '/').replace(/\/+$/, '')}/.termbridge`
+}
+
+function projectFs($) {
+  return {
+    async read(path) {
+      try {
+        const text = await $.fs.read(path)
+        return typeof text === 'string' ? text : null
+      } catch {
+        return null
+      }
+    },
+    async exists(path) {
+      try { return (await $.fs.exists(path)) === true } catch { return false }
+    },
+    async list(path) {
+      try {
+        const entries = await $.fs.list(path)
+        return Array.isArray(entries) ? entries.filter((entry) => entry.kind === 'dir').map((entry) => entry.name) : []
+      } catch {
+        return []
+      }
+    },
+    async mtime(path) {
+      try { return (await $.fs.stat(path)).mtimeMs } catch { return null }
+    },
+  }
+}
+
+async function loadPackLocale(loc) {
+  if (localized[loc]) return true
+  if (!packs) return false
+  const cards = await packs.io.run(() => packs.ids.flatMap((id) => packs.store.cards(id, loc)))
+  localized[loc] = { concepts: cards, explanations: null }
+  return true
+}
+
+// Resolves the project's packs (config layers from the session's cwd, the
+// store, dev builds) and loads terms of both locales plus the active cards.
+async function loadPacks($) {
+  const fsAdapter = projectFs($)
+  const sessionConfig = {}
+  if (sessionPacks) Object.assign(sessionConfig, { packsReset: true, packs: sessionPacks })
+  if (sessionProfile) sessionConfig.profile = sessionProfile
+  const ctx = await openProject(fsAdapter, {
+    cwd: sessionCwd,
+    home: await homeDir($),
+    surface: 'mod',
+    locale,
+    session: Object.keys(sessionConfig).length ? { source: '/termbridge', config: sessionConfig } : undefined,
+    configHash: searchConfigHash(),
+  })
+  notices = ctx.notices
+  if (ctx.plan.packs.length === 0) return false
+  const io = new PrefetchIO((path) => fsAdapter.read(path))
+  const store = new PackStore(io, (message) => { if (!notices.includes(message)) notices.push(message) }, {
+    manifest: ctx.manifest,
+    disabled: ctx.disabled,
+  })
+  const ids = ctx.plan.packs.map((item) => item.pack.id)
+  const bases = ctx.plan.packs.map((item) => item.pack.path.replace(/\/pack\.json$/, ''))
+  await io.prefetch([
+    ...ctx.plan.packs.map((item) => item.pack.path),
+    ...bases.flatMap((base) => [...LOCALES.map((loc) => `${base}/${loc}/terms.json`), `${base}/${locale}/cards.json`]),
+  ])
+  packs = { ctx, store, io, ids }
+  localized = {}
+  explanationCache.clear()
+  paneResults = { key: '', results: [] }
+  const termList = await io.run(() => LOCALES.flatMap((loc) => ids.flatMap((id) => store.terms(id, loc))))
+  await loadPackLocale(locale)
+  const byId = new Map(localized[locale].concepts.map((card) => [card.id, card]))
+  terms = mergeTerms(termList, (id) => byId.get(id))
+    .sort((a, b) => b.key.length - a.key.length)
+  selectLocale(locale)
+  for (const notice of notices) $.ui.log(notice)
+  return true
+}
+
 async function loadData($) {
+  packs = null
+  try {
+    if (await loadPacks($)) return warmReverse($)
+  } catch (error) {
+    packs = null
+    $.ui.log(`Termbridge: không đọc được gói, dùng dữ liệu đóng kèm / cannot read packs, using bundled data (${error?.message || error})`)
+  }
+  await loadBundled($)
+  warmReverse($)
+}
+
+async function loadBundled($) {
   try {
     const [viTerms, enTerms, viConcepts, enConcepts] = await Promise.all([
       $.fs.read(`${$.plugin.root}/data/terms-vi.json`),
@@ -495,7 +686,6 @@ async function loadData($) {
     selectLocale(locale)
   } catch {
     terms = []
-    matchers = []
     concepts = []
     lookupIndex = null
     explanations = new Map()
@@ -508,27 +698,50 @@ export function register(on) {
   on('session.start', async ($, e, next) => {
     mode = 'hover'
     locale = 'vi'
+    // D11: the project is the directory the session was started in.
+    sessionCwd = String(e.cwd || '').replace(/\\/g, '/')
+    sessionPacks = null
+    sessionProfile = null
+    try {
+      const saved = await $.store.get('locale')
+      if (LOCALES.includes(saved)) locale = saved
+    } catch {}
     await loadData($)
     repoRoot = String($.plugin.root).replace(/\\/g, '/').replace(/\/+$/, '').replace(/\/packages\/claude-mod$/, '')
     try {
       const saved = await $.store.get('mode')
       if (MODES.includes(saved)) mode = saved
     } catch {}
-    try {
-      const saved = await $.store.get('locale')
-      if (LOCALES.includes(saved)) selectLocale(saved)
-    } catch {}
+    if (!selectLocale(locale)) selectLocale('vi')
     await $.command.register({
       name: 'termbridge',
-      description: 'Tra thuật ngữ; /termbridge lang vi|en; /termbridge mode hover|links|badges',
+      description: 'Tra thuật ngữ; /termbridge lang vi|en; mode hover|links|badges; packs <id,...>|all; profile lite|standard|semantic; status',
     })
     return next(e)
   })
 
   on('command.run', { command: 'termbridge' }, async ($, e) => {
     const [verb, value] = e.args.trim().split(/\s+/)
+    if (verb === 'status') return { text: statusText() }
+    if (verb === 'packs') {
+      if (!value) return { text: statusText() }
+      sessionPacks = value === 'all' ? null : value.split(',').map((item) => item.trim()).filter(Boolean)
+      await loadData($)
+      selectedId = null
+      query = ''
+      $.ui.invalidate('ui.render')
+      return { text: statusText() }
+    }
+    if (verb === 'profile') {
+      if (!PROFILES.includes(value)) return { text: `Termbridge: profile hiện tại là ${packs?.ctx.plan.profile || 'standard'} (lite, standard, semantic)` }
+      sessionProfile = value
+      await loadData($)
+      $.ui.invalidate('ui.render')
+      return { text: statusText() }
+    }
     if (verb === 'lang' || verb === 'language') {
       if (!LOCALES.includes(value)) return { text: `Termbridge: ngôn ngữ hiện tại là ${locale} (vi, en)` }
+      try { await loadPackLocale(value) } catch {}
       if (!selectLocale(value)) return { text: 'Termbridge: thiếu dữ liệu ngôn ngữ; chạy pnpm build rồi nạp lại mod.' }
       selectedId = null
       query = ''
@@ -690,12 +903,17 @@ export function register(on) {
 
   on('ui.render', { component: 'Pane' }, async ($, e, next) => {
     if (e.requestId !== PANE_ID) return next(e)
-    await ensureExplanations($, locale)
     const { Box, Text, Button, Input, Markdown } = $.ui.resolve(e)
     const strings = UI_TEXT[locale]
+    const results = await paneSearch(query)
+    if (selectFirstResult) {
+      selectedId = results[0]?.id || null
+      selectFirstResult = false
+    }
     const selected = conceptsById.get(selectedId)
+    const explanation = selected ? await explanationFor($, selected.id) : ''
     const redraw = () => $.ui.invalidate('ui.render')
-    const resultRows = findConcepts(query).map((concept, index) =>
+    const resultRows = results.map((concept, index) =>
       Box({
         key: `result-${index}`,
         position: 'relative',
@@ -722,7 +940,7 @@ export function register(on) {
           key: 'termbridge-query', label: strings.description, value: query,
           placeholder: strings.placeholder,
           onInput: (value) => { query = value; selectedId = null; redraw() },
-          onSubmit: (value) => { query = value; selectedId = findConcepts(value)[0]?.id || null; redraw() },
+          onSubmit: (value) => { query = value; selectedId = null; selectFirstResult = true; redraw() },
         }),
         ...resultRows,
         selected
@@ -735,8 +953,8 @@ export function register(on) {
                 key: 'insert-term', label: strings.insert,
                 onPress: async () => { await $.prompt.fill({ text: selected.label, mode: 'insert' }) },
               }),
-              ...(explanations.get(selected.id)
-                ? [Markdown({ text: explanations.get(selected.id).slice(0, 10000) })]
+              ...(explanation
+                ? [Markdown({ text: explanation.slice(0, 10000) })]
                 : []),
             ] })
           : Text({ dimColor: true, children: [query ? strings.choose : strings.hint] }),

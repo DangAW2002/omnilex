@@ -3,6 +3,7 @@ import { Command } from 'commander';
 import path from 'node:path';
 import fs from 'node:fs';
 import pc from 'picocolors';
+import { openCliStore, registerPackCommands } from './packs.js';
 
 const program = new Command();
 
@@ -218,14 +219,19 @@ export async function findAction(
   const targetLocale = options.locale || 'vi';
   const packs = parsePackList(options.pack);
 
-  const store = await openPackStore(rootDir, deps);
+  // The project's configuration first (Plan 3.3), then the repository's dist/.
+  const project = await openCliStore({ cwd: deps.cwd, home: deps.home, locale: targetLocale, pack: options.pack });
+  if (project.store) {
+    return { results: project.store.find(query, { locale: targetLocale, domain: options.domain }), usedPrebuilt: true };
+  }
+  const store = project.ctx.stale ? null : await openPackStore(rootDir, deps);
   if (store) {
     return { results: store.find(query, { locale: targetLocale, packs, domain: options.domain }), usedPrebuilt: true };
   }
   if (packs) console.warn(pc.yellow('⚠ --pack cần dist/manifest.json mới; chạy pnpm tb build. Đang tìm trên mọi khái niệm.'));
 
   const prebuiltPath = path.join(rootDir, 'dist', targetLocale, 'search.json');
-  const fresh = freshArtifact(filesystem, prebuiltPath, path.join(rootDir, 'concepts'));
+  const fresh = project.ctx.stale ? false : freshArtifact(filesystem, prebuiltPath, path.join(rootDir, 'concepts'));
   if (fresh === false) {
     console.warn(pc.yellow(`⚠ dist/${targetLocale}/search.json cũ hơn concepts/. Đang quay về quét concepts/ trực tiếp.`));
   }
@@ -348,9 +354,10 @@ program
   .option('-p, --pack <ids>', 'Comma-separated pack ids to look in')
   .action(async (target: string, options: { locale: string; pack?: string }) => {
     const rootDir = resolveRootDir();
-    const store = await openPackStore(rootDir);
+    const project = await openCliStore({ locale: options.locale, pack: options.pack });
+    const store = project.store || (project.ctx.stale ? null : await openPackStore(rootDir));
     if (store) {
-      const query = { locale: options.locale, packs: parsePackList(options.pack) };
+      const query = { locale: options.locale, packs: project.store ? undefined : parsePackList(options.pack) };
       const matches = store.lookup(target, query);
       if (matches.length > 1) return printAmbiguous(target, options.locale, matches);
       if (matches.length === 0) return printNotFound(target, options.locale, store.find(target, query));
@@ -467,5 +474,6 @@ sourcesCmd
   });
 
 if (!process.env.VITEST) {
+  registerPackCommands(program);
   program.parse(process.argv);
 }

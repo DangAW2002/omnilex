@@ -1,0 +1,5 @@
+# Termbridge project configuration (Plan 3.3). Developing in this repository
+# reads the packs straight from `pnpm tb build` output instead of the store.
+root: true
+packs:
+  - dev:./dist

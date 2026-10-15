@@ -3,7 +3,22 @@ import readline from 'node:readline';
 import path from 'node:path';
 import fs from 'node:fs';
 import { fileURLToPath } from 'node:url';
-import { loadAll, findConcepts, showConcept, lookupConcepts, PackStore, domainMatches, type PackIO, type RepositoryData } from '@termbridge/core';
+import {
+  loadAll,
+  findConcepts,
+  showConcept,
+  lookupConcepts,
+  PackStore,
+  domainMatches,
+  openProject,
+  nodeProjectFS,
+  nodePackIO,
+  fileIndexCache,
+  termbridgeHome,
+  searchConfigHash,
+  type PackIO,
+  type RepositoryData,
+} from '@termbridge/core';
 
 function findRepoRoot(startDir: string): string | null {
   let curr = path.resolve(startDir);
@@ -72,6 +87,9 @@ const TOOLS = [
 ];
 
 export interface ToolHandlerOptions {
+  // project directory (Plan 3.8): TERMBRIDGE_PROJECT, else the process cwd
+  cwd?: string;
+  home?: string;
   io?: PackIO;
   // mtime of dist/manifest.json, or null when packs should not be used
   manifestStamp?: () => number | null;
@@ -114,9 +132,41 @@ export function createToolHandler(rootDir: string, options: ToolHandlerOptions =
   };
   const repo = () => (repoData ||= loadAll(rootDir));
 
-  return function handleToolCall(name: string, args: any): any {
+  // The project's own selection (config layers, store, lockfile) comes first;
+  // it is opened again when any file it was read from changes.
+  let project: { store: PackStore | null; stale: boolean; watch: string[]; signature: string } | null = null;
+  const signature = (files: string[]) => files.map((file) => {
+    try {
+      return fs.statSync(file).mtimeMs;
+    } catch {
+      return -1;
+    }
+  }).join(',');
+  const projectStore = async (): Promise<{ store: PackStore | null; stale: boolean }> => {
+    if (project && signature(project.watch) === project.signature) return project;
+    const ctx = await openProject(nodeProjectFS, {
+      cwd: options.cwd || process.env.TERMBRIDGE_PROJECT || process.cwd(),
+      home: options.home || termbridgeHome(),
+      surface: 'mcp',
+      configHash: searchConfigHash(),
+    });
+    for (const notice of ctx.notices) console.error(notice);
+    const usable = ctx.plan.packs.length > 0 && !ctx.stale;
+    const store = usable
+      ? new PackStore(nodePackIO, (message) => console.error(message), {
+          manifest: ctx.manifest,
+          disabled: ctx.disabled,
+          cache: fileIndexCache(ctx.projectDir ? path.join(ctx.projectDir, '.termbridge', '.cache') : path.join(ctx.home, 'cache')),
+        })
+      : null;
+    project = { store: store?.available ? store : null, stale: ctx.stale, watch: ctx.watch, signature: signature(ctx.watch) };
+    return project;
+  };
+
+  return async function handleToolCall(name: string, args: any): Promise<any> {
     const locale = args.locale || 'vi';
-    const packStore = packs();
+    const fromProject = await projectStore();
+    const packStore = fromProject.store || (fromProject.stale ? null : packs());
 
     if (packStore) {
       if (name === 'find_term') {
@@ -232,9 +282,9 @@ function candidate(item: { id: string; label: string; qualifier?: string; summar
   return { id: item.id, label: item.label, qualifier: item.qualifier, summary: item.summary, domains: item.domains };
 }
 
-let defaultHandler: ((name: string, args: any) => any) | null = null;
+let defaultHandler: ((name: string, args: any) => Promise<any>) | null = null;
 
-export function handleToolCall(name: string, args: any): any {
+export function handleToolCall(name: string, args: any): Promise<any> {
   defaultHandler ||= createToolHandler(resolveRootDir());
   return defaultHandler(name, args);
 }
@@ -242,7 +292,7 @@ export function handleToolCall(name: string, args: any): any {
 if (!process.env.VITEST) {
   const rl = readline.createInterface({ input: process.stdin, output: process.stdout, terminal: false });
 
-  rl.on('line', (line) => {
+  rl.on('line', async (line) => {
   if (!line.trim()) return;
   try {
     const msg = JSON.parse(line);
@@ -251,7 +301,7 @@ if (!process.env.VITEST) {
       console.log(JSON.stringify(resp));
     } else if (msg.method === 'tools/call') {
       try {
-        const toolResult = handleToolCall(msg.params.name, msg.params.arguments || {});
+        const toolResult = await handleToolCall(msg.params.name, msg.params.arguments || {});
         const resp = {
           jsonrpc: '2.0',
           id: msg.id,

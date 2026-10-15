@@ -103,3 +103,23 @@ dist/packs/<pack-id>/<locale>/explanations.jsonl # tier "explanations": one conc
 - Key merging across packs (`mergeTerms`) and the "no autolink for a key with several concepts" rule run at load time.
 - `formatVersion` 1 is read; a missing manifest means the legacy flat layout (`dist/<locale>/search.json`, version 0); a newer version is skipped with one notice.
 - A search index whose `configHash` differs from the current search configuration is rebuilt from `cards.json`, with one notice.
+
+## 5. Project Configuration (`.termbridge/`)
+
+Layered configuration, lockfile and shared store (Plan 3.3-3.4). Readers resolve it through `openProject` (`packages/core/src/project.ts`), the same code for CLI, MCP and the Claude Code mod.
+
+| File | Committed | Purpose |
+|---|---|---|
+| `.termbridge/config.yaml` | Yes | Project layer. `root: true` stops the upward search. |
+| `.termbridge/config.local.yaml` | No | Personal layer on top of the project. |
+| `.termbridge/lock.json` | Yes | Exact store copies: `version`, `sha256` of `pack.json`, `store` directory, and the sha256 of every tier file per locale. |
+| `.termbridge/.cache/` | No | Search indexes built for a subset of packs. |
+| `$TERMBRIDGE_HOME/config.yaml` | – | User layer (default `~/.termbridge`). |
+| `$TERMBRIDGE_HOME/store/<id>@<version>-<sha8>/` | – | Installed packs, read-only, shared by all projects. |
+| `$TERMBRIDGE_HOME/projects.json` | – | Projects whose locks `tb pack prune` keeps. |
+
+Config keys: `root`, `locale`, `fallbackLocales`, `profile` (`lite` \| `standard` \| `semantic`), `packs` (`+id[@range]`, `-id`, `id`, `dev:<dist dir>`; `local:<dir>` is reserved for WP7), `packsReset`, `tiers.explanations` (`eager` \| `lazy` \| `remote` \| `off`), `tiers.vectors`, `limits.memoryMB`, `limits.diskMB`, `autoInstall`, `registries`, `overrides`. Unknown keys and invalid values are warnings.
+
+Resolution: meta-packs expand through `requires` (semver `^`, `~`, comparators, `x`/`*`); a dev build wins over the store; lockfile pins win inside the range; a dependency cycle is an error; missing packs are listed once and the rest load. With no `packs` anywhere, every installed or built content pack is used (D3); the mod then asks before loading 2,000 concepts or more.
+
+Load plan per profile: `lite` loads terms and cards; `standard` adds the search index (eager for CLI/MCP, on first search in the mod) and lazy explanations. Over `limits.memoryMB` (estimated from `pack.json` byte counts: terms and cards ×3, search ×2, explanations ×1.5) the plan degrades in order: explanations lazy, search on first use, then the lowest-priority packs are dropped; every step is reported.

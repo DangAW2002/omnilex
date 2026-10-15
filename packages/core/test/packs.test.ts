@@ -15,11 +15,12 @@ import {
   mergeTerms,
   packIdForDomain,
   termConceptFromCard,
+  cardToSearchDoc,
   type PackCard,
   type PackTerm,
 } from '../src/pack-format.js';
 import { packingResolver } from '../src/packs.js';
-import { searchConfigHash } from '../src/search-config.js';
+import { createSearchIndex, searchConfigHash, searchIndexes } from '../src/search-config.js';
 import type { RepositoryData } from '../src/types.js';
 import Ajv from 'ajv';
 
@@ -318,13 +319,33 @@ describe('T-S3/T-S4: reads only what is needed, once', () => {
     expect(reads.filter((file) => file.endsWith('search-index.json'))).toEqual(['vi/search-index.json']);
   });
 
-  it('expands a meta-pack to its content packs', () => {
+  it('expands a meta-pack and indexes exactly its content packs', () => {
     const reads: string[] = [];
     const store = new PackStore(fsIO(reads));
-    store.find('lãi', { locale: 'vi', packs: ['finance'] });
-    const shards = reads.filter((file) => file.endsWith('search-index.json'));
-    expect(shards.length).toBeGreaterThan(0);
-    expect(shards.every((file) => file.startsWith('packs/finance.'))).toBe(true);
+    const hits = store.find('lãi', { locale: 'vi', packs: ['finance'] });
+    expect(hits.length).toBeGreaterThan(0);
+    const cards = reads.filter((file) => file.endsWith('cards.json'));
+    expect(cards.length).toBeGreaterThan(1);
+    expect(cards.every((file) => file.startsWith('packs/finance.'))).toBe(true);
+    expect(reads.some((file) => file.endsWith('search-index.json'))).toBe(false);
+  });
+
+  it('ranks a multi-pack subset exactly like an index over the same concepts (Q3)', () => {
+    const cached = new Map<string, string>();
+    const cache = { read: (key: string) => cached.get(key) ?? null, write: (key: string, text: string) => void cached.set(key, text) };
+    const store = new PackStore(fsIO(), () => {}, { cache });
+    const packs = ['finance.personal-finance', 'finance.investing', 'it.security'];
+    const cards = packs.flatMap((id) => readDistJson(`packs/${id}/vi/cards.json`));
+    const reference = createSearchIndex(cards.map(cardToSearchDoc));
+    for (const query of ['lãi', 'đăng nhập', 'token', 'tien goc', 'rủi ro']) {
+      expect(store.find(query, { locale: 'vi', packs }).map((hit) => hit.id), query)
+        .toEqual(searchIndexes([reference], query).map((hit) => hit.id));
+    }
+    expect(cached.size).toBe(1);
+    const reads: string[] = [];
+    const again = new PackStore(fsIO(reads), () => {}, { cache });
+    again.find('lãi', { locale: 'vi', packs });
+    expect(reads.some((file) => file.endsWith('cards.json'))).toBe(false);
   });
 
   it('loads each (locale, pack) shard once across many queries', () => {

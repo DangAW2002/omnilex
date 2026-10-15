@@ -9,11 +9,13 @@ import { pathToFileURL } from 'node:url';
 interface BenchmarkResult {
   size: number;
   modLoadMs: number;
+  modDeferredMs: number;
   modFirstScanMs: number;
   modSubsequentScanMs: number;
   cliFindMs: number;
   cliProcessMs: number;
   mcpFindMs: number;
+  mcpTypicalMs: number;
   dataSizeMB: number;
   dataSizeBudgetMB: number | null;
   matcherType: 'trie' | 'regex';
@@ -83,7 +85,7 @@ function createBenchRoot(dataset: MockDataset, core: any): string {
   return tempRoot;
 }
 
-function measureCliProcessStartup(tempRoot: string): number {
+function measureCliProcessStartup(tempRoot: string, home: string): number {
   const cliPath = resolve('packages/cli/dist/index.js');
   const samples: number[] = [];
   for (let i = 0; i < 3; i++) {
@@ -91,6 +93,7 @@ function measureCliProcessStartup(tempRoot: string): number {
     execFileSync(process.execPath, [cliPath, 'find', 'lợi nhuận'], {
       cwd: tempRoot,
       stdio: 'ignore',
+      env: { ...process.env, TERMBRIDGE_HOME: home },
     });
     samples.push(performance.now() - started);
   }
@@ -98,10 +101,10 @@ function measureCliProcessStartup(tempRoot: string): number {
   return samples[Math.floor(samples.length / 2)];
 }
 
-async function measureColdCliFind(tempRoot: string, core: any): Promise<number> {
+async function measureColdCliFind(tempRoot: string, home: string, core: any): Promise<number> {
   const wasVitest = process.env.VITEST;
   process.env.VITEST = '1';
-  let findAction: (root: string, query: string, options: { locale: string }) => Promise<unknown>;
+  let findAction: (root: string, query: string, options: { locale: string }, deps?: any) => Promise<unknown>;
   try {
     ({ findAction } = await import(pathToFileURL(resolve('packages/cli/dist/index.js')).href));
   } finally {
@@ -113,7 +116,7 @@ async function measureColdCliFind(tempRoot: string, core: any): Promise<number> 
   for (let i = 0; i < 3; i++) {
     core.clearSearchIndexCache();
     const started = performance.now();
-    await findAction(tempRoot, 'lợi nhuận', { locale: 'vi' });
+    await findAction(tempRoot, 'lợi nhuận', { locale: 'vi' }, { cwd: tempRoot, home });
     samples.push(performance.now() - started);
   }
   samples.sort((a, b) => a - b);
@@ -123,70 +126,66 @@ async function measureColdCliFind(tempRoot: string, core: any): Promise<number> 
 async function runBenchmarkForSize(size: number, seed = 42): Promise<BenchmarkResult> {
   const dataset: MockDataset = generateMockDataset(size, seed);
 
-  // The mod reads both locales at startup and builds the active locale indexes.
-  const serializedTermsVi = JSON.stringify(dataset.termsVi);
-  const serializedTermsEn = JSON.stringify(dataset.termsEn);
-  const serializedConceptsVi = JSON.stringify(dataset.conceptsVi);
-  const serializedConceptsEn = JSON.stringify(dataset.conceptsEn);
+  const coreModulePath = resolve('packages/core/dist/index.js');
+  const core = await import(pathToFileURL(coreModulePath).href);
+  const benchRoot = createBenchRoot(dataset, core);
+  const benchHome = join(benchRoot, 'home');
+  const distDir = join(benchRoot, 'dist');
 
-  // 1. Mod load simulation: JSON parse plus active-locale index construction.
-  const tLoad0 = performance.now();
-  const parsedTermsVi = JSON.parse(serializedTermsVi);
-  const parsedTermsEn = JSON.parse(serializedTermsEn);
-  const parsedConceptsVi = JSON.parse(serializedConceptsVi);
-  JSON.parse(serializedConceptsEn);
-
-  const runtimeTriePath = resolve('packages/claude-mod/hooks/runtime/matcher.js');
-  const runtimeLookupPath = resolve('packages/claude-mod/hooks/runtime/lookup.js');
-  const hasTrie = existsSync(runtimeTriePath) && existsSync(runtimeLookupPath);
+  // 1. Mod load, as the mod does it at session.start with profile standard and
+  // every pack: parse pack.json, terms of both locales and the active cards,
+  // merge the keys and build the trie. The reverse matcher is built right after
+  // session.start (measured apart as deferred); search indexes and explanations
+  // are lazy. Files are read first, so disk I/O is excluded.
+  const runtimeDir = resolve('packages/claude-mod/hooks/runtime');
+  const hasTrie = existsSync(join(runtimeDir, 'pack-reader.js')) && existsSync(join(runtimeDir, 'matcher.js'));
+  const manifest = JSON.parse(readFileSync(join(distDir, 'manifest.json'), 'utf8'));
+  const contentPacks = manifest.packs.filter((pack: any) => pack.kind === 'content');
+  const files = new Map<string, string>();
+  for (const pack of contentPacks) {
+    const base = pack.path.replace(/\/pack\.json$/, '');
+    for (const rel of [pack.path, `${base}/vi/terms.json`, `${base}/en/terms.json`, `${base}/vi/cards.json`]) {
+      files.set(rel, readFileSync(join(distDir, ...rel.split('/')), 'utf8'));
+    }
+  }
+  const dataSizeMB = [...files.values()].reduce((sum, text) => sum + Buffer.byteLength(text, 'utf8'), 0) / (1024 * 1024);
 
   let matcherType: 'trie' | 'regex' = 'regex';
   let matcherFn: (text: string) => number = () => 0;
+  let firstTermKeys: string[] = [];
+  let deferredBuild: () => unknown = () => undefined;
 
+  const tLoad0 = performance.now();
   if (hasTrie) {
-    try {
-      const [{ createMatcher, createReverseMatcher }, { createLookupIndex }] = await Promise.all([
-        import(pathToFileURL(runtimeTriePath).href),
-        import(pathToFileURL(runtimeLookupPath).href),
-      ]);
-      const conceptsById = new Map(parsedConceptsVi.map((concept: any) => [concept.id, concept]));
-      const grouped = new Map<string, any>();
-      for (const term of [...parsedTermsVi, ...parsedTermsEn]) {
-        const key = term.key.normalize('NFC').toLowerCase();
-        const current = grouped.get(key);
-        if (!current) grouped.set(key, { ...term, concepts: [...term.concepts] });
-        else {
-          current.autolink &&= term.autolink;
-          if (term.match === 'exact-case') current.match = 'exact-case';
-          for (const concept of term.concepts) {
-            if (!current.concepts.some((item: any) => item.id === concept.id)) current.concepts.push(concept);
-          }
-        }
-      }
-      const localizedTerms = [...grouped.values()].map((term) => ({
-        ...term,
-        concepts: term.concepts.map((concept: any) => conceptsById.get(concept.id) || concept),
-      }));
-      const matcher = createMatcher(localizedTerms);
-      createReverseMatcher(parsedConceptsVi);
-      createLookupIndex(parsedConceptsVi);
-      matcherFn = (text: string) => matcher.matchedConcepts(text, 4).length;
-      matcherType = 'trie';
-    } catch {
-      matcherType = 'regex';
-    }
-  }
-
-  if (matcherType === 'regex') {
-    const matchers = parsedTermsVi
-      .filter((term: any) => term.autolink)
-      .map((term: any) => ({
-        regex: new RegExp(
-          `(?<![\\p{L}\\p{N}])${escapeRegex(term.key)}(?![\\p{L}\\p{N}])`,
-          term.match === 'exact-case' ? 'gu' : 'giu'
-        ),
-        concept: term.concepts[0]
-      }));
+    const [{ PackStore }, { mergeTerms }, { createMatcher, createReverseMatcher }] = await Promise.all([
+      import(pathToFileURL(join(runtimeDir, 'pack-reader.js')).href),
+      import(pathToFileURL(join(runtimeDir, 'pack-format.js')).href),
+      import(pathToFileURL(join(runtimeDir, 'matcher.js')).href),
+    ]);
+    const store = new PackStore({ readText: (rel: string) => files.get(rel) ?? null }, () => {}, { manifest });
+    const ids: string[] = store.contentPacks();
+    const termList = ['vi', 'en'].flatMap((locale) => ids.flatMap((id) => store.terms(id, locale)));
+    const cards = ids.flatMap((id) => store.cards(id, 'vi'));
+    const byId = new Map(cards.map((card: any) => [card.id, card]));
+    const merged = mergeTerms(termList, (id: string) => byId.get(id))
+      .sort((a: any, b: any) => b.key.length - a.key.length);
+    const localizedTerms = merged.map((term: any) => ({
+      ...term,
+      concepts: term.concepts.map((concept: any) => byId.get(concept.id) || concept),
+    }));
+    const matcher = createMatcher(localizedTerms);
+    deferredBuild = () => createReverseMatcher(cards);
+    matcherFn = (text: string) => matcher.matchedConcepts(text, 4).length;
+    firstTermKeys = termList.slice(0, 2).map((term: any) => term.key);
+    matcherType = 'trie';
+  } else {
+    const terms = dataset.termsVi.filter((term) => term.autolink);
+    const matchers = terms.map((term) => ({
+      regex: new RegExp(
+        `(?<![\\p{L}\\p{N}])${escapeRegex(term.key)}(?![\\p{L}\\p{N}])`,
+        term.match === 'exact-case' ? 'gu' : 'giu'
+      ),
+    }));
     matcherFn = (text: string) => {
       const visible = cleanTranscript(text);
       let count = 0;
@@ -198,10 +197,13 @@ async function runBenchmarkForSize(size: number, seed = 42): Promise<BenchmarkRe
       }
       return count;
     };
+    firstTermKeys = dataset.termsVi.slice(0, 2).map((term) => term.key);
   }
-
   const tLoad1 = performance.now();
   const modLoadMs = tLoad1 - tLoad0;
+  const tDeferred0 = performance.now();
+  deferredBuild();
+  const modDeferredMs = performance.now() - tDeferred0;
 
   // 2. Mod first scan on unmatched text
   const unmatchedText = 'Hệ thống cơ sở dữ liệu phân tán sử dụng thuật toán Paxos để đồng thuận giữa các nút mạng mà không cần điều phối viên.';
@@ -211,7 +213,7 @@ async function runBenchmarkForSize(size: number, seed = 42): Promise<BenchmarkRe
   const modFirstScanMs = tFirst1 - tFirst0;
 
   // 3. Mod subsequent scan (warm run)
-  const matchedText = `Trong hệ thống, ${parsedTermsVi[0]?.key || 'thuật ngữ'} được sử dụng để tối ưu hóa quy trình cùng với ${parsedTermsVi[1]?.key || 'khái niệm'}.`;
+  const matchedText = `Trong hệ thống, ${firstTermKeys[0] || 'thuật ngữ'} được sử dụng để tối ưu hóa quy trình cùng với ${firstTermKeys[1] || 'khái niệm'}.`;
   const warmRuns: number[] = [];
   for (let i = 0; i < 5; i++) {
     const tSub0 = performance.now();
@@ -222,18 +224,15 @@ async function runBenchmarkForSize(size: number, seed = 42): Promise<BenchmarkRe
   const modSubsequentScanMs = warmRuns.reduce((a, b) => a + b, 0) / warmRuns.length;
 
   // 4. Cold CLI find, including process startup, JSON read, index build and query.
-  const coreModulePath = resolve('packages/core/dist/index.js');
-  const core = await import(pathToFileURL(coreModulePath).href);
-  const benchRoot = createBenchRoot(dataset, core);
   let cliFindMs: number;
   let cliProcessMs: number;
   let mcpFindMs: number;
+  let mcpTypicalMs: number;
   try {
-    cliFindMs = await measureColdCliFind(benchRoot, core);
-    cliProcessMs = measureCliProcessStartup(benchRoot);
+    cliFindMs = await measureColdCliFind(benchRoot, benchHome, core);
+    cliProcessMs = measureCliProcessStartup(benchRoot, benchHome);
 
     // 5. MCP warm search: one PackStore per manifest, as the MCP server keeps it.
-    const distDir = join(benchRoot, 'dist');
     const store = new core.PackStore({
       readText: (relPath: string) => readFileSync(join(distDir, ...relPath.split('/')), 'utf8'),
     });
@@ -246,19 +245,22 @@ async function runBenchmarkForSize(size: number, seed = 42): Promise<BenchmarkRe
       mcpWarmRuns.push(tMcp1 - tMcp0);
     }
     mcpFindMs = mcpWarmRuns.reduce((a, b) => a + b, 0) / mcpWarmRuns.length;
+
+    // Informational: queries like real ones, a label or a plain description,
+    // next to the gate's worst case where every concept matches.
+    const typical = [
+      ...dataset.conceptsVi.slice(0, 5).map((concept) => concept.label),
+      ...dataset.conceptsVi.slice(5, 10).map((concept) => concept.plain_descriptions[0]).filter(Boolean),
+    ];
+    for (const query of typical) store.find(query, { locale: 'vi' });
+    const tTypical0 = performance.now();
+    for (const query of typical) store.find(query, { locale: 'vi' });
+    mcpTypicalMs = (performance.now() - tTypical0) / typical.length;
   } finally {
     const tempBase = resolve(tmpdir()) + sep;
     const target = resolve(benchRoot);
     if (target.startsWith(tempBase)) rmSync(target, { recursive: true, force: true });
   }
-
-  // 6. Data size in MB
-  const dataSizeMB = (
-    Buffer.byteLength(serializedTermsVi, 'utf8')
-    + Buffer.byteLength(serializedTermsEn, 'utf8')
-    + Buffer.byteLength(serializedConceptsVi, 'utf8')
-    + Buffer.byteLength(serializedConceptsEn, 'utf8')
-  ) / (1024 * 1024);
 
   // Ngân sách theo bảng 1.7 (quy đổi tuyến tính cho 1k)
   const isScale1k = size <= 1000;
@@ -267,8 +269,9 @@ async function runBenchmarkForSize(size: number, seed = 42): Promise<BenchmarkRe
   const budgetSubsequentScanMs = matcherType === 'trie' ? 2 : (isScale1k ? 500 : 2000);
   const budgetCliFindMs = isScale1k ? 100 : 200;
   const budgetMcpFindMs = isScale1k ? 5 : 10;
-  // The 5 MB target is for one lite pack; this synthetic run includes every
-  // concept in both locales, so its 10k data size is informative only.
+  // Data the mod reads at start: terms of both locales and the active cards.
+  // The 5 MB target is for one lite pack; this run loads every pack, so its 10k
+  // size is informative only.
   const budgetDataSizeMB = isScale1k ? 2 : null;
 
   const failures: string[] = [];
@@ -284,11 +287,13 @@ async function runBenchmarkForSize(size: number, seed = 42): Promise<BenchmarkRe
   return {
     size,
     modLoadMs,
+    modDeferredMs,
     modFirstScanMs,
     modSubsequentScanMs,
     cliFindMs,
     cliProcessMs,
     mcpFindMs,
+    mcpTypicalMs,
     dataSizeMB,
     dataSizeBudgetMB: budgetDataSizeMB,
     matcherType,
@@ -327,13 +332,15 @@ async function main() {
     const result = await runBenchmarkForSize(size, seed);
 
     console.log(`\nKết quả đo đạc (${size} concepts, matcher: ${result.matcherType}):`);
-    console.log(`  - Mod load simulation:       ${result.modLoadMs.toFixed(2)} ms (JSON + active locale indexes; excludes disk I/O)`);
+    console.log(`  - Mod load simulation:       ${result.modLoadMs.toFixed(2)} ms (packs: terms vi+en, cards, trie; excludes disk I/O)`);
+    console.log(`  - Mod deferred after start (informational): ${result.modDeferredMs.toFixed(2)} ms (reverse matcher)`);
     console.log(`  - Mod first scan (unmatched): ${result.modFirstScanMs.toFixed(2)} ms`);
     console.log(`  - Mod subsequent scan:        ${result.modSubsequentScanMs.toFixed(2)} ms`);
     console.log(`  - CLI find cold path (read+index+query): ${result.cliFindMs.toFixed(2)} ms`);
     console.log(`  - CLI process cold (informational): ${result.cliProcessMs.toFixed(2)} ms`);
-    console.log(`  - MCP find (warm core cache): ${result.mcpFindMs.toFixed(2)} ms`);
-    console.log(`  - Lookup data (both locales): ${result.dataSizeMB.toFixed(2)} MB${result.dataSizeBudgetMB === null ? ' (no profile-matched 10k budget)' : ` (budget ≤ ${result.dataSizeBudgetMB} MB)`}`);
+    console.log(`  - MCP find (warm core cache): ${result.mcpFindMs.toFixed(2)} ms (worst case: every concept matches)`);
+    console.log(`  - MCP find, typical queries (informational): ${result.mcpTypicalMs.toFixed(2)} ms`);
+    console.log(`  - Mod data at start: ${result.dataSizeMB.toFixed(2)} MB${result.dataSizeBudgetMB === null ? ' (no profile-matched 10k budget)' : ` (budget ≤ ${result.dataSizeBudgetMB} MB)`}`);
 
     if (check && !result.passed) {
       console.error(`\n❌ Scale ${size} FAILED performance budget:`);

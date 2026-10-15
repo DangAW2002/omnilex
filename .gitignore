@@ -32,3 +32,7 @@ Thumbs.db
 # Local Brain / agent scratch
 .local/
 .cache/
+
+# Termbridge per-user project files
+.termbridge/config.local.yaml
+.termbridge/.cache/

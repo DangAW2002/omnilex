@@ -109,9 +109,9 @@ function rank(hits: any[], domain: string | undefined, limit: number): SearchHit
   }));
 }
 
-// Exact and prefix matches first; fuzzy matching only runs when they cannot
-// fill the result list, because fuzzy expansion dominates query time on a
-// large vocabulary.
+// Exact and prefix matches first; fuzzy matching (typo tolerance) only runs
+// when they find nothing, because fuzzy expansion dominates query time on a
+// large vocabulary (50-60 ms for a long description at 10k concepts).
 export function searchIndexes(
   indexes: MiniSearch[],
   query: string,
@@ -126,5 +126,5 @@ export function searchIndexes(
     return rank(hits, options.domain, limit);
   };
   const exact = run(false);
-  return exact.length >= limit ? exact : run(true);
+  return exact.length > 0 ? exact : run(true);
 }

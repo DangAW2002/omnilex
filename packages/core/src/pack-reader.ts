@@ -9,6 +9,8 @@ import {
   type PackExplanation,
   type PackJson,
   type PackManifest,
+  type PackTerm,
+  type PackTier,
 } from './pack-format.js';
 import {
   SEARCH_RESULT_LIMIT,
@@ -16,18 +18,34 @@ import {
   domainMatches,
   loadSearchIndex,
   searchConfigHash,
+  searchIndexToJSON,
   searchIndexes,
   type SearchHit,
 } from './search-config.js';
 
-// All I/O goes through this adapter (D-3); paths are relative to dist/ and use '/'.
+// All I/O goes through this adapter (D-3). Paths are the manifest's own: relative
+// to dist/ for a built dist, absolute for a manifest composed by the resolver.
 export interface PackIO {
   readText(relPath: string): string | null | undefined;
+}
+
+// Optional on-disk cache for indexes built at load time (subset selections).
+export interface IndexCache {
+  read(key: string): string | null | undefined;
+  write(key: string, text: string): void;
 }
 
 export interface PackQueryOptions {
   locale: string;
   packs?: string[];
+}
+
+export interface PackStoreOptions {
+  // a manifest composed by the resolver; otherwise manifest.json is read
+  manifest?: PackManifest;
+  cache?: IndexCache;
+  // tiers the load plan turned off, per pack
+  disabled?: Record<string, PackTier[]>;
 }
 
 function parseJson(text: string | null | undefined): any {
@@ -39,8 +57,19 @@ function parseJson(text: string | null | undefined): any {
   }
 }
 
-// Reads a built dist/ (formatVersion 1). Each notice is reported once per
-// store; missing or newer data degrades to "not available" instead of throwing.
+function fingerprint(value: string): string {
+  let first = 0x811c9dc5;
+  let second = 0x9e3779b9;
+  for (let i = 0; i < value.length; i++) {
+    const code = value.charCodeAt(i);
+    first = Math.imul(first ^ code, 0x01000193);
+    second = Math.imul(second ^ (code + i), 0x85ebca6b);
+  }
+  return `${(first >>> 0).toString(16).padStart(8, '0')}${(second >>> 0).toString(16).padStart(8, '0')}`;
+}
+
+// Reads packs (formatVersion 1). Each notice is reported once per store;
+// missing or newer data degrades to "not available" instead of throwing.
 export class PackStore {
   readonly manifest: PackManifest | null = null;
   readonly formatVersion: number = 0;
@@ -48,14 +77,23 @@ export class PackStore {
   private notices = new Set<string>();
   private packs = new Map<string, PackJson | null>();
   private cardCache = new Map<string, PackCard[]>();
+  private termCache = new Map<string, PackTerm[]>();
   private indexCache = new Map<string, MiniSearch>();
   private lookupCache = new Map<string, { byKey: Map<string, PackCard[]>; byId: Map<string, PackCard>; packOf: Map<string, string> }>();
   private readonly configHash = searchConfigHash();
+  private readonly cache?: IndexCache;
+  private readonly disabled: Record<string, PackTier[]>;
 
-  constructor(private io: PackIO, private onNotice: (message: string) => void = () => {}) {
-    const raw = io.readText('manifest.json');
-    if (raw === null || raw === undefined) return;
-    const manifest = parseJson(raw);
+  constructor(private io: PackIO, private onNotice: (message: string) => void = () => {}, options: PackStoreOptions = {}) {
+    this.cache = options.cache;
+    this.disabled = options.disabled || {};
+    let manifest: any = options.manifest;
+    if (!manifest) {
+      const raw = io.readText('manifest.json');
+      // No manifest at all: the legacy flat layout (formatVersion 0), not an error.
+      if (raw === null || raw === undefined) return;
+      manifest = parseJson(raw);
+    }
     if (!manifest || typeof manifest.formatVersion !== 'number' || !Array.isArray(manifest.packs)) {
       this.notice('Termbridge: dist/manifest.json không hợp lệ, dùng dữ liệu cũ / invalid dist/manifest.json, using legacy data');
       return;
@@ -76,6 +114,19 @@ export class PackStore {
     if (this.notices.has(message)) return;
     this.notices.add(message);
     this.onNotice(message);
+  }
+
+  private base(packId: string): string | null {
+    const entry = this.manifest?.packs.find((item) => item.id === packId);
+    return entry ? entry.path.replace(/\/?pack\.json$/, '') : null;
+  }
+
+  private tierPath(packId: string, locale: string, tier: PackTier): string {
+    return `${this.base(packId)}/${locale}/${PACK_TIER_FILES[tier]}`;
+  }
+
+  private tierOff(packId: string, tier: PackTier): boolean {
+    return this.disabled[packId]?.includes(tier) ?? false;
   }
 
   pack(id: string): PackJson | null {
@@ -108,10 +159,21 @@ export class PackStore {
     let cards = this.cardCache.get(key);
     if (!cards) {
       const pack = this.pack(packId);
-      cards = pack ? parseJson(this.io.readText(`packs/${packId}/${locale}/${PACK_TIER_FILES.cards}`)) || [] : [];
+      cards = pack ? parseJson(this.io.readText(this.tierPath(packId, locale, 'cards'))) || [] : [];
       this.cardCache.set(key, cards!);
     }
     return cards!;
+  }
+
+  terms(packId: string, locale: string): PackTerm[] {
+    const key = `${packId}\u0000${locale}`;
+    let terms = this.termCache.get(key);
+    if (!terms) {
+      const pack = this.pack(packId);
+      terms = pack ? parseJson(this.io.readText(this.tierPath(packId, locale, 'terms'))) || [] : [];
+      this.termCache.set(key, terms!);
+    }
+    return terms!;
   }
 
   index(packId: string, locale: string): MiniSearch | null {
@@ -122,8 +184,10 @@ export class PackStore {
     if (!pack) return null;
 
     let index: MiniSearch | null = null;
-    if (pack.tiers?.search?.configHash === this.configHash) {
-      const raw = this.io.readText(`packs/${packId}/${locale}/${PACK_TIER_FILES.search}`);
+    if (this.tierOff(packId, 'search')) {
+      index = null;
+    } else if (pack.tiers?.search?.configHash === this.configHash) {
+      const raw = this.io.readText(this.tierPath(packId, locale, 'search'));
       if (typeof raw === 'string') {
         try {
           index = loadSearchIndex(raw);
@@ -139,7 +203,7 @@ export class PackStore {
     return index;
   }
 
-  // Index over every content pack; null when the selection is a subset.
+  // Index over every content pack of one build; null for any other selection.
   private combinedIndex(packIds: string[], locale: string): MiniSearch | null {
     const search = this.manifest?.search;
     if (!search || search.packs.length !== packIds.length || !search.packs.every((id, i) => id === packIds[i])) return null;
@@ -169,16 +233,43 @@ export class PackStore {
     return index;
   }
 
+  // Several packs but not a whole build: one index over exactly those cards, so
+  // BM25 statistics (and ranking) match a single corpus. Cached when possible.
+  private subsetIndex(packIds: string[], locale: string): MiniSearch {
+    const shas = packIds.map((id) => `${id}:${this.manifest!.packs.find((item) => item.id === id)?.sha256 || ''}`);
+    const key = `subset-${locale}-${fingerprint(`${this.configHash}|${shas.join('|')}`)}`;
+    const cached = this.indexCache.get(key);
+    if (cached) return cached;
+
+    let index: MiniSearch | null = null;
+    const raw = this.cache?.read(key);
+    if (typeof raw === 'string') {
+      try {
+        index = loadSearchIndex(raw);
+      } catch {
+        index = null;
+      }
+    }
+    if (!index) {
+      index = createSearchIndex(packIds.flatMap((id) => this.cards(id, locale)).map(cardToSearchDoc));
+      try {
+        this.cache?.write(key, searchIndexToJSON(index));
+      } catch {
+        // A cache that cannot be written only costs a rebuild next time.
+      }
+    }
+    this.indexCache.set(key, index);
+    return index;
+  }
+
   find(query: string, options: PackQueryOptions & { domain?: string; limit?: number }): SearchHit[] {
     if (!this.available) return [];
-    const packIds = this.contentPacks(options.packs);
-    const combined = this.combinedIndex([...packIds].sort(), options.locale);
-    const indexes = combined
-      ? [combined]
-      : packIds
-          .map((id) => this.index(id, options.locale))
-          .filter((index): index is MiniSearch => index !== null);
-    return searchIndexes(indexes, query, { domain: options.domain, limit: options.limit ?? SEARCH_RESULT_LIMIT });
+    const packIds = [...this.contentPacks(options.packs)].sort();
+    if (packIds.length === 0) return [];
+    const index = this.combinedIndex(packIds, options.locale)
+      || (packIds.length === 1 ? this.index(packIds[0], options.locale) : this.subsetIndex(packIds, options.locale));
+    if (!index) return [];
+    return searchIndexes([index], query, { domain: options.domain, limit: options.limit ?? SEARCH_RESULT_LIMIT });
   }
 
   private lookupMaps(options: PackQueryOptions) {
@@ -224,6 +315,10 @@ export class PackStore {
     return direct ? [direct] : [];
   }
 
+  card(id: string, options: PackQueryOptions): PackCard | undefined {
+    return this.available ? this.lookupMaps(options).byId.get(id) : undefined;
+  }
+
   browse(domainPrefix: string, options: PackQueryOptions): PackCard[] {
     if (!this.available) return [];
     return this.contentPacks(options.packs)
@@ -233,15 +328,60 @@ export class PackStore {
 
   explanation(id: string, locale: string): PackExplanation | null {
     if (!this.available) return null;
-    const single = parseJson(this.io.readText(`${locale}/concepts/${id}.json`));
-    if (single && single.id === id) return single;
     const packId = this.lookupMaps({ locale }).packOf.get(id);
-    if (!packId) return null;
-    const raw = this.io.readText(`packs/${packId}/${locale}/${PACK_TIER_FILES.explanations}`);
+    if (!packId || this.tierOff(packId, 'explanations')) return null;
+    // A built dist also has one small file per concept next to its packs.
+    const root = /^(?:(.*)\/)?packs\/[^/]+$/.exec(this.base(packId) || '');
+    if (root) {
+      const single = parseJson(this.io.readText(`${root[1] ? `${root[1]}/` : ''}${locale}/concepts/${id}.json`));
+      if (single && single.id === id) return single;
+    }
+    const raw = this.io.readText(this.tierPath(packId, locale, 'explanations'));
     for (const line of (raw || '').split('\n')) {
       const record = parseJson(line);
       if (record?.id === id) return record;
     }
     return null;
+  }
+}
+
+// Lets an async file system (the mod's $.fs) drive the synchronous PackStore:
+// a read that is not fetched yet throws, `run` fetches it and retries.
+export class PendingRead extends Error {
+  constructor(readonly path: string) {
+    super(`pending read: ${path}`);
+  }
+}
+
+export class PrefetchIO implements PackIO {
+  private files = new Map<string, string | null>();
+
+  constructor(private fetch: (path: string) => Promise<string | null>) {}
+
+  readText(path: string): string | null {
+    if (!this.files.has(path)) throw new PendingRead(path);
+    return this.files.get(path)!;
+  }
+
+  has(path: string): boolean {
+    return this.files.has(path);
+  }
+
+  async prefetch(paths: string[]): Promise<void> {
+    const wanted = [...new Set(paths)].filter((path) => !this.files.has(path));
+    const texts = await Promise.all(wanted.map((path) => this.fetch(path).catch(() => null)));
+    wanted.forEach((path, i) => this.files.set(path, texts[i] ?? null));
+  }
+
+  async run<T>(fn: () => T, maxRounds = 256): Promise<T> {
+    for (let round = 0; round < maxRounds; round++) {
+      try {
+        return fn();
+      } catch (error) {
+        if (!(error instanceof PendingRead)) throw error;
+        await this.prefetch([error.path]);
+      }
+    }
+    throw new Error('PrefetchIO: too many rounds');
   }
 }

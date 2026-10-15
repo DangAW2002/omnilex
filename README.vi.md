@@ -59,6 +59,33 @@ pnpm tb report locales
 pnpm tb report review
 ```
 
+### Gói dữ liệu và cấu hình project
+
+`tb build` chia dữ liệu thành gói, mỗi gói là một nhánh cấp 2 (`it.ai-ml`, `finance.investing`, …), cùng các meta-pack như `it`, `finance`, `tech`. Mỗi máy, workspace hoặc project chọn những gói mình cần:
+
+```yaml
+# .termbridge/config.yaml (commit vào Git; tùy chỉnh cá nhân để ở .termbridge/config.local.yaml)
+root: true            # dừng tìm lên thư mục cha, giống .editorconfig
+locale: vi
+profile: standard     # lite: chỉ nhận diện và thẻ tóm tắt | standard: + tìm kiếm, bài giải thích tải lười
+packs: [+tech, -it.security]
+limits: { memoryMB: 64 }
+```
+
+Thứ tự lớp, từ thấp đến cao: mặc định, `~/.termbridge/config.yaml` (hoặc `$TERMBRIDGE_HOME`), mọi `.termbridge/config.yaml` từ trên xuống tới thư mục hiện tại, `.termbridge/config.local.yaml`, rồi phiên (`--pack`, `TERMBRIDGE_PACKS`, `/termbridge packs`). Giá trị đơn thì lớp cao hơn thắng, `packs` được cộng/trừ theo thứ tự (`packsReset: true` để làm lại từ đầu), còn `limits` lấy giá trị nhỏ nhất.
+
+```bash
+pnpm tb config explain                      # cấu hình hiệu lực và nguồn của từng giá trị
+pnpm tb pack add finance --from ./dist      # cài vào ~/.termbridge/store và ghi .termbridge/lock.json
+pnpm tb pack list                           # project này nạp những gói nào
+pnpm tb pack status                         # tier, dung lượng, thời gian nạp của từng gói
+pnpm tb pack remove finance.economics
+pnpm tb pack install --frozen               # CI: lỗi nếu kho không khớp lock.json
+pnpm tb pack prune                          # xóa bản trong kho không còn project nào dùng
+```
+
+Gói đã cài nằm một lần trên mỗi máy, ở `~/.termbridge/store/`, và mọi project dùng chung. Trong repo này, `.termbridge/config.yaml` đọc thẳng `dev:./dist` từ `pnpm tb build`. Cài từ registry trực tuyến sẽ có ở WP7.
+
 ### Dùng trong Claude Code
 
 Mod Termbridge thêm nhãn tra cứu và thẻ tóm tắt khi hover dưới câu trả lời hoặc câu hỏi, cùng pane `/termbridge` để tra ngược bằng lời thường. Xem [hướng dẫn cài đặt và giới hạn hiện tại](packages/claude-mod/README.md).

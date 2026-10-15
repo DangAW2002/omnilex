@@ -61,6 +61,33 @@ pnpm tb report locales
 pnpm tb report review
 ```
 
+### Packs and project configuration
+
+`tb build` splits the data into packs, one per level-2 domain (`it.ai-ml`, `finance.investing`, …), plus meta-packs such as `it`, `finance` and `tech`. Each machine, workspace or project picks the packs it needs:
+
+```yaml
+# .termbridge/config.yaml (commit it; personal tweaks go in .termbridge/config.local.yaml)
+root: true            # stop looking further up, like .editorconfig
+locale: vi
+profile: standard     # lite: terms and cards only | standard: + search, lazy explanations
+packs: [+tech, -it.security]
+limits: { memoryMB: 64 }
+```
+
+Layers, lowest first: built-in defaults, `~/.termbridge/config.yaml` (or `$TERMBRIDGE_HOME`), every `.termbridge/config.yaml` from the top down to the current directory, `.termbridge/config.local.yaml`, then the session (`--pack`, `TERMBRIDGE_PACKS`, `/termbridge packs`). Single values from a higher layer win, `packs` adds and removes in order (`packsReset: true` starts over), and `limits` keeps the smallest value.
+
+```bash
+pnpm tb config explain                      # effective values and where each one comes from
+pnpm tb pack add finance --from ./dist      # install into ~/.termbridge/store and record .termbridge/lock.json
+pnpm tb pack list                           # what this project loads
+pnpm tb pack status                         # tiers, size and load time per pack
+pnpm tb pack remove finance.economics
+pnpm tb pack install --frozen               # CI: fail unless the store matches lock.json
+pnpm tb pack prune                          # delete store copies no project uses
+```
+
+Installed packs live once per machine in `~/.termbridge/store/` and are shared by every project. Inside this repository, `.termbridge/config.yaml` reads `dev:./dist` straight from `pnpm tb build`. Installing from an online registry comes with WP7.
+
 ## Repository Structure
 
 - `concepts/`: Authority concepts and localized explanations.

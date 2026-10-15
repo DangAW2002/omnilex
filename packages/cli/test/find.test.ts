@@ -6,6 +6,10 @@ import { fileURLToPath } from 'node:url';
 import { loadAll, buildArtifacts } from '@termbridge/core';
 import { findAction } from '../src/index.js';
 
+// No .termbridge/ above cwd and an empty home: only the layout under test is read.
+const emptyHome = fs.mkdtempSync(path.join(os.tmpdir(), 'tb-cli-home-'));
+process.env.TERMBRIDGE_HOME = emptyHome;
+
 describe('T-S3: tb find does not call loadAll() when dist is fresh', () => {
   const fakeDocs = [
     {
@@ -43,6 +47,8 @@ describe('T-S3: tb find does not call loadAll() when dist is fresh', () => {
         findConcepts: mockFindConcepts as any,
         findConceptsFromDocs: mockFindConceptsFromDocs as any,
         fs: mockFs,
+        cwd: emptyHome,
+        home: emptyHome,
       }
     );
 
@@ -86,6 +92,8 @@ describe('T-S3: tb find does not call loadAll() when dist is fresh', () => {
         findConcepts: mockFindConcepts as any,
         findConceptsFromDocs: mockFindConceptsFromDocs as any,
         fs: mockFs,
+        cwd: emptyHome,
+        home: emptyHome,
       }
     );
 
@@ -130,6 +138,7 @@ describe('T-S3: tb find reads packs when dist/manifest.json is fresh', () => {
     const { results, usedPrebuilt } = await findAction(tempRoot, 'lãi kép', { locale: 'vi' }, {
       fs: countingFs(reads),
       loadAll: mockLoadAll,
+      cwd: tempRoot,
     });
     expect(usedPrebuilt).toBe(true);
     expect(mockLoadAll).not.toHaveBeenCalled();
@@ -140,13 +149,13 @@ describe('T-S3: tb find reads packs when dist/manifest.json is fresh', () => {
     expect(reads.some((file) => file.includes('/concepts/') || file.endsWith('cards.json'))).toBe(false);
   });
 
-  it('reads only the shards of the packs passed with --pack', async () => {
+  it('reads only the packs passed with --pack', async () => {
     const reads: string[] = [];
-    const { results } = await findAction(tempRoot, 'token', { locale: 'en', pack: 'it' }, { fs: countingFs(reads) });
+    const { results } = await findAction(tempRoot, 'token', { locale: 'en', pack: 'it' }, { fs: countingFs(reads), cwd: tempRoot });
     expect(results.length).toBeGreaterThan(0);
     expect(results.every((hit: any) => hit.domains[0].startsWith('it/'))).toBe(true);
-    const shards = reads.filter((file) => file.endsWith('search-index.json'));
-    expect(shards.length).toBeGreaterThan(0);
-    expect(shards.every((file) => file.startsWith('dist/packs/it.'))).toBe(true);
+    const packFiles = reads.filter((file) => file.startsWith('dist/packs/') && !file.endsWith('pack.json'));
+    expect(packFiles.length).toBeGreaterThan(0);
+    expect(packFiles.every((file) => file.startsWith('dist/packs/it.'))).toBe(true);
   });
 });

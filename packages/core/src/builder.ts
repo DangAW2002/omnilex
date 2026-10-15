@@ -10,6 +10,10 @@ export interface BuildOutputs {
   warnings: string[];
 }
 
+const RUNTIME_MODULES = [
+  'matcher', 'lookup', 'search-config', 'pack-format', 'pack-reader', 'semver', 'config', 'resolver', 'project',
+];
+
 function repoVersion(rootDir: string): string {
   try {
     return JSON.parse(fs.readFileSync(path.join(rootDir, 'package.json'), 'utf-8')).version || '0.0.0';
@@ -294,25 +298,28 @@ export function buildArtifacts(repoData: RepositoryData): BuildOutputs {
   });
   distGenerated.push(...writePackFiles(distDir, rendered.files));
 
-  // Generate packages/claude-mod/hooks/runtime/matcher.js
+  // Generate packages/claude-mod/hooks/runtime/: the core modules the mod
+  // imports, plus self-contained ESM builds of their two dependencies. Bare
+  // imports become relative ones, since the mod has no module resolution.
   const claudeModHooksDir = path.join(rootDir, 'packages', 'claude-mod', 'hooks');
   const claudeModRuntimeDir = path.join(claudeModHooksDir, 'runtime');
   if (fs.existsSync(claudeModHooksDir)) {
     fs.mkdirSync(claudeModRuntimeDir, { recursive: true });
-    const distMatcherPath = path.join(rootDir, 'packages', 'core', 'dist', 'matcher.js');
-    if (fs.existsSync(distMatcherPath)) {
-      const matcherCode = fs.readFileSync(distMatcherPath, 'utf-8').replace(/\r\n/g, '\n');
-      const runtimeMatcherPath = path.join(claudeModRuntimeDir, 'matcher.js');
-      fs.writeFileSync(runtimeMatcherPath, matcherCode, 'utf-8');
-      distGenerated.push(runtimeMatcherPath);
-    }
-
-    const distLookupPath = path.join(rootDir, 'packages', 'core', 'dist', 'lookup.js');
-    if (fs.existsSync(distLookupPath)) {
-      const lookupCode = fs.readFileSync(distLookupPath, 'utf-8').replace(/\r\n/g, '\n');
-      const runtimeLookupPath = path.join(claudeModRuntimeDir, 'lookup.js');
-      fs.writeFileSync(runtimeLookupPath, lookupCode, 'utf-8');
-      distGenerated.push(runtimeLookupPath);
+    const coreDir = path.join(rootDir, 'packages', 'core');
+    const runtimeFiles: Array<[string, string]> = [
+      ...RUNTIME_MODULES.map((name): [string, string] => [path.join(coreDir, 'dist', `${name}.js`), `${name}.js`]),
+      [path.join(coreDir, 'node_modules', 'minisearch', 'dist', 'es', 'index.js'), 'minisearch.js'],
+      [path.join(coreDir, 'node_modules', 'js-yaml', 'dist', 'js-yaml.mjs'), 'js-yaml.js'],
+    ];
+    for (const [source, name] of runtimeFiles) {
+      if (!fs.existsSync(source)) continue;
+      const code = fs.readFileSync(source, 'utf-8')
+        .replace(/\r\n/g, '\n')
+        .replace(/^\/\/# sourceMappingURL=.*$/gm, '')
+        .replace(/from '(minisearch|js-yaml)'/g, (_match, dep) => `from './${dep}.js'`);
+      const target = path.join(claudeModRuntimeDir, name);
+      fs.writeFileSync(target, code, 'utf-8');
+      distGenerated.push(target);
     }
   }
 

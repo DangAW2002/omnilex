@@ -96,4 +96,3 @@ export class ConceptLookupIndex {
 export function createLookupIndex(concepts) {
     return new ConceptLookupIndex(concepts);
 }
-//# sourceMappingURL=lookup.js.map

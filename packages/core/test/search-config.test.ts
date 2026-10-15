@@ -59,12 +59,17 @@ describe('T-S1: prebuilt index on the bench dataset', () => {
 describe('Two-pass ranking (Q4)', () => {
   const index = createSearchIndex(docs);
 
-  it('skips fuzzy matching when exact and prefix matches fill the list', () => {
+  it('skips fuzzy matching when exact and prefix matches find something', () => {
     const query = 'hệ thống';
     const exact = index.search(query, { fuzzy: false });
     expect(exact.length).toBeGreaterThanOrEqual(SEARCH_RESULT_LIMIT);
     const ids = new Set(exact.map((hit) => hit.id));
     expect(searchIndexes([index], query).every((hit) => ids.has(hit.id))).toBe(true);
+
+    const label = docs[0].label;
+    const few = new Set(index.search(label, { fuzzy: false }).map((hit) => hit.id));
+    expect(few.size).toBeGreaterThan(0);
+    expect(searchIndexes([index], label).every((hit) => few.has(hit.id))).toBe(true);
   });
 
   it('falls back to fuzzy matching for typos', () => {

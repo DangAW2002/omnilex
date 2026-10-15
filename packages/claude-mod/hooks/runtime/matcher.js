@@ -392,4 +392,3 @@ export function createMatcher(terms) {
 export function createReverseMatcher(concepts, minLength = 12) {
     return new ReverseMatcher(concepts, minLength);
 }
-//# sourceMappingURL=matcher.js.map

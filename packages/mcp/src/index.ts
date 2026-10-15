@@ -2,16 +2,31 @@
 import readline from 'node:readline';
 import path from 'node:path';
 import fs from 'node:fs';
+import { fileURLToPath } from 'node:url';
 import { loadAll, findConcepts, showConcept, lookupConcepts } from '@termbridge/core';
 
-function resolveRootDir(): string {
-  let curr = process.cwd();
+function findRepoRoot(startDir: string): string | null {
+  let curr = path.resolve(startDir);
   while (curr !== path.dirname(curr)) {
     if (fs.existsSync(path.join(curr, 'concepts')) && fs.existsSync(path.join(curr, 'taxonomy'))) {
       return curr;
     }
     curr = path.dirname(curr);
   }
+  return null;
+}
+
+function resolveRootDir(): string {
+  if (process.env.TERMBRIDGE_ROOT && fs.existsSync(process.env.TERMBRIDGE_ROOT)) {
+    return process.env.TERMBRIDGE_ROOT;
+  }
+  const fromCwd = findRepoRoot(process.cwd());
+  if (fromCwd) return fromCwd;
+
+  const scriptDir = path.dirname(fileURLToPath(import.meta.url));
+  const fromScript = findRepoRoot(scriptDir);
+  if (fromScript) return fromScript;
+
   return process.cwd();
 }
 

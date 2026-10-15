@@ -144,7 +144,7 @@ describe('T-S3: tb find reads packs when dist/manifest.json is fresh', () => {
     expect(mockLoadAll).not.toHaveBeenCalled();
     expect(results[0].id).toBe('compound-interest');
     const manifest = JSON.parse(fs.readFileSync(path.join(tempRoot, 'dist', 'manifest.json'), 'utf8'));
-    const packFiles = manifest.packs.filter((pack: any) => pack.kind === 'content').map((pack: any) => `dist/${pack.path}`);
+    const packFiles = manifest.packs.filter((pack: any) => pack.kind === 'content' && pack.role !== 'starter').map((pack: any) => `dist/${pack.path}`);
     expect(reads).toEqual(['dist/manifest.json', ...packFiles, 'dist/vi/search-index.json']);
     expect(reads.some((file) => file.includes('/concepts/') || file.endsWith('cards.json'))).toBe(false);
   });

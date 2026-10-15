@@ -9,6 +9,11 @@ export const PACK_TIER_FILES = {
     explanations: 'explanations.jsonl',
 };
 export const PACK_SPLIT_WARNING = 2000;
+// D6: the starter pack ships terms, cards and search only, at most 1 MB.
+export const STARTER_PACK_ID = 'starter';
+export const STARTER_TIERS = ['terms', 'cards', 'search'];
+export const STARTER_MAX_CONCEPTS = 300;
+export const STARTER_MAX_BYTES = 1024 * 1024;
 // "it/ai-ml/llm-agents" -> "it.ai-ml"; a root packed whole -> "iot";
 // a concept tagged at the root of a split domain -> "it.core".
 export function packIdForDomain(domain, packingOf) {
@@ -89,7 +94,10 @@ export function mergeTerms(terms, conceptFor) {
 export function expandPackSelection(manifest, wanted, requiresOf, onMissing = () => { }) {
     const byId = new Map(manifest.packs.map((pack) => [pack.id, pack]));
     if (!wanted || wanted.length === 0) {
-        return manifest.packs.filter((pack) => pack.kind === 'content').map((pack) => pack.id);
+        // The starter repeats concepts of the other packs: it counts only when alone.
+        const content = manifest.packs.filter((pack) => pack.kind === 'content');
+        const full = content.filter((pack) => pack.role !== 'starter');
+        return (full.length ? full : content).map((pack) => pack.id);
     }
     const result = [];
     const seen = new Set();

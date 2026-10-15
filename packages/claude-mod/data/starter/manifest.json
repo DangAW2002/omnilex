@@ -1,0 +1,40 @@
+{
+  "formatVersion": 1,
+  "searchConfigHash": "18b9a17e6386e5cf",
+  "locales": [
+    "en",
+    "ja",
+    "vi"
+  ],
+  "packs": [
+    {
+      "id": "starter",
+      "kind": "content",
+      "role": "starter",
+      "version": "0.1.0",
+      "path": "packs/starter/pack.json",
+      "sha256": "5aa9dced1f492c3c0bb904b7d18699687bc7cf4463e34f7bdb7cc8478066a5eb",
+      "concepts": 7
+    }
+  ],
+  "search": {
+    "packs": [],
+    "files": {
+      "en": {
+        "path": "en/search-index.json",
+        "bytes": 247,
+        "sha256": "1e4d5655a711adc50b891b9cebce8e766ec29a1f47d91e395437f52232f4919a"
+      },
+      "ja": {
+        "path": "ja/search-index.json",
+        "bytes": 247,
+        "sha256": "1e4d5655a711adc50b891b9cebce8e766ec29a1f47d91e395437f52232f4919a"
+      },
+      "vi": {
+        "path": "vi/search-index.json",
+        "bytes": 247,
+        "sha256": "1e4d5655a711adc50b891b9cebce8e766ec29a1f47d91e395437f52232f4919a"
+      }
+    }
+  }
+}

@@ -170,7 +170,7 @@ export async function buildCatalog(fs, options) {
             id: sourceId,
             kind: 'dev',
             dir,
-            contentIds: parsed.packs.filter((pack) => pack.kind === 'content').map((pack) => pack.id),
+            contentIds: parsed.packs.filter((pack) => pack.kind === 'content' && pack.role !== 'starter').map((pack) => pack.id),
             search,
             stale,
             searchConfigHash: parsed.searchConfigHash,
@@ -194,6 +194,7 @@ export async function buildCatalog(fs, options) {
                 id: entry.id,
                 version: entry.version,
                 kind: entry.kind,
+                role: entry.role,
                 requires: json.requires || {},
                 concepts: entry.concepts,
                 tiers: json.tiers,
@@ -231,6 +232,7 @@ export async function buildCatalog(fs, options) {
                 id: item.json.id,
                 version: item.json.version,
                 kind: item.json.kind,
+                role: item.json.role,
                 requires: item.json.requires || {},
                 concepts: item.json.concepts,
                 tiers: item.json.tiers,
@@ -268,6 +270,7 @@ export function composeManifest(packs, catalog, configHash) {
         packs: packs.map((pack) => ({
             id: pack.id,
             kind: pack.kind,
+            ...(pack.role ? { role: pack.role } : {}),
             version: pack.version,
             path: pack.path,
             sha256: pack.sha256,
@@ -299,7 +302,7 @@ export async function openProject(fs, options) {
         const total = packs.reduce((sum, pack) => sum + pack.concepts, 0);
         if (total >= D3_PROMPT_THRESHOLD) {
             notices.push(`Termbridge: đã cài ${total} khái niệm; chọn gói bằng /termbridge packs <id,...>. Tạm thời chỉ nạp ${STARTER_PACK} / ${total} concepts installed; choose packs with /termbridge packs <id,...>. Loading only ${STARTER_PACK} for now`);
-            packs = packs.filter((pack) => pack.id === STARTER_PACK);
+            packs = catalog.packs.filter((pack) => pack.kind === 'content' && pack.role === 'starter').slice(0, 1);
         }
     }
     const locale = options.locale || effective.locale;

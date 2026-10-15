@@ -1,15 +1,18 @@
 import crypto from 'node:crypto';
 import fs from 'node:fs';
 import path from 'node:path';
-import type { DomainsConfig, TaxonomyNode } from './types.js';
+import type { DomainsConfig, SourcesConfig, TaxonomyNode } from './types.js';
 import {
   PACK_FORMAT_VERSION,
   PACK_TIER_FILES,
   PACK_TIERS,
+  STARTER_PACK_ID,
+  STARTER_TIERS,
   cardToSearchDoc,
   packIdForDomain,
   type ManifestPackEntry,
   type ManifestSearch,
+  type PackAttribution,
   type PackCard,
   type PackExplanation,
   type PackJson,
@@ -24,10 +27,13 @@ export interface PackConceptData {
   card: PackCard;
   terms: PackTerm[];
   explanation: PackExplanation;
+  // source refs this locale's content draws on (concept and locale sources)
+  sourceRefs?: string[];
 }
 
 export interface ContentPackInput {
   id: string;
+  role?: 'starter';
   title: Record<string, string>;
   domains: string[];
   // locale -> concepts of this pack, any order
@@ -44,6 +50,8 @@ export interface MetaPackInput {
 export interface PackRenderInput {
   version: string;
   locales: string[];
+  // config/sources.yaml, for attributions.json (2.8a)
+  sources?: SourcesConfig;
   content: ContentPackInput[];
   meta: MetaPackInput[];
 }
@@ -133,6 +141,55 @@ export function groupPacks(
   return { content, meta: meta.sort(byId) };
 }
 
+const TIER_RANK: Record<string, number> = { A: 0, B: 1, C: 2, D: 3 };
+
+// D6: level-1 concepts, best-sourced first, capped by count and by the size of
+// the starter's tiers. Without usage data (2.3) the rank is level, then the
+// best source tier, then id.
+export function selectStarter(
+  perLocale: Record<string, PackConceptData[]>,
+  sources: SourcesConfig | undefined,
+  limits: { maxConcepts: number; maxBytes: number }
+): ContentPackInput | null {
+  const locales = Object.keys(perLocale).sort();
+  if (locales.length === 0) return null;
+  const best = (concept: PackConceptData) => Math.min(
+    4,
+    ...(concept.sourceRefs || []).map((ref) => TIER_RANK[sources?.[ref]?.tier || ''] ?? 4)
+  );
+  let ranked = perLocale[locales[0]]
+    .filter((concept) => concept.card.level === 1)
+    .sort((a, b) => best(a) - best(b) || byId(a.card, b.card))
+    .slice(0, limits.maxConcepts)
+    .map((concept) => concept.card.id);
+
+  const build = (ids: string[]): ContentPackInput => {
+    const wanted = new Set(ids);
+    return {
+      id: STARTER_PACK_ID,
+      role: 'starter',
+      title: { vi: 'Khởi đầu', en: 'Starter' },
+      domains: [],
+      locales: Object.fromEntries(locales.map((locale) => [locale, perLocale[locale].filter((concept) => wanted.has(concept.card.id))])),
+    };
+  };
+  const size = (pack: ContentPackInput) => locales.reduce((sum, locale) => {
+    const concepts = pack.locales[locale];
+    const cards = concepts.map((concept) => concept.card);
+    return sum
+      + Buffer.byteLength(JSON.stringify(concepts.flatMap((concept) => concept.terms)), 'utf8')
+      + Buffer.byteLength(JSON.stringify(cards), 'utf8')
+      + Buffer.byteLength(searchIndexToJSON(createSearchIndex(cards.map(cardToSearchDoc))), 'utf8');
+  }, 0);
+
+  let pack = build(ranked);
+  while (ranked.length > 0 && size(pack) > limits.maxBytes) {
+    ranked = ranked.slice(0, Math.floor(ranked.length * 0.9));
+    pack = build(ranked);
+  }
+  return ranked.length > 0 ? pack : null;
+}
+
 export function alsoInPacks(domains: string[], domainsConfig: DomainsConfig): string[] {
   const packingOf = packingResolver(domainsConfig);
   const own = domains[0] ? packIdForDomain(domains[0], packingOf) : '';
@@ -158,6 +215,7 @@ export function renderPacks(input: PackRenderInput): { files: RenderedFile[]; ma
     entries.push({
       id: pack.id,
       kind: pack.kind,
+      ...(pack.role ? { role: pack.role } : {}),
       version: pack.version,
       path: relPath,
       sha256: sha256(content),
@@ -166,7 +224,9 @@ export function renderPacks(input: PackRenderInput): { files: RenderedFile[]; ma
   };
 
   for (const pack of [...input.content].sort(byId)) {
-    const tiers = Object.fromEntries(PACK_TIERS.map((tier) => [tier, { bytes: 0, files: {} }])) as Record<PackTier, any>;
+    const packTiers = pack.role === 'starter' ? STARTER_TIERS : PACK_TIERS;
+    const tiers = Object.fromEntries(packTiers.map((tier) => [tier, { bytes: 0, files: {} }])) as Record<PackTier, any>;
+    const used = new Map<string, Set<string>>();
     tiers.search.configHash = configHash;
     const status: Record<string, number> = Object.fromEntries(STATUSES.map((name) => [name, 0]));
     let conceptCount = 0;
@@ -177,6 +237,13 @@ export function renderPacks(input: PackRenderInput): { files: RenderedFile[]; ma
         conceptCount = concepts.length;
         for (const { card } of concepts) status[card.status] = (status[card.status] || 0) + 1;
       }
+      for (const concept of concepts) {
+        for (const ref of concept.sourceRefs || []) {
+          if (input.sources?.[ref]?.reuse !== 'adapt') continue;
+          if (!used.has(ref)) used.set(ref, new Set());
+          used.get(ref)!.add(concept.card.id);
+        }
+      }
       const cards = concepts.map((concept) => concept.card);
       const contents: Record<PackTier, string> = {
         terms: JSON.stringify(concepts.flatMap((concept) => concept.terms)),
@@ -184,7 +251,7 @@ export function renderPacks(input: PackRenderInput): { files: RenderedFile[]; ma
         search: searchIndexToJSON(createSearchIndex(cards.map(cardToSearchDoc))),
         explanations: concepts.map((concept) => `${JSON.stringify(concept.explanation)}\n`).join(''),
       };
-      for (const tier of PACK_TIERS) {
+      for (const tier of packTiers) {
         const content = contents[tier];
         const bytes = Buffer.byteLength(content, 'utf8');
         files.push({ path: `packs/${pack.id}/${locale}/${PACK_TIER_FILES[tier]}`, content });
@@ -197,11 +264,28 @@ export function renderPacks(input: PackRenderInput): { files: RenderedFile[]; ma
       warnings.push(`Pack ${pack.id} has ${conceptCount} concepts; split it below level 2 (D5)`);
     }
 
+    const attributions: PackAttribution[] = [...used.keys()].sort().map((ref) => {
+      const source = input.sources![ref];
+      return {
+        ref,
+        title: source.title,
+        publisher: source.publisher,
+        url: source.url,
+        license: source.license,
+        license_evidence: source.license_evidence,
+        concepts: [...used.get(ref)!].sort(),
+      };
+    });
+    const attributionsText = `${JSON.stringify(attributions, null, 2)}
+`;
+    files.push({ path: `packs/${pack.id}/attributions.json`, content: attributionsText });
+
     addPackJson({
       id: pack.id,
       version: input.version,
       formatVersion: PACK_FORMAT_VERSION,
       kind: 'content',
+      ...(pack.role ? { role: pack.role } : {}),
       title: pack.title,
       domains: pack.domains,
       locales,
@@ -209,6 +293,7 @@ export function renderPacks(input: PackRenderInput): { files: RenderedFile[]; ma
       concepts: conceptCount,
       status,
       tiers,
+      attributions: { path: 'attributions.json', bytes: Buffer.byteLength(attributionsText, 'utf8'), sha256: sha256(attributionsText) },
       license: 'CC-BY-4.0',
     });
   }
@@ -229,10 +314,12 @@ export function renderPacks(input: PackRenderInput): { files: RenderedFile[]; ma
     });
   }
 
-  const contentIds = [...input.content].sort(byId).map((pack) => pack.id);
+  // The starter repeats concepts of other packs, so it stays out of the combined index.
+  const indexed = input.content.filter((pack) => pack.role !== 'starter');
+  const contentIds = [...indexed].sort(byId).map((pack) => pack.id);
   const search: ManifestSearch = { packs: contentIds, files: {} };
   for (const locale of locales) {
-    const cards = input.content
+    const cards = indexed
       .flatMap((pack) => (pack.locales[locale] || []).map((concept) => concept.card))
       .sort(byId);
     const content = searchIndexToJSON(createSearchIndex(cards.map(cardToSearchDoc)));

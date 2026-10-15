@@ -85,7 +85,7 @@ describe('T-P1: builder emits packs in the 3.2 format', () => {
     const packingOf = packingResolver(repo.domainsConfig);
     for (const locale of manifest.locales) {
       const seen = new Map<string, string>();
-      for (const entry of manifest.packs.filter((pack: any) => pack.kind === 'content')) {
+      for (const entry of manifest.packs.filter((pack: any) => pack.kind === 'content' && pack.role !== 'starter')) {
         const cards: PackCard[] = readDistJson(`packs/${entry.id}/${locale}/cards.json`);
         expect(cards.length).toBeGreaterThan(0);
         expect(cards.length).toBe(entry.concepts);
@@ -113,7 +113,9 @@ describe('T-P1: builder emits packs in the 3.2 format', () => {
       expect(sha256(packText)).toBe(entry.sha256);
       const pack = JSON.parse(packText);
       if (pack.kind !== 'content') continue;
-      for (const tier of PACK_TIERS) {
+      const attributions = readDist(`packs/${pack.id}/attributions.json`);
+      expect(pack.attributions).toEqual({ path: 'attributions.json', bytes: Buffer.byteLength(attributions, 'utf8'), sha256: sha256(attributions) });
+      for (const tier of PACK_TIERS.filter((name) => pack.tiers[name])) {
         let total = 0;
         for (const locale of pack.locales) {
           const content = readDist(`packs/${pack.id}/${locale}/${PACK_TIER_FILES[tier]}`);

@@ -1,0 +1,85 @@
+{
+  "id": "starter",
+  "version": "0.1.0",
+  "formatVersion": 1,
+  "kind": "content",
+  "role": "starter",
+  "title": {
+    "vi": "Khởi đầu",
+    "en": "Starter"
+  },
+  "domains": [],
+  "locales": [
+    "en",
+    "ja",
+    "vi"
+  ],
+  "requires": {},
+  "concepts": 7,
+  "status": {
+    "draft": 0,
+    "reviewed": 7,
+    "verified": 0,
+    "deprecated": 0
+  },
+  "tiers": {
+    "terms": {
+      "bytes": 3724,
+      "files": {
+        "en": {
+          "bytes": 1173,
+          "sha256": "13fb64c082d118ef1a95ed151357d18577640c93dc545f16a760b27f3475807c"
+        },
+        "ja": {
+          "bytes": 1173,
+          "sha256": "13fb64c082d118ef1a95ed151357d18577640c93dc545f16a760b27f3475807c"
+        },
+        "vi": {
+          "bytes": 1378,
+          "sha256": "22b1a1a645db48b3aea15019983326e8921b51a60f1bd7eac525a039788d3f5b"
+        }
+      }
+    },
+    "cards": {
+      "bytes": 9993,
+      "files": {
+        "en": {
+          "bytes": 3167,
+          "sha256": "e62f21262d19f1f6bae52f99d9f3a0bc4825ac78a3bdce42dc314c58ece539c8"
+        },
+        "ja": {
+          "bytes": 3167,
+          "sha256": "e62f21262d19f1f6bae52f99d9f3a0bc4825ac78a3bdce42dc314c58ece539c8"
+        },
+        "vi": {
+          "bytes": 3659,
+          "sha256": "0107cd996a27c03c6749bc271581ca40bccc8bc90f6b980c7ca4f6d01b4542d7"
+        }
+      }
+    },
+    "search": {
+      "bytes": 23153,
+      "files": {
+        "en": {
+          "bytes": 7394,
+          "sha256": "0837657eebb6c9e1f5116e52f8badc14799cbb72712edd01615b74838d558eb1"
+        },
+        "ja": {
+          "bytes": 7394,
+          "sha256": "0837657eebb6c9e1f5116e52f8badc14799cbb72712edd01615b74838d558eb1"
+        },
+        "vi": {
+          "bytes": 8365,
+          "sha256": "d73c3137964840ae2ce1d6497a601439056305631d3570dac5dfdaaedd87b1b3"
+        }
+      },
+      "configHash": "18b9a17e6386e5cf"
+    }
+  },
+  "attributions": {
+    "path": "attributions.json",
+    "bytes": 421,
+    "sha256": "6309cedab95ed3422a896ce918c0ace7402110c495ab8b3a7944534084208ba4"
+  },
+  "license": "CC-BY-4.0"
+}

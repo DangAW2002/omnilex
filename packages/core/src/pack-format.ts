@@ -12,6 +12,11 @@ export const PACK_TIER_FILES: Record<PackTier, string> = {
   explanations: 'explanations.jsonl',
 };
 export const PACK_SPLIT_WARNING = 2000;
+// D6: the starter pack ships terms, cards and search only, at most 1 MB.
+export const STARTER_PACK_ID = 'starter';
+export const STARTER_TIERS: PackTier[] = ['terms', 'cards', 'search'];
+export const STARTER_MAX_CONCEPTS = 300;
+export const STARTER_MAX_BYTES = 1024 * 1024;
 
 export type PackTier = typeof PACK_TIERS[number];
 export type PackKind = 'content' | 'meta';
@@ -28,11 +33,23 @@ export interface PackTierInfo {
   configHash?: string;
 }
 
+// One reused source (reuse: adapt) and the concepts that draw on it (2.8a).
+export interface PackAttribution {
+  ref: string;
+  title: string;
+  publisher?: string;
+  url: string;
+  license: string;
+  license_evidence?: string;
+  concepts: string[];
+}
+
 export interface PackJson {
   id: string;
   version: string;
   formatVersion: number;
   kind: PackKind;
+  role?: 'starter';
   title: Record<string, string>;
   domains: string[];
   locales: string[];
@@ -40,12 +57,14 @@ export interface PackJson {
   concepts: number;
   status: Record<string, number>;
   tiers?: Partial<Record<PackTier, PackTierInfo>>;
+  attributions?: PackFileInfo & { path: string };
   license: string;
 }
 
 export interface ManifestPackEntry {
   id: string;
   kind: PackKind;
+  role?: 'starter';
   version: string;
   path: string;
   sha256: string;
@@ -181,7 +200,10 @@ export function expandPackSelection(
 ): string[] {
   const byId = new Map(manifest.packs.map((pack) => [pack.id, pack]));
   if (!wanted || wanted.length === 0) {
-    return manifest.packs.filter((pack) => pack.kind === 'content').map((pack) => pack.id);
+    // The starter repeats concepts of the other packs: it counts only when alone.
+    const content = manifest.packs.filter((pack) => pack.kind === 'content');
+    const full = content.filter((pack) => pack.role !== 'starter');
+    return (full.length ? full : content).map((pack) => pack.id);
   }
 
   const result: string[] = [];

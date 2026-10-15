@@ -51,10 +51,12 @@ export function resolvePacks(ops, catalog, options = { packsConfigured: true }) 
             selected.set(pack.id, pack);
     };
     if (!options.packsConfigured) {
-        // D3: nothing configured means every installed or built content pack.
-        for (const pack of catalog.packs)
-            if (pack.kind === 'content')
-                expand(pack.id, undefined, [], add, false);
+        // D3: nothing configured means every installed or built content pack; the
+        // starter repeats concepts of the others, so it counts only when alone.
+        const content = catalog.packs.filter((pack) => pack.kind === 'content');
+        const full = content.filter((pack) => pack.role !== 'starter');
+        for (const pack of full.length ? full : content)
+            expand(pack.id, undefined, [], add, false);
     }
     for (const op of ops) {
         if (op.op === 'reset') {
@@ -62,7 +64,11 @@ export function resolvePacks(ops, catalog, options = { packsConfigured: true }) 
         }
         else if (op.op === 'dev') {
             const source = catalog.sources.find((item) => item.kind === 'dev' && item.dir === op.path);
-            for (const id of source?.contentIds || []) {
+            // A build holding only a starter (the one the mod ships) selects it.
+            const ids = source?.contentIds?.length
+                ? source.contentIds
+                : catalog.packs.filter((item) => item.sourceId === source?.id && item.kind === 'content').map((item) => item.id);
+            for (const id of ids) {
                 const pack = catalog.packs.find((item) => item.id === id && item.sourceId === source.id);
                 if (pack)
                     add(pack);

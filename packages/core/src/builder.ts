@@ -2,7 +2,8 @@ import fs from 'node:fs';
 import path from 'node:path';
 import type { ConceptRecord, RepositoryData } from './types.js';
 import { mergeTerms, termConceptFromCard, type PackCard, type PackTerm } from './pack-format.js';
-import { alsoInPacks, groupPacks, renderPacks, writePackFiles, type PackConceptData } from './packs.js';
+import { alsoInPacks, groupPacks, renderPacks, selectStarter, writePackFiles, type PackConceptData } from './packs.js';
+import { STARTER_MAX_BYTES, STARTER_MAX_CONCEPTS } from './pack-format.js';
 
 export interface BuildOutputs {
   indexesGenerated: string[];
@@ -170,8 +171,11 @@ export function buildArtifacts(repoData: RepositoryData): BuildOutputs {
       termsEntries.push(...conceptTerms);
 
       const contentLocale = entry ? locale : (record.locales[localesConfig.pivot] ? localesConfig.pivot : fallbackEntry?.locale);
+      const sourceRefs = [...(record.metadata.sources || []), ...(fm.sources || [])]
+        .flatMap((source) => (typeof source === 'object' && source.ref ? [source.ref] : []));
       localePackConcepts.push({
         card,
+        sourceRefs,
         terms: conceptTerms,
         explanation: {
           id: record.id,
@@ -290,13 +294,30 @@ export function buildArtifacts(repoData: RepositoryData): BuildOutputs {
 
   // Packs (Plan 3.2, D5): dist/manifest.json and dist/packs/<id>/...
   const grouped = groupPacks(packConcepts, domainsConfig, repoData.taxonomy);
+  const starter = selectStarter(packConcepts, repoData.sourcesConfig, { maxConcepts: STARTER_MAX_CONCEPTS, maxBytes: STARTER_MAX_BYTES });
   const rendered = renderPacks({
     version: repoVersion(rootDir),
     locales: primaryLocales,
-    content: grouped.content,
+    sources: repoData.sourcesConfig,
+    content: starter ? [...grouped.content, starter] : grouped.content,
     meta: grouped.meta,
   });
   distGenerated.push(...writePackFiles(distDir, rendered.files));
+
+  // The mod ships only the starter pack (3.9), as a small dist of its own.
+  const modStarterDir = path.join(rootDir, 'packages', 'claude-mod', 'data', 'starter');
+  if (starter && fs.existsSync(path.join(rootDir, 'packages', 'claude-mod', 'data'))) {
+    const bundled = renderPacks({
+      version: repoVersion(rootDir),
+      locales: primaryLocales,
+      sources: repoData.sourcesConfig,
+      content: [starter],
+      meta: [],
+    });
+    // Its combined index would cover no pack (the starter is never in it): leave it out.
+    const files = bundled.files.filter((file) => file.path.startsWith('packs/') || !file.path.endsWith('/search-index.json'));
+    distGenerated.push(...writePackFiles(modStarterDir, files));
+  }
 
   // Generate packages/claude-mod/hooks/runtime/: the core modules the mod
   // imports, plus self-contained ESM builds of their two dependencies. Bare

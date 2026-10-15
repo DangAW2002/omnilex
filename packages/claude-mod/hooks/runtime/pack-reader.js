@@ -203,7 +203,9 @@ export class PackStore {
             }
         }
         if (!index) {
-            index = createSearchIndex(packIds.flatMap((id) => this.cards(id, locale)).map(cardToSearchDoc));
+            const seen = new Set();
+            const cards = packIds.flatMap((id) => this.cards(id, locale)).filter((card) => !seen.has(card.id) && seen.add(card.id));
+            index = createSearchIndex(cards.map(cardToSearchDoc));
             try {
                 this.cache?.write(key, searchIndexToJSON(index));
             }
@@ -244,6 +246,9 @@ export class PackStore {
             };
             for (const packId of packIds) {
                 for (const card of this.cards(packId, options.locale)) {
+                    // A concept in several packs (the starter repeats others): first pack wins.
+                    if (byId.has(card.id))
+                        continue;
                     byId.set(card.id, card);
                     packOf.set(card.id, packId);
                     add(card.label, card);
@@ -279,9 +284,10 @@ export class PackStore {
     browse(domainPrefix, options) {
         if (!this.available)
             return [];
+        const seen = new Set();
         return this.contentPacks(options.packs)
             .flatMap((packId) => this.cards(packId, options.locale))
-            .filter((card) => card.domains.some((domain) => domainMatches(domain, domainPrefix)));
+            .filter((card) => !seen.has(card.id) && seen.add(card.id) && card.domains.some((domain) => domainMatches(domain, domainPrefix)));
     }
     explanation(id, locale) {
         if (!this.available)

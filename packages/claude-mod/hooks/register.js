@@ -592,7 +592,10 @@ function projectFs($) {
 async function loadPackLocale(loc) {
   if (localized[loc]) return true
   if (!packs) return false
-  const cards = await packs.io.run(() => packs.ids.flatMap((id) => packs.store.cards(id, loc)))
+  const seen = new Set()
+  // A concept in several packs (the starter repeats others): first pack wins.
+  const cards = (await packs.io.run(() => packs.ids.flatMap((id) => packs.store.cards(id, loc))))
+    .filter((card) => !seen.has(card.id) && seen.add(card.id))
   localized[loc] = { concepts: cards, explanations: null }
   return true
 }
@@ -604,15 +607,23 @@ async function loadPacks($) {
   const sessionConfig = {}
   if (sessionPacks) Object.assign(sessionConfig, { packsReset: true, packs: sessionPacks })
   if (sessionProfile) sessionConfig.profile = sessionProfile
-  const ctx = await openProject(fsAdapter, {
+  const home = await homeDir($)
+  const open = (session) => openProject(fsAdapter, {
     cwd: sessionCwd,
-    home: await homeDir($),
+    home,
     surface: 'mod',
     locale,
-    session: Object.keys(sessionConfig).length ? { source: '/termbridge', config: sessionConfig } : undefined,
+    session,
     configHash: searchConfigHash(),
   })
+  let ctx = await open(Object.keys(sessionConfig).length ? { source: '/termbridge', config: sessionConfig } : undefined)
   notices = ctx.notices
+  if (ctx.plan.packs.length === 0) {
+    // No project or store packs: the starter pack the plugin ships (3.9).
+    const bundled = `${String($.plugin.root).replace(/\\/g, '/').replace(/\/+$/, '')}/data/starter`
+    ctx = await open({ source: 'plugin', config: { ...sessionConfig, packsReset: true, packs: [`dev:${bundled}`] } })
+    notices = [...notices, ...ctx.notices.filter((notice) => !notices.includes(notice))]
+  }
   if (ctx.plan.packs.length === 0) return false
   const io = new PrefetchIO((path) => fsAdapter.read(path))
   const store = new PackStore(io, (message) => { if (!notices.includes(message)) notices.push(message) }, {

@@ -256,7 +256,7 @@
         ]
       }
     ],
-    "autolink": false
+    "autolink": true
   },
   {
     "key": "tỷ lệ sinh lời trên chi phí",

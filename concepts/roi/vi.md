@@ -1,6 +1,9 @@
 ---
 label: Tỷ suất hoàn vốn
 aliases: [ROI, tỷ lệ sinh lời trên chi phí]
+autolink:
+  aliases:
+    ROI: always
 loanwords: [ROI, return on investment]
 plain_descriptions:
   - bỏ 1 đồng vốn thì thu về được bao nhiêu đồng lời

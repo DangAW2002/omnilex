@@ -256,7 +256,7 @@
         ]
       }
     ],
-    "autolink": false
+    "autolink": true
   },
   {
     "key": "Simple Interest",

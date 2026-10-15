@@ -1,6 +1,9 @@
 ---
 label: Return on Investment
 aliases: [ROI]
+autolink:
+  aliases:
+    ROI: always
 loanwords: []
 plain_descriptions:
   - how much money you make back compared to what you spent

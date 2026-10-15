@@ -3,6 +3,7 @@ import path from 'node:path';
 import os from 'node:os';
 import Ajv from 'ajv';
 import { buildArtifacts } from './builder.js';
+import { normalizeSearchTerm } from './matcher.js';
 import type {
   ConceptMetadata,
   ConceptRecord,
@@ -109,6 +110,7 @@ export function validateRepository(
   // Map to track label collisions across locales for Rule 9
   // locale -> label (lowercase normalized) -> array of conceptIds without qualifier
   const labelMap = new Map<string, Map<string, Array<{ conceptId: string; qualifier?: string }>>>();
+  const descriptionOwners = new Map<string, string>();
 
   // Rule 5: Cycle detection in prerequisites
   const prereqCycles = detectPrerequisiteCycles(concepts);
@@ -504,6 +506,46 @@ export function validateRepository(
               message: `Alias '${alias}' is a common word in '${localeCode}'; declare explicit 'autolink.aliases.${alias}: always | never'`,
             });
           }
+        }
+      }
+
+      // Acronyms need an explicit autolink decision (Plan 2.6, Warning)
+      const isAcronym = (value: string) => /^[A-Z0-9][A-Z0-9/&.-]{1,7}$/.test(value.trim()) && /[A-Z]/.test(value) && value.trim().length <= 8;
+      if (fm?.label && isAcronym(fm.label) && !fm.autolink?.label) {
+        issues.push({
+          ruleId: 14,
+          severity: 'warning',
+          conceptId: id,
+          locale: localeCode,
+          message: `Label '${fm.label}' looks like an acronym; declare explicit 'autolink.label: always | never'`,
+        });
+      }
+      for (const alias of fm?.aliases || []) {
+        if (isAcronym(alias) && !fm?.autolink?.aliases?.[alias]) {
+          issues.push({
+            ruleId: 14,
+            severity: 'warning',
+            conceptId: id,
+            locale: localeCode,
+            message: `Alias '${alias}' looks like an acronym; declare explicit 'autolink.aliases.${alias}: always | never'`,
+          });
+        }
+      }
+
+      // Plain descriptions fuel reverse lookup; the same one on two concepts is ambiguous (Plan 2.6, Warning)
+      for (const description of fm?.plain_descriptions || []) {
+        const key = `${localeCode}\u0000${normalizeSearchTerm(description.trim())}`;
+        const owner = descriptionOwners.get(key);
+        if (owner && owner !== id) {
+          issues.push({
+            ruleId: 11,
+            severity: 'warning',
+            conceptId: id,
+            locale: localeCode,
+            message: `plain_description '${description}' is also used by '${owner}'`,
+          });
+        } else if (!owner) {
+          descriptionOwners.set(key, id);
         }
       }
 

@@ -18,6 +18,10 @@ Run the CLI generator:
 ```bash
 pnpm tb new <kebab-case-id> --domain <domain/subdomain/leaf> --locales vi,en --drafted-by ai
 ```
+For a batch, scaffold every candidate that has an `id` and a `domain` (from `tb ingest <source>` or `tb candidates mine --opt-in`):
+```bash
+pnpm tb new --from candidates/<file>.yaml --locales vi,en --drafted-by ai
+```
 
 ### 3. Complete Concept Metadata (`concepts/<id>/concept.yaml`)
 - Assign appropriate difficulty `level` (1, 2, or 3).
@@ -44,5 +48,7 @@ pnpm tb new <kebab-case-id> --domain <domain/subdomain/leaf> --locales vi,en --d
 ```bash
 pnpm tb validate --strict
 pnpm tb build
+pnpm tb report collisions        # every new homonym: qualifier in vi and en, confusable both ways
+pnpm tb check overlap            # no run of 8+ words copied from a quote or a paraphrase-only source text
 ```
-Verify zero errors before opening a pull request.
+Verify zero errors before opening a pull request. Acronyms and common words need an explicit `autolink` decision, and a `plain_description` must not repeat another concept's.

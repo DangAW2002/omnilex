@@ -22,4 +22,8 @@ export * from './registry.js';
 export * from './overlay.js';
 export * from './glossary.js';
 export * from './exchange.js';
+export * from './scaffold.js';
+export * from './candidates.js';
+export * from './ingest.js';
+export * from './reports.js';
 export { default as MiniSearch } from 'minisearch';

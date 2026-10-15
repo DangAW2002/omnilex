@@ -4,6 +4,7 @@ import path from 'node:path';
 import fs from 'node:fs';
 import pc from 'picocolors';
 import { openCliStore, registerPackCommands } from './packs.js';
+import { registerContentCommands } from './content.js';
 
 const program = new Command();
 
@@ -25,25 +26,18 @@ program
 
 // tb new <id> --domain <path> --locales <locales>
 program
-  .command('new <id>')
-  .description('Create a new concept directory from template')
-  .requiredOption('-d, --domain <path>', 'Primary taxonomy domain path (e.g., finance/investing/stocks)')
+  .command('new [id]')
+  .description('Create a new concept directory from template (or many: --from candidates/<file>.yaml)')
+  .option('-d, --domain <path>', 'Primary taxonomy domain path (e.g., finance/investing/stocks)')
   .option('-l, --locales <locales>', 'Comma-separated locale codes', 'vi,en')
   .option('--drafted-by <author>', 'Draft author: human or ai', 'human')
-  .action(async (id: string, options: { domain: string; locales: string; draftedBy: string }) => {
+  .option('--from <file>', 'Scaffold every candidate that has an id and a domain')
+  .action(async (id: string | undefined, options: { domain?: string; locales: string; draftedBy: string; from?: string }) => {
     const rootDir = resolveRootDir();
-    const { loadAll } = await import('@termbridge/core');
+    const { loadAll, scaffoldConcept, parseYaml } = await import('@termbridge/core');
     const repoData = loadAll(rootDir);
     const locales = options.locales.split(',').map((s) => s.trim());
     const allowedLocales = new Set(repoData.localesConfig.locales.map((locale) => locale.code));
-    if (!/^[a-z0-9]+(?:-[a-z0-9]+)*$/.test(id) || id.length > 48) {
-      console.error(pc.red('Error: id must be kebab-case, at most 48 characters.'));
-      process.exit(1);
-    }
-    if (!repoData.validDomainPaths.has(options.domain)) {
-      console.error(pc.red(`Error: Unknown taxonomy path '${options.domain}'.`));
-      process.exit(1);
-    }
     if (locales.length === 0 || locales.some((locale) => !allowedLocales.has(locale)) || new Set(locales).size !== locales.length) {
       console.error(pc.red('Error: --locales must contain unique locale codes from config/locales.yaml.'));
       process.exit(1);
@@ -56,67 +50,54 @@ program
       console.error(pc.red('Error: --drafted-by must be ai or human.'));
       process.exit(1);
     }
-    const conceptDir = path.join(rootDir, 'concepts', id);
 
-    if (fs.existsSync(conceptDir)) {
-      console.error(pc.red(`Error: Concept directory already exists at concepts/${id}`));
-      process.exit(1);
+    const jobs: Array<{ id: string; domain: string; labels?: Record<string, string>; sources?: any[] }> = [];
+    if (options.from) {
+      const doc = parseYaml(fs.readFileSync(options.from, 'utf-8')) as any;
+      for (const candidate of doc?.candidates || []) {
+        if (!candidate?.id || !candidate?.domain || candidate.skip) continue;
+        jobs.push({
+          id: String(candidate.id),
+          domain: String(candidate.domain),
+          labels: candidate.term ? { en: String(candidate.term) } : undefined,
+          sources: candidate.source ? [candidate.source] : undefined,
+        });
+      }
+      if (jobs.length === 0) console.log(pc.yellow(`⚠ ${options.from}: không có ứng viên nào có id và domain / no candidate with an id and a domain`));
+    } else {
+      if (!id || !options.domain) {
+        console.error(pc.red('Error: pass <id> and --domain, or --from <candidates.yaml>.'));
+        process.exit(1);
+      }
+      jobs.push({ id, domain: options.domain });
     }
 
-    fs.mkdirSync(conceptDir, { recursive: true });
-
-    // 1. Write concept.yaml
-    const conceptYaml = `id: ${id}
-domains:
-  - ${options.domain}
-level: 1
-relations:
-  prerequisites: []
-  confusable: []
-  related: []
-status: draft
-provenance:
-  drafted_by: ${options.draftedBy}
-sources: []
-`;
-    fs.writeFileSync(path.join(conceptDir, 'concept.yaml'), conceptYaml, 'utf-8');
-
-    // 2. Write locale files
-    for (const loc of locales) {
-      const isVi = loc === 'vi';
-      const mdContent = `---
-label: ${id}
-aliases: []
-loanwords: []
-plain_descriptions:
-  - ${isVi ? 'mô tả đời thường thứ nhất' : 'first plain description'}
-  - ${isVi ? 'mô tả đời thường thứ hai' : 'second plain description'}
-summary: ${isVi ? 'Tóm tắt ngắn gọn một câu.' : 'One sentence summary.'}
-confusable_notes: {}
-follow_up_questions: []
-translation: native
----
-
-## ${isVi ? 'Giải thích dễ hiểu' : 'Easy explanation'}
-${isVi ? 'Hình ảnh so sánh đời sống thực tế.' : 'Intuitive real world analogy.'}
-
-## ${isVi ? 'Chi tiết' : 'Details'}
-${isVi ? 'Cơ chế vận hành và các thành phần chính.' : 'Operational details and mechanics.'}
-
-## ${isVi ? 'Định nghĩa chuyên ngành' : 'Technical definition'}
-${isVi ? 'Định nghĩa chuẩn mực chuyên sâu.' : 'Authoritative industry definition.'}
-
-## ${isVi ? 'Ví dụ' : 'Examples'}
-${isVi ? 'Ví dụ thực tiễn hoặc số liệu cụ thể.' : 'Practical examples or numerical scenarios.'}
-`;
-      fs.writeFileSync(path.join(conceptDir, `${loc}.md`), mdContent, 'utf-8');
+    let failed = 0;
+    for (const job of jobs) {
+      if (!/^[a-z0-9]+(?:-[a-z0-9]+)*$/.test(job.id) || job.id.length > 48) {
+        console.error(pc.red(`Error: ${job.id}: id must be kebab-case, at most 48 characters.`));
+        failed++;
+        continue;
+      }
+      if (!repoData.validDomainPaths.has(job.domain)) {
+        console.error(pc.red(`Error: ${job.id}: Unknown taxonomy path '${job.domain}'.`));
+        failed++;
+        continue;
+      }
+      try {
+        scaffoldConcept(rootDir, { ...job, locales, draftedBy: options.draftedBy });
+      } catch (error: any) {
+        console.error(pc.red(`Error: ${error.message}`));
+        failed++;
+        continue;
+      }
+      console.log(pc.green(`✔ Created concept ${pc.bold(job.id)} in concepts/${job.id}`));
+      console.log(pc.cyan(`  - concept.yaml`));
+      for (const loc of locales) {
+        console.log(pc.cyan(`  - ${loc}.md`));
+      }
     }
-
-    console.log(pc.green(`✔ Created concept ${pc.bold(id)} in concepts/${id}`));
-    console.log(pc.cyan(`  - concept.yaml`));
-    for (const loc of locales) {
-      console.log(pc.cyan(`  - ${loc}.md`));
-    }
+    if (failed) process.exit(1);
   });
 
 // tb validate [--strict]
@@ -475,5 +456,6 @@ sourcesCmd
 
 if (!process.env.VITEST) {
   registerPackCommands(program);
+  registerContentCommands(program, reportCmd, resolveRootDir);
   program.parse(process.argv);
 }

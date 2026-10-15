@@ -17,9 +17,12 @@ Thank you for contributing to Termbridge! We welcome contributions from both hum
    - Provide at least 2 `plain_descriptions` in each language.
 4. **Validate and build:**
    ```bash
-   pnpm tb validate
+   pnpm tb validate --strict
    pnpm tb build
+   pnpm tb report collisions   # homonyms need qualifiers and two-way confusable links
+   pnpm tb check overlap       # no 8+ word runs copied from paraphrase-only sources
    ```
+   Spreadsheet authors can also send a CSV: `pnpm tb import --from csv terms.csv --into concepts/` creates drafts (`drafted_by: import`) to review like any other.
 5. **Open a Pull Request:**
    Submit a PR keeping each batch under ~20 concepts to facilitate thorough review.
 

@@ -3,7 +3,7 @@ import readline from 'node:readline';
 import path from 'node:path';
 import fs from 'node:fs';
 import { fileURLToPath } from 'node:url';
-import { loadAll, findConcepts, showConcept, lookupConcepts } from '@termbridge/core';
+import { loadAll, findConcepts, showConcept, lookupConcepts, PackStore, domainMatches, type PackIO, type RepositoryData } from '@termbridge/core';
 
 function findRepoRoot(startDir: string): string | null {
   let curr = path.resolve(startDir);
@@ -30,8 +30,6 @@ function resolveRootDir(): string {
   return process.cwd();
 }
 
-const rootDir = resolveRootDir();
-const repoData = loadAll(rootDir);
 
 const TOOLS = [
   {
@@ -73,81 +71,172 @@ const TOOLS = [
   }
 ];
 
-export function handleToolCall(name: string, args: any) {
-  if (name === 'find_term') {
-    const results = findConcepts(repoData, args.description, {
-      locale: args.locale || 'vi',
-      domain: args.domain
-    });
-    return {
-      candidates: results.slice(0, 5).map((r) => ({
-        id: r.id,
-        label: r.label,
-        qualifier: r.qualifier,
-        summary: r.summary,
-        domains: r.domains
-      }))
-    };
-  }
+export interface ToolHandlerOptions {
+  io?: PackIO;
+  // mtime of dist/manifest.json, or null when packs should not be used
+  manifestStamp?: () => number | null;
+}
 
-  if (name === 'explain_term') {
-    const matches = lookupConcepts(repoData, args.term, { locale: args.locale || 'vi' });
-    if (matches.length > 1) {
-      return {
-        ambiguous: true,
-        candidates: matches.map(({ record, localeEntry }) => ({
+// Packs are read through one PackStore per manifest version, so every
+// (locale, pack) index is loaded once until `tb build` rewrites the manifest.
+export function createToolHandler(rootDir: string, options: ToolHandlerOptions = {}) {
+  const distDir = path.join(rootDir, 'dist');
+  const io: PackIO = options.io || {
+    readText(relPath) {
+      try {
+        return fs.readFileSync(path.join(distDir, ...relPath.split('/')), 'utf8');
+      } catch {
+        return null;
+      }
+    },
+  };
+  const manifestStamp = options.manifestStamp || (() => {
+    try {
+      const manifest = fs.statSync(path.join(distDir, 'manifest.json')).mtimeMs;
+      const concepts = fs.existsSync(path.join(rootDir, 'concepts')) ? fs.statSync(path.join(rootDir, 'concepts')).mtimeMs : 0;
+      return concepts > manifest ? null : manifest;
+    } catch {
+      return null;
+    }
+  });
+
+  let store: PackStore | null = null;
+  let storeStamp: number | null = null;
+  let repoData: RepositoryData | null = null;
+  const packs = (): PackStore | null => {
+    const stamp = manifestStamp();
+    if (stamp === null) return null;
+    if (!store || stamp !== storeStamp) {
+      storeStamp = stamp;
+      store = new PackStore(io, (message) => console.error(message));
+    }
+    return store.available ? store : null;
+  };
+  const repo = () => (repoData ||= loadAll(rootDir));
+
+  return function handleToolCall(name: string, args: any): any {
+    const locale = args.locale || 'vi';
+    const packStore = packs();
+
+    if (packStore) {
+      if (name === 'find_term') {
+        return { candidates: packStore.find(args.description, { locale, domain: args.domain }).map(candidate) };
+      }
+      if (name === 'explain_term') {
+        const matches = packStore.lookup(args.term, { locale });
+        if (matches.length > 1) return { ambiguous: true, candidates: matches.map(candidate) };
+        const record = matches[0] ? packStore.explanation(matches[0].id, locale) : null;
+        if (!record) return { error: `Concept not found: "${args.term}"` };
+        const fm = record.entry.frontmatter || {};
+        return {
           id: record.id,
-          label: localeEntry?.frontmatter.label,
-          qualifier: localeEntry?.frontmatter.qualifier,
-          summary: localeEntry?.frontmatter.summary,
-          domains: record.metadata.domains
+          label: fm.label,
+          qualifier: fm.qualifier,
+          summary: fm.summary,
+          domains: record.metadata.domains,
+          level: record.metadata.level,
+          status: record.metadata.status,
+          prerequisites: record.metadata.relations?.prerequisites || [],
+          confusable_notes: fm.confusable_notes || {},
+          follow_up_questions: fm.follow_up_questions || [],
+          explanation_body: record.entry.content,
+        };
+      }
+      if (name === 'browse_domain') {
+        const concepts = packStore.browse(args.domain_path, { locale }).map(candidate);
+        return { domain: args.domain_path, total: concepts.length, concepts };
+      }
+      throw new Error(`Unknown tool: ${name}`);
+    }
+
+    const repoData = repo();
+
+    if (name === 'find_term') {
+      const results = findConcepts(repoData, args.description, {
+        locale: args.locale || 'vi',
+        domain: args.domain
+      });
+      return {
+        candidates: results.slice(0, 5).map((r) => ({
+          id: r.id,
+          label: r.label,
+          qualifier: r.qualifier,
+          summary: r.summary,
+          domains: r.domains
         }))
       };
     }
-    const res = showConcept(repoData, args.term, { locale: args.locale || 'vi' });
-    if (!res) {
-      return { error: `Concept not found: "${args.term}"` };
-    }
-    const { record, localeEntry } = res;
-    return {
-      id: record.id,
-      label: localeEntry?.frontmatter.label,
-      qualifier: localeEntry?.frontmatter.qualifier,
-      summary: localeEntry?.frontmatter.summary,
-      domains: record.metadata.domains,
-      level: record.metadata.level,
-      status: record.metadata.status,
-      prerequisites: record.metadata.relations?.prerequisites || [],
-      confusable_notes: localeEntry?.frontmatter.confusable_notes || {},
-      follow_up_questions: localeEntry?.frontmatter.follow_up_questions || [],
-      explanation_body: localeEntry?.content
-    };
-  }
 
-  if (name === 'browse_domain') {
-    const locale = args.locale || 'vi';
-    const pathPrefix = args.domain_path;
-    const matched = Array.from(repoData.concepts.values()).filter((c) =>
-      c.metadata.domains.some((d) => d.startsWith(pathPrefix))
-    );
-
-    return {
-      domain: pathPrefix,
-      total: matched.length,
-      concepts: matched.map((m) => {
-        const e = m.locales[locale] || m.locales[repoData.localesConfig.pivot];
+    if (name === 'explain_term') {
+      const matches = lookupConcepts(repoData, args.term, { locale: args.locale || 'vi' });
+      if (matches.length > 1) {
         return {
-          id: m.id,
-          label: e?.frontmatter.label || m.id,
-          qualifier: e?.frontmatter.qualifier,
-          summary: e?.frontmatter.summary,
-          domains: m.metadata.domains
+          ambiguous: true,
+          candidates: matches.map(({ record, localeEntry }) => ({
+            id: record.id,
+            label: localeEntry?.frontmatter.label,
+            qualifier: localeEntry?.frontmatter.qualifier,
+            summary: localeEntry?.frontmatter.summary,
+            domains: record.metadata.domains
+          }))
         };
-      })
-    };
-  }
+      }
+      const res = showConcept(repoData, args.term, { locale: args.locale || 'vi' });
+      if (!res) {
+        return { error: `Concept not found: "${args.term}"` };
+      }
+      const { record, localeEntry } = res;
+      return {
+        id: record.id,
+        label: localeEntry?.frontmatter.label,
+        qualifier: localeEntry?.frontmatter.qualifier,
+        summary: localeEntry?.frontmatter.summary,
+        domains: record.metadata.domains,
+        level: record.metadata.level,
+        status: record.metadata.status,
+        prerequisites: record.metadata.relations?.prerequisites || [],
+        confusable_notes: localeEntry?.frontmatter.confusable_notes || {},
+        follow_up_questions: localeEntry?.frontmatter.follow_up_questions || [],
+        explanation_body: localeEntry?.content
+      };
+    }
 
-  throw new Error(`Unknown tool: ${name}`);
+    if (name === 'browse_domain') {
+      const locale = args.locale || 'vi';
+      const pathPrefix = args.domain_path;
+      const matched = Array.from(repoData.concepts.values()).filter((c) =>
+        c.metadata.domains.some((d) => domainMatches(d, pathPrefix))
+      );
+
+      return {
+        domain: pathPrefix,
+        total: matched.length,
+        concepts: matched.map((m) => {
+          const e = m.locales[locale] || m.locales[repoData.localesConfig.pivot];
+          return {
+            id: m.id,
+            label: e?.frontmatter.label || m.id,
+            qualifier: e?.frontmatter.qualifier,
+            summary: e?.frontmatter.summary,
+            domains: m.metadata.domains
+          };
+        })
+      };
+    }
+
+    throw new Error(`Unknown tool: ${name}`);
+  };
+}
+
+function candidate(item: { id: string; label: string; qualifier?: string; summary: string; domains: string[] }) {
+  return { id: item.id, label: item.label, qualifier: item.qualifier, summary: item.summary, domains: item.domains };
+}
+
+let defaultHandler: ((name: string, args: any) => any) | null = null;
+
+export function handleToolCall(name: string, args: any): any {
+  defaultHandler ||= createToolHandler(resolveRootDir());
+  return defaultHandler(name, args);
 }
 
 if (!process.env.VITEST) {

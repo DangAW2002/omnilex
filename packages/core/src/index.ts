@@ -6,4 +6,8 @@ export * from './query.js';
 export * from './sources.js';
 export * from './matcher.js';
 export * from './lookup.js';
+export * from './search-config.js';
+export * from './pack-format.js';
+export * from './pack-reader.js';
+export * from './packs.js';
 export { default as MiniSearch } from 'minisearch';

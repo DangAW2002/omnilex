@@ -1,7 +1,7 @@
 // bench/run.ts: Performance benchmark runner and budget checker (Table 1.7)
 import { generateMockDataset, type MockDataset } from './generate.js';
 import { execFileSync } from 'node:child_process';
-import { existsSync, mkdirSync, mkdtempSync, rmSync, writeFileSync } from 'node:fs';
+import { existsSync, mkdirSync, mkdtempSync, readFileSync, rmSync } from 'node:fs';
 import { tmpdir } from 'node:os';
 import { join, resolve, sep } from 'node:path';
 import { pathToFileURL } from 'node:url';
@@ -33,15 +33,53 @@ function cleanTranscript(text: string) {
     .replace(/\]\([^)]*\)/g, ' ');
 }
 
-function createBenchRoot(serializedSearchDocs: string): string {
+// Writes the mock dataset as a built dist/ (manifest + packs) with the real
+// pack builder, so cold CLI and MCP measurements read the same files as users.
+function createBenchRoot(dataset: MockDataset, core: any): string {
   const tempRoot = mkdtempSync(join(tmpdir(), 'termbridge-bench-'));
-  const conceptsDir = join(tempRoot, 'concepts');
-  const taxonomyDir = join(tempRoot, 'taxonomy');
-  const searchDir = join(tempRoot, 'dist', 'vi');
-  mkdirSync(conceptsDir, { recursive: true });
-  mkdirSync(taxonomyDir, { recursive: true });
-  mkdirSync(searchDir, { recursive: true });
-  writeFileSync(join(searchDir, 'search.json'), serializedSearchDocs, 'utf8');
+  mkdirSync(join(tempRoot, 'concepts'), { recursive: true });
+  mkdirSync(join(tempRoot, 'taxonomy'), { recursive: true });
+
+  const perLocale: Record<string, any[]> = {};
+  const locales = { vi: [dataset.conceptsVi, dataset.termsVi], en: [dataset.conceptsEn, dataset.termsEn] } as const;
+  for (const [locale, [concepts, terms]] of Object.entries(locales)) {
+    const termsByConcept = new Map<string, any[]>();
+    for (const term of terms) {
+      for (const concept of term.concepts) {
+        const list = termsByConcept.get(concept.id) || [];
+        list.push({ key: term.key, match: term.match, autolink: term.autolink, conceptId: concept.id });
+        termsByConcept.set(concept.id, list);
+      }
+    }
+    perLocale[locale] = concepts.map((concept) => ({
+      card: {
+        id: concept.id,
+        label: concept.label,
+        qualifier: concept.qualifier,
+        summary: concept.summary,
+        plain_descriptions: concept.plain_descriptions,
+        aliases: concept.aliases,
+        loanwords: concept.loanwords,
+        domains: concept.domains,
+        alsoIn: [],
+        level: 1,
+        status: concept.status,
+      },
+      terms: termsByConcept.get(concept.id) || [],
+      explanation: {
+        id: concept.id,
+        locale,
+        content_locale: locale,
+        metadata: { id: concept.id, domains: concept.domains, level: 1, status: concept.status },
+        entry: { locale, frontmatter: { label: concept.label, summary: concept.summary }, content: concept.summary },
+      },
+    }));
+  }
+
+  const domainsConfig = core.loadDomainsConfig(resolve('.'));
+  const grouped = core.groupPacks(perLocale, domainsConfig, new Map());
+  const rendered = core.renderPacks({ version: '0.0.0', locales: Object.keys(locales), content: grouped.content, meta: grouped.meta });
+  core.writePackFiles(join(tempRoot, 'dist'), rendered.files);
   return tempRoot;
 }
 
@@ -186,29 +224,33 @@ async function runBenchmarkForSize(size: number, seed = 42): Promise<BenchmarkRe
   // 4. Cold CLI find, including process startup, JSON read, index build and query.
   const coreModulePath = resolve('packages/core/dist/index.js');
   const core = await import(pathToFileURL(coreModulePath).href);
-  const benchRoot = createBenchRoot(serializedConceptsVi);
+  const benchRoot = createBenchRoot(dataset, core);
   let cliFindMs: number;
   let cliProcessMs: number;
+  let mcpFindMs: number;
   try {
     cliFindMs = await measureColdCliFind(benchRoot, core);
     cliProcessMs = measureCliProcessStartup(benchRoot);
+
+    // 5. MCP warm search: one PackStore per manifest, as the MCP server keeps it.
+    const distDir = join(benchRoot, 'dist');
+    const store = new core.PackStore({
+      readText: (relPath: string) => readFileSync(join(distDir, ...relPath.split('/')), 'utf8'),
+    });
+    store.find('hệ thống', { locale: 'vi' });
+    const mcpWarmRuns: number[] = [];
+    for (let i = 0; i < 10; i++) {
+      const tMcp0 = performance.now();
+      store.find('hệ thống', { locale: 'vi' });
+      const tMcp1 = performance.now();
+      mcpWarmRuns.push(tMcp1 - tMcp0);
+    }
+    mcpFindMs = mcpWarmRuns.reduce((a, b) => a + b, 0) / mcpWarmRuns.length;
   } finally {
     const tempBase = resolve(tmpdir()) + sep;
     const target = resolve(benchRoot);
     if (target.startsWith(tempBase)) rmSync(target, { recursive: true, force: true });
   }
-
-  // 5. MCP warm search through the shared core cache and search options.
-  core.clearSearchIndexCache();
-  core.findConceptsFromDocs(parsedConceptsVi, 'hệ thống', { cacheKey: 'bench:vi' });
-  const mcpWarmRuns: number[] = [];
-  for (let i = 0; i < 10; i++) {
-    const tMcp0 = performance.now();
-    core.findConceptsFromDocs(parsedConceptsVi, 'hệ thống', { cacheKey: 'bench:vi' });
-    const tMcp1 = performance.now();
-    mcpWarmRuns.push(tMcp1 - tMcp0);
-  }
-  const mcpFindMs = mcpWarmRuns.reduce((a, b) => a + b, 0) / mcpWarmRuns.length;
 
   // 6. Data size in MB
   const dataSizeMB = (

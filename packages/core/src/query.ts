@@ -1,6 +1,7 @@
-import MiniSearch from 'minisearch';
+import type MiniSearch from 'minisearch';
 import type { ConceptRecord, RepositoryData } from './types.js';
 import { normalizeSearchTerm } from './matcher.js';
+import { createSearchIndex, domainMatches, searchIndexes, type SearchDoc, type SearchHit } from './search-config.js';
 
 export interface FindResult {
   id: string;
@@ -10,48 +11,6 @@ export interface FindResult {
   summary: string;
   domains: string[];
   score: number;
-}
-
-export interface SearchDoc {
-  id: string;
-  label: string;
-  qualifier?: string;
-  aliases?: string;
-  loanwords?: string;
-  plain_descriptions?: string;
-  summary: string;
-  domains: string[];
-  level?: number;
-  status?: string;
-}
-
-export const SEARCH_INDEX_OPTIONS = {
-  fields: ['id', 'label', 'aliases', 'loanwords', 'plain_descriptions', 'summary'],
-  storeFields: ['id', 'label', 'qualifier', 'summary', 'domains', 'plain_descriptions'],
-  processTerm: normalizeSearchTerm,
-  searchOptions: {
-    boost: { id: 3, plain_descriptions: 3, label: 3, aliases: 2, summary: 1 },
-    combineWith: 'AND' as const,
-    fuzzy: 0.15,
-    prefix: true,
-  },
-};
-
-export function createSearchIndex(docs: SearchDoc[]): MiniSearch {
-  const miniSearch = new MiniSearch(SEARCH_INDEX_OPTIONS);
-  miniSearch.addAll(docs);
-  return miniSearch;
-}
-
-export function searchIndexToJSON(index: MiniSearch): string {
-  return JSON.stringify(index.toJSON());
-}
-
-export function loadSearchIndex(json: string | object): MiniSearch {
-  if (typeof json === 'string') {
-    return MiniSearch.loadJSON(json, SEARCH_INDEX_OPTIONS);
-  }
-  return MiniSearch.loadJS(json as any, SEARCH_INDEX_OPTIONS);
 }
 
 // In-process cache for MiniSearch instances per locale/pack (T-S4)
@@ -106,17 +65,11 @@ export function findConceptsFromDocs(
     index = createSearchIndex(docs);
   }
 
-  const rawResults = index.search(query);
-  const bestScore = rawResults[0]?.score || 0;
-  let filtered = rawResults.filter((r) => r.score >= bestScore * 0.35);
+  return toFindResults(searchIndexes([index], query, { domain: options.domain }));
+}
 
-  if (options.domain) {
-    filtered = filtered.filter((r) =>
-      Array.isArray(r.domains) && r.domains.some((d: string) => d.startsWith(options.domain!))
-    );
-  }
-
-  return filtered.slice(0, 5).map((r) => ({
+export function toFindResults(hits: SearchHit[]): FindResult[] {
+  return hits.map((r) => ({
     id: r.id,
     label: r.label,
     qualifier: r.qualifier,
@@ -132,9 +85,8 @@ export function findConcepts(
   options: { locale?: string; domain?: string } = {}
 ): FindResult[] {
   const targetLocale = options.locale || repoData.localesConfig.pivot;
-  const cacheKey = `repo:${targetLocale}`;
-  const docs = buildSearchDocsFromRepo(repoData, targetLocale);
-  return findConceptsFromDocs(docs, query, { domain: options.domain, cacheKey });
+  const index = getCachedSearchIndex(`repo:${targetLocale}`, () => buildSearchDocsFromRepo(repoData, targetLocale));
+  return toFindResults(searchIndexes([index], query, { domain: options.domain }));
 }
 
 export function lookupConcepts(
@@ -190,7 +142,7 @@ export function generateLocaleReport(repoData: RepositoryData): LocaleReportRow[
 
   for (const domain of repoData.domainsConfig.domains) {
     const domainConcepts = Array.from(repoData.concepts.values()).filter((c) =>
-      c.metadata.domains.some((d) => d.startsWith(domain.id))
+      c.metadata.domains.some((d) => domainMatches(d, domain.id))
     );
 
     const total = domainConcepts.length;

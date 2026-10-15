@@ -1,4 +1,9 @@
-import { describe, it, expect, vi } from 'vitest';
+import { describe, it, expect, vi, beforeAll, afterAll } from 'vitest';
+import fs from 'node:fs';
+import os from 'node:os';
+import path from 'node:path';
+import { fileURLToPath } from 'node:url';
+import { loadAll, buildArtifacts } from '@termbridge/core';
 import { findAction } from '../src/index.js';
 
 describe('T-S3: tb find does not call loadAll() when dist is fresh', () => {
@@ -92,5 +97,56 @@ describe('T-S3: tb find does not call loadAll() when dist is fresh', () => {
     expect(results).toHaveLength(1);
 
     warnSpy.mockRestore();
+  });
+});
+
+describe('T-S3: tb find reads packs when dist/manifest.json is fresh', () => {
+  const repoRoot = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '../../../');
+  let tempRoot: string;
+
+  beforeAll(() => {
+    tempRoot = fs.mkdtempSync(path.join(os.tmpdir(), 'tb-cli-find-'));
+    const repo = loadAll(repoRoot);
+    buildArtifacts({ ...repo, rootDir: tempRoot });
+  });
+
+  afterAll(() => {
+    fs.rmSync(tempRoot, { recursive: true, force: true });
+  });
+
+  function countingFs(reads: string[]) {
+    return {
+      ...fs,
+      readFileSync: ((file: string, ...rest: any[]) => {
+        reads.push(path.relative(tempRoot, file).split(path.sep).join('/'));
+        return (fs.readFileSync as any)(file, ...rest);
+      }) as typeof fs.readFileSync,
+    };
+  }
+
+  it('never calls loadAll and reads only the manifest, pack.json files and the combined shard', async () => {
+    const reads: string[] = [];
+    const mockLoadAll = vi.fn();
+    const { results, usedPrebuilt } = await findAction(tempRoot, 'lãi kép', { locale: 'vi' }, {
+      fs: countingFs(reads),
+      loadAll: mockLoadAll,
+    });
+    expect(usedPrebuilt).toBe(true);
+    expect(mockLoadAll).not.toHaveBeenCalled();
+    expect(results[0].id).toBe('compound-interest');
+    const manifest = JSON.parse(fs.readFileSync(path.join(tempRoot, 'dist', 'manifest.json'), 'utf8'));
+    const packFiles = manifest.packs.filter((pack: any) => pack.kind === 'content').map((pack: any) => `dist/${pack.path}`);
+    expect(reads).toEqual(['dist/manifest.json', ...packFiles, 'dist/vi/search-index.json']);
+    expect(reads.some((file) => file.includes('/concepts/') || file.endsWith('cards.json'))).toBe(false);
+  });
+
+  it('reads only the shards of the packs passed with --pack', async () => {
+    const reads: string[] = [];
+    const { results } = await findAction(tempRoot, 'token', { locale: 'en', pack: 'it' }, { fs: countingFs(reads) });
+    expect(results.length).toBeGreaterThan(0);
+    expect(results.every((hit: any) => hit.domains[0].startsWith('it/'))).toBe(true);
+    const shards = reads.filter((file) => file.endsWith('search-index.json'));
+    expect(shards.length).toBeGreaterThan(0);
+    expect(shards.every((file) => file.startsWith('dist/packs/it.'))).toBe(true);
   });
 });

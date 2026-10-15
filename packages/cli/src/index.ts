@@ -170,39 +170,67 @@ program
     console.log(`  - dist/ (search.json, terms.json, graph.json, concepts/)`);
   });
 
+function freshArtifact(filesystem: any, artifact: string, conceptsDir: string): boolean | null {
+  if (!filesystem.existsSync(artifact)) return null;
+  try {
+    const stale = filesystem.existsSync(conceptsDir)
+      && filesystem.statSync(conceptsDir).mtimeMs > filesystem.statSync(artifact).mtimeMs;
+    return !stale;
+  } catch {
+    return null;
+  }
+}
+
+function parsePackList(value?: string): string[] | undefined {
+  const packs = (value || '').split(',').map((item) => item.trim()).filter(Boolean);
+  return packs.length > 0 ? packs : undefined;
+}
+
+// Opens dist/manifest.json when it is newer than concepts/; null means "use
+// the legacy layout or the repository".
+export async function openPackStore(rootDir: string, deps: any = {}): Promise<any | null> {
+  const filesystem = deps.fs || fs;
+  const distDir = path.join(rootDir, 'dist');
+  if (freshArtifact(filesystem, path.join(distDir, 'manifest.json'), path.join(rootDir, 'concepts')) !== true) return null;
+  const { PackStore } = deps.PackStore ? deps : await import('@termbridge/core/dist/pack-reader.js');
+  const store = new PackStore(
+    {
+      readText(relPath: string) {
+        try {
+          return filesystem.readFileSync(path.join(distDir, ...relPath.split('/')), 'utf8');
+        } catch {
+          return null;
+        }
+      },
+    },
+    (message: string) => console.warn(pc.yellow(`⚠ ${message}`))
+  );
+  return store.available ? store : null;
+}
+
 export async function findAction(
   rootDir: string,
   query: string,
-  options: { locale: string; domain?: string },
+  options: { locale: string; domain?: string; pack?: string },
   deps: any = {}
 ): Promise<{ results: any[]; usedPrebuilt: boolean }> {
   const filesystem = deps.fs || fs;
   const targetLocale = options.locale || 'vi';
-  const prebuiltPath = path.join(rootDir, 'dist', targetLocale, 'search.json');
-  const conceptsDir = path.join(rootDir, 'concepts');
+  const packs = parsePackList(options.pack);
 
-  let usePrebuilt = false;
-  if (filesystem.existsSync(prebuiltPath)) {
-    try {
-      const distStat = filesystem.statSync(prebuiltPath);
-      let isStale = false;
-      if (filesystem.existsSync(conceptsDir)) {
-        const conceptsStat = filesystem.statSync(conceptsDir);
-        if (conceptsStat.mtimeMs > distStat.mtimeMs) {
-          isStale = true;
-        }
-      }
-      if (isStale) {
-        console.warn(pc.yellow(`⚠ dist/${targetLocale}/search.json cũ hơn concepts/. Đang quay về quét concepts/ trực tiếp.`));
-      } else {
-        usePrebuilt = true;
-      }
-    } catch {
-      usePrebuilt = false;
-    }
+  const store = await openPackStore(rootDir, deps);
+  if (store) {
+    return { results: store.find(query, { locale: targetLocale, packs, domain: options.domain }), usedPrebuilt: true };
+  }
+  if (packs) console.warn(pc.yellow('⚠ --pack cần dist/manifest.json mới; chạy pnpm tb build. Đang tìm trên mọi khái niệm.'));
+
+  const prebuiltPath = path.join(rootDir, 'dist', targetLocale, 'search.json');
+  const fresh = freshArtifact(filesystem, prebuiltPath, path.join(rootDir, 'concepts'));
+  if (fresh === false) {
+    console.warn(pc.yellow(`⚠ dist/${targetLocale}/search.json cũ hơn concepts/. Đang quay về quét concepts/ trực tiếp.`));
   }
 
-  if (usePrebuilt) {
+  if (fresh) {
     try {
       const raw = filesystem.readFileSync(prebuiltPath, 'utf8');
       const docs = JSON.parse(raw);
@@ -230,13 +258,14 @@ export async function findAction(
   return { results, usedPrebuilt: false };
 }
 
-// tb find "<query>" [--locale vi] [--domain finance]
+// tb find "<query>" [--locale vi] [--domain finance] [--pack it.ai-ml,finance]
 program
   .command('find <query>')
   .description('Reverse lookup: search concepts by plain words or colloquial descriptions')
   .option('-l, --locale <locale>', 'Target locale', 'vi')
   .option('-d, --domain <domain>', 'Filter by domain prefix')
-  .action(async (query: string, options: { locale: string; domain?: string }) => {
+  .option('-p, --pack <ids>', 'Comma-separated pack ids to search (e.g., it.ai-ml,finance)')
+  .action(async (query: string, options: { locale: string; domain?: string; pack?: string }) => {
     const rootDir = resolveRootDir();
     const { results } = await findAction(rootDir, query, options);
 
@@ -257,67 +286,94 @@ program
     }
   });
 
-// tb show <id-or-label> [--locale vi]
+interface ShowItem {
+  id: string;
+  label?: string;
+  qualifier?: string;
+  summary?: string;
+}
+
+function printAmbiguous(target: string, locale: string, items: ShowItem[]): void {
+  console.log(pc.yellow(`\n"${target}" có nhiều nghĩa. Hãy chọn một ID:\n`));
+  for (const item of items) {
+    console.log(`  pnpm tb show id:${item.id} --locale ${locale} — ${item.label} ${item.qualifier || ''}`);
+    console.log(`    ${item.summary || ''}`);
+  }
+}
+
+function printNotFound(target: string, locale: string, suggestions: ShowItem[]): void {
+  console.log(pc.yellow(`\n⚠ Khái niệm "${pc.bold(target)}" chưa có trong Termbridge.\n`));
+
+  // Attempt fuzzy/keyword fallback to suggest related concepts
+  if (suggestions.length > 0) {
+    console.log(pc.bold(pc.cyan(`Gợi ý các khái niệm liên quan:`)));
+    for (const s of suggestions.slice(0, 3)) {
+      const q = s.qualifier ? ` ${pc.dim(s.qualifier)}` : '';
+      console.log(`  • ${pc.bold(pc.green(s.label || s.id))}${q} (id: ${pc.cyan(s.id)})`);
+      console.log(`    ${pc.dim(s.summary || '')}`);
+    }
+    console.log(pc.dim(`\nXem chi tiết gợi ý:`));
+    console.log(pc.dim(`  pnpm tb show ${suggestions[0].id} --locale ${locale}\n`));
+  } else {
+    console.log(pc.dim(`Gợi ý tiếp theo:`));
+    console.log(pc.dim(`  - Tra cứu mô tả: pnpm tb find "<mô tả ý định>"`));
+    console.log(pc.dim(`  - Xem danh mục có sẵn: indexes/${locale}/_all.md`));
+    const kebabCandidate = target.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '') || 'new-term';
+    console.log(pc.dim(`  - Thêm khái niệm này: pnpm tb new ${kebabCandidate} --domain <taxonomy-path>\n`));
+  }
+}
+
+function printConcept(id: string, metadata: any, fm: any, content?: string): void {
+  console.log(pc.bold(pc.green(`\n=== ${fm?.label || id} ${fm?.qualifier ? pc.dim(fm.qualifier) : ''} ===`)));
+  console.log(`ID: ${pc.cyan(id)} | Level: ${metadata.level} | Status: ${metadata.status}`);
+  console.log(`Domains: ${metadata.domains.join(', ')}`);
+  if (metadata.relations?.prerequisites?.length) {
+    console.log(`Prerequisites: ${metadata.relations.prerequisites.join(', ')}`);
+  }
+  if (metadata.relations?.confusable?.length) {
+    console.log(`Confusable with: ${metadata.relations.confusable.join(', ')}`);
+  }
+  console.log(`\nSummary: ${fm?.summary || ''}\n`);
+  if (content) {
+    console.log(content.trim());
+  }
+  console.log('');
+}
+
+// tb show <id-or-label> [--locale vi] [--pack it.ai-ml]
 program
   .command('show <target>')
   .description('Forward lookup: display layered explanations for a concept')
   .option('-l, --locale <locale>', 'Target locale', 'vi')
-  .action(async (target: string, options: { locale: string }) => {
+  .option('-p, --pack <ids>', 'Comma-separated pack ids to look in')
+  .action(async (target: string, options: { locale: string; pack?: string }) => {
     const rootDir = resolveRootDir();
+    const store = await openPackStore(rootDir);
+    if (store) {
+      const query = { locale: options.locale, packs: parsePackList(options.pack) };
+      const matches = store.lookup(target, query);
+      if (matches.length > 1) return printAmbiguous(target, options.locale, matches);
+      if (matches.length === 0) return printNotFound(target, options.locale, store.find(target, query));
+      const record = store.explanation(matches[0].id, options.locale);
+      if (record) return printConcept(record.id, record.metadata, record.entry.frontmatter, record.entry.content);
+    }
+
     const { loadAll, findConcepts, lookupConcepts } = await import('@termbridge/core');
     const repoData = loadAll(rootDir);
     const matches = lookupConcepts(repoData, target, { locale: options.locale });
     if (matches.length > 1) {
-      console.log(pc.yellow(`\n"${target}" có nhiều nghĩa. Hãy chọn một ID:\n`));
-      for (const { record, localeEntry } of matches) {
-        console.log(`  pnpm tb show id:${record.id} --locale ${options.locale} — ${localeEntry?.frontmatter.label} ${localeEntry?.frontmatter.qualifier || ''}`);
-        console.log(`    ${localeEntry?.frontmatter.summary || ''}`);
-      }
-      return;
+      return printAmbiguous(target, options.locale, matches.map(({ record, localeEntry }) => ({
+        id: record.id,
+        label: localeEntry?.frontmatter.label,
+        qualifier: localeEntry?.frontmatter.qualifier,
+        summary: localeEntry?.frontmatter.summary,
+      })));
     }
     const res = matches[0] || null;
-
-    if (!res) {
-      console.log(pc.yellow(`\n⚠ Khái niệm "${pc.bold(target)}" chưa có trong Termbridge.\n`));
-
-      // Attempt fuzzy/keyword fallback to suggest related concepts
-      const suggestions = findConcepts(repoData, target, { locale: options.locale });
-      if (suggestions.length > 0) {
-        console.log(pc.bold(pc.cyan(`Gợi ý các khái niệm liên quan:`)));
-        for (const s of suggestions.slice(0, 3)) {
-          const q = s.qualifier ? ` ${pc.dim(s.qualifier)}` : '';
-          console.log(`  • ${pc.bold(pc.green(s.label))}${q} (id: ${pc.cyan(s.id)})`);
-          console.log(`    ${pc.dim(s.summary)}`);
-        }
-        console.log(pc.dim(`\nXem chi tiết gợi ý:`));
-        console.log(pc.dim(`  pnpm tb show ${suggestions[0].id} --locale ${options.locale}\n`));
-      } else {
-        console.log(pc.dim(`Gợi ý tiếp theo:`));
-        console.log(pc.dim(`  - Tra cứu mô tả: pnpm tb find "<mô tả ý định>"`));
-        console.log(pc.dim(`  - Xem danh mục có sẵn: indexes/${options.locale}/_all.md`));
-        const kebabCandidate = target.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '') || 'new-term';
-        console.log(pc.dim(`  - Thêm khái niệm này: pnpm tb new ${kebabCandidate} --domain <taxonomy-path>\n`));
-      }
-      return;
-    }
+    if (!res) return printNotFound(target, options.locale, findConcepts(repoData, target, { locale: options.locale }));
 
     const { record, localeEntry } = res;
-    const fm = localeEntry?.frontmatter;
-
-    console.log(pc.bold(pc.green(`\n=== ${fm?.label || record.id} ${fm?.qualifier ? pc.dim(fm.qualifier) : ''} ===`)));
-    console.log(`ID: ${pc.cyan(record.id)} | Level: ${record.metadata.level} | Status: ${record.metadata.status}`);
-    console.log(`Domains: ${record.metadata.domains.join(', ')}`);
-    if (record.metadata.relations?.prerequisites?.length) {
-      console.log(`Prerequisites: ${record.metadata.relations.prerequisites.join(', ')}`);
-    }
-    if (record.metadata.relations?.confusable?.length) {
-      console.log(`Confusable with: ${record.metadata.relations.confusable.join(', ')}`);
-    }
-    console.log(`\nSummary: ${fm?.summary || ''}\n`);
-    if (localeEntry?.content) {
-      console.log(localeEntry.content.trim());
-    }
-    console.log('');
+    printConcept(record.id, record.metadata, localeEntry?.frontmatter, localeEntry?.content);
   });
 
 // tb report <type>

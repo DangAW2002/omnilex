@@ -68,3 +68,38 @@ Body Sections:
 16. `quote` in sources must not exceed 30 words, and cannot be used with `reuse: cite-only` sources.
 17. Source tier requirements by status: `draft` ≥ 1 source, `reviewed` ≥ 1 tier A/B source supporting definition, `verified` ≥ 2 independent sources with at least one tier A source.
 18. Entries with `translation: translated` must declare `translated_from` and `translated_by`.
+
+## 4. Build Packs (`dist/manifest.json`, `dist/packs/<pack-id>/`)
+
+`tb build` splits the built data into packs (Plan 3.2, decision D5). Packs are generated artifacts: never edit them by hand. JSON schemas: `schema/manifest.schema.json`, `schema/pack.schema.json`.
+
+**Pack ids.** A concept belongs to exactly one content pack, chosen by its primary domain (`domains[0]`):
+
+| Primary domain | Pack id | Rule |
+|---|---|---|
+| `it/ai-ml/llm-agents` | `it.ai-ml` | Level-2 branch (default `packing: branch`) |
+| `it` | `it.core` | Concept tagged at the root of a split domain |
+| `iot/edge-cloud/gateways` | `iot` | Root kept whole (`packing: root` in `config/domains.yaml`) |
+
+Secondary domains that fall in other packs are listed in each card's `alsoIn`. Meta-packs carry only `requires`: one per split root (`it`, `finance`, …) and `tech` (= `it` + `iot` + `product`). Only packs with at least one concept are emitted; a pack above 2,000 concepts produces a build warning.
+
+**Layout.**
+
+```
+dist/manifest.json                       # formatVersion, searchConfigHash, locales, packs[], search
+dist/<locale>/search-index.json          # MiniSearch index over every content pack
+dist/packs/<pack-id>/pack.json           # descriptor; meta-packs have only this file
+dist/packs/<pack-id>/<locale>/terms.json        # tier "terms": one entry per concept key, not merged
+dist/packs/<pack-id>/<locale>/cards.json        # tier "cards": label, qualifier, summary, plain_descriptions, aliases, loanwords, domains, alsoIn, level, status
+dist/packs/<pack-id>/<locale>/search-index.json # tier "search": MiniSearch.toJSON() for this pack
+dist/packs/<pack-id>/<locale>/explanations.jsonl # tier "explanations": one concept per line, no local file paths
+```
+
+**`pack.json` fields.** `id`, `version` (repository version), `formatVersion`, `kind` (`content` | `meta`), `title` (per locale), `domains`, `locales`, `requires` (pack id → semver range), `concepts`, `status` (count per status), `tiers` (content packs only: per tier `bytes`, `files.<locale>.{bytes, sha256}`, and `configHash` for `search`), `license`.
+
+**Readers.** CLI, MCP and site read packs through `PackStore` (`packages/core/src/pack-reader.ts`), which takes an I/O adapter and uses no Node APIs:
+
+- Search uses the combined `dist/<locale>/search-index.json` when every content pack is selected, so ranking matches a single corpus; a subset (`tb find --pack …`) searches the shards of those packs.
+- Key merging across packs (`mergeTerms`) and the "no autolink for a key with several concepts" rule run at load time.
+- `formatVersion` 1 is read; a missing manifest means the legacy flat layout (`dist/<locale>/search.json`, version 0); a newer version is skipped with one notice.
+- A search index whose `configHash` differs from the current search configuration is rebuilt from `cards.json`, with one notice.

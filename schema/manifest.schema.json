@@ -1,0 +1,50 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://termbridge.org/schema/manifest.schema.json",
+  "title": "Termbridge Build Manifest (dist/manifest.json)",
+  "type": "object",
+  "required": ["formatVersion", "searchConfigHash", "locales", "packs"],
+  "properties": {
+    "formatVersion": { "type": "integer", "minimum": 1 },
+    "searchConfigHash": { "type": "string" },
+    "locales": { "type": "array", "items": { "type": "string" } },
+    "packs": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["id", "kind", "version", "path", "sha256", "concepts"],
+        "properties": {
+          "id": { "type": "string" },
+          "kind": { "enum": ["content", "meta"] },
+          "version": { "type": "string" },
+          "path": { "type": "string", "pattern": "^packs/[^/]+/pack\\.json$" },
+          "sha256": { "type": "string", "pattern": "^[0-9a-f]{64}$" },
+          "concepts": { "type": "integer", "minimum": 0 }
+        },
+        "additionalProperties": false
+      }
+    },
+    "search": {
+      "type": "object",
+      "required": ["packs", "files"],
+      "properties": {
+        "packs": { "type": "array", "items": { "type": "string" } },
+        "files": {
+          "type": "object",
+          "additionalProperties": {
+            "type": "object",
+            "required": ["path", "bytes", "sha256"],
+            "properties": {
+              "path": { "type": "string", "pattern": "^[a-z]{2,3}(-[A-Za-z0-9]+)?/search-index\\.json$" },
+              "bytes": { "type": "integer", "minimum": 0 },
+              "sha256": { "type": "string", "pattern": "^[0-9a-f]{64}$" }
+            },
+            "additionalProperties": false
+          }
+        }
+      },
+      "additionalProperties": false
+    }
+  },
+  "additionalProperties": false
+}

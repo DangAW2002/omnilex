@@ -6,10 +6,11 @@
   "scripts": {
     "dev": "astro dev",
     "start": "astro dev",
-    "build": "astro build",
+    "build": "astro build && node scripts/check-output.mjs",
     "preview": "astro preview"
   },
   "dependencies": {
+    "@termbridge/core": "workspace:*",
     "@astrojs/check": "^0.9.4",
     "astro": "^5.0.0",
     "micromark": "4.0.2",

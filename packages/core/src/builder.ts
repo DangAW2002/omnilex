@@ -1,10 +1,21 @@
 import fs from 'node:fs';
 import path from 'node:path';
 import type { ConceptRecord, RepositoryData } from './types.js';
+import { mergeTerms, termConceptFromCard, type PackCard, type PackTerm } from './pack-format.js';
+import { alsoInPacks, groupPacks, renderPacks, writePackFiles, type PackConceptData } from './packs.js';
 
 export interface BuildOutputs {
   indexesGenerated: string[];
   distGenerated: string[];
+  warnings: string[];
+}
+
+function repoVersion(rootDir: string): string {
+  try {
+    return JSON.parse(fs.readFileSync(path.join(rootDir, 'package.json'), 'utf-8')).version || '0.0.0';
+  } catch {
+    return '0.0.0';
+  }
 }
 
 export function buildArtifacts(repoData: RepositoryData): BuildOutputs {
@@ -16,6 +27,7 @@ export function buildArtifacts(repoData: RepositoryData): BuildOutputs {
     `../../concepts/${record.id}/${record.locales[locale] ? locale : localesConfig.pivot}.md`;
 
   const primaryLocales = localesConfig.locales.map((l) => l.code);
+  const packConcepts: Record<string, PackConceptData[]> = {};
   const indexesDir = path.join(rootDir, 'indexes');
   const distDir = path.join(rootDir, 'dist');
 
@@ -43,8 +55,11 @@ export function buildArtifacts(repoData: RepositoryData): BuildOutputs {
 
     const allConceptsInLocale: Array<{ record: ConceptRecord; label: string; summary: string }> = [];
     const searchEntries: any[] = [];
-    const termsEntries: any[] = [];
+    const termsEntries: PackTerm[] = [];
     const modConcepts: any[] = [];
+    const cardsById = new Map<string, PackCard>();
+    const localePackConcepts: PackConceptData[] = [];
+    packConcepts[locale] = localePackConcepts;
 
     for (const record of concepts.values()) {
       const entry = record.locales[locale];
@@ -96,14 +111,21 @@ export function buildArtifacts(repoData: RepositoryData): BuildOutputs {
         modConcepts.push({ id: record.id, content: activeEntry.content });
       }
 
-      // Build terms.json entry
-      const termConcept = {
+      const card: PackCard = {
         id: record.id,
         label,
         qualifier,
         summary,
+        plain_descriptions: fm.plain_descriptions || [],
+        aliases: fm.aliases || [],
+        loanwords: fm.loanwords || [],
         domains: record.metadata.domains,
+        alsoIn: alsoInPacks(record.metadata.domains, domainsConfig),
+        level: record.metadata.level,
+        status: record.metadata.status,
       };
+      cardsById.set(record.id, card);
+      const conceptTerms: PackTerm[] = [];
 
       // Add main label
       const labelAutolinkConfig = fm.autolink?.label;
@@ -113,12 +135,12 @@ export function buildArtifacts(repoData: RepositoryData): BuildOutputs {
         ? false
         : label.length > 3;
 
-      termsEntries.push({
+      conceptTerms.push({
         key: label,
         match: label.length <= 4 && label === label.toUpperCase() ? 'exact-case' : 'any-case',
-        concepts: [termConcept],
         autolink: labelAutolink,
         autolinkConfig: labelAutolinkConfig,
+        conceptId: record.id,
       });
 
       // Add aliases
@@ -131,15 +153,30 @@ export function buildArtifacts(repoData: RepositoryData): BuildOutputs {
             ? false
             : alias.length > 3;
 
-          termsEntries.push({
+          conceptTerms.push({
             key: alias,
             match: alias.length <= 4 && alias === alias.toUpperCase() ? 'exact-case' : 'any-case',
-            concepts: [termConcept],
             autolink: aliasAutolink,
             autolinkConfig: aliasAutolinkConfig,
+            conceptId: record.id,
           });
         }
       }
+
+      termsEntries.push(...conceptTerms);
+
+      const contentLocale = entry ? locale : (record.locales[localesConfig.pivot] ? localesConfig.pivot : fallbackEntry?.locale);
+      localePackConcepts.push({
+        card,
+        terms: conceptTerms,
+        explanation: {
+          id: record.id,
+          locale,
+          content_locale: contentLocale,
+          metadata: record.metadata,
+          entry: { locale: activeEntry.locale, frontmatter: activeEntry.frontmatter, content: activeEntry.content },
+        },
+      });
 
       // Generate dist/<locale>/concepts/<id>.json
       const conceptDistPath = path.join(localeConceptsDistDir, `${record.id}.json`);
@@ -150,7 +187,7 @@ export function buildArtifacts(repoData: RepositoryData): BuildOutputs {
             id: record.id,
             metadata: record.metadata,
             locale,
-            content_locale: entry ? locale : (record.locales[localesConfig.pivot] ? localesConfig.pivot : fallbackEntry?.locale),
+            content_locale: contentLocale,
             entry: activeEntry,
           },
           null,
@@ -225,36 +262,9 @@ export function buildArtifacts(repoData: RepositoryData): BuildOutputs {
     distGenerated.push(searchDistPath);
 
     // Never auto-link a term that points to multiple concepts.
-    const groupedTerms = new Map<string, any>();
-    for (const term of termsEntries) {
-      const key = term.key.trim().toLowerCase();
-      const existing = groupedTerms.get(key);
-      if (existing) {
-        for (const concept of term.concepts) {
-          if (!existing.concepts.some((item: { id: string }) => item.id === concept.id)) existing.concepts.push(concept);
-        }
-        if (term.match === 'exact-case') existing.match = 'exact-case';
-        if (term.autolinkConfig === 'always') existing.autolinkConfig = 'always';
-        if (term.autolinkConfig === 'never') existing.autolinkConfig = 'never';
-        existing.autolink = existing.autolink && term.autolink;
-      } else {
-        groupedTerms.set(key, { ...term, concepts: [...term.concepts] });
-      }
-    }
-    const uniqueTerms = Array.from(groupedTerms.values()).map((term) => {
-      const explicitAlways = term.autolinkConfig === 'always';
-      const explicitNever = term.autolinkConfig === 'never';
-      const shouldAutolink = explicitNever
-        ? false
-        : explicitAlways
-        ? term.concepts.length === 1
-        : term.autolink && term.concepts.length === 1 && !/^(margin|token)$/i.test(term.key);
-
-      const { autolinkConfig, ...rest } = term;
-      return {
-        ...rest,
-        autolink: shouldAutolink,
-      };
+    const uniqueTerms = mergeTerms(termsEntries, (id) => {
+      const card = cardsById.get(id);
+      return card ? termConceptFromCard(card) : undefined;
     });
 
     // Write dist/<locale>/terms.json
@@ -273,6 +283,16 @@ export function buildArtifacts(repoData: RepositoryData): BuildOutputs {
       }
     }
   }
+
+  // Packs (Plan 3.2, D5): dist/manifest.json and dist/packs/<id>/...
+  const grouped = groupPacks(packConcepts, domainsConfig, repoData.taxonomy);
+  const rendered = renderPacks({
+    version: repoVersion(rootDir),
+    locales: primaryLocales,
+    content: grouped.content,
+    meta: grouped.meta,
+  });
+  distGenerated.push(...writePackFiles(distDir, rendered.files));
 
   // Generate packages/claude-mod/hooks/runtime/matcher.js
   const claudeModHooksDir = path.join(rootDir, 'packages', 'claude-mod', 'hooks');
@@ -376,5 +396,6 @@ Each concept lives under \`concepts/<concept-id>/\` containing:
   return {
     indexesGenerated,
     distGenerated,
+    warnings: rendered.warnings,
   };
 }

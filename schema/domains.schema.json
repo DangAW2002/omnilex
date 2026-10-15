@@ -17,7 +17,8 @@
             "additionalProperties": { "type": "string" }
           },
           "priority": { "type": "integer" },
-          "file": { "type": "string" }
+          "file": { "type": "string" },
+          "packing": { "type": "string", "enum": ["root", "branch"] }
         },
         "additionalProperties": false
       }

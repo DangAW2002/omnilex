@@ -103,6 +103,7 @@ export interface DomainItem {
   name: Record<string, string>;
   priority: number;
   file: string;
+  packing?: 'root' | 'branch';
 }
 
 export interface DomainsConfig {

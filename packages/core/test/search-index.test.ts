@@ -3,9 +3,9 @@ import {
   createSearchIndex,
   loadSearchIndex,
   searchIndexToJSON,
-  normalizeSearchTerm,
   type SearchDoc,
-} from '../src/query.js';
+} from '../src/search-config.js';
+import { normalizeSearchTerm } from '../src/matcher.js';
 
 describe('T-S1: MiniSearch toJSON and loadJSON Consistency (>= 50 queries)', () => {
   const sampleDocs: SearchDoc[] = [

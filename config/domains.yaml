@@ -23,9 +23,11 @@ domains:
       en: Internet of Things
     priority: 4
     file: taxonomy/iot.yaml
+    packing: root
   - id: product
     name:
       vi: Quản trị sản phẩm và dự án
       en: Product and Project Management
     priority: 5
     file: taxonomy/product.yaml
+    packing: root

@@ -1,40 +1,104 @@
-import { describe, it, expect, vi, beforeEach } from 'vitest';
+import { describe, it, expect, vi, beforeAll, afterAll, beforeEach } from 'vitest';
+import fs from 'node:fs';
+import os from 'node:os';
+import path from 'node:path';
+import { fileURLToPath } from 'node:url';
 import * as core from '@termbridge/core';
-import { handleToolCall } from '../src/index.js';
+import { createToolHandler, handleToolCall } from '../src/index.js';
 
-describe('T-S4: MCP caches MiniSearch index per (locale, pack) across tool calls', () => {
+const repoRoot = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '../../../');
+
+describe('T-S4: MCP loads each (locale, pack) index once across tool calls', () => {
+  let tempRoot: string;
+
+  beforeAll(() => {
+    tempRoot = fs.mkdtempSync(path.join(os.tmpdir(), 'tb-mcp-cache-'));
+    core.buildArtifacts({ ...core.loadAll(repoRoot), rootDir: tempRoot });
+  });
+
+  afterAll(() => {
+    fs.rmSync(tempRoot, { recursive: true, force: true });
+  });
+
+  function countingIO(reads: string[]): core.PackIO {
+    return {
+      readText(relPath) {
+        reads.push(relPath);
+        const file = path.join(tempRoot, 'dist', ...relPath.split('/'));
+        return fs.existsSync(file) ? fs.readFileSync(file, 'utf8') : null;
+      },
+    };
+  }
+
+  it('reads every shard once per locale and never loads the repository', () => {
+    const reads: string[] = [];
+    const loadAllSpy = vi.spyOn(core, 'loadAll');
+    const handle = createToolHandler(tempRoot, { io: countingIO(reads), manifestStamp: () => 1 });
+
+    for (const description of ['lãi kép', 'tiền gốc', 'lãi suất']) {
+      expect(handle('find_term', { description, locale: 'vi' }).candidates.length).toBeGreaterThan(0);
+    }
+    for (const description of ['compound interest', 'principal']) {
+      expect(handle('find_term', { description, locale: 'en' }).candidates.length).toBeGreaterThan(0);
+    }
+
+    expect(reads.filter((file) => file === 'manifest.json')).toHaveLength(1);
+    expect(reads.filter((file) => file === 'vi/search-index.json')).toHaveLength(1);
+    expect(reads.filter((file) => file === 'en/search-index.json')).toHaveLength(1);
+    expect(loadAllSpy).not.toHaveBeenCalled();
+    loadAllSpy.mockRestore();
+  });
+
+  it('reloads after the manifest changes', () => {
+    const reads: string[] = [];
+    let stamp = 1;
+    const handle = createToolHandler(tempRoot, { io: countingIO(reads), manifestStamp: () => stamp });
+    handle('find_term', { description: 'lãi kép', locale: 'vi' });
+    handle('find_term', { description: 'lãi kép', locale: 'vi' });
+    stamp = 2;
+    handle('find_term', { description: 'lãi kép', locale: 'vi' });
+    expect(reads.filter((file) => file === 'manifest.json')).toHaveLength(2);
+    expect(reads.filter((file) => file === 'vi/search-index.json')).toHaveLength(2);
+  });
+
+  it('answers explain_term and browse_domain from packs', () => {
+    const handle = createToolHandler(tempRoot, { io: countingIO([]), manifestStamp: () => 1 });
+    const explained = handle('explain_term', { term: 'Lãi kép', locale: 'vi' });
+    expect(explained.id).toBe('compound-interest');
+    expect(explained.prerequisites).toEqual(['interest-rate', 'principal']);
+    expect(explained.explanation_body.length).toBeGreaterThan(0);
+    expect(handle('explain_term', { term: 'margin', locale: 'en' }).ambiguous).toBe(true);
+    expect(handle('explain_term', { term: 'không có', locale: 'vi' }).error).toBeDefined();
+
+    const legacy = createToolHandler(repoRoot, { manifestStamp: () => null });
+    const browse = handle('browse_domain', { domain_path: 'finance/personal-finance', locale: 'vi' });
+    const expected = legacy('browse_domain', { domain_path: 'finance/personal-finance', locale: 'vi' });
+    expect(browse.concepts.map((c: any) => c.id).sort()).toEqual(expected.concepts.map((c: any) => c.id).sort());
+  });
+});
+
+describe('T-S4: repository fallback builds the index once per locale', () => {
   beforeEach(() => {
     core.clearSearchIndexCache();
   });
 
-  it('builds or loads MiniSearch index exactly once per locale across multiple tool calls', () => {
+  it('builds the MiniSearch index exactly once per locale without dist', () => {
     const addAllSpy = vi.spyOn(core.MiniSearch.prototype, 'addAll');
+    const handle = createToolHandler(repoRoot, { manifestStamp: () => null });
 
-    // Gọi lần 1 cho locale vi -> dựng index và nạp docs
-    const res1 = handleToolCall('find_term', { description: 'lãi kép', locale: 'vi' });
-    expect(res1.candidates).toBeDefined();
+    for (const description of ['lãi kép', 'tiền gốc', 'lãi suất']) {
+      expect(handle('find_term', { description, locale: 'vi' }).candidates).toBeDefined();
+    }
     expect(addAllSpy).toHaveBeenCalledTimes(1);
 
-    // Gọi lần 2 cho locale vi -> lấy từ cache, addAll không được gọi thêm
-    const res2 = handleToolCall('find_term', { description: 'tiền gốc', locale: 'vi' });
-    expect(res2.candidates).toBeDefined();
-    expect(addAllSpy).toHaveBeenCalledTimes(1);
-
-    // Gọi lần 3 cho locale vi -> vẫn lấy từ cache
-    const res3 = handleToolCall('find_term', { description: 'lãi suất', locale: 'vi' });
-    expect(res3.candidates).toBeDefined();
-    expect(addAllSpy).toHaveBeenCalledTimes(1);
-
-    // Gọi lần 1 cho locale en -> dựng index mới cho en
-    const resEn1 = handleToolCall('find_term', { description: 'compound interest', locale: 'en' });
-    expect(resEn1.candidates).toBeDefined();
+    for (const description of ['compound interest', 'principal']) {
+      expect(handle('find_term', { description, locale: 'en' }).candidates).toBeDefined();
+    }
     expect(addAllSpy).toHaveBeenCalledTimes(2);
-
-    // Gọi lần 2 cho locale en -> lấy từ cache
-    const resEn2 = handleToolCall('find_term', { description: 'principal', locale: 'en' });
-    expect(resEn2.candidates).toBeDefined();
-    expect(addAllSpy).toHaveBeenCalledTimes(2);
-
     addAllSpy.mockRestore();
+  });
+
+  it('keeps the default handleToolCall export working', () => {
+    expect(handleToolCall('find_term', { description: 'lãi kép', locale: 'vi' }).candidates[0].id).toBe('compound-interest');
   });
 });

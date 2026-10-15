@@ -44,6 +44,9 @@ pnpm tb build
 # Tra ngược bằng ngôn ngữ đời thường
 pnpm tb find "tiền lãi lại sinh ra lãi" --locale vi
 
+# Chỉ tìm trong một số gói (danh sách gói nằm trong dist/manifest.json)
+pnpm tb find "token" --locale en --pack it.ai-ml,finance
+
 # Tra xuôi xem giải thích khái niệm
 pnpm tb show compound-interest --locale vi
 

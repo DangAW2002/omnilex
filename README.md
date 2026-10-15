@@ -46,6 +46,9 @@ pnpm tb build
 # Reverse lookup (plain words -> concept)
 pnpm tb find "tiền lãi lại sinh ra lãi" --locale vi
 
+# Search only some packs (pack ids are listed in dist/manifest.json)
+pnpm tb find "token" --locale en --pack it.ai-ml,finance
+
 # Forward lookup (explain a concept)
 pnpm tb show compound-interest --locale vi
 

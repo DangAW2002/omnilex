@@ -101,3 +101,9 @@
 - **Dist cũ**: vẫn dùng mtime của thư mục `concepts/`, nên sửa nội dung một file mà không thêm/xóa file thì không bị phát hiện (hành vi sẵn có).
 - Dung lượng `dist/` tăng (bố cục cũ + gói + chỉ mục gộp) cho tới khi WP6 bỏ bố cục cũ.
 - Chưa kiểm trên Linux/macOS ngay trên máy.
+
+## Quyết định sau báo cáo (2026-10-15)
+Người dùng giao cho agent tự chốt ("hãy tự chốt cho tôi, và làm luôn"):
+1. **Chỉ mục gộp**: giữ. Thứ tự khi chọn tập con gói được giải quyết ở WP6.
+2. **Lọc domain theo ranh giới đoạn**: giữ, vì đây là sửa lỗi.
+3. **MCP nóng ở 10k**: giữ nguyên ngân sách và truy vấn cổng (P-1). Bench thêm số đo truy vấn đại diện để tham khảo; mục này còn mở trong ngân sách 1.7.

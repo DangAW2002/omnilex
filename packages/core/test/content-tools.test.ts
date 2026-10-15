@@ -55,8 +55,9 @@ describe('candidate mining (D4)', () => {
     const dir = path.join(temp, 'transcripts', 'project');
     fs.mkdirSync(dir, { recursive: true });
     fs.writeFileSync(path.join(dir, 'session.jsonl'), lines.join('\n'));
-    const repo = loadAll(repoRoot);
-    const candidates = countCandidates(transcriptTexts(path.join(temp, 'transcripts')), { known: knownTerms(repo), minCount: 3 });
+    // A fixed known set, so the test does not depend on what concepts/ holds.
+    const known = new Set(['model']);
+    const candidates = countCandidates(transcriptTexts(path.join(temp, 'transcripts')), { known, minCount: 3 });
     const terms = candidates.map((item) => item.term);
     expect(terms).toContain('RAG');
     expect(terms).toContain('context window');
@@ -68,6 +69,8 @@ describe('candidate mining (D4)', () => {
     expect(candidates.every((item) => item.term.split(' ').length <= 3)).toBe(true);
     expect(Object.keys(candidates[0]).every((key) => ['term', 'count', 'acronym', 'generic'].includes(key))).toBe(true);
     // Terms the repository already has are left out.
+    const repo = loadAll(repoRoot);
+    expect(knownTerms(repo).has('lai kep')).toBe(true);
     expect(countCandidates(['Lãi kép, lãi kép, lãi kép.'], { known: knownTerms(repo), minCount: 1 }).map((item) => item.term)).not.toContain('lãi kép');
   });
 });

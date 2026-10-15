@@ -36,3 +36,6 @@ Thumbs.db
 # Termbridge per-user project files
 .termbridge/config.local.yaml
 .termbridge/.cache/
+
+# Fetched source texts for tb check overlap (copyrighted, never committed)
+candidates/.sources/

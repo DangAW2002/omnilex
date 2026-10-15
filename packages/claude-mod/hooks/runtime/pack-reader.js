@@ -1,4 +1,5 @@
 import { normalizeSearchTerm } from './matcher.js';
+import { isEmptyOverlay, overlayCards, overlayLookup, overlayTerms } from './overlay.js';
 import { PACK_FORMAT_VERSION, PACK_TIER_FILES, cardToSearchDoc, expandPackSelection, } from './pack-format.js';
 import { SEARCH_RESULT_LIMIT, createSearchIndex, domainMatches, loadSearchIndex, searchConfigHash, searchIndexToJSON, searchIndexes, } from './search-config.js';
 function parseJson(text) {
@@ -37,11 +38,13 @@ export class PackStore {
     configHash = searchConfigHash();
     cache;
     disabled;
+    overlay;
     constructor(io, onNotice = () => { }, options = {}) {
         this.io = io;
         this.onNotice = onNotice;
         this.cache = options.cache;
         this.disabled = options.disabled || {};
+        this.overlay = options.overlay && !isEmptyOverlay(options.overlay) ? options.overlay : undefined;
         let manifest = options.manifest;
         if (!manifest) {
             const raw = io.readText('manifest.json');
@@ -107,6 +110,8 @@ export class PackStore {
         if (!cards) {
             const pack = this.pack(packId);
             cards = pack ? parseJson(this.io.readText(this.tierPath(packId, locale, 'cards'))) || [] : [];
+            if (this.overlay)
+                cards = overlayCards(this.overlay, cards, locale);
             this.cardCache.set(key, cards);
         }
         return cards;
@@ -117,6 +122,8 @@ export class PackStore {
         if (!terms) {
             const pack = this.pack(packId);
             terms = pack ? parseJson(this.io.readText(this.tierPath(packId, locale, 'terms'))) || [] : [];
+            if (this.overlay)
+                terms = overlayTerms(this.overlay, terms, locale);
             this.termCache.set(key, terms);
         }
         return terms;
@@ -226,7 +233,14 @@ export class PackStore {
             || (packIds.length === 1 ? this.index(packIds[0], options.locale) : this.subsetIndex(packIds, options.locale));
         if (!index)
             return [];
-        return searchIndexes([index], query, { domain: options.domain, limit: options.limit ?? SEARCH_RESULT_LIMIT });
+        const limit = options.limit ?? SEARCH_RESULT_LIMIT;
+        if (!this.overlay?.exclude.length)
+            return searchIndexes([index], query, { domain: options.domain, limit });
+        // Prebuilt indexes still hold excluded concepts: ask for more, then drop them.
+        const excluded = new Set(this.overlay.exclude);
+        return searchIndexes([index], query, { domain: options.domain, limit: limit + excluded.size })
+            .filter((hit) => !excluded.has(hit.id))
+            .slice(0, limit);
     }
     lookupMaps(options) {
         const packIds = this.contentPacks(options.packs);
@@ -274,7 +288,7 @@ export class PackStore {
         }
         const matches = byKey.get(normalizeSearchTerm(idOrLabel.trim())) || [];
         if (matches.length > 0)
-            return [...matches];
+            return this.overlay ? overlayLookup(this.overlay, idOrLabel, matches) : [...matches];
         const direct = byId.get(idOrLabel);
         return direct ? [direct] : [];
     }

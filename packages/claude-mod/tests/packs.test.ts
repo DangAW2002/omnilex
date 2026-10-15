@@ -73,8 +73,8 @@ function buildFiles(): Record<string, string> {
 // The engine hands hooks absolute native paths (D:\work\... on Windows).
 const norm = (value: string) => value.replace(/\\/g, '/').replace(/^[A-Za-z]:/, '')
 
-function setup(on: any, reads: string[] = [], onPrompt?: (value: string) => void) {
-  const files = buildFiles()
+function setup(on: any, reads: string[] = [], onPrompt?: (value: string) => void, extra: Record<string, string> = {}) {
+  const files = { ...buildFiles(), ...extra }
   const dirs = new Set<string>()
   for (const file of Object.keys(files)) {
     let dir = file.slice(0, file.lastIndexOf('/'))
@@ -212,4 +212,24 @@ test('T-P7: without a project or store the bundled data is used', async ($, on) 
   await $.session.start({ surface: 'terminal', isInteractive: true, cwd: '/elsewhere' })
   const status = await $.command.run({ command: 'termbridge', args: 'status' })
   expect(status.text).toContain('bundled plugin data')
+})
+
+test('T-I4: the project overlay hides excluded concepts and adds aliases in the mod', async ($, on) => {
+  setup(on, [], undefined, {
+    '/work/.termbridge/overrides.yaml': [
+      'exclude: [cookie]',
+      'concepts:',
+      "  compound-interest: { aliases: { vi: ['+lãi mẹ đẻ lãi con'] } }",
+      '',
+    ].join('\n'),
+  })
+  await $.session.start({ surface: 'terminal', isInteractive: true, cwd: '/work/app' })
+  const ui = await $.ui.mount({
+    plugin: 'termbridge-mod', surface: 'terminal', component: 'AssistantMessage', requestId: 'reply-overlay',
+    viewport: { columns: 100, rows: 30 },
+    props: { text: 'Cookie khác với lãi mẹ đẻ lãi con.', isFirstOfReply: true },
+  })
+  expect(await ui.find({ type: 'Text', text: 'Tệp nhỏ trình duyệt lưu lại.' })).toBeUndefined()
+  expect(await ui.find({ type: 'Text', text: 'Tiền lãi được cộng vào gốc.' })).toBeDefined()
+  await ui.unmount()
 })

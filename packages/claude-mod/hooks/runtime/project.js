@@ -2,6 +2,7 @@
 // resolves what to load. One implementation for CLI, MCP and the mod (D-2):
 // the file system is an async adapter, paths are absolute and '/'-separated.
 import { load as parseYaml } from './js-yaml.js';
+import { EMPTY_OVERLAY, parseOverlay } from './overlay.js';
 import { isSourceOp, mergeConfigLayers, normalizeConfig, } from './config.js';
 import { PACK_FORMAT_VERSION, } from './pack-format.js';
 import { planLoad, resolvePacks, } from './resolver.js';
@@ -59,6 +60,14 @@ export function parseLock(text) {
     catch {
         return null;
     }
+}
+// Where a project's local glossary is built (gitignored cache).
+export function localPackId(glossaryDir) {
+    const name = toPosix(glossaryDir).replace(/\/+$/, '').split('/').pop() || 'glossary';
+    return `local.${name.toLowerCase().replace(/[^a-z0-9-]+/g, '-').replace(/^-+|-+$/g, '') || 'glossary'}`;
+}
+export function localPackCacheDir(projectDir, glossaryDir) {
+    return joinPath(projectDir, '.termbridge', '.cache', 'local', localPackId(glossaryDir).slice('local.'.length));
 }
 export function storeDirName(id, version, sha256) {
     return `${id}@${version}-${sha256.slice(0, 8)}`;
@@ -134,8 +143,16 @@ export async function buildCatalog(fs, options) {
     const packs = [];
     const notices = [];
     const watch = [];
-    const devDirs = [...new Set(options.ops.filter((op) => op.op === 'dev').map((op) => op.path))];
-    for (const [index, dir] of devDirs.entries()) {
+    // dev: builds are read in place; local: glossaries from their built cache.
+    const devDirs = [];
+    for (const op of options.ops) {
+        if (op.op === 'dev' && !devDirs.some((item) => item.dir === op.path))
+            devDirs.push({ dir: op.path, local: false });
+        if (op.op === 'local' && !devDirs.some((item) => item.spec === op.path)) {
+            devDirs.push({ dir: localPackCacheDir(options.projectDir || options.cwd || parentDir(op.path), op.path), spec: op.path, local: true });
+        }
+    }
+    for (const [index, { dir, spec, local }] of devDirs.entries()) {
         const manifestPath = joinPath(dir, 'manifest.json');
         watch.push(manifestPath);
         const text = await fs.read(manifestPath);
@@ -147,7 +164,9 @@ export async function buildCatalog(fs, options) {
             parsed = undefined;
         }
         if (!parsed || typeof parsed.formatVersion !== 'number' || !Array.isArray(parsed.packs)) {
-            notices.push(`Termbridge: ${dir} chưa có manifest.json, hãy chạy pnpm tb build / ${dir} has no manifest.json, run pnpm tb build`);
+            notices.push(local
+                ? `Termbridge: glossary ${spec} chưa được dựng; chạy tb pack status ở project / glossary ${spec} is not built yet; run tb pack status in the project`
+                : `Termbridge: ${dir} chưa có manifest.json, hãy chạy pnpm tb build / ${dir} has no manifest.json, run pnpm tb build`);
             continue;
         }
         if (parsed.formatVersion > PACK_FORMAT_VERSION) {
@@ -155,11 +174,11 @@ export async function buildCatalog(fs, options) {
             continue;
         }
         let stale = false;
-        if (fs.mtime) {
+        if (fs.mtime && !local) {
             const [built, concepts] = await Promise.all([fs.mtime(manifestPath), fs.mtime(joinPath(parentDir(dir), 'concepts'))]);
             stale = built !== null && concepts !== null && concepts > built;
         }
-        const sourceId = `dev${index}`;
+        const sourceId = local ? `local${index}` : `dev${index}`;
         const search = parsed.search
             ? {
                 packs: parsed.search.packs,
@@ -170,6 +189,7 @@ export async function buildCatalog(fs, options) {
             id: sourceId,
             kind: 'dev',
             dir,
+            spec,
             contentIds: parsed.packs.filter((pack) => pack.kind === 'content' && pack.role !== 'starter').map((pack) => pack.id),
             search,
             stale,
@@ -203,9 +223,6 @@ export async function buildCatalog(fs, options) {
                 path,
             });
         }
-    }
-    if (options.ops.some((op) => op.op === 'local')) {
-        notices.push('Termbridge: gói local: chưa được hỗ trợ (WP7), bỏ qua / local: packs are not supported yet (WP7), ignored');
     }
     const storeDir = joinPath(options.home, 'store');
     watch.push(storeDir);
@@ -289,7 +306,7 @@ export async function openProject(fs, options) {
         ? joinPath(discovered.projectDir, '.termbridge', 'lock.json')
         : joinPath(home, 'lock.json');
     const lock = parseLock(await fs.read(lockPath));
-    const { catalog, notices: catalogNotices, watch } = await buildCatalog(fs, { ops, home, lock });
+    const { catalog, notices: catalogNotices, watch } = await buildCatalog(fs, { ops, home, lock, projectDir: discovered.projectDir, cwd: toPosix(options.cwd) });
     notices.push(...catalogNotices);
     const resolved = resolvePacks(ops, catalog, { packsConfigured: effective.packsConfigured });
     notices.push(...resolved.errors);
@@ -317,6 +334,25 @@ export async function openProject(fs, options) {
             disabled[item.pack.id] = off;
     }
     const stale = loaded.some((pack) => catalog.sources.find((source) => source.id === pack.sourceId)?.stale);
+    // Overlay: the `overrides` path (relative to the project), else the default file.
+    const base = discovered.projectDir || toPosix(options.cwd);
+    const overlayPath = effective.overrides
+        ? resolvePath(base, effective.overrides)
+        : discovered.projectDir ? joinPath(discovered.projectDir, '.termbridge', 'overrides.yaml') : undefined;
+    let overlay = EMPTY_OVERLAY;
+    if (overlayPath) {
+        const text = await fs.read(overlayPath);
+        if (text !== null) {
+            try {
+                const parsed = parseOverlay(parseYaml(text), overlayPath);
+                overlay = parsed.overlay;
+                notices.push(...parsed.warnings);
+            }
+            catch (error) {
+                notices.push(`${overlayPath}: YAML không đọc được / unreadable YAML (${error?.message || error})`);
+            }
+        }
+    }
     return {
         cwd: toPosix(options.cwd),
         home,
@@ -328,9 +364,11 @@ export async function openProject(fs, options) {
         plan,
         manifest: composeManifest(loaded, catalog, options.configHash),
         disabled,
+        overlay,
+        overlayPath,
         stale,
         lockPath,
         notices,
-        watch: [...discovered.files, lockPath, ...watch],
+        watch: [...discovered.files, lockPath, ...(overlayPath ? [overlayPath] : []), ...watch],
     };
 }

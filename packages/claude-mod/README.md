@@ -23,7 +23,7 @@ Trong phiên Claude Code:
   - `links`: toàn bộ tin nhắn do Markdown gốc vẽ, lần nhắc đầu của mỗi thuật ngữ thành link; nhấn link mở pane (terminal fullscreen), không có thẻ hover.
   - `badges`: giữ cách vẽ gốc và đặt nhãn tra cứu bên dưới tin nhắn.
 - Gõ `/termbridge` để nhập mô tả bất kỳ. Chọn kết quả, rồi nhấn **Chèn thuật ngữ vào prompt** để đưa nhãn chuẩn vào ô nhập.
-- Mod đọc cấu hình `.termbridge/` của thư mục nơi bạn khởi động Claude Code (đi ngược lên thư mục cha) và nạp đúng các gói project chọn. Không có project hay gói nào đã cài thì mod dùng dữ liệu đóng kèm.
+- Mod đọc cấu hình `.termbridge/` của thư mục nơi bạn khởi động Claude Code (đi ngược lên thư mục cha) và nạp đúng các gói project chọn. Không có project hay gói nào đã cài thì mod dùng gói `starter` đóng kèm (khái niệm cơ bản, ≤ 1 MB). Overlay `.termbridge/overrides.yaml` của project (exclude, prefer, autolink, alias) cũng có hiệu lực trong mod.
 - `/termbridge packs it.ai-ml,finance` chỉ nạp các gói đó trong phiên này; `/termbridge packs all` trở lại lựa chọn của project. `/termbridge profile lite|standard|semantic` đổi profile trong phiên (`lite` không nạp tìm kiếm và bài giải thích). `/termbridge status` cho biết project, profile, các gói, tier đang nạp và cảnh báo.
 
 Để thử hover trực tiếp, yêu cầu Claude trả lời đúng một dòng thuần văn bản có chữ `Lãi kép`, không dùng Markdown. Mod thay cách vẽ của riêng dòng đó; nội dung hội thoại lưu trữ không bị sửa. Đây là bản thử: cách xuống dòng, định dạng và vị trí thẻ hover trên máy của bạn vẫn cần kiểm tra trực quan. Mod vẽ giao diện trong terminal và tab Code của Claude Desktop, không vẽ trong khung chat VS Code.

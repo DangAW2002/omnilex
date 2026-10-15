@@ -15,6 +15,7 @@ import {
   nodePackIO,
   fileIndexCache,
   termbridgeHome,
+  ensureLocalPacks,
   searchConfigHash,
   type PackIO,
   type RepositoryData,
@@ -144,18 +145,21 @@ export function createToolHandler(rootDir: string, options: ToolHandlerOptions =
   }).join(',');
   const projectStore = async (): Promise<{ store: PackStore | null; stale: boolean }> => {
     if (project && signature(project.watch) === project.signature) return project;
-    const ctx = await openProject(nodeProjectFS, {
+    const open = () => openProject(nodeProjectFS, {
       cwd: options.cwd || process.env.TERMBRIDGE_PROJECT || process.cwd(),
       home: options.home || termbridgeHome(),
       surface: 'mcp',
       configHash: searchConfigHash(),
     });
+    let ctx = await open();
+    if (ctx.effective.packOps.some((op) => op.op === 'local') && ensureLocalPacks(ctx).changed) ctx = await open();
     for (const notice of ctx.notices) console.error(notice);
     const usable = ctx.plan.packs.length > 0 && !ctx.stale;
     const store = usable
       ? new PackStore(nodePackIO, (message) => console.error(message), {
           manifest: ctx.manifest,
           disabled: ctx.disabled,
+          overlay: ctx.overlay,
           cache: fileIndexCache(ctx.projectDir ? path.join(ctx.projectDir, '.termbridge', '.cache') : path.join(ctx.home, 'cache')),
         })
       : null;

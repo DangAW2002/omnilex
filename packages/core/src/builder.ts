@@ -2,7 +2,7 @@ import fs from 'node:fs';
 import path from 'node:path';
 import type { ConceptRecord, RepositoryData } from './types.js';
 import { mergeTerms, termConceptFromCard, type PackCard, type PackTerm } from './pack-format.js';
-import { alsoInPacks, groupPacks, renderPacks, selectStarter, writePackFiles, type PackConceptData } from './packs.js';
+import { conceptPackData, groupPacks, renderPacks, selectStarter, writePackFiles, type PackConceptData } from './packs.js';
 import { STARTER_MAX_BYTES, STARTER_MAX_CONCEPTS } from './pack-format.js';
 
 export interface BuildOutputs {
@@ -12,7 +12,7 @@ export interface BuildOutputs {
 }
 
 const RUNTIME_MODULES = [
-  'matcher', 'lookup', 'search-config', 'pack-format', 'pack-reader', 'semver', 'config', 'resolver', 'project',
+  'matcher', 'lookup', 'search-config', 'pack-format', 'pack-reader', 'semver', 'config', 'resolver', 'project', 'overlay',
 ];
 
 function repoVersion(rootDir: string): string {
@@ -116,75 +116,11 @@ export function buildArtifacts(repoData: RepositoryData): BuildOutputs {
         modConcepts.push({ id: record.id, content: activeEntry.content });
       }
 
-      const card: PackCard = {
-        id: record.id,
-        label,
-        qualifier,
-        summary,
-        plain_descriptions: fm.plain_descriptions || [],
-        aliases: fm.aliases || [],
-        loanwords: fm.loanwords || [],
-        domains: record.metadata.domains,
-        alsoIn: alsoInPacks(record.metadata.domains, domainsConfig),
-        level: record.metadata.level,
-        status: record.metadata.status,
-      };
-      cardsById.set(record.id, card);
-      const conceptTerms: PackTerm[] = [];
-
-      // Add main label
-      const labelAutolinkConfig = fm.autolink?.label;
-      const labelAutolink = labelAutolinkConfig === 'always'
-        ? true
-        : labelAutolinkConfig === 'never'
-        ? false
-        : label.length > 3;
-
-      conceptTerms.push({
-        key: label,
-        match: label.length <= 4 && label === label.toUpperCase() ? 'exact-case' : 'any-case',
-        autolink: labelAutolink,
-        autolinkConfig: labelAutolinkConfig,
-        conceptId: record.id,
-      });
-
-      // Add aliases
-      if (fm.aliases) {
-        for (const alias of fm.aliases) {
-          const aliasAutolinkConfig = fm.autolink?.aliases?.[alias];
-          const aliasAutolink = aliasAutolinkConfig === 'always'
-            ? true
-            : aliasAutolinkConfig === 'never'
-            ? false
-            : alias.length > 3;
-
-          conceptTerms.push({
-            key: alias,
-            match: alias.length <= 4 && alias === alias.toUpperCase() ? 'exact-case' : 'any-case',
-            autolink: aliasAutolink,
-            autolinkConfig: aliasAutolinkConfig,
-            conceptId: record.id,
-          });
-        }
-      }
-
-      termsEntries.push(...conceptTerms);
-
-      const contentLocale = entry ? locale : (record.locales[localesConfig.pivot] ? localesConfig.pivot : fallbackEntry?.locale);
-      const sourceRefs = [...(record.metadata.sources || []), ...(fm.sources || [])]
-        .flatMap((source) => (typeof source === 'object' && source.ref ? [source.ref] : []));
-      localePackConcepts.push({
-        card,
-        sourceRefs,
-        terms: conceptTerms,
-        explanation: {
-          id: record.id,
-          locale,
-          content_locale: contentLocale,
-          metadata: record.metadata,
-          entry: { locale: activeEntry.locale, frontmatter: activeEntry.frontmatter, content: activeEntry.content },
-        },
-      });
+      const data = conceptPackData(record, locale, localesConfig.pivot, domainsConfig);
+      cardsById.set(record.id, data.card);
+      termsEntries.push(...data.terms);
+      localePackConcepts.push(data);
+      const contentLocale = data.explanation.content_locale;
 
       // Generate dist/<locale>/concepts/<id>.json
       const conceptDistPath = path.join(localeConceptsDistDir, `${record.id}.json`);

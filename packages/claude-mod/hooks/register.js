@@ -629,6 +629,7 @@ async function loadPacks($) {
   const store = new PackStore(io, (message) => { if (!notices.includes(message)) notices.push(message) }, {
     manifest: ctx.manifest,
     disabled: ctx.disabled,
+    overlay: ctx.overlay,
   })
   const ids = ctx.plan.packs.map((item) => item.pack.id)
   const bases = ctx.plan.packs.map((item) => item.pack.path.replace(/\/pack\.json$/, ''))

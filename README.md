@@ -86,7 +86,35 @@ pnpm tb pack install --frozen               # CI: fail unless the store matches 
 pnpm tb pack prune                          # delete store copies no project uses
 ```
 
-Installed packs live once per machine in `~/.termbridge/store/` and are shared by every project. Inside this repository, `.termbridge/config.yaml` reads `dev:./dist` straight from `pnpm tb build`. Installing from an online registry comes with WP7.
+Installed packs live once per machine in `~/.termbridge/store/` and are shared by every project. Inside this repository, `.termbridge/config.yaml` reads `dev:./dist` straight from `pnpm tb build`.
+
+### Sharing, importing and project glossaries
+
+```bash
+pnpm tb pack export it.ai-ml -o ai-ml.tbpack                       # one pack as a .tbpack (zip)
+pnpm tb pack export --domain it/ai-ml --locales vi,en --tiers terms,cards,search -o ai-ml-lite.tbpack
+pnpm tb pack export --effective -o team.tbpack                     # exactly what this project loads, overlay included
+pnpm tb pack add ./team.tbpack                                     # or https://…/x.tbpack; every file is checked
+pnpm tb registry build ./out --base-url https://example.org/packs  # .tbpack files plus registry.json
+pnpm tb export --format csv -o terms.csv                           # also tbx (TBX-Basic) and jsonl
+pnpm tb import --from csv terms.csv --into concepts/               # always status: draft, drafted_by: import
+pnpm tb import --from tbx glossary.tbx --into .termbridge/glossary/
+```
+
+- **Registries**: list them under `registries:` in a config file (URL, `file:` URL or path). `tb pack add <id>@<range>` installs from them when no dist provides the pack; packs from a registry that does not declare `official: true` are unofficial.
+- **Project glossary**: concepts in `.termbridge/glossary/<id>/` (same format as `concepts/`) plus `packs: [local:./.termbridge/glossary]` become the pack `local.glossary`, rebuilt whenever the files change.
+- **Overlay** `.termbridge/overrides.yaml` changes recognition and display for one project, never explanations:
+
+```yaml
+concepts:
+  model: { autolink: never }
+  token-llm: { aliases: { vi: ["+token AI"] } }
+exclude: [cookie]
+prefer:
+  token: token-llm
+```
+
+`tb overlay propose` drafts the matching `concepts/` changes to contribute upstream. The Claude Code mod ships only the `starter` pack (about 300 basic concepts, ≤ 1 MB) for use before any pack is installed.
 
 ## Repository Structure
 

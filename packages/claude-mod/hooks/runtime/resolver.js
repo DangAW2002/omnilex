@@ -62,8 +62,8 @@ export function resolvePacks(ops, catalog, options = { packsConfigured: true }) 
         if (op.op === 'reset') {
             selected.clear();
         }
-        else if (op.op === 'dev') {
-            const source = catalog.sources.find((item) => item.kind === 'dev' && item.dir === op.path);
+        else if (op.op === 'dev' || op.op === 'local') {
+            const source = catalog.sources.find((item) => item.kind === 'dev' && (op.op === 'local' ? item.spec === op.path : item.dir === op.path));
             // A build holding only a starter (the one the mod ships) selects it.
             const ids = source?.contentIds?.length
                 ? source.contentIds

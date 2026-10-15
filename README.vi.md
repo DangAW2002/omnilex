@@ -84,7 +84,35 @@ pnpm tb pack install --frozen               # CI: lỗi nếu kho không khớp 
 pnpm tb pack prune                          # xóa bản trong kho không còn project nào dùng
 ```
 
-Gói đã cài nằm một lần trên mỗi máy, ở `~/.termbridge/store/`, và mọi project dùng chung. Trong repo này, `.termbridge/config.yaml` đọc thẳng `dev:./dist` từ `pnpm tb build`. Cài từ registry trực tuyến sẽ có ở WP7.
+Gói đã cài nằm một lần trên mỗi máy, ở `~/.termbridge/store/`, và mọi project dùng chung. Trong repo này, `.termbridge/config.yaml` đọc thẳng `dev:./dist` từ `pnpm tb build`.
+
+### Chia sẻ, nhập dữ liệu và glossary của project
+
+```bash
+pnpm tb pack export it.ai-ml -o ai-ml.tbpack                       # một gói thành file .tbpack (zip)
+pnpm tb pack export --domain it/ai-ml --locales vi,en --tiers terms,cards,search -o ai-ml-lite.tbpack
+pnpm tb pack export --effective -o team.tbpack                     # đúng bộ project đang dùng, gồm cả overlay
+pnpm tb pack add ./team.tbpack                                     # hoặc https://…/x.tbpack; mọi file đều được kiểm
+pnpm tb registry build ./out --base-url https://example.org/packs  # các file .tbpack cùng registry.json
+pnpm tb export --format csv -o terms.csv                           # có cả tbx (TBX-Basic) và jsonl
+pnpm tb import --from csv terms.csv --into concepts/               # luôn là status: draft, drafted_by: import
+pnpm tb import --from tbx glossary.tbx --into .termbridge/glossary/
+```
+
+- **Registry**: khai báo trong `registries:` của file cấu hình (URL, URL `file:` hoặc đường dẫn). `tb pack add <id>@<range>` cài từ registry khi không có dist nào cung cấp gói đó. Gói từ registry không tự khai `official: true` được đánh dấu "không chính thức".
+- **Glossary của project**: khái niệm trong `.termbridge/glossary/<id>/` (cùng định dạng với `concepts/`) cộng với `packs: [local:./.termbridge/glossary]` sẽ thành gói `local.glossary`, tự dựng lại khi file thay đổi.
+- **Overlay** `.termbridge/overrides.yaml` chỉ đổi cách nhận diện và hiển thị trong một project, không sửa bài giải thích:
+
+```yaml
+concepts:
+  model: { autolink: never }
+  token-llm: { aliases: { vi: ["+token AI"] } }
+exclude: [cookie]
+prefer:
+  token: token-llm
+```
+
+`tb overlay propose` sinh bản nháp thay đổi tương ứng cho `concepts/` để đóng góp ngược lên repo. Mod Claude Code chỉ đóng sẵn gói `starter` (khoảng 300 khái niệm cơ bản, ≤ 1 MB) để dùng ngay khi chưa cài gói nào.
 
 ### Dùng trong Claude Code
 

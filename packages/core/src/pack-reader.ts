@@ -1,5 +1,6 @@
 import type MiniSearch from 'minisearch';
 import { normalizeSearchTerm } from './matcher.js';
+import { isEmptyOverlay, overlayCards, overlayLookup, overlayTerms, type Overlay } from './overlay.js';
 import {
   PACK_FORMAT_VERSION,
   PACK_TIER_FILES,
@@ -46,6 +47,8 @@ export interface PackStoreOptions {
   cache?: IndexCache;
   // tiers the load plan turned off, per pack
   disabled?: Record<string, PackTier[]>;
+  // project overlay (exclude, prefer, autolink, aliases)
+  overlay?: Overlay;
 }
 
 function parseJson(text: string | null | undefined): any {
@@ -83,10 +86,12 @@ export class PackStore {
   private readonly configHash = searchConfigHash();
   private readonly cache?: IndexCache;
   private readonly disabled: Record<string, PackTier[]>;
+  private readonly overlay?: Overlay;
 
   constructor(private io: PackIO, private onNotice: (message: string) => void = () => {}, options: PackStoreOptions = {}) {
     this.cache = options.cache;
     this.disabled = options.disabled || {};
+    this.overlay = options.overlay && !isEmptyOverlay(options.overlay) ? options.overlay : undefined;
     let manifest: any = options.manifest;
     if (!manifest) {
       const raw = io.readText('manifest.json');
@@ -160,6 +165,7 @@ export class PackStore {
     if (!cards) {
       const pack = this.pack(packId);
       cards = pack ? parseJson(this.io.readText(this.tierPath(packId, locale, 'cards'))) || [] : [];
+      if (this.overlay) cards = overlayCards(this.overlay, cards!, locale);
       this.cardCache.set(key, cards!);
     }
     return cards!;
@@ -171,6 +177,7 @@ export class PackStore {
     if (!terms) {
       const pack = this.pack(packId);
       terms = pack ? parseJson(this.io.readText(this.tierPath(packId, locale, 'terms'))) || [] : [];
+      if (this.overlay) terms = overlayTerms(this.overlay, terms!, locale);
       this.termCache.set(key, terms!);
     }
     return terms!;
@@ -271,7 +278,13 @@ export class PackStore {
     const index = this.combinedIndex(packIds, options.locale)
       || (packIds.length === 1 ? this.index(packIds[0], options.locale) : this.subsetIndex(packIds, options.locale));
     if (!index) return [];
-    return searchIndexes([index], query, { domain: options.domain, limit: options.limit ?? SEARCH_RESULT_LIMIT });
+    const limit = options.limit ?? SEARCH_RESULT_LIMIT;
+    if (!this.overlay?.exclude.length) return searchIndexes([index], query, { domain: options.domain, limit });
+    // Prebuilt indexes still hold excluded concepts: ask for more, then drop them.
+    const excluded = new Set(this.overlay.exclude);
+    return searchIndexes([index], query, { domain: options.domain, limit: limit + excluded.size })
+      .filter((hit) => !excluded.has(hit.id))
+      .slice(0, limit);
   }
 
   private lookupMaps(options: PackQueryOptions) {
@@ -314,7 +327,7 @@ export class PackStore {
       return card ? [card] : [];
     }
     const matches = byKey.get(normalizeSearchTerm(idOrLabel.trim())) || [];
-    if (matches.length > 0) return [...matches];
+    if (matches.length > 0) return this.overlay ? overlayLookup(this.overlay, idOrLabel, matches) : [...matches];
     const direct = byId.get(idOrLabel);
     return direct ? [direct] : [];
   }

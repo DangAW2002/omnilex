@@ -123,3 +123,21 @@ Config keys: `root`, `locale`, `fallbackLocales`, `profile` (`lite` \| `standard
 Resolution: meta-packs expand through `requires` (semver `^`, `~`, comparators, `x`/`*`); a dev build wins over the store; lockfile pins win inside the range; a dependency cycle is an error; missing packs are listed once and the rest load. With no `packs` anywhere, every installed or built content pack is used (D3); the mod then asks before loading 2,000 concepts or more.
 
 Load plan per profile: `lite` loads terms and cards; `standard` adds the search index (eager for CLI/MCP, on first search in the mod) and lazy explanations. Over `limits.memoryMB` (estimated from `pack.json` byte counts: terms and cards ×3, search ×2, explanations ×1.5) the plan degrades in order: explanations lazy, search on first use, then the lowest-priority packs are dropped; every step is reported.
+
+## 6. Exchange Formats
+
+**`.tbpack`** is a zip of one pack directory: `pack.json` at the root, `attributions.json`, and `<locale>/{terms.json,cards.json,search-index.json,explanations.jsonl}`. Importing refuses anything else: names outside that list, `..`, absolute or drive paths, backslashes, symlink and directory entries, encrypted or ZIP64 entries, entries over 64 MB or packages over 256 MB, sizes that differ from the headers (zip bombs), a `pack.json` that fails `schema/pack.schema.json`, files not declared in `pack.json`, wrong sha256 or byte counts, malformed JSON, and a file sha256 that differs from the registry or lockfile. Files are unpacked into a temporary store directory and renamed into place only after every check.
+
+**`attributions.json`** (in every content pack, hashed in `pack.json`): one entry per `reuse: adapt` source the pack's concepts draw on: `ref`, `title`, `publisher`, `url`, `license`, `license_evidence`, `concepts`.
+
+**`registry.json`**: `{ registryVersion: 1, name?, official?, packs: { <id>: { versions: { <version>: { url, sha256, bytes, formatVersion } } } } }`; `url` may be relative to the registry. Lockfile entries installed from a registry or a `.tbpack` record it as `origin`.
+
+**CSV** (one row per concept and locale with its own content): `id, locale, label, qualifier, aliases, loanwords, plain_descriptions, summary, domains, level, body, locale_extra, concept_extra`. Lists are separated by ` | `; `locale_extra` and `concept_extra` hold the remaining frontmatter and concept metadata as JSON so a round trip loses nothing. Importing into `concepts/` writes `status: draft` and `provenance: { drafted_by: import }` and refuses concepts without sources (rule 17) or without label, summary and plain descriptions.
+
+**TBX-Basic** (ISO 30042, `urn:iso:std:iso:30042:ed-2`): `conceptEntry` (id) with `descrip type="subjectField"` per domain; `langSec` per locale with `descrip type="definition"` (summary) and `termSec` per term: the label as `preferredTerm-admn-sts`, aliases and loanwords as `admittedTerm-admn-sts` (loanwords with `<note>loanword</note>`). Those fields round-trip.
+
+**JSONL**: one JSON object per CSV row, for ML/RAG pipelines.
+
+**Overlay** (`.termbridge/overrides.yaml`, or the `overrides` config key): `concepts.<id>.autolink` (`always` | `never` | `auto`), `concepts.<id>.aliases.<locale>` (`+alias` adds, `-alias` removes), `exclude` (ids hidden in the project), `prefer` (key → id for homonyms). Applied when packs load; explanations never change.
+
+**Local glossary**: `packs: [local:<dir>]` builds `<dir>` (concept folders as in `concepts/`) into `.termbridge/.cache/local/<name>/` as pack `local.<name>`, again whenever a file in `<dir>` changes. The mod reads the built copy only.

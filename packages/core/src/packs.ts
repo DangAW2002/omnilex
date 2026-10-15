@@ -1,7 +1,7 @@
 import crypto from 'node:crypto';
 import fs from 'node:fs';
 import path from 'node:path';
-import type { DomainsConfig, SourcesConfig, TaxonomyNode } from './types.js';
+import type { ConceptRecord, DomainsConfig, SourcesConfig, TaxonomyNode } from './types.js';
 import {
   PACK_FORMAT_VERSION,
   PACK_TIER_FILES,
@@ -34,6 +34,8 @@ export interface PackConceptData {
 export interface ContentPackInput {
   id: string;
   role?: 'starter';
+  // tiers to write (default: all; the starter: terms, cards, search)
+  tiers?: PackTier[];
   title: Record<string, string>;
   domains: string[];
   // locale -> concepts of this pack, any order
@@ -190,6 +192,85 @@ export function selectStarter(
   return ranked.length > 0 ? pack : null;
 }
 
+// One concept in one locale, as the packs store it: its card, its keys and its
+// explanation. Shared by the builder and local glossaries (D-2).
+export function conceptPackData(record: ConceptRecord, locale: string, pivot: string, domainsConfig: DomainsConfig): PackConceptData {
+  const entry = record.locales[locale];
+  const fallbackEntry = record.locales[pivot] || Object.values(record.locales)[0];
+  const activeEntry = entry || fallbackEntry;
+  const fm = activeEntry.frontmatter;
+  const label = fm.label || record.id;
+  const summary = fm.summary || '';
+  const qualifier = fm.qualifier;
+
+  const card: PackCard = {
+    id: record.id,
+    label,
+    qualifier,
+    summary,
+    plain_descriptions: fm.plain_descriptions || [],
+    aliases: fm.aliases || [],
+    loanwords: fm.loanwords || [],
+    domains: record.metadata.domains,
+    alsoIn: alsoInPacks(record.metadata.domains, domainsConfig),
+    level: record.metadata.level,
+    status: record.metadata.status,
+  };
+  const conceptTerms: PackTerm[] = [];
+
+  // Add main label
+  const labelAutolinkConfig = fm.autolink?.label;
+  const labelAutolink = labelAutolinkConfig === 'always'
+    ? true
+    : labelAutolinkConfig === 'never'
+    ? false
+    : label.length > 3;
+
+  conceptTerms.push({
+    key: label,
+    match: label.length <= 4 && label === label.toUpperCase() ? 'exact-case' : 'any-case',
+    autolink: labelAutolink,
+    autolinkConfig: labelAutolinkConfig,
+    conceptId: record.id,
+  });
+
+  // Add aliases
+  if (fm.aliases) {
+    for (const alias of fm.aliases) {
+      const aliasAutolinkConfig = fm.autolink?.aliases?.[alias];
+      const aliasAutolink = aliasAutolinkConfig === 'always'
+        ? true
+        : aliasAutolinkConfig === 'never'
+        ? false
+        : alias.length > 3;
+
+      conceptTerms.push({
+        key: alias,
+        match: alias.length <= 4 && alias === alias.toUpperCase() ? 'exact-case' : 'any-case',
+        autolink: aliasAutolink,
+        autolinkConfig: aliasAutolinkConfig,
+        conceptId: record.id,
+      });
+    }
+  }
+
+  const contentLocale = entry ? locale : (record.locales[pivot] ? pivot : fallbackEntry?.locale);
+  const sourceRefs = [...(record.metadata.sources || []), ...(fm.sources || [])]
+    .flatMap((source) => (typeof source === 'object' && source.ref ? [source.ref] : []));
+  return {
+    card,
+    sourceRefs,
+    terms: conceptTerms,
+    explanation: {
+      id: record.id,
+      locale,
+      content_locale: contentLocale,
+      metadata: record.metadata,
+      entry: { locale: activeEntry.locale, frontmatter: activeEntry.frontmatter, content: activeEntry.content },
+    },
+  };
+}
+
 export function alsoInPacks(domains: string[], domainsConfig: DomainsConfig): string[] {
   const packingOf = packingResolver(domainsConfig);
   const own = domains[0] ? packIdForDomain(domains[0], packingOf) : '';
@@ -224,7 +305,7 @@ export function renderPacks(input: PackRenderInput): { files: RenderedFile[]; ma
   };
 
   for (const pack of [...input.content].sort(byId)) {
-    const packTiers = pack.role === 'starter' ? STARTER_TIERS : PACK_TIERS;
+    const packTiers = pack.tiers || (pack.role === 'starter' ? STARTER_TIERS : PACK_TIERS);
     const tiers = Object.fromEntries(packTiers.map((tier) => [tier, { bytes: 0, files: {} }])) as Record<PackTier, any>;
     const used = new Map<string, Set<string>>();
     tiers.search.configHash = configHash;

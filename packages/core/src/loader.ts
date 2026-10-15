@@ -106,7 +106,11 @@ export function loadTaxonomy(rootDir: string): {
 }
 
 export function loadConcepts(rootDir: string): Map<string, ConceptRecord> {
-  const conceptsDir = path.join(rootDir, 'concepts');
+  return loadConceptsFrom(path.join(rootDir, 'concepts'));
+}
+
+// Concept directories under any folder (the repository's concepts/, a project glossary).
+export function loadConceptsFrom(conceptsDir: string): Map<string, ConceptRecord> {
   const concepts = new Map<string, ConceptRecord>();
 
   if (!fs.existsSync(conceptsDir)) {

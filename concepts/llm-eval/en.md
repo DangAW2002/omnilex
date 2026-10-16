@@ -14,6 +14,9 @@ follow_up_questions:
   - How do organizations implement LLM-as-a-judge pipelines effectively without bias?
   - What makes evaluating generative, open-ended writing harder than evaluating multiple-choice questions?
 translation: native
+autolink:
+  aliases:
+    Evaluation: never
 ---
 
 ## Easy explanation

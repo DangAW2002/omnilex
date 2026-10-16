@@ -8,6 +8,8 @@ loanwords:
   - index
 autolink:
   label: never
+  aliases:
+    chỉ mục: never
 plain_descriptions:
   - bảng tra cứu nhanh giúp cơ sở dữ liệu tìm thấy dòng cần xem trong tích tắc thay vì phải quét cả ổ đĩa
   - mục lục tra cứu ở cuối sách giúp tìm đúng dữ liệu mà không cần đọc hết cả bảng

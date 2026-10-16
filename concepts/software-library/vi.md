@@ -9,6 +9,8 @@ loanwords:
   - "software library"
 autolink:
   label: never
+  aliases:
+    Thư viện: never
 plain_descriptions:
   - "tập hợp các hàm viết sẵn để lập trình viên gọi ra dùng mỗi khi cần"
   - "gói mã nguồn tiện ích giúp giải quyết các tác vụ cụ thể mà không cần tự viết lại"

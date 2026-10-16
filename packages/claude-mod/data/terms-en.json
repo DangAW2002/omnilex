@@ -1,5 +1,452 @@
 [
   {
+    "key": "A/B testing",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "ab-testing",
+        "label": "A/B testing",
+        "summary": "A randomized experimental method where two variants of a digital experience are shown to visitors simultaneously to determine which drives superior outcomes.",
+        "domains": [
+          "product/metrics",
+          "media/digital-marketing/metrics-analytics"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Split testing",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "ab-testing",
+        "label": "A/B testing",
+        "summary": "A randomized experimental method where two variants of a digital experience are shown to visitors simultaneously to determine which drives superior outcomes.",
+        "domains": [
+          "product/metrics",
+          "media/digital-marketing/metrics-analytics"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Acceptance criteria",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "acceptance-criteria",
+        "label": "Acceptance criteria",
+        "summary": "A predefined set of conditions, behaviors, and boundary checks that a specific user story must satisfy to be accepted.",
+        "domains": [
+          "product/agile-scrum"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "AC",
+    "match": "exact-case",
+    "concepts": [
+      {
+        "id": "acceptance-criteria",
+        "label": "Acceptance criteria",
+        "summary": "A predefined set of conditions, behaviors, and boundary checks that a specific user story must satisfy to be accepted.",
+        "domains": [
+          "product/agile-scrum"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Agent",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "ai-agent",
+        "label": "Agent",
+        "qualifier": "(AI)",
+        "summary": "An autonomous AI system that reasons over objectives, breaks goals into sequential steps, and interacts with tools and environments to complete tasks.",
+        "domains": [
+          "it/ai-ml/llm-agents"
+        ]
+      }
+    ],
+    "autolink": false
+  },
+  {
+    "key": "AI agent",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "ai-agent",
+        "label": "Agent",
+        "qualifier": "(AI)",
+        "summary": "An autonomous AI system that reasons over objectives, breaks goals into sequential steps, and interacts with tools and environments to complete tasks.",
+        "domains": [
+          "it/ai-ml/llm-agents"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Benchmark",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "ai-benchmark",
+        "label": "Benchmark",
+        "qualifier": "(AI)",
+        "summary": "A standardized test suite and measurement protocol used to evaluate and compare the accuracy, throughput, latency, or energy efficiency of models and hardware.",
+        "domains": [
+          "it/ai-ml/mlops"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Application Programming Interface (API)",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "api",
+        "label": "Application Programming Interface (API)",
+        "summary": "A set of defined rules, protocols, and endpoints enabling different software applications to communicate and exchange data.",
+        "domains": [
+          "it/web/api",
+          "it/software-engineering/programming-concepts"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "API",
+    "match": "exact-case",
+    "concepts": [
+      {
+        "id": "api",
+        "label": "Application Programming Interface (API)",
+        "summary": "A set of defined rules, protocols, and endpoints enabling different software applications to communicate and exchange data.",
+        "domains": [
+          "it/web/api",
+          "it/software-engineering/programming-concepts"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Endpoint",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "api-endpoint",
+        "label": "Endpoint",
+        "qualifier": "(API)",
+        "summary": "A dedicated network address and URL path exposed by an API where clients access a specific service or resource.",
+        "domains": [
+          "it/web/api"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "API endpoint",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "api-endpoint",
+        "label": "Endpoint",
+        "qualifier": "(API)",
+        "summary": "A dedicated network address and URL path exposed by an API where clients access a specific service or resource.",
+        "domains": [
+          "it/web/api"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Attention mechanism",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "attention-mechanism",
+        "label": "Attention mechanism",
+        "summary": "A mathematical algorithm allowing neural models to calculate dynamic relevance weights between all tokens within an input sequence.",
+        "domains": [
+          "it/ai-ml/foundations"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Self-attention",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "attention-mechanism",
+        "label": "Attention mechanism",
+        "summary": "A mathematical algorithm allowing neural models to calculate dynamic relevance weights between all tokens within an input sequence.",
+        "domains": [
+          "it/ai-ml/foundations"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Autoscaling",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "autoscaling",
+        "label": "Autoscaling",
+        "summary": "A cloud mechanism that automatically adjusts the number of active computing resources up or down based on real-time demand metrics.",
+        "domains": [
+          "it/infrastructure/cloud"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Auto-scaling",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "autoscaling",
+        "label": "Autoscaling",
+        "summary": "A cloud mechanism that automatically adjusts the number of active computing resources up or down based on real-time demand metrics.",
+        "domains": [
+          "it/infrastructure/cloud"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Dynamic scaling",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "autoscaling",
+        "label": "Autoscaling",
+        "summary": "A cloud mechanism that automatically adjusts the number of active computing resources up or down based on real-time demand metrics.",
+        "domains": [
+          "it/infrastructure/cloud"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Horizontal Pod Autoscaler",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "autoscaling",
+        "label": "Autoscaling",
+        "summary": "A cloud mechanism that automatically adjusts the number of active computing resources up or down based on real-time demand metrics.",
+        "domains": [
+          "it/infrastructure/cloud"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Batch size",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "batch-size",
+        "label": "Batch size",
+        "summary": "The number of training samples processed simultaneously in a single iteration before the model parameters are updated.",
+        "domains": [
+          "it/ai-ml/foundations"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Blue-green deployment",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "blue-green-deployment",
+        "label": "Blue-green deployment",
+        "summary": "A deployment strategy that provisions two identical production environments (Blue and Green), shifting all traffic from the active to the idle environment upon validation.",
+        "domains": [
+          "it/devops/ci-cd"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Red-black deployment",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "blue-green-deployment",
+        "label": "Blue-green deployment",
+        "summary": "A deployment strategy that provisions two identical production environments (Blue and Green), shifting all traffic from the active to the idle environment upon validation.",
+        "domains": [
+          "it/devops/ci-cd"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Breaking change",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "breaking-change",
+        "label": "Breaking change",
+        "summary": "A modification in a software interface, dependency, or system component that breaks backward compatibility and necessitates code adjustments in dependent systems.",
+        "domains": [
+          "it/software-engineering/practices"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Burndown chart",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "burndown-chart",
+        "label": "Burndown chart",
+        "summary": "A graphical representation of work left to do versus time, utilized by agile squads to forecast sprint completion trajectories.",
+        "domains": [
+          "product/delivery-planning"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Cache",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "cache",
+        "label": "Cache",
+        "qualifier": "(Software)",
+        "summary": "A high-speed data storage layer that stores a subset of transient data so future requests are served faster than accessing primary storage.",
+        "domains": [
+          "it/web/backend"
+        ]
+      }
+    ],
+    "autolink": false
+  },
+  {
+    "key": "software cache",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "cache",
+        "label": "Cache",
+        "qualifier": "(Software)",
+        "summary": "A high-speed data storage layer that stores a subset of transient data so future requests are served faster than accessing primary storage.",
+        "domains": [
+          "it/web/backend"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "memory cache",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "cache",
+        "label": "Cache",
+        "qualifier": "(Software)",
+        "summary": "A high-speed data storage layer that stores a subset of transient data so future requests are served faster than accessing primary storage.",
+        "domains": [
+          "it/web/backend"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Canary release",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "canary-release",
+        "label": "Canary release",
+        "summary": "A deployment technique that exposes a new software release to a small fraction of production traffic to validate behavior before broader rollout.",
+        "domains": [
+          "it/devops/ci-cd"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Canary deployment",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "canary-release",
+        "label": "Canary release",
+        "summary": "A deployment technique that exposes a new software release to a small fraction of production traffic to validate behavior before broader rollout.",
+        "domains": [
+          "it/devops/ci-cd"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Content Delivery Network (CDN)",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "cdn",
+        "label": "Content Delivery Network (CDN)",
+        "summary": "A geographically distributed network of proxy servers that caches and delivers web content to users with low latency and high availability.",
+        "domains": [
+          "it/infrastructure/networking"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "CDN",
+    "match": "exact-case",
+    "concepts": [
+      {
+        "id": "cdn",
+        "label": "Content Delivery Network (CDN)",
+        "summary": "A geographically distributed network of proxy servers that caches and delivers web content to users with low latency and high availability.",
+        "domains": [
+          "it/infrastructure/networking"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
     "key": "Chain-of-thought prompting",
     "match": "any-case",
     "concepts": [
@@ -45,6 +492,129 @@
     "autolink": false
   },
   {
+    "key": "Churn rate",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "churn-rate",
+        "label": "Churn rate",
+        "summary": "The share of paying users who stop, by cancelling or not renewing, during a given period.",
+        "domains": [
+          "product/metrics"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Customer churn",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "churn-rate",
+        "label": "Churn rate",
+        "summary": "The share of paying users who stop, by cancelling or not renewing, during a given period.",
+        "domains": [
+          "product/metrics"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "CI/CD",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "ci-cd",
+        "label": "CI/CD",
+        "summary": "A modern engineering methodology uniting frequent source integration with automated regression testing and reliable application deployment.",
+        "domains": [
+          "it/devops/ci-cd"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Continuous Integration and Continuous Delivery",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "ci-cd",
+        "label": "CI/CD",
+        "summary": "A modern engineering methodology uniting frequent source integration with automated regression testing and reliable application deployment.",
+        "domains": [
+          "it/devops/ci-cd"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Pipeline",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "ci-pipeline",
+        "label": "Pipeline",
+        "qualifier": "(CI/CD)",
+        "summary": "A defined sequential series of automated execution steps that compiles, tests, and packages application updates.",
+        "domains": [
+          "it/devops/ci-cd"
+        ]
+      }
+    ],
+    "autolink": false
+  },
+  {
+    "key": "CI/CD pipeline",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "ci-pipeline",
+        "label": "Pipeline",
+        "qualifier": "(CI/CD)",
+        "summary": "A defined sequential series of automated execution steps that compiles, tests, and packages application updates.",
+        "domains": [
+          "it/devops/ci-cd"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "build pipeline",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "ci-pipeline",
+        "label": "Pipeline",
+        "qualifier": "(CI/CD)",
+        "summary": "A defined sequential series of automated execution steps that compiles, tests, and packages application updates.",
+        "domains": [
+          "it/devops/ci-cd"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Code review",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "code-review",
+        "label": "Code review",
+        "summary": "A collaborative peer-review practice where software engineers systematically examine proposed code changes to identify defects, enforce architectural standards, and share knowledge.",
+        "domains": [
+          "it/software-engineering/practices"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
     "key": "Compound Interest",
     "match": "any-case",
     "concepts": [
@@ -71,6 +641,69 @@
         "domains": [
           "finance/personal-finance/saving",
           "finance/investing/portfolio-risk"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Image",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "container-image",
+        "label": "Image",
+        "qualifier": "(Container)",
+        "summary": "An immutable, read-only package containing application binaries, libraries, configuration files, and metadata required to launch a container.",
+        "domains": [
+          "it/devops/containers"
+        ]
+      }
+    ],
+    "autolink": false
+  },
+  {
+    "key": "Container image",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "container-image",
+        "label": "Image",
+        "qualifier": "(Container)",
+        "summary": "An immutable, read-only package containing application binaries, libraries, configuration files, and metadata required to launch a container.",
+        "domains": [
+          "it/devops/containers"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Docker image",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "container-image",
+        "label": "Image",
+        "qualifier": "(Container)",
+        "summary": "An immutable, read-only package containing application binaries, libraries, configuration files, and metadata required to launch a container.",
+        "domains": [
+          "it/devops/containers"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Context engineering",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "context-engineering",
+        "label": "Context engineering",
+        "summary": "The disciplined practice of curating, structuring, compressing, and caching the information loaded into a model's context window to optimize performance and efficiency.",
+        "domains": [
+          "it/ai-ml/llm-agents"
         ]
       }
     ],
@@ -140,6 +773,729 @@
     "autolink": true
   },
   {
+    "key": "Cross-Origin Resource Sharing (CORS)",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "cors",
+        "label": "Cross-Origin Resource Sharing (CORS)",
+        "summary": "A browser security protocol using special HTTP headers that lets an API grant specific foreign websites permission to fetch its content.",
+        "domains": [
+          "it/web/api",
+          "it/security/vulnerabilities"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "CORS",
+    "match": "exact-case",
+    "concepts": [
+      {
+        "id": "cors",
+        "label": "Cross-Origin Resource Sharing (CORS)",
+        "summary": "A browser security protocol using special HTTP headers that lets an API grant specific foreign websites permission to fetch its content.",
+        "domains": [
+          "it/web/api",
+          "it/security/vulnerabilities"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Cross-site request forgery (CSRF)",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "csrf",
+        "label": "Cross-site request forgery (CSRF)",
+        "summary": "An attack that tricks an authenticated web browser into sending unauthorized commands to a vulnerable web application without the user’s consent.",
+        "domains": [
+          "it/security/vulnerabilities"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "CSRF",
+    "match": "exact-case",
+    "concepts": [
+      {
+        "id": "csrf",
+        "label": "Cross-site request forgery (CSRF)",
+        "summary": "An attack that tricks an authenticated web browser into sending unauthorized commands to a vulnerable web application without the user’s consent.",
+        "domains": [
+          "it/security/vulnerabilities"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Customer lifetime value (CLV)",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "customer-lifetime-value",
+        "label": "Customer lifetime value (CLV)",
+        "summary": "The projected total revenue or profit that a business anticipates earning from a single customer throughout the duration of their relationship.",
+        "domains": [
+          "product/metrics"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "CLV",
+    "match": "exact-case",
+    "concepts": [
+      {
+        "id": "customer-lifetime-value",
+        "label": "Customer lifetime value (CLV)",
+        "summary": "The projected total revenue or profit that a business anticipates earning from a single customer throughout the duration of their relationship.",
+        "domains": [
+          "product/metrics"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "LTV",
+    "match": "exact-case",
+    "concepts": [
+      {
+        "id": "customer-lifetime-value",
+        "label": "Customer lifetime value (CLV)",
+        "summary": "The projected total revenue or profit that a business anticipates earning from a single customer throughout the duration of their relationship.",
+        "domains": [
+          "product/metrics"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Common Vulnerabilities and Exposures (CVE)",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "cve",
+        "label": "Common Vulnerabilities and Exposures (CVE)",
+        "summary": "A publicly available list of standardized identifiers for cybersecurity vulnerabilities and exposures.",
+        "domains": [
+          "it/security/vulnerabilities"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "CVE",
+    "match": "exact-case",
+    "concepts": [
+      {
+        "id": "cve",
+        "label": "Common Vulnerabilities and Exposures (CVE)",
+        "summary": "A publicly available list of standardized identifiers for cybersecurity vulnerabilities and exposures.",
+        "domains": [
+          "it/security/vulnerabilities"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Daily active users (DAU)",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "daily-active-users",
+        "label": "Daily active users (DAU)",
+        "summary": "The total count of unique individuals who initiate a meaningful interaction with a software application within a 24-hour day.",
+        "domains": [
+          "product/metrics"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "DAU",
+    "match": "exact-case",
+    "concepts": [
+      {
+        "id": "daily-active-users",
+        "label": "Daily active users (DAU)",
+        "summary": "The total count of unique individuals who initiate a meaningful interaction with a software application within a 24-hour day.",
+        "domains": [
+          "product/metrics"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Daily Scrum",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "daily-scrum",
+        "label": "Daily Scrum",
+        "summary": "A 15-minute daily inspect-and-adapt event for developers to synchronize activities and plan the next 24 hours of work.",
+        "domains": [
+          "product/agile-scrum"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Stand-up",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "daily-scrum",
+        "label": "Daily Scrum",
+        "summary": "A 15-minute daily inspect-and-adapt event for developers to synchronize activities and plan the next 24 hours of work.",
+        "domains": [
+          "product/agile-scrum"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Data lake",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "data-lake",
+        "label": "Data lake",
+        "summary": "A scalable storage repository designed to retain massive volumes of raw multi-format information without requiring an upfront database schema.",
+        "domains": [
+          "it/data/data-engineering"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "cloud data lake",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "data-lake",
+        "label": "Data lake",
+        "summary": "A scalable storage repository designed to retain massive volumes of raw multi-format information without requiring an upfront database schema.",
+        "domains": [
+          "it/data/data-engineering"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Data pipeline",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "data-pipeline",
+        "label": "Data pipeline",
+        "summary": "An automated sequence of processes that ingests, processes, and transfers raw data from source systems to destination storage.",
+        "domains": [
+          "it/data/data-engineering"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Data warehouse",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "data-warehouse",
+        "label": "Data warehouse",
+        "summary": "A centralized, relational repository that aggregates structured historical data from across an organization to power business intelligence and reporting.",
+        "domains": [
+          "it/data/data-engineering"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "enterprise data warehouse",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "data-warehouse",
+        "label": "Data warehouse",
+        "summary": "A centralized, relational repository that aggregates structured historical data from across an organization to power business intelligence and reporting.",
+        "domains": [
+          "it/data/data-engineering"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Index",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "database-index",
+        "label": "Index",
+        "qualifier": "(Database)",
+        "summary": "A specialized data structure associated with a database table that accelerates record retrieval at the expense of extra storage and slower writes.",
+        "domains": [
+          "it/data/database"
+        ]
+      }
+    ],
+    "autolink": false
+  },
+  {
+    "key": "database index",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "database-index",
+        "label": "Index",
+        "qualifier": "(Database)",
+        "summary": "A specialized data structure associated with a database table that accelerates record retrieval at the expense of extra storage and slower writes.",
+        "domains": [
+          "it/data/database"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "table index",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "database-index",
+        "label": "Index",
+        "qualifier": "(Database)",
+        "summary": "A specialized data structure associated with a database table that accelerates record retrieval at the expense of extra storage and slower writes.",
+        "domains": [
+          "it/data/database"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Migration",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "database-migration",
+        "label": "Migration",
+        "qualifier": "(Database)",
+        "summary": "A version-controlled set of programmatic scripts that safely alter database schemas over time without losing existing data.",
+        "domains": [
+          "it/data/database"
+        ]
+      }
+    ],
+    "autolink": false
+  },
+  {
+    "key": "schema migration",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "database-migration",
+        "label": "Migration",
+        "qualifier": "(Database)",
+        "summary": "A version-controlled set of programmatic scripts that safely alter database schemas over time without losing existing data.",
+        "domains": [
+          "it/data/database"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "database migration",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "database-migration",
+        "label": "Migration",
+        "qualifier": "(Database)",
+        "summary": "A version-controlled set of programmatic scripts that safely alter database schemas over time without losing existing data.",
+        "domains": [
+          "it/data/database"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Replication",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "database-replication",
+        "label": "Replication",
+        "qualifier": "(Database)",
+        "summary": "The continuous electronic copying of data from one database server to one or more replica servers to ensure high availability and read scalability.",
+        "domains": [
+          "it/data/database"
+        ]
+      }
+    ],
+    "autolink": false
+  },
+  {
+    "key": "database replication",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "database-replication",
+        "label": "Replication",
+        "qualifier": "(Database)",
+        "summary": "The continuous electronic copying of data from one database server to one or more replica servers to ensure high availability and read scalability.",
+        "domains": [
+          "it/data/database"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "read replica",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "database-replication",
+        "label": "Replication",
+        "qualifier": "(Database)",
+        "summary": "The continuous electronic copying of data from one database server to one or more replica servers to ensure high availability and read scalability.",
+        "domains": [
+          "it/data/database"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Schema",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "database-schema",
+        "label": "Schema",
+        "qualifier": "(Database)",
+        "summary": "The formal structural blueprint of a database that defines tables, fields, data types, relationships, and integrity constraints.",
+        "domains": [
+          "it/data/database"
+        ]
+      }
+    ],
+    "autolink": false
+  },
+  {
+    "key": "database schema",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "database-schema",
+        "label": "Schema",
+        "qualifier": "(Database)",
+        "summary": "The formal structural blueprint of a database that defines tables, fields, data types, relationships, and integrity constraints.",
+        "domains": [
+          "it/data/database"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "table schema",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "database-schema",
+        "label": "Schema",
+        "qualifier": "(Database)",
+        "summary": "The formal structural blueprint of a database that defines tables, fields, data types, relationships, and integrity constraints.",
+        "domains": [
+          "it/data/database"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Transaction",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "database-transaction",
+        "label": "Transaction",
+        "qualifier": "(Database)",
+        "summary": "A sequence of database operations executed as a single, atomic unit of work satisfying ACID properties.",
+        "domains": [
+          "it/data/database"
+        ]
+      }
+    ],
+    "autolink": false
+  },
+  {
+    "key": "database transaction",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "database-transaction",
+        "label": "Transaction",
+        "qualifier": "(Database)",
+        "summary": "A sequence of database operations executed as a single, atomic unit of work satisfying ACID properties.",
+        "domains": [
+          "it/data/database"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "DB transaction",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "database-transaction",
+        "label": "Transaction",
+        "qualifier": "(Database)",
+        "summary": "A sequence of database operations executed as a single, atomic unit of work satisfying ACID properties.",
+        "domains": [
+          "it/data/database"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Dataset",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "dataset",
+        "label": "Dataset",
+        "summary": "A structured collection of data records, features, and targets partitioned to train, validate, and benchmark algorithms.",
+        "domains": [
+          "it/ai-ml/foundations"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Deep learning",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "deep-learning",
+        "label": "Deep learning",
+        "summary": "A specialized subset of machine learning utilizing multi-layered neural networks to extract hierarchical feature representations directly from complex data.",
+        "domains": [
+          "it/ai-ml/foundations"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Definition of Done (DoD)",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "definition-of-done",
+        "label": "Definition of Done (DoD)",
+        "summary": "A formal commitment detailing the technical and quality standards that every product increment must satisfy to be release-ready.",
+        "domains": [
+          "product/agile-scrum"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "DoD",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "definition-of-done",
+        "label": "Definition of Done (DoD)",
+        "summary": "A formal commitment detailing the technical and quality standards that every product increment must satisfy to be release-ready.",
+        "domains": [
+          "product/agile-scrum"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Deprecation",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "deprecation",
+        "label": "Deprecation",
+        "qualifier": "(Software)",
+        "summary": "The practice of marking a software feature, API, or package as obsolete and discouraged from use, signaling that it will be removed in a future release.",
+        "domains": [
+          "it/software-engineering/practices"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Design pattern",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "design-pattern",
+        "label": "Design pattern",
+        "summary": "A named, proven way of structuring code that solves a design problem developers meet again and again, such as creating objects or reacting to changes.",
+        "domains": [
+          "it/software-engineering/architecture"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Distributed tracing",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "distributed-tracing",
+        "label": "Distributed tracing",
+        "summary": "A monitoring method that tracks the lifecycle of an execution request as it travels across multiple networked services and processes.",
+        "domains": [
+          "it/devops/observability"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Request tracing",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "distributed-tracing",
+        "label": "Distributed tracing",
+        "summary": "A monitoring method that tracks the lifecycle of an execution request as it travels across multiple networked services and processes.",
+        "domains": [
+          "it/devops/observability"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "APM tracing",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "distributed-tracing",
+        "label": "Distributed tracing",
+        "summary": "A monitoring method that tracks the lifecycle of an execution request as it travels across multiple networked services and processes.",
+        "domains": [
+          "it/devops/observability"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Domain Name System (DNS)",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "dns",
+        "label": "Domain Name System (DNS)",
+        "summary": "The hierarchical, decentralized naming system that translates human-readable domain names into numerical IP addresses for network routing.",
+        "domains": [
+          "it/infrastructure/networking"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "DNS",
+    "match": "exact-case",
+    "concepts": [
+      {
+        "id": "dns",
+        "label": "Domain Name System (DNS)",
+        "summary": "The hierarchical, decentralized naming system that translates human-readable domain names into numerical IP addresses for network routing.",
+        "domains": [
+          "it/infrastructure/networking"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Docker",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "docker",
+        "label": "Docker",
+        "summary": "An open commercial platform providing tooling to build, share, package, and execute application containers using host operating system virtualization.",
+        "domains": [
+          "it/devops/containers"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Docker Engine",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "docker",
+        "label": "Docker",
+        "summary": "An open commercial platform providing tooling to build, share, package, and execute application containers using host operating system virtualization.",
+        "domains": [
+          "it/devops/containers"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Edge case",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "edge-case",
+        "label": "Edge case",
+        "summary": "A problem or operational situation that occurs only at extreme minimum or maximum operating parameters, testing the boundaries of system resilience.",
+        "domains": [
+          "it/software-engineering/testing"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
     "key": "Embedding",
     "match": "any-case",
     "concepts": [
@@ -179,6 +1535,203 @@
         "summary": "A list of numbers learned by a model to represent an item such as a word or a document, so that similar items end up close together.",
         "domains": [
           "it/ai-ml/nlp"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Encryption",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "encryption",
+        "label": "Encryption",
+        "summary": "The cryptographic process of encoding plaintext into ciphertext so that only authorized parties with the matching decryption key can read it.",
+        "domains": [
+          "it/security/cryptography"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "data encryption",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "encryption",
+        "label": "Encryption",
+        "summary": "The cryptographic process of encoding plaintext into ciphertext so that only authorized parties with the matching decryption key can read it.",
+        "domains": [
+          "it/security/cryptography"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "End-to-end test",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "end-to-end-test",
+        "label": "End-to-end test",
+        "summary": "A comprehensive testing methodology that validates the flow of an application from the user interface down through all underlying backend services and databases.",
+        "domains": [
+          "it/software-engineering/testing"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "E2E test",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "end-to-end-test",
+        "label": "End-to-end test",
+        "summary": "A comprehensive testing methodology that validates the flow of an application from the user interface down through all underlying backend services and databases.",
+        "domains": [
+          "it/software-engineering/testing"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Environment variable",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "environment-variable",
+        "label": "Environment variable",
+        "summary": "A dynamic key-value pair stored in the operating system environment that configures program behavior without altering application source code.",
+        "domains": [
+          "it/devops/ci-cd"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Env var",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "environment-variable",
+        "label": "Environment variable",
+        "summary": "A dynamic key-value pair stored in the operating system environment that configures program behavior without altering application source code.",
+        "domains": [
+          "it/devops/ci-cd"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "System environment variable",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "environment-variable",
+        "label": "Environment variable",
+        "summary": "A dynamic key-value pair stored in the operating system environment that configures program behavior without altering application source code.",
+        "domains": [
+          "it/devops/ci-cd"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Epic",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "epic-agile",
+        "label": "Epic",
+        "qualifier": "(Agile)",
+        "summary": "A substantial strategic initiative in agile software delivery that encompasses a collection of related user stories delivered over several sprints.",
+        "domains": [
+          "product/agile-scrum"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Epoch",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "epoch-ml",
+        "label": "Epoch",
+        "qualifier": "(AI)",
+        "summary": "One complete training cycle during which the learning algorithm processes every sample in the training dataset exactly once.",
+        "domains": [
+          "it/ai-ml/foundations"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Extract, Transform, Load (ETL)",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "etl",
+        "label": "Extract, Transform, Load (ETL)",
+        "summary": "A data integration process that extracts data from multiple sources, transforms it to meet analytical requirements, and loads it into a destination store.",
+        "domains": [
+          "it/data/data-engineering"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "ETL",
+    "match": "exact-case",
+    "concepts": [
+      {
+        "id": "etl",
+        "label": "Extract, Transform, Load (ETL)",
+        "summary": "A data integration process that extracts data from multiple sources, transforms it to meet analytical requirements, and loads it into a destination store.",
+        "domains": [
+          "it/data/data-engineering"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Feature flag",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "feature-flag",
+        "label": "Feature flag",
+        "summary": "A software engineering technique that enables or disables functionality remotely at runtime through configuration without altering and redeploying source code.",
+        "domains": [
+          "it/software-engineering/practices"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Feature toggle",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "feature-flag",
+        "label": "Feature flag",
+        "summary": "A software engineering technique that enables or disables functionality remotely at runtime through configuration without altering and redeploying source code.",
+        "domains": [
+          "it/software-engineering/practices"
         ]
       }
     ],
@@ -290,6 +1843,131 @@
     "autolink": true
   },
   {
+    "key": "Branch",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "git-branch",
+        "label": "Branch",
+        "qualifier": "(Git)",
+        "summary": "A lightweight movable reference pointing to a specific commit within a Git repository that represents an independent timeline of development.",
+        "domains": [
+          "it/software-engineering/version-control"
+        ]
+      }
+    ],
+    "autolink": false
+  },
+  {
+    "key": "Commit",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "git-commit",
+        "label": "Commit",
+        "qualifier": "(Git)",
+        "summary": "An immutable snapshot of staged changes recorded into Git repository history, associated with author metadata, timestamp, parent hashes, and a descriptive log message.",
+        "domains": [
+          "it/software-engineering/version-control"
+        ]
+      }
+    ],
+    "autolink": false
+  },
+  {
+    "key": "Rebase",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "git-rebase",
+        "label": "Rebase",
+        "summary": "A Git command that moves or reapplies a sequence of commits from one branch on top of a new base tip, creating a linear history.",
+        "domains": [
+          "it/software-engineering/version-control"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Graphics Processing Unit (GPU)",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "gpu",
+        "label": "Graphics Processing Unit (GPU)",
+        "summary": "A specialized electronic processor optimized for high-throughput parallel execution of mathematical matrix operations essential for deep learning.",
+        "domains": [
+          "it/ai-ml/mlops",
+          "it/infrastructure/cloud"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "GPU",
+    "match": "exact-case",
+    "concepts": [
+      {
+        "id": "gpu",
+        "label": "Graphics Processing Unit (GPU)",
+        "summary": "A specialized electronic processor optimized for high-throughput parallel execution of mathematical matrix operations essential for deep learning.",
+        "domains": [
+          "it/ai-ml/mlops",
+          "it/infrastructure/cloud"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Gradient descent",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "gradient-descent",
+        "label": "Gradient descent",
+        "summary": "An iterative optimization algorithm that updates model parameters in the opposite direction of the loss function gradient to minimize prediction error.",
+        "domains": [
+          "it/ai-ml/foundations"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "GraphQL",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "graphql",
+        "label": "GraphQL",
+        "summary": "An open query language and runtime for APIs that allows clients to request exact data shapes and consolidate multiple resources in one request.",
+        "domains": [
+          "it/web/api"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Grounding",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "grounding-ai",
+        "label": "Grounding",
+        "qualifier": "(AI)",
+        "summary": "The process of constraining a model's outputs to factual, verifiable evidence retrieved from trusted external data sources.",
+        "domains": [
+          "it/ai-ml/llm-agents"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
     "key": "Guardrail",
     "match": "any-case",
     "concepts": [
@@ -332,6 +2010,299 @@
         "summary": "Output from a generative model that sounds plausible but is false or unsupported, presented as if it were fact.",
         "domains": [
           "it/ai-ml/llm-agents"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Hashing",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "hashing",
+        "label": "Hashing",
+        "qualifier": "(Cryptography)",
+        "summary": "A cryptographic process that transforms arbitrary input data into a fixed-length string of characters using an irreversible one-way mathematical algorithm.",
+        "domains": [
+          "it/security/cryptography"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "cryptographic hashing",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "hashing",
+        "label": "Hashing",
+        "qualifier": "(Cryptography)",
+        "summary": "A cryptographic process that transforms arbitrary input data into a fixed-length string of characters using an irreversible one-way mathematical algorithm.",
+        "domains": [
+          "it/security/cryptography"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "hash function",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "hashing",
+        "label": "Hashing",
+        "qualifier": "(Cryptography)",
+        "summary": "A cryptographic process that transforms arbitrary input data into a fixed-length string of characters using an irreversible one-way mathematical algorithm.",
+        "domains": [
+          "it/security/cryptography"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Hotfix",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "hotfix",
+        "label": "Hotfix",
+        "summary": "An expedited software patch created and deployed directly to production systems outside standard release cycles to resolve critical defects or security flaws.",
+        "domains": [
+          "it/software-engineering/practices"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "HTTP status code",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "http-status-code",
+        "label": "HTTP status code",
+        "summary": "A standardized three-digit integer returned by a server indicating the outcome of a client’s HTTP request.",
+        "domains": [
+          "it/web/api"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "HTTP response code",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "http-status-code",
+        "label": "HTTP status code",
+        "summary": "A standardized three-digit integer returned by a server indicating the outcome of a client’s HTTP request.",
+        "domains": [
+          "it/web/api"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "status code",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "http-status-code",
+        "label": "HTTP status code",
+        "summary": "A standardized three-digit integer returned by a server indicating the outcome of a client’s HTTP request.",
+        "domains": [
+          "it/web/api"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Hyperparameter",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "hyperparameter",
+        "label": "Hyperparameter",
+        "summary": "An external configuration setting specified prior to training that governs how the model architecture is structured and optimized.",
+        "domains": [
+          "it/ai-ml/foundations"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Idempotency",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "idempotency",
+        "label": "Idempotency",
+        "summary": "A property of an operation whereby performing it multiple times with the same parameters produces the identical outcome and system state as performing it a single time.",
+        "domains": [
+          "it/software-engineering/programming-concepts"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Image classification",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "image-classification",
+        "label": "Image classification",
+        "summary": "A computer vision task in which an algorithm analyzes an entire image and assigns it one or more discrete categorical labels from a predefined taxonomy.",
+        "domains": [
+          "it/ai-ml/computer-vision"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Incident",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "incident",
+        "label": "Incident",
+        "qualifier": "(IT)",
+        "summary": "An unplanned interruption, degradation, or disruption of an IT service that impairs business operations or user experience.",
+        "domains": [
+          "it/devops/sre-operations"
+        ]
+      }
+    ],
+    "autolink": false
+  },
+  {
+    "key": "Production incident",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "incident",
+        "label": "Incident",
+        "qualifier": "(IT)",
+        "summary": "An unplanned interruption, degradation, or disruption of an IT service that impairs business operations or user experience.",
+        "domains": [
+          "it/devops/sre-operations"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "System outage",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "incident",
+        "label": "Incident",
+        "qualifier": "(IT)",
+        "summary": "An unplanned interruption, degradation, or disruption of an IT service that impairs business operations or user experience.",
+        "domains": [
+          "it/devops/sre-operations"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "IT incident",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "incident",
+        "label": "Incident",
+        "qualifier": "(IT)",
+        "summary": "An unplanned interruption, degradation, or disruption of an IT service that impairs business operations or user experience.",
+        "domains": [
+          "it/devops/sre-operations"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Inference",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "inference",
+        "label": "Inference",
+        "qualifier": "(AI)",
+        "summary": "The operational stage where a trained model processes live inputs to generate predictions, decisions, or outputs without updating its parameters.",
+        "domains": [
+          "it/ai-ml/foundations"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Infrastructure as code (IaC)",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "infrastructure-as-code",
+        "label": "Infrastructure as code (IaC)",
+        "summary": "The practice of managing, provisioning, and configuring IT infrastructure through machine-readable definition files rather than manual procedures.",
+        "domains": [
+          "it/devops/iac"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "IaC",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "infrastructure-as-code",
+        "label": "Infrastructure as code (IaC)",
+        "summary": "The practice of managing, provisioning, and configuring IT infrastructure through machine-readable definition files rather than manual procedures.",
+        "domains": [
+          "it/devops/iac"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Programmable infrastructure",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "infrastructure-as-code",
+        "label": "Infrastructure as code (IaC)",
+        "summary": "The practice of managing, provisioning, and configuring IT infrastructure through machine-readable definition files rather than manual procedures.",
+        "domains": [
+          "it/devops/iac"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Integration test",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "integration-test",
+        "label": "Integration test",
+        "summary": "An automated test that verifies whether multiple software components, modules, or external systems cooperate and exchange data correctly.",
+        "domains": [
+          "it/software-engineering/testing"
         ]
       }
     ],
@@ -386,6 +2357,313 @@
     "autolink": true
   },
   {
+    "key": "JSON",
+    "match": "exact-case",
+    "concepts": [
+      {
+        "id": "json",
+        "label": "JSON",
+        "summary": "A lightweight, text-based data interchange format built on key-value pairs and ordered lists that is easy for humans to read and machines to parse.",
+        "domains": [
+          "it/web/api"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "JavaScript Object Notation",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "json",
+        "label": "JSON",
+        "summary": "A lightweight, text-based data interchange format built on key-value pairs and ordered lists that is easy for humans to read and machines to parse.",
+        "domains": [
+          "it/web/api"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "JSON Web Token (JWT)",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "jwt",
+        "label": "JSON Web Token (JWT)",
+        "summary": "A self-contained web token format conveying verifiable identity assertions through encoded header, payload, and digital signature segments.",
+        "domains": [
+          "it/security/authentication"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "JWT",
+    "match": "exact-case",
+    "concepts": [
+      {
+        "id": "jwt",
+        "label": "JSON Web Token (JWT)",
+        "summary": "A self-contained web token format conveying verifiable identity assertions through encoded header, payload, and digital signature segments.",
+        "domains": [
+          "it/security/authentication"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Kanban",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "kanban",
+        "label": "Kanban",
+        "summary": "A visual workflow management method designed to optimize continuous flow, limit work in progress, and maximize efficiency.",
+        "domains": [
+          "product/agile-scrum"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Distillation",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "knowledge-distillation",
+        "label": "Distillation",
+        "qualifier": "(AI)",
+        "summary": "A model compression technique where a compact student model is trained on output probability distributions generated by a larger, pre-trained teacher model.",
+        "domains": [
+          "it/ai-ml/mlops"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Knowledge distillation",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "knowledge-distillation",
+        "label": "Distillation",
+        "qualifier": "(AI)",
+        "summary": "A model compression technique where a compact student model is trained on output probability distributions generated by a larger, pre-trained teacher model.",
+        "domains": [
+          "it/ai-ml/mlops"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Key Performance Indicator (KPI)",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "kpi",
+        "label": "Key Performance Indicator (KPI)",
+        "summary": "A quantifiable metric tracking ongoing operational efficacy and business performance against strategic benchmarks.",
+        "domains": [
+          "product/metrics"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "KPI",
+    "match": "exact-case",
+    "concepts": [
+      {
+        "id": "kpi",
+        "label": "Key Performance Indicator (KPI)",
+        "summary": "A quantifiable metric tracking ongoing operational efficacy and business performance against strategic benchmarks.",
+        "domains": [
+          "product/metrics"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Kubernetes",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "kubernetes",
+        "label": "Kubernetes",
+        "summary": "An open-source container orchestration system for automating deployment, scaling, management, and self-healing of containerized applications.",
+        "domains": [
+          "it/devops/containers"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "K8s",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "kubernetes",
+        "label": "Kubernetes",
+        "summary": "An open-source container orchestration system for automating deployment, scaling, management, and self-healing of containerized applications.",
+        "domains": [
+          "it/devops/containers"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Pod",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "kubernetes-pod",
+        "label": "Pod",
+        "qualifier": "(Kubernetes)",
+        "summary": "The smallest deployable computing unit in Kubernetes, encapsulating one or more tightly coupled containers sharing network and storage resources.",
+        "domains": [
+          "it/devops/containers"
+        ]
+      }
+    ],
+    "autolink": false
+  },
+  {
+    "key": "K8s pod",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "kubernetes-pod",
+        "label": "Pod",
+        "qualifier": "(Kubernetes)",
+        "summary": "The smallest deployable computing unit in Kubernetes, encapsulating one or more tightly coupled containers sharing network and storage resources.",
+        "domains": [
+          "it/devops/containers"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Latency",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "latency",
+        "label": "Latency",
+        "qualifier": "(Network)",
+        "summary": "The time delay incurred for data to travel across a network from its source to its destination and return.",
+        "domains": [
+          "it/infrastructure/networking"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Network latency",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "latency",
+        "label": "Latency",
+        "qualifier": "(Network)",
+        "summary": "The time delay incurred for data to travel across a network from its source to its destination and return.",
+        "domains": [
+          "it/infrastructure/networking"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Round-trip time",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "latency",
+        "label": "Latency",
+        "qualifier": "(Network)",
+        "summary": "The time delay incurred for data to travel across a network from its source to its destination and return.",
+        "domains": [
+          "it/infrastructure/networking"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Principle of least privilege",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "least-privilege",
+        "label": "Principle of least privilege",
+        "summary": "A core cybersecurity principle dictating that users, accounts, and processes are granted only the minimum permissions necessary to perform their assigned functions.",
+        "domains": [
+          "it/security/authentication"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "least privilege",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "least-privilege",
+        "label": "Principle of least privilege",
+        "summary": "A core cybersecurity principle dictating that users, accounts, and processes are granted only the minimum permissions necessary to perform their assigned functions.",
+        "domains": [
+          "it/security/authentication"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "PoLP",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "least-privilege",
+        "label": "Principle of least privilege",
+        "summary": "A core cybersecurity principle dictating that users, accounts, and processes are granted only the minimum permissions necessary to perform their assigned functions.",
+        "domains": [
+          "it/security/authentication"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Linter",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "linter",
+        "label": "Linter",
+        "summary": "A static code analysis tool that inspects source code for programmatic errors, stylistic inconsistencies, security antipatterns, and non-standard syntax before runtime.",
+        "domains": [
+          "it/software-engineering/practices"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
     "key": "Large Language Model",
     "match": "any-case",
     "concepts": [
@@ -416,6 +2694,162 @@
     "autolink": true
   },
   {
+    "key": "Eval",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "llm-eval",
+        "label": "Eval",
+        "qualifier": "(AI)",
+        "summary": "A systematic evaluation methodology using automated judges, deterministic checks, or human grading to measure language model quality, safety, and correctness.",
+        "domains": [
+          "it/ai-ml/mlops"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Evaluation",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "llm-eval",
+        "label": "Eval",
+        "qualifier": "(AI)",
+        "summary": "A systematic evaluation methodology using automated judges, deterministic checks, or human grading to measure language model quality, safety, and correctness.",
+        "domains": [
+          "it/ai-ml/mlops"
+        ]
+      }
+    ],
+    "autolink": false
+  },
+  {
+    "key": "Load balancer",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "load-balancer",
+        "label": "Load balancer",
+        "summary": "A networking component that distributes incoming application or network traffic across a pool of backend destination servers.",
+        "domains": [
+          "it/infrastructure/networking"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Application load balancer",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "load-balancer",
+        "label": "Load balancer",
+        "summary": "A networking component that distributes incoming application or network traffic across a pool of backend destination servers.",
+        "domains": [
+          "it/infrastructure/networking"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Network load balancer",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "load-balancer",
+        "label": "Load balancer",
+        "summary": "A networking component that distributes incoming application or network traffic across a pool of backend destination servers.",
+        "domains": [
+          "it/infrastructure/networking"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Traffic distributor",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "load-balancer",
+        "label": "Load balancer",
+        "summary": "A networking component that distributes incoming application or network traffic across a pool of backend destination servers.",
+        "domains": [
+          "it/infrastructure/networking"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Log",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "log",
+        "label": "Log",
+        "qualifier": "(Software)",
+        "summary": "A timestamped, discrete record of an event or state change emitted by a running computer program or system service.",
+        "domains": [
+          "it/devops/observability"
+        ]
+      }
+    ],
+    "autolink": false
+  },
+  {
+    "key": "Log record",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "log",
+        "label": "Log",
+        "qualifier": "(Software)",
+        "summary": "A timestamped, discrete record of an event or state change emitted by a running computer program or system service.",
+        "domains": [
+          "it/devops/observability"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Log message",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "log",
+        "label": "Log",
+        "qualifier": "(Software)",
+        "summary": "A timestamped, discrete record of an event or state change emitted by a running computer program or system service.",
+        "domains": [
+          "it/devops/observability"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Application log",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "log",
+        "label": "Log",
+        "qualifier": "(Software)",
+        "summary": "A timestamped, discrete record of an event or state change emitted by a running computer program or system service.",
+        "domains": [
+          "it/devops/observability"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
     "key": "Low-Rank Adaptation",
     "match": "any-case",
     "concepts": [
@@ -440,6 +2874,66 @@
         "summary": "A parameter-efficient fine-tuning method that freezes the original weights and trains small low-rank matrices that represent the weight update.",
         "domains": [
           "it/ai-ml/mlops"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Loss function",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "loss-function",
+        "label": "Loss function",
+        "summary": "A mathematical function quantifying the discrepancy between a model's predicted outputs and true ground-truth targets.",
+        "domains": [
+          "it/ai-ml/foundations"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Cost function",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "loss-function",
+        "label": "Loss function",
+        "summary": "A mathematical function quantifying the discrepancy between a model's predicted outputs and true ground-truth targets.",
+        "domains": [
+          "it/ai-ml/foundations"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Objective function",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "loss-function",
+        "label": "Loss function",
+        "summary": "A mathematical function quantifying the discrepancy between a model's predicted outputs and true ground-truth targets.",
+        "domains": [
+          "it/ai-ml/foundations"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Machine learning",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "machine-learning",
+        "label": "Machine learning",
+        "summary": "A branch of artificial intelligence where computer systems detect underlying patterns in data to improve task performance without static rule engines.",
+        "domains": [
+          "it/ai-ml/foundations"
         ]
       }
     ],
@@ -533,6 +3027,737 @@
     "autolink": true
   },
   {
+    "key": "Merge conflict",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "merge-conflict",
+        "label": "Merge conflict",
+        "summary": "A state in version control that arises when competing changes are made to the same lines of code or when one branch modifies a file that another branch deletes, preventing automatic merging.",
+        "domains": [
+          "it/software-engineering/version-control"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Message queue",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "message-queue",
+        "label": "Message queue",
+        "summary": "An asynchronous communication component that stores messages in sequence until receiving consumer services retrieve and process them.",
+        "domains": [
+          "it/web/backend"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "task queue",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "message-queue",
+        "label": "Message queue",
+        "summary": "An asynchronous communication component that stores messages in sequence until receiving consumer services retrieve and process them.",
+        "domains": [
+          "it/web/backend"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "message broker",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "message-queue",
+        "label": "Message queue",
+        "summary": "An asynchronous communication component that stores messages in sequence until receiving consumer services retrieve and process them.",
+        "domains": [
+          "it/web/backend"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Metric",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "metric-monitoring",
+        "label": "Metric",
+        "qualifier": "(Monitoring)",
+        "summary": "A quantifiable, aggregated numerical measurement recorded at regular time intervals to evaluate system performance and health.",
+        "domains": [
+          "it/devops/observability"
+        ]
+      }
+    ],
+    "autolink": false
+  },
+  {
+    "key": "System metric",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "metric-monitoring",
+        "label": "Metric",
+        "qualifier": "(Monitoring)",
+        "summary": "A quantifiable, aggregated numerical measurement recorded at regular time intervals to evaluate system performance and health.",
+        "domains": [
+          "it/devops/observability"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Telemetry metric",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "metric-monitoring",
+        "label": "Metric",
+        "qualifier": "(Monitoring)",
+        "summary": "A quantifiable, aggregated numerical measurement recorded at regular time intervals to evaluate system performance and health.",
+        "domains": [
+          "it/devops/observability"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Multi-factor authentication (MFA)",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "mfa",
+        "label": "Multi-factor authentication (MFA)",
+        "summary": "An authentication security method requiring users to supply two or more distinct evidence factors before granting access to a digital system.",
+        "domains": [
+          "it/security/authentication"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "MFA",
+    "match": "exact-case",
+    "concepts": [
+      {
+        "id": "mfa",
+        "label": "Multi-factor authentication (MFA)",
+        "summary": "An authentication security method requiring users to supply two or more distinct evidence factors before granting access to a digital system.",
+        "domains": [
+          "it/security/authentication"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "2FA",
+    "match": "exact-case",
+    "concepts": [
+      {
+        "id": "mfa",
+        "label": "Multi-factor authentication (MFA)",
+        "summary": "An authentication security method requiring users to supply two or more distinct evidence factors before granting access to a digital system.",
+        "domains": [
+          "it/security/authentication"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "two-factor authentication",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "mfa",
+        "label": "Multi-factor authentication (MFA)",
+        "summary": "An authentication security method requiring users to supply two or more distinct evidence factors before granting access to a digital system.",
+        "domains": [
+          "it/security/authentication"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Microservices",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "microservices",
+        "label": "Microservices",
+        "summary": "An architectural style that structures an application as a collection of small, independently deployable, and loosely coupled services communicating via lightweight protocols.",
+        "domains": [
+          "it/software-engineering/architecture"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Microservice architecture",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "microservices",
+        "label": "Microservices",
+        "summary": "An architectural style that structures an application as a collection of small, independently deployable, and loosely coupled services communicating via lightweight protocols.",
+        "domains": [
+          "it/software-engineering/architecture"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Model",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "ml-model",
+        "label": "Model",
+        "qualifier": "(AI)",
+        "summary": "A mathematical representation trained on data that captures patterns to generate predictions, decisions, or new content.",
+        "domains": [
+          "it/ai-ml/foundations"
+        ]
+      }
+    ],
+    "autolink": false
+  },
+  {
+    "key": "Mock",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "mock-object",
+        "label": "Mock",
+        "qualifier": "(Testing)",
+        "summary": "A simulated object that mimics the behavior of a real component in controlled ways, allowing developers to verify interactions and method invocations in isolation.",
+        "domains": [
+          "it/software-engineering/testing"
+        ]
+      }
+    ],
+    "autolink": false
+  },
+  {
+    "key": "Mock object",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "mock-object",
+        "label": "Mock",
+        "qualifier": "(Testing)",
+        "summary": "A simulated object that mimics the behavior of a real component in controlled ways, allowing developers to verify interactions and method invocations in isolation.",
+        "domains": [
+          "it/software-engineering/testing"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Parameter",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "model-parameter",
+        "label": "Parameter",
+        "qualifier": "(AI)",
+        "summary": "An internal numerical variable within a model, such as a weight or bias, whose value is learned and updated directly from training data.",
+        "domains": [
+          "it/ai-ml/foundations"
+        ]
+      }
+    ],
+    "autolink": false
+  },
+  {
+    "key": "Training",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "model-training",
+        "label": "Training",
+        "qualifier": "(AI)",
+        "summary": "The iterative computational process of calculating errors and adjusting model weights against training data to minimize loss.",
+        "domains": [
+          "it/ai-ml/foundations"
+        ]
+      }
+    ],
+    "autolink": false
+  },
+  {
+    "key": "Monorepo",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "monorepo",
+        "label": "Monorepo",
+        "summary": "A software development approach and repository architecture where multiple separate projects, applications, and shared libraries reside within a single version control repository.",
+        "domains": [
+          "it/software-engineering/version-control"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "MoSCoW method",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "moscow-method",
+        "label": "MoSCoW method",
+        "summary": "A qualitative prioritization technique sorting project requirements into four distinct categories: Must have, Should have, Could have, and Won't have.",
+        "domains": [
+          "product/delivery-planning"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "MoSCoW",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "moscow-method",
+        "label": "MoSCoW method",
+        "summary": "A qualitative prioritization technique sorting project requirements into four distinct categories: Must have, Should have, Could have, and Won't have.",
+        "domains": [
+          "product/delivery-planning"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Minimum Viable Product (MVP)",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "mvp",
+        "label": "Minimum Viable Product (MVP)",
+        "summary": "An early iteration of a product incorporating the minimum feature set necessary to validate foundational assumptions with real customers.",
+        "domains": [
+          "product/product-management"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "MVP",
+    "match": "exact-case",
+    "concepts": [
+      {
+        "id": "mvp",
+        "label": "Minimum Viable Product (MVP)",
+        "summary": "An early iteration of a product incorporating the minimum feature set necessary to validate foundational assumptions with real customers.",
+        "domains": [
+          "product/product-management"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Neural network",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "neural-network",
+        "label": "Neural network",
+        "summary": "A computational architecture comprising interconnected layers of artificial nodes that pass weighted signals through non-linear activation functions.",
+        "domains": [
+          "it/ai-ml/foundations"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Artificial neural network",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "neural-network",
+        "label": "Neural network",
+        "summary": "A computational architecture comprising interconnected layers of artificial nodes that pass weighted signals through non-linear activation functions.",
+        "domains": [
+          "it/ai-ml/foundations"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "North Star metric",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "north-star-metric",
+        "label": "North Star metric",
+        "summary": "The primary operational metric capturing the core value delivered to customers that serves as the leading indicator of sustainable business growth.",
+        "domains": [
+          "product/metrics"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "OAuth",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "oauth",
+        "label": "OAuth",
+        "summary": "An open standard authorization framework that enables third-party applications to obtain limited access to protected user resources without sharing user passwords.",
+        "domains": [
+          "it/security/authentication"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "OAuth 2.0",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "oauth",
+        "label": "OAuth",
+        "summary": "An open standard authorization framework that enables third-party applications to obtain limited access to protected user resources without sharing user passwords.",
+        "domains": [
+          "it/security/authentication"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "OAuth framework",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "oauth",
+        "label": "OAuth",
+        "summary": "An open standard authorization framework that enables third-party applications to obtain limited access to protected user resources without sharing user passwords.",
+        "domains": [
+          "it/security/authentication"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Object detection",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "object-detection",
+        "label": "Object detection",
+        "summary": "A computer vision technique that simultaneously identifies the semantic class and spatial coordinates of multiple individual objects within an image.",
+        "domains": [
+          "it/ai-ml/computer-vision"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Observability",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "observability",
+        "label": "Observability",
+        "summary": "The extent to which the internal states and execution paths of complex software systems can be inferred solely from their external telemetry outputs.",
+        "domains": [
+          "it/devops/observability"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "o11y",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "observability",
+        "label": "Observability",
+        "summary": "The extent to which the internal states and execution paths of complex software systems can be inferred solely from their external telemetry outputs.",
+        "domains": [
+          "it/devops/observability"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Objectives and Key Results (OKR)",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "okr",
+        "label": "Objectives and Key Results (OKR)",
+        "summary": "A collaborative goal-setting framework pairing ambitious qualitative objectives with measurable key results to track organizational progress.",
+        "domains": [
+          "product/metrics"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "OKR",
+    "match": "exact-case",
+    "concepts": [
+      {
+        "id": "okr",
+        "label": "Objectives and Key Results (OKR)",
+        "summary": "A collaborative goal-setting framework pairing ambitious qualitative objectives with measurable key results to track organizational progress.",
+        "domains": [
+          "product/metrics"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "On-call",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "on-call",
+        "label": "On-call",
+        "summary": "An operational duty rotation where designated engineers remain available to receive alerts and remediate critical production incidents outside or during standard working hours.",
+        "domains": [
+          "it/devops/sre-operations"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "On-call rotation",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "on-call",
+        "label": "On-call",
+        "summary": "An operational duty rotation where designated engineers remain available to receive alerts and remediate critical production incidents outside or during standard working hours.",
+        "domains": [
+          "it/devops/sre-operations"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "On-call duty",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "on-call",
+        "label": "On-call",
+        "summary": "An operational duty rotation where designated engineers remain available to receive alerts and remediate critical production incidents outside or during standard working hours.",
+        "domains": [
+          "it/devops/sre-operations"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Object-Relational Mapping (ORM)",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "orm",
+        "label": "Object-Relational Mapping (ORM)",
+        "summary": "A software technique that bridges object-oriented code and relational databases by mapping database tables to programming language classes.",
+        "domains": [
+          "it/web/backend"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "ORM",
+    "match": "exact-case",
+    "concepts": [
+      {
+        "id": "orm",
+        "label": "Object-Relational Mapping (ORM)",
+        "summary": "A software technique that bridges object-oriented code and relational databases by mapping database tables to programming language classes.",
+        "domains": [
+          "it/web/backend"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Overfitting",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "overfitting",
+        "label": "Overfitting",
+        "summary": "A modeling pathology where an algorithm learns idiosyncratic noise in training samples, severely impairing its ability to generalize to unseen data.",
+        "domains": [
+          "it/ai-ml/foundations"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Pagination",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "pagination",
+        "label": "Pagination",
+        "summary": "A design technique that breaks large data sets into discrete subsets or pages to manage bandwidth and system performance.",
+        "domains": [
+          "it/web/api"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "API pagination",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "pagination",
+        "label": "Pagination",
+        "summary": "A design technique that breaks large data sets into discrete subsets or pages to manage bandwidth and system performance.",
+        "domains": [
+          "it/web/api"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "paging",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "pagination",
+        "label": "Pagination",
+        "summary": "A design technique that breaks large data sets into discrete subsets or pages to manage bandwidth and system performance.",
+        "domains": [
+          "it/web/api"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Postmortem",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "postmortem",
+        "label": "Postmortem",
+        "qualifier": "(IT)",
+        "summary": "A structured, blameless written analysis document reviewing a production incident to identify root causes and assign preventative action items.",
+        "domains": [
+          "it/devops/sre-operations"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Incident retrospective",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "postmortem",
+        "label": "Postmortem",
+        "qualifier": "(IT)",
+        "summary": "A structured, blameless written analysis document reviewing a production incident to identify root causes and assign preventative action items.",
+        "domains": [
+          "it/devops/sre-operations"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Post-incident review",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "postmortem",
+        "label": "Postmortem",
+        "qualifier": "(IT)",
+        "summary": "A structured, blameless written analysis document reviewing a production incident to identify root causes and assign preventative action items.",
+        "domains": [
+          "it/devops/sre-operations"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Product Requirements Document (PRD)",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "prd",
+        "label": "Product Requirements Document (PRD)",
+        "summary": "A definitive planning document detailing product purpose, target personas, functional requirements, and measurable success criteria for delivery teams.",
+        "domains": [
+          "product/product-management"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "PRD",
+    "match": "exact-case",
+    "concepts": [
+      {
+        "id": "prd",
+        "label": "Product Requirements Document (PRD)",
+        "summary": "A definitive planning document detailing product purpose, target personas, functional requirements, and measurable success criteria for delivery teams.",
+        "domains": [
+          "product/product-management"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
     "key": "Principal",
     "match": "any-case",
     "concepts": [
@@ -563,6 +3788,157 @@
       }
     ],
     "autolink": true
+  },
+  {
+    "key": "Product backlog",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "product-backlog",
+        "label": "Product backlog",
+        "summary": "An evolving, ordered catalog of features, enhancements, and fixes representing the single source of work for a product team.",
+        "domains": [
+          "product/agile-scrum"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Backlog",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "product-backlog",
+        "label": "Product backlog",
+        "summary": "An evolving, ordered catalog of features, enhancements, and fixes representing the single source of work for a product team.",
+        "domains": [
+          "product/agile-scrum"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Product discovery",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "product-discovery",
+        "label": "Product discovery",
+        "summary": "The exploratory process of validating customer problems and potential product solutions to ensure engineering teams build valuable, viable offerings.",
+        "domains": [
+          "product/product-management"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Product-market fit",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "product-market-fit",
+        "label": "Product-market fit",
+        "summary": "The commercial milestone achieved when a product satisfies the demands of an attractive market, evidenced by sustained user retention and organic adoption.",
+        "domains": [
+          "product/product-management"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "PMF",
+    "match": "exact-case",
+    "concepts": [
+      {
+        "id": "product-market-fit",
+        "label": "Product-market fit",
+        "summary": "The commercial milestone achieved when a product satisfies the demands of an attractive market, evidenced by sustained user retention and organic adoption.",
+        "domains": [
+          "product/product-management"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Product owner (PO)",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "product-owner",
+        "label": "Product owner (PO)",
+        "summary": "The Scrum role accountable for maximizing product value and managing the prioritized content of the product backlog.",
+        "domains": [
+          "product/agile-scrum"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "PO",
+    "match": "exact-case",
+    "concepts": [
+      {
+        "id": "product-owner",
+        "label": "Product owner (PO)",
+        "summary": "The Scrum role accountable for maximizing product value and managing the prioritized content of the product backlog.",
+        "domains": [
+          "product/agile-scrum"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Release",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "product-release",
+        "label": "Release",
+        "qualifier": "(Product)",
+        "summary": "The formal deployment and distribution of a production-ready software version to customers alongside associated release notes and assets.",
+        "domains": [
+          "product/delivery-planning"
+        ]
+      }
+    ],
+    "autolink": false
+  },
+  {
+    "key": "Product roadmap",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "product-roadmap",
+        "label": "Product roadmap",
+        "summary": "A strategic, evolving visual document mapping the vision, overarching direction, and planned milestones of a product over time.",
+        "domains": [
+          "product/delivery-planning"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Roadmap",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "product-roadmap",
+        "label": "Product roadmap",
+        "summary": "A strategic, evolving visual document mapping the vision, overarching direction, and planned milestones of a product over time.",
+        "domains": [
+          "product/delivery-planning"
+        ]
+      }
+    ],
+    "autolink": false
   },
   {
     "key": "Profit margin",
@@ -642,6 +4018,82 @@
     "autolink": true
   },
   {
+    "key": "Pull request (PR)",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "pull-request",
+        "label": "Pull request (PR)",
+        "summary": "A mechanism in distributed version control platforms that allows a developer to propose changes from a feature branch and request peer review before merging.",
+        "domains": [
+          "it/software-engineering/version-control"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "PR",
+    "match": "exact-case",
+    "concepts": [
+      {
+        "id": "pull-request",
+        "label": "Pull request (PR)",
+        "summary": "A mechanism in distributed version control platforms that allows a developer to propose changes from a feature branch and request peer review before merging.",
+        "domains": [
+          "it/software-engineering/version-control"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Pull request",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "pull-request",
+        "label": "Pull request (PR)",
+        "summary": "A mechanism in distributed version control platforms that allows a developer to propose changes from a feature branch and request peer review before merging.",
+        "domains": [
+          "it/software-engineering/version-control"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Quantization",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "quantization",
+        "label": "Quantization",
+        "qualifier": "(AI)",
+        "summary": "A model compression technique that maps high-precision numerical weights to lower-bit representations to reduce memory footprint and boost inference speed.",
+        "domains": [
+          "it/ai-ml/mlops"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Race condition",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "race-condition",
+        "label": "Race condition",
+        "summary": "An undesirable condition in concurrent programming where system behavior or output depends unpredictably on the relative execution order or timing of uncontrollable events.",
+        "domains": [
+          "it/software-engineering/programming-concepts"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
     "key": "Retrieval-Augmented Generation",
     "match": "any-case",
     "concepts": [
@@ -666,6 +4118,201 @@
         "summary": "A technique that retrieves relevant documents when a question arrives and adds them to the prompt so the model answers from them.",
         "domains": [
           "it/ai-ml/llm-agents"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Rate limiting",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "rate-limiting",
+        "label": "Rate limiting",
+        "summary": "A defensive network control mechanism that caps the number of requests a client can submit to an API or service within a specified time window.",
+        "domains": [
+          "it/web/api"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "API throttling",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "rate-limiting",
+        "label": "Rate limiting",
+        "summary": "A defensive network control mechanism that caps the number of requests a client can submit to an API or service within a specified time window.",
+        "domains": [
+          "it/web/api"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Traffic shaping",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "rate-limiting",
+        "label": "Rate limiting",
+        "summary": "A defensive network control mechanism that caps the number of requests a client can submit to an API or service within a specified time window.",
+        "domains": [
+          "it/web/api"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Request rate limiting",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "rate-limiting",
+        "label": "Rate limiting",
+        "summary": "A defensive network control mechanism that caps the number of requests a client can submit to an API or service within a specified time window.",
+        "domains": [
+          "it/web/api"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Reasoning model",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "reasoning-model",
+        "label": "Reasoning model",
+        "summary": "A language model trained to produce intermediate reasoning tokens, often hidden or summarized for the user, to deliberate and verify multi-step plans before emitting final answers.",
+        "domains": [
+          "it/ai-ml/llm-agents"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Refactoring",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "refactoring",
+        "label": "Refactoring",
+        "summary": "The disciplined technique of restructuring existing source code to improve readability and maintainability without altering observable external behavior.",
+        "domains": [
+          "it/software-engineering/practices"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Regression testing",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "regression-testing",
+        "label": "Regression testing",
+        "summary": "The practice of re-executing test suites against an updated application to ensure that recent code modifications or bug fixes have not disrupted previously working functionality.",
+        "domains": [
+          "it/software-engineering/testing"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "REST",
+    "match": "exact-case",
+    "concepts": [
+      {
+        "id": "rest-api",
+        "label": "REST",
+        "summary": "An architectural style for network applications that uses standard HTTP methods to manipulate resources identified by URIs.",
+        "domains": [
+          "it/web/api"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "RESTful API",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "rest-api",
+        "label": "REST",
+        "summary": "An architectural style for network applications that uses standard HTTP methods to manipulate resources identified by URIs.",
+        "domains": [
+          "it/web/api"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Retention rate",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "retention-rate",
+        "label": "Retention rate",
+        "summary": "The percentage of customers that a business retains over a specified duration, reflecting enduring product value and satisfaction.",
+        "domains": [
+          "product/metrics"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Customer retention",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "retention-rate",
+        "label": "Retention rate",
+        "summary": "The percentage of customers that a business retains over a specified duration, reflecting enduring product value and satisfaction.",
+        "domains": [
+          "product/metrics"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "RICE scoring",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "rice-scoring",
+        "label": "RICE scoring",
+        "summary": "A quantitative prioritization framework that scores potential initiatives by multiplying Reach, Impact, and Confidence and dividing by Effort.",
+        "domains": [
+          "product/delivery-planning"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "RICE",
+    "match": "exact-case",
+    "concepts": [
+      {
+        "id": "rice-scoring",
+        "label": "RICE scoring",
+        "summary": "A quantitative prioritization framework that scores potential initiatives by multiplying Reach, Impact, and Confidence and dividing by Effort.",
+        "domains": [
+          "product/delivery-planning"
         ]
       }
     ],
@@ -704,6 +4351,330 @@
     "autolink": true
   },
   {
+    "key": "Rollback",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "rollback",
+        "label": "Rollback",
+        "summary": "The operational action of reverting an application, configuration, or database deployment to a previously verified stable release.",
+        "domains": [
+          "it/devops/sre-operations"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Deployment rollback",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "rollback",
+        "label": "Rollback",
+        "summary": "The operational action of reverting an application, configuration, or database deployment to a previously verified stable release.",
+        "domains": [
+          "it/devops/sre-operations"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Scope creep",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "scope-creep",
+        "label": "Scope creep",
+        "summary": "The gradual and uncontrolled expansion of project scope beyond initial goals without corresponding adjustments to schedule, budget, or resources.",
+        "domains": [
+          "product/delivery-planning"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Scrum",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "scrum",
+        "label": "Scrum",
+        "summary": "A lightweight process framework structured around transparency, inspection, and adaptation to build products incrementally.",
+        "domains": [
+          "product/agile-scrum"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Scrum master",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "scrum-master",
+        "label": "Scrum master",
+        "summary": "The Scrum role accountable for establishing Scrum practices, promoting team effectiveness, and removing operational impediments.",
+        "domains": [
+          "product/agile-scrum"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "SM",
+    "match": "exact-case",
+    "concepts": [
+      {
+        "id": "scrum-master",
+        "label": "Scrum master",
+        "summary": "The Scrum role accountable for establishing Scrum practices, promoting team effectiveness, and removing operational impediments.",
+        "domains": [
+          "product/agile-scrum"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Software Development Kit (SDK)",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "sdk",
+        "label": "Software Development Kit (SDK)",
+        "summary": "A comprehensive collection of development tools, client libraries, documentation, and code samples designed for creating applications on a specific platform or service.",
+        "domains": [
+          "it/software-engineering/programming-concepts"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "SDK",
+    "match": "exact-case",
+    "concepts": [
+      {
+        "id": "sdk",
+        "label": "Software Development Kit (SDK)",
+        "summary": "A comprehensive collection of development tools, client libraries, documentation, and code samples designed for creating applications on a specific platform or service.",
+        "domains": [
+          "it/software-engineering/programming-concepts"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Secret",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "secret-config",
+        "label": "Secret",
+        "qualifier": "(Software)",
+        "summary": "A sensitive configuration asset, such as an authentication token, password, private key, or certificate, requiring strict encryption and access control.",
+        "domains": [
+          "it/devops/ci-cd",
+          "it/security/authentication"
+        ]
+      }
+    ],
+    "autolink": false
+  },
+  {
+    "key": "Application secret",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "secret-config",
+        "label": "Secret",
+        "qualifier": "(Software)",
+        "summary": "A sensitive configuration asset, such as an authentication token, password, private key, or certificate, requiring strict encryption and access control.",
+        "domains": [
+          "it/devops/ci-cd",
+          "it/security/authentication"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Secret configuration",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "secret-config",
+        "label": "Secret",
+        "qualifier": "(Software)",
+        "summary": "A sensitive configuration asset, such as an authentication token, password, private key, or certificate, requiring strict encryption and access control.",
+        "domains": [
+          "it/devops/ci-cd",
+          "it/security/authentication"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "API secret",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "secret-config",
+        "label": "Secret",
+        "qualifier": "(Software)",
+        "summary": "A sensitive configuration asset, such as an authentication token, password, private key, or certificate, requiring strict encryption and access control.",
+        "domains": [
+          "it/devops/ci-cd",
+          "it/security/authentication"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Semantic versioning",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "semantic-versioning",
+        "label": "Semantic versioning",
+        "summary": "A formal versioning specification utilizing a three-part numbering format (MAJOR.MINOR.PATCH) to communicate the compatibility nature of software changes.",
+        "domains": [
+          "it/software-engineering/practices"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "SemVer",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "semantic-versioning",
+        "label": "Semantic versioning",
+        "summary": "A formal versioning specification utilizing a three-part numbering format (MAJOR.MINOR.PATCH) to communicate the compatibility nature of software changes.",
+        "domains": [
+          "it/software-engineering/practices"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Serverless",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "serverless",
+        "label": "Serverless",
+        "summary": "A cloud computing execution model where the cloud provider dynamically manages server infrastructure and charges only for resource consumption during code execution.",
+        "domains": [
+          "it/infrastructure/cloud"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Serverless computing",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "serverless",
+        "label": "Serverless",
+        "summary": "A cloud computing execution model where the cloud provider dynamically manages server infrastructure and charges only for resource consumption during code execution.",
+        "domains": [
+          "it/infrastructure/cloud"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Function-as-a-Service",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "serverless",
+        "label": "Serverless",
+        "summary": "A cloud computing execution model where the cloud provider dynamically manages server infrastructure and charges only for resource consumption during code execution.",
+        "domains": [
+          "it/infrastructure/cloud"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Sharding",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "sharding",
+        "label": "Sharding",
+        "summary": "A database architecture pattern that horizontally partitions a single logical dataset across multiple independent physical database instances.",
+        "domains": [
+          "it/data/database"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "database sharding",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "sharding",
+        "label": "Sharding",
+        "summary": "A database architecture pattern that horizontally partitions a single logical dataset across multiple independent physical database instances.",
+        "domains": [
+          "it/data/database"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "horizontal partitioning",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "sharding",
+        "label": "Sharding",
+        "summary": "A database architecture pattern that horizontally partitions a single logical dataset across multiple independent physical database instances.",
+        "domains": [
+          "it/data/database"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Side effect",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "side-effect",
+        "label": "Side effect",
+        "qualifier": "(Programming)",
+        "summary": "Any observable change in program state or interaction with the outside world produced by a function or expression beyond returning its computed value.",
+        "domains": [
+          "it/software-engineering/programming-concepts"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
     "key": "Simple Interest",
     "match": "any-case",
     "concepts": [
@@ -718,6 +4689,482 @@
       }
     ],
     "autolink": true
+  },
+  {
+    "key": "Service Level Agreement (SLA)",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "sla",
+        "label": "Service Level Agreement (SLA)",
+        "summary": "A formal commitment between a service provider and clients specifying agreed service performance thresholds and contractual penalties for non-compliance.",
+        "domains": [
+          "it/devops/sre-operations"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "SLA",
+    "match": "exact-case",
+    "concepts": [
+      {
+        "id": "sla",
+        "label": "Service Level Agreement (SLA)",
+        "summary": "A formal commitment between a service provider and clients specifying agreed service performance thresholds and contractual penalties for non-compliance.",
+        "domains": [
+          "it/devops/sre-operations"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Service Level Indicator (SLI)",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "sli",
+        "label": "Service Level Indicator (SLI)",
+        "summary": "A carefully chosen quantitative metric that measures the actual level of service delivered to users over time.",
+        "domains": [
+          "it/devops/sre-operations"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "SLI",
+    "match": "exact-case",
+    "concepts": [
+      {
+        "id": "sli",
+        "label": "Service Level Indicator (SLI)",
+        "summary": "A carefully chosen quantitative metric that measures the actual level of service delivered to users over time.",
+        "domains": [
+          "it/devops/sre-operations"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Service Level Objective (SLO)",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "slo",
+        "label": "Service Level Objective (SLO)",
+        "summary": "A precise, target reliability threshold specified by engineering teams to determine acceptable service quality over an extended duration.",
+        "domains": [
+          "it/devops/sre-operations"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "SLO",
+    "match": "exact-case",
+    "concepts": [
+      {
+        "id": "slo",
+        "label": "Service Level Objective (SLO)",
+        "summary": "A precise, target reliability threshold specified by engineering teams to determine acceptable service quality over an extended duration.",
+        "domains": [
+          "it/devops/sre-operations"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Container",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "software-container",
+        "label": "Container",
+        "qualifier": "(Software)",
+        "summary": "A standard unit of software packaging code and all runtime dependencies to execute reliably in isolation on a shared OS kernel.",
+        "domains": [
+          "it/devops/containers"
+        ]
+      }
+    ],
+    "autolink": false
+  },
+  {
+    "key": "Application container",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "software-container",
+        "label": "Container",
+        "qualifier": "(Software)",
+        "summary": "A standard unit of software packaging code and all runtime dependencies to execute reliably in isolation on a shared OS kernel.",
+        "domains": [
+          "it/devops/containers"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Dependency",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "software-dependency",
+        "label": "Dependency",
+        "qualifier": "(Software)",
+        "summary": "An external library, module, package, or service that a software program requires in order to compile, execute, or deliver its intended functionality.",
+        "domains": [
+          "it/software-engineering/practices"
+        ]
+      }
+    ],
+    "autolink": false
+  },
+  {
+    "key": "Software dependency",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "software-dependency",
+        "label": "Dependency",
+        "qualifier": "(Software)",
+        "summary": "An external library, module, package, or service that a software program requires in order to compile, execute, or deliver its intended functionality.",
+        "domains": [
+          "it/software-engineering/practices"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Deployment",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "software-deployment",
+        "label": "Deployment",
+        "qualifier": "(Software)",
+        "summary": "The operational process of releasing, installing, configuring, and activating a software version in a target hosting environment.",
+        "domains": [
+          "it/devops/ci-cd"
+        ]
+      }
+    ],
+    "autolink": false
+  },
+  {
+    "key": "Application deployment",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "software-deployment",
+        "label": "Deployment",
+        "qualifier": "(Software)",
+        "summary": "The operational process of releasing, installing, configuring, and activating a software version in a target hosting environment.",
+        "domains": [
+          "it/devops/ci-cd"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Framework",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "software-framework",
+        "label": "Framework",
+        "qualifier": "(Software)",
+        "summary": "A comprehensive structural foundation providing generic functionality, application lifecycle control, and architectural conventions into which custom code is inserted.",
+        "domains": [
+          "it/software-engineering/programming-concepts"
+        ]
+      }
+    ],
+    "autolink": false
+  },
+  {
+    "key": "Software framework",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "software-framework",
+        "label": "Framework",
+        "qualifier": "(Software)",
+        "summary": "A comprehensive structural foundation providing generic functionality, application lifecycle control, and architectural conventions into which custom code is inserted.",
+        "domains": [
+          "it/software-engineering/programming-concepts"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Library",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "software-library",
+        "label": "Library",
+        "qualifier": "(Software)",
+        "summary": "A packaged collection of pre-written functions, classes, and subroutines that developers import and call directly to accomplish specific programmatic tasks.",
+        "domains": [
+          "it/software-engineering/programming-concepts"
+        ]
+      }
+    ],
+    "autolink": false
+  },
+  {
+    "key": "Software library",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "software-library",
+        "label": "Library",
+        "qualifier": "(Software)",
+        "summary": "A packaged collection of pre-written functions, classes, and subroutines that developers import and call directly to accomplish specific programmatic tasks.",
+        "domains": [
+          "it/software-engineering/programming-concepts"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Sprint",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "sprint-agile",
+        "label": "Sprint",
+        "qualifier": "(Agile)",
+        "summary": "A timeboxed iteration of one month or less during which a team builds a functional, verified product increment.",
+        "domains": [
+          "product/agile-scrum"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Sprint planning",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "sprint-planning",
+        "label": "Sprint planning",
+        "summary": "The collaborative event initiating each sprint where the Scrum team defines the sprint goal and forecasts backlog delivery.",
+        "domains": [
+          "product/agile-scrum"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Sprint retrospective",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "sprint-retrospective",
+        "label": "Sprint retrospective",
+        "summary": "The final event of a sprint where the Scrum team inspects its past performance regarding people, relationships, process, and tools to identify actionable improvements.",
+        "domains": [
+          "product/agile-scrum"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Retro",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "sprint-retrospective",
+        "label": "Sprint retrospective",
+        "summary": "The final event of a sprint where the Scrum team inspects its past performance regarding people, relationships, process, and tools to identify actionable improvements.",
+        "domains": [
+          "product/agile-scrum"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "SQL",
+    "match": "exact-case",
+    "concepts": [
+      {
+        "id": "sql",
+        "label": "SQL",
+        "summary": "A standardized declarative programming language used to manage, query, and manipulate data stored in relational database management systems.",
+        "domains": [
+          "it/data/database"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Structured Query Language",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "sql",
+        "label": "SQL",
+        "summary": "A standardized declarative programming language used to manage, query, and manipulate data stored in relational database management systems.",
+        "domains": [
+          "it/data/database"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "SQL injection",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "sql-injection",
+        "label": "SQL injection",
+        "summary": "A web security vulnerability that allows an attacker to interfere with backend database queries by injecting malicious SQL statements into input fields.",
+        "domains": [
+          "it/security/vulnerabilities"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "SQLi",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "sql-injection",
+        "label": "SQL injection",
+        "summary": "A web security vulnerability that allows an attacker to interfere with backend database queries by injecting malicious SQL statements into input fields.",
+        "domains": [
+          "it/security/vulnerabilities"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Staging environment",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "staging-environment",
+        "label": "Staging environment",
+        "summary": "A pre-production testing environment that mirrors the exact hardware, architecture, and configuration of the production system to conduct final verification.",
+        "domains": [
+          "it/devops/ci-cd"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Staging server",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "staging-environment",
+        "label": "Staging environment",
+        "summary": "A pre-production testing environment that mirrors the exact hardware, architecture, and configuration of the production system to conduct final verification.",
+        "domains": [
+          "it/devops/ci-cd"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Pre-production environment",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "staging-environment",
+        "label": "Staging environment",
+        "summary": "A pre-production testing environment that mirrors the exact hardware, architecture, and configuration of the production system to conduct final verification.",
+        "domains": [
+          "it/devops/ci-cd"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Stage environment",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "staging-environment",
+        "label": "Staging environment",
+        "summary": "A pre-production testing environment that mirrors the exact hardware, architecture, and configuration of the production system to conduct final verification.",
+        "domains": [
+          "it/devops/ci-cd"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Stakeholder",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "stakeholder",
+        "label": "Stakeholder",
+        "summary": "An individual, team, or organization that can affect, be affected by, or perceive itself to be affected by a product decision or outcome.",
+        "domains": [
+          "product/product-management"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Story point",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "story-point",
+        "label": "Story point",
+        "summary": "A relative number that agile teams use to estimate how much total effort a backlog item will take, compared with other items.",
+        "domains": [
+          "product/agile-scrum"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Point",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "story-point",
+        "label": "Story point",
+        "summary": "A relative number that agile teams use to estimate how much total effort a backlog item will take, compared with other items.",
+        "domains": [
+          "product/agile-scrum"
+        ]
+      }
+    ],
+    "autolink": false
   },
   {
     "key": "Structured output",
@@ -750,6 +5197,21 @@
     "autolink": true
   },
   {
+    "key": "Subagent",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "subagent",
+        "label": "Subagent",
+        "summary": "A specialized agent spawned and coordinated by a primary supervisor agent to execute an isolated, narrow task within a multi-agent system.",
+        "domains": [
+          "it/ai-ml/llm-agents"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
     "key": "System prompt",
     "match": "any-case",
     "concepts": [
@@ -759,6 +5221,129 @@
         "summary": "Instructions placed before the conversation that set the model’s role, rules and style for every later message.",
         "domains": [
           "it/ai-ml/llm-agents"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Technical debt",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "technical-debt",
+        "label": "Technical debt",
+        "summary": "The accumulated implied cost of additional future rework caused by choosing an expedited, suboptimal technical solution instead of a well-architected approach.",
+        "domains": [
+          "it/software-engineering/practices"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Temperature",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "temperature-llm",
+        "label": "Temperature",
+        "qualifier": "(AI)",
+        "summary": "A sampling hyperparameter that scales logits before softmax to regulate the randomness and diversity of a language model's output tokens.",
+        "domains": [
+          "it/ai-ml/llm-agents"
+        ]
+      }
+    ],
+    "autolink": false
+  },
+  {
+    "key": "Throughput",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "throughput",
+        "label": "Throughput",
+        "summary": "The rate at which a computer system, communication channel, or application successfully processes and delivers data or transactions per unit of time.",
+        "domains": [
+          "it/infrastructure/networking"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "System throughput",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "throughput",
+        "label": "Throughput",
+        "summary": "The rate at which a computer system, communication channel, or application successfully processes and delivers data or transactions per unit of time.",
+        "domains": [
+          "it/infrastructure/networking"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Network throughput",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "throughput",
+        "label": "Throughput",
+        "summary": "The rate at which a computer system, communication channel, or application successfully processes and delivers data or transactions per unit of time.",
+        "domains": [
+          "it/infrastructure/networking"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Requests per second",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "throughput",
+        "label": "Throughput",
+        "summary": "The rate at which a computer system, communication channel, or application successfully processes and delivers data or transactions per unit of time.",
+        "domains": [
+          "it/infrastructure/networking"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Transport Layer Security (TLS)",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "tls",
+        "label": "Transport Layer Security (TLS)",
+        "summary": "A cryptographic communication protocol that provides privacy, data integrity, and authentication for communications over computer networks.",
+        "domains": [
+          "it/security/cryptography",
+          "it/infrastructure/networking"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "TLS",
+    "match": "exact-case",
+    "concepts": [
+      {
+        "id": "tls",
+        "label": "Transport Layer Security (TLS)",
+        "summary": "A cryptographic communication protocol that provides privacy, data integrity, and authentication for communications over computer networks.",
+        "domains": [
+          "it/security/cryptography",
+          "it/infrastructure/networking"
         ]
       }
     ],
@@ -897,6 +5482,157 @@
     "autolink": true
   },
   {
+    "key": "Top-p sampling",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "top-p-sampling",
+        "label": "Top-p sampling",
+        "summary": "A text generation decoding strategy that selects from the smallest subset of candidate tokens whose cumulative probability reaches a threshold p.",
+        "domains": [
+          "it/ai-ml/llm-agents"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Nucleus sampling",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "top-p-sampling",
+        "label": "Top-p sampling",
+        "summary": "A text generation decoding strategy that selects from the smallest subset of candidate tokens whose cumulative probability reaches a threshold p.",
+        "domains": [
+          "it/ai-ml/llm-agents"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Transformer",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "transformer",
+        "label": "Transformer",
+        "qualifier": "(AI)",
+        "summary": "A neural network architecture relying on self-attention mechanisms to process sequence elements in parallel without recurrent connections.",
+        "domains": [
+          "it/ai-ml/foundations"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Type checking",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "type-checking",
+        "label": "Type checking",
+        "summary": "The verification process that evaluates whether data values assigned to variables or passed to functions comply with the rules of a programming language type system.",
+        "domains": [
+          "it/software-engineering/programming-concepts"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Unit test",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "unit-test",
+        "label": "Unit test",
+        "summary": "An automated test that isolates and verifies the behavioral correctness of the smallest testable component or function of an application.",
+        "domains": [
+          "it/software-engineering/testing"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Uptime",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "uptime",
+        "label": "Uptime",
+        "summary": "The proportion or duration of time that a computer system, network, or application remains fully functional and accessible to users.",
+        "domains": [
+          "it/devops/sre-operations"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "System uptime",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "uptime",
+        "label": "Uptime",
+        "summary": "The proportion or duration of time that a computer system, network, or application remains fully functional and accessible to users.",
+        "domains": [
+          "it/devops/sre-operations"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Service availability",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "uptime",
+        "label": "Uptime",
+        "summary": "The proportion or duration of time that a computer system, network, or application remains fully functional and accessible to users.",
+        "domains": [
+          "it/devops/sre-operations"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "User story",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "user-story",
+        "label": "User story",
+        "summary": "A concise, non-technical explanation of a software requirement capturing user intent, desired functionality, and business value.",
+        "domains": [
+          "product/agile-scrum"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Story",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "user-story",
+        "label": "User story",
+        "summary": "A concise, non-technical explanation of a software requirement capturing user intent, desired functionality, and business value.",
+        "domains": [
+          "product/agile-scrum"
+        ]
+      }
+    ],
+    "autolink": false
+  },
+  {
     "key": "Vector database",
     "match": "any-case",
     "concepts": [
@@ -906,6 +5642,190 @@
         "summary": "A database built to store embedding vectors and quickly return the ones most similar to a query vector.",
         "domains": [
           "it/ai-ml/nlp"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Velocity",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "velocity-agile",
+        "label": "Velocity",
+        "qualifier": "(Agile)",
+        "summary": "A planning metric tracking the average volume of story points or backlog items completed by a team per sprint.",
+        "domains": [
+          "product/agile-scrum"
+        ]
+      }
+    ],
+    "autolink": false
+  },
+  {
+    "key": "Virtual machine (VM)",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "virtual-machine",
+        "label": "Virtual machine (VM)",
+        "summary": "A software emulation of a physical computer system that executes applications within a dedicated, isolated guest operating system managed by a hypervisor.",
+        "domains": [
+          "it/infrastructure/cloud"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "VM",
+    "match": "exact-case",
+    "concepts": [
+      {
+        "id": "virtual-machine",
+        "label": "Virtual machine (VM)",
+        "summary": "A software emulation of a physical computer system that executes applications within a dedicated, isolated guest operating system managed by a hypervisor.",
+        "domains": [
+          "it/infrastructure/cloud"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Session",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "web-session",
+        "label": "Session",
+        "qualifier": "(Web)",
+        "summary": "A server-side state mechanism that tracks an individual user’s interactions and identity across multiple stateless HTTP requests.",
+        "domains": [
+          "it/web/backend"
+        ]
+      }
+    ],
+    "autolink": false
+  },
+  {
+    "key": "web session",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "web-session",
+        "label": "Session",
+        "qualifier": "(Web)",
+        "summary": "A server-side state mechanism that tracks an individual user’s interactions and identity across multiple stateless HTTP requests.",
+        "domains": [
+          "it/web/backend"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "user session",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "web-session",
+        "label": "Session",
+        "qualifier": "(Web)",
+        "summary": "A server-side state mechanism that tracks an individual user’s interactions and identity across multiple stateless HTTP requests.",
+        "domains": [
+          "it/web/backend"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Webhook",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "webhook",
+        "label": "Webhook",
+        "summary": "An automated HTTP POST callback triggered by an origin system to deliver real-time event payloads to external receiver endpoints.",
+        "domains": [
+          "it/web/api"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "HTTP callback",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "webhook",
+        "label": "Webhook",
+        "summary": "An automated HTTP POST callback triggered by an origin system to deliver real-time event payloads to external receiver endpoints.",
+        "domains": [
+          "it/web/api"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Cross-site scripting (XSS)",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "xss",
+        "label": "Cross-site scripting (XSS)",
+        "summary": "A web application flaw permitting attackers to embed rogue executable scripts into viewed pages, running unauthorized actions inside visitor browsers.",
+        "domains": [
+          "it/security/vulnerabilities"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "XSS",
+    "match": "exact-case",
+    "concepts": [
+      {
+        "id": "xss",
+        "label": "Cross-site scripting (XSS)",
+        "summary": "A web application flaw permitting attackers to embed rogue executable scripts into viewed pages, running unauthorized actions inside visitor browsers.",
+        "domains": [
+          "it/security/vulnerabilities"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Zero trust",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "zero-trust",
+        "label": "Zero trust",
+        "summary": "A cybersecurity framework requiring continuous verification of every user, device, and network transaction, operating under the assumption that breaches are already present.",
+        "domains": [
+          "it/security/authentication"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "zero trust architecture",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "zero-trust",
+        "label": "Zero trust",
+        "summary": "A cybersecurity framework requiring continuous verification of every user, device, and network transaction, operating under the assumption that breaches are already present.",
+        "domains": [
+          "it/security/authentication"
         ]
       }
     ],

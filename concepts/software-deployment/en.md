@@ -3,14 +3,12 @@ label: Deployment
 qualifier: (Software)
 aliases:
   - Application deployment
-  - Release deployment
 loanwords: []
 plain_descriptions:
   - the process of installing and activating a new version of software on live servers
   - rolling out updated application packages to make them accessible to users
 summary: >-
-  The operational process of releasing, installing, configuring, and activating a software version in a target hosting
-  environment.
+  The operational process of releasing, installing, configuring, and activating a software version in a target hosting environment.
 confusable_notes: {}
 follow_up_questions:
   - What mechanisms allow rolling deployments to update instances without causing downtime?

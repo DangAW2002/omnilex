@@ -14,6 +14,9 @@ follow_up_questions:
   - "Why does estimating in relative points produce more consistent forecasts than estimating in hours?"
   - "How does using modified Fibonacci numbers (1, 2, 3, 5, 8, 13) expose estimation uncertainty?"
 translation: native
+autolink:
+  aliases:
+    Point: never
 ---
 
 ## Easy explanation

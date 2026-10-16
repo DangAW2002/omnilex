@@ -7,6 +7,8 @@ loanwords:
   - temperature
 autolink:
   label: never
+  aliases:
+    Nhiệt độ: never
 plain_descriptions:
   - thông số AI điều chỉnh mức độ sáng tạo hay khuôn mẫu của câu trả lời
   - nút chỉnh độ ngẫu nhiên từ chính xác máy móc đến phong phú bất ngờ

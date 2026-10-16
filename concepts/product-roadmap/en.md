@@ -15,6 +15,9 @@ follow_up_questions:
   - "Why are outcome-based roadmaps often more effective than feature-committed roadmaps?"
   - "How frequently should a product management team revise its roadmap?"
 translation: native
+autolink:
+  aliases:
+    Roadmap: never
 ---
 
 ## Easy explanation

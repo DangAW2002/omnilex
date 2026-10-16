@@ -13,5 +13,29 @@
       "roi",
       "simple-interest"
     ]
+  },
+  {
+    "ref": "k8s-glossary",
+    "title": "Kubernetes Standard Glossary",
+    "publisher": "Cloud Native Computing Foundation",
+    "url": "https://kubernetes.io/docs/reference/glossary/",
+    "license": "CC-BY-4.0",
+    "license_evidence": "https://github.com/kubernetes/website/blob/main/LICENSE",
+    "concepts": [
+      "software-container"
+    ]
+  },
+  {
+    "ref": "nist-csrc",
+    "title": "NIST Computer Security Resource Center Glossary",
+    "publisher": "National Institute of Standards and Technology",
+    "url": "https://csrc.nist.gov/glossary",
+    "license": "public-domain-us-gov",
+    "license_evidence": "https://www.nist.gov/oism/copyrights",
+    "concepts": [
+      "encryption",
+      "mfa",
+      "stakeholder"
+    ]
   }
 ]

@@ -4,7 +4,6 @@ qualifier: (Network)
 aliases:
   - Network latency
   - Round-trip time
-  - Response time
 loanwords: []
 plain_descriptions:
   - the time delay between sending a request and receiving the answer back over a network
@@ -12,8 +11,7 @@ plain_descriptions:
 summary: The time delay incurred for data to travel across a network from its source to its destination and return.
 confusable_notes:
   throughput: >-
-    Latency measures the time elapsed for a single request to travel and complete, whereas throughput measures the total
-    volume of requests or data handled per unit of time.
+    Latency measures the time elapsed for a single request to travel and complete, whereas throughput measures the total volume of requests or data handled per unit of time.
 follow_up_questions:
   - Why do percentile metrics (like p95 and p99) give a far more accurate latency picture than simple averages?
   - How does geographical distance and physical speed of light impose a hard physical limit on internet latency?

@@ -1,5 +1,283 @@
 [
   {
+    "id": "ab-testing",
+    "label": "A/B testing",
+    "aliases": [
+      "Split testing"
+    ],
+    "loanwords": [
+      "a/b testing"
+    ],
+    "plain_descriptions": [
+      "splitting users between two variants of a screen or feature to see which one performs better",
+      "controlled trial where real users are randomly split to measure which design drives higher conversions"
+    ],
+    "summary": "A randomized experimental method where two variants of a digital experience are shown to visitors simultaneously to determine which drives superior outcomes.",
+    "domains": [
+      "product/metrics",
+      "media/digital-marketing/metrics-analytics"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
+    "id": "acceptance-criteria",
+    "label": "Acceptance criteria",
+    "aliases": [
+      "AC"
+    ],
+    "loanwords": [
+      "acceptance criteria",
+      "ac"
+    ],
+    "plain_descriptions": [
+      "specific checklist of conditions that a user story must satisfy before being marked complete",
+      "unambiguous rules showing developers and testers exactly how a feature should behave"
+    ],
+    "summary": "A predefined set of conditions, behaviors, and boundary checks that a specific user story must satisfy to be accepted.",
+    "domains": [
+      "product/agile-scrum"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
+    "id": "ai-agent",
+    "label": "Agent",
+    "qualifier": "(AI)",
+    "aliases": [
+      "AI agent"
+    ],
+    "loanwords": [],
+    "plain_descriptions": [
+      "an AI system that plans steps and uses tools to achieve goals independently",
+      "a software assistant that observes its environment, takes actions, and completes tasks"
+    ],
+    "summary": "An autonomous AI system that reasons over objectives, breaks goals into sequential steps, and interacts with tools and environments to complete tasks.",
+    "domains": [
+      "it/ai-ml/llm-agents"
+    ],
+    "level": 1,
+    "status": "draft"
+  },
+  {
+    "id": "ai-benchmark",
+    "label": "Benchmark",
+    "qualifier": "(AI)",
+    "aliases": [],
+    "loanwords": [],
+    "plain_descriptions": [
+      "standardized test suites used to measure AI model accuracy and hardware speed",
+      "common evaluation exams allowing different AI systems to be fairly compared"
+    ],
+    "summary": "A standardized test suite and measurement protocol used to evaluate and compare the accuracy, throughput, latency, or energy efficiency of models and hardware.",
+    "domains": [
+      "it/ai-ml/mlops"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
+    "id": "api",
+    "label": "Application Programming Interface (API)",
+    "aliases": [
+      "API"
+    ],
+    "loanwords": [],
+    "plain_descriptions": [
+      "a defined bridge that allows two software systems to talk to each other",
+      "a digital waiter taking requests from one application to another"
+    ],
+    "summary": "A set of defined rules, protocols, and endpoints enabling different software applications to communicate and exchange data.",
+    "domains": [
+      "it/web/api",
+      "it/software-engineering/programming-concepts"
+    ],
+    "level": 1,
+    "status": "draft"
+  },
+  {
+    "id": "api-endpoint",
+    "label": "Endpoint",
+    "qualifier": "(API)",
+    "aliases": [
+      "API endpoint"
+    ],
+    "loanwords": [],
+    "plain_descriptions": [
+      "the specific web address where an app sends requests to get certain information",
+      "a digital front door where external software asks a server to do something"
+    ],
+    "summary": "A dedicated network address and URL path exposed by an API where clients access a specific service or resource.",
+    "domains": [
+      "it/web/api"
+    ],
+    "level": 1,
+    "status": "draft"
+  },
+  {
+    "id": "attention-mechanism",
+    "label": "Attention mechanism",
+    "aliases": [
+      "Self-attention"
+    ],
+    "loanwords": [],
+    "plain_descriptions": [
+      "an AI technique that weighs which input words matter most at each step",
+      "the computational method letting models focus dynamically on relevant context"
+    ],
+    "summary": "A mathematical algorithm allowing neural models to calculate dynamic relevance weights between all tokens within an input sequence.",
+    "domains": [
+      "it/ai-ml/foundations"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
+    "id": "autoscaling",
+    "label": "Autoscaling",
+    "aliases": [
+      "Auto-scaling",
+      "Dynamic scaling",
+      "Horizontal Pod Autoscaler"
+    ],
+    "loanwords": [],
+    "plain_descriptions": [
+      "automatically adding more servers when traffic spikes and removing them when things quiet down to save money",
+      "the system capability that expands or shrinks computing power based on real-time demand"
+    ],
+    "summary": "A cloud mechanism that automatically adjusts the number of active computing resources up or down based on real-time demand metrics.",
+    "domains": [
+      "it/infrastructure/cloud"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
+    "id": "batch-size",
+    "label": "Batch size",
+    "aliases": [],
+    "loanwords": [],
+    "plain_descriptions": [
+      "the number of training examples processed together in one forward and backward step",
+      "how many data samples an AI looks at before updating its internal weights"
+    ],
+    "summary": "The number of training samples processed simultaneously in a single iteration before the model parameters are updated.",
+    "domains": [
+      "it/ai-ml/foundations"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
+    "id": "blue-green-deployment",
+    "label": "Blue-green deployment",
+    "aliases": [
+      "Red-black deployment"
+    ],
+    "loanwords": [],
+    "plain_descriptions": [
+      "running two identical environments side by side and switching user traffic instantly to the new one",
+      "a release technique that eliminates downtime by preparing updates in a cloned backup environment"
+    ],
+    "summary": "A deployment strategy that provisions two identical production environments (Blue and Green), shifting all traffic from the active to the idle environment upon validation.",
+    "domains": [
+      "it/devops/ci-cd"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
+    "id": "breaking-change",
+    "label": "Breaking change",
+    "aliases": [],
+    "loanwords": [],
+    "plain_descriptions": [
+      "a modification in software or an API that breaks existing programs depending on it",
+      "an update that requires downstream developers to rewrite parts of their code to keep working"
+    ],
+    "summary": "A modification in a software interface, dependency, or system component that breaks backward compatibility and necessitates code adjustments in dependent systems.",
+    "domains": [
+      "it/software-engineering/practices"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
+    "id": "burndown-chart",
+    "label": "Burndown chart",
+    "aliases": [],
+    "loanwords": [
+      "burndown chart"
+    ],
+    "plain_descriptions": [
+      "visual graph showing remaining work decreasing day by day throughout a sprint",
+      "progress tracking chart comparing actual remaining effort against an ideal completion slope"
+    ],
+    "summary": "A graphical representation of work left to do versus time, utilized by agile squads to forecast sprint completion trajectories.",
+    "domains": [
+      "product/delivery-planning"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
+    "id": "cache",
+    "label": "Cache",
+    "qualifier": "(Software)",
+    "aliases": [
+      "software cache",
+      "memory cache"
+    ],
+    "loanwords": [],
+    "plain_descriptions": [
+      "a fast temporary storage area saving frequent answers so the computer skips slow re-calculations",
+      "keeping copies of popular web pages in memory so users don't wait for slow database queries"
+    ],
+    "summary": "A high-speed data storage layer that stores a subset of transient data so future requests are served faster than accessing primary storage.",
+    "domains": [
+      "it/web/backend"
+    ],
+    "level": 1,
+    "status": "draft"
+  },
+  {
+    "id": "canary-release",
+    "label": "Canary release",
+    "aliases": [
+      "Canary deployment"
+    ],
+    "loanwords": [],
+    "plain_descriptions": [
+      "testing a new software version on a tiny percentage of real users before releasing it to everyone",
+      "a gradual rollout technique that exposes early bugs safely without risking the entire user base"
+    ],
+    "summary": "A deployment technique that exposes a new software release to a small fraction of production traffic to validate behavior before broader rollout.",
+    "domains": [
+      "it/devops/ci-cd"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
+    "id": "cdn",
+    "label": "Content Delivery Network (CDN)",
+    "aliases": [
+      "CDN"
+    ],
+    "loanwords": [],
+    "plain_descriptions": [
+      "a worldwide network of caching servers that delivers web pages and images quickly from locations near the user",
+      "a distributed cache that speeds up websites by serving files from nearby edge servers"
+    ],
+    "summary": "A geographically distributed network of proxy servers that caches and delivers web content to users with low latency and high availability.",
+    "domains": [
+      "it/infrastructure/networking"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
     "id": "chain-of-thought",
     "label": "Chain-of-thought prompting",
     "aliases": [
@@ -16,6 +294,80 @@
       "it/ai-ml/llm-agents"
     ],
     "level": 2,
+    "status": "draft"
+  },
+  {
+    "id": "churn-rate",
+    "label": "Churn rate",
+    "aliases": [
+      "Customer churn"
+    ],
+    "loanwords": [
+      "churn rate"
+    ],
+    "plain_descriptions": [
+      "percentage of customers who stop using or paying for a service during a given time period",
+      "rate at which subscribers cancel memberships or abandon an application"
+    ],
+    "summary": "The share of paying users who stop, by cancelling or not renewing, during a given period.",
+    "domains": [
+      "product/metrics"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
+    "id": "ci-cd",
+    "label": "CI/CD",
+    "aliases": [
+      "Continuous Integration and Continuous Delivery"
+    ],
+    "loanwords": [],
+    "plain_descriptions": [
+      "automatically building, testing, and shipping code changes whenever engineers push work",
+      "the automated pipeline that moves software from development to live production servers"
+    ],
+    "summary": "A modern engineering methodology uniting frequent source integration with automated regression testing and reliable application deployment.",
+    "domains": [
+      "it/devops/ci-cd"
+    ],
+    "level": 1,
+    "status": "draft"
+  },
+  {
+    "id": "ci-pipeline",
+    "label": "Pipeline",
+    "qualifier": "(CI/CD)",
+    "aliases": [
+      "CI/CD pipeline",
+      "build pipeline"
+    ],
+    "loanwords": [],
+    "plain_descriptions": [
+      "the step-by-step automated workflow that builds, tests, and packages code changes",
+      "the scripted sequence that takes software from a commit to a deployable artifact"
+    ],
+    "summary": "A defined sequential series of automated execution steps that compiles, tests, and packages application updates.",
+    "domains": [
+      "it/devops/ci-cd"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
+    "id": "code-review",
+    "label": "Code review",
+    "aliases": [],
+    "loanwords": [],
+    "plain_descriptions": [
+      "having teammate developers examine your code changes before merging",
+      "a peer inspection of source code to catch bugs and uphold standards"
+    ],
+    "summary": "A collaborative peer-review practice where software engineers systematically examine proposed code changes to identify defects, enforce architectural standards, and share knowledge.",
+    "domains": [
+      "it/software-engineering/practices"
+    ],
+    "level": 1,
     "status": "draft"
   },
   {
@@ -36,6 +388,42 @@
     ],
     "level": 1,
     "status": "reviewed"
+  },
+  {
+    "id": "container-image",
+    "label": "Image",
+    "qualifier": "(Container)",
+    "aliases": [
+      "Container image",
+      "Docker image"
+    ],
+    "loanwords": [],
+    "plain_descriptions": [
+      "the static template or blueprint used to create and run containers",
+      "a frozen snapshot of software files, system libraries, and startup commands"
+    ],
+    "summary": "An immutable, read-only package containing application binaries, libraries, configuration files, and metadata required to launch a container.",
+    "domains": [
+      "it/devops/containers"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
+    "id": "context-engineering",
+    "label": "Context engineering",
+    "aliases": [],
+    "loanwords": [],
+    "plain_descriptions": [
+      "the practice of carefully designing and managing everything fed into an AI's context window",
+      "organizing tokens, instructions, tools, and history to maximize AI accuracy and reduce cost"
+    ],
+    "summary": "The disciplined practice of curating, structuring, compressing, and caching the information loaded into a model's context window to optimize performance and efficiency.",
+    "domains": [
+      "it/ai-ml/llm-agents"
+    ],
+    "level": 2,
+    "status": "draft"
   },
   {
     "id": "context-window",
@@ -74,6 +462,435 @@
     "status": "reviewed"
   },
   {
+    "id": "cors",
+    "label": "Cross-Origin Resource Sharing (CORS)",
+    "aliases": [
+      "CORS"
+    ],
+    "loanwords": [],
+    "plain_descriptions": [
+      "a browser security check deciding if one website can fetch data from another domain",
+      "the rules preventing malicious websites from secretly querying your banking API"
+    ],
+    "summary": "A browser security protocol using special HTTP headers that lets an API grant specific foreign websites permission to fetch its content.",
+    "domains": [
+      "it/web/api",
+      "it/security/vulnerabilities"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
+    "id": "csrf",
+    "label": "Cross-site request forgery (CSRF)",
+    "aliases": [
+      "CSRF"
+    ],
+    "loanwords": [],
+    "plain_descriptions": [
+      "an attack that tricks your browser into making unwanted money transfers on sites where you are logged in",
+      "clicking a trap link on an external page that secretly submits a form to change your account email"
+    ],
+    "summary": "An attack that tricks an authenticated web browser into sending unauthorized commands to a vulnerable web application without the user’s consent.",
+    "domains": [
+      "it/security/vulnerabilities"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
+    "id": "customer-lifetime-value",
+    "label": "Customer lifetime value (CLV)",
+    "aliases": [
+      "CLV",
+      "LTV"
+    ],
+    "loanwords": [
+      "customer lifetime value",
+      "clv",
+      "ltv"
+    ],
+    "plain_descriptions": [
+      "total amount of money a business expects to earn from a customer throughout their entire relationship",
+      "projected net profit or revenue generated by a single user account over its lifespan"
+    ],
+    "summary": "The projected total revenue or profit that a business anticipates earning from a single customer throughout the duration of their relationship.",
+    "domains": [
+      "product/metrics"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
+    "id": "cve",
+    "label": "Common Vulnerabilities and Exposures (CVE)",
+    "aliases": [
+      "CVE"
+    ],
+    "loanwords": [],
+    "plain_descriptions": [
+      "the standardized global dictionary of publicly recognized cybersecurity flaws and software bugs",
+      "an official tracking code like CVE-2021-44228 identifying a specific security flaw"
+    ],
+    "summary": "A publicly available list of standardized identifiers for cybersecurity vulnerabilities and exposures.",
+    "domains": [
+      "it/security/vulnerabilities"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
+    "id": "daily-active-users",
+    "label": "Daily active users (DAU)",
+    "aliases": [
+      "DAU"
+    ],
+    "loanwords": [
+      "daily active users",
+      "dau"
+    ],
+    "plain_descriptions": [
+      "count of unique people who open and interact with an application in a single day",
+      "vital metric tracking daily user volume and ongoing product engagement"
+    ],
+    "summary": "The total count of unique individuals who initiate a meaningful interaction with a software application within a 24-hour day.",
+    "domains": [
+      "product/metrics"
+    ],
+    "level": 1,
+    "status": "draft"
+  },
+  {
+    "id": "daily-scrum",
+    "label": "Daily Scrum",
+    "aliases": [
+      "Stand-up"
+    ],
+    "loanwords": [
+      "daily scrum",
+      "stand-up"
+    ],
+    "plain_descriptions": [
+      "quick fifteen-minute daily morning meeting for developers to sync on sprint progress",
+      "brief stand-up check-in where teammates share achievements, plans, and immediate blockers"
+    ],
+    "summary": "A 15-minute daily inspect-and-adapt event for developers to synchronize activities and plan the next 24 hours of work.",
+    "domains": [
+      "product/agile-scrum"
+    ],
+    "level": 1,
+    "status": "draft"
+  },
+  {
+    "id": "data-lake",
+    "label": "Data lake",
+    "aliases": [
+      "cloud data lake"
+    ],
+    "loanwords": [],
+    "plain_descriptions": [
+      "a huge digital reservoir where companies store raw data in any format until needed",
+      "a flexible storage pool holding audio, text, images, and logs without forcing strict table structures"
+    ],
+    "summary": "A scalable storage repository designed to retain massive volumes of raw multi-format information without requiring an upfront database schema.",
+    "domains": [
+      "it/data/data-engineering"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
+    "id": "data-pipeline",
+    "label": "Data pipeline",
+    "aliases": [],
+    "loanwords": [],
+    "plain_descriptions": [
+      "an automated series of steps moving information from where it is created to where it is used",
+      "software plumbing that pumps live data from user clicks into analytics systems"
+    ],
+    "summary": "An automated sequence of processes that ingests, processes, and transfers raw data from source systems to destination storage.",
+    "domains": [
+      "it/data/data-engineering"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
+    "id": "data-warehouse",
+    "label": "Data warehouse",
+    "aliases": [
+      "enterprise data warehouse"
+    ],
+    "loanwords": [],
+    "plain_descriptions": [
+      "a central database designed specifically for business analysis and fast executive reporting",
+      "a giant organized filing room where companies store cleaned historical business records"
+    ],
+    "summary": "A centralized, relational repository that aggregates structured historical data from across an organization to power business intelligence and reporting.",
+    "domains": [
+      "it/data/data-engineering"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
+    "id": "database-index",
+    "label": "Index",
+    "qualifier": "(Database)",
+    "aliases": [
+      "database index",
+      "table index"
+    ],
+    "loanwords": [],
+    "plain_descriptions": [
+      "a sorted lookup helper that lets the database find specific rows in milliseconds instead of scanning the whole disk",
+      "an alphabetical index at the back of a book pointing directly to table rows"
+    ],
+    "summary": "A specialized data structure associated with a database table that accelerates record retrieval at the expense of extra storage and slower writes.",
+    "domains": [
+      "it/data/database"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
+    "id": "database-migration",
+    "label": "Migration",
+    "qualifier": "(Database)",
+    "aliases": [
+      "schema migration",
+      "database migration"
+    ],
+    "loanwords": [],
+    "plain_descriptions": [
+      "a version-controlled script that safely updates database table layouts as software evolves",
+      "a step-by-step code file for adding new columns or tables to live databases"
+    ],
+    "summary": "A version-controlled set of programmatic scripts that safely alter database schemas over time without losing existing data.",
+    "domains": [
+      "it/data/database"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
+    "id": "database-replication",
+    "label": "Replication",
+    "qualifier": "(Database)",
+    "aliases": [
+      "database replication",
+      "read replica"
+    ],
+    "loanwords": [],
+    "plain_descriptions": [
+      "copying database records automatically to backup servers so the system survives hardware failures",
+      "syncing data across multiple database copies so heavy user reads don't slow down writes"
+    ],
+    "summary": "The continuous electronic copying of data from one database server to one or more replica servers to ensure high availability and read scalability.",
+    "domains": [
+      "it/data/database"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
+    "id": "database-schema",
+    "label": "Schema",
+    "qualifier": "(Database)",
+    "aliases": [
+      "database schema",
+      "table schema"
+    ],
+    "loanwords": [],
+    "plain_descriptions": [
+      "the overall architectural blueprint defining the tables, columns, and rules in a database",
+      "the formal structural layout describing what kinds of data a database is allowed to hold"
+    ],
+    "summary": "The formal structural blueprint of a database that defines tables, fields, data types, relationships, and integrity constraints.",
+    "domains": [
+      "it/data/database"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
+    "id": "database-transaction",
+    "label": "Transaction",
+    "qualifier": "(Database)",
+    "aliases": [
+      "database transaction",
+      "DB transaction"
+    ],
+    "loanwords": [],
+    "plain_descriptions": [
+      "an all-or-nothing group of database operations that either completely succeeds or leaves data untouched",
+      "a safe execution wrapper ensuring money transfers debit one account and credit another atomically"
+    ],
+    "summary": "A sequence of database operations executed as a single, atomic unit of work satisfying ACID properties.",
+    "domains": [
+      "it/data/database"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
+    "id": "dataset",
+    "label": "Dataset",
+    "aliases": [],
+    "loanwords": [],
+    "plain_descriptions": [
+      "a structured collection of examples used to teach or test AI",
+      "the organized data gathered together for machine learning experiments"
+    ],
+    "summary": "A structured collection of data records, features, and targets partitioned to train, validate, and benchmark algorithms.",
+    "domains": [
+      "it/ai-ml/foundations"
+    ],
+    "level": 1,
+    "status": "draft"
+  },
+  {
+    "id": "deep-learning",
+    "label": "Deep learning",
+    "aliases": [],
+    "loanwords": [],
+    "plain_descriptions": [
+      "machine learning powered by deep neural networks with many hidden layers",
+      "advanced AI techniques that automatically learn rich representations from raw data"
+    ],
+    "summary": "A specialized subset of machine learning utilizing multi-layered neural networks to extract hierarchical feature representations directly from complex data.",
+    "domains": [
+      "it/ai-ml/foundations"
+    ],
+    "level": 1,
+    "status": "draft"
+  },
+  {
+    "id": "definition-of-done",
+    "label": "Definition of Done (DoD)",
+    "aliases": [
+      "DoD"
+    ],
+    "loanwords": [
+      "definition of done",
+      "dod"
+    ],
+    "plain_descriptions": [
+      "shared quality checklist that every piece of work must meet before being considered finished",
+      "formal agreement covering code reviews, automated tests, documentation, and deployment steps"
+    ],
+    "summary": "A formal commitment detailing the technical and quality standards that every product increment must satisfy to be release-ready.",
+    "domains": [
+      "product/agile-scrum"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
+    "id": "deprecation",
+    "label": "Deprecation",
+    "qualifier": "(Software)",
+    "aliases": [],
+    "loanwords": [],
+    "plain_descriptions": [
+      "officially warning developers that a feature will be removed in a future update",
+      "marking old code as discouraged from use while keeping it working for now"
+    ],
+    "summary": "The practice of marking a software feature, API, or package as obsolete and discouraged from use, signaling that it will be removed in a future release.",
+    "domains": [
+      "it/software-engineering/practices"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
+    "id": "design-pattern",
+    "label": "Design pattern",
+    "aliases": [],
+    "loanwords": [],
+    "plain_descriptions": [
+      "a reusable template or battle-tested solution to a commonly occurring coding problem",
+      "a proven blueprint for structuring software components to solve standard architectural challenges"
+    ],
+    "summary": "A named, proven way of structuring code that solves a design problem developers meet again and again, such as creating objects or reacting to changes.",
+    "domains": [
+      "it/software-engineering/architecture"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
+    "id": "distributed-tracing",
+    "label": "Distributed tracing",
+    "aliases": [
+      "Request tracing",
+      "APM tracing"
+    ],
+    "loanwords": [],
+    "plain_descriptions": [
+      "following a single user request as it travels across dozens of microservices to pinpoint where delays occur",
+      "a map showing the exact path and timing of an operation through connected servers"
+    ],
+    "summary": "A monitoring method that tracks the lifecycle of an execution request as it travels across multiple networked services and processes.",
+    "domains": [
+      "it/devops/observability"
+    ],
+    "level": 3,
+    "status": "draft"
+  },
+  {
+    "id": "dns",
+    "label": "Domain Name System (DNS)",
+    "aliases": [
+      "DNS"
+    ],
+    "loanwords": [],
+    "plain_descriptions": [
+      "the internet phonebook that translates human-friendly website names like example.com into computer IP addresses",
+      "the directory service connecting domain names to web server numbers"
+    ],
+    "summary": "The hierarchical, decentralized naming system that translates human-readable domain names into numerical IP addresses for network routing.",
+    "domains": [
+      "it/infrastructure/networking"
+    ],
+    "level": 1,
+    "status": "draft"
+  },
+  {
+    "id": "docker",
+    "label": "Docker",
+    "aliases": [
+      "Docker Engine"
+    ],
+    "loanwords": [],
+    "plain_descriptions": [
+      "the most popular software tool for building, running, and managing containers",
+      "the platform that popularised container packaging for modern software development"
+    ],
+    "summary": "An open commercial platform providing tooling to build, share, package, and execute application containers using host operating system virtualization.",
+    "domains": [
+      "it/devops/containers"
+    ],
+    "level": 1,
+    "status": "draft"
+  },
+  {
+    "id": "edge-case",
+    "label": "Edge case",
+    "aliases": [],
+    "loanwords": [],
+    "plain_descriptions": [
+      "an unusual or extreme scenario that occurs only at the outer limits of operating parameters",
+      "a rare condition or extreme input that software must handle without failing"
+    ],
+    "summary": "A problem or operational situation that occurs only at extreme minimum or maximum operating parameters, testing the boundaries of system resilience.",
+    "domains": [
+      "it/software-engineering/testing"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
     "id": "embedding",
     "label": "Embedding",
     "aliases": [
@@ -88,6 +905,133 @@
     "summary": "A list of numbers learned by a model to represent an item such as a word or a document, so that similar items end up close together.",
     "domains": [
       "it/ai-ml/nlp"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
+    "id": "encryption",
+    "label": "Encryption",
+    "aliases": [
+      "data encryption"
+    ],
+    "loanwords": [],
+    "plain_descriptions": [
+      "scrambling secret information into unreadable code that only someone with the correct key can unlock",
+      "locking confidential data with a digital key so eavesdroppers see only scrambled nonsense"
+    ],
+    "summary": "The cryptographic process of encoding plaintext into ciphertext so that only authorized parties with the matching decryption key can read it.",
+    "domains": [
+      "it/security/cryptography"
+    ],
+    "level": 1,
+    "status": "draft"
+  },
+  {
+    "id": "end-to-end-test",
+    "label": "End-to-end test",
+    "aliases": [
+      "E2E test"
+    ],
+    "loanwords": [],
+    "plain_descriptions": [
+      "simulating a complete real user journey through the entire application from start to finish",
+      "testing an entire system including frontend, backend, database, and third-party integrations together"
+    ],
+    "summary": "A comprehensive testing methodology that validates the flow of an application from the user interface down through all underlying backend services and databases.",
+    "domains": [
+      "it/software-engineering/testing"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
+    "id": "environment-variable",
+    "label": "Environment variable",
+    "aliases": [
+      "Env var",
+      "System environment variable"
+    ],
+    "loanwords": [],
+    "plain_descriptions": [
+      "a dynamic key-value setting stored outside software code to configure how it behaves in different environments",
+      "a configuration variable provided by the operating system to running programs"
+    ],
+    "summary": "A dynamic key-value pair stored in the operating system environment that configures program behavior without altering application source code.",
+    "domains": [
+      "it/devops/ci-cd"
+    ],
+    "level": 1,
+    "status": "draft"
+  },
+  {
+    "id": "epic-agile",
+    "label": "Epic",
+    "qualifier": "(Agile)",
+    "aliases": [],
+    "loanwords": [
+      "epic"
+    ],
+    "plain_descriptions": [
+      "large body of work that spans multiple sprints and is split into several user stories",
+      "major product initiative or feature theme organized across a longer development timeframe"
+    ],
+    "summary": "A substantial strategic initiative in agile software delivery that encompasses a collection of related user stories delivered over several sprints.",
+    "domains": [
+      "product/agile-scrum"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
+    "id": "epoch-ml",
+    "label": "Epoch",
+    "qualifier": "(AI)",
+    "aliases": [],
+    "loanwords": [],
+    "plain_descriptions": [
+      "one complete pass of an entire training dataset through an AI model",
+      "a full cycle of training where every single example has been seen once"
+    ],
+    "summary": "One complete training cycle during which the learning algorithm processes every sample in the training dataset exactly once.",
+    "domains": [
+      "it/ai-ml/foundations"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
+    "id": "etl",
+    "label": "Extract, Transform, Load (ETL)",
+    "aliases": [
+      "ETL"
+    ],
+    "loanwords": [],
+    "plain_descriptions": [
+      "pulling data from various places, cleaning it up, and saving it into a central analytics database",
+      "the three-step data pipeline that prepares raw business numbers for dashboards and reports"
+    ],
+    "summary": "A data integration process that extracts data from multiple sources, transforms it to meet analytical requirements, and loads it into a destination store.",
+    "domains": [
+      "it/data/data-engineering"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
+    "id": "feature-flag",
+    "label": "Feature flag",
+    "aliases": [
+      "Feature toggle"
+    ],
+    "loanwords": [],
+    "plain_descriptions": [
+      "a software switch that turns a feature on or off without deploying new code",
+      "a configuration toggle allowing gradual rollout of features to specific users"
+    ],
+    "summary": "A software engineering technique that enables or disables functionality remotely at runtime through configuration without altering and redeploying source code.",
+    "domains": [
+      "it/software-engineering/practices"
     ],
     "level": 2,
     "status": "draft"
@@ -148,6 +1092,124 @@
     "status": "draft"
   },
   {
+    "id": "git-branch",
+    "label": "Branch",
+    "qualifier": "(Git)",
+    "aliases": [],
+    "loanwords": [],
+    "plain_descriptions": [
+      "an independent line of work in a repository allowing safe experimentation",
+      "a movable pointer pointing to the latest commit in an isolated development path"
+    ],
+    "summary": "A lightweight movable reference pointing to a specific commit within a Git repository that represents an independent timeline of development.",
+    "domains": [
+      "it/software-engineering/version-control"
+    ],
+    "level": 1,
+    "status": "draft"
+  },
+  {
+    "id": "git-commit",
+    "label": "Commit",
+    "qualifier": "(Git)",
+    "aliases": [],
+    "loanwords": [],
+    "plain_descriptions": [
+      "a saved snapshot recording the exact state of project files with an explanatory note",
+      "a permanent record in the repository history describing what was changed and who changed it"
+    ],
+    "summary": "An immutable snapshot of staged changes recorded into Git repository history, associated with author metadata, timestamp, parent hashes, and a descriptive log message.",
+    "domains": [
+      "it/software-engineering/version-control"
+    ],
+    "level": 1,
+    "status": "draft"
+  },
+  {
+    "id": "git-rebase",
+    "label": "Rebase",
+    "aliases": [],
+    "loanwords": [],
+    "plain_descriptions": [
+      "moving your branch commits so they sit on top of the newest commit of another branch",
+      "rewriting Git history to produce a neat, linear sequence of project changes"
+    ],
+    "summary": "A Git command that moves or reapplies a sequence of commits from one branch on top of a new base tip, creating a linear history.",
+    "domains": [
+      "it/software-engineering/version-control"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
+    "id": "gpu",
+    "label": "Graphics Processing Unit (GPU)",
+    "aliases": [
+      "GPU"
+    ],
+    "loanwords": [],
+    "plain_descriptions": [
+      "high-performance computer chips designed to handle massive parallel math for AI",
+      "the dedicated hardware processors that accelerate neural network training and inference"
+    ],
+    "summary": "A specialized electronic processor optimized for high-throughput parallel execution of mathematical matrix operations essential for deep learning.",
+    "domains": [
+      "it/ai-ml/mlops",
+      "it/infrastructure/cloud"
+    ],
+    "level": 1,
+    "status": "draft"
+  },
+  {
+    "id": "gradient-descent",
+    "label": "Gradient descent",
+    "aliases": [],
+    "loanwords": [],
+    "plain_descriptions": [
+      "the core optimization math that guides AI models toward lower error",
+      "taking small steps down a mathematical slope to find the best model weights"
+    ],
+    "summary": "An iterative optimization algorithm that updates model parameters in the opposite direction of the loss function gradient to minimize prediction error.",
+    "domains": [
+      "it/ai-ml/foundations"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
+    "id": "graphql",
+    "label": "GraphQL",
+    "aliases": [],
+    "loanwords": [],
+    "plain_descriptions": [
+      "an API tool that lets client apps request only the exact data fields they need",
+      "a single query language for frontends to fetch custom data shapes in one go"
+    ],
+    "summary": "An open query language and runtime for APIs that allows clients to request exact data shapes and consolidate multiple resources in one request.",
+    "domains": [
+      "it/web/api"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
+    "id": "grounding-ai",
+    "label": "Grounding",
+    "qualifier": "(AI)",
+    "aliases": [],
+    "loanwords": [],
+    "plain_descriptions": [
+      "anchoring an AI's answers in verified factual documents to prevent made-up facts",
+      "ensuring a model's statements are directly tied to real, verifiable source citations"
+    ],
+    "summary": "The process of constraining a model's outputs to factual, verifiable evidence retrieved from trusted external data sources.",
+    "domains": [
+      "it/ai-ml/llm-agents"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
     "id": "guardrail",
     "label": "Guardrail",
     "qualifier": "(AI)",
@@ -181,6 +1243,182 @@
       "it/ai-ml/llm-agents"
     ],
     "level": 1,
+    "status": "draft"
+  },
+  {
+    "id": "hashing",
+    "label": "Hashing",
+    "qualifier": "(Cryptography)",
+    "aliases": [
+      "cryptographic hashing",
+      "hash function"
+    ],
+    "loanwords": [],
+    "plain_descriptions": [
+      "turning any piece of text into a unique fixed-length fingerprint that cannot be reversed",
+      "a one-way mathematical transformation commonly used to store passwords safely"
+    ],
+    "summary": "A cryptographic process that transforms arbitrary input data into a fixed-length string of characters using an irreversible one-way mathematical algorithm.",
+    "domains": [
+      "it/security/cryptography"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
+    "id": "hotfix",
+    "label": "Hotfix",
+    "aliases": [],
+    "loanwords": [],
+    "plain_descriptions": [
+      "an emergency patch deployed straight to production to repair a critical defect",
+      "a fast, targeted fix addressing an urgent live outage outside the normal release cycle"
+    ],
+    "summary": "An expedited software patch created and deployed directly to production systems outside standard release cycles to resolve critical defects or security flaws.",
+    "domains": [
+      "it/software-engineering/practices"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
+    "id": "http-status-code",
+    "label": "HTTP status code",
+    "aliases": [
+      "HTTP response code",
+      "status code"
+    ],
+    "loanwords": [],
+    "plain_descriptions": [
+      "three-digit numbers that explain whether a web request succeeded or what went wrong",
+      "the server’s quick status signal like 404 not found or 200 ok"
+    ],
+    "summary": "A standardized three-digit integer returned by a server indicating the outcome of a client’s HTTP request.",
+    "domains": [
+      "it/web/api"
+    ],
+    "level": 1,
+    "status": "draft"
+  },
+  {
+    "id": "hyperparameter",
+    "label": "Hyperparameter",
+    "aliases": [],
+    "loanwords": [],
+    "plain_descriptions": [
+      "configuration settings chosen by engineers before starting AI training",
+      "the external dials and knobs controlling how an algorithm learns"
+    ],
+    "summary": "An external configuration setting specified prior to training that governs how the model architecture is structured and optimized.",
+    "domains": [
+      "it/ai-ml/foundations"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
+    "id": "idempotency",
+    "label": "Idempotency",
+    "aliases": [],
+    "loanwords": [],
+    "plain_descriptions": [
+      "the property where executing an action multiple times produces the exact same result as doing it once",
+      "safely retrying an operation without causing duplicate charges or unintended side effects"
+    ],
+    "summary": "A property of an operation whereby performing it multiple times with the same parameters produces the identical outcome and system state as performing it a single time.",
+    "domains": [
+      "it/software-engineering/programming-concepts"
+    ],
+    "level": 3,
+    "status": "draft"
+  },
+  {
+    "id": "image-classification",
+    "label": "Image classification",
+    "aliases": [],
+    "loanwords": [],
+    "plain_descriptions": [
+      "an AI vision task that assigns a single overall label to an entire picture",
+      "identifying what main object or category is shown in a photo"
+    ],
+    "summary": "A computer vision task in which an algorithm analyzes an entire image and assigns it one or more discrete categorical labels from a predefined taxonomy.",
+    "domains": [
+      "it/ai-ml/computer-vision"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
+    "id": "incident",
+    "label": "Incident",
+    "qualifier": "(IT)",
+    "aliases": [
+      "Production incident",
+      "System outage",
+      "IT incident"
+    ],
+    "loanwords": [],
+    "plain_descriptions": [
+      "an unplanned event that breaks software or degrades service quality for users",
+      "a sudden technical emergency that requires immediate engineering intervention"
+    ],
+    "summary": "An unplanned interruption, degradation, or disruption of an IT service that impairs business operations or user experience.",
+    "domains": [
+      "it/devops/sre-operations"
+    ],
+    "level": 1,
+    "status": "draft"
+  },
+  {
+    "id": "inference",
+    "label": "Inference",
+    "qualifier": "(AI)",
+    "aliases": [],
+    "loanwords": [],
+    "plain_descriptions": [
+      "running a trained AI model to get live answers or classifications",
+      "using an existing model on new inputs without changing its weights"
+    ],
+    "summary": "The operational stage where a trained model processes live inputs to generate predictions, decisions, or outputs without updating its parameters.",
+    "domains": [
+      "it/ai-ml/foundations"
+    ],
+    "level": 1,
+    "status": "draft"
+  },
+  {
+    "id": "infrastructure-as-code",
+    "label": "Infrastructure as code (IaC)",
+    "aliases": [
+      "IaC",
+      "Programmable infrastructure"
+    ],
+    "loanwords": [],
+    "plain_descriptions": [
+      "setting up servers, databases, and networks using code files rather than clicking around in cloud consoles",
+      "managing computer infrastructure through version-controlled text files that can be reviewed and tested"
+    ],
+    "summary": "The practice of managing, provisioning, and configuring IT infrastructure through machine-readable definition files rather than manual procedures.",
+    "domains": [
+      "it/devops/iac"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
+    "id": "integration-test",
+    "label": "Integration test",
+    "aliases": [],
+    "loanwords": [],
+    "plain_descriptions": [
+      "checking whether different software parts work properly when joined together",
+      "testing real interactions between code, databases, and connected services"
+    ],
+    "summary": "An automated test that verifies whether multiple software components, modules, or external systems cooperate and exchange data correctly.",
+    "domains": [
+      "it/software-engineering/testing"
+    ],
+    "level": 2,
     "status": "draft"
   },
   {
@@ -220,6 +1458,192 @@
     "status": "draft"
   },
   {
+    "id": "json",
+    "label": "JSON",
+    "aliases": [
+      "JavaScript Object Notation"
+    ],
+    "loanwords": [],
+    "plain_descriptions": [
+      "a universal text format used to send data between websites and servers",
+      "human-readable curly-brace text organizing names and values in software"
+    ],
+    "summary": "A lightweight, text-based data interchange format built on key-value pairs and ordered lists that is easy for humans to read and machines to parse.",
+    "domains": [
+      "it/web/api"
+    ],
+    "level": 1,
+    "status": "draft"
+  },
+  {
+    "id": "jwt",
+    "label": "JSON Web Token (JWT)",
+    "aliases": [
+      "JWT"
+    ],
+    "loanwords": [],
+    "plain_descriptions": [
+      "a compact digitally signed text token used to prove your identity across web requests",
+      "a three-part encrypted-looking string that carries user login claims inside an http header"
+    ],
+    "summary": "A self-contained web token format conveying verifiable identity assertions through encoded header, payload, and digital signature segments.",
+    "domains": [
+      "it/security/authentication"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
+    "id": "kanban",
+    "label": "Kanban",
+    "aliases": [],
+    "loanwords": [
+      "kanban"
+    ],
+    "plain_descriptions": [
+      "visual project management board that tracks work across columns and limits tasks in progress",
+      "continuous delivery system focused on smoothing workflow and eliminating production bottlenecks"
+    ],
+    "summary": "A visual workflow management method designed to optimize continuous flow, limit work in progress, and maximize efficiency.",
+    "domains": [
+      "product/agile-scrum"
+    ],
+    "level": 1,
+    "status": "draft"
+  },
+  {
+    "id": "knowledge-distillation",
+    "label": "Distillation",
+    "qualifier": "(AI)",
+    "aliases": [
+      "Knowledge distillation"
+    ],
+    "loanwords": [],
+    "plain_descriptions": [
+      "training a smaller, faster AI model to mimic the knowledge of a huge model",
+      "transferring wisdom from an expert AI teacher into a compact student model"
+    ],
+    "summary": "A model compression technique where a compact student model is trained on output probability distributions generated by a larger, pre-trained teacher model.",
+    "domains": [
+      "it/ai-ml/mlops"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
+    "id": "kpi",
+    "label": "Key Performance Indicator (KPI)",
+    "aliases": [
+      "KPI"
+    ],
+    "loanwords": [
+      "key performance indicator",
+      "kpi"
+    ],
+    "plain_descriptions": [
+      "measurable target tracking whether a company or team is meeting its core operational goals",
+      "key business metric showing the ongoing performance and financial health of a product"
+    ],
+    "summary": "A quantifiable metric tracking ongoing operational efficacy and business performance against strategic benchmarks.",
+    "domains": [
+      "product/metrics"
+    ],
+    "level": 1,
+    "status": "draft"
+  },
+  {
+    "id": "kubernetes",
+    "label": "Kubernetes",
+    "aliases": [
+      "K8s"
+    ],
+    "loanwords": [],
+    "plain_descriptions": [
+      "an orchestration platform that automatically deploys, scales, and heals containers across clusters of machines",
+      "the industry standard control system for managing container fleets in production"
+    ],
+    "summary": "An open-source container orchestration system for automating deployment, scaling, management, and self-healing of containerized applications.",
+    "domains": [
+      "it/devops/containers"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
+    "id": "kubernetes-pod",
+    "label": "Pod",
+    "qualifier": "(Kubernetes)",
+    "aliases": [
+      "K8s pod"
+    ],
+    "loanwords": [],
+    "plain_descriptions": [
+      "the smallest deployable unit in Kubernetes, containing one or more tightly linked containers",
+      "a shared wrapper that gives grouped containers the same IP address and storage volumes"
+    ],
+    "summary": "The smallest deployable computing unit in Kubernetes, encapsulating one or more tightly coupled containers sharing network and storage resources.",
+    "domains": [
+      "it/devops/containers"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
+    "id": "latency",
+    "label": "Latency",
+    "qualifier": "(Network)",
+    "aliases": [
+      "Network latency",
+      "Round-trip time"
+    ],
+    "loanwords": [],
+    "plain_descriptions": [
+      "the time delay between sending a request and receiving the answer back over a network",
+      "how long you wait for a website or server to respond after clicking"
+    ],
+    "summary": "The time delay incurred for data to travel across a network from its source to its destination and return.",
+    "domains": [
+      "it/infrastructure/networking"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
+    "id": "least-privilege",
+    "label": "Principle of least privilege",
+    "aliases": [
+      "least privilege",
+      "PoLP"
+    ],
+    "loanwords": [],
+    "plain_descriptions": [
+      "giving users and apps only the exact minimum permissions required to perform their daily job",
+      "the security rule that people should never have admin access unless strictly necessary"
+    ],
+    "summary": "A core cybersecurity principle dictating that users, accounts, and processes are granted only the minimum permissions necessary to perform their assigned functions.",
+    "domains": [
+      "it/security/authentication"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
+    "id": "linter",
+    "label": "Linter",
+    "aliases": [],
+    "loanwords": [],
+    "plain_descriptions": [
+      "a tool that scans your code to find style errors, suspicious patterns, and potential bugs",
+      "an automated spell-checker for programming languages"
+    ],
+    "summary": "A static code analysis tool that inspects source code for programmatic errors, stylistic inconsistencies, security antipatterns, and non-standard syntax before runtime.",
+    "domains": [
+      "it/software-engineering/practices"
+    ],
+    "level": 1,
+    "status": "draft"
+  },
+  {
     "id": "llm",
     "label": "Large Language Model",
     "aliases": [
@@ -233,6 +1657,66 @@
     "summary": "A very large neural network trained on huge amounts of text that reads and writes language by predicting the next token.",
     "domains": [
       "it/ai-ml/llm-agents"
+    ],
+    "level": 1,
+    "status": "draft"
+  },
+  {
+    "id": "llm-eval",
+    "label": "Eval",
+    "qualifier": "(AI)",
+    "aliases": [
+      "Evaluation"
+    ],
+    "loanwords": [],
+    "plain_descriptions": [
+      "an automated or human test process used to score an AI model's answers",
+      "measuring how well a language model performs on real-world business tasks"
+    ],
+    "summary": "A systematic evaluation methodology using automated judges, deterministic checks, or human grading to measure language model quality, safety, and correctness.",
+    "domains": [
+      "it/ai-ml/mlops"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
+    "id": "load-balancer",
+    "label": "Load balancer",
+    "aliases": [
+      "Application load balancer",
+      "Network load balancer",
+      "Traffic distributor"
+    ],
+    "loanwords": [],
+    "plain_descriptions": [
+      "a traffic cop that distributes incoming website visitors evenly across multiple backend servers",
+      "a device or service preventing any single server from becoming overwhelmed by web requests"
+    ],
+    "summary": "A networking component that distributes incoming application or network traffic across a pool of backend destination servers.",
+    "domains": [
+      "it/infrastructure/networking"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
+    "id": "log",
+    "label": "Log",
+    "qualifier": "(Software)",
+    "aliases": [
+      "Log record",
+      "Log message",
+      "Application log"
+    ],
+    "loanwords": [],
+    "plain_descriptions": [
+      "a timestamped text record written by software to explain what it just did",
+      "the running diary of events, errors, and actions that an application keeps"
+    ],
+    "summary": "A timestamped, discrete record of an event or state change emitted by a running computer program or system service.",
+    "domains": [
+      "it/devops/observability"
     ],
     "level": 1,
     "status": "draft"
@@ -253,6 +1737,41 @@
       "it/ai-ml/mlops"
     ],
     "level": 3,
+    "status": "draft"
+  },
+  {
+    "id": "loss-function",
+    "label": "Loss function",
+    "aliases": [
+      "Cost function",
+      "Objective function"
+    ],
+    "loanwords": [],
+    "plain_descriptions": [
+      "the mathematical scoring system that measures how wrong an AI model's answers are",
+      "a formula calculating the penalty when predictions deviate from true outcomes"
+    ],
+    "summary": "A mathematical function quantifying the discrepancy between a model's predicted outputs and true ground-truth targets.",
+    "domains": [
+      "it/ai-ml/foundations"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
+    "id": "machine-learning",
+    "label": "Machine learning",
+    "aliases": [],
+    "loanwords": [],
+    "plain_descriptions": [
+      "software that learns rules from examples instead of explicit programming",
+      "computer systems improving their accuracy automatically through experience"
+    ],
+    "summary": "A branch of artificial intelligence where computer systems detect underlying patterns in data to improve task performance without static rule engines.",
+    "domains": [
+      "it/ai-ml/foundations"
+    ],
+    "level": 1,
     "status": "draft"
   },
   {
@@ -294,6 +1813,450 @@
     "status": "draft"
   },
   {
+    "id": "merge-conflict",
+    "label": "Merge conflict",
+    "aliases": [],
+    "loanwords": [],
+    "plain_descriptions": [
+      "a dispute where two branches edited the same lines of a file and Git cannot choose automatically",
+      "a clash in version control that requires manual human intervention to reconcile differing changes"
+    ],
+    "summary": "A state in version control that arises when competing changes are made to the same lines of code or when one branch modifies a file that another branch deletes, preventing automatic merging.",
+    "domains": [
+      "it/software-engineering/version-control"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
+    "id": "message-queue",
+    "label": "Message queue",
+    "aliases": [
+      "task queue",
+      "message broker"
+    ],
+    "loanwords": [],
+    "plain_descriptions": [
+      "a digital waiting line where servers leave jobs for worker programs to process one by one",
+      "a buffer holding background tasks so web servers stay responsive during heavy traffic"
+    ],
+    "summary": "An asynchronous communication component that stores messages in sequence until receiving consumer services retrieve and process them.",
+    "domains": [
+      "it/web/backend"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
+    "id": "metric-monitoring",
+    "label": "Metric",
+    "qualifier": "(Monitoring)",
+    "aliases": [
+      "System metric",
+      "Telemetry metric"
+    ],
+    "loanwords": [],
+    "plain_descriptions": [
+      "a numerical measurement tracked over time to see how busy or healthy a computer system is",
+      "aggregated statistics like CPU percentage, memory usage, or requests per second"
+    ],
+    "summary": "A quantifiable, aggregated numerical measurement recorded at regular time intervals to evaluate system performance and health.",
+    "domains": [
+      "it/devops/observability"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
+    "id": "mfa",
+    "label": "Multi-factor authentication (MFA)",
+    "aliases": [
+      "MFA",
+      "2FA",
+      "two-factor authentication"
+    ],
+    "loanwords": [],
+    "plain_descriptions": [
+      "logging in with two different proofs such as your password plus a code sent to your phone",
+      "a security checkpoint requiring a password and a fingerprint before opening an account"
+    ],
+    "summary": "An authentication security method requiring users to supply two or more distinct evidence factors before granting access to a digital system.",
+    "domains": [
+      "it/security/authentication"
+    ],
+    "level": 1,
+    "status": "draft"
+  },
+  {
+    "id": "microservices",
+    "label": "Microservices",
+    "aliases": [
+      "Microservice architecture"
+    ],
+    "loanwords": [],
+    "plain_descriptions": [
+      "building software as a suite of small, independent services that communicate over a network",
+      "an architectural style where each business capability runs in its own deployable process"
+    ],
+    "summary": "An architectural style that structures an application as a collection of small, independently deployable, and loosely coupled services communicating via lightweight protocols.",
+    "domains": [
+      "it/software-engineering/architecture"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
+    "id": "ml-model",
+    "label": "Model",
+    "qualifier": "(AI)",
+    "aliases": [],
+    "loanwords": [],
+    "plain_descriptions": [
+      "the trained software artifact that makes AI predictions",
+      "an algorithm packed with learned weights ready to run"
+    ],
+    "summary": "A mathematical representation trained on data that captures patterns to generate predictions, decisions, or new content.",
+    "domains": [
+      "it/ai-ml/foundations"
+    ],
+    "level": 1,
+    "status": "draft"
+  },
+  {
+    "id": "mock-object",
+    "label": "Mock",
+    "qualifier": "(Testing)",
+    "aliases": [
+      "Mock object"
+    ],
+    "loanwords": [],
+    "plain_descriptions": [
+      "a simulated software stand-in used to test code without calling real external services",
+      "a fake object that checks whether expected functions were called with correct parameters"
+    ],
+    "summary": "A simulated object that mimics the behavior of a real component in controlled ways, allowing developers to verify interactions and method invocations in isolation.",
+    "domains": [
+      "it/software-engineering/testing"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
+    "id": "model-parameter",
+    "label": "Parameter",
+    "qualifier": "(AI)",
+    "aliases": [],
+    "loanwords": [],
+    "plain_descriptions": [
+      "the internal numerical values that an AI adjusts as it learns",
+      "the weights and biases inside a model that define how it responds"
+    ],
+    "summary": "An internal numerical variable within a model, such as a weight or bias, whose value is learned and updated directly from training data.",
+    "domains": [
+      "it/ai-ml/foundations"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
+    "id": "model-training",
+    "label": "Training",
+    "qualifier": "(AI)",
+    "aliases": [],
+    "loanwords": [],
+    "plain_descriptions": [
+      "the computational process of teaching an AI model using data",
+      "feeding examples into an algorithm so it can adjust its internal weights"
+    ],
+    "summary": "The iterative computational process of calculating errors and adjusting model weights against training data to minimize loss.",
+    "domains": [
+      "it/ai-ml/foundations"
+    ],
+    "level": 1,
+    "status": "draft"
+  },
+  {
+    "id": "monorepo",
+    "label": "Monorepo",
+    "aliases": [],
+    "loanwords": [],
+    "plain_descriptions": [
+      "storing multiple distinct projects, apps, and shared libraries inside one single repository",
+      "a unified code repository holding all the different services of an organization"
+    ],
+    "summary": "A software development approach and repository architecture where multiple separate projects, applications, and shared libraries reside within a single version control repository.",
+    "domains": [
+      "it/software-engineering/version-control"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
+    "id": "moscow-method",
+    "label": "MoSCoW method",
+    "aliases": [
+      "MoSCoW"
+    ],
+    "loanwords": [
+      "moscow method",
+      "moscow"
+    ],
+    "plain_descriptions": [
+      "prioritization technique that sorts requirements into Must have, Should have, Could have, and Won't have",
+      "categorization method ensuring teams deliver essential deliverables first while managing scope expectations"
+    ],
+    "summary": "A qualitative prioritization technique sorting project requirements into four distinct categories: Must have, Should have, Could have, and Won't have.",
+    "domains": [
+      "product/delivery-planning"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
+    "id": "mvp",
+    "label": "Minimum Viable Product (MVP)",
+    "aliases": [
+      "MVP"
+    ],
+    "loanwords": [
+      "minimum viable product",
+      "mvp"
+    ],
+    "plain_descriptions": [
+      "simplest early version of a product built with just enough features to test with real users",
+      "functional initial release designed to validate core business hypotheses with minimal engineering effort"
+    ],
+    "summary": "An early iteration of a product incorporating the minimum feature set necessary to validate foundational assumptions with real customers.",
+    "domains": [
+      "product/product-management"
+    ],
+    "level": 1,
+    "status": "draft"
+  },
+  {
+    "id": "neural-network",
+    "label": "Neural network",
+    "aliases": [
+      "Artificial neural network"
+    ],
+    "loanwords": [],
+    "plain_descriptions": [
+      "an AI computing structure inspired by interconnected biological brain cells",
+      "layered mathematical nodes passing signals forward to identify complex patterns"
+    ],
+    "summary": "A computational architecture comprising interconnected layers of artificial nodes that pass weighted signals through non-linear activation functions.",
+    "domains": [
+      "it/ai-ml/foundations"
+    ],
+    "level": 1,
+    "status": "draft"
+  },
+  {
+    "id": "north-star-metric",
+    "label": "North Star metric",
+    "aliases": [],
+    "loanwords": [
+      "north star metric"
+    ],
+    "plain_descriptions": [
+      "single key metric that best captures the core value a product delivers to its customers",
+      "overarching guiding metric that aligns product, engineering, and marketing teams toward long-term growth"
+    ],
+    "summary": "The primary operational metric capturing the core value delivered to customers that serves as the leading indicator of sustainable business growth.",
+    "domains": [
+      "product/metrics"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
+    "id": "oauth",
+    "label": "OAuth",
+    "aliases": [
+      "OAuth 2.0",
+      "OAuth framework"
+    ],
+    "loanwords": [],
+    "plain_descriptions": [
+      "the security system that lets you log in with Google without giving your password to third-party apps",
+      "a delegation protocol granting limited permissions to an app on your behalf"
+    ],
+    "summary": "An open standard authorization framework that enables third-party applications to obtain limited access to protected user resources without sharing user passwords.",
+    "domains": [
+      "it/security/authentication"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
+    "id": "object-detection",
+    "label": "Object detection",
+    "aliases": [],
+    "loanwords": [],
+    "plain_descriptions": [
+      "an AI vision task that identifies multiple items in a photo and draws bounding boxes around them",
+      "finding where objects are located in an image and labeling each one"
+    ],
+    "summary": "A computer vision technique that simultaneously identifies the semantic class and spatial coordinates of multiple individual objects within an image.",
+    "domains": [
+      "it/ai-ml/computer-vision"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
+    "id": "observability",
+    "label": "Observability",
+    "aliases": [
+      "o11y"
+    ],
+    "loanwords": [],
+    "plain_descriptions": [
+      "understanding what is happening inside a complex system just by looking at its outputs and data",
+      "the ability to diagnose unknown software problems using telemetry data"
+    ],
+    "summary": "The extent to which the internal states and execution paths of complex software systems can be inferred solely from their external telemetry outputs.",
+    "domains": [
+      "it/devops/observability"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
+    "id": "okr",
+    "label": "Objectives and Key Results (OKR)",
+    "aliases": [
+      "OKR"
+    ],
+    "loanwords": [
+      "objectives and key results",
+      "okr"
+    ],
+    "plain_descriptions": [
+      "goal-setting system that pairs an inspiring objective with measurable numerical results",
+      "quarterly framework aligning company direction, team focus, and quantifiable targets"
+    ],
+    "summary": "A collaborative goal-setting framework pairing ambitious qualitative objectives with measurable key results to track organizational progress.",
+    "domains": [
+      "product/metrics"
+    ],
+    "level": 1,
+    "status": "draft"
+  },
+  {
+    "id": "on-call",
+    "label": "On-call",
+    "aliases": [
+      "On-call rotation",
+      "On-call duty"
+    ],
+    "loanwords": [],
+    "plain_descriptions": [
+      "being available outside normal hours to respond immediately if production software breaks",
+      "the scheduled shift where an engineer carries the alert pager and fixes critical outages"
+    ],
+    "summary": "An operational duty rotation where designated engineers remain available to receive alerts and remediate critical production incidents outside or during standard working hours.",
+    "domains": [
+      "it/devops/sre-operations"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
+    "id": "orm",
+    "label": "Object-Relational Mapping (ORM)",
+    "aliases": [
+      "ORM"
+    ],
+    "loanwords": [],
+    "plain_descriptions": [
+      "a programming bridge that lets developers query database tables using normal code objects",
+      "software that translates programming objects into SQL database rows automatically"
+    ],
+    "summary": "A software technique that bridges object-oriented code and relational databases by mapping database tables to programming language classes.",
+    "domains": [
+      "it/web/backend"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
+    "id": "overfitting",
+    "label": "Overfitting",
+    "aliases": [],
+    "loanwords": [],
+    "plain_descriptions": [
+      "when an AI memorizes practice data so closely that it fails on fresh inputs",
+      "an AI model scoring near perfect in practice tests but failing real exams"
+    ],
+    "summary": "A modeling pathology where an algorithm learns idiosyncratic noise in training samples, severely impairing its ability to generalize to unseen data.",
+    "domains": [
+      "it/ai-ml/foundations"
+    ],
+    "level": 1,
+    "status": "draft"
+  },
+  {
+    "id": "pagination",
+    "label": "Pagination",
+    "aliases": [
+      "API pagination",
+      "paging"
+    ],
+    "loanwords": [],
+    "plain_descriptions": [
+      "dividing huge lists of data into smaller chunks across multiple pages",
+      "loading search results ten or twenty items at a time instead of everything at once"
+    ],
+    "summary": "A design technique that breaks large data sets into discrete subsets or pages to manage bandwidth and system performance.",
+    "domains": [
+      "it/web/api"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
+    "id": "postmortem",
+    "label": "Postmortem",
+    "qualifier": "(IT)",
+    "aliases": [
+      "Incident retrospective",
+      "Post-incident review"
+    ],
+    "loanwords": [],
+    "plain_descriptions": [
+      "a written report created after a major outage to understand what happened and prevent it from recurring",
+      "a blameless analysis of a system failure explaining the timeline, causes, and action items"
+    ],
+    "summary": "A structured, blameless written analysis document reviewing a production incident to identify root causes and assign preventative action items.",
+    "domains": [
+      "it/devops/sre-operations"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
+    "id": "prd",
+    "label": "Product Requirements Document (PRD)",
+    "aliases": [
+      "PRD"
+    ],
+    "loanwords": [
+      "product requirements document",
+      "prd"
+    ],
+    "plain_descriptions": [
+      "comprehensive guide detailing what problem a feature solves, what it should do, and how success is measured",
+      "foundational specification shared between product managers, designers, and software engineers"
+    ],
+    "summary": "A definitive planning document detailing product purpose, target personas, functional requirements, and measurable success criteria for delivery teams.",
+    "domains": [
+      "product/product-management"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
     "id": "principal",
     "label": "Principal",
     "aliases": [
@@ -311,6 +2274,127 @@
     ],
     "level": 1,
     "status": "reviewed"
+  },
+  {
+    "id": "product-backlog",
+    "label": "Product backlog",
+    "aliases": [
+      "Backlog"
+    ],
+    "loanwords": [
+      "product backlog",
+      "backlog"
+    ],
+    "plain_descriptions": [
+      "prioritized master list of features, bug fixes, and technical tasks waiting to be built",
+      "single authoritative repository of planned work for the entire software product team"
+    ],
+    "summary": "An evolving, ordered catalog of features, enhancements, and fixes representing the single source of work for a product team.",
+    "domains": [
+      "product/agile-scrum"
+    ],
+    "level": 1,
+    "status": "draft"
+  },
+  {
+    "id": "product-discovery",
+    "label": "Product discovery",
+    "aliases": [],
+    "loanwords": [
+      "product discovery"
+    ],
+    "plain_descriptions": [
+      "research and experimentation process used to figure out what product is worth building before writing code",
+      "systematic validation of customer problems, usability, feasibility, and business viability"
+    ],
+    "summary": "The exploratory process of validating customer problems and potential product solutions to ensure engineering teams build valuable, viable offerings.",
+    "domains": [
+      "product/product-management"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
+    "id": "product-market-fit",
+    "label": "Product-market fit",
+    "aliases": [
+      "PMF"
+    ],
+    "loanwords": [
+      "product-market fit",
+      "pmf"
+    ],
+    "plain_descriptions": [
+      "stage where a product satisfies strong customer demand in a large and viable market",
+      "state where customers love a product, retention stabilizes, and growth happens organically"
+    ],
+    "summary": "The commercial milestone achieved when a product satisfies the demands of an attractive market, evidenced by sustained user retention and organic adoption.",
+    "domains": [
+      "product/product-management"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
+    "id": "product-owner",
+    "label": "Product owner (PO)",
+    "aliases": [
+      "PO"
+    ],
+    "loanwords": [
+      "product owner",
+      "po"
+    ],
+    "plain_descriptions": [
+      "person responsible for deciding what features a product should have and setting their priority",
+      "key team member who connects user needs and business goals with development work"
+    ],
+    "summary": "The Scrum role accountable for maximizing product value and managing the prioritized content of the product backlog.",
+    "domains": [
+      "product/agile-scrum"
+    ],
+    "level": 1,
+    "status": "draft"
+  },
+  {
+    "id": "product-release",
+    "label": "Release",
+    "qualifier": "(Product)",
+    "aliases": [],
+    "loanwords": [
+      "release"
+    ],
+    "plain_descriptions": [
+      "formal deployment and launch of a finished software version to end users",
+      "milestone package combining tested features, bug fixes, and documentation into production"
+    ],
+    "summary": "The formal deployment and distribution of a production-ready software version to customers alongside associated release notes and assets.",
+    "domains": [
+      "product/delivery-planning"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
+    "id": "product-roadmap",
+    "label": "Product roadmap",
+    "aliases": [
+      "Roadmap"
+    ],
+    "loanwords": [
+      "product roadmap",
+      "roadmap"
+    ],
+    "plain_descriptions": [
+      "high-level strategic timeline communicating where a product is heading and why",
+      "visual guide that aligns executives, developers, and customers on major product milestones"
+    ],
+    "summary": "A strategic, evolving visual document mapping the vision, overarching direction, and planned milestones of a product over time.",
+    "domains": [
+      "product/delivery-planning"
+    ],
+    "level": 1,
+    "status": "draft"
   },
   {
     "id": "profit-margin",
@@ -381,6 +2465,58 @@
     "status": "draft"
   },
   {
+    "id": "pull-request",
+    "label": "Pull request (PR)",
+    "aliases": [
+      "PR",
+      "Pull request"
+    ],
+    "loanwords": [],
+    "plain_descriptions": [
+      "a formal request asking teammates to review and merge your branch into the main codebase",
+      "a shared discussion page displaying proposed code changes in version control"
+    ],
+    "summary": "A mechanism in distributed version control platforms that allows a developer to propose changes from a feature branch and request peer review before merging.",
+    "domains": [
+      "it/software-engineering/version-control"
+    ],
+    "level": 1,
+    "status": "draft"
+  },
+  {
+    "id": "quantization",
+    "label": "Quantization",
+    "qualifier": "(AI)",
+    "aliases": [],
+    "loanwords": [],
+    "plain_descriptions": [
+      "compressing an AI model by using fewer bits to store each number",
+      "reducing model precision from 16-bit floats to 8-bit or 4-bit integers to save memory"
+    ],
+    "summary": "A model compression technique that maps high-precision numerical weights to lower-bit representations to reduce memory footprint and boost inference speed.",
+    "domains": [
+      "it/ai-ml/mlops"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
+    "id": "race-condition",
+    "label": "Race condition",
+    "aliases": [],
+    "loanwords": [],
+    "plain_descriptions": [
+      "a bug where program behavior changes unpredictably depending on which task finishes first",
+      "a timing flaw occurring when multiple threads try to modify the same shared data at once"
+    ],
+    "summary": "An undesirable condition in concurrent programming where system behavior or output depends unpredictably on the relative execution order or timing of uncontrollable events.",
+    "domains": [
+      "it/software-engineering/programming-concepts"
+    ],
+    "level": 3,
+    "status": "draft"
+  },
+  {
     "id": "rag",
     "label": "Retrieval-Augmented Generation",
     "aliases": [
@@ -394,6 +2530,133 @@
     "summary": "A technique that retrieves relevant documents when a question arrives and adds them to the prompt so the model answers from them.",
     "domains": [
       "it/ai-ml/llm-agents"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
+    "id": "rate-limiting",
+    "label": "Rate limiting",
+    "aliases": [
+      "API throttling",
+      "Traffic shaping",
+      "Request rate limiting"
+    ],
+    "loanwords": [],
+    "plain_descriptions": [
+      "restricting how many times a user or app can call an API within a minute or hour to stop abuse",
+      "a traffic cap preventing servers from crashing when too many requests arrive at once"
+    ],
+    "summary": "A defensive network control mechanism that caps the number of requests a client can submit to an API or service within a specified time window.",
+    "domains": [
+      "it/web/api"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
+    "id": "reasoning-model",
+    "label": "Reasoning model",
+    "aliases": [],
+    "loanwords": [],
+    "plain_descriptions": [
+      "an AI model that spends extra computational time thinking step-by-step before answering",
+      "an advanced language model trained to reason through complex math and logic puzzles internally"
+    ],
+    "summary": "A language model trained to produce intermediate reasoning tokens, often hidden or summarized for the user, to deliberate and verify multi-step plans before emitting final answers.",
+    "domains": [
+      "it/ai-ml/llm-agents"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
+    "id": "refactoring",
+    "label": "Refactoring",
+    "aliases": [],
+    "loanwords": [],
+    "plain_descriptions": [
+      "cleaning up internal code without changing what the program actually does",
+      "reorganizing software logic to make it cleaner and easier to maintain"
+    ],
+    "summary": "The disciplined technique of restructuring existing source code to improve readability and maintainability without altering observable external behavior.",
+    "domains": [
+      "it/software-engineering/practices"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
+    "id": "regression-testing",
+    "label": "Regression testing",
+    "aliases": [],
+    "loanwords": [],
+    "plain_descriptions": [
+      "re-running existing tests to make sure new code changes haven't broken old features",
+      "verifying that fixing one software bug didn't accidentally introduce new problems"
+    ],
+    "summary": "The practice of re-executing test suites against an updated application to ensure that recent code modifications or bug fixes have not disrupted previously working functionality.",
+    "domains": [
+      "it/software-engineering/testing"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
+    "id": "rest-api",
+    "label": "REST",
+    "aliases": [
+      "RESTful API"
+    ],
+    "loanwords": [],
+    "plain_descriptions": [
+      "standard rules for how websites and apps exchange data over the web",
+      "the way modern apps talk to servers using standard web addresses"
+    ],
+    "summary": "An architectural style for network applications that uses standard HTTP methods to manipulate resources identified by URIs.",
+    "domains": [
+      "it/web/api"
+    ],
+    "level": 1,
+    "status": "draft"
+  },
+  {
+    "id": "retention-rate",
+    "label": "Retention rate",
+    "aliases": [
+      "Customer retention"
+    ],
+    "loanwords": [
+      "retention rate"
+    ],
+    "plain_descriptions": [
+      "percentage of users who continue using or paying for an app over a given timeframe",
+      "metric demonstrating how effectively a product keeps existing customers engaged over time"
+    ],
+    "summary": "The percentage of customers that a business retains over a specified duration, reflecting enduring product value and satisfaction.",
+    "domains": [
+      "product/metrics"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
+    "id": "rice-scoring",
+    "label": "RICE scoring",
+    "aliases": [
+      "RICE"
+    ],
+    "loanwords": [
+      "rice scoring",
+      "rice"
+    ],
+    "plain_descriptions": [
+      "formula to rank features by multiplying reach, impact, and confidence, then dividing by effort",
+      "scoring model helping product managers objectively decide which projects deliver the highest return on investment"
+    ],
+    "summary": "A quantitative prioritization framework that scores potential initiatives by multiplying Reach, Impact, and Confidence and dividing by Effort.",
+    "domains": [
+      "product/delivery-planning"
     ],
     "level": 2,
     "status": "draft"
@@ -418,6 +2681,194 @@
     "status": "reviewed"
   },
   {
+    "id": "rollback",
+    "label": "Rollback",
+    "aliases": [
+      "Deployment rollback"
+    ],
+    "loanwords": [],
+    "plain_descriptions": [
+      "quickly switching back to the previous working version of software when a new release has critical bugs",
+      "reverting a deployment to restore system stability after an update causes failures"
+    ],
+    "summary": "The operational action of reverting an application, configuration, or database deployment to a previously verified stable release.",
+    "domains": [
+      "it/devops/sre-operations"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
+    "id": "scope-creep",
+    "label": "Scope creep",
+    "aliases": [],
+    "loanwords": [
+      "scope creep"
+    ],
+    "plain_descriptions": [
+      "uncontrolled growth in project features and requirements without adding extra time or budget",
+      "gradual piling on of unplanned requests that derails software delivery schedules"
+    ],
+    "summary": "The gradual and uncontrolled expansion of project scope beyond initial goals without corresponding adjustments to schedule, budget, or resources.",
+    "domains": [
+      "product/delivery-planning"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
+    "id": "scrum",
+    "label": "Scrum",
+    "aliases": [],
+    "loanwords": [
+      "scrum"
+    ],
+    "plain_descriptions": [
+      "collaborative framework for developing complex products in short timeboxed iterations",
+      "structured agile method featuring specific roles, backlogs, and iterative review meetings"
+    ],
+    "summary": "A lightweight process framework structured around transparency, inspection, and adaptation to build products incrementally.",
+    "domains": [
+      "product/agile-scrum"
+    ],
+    "level": 1,
+    "status": "draft"
+  },
+  {
+    "id": "scrum-master",
+    "label": "Scrum master",
+    "aliases": [
+      "SM"
+    ],
+    "loanwords": [
+      "scrum master",
+      "sm"
+    ],
+    "plain_descriptions": [
+      "coach who guides the team in agile practices and removes blockers that slow down development",
+      "facilitator who protects engineers from external distractions and improves team collaboration"
+    ],
+    "summary": "The Scrum role accountable for establishing Scrum practices, promoting team effectiveness, and removing operational impediments.",
+    "domains": [
+      "product/agile-scrum"
+    ],
+    "level": 1,
+    "status": "draft"
+  },
+  {
+    "id": "sdk",
+    "label": "Software Development Kit (SDK)",
+    "aliases": [
+      "SDK"
+    ],
+    "loanwords": [],
+    "plain_descriptions": [
+      "an all-in-one toolbox for building software for a specific platform",
+      "a prepackaged set of tools and code libraries provided to developers"
+    ],
+    "summary": "A comprehensive collection of development tools, client libraries, documentation, and code samples designed for creating applications on a specific platform or service.",
+    "domains": [
+      "it/software-engineering/programming-concepts"
+    ],
+    "level": 1,
+    "status": "draft"
+  },
+  {
+    "id": "secret-config",
+    "label": "Secret",
+    "qualifier": "(Software)",
+    "aliases": [
+      "Application secret",
+      "Secret configuration",
+      "API secret"
+    ],
+    "loanwords": [],
+    "plain_descriptions": [
+      "sensitive data like passwords, API keys, and encryption certificates that must never be saved in public code",
+      "secure configuration credentials that grant software access to databases and external services"
+    ],
+    "summary": "A sensitive configuration asset, such as an authentication token, password, private key, or certificate, requiring strict encryption and access control.",
+    "domains": [
+      "it/devops/ci-cd",
+      "it/security/authentication"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
+    "id": "semantic-versioning",
+    "label": "Semantic versioning",
+    "aliases": [
+      "SemVer"
+    ],
+    "loanwords": [],
+    "plain_descriptions": [
+      "a three-part version numbering system showing whether updates contain fixes, new features, or breaking changes",
+      "a standard release labeling scheme formatted as MAJOR.MINOR.PATCH to signal compatibility"
+    ],
+    "summary": "A formal versioning specification utilizing a three-part numbering format (MAJOR.MINOR.PATCH) to communicate the compatibility nature of software changes.",
+    "domains": [
+      "it/software-engineering/practices"
+    ],
+    "level": 1,
+    "status": "draft"
+  },
+  {
+    "id": "serverless",
+    "label": "Serverless",
+    "aliases": [
+      "Serverless computing",
+      "Function-as-a-Service"
+    ],
+    "loanwords": [],
+    "plain_descriptions": [
+      "running code in the cloud without renting, managing, or patching any physical or virtual servers",
+      "a cloud pricing and compute model where you only pay for the exact milliseconds your code executes"
+    ],
+    "summary": "A cloud computing execution model where the cloud provider dynamically manages server infrastructure and charges only for resource consumption during code execution.",
+    "domains": [
+      "it/infrastructure/cloud"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
+    "id": "sharding",
+    "label": "Sharding",
+    "aliases": [
+      "database sharding",
+      "horizontal partitioning"
+    ],
+    "loanwords": [],
+    "plain_descriptions": [
+      "splitting a massive database table across multiple separate computers so it can handle huge traffic",
+      "dividing customer records across server A, B, and C based on user ID regions"
+    ],
+    "summary": "A database architecture pattern that horizontally partitions a single logical dataset across multiple independent physical database instances.",
+    "domains": [
+      "it/data/database"
+    ],
+    "level": 3,
+    "status": "draft"
+  },
+  {
+    "id": "side-effect",
+    "label": "Side effect",
+    "qualifier": "(Programming)",
+    "aliases": [],
+    "loanwords": [],
+    "plain_descriptions": [
+      "any change a function makes outside of simply returning a value",
+      "modifying global variables, writing files, or updating databases as a result of executing code"
+    ],
+    "summary": "Any observable change in program state or interaction with the outside world produced by a function or expression beyond returning its computed value.",
+    "domains": [
+      "it/software-engineering/programming-concepts"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
     "id": "simple-interest",
     "label": "Simple Interest",
     "aliases": [],
@@ -433,6 +2884,307 @@
     ],
     "level": 1,
     "status": "reviewed"
+  },
+  {
+    "id": "sla",
+    "label": "Service Level Agreement (SLA)",
+    "aliases": [
+      "SLA"
+    ],
+    "loanwords": [],
+    "plain_descriptions": [
+      "a formal contract between a service provider and a customer promising a level of uptime with financial penalties if missed",
+      "the business agreement that specifies compensation if a service suffers excessive outages"
+    ],
+    "summary": "A formal commitment between a service provider and clients specifying agreed service performance thresholds and contractual penalties for non-compliance.",
+    "domains": [
+      "it/devops/sre-operations"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
+    "id": "sli",
+    "label": "Service Level Indicator (SLI)",
+    "aliases": [
+      "SLI"
+    ],
+    "loanwords": [],
+    "plain_descriptions": [
+      "the exact number measuring how well a service is actually performing right now",
+      "the measured metric used to check if an engineering team is meeting its reliability targets"
+    ],
+    "summary": "A carefully chosen quantitative metric that measures the actual level of service delivered to users over time.",
+    "domains": [
+      "it/devops/sre-operations"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
+    "id": "slo",
+    "label": "Service Level Objective (SLO)",
+    "aliases": [
+      "SLO"
+    ],
+    "loanwords": [],
+    "plain_descriptions": [
+      "an internal reliability goal that engineering teams aim to achieve for their service",
+      "the agreed target percentage of uptime or speed that keeps users satisfied"
+    ],
+    "summary": "A precise, target reliability threshold specified by engineering teams to determine acceptable service quality over an extended duration.",
+    "domains": [
+      "it/devops/sre-operations"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
+    "id": "software-container",
+    "label": "Container",
+    "qualifier": "(Software)",
+    "aliases": [
+      "Application container"
+    ],
+    "loanwords": [],
+    "plain_descriptions": [
+      "a lightweight sandbox containing an app and its dependencies to run anywhere reliably",
+      "an isolated environment running software using shared operating system resources"
+    ],
+    "summary": "A standard unit of software packaging code and all runtime dependencies to execute reliably in isolation on a shared OS kernel.",
+    "domains": [
+      "it/devops/containers"
+    ],
+    "level": 1,
+    "status": "draft"
+  },
+  {
+    "id": "software-dependency",
+    "label": "Dependency",
+    "qualifier": "(Software)",
+    "aliases": [
+      "Software dependency"
+    ],
+    "loanwords": [],
+    "plain_descriptions": [
+      "an external package or library that your application relies on to function",
+      "a third-party software component required to run or compile your project"
+    ],
+    "summary": "An external library, module, package, or service that a software program requires in order to compile, execute, or deliver its intended functionality.",
+    "domains": [
+      "it/software-engineering/practices"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
+    "id": "software-deployment",
+    "label": "Deployment",
+    "qualifier": "(Software)",
+    "aliases": [
+      "Application deployment"
+    ],
+    "loanwords": [],
+    "plain_descriptions": [
+      "the process of installing and activating a new version of software on live servers",
+      "rolling out updated application packages to make them accessible to users"
+    ],
+    "summary": "The operational process of releasing, installing, configuring, and activating a software version in a target hosting environment.",
+    "domains": [
+      "it/devops/ci-cd"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
+    "id": "software-framework",
+    "label": "Framework",
+    "qualifier": "(Software)",
+    "aliases": [
+      "Software framework"
+    ],
+    "loanwords": [],
+    "plain_descriptions": [
+      "a foundational software skeleton that dictates how your application is built and executed",
+      "a platform that calls your custom code within a predefined structural architecture"
+    ],
+    "summary": "A comprehensive structural foundation providing generic functionality, application lifecycle control, and architectural conventions into which custom code is inserted.",
+    "domains": [
+      "it/software-engineering/programming-concepts"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
+    "id": "software-library",
+    "label": "Library",
+    "qualifier": "(Software)",
+    "aliases": [
+      "Software library"
+    ],
+    "loanwords": [],
+    "plain_descriptions": [
+      "a collection of reusable code routines that your program calls when needed",
+      "a package of pre-written functions you import to perform specific tasks"
+    ],
+    "summary": "A packaged collection of pre-written functions, classes, and subroutines that developers import and call directly to accomplish specific programmatic tasks.",
+    "domains": [
+      "it/software-engineering/programming-concepts"
+    ],
+    "level": 1,
+    "status": "draft"
+  },
+  {
+    "id": "sprint-agile",
+    "label": "Sprint",
+    "qualifier": "(Agile)",
+    "aliases": [],
+    "loanwords": [
+      "sprint"
+    ],
+    "plain_descriptions": [
+      "fixed development timebox usually running two weeks to build working features",
+      "regular repeating cycle where a team converts selected backlog tasks into finished software"
+    ],
+    "summary": "A timeboxed iteration of one month or less during which a team builds a functional, verified product increment.",
+    "domains": [
+      "product/agile-scrum"
+    ],
+    "level": 1,
+    "status": "draft"
+  },
+  {
+    "id": "sprint-planning",
+    "label": "Sprint planning",
+    "aliases": [],
+    "loanwords": [
+      "sprint planning"
+    ],
+    "plain_descriptions": [
+      "collaborative meeting held at the start of a sprint to decide what work to tackle next",
+      "planning session where the team establishes a sprint goal and selects backlog items"
+    ],
+    "summary": "The collaborative event initiating each sprint where the Scrum team defines the sprint goal and forecasts backlog delivery.",
+    "domains": [
+      "product/agile-scrum"
+    ],
+    "level": 1,
+    "status": "draft"
+  },
+  {
+    "id": "sprint-retrospective",
+    "label": "Sprint retrospective",
+    "aliases": [
+      "Retro"
+    ],
+    "loanwords": [
+      "sprint retrospective",
+      "retro"
+    ],
+    "plain_descriptions": [
+      "end-of-sprint team meeting to review what went well and identify concrete ways to improve",
+      "safe reflective space where teammates evaluate tools, processes, and interpersonal collaboration"
+    ],
+    "summary": "The final event of a sprint where the Scrum team inspects its past performance regarding people, relationships, process, and tools to identify actionable improvements.",
+    "domains": [
+      "product/agile-scrum"
+    ],
+    "level": 1,
+    "status": "draft"
+  },
+  {
+    "id": "sql",
+    "label": "SQL",
+    "aliases": [
+      "Structured Query Language"
+    ],
+    "loanwords": [],
+    "plain_descriptions": [
+      "the standard computer language used to ask questions and edit data in relational databases",
+      "the command language for reading, filtering, and inserting rows in tables like postgres or mysql"
+    ],
+    "summary": "A standardized declarative programming language used to manage, query, and manipulate data stored in relational database management systems.",
+    "domains": [
+      "it/data/database"
+    ],
+    "level": 1,
+    "status": "draft"
+  },
+  {
+    "id": "sql-injection",
+    "label": "SQL injection",
+    "aliases": [
+      "SQLi"
+    ],
+    "loanwords": [],
+    "plain_descriptions": [
+      "a security hack where attackers trick a website into running rogue database commands",
+      "typing malicious sql codes into login forms to steal data or bypass passwords"
+    ],
+    "summary": "A web security vulnerability that allows an attacker to interfere with backend database queries by injecting malicious SQL statements into input fields.",
+    "domains": [
+      "it/security/vulnerabilities"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
+    "id": "staging-environment",
+    "label": "Staging environment",
+    "aliases": [
+      "Staging server",
+      "Pre-production environment",
+      "Stage environment"
+    ],
+    "loanwords": [],
+    "plain_descriptions": [
+      "a private test replica of the live website used for final quality checks before public release",
+      "the pre-production sandbox where software is tested under near-identical production conditions"
+    ],
+    "summary": "A pre-production testing environment that mirrors the exact hardware, architecture, and configuration of the production system to conduct final verification.",
+    "domains": [
+      "it/devops/ci-cd"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
+    "id": "stakeholder",
+    "label": "Stakeholder",
+    "aliases": [],
+    "loanwords": [
+      "stakeholder"
+    ],
+    "plain_descriptions": [
+      "anyone who has an interest in, influences, or is affected by the outcome of a product",
+      "key parties connected to a project, including end users, business leaders, investors, and regulatory bodies"
+    ],
+    "summary": "An individual, team, or organization that can affect, be affected by, or perceive itself to be affected by a product decision or outcome.",
+    "domains": [
+      "product/product-management"
+    ],
+    "level": 1,
+    "status": "draft"
+  },
+  {
+    "id": "story-point",
+    "label": "Story point",
+    "aliases": [
+      "Point"
+    ],
+    "loanwords": [
+      "story point"
+    ],
+    "plain_descriptions": [
+      "abstract measurement unit used to estimate the relative effort, complexity, and risk of a software task",
+      "scoring system that rates user story difficulty using relative comparisons rather than calendar hours"
+    ],
+    "summary": "A relative number that agile teams use to estimate how much total effort a backlog item will take, compared with other items.",
+    "domains": [
+      "product/agile-scrum"
+    ],
+    "level": 2,
+    "status": "draft"
   },
   {
     "id": "structured-output",
@@ -453,6 +3205,22 @@
     "status": "draft"
   },
   {
+    "id": "subagent",
+    "label": "Subagent",
+    "aliases": [],
+    "loanwords": [],
+    "plain_descriptions": [
+      "a specialized helper AI spawned by a main agent to handle a specific subtask",
+      "a secondary AI assistant focused on one piece of a larger project"
+    ],
+    "summary": "A specialized agent spawned and coordinated by a primary supervisor agent to execute an isolated, narrow task within a multi-agent system.",
+    "domains": [
+      "it/ai-ml/llm-agents"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
     "id": "system-prompt",
     "label": "System prompt",
     "aliases": [],
@@ -464,6 +3232,78 @@
     "summary": "Instructions placed before the conversation that set the model’s role, rules and style for every later message.",
     "domains": [
       "it/ai-ml/llm-agents"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
+    "id": "technical-debt",
+    "label": "Technical debt",
+    "aliases": [],
+    "loanwords": [],
+    "plain_descriptions": [
+      "the future cost of choosing a quick and dirty coding shortcut today",
+      "implied rework created when speedy software delivery sacrifices clean architecture"
+    ],
+    "summary": "The accumulated implied cost of additional future rework caused by choosing an expedited, suboptimal technical solution instead of a well-architected approach.",
+    "domains": [
+      "it/software-engineering/practices"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
+    "id": "temperature-llm",
+    "label": "Temperature",
+    "qualifier": "(AI)",
+    "aliases": [],
+    "loanwords": [],
+    "plain_descriptions": [
+      "an AI setting that controls how creative or predictable generated text will be",
+      "a dial adjusting randomness in model answers from strictly factual to imaginative"
+    ],
+    "summary": "A sampling hyperparameter that scales logits before softmax to regulate the randomness and diversity of a language model's output tokens.",
+    "domains": [
+      "it/ai-ml/llm-agents"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
+    "id": "throughput",
+    "label": "Throughput",
+    "aliases": [
+      "System throughput",
+      "Network throughput",
+      "Requests per second"
+    ],
+    "loanwords": [],
+    "plain_descriptions": [
+      "the total amount of work or data a computer system can process in one second",
+      "the volume of web requests or megabytes moving through a service over time"
+    ],
+    "summary": "The rate at which a computer system, communication channel, or application successfully processes and delivers data or transactions per unit of time.",
+    "domains": [
+      "it/infrastructure/networking"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
+    "id": "tls",
+    "label": "Transport Layer Security (TLS)",
+    "aliases": [
+      "TLS"
+    ],
+    "loanwords": [],
+    "plain_descriptions": [
+      "the security protocol that powers the padlock icon and https in your browser address bar",
+      "an encrypted communications tunnel protecting internet traffic from eavesdropping and tampering"
+    ],
+    "summary": "A cryptographic communication protocol that provides privacy, data integrity, and authentication for communications over computer networks.",
+    "domains": [
+      "it/security/cryptography",
+      "it/infrastructure/networking"
     ],
     "level": 2,
     "status": "draft"
@@ -545,6 +3385,113 @@
     "status": "draft"
   },
   {
+    "id": "top-p-sampling",
+    "label": "Top-p sampling",
+    "aliases": [
+      "Nucleus sampling"
+    ],
+    "loanwords": [],
+    "plain_descriptions": [
+      "picking next AI words only from the most probable group that adds up to p",
+      "an AI text sampling rule that cuts off unlikely, bizarre words dynamically"
+    ],
+    "summary": "A text generation decoding strategy that selects from the smallest subset of candidate tokens whose cumulative probability reaches a threshold p.",
+    "domains": [
+      "it/ai-ml/llm-agents"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
+    "id": "transformer",
+    "label": "Transformer",
+    "qualifier": "(AI)",
+    "aliases": [],
+    "loanwords": [],
+    "plain_descriptions": [
+      "the neural network design that powers modern large language models",
+      "an architecture that connects words across entire passages at once using self-attention"
+    ],
+    "summary": "A neural network architecture relying on self-attention mechanisms to process sequence elements in parallel without recurrent connections.",
+    "domains": [
+      "it/ai-ml/foundations"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
+    "id": "type-checking",
+    "label": "Type checking",
+    "aliases": [],
+    "loanwords": [],
+    "plain_descriptions": [
+      "verifying that variables and function arguments hold the expected kinds of data",
+      "catching mismatched data types before or during program execution"
+    ],
+    "summary": "The verification process that evaluates whether data values assigned to variables or passed to functions comply with the rules of a programming language type system.",
+    "domains": [
+      "it/software-engineering/programming-concepts"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
+    "id": "unit-test",
+    "label": "Unit test",
+    "aliases": [],
+    "loanwords": [],
+    "plain_descriptions": [
+      "an automated check testing the smallest single piece of code in isolation",
+      "verifying that an individual function returns the correct answer for given inputs"
+    ],
+    "summary": "An automated test that isolates and verifies the behavioral correctness of the smallest testable component or function of an application.",
+    "domains": [
+      "it/software-engineering/testing"
+    ],
+    "level": 1,
+    "status": "draft"
+  },
+  {
+    "id": "uptime",
+    "label": "Uptime",
+    "aliases": [
+      "System uptime",
+      "Service availability"
+    ],
+    "loanwords": [],
+    "plain_descriptions": [
+      "the percentage of time a computer system or website is running and ready for users",
+      "how long a service stays available without crashing or going offline"
+    ],
+    "summary": "The proportion or duration of time that a computer system, network, or application remains fully functional and accessible to users.",
+    "domains": [
+      "it/devops/sre-operations"
+    ],
+    "level": 1,
+    "status": "draft"
+  },
+  {
+    "id": "user-story",
+    "label": "User story",
+    "aliases": [
+      "Story"
+    ],
+    "loanwords": [
+      "user story",
+      "story"
+    ],
+    "plain_descriptions": [
+      "short informal description of a software feature framed from the perspective of an end user",
+      "practical work item explaining who needs a capability, what they need, and why it provides value"
+    ],
+    "summary": "A concise, non-technical explanation of a software requirement capturing user intent, desired functionality, and business value.",
+    "domains": [
+      "product/agile-scrum"
+    ],
+    "level": 1,
+    "status": "draft"
+  },
+  {
     "id": "vector-database",
     "label": "Vector database",
     "aliases": [],
@@ -558,6 +3505,117 @@
       "it/ai-ml/nlp"
     ],
     "level": 2,
+    "status": "draft"
+  },
+  {
+    "id": "velocity-agile",
+    "label": "Velocity",
+    "qualifier": "(Agile)",
+    "aliases": [],
+    "loanwords": [
+      "velocity"
+    ],
+    "plain_descriptions": [
+      "average amount of work a development team delivers during a single sprint",
+      "historical metric measuring how many story points a squad completes per iteration"
+    ],
+    "summary": "A planning metric tracking the average volume of story points or backlog items completed by a team per sprint.",
+    "domains": [
+      "product/agile-scrum"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
+    "id": "virtual-machine",
+    "label": "Virtual machine (VM)",
+    "aliases": [
+      "VM"
+    ],
+    "loanwords": [],
+    "plain_descriptions": [
+      "a software simulation of an entire physical computer running its own complete operating system",
+      "a virtual computer created inside a powerful server that behaves just like a physical machine"
+    ],
+    "summary": "A software emulation of a physical computer system that executes applications within a dedicated, isolated guest operating system managed by a hypervisor.",
+    "domains": [
+      "it/infrastructure/cloud"
+    ],
+    "level": 1,
+    "status": "draft"
+  },
+  {
+    "id": "web-session",
+    "label": "Session",
+    "qualifier": "(Web)",
+    "aliases": [
+      "web session",
+      "user session"
+    ],
+    "loanwords": [],
+    "plain_descriptions": [
+      "the server-side record remembering who you are while you click around a website",
+      "the active conversation state linking multiple web page clicks to one logged-in user"
+    ],
+    "summary": "A server-side state mechanism that tracks an individual user’s interactions and identity across multiple stateless HTTP requests.",
+    "domains": [
+      "it/web/backend"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
+    "id": "webhook",
+    "label": "Webhook",
+    "aliases": [
+      "HTTP callback"
+    ],
+    "loanwords": [],
+    "plain_descriptions": [
+      "an automatic notification sent between servers as soon as something happens",
+      "a reverse phone call where a payment provider rings your app to say money arrived"
+    ],
+    "summary": "An automated HTTP POST callback triggered by an origin system to deliver real-time event payloads to external receiver endpoints.",
+    "domains": [
+      "it/web/api"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
+    "id": "xss",
+    "label": "Cross-site scripting (XSS)",
+    "aliases": [
+      "XSS"
+    ],
+    "loanwords": [],
+    "plain_descriptions": [
+      "a vulnerability where attackers inject malicious javascript into a website to hijack visitor browsers",
+      "sneaking rogue code into public comment sections so readers' login cookies get stolen"
+    ],
+    "summary": "A web application flaw permitting attackers to embed rogue executable scripts into viewed pages, running unauthorized actions inside visitor browsers.",
+    "domains": [
+      "it/security/vulnerabilities"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
+    "id": "zero-trust",
+    "label": "Zero trust",
+    "aliases": [
+      "zero trust architecture"
+    ],
+    "loanwords": [],
+    "plain_descriptions": [
+      "a security model that never assumes any user or device is safe, even inside the office network",
+      "the principle of verifying identity and device health for every single digital request"
+    ],
+    "summary": "A cybersecurity framework requiring continuous verification of every user, device, and network transaction, operating under the assumption that breaches are already present.",
+    "domains": [
+      "it/security/authentication"
+    ],
+    "level": 3,
     "status": "draft"
   }
 ]

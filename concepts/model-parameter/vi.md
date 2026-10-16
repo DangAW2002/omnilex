@@ -7,6 +7,8 @@ loanwords:
   - parameter
 autolink:
   label: never
+  aliases:
+    Tham số: never
 plain_descriptions:
   - các giá trị số nội tại mà mô hình AI tự điều chỉnh trong lúc học
   - các trọng số bên trong mô hình quyết định kết quả dự đoán

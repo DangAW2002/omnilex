@@ -19,6 +19,9 @@ translation: translated
 translated_from: en
 translated_by: ai
 translated_at: '2026-10-16'
+autolink:
+  aliases:
+    Suy luận: never
 ---
 
 ## Giải thích dễ hiểu

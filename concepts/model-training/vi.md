@@ -8,6 +8,8 @@ loanwords:
   - training
 autolink:
   label: never
+  aliases:
+    Huấn luyện: never
 plain_descriptions:
   - quá trình dạy mô hình AI nhận biết quy luật từ dữ liệu
   - việc nạp ví dụ mẫu để thuật toán tự tinh chỉnh các trọng số

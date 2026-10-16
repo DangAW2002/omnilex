@@ -3,14 +3,12 @@ label: On-call
 aliases:
   - On-call rotation
   - On-call duty
-  - Pager duty
 loanwords: []
 plain_descriptions:
   - being available outside normal hours to respond immediately if production software breaks
   - the scheduled shift where an engineer carries the alert pager and fixes critical outages
 summary: >-
-  An operational duty rotation where designated engineers remain available to receive alerts and remediate critical
-  production incidents outside or during standard working hours.
+  An operational duty rotation where designated engineers remain available to receive alerts and remediate critical production incidents outside or during standard working hours.
 confusable_notes: {}
 follow_up_questions:
   - How do sustainable on-call shifts cap paging volume to prevent engineering burnout?

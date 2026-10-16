@@ -2,14 +2,12 @@
 label: Rollback
 aliases:
   - Deployment rollback
-  - Release reversion
 loanwords: []
 plain_descriptions:
   - quickly switching back to the previous working version of software when a new release has critical bugs
   - reverting a deployment to restore system stability after an update causes failures
 summary: >-
-  The operational action of reverting an application, configuration, or database deployment to a previously verified
-  stable release.
+  The operational action of reverting an application, configuration, or database deployment to a previously verified stable release.
 confusable_notes: {}
 follow_up_questions:
   - How do backward-incompatible database schema migrations complicate rollback operations?

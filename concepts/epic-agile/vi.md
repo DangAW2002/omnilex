@@ -3,7 +3,6 @@ label: "Epic"
 qualifier: "(Agile)"
 aliases:
   - "Sáng kiến lớn"
-  - "Sử thi"
 loanwords:
   - "epic"
 plain_descriptions:

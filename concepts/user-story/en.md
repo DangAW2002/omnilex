@@ -15,6 +15,9 @@ follow_up_questions:
   - "How does following the INVEST guidelines improve user story quality?"
   - "Why should user stories describe business outcomes rather than implementation architecture?"
 translation: native
+autolink:
+  aliases:
+    Story: never
 ---
 
 ## Easy explanation

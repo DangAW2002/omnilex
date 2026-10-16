@@ -3,7 +3,6 @@ label: Latency
 qualifier: (Mạng)
 aliases:
   - Độ trễ mạng
-  - Thời gian phản hồi
   - Độ trễ
 loanwords:
   - latency
@@ -13,17 +12,18 @@ plain_descriptions:
 summary: Khoảng thời gian trễ cần thiết để dữ liệu truyền tải qua mạng từ điểm xuất phát tới đích đến và nhận phản hồi.
 confusable_notes:
   throughput: >-
-    Latency đo khoảng thời gian cần thiết để một yêu cầu hoàn tất, còn throughput đo tổng lượng dữ liệu hoặc số yêu cầu
-    mà hệ thống xử lý được trong một đơn vị thời gian.
+    Latency đo khoảng thời gian cần thiết để một yêu cầu hoàn tất, còn throughput đo tổng lượng dữ liệu hoặc số yêu cầu mà hệ thống xử lý được trong một đơn vị thời gian.
 follow_up_questions:
   - Vì sao việc đo độ trễ theo các phân vị (như p95 hay p99) lại phản ánh chính xác hơn nhiều so với giá trị trung bình?
   - >-
-    Khoảng cách địa lý và tốc độ ánh sáng trong sợi quang áp đặt giới hạn vật lý tối thiểu cho độ trễ internet như thế
-    nào?
+    Khoảng cách địa lý và tốc độ ánh sáng trong sợi quang áp đặt giới hạn vật lý tối thiểu cho độ trễ internet như thế nào?
 translation: translated
 translated_from: en
 translated_by: ai
 translated_at: '2026-10-16'
+autolink:
+  aliases:
+    Độ trễ: never
 ---
 
 ## Giải thích dễ hiểu

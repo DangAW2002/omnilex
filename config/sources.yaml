@@ -245,3 +245,58 @@ unknown:
   reuse: paraphrase-only
   domains: [it, finance]
   verified_license_at: "2026-10-14"
+
+# Added in WP8 batch 1 (2026-10-16). Every entry starts as paraphrase-only (D10/D12).
+google-ml-glossary:
+  title: Machine Learning Glossary
+  publisher: Google for Developers
+  url: https://developers.google.com/machine-learning/glossary
+  type: glossary
+  tier: A
+  languages: [en]
+  # The page footer states CC BY 4.0 for its text; adapt needs license_verified_by (D12).
+  license: CC-BY-4.0
+  reuse: paraphrase-only
+  domains: [it/ai-ml]
+  verified_license_at: "2026-10-16"
+  license_evidence: https://developers.google.com/machine-learning/glossary
+
+anthropic-docs:
+  title: Claude Platform Documentation
+  publisher: Anthropic
+  url: https://platform.claude.com/docs
+  type: docs
+  tier: B
+  languages: [en]
+  # No open licence stated on the pages.
+  license: all-rights-reserved
+  reuse: paraphrase-only
+  domains: [it/ai-ml]
+  verified_license_at: "2026-10-16"
+  license_evidence: https://platform.claude.com/docs
+
+mcp-spec:
+  title: Model Context Protocol Documentation
+  publisher: Model Context Protocol project
+  url: https://modelcontextprotocol.io
+  type: spec
+  tier: A
+  languages: [en]
+  # No licence statement found on the documentation pages.
+  license: unknown
+  reuse: paraphrase-only
+  domains: [it/ai-ml]
+  verified_license_at: "2026-10-16"
+  license_evidence: https://modelcontextprotocol.io/docs/getting-started/intro
+
+topdev:
+  title: TopDev Blog
+  publisher: TopDev
+  url: https://topdev.vn/blog
+  type: community
+  tier: D
+  languages: [vi]
+  license: community-terms
+  reuse: paraphrase-only
+  domains: [it]
+  verified_license_at: "2026-10-16"

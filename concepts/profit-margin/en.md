@@ -1,5 +1,6 @@
 ---
 label: Profit margin
+qualifier: (Accounting)
 aliases: [margin, profitability margin]
 loanwords: []
 plain_descriptions:

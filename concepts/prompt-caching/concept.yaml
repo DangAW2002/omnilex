@@ -1,0 +1,23 @@
+id: prompt-caching
+domains:
+  - it/ai-ml/llm-agents
+level: 3
+relations:
+  prerequisites:
+    - prompt
+    - context-window
+  related:
+    - system-prompt
+status: draft
+provenance:
+  drafted_by: ai
+sources:
+  - ref: anthropic-docs
+    locator: https://platform.claude.com/docs/en/build-with-claude/prompt-caching
+    title: Prompt caching
+    language: en
+    accessed: '2026-10-16'
+    retrieved_by: ai
+    supports:
+      - definition
+      - summary

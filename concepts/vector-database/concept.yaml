@@ -1,0 +1,30 @@
+id: vector-database
+domains:
+  - it/ai-ml/nlp
+level: 2
+relations:
+  prerequisites:
+    - embedding
+  related:
+    - rag
+status: draft
+provenance:
+  drafted_by: ai
+sources:
+  - ref: google-cloud-docs
+    locator: https://cloud.google.com/discover/what-is-a-vector-database
+    title: What is a vector database?
+    language: en
+    accessed: '2026-10-16'
+    retrieved_by: ai
+    supports:
+      - definition
+      - summary
+  - ref: microsoft-learn
+    locator: https://learn.microsoft.com/en-us/azure/search/vector-search-overview
+    title: Vector search in Azure AI Search
+    language: en
+    accessed: '2026-10-16'
+    retrieved_by: ai
+    supports:
+      - example

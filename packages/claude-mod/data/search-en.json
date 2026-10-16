@@ -1,5 +1,24 @@
 [
   {
+    "id": "chain-of-thought",
+    "label": "Chain-of-thought prompting",
+    "aliases": [
+      "chain-of-thought",
+      "CoT"
+    ],
+    "loanwords": [],
+    "plain_descriptions": [
+      "asking the AI to think step by step",
+      "making the AI show its working before the answer"
+    ],
+    "summary": "A prompting technique that asks a model to reason through intermediate steps before it gives the final answer.",
+    "domains": [
+      "it/ai-ml/llm-agents"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
     "id": "compound-interest",
     "label": "Compound Interest",
     "aliases": [
@@ -17,6 +36,22 @@
     ],
     "level": 1,
     "status": "reviewed"
+  },
+  {
+    "id": "context-window",
+    "label": "Context window",
+    "aliases": [],
+    "loanwords": [],
+    "plain_descriptions": [
+      "how much text the AI can keep in mind at once",
+      "the AI’s working memory limit"
+    ],
+    "summary": "The maximum amount of text, counted in tokens, that a model considers in one request, covering the prompt, the conversation so far and its reply.",
+    "domains": [
+      "it/ai-ml/llm-agents"
+    ],
+    "level": 1,
+    "status": "draft"
   },
   {
     "id": "cookie",
@@ -39,6 +74,116 @@
     "status": "reviewed"
   },
   {
+    "id": "embedding",
+    "label": "Embedding",
+    "aliases": [
+      "embedding vector",
+      "vector embedding"
+    ],
+    "loanwords": [],
+    "plain_descriptions": [
+      "turning words into a list of numbers so a computer can compare meanings",
+      "numbers that place similar ideas close together"
+    ],
+    "summary": "A list of numbers learned by a model to represent an item such as a word or a document, so that similar items end up close together.",
+    "domains": [
+      "it/ai-ml/nlp"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
+    "id": "few-shot-prompting",
+    "label": "Few-shot prompting",
+    "aliases": [
+      "few-shot"
+    ],
+    "loanwords": [],
+    "plain_descriptions": [
+      "showing the AI a few examples before asking",
+      "teaching by examples inside the question"
+    ],
+    "summary": "A prompting technique that includes a few worked examples of the task so the model follows the same pattern.",
+    "domains": [
+      "it/ai-ml/llm-agents"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
+    "id": "fine-tuning",
+    "label": "Fine-tuning",
+    "aliases": [
+      "fine-tune"
+    ],
+    "loanwords": [],
+    "plain_descriptions": [
+      "training an existing AI a bit more on your own examples",
+      "teaching a ready-made model a specialised job"
+    ],
+    "summary": "Further training of a pre-trained model on a smaller task-specific dataset so it performs better on that task or style.",
+    "domains": [
+      "it/ai-ml/mlops"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
+    "id": "function-calling",
+    "label": "Function calling",
+    "aliases": [
+      "tool use",
+      "tool calling"
+    ],
+    "loanwords": [],
+    "plain_descriptions": [
+      "letting the AI press buttons in other apps",
+      "the AI asking your code to fetch data or run an action"
+    ],
+    "summary": "A model capability to reply with a structured request to call a tool the developer defined; the app runs it and returns the result.",
+    "domains": [
+      "it/ai-ml/llm-agents"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
+    "id": "guardrail",
+    "label": "Guardrail",
+    "qualifier": "(AI)",
+    "aliases": [
+      "guardrails"
+    ],
+    "loanwords": [],
+    "plain_descriptions": [
+      "safety filters around a chatbot",
+      "rules that block harmful or off-topic AI answers"
+    ],
+    "summary": "A control around a model’s inputs or outputs that detects and blocks unsafe, off-policy or off-topic content.",
+    "domains": [
+      "it/ai-ml/ai-safety-governance"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
+    "id": "hallucination",
+    "label": "Hallucination",
+    "qualifier": "(AI)",
+    "aliases": [],
+    "loanwords": [],
+    "plain_descriptions": [
+      "when the AI confidently makes things up",
+      "a made-up fact or fake citation from a chatbot"
+    ],
+    "summary": "Output from a generative model that sounds plausible but is false or unsupported, presented as if it were fact.",
+    "domains": [
+      "it/ai-ml/llm-agents"
+    ],
+    "level": 1,
+    "status": "draft"
+  },
+  {
     "id": "interest-rate",
     "label": "Interest Rate",
     "aliases": [
@@ -58,8 +203,62 @@
     "status": "reviewed"
   },
   {
+    "id": "jailbreak",
+    "label": "Jailbreak",
+    "qualifier": "(AI)",
+    "aliases": [],
+    "loanwords": [],
+    "plain_descriptions": [
+      "tricking a chatbot into breaking its own safety rules",
+      "prompts that make the AI say what it should refuse"
+    ],
+    "summary": "A prompt designed to make a model ignore its safety guidelines and produce content it is meant to refuse.",
+    "domains": [
+      "it/ai-ml/ai-safety-governance"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
+    "id": "llm",
+    "label": "Large Language Model",
+    "aliases": [
+      "LLM"
+    ],
+    "loanwords": [],
+    "plain_descriptions": [
+      "an AI that writes text by guessing the next word",
+      "the kind of chatbot brain behind ChatGPT, Gemini or Claude"
+    ],
+    "summary": "A very large neural network trained on huge amounts of text that reads and writes language by predicting the next token.",
+    "domains": [
+      "it/ai-ml/llm-agents"
+    ],
+    "level": 1,
+    "status": "draft"
+  },
+  {
+    "id": "lora",
+    "label": "Low-Rank Adaptation",
+    "aliases": [
+      "LoRA"
+    ],
+    "loanwords": [],
+    "plain_descriptions": [
+      "a cheap way to fine-tune by training only a small add-on",
+      "small adapter files that teach a big model a new skill"
+    ],
+    "summary": "A parameter-efficient fine-tuning method that freezes the original weights and trains small low-rank matrices that represent the weight update.",
+    "domains": [
+      "it/ai-ml/mlops"
+    ],
+    "level": 3,
+    "status": "draft"
+  },
+  {
     "id": "margin",
     "label": "Margin",
+    "qualifier": "(Trading)",
     "aliases": [
       "margin trading",
       "trading on margin"
@@ -72,6 +271,24 @@
     "summary": "Assets in a brokerage account support a loan used to buy securities.",
     "domains": [
       "finance/investing/stocks"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
+    "id": "mcp",
+    "label": "Model Context Protocol",
+    "aliases": [
+      "MCP"
+    ],
+    "loanwords": [],
+    "plain_descriptions": [
+      "a standard plug that lets AI apps connect to tools and data",
+      "one common way for chatbots to talk to other software"
+    ],
+    "summary": "An open protocol that standardises how AI applications connect to external tools, data sources and workflows through MCP servers.",
+    "domains": [
+      "it/ai-ml/llm-agents"
     ],
     "level": 2,
     "status": "draft"
@@ -98,6 +315,7 @@
   {
     "id": "profit-margin",
     "label": "Profit margin",
+    "qualifier": "(Accounting)",
     "aliases": [
       "margin",
       "profitability margin"
@@ -110,6 +328,72 @@
     "summary": "A percentage comparing a specified measure of profit with the corresponding revenue.",
     "domains": [
       "finance/corporate-finance/financial-statements"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
+    "id": "prompt",
+    "label": "Prompt",
+    "aliases": [],
+    "loanwords": [],
+    "plain_descriptions": [
+      "what you type to tell the AI what to do",
+      "the question or instructions you give a chatbot"
+    ],
+    "summary": "The text, and sometimes images or files, given to a language model as input to steer what it produces.",
+    "domains": [
+      "it/ai-ml/llm-agents"
+    ],
+    "level": 1,
+    "status": "draft"
+  },
+  {
+    "id": "prompt-caching",
+    "label": "Prompt caching",
+    "aliases": [],
+    "loanwords": [],
+    "plain_descriptions": [
+      "saving the unchanging start of a prompt so later calls are cheaper and faster",
+      "not paying full price to resend the same long instructions"
+    ],
+    "summary": "A provider feature that keeps the processed beginning of a prompt so later requests starting the same way cost less and answer faster.",
+    "domains": [
+      "it/ai-ml/llm-agents"
+    ],
+    "level": 3,
+    "status": "draft"
+  },
+  {
+    "id": "prompt-injection",
+    "label": "Prompt injection",
+    "aliases": [],
+    "loanwords": [],
+    "plain_descriptions": [
+      "tricking an AI with hidden instructions in text it reads",
+      "a web page or file that secretly tells the chatbot to misbehave"
+    ],
+    "summary": "An attack in which crafted input, typed by a user or hidden in content the model reads, overrides the application’s intended instructions.",
+    "domains": [
+      "it/ai-ml/ai-safety-governance"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
+    "id": "rag",
+    "label": "Retrieval-Augmented Generation",
+    "aliases": [
+      "RAG"
+    ],
+    "loanwords": [],
+    "plain_descriptions": [
+      "letting the AI look things up in your documents before it answers",
+      "a chatbot that answers from a company’s own files"
+    ],
+    "summary": "A technique that retrieves relevant documents when a question arrives and adds them to the prompt so the model answers from them.",
+    "domains": [
+      "it/ai-ml/llm-agents"
     ],
     "level": 2,
     "status": "draft"
@@ -149,6 +433,40 @@
     ],
     "level": 1,
     "status": "reviewed"
+  },
+  {
+    "id": "structured-output",
+    "label": "Structured output",
+    "aliases": [
+      "structured outputs"
+    ],
+    "loanwords": [],
+    "plain_descriptions": [
+      "making the AI reply in an exact data format",
+      "getting JSON back instead of free text"
+    ],
+    "summary": "Model output constrained to follow a given format, usually a JSON schema, so that software can read it reliably.",
+    "domains": [
+      "it/ai-ml/llm-agents"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
+    "id": "system-prompt",
+    "label": "System prompt",
+    "aliases": [],
+    "loanwords": [],
+    "plain_descriptions": [
+      "hidden instructions an app gives the AI before you start chatting",
+      "the rules that set an assistant’s role and tone"
+    ],
+    "summary": "Instructions placed before the conversation that set the model’s role, rules and style for every later message.",
+    "domains": [
+      "it/ai-ml/llm-agents"
+    ],
+    "level": 2,
+    "status": "draft"
   },
   {
     "id": "token-auth",
@@ -209,5 +527,37 @@
     ],
     "level": 1,
     "status": "reviewed"
+  },
+  {
+    "id": "tokenizer",
+    "label": "Tokenizer",
+    "aliases": [],
+    "loanwords": [],
+    "plain_descriptions": [
+      "the part that chops text into pieces the AI can read",
+      "what decides how many tokens a sentence costs"
+    ],
+    "summary": "The component that splits input such as text into tokens from a fixed vocabulary and turns them into numeric ids for the model.",
+    "domains": [
+      "it/ai-ml/nlp"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
+    "id": "vector-database",
+    "label": "Vector database",
+    "aliases": [],
+    "loanwords": [],
+    "plain_descriptions": [
+      "a database that finds things by similar meaning",
+      "storage that searches by how close lists of numbers are"
+    ],
+    "summary": "A database built to store embedding vectors and quickly return the ones most similar to a query vector.",
+    "domains": [
+      "it/ai-ml/nlp"
+    ],
+    "level": 2,
+    "status": "draft"
   }
 ]

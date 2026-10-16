@@ -1,5 +1,50 @@
 [
   {
+    "key": "Chain-of-thought prompting",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "chain-of-thought",
+        "label": "Chain-of-thought prompting",
+        "summary": "Kỹ thuật viết prompt yêu cầu mô hình lập luận qua các bước trung gian trước khi đưa ra câu trả lời cuối cùng.",
+        "domains": [
+          "it/ai-ml/llm-agents"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "chain-of-thought",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "chain-of-thought",
+        "label": "Chain-of-thought prompting",
+        "summary": "Kỹ thuật viết prompt yêu cầu mô hình lập luận qua các bước trung gian trước khi đưa ra câu trả lời cuối cùng.",
+        "domains": [
+          "it/ai-ml/llm-agents"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "CoT",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "chain-of-thought",
+        "label": "Chain-of-thought prompting",
+        "summary": "Kỹ thuật viết prompt yêu cầu mô hình lập luận qua các bước trung gian trước khi đưa ra câu trả lời cuối cùng.",
+        "domains": [
+          "it/ai-ml/llm-agents"
+        ]
+      }
+    ],
+    "autolink": false
+  },
+  {
     "key": "Lãi kép",
     "match": "any-case",
     "concepts": [
@@ -26,6 +71,21 @@
         "domains": [
           "finance/personal-finance/saving",
           "finance/investing/portfolio-risk"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Cửa sổ ngữ cảnh",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "context-window",
+        "label": "Cửa sổ ngữ cảnh",
+        "summary": "Số token tối đa mô hình xét được trong một lần gọi, gồm cả prompt, phần hội thoại trước đó và câu trả lời của nó.",
+        "domains": [
+          "it/ai-ml/llm-agents"
         ]
       }
     ],
@@ -64,6 +124,204 @@
     "autolink": true
   },
   {
+    "key": "Embedding",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "embedding",
+        "label": "Embedding",
+        "summary": "Dãy số do mô hình học ra để biểu diễn một đối tượng như từ hay tài liệu, sao cho các đối tượng giống nhau nằm gần nhau.",
+        "domains": [
+          "it/ai-ml/nlp"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "embedding vector",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "embedding",
+        "label": "Embedding",
+        "summary": "Dãy số do mô hình học ra để biểu diễn một đối tượng như từ hay tài liệu, sao cho các đối tượng giống nhau nằm gần nhau.",
+        "domains": [
+          "it/ai-ml/nlp"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "vector embedding",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "embedding",
+        "label": "Embedding",
+        "summary": "Dãy số do mô hình học ra để biểu diễn một đối tượng như từ hay tài liệu, sao cho các đối tượng giống nhau nằm gần nhau.",
+        "domains": [
+          "it/ai-ml/nlp"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Few-shot prompting",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "few-shot-prompting",
+        "label": "Few-shot prompting",
+        "summary": "Kỹ thuật viết prompt có kèm vài ví dụ mẫu của nhiệm vụ để mô hình làm theo đúng khuôn đó.",
+        "domains": [
+          "it/ai-ml/llm-agents"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "few-shot",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "few-shot-prompting",
+        "label": "Few-shot prompting",
+        "summary": "Kỹ thuật viết prompt có kèm vài ví dụ mẫu của nhiệm vụ để mô hình làm theo đúng khuôn đó.",
+        "domains": [
+          "it/ai-ml/llm-agents"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Fine-tuning",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "fine-tuning",
+        "label": "Fine-tuning",
+        "summary": "Việc huấn luyện tiếp một mô hình đã huấn luyện trước trên bộ dữ liệu nhỏ, chuyên cho một nhiệm vụ, để nó làm tốt hơn nhiệm vụ hay văn phong đó.",
+        "domains": [
+          "it/ai-ml/mlops"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "fine-tune",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "fine-tuning",
+        "label": "Fine-tuning",
+        "summary": "Việc huấn luyện tiếp một mô hình đã huấn luyện trước trên bộ dữ liệu nhỏ, chuyên cho một nhiệm vụ, để nó làm tốt hơn nhiệm vụ hay văn phong đó.",
+        "domains": [
+          "it/ai-ml/mlops"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Function calling",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "function-calling",
+        "label": "Function calling",
+        "summary": "Khả năng của mô hình trả về một yêu cầu có cấu trúc để gọi công cụ do nhà phát triển định nghĩa; ứng dụng chạy nó rồi gửi lại kết quả.",
+        "domains": [
+          "it/ai-ml/llm-agents"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "tool use",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "function-calling",
+        "label": "Function calling",
+        "summary": "Khả năng của mô hình trả về một yêu cầu có cấu trúc để gọi công cụ do nhà phát triển định nghĩa; ứng dụng chạy nó rồi gửi lại kết quả.",
+        "domains": [
+          "it/ai-ml/llm-agents"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "tool calling",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "function-calling",
+        "label": "Function calling",
+        "summary": "Khả năng của mô hình trả về một yêu cầu có cấu trúc để gọi công cụ do nhà phát triển định nghĩa; ứng dụng chạy nó rồi gửi lại kết quả.",
+        "domains": [
+          "it/ai-ml/llm-agents"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Guardrail",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "guardrail",
+        "label": "Guardrail",
+        "qualifier": "(AI)",
+        "summary": "Lớp kiểm soát đặt quanh đầu vào hoặc đầu ra của mô hình, phát hiện và chặn nội dung không an toàn, trái chính sách hoặc lạc đề.",
+        "domains": [
+          "it/ai-ml/ai-safety-governance"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "guardrails",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "guardrail",
+        "label": "Guardrail",
+        "qualifier": "(AI)",
+        "summary": "Lớp kiểm soát đặt quanh đầu vào hoặc đầu ra của mô hình, phát hiện và chặn nội dung không an toàn, trái chính sách hoặc lạc đề.",
+        "domains": [
+          "it/ai-ml/ai-safety-governance"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Ảo giác",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "hallucination",
+        "label": "Ảo giác",
+        "qualifier": "(AI)",
+        "summary": "Nội dung do mô hình tạo sinh viết ra nghe có vẻ hợp lý nhưng sai hoặc không có căn cứ, lại được trình bày như sự thật.",
+        "domains": [
+          "it/ai-ml/llm-agents"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
     "key": "Lãi suất",
     "match": "any-case",
     "concepts": [
@@ -96,12 +354,89 @@
     "autolink": true
   },
   {
+    "key": "Jailbreak",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "jailbreak",
+        "label": "Jailbreak",
+        "qualifier": "(AI)",
+        "summary": "Prompt được soạn để khiến mô hình bỏ qua nguyên tắc an toàn và tạo ra nội dung mà lẽ ra nó phải từ chối.",
+        "domains": [
+          "it/ai-ml/ai-safety-governance"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Mô hình ngôn ngữ lớn",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "llm",
+        "label": "Mô hình ngôn ngữ lớn",
+        "summary": "Mạng nơ-ron rất lớn, học từ lượng văn bản khổng lồ, đọc và viết ngôn ngữ bằng cách đoán token tiếp theo.",
+        "domains": [
+          "it/ai-ml/llm-agents"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "LLM",
+    "match": "exact-case",
+    "concepts": [
+      {
+        "id": "llm",
+        "label": "Mô hình ngôn ngữ lớn",
+        "summary": "Mạng nơ-ron rất lớn, học từ lượng văn bản khổng lồ, đọc và viết ngôn ngữ bằng cách đoán token tiếp theo.",
+        "domains": [
+          "it/ai-ml/llm-agents"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Low-Rank Adaptation",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "lora",
+        "label": "Low-Rank Adaptation",
+        "summary": "Phương pháp fine-tuning tiết kiệm tham số: giữ nguyên trọng số gốc và chỉ huấn luyện các ma trận hạng thấp nhỏ biểu diễn phần cập nhật trọng số.",
+        "domains": [
+          "it/ai-ml/mlops"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "LoRA",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "lora",
+        "label": "Low-Rank Adaptation",
+        "summary": "Phương pháp fine-tuning tiết kiệm tham số: giữ nguyên trọng số gốc và chỉ huấn luyện các ma trận hạng thấp nhỏ biểu diễn phần cập nhật trọng số.",
+        "domains": [
+          "it/ai-ml/mlops"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
     "key": "Ký quỹ",
     "match": "any-case",
     "concepts": [
       {
         "id": "margin",
         "label": "Ký quỹ",
+        "qualifier": "(Chứng khoán)",
         "summary": "Tài sản trong tài khoản được dùng làm bảo đảm khi nhà đầu tư vay tiền từ công ty chứng khoán để giao dịch.",
         "domains": [
           "finance/investing/stocks"
@@ -117,6 +452,7 @@
       {
         "id": "margin",
         "label": "Ký quỹ",
+        "qualifier": "(Chứng khoán)",
         "summary": "Tài sản trong tài khoản được dùng làm bảo đảm khi nhà đầu tư vay tiền từ công ty chứng khoán để giao dịch.",
         "domains": [
           "finance/investing/stocks"
@@ -125,6 +461,7 @@
       {
         "id": "profit-margin",
         "label": "Biên lợi nhuận",
+        "qualifier": "(Kế toán)",
         "summary": "Tỷ lệ phần trăm cho biết doanh nghiệp giữ lại bao nhiêu lợi nhuận từ doanh thu theo cách tính được chọn.",
         "domains": [
           "finance/corporate-finance/financial-statements"
@@ -140,9 +477,40 @@
       {
         "id": "margin",
         "label": "Ký quỹ",
+        "qualifier": "(Chứng khoán)",
         "summary": "Tài sản trong tài khoản được dùng làm bảo đảm khi nhà đầu tư vay tiền từ công ty chứng khoán để giao dịch.",
         "domains": [
           "finance/investing/stocks"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Model Context Protocol",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "mcp",
+        "label": "Model Context Protocol",
+        "summary": "Giao thức mở chuẩn hóa cách ứng dụng AI kết nối với công cụ, nguồn dữ liệu và quy trình bên ngoài thông qua các MCP server.",
+        "domains": [
+          "it/ai-ml/llm-agents"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "MCP",
+    "match": "exact-case",
+    "concepts": [
+      {
+        "id": "mcp",
+        "label": "Model Context Protocol",
+        "summary": "Giao thức mở chuẩn hóa cách ứng dụng AI kết nối với công cụ, nguồn dữ liệu và quy trình bên ngoài thông qua các MCP server.",
+        "domains": [
+          "it/ai-ml/llm-agents"
         ]
       }
     ],
@@ -203,6 +571,7 @@
       {
         "id": "profit-margin",
         "label": "Biên lợi nhuận",
+        "qualifier": "(Kế toán)",
         "summary": "Tỷ lệ phần trăm cho biết doanh nghiệp giữ lại bao nhiêu lợi nhuận từ doanh thu theo cách tính được chọn.",
         "domains": [
           "finance/corporate-finance/financial-statements"
@@ -218,9 +587,85 @@
       {
         "id": "profit-margin",
         "label": "Biên lợi nhuận",
+        "qualifier": "(Kế toán)",
         "summary": "Tỷ lệ phần trăm cho biết doanh nghiệp giữ lại bao nhiêu lợi nhuận từ doanh thu theo cách tính được chọn.",
         "domains": [
           "finance/corporate-finance/financial-statements"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Prompt",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "prompt",
+        "label": "Prompt",
+        "summary": "Đoạn văn bản, đôi khi kèm hình ảnh hoặc tài liệu, đưa vào mô hình ngôn ngữ để định hướng kết quả nó tạo ra.",
+        "domains": [
+          "it/ai-ml/llm-agents"
+        ]
+      }
+    ],
+    "autolink": false
+  },
+  {
+    "key": "Prompt caching",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "prompt-caching",
+        "label": "Prompt caching",
+        "summary": "Tính năng của nhà cung cấp giữ lại phần mở đầu đã xử lý của prompt, nhờ đó các yêu cầu sau bắt đầu giống hệt sẽ rẻ và nhanh hơn.",
+        "domains": [
+          "it/ai-ml/llm-agents"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Prompt injection",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "prompt-injection",
+        "label": "Prompt injection",
+        "summary": "Kiểu tấn công dùng đầu vào được soạn sẵn, do người dùng gõ hoặc giấu trong nội dung mô hình đọc, để lấn át chỉ dẫn gốc của ứng dụng.",
+        "domains": [
+          "it/ai-ml/ai-safety-governance"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Retrieval-Augmented Generation",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "rag",
+        "label": "Retrieval-Augmented Generation",
+        "summary": "Kỹ thuật tìm các tài liệu liên quan ngay khi có câu hỏi rồi đưa chúng vào prompt để mô hình trả lời dựa trên đó.",
+        "domains": [
+          "it/ai-ml/llm-agents"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "RAG",
+    "match": "exact-case",
+    "concepts": [
+      {
+        "id": "rag",
+        "label": "Retrieval-Augmented Generation",
+        "summary": "Kỹ thuật tìm các tài liệu liên quan ngay khi có câu hỏi rồi đưa chúng vào prompt để mô hình trả lời dựa trên đó.",
+        "domains": [
+          "it/ai-ml/llm-agents"
         ]
       }
     ],
@@ -301,6 +746,51 @@
         "domains": [
           "finance/personal-finance/saving",
           "finance/banking/lending"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Structured output",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "structured-output",
+        "label": "Structured output",
+        "summary": "Đầu ra của mô hình bị ràng buộc theo một định dạng cho trước, thường là JSON schema, để phần mềm đọc được một cách tin cậy.",
+        "domains": [
+          "it/ai-ml/llm-agents"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "structured outputs",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "structured-output",
+        "label": "Structured output",
+        "summary": "Đầu ra của mô hình bị ràng buộc theo một định dạng cho trước, thường là JSON schema, để phần mềm đọc được một cách tin cậy.",
+        "domains": [
+          "it/ai-ml/llm-agents"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "System prompt",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "system-prompt",
+        "label": "System prompt",
+        "summary": "Phần chỉ dẫn đặt trước cuộc hội thoại, quy định vai trò, quy tắc và giọng văn của mô hình cho mọi tin nhắn sau đó.",
+        "domains": [
+          "it/ai-ml/llm-agents"
         ]
       }
     ],
@@ -418,6 +908,36 @@
         "summary": "Mẩu văn bản nhỏ, thường là một phần của từ, mà mô hình AI đọc và viết.",
         "domains": [
           "it/ai-ml/llm-agents"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Tokenizer",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "tokenizer",
+        "label": "Tokenizer",
+        "summary": "Thành phần tách dữ liệu đầu vào như văn bản thành các token thuộc một bộ từ vựng cố định và đổi chúng thành mã số cho mô hình.",
+        "domains": [
+          "it/ai-ml/nlp"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Cơ sở dữ liệu vector",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "vector-database",
+        "label": "Cơ sở dữ liệu vector",
+        "summary": "Cơ sở dữ liệu chuyên lưu vector embedding và trả về nhanh những vector giống nhất với vector của câu truy vấn.",
+        "domains": [
+          "it/ai-ml/nlp"
         ]
       }
     ],

@@ -1,0 +1,32 @@
+id: jailbreak
+domains:
+  - it/ai-ml/ai-safety-governance
+level: 2
+relations:
+  broader:
+    - prompt-injection
+  confusable:
+    - prompt-injection
+  related:
+    - guardrail
+status: draft
+provenance:
+  drafted_by: ai
+sources:
+  - ref: owasp
+    locator: https://genai.owasp.org/llmrisk/llm01-prompt-injection/
+    title: 'LLM01: Prompt Injection'
+    language: en
+    accessed: '2026-10-16'
+    retrieved_by: ai
+    supports:
+      - definition
+      - summary
+  - ref: anthropic-docs
+    locator: https://platform.claude.com/docs/en/test-and-evaluate/strengthen-guardrails/mitigate-jailbreaks
+    title: Mitigate jailbreaks and prompt injections
+    language: en
+    accessed: '2026-10-16'
+    retrieved_by: ai
+    supports:
+      - example

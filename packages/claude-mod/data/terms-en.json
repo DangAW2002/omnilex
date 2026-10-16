@@ -1,5 +1,50 @@
 [
   {
+    "key": "Chain-of-thought prompting",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "chain-of-thought",
+        "label": "Chain-of-thought prompting",
+        "summary": "A prompting technique that asks a model to reason through intermediate steps before it gives the final answer.",
+        "domains": [
+          "it/ai-ml/llm-agents"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "chain-of-thought",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "chain-of-thought",
+        "label": "Chain-of-thought prompting",
+        "summary": "A prompting technique that asks a model to reason through intermediate steps before it gives the final answer.",
+        "domains": [
+          "it/ai-ml/llm-agents"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "CoT",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "chain-of-thought",
+        "label": "Chain-of-thought prompting",
+        "summary": "A prompting technique that asks a model to reason through intermediate steps before it gives the final answer.",
+        "domains": [
+          "it/ai-ml/llm-agents"
+        ]
+      }
+    ],
+    "autolink": false
+  },
+  {
     "key": "Compound Interest",
     "match": "any-case",
     "concepts": [
@@ -26,6 +71,21 @@
         "domains": [
           "finance/personal-finance/saving",
           "finance/investing/portfolio-risk"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Context window",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "context-window",
+        "label": "Context window",
+        "summary": "The maximum amount of text, counted in tokens, that a model considers in one request, covering the prompt, the conversation so far and its reply.",
+        "domains": [
+          "it/ai-ml/llm-agents"
         ]
       }
     ],
@@ -80,6 +140,204 @@
     "autolink": true
   },
   {
+    "key": "Embedding",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "embedding",
+        "label": "Embedding",
+        "summary": "A list of numbers learned by a model to represent an item such as a word or a document, so that similar items end up close together.",
+        "domains": [
+          "it/ai-ml/nlp"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "embedding vector",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "embedding",
+        "label": "Embedding",
+        "summary": "A list of numbers learned by a model to represent an item such as a word or a document, so that similar items end up close together.",
+        "domains": [
+          "it/ai-ml/nlp"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "vector embedding",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "embedding",
+        "label": "Embedding",
+        "summary": "A list of numbers learned by a model to represent an item such as a word or a document, so that similar items end up close together.",
+        "domains": [
+          "it/ai-ml/nlp"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Few-shot prompting",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "few-shot-prompting",
+        "label": "Few-shot prompting",
+        "summary": "A prompting technique that includes a few worked examples of the task so the model follows the same pattern.",
+        "domains": [
+          "it/ai-ml/llm-agents"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "few-shot",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "few-shot-prompting",
+        "label": "Few-shot prompting",
+        "summary": "A prompting technique that includes a few worked examples of the task so the model follows the same pattern.",
+        "domains": [
+          "it/ai-ml/llm-agents"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Fine-tuning",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "fine-tuning",
+        "label": "Fine-tuning",
+        "summary": "Further training of a pre-trained model on a smaller task-specific dataset so it performs better on that task or style.",
+        "domains": [
+          "it/ai-ml/mlops"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "fine-tune",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "fine-tuning",
+        "label": "Fine-tuning",
+        "summary": "Further training of a pre-trained model on a smaller task-specific dataset so it performs better on that task or style.",
+        "domains": [
+          "it/ai-ml/mlops"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Function calling",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "function-calling",
+        "label": "Function calling",
+        "summary": "A model capability to reply with a structured request to call a tool the developer defined; the app runs it and returns the result.",
+        "domains": [
+          "it/ai-ml/llm-agents"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "tool use",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "function-calling",
+        "label": "Function calling",
+        "summary": "A model capability to reply with a structured request to call a tool the developer defined; the app runs it and returns the result.",
+        "domains": [
+          "it/ai-ml/llm-agents"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "tool calling",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "function-calling",
+        "label": "Function calling",
+        "summary": "A model capability to reply with a structured request to call a tool the developer defined; the app runs it and returns the result.",
+        "domains": [
+          "it/ai-ml/llm-agents"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Guardrail",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "guardrail",
+        "label": "Guardrail",
+        "qualifier": "(AI)",
+        "summary": "A control around a model’s inputs or outputs that detects and blocks unsafe, off-policy or off-topic content.",
+        "domains": [
+          "it/ai-ml/ai-safety-governance"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "guardrails",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "guardrail",
+        "label": "Guardrail",
+        "qualifier": "(AI)",
+        "summary": "A control around a model’s inputs or outputs that detects and blocks unsafe, off-policy or off-topic content.",
+        "domains": [
+          "it/ai-ml/ai-safety-governance"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Hallucination",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "hallucination",
+        "label": "Hallucination",
+        "qualifier": "(AI)",
+        "summary": "Output from a generative model that sounds plausible but is false or unsupported, presented as if it were fact.",
+        "domains": [
+          "it/ai-ml/llm-agents"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
     "key": "Interest Rate",
     "match": "any-case",
     "concepts": [
@@ -112,12 +370,89 @@
     "autolink": true
   },
   {
+    "key": "Jailbreak",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "jailbreak",
+        "label": "Jailbreak",
+        "qualifier": "(AI)",
+        "summary": "A prompt designed to make a model ignore its safety guidelines and produce content it is meant to refuse.",
+        "domains": [
+          "it/ai-ml/ai-safety-governance"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Large Language Model",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "llm",
+        "label": "Large Language Model",
+        "summary": "A very large neural network trained on huge amounts of text that reads and writes language by predicting the next token.",
+        "domains": [
+          "it/ai-ml/llm-agents"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "LLM",
+    "match": "exact-case",
+    "concepts": [
+      {
+        "id": "llm",
+        "label": "Large Language Model",
+        "summary": "A very large neural network trained on huge amounts of text that reads and writes language by predicting the next token.",
+        "domains": [
+          "it/ai-ml/llm-agents"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Low-Rank Adaptation",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "lora",
+        "label": "Low-Rank Adaptation",
+        "summary": "A parameter-efficient fine-tuning method that freezes the original weights and trains small low-rank matrices that represent the weight update.",
+        "domains": [
+          "it/ai-ml/mlops"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "LoRA",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "lora",
+        "label": "Low-Rank Adaptation",
+        "summary": "A parameter-efficient fine-tuning method that freezes the original weights and trains small low-rank matrices that represent the weight update.",
+        "domains": [
+          "it/ai-ml/mlops"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
     "key": "Margin",
     "match": "any-case",
     "concepts": [
       {
         "id": "margin",
         "label": "Margin",
+        "qualifier": "(Trading)",
         "summary": "Assets in a brokerage account support a loan used to buy securities.",
         "domains": [
           "finance/investing/stocks"
@@ -126,6 +461,7 @@
       {
         "id": "profit-margin",
         "label": "Profit margin",
+        "qualifier": "(Accounting)",
         "summary": "A percentage comparing a specified measure of profit with the corresponding revenue.",
         "domains": [
           "finance/corporate-finance/financial-statements"
@@ -141,6 +477,7 @@
       {
         "id": "margin",
         "label": "Margin",
+        "qualifier": "(Trading)",
         "summary": "Assets in a brokerage account support a loan used to buy securities.",
         "domains": [
           "finance/investing/stocks"
@@ -156,9 +493,40 @@
       {
         "id": "margin",
         "label": "Margin",
+        "qualifier": "(Trading)",
         "summary": "Assets in a brokerage account support a loan used to buy securities.",
         "domains": [
           "finance/investing/stocks"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Model Context Protocol",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "mcp",
+        "label": "Model Context Protocol",
+        "summary": "An open protocol that standardises how AI applications connect to external tools, data sources and workflows through MCP servers.",
+        "domains": [
+          "it/ai-ml/llm-agents"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "MCP",
+    "match": "exact-case",
+    "concepts": [
+      {
+        "id": "mcp",
+        "label": "Model Context Protocol",
+        "summary": "An open protocol that standardises how AI applications connect to external tools, data sources and workflows through MCP servers.",
+        "domains": [
+          "it/ai-ml/llm-agents"
         ]
       }
     ],
@@ -203,6 +571,7 @@
       {
         "id": "profit-margin",
         "label": "Profit margin",
+        "qualifier": "(Accounting)",
         "summary": "A percentage comparing a specified measure of profit with the corresponding revenue.",
         "domains": [
           "finance/corporate-finance/financial-statements"
@@ -218,9 +587,85 @@
       {
         "id": "profit-margin",
         "label": "Profit margin",
+        "qualifier": "(Accounting)",
         "summary": "A percentage comparing a specified measure of profit with the corresponding revenue.",
         "domains": [
           "finance/corporate-finance/financial-statements"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Prompt",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "prompt",
+        "label": "Prompt",
+        "summary": "The text, and sometimes images or files, given to a language model as input to steer what it produces.",
+        "domains": [
+          "it/ai-ml/llm-agents"
+        ]
+      }
+    ],
+    "autolink": false
+  },
+  {
+    "key": "Prompt caching",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "prompt-caching",
+        "label": "Prompt caching",
+        "summary": "A provider feature that keeps the processed beginning of a prompt so later requests starting the same way cost less and answer faster.",
+        "domains": [
+          "it/ai-ml/llm-agents"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Prompt injection",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "prompt-injection",
+        "label": "Prompt injection",
+        "summary": "An attack in which crafted input, typed by a user or hidden in content the model reads, overrides the application’s intended instructions.",
+        "domains": [
+          "it/ai-ml/ai-safety-governance"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Retrieval-Augmented Generation",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "rag",
+        "label": "Retrieval-Augmented Generation",
+        "summary": "A technique that retrieves relevant documents when a question arrives and adds them to the prompt so the model answers from them.",
+        "domains": [
+          "it/ai-ml/llm-agents"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "RAG",
+    "match": "exact-case",
+    "concepts": [
+      {
+        "id": "rag",
+        "label": "Retrieval-Augmented Generation",
+        "summary": "A technique that retrieves relevant documents when a question arrives and adds them to the prompt so the model answers from them.",
+        "domains": [
+          "it/ai-ml/llm-agents"
         ]
       }
     ],
@@ -269,6 +714,51 @@
         "domains": [
           "finance/personal-finance/saving",
           "finance/banking/lending"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Structured output",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "structured-output",
+        "label": "Structured output",
+        "summary": "Model output constrained to follow a given format, usually a JSON schema, so that software can read it reliably.",
+        "domains": [
+          "it/ai-ml/llm-agents"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "structured outputs",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "structured-output",
+        "label": "Structured output",
+        "summary": "Model output constrained to follow a given format, usually a JSON schema, so that software can read it reliably.",
+        "domains": [
+          "it/ai-ml/llm-agents"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "System prompt",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "system-prompt",
+        "label": "System prompt",
+        "summary": "Instructions placed before the conversation that set the model’s role, rules and style for every later message.",
+        "domains": [
+          "it/ai-ml/llm-agents"
         ]
       }
     ],
@@ -386,6 +876,36 @@
         "summary": "Small chunk of text, typically subword units, processed by large language models.",
         "domains": [
           "it/ai-ml/llm-agents"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Tokenizer",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "tokenizer",
+        "label": "Tokenizer",
+        "summary": "The component that splits input such as text into tokens from a fixed vocabulary and turns them into numeric ids for the model.",
+        "domains": [
+          "it/ai-ml/nlp"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Vector database",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "vector-database",
+        "label": "Vector database",
+        "summary": "A database built to store embedding vectors and quickly return the ones most similar to a query vector.",
+        "domains": [
+          "it/ai-ml/nlp"
         ]
       }
     ],

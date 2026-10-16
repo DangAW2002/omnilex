@@ -1,0 +1,24 @@
+id: system-prompt
+domains:
+  - it/ai-ml/llm-agents
+level: 2
+relations:
+  prerequisites:
+    - prompt
+  related:
+    - prompt-injection
+    - guardrail
+    - prompt-caching
+status: draft
+provenance:
+  drafted_by: ai
+sources:
+  - ref: anthropic-docs
+    locator: https://platform.claude.com/docs/en/build-with-claude/prompt-engineering/claude-prompting-best-practices#give-claude-a-role
+    title: 'Prompting best practices: give Claude a role'
+    language: en
+    accessed: '2026-10-16'
+    retrieved_by: ai
+    supports:
+      - definition
+      - summary

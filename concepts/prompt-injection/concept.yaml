@@ -1,0 +1,27 @@
+id: prompt-injection
+domains:
+  - it/ai-ml/ai-safety-governance
+level: 2
+relations:
+  prerequisites:
+    - prompt
+  confusable:
+    - jailbreak
+  narrower:
+    - jailbreak
+  related:
+    - guardrail
+    - system-prompt
+status: draft
+provenance:
+  drafted_by: ai
+sources:
+  - ref: owasp
+    locator: https://genai.owasp.org/llmrisk/llm01-prompt-injection/
+    title: 'LLM01: Prompt Injection'
+    language: en
+    accessed: '2026-10-16'
+    retrieved_by: ai
+    supports:
+      - definition
+      - summary

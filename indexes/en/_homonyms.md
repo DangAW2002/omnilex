@@ -3,8 +3,8 @@
 Terms sharing a label or alias, distinguished by context:
 
 ## Margin
-- [**Margin**](../../concepts/margin/en.md) [finance/investing/stocks]: Assets in a brokerage account support a loan used to buy securities.
-- [**Profit margin**](../../concepts/profit-margin/en.md) [finance/corporate-finance/financial-statements]: A percentage comparing a specified measure of profit with the corresponding revenue.
+- [**Margin (Trading)**](../../concepts/margin/en.md) [finance/investing/stocks]: Assets in a brokerage account support a loan used to buy securities.
+- [**Profit margin (Accounting)**](../../concepts/profit-margin/en.md) [finance/corporate-finance/financial-statements]: A percentage comparing a specified measure of profit with the corresponding revenue.
 
 ## Token
 - [**Token (Authentication)**](../../concepts/token-auth/en.md) [it/security/authentication, it/web/api]: A cryptographically signed string presented to servers to prove identity and authorization permissions.

@@ -1,5 +1,6 @@
 ---
 label: Ký quỹ
+qualifier: (Chứng khoán)
 aliases: [margin, giao dịch ký quỹ]
 loanwords: [margin]
 plain_descriptions:

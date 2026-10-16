@@ -1,0 +1,22 @@
+id: chain-of-thought
+domains:
+  - it/ai-ml/llm-agents
+level: 2
+relations:
+  prerequisites:
+    - prompt
+  related:
+    - few-shot-prompting
+status: draft
+provenance:
+  drafted_by: ai
+sources:
+  - ref: google-ml-glossary
+    locator: https://developers.google.com/machine-learning/glossary#chain-of-thought-prompting
+    title: chain-of-thought prompting
+    language: en
+    accessed: '2026-10-16'
+    retrieved_by: ai
+    supports:
+      - definition
+      - summary

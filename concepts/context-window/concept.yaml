@@ -1,0 +1,34 @@
+id: context-window
+domains:
+  - it/ai-ml/llm-agents
+level: 1
+relations:
+  prerequisites:
+    - token-llm
+    - llm
+  related:
+    - prompt-caching
+    - rag
+    - tokenizer
+status: draft
+provenance:
+  drafted_by: ai
+sources:
+  - ref: google-ml-glossary
+    locator: https://developers.google.com/machine-learning/glossary#context-window
+    title: context window
+    language: en
+    accessed: '2026-10-16'
+    retrieved_by: ai
+    supports:
+      - definition
+      - summary
+  - ref: anthropic-docs
+    locator: https://platform.claude.com/docs/en/build-with-claude/context-windows
+    title: Context windows
+    language: en
+    accessed: '2026-10-16'
+    retrieved_by: ai
+    supports:
+      - definition
+      - example

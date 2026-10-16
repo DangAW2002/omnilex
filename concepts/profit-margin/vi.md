@@ -1,5 +1,6 @@
 ---
 label: Biên lợi nhuận
+qualifier: (Kế toán)
 aliases: [margin, tỷ suất lợi nhuận trên doanh thu]
 loanwords: [profit margin]
 plain_descriptions:

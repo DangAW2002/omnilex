@@ -1,0 +1,22 @@
+id: structured-output
+domains:
+  - it/ai-ml/llm-agents
+level: 2
+relations:
+  prerequisites:
+    - llm
+  related:
+    - function-calling
+status: draft
+provenance:
+  drafted_by: ai
+sources:
+  - ref: anthropic-docs
+    locator: https://platform.claude.com/docs/en/build-with-claude/structured-outputs
+    title: Structured outputs
+    language: en
+    accessed: '2026-10-16'
+    retrieved_by: ai
+    supports:
+      - definition
+      - summary

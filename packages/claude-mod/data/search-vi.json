@@ -1,5 +1,26 @@
 [
   {
+    "id": "chain-of-thought",
+    "label": "Chain-of-thought prompting",
+    "aliases": [
+      "chain-of-thought",
+      "CoT"
+    ],
+    "loanwords": [
+      "chain-of-thought"
+    ],
+    "plain_descriptions": [
+      "bảo AI suy nghĩ từng bước một",
+      "bắt AI trình bày cách giải trước khi đưa đáp án"
+    ],
+    "summary": "Kỹ thuật viết prompt yêu cầu mô hình lập luận qua các bước trung gian trước khi đưa ra câu trả lời cuối cùng.",
+    "domains": [
+      "it/ai-ml/llm-agents"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
     "id": "compound-interest",
     "label": "Lãi kép",
     "aliases": [
@@ -20,6 +41,24 @@
     ],
     "level": 1,
     "status": "reviewed"
+  },
+  {
+    "id": "context-window",
+    "label": "Cửa sổ ngữ cảnh",
+    "aliases": [],
+    "loanwords": [
+      "context window"
+    ],
+    "plain_descriptions": [
+      "AI nhớ được bao nhiêu chữ cùng một lúc",
+      "giới hạn trí nhớ tạm thời của AI"
+    ],
+    "summary": "Số token tối đa mô hình xét được trong một lần gọi, gồm cả prompt, phần hội thoại trước đó và câu trả lời của nó.",
+    "domains": [
+      "it/ai-ml/llm-agents"
+    ],
+    "level": 1,
+    "status": "draft"
   },
   {
     "id": "cookie",
@@ -43,6 +82,128 @@
     "status": "reviewed"
   },
   {
+    "id": "embedding",
+    "label": "Embedding",
+    "aliases": [
+      "embedding vector",
+      "vector embedding"
+    ],
+    "loanwords": [
+      "embedding"
+    ],
+    "plain_descriptions": [
+      "biến chữ thành một dãy số để máy so sánh được ý nghĩa",
+      "những con số đặt các ý giống nhau nằm gần nhau"
+    ],
+    "summary": "Dãy số do mô hình học ra để biểu diễn một đối tượng như từ hay tài liệu, sao cho các đối tượng giống nhau nằm gần nhau.",
+    "domains": [
+      "it/ai-ml/nlp"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
+    "id": "few-shot-prompting",
+    "label": "Few-shot prompting",
+    "aliases": [
+      "few-shot"
+    ],
+    "loanwords": [
+      "few-shot prompting"
+    ],
+    "plain_descriptions": [
+      "cho AI xem vài ví dụ mẫu trước khi hỏi",
+      "dạy bằng ví dụ ngay trong câu hỏi"
+    ],
+    "summary": "Kỹ thuật viết prompt có kèm vài ví dụ mẫu của nhiệm vụ để mô hình làm theo đúng khuôn đó.",
+    "domains": [
+      "it/ai-ml/llm-agents"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
+    "id": "fine-tuning",
+    "label": "Fine-tuning",
+    "aliases": [
+      "fine-tune"
+    ],
+    "loanwords": [
+      "fine-tuning"
+    ],
+    "plain_descriptions": [
+      "huấn luyện thêm một AI có sẵn bằng ví dụ của mình",
+      "dạy một mô hình làm sẵn một việc chuyên biệt"
+    ],
+    "summary": "Việc huấn luyện tiếp một mô hình đã huấn luyện trước trên bộ dữ liệu nhỏ, chuyên cho một nhiệm vụ, để nó làm tốt hơn nhiệm vụ hay văn phong đó.",
+    "domains": [
+      "it/ai-ml/mlops"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
+    "id": "function-calling",
+    "label": "Function calling",
+    "aliases": [
+      "tool use",
+      "tool calling"
+    ],
+    "loanwords": [
+      "function calling"
+    ],
+    "plain_descriptions": [
+      "cho AI bấm nút trong các ứng dụng khác",
+      "AI nhờ code của mình lấy dữ liệu hoặc thực hiện một thao tác"
+    ],
+    "summary": "Khả năng của mô hình trả về một yêu cầu có cấu trúc để gọi công cụ do nhà phát triển định nghĩa; ứng dụng chạy nó rồi gửi lại kết quả.",
+    "domains": [
+      "it/ai-ml/llm-agents"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
+    "id": "guardrail",
+    "label": "Guardrail",
+    "qualifier": "(AI)",
+    "aliases": [
+      "guardrails"
+    ],
+    "loanwords": [
+      "guardrail"
+    ],
+    "plain_descriptions": [
+      "các bộ lọc an toàn bao quanh chatbot",
+      "luật chặn câu trả lời độc hại hoặc lạc đề của AI"
+    ],
+    "summary": "Lớp kiểm soát đặt quanh đầu vào hoặc đầu ra của mô hình, phát hiện và chặn nội dung không an toàn, trái chính sách hoặc lạc đề.",
+    "domains": [
+      "it/ai-ml/ai-safety-governance"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
+    "id": "hallucination",
+    "label": "Ảo giác",
+    "qualifier": "(AI)",
+    "aliases": [],
+    "loanwords": [
+      "hallucination"
+    ],
+    "plain_descriptions": [
+      "khi AI tự bịa ra thông tin mà vẫn nói rất chắc",
+      "chatbot đưa dẫn chứng hoặc số liệu không có thật"
+    ],
+    "summary": "Nội dung do mô hình tạo sinh viết ra nghe có vẻ hợp lý nhưng sai hoặc không có căn cứ, lại được trình bày như sự thật.",
+    "domains": [
+      "it/ai-ml/llm-agents"
+    ],
+    "level": 1,
+    "status": "draft"
+  },
+  {
     "id": "interest-rate",
     "label": "Lãi suất",
     "aliases": [
@@ -64,8 +225,68 @@
     "status": "reviewed"
   },
   {
+    "id": "jailbreak",
+    "label": "Jailbreak",
+    "qualifier": "(AI)",
+    "aliases": [],
+    "loanwords": [
+      "jailbreak"
+    ],
+    "plain_descriptions": [
+      "lừa chatbot phá luật an toàn của chính nó",
+      "những prompt khiến AI nói ra điều lẽ ra phải từ chối"
+    ],
+    "summary": "Prompt được soạn để khiến mô hình bỏ qua nguyên tắc an toàn và tạo ra nội dung mà lẽ ra nó phải từ chối.",
+    "domains": [
+      "it/ai-ml/ai-safety-governance"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
+    "id": "llm",
+    "label": "Mô hình ngôn ngữ lớn",
+    "aliases": [
+      "LLM"
+    ],
+    "loanwords": [
+      "large language model"
+    ],
+    "plain_descriptions": [
+      "AI viết chữ bằng cách đoán từ tiếp theo",
+      "bộ não phía sau ChatGPT, Gemini hay Claude"
+    ],
+    "summary": "Mạng nơ-ron rất lớn, học từ lượng văn bản khổng lồ, đọc và viết ngôn ngữ bằng cách đoán token tiếp theo.",
+    "domains": [
+      "it/ai-ml/llm-agents"
+    ],
+    "level": 1,
+    "status": "draft"
+  },
+  {
+    "id": "lora",
+    "label": "Low-Rank Adaptation",
+    "aliases": [
+      "LoRA"
+    ],
+    "loanwords": [
+      "low-rank adaptation"
+    ],
+    "plain_descriptions": [
+      "cách fine-tune rẻ bằng cách chỉ huấn luyện một phần gắn thêm nhỏ",
+      "những tệp adapter nhỏ dạy mô hình lớn một kỹ năng mới"
+    ],
+    "summary": "Phương pháp fine-tuning tiết kiệm tham số: giữ nguyên trọng số gốc và chỉ huấn luyện các ma trận hạng thấp nhỏ biểu diễn phần cập nhật trọng số.",
+    "domains": [
+      "it/ai-ml/mlops"
+    ],
+    "level": 3,
+    "status": "draft"
+  },
+  {
     "id": "margin",
     "label": "Ký quỹ",
+    "qualifier": "(Chứng khoán)",
     "aliases": [
       "margin",
       "giao dịch ký quỹ"
@@ -80,6 +301,26 @@
     "summary": "Tài sản trong tài khoản được dùng làm bảo đảm khi nhà đầu tư vay tiền từ công ty chứng khoán để giao dịch.",
     "domains": [
       "finance/investing/stocks"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
+    "id": "mcp",
+    "label": "Model Context Protocol",
+    "aliases": [
+      "MCP"
+    ],
+    "loanwords": [
+      "model context protocol"
+    ],
+    "plain_descriptions": [
+      "phích cắm chuẩn để ứng dụng AI nối với công cụ và dữ liệu",
+      "một cách chung để chatbot nói chuyện với phần mềm khác"
+    ],
+    "summary": "Giao thức mở chuẩn hóa cách ứng dụng AI kết nối với công cụ, nguồn dữ liệu và quy trình bên ngoài thông qua các MCP server.",
+    "domains": [
+      "it/ai-ml/llm-agents"
     ],
     "level": 2,
     "status": "draft"
@@ -109,6 +350,7 @@
   {
     "id": "profit-margin",
     "label": "Biên lợi nhuận",
+    "qualifier": "(Kế toán)",
     "aliases": [
       "margin",
       "tỷ suất lợi nhuận trên doanh thu"
@@ -123,6 +365,80 @@
     "summary": "Tỷ lệ phần trăm cho biết doanh nghiệp giữ lại bao nhiêu lợi nhuận từ doanh thu theo cách tính được chọn.",
     "domains": [
       "finance/corporate-finance/financial-statements"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
+    "id": "prompt",
+    "label": "Prompt",
+    "aliases": [],
+    "loanwords": [
+      "prompt"
+    ],
+    "plain_descriptions": [
+      "câu mình gõ để bảo AI làm gì",
+      "lời dặn hoặc câu hỏi đưa cho chatbot"
+    ],
+    "summary": "Đoạn văn bản, đôi khi kèm hình ảnh hoặc tài liệu, đưa vào mô hình ngôn ngữ để định hướng kết quả nó tạo ra.",
+    "domains": [
+      "it/ai-ml/llm-agents"
+    ],
+    "level": 1,
+    "status": "draft"
+  },
+  {
+    "id": "prompt-caching",
+    "label": "Prompt caching",
+    "aliases": [],
+    "loanwords": [
+      "prompt caching"
+    ],
+    "plain_descriptions": [
+      "lưu sẵn phần đầu không đổi của prompt để các lần gọi sau rẻ và nhanh hơn",
+      "không phải trả đủ tiền mỗi lần gửi lại cùng một đoạn chỉ dẫn dài"
+    ],
+    "summary": "Tính năng của nhà cung cấp giữ lại phần mở đầu đã xử lý của prompt, nhờ đó các yêu cầu sau bắt đầu giống hệt sẽ rẻ và nhanh hơn.",
+    "domains": [
+      "it/ai-ml/llm-agents"
+    ],
+    "level": 3,
+    "status": "draft"
+  },
+  {
+    "id": "prompt-injection",
+    "label": "Prompt injection",
+    "aliases": [],
+    "loanwords": [
+      "prompt injection"
+    ],
+    "plain_descriptions": [
+      "lừa AI bằng lệnh giấu trong nội dung nó đọc",
+      "trang web hoặc tệp lén bảo chatbot làm điều sai"
+    ],
+    "summary": "Kiểu tấn công dùng đầu vào được soạn sẵn, do người dùng gõ hoặc giấu trong nội dung mô hình đọc, để lấn át chỉ dẫn gốc của ứng dụng.",
+    "domains": [
+      "it/ai-ml/ai-safety-governance"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
+    "id": "rag",
+    "label": "Retrieval-Augmented Generation",
+    "aliases": [
+      "RAG"
+    ],
+    "loanwords": [
+      "retrieval-augmented generation"
+    ],
+    "plain_descriptions": [
+      "cho AI tra tài liệu của mình trước khi trả lời",
+      "chatbot trả lời dựa trên tài liệu nội bộ của công ty"
+    ],
+    "summary": "Kỹ thuật tìm các tài liệu liên quan ngay khi có câu hỏi rồi đưa chúng vào prompt để mô hình trả lời dựa trên đó.",
+    "domains": [
+      "it/ai-ml/llm-agents"
     ],
     "level": 2,
     "status": "draft"
@@ -170,6 +486,44 @@
     ],
     "level": 1,
     "status": "reviewed"
+  },
+  {
+    "id": "structured-output",
+    "label": "Structured output",
+    "aliases": [
+      "structured outputs"
+    ],
+    "loanwords": [
+      "structured output"
+    ],
+    "plain_descriptions": [
+      "bắt AI trả lời đúng một định dạng dữ liệu cố định",
+      "nhận về JSON thay vì một đoạn chữ tự do"
+    ],
+    "summary": "Đầu ra của mô hình bị ràng buộc theo một định dạng cho trước, thường là JSON schema, để phần mềm đọc được một cách tin cậy.",
+    "domains": [
+      "it/ai-ml/llm-agents"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
+    "id": "system-prompt",
+    "label": "System prompt",
+    "aliases": [],
+    "loanwords": [
+      "system prompt"
+    ],
+    "plain_descriptions": [
+      "lời dặn ngầm ứng dụng đưa cho AI trước khi mình bắt đầu chat",
+      "bộ quy tắc đặt vai trò và giọng điệu cho trợ lý"
+    ],
+    "summary": "Phần chỉ dẫn đặt trước cuộc hội thoại, quy định vai trò, quy tắc và giọng văn của mô hình cho mọi tin nhắn sau đó.",
+    "domains": [
+      "it/ai-ml/llm-agents"
+    ],
+    "level": 2,
+    "status": "draft"
   },
   {
     "id": "token-auth",
@@ -237,5 +591,41 @@
     ],
     "level": 1,
     "status": "reviewed"
+  },
+  {
+    "id": "tokenizer",
+    "label": "Tokenizer",
+    "aliases": [],
+    "loanwords": [
+      "tokenizer"
+    ],
+    "plain_descriptions": [
+      "phần cắt chữ thành từng mẩu cho AI đọc",
+      "thứ quyết định một câu tốn bao nhiêu token"
+    ],
+    "summary": "Thành phần tách dữ liệu đầu vào như văn bản thành các token thuộc một bộ từ vựng cố định và đổi chúng thành mã số cho mô hình.",
+    "domains": [
+      "it/ai-ml/nlp"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
+    "id": "vector-database",
+    "label": "Cơ sở dữ liệu vector",
+    "aliases": [],
+    "loanwords": [
+      "vector database"
+    ],
+    "plain_descriptions": [
+      "kho dữ liệu tìm theo ý nghĩa gần giống",
+      "nơi lưu trữ tìm kiếm theo độ gần nhau của các dãy số"
+    ],
+    "summary": "Cơ sở dữ liệu chuyên lưu vector embedding và trả về nhanh những vector giống nhất với vector của câu truy vấn.",
+    "domains": [
+      "it/ai-ml/nlp"
+    ],
+    "level": 2,
+    "status": "draft"
   }
 ]

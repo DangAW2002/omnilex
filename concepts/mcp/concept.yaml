@@ -1,0 +1,22 @@
+id: mcp
+domains:
+  - it/ai-ml/llm-agents
+level: 2
+relations:
+  prerequisites:
+    - function-calling
+  related:
+    - llm
+status: draft
+provenance:
+  drafted_by: ai
+sources:
+  - ref: mcp-spec
+    locator: https://modelcontextprotocol.io/docs/getting-started/intro
+    title: What is the Model Context Protocol (MCP)?
+    language: en
+    accessed: '2026-10-16'
+    retrieved_by: ai
+    supports:
+      - definition
+      - summary

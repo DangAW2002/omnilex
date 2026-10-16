@@ -1,0 +1,27 @@
+id: rag
+domains:
+  - it/ai-ml/llm-agents
+level: 2
+relations:
+  prerequisites:
+    - llm
+    - embedding
+    - vector-database
+  confusable:
+    - fine-tuning
+  related:
+    - hallucination
+    - context-window
+status: draft
+provenance:
+  drafted_by: ai
+sources:
+  - ref: google-ml-glossary
+    locator: https://developers.google.com/machine-learning/glossary#retrieval-augmented-generation-rag
+    title: retrieval-augmented generation (RAG)
+    language: en
+    accessed: '2026-10-16'
+    retrieved_by: ai
+    supports:
+      - definition
+      - summary

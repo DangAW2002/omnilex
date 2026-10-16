@@ -1,0 +1,23 @@
+id: tokenizer
+domains:
+  - it/ai-ml/nlp
+level: 2
+relations:
+  prerequisites:
+    - token-llm
+  related:
+    - embedding
+    - context-window
+status: draft
+provenance:
+  drafted_by: ai
+sources:
+  - ref: google-ml-glossary
+    locator: https://developers.google.com/machine-learning/glossary#tokenizer
+    title: tokenizer
+    language: en
+    accessed: '2026-10-16'
+    retrieved_by: ai
+    supports:
+      - definition
+      - summary

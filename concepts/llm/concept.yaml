@@ -1,0 +1,23 @@
+id: llm
+domains:
+  - it/ai-ml/llm-agents
+level: 1
+relations:
+  related:
+    - prompt
+    - token-llm
+    - context-window
+    - hallucination
+status: draft
+provenance:
+  drafted_by: ai
+sources:
+  - ref: google-ml-glossary
+    locator: https://developers.google.com/machine-learning/glossary#large-language-model
+    title: large language model
+    language: en
+    accessed: '2026-10-16'
+    retrieved_by: ai
+    supports:
+      - definition
+      - summary

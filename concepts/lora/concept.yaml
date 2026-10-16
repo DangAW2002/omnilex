@@ -1,0 +1,22 @@
+id: lora
+domains:
+  - it/ai-ml/mlops
+level: 3
+relations:
+  prerequisites:
+    - fine-tuning
+  broader:
+    - fine-tuning
+status: draft
+provenance:
+  drafted_by: ai
+sources:
+  - ref: google-ml-glossary
+    locator: https://developers.google.com/machine-learning/glossary#low-rank-adaptability-lora
+    title: Low-Rank Adaptability (LoRA)
+    language: en
+    accessed: '2026-10-16'
+    retrieved_by: ai
+    supports:
+      - definition
+      - summary

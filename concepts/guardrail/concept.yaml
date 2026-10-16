@@ -1,0 +1,22 @@
+id: guardrail
+domains:
+  - it/ai-ml/ai-safety-governance
+level: 2
+relations:
+  related:
+    - jailbreak
+    - prompt-injection
+    - hallucination
+status: draft
+provenance:
+  drafted_by: ai
+sources:
+  - ref: aws-docs
+    locator: https://docs.aws.amazon.com/bedrock/latest/userguide/guardrails.html
+    title: Amazon Bedrock Guardrails
+    language: en
+    accessed: '2026-10-16'
+    retrieved_by: ai
+    supports:
+      - definition
+      - summary

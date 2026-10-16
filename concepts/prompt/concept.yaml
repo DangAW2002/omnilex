@@ -1,0 +1,25 @@
+id: prompt
+domains:
+  - it/ai-ml/llm-agents
+level: 1
+relations:
+  prerequisites:
+    - llm
+  related:
+    - system-prompt
+    - few-shot-prompting
+    - chain-of-thought
+    - prompt-injection
+status: draft
+provenance:
+  drafted_by: ai
+sources:
+  - ref: google-ml-glossary
+    locator: https://developers.google.com/machine-learning/glossary#prompt
+    title: prompt
+    language: en
+    accessed: '2026-10-16'
+    retrieved_by: ai
+    supports:
+      - definition
+      - summary

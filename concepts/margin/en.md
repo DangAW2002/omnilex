@@ -1,5 +1,6 @@
 ---
 label: Margin
+qualifier: (Trading)
 aliases: [margin trading, trading on margin]
 loanwords: []
 plain_descriptions:

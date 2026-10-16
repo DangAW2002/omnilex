@@ -1,0 +1,25 @@
+id: temperature-llm
+domains:
+  - it/ai-ml/llm-agents
+level: 2
+relations:
+  prerequisites:
+    - llm
+  confusable:
+    - top-p-sampling
+  related:
+    - top-p-sampling
+    - inference
+status: draft
+provenance:
+  drafted_by: ai
+sources:
+  - ref: google-ml-glossary
+    locator: https://developers.google.com/machine-learning/glossary#temperature
+    title: temperature
+    language: en
+    accessed: '2026-10-16'
+    retrieved_by: ai
+    supports:
+      - definition
+      - summary

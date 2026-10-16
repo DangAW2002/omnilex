@@ -1,0 +1,25 @@
+id: ai-benchmark
+domains:
+  - it/ai-ml/mlops
+level: 2
+relations:
+  prerequisites:
+    - ml-model
+  confusable:
+    - llm-eval
+  related:
+    - dataset
+    - inference
+status: draft
+provenance:
+  drafted_by: ai
+sources:
+  - ref: mlcommons
+    locator: https://mlcommons.org/benchmarks/inference-datacenter/
+    title: "Benchmark MLPerf Inference: Datacenter"
+    language: en
+    accessed: '2026-10-16'
+    retrieved_by: ai
+    supports:
+      - definition
+      - summary

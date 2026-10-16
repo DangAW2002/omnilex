@@ -1,0 +1,29 @@
+id: model-training
+domains:
+  - it/ai-ml/foundations
+level: 1
+relations:
+  prerequisites:
+    - machine-learning
+    - dataset
+    - ml-model
+  confusable:
+    - inference
+  related:
+    - loss-function
+    - gradient-descent
+    - epoch-ml
+    - batch-size
+status: draft
+provenance:
+  drafted_by: ai
+sources:
+  - ref: google-ml-glossary
+    locator: https://developers.google.com/machine-learning/glossary#training
+    title: training
+    language: en
+    accessed: '2026-10-16'
+    retrieved_by: ai
+    supports:
+      - definition
+      - summary

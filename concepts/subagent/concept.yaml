@@ -1,0 +1,25 @@
+id: subagent
+domains:
+  - it/ai-ml/llm-agents
+level: 2
+relations:
+  broader:
+    - ai-agent
+  prerequisites:
+    - ai-agent
+  related:
+    - function-calling
+    - context-engineering
+status: draft
+provenance:
+  drafted_by: ai
+sources:
+  - ref: google-ml-glossary
+    locator: https://developers.google.com/machine-learning/glossary#sub-agent
+    title: sub-agent
+    language: en
+    accessed: '2026-10-16'
+    retrieved_by: ai
+    supports:
+      - definition
+      - summary

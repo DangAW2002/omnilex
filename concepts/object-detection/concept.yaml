@@ -1,0 +1,25 @@
+id: object-detection
+domains:
+  - it/ai-ml/computer-vision
+level: 2
+relations:
+  prerequisites:
+    - neural-network
+    - dataset
+  confusable:
+    - image-classification
+  related:
+    - deep-learning
+status: draft
+provenance:
+  drafted_by: ai
+sources:
+  - ref: microsoft-learn
+    locator: https://learn.microsoft.com/en-us/azure/ai-services/computer-vision/concept-object-detection
+    title: Object detection - Azure Vision in Foundry Tools - Foundry Tools | Microsoft Learn
+    language: en
+    accessed: '2026-10-16'
+    retrieved_by: ai
+    supports:
+      - definition
+      - summary

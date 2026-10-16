@@ -1,0 +1,24 @@
+id: loss-function
+domains:
+  - it/ai-ml/foundations
+level: 2
+relations:
+  prerequisites:
+    - model-training
+  related:
+    - gradient-descent
+    - overfitting
+    - model-parameter
+status: draft
+provenance:
+  drafted_by: ai
+sources:
+  - ref: google-ml-glossary
+    locator: https://developers.google.com/machine-learning/glossary#loss-function
+    title: loss function
+    language: en
+    accessed: '2026-10-16'
+    retrieved_by: ai
+    supports:
+      - definition
+      - summary

@@ -1,0 +1,25 @@
+id: llm-eval
+domains:
+  - it/ai-ml/mlops
+level: 2
+relations:
+  prerequisites:
+    - llm
+  confusable:
+    - ai-benchmark
+  related:
+    - ai-benchmark
+    - hallucination
+status: draft
+provenance:
+  drafted_by: ai
+sources:
+  - ref: google-ml-glossary
+    locator: https://developers.google.com/machine-learning/glossary#llm-evaluations-evals
+    title: LLM evaluations (evals)
+    language: en
+    accessed: '2026-10-16'
+    retrieved_by: ai
+    supports:
+      - definition
+      - summary

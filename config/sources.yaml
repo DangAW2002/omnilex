@@ -300,3 +300,17 @@ topdev:
   reuse: paraphrase-only
   domains: [it]
   verified_license_at: "2026-10-16"
+
+# wave2 ai
+mlcommons:
+  title: MLCommons Standards & Benchmarks
+  publisher: MLCommons Association
+  url: https://mlcommons.org
+  type: standard
+  tier: A
+  languages: [en]
+  license: unknown
+  reuse: paraphrase-only
+  domains: [it/ai-ml]
+  verified_license_at: "2026-10-16"
+  license_evidence: https://mlcommons.org/benchmarks/

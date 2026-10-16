@@ -1,0 +1,25 @@
+id: neural-network
+domains:
+  - it/ai-ml/foundations
+level: 1
+relations:
+  prerequisites:
+    - ml-model
+  narrower:
+    - transformer
+  related:
+    - deep-learning
+    - model-parameter
+status: draft
+provenance:
+  drafted_by: ai
+sources:
+  - ref: google-ml-glossary
+    locator: https://developers.google.com/machine-learning/glossary#neural-network
+    title: neural network
+    language: en
+    accessed: '2026-10-16'
+    retrieved_by: ai
+    supports:
+      - definition
+      - summary

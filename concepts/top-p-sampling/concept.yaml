@@ -1,0 +1,25 @@
+id: top-p-sampling
+domains:
+  - it/ai-ml/llm-agents
+level: 2
+relations:
+  prerequisites:
+    - llm
+  confusable:
+    - temperature-llm
+  related:
+    - temperature-llm
+    - inference
+status: draft
+provenance:
+  drafted_by: ai
+sources:
+  - ref: anthropic-docs
+    locator: https://platform.claude.com/docs/en/api/messages
+    title: Messages - Claude API Reference
+    language: en
+    accessed: '2026-10-16'
+    retrieved_by: ai
+    supports:
+      - definition
+      - summary

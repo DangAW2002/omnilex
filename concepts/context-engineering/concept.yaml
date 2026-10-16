@@ -1,0 +1,25 @@
+id: context-engineering
+domains:
+  - it/ai-ml/llm-agents
+level: 2
+relations:
+  prerequisites:
+    - context-window
+    - prompt
+  related:
+    - prompt-caching
+    - rag
+    - system-prompt
+status: draft
+provenance:
+  drafted_by: ai
+sources:
+  - ref: anthropic-docs
+    locator: https://platform.claude.com/docs/en/build-with-claude/context-windows
+    title: Context windows - Claude Platform Docs
+    language: en
+    accessed: '2026-10-16'
+    retrieved_by: ai
+    supports:
+      - definition
+      - summary

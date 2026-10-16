@@ -1,0 +1,25 @@
+id: quantization
+domains:
+  - it/ai-ml/mlops
+level: 2
+relations:
+  prerequisites:
+    - model-parameter
+    - ml-model
+  related:
+    - inference
+    - gpu
+    - knowledge-distillation
+status: draft
+provenance:
+  drafted_by: ai
+sources:
+  - ref: google-ml-glossary
+    locator: https://developers.google.com/machine-learning/glossary#quantization
+    title: quantization
+    language: en
+    accessed: '2026-10-16'
+    retrieved_by: ai
+    supports:
+      - definition
+      - summary

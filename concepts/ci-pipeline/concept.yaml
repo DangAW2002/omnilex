@@ -1,0 +1,25 @@
+id: ci-pipeline
+domains:
+  - it/devops/ci-cd
+level: 2
+relations:
+  prerequisites:
+    - ci-cd
+  broader:
+    - ci-cd
+  related:
+    - software-deployment
+    - staging-environment
+status: draft
+provenance:
+  drafted_by: ai
+sources:
+  - ref: aws-docs
+    locator: https://docs.aws.amazon.com/codepipeline/latest/userguide/welcome.html
+    title: What is AWS CodePipeline?
+    language: en
+    accessed: '2026-10-16'
+    retrieved_by: ai
+    supports:
+      - definition
+      - summary

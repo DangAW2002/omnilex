@@ -1,0 +1,24 @@
+id: kubernetes-pod
+domains:
+  - it/devops/containers
+level: 2
+relations:
+  prerequisites:
+    - kubernetes
+  broader:
+    - kubernetes
+  related:
+    - software-container
+status: draft
+provenance:
+  drafted_by: ai
+sources:
+  - ref: k8s-glossary
+    locator: https://kubernetes.io/docs/concepts/workloads/pods/
+    title: Pods
+    language: en
+    accessed: '2026-10-16'
+    retrieved_by: ai
+    supports:
+      - definition
+      - summary

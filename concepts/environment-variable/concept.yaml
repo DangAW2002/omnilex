@@ -1,0 +1,21 @@
+id: environment-variable
+domains:
+  - it/devops/ci-cd
+level: 1
+relations:
+  related:
+    - secret-config
+    - ci-pipeline
+status: draft
+provenance:
+  drafted_by: ai
+sources:
+  - ref: microsoft-learn
+    locator: https://learn.microsoft.com/en-us/windows/win32/procthread/environment-variables
+    title: Environment Variables
+    language: en
+    accessed: '2026-10-16'
+    retrieved_by: ai
+    supports:
+      - definition
+      - summary

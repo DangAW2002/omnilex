@@ -1,0 +1,22 @@
+id: staging-environment
+domains:
+  - it/devops/ci-cd
+level: 2
+relations:
+  related:
+    - software-deployment
+    - ci-pipeline
+    - blue-green-deployment
+status: draft
+provenance:
+  drafted_by: ai
+sources:
+  - ref: microsoft-learn
+    locator: https://learn.microsoft.com/en-us/azure/app-service/deploy-staging-slots
+    title: Set up staging environments in Azure App Service
+    language: en
+    accessed: '2026-10-16'
+    retrieved_by: ai
+    supports:
+      - definition
+      - summary

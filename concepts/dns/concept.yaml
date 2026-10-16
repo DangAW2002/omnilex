@@ -1,0 +1,21 @@
+id: dns
+domains:
+  - it/infrastructure/networking
+level: 1
+relations:
+  related:
+    - load-balancer
+    - cdn
+status: draft
+provenance:
+  drafted_by: ai
+sources:
+  - ref: ietf
+    locator: https://www.rfc-editor.org/rfc/rfc1034.html
+    title: 'RFC 1034: Domain Concepts and Facilities'
+    language: en
+    accessed: '2026-10-16'
+    retrieved_by: ai
+    supports:
+      - definition
+      - summary

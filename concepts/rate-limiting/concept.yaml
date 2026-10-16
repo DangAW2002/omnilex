@@ -1,0 +1,21 @@
+id: rate-limiting
+domains:
+  - it/web/api
+level: 2
+relations:
+  related:
+    - throughput
+    - load-balancer
+status: draft
+provenance:
+  drafted_by: ai
+sources:
+  - ref: microsoft-learn
+    locator: https://learn.microsoft.com/en-us/azure/architecture/patterns/rate-limiting-pattern
+    title: Rate Limiting pattern
+    language: en
+    accessed: '2026-10-16'
+    retrieved_by: ai
+    supports:
+      - definition
+      - summary

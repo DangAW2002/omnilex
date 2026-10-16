@@ -1,0 +1,23 @@
+id: autoscaling
+domains:
+  - it/infrastructure/cloud
+level: 2
+relations:
+  prerequisites:
+    - metric-monitoring
+  related:
+    - load-balancer
+    - serverless
+status: draft
+provenance:
+  drafted_by: ai
+sources:
+  - ref: aws-docs
+    locator: https://docs.aws.amazon.com/autoscaling/ec2/userguide/what-is-amazon-ec2-auto-scaling.html
+    title: What is Amazon EC2 Auto Scaling?
+    language: en
+    accessed: '2026-10-16'
+    retrieved_by: ai
+    supports:
+      - definition
+      - summary

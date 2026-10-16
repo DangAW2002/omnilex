@@ -1,0 +1,24 @@
+id: latency
+domains:
+  - it/infrastructure/networking
+level: 2
+relations:
+  confusable:
+    - throughput
+  related:
+    - sli
+    - distributed-tracing
+    - cdn
+status: draft
+provenance:
+  drafted_by: ai
+sources:
+  - ref: google-sre-book
+    locator: https://sre.google/sre-book/monitoring-distributed-systems/
+    title: Monitoring Distributed Systems
+    language: en
+    accessed: '2026-10-16'
+    retrieved_by: ai
+    supports:
+      - definition
+      - summary

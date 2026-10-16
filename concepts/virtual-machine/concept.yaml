@@ -1,0 +1,22 @@
+id: virtual-machine
+domains:
+  - it/infrastructure/cloud
+level: 1
+relations:
+  confusable:
+    - software-container
+  related:
+    - serverless
+status: draft
+provenance:
+  drafted_by: ai
+sources:
+  - ref: microsoft-learn
+    locator: https://learn.microsoft.com/en-us/azure/virtual-machines/overview
+    title: Virtual machines in Azure
+    language: en
+    accessed: '2026-10-16'
+    retrieved_by: ai
+    supports:
+      - definition
+      - summary

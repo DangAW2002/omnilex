@@ -1,0 +1,24 @@
+id: distributed-tracing
+domains:
+  - it/devops/observability
+level: 3
+relations:
+  prerequisites:
+    - observability
+  related:
+    - latency
+    - log
+    - metric-monitoring
+status: draft
+provenance:
+  drafted_by: ai
+sources:
+  - ref: opentelemetry-docs
+    locator: https://opentelemetry.io/docs/concepts/signals/traces/
+    title: Traces
+    language: en
+    accessed: '2026-10-16'
+    retrieved_by: ai
+    supports:
+      - definition
+      - summary

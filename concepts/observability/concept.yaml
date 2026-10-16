@@ -1,0 +1,22 @@
+id: observability
+domains:
+  - it/devops/observability
+level: 2
+relations:
+  related:
+    - metric-monitoring
+    - log
+    - distributed-tracing
+status: draft
+provenance:
+  drafted_by: ai
+sources:
+  - ref: opentelemetry-docs
+    locator: https://opentelemetry.io/docs/concepts/observability-primer/
+    title: Observability Primer
+    language: en
+    accessed: '2026-10-16'
+    retrieved_by: ai
+    supports:
+      - definition
+      - summary

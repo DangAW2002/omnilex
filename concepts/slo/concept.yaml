@@ -1,0 +1,25 @@
+id: slo
+domains:
+  - it/devops/sre-operations
+level: 2
+relations:
+  prerequisites:
+    - sli
+  confusable:
+    - sla
+    - sli
+  related:
+    - uptime
+status: draft
+provenance:
+  drafted_by: ai
+sources:
+  - ref: google-sre-book
+    locator: https://sre.google/sre-book/service-level-objectives/
+    title: Service Level Objectives
+    language: en
+    accessed: '2026-10-16'
+    retrieved_by: ai
+    supports:
+      - definition
+      - summary

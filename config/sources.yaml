@@ -300,3 +300,43 @@ topdev:
   reuse: paraphrase-only
   domains: [it]
   verified_license_at: "2026-10-16"
+
+# wave2 devops
+docker-docs:
+  title: Docker Documentation
+  publisher: Docker, Inc.
+  url: https://docs.docker.com
+  type: docs
+  tier: B
+  languages: [en]
+  license: Apache-2.0
+  reuse: paraphrase-only
+  domains: [it/devops]
+  verified_license_at: "2026-10-16"
+  license_evidence: https://github.com/docker/docs/blob/main/LICENSE
+
+opentelemetry-docs:
+  title: OpenTelemetry Documentation
+  publisher: Cloud Native Computing Foundation
+  url: https://opentelemetry.io/docs
+  type: docs
+  tier: A
+  languages: [en]
+  license: Apache-2.0
+  reuse: paraphrase-only
+  domains: [it/devops]
+  verified_license_at: "2026-10-16"
+  license_evidence: https://github.com/open-telemetry/opentelemetry.io/blob/main/LICENSE
+
+google-sre-book:
+  title: Google Site Reliability Engineering Books
+  publisher: Google LLC
+  url: https://sre.google/books/
+  type: docs
+  tier: B
+  languages: [en]
+  license: CC-BY-NC-ND-4.0
+  reuse: paraphrase-only
+  domains: [it/devops]
+  verified_license_at: "2026-10-16"
+  license_evidence: https://sre.google/sre-book/table-of-contents/

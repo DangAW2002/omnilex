@@ -1,0 +1,25 @@
+id: metric-monitoring
+domains:
+  - it/devops/observability
+level: 2
+relations:
+  prerequisites:
+    - observability
+  related:
+    - log
+    - distributed-tracing
+    - sli
+    - autoscaling
+status: draft
+provenance:
+  drafted_by: ai
+sources:
+  - ref: opentelemetry-docs
+    locator: https://opentelemetry.io/docs/concepts/signals/metrics/
+    title: Metrics
+    language: en
+    accessed: '2026-10-16'
+    retrieved_by: ai
+    supports:
+      - definition
+      - summary

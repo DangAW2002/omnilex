@@ -1,0 +1,23 @@
+id: rollback
+domains:
+  - it/devops/sre-operations
+level: 2
+relations:
+  prerequisites:
+    - software-deployment
+  related:
+    - ci-cd
+    - incident
+status: draft
+provenance:
+  drafted_by: ai
+sources:
+  - ref: k8s-glossary
+    locator: https://kubernetes.io/docs/concepts/workloads/controllers/deployment/#rolling-back-a-deployment
+    title: Rolling Back a Deployment
+    language: en
+    accessed: '2026-10-16'
+    retrieved_by: ai
+    supports:
+      - definition
+      - summary

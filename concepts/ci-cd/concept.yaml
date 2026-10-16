@@ -1,0 +1,22 @@
+id: ci-cd
+domains:
+  - it/devops/ci-cd
+level: 1
+relations:
+  related:
+    - ci-pipeline
+    - software-deployment
+    - rollback
+status: draft
+provenance:
+  drafted_by: ai
+sources:
+  - ref: aws-docs
+    locator: https://aws.amazon.com/devops/continuous-integration/
+    title: What is Continuous Integration?
+    language: en
+    accessed: '2026-10-16'
+    retrieved_by: ai
+    supports:
+      - definition
+      - summary

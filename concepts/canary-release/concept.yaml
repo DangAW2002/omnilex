@@ -1,0 +1,27 @@
+id: canary-release
+domains:
+  - it/devops/ci-cd
+level: 2
+relations:
+  prerequisites:
+    - software-deployment
+  broader:
+    - software-deployment
+  confusable:
+    - blue-green-deployment
+  related:
+    - metric-monitoring
+    - rollback
+status: draft
+provenance:
+  drafted_by: ai
+sources:
+  - ref: aws-docs
+    locator: https://docs.aws.amazon.com/whitepapers/latest/overview-deployment-options/canary-deployments.html
+    title: Canary Deployments
+    language: en
+    accessed: '2026-10-16'
+    retrieved_by: ai
+    supports:
+      - definition
+      - summary

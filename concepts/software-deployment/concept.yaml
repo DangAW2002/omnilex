@@ -1,0 +1,25 @@
+id: software-deployment
+domains:
+  - it/devops/ci-cd
+level: 2
+relations:
+  prerequisites:
+    - ci-cd
+  broader:
+    - ci-cd
+  related:
+    - rollback
+    - staging-environment
+status: draft
+provenance:
+  drafted_by: ai
+sources:
+  - ref: k8s-glossary
+    locator: https://kubernetes.io/docs/concepts/workloads/controllers/deployment/
+    title: Deployments
+    language: en
+    accessed: '2026-10-16'
+    retrieved_by: ai
+    supports:
+      - definition
+      - summary

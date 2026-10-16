@@ -1,0 +1,26 @@
+id: sprint-planning
+domains:
+  - product/agile-scrum
+level: 1
+relations:
+  prerequisites:
+    - "sprint-agile"
+    - "product-backlog"
+  confusable:
+    - "sprint-retrospective"
+  related:
+    - "scrum"
+    - "product-owner"
+status: draft
+provenance:
+  drafted_by: ai
+sources:
+  - ref: scrum-guide
+    locator: https://scrumguides.org/scrum-guide.html#sprint-planning
+    title: "The Scrum Guide - Sprint Planning"
+    language: en
+    accessed: '2026-10-16'
+    retrieved_by: ai
+    supports:
+      - definition
+      - summary

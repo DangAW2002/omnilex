@@ -1,0 +1,26 @@
+id: sprint-agile
+domains:
+  - product/agile-scrum
+level: 1
+relations:
+  prerequisites:
+    - "scrum"
+  confusable: []
+  related:
+    - "sprint-planning"
+    - "daily-scrum"
+    - "sprint-retrospective"
+    - "product-backlog"
+status: draft
+provenance:
+  drafted_by: ai
+sources:
+  - ref: scrum-guide
+    locator: https://scrumguides.org/scrum-guide.html#the-sprint
+    title: "The Scrum Guide - The Sprint"
+    language: en
+    accessed: '2026-10-16'
+    retrieved_by: ai
+    supports:
+      - definition
+      - summary

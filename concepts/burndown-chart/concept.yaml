@@ -1,0 +1,25 @@
+id: burndown-chart
+domains:
+  - product/delivery-planning
+level: 2
+relations:
+  prerequisites:
+    - "sprint-agile"
+    - "story-point"
+  confusable: []
+  related:
+    - "velocity-agile"
+    - "daily-scrum"
+status: draft
+provenance:
+  drafted_by: ai
+sources:
+  - ref: atlassian-agile
+    locator: https://www.atlassian.com/agile/tutorials/burndown-charts
+    title: "Agile Burndown Chart Tutorial: How to Create & Use | Agile"
+    language: en
+    accessed: '2026-10-16'
+    retrieved_by: ai
+    supports:
+      - definition
+      - summary

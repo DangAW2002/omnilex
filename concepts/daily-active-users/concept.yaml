@@ -1,0 +1,23 @@
+id: daily-active-users
+domains:
+  - product/metrics
+level: 1
+relations:
+  prerequisites: []
+  confusable: []
+  related:
+    - "retention-rate"
+    - "north-star-metric"
+status: draft
+provenance:
+  drafted_by: ai
+sources:
+  - ref: mixpanel-blog
+    locator: https://mixpanel.com/blog/daily-active-users/
+    title: "Daily Active Users (DAU): what and how | Signals & Stories"
+    language: en
+    accessed: '2026-10-16'
+    retrieved_by: ai
+    supports:
+      - definition
+      - summary

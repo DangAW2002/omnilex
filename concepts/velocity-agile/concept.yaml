@@ -1,0 +1,25 @@
+id: velocity-agile
+domains:
+  - product/agile-scrum
+level: 2
+relations:
+  prerequisites:
+    - "story-point"
+    - "sprint-agile"
+  confusable:
+    - "story-point"
+  related:
+    - "burndown-chart"
+status: draft
+provenance:
+  drafted_by: ai
+sources:
+  - ref: atlassian-agile
+    locator: https://www.atlassian.com/agile/project-management/metrics
+    title: "Five agile metrics you won't hate | Atlassian"
+    language: en
+    accessed: '2026-10-16'
+    retrieved_by: ai
+    supports:
+      - definition
+      - summary

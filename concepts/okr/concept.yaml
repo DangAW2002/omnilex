@@ -1,0 +1,23 @@
+id: okr
+domains:
+  - product/metrics
+level: 1
+relations:
+  prerequisites: []
+  confusable:
+    - "kpi"
+  related:
+    - "north-star-metric"
+status: draft
+provenance:
+  drafted_by: ai
+sources:
+  - ref: what-matters
+    locator: https://www.whatmatters.com/okrs-explained
+    title: "What Matters: OKR (Objectives and Key Results) Free Training Course"
+    language: en
+    accessed: '2026-10-16'
+    retrieved_by: ai
+    supports:
+      - definition
+      - summary

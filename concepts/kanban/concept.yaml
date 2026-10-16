@@ -1,0 +1,23 @@
+id: kanban
+domains:
+  - product/agile-scrum
+level: 1
+relations:
+  prerequisites: []
+  confusable:
+    - "scrum"
+  related:
+    - "product-backlog"
+status: draft
+provenance:
+  drafted_by: ai
+sources:
+  - ref: atlassian-agile
+    locator: https://www.atlassian.com/agile/kanban
+    title: "What is Kanban in Project Management?"
+    language: en
+    accessed: '2026-10-16'
+    retrieved_by: ai
+    supports:
+      - definition
+      - summary

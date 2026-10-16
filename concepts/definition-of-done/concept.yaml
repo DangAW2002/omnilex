@@ -1,0 +1,25 @@
+id: definition-of-done
+domains:
+  - product/agile-scrum
+level: 2
+relations:
+  prerequisites:
+    - "scrum"
+  confusable:
+    - "acceptance-criteria"
+  related:
+    - "sprint-agile"
+    - "product-backlog"
+status: draft
+provenance:
+  drafted_by: ai
+sources:
+  - ref: scrum-guide
+    locator: https://scrumguides.org/scrum-guide.html#commitment-definition-of-done
+    title: "The Scrum Guide - Definition of Done"
+    language: en
+    accessed: '2026-10-16'
+    retrieved_by: ai
+    supports:
+      - definition
+      - summary

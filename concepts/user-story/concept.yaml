@@ -1,0 +1,26 @@
+id: user-story
+domains:
+  - product/agile-scrum
+level: 1
+relations:
+  prerequisites:
+    - "scrum"
+  confusable:
+    - "epic-agile"
+  related:
+    - "acceptance-criteria"
+    - "story-point"
+    - "product-backlog"
+status: draft
+provenance:
+  drafted_by: ai
+sources:
+  - ref: atlassian-agile
+    locator: https://www.atlassian.com/agile/project-management/user-stories
+    title: "User Stories With Examples and a Template | Atlassian"
+    language: en
+    accessed: '2026-10-16'
+    retrieved_by: ai
+    supports:
+      - definition
+      - summary

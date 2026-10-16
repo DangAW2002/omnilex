@@ -1,0 +1,25 @@
+id: product-backlog
+domains:
+  - product/agile-scrum
+level: 1
+relations:
+  prerequisites:
+    - "scrum"
+  confusable:
+    - "product-roadmap"
+  related:
+    - "user-story"
+    - "sprint-planning"
+status: draft
+provenance:
+  drafted_by: ai
+sources:
+  - ref: scrum-guide
+    locator: https://scrumguides.org/scrum-guide.html#product-backlog
+    title: "The Scrum Guide - Product Backlog"
+    language: en
+    accessed: '2026-10-16'
+    retrieved_by: ai
+    supports:
+      - definition
+      - summary

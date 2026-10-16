@@ -300,3 +300,149 @@ topdev:
   reuse: paraphrase-only
   domains: [it]
   verified_license_at: "2026-10-16"
+
+# wave2 product
+atlassian-agile:
+  title: Atlassian Agile Coach
+  publisher: Atlassian
+  url: https://www.atlassian.com/agile
+  type: docs
+  tier: B
+  languages: [en]
+  license: all-rights-reserved
+  reuse: paraphrase-only
+  domains: [product/agile-scrum, product/delivery-planning, product/product-management]
+  verified_license_at: "2026-10-16"
+
+gitlab-docs:
+  title: GitLab Documentation
+  publisher: GitLab B.V.
+  url: https://docs.gitlab.com
+  type: docs
+  tier: B
+  languages: [en]
+  license: CC-BY-SA-4.0
+  reuse: paraphrase-only
+  domains: [product/delivery-planning, it/devops]
+  verified_license_at: "2026-10-16"
+
+intercom-blog:
+  title: Intercom Product & Design Blog
+  publisher: Intercom
+  url: https://www.intercom.com/blog
+  type: community
+  tier: B
+  languages: [en]
+  license: all-rights-reserved
+  reuse: paraphrase-only
+  domains: [product/delivery-planning, product/product-management]
+  verified_license_at: "2026-10-16"
+
+agile-business-consortium:
+  title: Agile Business Consortium Framework Resources
+  publisher: Agile Business Consortium Limited
+  url: https://www.agilebusiness.org
+  type: standard
+  tier: A
+  languages: [en]
+  license: all-rights-reserved
+  reuse: paraphrase-only
+  domains: [product/delivery-planning, product/agile-scrum]
+  verified_license_at: "2026-10-16"
+
+svpg:
+  title: Silicon Valley Product Group Articles
+  publisher: Silicon Valley Product Group
+  url: https://www.svpg.com
+  type: docs
+  tier: B
+  languages: [en]
+  license: all-rights-reserved
+  reuse: paraphrase-only
+  domains: [product/product-management]
+  verified_license_at: "2026-10-16"
+
+coursera:
+  title: Coursera Career Articles
+  publisher: Coursera Inc.
+  url: https://www.coursera.org/articles
+  type: docs
+  tier: B
+  languages: [en]
+  license: all-rights-reserved
+  reuse: paraphrase-only
+  domains: [product/product-management]
+  verified_license_at: "2026-10-16"
+
+what-matters:
+  title: What Matters OKR Resources
+  publisher: What Matters
+  url: https://www.whatmatters.com
+  type: docs
+  tier: B
+  languages: [en]
+  license: all-rights-reserved
+  reuse: paraphrase-only
+  domains: [product/metrics]
+  verified_license_at: "2026-10-16"
+
+cfi:
+  title: Corporate Finance Institute Resources
+  publisher: Corporate Finance Institute
+  url: https://corporatefinanceinstitute.com/resources
+  type: docs
+  tier: B
+  languages: [en]
+  license: all-rights-reserved
+  reuse: paraphrase-only
+  domains: [product/metrics, finance]
+  verified_license_at: "2026-10-16"
+
+amplitude-resources:
+  title: Amplitude Product Resources & Playbooks
+  publisher: Amplitude, Inc.
+  url: https://amplitude.com
+  type: docs
+  tier: B
+  languages: [en]
+  license: all-rights-reserved
+  reuse: paraphrase-only
+  domains: [product/metrics]
+  verified_license_at: "2026-10-16"
+
+optimizely-glossary:
+  title: Optimizely Optimization Glossary
+  publisher: Optimizely, Inc.
+  url: https://www.optimizely.com/optimization-glossary
+  type: glossary
+  tier: B
+  languages: [en]
+  license: all-rights-reserved
+  reuse: paraphrase-only
+  domains: [product/metrics, media/digital-marketing/metrics-analytics]
+  verified_license_at: "2026-10-16"
+
+hubspot-blog:
+  title: HubSpot Service & Marketing Blog
+  publisher: HubSpot, Inc.
+  url: https://blog.hubspot.com
+  type: docs
+  tier: B
+  languages: [en]
+  license: all-rights-reserved
+  reuse: paraphrase-only
+  domains: [product/metrics]
+  verified_license_at: "2026-10-16"
+
+mixpanel-blog:
+  title: Mixpanel Blog & Resources
+  publisher: Mixpanel, Inc.
+  url: https://mixpanel.com/blog
+  type: docs
+  tier: B
+  languages: [en]
+  license: all-rights-reserved
+  reuse: paraphrase-only
+  domains: [product/metrics]
+  verified_license_at: "2026-10-16"
+

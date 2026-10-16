@@ -1,0 +1,24 @@
+id: scope-creep
+domains:
+  - product/delivery-planning
+level: 2
+relations:
+  prerequisites:
+    - "product-backlog"
+  confusable: []
+  related:
+    - "prd"
+    - "stakeholder"
+status: draft
+provenance:
+  drafted_by: ai
+sources:
+  - ref: atlassian-agile
+    locator: https://www.atlassian.com/agile/project-management/scope-creep
+    title: "Scope Creep in Project Management | Atlassian"
+    language: en
+    accessed: '2026-10-16'
+    retrieved_by: ai
+    supports:
+      - definition
+      - summary

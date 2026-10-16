@@ -1,0 +1,25 @@
+id: daily-scrum
+domains:
+  - product/agile-scrum
+level: 1
+relations:
+  prerequisites:
+    - "scrum"
+    - "sprint-agile"
+  confusable: []
+  related:
+    - "scrum-master"
+    - "sprint-planning"
+status: draft
+provenance:
+  drafted_by: ai
+sources:
+  - ref: scrum-guide
+    locator: https://scrumguides.org/scrum-guide.html#daily-scrum
+    title: "The Scrum Guide - Daily Scrum"
+    language: en
+    accessed: '2026-10-16'
+    retrieved_by: ai
+    supports:
+      - definition
+      - summary

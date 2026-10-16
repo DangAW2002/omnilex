@@ -1,0 +1,25 @@
+id: product-roadmap
+domains:
+  - product/delivery-planning
+level: 1
+relations:
+  prerequisites: []
+  confusable:
+    - "product-backlog"
+  related:
+    - "epic-agile"
+    - "stakeholder"
+    - "prd"
+status: draft
+provenance:
+  drafted_by: ai
+sources:
+  - ref: atlassian-agile
+    locator: https://www.atlassian.com/agile/product-management/product-roadmaps
+    title: "Product Roadmap Guide: What is it & How to Create One | Atlassian"
+    language: en
+    accessed: '2026-10-16'
+    retrieved_by: ai
+    supports:
+      - definition
+      - summary

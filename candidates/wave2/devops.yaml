@@ -1,0 +1,171 @@
+batch: devops
+candidates:
+  - id: ci-cd
+    term: CI/CD
+    domain: it/devops/ci-cd
+    note: acronym always
+    batch: devops
+  - id: ci-pipeline
+    term: Pipeline
+    qualifier: (CI/CD)
+    domain: it/devops/ci-cd
+    note: "generic word: autolink label never"
+    batch: devops
+  - id: software-container
+    term: Container
+    qualifier: (Software)
+    domain: it/devops/containers
+    note: "generic word: autolink label never"
+    batch: devops
+  - id: container-image
+    term: Image
+    qualifier: (Container)
+    domain: it/devops/containers
+    note: "generic word: autolink label never"
+    batch: devops
+  - id: docker
+    term: Docker
+    domain: it/devops/containers
+    batch: devops
+  - id: kubernetes
+    term: Kubernetes
+    domain: it/devops/containers
+    note: alias K8s
+    batch: devops
+  - id: kubernetes-pod
+    term: Pod
+    qualifier: (Kubernetes)
+    domain: it/devops/containers
+    batch: devops
+  - id: software-deployment
+    term: Deployment
+    qualifier: (Software)
+    domain: it/devops/ci-cd
+    note: "generic word: autolink label never"
+    batch: devops
+  - id: rollback
+    term: Rollback
+    domain: it/devops/sre-operations
+    batch: devops
+  - id: blue-green-deployment
+    term: Blue-green deployment
+    domain: it/devops/ci-cd
+    batch: devops
+  - id: canary-release
+    term: Canary release
+    domain: it/devops/ci-cd
+    batch: devops
+  - id: infrastructure-as-code
+    term: Infrastructure as code (IaC)
+    domain: it/devops/iac
+    note: alias IaC always
+    batch: devops
+  - id: observability
+    term: Observability
+    domain: it/devops/observability
+    batch: devops
+  - id: log
+    term: Log
+    qualifier: (Software)
+    domain: it/devops/observability
+    note: "generic word: autolink label never"
+    batch: devops
+  - id: metric-monitoring
+    term: Metric
+    qualifier: (Monitoring)
+    domain: it/devops/observability
+    note: "generic word: autolink label never"
+    batch: devops
+  - id: distributed-tracing
+    term: Distributed tracing
+    domain: it/devops/observability
+    batch: devops
+  - id: slo
+    term: Service Level Objective (SLO)
+    domain: it/devops/sre-operations
+    note: acronym always
+    batch: devops
+  - id: sla
+    term: Service Level Agreement (SLA)
+    domain: it/devops/sre-operations
+    note: acronym always
+    batch: devops
+  - id: sli
+    term: Service Level Indicator (SLI)
+    domain: it/devops/sre-operations
+    note: acronym always
+    batch: devops
+  - id: incident
+    term: Incident
+    qualifier: (IT)
+    domain: it/devops/sre-operations
+    note: "generic word: autolink label never"
+    batch: devops
+  - id: on-call
+    term: On-call
+    domain: it/devops/sre-operations
+    batch: devops
+  - id: postmortem
+    term: Postmortem
+    qualifier: (IT)
+    domain: it/devops/sre-operations
+    batch: devops
+  - id: load-balancer
+    term: Load balancer
+    domain: it/infrastructure/networking
+    batch: devops
+  - id: cdn
+    term: Content Delivery Network (CDN)
+    domain: it/infrastructure/networking
+    note: acronym always
+    batch: devops
+  - id: dns
+    term: Domain Name System (DNS)
+    domain: it/infrastructure/networking
+    note: acronym always
+    batch: devops
+  - id: serverless
+    term: Serverless
+    domain: it/infrastructure/cloud
+    batch: devops
+  - id: virtual-machine
+    term: Virtual machine (VM)
+    domain: it/infrastructure/cloud
+    batch: devops
+  - id: autoscaling
+    term: Autoscaling
+    domain: it/infrastructure/cloud
+    batch: devops
+  - id: environment-variable
+    term: Environment variable
+    domain: it/devops/ci-cd
+    batch: devops
+  - id: secret-config
+    term: Secret
+    qualifier: (Software)
+    domain: it/devops/ci-cd
+    also_domains:
+      - it/security/authentication
+    note: "generic word: autolink label never"
+    batch: devops
+  - id: staging-environment
+    term: Staging environment
+    domain: it/devops/ci-cd
+    batch: devops
+  - id: uptime
+    term: Uptime
+    domain: it/devops/sre-operations
+    batch: devops
+  - id: latency
+    term: Latency
+    qualifier: (Network)
+    domain: it/infrastructure/networking
+    batch: devops
+  - id: throughput
+    term: Throughput
+    domain: it/infrastructure/networking
+    batch: devops
+  - id: rate-limiting
+    term: Rate limiting
+    domain: it/web/api
+    batch: devops

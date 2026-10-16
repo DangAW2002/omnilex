@@ -1,0 +1,110 @@
+batch: iot
+candidates:
+  - id: sensor
+    term: Sensor
+    domain: iot/devices-sensors
+    batch: iot
+  - id: actuator
+    term: Actuator
+    domain: iot/devices-sensors
+    batch: iot
+  - id: microcontroller
+    term: Microcontroller (MCU)
+    domain: iot/devices-sensors
+    batch: iot
+  - id: firmware
+    term: Firmware
+    domain: iot/devices-sensors
+    batch: iot
+  - id: rtos
+    term: Real-time operating system (RTOS)
+    domain: iot/devices-sensors
+    note: acronym always
+    batch: iot
+  - id: smart-home
+    term: Smart home
+    domain: iot/devices-sensors
+    batch: iot
+  - id: mqtt
+    term: MQTT
+    domain: iot/connectivity-protocols
+    note: acronym always
+    batch: iot
+  - id: coap
+    term: Constrained Application Protocol (CoAP)
+    domain: iot/connectivity-protocols
+    batch: iot
+  - id: ble
+    term: Bluetooth Low Energy (BLE)
+    domain: iot/connectivity-protocols
+    note: acronym always
+    batch: iot
+  - id: zigbee
+    term: Zigbee
+    domain: iot/connectivity-protocols
+    batch: iot
+  - id: lorawan
+    term: LoRaWAN
+    domain: iot/connectivity-protocols
+    batch: iot
+  - id: nb-iot
+    term: NB-IoT
+    domain: iot/connectivity-protocols
+    batch: iot
+  - id: mesh-network
+    term: Mesh network
+    domain: iot/connectivity-protocols
+    batch: iot
+  - id: iot-gateway
+    term: Gateway
+    qualifier: (IoT)
+    domain: iot/edge-cloud
+    note: "generic word: autolink label never"
+    batch: iot
+  - id: edge-computing
+    term: Edge computing
+    domain: iot/edge-cloud
+    batch: iot
+  - id: telemetry
+    term: Telemetry
+    domain: iot/edge-cloud
+    batch: iot
+  - id: ota-update
+    term: Over-the-air update (OTA)
+    domain: iot/edge-cloud
+    note: acronym always
+    batch: iot
+  - id: device-provisioning
+    term: Device provisioning
+    domain: iot/edge-cloud
+    batch: iot
+  - id: iot-platform
+    term: IoT platform
+    domain: iot/edge-cloud
+    batch: iot
+  - id: digital-twin
+    term: Digital twin
+    domain: iot/industrial
+    batch: iot
+  - id: plc
+    term: Programmable Logic Controller (PLC)
+    domain: iot/industrial
+    note: acronym always
+    batch: iot
+  - id: scada
+    term: SCADA
+    domain: iot/industrial
+    note: acronym always
+    batch: iot
+  - id: opc-ua
+    term: OPC UA
+    domain: iot/industrial
+    batch: iot
+  - id: modbus
+    term: Modbus
+    domain: iot/industrial
+    batch: iot
+  - id: predictive-maintenance
+    term: Predictive maintenance
+    domain: iot/industrial
+    batch: iot

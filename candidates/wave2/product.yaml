@@ -1,0 +1,157 @@
+batch: product
+candidates:
+  - id: product-backlog
+    term: Product backlog
+    domain: product/agile-scrum
+    note: alias backlog
+    batch: product
+  - id: sprint-agile
+    term: Sprint
+    qualifier: (Agile)
+    domain: product/agile-scrum
+    batch: product
+  - id: user-story
+    term: User story
+    domain: product/agile-scrum
+    batch: product
+  - id: acceptance-criteria
+    term: Acceptance criteria
+    domain: product/agile-scrum
+    batch: product
+  - id: definition-of-done
+    term: Definition of Done (DoD)
+    domain: product/agile-scrum
+    batch: product
+  - id: scrum
+    term: Scrum
+    domain: product/agile-scrum
+    batch: product
+  - id: kanban
+    term: Kanban
+    domain: product/agile-scrum
+    batch: product
+  - id: product-owner
+    term: Product owner (PO)
+    domain: product/agile-scrum
+    batch: product
+  - id: scrum-master
+    term: Scrum master
+    domain: product/agile-scrum
+    batch: product
+  - id: daily-scrum
+    term: Daily Scrum
+    domain: product/agile-scrum
+    note: alias stand-up
+    batch: product
+  - id: sprint-planning
+    term: Sprint planning
+    domain: product/agile-scrum
+    batch: product
+  - id: sprint-retrospective
+    term: Sprint retrospective
+    domain: product/agile-scrum
+    note: alias retro
+    batch: product
+  - id: velocity-agile
+    term: Velocity
+    qualifier: (Agile)
+    domain: product/agile-scrum
+    note: "generic word: autolink label never"
+    batch: product
+  - id: story-point
+    term: Story point
+    domain: product/agile-scrum
+    batch: product
+  - id: epic-agile
+    term: Epic
+    qualifier: (Agile)
+    domain: product/agile-scrum
+    batch: product
+  - id: burndown-chart
+    term: Burndown chart
+    domain: product/delivery-planning
+    batch: product
+  - id: mvp
+    term: Minimum Viable Product (MVP)
+    domain: product/product-management
+    note: acronym always
+    batch: product
+  - id: product-roadmap
+    term: Product roadmap
+    domain: product/delivery-planning
+    note: alias roadmap
+    batch: product
+  - id: stakeholder
+    term: Stakeholder
+    domain: product/product-management
+    batch: product
+  - id: prd
+    term: Product Requirements Document (PRD)
+    domain: product/product-management
+    note: acronym always
+    batch: product
+  - id: product-discovery
+    term: Product discovery
+    domain: product/product-management
+    batch: product
+  - id: product-market-fit
+    term: Product-market fit
+    domain: product/product-management
+    note: alias PMF
+    batch: product
+  - id: scope-creep
+    term: Scope creep
+    domain: product/delivery-planning
+    batch: product
+  - id: product-release
+    term: Release
+    qualifier: (Product)
+    domain: product/delivery-planning
+    note: "generic word: autolink label never"
+    batch: product
+  - id: rice-scoring
+    term: RICE scoring
+    domain: product/delivery-planning
+    batch: product
+  - id: moscow-method
+    term: MoSCoW method
+    domain: product/delivery-planning
+    batch: product
+  - id: okr
+    term: Objectives and Key Results (OKR)
+    domain: product/metrics
+    note: acronym always
+    batch: product
+  - id: kpi
+    term: Key Performance Indicator (KPI)
+    domain: product/metrics
+    note: acronym always
+    batch: product
+  - id: north-star-metric
+    term: North Star metric
+    domain: product/metrics
+    batch: product
+  - id: ab-testing
+    term: A/B testing
+    domain: product/metrics
+    also_domains:
+      - media/digital-marketing/metrics-analytics
+    batch: product
+  - id: churn-rate
+    term: Churn rate
+    domain: product/metrics
+    batch: product
+  - id: retention-rate
+    term: Retention rate
+    domain: product/metrics
+    batch: product
+  - id: daily-active-users
+    term: Daily active users (DAU)
+    domain: product/metrics
+    note: acronym always
+    batch: product
+  - id: customer-lifetime-value
+    term: Customer lifetime value (CLV)
+    domain: product/metrics
+    note: acronym always
+    batch: product

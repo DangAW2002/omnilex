@@ -1,0 +1,113 @@
+batch: medb
+candidates:
+  - id: seo
+    term: Search Engine Optimization (SEO)
+    domain: media/digital-marketing/seo
+    note: acronym always
+    batch: medb
+  - id: seo-keyword
+    term: Keyword
+    qualifier: (SEO)
+    domain: media/digital-marketing/seo
+    note: "generic word: autolink label never"
+    batch: medb
+  - id: backlink
+    term: Backlink
+    domain: media/digital-marketing/seo
+    batch: medb
+  - id: serp
+    term: Search Engine Results Page (SERP)
+    domain: media/digital-marketing/seo
+    note: acronym always
+    batch: medb
+  - id: organic-traffic
+    term: Organic traffic
+    domain: media/digital-marketing/seo
+    batch: medb
+  - id: landing-page
+    term: Landing page
+    domain: media/digital-marketing/paid-ads
+    batch: medb
+  - id: ctr
+    term: Click-through rate (CTR)
+    domain: media/digital-marketing/metrics-analytics
+    note: acronym always
+    batch: medb
+  - id: cpc
+    term: Cost per click (CPC)
+    domain: media/digital-marketing/paid-ads
+    note: acronym always
+    batch: medb
+  - id: cpm
+    term: Cost per mille (CPM)
+    domain: media/digital-marketing/paid-ads
+    note: acronym always
+    batch: medb
+  - id: ad-impression
+    term: Impression
+    qualifier: (Ads)
+    domain: media/digital-marketing/paid-ads
+    note: "generic word: autolink label never"
+    batch: medb
+  - id: retargeting
+    term: Retargeting
+    domain: media/digital-marketing/paid-ads
+    batch: medb
+  - id: audience-reach
+    term: Reach
+    qualifier: (Marketing)
+    domain: media/digital-marketing/social-media
+    note: "generic word: autolink label never"
+    batch: medb
+  - id: engagement-rate
+    term: Engagement rate
+    domain: media/digital-marketing/social-media
+    batch: medb
+  - id: hashtag
+    term: Hashtag
+    domain: media/digital-marketing/social-media
+    batch: medb
+  - id: influencer-marketing
+    term: Influencer marketing
+    domain: media/digital-marketing/social-media
+    batch: medb
+  - id: conversion-rate
+    term: Conversion rate
+    domain: media/digital-marketing/metrics-analytics
+    batch: medb
+  - id: bounce-rate
+    term: Bounce rate
+    domain: media/digital-marketing/metrics-analytics
+    batch: medb
+  - id: utm-parameters
+    term: UTM parameters
+    domain: media/digital-marketing/metrics-analytics
+    batch: medb
+  - id: marketing-funnel
+    term: Marketing funnel
+    domain: media/digital-marketing/metrics-analytics
+    batch: medb
+  - id: call-to-action
+    term: Call to action (CTA)
+    domain: media/digital-marketing/paid-ads
+    note: acronym always
+    batch: medb
+  - id: sales-lead
+    term: Lead
+    qualifier: (Marketing)
+    domain: media/digital-marketing/metrics-analytics
+    note: homonym with news-lead (batch meda); autolink label never
+    batch: medb
+  - id: newsletter
+    term: Newsletter
+    domain: media/digital-marketing/email
+    batch: medb
+  - id: email-open-rate
+    term: Open rate
+    qualifier: (Email)
+    domain: media/digital-marketing/email
+    batch: medb
+  - id: content-marketing
+    term: Content marketing
+    domain: media/digital-marketing/social-media
+    batch: medb

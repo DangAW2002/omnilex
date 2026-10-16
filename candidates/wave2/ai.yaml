@@ -1,0 +1,143 @@
+batch: ai
+candidates:
+  - id: ml-model
+    term: Model
+    qualifier: (AI)
+    domain: it/ai-ml/foundations
+    note: "homonym-prone generic word: autolink label never"
+    batch: ai
+  - id: machine-learning
+    term: Machine learning
+    domain: it/ai-ml/foundations
+    batch: ai
+  - id: model-training
+    term: Training
+    qualifier: (AI)
+    domain: it/ai-ml/foundations
+    note: "generic word: autolink label never"
+    batch: ai
+  - id: inference
+    term: Inference
+    qualifier: (AI)
+    domain: it/ai-ml/foundations
+    batch: ai
+  - id: dataset
+    term: Dataset
+    domain: it/ai-ml/foundations
+    batch: ai
+  - id: overfitting
+    term: Overfitting
+    domain: it/ai-ml/foundations
+    batch: ai
+  - id: neural-network
+    term: Neural network
+    domain: it/ai-ml/foundations
+    batch: ai
+  - id: deep-learning
+    term: Deep learning
+    domain: it/ai-ml/foundations
+    batch: ai
+  - id: transformer
+    term: Transformer
+    qualifier: (AI)
+    domain: it/ai-ml/foundations
+    batch: ai
+  - id: attention-mechanism
+    term: Attention mechanism
+    domain: it/ai-ml/foundations
+    batch: ai
+  - id: gradient-descent
+    term: Gradient descent
+    domain: it/ai-ml/foundations
+    batch: ai
+  - id: loss-function
+    term: Loss function
+    domain: it/ai-ml/foundations
+    batch: ai
+  - id: hyperparameter
+    term: Hyperparameter
+    domain: it/ai-ml/foundations
+    batch: ai
+  - id: epoch-ml
+    term: Epoch
+    qualifier: (AI)
+    domain: it/ai-ml/foundations
+    batch: ai
+  - id: batch-size
+    term: Batch size
+    domain: it/ai-ml/foundations
+    batch: ai
+  - id: model-parameter
+    term: Parameter
+    qualifier: (AI)
+    domain: it/ai-ml/foundations
+    note: "generic word: autolink label never"
+    batch: ai
+  - id: quantization
+    term: Quantization
+    qualifier: (AI)
+    domain: it/ai-ml/mlops
+    batch: ai
+  - id: ai-benchmark
+    term: Benchmark
+    qualifier: (AI)
+    domain: it/ai-ml/mlops
+    batch: ai
+  - id: gpu
+    term: Graphics Processing Unit (GPU)
+    domain: it/ai-ml/mlops
+    also_domains:
+      - it/infrastructure/cloud
+    note: acronym GPU always
+    batch: ai
+  - id: temperature-llm
+    term: Temperature
+    qualifier: (AI)
+    domain: it/ai-ml/llm-agents
+    note: "generic word: autolink label never"
+    batch: ai
+  - id: top-p-sampling
+    term: Top-p sampling
+    domain: it/ai-ml/llm-agents
+    batch: ai
+  - id: ai-agent
+    term: Agent
+    qualifier: (AI)
+    domain: it/ai-ml/llm-agents
+    note: "generic word: autolink label never"
+    batch: ai
+  - id: subagent
+    term: Subagent
+    domain: it/ai-ml/llm-agents
+    batch: ai
+  - id: reasoning-model
+    term: Reasoning model
+    domain: it/ai-ml/llm-agents
+    batch: ai
+  - id: llm-eval
+    term: Eval
+    qualifier: (AI)
+    domain: it/ai-ml/mlops
+    batch: ai
+  - id: knowledge-distillation
+    term: Distillation
+    qualifier: (AI)
+    domain: it/ai-ml/mlops
+    batch: ai
+  - id: grounding-ai
+    term: Grounding
+    qualifier: (AI)
+    domain: it/ai-ml/llm-agents
+    batch: ai
+  - id: context-engineering
+    term: Context engineering
+    domain: it/ai-ml/llm-agents
+    batch: ai
+  - id: image-classification
+    term: Image classification
+    domain: it/ai-ml/computer-vision
+    batch: ai
+  - id: object-detection
+    term: Object detection
+    domain: it/ai-ml/computer-vision
+    batch: ai

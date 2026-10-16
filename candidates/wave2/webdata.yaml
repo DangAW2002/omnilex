@@ -1,0 +1,174 @@
+batch: webdata
+candidates:
+  - id: rest-api
+    term: REST
+    domain: it/web/api
+    note: acronym always
+    batch: webdata
+  - id: api-endpoint
+    term: Endpoint
+    qualifier: (API)
+    domain: it/web/api
+    batch: webdata
+  - id: webhook
+    term: Webhook
+    domain: it/web/api
+    batch: webdata
+  - id: graphql
+    term: GraphQL
+    domain: it/web/api
+    batch: webdata
+  - id: http-status-code
+    term: HTTP status code
+    domain: it/web/api
+    batch: webdata
+  - id: pagination
+    term: Pagination
+    domain: it/web/api
+    batch: webdata
+  - id: json
+    term: JSON
+    domain: it/web/api
+    note: acronym always
+    batch: webdata
+  - id: cors
+    term: Cross-Origin Resource Sharing (CORS)
+    domain: it/web/api
+    also_domains:
+      - it/security/vulnerabilities
+    note: acronym always
+    batch: webdata
+  - id: cache
+    term: Cache
+    qualifier: (Software)
+    domain: it/web/backend
+    note: "generic word: autolink label never"
+    batch: webdata
+  - id: orm
+    term: Object-Relational Mapping (ORM)
+    domain: it/web/backend
+    note: acronym always
+    batch: webdata
+  - id: message-queue
+    term: Message queue
+    domain: it/web/backend
+    batch: webdata
+  - id: web-session
+    term: Session
+    qualifier: (Web)
+    domain: it/web/backend
+    note: "generic word: autolink label never"
+    batch: webdata
+  - id: sql
+    term: SQL
+    domain: it/data/database
+    note: acronym always
+    batch: webdata
+  - id: database-index
+    term: Index
+    qualifier: (Database)
+    domain: it/data/database
+    note: "generic word: autolink label never"
+    batch: webdata
+  - id: database-migration
+    term: Migration
+    qualifier: (Database)
+    domain: it/data/database
+    note: "generic word: autolink label never"
+    batch: webdata
+  - id: database-transaction
+    term: Transaction
+    qualifier: (Database)
+    domain: it/data/database
+    note: "generic word: autolink label never"
+    batch: webdata
+  - id: database-schema
+    term: Schema
+    qualifier: (Database)
+    domain: it/data/database
+    note: "generic word: autolink label never"
+    batch: webdata
+  - id: sharding
+    term: Sharding
+    domain: it/data/database
+    batch: webdata
+  - id: database-replication
+    term: Replication
+    qualifier: (Database)
+    domain: it/data/database
+    batch: webdata
+  - id: etl
+    term: Extract, Transform, Load (ETL)
+    domain: it/data/data-engineering
+    note: acronym always
+    batch: webdata
+  - id: data-pipeline
+    term: Data pipeline
+    domain: it/data/data-engineering
+    note: do not add bare alias "pipeline"
+    batch: webdata
+  - id: data-warehouse
+    term: Data warehouse
+    domain: it/data/data-engineering
+    batch: webdata
+  - id: data-lake
+    term: Data lake
+    domain: it/data/data-engineering
+    batch: webdata
+  - id: oauth
+    term: OAuth
+    domain: it/security/authentication
+    batch: webdata
+  - id: jwt
+    term: JSON Web Token (JWT)
+    domain: it/security/authentication
+    note: acronym always; relate to token-auth
+    batch: webdata
+  - id: mfa
+    term: Multi-factor authentication (MFA)
+    domain: it/security/authentication
+    note: aliases MFA, 2FA always
+    batch: webdata
+  - id: least-privilege
+    term: Principle of least privilege
+    domain: it/security/authentication
+    batch: webdata
+  - id: zero-trust
+    term: Zero trust
+    domain: it/security/authentication
+    batch: webdata
+  - id: sql-injection
+    term: SQL injection
+    domain: it/security/vulnerabilities
+    batch: webdata
+  - id: xss
+    term: Cross-site scripting (XSS)
+    domain: it/security/vulnerabilities
+    note: acronym always
+    batch: webdata
+  - id: csrf
+    term: Cross-site request forgery (CSRF)
+    domain: it/security/vulnerabilities
+    note: acronym always
+    batch: webdata
+  - id: cve
+    term: Common Vulnerabilities and Exposures (CVE)
+    domain: it/security/vulnerabilities
+    note: acronym always
+    batch: webdata
+  - id: hashing
+    term: Hashing
+    qualifier: (Cryptography)
+    domain: it/security/cryptography
+    batch: webdata
+  - id: encryption
+    term: Encryption
+    domain: it/security/cryptography
+    batch: webdata
+  - id: tls
+    term: Transport Layer Security (TLS)
+    domain: it/security/cryptography
+    also_domains:
+      - it/infrastructure/networking
+    note: acronym always
+    batch: webdata

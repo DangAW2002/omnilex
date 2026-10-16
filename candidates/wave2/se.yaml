@@ -1,0 +1,150 @@
+batch: se
+candidates:
+  - id: api
+    term: Application Programming Interface (API)
+    domain: it/web/api
+    also_domains:
+      - it/software-engineering/programming-concepts
+    note: acronym API always
+    batch: se
+  - id: sdk
+    term: Software Development Kit (SDK)
+    domain: it/software-engineering/programming-concepts
+    note: acronym SDK always
+    batch: se
+  - id: refactoring
+    term: Refactoring
+    domain: it/software-engineering/practices
+    batch: se
+  - id: technical-debt
+    term: Technical debt
+    domain: it/software-engineering/practices
+    batch: se
+  - id: unit-test
+    term: Unit test
+    domain: it/software-engineering/testing
+    batch: se
+  - id: integration-test
+    term: Integration test
+    domain: it/software-engineering/testing
+    batch: se
+  - id: end-to-end-test
+    term: End-to-end test
+    domain: it/software-engineering/testing
+    batch: se
+  - id: mock-object
+    term: Mock
+    qualifier: (Testing)
+    domain: it/software-engineering/testing
+    note: "generic word: autolink label never"
+    batch: se
+  - id: regression-testing
+    term: Regression testing
+    domain: it/software-engineering/testing
+    note: do not add bare alias "regression"
+    batch: se
+  - id: software-dependency
+    term: Dependency
+    qualifier: (Software)
+    domain: it/software-engineering/practices
+    note: "generic word: autolink label never"
+    batch: se
+  - id: software-library
+    term: Library
+    qualifier: (Software)
+    domain: it/software-engineering/programming-concepts
+    note: "generic word: autolink label never"
+    batch: se
+  - id: software-framework
+    term: Framework
+    qualifier: (Software)
+    domain: it/software-engineering/programming-concepts
+    note: "generic word: autolink label never"
+    batch: se
+  - id: race-condition
+    term: Race condition
+    domain: it/software-engineering/programming-concepts
+    batch: se
+  - id: idempotency
+    term: Idempotency
+    domain: it/software-engineering/programming-concepts
+    batch: se
+  - id: deprecation
+    term: Deprecation
+    qualifier: (Software)
+    domain: it/software-engineering/practices
+    batch: se
+  - id: linter
+    term: Linter
+    domain: it/software-engineering/practices
+    batch: se
+  - id: type-checking
+    term: Type checking
+    domain: it/software-engineering/programming-concepts
+    batch: se
+  - id: code-review
+    term: Code review
+    domain: it/software-engineering/practices
+    batch: se
+  - id: pull-request
+    term: Pull request (PR)
+    domain: it/software-engineering/version-control
+    note: "alias PR: always"
+    batch: se
+  - id: merge-conflict
+    term: Merge conflict
+    domain: it/software-engineering/version-control
+    batch: se
+  - id: git-branch
+    term: Branch
+    qualifier: (Git)
+    domain: it/software-engineering/version-control
+    note: "generic word: autolink label never"
+    batch: se
+  - id: git-commit
+    term: Commit
+    qualifier: (Git)
+    domain: it/software-engineering/version-control
+    batch: se
+  - id: git-rebase
+    term: Rebase
+    domain: it/software-engineering/version-control
+    batch: se
+  - id: monorepo
+    term: Monorepo
+    domain: it/software-engineering/version-control
+    batch: se
+  - id: semantic-versioning
+    term: Semantic versioning
+    domain: it/software-engineering/practices
+    note: alias SemVer
+    batch: se
+  - id: breaking-change
+    term: Breaking change
+    domain: it/software-engineering/practices
+    batch: se
+  - id: hotfix
+    term: Hotfix
+    domain: it/software-engineering/practices
+    batch: se
+  - id: feature-flag
+    term: Feature flag
+    domain: it/software-engineering/practices
+    batch: se
+  - id: edge-case
+    term: Edge case
+    domain: it/software-engineering/testing
+    batch: se
+  - id: side-effect
+    term: Side effect
+    qualifier: (Programming)
+    domain: it/software-engineering/programming-concepts
+    batch: se
+  - id: microservices
+    term: Microservices
+    domain: it/software-engineering/architecture
+    batch: se
+  - id: design-pattern
+    term: Design pattern
+    domain: it/software-engineering/architecture
+    batch: se

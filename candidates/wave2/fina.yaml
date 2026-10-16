@@ -1,0 +1,124 @@
+batch: fina
+candidates:
+  - id: budget
+    term: Budget
+    qualifier: (Personal finance)
+    domain: finance/personal-finance/budget
+    note: "generic word: autolink label never"
+    batch: fina
+  - id: emergency-fund
+    term: Emergency fund
+    domain: finance/personal-finance/saving
+    batch: fina
+  - id: credit-score
+    term: Credit score
+    domain: finance/personal-finance/debt-credit
+    batch: fina
+  - id: credit-card
+    term: Credit card
+    domain: finance/personal-finance/debt-credit
+    batch: fina
+  - id: overdraft
+    term: Overdraft
+    domain: finance/banking/lending
+    batch: fina
+  - id: mortgage
+    term: Mortgage
+    domain: finance/banking/lending
+    batch: fina
+  - id: insurance-premium
+    term: Insurance premium
+    domain: finance/personal-finance/insurance
+    batch: fina
+  - id: insurance-deductible
+    term: Deductible
+    qualifier: (Insurance)
+    domain: finance/personal-finance/insurance
+    batch: fina
+  - id: personal-income-tax
+    term: Personal income tax
+    domain: finance/personal-finance/tax
+    batch: fina
+  - id: savings-account
+    term: Savings account
+    domain: finance/banking/deposits
+    batch: fina
+  - id: term-deposit
+    term: Term deposit
+    domain: finance/banking/deposits
+    batch: fina
+  - id: bank-transfer
+    term: Bank transfer
+    domain: finance/banking/payments
+    batch: fina
+  - id: e-wallet
+    term: E-wallet
+    domain: finance/banking/payments
+    batch: fina
+  - id: stock
+    term: Stock
+    qualifier: (Finance)
+    domain: finance/investing/stocks
+    note: "generic word: autolink label never"
+    batch: fina
+  - id: dividend
+    term: Dividend
+    domain: finance/investing/stocks
+    batch: fina
+  - id: stock-exchange
+    term: Stock exchange
+    domain: finance/investing/stocks
+    batch: fina
+  - id: bond
+    term: Bond
+    qualifier: (Finance)
+    domain: finance/investing/bonds
+    note: "generic word: autolink label never"
+    batch: fina
+  - id: bond-yield
+    term: Yield
+    qualifier: (Finance)
+    domain: finance/investing/bonds
+    note: "generic word: autolink label never"
+    batch: fina
+  - id: mutual-fund
+    term: Mutual fund
+    domain: finance/investing/funds
+    batch: fina
+  - id: etf
+    term: Exchange-Traded Fund (ETF)
+    domain: finance/investing/funds
+    note: acronym always
+    batch: fina
+  - id: index-fund
+    term: Index fund
+    domain: finance/investing/funds
+    note: do not add bare alias "index"
+    batch: fina
+  - id: diversification
+    term: Diversification
+    domain: finance/investing/portfolio-risk
+    batch: fina
+  - id: volatility
+    term: Volatility
+    qualifier: (Finance)
+    domain: finance/investing/portfolio-risk
+    batch: fina
+  - id: pe-ratio
+    term: Price-to-earnings ratio (P/E)
+    domain: finance/investing/valuation
+    batch: fina
+  - id: market-capitalization
+    term: Market capitalization
+    domain: finance/investing/valuation
+    note: alias market cap
+    batch: fina
+  - id: blockchain
+    term: Blockchain
+    domain: finance/investing/digital-assets
+    batch: fina
+  - id: cryptocurrency
+    term: Cryptocurrency
+    domain: finance/investing/digital-assets
+    note: relate to token-crypto
+    batch: fina

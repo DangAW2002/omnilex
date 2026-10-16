@@ -1,0 +1,105 @@
+batch: meda
+candidates:
+  - id: headline
+    term: Headline
+    domain: media/journalism/reporting
+    batch: meda
+  - id: news-lead
+    term: Lead
+    qualifier: (Journalism)
+    domain: media/journalism/reporting
+    note: homonym with sales-lead (batch medb); autolink label never
+    batch: meda
+  - id: byline
+    term: Byline
+    domain: media/journalism/reporting
+    batch: meda
+  - id: inverted-pyramid
+    term: Inverted pyramid
+    domain: media/journalism/reporting
+    batch: meda
+  - id: breaking-news
+    term: Breaking news
+    domain: media/journalism/genres
+    batch: meda
+  - id: op-ed
+    term: Op-ed
+    domain: media/journalism/genres
+    batch: meda
+  - id: fact-checking
+    term: Fact-checking
+    domain: media/journalism/ethics
+    batch: meda
+  - id: anonymous-source
+    term: Anonymous source
+    domain: media/journalism/ethics
+    batch: meda
+  - id: press-embargo
+    term: Embargo
+    qualifier: (Media)
+    domain: media/pr-communications/media-relations
+    batch: meda
+  - id: press-release
+    term: Press release
+    domain: media/pr-communications/media-relations
+    batch: meda
+  - id: press-conference
+    term: Press conference
+    domain: media/pr-communications/media-relations
+    batch: meda
+  - id: spokesperson
+    term: Spokesperson
+    domain: media/pr-communications/media-relations
+    batch: meda
+  - id: crisis-communication
+    term: Crisis communication
+    domain: media/pr-communications/crisis-communications
+    batch: meda
+  - id: copyright
+    term: Copyright
+    domain: media/publishing/copyright-licensing
+    batch: meda
+  - id: fair-use
+    term: Fair use
+    domain: media/publishing/copyright-licensing
+    batch: meda
+  - id: creative-commons
+    term: Creative Commons
+    domain: media/publishing/copyright-licensing
+    batch: meda
+  - id: paywall
+    term: Paywall
+    domain: media/publishing/distribution-platforms
+    batch: meda
+  - id: b-roll
+    term: B-roll
+    domain: media/content-production/video
+    batch: meda
+  - id: storyboard
+    term: Storyboard
+    domain: media/content-production/video
+    batch: meda
+  - id: aspect-ratio
+    term: Aspect ratio
+    domain: media/content-production/video
+    batch: meda
+  - id: color-grading
+    term: Color grading
+    domain: media/content-production/editing
+    batch: meda
+  - id: voice-over
+    term: Voice-over
+    domain: media/content-production/audio-podcasts
+    batch: meda
+  - id: podcast
+    term: Podcast
+    domain: media/content-production/audio-podcasts
+    batch: meda
+  - id: typography
+    term: Typography
+    domain: media/content-production/visual-design
+    batch: meda
+  - id: visual-hierarchy
+    term: Visual hierarchy
+    domain: media/content-production/visual-design
+    batch: meda

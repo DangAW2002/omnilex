@@ -1,0 +1,1357 @@
+note: "Wave 2 master keyword list. One id belongs to exactly one batch.
+  Generated from the orchestrator list; scaffold with: tb new --from <batch
+  file>"
+candidates:
+  - id: ml-model
+    term: Model
+    qualifier: (AI)
+    domain: it/ai-ml/foundations
+    note: "homonym-prone generic word: autolink label never"
+    batch: ai
+  - id: machine-learning
+    term: Machine learning
+    domain: it/ai-ml/foundations
+    batch: ai
+  - id: model-training
+    term: Training
+    qualifier: (AI)
+    domain: it/ai-ml/foundations
+    note: "generic word: autolink label never"
+    batch: ai
+  - id: inference
+    term: Inference
+    qualifier: (AI)
+    domain: it/ai-ml/foundations
+    batch: ai
+  - id: dataset
+    term: Dataset
+    domain: it/ai-ml/foundations
+    batch: ai
+  - id: overfitting
+    term: Overfitting
+    domain: it/ai-ml/foundations
+    batch: ai
+  - id: neural-network
+    term: Neural network
+    domain: it/ai-ml/foundations
+    batch: ai
+  - id: deep-learning
+    term: Deep learning
+    domain: it/ai-ml/foundations
+    batch: ai
+  - id: transformer
+    term: Transformer
+    qualifier: (AI)
+    domain: it/ai-ml/foundations
+    batch: ai
+  - id: attention-mechanism
+    term: Attention mechanism
+    domain: it/ai-ml/foundations
+    batch: ai
+  - id: gradient-descent
+    term: Gradient descent
+    domain: it/ai-ml/foundations
+    batch: ai
+  - id: loss-function
+    term: Loss function
+    domain: it/ai-ml/foundations
+    batch: ai
+  - id: hyperparameter
+    term: Hyperparameter
+    domain: it/ai-ml/foundations
+    batch: ai
+  - id: epoch-ml
+    term: Epoch
+    qualifier: (AI)
+    domain: it/ai-ml/foundations
+    batch: ai
+  - id: batch-size
+    term: Batch size
+    domain: it/ai-ml/foundations
+    batch: ai
+  - id: model-parameter
+    term: Parameter
+    qualifier: (AI)
+    domain: it/ai-ml/foundations
+    note: "generic word: autolink label never"
+    batch: ai
+  - id: quantization
+    term: Quantization
+    qualifier: (AI)
+    domain: it/ai-ml/mlops
+    batch: ai
+  - id: ai-benchmark
+    term: Benchmark
+    qualifier: (AI)
+    domain: it/ai-ml/mlops
+    batch: ai
+  - id: gpu
+    term: Graphics Processing Unit (GPU)
+    domain: it/ai-ml/mlops
+    also_domains:
+      - it/infrastructure/cloud
+    note: acronym GPU always
+    batch: ai
+  - id: temperature-llm
+    term: Temperature
+    qualifier: (AI)
+    domain: it/ai-ml/llm-agents
+    note: "generic word: autolink label never"
+    batch: ai
+  - id: top-p-sampling
+    term: Top-p sampling
+    domain: it/ai-ml/llm-agents
+    batch: ai
+  - id: ai-agent
+    term: Agent
+    qualifier: (AI)
+    domain: it/ai-ml/llm-agents
+    note: "generic word: autolink label never"
+    batch: ai
+  - id: subagent
+    term: Subagent
+    domain: it/ai-ml/llm-agents
+    batch: ai
+  - id: reasoning-model
+    term: Reasoning model
+    domain: it/ai-ml/llm-agents
+    batch: ai
+  - id: llm-eval
+    term: Eval
+    qualifier: (AI)
+    domain: it/ai-ml/mlops
+    batch: ai
+  - id: knowledge-distillation
+    term: Distillation
+    qualifier: (AI)
+    domain: it/ai-ml/mlops
+    batch: ai
+  - id: grounding-ai
+    term: Grounding
+    qualifier: (AI)
+    domain: it/ai-ml/llm-agents
+    batch: ai
+  - id: context-engineering
+    term: Context engineering
+    domain: it/ai-ml/llm-agents
+    batch: ai
+  - id: image-classification
+    term: Image classification
+    domain: it/ai-ml/computer-vision
+    batch: ai
+  - id: object-detection
+    term: Object detection
+    domain: it/ai-ml/computer-vision
+    batch: ai
+  - id: api
+    term: Application Programming Interface (API)
+    domain: it/web/api
+    also_domains:
+      - it/software-engineering/programming-concepts
+    note: acronym API always
+    batch: se
+  - id: sdk
+    term: Software Development Kit (SDK)
+    domain: it/software-engineering/programming-concepts
+    note: acronym SDK always
+    batch: se
+  - id: refactoring
+    term: Refactoring
+    domain: it/software-engineering/practices
+    batch: se
+  - id: technical-debt
+    term: Technical debt
+    domain: it/software-engineering/practices
+    batch: se
+  - id: unit-test
+    term: Unit test
+    domain: it/software-engineering/testing
+    batch: se
+  - id: integration-test
+    term: Integration test
+    domain: it/software-engineering/testing
+    batch: se
+  - id: end-to-end-test
+    term: End-to-end test
+    domain: it/software-engineering/testing
+    batch: se
+  - id: mock-object
+    term: Mock
+    qualifier: (Testing)
+    domain: it/software-engineering/testing
+    note: "generic word: autolink label never"
+    batch: se
+  - id: regression-testing
+    term: Regression testing
+    domain: it/software-engineering/testing
+    note: do not add bare alias "regression"
+    batch: se
+  - id: software-dependency
+    term: Dependency
+    qualifier: (Software)
+    domain: it/software-engineering/practices
+    note: "generic word: autolink label never"
+    batch: se
+  - id: software-library
+    term: Library
+    qualifier: (Software)
+    domain: it/software-engineering/programming-concepts
+    note: "generic word: autolink label never"
+    batch: se
+  - id: software-framework
+    term: Framework
+    qualifier: (Software)
+    domain: it/software-engineering/programming-concepts
+    note: "generic word: autolink label never"
+    batch: se
+  - id: race-condition
+    term: Race condition
+    domain: it/software-engineering/programming-concepts
+    batch: se
+  - id: idempotency
+    term: Idempotency
+    domain: it/software-engineering/programming-concepts
+    batch: se
+  - id: deprecation
+    term: Deprecation
+    qualifier: (Software)
+    domain: it/software-engineering/practices
+    batch: se
+  - id: linter
+    term: Linter
+    domain: it/software-engineering/practices
+    batch: se
+  - id: type-checking
+    term: Type checking
+    domain: it/software-engineering/programming-concepts
+    batch: se
+  - id: code-review
+    term: Code review
+    domain: it/software-engineering/practices
+    batch: se
+  - id: pull-request
+    term: Pull request (PR)
+    domain: it/software-engineering/version-control
+    note: "alias PR: always"
+    batch: se
+  - id: merge-conflict
+    term: Merge conflict
+    domain: it/software-engineering/version-control
+    batch: se
+  - id: git-branch
+    term: Branch
+    qualifier: (Git)
+    domain: it/software-engineering/version-control
+    note: "generic word: autolink label never"
+    batch: se
+  - id: git-commit
+    term: Commit
+    qualifier: (Git)
+    domain: it/software-engineering/version-control
+    batch: se
+  - id: git-rebase
+    term: Rebase
+    domain: it/software-engineering/version-control
+    batch: se
+  - id: monorepo
+    term: Monorepo
+    domain: it/software-engineering/version-control
+    batch: se
+  - id: semantic-versioning
+    term: Semantic versioning
+    domain: it/software-engineering/practices
+    note: alias SemVer
+    batch: se
+  - id: breaking-change
+    term: Breaking change
+    domain: it/software-engineering/practices
+    batch: se
+  - id: hotfix
+    term: Hotfix
+    domain: it/software-engineering/practices
+    batch: se
+  - id: feature-flag
+    term: Feature flag
+    domain: it/software-engineering/practices
+    batch: se
+  - id: edge-case
+    term: Edge case
+    domain: it/software-engineering/testing
+    batch: se
+  - id: side-effect
+    term: Side effect
+    qualifier: (Programming)
+    domain: it/software-engineering/programming-concepts
+    batch: se
+  - id: microservices
+    term: Microservices
+    domain: it/software-engineering/architecture
+    batch: se
+  - id: design-pattern
+    term: Design pattern
+    domain: it/software-engineering/architecture
+    batch: se
+  - id: ci-cd
+    term: CI/CD
+    domain: it/devops/ci-cd
+    note: acronym always
+    batch: devops
+  - id: ci-pipeline
+    term: Pipeline
+    qualifier: (CI/CD)
+    domain: it/devops/ci-cd
+    note: "generic word: autolink label never"
+    batch: devops
+  - id: software-container
+    term: Container
+    qualifier: (Software)
+    domain: it/devops/containers
+    note: "generic word: autolink label never"
+    batch: devops
+  - id: container-image
+    term: Image
+    qualifier: (Container)
+    domain: it/devops/containers
+    note: "generic word: autolink label never"
+    batch: devops
+  - id: docker
+    term: Docker
+    domain: it/devops/containers
+    batch: devops
+  - id: kubernetes
+    term: Kubernetes
+    domain: it/devops/containers
+    note: alias K8s
+    batch: devops
+  - id: kubernetes-pod
+    term: Pod
+    qualifier: (Kubernetes)
+    domain: it/devops/containers
+    batch: devops
+  - id: software-deployment
+    term: Deployment
+    qualifier: (Software)
+    domain: it/devops/ci-cd
+    note: "generic word: autolink label never"
+    batch: devops
+  - id: rollback
+    term: Rollback
+    domain: it/devops/sre-operations
+    batch: devops
+  - id: blue-green-deployment
+    term: Blue-green deployment
+    domain: it/devops/ci-cd
+    batch: devops
+  - id: canary-release
+    term: Canary release
+    domain: it/devops/ci-cd
+    batch: devops
+  - id: infrastructure-as-code
+    term: Infrastructure as code (IaC)
+    domain: it/devops/iac
+    note: alias IaC always
+    batch: devops
+  - id: observability
+    term: Observability
+    domain: it/devops/observability
+    batch: devops
+  - id: log
+    term: Log
+    qualifier: (Software)
+    domain: it/devops/observability
+    note: "generic word: autolink label never"
+    batch: devops
+  - id: metric-monitoring
+    term: Metric
+    qualifier: (Monitoring)
+    domain: it/devops/observability
+    note: "generic word: autolink label never"
+    batch: devops
+  - id: distributed-tracing
+    term: Distributed tracing
+    domain: it/devops/observability
+    batch: devops
+  - id: slo
+    term: Service Level Objective (SLO)
+    domain: it/devops/sre-operations
+    note: acronym always
+    batch: devops
+  - id: sla
+    term: Service Level Agreement (SLA)
+    domain: it/devops/sre-operations
+    note: acronym always
+    batch: devops
+  - id: sli
+    term: Service Level Indicator (SLI)
+    domain: it/devops/sre-operations
+    note: acronym always
+    batch: devops
+  - id: incident
+    term: Incident
+    qualifier: (IT)
+    domain: it/devops/sre-operations
+    note: "generic word: autolink label never"
+    batch: devops
+  - id: on-call
+    term: On-call
+    domain: it/devops/sre-operations
+    batch: devops
+  - id: postmortem
+    term: Postmortem
+    qualifier: (IT)
+    domain: it/devops/sre-operations
+    batch: devops
+  - id: load-balancer
+    term: Load balancer
+    domain: it/infrastructure/networking
+    batch: devops
+  - id: cdn
+    term: Content Delivery Network (CDN)
+    domain: it/infrastructure/networking
+    note: acronym always
+    batch: devops
+  - id: dns
+    term: Domain Name System (DNS)
+    domain: it/infrastructure/networking
+    note: acronym always
+    batch: devops
+  - id: serverless
+    term: Serverless
+    domain: it/infrastructure/cloud
+    batch: devops
+  - id: virtual-machine
+    term: Virtual machine (VM)
+    domain: it/infrastructure/cloud
+    batch: devops
+  - id: autoscaling
+    term: Autoscaling
+    domain: it/infrastructure/cloud
+    batch: devops
+  - id: environment-variable
+    term: Environment variable
+    domain: it/devops/ci-cd
+    batch: devops
+  - id: secret-config
+    term: Secret
+    qualifier: (Software)
+    domain: it/devops/ci-cd
+    also_domains:
+      - it/security/authentication
+    note: "generic word: autolink label never"
+    batch: devops
+  - id: staging-environment
+    term: Staging environment
+    domain: it/devops/ci-cd
+    batch: devops
+  - id: uptime
+    term: Uptime
+    domain: it/devops/sre-operations
+    batch: devops
+  - id: latency
+    term: Latency
+    qualifier: (Network)
+    domain: it/infrastructure/networking
+    batch: devops
+  - id: throughput
+    term: Throughput
+    domain: it/infrastructure/networking
+    batch: devops
+  - id: rate-limiting
+    term: Rate limiting
+    domain: it/web/api
+    batch: devops
+  - id: rest-api
+    term: REST
+    domain: it/web/api
+    note: acronym always
+    batch: webdata
+  - id: api-endpoint
+    term: Endpoint
+    qualifier: (API)
+    domain: it/web/api
+    batch: webdata
+  - id: webhook
+    term: Webhook
+    domain: it/web/api
+    batch: webdata
+  - id: graphql
+    term: GraphQL
+    domain: it/web/api
+    batch: webdata
+  - id: http-status-code
+    term: HTTP status code
+    domain: it/web/api
+    batch: webdata
+  - id: pagination
+    term: Pagination
+    domain: it/web/api
+    batch: webdata
+  - id: json
+    term: JSON
+    domain: it/web/api
+    note: acronym always
+    batch: webdata
+  - id: cors
+    term: Cross-Origin Resource Sharing (CORS)
+    domain: it/web/api
+    also_domains:
+      - it/security/vulnerabilities
+    note: acronym always
+    batch: webdata
+  - id: cache
+    term: Cache
+    qualifier: (Software)
+    domain: it/web/backend
+    note: "generic word: autolink label never"
+    batch: webdata
+  - id: orm
+    term: Object-Relational Mapping (ORM)
+    domain: it/web/backend
+    note: acronym always
+    batch: webdata
+  - id: message-queue
+    term: Message queue
+    domain: it/web/backend
+    batch: webdata
+  - id: web-session
+    term: Session
+    qualifier: (Web)
+    domain: it/web/backend
+    note: "generic word: autolink label never"
+    batch: webdata
+  - id: sql
+    term: SQL
+    domain: it/data/database
+    note: acronym always
+    batch: webdata
+  - id: database-index
+    term: Index
+    qualifier: (Database)
+    domain: it/data/database
+    note: "generic word: autolink label never"
+    batch: webdata
+  - id: database-migration
+    term: Migration
+    qualifier: (Database)
+    domain: it/data/database
+    note: "generic word: autolink label never"
+    batch: webdata
+  - id: database-transaction
+    term: Transaction
+    qualifier: (Database)
+    domain: it/data/database
+    note: "generic word: autolink label never"
+    batch: webdata
+  - id: database-schema
+    term: Schema
+    qualifier: (Database)
+    domain: it/data/database
+    note: "generic word: autolink label never"
+    batch: webdata
+  - id: sharding
+    term: Sharding
+    domain: it/data/database
+    batch: webdata
+  - id: database-replication
+    term: Replication
+    qualifier: (Database)
+    domain: it/data/database
+    batch: webdata
+  - id: etl
+    term: Extract, Transform, Load (ETL)
+    domain: it/data/data-engineering
+    note: acronym always
+    batch: webdata
+  - id: data-pipeline
+    term: Data pipeline
+    domain: it/data/data-engineering
+    note: do not add bare alias "pipeline"
+    batch: webdata
+  - id: data-warehouse
+    term: Data warehouse
+    domain: it/data/data-engineering
+    batch: webdata
+  - id: data-lake
+    term: Data lake
+    domain: it/data/data-engineering
+    batch: webdata
+  - id: oauth
+    term: OAuth
+    domain: it/security/authentication
+    batch: webdata
+  - id: jwt
+    term: JSON Web Token (JWT)
+    domain: it/security/authentication
+    note: acronym always; relate to token-auth
+    batch: webdata
+  - id: mfa
+    term: Multi-factor authentication (MFA)
+    domain: it/security/authentication
+    note: aliases MFA, 2FA always
+    batch: webdata
+  - id: least-privilege
+    term: Principle of least privilege
+    domain: it/security/authentication
+    batch: webdata
+  - id: zero-trust
+    term: Zero trust
+    domain: it/security/authentication
+    batch: webdata
+  - id: sql-injection
+    term: SQL injection
+    domain: it/security/vulnerabilities
+    batch: webdata
+  - id: xss
+    term: Cross-site scripting (XSS)
+    domain: it/security/vulnerabilities
+    note: acronym always
+    batch: webdata
+  - id: csrf
+    term: Cross-site request forgery (CSRF)
+    domain: it/security/vulnerabilities
+    note: acronym always
+    batch: webdata
+  - id: cve
+    term: Common Vulnerabilities and Exposures (CVE)
+    domain: it/security/vulnerabilities
+    note: acronym always
+    batch: webdata
+  - id: hashing
+    term: Hashing
+    qualifier: (Cryptography)
+    domain: it/security/cryptography
+    batch: webdata
+  - id: encryption
+    term: Encryption
+    domain: it/security/cryptography
+    batch: webdata
+  - id: tls
+    term: Transport Layer Security (TLS)
+    domain: it/security/cryptography
+    also_domains:
+      - it/infrastructure/networking
+    note: acronym always
+    batch: webdata
+  - id: sensor
+    term: Sensor
+    domain: iot/devices-sensors
+    batch: iot
+  - id: actuator
+    term: Actuator
+    domain: iot/devices-sensors
+    batch: iot
+  - id: microcontroller
+    term: Microcontroller (MCU)
+    domain: iot/devices-sensors
+    batch: iot
+  - id: firmware
+    term: Firmware
+    domain: iot/devices-sensors
+    batch: iot
+  - id: rtos
+    term: Real-time operating system (RTOS)
+    domain: iot/devices-sensors
+    note: acronym always
+    batch: iot
+  - id: smart-home
+    term: Smart home
+    domain: iot/devices-sensors
+    batch: iot
+  - id: mqtt
+    term: MQTT
+    domain: iot/connectivity-protocols
+    note: acronym always
+    batch: iot
+  - id: coap
+    term: Constrained Application Protocol (CoAP)
+    domain: iot/connectivity-protocols
+    batch: iot
+  - id: ble
+    term: Bluetooth Low Energy (BLE)
+    domain: iot/connectivity-protocols
+    note: acronym always
+    batch: iot
+  - id: zigbee
+    term: Zigbee
+    domain: iot/connectivity-protocols
+    batch: iot
+  - id: lorawan
+    term: LoRaWAN
+    domain: iot/connectivity-protocols
+    batch: iot
+  - id: nb-iot
+    term: NB-IoT
+    domain: iot/connectivity-protocols
+    batch: iot
+  - id: mesh-network
+    term: Mesh network
+    domain: iot/connectivity-protocols
+    batch: iot
+  - id: iot-gateway
+    term: Gateway
+    qualifier: (IoT)
+    domain: iot/edge-cloud
+    note: "generic word: autolink label never"
+    batch: iot
+  - id: edge-computing
+    term: Edge computing
+    domain: iot/edge-cloud
+    batch: iot
+  - id: telemetry
+    term: Telemetry
+    domain: iot/edge-cloud
+    batch: iot
+  - id: ota-update
+    term: Over-the-air update (OTA)
+    domain: iot/edge-cloud
+    note: acronym always
+    batch: iot
+  - id: device-provisioning
+    term: Device provisioning
+    domain: iot/edge-cloud
+    batch: iot
+  - id: iot-platform
+    term: IoT platform
+    domain: iot/edge-cloud
+    batch: iot
+  - id: digital-twin
+    term: Digital twin
+    domain: iot/industrial
+    batch: iot
+  - id: plc
+    term: Programmable Logic Controller (PLC)
+    domain: iot/industrial
+    note: acronym always
+    batch: iot
+  - id: scada
+    term: SCADA
+    domain: iot/industrial
+    note: acronym always
+    batch: iot
+  - id: opc-ua
+    term: OPC UA
+    domain: iot/industrial
+    batch: iot
+  - id: modbus
+    term: Modbus
+    domain: iot/industrial
+    batch: iot
+  - id: predictive-maintenance
+    term: Predictive maintenance
+    domain: iot/industrial
+    batch: iot
+  - id: product-backlog
+    term: Product backlog
+    domain: product/agile-scrum
+    note: alias backlog
+    batch: product
+  - id: sprint-agile
+    term: Sprint
+    qualifier: (Agile)
+    domain: product/agile-scrum
+    batch: product
+  - id: user-story
+    term: User story
+    domain: product/agile-scrum
+    batch: product
+  - id: acceptance-criteria
+    term: Acceptance criteria
+    domain: product/agile-scrum
+    batch: product
+  - id: definition-of-done
+    term: Definition of Done (DoD)
+    domain: product/agile-scrum
+    batch: product
+  - id: scrum
+    term: Scrum
+    domain: product/agile-scrum
+    batch: product
+  - id: kanban
+    term: Kanban
+    domain: product/agile-scrum
+    batch: product
+  - id: product-owner
+    term: Product owner (PO)
+    domain: product/agile-scrum
+    batch: product
+  - id: scrum-master
+    term: Scrum master
+    domain: product/agile-scrum
+    batch: product
+  - id: daily-scrum
+    term: Daily Scrum
+    domain: product/agile-scrum
+    note: alias stand-up
+    batch: product
+  - id: sprint-planning
+    term: Sprint planning
+    domain: product/agile-scrum
+    batch: product
+  - id: sprint-retrospective
+    term: Sprint retrospective
+    domain: product/agile-scrum
+    note: alias retro
+    batch: product
+  - id: velocity-agile
+    term: Velocity
+    qualifier: (Agile)
+    domain: product/agile-scrum
+    note: "generic word: autolink label never"
+    batch: product
+  - id: story-point
+    term: Story point
+    domain: product/agile-scrum
+    batch: product
+  - id: epic-agile
+    term: Epic
+    qualifier: (Agile)
+    domain: product/agile-scrum
+    batch: product
+  - id: burndown-chart
+    term: Burndown chart
+    domain: product/delivery-planning
+    batch: product
+  - id: mvp
+    term: Minimum Viable Product (MVP)
+    domain: product/product-management
+    note: acronym always
+    batch: product
+  - id: product-roadmap
+    term: Product roadmap
+    domain: product/delivery-planning
+    note: alias roadmap
+    batch: product
+  - id: stakeholder
+    term: Stakeholder
+    domain: product/product-management
+    batch: product
+  - id: prd
+    term: Product Requirements Document (PRD)
+    domain: product/product-management
+    note: acronym always
+    batch: product
+  - id: product-discovery
+    term: Product discovery
+    domain: product/product-management
+    batch: product
+  - id: product-market-fit
+    term: Product-market fit
+    domain: product/product-management
+    note: alias PMF
+    batch: product
+  - id: scope-creep
+    term: Scope creep
+    domain: product/delivery-planning
+    batch: product
+  - id: product-release
+    term: Release
+    qualifier: (Product)
+    domain: product/delivery-planning
+    note: "generic word: autolink label never"
+    batch: product
+  - id: rice-scoring
+    term: RICE scoring
+    domain: product/delivery-planning
+    batch: product
+  - id: moscow-method
+    term: MoSCoW method
+    domain: product/delivery-planning
+    batch: product
+  - id: okr
+    term: Objectives and Key Results (OKR)
+    domain: product/metrics
+    note: acronym always
+    batch: product
+  - id: kpi
+    term: Key Performance Indicator (KPI)
+    domain: product/metrics
+    note: acronym always
+    batch: product
+  - id: north-star-metric
+    term: North Star metric
+    domain: product/metrics
+    batch: product
+  - id: ab-testing
+    term: A/B testing
+    domain: product/metrics
+    also_domains:
+      - media/digital-marketing/metrics-analytics
+    batch: product
+  - id: churn-rate
+    term: Churn rate
+    domain: product/metrics
+    batch: product
+  - id: retention-rate
+    term: Retention rate
+    domain: product/metrics
+    batch: product
+  - id: daily-active-users
+    term: Daily active users (DAU)
+    domain: product/metrics
+    note: acronym always
+    batch: product
+  - id: customer-lifetime-value
+    term: Customer lifetime value (CLV)
+    domain: product/metrics
+    note: acronym always
+    batch: product
+  - id: budget
+    term: Budget
+    qualifier: (Personal finance)
+    domain: finance/personal-finance/budget
+    note: "generic word: autolink label never"
+    batch: fina
+  - id: emergency-fund
+    term: Emergency fund
+    domain: finance/personal-finance/saving
+    batch: fina
+  - id: credit-score
+    term: Credit score
+    domain: finance/personal-finance/debt-credit
+    batch: fina
+  - id: credit-card
+    term: Credit card
+    domain: finance/personal-finance/debt-credit
+    batch: fina
+  - id: overdraft
+    term: Overdraft
+    domain: finance/banking/lending
+    batch: fina
+  - id: mortgage
+    term: Mortgage
+    domain: finance/banking/lending
+    batch: fina
+  - id: insurance-premium
+    term: Insurance premium
+    domain: finance/personal-finance/insurance
+    batch: fina
+  - id: insurance-deductible
+    term: Deductible
+    qualifier: (Insurance)
+    domain: finance/personal-finance/insurance
+    batch: fina
+  - id: personal-income-tax
+    term: Personal income tax
+    domain: finance/personal-finance/tax
+    batch: fina
+  - id: savings-account
+    term: Savings account
+    domain: finance/banking/deposits
+    batch: fina
+  - id: term-deposit
+    term: Term deposit
+    domain: finance/banking/deposits
+    batch: fina
+  - id: bank-transfer
+    term: Bank transfer
+    domain: finance/banking/payments
+    batch: fina
+  - id: e-wallet
+    term: E-wallet
+    domain: finance/banking/payments
+    batch: fina
+  - id: stock
+    term: Stock
+    qualifier: (Finance)
+    domain: finance/investing/stocks
+    note: "generic word: autolink label never"
+    batch: fina
+  - id: dividend
+    term: Dividend
+    domain: finance/investing/stocks
+    batch: fina
+  - id: stock-exchange
+    term: Stock exchange
+    domain: finance/investing/stocks
+    batch: fina
+  - id: bond
+    term: Bond
+    qualifier: (Finance)
+    domain: finance/investing/bonds
+    note: "generic word: autolink label never"
+    batch: fina
+  - id: bond-yield
+    term: Yield
+    qualifier: (Finance)
+    domain: finance/investing/bonds
+    note: "generic word: autolink label never"
+    batch: fina
+  - id: mutual-fund
+    term: Mutual fund
+    domain: finance/investing/funds
+    batch: fina
+  - id: etf
+    term: Exchange-Traded Fund (ETF)
+    domain: finance/investing/funds
+    note: acronym always
+    batch: fina
+  - id: index-fund
+    term: Index fund
+    domain: finance/investing/funds
+    note: do not add bare alias "index"
+    batch: fina
+  - id: diversification
+    term: Diversification
+    domain: finance/investing/portfolio-risk
+    batch: fina
+  - id: volatility
+    term: Volatility
+    qualifier: (Finance)
+    domain: finance/investing/portfolio-risk
+    batch: fina
+  - id: pe-ratio
+    term: Price-to-earnings ratio (P/E)
+    domain: finance/investing/valuation
+    batch: fina
+  - id: market-capitalization
+    term: Market capitalization
+    domain: finance/investing/valuation
+    note: alias market cap
+    batch: fina
+  - id: blockchain
+    term: Blockchain
+    domain: finance/investing/digital-assets
+    batch: fina
+  - id: cryptocurrency
+    term: Cryptocurrency
+    domain: finance/investing/digital-assets
+    note: relate to token-crypto
+    batch: fina
+  - id: balance-sheet
+    term: Balance sheet
+    domain: finance/corporate-finance/financial-statements
+    batch: finb
+  - id: income-statement
+    term: Income statement
+    domain: finance/corporate-finance/financial-statements
+    batch: finb
+  - id: cash-flow-statement
+    term: Cash flow statement
+    domain: finance/corporate-finance/financial-statements
+    batch: finb
+  - id: revenue
+    term: Revenue
+    domain: finance/corporate-finance/financial-statements
+    batch: finb
+  - id: ebitda
+    term: EBITDA
+    domain: finance/corporate-finance/financial-statements
+    note: acronym always
+    batch: finb
+  - id: working-capital
+    term: Working capital
+    domain: finance/corporate-finance/capital-structure
+    batch: finb
+  - id: liquidity
+    term: Liquidity
+    qualifier: (Finance)
+    domain: finance/corporate-finance/capital-structure
+    batch: finb
+  - id: debt-to-equity-ratio
+    term: Debt-to-equity ratio (D/E)
+    domain: finance/corporate-finance/capital-structure
+    batch: finb
+  - id: equity-finance
+    term: Equity
+    qualifier: (Finance)
+    domain: finance/corporate-finance/capital-structure
+    note: "generic word: autolink label never"
+    batch: finb
+  - id: ipo
+    term: Initial Public Offering (IPO)
+    domain: finance/corporate-finance/fundraising
+    note: acronym always
+    batch: finb
+  - id: venture-capital
+    term: Venture capital (VC)
+    domain: finance/corporate-finance/fundraising
+    batch: finb
+  - id: startup-valuation
+    term: Pre-money valuation
+    domain: finance/corporate-finance/fundraising
+    batch: finb
+  - id: asset
+    term: Asset
+    qualifier: (Accounting)
+    domain: finance/accounting/bookkeeping
+    note: "generic word: autolink label never"
+    batch: finb
+  - id: liability
+    term: Liability
+    qualifier: (Accounting)
+    domain: finance/accounting/bookkeeping
+    note: "generic word: autolink label never"
+    batch: finb
+  - id: double-entry-bookkeeping
+    term: Double-entry bookkeeping
+    domain: finance/accounting/bookkeeping
+    batch: finb
+  - id: depreciation-accounting
+    term: Depreciation
+    qualifier: (Accounting)
+    domain: finance/accounting/bookkeeping
+    batch: finb
+  - id: accrual-accounting
+    term: Accrual accounting
+    domain: finance/accounting/standards
+    batch: finb
+  - id: ifrs
+    term: International Financial Reporting Standards (IFRS)
+    domain: finance/accounting/standards
+    note: acronym always
+    batch: finb
+  - id: vat
+    term: Value-Added Tax (VAT)
+    domain: finance/accounting/standards
+    also_domains:
+      - finance/personal-finance/tax
+    note: acronym always
+    batch: finb
+  - id: inflation
+    term: Inflation
+    domain: finance/economics/inflation
+    batch: finb
+  - id: cpi
+    term: Consumer Price Index (CPI)
+    domain: finance/economics/inflation
+    note: acronym always
+    batch: finb
+  - id: deflation
+    term: Deflation
+    domain: finance/economics/inflation
+    batch: finb
+  - id: policy-rate
+    term: Policy rate
+    domain: finance/economics/interest-rates-monetary-policy
+    batch: finb
+  - id: quantitative-easing
+    term: Quantitative easing (QE)
+    domain: finance/economics/interest-rates-monetary-policy
+    batch: finb
+  - id: exchange-rate
+    term: Exchange rate
+    domain: finance/economics/exchange-rates
+    batch: finb
+  - id: gdp
+    term: Gross Domestic Product (GDP)
+    domain: finance/economics/inflation
+    note: acronym always
+    batch: finb
+  - id: recession
+    term: Recession
+    domain: finance/economics/inflation
+    batch: finb
+  - id: headline
+    term: Headline
+    domain: media/journalism/reporting
+    batch: meda
+  - id: news-lead
+    term: Lead
+    qualifier: (Journalism)
+    domain: media/journalism/reporting
+    note: homonym with sales-lead (batch medb); autolink label never
+    batch: meda
+  - id: byline
+    term: Byline
+    domain: media/journalism/reporting
+    batch: meda
+  - id: inverted-pyramid
+    term: Inverted pyramid
+    domain: media/journalism/reporting
+    batch: meda
+  - id: breaking-news
+    term: Breaking news
+    domain: media/journalism/genres
+    batch: meda
+  - id: op-ed
+    term: Op-ed
+    domain: media/journalism/genres
+    batch: meda
+  - id: fact-checking
+    term: Fact-checking
+    domain: media/journalism/ethics
+    batch: meda
+  - id: anonymous-source
+    term: Anonymous source
+    domain: media/journalism/ethics
+    batch: meda
+  - id: press-embargo
+    term: Embargo
+    qualifier: (Media)
+    domain: media/pr-communications/media-relations
+    batch: meda
+  - id: press-release
+    term: Press release
+    domain: media/pr-communications/media-relations
+    batch: meda
+  - id: press-conference
+    term: Press conference
+    domain: media/pr-communications/media-relations
+    batch: meda
+  - id: spokesperson
+    term: Spokesperson
+    domain: media/pr-communications/media-relations
+    batch: meda
+  - id: crisis-communication
+    term: Crisis communication
+    domain: media/pr-communications/crisis-communications
+    batch: meda
+  - id: copyright
+    term: Copyright
+    domain: media/publishing/copyright-licensing
+    batch: meda
+  - id: fair-use
+    term: Fair use
+    domain: media/publishing/copyright-licensing
+    batch: meda
+  - id: creative-commons
+    term: Creative Commons
+    domain: media/publishing/copyright-licensing
+    batch: meda
+  - id: paywall
+    term: Paywall
+    domain: media/publishing/distribution-platforms
+    batch: meda
+  - id: b-roll
+    term: B-roll
+    domain: media/content-production/video
+    batch: meda
+  - id: storyboard
+    term: Storyboard
+    domain: media/content-production/video
+    batch: meda
+  - id: aspect-ratio
+    term: Aspect ratio
+    domain: media/content-production/video
+    batch: meda
+  - id: color-grading
+    term: Color grading
+    domain: media/content-production/editing
+    batch: meda
+  - id: voice-over
+    term: Voice-over
+    domain: media/content-production/audio-podcasts
+    batch: meda
+  - id: podcast
+    term: Podcast
+    domain: media/content-production/audio-podcasts
+    batch: meda
+  - id: typography
+    term: Typography
+    domain: media/content-production/visual-design
+    batch: meda
+  - id: visual-hierarchy
+    term: Visual hierarchy
+    domain: media/content-production/visual-design
+    batch: meda
+  - id: seo
+    term: Search Engine Optimization (SEO)
+    domain: media/digital-marketing/seo
+    note: acronym always
+    batch: medb
+  - id: seo-keyword
+    term: Keyword
+    qualifier: (SEO)
+    domain: media/digital-marketing/seo
+    note: "generic word: autolink label never"
+    batch: medb
+  - id: backlink
+    term: Backlink
+    domain: media/digital-marketing/seo
+    batch: medb
+  - id: serp
+    term: Search Engine Results Page (SERP)
+    domain: media/digital-marketing/seo
+    note: acronym always
+    batch: medb
+  - id: organic-traffic
+    term: Organic traffic
+    domain: media/digital-marketing/seo
+    batch: medb
+  - id: landing-page
+    term: Landing page
+    domain: media/digital-marketing/paid-ads
+    batch: medb
+  - id: ctr
+    term: Click-through rate (CTR)
+    domain: media/digital-marketing/metrics-analytics
+    note: acronym always
+    batch: medb
+  - id: cpc
+    term: Cost per click (CPC)
+    domain: media/digital-marketing/paid-ads
+    note: acronym always
+    batch: medb
+  - id: cpm
+    term: Cost per mille (CPM)
+    domain: media/digital-marketing/paid-ads
+    note: acronym always
+    batch: medb
+  - id: ad-impression
+    term: Impression
+    qualifier: (Ads)
+    domain: media/digital-marketing/paid-ads
+    note: "generic word: autolink label never"
+    batch: medb
+  - id: retargeting
+    term: Retargeting
+    domain: media/digital-marketing/paid-ads
+    batch: medb
+  - id: audience-reach
+    term: Reach
+    qualifier: (Marketing)
+    domain: media/digital-marketing/social-media
+    note: "generic word: autolink label never"
+    batch: medb
+  - id: engagement-rate
+    term: Engagement rate
+    domain: media/digital-marketing/social-media
+    batch: medb
+  - id: hashtag
+    term: Hashtag
+    domain: media/digital-marketing/social-media
+    batch: medb
+  - id: influencer-marketing
+    term: Influencer marketing
+    domain: media/digital-marketing/social-media
+    batch: medb
+  - id: conversion-rate
+    term: Conversion rate
+    domain: media/digital-marketing/metrics-analytics
+    batch: medb
+  - id: bounce-rate
+    term: Bounce rate
+    domain: media/digital-marketing/metrics-analytics
+    batch: medb
+  - id: utm-parameters
+    term: UTM parameters
+    domain: media/digital-marketing/metrics-analytics
+    batch: medb
+  - id: marketing-funnel
+    term: Marketing funnel
+    domain: media/digital-marketing/metrics-analytics
+    batch: medb
+  - id: call-to-action
+    term: Call to action (CTA)
+    domain: media/digital-marketing/paid-ads
+    note: acronym always
+    batch: medb
+  - id: sales-lead
+    term: Lead
+    qualifier: (Marketing)
+    domain: media/digital-marketing/metrics-analytics
+    note: homonym with news-lead (batch meda); autolink label never
+    batch: medb
+  - id: newsletter
+    term: Newsletter
+    domain: media/digital-marketing/email
+    batch: medb
+  - id: email-open-rate
+    term: Open rate
+    qualifier: (Email)
+    domain: media/digital-marketing/email
+    batch: medb
+  - id: content-marketing
+    term: Content marketing
+    domain: media/digital-marketing/social-media
+    batch: medb

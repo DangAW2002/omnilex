@@ -1,0 +1,126 @@
+batch: finb
+candidates:
+  - id: balance-sheet
+    term: Balance sheet
+    domain: finance/corporate-finance/financial-statements
+    batch: finb
+  - id: income-statement
+    term: Income statement
+    domain: finance/corporate-finance/financial-statements
+    batch: finb
+  - id: cash-flow-statement
+    term: Cash flow statement
+    domain: finance/corporate-finance/financial-statements
+    batch: finb
+  - id: revenue
+    term: Revenue
+    domain: finance/corporate-finance/financial-statements
+    batch: finb
+  - id: ebitda
+    term: EBITDA
+    domain: finance/corporate-finance/financial-statements
+    note: acronym always
+    batch: finb
+  - id: working-capital
+    term: Working capital
+    domain: finance/corporate-finance/capital-structure
+    batch: finb
+  - id: liquidity
+    term: Liquidity
+    qualifier: (Finance)
+    domain: finance/corporate-finance/capital-structure
+    batch: finb
+  - id: debt-to-equity-ratio
+    term: Debt-to-equity ratio (D/E)
+    domain: finance/corporate-finance/capital-structure
+    batch: finb
+  - id: equity-finance
+    term: Equity
+    qualifier: (Finance)
+    domain: finance/corporate-finance/capital-structure
+    note: "generic word: autolink label never"
+    batch: finb
+  - id: ipo
+    term: Initial Public Offering (IPO)
+    domain: finance/corporate-finance/fundraising
+    note: acronym always
+    batch: finb
+  - id: venture-capital
+    term: Venture capital (VC)
+    domain: finance/corporate-finance/fundraising
+    batch: finb
+  - id: startup-valuation
+    term: Pre-money valuation
+    domain: finance/corporate-finance/fundraising
+    batch: finb
+  - id: asset
+    term: Asset
+    qualifier: (Accounting)
+    domain: finance/accounting/bookkeeping
+    note: "generic word: autolink label never"
+    batch: finb
+  - id: liability
+    term: Liability
+    qualifier: (Accounting)
+    domain: finance/accounting/bookkeeping
+    note: "generic word: autolink label never"
+    batch: finb
+  - id: double-entry-bookkeeping
+    term: Double-entry bookkeeping
+    domain: finance/accounting/bookkeeping
+    batch: finb
+  - id: depreciation-accounting
+    term: Depreciation
+    qualifier: (Accounting)
+    domain: finance/accounting/bookkeeping
+    batch: finb
+  - id: accrual-accounting
+    term: Accrual accounting
+    domain: finance/accounting/standards
+    batch: finb
+  - id: ifrs
+    term: International Financial Reporting Standards (IFRS)
+    domain: finance/accounting/standards
+    note: acronym always
+    batch: finb
+  - id: vat
+    term: Value-Added Tax (VAT)
+    domain: finance/accounting/standards
+    also_domains:
+      - finance/personal-finance/tax
+    note: acronym always
+    batch: finb
+  - id: inflation
+    term: Inflation
+    domain: finance/economics/inflation
+    batch: finb
+  - id: cpi
+    term: Consumer Price Index (CPI)
+    domain: finance/economics/inflation
+    note: acronym always
+    batch: finb
+  - id: deflation
+    term: Deflation
+    domain: finance/economics/inflation
+    batch: finb
+  - id: policy-rate
+    term: Policy rate
+    domain: finance/economics/interest-rates-monetary-policy
+    batch: finb
+  - id: quantitative-easing
+    term: Quantitative easing (QE)
+    domain: finance/economics/interest-rates-monetary-policy
+    batch: finb
+  - id: exchange-rate
+    term: Exchange rate
+    domain: finance/economics/exchange-rates
+    batch: finb
+  - id: gdp
+    term: Gross Domestic Product (GDP)
+    domain: finance/economics/inflation
+    note: acronym always
+    batch: finb
+  - id: recession
+    term: Recession
+    domain: finance/economics/inflation
+    batch: finb

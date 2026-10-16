@@ -1,0 +1,25 @@
+id: epic-agile
+domains:
+  - product/agile-scrum
+level: 2
+relations:
+  prerequisites:
+    - "user-story"
+  confusable:
+    - "user-story"
+  related:
+    - "product-backlog"
+    - "product-roadmap"
+status: draft
+provenance:
+  drafted_by: ai
+sources:
+  - ref: atlassian-agile
+    locator: https://www.atlassian.com/agile/project-management/epics
+    title: "Epics | Atlassian"
+    language: en
+    accessed: '2026-10-16'
+    retrieved_by: ai
+    supports:
+      - definition
+      - summary

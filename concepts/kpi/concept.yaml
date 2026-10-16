@@ -1,0 +1,25 @@
+id: kpi
+domains:
+  - product/metrics
+level: 1
+relations:
+  prerequisites: []
+  confusable:
+    - "okr"
+  related:
+    - "north-star-metric"
+    - "daily-active-users"
+    - "churn-rate"
+status: draft
+provenance:
+  drafted_by: ai
+sources:
+  - ref: cfi
+    locator: https://corporatefinanceinstitute.com/resources/management/key-performance-indicators-kpis/
+    title: "Key Performance Indicators - Learn How to Set and Measure KPIs"
+    language: en
+    accessed: '2026-10-16'
+    retrieved_by: ai
+    supports:
+      - definition
+      - summary

@@ -1,0 +1,25 @@
+id: product-market-fit
+domains:
+  - product/product-management
+level: 2
+relations:
+  prerequisites:
+    - "mvp"
+  confusable:
+    - "mvp"
+  related:
+    - "retention-rate"
+    - "churn-rate"
+status: draft
+provenance:
+  drafted_by: ai
+sources:
+  - ref: coursera
+    locator: https://www.coursera.org/articles/product-market-fit
+    title: "What Is Product Market Fit? 2026 Guide | Coursera"
+    language: en
+    accessed: '2026-10-16'
+    retrieved_by: ai
+    supports:
+      - definition
+      - summary

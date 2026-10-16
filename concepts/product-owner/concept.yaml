@@ -1,0 +1,26 @@
+id: product-owner
+domains:
+  - product/agile-scrum
+level: 1
+relations:
+  prerequisites:
+    - "scrum"
+  confusable:
+    - "scrum-master"
+  related:
+    - "product-backlog"
+    - "user-story"
+    - "stakeholder"
+status: draft
+provenance:
+  drafted_by: ai
+sources:
+  - ref: scrum-guide
+    locator: https://scrumguides.org/scrum-guide.html#product-owner
+    title: "The Scrum Guide - Product Owner"
+    language: en
+    accessed: '2026-10-16'
+    retrieved_by: ai
+    supports:
+      - definition
+      - summary

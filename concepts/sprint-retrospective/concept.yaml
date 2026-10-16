@@ -1,0 +1,25 @@
+id: sprint-retrospective
+domains:
+  - product/agile-scrum
+level: 1
+relations:
+  prerequisites:
+    - "sprint-agile"
+  confusable:
+    - "sprint-planning"
+  related:
+    - "scrum"
+    - "scrum-master"
+status: draft
+provenance:
+  drafted_by: ai
+sources:
+  - ref: scrum-guide
+    locator: https://scrumguides.org/scrum-guide.html#sprint-retrospective
+    title: "The Scrum Guide - Sprint Retrospective"
+    language: en
+    accessed: '2026-10-16'
+    retrieved_by: ai
+    supports:
+      - definition
+      - summary

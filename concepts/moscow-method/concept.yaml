@@ -1,0 +1,24 @@
+id: moscow-method
+domains:
+  - product/delivery-planning
+level: 2
+relations:
+  prerequisites: []
+  confusable:
+    - "rice-scoring"
+  related:
+    - "product-backlog"
+    - "acceptance-criteria"
+status: draft
+provenance:
+  drafted_by: ai
+sources:
+  - ref: agile-business-consortium
+    locator: https://www.agilebusiness.org/resource/what-is-moscow-prioritization/
+    title: "What is MoSCoW Prioritization? - Agile Business Consortium"
+    language: en
+    accessed: '2026-10-16'
+    retrieved_by: ai
+    supports:
+      - definition
+      - summary

@@ -1,0 +1,25 @@
+id: prd
+domains:
+  - product/product-management
+level: 2
+relations:
+  prerequisites:
+    - "user-story"
+  confusable: []
+  related:
+    - "product-roadmap"
+    - "stakeholder"
+    - "product-discovery"
+status: draft
+provenance:
+  drafted_by: ai
+sources:
+  - ref: atlassian-agile
+    locator: https://www.atlassian.com/agile/product-management/requirements
+    title: "What is a Product Requirements Document (PRD)?"
+    language: en
+    accessed: '2026-10-16'
+    retrieved_by: ai
+    supports:
+      - definition
+      - summary

@@ -1,0 +1,26 @@
+id: unit-test
+domains:
+  - it/software-engineering/testing
+level: 1
+relations:
+  prerequisites:
+    []
+  confusable:
+    - integration-test
+  related:
+    - mock-object
+    - edge-case
+    - regression-testing
+status: draft
+provenance:
+  drafted_by: ai
+sources:
+  - ref: microsoft-learn
+    locator: https://learn.microsoft.com/en-us/visualstudio/test/unit-test-basics
+    title: "Unit test basics"
+    language: en
+    accessed: '2026-10-16'
+    retrieved_by: ai
+    supports:
+      - definition
+      - summary

@@ -1,0 +1,23 @@
+id: mock-object
+domains:
+  - it/software-engineering/testing
+level: 2
+relations:
+  prerequisites:
+    - unit-test
+  related:
+    - integration-test
+    - side-effect
+status: draft
+provenance:
+  drafted_by: ai
+sources:
+  - ref: martin-fowler
+    locator: https://martinfowler.com/articles/mocksArentStubs.html
+    title: "Mocks Aren't Stubs"
+    language: en
+    accessed: '2026-10-16'
+    retrieved_by: ai
+    supports:
+      - definition
+      - summary

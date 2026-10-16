@@ -1,0 +1,24 @@
+id: hotfix
+domains:
+  - it/software-engineering/practices
+level: 2
+relations:
+  prerequisites:
+    - git-branch
+    - git-commit
+  related:
+    - regression-testing
+    - breaking-change
+status: draft
+provenance:
+  drafted_by: ai
+sources:
+  - ref: atlassian
+    locator: https://www.atlassian.com/git/tutorials/comparing-workflows/gitflow-workflow
+    title: "Gitflow Workflow"
+    language: en
+    accessed: '2026-10-16'
+    retrieved_by: ai
+    supports:
+      - definition
+      - summary

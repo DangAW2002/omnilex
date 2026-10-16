@@ -1,0 +1,23 @@
+id: race-condition
+domains:
+  - it/software-engineering/programming-concepts
+level: 3
+relations:
+  prerequisites:
+    []
+  related:
+    - idempotency
+    - side-effect
+status: draft
+provenance:
+  drafted_by: ai
+sources:
+  - ref: microsoft-learn
+    locator: https://learn.microsoft.com/en-us/dotnet/standard/threading/managed-threading-best-practices
+    title: "Managed threading best practices"
+    language: en
+    accessed: '2026-10-16'
+    retrieved_by: ai
+    supports:
+      - definition
+      - summary

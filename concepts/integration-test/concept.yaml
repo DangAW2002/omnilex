@@ -1,0 +1,25 @@
+id: integration-test
+domains:
+  - it/software-engineering/testing
+level: 2
+relations:
+  prerequisites:
+    - unit-test
+  confusable:
+    - unit-test
+  related:
+    - end-to-end-test
+    - regression-testing
+status: draft
+provenance:
+  drafted_by: ai
+sources:
+  - ref: microsoft-learn
+    locator: https://learn.microsoft.com/en-us/aspnet/core/test/integration-tests
+    title: "Integration tests in ASP.NET Core"
+    language: en
+    accessed: '2026-10-16'
+    retrieved_by: ai
+    supports:
+      - definition
+      - summary

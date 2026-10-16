@@ -1,0 +1,24 @@
+id: software-dependency
+domains:
+  - it/software-engineering/practices
+level: 2
+relations:
+  prerequisites:
+    []
+  related:
+    - software-library
+    - software-framework
+    - semantic-versioning
+status: draft
+provenance:
+  drafted_by: ai
+sources:
+  - ref: microsoft-learn
+    locator: https://learn.microsoft.com/en-us/nuget/concepts/dependency-resolution
+    title: "How NuGet resolves package dependencies"
+    language: en
+    accessed: '2026-10-16'
+    retrieved_by: ai
+    supports:
+      - definition
+      - summary

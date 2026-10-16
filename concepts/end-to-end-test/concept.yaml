@@ -1,0 +1,23 @@
+id: end-to-end-test
+domains:
+  - it/software-engineering/testing
+level: 2
+relations:
+  prerequisites:
+    - integration-test
+  related:
+    - unit-test
+    - regression-testing
+status: draft
+provenance:
+  drafted_by: ai
+sources:
+  - ref: atlassian
+    locator: https://www.atlassian.com/continuous-delivery/software-testing/types-of-software-testing
+    title: "The different types of testing in software"
+    language: en
+    accessed: '2026-10-16'
+    retrieved_by: ai
+    supports:
+      - definition
+      - summary

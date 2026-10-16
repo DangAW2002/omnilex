@@ -1,0 +1,22 @@
+id: type-checking
+domains:
+  - it/software-engineering/programming-concepts
+level: 2
+relations:
+  prerequisites:
+    []
+  related:
+    - linter
+status: draft
+provenance:
+  drafted_by: ai
+sources:
+  - ref: typescript-docs
+    locator: https://www.typescriptlang.org/docs/handbook/2/basic-types.html
+    title: "The Basics"
+    language: en
+    accessed: '2026-10-16'
+    retrieved_by: ai
+    supports:
+      - definition
+      - summary

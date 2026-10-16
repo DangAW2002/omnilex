@@ -1,0 +1,23 @@
+id: microservices
+domains:
+  - it/software-engineering/architecture
+level: 2
+relations:
+  prerequisites:
+    - api
+  related:
+    - monorepo
+    - software-framework
+status: draft
+provenance:
+  drafted_by: ai
+sources:
+  - ref: martin-fowler
+    locator: https://martinfowler.com/articles/microservices.html
+    title: "Microservices"
+    language: en
+    accessed: '2026-10-16'
+    retrieved_by: ai
+    supports:
+      - definition
+      - summary

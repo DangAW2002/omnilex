@@ -1,0 +1,26 @@
+id: api
+domains:
+  - it/web/api
+  - it/software-engineering/programming-concepts
+level: 1
+relations:
+  prerequisites:
+    []
+  confusable:
+    - sdk
+  related:
+    - microservices
+    - software-library
+status: draft
+provenance:
+  drafted_by: ai
+sources:
+  - ref: mdn
+    locator: https://developer.mozilla.org/en-US/docs/Glossary/API
+    title: "API"
+    language: en
+    accessed: '2026-10-16'
+    retrieved_by: ai
+    supports:
+      - definition
+      - summary

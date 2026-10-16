@@ -1,0 +1,23 @@
+id: feature-flag
+domains:
+  - it/software-engineering/practices
+level: 2
+relations:
+  prerequisites:
+    []
+  related:
+    - technical-debt
+    - code-review
+status: draft
+provenance:
+  drafted_by: ai
+sources:
+  - ref: martin-fowler
+    locator: https://martinfowler.com/articles/feature-toggles.html
+    title: "Feature Toggles (aka Feature Flags)"
+    language: en
+    accessed: '2026-10-16'
+    retrieved_by: ai
+    supports:
+      - definition
+      - summary

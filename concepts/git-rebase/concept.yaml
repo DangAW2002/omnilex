@@ -1,0 +1,24 @@
+id: git-rebase
+domains:
+  - it/software-engineering/version-control
+level: 2
+relations:
+  prerequisites:
+    - git-branch
+    - git-commit
+  related:
+    - merge-conflict
+    - pull-request
+status: draft
+provenance:
+  drafted_by: ai
+sources:
+  - ref: git-scm
+    locator: https://git-scm.com/docs/git-rebase
+    title: "git-rebase Documentation"
+    language: en
+    accessed: '2026-10-16'
+    retrieved_by: ai
+    supports:
+      - definition
+      - summary

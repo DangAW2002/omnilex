@@ -1,0 +1,23 @@
+id: refactoring
+domains:
+  - it/software-engineering/practices
+level: 2
+relations:
+  prerequisites:
+    - unit-test
+  related:
+    - technical-debt
+    - code-review
+status: draft
+provenance:
+  drafted_by: ai
+sources:
+  - ref: martin-fowler
+    locator: https://martinfowler.com/books/refactoring.html
+    title: "Refactoring - Improving the Design of Existing Code"
+    language: en
+    accessed: '2026-10-16'
+    retrieved_by: ai
+    supports:
+      - definition
+      - summary

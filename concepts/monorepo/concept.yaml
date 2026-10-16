@@ -1,0 +1,24 @@
+id: monorepo
+domains:
+  - it/software-engineering/version-control
+level: 2
+relations:
+  prerequisites:
+    - git-branch
+    - git-commit
+  related:
+    - microservices
+    - software-dependency
+status: draft
+provenance:
+  drafted_by: ai
+sources:
+  - ref: atlassian
+    locator: https://www.atlassian.com/git/tutorials/monorepos
+    title: "Monorepos in Git"
+    language: en
+    accessed: '2026-10-16'
+    retrieved_by: ai
+    supports:
+      - definition
+      - summary

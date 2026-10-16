@@ -1,0 +1,23 @@
+id: linter
+domains:
+  - it/software-engineering/practices
+level: 1
+relations:
+  prerequisites:
+    []
+  related:
+    - code-review
+    - type-checking
+status: draft
+provenance:
+  drafted_by: ai
+sources:
+  - ref: eslint-docs
+    locator: https://eslint.org/docs/latest/use/core-concepts/
+    title: "Core Concepts"
+    language: en
+    accessed: '2026-10-16'
+    retrieved_by: ai
+    supports:
+      - definition
+      - summary

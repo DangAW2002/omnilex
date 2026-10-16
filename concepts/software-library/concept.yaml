@@ -1,0 +1,25 @@
+id: software-library
+domains:
+  - it/software-engineering/programming-concepts
+level: 1
+relations:
+  prerequisites:
+    - software-dependency
+  confusable:
+    - software-framework
+  related:
+    - api
+    - sdk
+status: draft
+provenance:
+  drafted_by: ai
+sources:
+  - ref: microsoft-learn
+    locator: https://learn.microsoft.com/en-us/dotnet/standard/class-libraries
+    title: ".NET class libraries"
+    language: en
+    accessed: '2026-10-16'
+    retrieved_by: ai
+    supports:
+      - definition
+      - summary

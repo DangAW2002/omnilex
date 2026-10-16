@@ -1,0 +1,23 @@
+id: regression-testing
+domains:
+  - it/software-engineering/testing
+level: 2
+relations:
+  prerequisites:
+    - unit-test
+  related:
+    - integration-test
+    - hotfix
+status: draft
+provenance:
+  drafted_by: ai
+sources:
+  - ref: microsoft-learn
+    locator: https://learn.microsoft.com/en-us/dynamics365/guidance/implementation-guide/testing-strategy
+    title: "Testing strategy"
+    language: en
+    accessed: '2026-10-16'
+    retrieved_by: ai
+    supports:
+      - definition
+      - summary

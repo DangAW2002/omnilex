@@ -12,6 +12,14 @@ status: draft
 provenance:
   drafted_by: ai
 sources:
+  - ref: google-analytics-help
+    locator: https://support.google.com/analytics/answer/9143382?hl=en
+    title: "Analytics dimensions and metrics"
+    language: en
+    accessed: '2026-10-16'
+    retrieved_by: ai
+    supports:
+      - definition
   - ref: mixpanel-blog
     locator: https://mixpanel.com/blog/daily-active-users/
     title: "Daily Active Users (DAU): what and how | Signals & Stories"

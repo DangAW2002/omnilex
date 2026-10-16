@@ -13,6 +13,14 @@ status: draft
 provenance:
   drafted_by: ai
 sources:
+  - ref: google-research
+    locator: https://research.google/pubs/why-google-stores-billions-of-lines-of-code-in-a-single-repository/
+    title: "Why Google Stores Billions of Lines of Code in a Single Repository"
+    language: en
+    accessed: '2026-10-16'
+    retrieved_by: ai
+    supports:
+      - definition
   - ref: atlassian
     locator: https://www.atlassian.com/git/tutorials/monorepos
     title: "Monorepos in Git"

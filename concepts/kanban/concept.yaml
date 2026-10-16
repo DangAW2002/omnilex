@@ -12,6 +12,14 @@ status: draft
 provenance:
   drafted_by: ai
 sources:
+  - ref: agile-alliance
+    locator: https://www.agilealliance.org/glossary/kanban/
+    title: "What is Kanban?"
+    language: en
+    accessed: '2026-10-16'
+    retrieved_by: ai
+    supports:
+      - definition
   - ref: atlassian-agile
     locator: https://www.atlassian.com/agile/kanban
     title: "What is Kanban in Project Management?"

@@ -12,6 +12,14 @@ status: draft
 provenance:
   drafted_by: ai
 sources:
+  - ref: cypress-docs
+    locator: https://docs.cypress.io/app/core-concepts/testing-types
+    title: "End-to-end, component, API, and accessibility testing in Cypress"
+    language: en
+    accessed: '2026-10-16'
+    retrieved_by: ai
+    supports:
+      - definition
   - ref: atlassian
     locator: https://www.atlassian.com/continuous-delivery/software-testing/types-of-software-testing
     title: "The different types of testing in software"

@@ -12,6 +12,14 @@ status: draft
 provenance:
   drafted_by: ai
 sources:
+  - ref: google-analytics-help
+    locator: https://support.google.com/analytics/answer/9143382?hl=en
+    title: "Analytics dimensions and metrics"
+    language: en
+    accessed: '2026-10-16'
+    retrieved_by: ai
+    supports:
+      - definition
   - ref: hubspot-blog
     locator: https://blog.hubspot.com/service/how-to-calculate-customer-lifetime-value
     title: "How to calculate customer lifetime value (CLV) & why it matters"

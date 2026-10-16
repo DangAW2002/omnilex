@@ -409,7 +409,7 @@ atlassian:
   publisher: Atlassian
   url: https://www.atlassian.com
   type: docs
-  tier: B
+  tier: C
   languages: [en]
   license: all-rights-reserved
   reuse: paraphrase-only
@@ -459,7 +459,7 @@ atlassian-agile:
   publisher: Atlassian
   url: https://www.atlassian.com/agile
   type: docs
-  tier: B
+  tier: C
   languages: [en]
   license: all-rights-reserved
   reuse: paraphrase-only
@@ -478,6 +478,7 @@ gitlab-docs:
   domains: [product/delivery-planning, it/devops]
   verified_license_at: "2026-10-16"
 
+# tier B: Intercom published the original RICE framework (only used for rice-scoring)
 intercom-blog:
   title: Intercom Product & Design Blog
   publisher: Intercom
@@ -519,7 +520,7 @@ coursera:
   publisher: Coursera Inc.
   url: https://www.coursera.org/articles
   type: docs
-  tier: B
+  tier: C
   languages: [en]
   license: all-rights-reserved
   reuse: paraphrase-only
@@ -543,13 +544,14 @@ cfi:
   publisher: Corporate Finance Institute
   url: https://corporatefinanceinstitute.com/resources
   type: docs
-  tier: B
+  tier: C
   languages: [en]
   license: all-rights-reserved
   reuse: paraphrase-only
   domains: [product/metrics, finance]
   verified_license_at: "2026-10-16"
 
+# tier B: the North Star Playbook is the canonical framework text (only used for north-star-metric)
 amplitude-resources:
   title: Amplitude Product Resources & Playbooks
   publisher: Amplitude, Inc.
@@ -567,7 +569,7 @@ optimizely-glossary:
   publisher: Optimizely, Inc.
   url: https://www.optimizely.com/optimization-glossary
   type: glossary
-  tier: B
+  tier: C
   languages: [en]
   license: all-rights-reserved
   reuse: paraphrase-only
@@ -579,7 +581,7 @@ hubspot-blog:
   publisher: HubSpot, Inc.
   url: https://blog.hubspot.com
   type: docs
-  tier: B
+  tier: D
   languages: [en]
   license: all-rights-reserved
   reuse: paraphrase-only
@@ -591,9 +593,83 @@ mixpanel-blog:
   publisher: Mixpanel, Inc.
   url: https://mixpanel.com/blog
   type: docs
-  tier: B
+  tier: D
   languages: [en]
   license: all-rights-reserved
   reuse: paraphrase-only
   domains: [product/metrics]
+  verified_license_at: "2026-10-16"
+
+# wave2 orchestrator: A/B sources replacing vendor blogs
+agile-alliance:
+  title: Agile Alliance Agile Glossary
+  publisher: Agile Alliance
+  url: https://www.agilealliance.org/agile101/agile-glossary/
+  type: glossary
+  tier: B
+  languages: [en]
+  license: all-rights-reserved
+  reuse: paraphrase-only
+  domains: [product/agile-scrum, product/delivery-planning, product/product-management]
+  verified_license_at: "2026-10-16"
+
+google-research:
+  title: Google Research Publications
+  publisher: Google LLC
+  url: https://research.google/pubs/
+  type: paper
+  tier: B
+  languages: [en]
+  license: all-rights-reserved
+  reuse: paraphrase-only
+  domains: [it/software-engineering]
+  verified_license_at: "2026-10-16"
+
+cypress-docs:
+  title: Cypress Documentation
+  publisher: Cypress.io, Inc.
+  url: https://docs.cypress.io
+  type: docs
+  tier: B
+  languages: [en]
+  license: all-rights-reserved
+  reuse: paraphrase-only
+  domains: [it/software-engineering/testing]
+  verified_license_at: "2026-10-16"
+
+firebase-docs:
+  title: Firebase Documentation
+  publisher: Google LLC
+  url: https://firebase.google.com/docs
+  type: docs
+  tier: B
+  languages: [en]
+  license: CC-BY-4.0
+  reuse: paraphrase-only
+  domains: [product/metrics, media/digital-marketing/metrics-analytics]
+  verified_license_at: "2026-10-16"
+
+google-analytics-help:
+  title: Google Analytics Help
+  publisher: Google LLC
+  url: https://support.google.com/analytics
+  type: docs
+  tier: B
+  languages: [en]
+  license: all-rights-reserved
+  reuse: paraphrase-only
+  domains: [product/metrics, media/digital-marketing/metrics-analytics]
+  verified_license_at: "2026-10-16"
+
+# tier B: Marc Andreessen coined "product/market fit" in this essay
+pmarchive:
+  title: Pmarchive (Marc Andreessen's blog archive)
+  publisher: Marc Andreessen
+  url: https://pmarchive.com
+  type: article
+  tier: B
+  languages: [en]
+  license: all-rights-reserved
+  reuse: paraphrase-only
+  domains: [product/product-management]
   verified_license_at: "2026-10-16"

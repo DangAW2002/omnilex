@@ -14,6 +14,14 @@ status: draft
 provenance:
   drafted_by: ai
 sources:
+  - ref: microsoft-learn
+    locator: https://learn.microsoft.com/en-us/power-bi/visuals/power-bi-visualization-kpi
+    title: "Key Performance Indicator (KPI) visuals - Power BI"
+    language: en
+    accessed: '2026-10-16'
+    retrieved_by: ai
+    supports:
+      - definition
   - ref: cfi
     locator: https://corporatefinanceinstitute.com/resources/management/key-performance-indicators-kpis/
     title: "Key Performance Indicators - Learn How to Set and Measure KPIs"

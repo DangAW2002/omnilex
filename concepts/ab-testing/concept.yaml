@@ -13,6 +13,14 @@ status: draft
 provenance:
   drafted_by: ai
 sources:
+  - ref: firebase-docs
+    locator: https://firebase.google.com/docs/ab-testing
+    title: "Firebase A/B Testing"
+    language: en
+    accessed: '2026-10-16'
+    retrieved_by: ai
+    supports:
+      - definition
   - ref: optimizely-glossary
     locator: https://www.optimizely.com/optimization-glossary/ab-testing
     title: "A/B testing"

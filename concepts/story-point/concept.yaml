@@ -13,6 +13,14 @@ status: draft
 provenance:
   drafted_by: ai
 sources:
+  - ref: agile-alliance
+    locator: https://www.agilealliance.org/glossary/points-estimates-in/
+    title: "What are Story Points?"
+    language: en
+    accessed: '2026-10-16'
+    retrieved_by: ai
+    supports:
+      - definition
   - ref: atlassian-agile
     locator: https://www.atlassian.com/agile/project-management/estimation
     title: "What are story points in Agile and how do you estimate them? | Atlassian"

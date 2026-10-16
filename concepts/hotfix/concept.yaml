@@ -13,6 +13,14 @@ status: draft
 provenance:
   drafted_by: ai
 sources:
+  - ref: microsoft-learn
+    locator: https://learn.microsoft.com/en-us/troubleshoot/windows-client/deployment/standard-terminology-software-updates
+    title: "Description of the standard terminology that is used to describe Microsoft software updates"
+    language: en
+    accessed: '2026-10-16'
+    retrieved_by: ai
+    supports:
+      - definition
   - ref: atlassian
     locator: https://www.atlassian.com/git/tutorials/comparing-workflows/gitflow-workflow
     title: "Gitflow Workflow"

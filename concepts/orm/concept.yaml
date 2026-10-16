@@ -1,0 +1,23 @@
+id: orm
+domains:
+  - it/web/backend
+level: 2
+relations:
+  prerequisites:
+    - sql
+  related:
+    - database-schema
+    - database-migration
+status: draft
+provenance:
+  drafted_by: ai
+sources:
+  - ref: aws-docs
+    locator: https://aws.amazon.com/what-is/object-relational-mapping/
+    title: What is Object-Relational Mapping?
+    language: en
+    accessed: '2026-10-16'
+    retrieved_by: ai
+    supports:
+      - definition
+      - summary

@@ -1,0 +1,22 @@
+id: rest-api
+domains:
+  - it/web/api
+level: 1
+relations:
+  related:
+    - graphql
+    - api-endpoint
+    - http-status-code
+status: draft
+provenance:
+  drafted_by: ai
+sources:
+  - ref: mdn
+    locator: https://developer.mozilla.org/en-US/docs/Glossary/REST
+    title: REST
+    language: en
+    accessed: '2026-10-16'
+    retrieved_by: ai
+    supports:
+      - definition
+      - summary

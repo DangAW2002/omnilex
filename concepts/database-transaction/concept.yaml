@@ -1,0 +1,21 @@
+id: database-transaction
+domains:
+  - it/data/database
+level: 2
+relations:
+  related:
+    - sql
+    - database-replication
+status: draft
+provenance:
+  drafted_by: ai
+sources:
+  - ref: microsoft-learn
+    locator: https://learn.microsoft.com/en-us/sql/t-sql/language-elements/transactions-transact-sql?view=sql-server-ver17
+    title: Transactions (Transact-SQL)
+    language: en
+    accessed: '2026-10-16'
+    retrieved_by: ai
+    supports:
+      - definition
+      - summary

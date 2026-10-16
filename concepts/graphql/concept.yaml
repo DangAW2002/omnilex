@@ -1,0 +1,22 @@
+id: graphql
+domains:
+  - it/web/api
+level: 2
+relations:
+  related:
+    - rest-api
+    - api-endpoint
+    - json
+status: draft
+provenance:
+  drafted_by: ai
+sources:
+  - ref: graphql-spec
+    locator: https://graphql.org/learn/
+    title: Introduction to GraphQL
+    language: en
+    accessed: '2026-10-16'
+    retrieved_by: ai
+    supports:
+      - definition
+      - summary

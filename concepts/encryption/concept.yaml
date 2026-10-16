@@ -1,0 +1,23 @@
+id: encryption
+domains:
+  - it/security/cryptography
+level: 1
+relations:
+  confusable:
+    - hashing
+  related:
+    - tls
+    - least-privilege
+status: draft
+provenance:
+  drafted_by: ai
+sources:
+  - ref: nist-csrc
+    locator: https://csrc.nist.gov/glossary/term/encryption
+    title: encryption
+    language: en
+    accessed: '2026-10-16'
+    retrieved_by: ai
+    supports:
+      - definition
+      - summary

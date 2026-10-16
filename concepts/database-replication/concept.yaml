@@ -1,0 +1,22 @@
+id: database-replication
+domains:
+  - it/data/database
+level: 2
+relations:
+  confusable:
+    - sharding
+  related:
+    - database-transaction
+status: draft
+provenance:
+  drafted_by: ai
+sources:
+  - ref: microsoft-learn
+    locator: https://learn.microsoft.com/en-us/sql/relational-databases/replication/sql-server-replication?view=sql-server-ver17
+    title: SQL Server Replication
+    language: en
+    accessed: '2026-10-16'
+    retrieved_by: ai
+    supports:
+      - definition
+      - summary

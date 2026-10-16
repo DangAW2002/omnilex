@@ -1,0 +1,22 @@
+id: mfa
+domains:
+  - it/security/authentication
+level: 1
+relations:
+  related:
+    - oauth
+    - token-auth
+    - zero-trust
+status: draft
+provenance:
+  drafted_by: ai
+sources:
+  - ref: nist-csrc
+    locator: https://csrc.nist.gov/glossary/term/multi_factor_authentication
+    title: multi-factor authentication
+    language: en
+    accessed: '2026-10-16'
+    retrieved_by: ai
+    supports:
+      - definition
+      - summary

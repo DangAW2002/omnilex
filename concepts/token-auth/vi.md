@@ -2,7 +2,7 @@
 label: Token
 qualifier: (Xác thực)
 aliases: [mã xác thực, access token]
-loanwords: [bearer token, JWT]
+loanwords: [bearer token]
 plain_descriptions:
   - chuỗi ký tự chứng minh đã đăng nhập
   - vé vào cổng kỹ thuật số khi gọi API

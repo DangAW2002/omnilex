@@ -1,0 +1,22 @@
+id: oauth
+domains:
+  - it/security/authentication
+level: 2
+relations:
+  related:
+    - jwt
+    - token-auth
+    - mfa
+status: draft
+provenance:
+  drafted_by: ai
+sources:
+  - ref: ietf
+    locator: https://www.rfc-editor.org/info/rfc6749/
+    title: 'RFC 6749: The OAuth 2.0 Authorization Framework'
+    language: en
+    accessed: '2026-10-16'
+    retrieved_by: ai
+    supports:
+      - definition
+      - summary

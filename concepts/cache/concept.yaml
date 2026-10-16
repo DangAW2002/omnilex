@@ -1,0 +1,21 @@
+id: cache
+domains:
+  - it/web/backend
+level: 1
+relations:
+  related:
+    - web-session
+    - rest-api
+status: draft
+provenance:
+  drafted_by: ai
+sources:
+  - ref: mdn
+    locator: https://developer.mozilla.org/en-US/docs/Glossary/Cache
+    title: Cache
+    language: en
+    accessed: '2026-10-16'
+    retrieved_by: ai
+    supports:
+      - definition
+      - summary

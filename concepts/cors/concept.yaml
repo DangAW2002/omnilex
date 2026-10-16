@@ -1,0 +1,22 @@
+id: cors
+domains:
+  - it/web/api
+  - it/security/vulnerabilities
+level: 2
+relations:
+  related:
+    - rest-api
+    - api-endpoint
+status: draft
+provenance:
+  drafted_by: ai
+sources:
+  - ref: mdn
+    locator: https://developer.mozilla.org/en-US/docs/Web/HTTP/Guides/CORS
+    title: Cross-Origin Resource Sharing (CORS)
+    language: en
+    accessed: '2026-10-16'
+    retrieved_by: ai
+    supports:
+      - definition
+      - summary

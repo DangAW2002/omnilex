@@ -1,0 +1,22 @@
+id: json
+domains:
+  - it/web/api
+level: 1
+relations:
+  related:
+    - rest-api
+    - jwt
+    - api-endpoint
+status: draft
+provenance:
+  drafted_by: ai
+sources:
+  - ref: mdn
+    locator: https://developer.mozilla.org/en-US/docs/Glossary/JSON
+    title: JSON
+    language: en
+    accessed: '2026-10-16'
+    retrieved_by: ai
+    supports:
+      - definition
+      - summary

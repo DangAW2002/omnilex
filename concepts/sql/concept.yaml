@@ -1,0 +1,22 @@
+id: sql
+domains:
+  - it/data/database
+level: 1
+relations:
+  related:
+    - database-schema
+    - database-transaction
+    - database-index
+status: draft
+provenance:
+  drafted_by: ai
+sources:
+  - ref: mdn
+    locator: https://developer.mozilla.org/en-US/docs/Glossary/SQL
+    title: SQL
+    language: en
+    accessed: '2026-10-16'
+    retrieved_by: ai
+    supports:
+      - definition
+      - summary

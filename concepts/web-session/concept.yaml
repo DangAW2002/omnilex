@@ -1,0 +1,22 @@
+id: web-session
+domains:
+  - it/web/backend
+level: 2
+relations:
+  related:
+    - cookie
+    - jwt
+    - cache
+status: draft
+provenance:
+  drafted_by: ai
+sources:
+  - ref: owasp
+    locator: https://cheatsheetseries.owasp.org/cheatsheets/Session_Management_Cheat_Sheet.html
+    title: Session Management Cheat Sheet
+    language: en
+    accessed: '2026-10-16'
+    retrieved_by: ai
+    supports:
+      - definition
+      - summary

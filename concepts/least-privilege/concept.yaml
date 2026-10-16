@@ -1,0 +1,21 @@
+id: least-privilege
+domains:
+  - it/security/authentication
+level: 2
+relations:
+  related:
+    - zero-trust
+    - mfa
+status: draft
+provenance:
+  drafted_by: ai
+sources:
+  - ref: nist-csrc
+    locator: https://csrc.nist.gov/glossary/term/least_privilege
+    title: least privilege
+    language: en
+    accessed: '2026-10-16'
+    retrieved_by: ai
+    supports:
+      - definition
+      - summary

@@ -1,0 +1,23 @@
+id: data-lake
+domains:
+  - it/data/data-engineering
+level: 2
+relations:
+  confusable:
+    - data-warehouse
+  related:
+    - data-pipeline
+    - etl
+status: draft
+provenance:
+  drafted_by: ai
+sources:
+  - ref: aws-docs
+    locator: https://aws.amazon.com/what-is/data-lake/
+    title: What is a Data Lake?
+    language: en
+    accessed: '2026-10-16'
+    retrieved_by: ai
+    supports:
+      - definition
+      - summary

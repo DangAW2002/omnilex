@@ -1,0 +1,22 @@
+id: zero-trust
+domains:
+  - it/security/authentication
+level: 3
+relations:
+  related:
+    - least-privilege
+    - mfa
+    - tls
+status: draft
+provenance:
+  drafted_by: ai
+sources:
+  - ref: nist-csrc
+    locator: https://csrc.nist.gov/glossary/term/zero_trust
+    title: zero trust
+    language: en
+    accessed: '2026-10-16'
+    retrieved_by: ai
+    supports:
+      - definition
+      - summary

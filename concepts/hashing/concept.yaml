@@ -1,0 +1,23 @@
+id: hashing
+domains:
+  - it/security/cryptography
+level: 2
+relations:
+  confusable:
+    - encryption
+  related:
+    - jwt
+    - tls
+status: draft
+provenance:
+  drafted_by: ai
+sources:
+  - ref: nist-csrc
+    locator: https://csrc.nist.gov/glossary/term/hash_function
+    title: hash function
+    language: en
+    accessed: '2026-10-16'
+    retrieved_by: ai
+    supports:
+      - definition
+      - summary

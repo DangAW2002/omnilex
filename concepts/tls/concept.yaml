@@ -1,0 +1,23 @@
+id: tls
+domains:
+  - it/security/cryptography
+  - it/infrastructure/networking
+level: 2
+relations:
+  related:
+    - encryption
+    - hashing
+    - rest-api
+status: draft
+provenance:
+  drafted_by: ai
+sources:
+  - ref: ietf
+    locator: https://www.rfc-editor.org/info/rfc8446/
+    title: 'RFC 8446: The Transport Layer Security (TLS) Protocol Version 1.3'
+    language: en
+    accessed: '2026-10-16'
+    retrieved_by: ai
+    supports:
+      - definition
+      - summary

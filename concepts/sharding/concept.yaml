@@ -1,0 +1,23 @@
+id: sharding
+domains:
+  - it/data/database
+level: 3
+relations:
+  confusable:
+    - database-replication
+  related:
+    - database-index
+    - data-warehouse
+status: draft
+provenance:
+  drafted_by: ai
+sources:
+  - ref: microsoft-learn
+    locator: https://learn.microsoft.com/en-us/azure/architecture/patterns/sharding
+    title: Sharding pattern
+    language: en
+    accessed: '2026-10-16'
+    retrieved_by: ai
+    supports:
+      - definition
+      - summary

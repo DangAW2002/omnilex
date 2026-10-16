@@ -1,0 +1,22 @@
+id: cve
+domains:
+  - it/security/vulnerabilities
+level: 2
+relations:
+  related:
+    - sql-injection
+    - xss
+    - csrf
+status: draft
+provenance:
+  drafted_by: ai
+sources:
+  - ref: nist-csrc
+    locator: https://csrc.nist.gov/glossary/term/common_vulnerabilities_and_exposures
+    title: Common Vulnerabilities and Exposures
+    language: en
+    accessed: '2026-10-16'
+    retrieved_by: ai
+    supports:
+      - definition
+      - summary

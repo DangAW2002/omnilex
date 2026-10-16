@@ -1,0 +1,25 @@
+id: data-warehouse
+domains:
+  - it/data/data-engineering
+level: 2
+relations:
+  prerequisites:
+    - sql
+  confusable:
+    - data-lake
+  related:
+    - etl
+    - data-pipeline
+status: draft
+provenance:
+  drafted_by: ai
+sources:
+  - ref: aws-docs
+    locator: https://aws.amazon.com/what-is/data-warehouse/
+    title: What is a Data Warehouse?
+    language: en
+    accessed: '2026-10-16'
+    retrieved_by: ai
+    supports:
+      - definition
+      - summary

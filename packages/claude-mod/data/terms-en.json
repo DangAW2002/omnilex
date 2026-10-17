@@ -62,6 +62,22 @@
     "autolink": true
   },
   {
+    "key": "Impression",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "ad-impression",
+        "label": "Impression",
+        "qualifier": "(Ads)",
+        "summary": "A metric recording each individual occurrence of an advertisement being fetched and rendered on a user's viewport screen.",
+        "domains": [
+          "media/digital-marketing/paid-ads"
+        ]
+      }
+    ],
+    "autolink": false
+  },
+  {
     "key": "Agent",
     "match": "any-case",
     "concepts": [
@@ -204,6 +220,54 @@
     "autolink": true
   },
   {
+    "key": "Reach",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "audience-reach",
+        "label": "Reach",
+        "qualifier": "(Marketing)",
+        "summary": "The total number of distinct, unduplicated individuals or user accounts exposed to a piece of media content or advertisement during a specified period.",
+        "domains": [
+          "media/digital-marketing/social-media"
+        ]
+      }
+    ],
+    "autolink": false
+  },
+  {
+    "key": "Audience reach",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "audience-reach",
+        "label": "Reach",
+        "qualifier": "(Marketing)",
+        "summary": "The total number of distinct, unduplicated individuals or user accounts exposed to a piece of media content or advertisement during a specified period.",
+        "domains": [
+          "media/digital-marketing/social-media"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Unique reach",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "audience-reach",
+        "label": "Reach",
+        "qualifier": "(Marketing)",
+        "summary": "The total number of distinct, unduplicated individuals or user accounts exposed to a piece of media content or advertisement during a specified period.",
+        "domains": [
+          "media/digital-marketing/social-media"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
     "key": "Autoscaling",
     "match": "any-case",
     "concepts": [
@@ -264,6 +328,36 @@
     "autolink": true
   },
   {
+    "key": "Backlink",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "backlink",
+        "label": "Backlink",
+        "summary": "An incoming hyperlink from an external web domain directing users and web crawlers to a target page on another website.",
+        "domains": [
+          "media/digital-marketing/seo"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Inbound link",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "backlink",
+        "label": "Backlink",
+        "summary": "An incoming hyperlink from an external web domain directing users and web crawlers to a target page on another website.",
+        "domains": [
+          "media/digital-marketing/seo"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
     "key": "Batch size",
     "match": "any-case",
     "concepts": [
@@ -303,6 +397,21 @@
         "summary": "A deployment strategy that provisions two identical production environments (Blue and Green), shifting all traffic from the active to the idle environment upon validation.",
         "domains": [
           "it/devops/ci-cd"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Bounce rate",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "bounce-rate",
+        "label": "Bounce rate",
+        "summary": "A digital analytics metric quantifying the share of site visits lacking meaningful user engagement, where guests depart without triggering secondary actions.",
+        "domains": [
+          "media/digital-marketing/metrics-analytics"
         ]
       }
     ],
@@ -381,6 +490,36 @@
         "summary": "A high-speed data storage layer that stores a subset of transient data so future requests are served faster than accessing primary storage.",
         "domains": [
           "it/web/backend"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Call to action (CTA)",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "call-to-action",
+        "label": "Call to action (CTA)",
+        "summary": "A marketing prompt, button, or statement designed to encourage immediate user response and guide prospects toward a desired action.",
+        "domains": [
+          "media/digital-marketing/paid-ads"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "CTA",
+    "match": "exact-case",
+    "concepts": [
+      {
+        "id": "call-to-action",
+        "label": "Call to action (CTA)",
+        "summary": "A marketing prompt, button, or statement designed to encourage immediate user response and guide prospects toward a desired action.",
+        "domains": [
+          "media/digital-marketing/paid-ads"
         ]
       }
     ],
@@ -695,6 +834,21 @@
     "autolink": true
   },
   {
+    "key": "Content marketing",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "content-marketing",
+        "label": "Content marketing",
+        "summary": "A strategic marketing approach focused on creating and distributing valuable, relevant, and consistent content to attract and retain a clearly defined audience.",
+        "domains": [
+          "media/digital-marketing/social-media"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
     "key": "Context engineering",
     "match": "any-case",
     "concepts": [
@@ -719,6 +873,21 @@
         "summary": "The maximum amount of text, counted in tokens, that a model considers in one request, covering the prompt, the conversation so far and its reply.",
         "domains": [
           "it/ai-ml/llm-agents"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Conversion rate",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "conversion-rate",
+        "label": "Conversion rate",
+        "summary": "The percentage of total visitors or interactions that culminate in the completion of a defined goal or desired transaction.",
+        "domains": [
+          "media/digital-marketing/metrics-analytics"
         ]
       }
     ],
@@ -805,6 +974,66 @@
     "autolink": true
   },
   {
+    "key": "Cost per click (CPC)",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "cpc",
+        "label": "Cost per click (CPC)",
+        "summary": "An online advertising pricing model where the advertiser pays a fee each time a user clicks on one of their ads.",
+        "domains": [
+          "media/digital-marketing/paid-ads"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "CPC",
+    "match": "exact-case",
+    "concepts": [
+      {
+        "id": "cpc",
+        "label": "Cost per click (CPC)",
+        "summary": "An online advertising pricing model where the advertiser pays a fee each time a user clicks on one of their ads.",
+        "domains": [
+          "media/digital-marketing/paid-ads"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Cost per mille (CPM)",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "cpm",
+        "label": "Cost per mille (CPM)",
+        "summary": "An advertising pricing model where the buyer pays a predetermined rate for every one thousand impressions their ad receives.",
+        "domains": [
+          "media/digital-marketing/paid-ads"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "CPM",
+    "match": "exact-case",
+    "concepts": [
+      {
+        "id": "cpm",
+        "label": "Cost per mille (CPM)",
+        "summary": "An advertising pricing model where the buyer pays a predetermined rate for every one thousand impressions their ad receives.",
+        "domains": [
+          "media/digital-marketing/paid-ads"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
     "key": "Cross-site request forgery (CSRF)",
     "match": "any-case",
     "concepts": [
@@ -829,6 +1058,38 @@
         "summary": "An attack that tricks an authenticated web browser into sending unauthorized commands to a vulnerable web application without the user’s consent.",
         "domains": [
           "it/security/vulnerabilities"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Click-through rate (CTR)",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "ctr",
+        "label": "Click-through rate (CTR)",
+        "summary": "The ratio of total clicks received by an advertisement or link divided by the total number of times it was viewed.",
+        "domains": [
+          "media/digital-marketing/metrics-analytics",
+          "media/digital-marketing/paid-ads"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "CTR",
+    "match": "exact-case",
+    "concepts": [
+      {
+        "id": "ctr",
+        "label": "Click-through rate (CTR)",
+        "summary": "The ratio of total clicks received by an advertisement or link divided by the total number of times it was viewed.",
+        "domains": [
+          "media/digital-marketing/metrics-analytics",
+          "media/digital-marketing/paid-ads"
         ]
       }
     ],
@@ -1496,6 +1757,38 @@
     "autolink": true
   },
   {
+    "key": "Open rate",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "email-open-rate",
+        "label": "Open rate",
+        "qualifier": "(Email)",
+        "summary": "The percentage of successfully delivered emails opened by subscribers, indicating subject line effectiveness and audience engagement.",
+        "domains": [
+          "media/digital-marketing/email"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Email open rate",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "email-open-rate",
+        "label": "Open rate",
+        "qualifier": "(Email)",
+        "summary": "The percentage of successfully delivered emails opened by subscribers, indicating subject line effectiveness and audience engagement.",
+        "domains": [
+          "media/digital-marketing/email"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
     "key": "Embedding",
     "match": "any-case",
     "concepts": [
@@ -1595,6 +1888,21 @@
         "summary": "A comprehensive testing methodology that validates the flow of an application from the user interface down through all underlying backend services and databases.",
         "domains": [
           "it/software-engineering/testing"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Engagement rate",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "engagement-rate",
+        "label": "Engagement rate",
+        "summary": "A performance metric that quantifies the level of active user interaction generated by content relative to its total reach, impressions, or followers.",
+        "domains": [
+          "media/digital-marketing/social-media"
         ]
       }
     ],
@@ -2064,6 +2372,21 @@
     "autolink": true
   },
   {
+    "key": "Hashtag",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "hashtag",
+        "label": "Hashtag",
+        "summary": "A metadata tag prefixed by the pound or hash character used on social platforms and websites to categorize content and facilitate search.",
+        "domains": [
+          "media/digital-marketing/social-media"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
     "key": "Hotfix",
     "match": "any-case",
     "concepts": [
@@ -2243,6 +2566,21 @@
         "summary": "The operational stage where a trained model processes live inputs to generate predictions, decisions, or outputs without updating its parameters.",
         "domains": [
           "it/ai-ml/foundations"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Influencer marketing",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "influencer-marketing",
+        "label": "Influencer marketing",
+        "summary": "A form of social media marketing involving brand endorsements and product placements from creators with dedicated and engaged followings.",
+        "domains": [
+          "media/digital-marketing/social-media"
         ]
       }
     ],
@@ -2550,6 +2888,36 @@
         "summary": "The smallest deployable computing unit in Kubernetes, encapsulating one or more tightly coupled containers sharing network and storage resources.",
         "domains": [
           "it/devops/containers"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Landing page",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "landing-page",
+        "label": "Landing page",
+        "summary": "A standalone web page created specifically for marketing campaigns where visitors arrive after clicking an ad, email, or promotional link.",
+        "domains": [
+          "media/digital-marketing/paid-ads"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Lead capture page",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "landing-page",
+        "label": "Landing page",
+        "summary": "A standalone web page created specifically for marketing campaigns where visitors arrive after clicking an ad, email, or promotional link.",
+        "domains": [
+          "media/digital-marketing/paid-ads"
         ]
       }
     ],
@@ -2997,6 +3365,66 @@
     "autolink": true
   },
   {
+    "key": "Marketing funnel",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "marketing-funnel",
+        "label": "Marketing funnel",
+        "summary": "A strategic framework illustrating the progressive stages of a customer's journey, from initial brand awareness through consideration to final purchase and retention.",
+        "domains": [
+          "media/digital-marketing/metrics-analytics"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Conversion funnel",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "marketing-funnel",
+        "label": "Marketing funnel",
+        "summary": "A strategic framework illustrating the progressive stages of a customer's journey, from initial brand awareness through consideration to final purchase and retention.",
+        "domains": [
+          "media/digital-marketing/metrics-analytics"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Purchase funnel",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "marketing-funnel",
+        "label": "Marketing funnel",
+        "summary": "A strategic framework illustrating the progressive stages of a customer's journey, from initial brand awareness through consideration to final purchase and retention.",
+        "domains": [
+          "media/digital-marketing/metrics-analytics"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Sales funnel",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "marketing-funnel",
+        "label": "Marketing funnel",
+        "summary": "A strategic framework illustrating the progressive stages of a customer's journey, from initial brand awareness through consideration to final purchase and retention.",
+        "domains": [
+          "media/digital-marketing/metrics-analytics"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
     "key": "Model Context Protocol",
     "match": "any-case",
     "concepts": [
@@ -3410,6 +3838,51 @@
     "autolink": true
   },
   {
+    "key": "Newsletter",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "newsletter",
+        "label": "Newsletter",
+        "summary": "A regularly distributed direct-to-inbox electronic publication focused on sharing news, curated insights, and company updates with an opted-in subscriber base.",
+        "domains": [
+          "media/digital-marketing/email"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Email newsletter",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "newsletter",
+        "label": "Newsletter",
+        "summary": "A regularly distributed direct-to-inbox electronic publication focused on sharing news, curated insights, and company updates with an opted-in subscriber base.",
+        "domains": [
+          "media/digital-marketing/email"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Electronic newsletter",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "newsletter",
+        "label": "Newsletter",
+        "summary": "A regularly distributed direct-to-inbox electronic publication focused on sharing news, curated insights, and company updates with an opted-in subscriber base.",
+        "domains": [
+          "media/digital-marketing/email"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
     "key": "North Star metric",
     "match": "any-case",
     "concepts": [
@@ -3584,6 +4057,36 @@
         "summary": "An operational duty rotation where designated engineers remain available to receive alerts and remediate critical production incidents outside or during standard working hours.",
         "domains": [
           "it/devops/sre-operations"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Organic traffic",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "organic-traffic",
+        "label": "Organic traffic",
+        "summary": "Visitors who arrive at a website by clicking on unpaid search engine results rather than clicking paid advertisements.",
+        "domains": [
+          "media/digital-marketing/seo"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Organic search traffic",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "organic-traffic",
+        "label": "Organic traffic",
+        "summary": "Visitors who arrive at a website by clicking on unpaid search engine results rather than clicking paid advertisements.",
+        "domains": [
+          "media/digital-marketing/seo"
         ]
       }
     ],
@@ -4259,6 +4762,51 @@
     "autolink": true
   },
   {
+    "key": "Retargeting",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "retargeting",
+        "label": "Retargeting",
+        "summary": "An online advertising technique that serves targeted ads to users who previously visited a website or app as they browse elsewhere on the web.",
+        "domains": [
+          "media/digital-marketing/paid-ads"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Remarketing",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "retargeting",
+        "label": "Retargeting",
+        "summary": "An online advertising technique that serves targeted ads to users who previously visited a website or app as they browse elsewhere on the web.",
+        "domains": [
+          "media/digital-marketing/paid-ads"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Behavioral retargeting",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "retargeting",
+        "label": "Retargeting",
+        "summary": "An online advertising technique that serves targeted ads to users who previously visited a website or app as they browse elsewhere on the web.",
+        "domains": [
+          "media/digital-marketing/paid-ads"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
     "key": "Retention rate",
     "match": "any-case",
     "concepts": [
@@ -4375,6 +4923,54 @@
         "summary": "The operational action of reverting an application, configuration, or database deployment to a previously verified stable release.",
         "domains": [
           "it/devops/sre-operations"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Lead",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "sales-lead",
+        "label": "Lead",
+        "qualifier": "(Marketing)",
+        "summary": "An individual or organization that has expressed interest in a business's products or services and provided contact details for future communication.",
+        "domains": [
+          "media/digital-marketing/metrics-analytics"
+        ]
+      }
+    ],
+    "autolink": false
+  },
+  {
+    "key": "Sales lead",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "sales-lead",
+        "label": "Lead",
+        "qualifier": "(Marketing)",
+        "summary": "An individual or organization that has expressed interest in a business's products or services and provided contact details for future communication.",
+        "domains": [
+          "media/digital-marketing/metrics-analytics"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Business lead",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "sales-lead",
+        "label": "Lead",
+        "qualifier": "(Marketing)",
+        "summary": "An individual or organization that has expressed interest in a business's products or services and provided contact details for future communication.",
+        "domains": [
+          "media/digital-marketing/metrics-analytics"
         ]
       }
     ],
@@ -4563,6 +5159,82 @@
         "summary": "A formal versioning specification utilizing a three-part numbering format (MAJOR.MINOR.PATCH) to communicate the compatibility nature of software changes.",
         "domains": [
           "it/software-engineering/practices"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Search Engine Optimization (SEO)",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "seo",
+        "label": "Search Engine Optimization (SEO)",
+        "summary": "The practice of improving a website's technical setup and content relevance so search engines rank its pages higher in unpaid results.",
+        "domains": [
+          "media/digital-marketing/seo"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "SEO",
+    "match": "exact-case",
+    "concepts": [
+      {
+        "id": "seo",
+        "label": "Search Engine Optimization (SEO)",
+        "summary": "The practice of improving a website's technical setup and content relevance so search engines rank its pages higher in unpaid results.",
+        "domains": [
+          "media/digital-marketing/seo"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Keyword",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "seo-keyword",
+        "label": "Keyword",
+        "qualifier": "(SEO)",
+        "summary": "A specific word or phrase entered into search engines that webmasters target to connect user search queries with relevant content.",
+        "domains": [
+          "media/digital-marketing/seo"
+        ]
+      }
+    ],
+    "autolink": false
+  },
+  {
+    "key": "Search Engine Results Page (SERP)",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "serp",
+        "label": "Search Engine Results Page (SERP)",
+        "summary": "The web page returned by a search engine in response to a user's search query, displaying organic listings, paid ads, and rich visual elements.",
+        "domains": [
+          "media/digital-marketing/seo"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "SERP",
+    "match": "exact-case",
+    "concepts": [
+      {
+        "id": "serp",
+        "label": "Search Engine Results Page (SERP)",
+        "summary": "The web page returned by a search engine in response to a user's search query, displaying organic listings, paid ads, and rich visual elements.",
+        "domains": [
+          "media/digital-marketing/seo"
         ]
       }
     ],
@@ -5631,6 +6303,66 @@
       }
     ],
     "autolink": false
+  },
+  {
+    "key": "UTM parameters",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "utm-parameters",
+        "label": "UTM parameters",
+        "summary": "Five standardized query parameters appended to URLs that allow analytics platforms to track the source, medium, and campaign details of inbound web traffic.",
+        "domains": [
+          "media/digital-marketing/metrics-analytics"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "UTM codes",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "utm-parameters",
+        "label": "UTM parameters",
+        "summary": "Five standardized query parameters appended to URLs that allow analytics platforms to track the source, medium, and campaign details of inbound web traffic.",
+        "domains": [
+          "media/digital-marketing/metrics-analytics"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "UTM tags",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "utm-parameters",
+        "label": "UTM parameters",
+        "summary": "Five standardized query parameters appended to URLs that allow analytics platforms to track the source, medium, and campaign details of inbound web traffic.",
+        "domains": [
+          "media/digital-marketing/metrics-analytics"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Urchin Tracking Module parameters",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "utm-parameters",
+        "label": "UTM parameters",
+        "summary": "Five standardized query parameters appended to URLs that allow analytics platforms to track the source, medium, and campaign details of inbound web traffic.",
+        "domains": [
+          "media/digital-marketing/metrics-analytics"
+        ]
+      }
+    ],
+    "autolink": true
   },
   {
     "key": "Vector database",

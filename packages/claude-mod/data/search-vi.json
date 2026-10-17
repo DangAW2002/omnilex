@@ -44,6 +44,27 @@
     "status": "draft"
   },
   {
+    "id": "ad-impression",
+    "label": "Lượt hiển thị",
+    "qualifier": "(Quảng cáo)",
+    "aliases": [
+      "Impression"
+    ],
+    "loanwords": [
+      "impression"
+    ],
+    "plain_descriptions": [
+      "mỗi lần một mẫu quảng cáo xuất hiện trên màn hình người dùng",
+      "tổng số lượt xem quảng cáo tính cả các lần xem lặp lại của cùng một người"
+    ],
+    "summary": "Chỉ số ghi nhận mỗi lần mẩu quảng cáo được nạp thành công và xuất hiện trong khung nhìn màn hình của người dùng.",
+    "domains": [
+      "media/digital-marketing/paid-ads"
+    ],
+    "level": 1,
+    "status": "draft"
+  },
+  {
     "id": "ai-agent",
     "label": "Agent",
     "qualifier": "(AI)",
@@ -152,6 +173,29 @@
     "status": "draft"
   },
   {
+    "id": "audience-reach",
+    "label": "Reach",
+    "qualifier": "(Marketing)",
+    "aliases": [
+      "Lượt tiếp cận",
+      "Phạm vi tiếp cận",
+      "Số người tiếp cận"
+    ],
+    "loanwords": [
+      "reach"
+    ],
+    "plain_descriptions": [
+      "số lượng người độc lập thực tế nhìn thấy nội dung hoặc quảng cáo của bạn",
+      "thông điệp của bạn tiếp cận được tới bao nhiêu cá nhân khác nhau"
+    ],
+    "summary": "Tổng số cá nhân hoặc tài khoản người dùng độc lập, không trùng lặp đã tiếp xúc với một nội dung truyền thông hoặc mẩu quảng cáo trong khoảng thời gian xác định.",
+    "domains": [
+      "media/digital-marketing/social-media"
+    ],
+    "level": 1,
+    "status": "draft"
+  },
+  {
     "id": "autoscaling",
     "label": "Autoscaling",
     "aliases": [
@@ -168,6 +212,27 @@
     "summary": "Cơ chế điện toán đám mây tự động điều chỉnh tăng hoặc giảm số lượng tài nguyên máy tính đang hoạt động căn cứ theo chỉ số tải thực tế.",
     "domains": [
       "it/infrastructure/cloud"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
+    "id": "backlink",
+    "label": "Backlink",
+    "aliases": [
+      "Liên kết ngược",
+      "Inbound link"
+    ],
+    "loanwords": [
+      "backlink"
+    ],
+    "plain_descriptions": [
+      "đường link từ trang web người khác trỏ về trang web của mình",
+      "phiếu bầu tín nhiệm bằng liên kết từ một trang mạng khác"
+    ],
+    "summary": "Liên kết siêu văn bản từ một tên miền bên ngoài trỏ người dùng và bot tìm kiếm về trang đích trên website của bạn.",
+    "domains": [
+      "media/digital-marketing/seo"
     ],
     "level": 2,
     "status": "draft"
@@ -210,6 +275,27 @@
     "summary": "Chiến lược triển khai duy trì hai môi trường máy chủ giống hệt nhau (Blue và Green), chuyển toàn bộ lưu lượng sang môi trường mới sau khi kiểm tra đạt chuẩn.",
     "domains": [
       "it/devops/ci-cd"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
+    "id": "bounce-rate",
+    "label": "Bounce rate",
+    "aliases": [
+      "Tỷ lệ thoát",
+      "Tỷ lệ bỏ trang"
+    ],
+    "loanwords": [
+      "bounce rate"
+    ],
+    "plain_descriptions": [
+      "tỷ lệ phần trăm người truy cập rời khỏi website ngay sau khi chỉ xem một trang duy nhất",
+      "tần suất người xem thoát ra ngay lập tức mà không bấm xem thêm nội dung nào khác"
+    ],
+    "summary": "Chỉ số phân tích kỹ thuật số đo lường tỷ lệ phần trăm các phiên truy cập trang web không có tương tác, trong đó người dùng rời đi mà không thực hiện hành động ý nghĩa nào.",
+    "domains": [
+      "media/digital-marketing/metrics-analytics"
     ],
     "level": 2,
     "status": "draft"
@@ -274,6 +360,29 @@
     "summary": "Lớp lưu trữ dữ liệu tạm thời tốc độ cao giúp phục vụ các yêu cầu truy xuất dữ liệu nhanh hơn so với việc đọc từ cơ sở dữ liệu chính.",
     "domains": [
       "it/web/backend"
+    ],
+    "level": 1,
+    "status": "draft"
+  },
+  {
+    "id": "call-to-action",
+    "label": "Call to action (CTA)",
+    "aliases": [
+      "Kêu gọi hành động",
+      "Nút kêu gọi hành động",
+      "CTA"
+    ],
+    "loanwords": [
+      "call to action",
+      "cta"
+    ],
+    "plain_descriptions": [
+      "nút bấm hoặc câu lệnh hướng dẫn người xem phải làm gì tiếp theo",
+      "lời mời gọi hành động cụ thể để thúc đẩy khách hàng bấm mua hoặc đăng ký ngay"
+    ],
+    "summary": "Chỉ dẫn, nút bấm hoặc thông điệp tiếp thị được thiết kế để thôi thúc người dùng phản hồi ngay lập tức và thực hiện một hành động cụ thể.",
+    "domains": [
+      "media/digital-marketing/paid-ads"
     ],
     "level": 1,
     "status": "draft"
@@ -472,6 +581,26 @@
     "status": "draft"
   },
   {
+    "id": "content-marketing",
+    "label": "Content marketing",
+    "aliases": [
+      "Tiếp thị nội dung"
+    ],
+    "loanwords": [
+      "content marketing"
+    ],
+    "plain_descriptions": [
+      "sáng tạo các bài viết, video và cẩm nang hữu ích để thu hút và giữ chân khách hàng",
+      "tiếp thị bằng cách chia sẻ kiến thức giá trị thay vì chỉ chăm chăm chào bán sản phẩm"
+    ],
+    "summary": "Phương pháp tiếp thị chiến lược tập trung vào việc sáng tạo và phân phối nội dung có giá trị, phù hợp và nhất quán nhằm thu hút và giữ chân tệp khán giả mục tiêu.",
+    "domains": [
+      "media/digital-marketing/social-media"
+    ],
+    "level": 1,
+    "status": "draft"
+  },
+  {
     "id": "context-engineering",
     "label": "Context engineering",
     "aliases": [
@@ -507,6 +636,26 @@
       "it/ai-ml/llm-agents"
     ],
     "level": 1,
+    "status": "draft"
+  },
+  {
+    "id": "conversion-rate",
+    "label": "Conversion rate",
+    "aliases": [
+      "Tỷ lệ chuyển đổi"
+    ],
+    "loanwords": [
+      "conversion rate"
+    ],
+    "plain_descriptions": [
+      "tỷ lệ phần trăm người vào trang web thực hiện một hành động mục tiêu như mua hàng hay điền thông tin",
+      "khả năng biến khách ghé thăm trang web thành người mua hàng hoặc để lại liên hệ thực tế"
+    ],
+    "summary": "Tỷ lệ phần trăm giữa số lượt người dùng thực hiện một hành động mục tiêu xác định so với tổng số khách truy cập hoặc lượt nhấp chuột nhận được.",
+    "domains": [
+      "media/digital-marketing/metrics-analytics"
+    ],
+    "level": 2,
     "status": "draft"
   },
   {
@@ -552,6 +701,50 @@
     "status": "draft"
   },
   {
+    "id": "cpc",
+    "label": "Cost per click (CPC)",
+    "aliases": [
+      "Chi phí mỗi lượt nhấp",
+      "CPC"
+    ],
+    "loanwords": [
+      "cost per click",
+      "cpc"
+    ],
+    "plain_descriptions": [
+      "số tiền bạn phải trả mỗi khi có người nhấp vào mẫu quảng cáo",
+      "tổng chi phí quảng cáo chia cho số lượt bấm chuột nhận được"
+    ],
+    "summary": "Mô hình định giá quảng cáo trực tuyến trong đó nhà quảng cáo chỉ trả tiền mỗi khi người dùng nhấp vào mẩu quảng cáo của họ.",
+    "domains": [
+      "media/digital-marketing/paid-ads"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
+    "id": "cpm",
+    "label": "Cost per mille (CPM)",
+    "aliases": [
+      "Chi phí mỗi nghìn lượt hiển thị",
+      "CPM"
+    ],
+    "loanwords": [
+      "cost per mille",
+      "cpm"
+    ],
+    "plain_descriptions": [
+      "số tiền nhà quảng cáo trả cho mỗi 1.000 lần mẫu quảng cáo xuất hiện",
+      "chi phí tính trên một nghìn lượt xem quảng cáo"
+    ],
+    "summary": "Phương thức định giá quảng cáo trong đó nhà tài trợ chi trả một mức phí cố định cho mỗi 1.000 lượt hiển thị của mẫu quảng cáo.",
+    "domains": [
+      "media/digital-marketing/paid-ads"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
     "id": "csrf",
     "label": "Cross-site request forgery (CSRF)",
     "aliases": [
@@ -567,6 +760,30 @@
     "summary": "Hình thức tấn công đánh lừa trình duyệt của người dùng gửi các yêu cầu giả mạo tới một ứng dụng web mà người đó đã xác thực từ trước.",
     "domains": [
       "it/security/vulnerabilities"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
+    "id": "ctr",
+    "label": "Click-through rate (CTR)",
+    "aliases": [
+      "Tỷ lệ nhấp chuột",
+      "Tỷ lệ nhấp",
+      "CTR"
+    ],
+    "loanwords": [
+      "click-through rate",
+      "ctr"
+    ],
+    "plain_descriptions": [
+      "tỷ lệ phần trăm người bấm vào xem đường link sau khi nhìn thấy nó",
+      "số lượt nhấp chuột chia cho số lượt hiển thị quảng cáo"
+    ],
+    "summary": "Tỷ lệ phần trăm giữa số lần người dùng nhấp vào một quảng cáo hoặc liên kết so với tổng số lần nó được hiển thị.",
+    "domains": [
+      "media/digital-marketing/metrics-analytics",
+      "media/digital-marketing/paid-ads"
     ],
     "level": 2,
     "status": "draft"
@@ -1014,6 +1231,29 @@
     "status": "draft"
   },
   {
+    "id": "email-open-rate",
+    "label": "Open rate",
+    "qualifier": "(Email)",
+    "aliases": [
+      "Tỷ lệ mở email",
+      "Tỷ lệ mở thư",
+      "Tỷ lệ mở"
+    ],
+    "loanwords": [
+      "open rate"
+    ],
+    "plain_descriptions": [
+      "tỷ lệ phần trăm số thư điện tử gửi thành công được người nhận thực sự mở ra xem",
+      "có bao nhiêu người trong danh sách đăng ký đã bấm mở bức thư bạn gửi"
+    ],
+    "summary": "Tỷ lệ phần trăm số email được gửi thành công mà người nhận mở ra đọc, phản ánh sức hấp dẫn của tiêu đề thư và mức độ quan tâm của độc giả.",
+    "domains": [
+      "media/digital-marketing/email"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
     "id": "embedding",
     "label": "Embedding",
     "aliases": [
@@ -1072,6 +1312,26 @@
     "summary": "Phương pháp kiểm thử toàn diện mô phỏng luồng thao tác của người dùng từ giao diện đồ họa qua tất cả dịch vụ máy chủ, hạ tầng và cơ sở dữ liệu.",
     "domains": [
       "it/software-engineering/testing"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
+    "id": "engagement-rate",
+    "label": "Engagement rate",
+    "aliases": [
+      "Tỷ lệ tương tác"
+    ],
+    "loanwords": [
+      "engagement rate"
+    ],
+    "plain_descriptions": [
+      "tỷ lệ phần trăm người xem chủ động bấm like, bình luận hoặc chia sẻ bài viết",
+      "mức độ người dùng nhiệt tình phản hồi nội dung thay vì chỉ lướt qua xem thụ động"
+    ],
+    "summary": "Chỉ số hiệu suất định lượng mức độ tương tác chủ động của người dùng đối với một nội dung so với tổng lượng tiếp cận, lượt hiển thị hoặc số người theo dõi.",
+    "domains": [
+      "media/digital-marketing/social-media"
     ],
     "level": 2,
     "status": "draft"
@@ -1447,6 +1707,28 @@
     "status": "draft"
   },
   {
+    "id": "hashtag",
+    "label": "Hashtag",
+    "aliases": [
+      "Thẻ chủ đề",
+      "Thẻ gắn kèm dấu thăng",
+      "Thẻ hashtag"
+    ],
+    "loanwords": [
+      "hashtag"
+    ],
+    "plain_descriptions": [
+      "từ hoặc cụm từ bắt đầu bằng dấu thăng dùng để gom nhóm chủ đề trên mạng",
+      "nhãn chủ đề có thể bấm vào để tìm các bài viết liên quan trên mạng xã hội"
+    ],
+    "summary": "Nhãn siêu dữ liệu bắt đầu bằng ký tự dấu thăng (#) dùng trên mạng xã hội để phân loại nội dung và hỗ trợ người dùng tìm kiếm theo chủ đề.",
+    "domains": [
+      "media/digital-marketing/social-media"
+    ],
+    "level": 1,
+    "status": "draft"
+  },
+  {
     "id": "hotfix",
     "label": "Hotfix",
     "aliases": [
@@ -1592,6 +1874,28 @@
       "it/ai-ml/foundations"
     ],
     "level": 1,
+    "status": "draft"
+  },
+  {
+    "id": "influencer-marketing",
+    "label": "Influencer marketing",
+    "aliases": [
+      "Tiếp thị qua người ảnh hưởng",
+      "Tiếp thị qua KOL",
+      "Tiếp thị người ảnh hưởng"
+    ],
+    "loanwords": [
+      "influencer marketing"
+    ],
+    "plain_descriptions": [
+      "hợp tác với những người sáng tạo nội dung nổi tiếng để giới thiệu sản phẩm đến người hâm mộ",
+      "thuê các nhân vật có sức ảnh hưởng trên mạng xã hội trải nghiệm và đánh giá nhãn hàng"
+    ],
+    "summary": "Hình thức tiếp thị trực tuyến hợp tác với các nhà sáng tạo nội dung có tầm ảnh hưởng để quảng bá sản phẩm hoặc dịch vụ đến tệp người theo dõi trung thành của họ.",
+    "domains": [
+      "media/digital-marketing/social-media"
+    ],
+    "level": 2,
     "status": "draft"
   },
   {
@@ -1824,6 +2128,26 @@
     "status": "draft"
   },
   {
+    "id": "landing-page",
+    "label": "Landing page",
+    "aliases": [
+      "Trang đích"
+    ],
+    "loanwords": [
+      "landing page"
+    ],
+    "plain_descriptions": [
+      "trang web hiện ra đầu tiên ngay sau khi bạn bấm vào một quảng cáo",
+      "trang web được thiết kế riêng để kêu gọi người xem thực hiện một hành động cụ thể"
+    ],
+    "summary": "Trang web độc lập được thiết kế chuyên biệt cho một chiến dịch tiếp thị nhằm dẫn dắt người xem thực hiện một hành vi chuyển đổi duy nhất.",
+    "domains": [
+      "media/digital-marketing/paid-ads"
+    ],
+    "level": 1,
+    "status": "draft"
+  },
+  {
     "id": "latency",
     "label": "Latency",
     "qualifier": "(Mạng)",
@@ -2050,6 +2374,29 @@
     "summary": "Tài sản trong tài khoản được dùng làm bảo đảm khi nhà đầu tư vay tiền từ công ty chứng khoán để giao dịch.",
     "domains": [
       "finance/investing/stocks"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
+    "id": "marketing-funnel",
+    "label": "Marketing funnel",
+    "aliases": [
+      "Phễu tiếp thị",
+      "Phễu marketing",
+      "Phễu bán hàng",
+      "Phễu chuyển đổi"
+    ],
+    "loanwords": [
+      "marketing funnel"
+    ],
+    "plain_descriptions": [
+      "hành trình từng bước của người mua từ lúc mới biết đến thương hiệu cho đến khi trả tiền mua hàng",
+      "mô hình minh họa lượng người quan tâm đông đảo dần thu hẹp lại thành một nhóm nhỏ khách mua thực tế"
+    ],
+    "summary": "Khung mô hình chiến lược minh họa các giai đoạn tuần tự trong hành trình của khách hàng, từ nhận biết thương hiệu ban đầu, cân nhắc, cho đến quyết định mua hàng và gắn bó.",
+    "domains": [
+      "media/digital-marketing/metrics-analytics"
     ],
     "level": 2,
     "status": "draft"
@@ -2352,6 +2699,28 @@
     "status": "draft"
   },
   {
+    "id": "newsletter",
+    "label": "Newsletter",
+    "aliases": [
+      "Bản tin email",
+      "Bản tin định kỳ",
+      "Thư tin tức"
+    ],
+    "loanwords": [
+      "newsletter"
+    ],
+    "plain_descriptions": [
+      "email gửi định kỳ chia sẻ tin tức, bài viết hoặc cập nhật mới cho người đăng ký",
+      "bản tin điện tử gửi thẳng vào hộp thư cá nhân từ một doanh nghiệp hoặc tác giả"
+    ],
+    "summary": "Ấn phẩm điện tử được gửi định kỳ trực tiếp vào hòm thư của người đăng ký nhằm chia sẻ tin tức, kiến thức chuyên ngành và cập nhật từ doanh nghiệp.",
+    "domains": [
+      "media/digital-marketing/email"
+    ],
+    "level": 1,
+    "status": "draft"
+  },
+  {
     "id": "north-star-metric",
     "label": "North Star metric",
     "aliases": [
@@ -2473,6 +2842,27 @@
     "summary": "Chế độ phân công ca trực luân phiên trong đó kỹ sư được chỉ định luôn sẵn sàng tiếp nhận cảnh báo và xử lý sự cố môi trường thực tế.",
     "domains": [
       "it/devops/sre-operations"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
+    "id": "organic-traffic",
+    "label": "Organic traffic",
+    "aliases": [
+      "Lưu lượng truy cập tự nhiên",
+      "Lưu lượng tự nhiên"
+    ],
+    "loanwords": [
+      "organic traffic"
+    ],
+    "plain_descriptions": [
+      "lượng người vào website từ việc bấm vào kết quả tìm kiếm không trả tiền",
+      "dòng khách hàng miễn phí đến với trang web thông qua Google"
+    ],
+    "summary": "Lượng khách truy cập vào một trang web thông qua việc nhấp vào các kết quả tìm kiếm tự nhiên chứ không qua quảng cáo trả phí.",
+    "domains": [
+      "media/digital-marketing/seo"
     ],
     "level": 2,
     "status": "draft"
@@ -2991,6 +3381,29 @@
     "status": "draft"
   },
   {
+    "id": "retargeting",
+    "label": "Retargeting",
+    "aliases": [
+      "Tiếp thị lại",
+      "Nhắm mục tiêu lại",
+      "Remarketing"
+    ],
+    "loanwords": [
+      "retargeting",
+      "remarketing"
+    ],
+    "plain_descriptions": [
+      "hiển thị quảng cáo cho những người từng vào website nhưng chưa mua hàng",
+      "nhắc nhở người xem quay lại mua món đồ họ từng bấm vào xem trước đó"
+    ],
+    "summary": "Kỹ thuật quảng cáo trực tuyến nhằm hiển thị thông điệp tiếp thị cho những người dùng từng ghé thăm trang web hoặc ứng dụng khi họ lướt mạng ở nơi khác.",
+    "domains": [
+      "media/digital-marketing/paid-ads"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
     "id": "retention-rate",
     "label": "Retention rate",
     "aliases": [
@@ -3075,6 +3488,29 @@
       "it/devops/sre-operations"
     ],
     "level": 2,
+    "status": "draft"
+  },
+  {
+    "id": "sales-lead",
+    "label": "Lead",
+    "qualifier": "(Marketing)",
+    "aliases": [
+      "Khách hàng tiềm năng",
+      "Khách tiềm năng",
+      "Lead bán hàng"
+    ],
+    "loanwords": [
+      "lead"
+    ],
+    "plain_descriptions": [
+      "một khách hàng tương lai đã để lại thông tin liên lạc hoặc bày tỏ sự quan tâm đến sản phẩm",
+      "người có nhu cầu và khả năng mua hàng của doanh nghiệp trong thời gian tới"
+    ],
+    "summary": "Cá nhân hoặc tổ chức bày tỏ sự quan tâm đến sản phẩm hoặc dịch vụ của doanh nghiệp và cung cấp thông tin liên hệ để được tư vấn tiếp theo.",
+    "domains": [
+      "media/digital-marketing/metrics-analytics"
+    ],
+    "level": 1,
     "status": "draft"
   },
   {
@@ -3203,6 +3639,71 @@
     "summary": "Quy chuẩn đánh số phiên bản phần mềm theo định dạng ba chữ số (MAJOR.MINOR.PATCH) nhằm truyền tải mức độ ảnh hưởng và tính tương thích của bản phát hành.",
     "domains": [
       "it/software-engineering/practices"
+    ],
+    "level": 1,
+    "status": "draft"
+  },
+  {
+    "id": "seo",
+    "label": "Search Engine Optimization (SEO)",
+    "aliases": [
+      "Tối ưu hóa công cụ tìm kiếm",
+      "SEO"
+    ],
+    "loanwords": [
+      "search engine optimization",
+      "seo"
+    ],
+    "plain_descriptions": [
+      "cách làm cho website đứng top trên kết quả tìm kiếm Google",
+      "thu hút khách truy cập miễn phí từ công cụ tìm kiếm vào trang web"
+    ],
+    "summary": "Quá trình tinh chỉnh cấu trúc kỹ thuật và nội dung trang web để công cụ tìm kiếm xếp hạng cao hơn trong kết quả tự nhiên.",
+    "domains": [
+      "media/digital-marketing/seo"
+    ],
+    "level": 1,
+    "status": "draft"
+  },
+  {
+    "id": "seo-keyword",
+    "label": "Từ khóa",
+    "qualifier": "(SEO)",
+    "aliases": [
+      "Keyword"
+    ],
+    "loanwords": [
+      "keyword"
+    ],
+    "plain_descriptions": [
+      "từ hoặc cụm từ người dùng gõ vào thanh tìm kiếm Google",
+      "cụm từ mà bài viết nhắm đến để xuất hiện khi người khác tìm"
+    ],
+    "summary": "Từ hoặc cụm từ được người dùng nhập vào công cụ tìm kiếm mà các nhà quản trị web định hướng tối ưu để kết nối với người đọc.",
+    "domains": [
+      "media/digital-marketing/seo"
+    ],
+    "level": 1,
+    "status": "draft"
+  },
+  {
+    "id": "serp",
+    "label": "Search Engine Results Page (SERP)",
+    "aliases": [
+      "Trang kết quả tìm kiếm",
+      "SERP"
+    ],
+    "loanwords": [
+      "search engine results page",
+      "serp"
+    ],
+    "plain_descriptions": [
+      "màn hình hiển thị danh sách các trang web sau khi bấm tìm kiếm trên Google",
+      "trang chứa các câu trả lời và đường link do Google trả về cho từ khóa"
+    ],
+    "summary": "Trang web do công cụ tìm kiếm hiển thị để phản hồi truy vấn của người dùng, bao gồm kết quả tự nhiên, quảng cáo trả phí và các tiện ích trực quan.",
+    "domains": [
+      "media/digital-marketing/seo"
     ],
     "level": 1,
     "status": "draft"
@@ -3989,6 +4490,29 @@
       "product/agile-scrum"
     ],
     "level": 1,
+    "status": "draft"
+  },
+  {
+    "id": "utm-parameters",
+    "label": "UTM parameters",
+    "aliases": [
+      "Tham số UTM",
+      "Mã UTM",
+      "Thẻ UTM"
+    ],
+    "loanwords": [
+      "utm parameters",
+      "utm"
+    ],
+    "plain_descriptions": [
+      "các đoạn mã ngắn gắn vào đuôi đường link web để theo dõi người xem bấm vào từ đâu",
+      "thông tin bổ sung trên đường link giúp biết chính xác chiến dịch hay bài đăng nào mang lại khách hàng"
+    ],
+    "summary": "Năm tham số truy vấn chuẩn hóa được nối vào sau đường dẫn URL giúp các công cụ phân tích theo dõi chính xác nguồn gốc, phương tiện và chiến dịch tiếp thị mang lại lưu lượng truy cập.",
+    "domains": [
+      "media/digital-marketing/metrics-analytics"
+    ],
+    "level": 2,
     "status": "draft"
   },
   {

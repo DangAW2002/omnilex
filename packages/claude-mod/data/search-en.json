@@ -42,6 +42,23 @@
     "status": "draft"
   },
   {
+    "id": "ad-impression",
+    "label": "Impression",
+    "qualifier": "(Ads)",
+    "aliases": [],
+    "loanwords": [],
+    "plain_descriptions": [
+      "every single time an advertisement appears on someone's screen",
+      "the total view count of an ad including repeat sightings by the same person"
+    ],
+    "summary": "A metric recording each individual occurrence of an advertisement being fetched and rendered on a user's viewport screen.",
+    "domains": [
+      "media/digital-marketing/paid-ads"
+    ],
+    "level": 1,
+    "status": "draft"
+  },
+  {
     "id": "ai-agent",
     "label": "Agent",
     "qualifier": "(AI)",
@@ -134,6 +151,26 @@
     "status": "draft"
   },
   {
+    "id": "audience-reach",
+    "label": "Reach",
+    "qualifier": "(Marketing)",
+    "aliases": [
+      "Audience reach",
+      "Unique reach"
+    ],
+    "loanwords": [],
+    "plain_descriptions": [
+      "the number of unique individual people who see your content or ad",
+      "how many different people your message successfully touches"
+    ],
+    "summary": "The total number of distinct, unduplicated individuals or user accounts exposed to a piece of media content or advertisement during a specified period.",
+    "domains": [
+      "media/digital-marketing/social-media"
+    ],
+    "level": 1,
+    "status": "draft"
+  },
+  {
     "id": "autoscaling",
     "label": "Autoscaling",
     "aliases": [
@@ -149,6 +186,24 @@
     "summary": "A cloud mechanism that automatically adjusts the number of active computing resources up or down based on real-time demand metrics.",
     "domains": [
       "it/infrastructure/cloud"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
+    "id": "backlink",
+    "label": "Backlink",
+    "aliases": [
+      "Inbound link"
+    ],
+    "loanwords": [],
+    "plain_descriptions": [
+      "a clickable link on another website that points back to yours",
+      "an external vote of confidence connecting another page to your site"
+    ],
+    "summary": "An incoming hyperlink from an external web domain directing users and web crawlers to a target page on another website.",
+    "domains": [
+      "media/digital-marketing/seo"
     ],
     "level": 2,
     "status": "draft"
@@ -183,6 +238,22 @@
     "summary": "A deployment strategy that provisions two identical production environments (Blue and Green), shifting all traffic from the active to the idle environment upon validation.",
     "domains": [
       "it/devops/ci-cd"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
+    "id": "bounce-rate",
+    "label": "Bounce rate",
+    "aliases": [],
+    "loanwords": [],
+    "plain_descriptions": [
+      "the percentage of visitors who leave a website after viewing only one page",
+      "how often people immediately exit a site without interacting further"
+    ],
+    "summary": "A digital analytics metric quantifying the share of site visits lacking meaningful user engagement, where guests depart without triggering secondary actions.",
+    "domains": [
+      "media/digital-marketing/metrics-analytics"
     ],
     "level": 2,
     "status": "draft"
@@ -237,6 +308,24 @@
     "summary": "A high-speed data storage layer that stores a subset of transient data so future requests are served faster than accessing primary storage.",
     "domains": [
       "it/web/backend"
+    ],
+    "level": 1,
+    "status": "draft"
+  },
+  {
+    "id": "call-to-action",
+    "label": "Call to action (CTA)",
+    "aliases": [
+      "CTA"
+    ],
+    "loanwords": [],
+    "plain_descriptions": [
+      "a prompt or button telling a visitor exactly what step to take next",
+      "the direct invitation urging people to buy, sign up, or click now"
+    ],
+    "summary": "A marketing prompt, button, or statement designed to encourage immediate user response and guide prospects toward a desired action.",
+    "domains": [
+      "media/digital-marketing/paid-ads"
     ],
     "level": 1,
     "status": "draft"
@@ -410,6 +499,22 @@
     "status": "draft"
   },
   {
+    "id": "content-marketing",
+    "label": "Content marketing",
+    "aliases": [],
+    "loanwords": [],
+    "plain_descriptions": [
+      "creating helpful articles, videos, and guides to attract and keep customers",
+      "marketing by teaching and entertaining people rather than just pitching products"
+    ],
+    "summary": "A strategic marketing approach focused on creating and distributing valuable, relevant, and consistent content to attract and retain a clearly defined audience.",
+    "domains": [
+      "media/digital-marketing/social-media"
+    ],
+    "level": 1,
+    "status": "draft"
+  },
+  {
     "id": "context-engineering",
     "label": "Context engineering",
     "aliases": [],
@@ -439,6 +544,22 @@
       "it/ai-ml/llm-agents"
     ],
     "level": 1,
+    "status": "draft"
+  },
+  {
+    "id": "conversion-rate",
+    "label": "Conversion rate",
+    "aliases": [],
+    "loanwords": [],
+    "plain_descriptions": [
+      "the percentage of website visitors who complete a desired action like buying or signing up",
+      "how successfully your web traffic turns into actual paying customers or leads"
+    ],
+    "summary": "The percentage of total visitors or interactions that culminate in the completion of a defined goal or desired transaction.",
+    "domains": [
+      "media/digital-marketing/metrics-analytics"
+    ],
+    "level": 2,
     "status": "draft"
   },
   {
@@ -481,6 +602,42 @@
     "status": "draft"
   },
   {
+    "id": "cpc",
+    "label": "Cost per click (CPC)",
+    "aliases": [
+      "CPC"
+    ],
+    "loanwords": [],
+    "plain_descriptions": [
+      "the amount of money you pay each time a person clicks your ad",
+      "total ad cost divided by the number of clicks received"
+    ],
+    "summary": "An online advertising pricing model where the advertiser pays a fee each time a user clicks on one of their ads.",
+    "domains": [
+      "media/digital-marketing/paid-ads"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
+    "id": "cpm",
+    "label": "Cost per mille (CPM)",
+    "aliases": [
+      "CPM"
+    ],
+    "loanwords": [],
+    "plain_descriptions": [
+      "the price an advertiser pays for every one thousand times an ad is seen",
+      "ad cost calculated per batch of one thousand views"
+    ],
+    "summary": "An advertising pricing model where the buyer pays a predetermined rate for every one thousand impressions their ad receives.",
+    "domains": [
+      "media/digital-marketing/paid-ads"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
     "id": "csrf",
     "label": "Cross-site request forgery (CSRF)",
     "aliases": [
@@ -494,6 +651,25 @@
     "summary": "An attack that tricks an authenticated web browser into sending unauthorized commands to a vulnerable web application without the user’s consent.",
     "domains": [
       "it/security/vulnerabilities"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
+    "id": "ctr",
+    "label": "Click-through rate (CTR)",
+    "aliases": [
+      "CTR"
+    ],
+    "loanwords": [],
+    "plain_descriptions": [
+      "the percentage of people who click on your link after seeing it",
+      "clicks divided by impressions expressed as a percentage"
+    ],
+    "summary": "The ratio of total clicks received by an advertisement or link divided by the total number of times it was viewed.",
+    "domains": [
+      "media/digital-marketing/metrics-analytics",
+      "media/digital-marketing/paid-ads"
     ],
     "level": 2,
     "status": "draft"
@@ -891,6 +1067,25 @@
     "status": "draft"
   },
   {
+    "id": "email-open-rate",
+    "label": "Open rate",
+    "qualifier": "(Email)",
+    "aliases": [
+      "Email open rate"
+    ],
+    "loanwords": [],
+    "plain_descriptions": [
+      "the percentage of delivered emails that recipients actually open to read",
+      "how many people out of your subscriber list clicked to open your message"
+    ],
+    "summary": "The percentage of successfully delivered emails opened by subscribers, indicating subject line effectiveness and audience engagement.",
+    "domains": [
+      "media/digital-marketing/email"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
     "id": "embedding",
     "label": "Embedding",
     "aliases": [
@@ -941,6 +1136,22 @@
     "summary": "A comprehensive testing methodology that validates the flow of an application from the user interface down through all underlying backend services and databases.",
     "domains": [
       "it/software-engineering/testing"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
+    "id": "engagement-rate",
+    "label": "Engagement rate",
+    "aliases": [],
+    "loanwords": [],
+    "plain_descriptions": [
+      "the percentage of people who actively react, comment, or interact with your content",
+      "how enthusiastically an audience participates rather than just passively watching"
+    ],
+    "summary": "A performance metric that quantifies the level of active user interaction generated by content relative to its total reach, impressions, or followers.",
+    "domains": [
+      "media/digital-marketing/social-media"
     ],
     "level": 2,
     "status": "draft"
@@ -1266,6 +1477,22 @@
     "status": "draft"
   },
   {
+    "id": "hashtag",
+    "label": "Hashtag",
+    "aliases": [],
+    "loanwords": [],
+    "plain_descriptions": [
+      "a word or phrase beginning with a hash sign used to group topics",
+      "a clickable topic label on social networks that connects related posts"
+    ],
+    "summary": "A metadata tag prefixed by the pound or hash character used on social platforms and websites to categorize content and facilitate search.",
+    "domains": [
+      "media/digital-marketing/social-media"
+    ],
+    "level": 1,
+    "status": "draft"
+  },
+  {
     "id": "hotfix",
     "label": "Hotfix",
     "aliases": [],
@@ -1384,6 +1611,22 @@
       "it/ai-ml/foundations"
     ],
     "level": 1,
+    "status": "draft"
+  },
+  {
+    "id": "influencer-marketing",
+    "label": "Influencer marketing",
+    "aliases": [],
+    "loanwords": [],
+    "plain_descriptions": [
+      "partnering with popular creators to promote products to their followers",
+      "paying social media figures to recommend brands to their audience"
+    ],
+    "summary": "A form of social media marketing involving brand endorsements and product placements from creators with dedicated and engaged followings.",
+    "domains": [
+      "media/digital-marketing/social-media"
+    ],
+    "level": 2,
     "status": "draft"
   },
   {
@@ -1589,6 +1832,24 @@
     "status": "draft"
   },
   {
+    "id": "landing-page",
+    "label": "Landing page",
+    "aliases": [
+      "Lead capture page"
+    ],
+    "loanwords": [],
+    "plain_descriptions": [
+      "the first web page you see right after clicking an advertisement",
+      "a dedicated page built to get visitors to take one specific action"
+    ],
+    "summary": "A standalone web page created specifically for marketing campaigns where visitors arrive after clicking an ad, email, or promotional link.",
+    "domains": [
+      "media/digital-marketing/paid-ads"
+    ],
+    "level": 1,
+    "status": "draft"
+  },
+  {
     "id": "latency",
     "label": "Latency",
     "qualifier": "(Network)",
@@ -1790,6 +2051,26 @@
     "summary": "Assets in a brokerage account support a loan used to buy securities.",
     "domains": [
       "finance/investing/stocks"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
+    "id": "marketing-funnel",
+    "label": "Marketing funnel",
+    "aliases": [
+      "Conversion funnel",
+      "Purchase funnel",
+      "Sales funnel"
+    ],
+    "loanwords": [],
+    "plain_descriptions": [
+      "the step-by-step journey a person takes from first hearing about a brand to buying",
+      "a model showing how a large crowd of potential customers narrows down to a few buyers"
+    ],
+    "summary": "A strategic framework illustrating the progressive stages of a customer's journey, from initial brand awareness through consideration to final purchase and retention.",
+    "domains": [
+      "media/digital-marketing/metrics-analytics"
     ],
     "level": 2,
     "status": "draft"
@@ -2052,6 +2333,25 @@
     "status": "draft"
   },
   {
+    "id": "newsletter",
+    "label": "Newsletter",
+    "aliases": [
+      "Email newsletter",
+      "Electronic newsletter"
+    ],
+    "loanwords": [],
+    "plain_descriptions": [
+      "a regularly sent email sharing news, articles, or updates with subscribers",
+      "an informative periodic email delivered directly to your inbox from a business or writer"
+    ],
+    "summary": "A regularly distributed direct-to-inbox electronic publication focused on sharing news, curated insights, and company updates with an opted-in subscriber base.",
+    "domains": [
+      "media/digital-marketing/email"
+    ],
+    "level": 1,
+    "status": "draft"
+  },
+  {
     "id": "north-star-metric",
     "label": "North Star metric",
     "aliases": [],
@@ -2158,6 +2458,24 @@
     "summary": "An operational duty rotation where designated engineers remain available to receive alerts and remediate critical production incidents outside or during standard working hours.",
     "domains": [
       "it/devops/sre-operations"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
+    "id": "organic-traffic",
+    "label": "Organic traffic",
+    "aliases": [
+      "Organic search traffic"
+    ],
+    "loanwords": [],
+    "plain_descriptions": [
+      "visitors who find and click your website through unpaid search results",
+      "the free visitor stream arriving at your site from search engines"
+    ],
+    "summary": "Visitors who arrive at a website by clicking on unpaid search engine results rather than clicking paid advertisements.",
+    "domains": [
+      "media/digital-marketing/seo"
     ],
     "level": 2,
     "status": "draft"
@@ -2621,6 +2939,25 @@
     "status": "draft"
   },
   {
+    "id": "retargeting",
+    "label": "Retargeting",
+    "aliases": [
+      "Remarketing",
+      "Behavioral retargeting"
+    ],
+    "loanwords": [],
+    "plain_descriptions": [
+      "displaying ads to past visitors who left your website without purchasing",
+      "reminding prior visitors about products they already viewed online"
+    ],
+    "summary": "An online advertising technique that serves targeted ads to users who previously visited a website or app as they browse elsewhere on the web.",
+    "domains": [
+      "media/digital-marketing/paid-ads"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
     "id": "retention-rate",
     "label": "Retention rate",
     "aliases": [
@@ -2696,6 +3033,26 @@
       "it/devops/sre-operations"
     ],
     "level": 2,
+    "status": "draft"
+  },
+  {
+    "id": "sales-lead",
+    "label": "Lead",
+    "qualifier": "(Marketing)",
+    "aliases": [
+      "Sales lead",
+      "Business lead"
+    ],
+    "loanwords": [],
+    "plain_descriptions": [
+      "a prospective customer who has shared contact information or shown interest in your product",
+      "someone who might buy from your business in the near future"
+    ],
+    "summary": "An individual or organization that has expressed interest in a business's products or services and provided contact details for future communication.",
+    "domains": [
+      "media/digital-marketing/metrics-analytics"
+    ],
+    "level": 1,
     "status": "draft"
   },
   {
@@ -2809,6 +3166,59 @@
     "summary": "A formal versioning specification utilizing a three-part numbering format (MAJOR.MINOR.PATCH) to communicate the compatibility nature of software changes.",
     "domains": [
       "it/software-engineering/practices"
+    ],
+    "level": 1,
+    "status": "draft"
+  },
+  {
+    "id": "seo",
+    "label": "Search Engine Optimization (SEO)",
+    "aliases": [
+      "SEO"
+    ],
+    "loanwords": [],
+    "plain_descriptions": [
+      "making a website appear higher on Google search results",
+      "getting free visitors to your web pages from search engines"
+    ],
+    "summary": "The practice of improving a website's technical setup and content relevance so search engines rank its pages higher in unpaid results.",
+    "domains": [
+      "media/digital-marketing/seo"
+    ],
+    "level": 1,
+    "status": "draft"
+  },
+  {
+    "id": "seo-keyword",
+    "label": "Keyword",
+    "qualifier": "(SEO)",
+    "aliases": [],
+    "loanwords": [],
+    "plain_descriptions": [
+      "the word or phrase someone types into Google when searching",
+      "the search term a web page targets to get ranked"
+    ],
+    "summary": "A specific word or phrase entered into search engines that webmasters target to connect user search queries with relevant content.",
+    "domains": [
+      "media/digital-marketing/seo"
+    ],
+    "level": 1,
+    "status": "draft"
+  },
+  {
+    "id": "serp",
+    "label": "Search Engine Results Page (SERP)",
+    "aliases": [
+      "SERP"
+    ],
+    "loanwords": [],
+    "plain_descriptions": [
+      "the list of web links Google shows after you search",
+      "the results screen displaying answers and links for your query"
+    ],
+    "summary": "The web page returned by a search engine in response to a user's search query, displaying organic listings, paid ads, and rich visual elements.",
+    "domains": [
+      "media/digital-marketing/seo"
     ],
     "level": 1,
     "status": "draft"
@@ -3489,6 +3899,26 @@
       "product/agile-scrum"
     ],
     "level": 1,
+    "status": "draft"
+  },
+  {
+    "id": "utm-parameters",
+    "label": "UTM parameters",
+    "aliases": [
+      "UTM codes",
+      "UTM tags",
+      "Urchin Tracking Module parameters"
+    ],
+    "loanwords": [],
+    "plain_descriptions": [
+      "extra text tags added to the end of a web link to track where visitors came from",
+      "snippets of code in a URL showing which specific ad or post generated a click"
+    ],
+    "summary": "Five standardized query parameters appended to URLs that allow analytics platforms to track the source, medium, and campaign details of inbound web traffic.",
+    "domains": [
+      "media/digital-marketing/metrics-analytics"
+    ],
+    "level": 2,
     "status": "draft"
   },
   {

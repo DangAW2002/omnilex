@@ -93,6 +93,38 @@
     "autolink": true
   },
   {
+    "key": "Lượt hiển thị",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "ad-impression",
+        "label": "Lượt hiển thị",
+        "qualifier": "(Quảng cáo)",
+        "summary": "Chỉ số ghi nhận mỗi lần mẩu quảng cáo được nạp thành công và xuất hiện trong khung nhìn màn hình của người dùng.",
+        "domains": [
+          "media/digital-marketing/paid-ads"
+        ]
+      }
+    ],
+    "autolink": false
+  },
+  {
+    "key": "Impression",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "ad-impression",
+        "label": "Lượt hiển thị",
+        "qualifier": "(Quảng cáo)",
+        "summary": "Chỉ số ghi nhận mỗi lần mẩu quảng cáo được nạp thành công và xuất hiện trong khung nhìn màn hình của người dùng.",
+        "domains": [
+          "media/digital-marketing/paid-ads"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
     "key": "Agent",
     "match": "any-case",
     "concepts": [
@@ -298,6 +330,70 @@
     "autolink": true
   },
   {
+    "key": "Reach",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "audience-reach",
+        "label": "Reach",
+        "qualifier": "(Marketing)",
+        "summary": "Tổng số cá nhân hoặc tài khoản người dùng độc lập, không trùng lặp đã tiếp xúc với một nội dung truyền thông hoặc mẩu quảng cáo trong khoảng thời gian xác định.",
+        "domains": [
+          "media/digital-marketing/social-media"
+        ]
+      }
+    ],
+    "autolink": false
+  },
+  {
+    "key": "Lượt tiếp cận",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "audience-reach",
+        "label": "Reach",
+        "qualifier": "(Marketing)",
+        "summary": "Tổng số cá nhân hoặc tài khoản người dùng độc lập, không trùng lặp đã tiếp xúc với một nội dung truyền thông hoặc mẩu quảng cáo trong khoảng thời gian xác định.",
+        "domains": [
+          "media/digital-marketing/social-media"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Phạm vi tiếp cận",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "audience-reach",
+        "label": "Reach",
+        "qualifier": "(Marketing)",
+        "summary": "Tổng số cá nhân hoặc tài khoản người dùng độc lập, không trùng lặp đã tiếp xúc với một nội dung truyền thông hoặc mẩu quảng cáo trong khoảng thời gian xác định.",
+        "domains": [
+          "media/digital-marketing/social-media"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Số người tiếp cận",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "audience-reach",
+        "label": "Reach",
+        "qualifier": "(Marketing)",
+        "summary": "Tổng số cá nhân hoặc tài khoản người dùng độc lập, không trùng lặp đã tiếp xúc với một nội dung truyền thông hoặc mẩu quảng cáo trong khoảng thời gian xác định.",
+        "domains": [
+          "media/digital-marketing/social-media"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
     "key": "Autoscaling",
     "match": "any-case",
     "concepts": [
@@ -337,6 +433,51 @@
         "summary": "Cơ chế điện toán đám mây tự động điều chỉnh tăng hoặc giảm số lượng tài nguyên máy tính đang hoạt động căn cứ theo chỉ số tải thực tế.",
         "domains": [
           "it/infrastructure/cloud"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Backlink",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "backlink",
+        "label": "Backlink",
+        "summary": "Liên kết siêu văn bản từ một tên miền bên ngoài trỏ người dùng và bot tìm kiếm về trang đích trên website của bạn.",
+        "domains": [
+          "media/digital-marketing/seo"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Liên kết ngược",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "backlink",
+        "label": "Backlink",
+        "summary": "Liên kết siêu văn bản từ một tên miền bên ngoài trỏ người dùng và bot tìm kiếm về trang đích trên website của bạn.",
+        "domains": [
+          "media/digital-marketing/seo"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Inbound link",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "backlink",
+        "label": "Backlink",
+        "summary": "Liên kết siêu văn bản từ một tên miền bên ngoài trỏ người dùng và bot tìm kiếm về trang đích trên website của bạn.",
+        "domains": [
+          "media/digital-marketing/seo"
         ]
       }
     ],
@@ -427,6 +568,51 @@
         "summary": "Chiến lược triển khai duy trì hai môi trường máy chủ giống hệt nhau (Blue và Green), chuyển toàn bộ lưu lượng sang môi trường mới sau khi kiểm tra đạt chuẩn.",
         "domains": [
           "it/devops/ci-cd"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Bounce rate",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "bounce-rate",
+        "label": "Bounce rate",
+        "summary": "Chỉ số phân tích kỹ thuật số đo lường tỷ lệ phần trăm các phiên truy cập trang web không có tương tác, trong đó người dùng rời đi mà không thực hiện hành động ý nghĩa nào.",
+        "domains": [
+          "media/digital-marketing/metrics-analytics"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Tỷ lệ thoát",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "bounce-rate",
+        "label": "Bounce rate",
+        "summary": "Chỉ số phân tích kỹ thuật số đo lường tỷ lệ phần trăm các phiên truy cập trang web không có tương tác, trong đó người dùng rời đi mà không thực hiện hành động ý nghĩa nào.",
+        "domains": [
+          "media/digital-marketing/metrics-analytics"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Tỷ lệ bỏ trang",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "bounce-rate",
+        "label": "Bounce rate",
+        "summary": "Chỉ số phân tích kỹ thuật số đo lường tỷ lệ phần trăm các phiên truy cập trang web không có tương tác, trong đó người dùng rời đi mà không thực hiện hành động ý nghĩa nào.",
+        "domains": [
+          "media/digital-marketing/metrics-analytics"
         ]
       }
     ],
@@ -565,6 +751,66 @@
         "summary": "Lớp lưu trữ dữ liệu tạm thời tốc độ cao giúp phục vụ các yêu cầu truy xuất dữ liệu nhanh hơn so với việc đọc từ cơ sở dữ liệu chính.",
         "domains": [
           "it/web/backend"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Call to action (CTA)",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "call-to-action",
+        "label": "Call to action (CTA)",
+        "summary": "Chỉ dẫn, nút bấm hoặc thông điệp tiếp thị được thiết kế để thôi thúc người dùng phản hồi ngay lập tức và thực hiện một hành động cụ thể.",
+        "domains": [
+          "media/digital-marketing/paid-ads"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Kêu gọi hành động",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "call-to-action",
+        "label": "Call to action (CTA)",
+        "summary": "Chỉ dẫn, nút bấm hoặc thông điệp tiếp thị được thiết kế để thôi thúc người dùng phản hồi ngay lập tức và thực hiện một hành động cụ thể.",
+        "domains": [
+          "media/digital-marketing/paid-ads"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Nút kêu gọi hành động",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "call-to-action",
+        "label": "Call to action (CTA)",
+        "summary": "Chỉ dẫn, nút bấm hoặc thông điệp tiếp thị được thiết kế để thôi thúc người dùng phản hồi ngay lập tức và thực hiện một hành động cụ thể.",
+        "domains": [
+          "media/digital-marketing/paid-ads"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "CTA",
+    "match": "exact-case",
+    "concepts": [
+      {
+        "id": "call-to-action",
+        "label": "Call to action (CTA)",
+        "summary": "Chỉ dẫn, nút bấm hoặc thông điệp tiếp thị được thiết kế để thôi thúc người dùng phản hồi ngay lập tức và thực hiện một hành động cụ thể.",
+        "domains": [
+          "media/digital-marketing/paid-ads"
         ]
       }
     ],
@@ -955,6 +1201,36 @@
     "autolink": true
   },
   {
+    "key": "Content marketing",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "content-marketing",
+        "label": "Content marketing",
+        "summary": "Phương pháp tiếp thị chiến lược tập trung vào việc sáng tạo và phân phối nội dung có giá trị, phù hợp và nhất quán nhằm thu hút và giữ chân tệp khán giả mục tiêu.",
+        "domains": [
+          "media/digital-marketing/social-media"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Tiếp thị nội dung",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "content-marketing",
+        "label": "Content marketing",
+        "summary": "Phương pháp tiếp thị chiến lược tập trung vào việc sáng tạo và phân phối nội dung có giá trị, phù hợp và nhất quán nhằm thu hút và giữ chân tệp khán giả mục tiêu.",
+        "domains": [
+          "media/digital-marketing/social-media"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
     "key": "Context engineering",
     "match": "any-case",
     "concepts": [
@@ -994,6 +1270,36 @@
         "summary": "Số token tối đa mô hình xét được trong một lần gọi, gồm cả prompt, phần hội thoại trước đó và câu trả lời của nó.",
         "domains": [
           "it/ai-ml/llm-agents"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Conversion rate",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "conversion-rate",
+        "label": "Conversion rate",
+        "summary": "Tỷ lệ phần trăm giữa số lượt người dùng thực hiện một hành động mục tiêu xác định so với tổng số khách truy cập hoặc lượt nhấp chuột nhận được.",
+        "domains": [
+          "media/digital-marketing/metrics-analytics"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Tỷ lệ chuyển đổi",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "conversion-rate",
+        "label": "Conversion rate",
+        "summary": "Tỷ lệ phần trăm giữa số lượt người dùng thực hiện một hành động mục tiêu xác định so với tổng số khách truy cập hoặc lượt nhấp chuột nhận được.",
+        "domains": [
+          "media/digital-marketing/metrics-analytics"
         ]
       }
     ],
@@ -1064,6 +1370,96 @@
     "autolink": true
   },
   {
+    "key": "Cost per click (CPC)",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "cpc",
+        "label": "Cost per click (CPC)",
+        "summary": "Mô hình định giá quảng cáo trực tuyến trong đó nhà quảng cáo chỉ trả tiền mỗi khi người dùng nhấp vào mẩu quảng cáo của họ.",
+        "domains": [
+          "media/digital-marketing/paid-ads"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Chi phí mỗi lượt nhấp",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "cpc",
+        "label": "Cost per click (CPC)",
+        "summary": "Mô hình định giá quảng cáo trực tuyến trong đó nhà quảng cáo chỉ trả tiền mỗi khi người dùng nhấp vào mẩu quảng cáo của họ.",
+        "domains": [
+          "media/digital-marketing/paid-ads"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "CPC",
+    "match": "exact-case",
+    "concepts": [
+      {
+        "id": "cpc",
+        "label": "Cost per click (CPC)",
+        "summary": "Mô hình định giá quảng cáo trực tuyến trong đó nhà quảng cáo chỉ trả tiền mỗi khi người dùng nhấp vào mẩu quảng cáo của họ.",
+        "domains": [
+          "media/digital-marketing/paid-ads"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Cost per mille (CPM)",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "cpm",
+        "label": "Cost per mille (CPM)",
+        "summary": "Phương thức định giá quảng cáo trong đó nhà tài trợ chi trả một mức phí cố định cho mỗi 1.000 lượt hiển thị của mẫu quảng cáo.",
+        "domains": [
+          "media/digital-marketing/paid-ads"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Chi phí mỗi nghìn lượt hiển thị",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "cpm",
+        "label": "Cost per mille (CPM)",
+        "summary": "Phương thức định giá quảng cáo trong đó nhà tài trợ chi trả một mức phí cố định cho mỗi 1.000 lượt hiển thị của mẫu quảng cáo.",
+        "domains": [
+          "media/digital-marketing/paid-ads"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "CPM",
+    "match": "exact-case",
+    "concepts": [
+      {
+        "id": "cpm",
+        "label": "Cost per mille (CPM)",
+        "summary": "Phương thức định giá quảng cáo trong đó nhà tài trợ chi trả một mức phí cố định cho mỗi 1.000 lượt hiển thị của mẫu quảng cáo.",
+        "domains": [
+          "media/digital-marketing/paid-ads"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
     "key": "Cross-site request forgery (CSRF)",
     "match": "any-case",
     "concepts": [
@@ -1088,6 +1484,70 @@
         "summary": "Hình thức tấn công đánh lừa trình duyệt của người dùng gửi các yêu cầu giả mạo tới một ứng dụng web mà người đó đã xác thực từ trước.",
         "domains": [
           "it/security/vulnerabilities"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Click-through rate (CTR)",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "ctr",
+        "label": "Click-through rate (CTR)",
+        "summary": "Tỷ lệ phần trăm giữa số lần người dùng nhấp vào một quảng cáo hoặc liên kết so với tổng số lần nó được hiển thị.",
+        "domains": [
+          "media/digital-marketing/metrics-analytics",
+          "media/digital-marketing/paid-ads"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Tỷ lệ nhấp chuột",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "ctr",
+        "label": "Click-through rate (CTR)",
+        "summary": "Tỷ lệ phần trăm giữa số lần người dùng nhấp vào một quảng cáo hoặc liên kết so với tổng số lần nó được hiển thị.",
+        "domains": [
+          "media/digital-marketing/metrics-analytics",
+          "media/digital-marketing/paid-ads"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Tỷ lệ nhấp",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "ctr",
+        "label": "Click-through rate (CTR)",
+        "summary": "Tỷ lệ phần trăm giữa số lần người dùng nhấp vào một quảng cáo hoặc liên kết so với tổng số lần nó được hiển thị.",
+        "domains": [
+          "media/digital-marketing/metrics-analytics",
+          "media/digital-marketing/paid-ads"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "CTR",
+    "match": "exact-case",
+    "concepts": [
+      {
+        "id": "ctr",
+        "label": "Click-through rate (CTR)",
+        "summary": "Tỷ lệ phần trăm giữa số lần người dùng nhấp vào một quảng cáo hoặc liên kết so với tổng số lần nó được hiển thị.",
+        "domains": [
+          "media/digital-marketing/metrics-analytics",
+          "media/digital-marketing/paid-ads"
         ]
       }
     ],
@@ -1922,6 +2382,70 @@
     "autolink": true
   },
   {
+    "key": "Open rate",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "email-open-rate",
+        "label": "Open rate",
+        "qualifier": "(Email)",
+        "summary": "Tỷ lệ phần trăm số email được gửi thành công mà người nhận mở ra đọc, phản ánh sức hấp dẫn của tiêu đề thư và mức độ quan tâm của độc giả.",
+        "domains": [
+          "media/digital-marketing/email"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Tỷ lệ mở email",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "email-open-rate",
+        "label": "Open rate",
+        "qualifier": "(Email)",
+        "summary": "Tỷ lệ phần trăm số email được gửi thành công mà người nhận mở ra đọc, phản ánh sức hấp dẫn của tiêu đề thư và mức độ quan tâm của độc giả.",
+        "domains": [
+          "media/digital-marketing/email"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Tỷ lệ mở thư",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "email-open-rate",
+        "label": "Open rate",
+        "qualifier": "(Email)",
+        "summary": "Tỷ lệ phần trăm số email được gửi thành công mà người nhận mở ra đọc, phản ánh sức hấp dẫn của tiêu đề thư và mức độ quan tâm của độc giả.",
+        "domains": [
+          "media/digital-marketing/email"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Tỷ lệ mở",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "email-open-rate",
+        "label": "Open rate",
+        "qualifier": "(Email)",
+        "summary": "Tỷ lệ phần trăm số email được gửi thành công mà người nhận mở ra đọc, phản ánh sức hấp dẫn của tiêu đề thư và mức độ quan tâm của độc giả.",
+        "domains": [
+          "media/digital-marketing/email"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
     "key": "Embedding",
     "match": "any-case",
     "concepts": [
@@ -2036,6 +2560,36 @@
         "summary": "Phương pháp kiểm thử toàn diện mô phỏng luồng thao tác của người dùng từ giao diện đồ họa qua tất cả dịch vụ máy chủ, hạ tầng và cơ sở dữ liệu.",
         "domains": [
           "it/software-engineering/testing"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Engagement rate",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "engagement-rate",
+        "label": "Engagement rate",
+        "summary": "Chỉ số hiệu suất định lượng mức độ tương tác chủ động của người dùng đối với một nội dung so với tổng lượng tiếp cận, lượt hiển thị hoặc số người theo dõi.",
+        "domains": [
+          "media/digital-marketing/social-media"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Tỷ lệ tương tác",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "engagement-rate",
+        "label": "Engagement rate",
+        "summary": "Chỉ số hiệu suất định lượng mức độ tương tác chủ động của người dùng đối với một nội dung so với tổng lượng tiếp cận, lượt hiển thị hoặc số người theo dõi.",
+        "domains": [
+          "media/digital-marketing/social-media"
         ]
       }
     ],
@@ -2614,6 +3168,66 @@
     "autolink": true
   },
   {
+    "key": "Hashtag",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "hashtag",
+        "label": "Hashtag",
+        "summary": "Nhãn siêu dữ liệu bắt đầu bằng ký tự dấu thăng (#) dùng trên mạng xã hội để phân loại nội dung và hỗ trợ người dùng tìm kiếm theo chủ đề.",
+        "domains": [
+          "media/digital-marketing/social-media"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Thẻ chủ đề",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "hashtag",
+        "label": "Hashtag",
+        "summary": "Nhãn siêu dữ liệu bắt đầu bằng ký tự dấu thăng (#) dùng trên mạng xã hội để phân loại nội dung và hỗ trợ người dùng tìm kiếm theo chủ đề.",
+        "domains": [
+          "media/digital-marketing/social-media"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Thẻ gắn kèm dấu thăng",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "hashtag",
+        "label": "Hashtag",
+        "summary": "Nhãn siêu dữ liệu bắt đầu bằng ký tự dấu thăng (#) dùng trên mạng xã hội để phân loại nội dung và hỗ trợ người dùng tìm kiếm theo chủ đề.",
+        "domains": [
+          "media/digital-marketing/social-media"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Thẻ hashtag",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "hashtag",
+        "label": "Hashtag",
+        "summary": "Nhãn siêu dữ liệu bắt đầu bằng ký tự dấu thăng (#) dùng trên mạng xã hội để phân loại nội dung và hỗ trợ người dùng tìm kiếm theo chủ đề.",
+        "domains": [
+          "media/digital-marketing/social-media"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
     "key": "Hotfix",
     "match": "any-case",
     "concepts": [
@@ -2919,6 +3533,66 @@
       }
     ],
     "autolink": false
+  },
+  {
+    "key": "Influencer marketing",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "influencer-marketing",
+        "label": "Influencer marketing",
+        "summary": "Hình thức tiếp thị trực tuyến hợp tác với các nhà sáng tạo nội dung có tầm ảnh hưởng để quảng bá sản phẩm hoặc dịch vụ đến tệp người theo dõi trung thành của họ.",
+        "domains": [
+          "media/digital-marketing/social-media"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Tiếp thị qua người ảnh hưởng",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "influencer-marketing",
+        "label": "Influencer marketing",
+        "summary": "Hình thức tiếp thị trực tuyến hợp tác với các nhà sáng tạo nội dung có tầm ảnh hưởng để quảng bá sản phẩm hoặc dịch vụ đến tệp người theo dõi trung thành của họ.",
+        "domains": [
+          "media/digital-marketing/social-media"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Tiếp thị qua KOL",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "influencer-marketing",
+        "label": "Influencer marketing",
+        "summary": "Hình thức tiếp thị trực tuyến hợp tác với các nhà sáng tạo nội dung có tầm ảnh hưởng để quảng bá sản phẩm hoặc dịch vụ đến tệp người theo dõi trung thành của họ.",
+        "domains": [
+          "media/digital-marketing/social-media"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Tiếp thị người ảnh hưởng",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "influencer-marketing",
+        "label": "Influencer marketing",
+        "summary": "Hình thức tiếp thị trực tuyến hợp tác với các nhà sáng tạo nội dung có tầm ảnh hưởng để quảng bá sản phẩm hoặc dịch vụ đến tệp người theo dõi trung thành của họ.",
+        "domains": [
+          "media/digital-marketing/social-media"
+        ]
+      }
+    ],
+    "autolink": true
   },
   {
     "key": "Infrastructure as code (IaC)",
@@ -3298,6 +3972,36 @@
         "summary": "Đơn vị tính toán nhỏ nhất có thể triển khai trong Kubernetes, bao bọc một hoặc nhiều container liên kết mật thiết và dùng chung tài nguyên mạng cùng ổ đĩa.",
         "domains": [
           "it/devops/containers"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Landing page",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "landing-page",
+        "label": "Landing page",
+        "summary": "Trang web độc lập được thiết kế chuyên biệt cho một chiến dịch tiếp thị nhằm dẫn dắt người xem thực hiện một hành vi chuyển đổi duy nhất.",
+        "domains": [
+          "media/digital-marketing/paid-ads"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Trang đích",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "landing-page",
+        "label": "Landing page",
+        "summary": "Trang web độc lập được thiết kế chuyên biệt cho một chiến dịch tiếp thị nhằm dẫn dắt người xem thực hiện một hành vi chuyển đổi duy nhất.",
+        "domains": [
+          "media/digital-marketing/paid-ads"
         ]
       }
     ],
@@ -3738,6 +4442,81 @@
         "summary": "Tài sản trong tài khoản được dùng làm bảo đảm khi nhà đầu tư vay tiền từ công ty chứng khoán để giao dịch.",
         "domains": [
           "finance/investing/stocks"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Marketing funnel",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "marketing-funnel",
+        "label": "Marketing funnel",
+        "summary": "Khung mô hình chiến lược minh họa các giai đoạn tuần tự trong hành trình của khách hàng, từ nhận biết thương hiệu ban đầu, cân nhắc, cho đến quyết định mua hàng và gắn bó.",
+        "domains": [
+          "media/digital-marketing/metrics-analytics"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Phễu tiếp thị",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "marketing-funnel",
+        "label": "Marketing funnel",
+        "summary": "Khung mô hình chiến lược minh họa các giai đoạn tuần tự trong hành trình của khách hàng, từ nhận biết thương hiệu ban đầu, cân nhắc, cho đến quyết định mua hàng và gắn bó.",
+        "domains": [
+          "media/digital-marketing/metrics-analytics"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Phễu marketing",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "marketing-funnel",
+        "label": "Marketing funnel",
+        "summary": "Khung mô hình chiến lược minh họa các giai đoạn tuần tự trong hành trình của khách hàng, từ nhận biết thương hiệu ban đầu, cân nhắc, cho đến quyết định mua hàng và gắn bó.",
+        "domains": [
+          "media/digital-marketing/metrics-analytics"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Phễu bán hàng",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "marketing-funnel",
+        "label": "Marketing funnel",
+        "summary": "Khung mô hình chiến lược minh họa các giai đoạn tuần tự trong hành trình của khách hàng, từ nhận biết thương hiệu ban đầu, cân nhắc, cho đến quyết định mua hàng và gắn bó.",
+        "domains": [
+          "media/digital-marketing/metrics-analytics"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Phễu chuyển đổi",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "marketing-funnel",
+        "label": "Marketing funnel",
+        "summary": "Khung mô hình chiến lược minh họa các giai đoạn tuần tự trong hành trình của khách hàng, từ nhận biết thương hiệu ban đầu, cân nhắc, cho đến quyết định mua hàng và gắn bó.",
+        "domains": [
+          "media/digital-marketing/metrics-analytics"
         ]
       }
     ],
@@ -4296,6 +5075,66 @@
     "autolink": true
   },
   {
+    "key": "Newsletter",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "newsletter",
+        "label": "Newsletter",
+        "summary": "Ấn phẩm điện tử được gửi định kỳ trực tiếp vào hòm thư của người đăng ký nhằm chia sẻ tin tức, kiến thức chuyên ngành và cập nhật từ doanh nghiệp.",
+        "domains": [
+          "media/digital-marketing/email"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Bản tin email",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "newsletter",
+        "label": "Newsletter",
+        "summary": "Ấn phẩm điện tử được gửi định kỳ trực tiếp vào hòm thư của người đăng ký nhằm chia sẻ tin tức, kiến thức chuyên ngành và cập nhật từ doanh nghiệp.",
+        "domains": [
+          "media/digital-marketing/email"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Bản tin định kỳ",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "newsletter",
+        "label": "Newsletter",
+        "summary": "Ấn phẩm điện tử được gửi định kỳ trực tiếp vào hòm thư của người đăng ký nhằm chia sẻ tin tức, kiến thức chuyên ngành và cập nhật từ doanh nghiệp.",
+        "domains": [
+          "media/digital-marketing/email"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Thư tin tức",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "newsletter",
+        "label": "Newsletter",
+        "summary": "Ấn phẩm điện tử được gửi định kỳ trực tiếp vào hòm thư của người đăng ký nhằm chia sẻ tin tức, kiến thức chuyên ngành và cập nhật từ doanh nghiệp.",
+        "domains": [
+          "media/digital-marketing/email"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
     "key": "North Star metric",
     "match": "any-case",
     "concepts": [
@@ -4545,6 +5384,51 @@
         "summary": "Chế độ phân công ca trực luân phiên trong đó kỹ sư được chỉ định luôn sẵn sàng tiếp nhận cảnh báo và xử lý sự cố môi trường thực tế.",
         "domains": [
           "it/devops/sre-operations"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Organic traffic",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "organic-traffic",
+        "label": "Organic traffic",
+        "summary": "Lượng khách truy cập vào một trang web thông qua việc nhấp vào các kết quả tìm kiếm tự nhiên chứ không qua quảng cáo trả phí.",
+        "domains": [
+          "media/digital-marketing/seo"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Lưu lượng truy cập tự nhiên",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "organic-traffic",
+        "label": "Organic traffic",
+        "summary": "Lượng khách truy cập vào một trang web thông qua việc nhấp vào các kết quả tìm kiếm tự nhiên chứ không qua quảng cáo trả phí.",
+        "domains": [
+          "media/digital-marketing/seo"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Lưu lượng tự nhiên",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "organic-traffic",
+        "label": "Organic traffic",
+        "summary": "Lượng khách truy cập vào một trang web thông qua việc nhấp vào các kết quả tìm kiếm tự nhiên chứ không qua quảng cáo trả phí.",
+        "domains": [
+          "media/digital-marketing/seo"
         ]
       }
     ],
@@ -5402,6 +6286,66 @@
     "autolink": true
   },
   {
+    "key": "Retargeting",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "retargeting",
+        "label": "Retargeting",
+        "summary": "Kỹ thuật quảng cáo trực tuyến nhằm hiển thị thông điệp tiếp thị cho những người dùng từng ghé thăm trang web hoặc ứng dụng khi họ lướt mạng ở nơi khác.",
+        "domains": [
+          "media/digital-marketing/paid-ads"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Tiếp thị lại",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "retargeting",
+        "label": "Retargeting",
+        "summary": "Kỹ thuật quảng cáo trực tuyến nhằm hiển thị thông điệp tiếp thị cho những người dùng từng ghé thăm trang web hoặc ứng dụng khi họ lướt mạng ở nơi khác.",
+        "domains": [
+          "media/digital-marketing/paid-ads"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Nhắm mục tiêu lại",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "retargeting",
+        "label": "Retargeting",
+        "summary": "Kỹ thuật quảng cáo trực tuyến nhằm hiển thị thông điệp tiếp thị cho những người dùng từng ghé thăm trang web hoặc ứng dụng khi họ lướt mạng ở nơi khác.",
+        "domains": [
+          "media/digital-marketing/paid-ads"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Remarketing",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "retargeting",
+        "label": "Retargeting",
+        "summary": "Kỹ thuật quảng cáo trực tuyến nhằm hiển thị thông điệp tiếp thị cho những người dùng từng ghé thăm trang web hoặc ứng dụng khi họ lướt mạng ở nơi khác.",
+        "domains": [
+          "media/digital-marketing/paid-ads"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
     "key": "Retention rate",
     "match": "any-case",
     "concepts": [
@@ -5579,6 +6523,70 @@
         "summary": "Hành động vận hành hoàn nguyên ứng dụng, tệp cấu hình hoặc cơ sở dữ liệu về phiên bản ổn định đã được kiểm chứng trước đó.",
         "domains": [
           "it/devops/sre-operations"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Lead",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "sales-lead",
+        "label": "Lead",
+        "qualifier": "(Marketing)",
+        "summary": "Cá nhân hoặc tổ chức bày tỏ sự quan tâm đến sản phẩm hoặc dịch vụ của doanh nghiệp và cung cấp thông tin liên hệ để được tư vấn tiếp theo.",
+        "domains": [
+          "media/digital-marketing/metrics-analytics"
+        ]
+      }
+    ],
+    "autolink": false
+  },
+  {
+    "key": "Khách hàng tiềm năng",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "sales-lead",
+        "label": "Lead",
+        "qualifier": "(Marketing)",
+        "summary": "Cá nhân hoặc tổ chức bày tỏ sự quan tâm đến sản phẩm hoặc dịch vụ của doanh nghiệp và cung cấp thông tin liên hệ để được tư vấn tiếp theo.",
+        "domains": [
+          "media/digital-marketing/metrics-analytics"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Khách tiềm năng",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "sales-lead",
+        "label": "Lead",
+        "qualifier": "(Marketing)",
+        "summary": "Cá nhân hoặc tổ chức bày tỏ sự quan tâm đến sản phẩm hoặc dịch vụ của doanh nghiệp và cung cấp thông tin liên hệ để được tư vấn tiếp theo.",
+        "domains": [
+          "media/digital-marketing/metrics-analytics"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Lead bán hàng",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "sales-lead",
+        "label": "Lead",
+        "qualifier": "(Marketing)",
+        "summary": "Cá nhân hoặc tổ chức bày tỏ sự quan tâm đến sản phẩm hoặc dịch vụ của doanh nghiệp và cung cấp thông tin liên hệ để được tư vấn tiếp theo.",
+        "domains": [
+          "media/digital-marketing/metrics-analytics"
         ]
       }
     ],
@@ -5842,6 +6850,128 @@
         "summary": "Quy chuẩn đánh số phiên bản phần mềm theo định dạng ba chữ số (MAJOR.MINOR.PATCH) nhằm truyền tải mức độ ảnh hưởng và tính tương thích của bản phát hành.",
         "domains": [
           "it/software-engineering/practices"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Search Engine Optimization (SEO)",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "seo",
+        "label": "Search Engine Optimization (SEO)",
+        "summary": "Quá trình tinh chỉnh cấu trúc kỹ thuật và nội dung trang web để công cụ tìm kiếm xếp hạng cao hơn trong kết quả tự nhiên.",
+        "domains": [
+          "media/digital-marketing/seo"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Tối ưu hóa công cụ tìm kiếm",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "seo",
+        "label": "Search Engine Optimization (SEO)",
+        "summary": "Quá trình tinh chỉnh cấu trúc kỹ thuật và nội dung trang web để công cụ tìm kiếm xếp hạng cao hơn trong kết quả tự nhiên.",
+        "domains": [
+          "media/digital-marketing/seo"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "SEO",
+    "match": "exact-case",
+    "concepts": [
+      {
+        "id": "seo",
+        "label": "Search Engine Optimization (SEO)",
+        "summary": "Quá trình tinh chỉnh cấu trúc kỹ thuật và nội dung trang web để công cụ tìm kiếm xếp hạng cao hơn trong kết quả tự nhiên.",
+        "domains": [
+          "media/digital-marketing/seo"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Từ khóa",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "seo-keyword",
+        "label": "Từ khóa",
+        "qualifier": "(SEO)",
+        "summary": "Từ hoặc cụm từ được người dùng nhập vào công cụ tìm kiếm mà các nhà quản trị web định hướng tối ưu để kết nối với người đọc.",
+        "domains": [
+          "media/digital-marketing/seo"
+        ]
+      }
+    ],
+    "autolink": false
+  },
+  {
+    "key": "Keyword",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "seo-keyword",
+        "label": "Từ khóa",
+        "qualifier": "(SEO)",
+        "summary": "Từ hoặc cụm từ được người dùng nhập vào công cụ tìm kiếm mà các nhà quản trị web định hướng tối ưu để kết nối với người đọc.",
+        "domains": [
+          "media/digital-marketing/seo"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Search Engine Results Page (SERP)",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "serp",
+        "label": "Search Engine Results Page (SERP)",
+        "summary": "Trang web do công cụ tìm kiếm hiển thị để phản hồi truy vấn của người dùng, bao gồm kết quả tự nhiên, quảng cáo trả phí và các tiện ích trực quan.",
+        "domains": [
+          "media/digital-marketing/seo"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Trang kết quả tìm kiếm",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "serp",
+        "label": "Search Engine Results Page (SERP)",
+        "summary": "Trang web do công cụ tìm kiếm hiển thị để phản hồi truy vấn của người dùng, bao gồm kết quả tự nhiên, quảng cáo trả phí và các tiện ích trực quan.",
+        "domains": [
+          "media/digital-marketing/seo"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "SERP",
+    "match": "exact-case",
+    "concepts": [
+      {
+        "id": "serp",
+        "label": "Search Engine Results Page (SERP)",
+        "summary": "Trang web do công cụ tìm kiếm hiển thị để phản hồi truy vấn của người dùng, bao gồm kết quả tự nhiên, quảng cáo trả phí và các tiện ích trực quan.",
+        "domains": [
+          "media/digital-marketing/seo"
         ]
       }
     ],
@@ -7303,6 +8433,66 @@
         "summary": "Mô tả ngắn gọn, không nặng tính kỹ thuật về một tính năng phần mềm, làm rõ đối tượng sử dụng, hành động mong muốn và giá trị mang lại.",
         "domains": [
           "product/agile-scrum"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "UTM parameters",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "utm-parameters",
+        "label": "UTM parameters",
+        "summary": "Năm tham số truy vấn chuẩn hóa được nối vào sau đường dẫn URL giúp các công cụ phân tích theo dõi chính xác nguồn gốc, phương tiện và chiến dịch tiếp thị mang lại lưu lượng truy cập.",
+        "domains": [
+          "media/digital-marketing/metrics-analytics"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Tham số UTM",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "utm-parameters",
+        "label": "UTM parameters",
+        "summary": "Năm tham số truy vấn chuẩn hóa được nối vào sau đường dẫn URL giúp các công cụ phân tích theo dõi chính xác nguồn gốc, phương tiện và chiến dịch tiếp thị mang lại lưu lượng truy cập.",
+        "domains": [
+          "media/digital-marketing/metrics-analytics"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Mã UTM",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "utm-parameters",
+        "label": "UTM parameters",
+        "summary": "Năm tham số truy vấn chuẩn hóa được nối vào sau đường dẫn URL giúp các công cụ phân tích theo dõi chính xác nguồn gốc, phương tiện và chiến dịch tiếp thị mang lại lưu lượng truy cập.",
+        "domains": [
+          "media/digital-marketing/metrics-analytics"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Thẻ UTM",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "utm-parameters",
+        "label": "UTM parameters",
+        "summary": "Năm tham số truy vấn chuẩn hóa được nối vào sau đường dẫn URL giúp các công cụ phân tích theo dõi chính xác nguồn gốc, phương tiện và chiến dịch tiếp thị mang lại lưu lượng truy cập.",
+        "domains": [
+          "media/digital-marketing/metrics-analytics"
         ]
       }
     ],

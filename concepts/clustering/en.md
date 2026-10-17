@@ -1,5 +1,6 @@
 ---
 label: Clustering
+qualifier: (ML)
 aliases: []
 loanwords: []
 plain_descriptions:

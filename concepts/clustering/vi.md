@@ -1,5 +1,6 @@
 ---
 label: Phân cụm
+qualifier: (Học máy)
 aliases: []
 loanwords:
   - clustering

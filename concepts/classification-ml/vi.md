@@ -1,5 +1,6 @@
 ---
 label: Phân loại
+qualifier: (Học máy)
 aliases: []
 loanwords:
   - classification

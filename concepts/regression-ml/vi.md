@@ -1,5 +1,6 @@
 ---
 label: Hồi quy
+qualifier: (Học máy)
 aliases: []
 loanwords:
   - regression

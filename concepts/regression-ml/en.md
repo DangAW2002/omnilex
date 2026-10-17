@@ -1,5 +1,6 @@
 ---
 label: Regression
+qualifier: (ML)
 aliases: []
 loanwords: []
 autolink:

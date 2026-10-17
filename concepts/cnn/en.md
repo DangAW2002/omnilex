@@ -29,4 +29,4 @@ CNN architectures process inputs through alternating convolutional, activation, 
 A class of feedforward artificial neural networks characterized by shift-invariant convolutional operators and local receptive fields over multi-dimensional grid topologies.
 
 ## Examples
-A ResNet CNN model processes a 224x224 RGB image through 50 convolutional layers, classifying the picture as a golden retriever with 96% confidence.
+A ResNet-50 CNN model processes a 224x224 RGB image through its 50 layers, classifying the picture as a golden retriever with 96% confidence.

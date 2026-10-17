@@ -7,11 +7,16 @@
     "license": "public-domain-us-gov",
     "license_evidence": "https://www.sec.gov/privacy",
     "concepts": [
+      "bond",
       "compound-interest",
+      "diversification",
+      "emergency-fund",
       "interest-rate",
       "principal",
       "roi",
-      "simple-interest"
+      "simple-interest",
+      "stock",
+      "stock-exchange"
     ]
   },
   {

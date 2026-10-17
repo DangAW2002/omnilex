@@ -63,9 +63,10 @@ describe('T-P6: store and lockfile', () => {
 
   it('installs what a meta-pack requires', () => {
     const installed = installPack({ home, sources: [dist], id: 'finance' });
-    expect(installed.map((item) => item.id)).toEqual([
-      'finance', 'finance.corporate-finance', 'finance.economics', 'finance.investing', 'finance.personal-finance',
-    ]);
+    // The meta-pack installs itself plus exactly what its pack.json requires.
+    const expected = ['finance', ...Object.keys(JSON.parse(fs.readFileSync(path.join(dist, 'packs', 'finance', 'pack.json'), 'utf-8')).requires).sort()];
+    expect(expected.length).toBeGreaterThan(1);
+    expect(installed.map((item) => item.id)).toEqual(expected);
   });
 
   it('fails on a wrong hash and leaves no store entry behind', () => {

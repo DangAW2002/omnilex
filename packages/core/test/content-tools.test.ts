@@ -143,11 +143,15 @@ describe('scaffold', () => {
 
 describe('reports', () => {
   it('coverage counts concepts per level-2 branch with locale and status', () => {
-    const rows = coverageReport(loadAll(repoRoot), 'finance');
+    const repo = loadAll(repoRoot);
+    const rows = coverageReport(repo, 'finance');
     expect(rows.every((row) => row.branch.startsWith('finance/'))).toBe(true);
+    // Expected counts come from the content itself, so the test survives new concepts.
+    const inPersonal = [...repo.concepts.values()].filter((record) => record.metadata.domains.some((d: string) => d === 'finance/personal-finance' || d.startsWith('finance/personal-finance/')));
     const personal = rows.find((row) => row.branch === 'finance/personal-finance')!;
-    expect(personal.concepts).toBe(3);
-    expect(personal.locales).toEqual({ vi: 3, en: 3 });
+    expect(inPersonal.length).toBeGreaterThan(0);
+    expect(personal.concepts).toBe(inPersonal.length);
+    expect(personal.locales).toEqual({ vi: inPersonal.filter((r) => r.locales.vi).length, en: inPersonal.filter((r) => r.locales.en).length });
     expect(coverageReport(loadAll(repoRoot)).reduce((sum, row) => sum + row.concepts, 0)).toBe(loadAll(repoRoot).concepts.size);
   });
 

@@ -238,6 +238,30 @@
     "status": "draft"
   },
   {
+    "id": "bank-transfer",
+    "label": "Chuyển khoản",
+    "aliases": [
+      "chuyển khoản ngân hàng",
+      "chuyển tiền qua ngân hàng",
+      "chuyển khoản",
+      "lệnh chuyển tiền"
+    ],
+    "loanwords": [
+      "bank transfer",
+      "wire transfer"
+    ],
+    "plain_descriptions": [
+      "việc chuyển tiền điện tử trực tiếp từ tài khoản ngân hàng này sang tài khoản khác",
+      "phương thức thanh toán tiền qua ứng dụng ngân hàng không cần dùng tiền mặt"
+    ],
+    "summary": "Giao dịch chuyển tiền điện tử từ tài khoản của người gửi sang tài khoản của người nhận thông qua hệ thống thanh toán liên ngân hàng.",
+    "domains": [
+      "finance/banking/payments"
+    ],
+    "level": 1,
+    "status": "draft"
+  },
+  {
     "id": "batch-size",
     "label": "Batch size",
     "aliases": [
@@ -259,6 +283,27 @@
     "status": "draft"
   },
   {
+    "id": "blockchain",
+    "label": "Blockchain",
+    "aliases": [
+      "chuỗi khối",
+      "công nghệ chuỗi khối"
+    ],
+    "loanwords": [
+      "blockchain"
+    ],
+    "plain_descriptions": [
+      "sổ cái điện tử ghi lại các giao dịch được nhóm thành từng khối và xâu chuỗi bằng mật mã học",
+      "mạng lưới máy tính cùng lưu trữ bản sao dữ liệu giao dịch mà không phụ thuộc vào máy chủ trung tâm"
+    ],
+    "summary": "Sổ cái kỹ thuật số phi tập trung lưu trữ các giao dịch theo từng khối dữ liệu được liên kết mật mã và xác thực bởi mạng lưới phân tán.",
+    "domains": [
+      "finance/investing/digital-assets"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
     "id": "blue-green-deployment",
     "label": "Blue-green deployment",
     "aliases": [
@@ -275,6 +320,51 @@
     "summary": "Chiến lược triển khai duy trì hai môi trường máy chủ giống hệt nhau (Blue và Green), chuyển toàn bộ lưu lượng sang môi trường mới sau khi kiểm tra đạt chuẩn.",
     "domains": [
       "it/devops/ci-cd"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
+    "id": "bond",
+    "label": "Trái phiếu",
+    "qualifier": "(Tài chính)",
+    "aliases": [
+      "chứng khoán nợ"
+    ],
+    "loanwords": [
+      "bond"
+    ],
+    "plain_descriptions": [
+      "chứng nhận cho chính phủ hoặc doanh nghiệp vay tiền để nhận lãi định kỳ và nhận lại gốc khi đáo hạn",
+      "khoản đầu tư thu nhập cố định mà người mua đóng vai trò chủ nợ của tổ chức phát hành"
+    ],
+    "summary": "Loại chứng khoán xác nhận nghĩa vụ nợ của tổ chức phát hành (doanh nghiệp hoặc chính phủ) đối với chủ sở hữu trái phiếu với một khoản tiền nhất định trong một thời gian xác định.",
+    "domains": [
+      "finance/investing/bonds"
+    ],
+    "level": 1,
+    "status": "draft"
+  },
+  {
+    "id": "bond-yield",
+    "label": "Lợi suất",
+    "qualifier": "(Tài chính)",
+    "aliases": [
+      "lợi suất trái phiếu",
+      "tỷ suất sinh lời trái phiếu",
+      "YTM"
+    ],
+    "loanwords": [
+      "yield",
+      "bond yield"
+    ],
+    "plain_descriptions": [
+      "tỷ lệ phần trăm tiền lời thực tế thu được từ trái phiếu dựa trên giá mua trên thị trường",
+      "mức sinh lời hàng năm của khoản đầu tư trái phiếu khi tính cả tiền lãi và giá mua"
+    ],
+    "summary": "Tỷ lệ phần trăm lợi nhuận thu được hàng năm từ một khoản đầu tư chứng khoán nợ (trái phiếu) so với giá mua thực tế trên thị trường.",
+    "domains": [
+      "finance/investing/bonds"
     ],
     "level": 2,
     "status": "draft"
@@ -319,6 +409,27 @@
       "it/software-engineering/practices"
     ],
     "level": 2,
+    "status": "draft"
+  },
+  {
+    "id": "budget",
+    "label": "Ngân sách",
+    "qualifier": "(Tài chính cá nhân)",
+    "aliases": [
+      "kế hoạch chi tiêu"
+    ],
+    "loanwords": [
+      "budget"
+    ],
+    "plain_descriptions": [
+      "kế hoạch phân chia tiền lương cho các khoản chi tiêu và tiết kiệm mỗi tháng",
+      "bảng theo dõi tiền kiếm được và tiền phải trả để không bị thiếu hụt"
+    ],
+    "summary": "Kế hoạch tài chính chi tiết ước tính các khoản thu nhập dự kiến và phân bổ vào chi phí sinh hoạt, tiết kiệm và trả nợ trong một khoảng thời gian nhất định.",
+    "domains": [
+      "finance/personal-finance/budget"
+    ],
+    "level": 1,
     "status": "draft"
   },
   {
@@ -740,6 +851,68 @@
     "summary": "Phương thức định giá quảng cáo trong đó nhà tài trợ chi trả một mức phí cố định cho mỗi 1.000 lượt hiển thị của mẫu quảng cáo.",
     "domains": [
       "media/digital-marketing/paid-ads"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
+    "id": "credit-card",
+    "label": "Thẻ tín dụng",
+    "aliases": [],
+    "loanwords": [
+      "credit card"
+    ],
+    "plain_descriptions": [
+      "thẻ ngân hàng cho phép chi tiêu trước trả tiền sau theo hạn mức",
+      "công cụ thanh toán dùng tiền ngân hàng cho vay và được miễn lãi một thời gian"
+    ],
+    "summary": "Thẻ thanh toán do tổ chức tín dụng phát hành, cho phép chủ thẻ vay tiền trong hạn mức được cấp để thanh toán hàng hóa dịch vụ hoặc rút tiền mặt.",
+    "domains": [
+      "finance/personal-finance/debt-credit"
+    ],
+    "level": 1,
+    "status": "draft"
+  },
+  {
+    "id": "credit-score",
+    "label": "Điểm tín dụng",
+    "aliases": [
+      "điểm xếp hạng tín dụng",
+      "điểm tín nhiệm"
+    ],
+    "loanwords": [
+      "credit score"
+    ],
+    "plain_descriptions": [
+      "điểm số thể hiện mức độ uy tín trả nợ của một người đối với ngân hàng",
+      "thước đo tin cậy để ngân hàng quyết định duyệt vay tiền hay mở thẻ"
+    ],
+    "summary": "Chỉ số bằng số phản ánh lịch sử vay nợ và mức độ uy tín tài chính của cá nhân, thể hiện xác suất người đó hoàn trả các khoản nợ đúng hạn.",
+    "domains": [
+      "finance/personal-finance/debt-credit"
+    ],
+    "level": 1,
+    "status": "draft"
+  },
+  {
+    "id": "cryptocurrency",
+    "label": "Tiền mã hóa",
+    "aliases": [
+      "tiền điện tử",
+      "tiền kỹ thuật số",
+      "crypto"
+    ],
+    "loanwords": [
+      "cryptocurrency",
+      "crypto"
+    ],
+    "plain_descriptions": [
+      "loại tiền kỹ thuật số sử dụng mật mã học thay vì ngân hàng trung ương để bảo mật giao dịch",
+      "đồng tiền điện tử được trao đổi ngang hàng trực tiếp giữa người dùng qua mạng máy tính phân tán"
+    ],
+    "summary": "Loại tiền kỹ thuật số sử dụng mật mã học để bảo vệ giao dịch, kiểm soát việc phát hành và vận hành trên sổ cái phân tán.",
+    "domains": [
+      "finance/investing/digital-assets"
     ],
     "level": 2,
     "status": "draft"
@@ -1168,6 +1341,50 @@
     "status": "draft"
   },
   {
+    "id": "diversification",
+    "label": "Đa dạng hóa danh mục đầu tư",
+    "aliases": [
+      "đa dạng hóa danh mục",
+      "đa dạng hóa đầu tư",
+      "đa dạng hóa tài sản",
+      "đa dạng hóa"
+    ],
+    "loanwords": [
+      "diversification"
+    ],
+    "plain_descriptions": [
+      "chia nhỏ số tiền đầu tư vào nhiều loại tài sản khác nhau để tránh rủi ro mất sạch vốn",
+      "nguyên tắc không bỏ tất cả trứng vào cùng một giỏ khi tham gia thị trường tài chính"
+    ],
+    "summary": "Chiến lược phân bổ vốn vào nhiều loại tài sản và ngành nghề khác nhau nhằm giảm thiểu rủi ro phi hệ thống của danh mục đầu tư.",
+    "domains": [
+      "finance/investing/portfolio-risk"
+    ],
+    "level": 1,
+    "status": "draft"
+  },
+  {
+    "id": "dividend",
+    "label": "Cổ tức",
+    "aliases": [
+      "cổ tức tiền mặt",
+      "cổ tức bằng cổ phiếu"
+    ],
+    "loanwords": [
+      "dividend"
+    ],
+    "plain_descriptions": [
+      "khoản tiền lời công ty trích trả cho cổ đông khi làm ăn có lãi",
+      "phần lợi nhuận sau thuế được chia cho từng cổ phiếu theo tỷ lệ sở hữu"
+    ],
+    "summary": "Khoản lợi nhuận ròng được trả cho mỗi cổ phần bằng tiền mặt hoặc bằng tài sản khác từ nguồn lợi nhuận giữ lại của công ty cổ phần.",
+    "domains": [
+      "finance/investing/stocks"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
     "id": "dns",
     "label": "Domain Name System (DNS)",
     "aliases": [
@@ -1205,6 +1422,28 @@
     "summary": "Nền tảng phần mềm cung cấp công cụ xây dựng, chia sẻ và thực thi các container ứng dụng thông qua cơ chế ảo hóa của hệ điều hành máy chủ.",
     "domains": [
       "it/devops/containers"
+    ],
+    "level": 1,
+    "status": "draft"
+  },
+  {
+    "id": "e-wallet",
+    "label": "Ví điện tử",
+    "aliases": [
+      "ví số",
+      "ví thanh toán điện tử"
+    ],
+    "loanwords": [
+      "e-wallet",
+      "digital wallet"
+    ],
+    "plain_descriptions": [
+      "ứng dụng trên điện thoại dùng để lưu trữ tiền và thanh toán mua sắm trực tuyến",
+      "tài khoản thanh toán số liên kết với thẻ ngân hàng để quét mã QR hoặc trả tiền hóa đơn"
+    ],
+    "summary": "Dịch vụ tài khoản điện tử do các tổ chức trung gian thanh toán cung ứng, cho phép lưu trữ giá trị tiền tệ điện tử và thực hiện các giao dịch thanh toán không dùng tiền mặt.",
+    "domains": [
+      "finance/banking/payments"
     ],
     "level": 1,
     "status": "draft"
@@ -1272,6 +1511,27 @@
       "it/ai-ml/nlp"
     ],
     "level": 2,
+    "status": "draft"
+  },
+  {
+    "id": "emergency-fund",
+    "label": "Quỹ khẩn cấp",
+    "aliases": [
+      "quỹ dự phòng khẩn cấp",
+      "quỹ dự phòng"
+    ],
+    "loanwords": [
+      "emergency fund"
+    ],
+    "plain_descriptions": [
+      "khoản tiền để dành phòng khi ốm đau hoặc thất nghiệp bất ngờ",
+      "số tiền dự phòng tương đương 3 đến 6 tháng sinh hoạt phí gửi ở ngân hàng"
+    ],
+    "summary": "Khoản tiền dự phòng có tính thanh khoản cao được lập ra để chi trả cho các biến cố bất ngờ hoặc gián đoạn thu nhập mà không phải vay nợ hay bán tháo tài sản đầu tư.",
+    "domains": [
+      "finance/personal-finance/saving"
+    ],
+    "level": 1,
     "status": "draft"
   },
   {
@@ -1394,6 +1654,28 @@
     "summary": "Một chu kỳ huấn luyện hoàn chỉnh mà trong đó thuật toán học máy đã duyệt qua toàn bộ các mẫu trong tập dữ liệu đúng một lần.",
     "domains": [
       "it/ai-ml/foundations"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
+    "id": "etf",
+    "label": "Quỹ hoán đổi danh mục",
+    "aliases": [
+      "ETF",
+      "quỹ ETF"
+    ],
+    "loanwords": [
+      "ETF",
+      "exchange-traded fund"
+    ],
+    "plain_descriptions": [
+      "quỹ đầu tư được niêm yết và giao dịch trực tiếp trên sàn chứng khoán giống hệt một mã cổ phiếu",
+      "rổ chứng khoán mô phỏng một chỉ số mà bạn có thể đặt lệnh mua bán khớp lệnh ngay lập tức trong phiên"
+    ],
+    "summary": "Quỹ đầu tư mở mô phỏng theo một chỉ số tham chiếu và các chứng chỉ quỹ được niêm yết, giao dịch liên tục trên sàn chứng khoán.",
+    "domains": [
+      "finance/investing/funds"
     ],
     "level": 2,
     "status": "draft"
@@ -1855,6 +2137,27 @@
     "status": "draft"
   },
   {
+    "id": "index-fund",
+    "label": "Quỹ chỉ số",
+    "aliases": [
+      "quỹ mô phỏng chỉ số",
+      "quỹ bám sát chỉ số"
+    ],
+    "loanwords": [
+      "index fund"
+    ],
+    "plain_descriptions": [
+      "quỹ đầu tư tự động bám theo biến động của một chỉ số thị trường cụ thể mà không cần chuyên gia chọn lọc từng mã",
+      "quỹ có chi phí quản lý rất thấp mua toàn bộ cổ phiếu trong rổ chỉ số chuẩn"
+    ],
+    "summary": "Quỹ đầu tư quản lý thụ động nhằm mô phỏng lại chính xác tỷ suất sinh lời và cơ cấu của một chỉ số thị trường chuẩn.",
+    "domains": [
+      "finance/investing/funds"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
     "id": "inference",
     "label": "Inference",
     "qualifier": "(AI)",
@@ -1919,6 +2222,48 @@
       "it/devops/iac"
     ],
     "level": 2,
+    "status": "draft"
+  },
+  {
+    "id": "insurance-deductible",
+    "label": "Mức khấu trừ",
+    "qualifier": "(Bảo hiểm)",
+    "aliases": [
+      "mức miễn thường",
+      "mức miễn thường có khấu trừ"
+    ],
+    "loanwords": [
+      "deductible"
+    ],
+    "plain_descriptions": [
+      "số tiền bạn phải tự trả trước khi công ty bảo hiểm bắt đầu chi trả thiệt hại",
+      "phần chi phí tổn thất ban đầu thuộc trách nhiệm của người mua bảo hiểm"
+    ],
+    "summary": "Số tiền tổn thất nhất định mà bên mua bảo hiểm phải tự gánh chịu trước khi doanh nghiệp bảo hiểm bắt đầu chi trả tiền bồi thường.",
+    "domains": [
+      "finance/personal-finance/insurance"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
+    "id": "insurance-premium",
+    "label": "Phí bảo hiểm",
+    "aliases": [
+      "phí đóng bảo hiểm"
+    ],
+    "loanwords": [
+      "insurance premium"
+    ],
+    "plain_descriptions": [
+      "số tiền định kỳ phải đóng cho công ty bảo hiểm để duy trì hợp đồng bảo vệ",
+      "khoản phí trả hàng tháng hoặc hàng năm để được bồi thường khi gặp rủi ro"
+    ],
+    "summary": "Khoản tiền mà bên mua bảo hiểm phải đóng cho doanh nghiệp bảo hiểm theo thời hạn và phương thức do các bên thỏa thuận trong hợp đồng bảo hiểm.",
+    "domains": [
+      "finance/personal-finance/insurance"
+    ],
+    "level": 1,
     "status": "draft"
   },
   {
@@ -2379,6 +2724,28 @@
     "status": "draft"
   },
   {
+    "id": "market-capitalization",
+    "label": "Vốn hóa thị trường",
+    "aliases": [
+      "giá trị vốn hóa thị trường",
+      "vốn hóa"
+    ],
+    "loanwords": [
+      "market cap",
+      "market capitalization"
+    ],
+    "plain_descriptions": [
+      "tổng giá trị bằng tiền của toàn bộ số cổ phiếu đang lưu hành của một công ty trên sàn chứng khoán",
+      "số tiền cần bỏ ra nếu muốn mua lại toàn bộ cổ phần của một doanh nghiệp niêm yết theo thị giá hiện tại"
+    ],
+    "summary": "Tổng giá trị thị trường của toàn bộ số cổ phần đang lưu hành của một doanh nghiệp niêm yết, tính bằng thị giá nhân với số lượng cổ phiếu.",
+    "domains": [
+      "finance/investing/valuation"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
     "id": "marketing-funnel",
     "label": "Marketing funnel",
     "aliases": [
@@ -2635,6 +3002,27 @@
     "status": "draft"
   },
   {
+    "id": "mortgage",
+    "label": "Vay thế chấp",
+    "aliases": [
+      "khoản vay thế chấp",
+      "thế chấp bất động sản"
+    ],
+    "loanwords": [
+      "mortgage"
+    ],
+    "plain_descriptions": [
+      "khoản vay ngân hàng dài hạn để mua nhà đất dùng chính tài sản đó làm vật bảo đảm",
+      "hình thức vay tiền ngân hàng có tài sản bảo đảm, nếu không trả nợ sẽ bị xử lý tài sản"
+    ],
+    "summary": "Khoản vay dài hạn được bảo đảm bằng tài sản thuộc sở hữu của bên vay (như nhà đất, xe cộ) nhằm bảo đảm thực hiện nghĩa vụ hoàn trả nợ cho ngân hàng.",
+    "domains": [
+      "finance/banking/lending"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
     "id": "moscow-method",
     "label": "MoSCoW method",
     "aliases": [
@@ -2652,6 +3040,28 @@
     "summary": "Kỹ thuật ưu tiên định tính phân chia các yêu cầu dự án vào 4 cấp độ: Must have (Bắt buộc), Should have (Nên có), Could have (Có thể có) và Won't have (Chưa làm đợt này).",
     "domains": [
       "product/delivery-planning"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
+    "id": "mutual-fund",
+    "label": "Quỹ tương hỗ",
+    "aliases": [
+      "quỹ đại chúng",
+      "quỹ mở",
+      "quỹ đầu tư chứng khoán"
+    ],
+    "loanwords": [
+      "mutual fund"
+    ],
+    "plain_descriptions": [
+      "quỹ gom tiền của nhiều người lại để các chuyên gia đem đi đầu tư vào nhiều cổ phiếu và trái phiếu",
+      "hình thức góp vốn chung vào một danh mục tài sản lớn do công ty quản lý quỹ chuyên nghiệp điều hành"
+    ],
+    "summary": "Định chế đầu tư tập hợp tiền của nhiều nhà đầu tư để xây dựng và quản lý một danh mục tài sản tài chính đa dạng theo mục tiêu xác định.",
+    "domains": [
+      "finance/investing/funds"
     ],
     "level": 2,
     "status": "draft"
@@ -2888,6 +3298,27 @@
     "status": "draft"
   },
   {
+    "id": "overdraft",
+    "label": "Thấu chi",
+    "aliases": [
+      "vay thấu chi",
+      "hạn mức thấu chi"
+    ],
+    "loanwords": [
+      "overdraft"
+    ],
+    "plain_descriptions": [
+      "tính năng cho phép chi tiêu vượt quá số tiền thực tế đang có trong tài khoản ngân hàng",
+      "khoản tiền ngân hàng cho mượn tạm thời khi số dư tài khoản về dưới 0 đồng"
+    ],
+    "summary": "Nghiệp vụ cho vay của tổ chức tín dụng cho phép chủ tài khoản thanh toán chi tiêu vượt quá số dư thực tế có trên tài khoản thanh toán trong một hạn mức xác định.",
+    "domains": [
+      "finance/banking/lending"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
     "id": "overfitting",
     "label": "Quá khớp",
     "aliases": [],
@@ -2923,6 +3354,50 @@
       "it/web/api"
     ],
     "level": 2,
+    "status": "draft"
+  },
+  {
+    "id": "pe-ratio",
+    "label": "Hệ số P/E",
+    "aliases": [
+      "chỉ số P/E",
+      "tỷ số P/E",
+      "tỷ số giá trên thu nhập",
+      "P/E"
+    ],
+    "loanwords": [
+      "price-to-earnings ratio",
+      "P/E ratio"
+    ],
+    "plain_descriptions": [
+      "chỉ số so sánh giá cổ phiếu trên thị trường với lợi nhuận kiếm được trên mỗi cổ phiếu",
+      "thước đo cho biết nhà đầu tư sẵn sàng trả bao nhiêu đồng để đổi lấy 1 đồng tiền lãi của công ty"
+    ],
+    "summary": "Chỉ số định giá tài chính đo lường tỷ lệ giữa thị giá của một cổ phiếu và thu nhập trên mỗi cổ phần (EPS) do doanh nghiệp tạo ra trong một năm.",
+    "domains": [
+      "finance/investing/valuation"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
+    "id": "personal-income-tax",
+    "label": "Thuế thu nhập cá nhân",
+    "aliases": [
+      "PIT"
+    ],
+    "loanwords": [
+      "personal income tax"
+    ],
+    "plain_descriptions": [
+      "tiền thuế người lao động phải nộp cho nhà nước trích từ tiền lương kiếm được",
+      "khoản thuế trực thu tính trên các khoản thu nhập từ tiền công và kinh doanh của cá nhân"
+    ],
+    "summary": "Khoản thuế trực thu đánh vào tiền lương, tiền công và các nguồn thu nhập hợp pháp khác của cá nhân sau khi đã trừ các khoản giảm trừ gia cảnh.",
+    "domains": [
+      "finance/personal-finance/tax"
+    ],
+    "level": 1,
     "status": "draft"
   },
   {
@@ -3509,6 +3984,26 @@
     "summary": "Cá nhân hoặc tổ chức bày tỏ sự quan tâm đến sản phẩm hoặc dịch vụ của doanh nghiệp và cung cấp thông tin liên hệ để được tư vấn tiếp theo.",
     "domains": [
       "media/digital-marketing/metrics-analytics"
+    ],
+    "level": 1,
+    "status": "draft"
+  },
+  {
+    "id": "savings-account",
+    "label": "Tài khoản tiết kiệm",
+    "aliases": [
+      "tiền gửi tiết kiệm"
+    ],
+    "loanwords": [
+      "savings account"
+    ],
+    "plain_descriptions": [
+      "tài khoản gửi tiền ngân hàng để nhận tiền lãi và giữ an toàn",
+      "nơi cất giữ tiền nhàn rỗi tại ngân hàng có thể rút ra khi cần"
+    ],
+    "summary": "Tài khoản tiền gửi sinh lãi tại ngân hàng hoặc tổ chức tín dụng, giúp bảo toàn vốn và cho phép rút tiền linh hoạt khi cần chi tiêu.",
+    "domains": [
+      "finance/banking/deposits"
     ],
     "level": 1,
     "status": "draft"
@@ -4121,6 +4616,50 @@
     "status": "draft"
   },
   {
+    "id": "stock",
+    "label": "Cổ phiếu",
+    "qualifier": "(Tài chính)",
+    "aliases": [
+      "chứng khoán vốn"
+    ],
+    "loanwords": [
+      "stock",
+      "share"
+    ],
+    "plain_descriptions": [
+      "giấy chứng nhận quyền sở hữu một phần công ty cổ phần",
+      "phần vốn góp của nhà đầu tư vào doanh nghiệp được giao dịch mua bán trên sàn chứng khoán"
+    ],
+    "summary": "Chứng chỉ xác nhận quyền và lợi ích hợp pháp của người sở hữu đối với một phần vốn cổ phần của tổ chức phát hành.",
+    "domains": [
+      "finance/investing/stocks"
+    ],
+    "level": 1,
+    "status": "draft"
+  },
+  {
+    "id": "stock-exchange",
+    "label": "Sở giao dịch chứng khoán",
+    "aliases": [
+      "sàn giao dịch chứng khoán",
+      "sàn chứng khoán"
+    ],
+    "loanwords": [
+      "stock exchange",
+      "bourse"
+    ],
+    "plain_descriptions": [
+      "thị trường có tổ chức để người mua và người bán khớp lệnh mua bán cổ phiếu",
+      "nơi niêm yết và tổ chức giao dịch chứng khoán theo các quy định nghiêm ngặt của nhà nước"
+    ],
+    "summary": "Doanh nghiệp được thành lập và hoạt động theo quy định của pháp luật nhằm tổ chức thị trường giao dịch chứng khoán cho các chứng khoán niêm yết và đăng ký giao dịch.",
+    "domains": [
+      "finance/investing/stocks"
+    ],
+    "level": 1,
+    "status": "draft"
+  },
+  {
     "id": "story-point",
     "label": "Story point",
     "aliases": [
@@ -4237,6 +4776,29 @@
     "summary": "Siêu tham số lấy mẫu điều chỉnh độ dốc của phân phối xác suất token trước khi áp dụng hàm softmax nhằm kiểm soát tính ngẫu nhiên của câu trả lời.",
     "domains": [
       "it/ai-ml/llm-agents"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
+    "id": "term-deposit",
+    "label": "Tiền gửi có kỳ hạn",
+    "aliases": [
+      "tiết kiệm có kỳ hạn",
+      "tiền gửi định kỳ"
+    ],
+    "loanwords": [
+      "term deposit",
+      "certificate of deposit",
+      "CD"
+    ],
+    "plain_descriptions": [
+      "khoản tiền gửi ngân hàng cam kết giữ trong một khoảng thời gian nhất định để hưởng lãi suất cao",
+      "hình thức gửi tiết kiệm có ngày đáo hạn cố định và bị giảm lãi nếu rút tiền trước hạn"
+    ],
+    "summary": "Khoản tiền gửi tại tổ chức tín dụng có thời hạn xác định, được hưởng mức lãi suất cố định cam kết và áp dụng quy định tính lãi không kỳ hạn nếu rút trước hạn.",
+    "domains": [
+      "finance/banking/deposits"
     ],
     "level": 2,
     "status": "draft"
@@ -4575,6 +5137,28 @@
       "it/infrastructure/cloud"
     ],
     "level": 1,
+    "status": "draft"
+  },
+  {
+    "id": "volatility",
+    "label": "Độ biến động",
+    "qualifier": "(Tài chính)",
+    "aliases": [
+      "mức độ biến động",
+      "biến động giá"
+    ],
+    "loanwords": [
+      "volatility"
+    ],
+    "plain_descriptions": [
+      "mức độ tăng giảm thất thường và nhanh chóng của giá cổ phiếu trong một khoảng thời gian",
+      "thước đo cho thấy giá tài sản rung lắc mạnh hay êm ả trên thị trường"
+    ],
+    "summary": "Thước đo thống kê mức độ phân tán của tỷ suất sinh lời của một chứng khoán hoặc chỉ số thị trường trong một khoảng thời gian nhất định.",
+    "domains": [
+      "finance/investing/portfolio-risk"
+    ],
+    "level": 2,
     "status": "draft"
   },
   {

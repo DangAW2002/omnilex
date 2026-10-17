@@ -484,6 +484,66 @@
     "autolink": true
   },
   {
+    "key": "Chuyển khoản",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "bank-transfer",
+        "label": "Chuyển khoản",
+        "summary": "Giao dịch chuyển tiền điện tử từ tài khoản của người gửi sang tài khoản của người nhận thông qua hệ thống thanh toán liên ngân hàng.",
+        "domains": [
+          "finance/banking/payments"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "chuyển khoản ngân hàng",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "bank-transfer",
+        "label": "Chuyển khoản",
+        "summary": "Giao dịch chuyển tiền điện tử từ tài khoản của người gửi sang tài khoản của người nhận thông qua hệ thống thanh toán liên ngân hàng.",
+        "domains": [
+          "finance/banking/payments"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "chuyển tiền qua ngân hàng",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "bank-transfer",
+        "label": "Chuyển khoản",
+        "summary": "Giao dịch chuyển tiền điện tử từ tài khoản của người gửi sang tài khoản của người nhận thông qua hệ thống thanh toán liên ngân hàng.",
+        "domains": [
+          "finance/banking/payments"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "lệnh chuyển tiền",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "bank-transfer",
+        "label": "Chuyển khoản",
+        "summary": "Giao dịch chuyển tiền điện tử từ tài khoản của người gửi sang tài khoản của người nhận thông qua hệ thống thanh toán liên ngân hàng.",
+        "domains": [
+          "finance/banking/payments"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
     "key": "Batch size",
     "match": "any-case",
     "concepts": [
@@ -529,6 +589,51 @@
     "autolink": true
   },
   {
+    "key": "Blockchain",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "blockchain",
+        "label": "Blockchain",
+        "summary": "Sổ cái kỹ thuật số phi tập trung lưu trữ các giao dịch theo từng khối dữ liệu được liên kết mật mã và xác thực bởi mạng lưới phân tán.",
+        "domains": [
+          "finance/investing/digital-assets"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "chuỗi khối",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "blockchain",
+        "label": "Blockchain",
+        "summary": "Sổ cái kỹ thuật số phi tập trung lưu trữ các giao dịch theo từng khối dữ liệu được liên kết mật mã và xác thực bởi mạng lưới phân tán.",
+        "domains": [
+          "finance/investing/digital-assets"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "công nghệ chuỗi khối",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "blockchain",
+        "label": "Blockchain",
+        "summary": "Sổ cái kỹ thuật số phi tập trung lưu trữ các giao dịch theo từng khối dữ liệu được liên kết mật mã và xác thực bởi mạng lưới phân tán.",
+        "domains": [
+          "finance/investing/digital-assets"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
     "key": "Blue-green deployment",
     "match": "any-case",
     "concepts": [
@@ -568,6 +673,102 @@
         "summary": "Chiến lược triển khai duy trì hai môi trường máy chủ giống hệt nhau (Blue và Green), chuyển toàn bộ lưu lượng sang môi trường mới sau khi kiểm tra đạt chuẩn.",
         "domains": [
           "it/devops/ci-cd"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Trái phiếu",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "bond",
+        "label": "Trái phiếu",
+        "qualifier": "(Tài chính)",
+        "summary": "Loại chứng khoán xác nhận nghĩa vụ nợ của tổ chức phát hành (doanh nghiệp hoặc chính phủ) đối với chủ sở hữu trái phiếu với một khoản tiền nhất định trong một thời gian xác định.",
+        "domains": [
+          "finance/investing/bonds"
+        ]
+      }
+    ],
+    "autolink": false
+  },
+  {
+    "key": "chứng khoán nợ",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "bond",
+        "label": "Trái phiếu",
+        "qualifier": "(Tài chính)",
+        "summary": "Loại chứng khoán xác nhận nghĩa vụ nợ của tổ chức phát hành (doanh nghiệp hoặc chính phủ) đối với chủ sở hữu trái phiếu với một khoản tiền nhất định trong một thời gian xác định.",
+        "domains": [
+          "finance/investing/bonds"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Lợi suất",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "bond-yield",
+        "label": "Lợi suất",
+        "qualifier": "(Tài chính)",
+        "summary": "Tỷ lệ phần trăm lợi nhuận thu được hàng năm từ một khoản đầu tư chứng khoán nợ (trái phiếu) so với giá mua thực tế trên thị trường.",
+        "domains": [
+          "finance/investing/bonds"
+        ]
+      }
+    ],
+    "autolink": false
+  },
+  {
+    "key": "lợi suất trái phiếu",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "bond-yield",
+        "label": "Lợi suất",
+        "qualifier": "(Tài chính)",
+        "summary": "Tỷ lệ phần trăm lợi nhuận thu được hàng năm từ một khoản đầu tư chứng khoán nợ (trái phiếu) so với giá mua thực tế trên thị trường.",
+        "domains": [
+          "finance/investing/bonds"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "tỷ suất sinh lời trái phiếu",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "bond-yield",
+        "label": "Lợi suất",
+        "qualifier": "(Tài chính)",
+        "summary": "Tỷ lệ phần trăm lợi nhuận thu được hàng năm từ một khoản đầu tư chứng khoán nợ (trái phiếu) so với giá mua thực tế trên thị trường.",
+        "domains": [
+          "finance/investing/bonds"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "YTM",
+    "match": "exact-case",
+    "concepts": [
+      {
+        "id": "bond-yield",
+        "label": "Lợi suất",
+        "qualifier": "(Tài chính)",
+        "summary": "Tỷ lệ phần trăm lợi nhuận thu được hàng năm từ một khoản đầu tư chứng khoán nợ (trái phiếu) so với giá mua thực tế trên thị trường.",
+        "domains": [
+          "finance/investing/bonds"
         ]
       }
     ],
@@ -658,6 +859,38 @@
         "summary": "Sự thay đổi trong giao diện phần mềm, thư viện hoặc hệ thống làm mất tính tương thích ngược và đòi hỏi các ứng dụng phụ thuộc phải sửa đổi mã nguồn.",
         "domains": [
           "it/software-engineering/practices"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Ngân sách",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "budget",
+        "label": "Ngân sách",
+        "qualifier": "(Tài chính cá nhân)",
+        "summary": "Kế hoạch tài chính chi tiết ước tính các khoản thu nhập dự kiến và phân bổ vào chi phí sinh hoạt, tiết kiệm và trả nợ trong một khoảng thời gian nhất định.",
+        "domains": [
+          "finance/personal-finance/budget"
+        ]
+      }
+    ],
+    "autolink": false
+  },
+  {
+    "key": "kế hoạch chi tiêu",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "budget",
+        "label": "Ngân sách",
+        "qualifier": "(Tài chính cá nhân)",
+        "summary": "Kế hoạch tài chính chi tiết ước tính các khoản thu nhập dự kiến và phân bổ vào chi phí sinh hoạt, tiết kiệm và trả nợ trong một khoảng thời gian nhất định.",
+        "domains": [
+          "finance/personal-finance/budget"
         ]
       }
     ],
@@ -1454,6 +1687,126 @@
         "summary": "Phương thức định giá quảng cáo trong đó nhà tài trợ chi trả một mức phí cố định cho mỗi 1.000 lượt hiển thị của mẫu quảng cáo.",
         "domains": [
           "media/digital-marketing/paid-ads"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Thẻ tín dụng",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "credit-card",
+        "label": "Thẻ tín dụng",
+        "summary": "Thẻ thanh toán do tổ chức tín dụng phát hành, cho phép chủ thẻ vay tiền trong hạn mức được cấp để thanh toán hàng hóa dịch vụ hoặc rút tiền mặt.",
+        "domains": [
+          "finance/personal-finance/debt-credit"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Điểm tín dụng",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "credit-score",
+        "label": "Điểm tín dụng",
+        "summary": "Chỉ số bằng số phản ánh lịch sử vay nợ và mức độ uy tín tài chính của cá nhân, thể hiện xác suất người đó hoàn trả các khoản nợ đúng hạn.",
+        "domains": [
+          "finance/personal-finance/debt-credit"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "điểm xếp hạng tín dụng",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "credit-score",
+        "label": "Điểm tín dụng",
+        "summary": "Chỉ số bằng số phản ánh lịch sử vay nợ và mức độ uy tín tài chính của cá nhân, thể hiện xác suất người đó hoàn trả các khoản nợ đúng hạn.",
+        "domains": [
+          "finance/personal-finance/debt-credit"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "điểm tín nhiệm",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "credit-score",
+        "label": "Điểm tín dụng",
+        "summary": "Chỉ số bằng số phản ánh lịch sử vay nợ và mức độ uy tín tài chính của cá nhân, thể hiện xác suất người đó hoàn trả các khoản nợ đúng hạn.",
+        "domains": [
+          "finance/personal-finance/debt-credit"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Tiền mã hóa",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "cryptocurrency",
+        "label": "Tiền mã hóa",
+        "summary": "Loại tiền kỹ thuật số sử dụng mật mã học để bảo vệ giao dịch, kiểm soát việc phát hành và vận hành trên sổ cái phân tán.",
+        "domains": [
+          "finance/investing/digital-assets"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "tiền điện tử",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "cryptocurrency",
+        "label": "Tiền mã hóa",
+        "summary": "Loại tiền kỹ thuật số sử dụng mật mã học để bảo vệ giao dịch, kiểm soát việc phát hành và vận hành trên sổ cái phân tán.",
+        "domains": [
+          "finance/investing/digital-assets"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "tiền kỹ thuật số",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "cryptocurrency",
+        "label": "Tiền mã hóa",
+        "summary": "Loại tiền kỹ thuật số sử dụng mật mã học để bảo vệ giao dịch, kiểm soát việc phát hành và vận hành trên sổ cái phân tán.",
+        "domains": [
+          "finance/investing/digital-assets"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "crypto",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "cryptocurrency",
+        "label": "Tiền mã hóa",
+        "summary": "Loại tiền kỹ thuật số sử dụng mật mã học để bảo vệ giao dịch, kiểm soát việc phát hành và vận hành trên sổ cái phân tán.",
+        "domains": [
+          "finance/investing/digital-assets"
         ]
       }
     ],
@@ -2262,6 +2615,126 @@
     "autolink": true
   },
   {
+    "key": "Đa dạng hóa danh mục đầu tư",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "diversification",
+        "label": "Đa dạng hóa danh mục đầu tư",
+        "summary": "Chiến lược phân bổ vốn vào nhiều loại tài sản và ngành nghề khác nhau nhằm giảm thiểu rủi ro phi hệ thống của danh mục đầu tư.",
+        "domains": [
+          "finance/investing/portfolio-risk"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "đa dạng hóa danh mục",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "diversification",
+        "label": "Đa dạng hóa danh mục đầu tư",
+        "summary": "Chiến lược phân bổ vốn vào nhiều loại tài sản và ngành nghề khác nhau nhằm giảm thiểu rủi ro phi hệ thống của danh mục đầu tư.",
+        "domains": [
+          "finance/investing/portfolio-risk"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "đa dạng hóa đầu tư",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "diversification",
+        "label": "Đa dạng hóa danh mục đầu tư",
+        "summary": "Chiến lược phân bổ vốn vào nhiều loại tài sản và ngành nghề khác nhau nhằm giảm thiểu rủi ro phi hệ thống của danh mục đầu tư.",
+        "domains": [
+          "finance/investing/portfolio-risk"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "đa dạng hóa tài sản",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "diversification",
+        "label": "Đa dạng hóa danh mục đầu tư",
+        "summary": "Chiến lược phân bổ vốn vào nhiều loại tài sản và ngành nghề khác nhau nhằm giảm thiểu rủi ro phi hệ thống của danh mục đầu tư.",
+        "domains": [
+          "finance/investing/portfolio-risk"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "đa dạng hóa",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "diversification",
+        "label": "Đa dạng hóa danh mục đầu tư",
+        "summary": "Chiến lược phân bổ vốn vào nhiều loại tài sản và ngành nghề khác nhau nhằm giảm thiểu rủi ro phi hệ thống của danh mục đầu tư.",
+        "domains": [
+          "finance/investing/portfolio-risk"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Cổ tức",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "dividend",
+        "label": "Cổ tức",
+        "summary": "Khoản lợi nhuận ròng được trả cho mỗi cổ phần bằng tiền mặt hoặc bằng tài sản khác từ nguồn lợi nhuận giữ lại của công ty cổ phần.",
+        "domains": [
+          "finance/investing/stocks"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "cổ tức tiền mặt",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "dividend",
+        "label": "Cổ tức",
+        "summary": "Khoản lợi nhuận ròng được trả cho mỗi cổ phần bằng tiền mặt hoặc bằng tài sản khác từ nguồn lợi nhuận giữ lại của công ty cổ phần.",
+        "domains": [
+          "finance/investing/stocks"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "cổ tức bằng cổ phiếu",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "dividend",
+        "label": "Cổ tức",
+        "summary": "Khoản lợi nhuận ròng được trả cho mỗi cổ phần bằng tiền mặt hoặc bằng tài sản khác từ nguồn lợi nhuận giữ lại của công ty cổ phần.",
+        "domains": [
+          "finance/investing/stocks"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
     "key": "Domain Name System (DNS)",
     "match": "any-case",
     "concepts": [
@@ -2331,6 +2804,51 @@
         "summary": "Nền tảng phần mềm cung cấp công cụ xây dựng, chia sẻ và thực thi các container ứng dụng thông qua cơ chế ảo hóa của hệ điều hành máy chủ.",
         "domains": [
           "it/devops/containers"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Ví điện tử",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "e-wallet",
+        "label": "Ví điện tử",
+        "summary": "Dịch vụ tài khoản điện tử do các tổ chức trung gian thanh toán cung ứng, cho phép lưu trữ giá trị tiền tệ điện tử và thực hiện các giao dịch thanh toán không dùng tiền mặt.",
+        "domains": [
+          "finance/banking/payments"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "ví số",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "e-wallet",
+        "label": "Ví điện tử",
+        "summary": "Dịch vụ tài khoản điện tử do các tổ chức trung gian thanh toán cung ứng, cho phép lưu trữ giá trị tiền tệ điện tử và thực hiện các giao dịch thanh toán không dùng tiền mặt.",
+        "domains": [
+          "finance/banking/payments"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "ví thanh toán điện tử",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "e-wallet",
+        "label": "Ví điện tử",
+        "summary": "Dịch vụ tài khoản điện tử do các tổ chức trung gian thanh toán cung ứng, cho phép lưu trữ giá trị tiền tệ điện tử và thực hiện các giao dịch thanh toán không dùng tiền mặt.",
+        "domains": [
+          "finance/banking/payments"
         ]
       }
     ],
@@ -2485,6 +3003,51 @@
         "summary": "Dãy số do mô hình học ra để biểu diễn một đối tượng như từ hay tài liệu, sao cho các đối tượng giống nhau nằm gần nhau.",
         "domains": [
           "it/ai-ml/nlp"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Quỹ khẩn cấp",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "emergency-fund",
+        "label": "Quỹ khẩn cấp",
+        "summary": "Khoản tiền dự phòng có tính thanh khoản cao được lập ra để chi trả cho các biến cố bất ngờ hoặc gián đoạn thu nhập mà không phải vay nợ hay bán tháo tài sản đầu tư.",
+        "domains": [
+          "finance/personal-finance/saving"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "quỹ dự phòng khẩn cấp",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "emergency-fund",
+        "label": "Quỹ khẩn cấp",
+        "summary": "Khoản tiền dự phòng có tính thanh khoản cao được lập ra để chi trả cho các biến cố bất ngờ hoặc gián đoạn thu nhập mà không phải vay nợ hay bán tháo tài sản đầu tư.",
+        "domains": [
+          "finance/personal-finance/saving"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "quỹ dự phòng",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "emergency-fund",
+        "label": "Quỹ khẩn cấp",
+        "summary": "Khoản tiền dự phòng có tính thanh khoản cao được lập ra để chi trả cho các biến cố bất ngờ hoặc gián đoạn thu nhập mà không phải vay nợ hay bán tháo tài sản đầu tư.",
+        "domains": [
+          "finance/personal-finance/saving"
         ]
       }
     ],
@@ -2683,6 +3246,51 @@
         "summary": "Một chu kỳ huấn luyện hoàn chỉnh mà trong đó thuật toán học máy đã duyệt qua toàn bộ các mẫu trong tập dữ liệu đúng một lần.",
         "domains": [
           "it/ai-ml/foundations"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Quỹ hoán đổi danh mục",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "etf",
+        "label": "Quỹ hoán đổi danh mục",
+        "summary": "Quỹ đầu tư mở mô phỏng theo một chỉ số tham chiếu và các chứng chỉ quỹ được niêm yết, giao dịch liên tục trên sàn chứng khoán.",
+        "domains": [
+          "finance/investing/funds"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "ETF",
+    "match": "exact-case",
+    "concepts": [
+      {
+        "id": "etf",
+        "label": "Quỹ hoán đổi danh mục",
+        "summary": "Quỹ đầu tư mở mô phỏng theo một chỉ số tham chiếu và các chứng chỉ quỹ được niêm yết, giao dịch liên tục trên sàn chứng khoán.",
+        "domains": [
+          "finance/investing/funds"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "quỹ ETF",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "etf",
+        "label": "Quỹ hoán đổi danh mục",
+        "summary": "Quỹ đầu tư mở mô phỏng theo một chỉ số tham chiếu và các chứng chỉ quỹ được niêm yết, giao dịch liên tục trên sàn chứng khoán.",
+        "domains": [
+          "finance/investing/funds"
         ]
       }
     ],
@@ -3487,6 +4095,51 @@
     "autolink": true
   },
   {
+    "key": "Quỹ chỉ số",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "index-fund",
+        "label": "Quỹ chỉ số",
+        "summary": "Quỹ đầu tư quản lý thụ động nhằm mô phỏng lại chính xác tỷ suất sinh lời và cơ cấu của một chỉ số thị trường chuẩn.",
+        "domains": [
+          "finance/investing/funds"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "quỹ mô phỏng chỉ số",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "index-fund",
+        "label": "Quỹ chỉ số",
+        "summary": "Quỹ đầu tư quản lý thụ động nhằm mô phỏng lại chính xác tỷ suất sinh lời và cơ cấu của một chỉ số thị trường chuẩn.",
+        "domains": [
+          "finance/investing/funds"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "quỹ bám sát chỉ số",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "index-fund",
+        "label": "Quỹ chỉ số",
+        "summary": "Quỹ đầu tư quản lý thụ động nhằm mô phỏng lại chính xác tỷ suất sinh lời và cơ cấu của một chỉ số thị trường chuẩn.",
+        "domains": [
+          "finance/investing/funds"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
     "key": "Inference",
     "match": "any-case",
     "concepts": [
@@ -3649,6 +4302,84 @@
         "summary": "Phương pháp quản lý và khởi tạo hạ tầng công nghệ thông tin thông qua các tệp định nghĩa đọc được bằng máy thay vì cấu hình thủ công.",
         "domains": [
           "it/devops/iac"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Mức khấu trừ",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "insurance-deductible",
+        "label": "Mức khấu trừ",
+        "qualifier": "(Bảo hiểm)",
+        "summary": "Số tiền tổn thất nhất định mà bên mua bảo hiểm phải tự gánh chịu trước khi doanh nghiệp bảo hiểm bắt đầu chi trả tiền bồi thường.",
+        "domains": [
+          "finance/personal-finance/insurance"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "mức miễn thường",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "insurance-deductible",
+        "label": "Mức khấu trừ",
+        "qualifier": "(Bảo hiểm)",
+        "summary": "Số tiền tổn thất nhất định mà bên mua bảo hiểm phải tự gánh chịu trước khi doanh nghiệp bảo hiểm bắt đầu chi trả tiền bồi thường.",
+        "domains": [
+          "finance/personal-finance/insurance"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "mức miễn thường có khấu trừ",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "insurance-deductible",
+        "label": "Mức khấu trừ",
+        "qualifier": "(Bảo hiểm)",
+        "summary": "Số tiền tổn thất nhất định mà bên mua bảo hiểm phải tự gánh chịu trước khi doanh nghiệp bảo hiểm bắt đầu chi trả tiền bồi thường.",
+        "domains": [
+          "finance/personal-finance/insurance"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Phí bảo hiểm",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "insurance-premium",
+        "label": "Phí bảo hiểm",
+        "summary": "Khoản tiền mà bên mua bảo hiểm phải đóng cho doanh nghiệp bảo hiểm theo thời hạn và phương thức do các bên thỏa thuận trong hợp đồng bảo hiểm.",
+        "domains": [
+          "finance/personal-finance/insurance"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "phí đóng bảo hiểm",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "insurance-premium",
+        "label": "Phí bảo hiểm",
+        "summary": "Khoản tiền mà bên mua bảo hiểm phải đóng cho doanh nghiệp bảo hiểm theo thời hạn và phương thức do các bên thỏa thuận trong hợp đồng bảo hiểm.",
+        "domains": [
+          "finance/personal-finance/insurance"
         ]
       }
     ],
@@ -4448,6 +5179,51 @@
     "autolink": true
   },
   {
+    "key": "Vốn hóa thị trường",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "market-capitalization",
+        "label": "Vốn hóa thị trường",
+        "summary": "Tổng giá trị thị trường của toàn bộ số cổ phần đang lưu hành của một doanh nghiệp niêm yết, tính bằng thị giá nhân với số lượng cổ phiếu.",
+        "domains": [
+          "finance/investing/valuation"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "giá trị vốn hóa thị trường",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "market-capitalization",
+        "label": "Vốn hóa thị trường",
+        "summary": "Tổng giá trị thị trường của toàn bộ số cổ phần đang lưu hành của một doanh nghiệp niêm yết, tính bằng thị giá nhân với số lượng cổ phiếu.",
+        "domains": [
+          "finance/investing/valuation"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "vốn hóa",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "market-capitalization",
+        "label": "Vốn hóa thị trường",
+        "summary": "Tổng giá trị thị trường của toàn bộ số cổ phần đang lưu hành của một doanh nghiệp niêm yết, tính bằng thị giá nhân với số lượng cổ phiếu.",
+        "domains": [
+          "finance/investing/valuation"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
     "key": "Marketing funnel",
     "match": "any-case",
     "concepts": [
@@ -4955,6 +5731,51 @@
     "autolink": true
   },
   {
+    "key": "Vay thế chấp",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "mortgage",
+        "label": "Vay thế chấp",
+        "summary": "Khoản vay dài hạn được bảo đảm bằng tài sản thuộc sở hữu của bên vay (như nhà đất, xe cộ) nhằm bảo đảm thực hiện nghĩa vụ hoàn trả nợ cho ngân hàng.",
+        "domains": [
+          "finance/banking/lending"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "khoản vay thế chấp",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "mortgage",
+        "label": "Vay thế chấp",
+        "summary": "Khoản vay dài hạn được bảo đảm bằng tài sản thuộc sở hữu của bên vay (như nhà đất, xe cộ) nhằm bảo đảm thực hiện nghĩa vụ hoàn trả nợ cho ngân hàng.",
+        "domains": [
+          "finance/banking/lending"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "thế chấp bất động sản",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "mortgage",
+        "label": "Vay thế chấp",
+        "summary": "Khoản vay dài hạn được bảo đảm bằng tài sản thuộc sở hữu của bên vay (như nhà đất, xe cộ) nhằm bảo đảm thực hiện nghĩa vụ hoàn trả nợ cho ngân hàng.",
+        "domains": [
+          "finance/banking/lending"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
     "key": "MoSCoW method",
     "match": "any-case",
     "concepts": [
@@ -4994,6 +5815,66 @@
         "summary": "Kỹ thuật ưu tiên định tính phân chia các yêu cầu dự án vào 4 cấp độ: Must have (Bắt buộc), Should have (Nên có), Could have (Có thể có) và Won't have (Chưa làm đợt này).",
         "domains": [
           "product/delivery-planning"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Quỹ tương hỗ",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "mutual-fund",
+        "label": "Quỹ tương hỗ",
+        "summary": "Định chế đầu tư tập hợp tiền của nhiều nhà đầu tư để xây dựng và quản lý một danh mục tài sản tài chính đa dạng theo mục tiêu xác định.",
+        "domains": [
+          "finance/investing/funds"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "quỹ đại chúng",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "mutual-fund",
+        "label": "Quỹ tương hỗ",
+        "summary": "Định chế đầu tư tập hợp tiền của nhiều nhà đầu tư để xây dựng và quản lý một danh mục tài sản tài chính đa dạng theo mục tiêu xác định.",
+        "domains": [
+          "finance/investing/funds"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "quỹ mở",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "mutual-fund",
+        "label": "Quỹ tương hỗ",
+        "summary": "Định chế đầu tư tập hợp tiền của nhiều nhà đầu tư để xây dựng và quản lý một danh mục tài sản tài chính đa dạng theo mục tiêu xác định.",
+        "domains": [
+          "finance/investing/funds"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "quỹ đầu tư chứng khoán",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "mutual-fund",
+        "label": "Quỹ tương hỗ",
+        "summary": "Định chế đầu tư tập hợp tiền của nhiều nhà đầu tư để xây dựng và quản lý một danh mục tài sản tài chính đa dạng theo mục tiêu xác định.",
+        "domains": [
+          "finance/investing/funds"
         ]
       }
     ],
@@ -5465,6 +6346,51 @@
     "autolink": true
   },
   {
+    "key": "Thấu chi",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "overdraft",
+        "label": "Thấu chi",
+        "summary": "Nghiệp vụ cho vay của tổ chức tín dụng cho phép chủ tài khoản thanh toán chi tiêu vượt quá số dư thực tế có trên tài khoản thanh toán trong một hạn mức xác định.",
+        "domains": [
+          "finance/banking/lending"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "vay thấu chi",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "overdraft",
+        "label": "Thấu chi",
+        "summary": "Nghiệp vụ cho vay của tổ chức tín dụng cho phép chủ tài khoản thanh toán chi tiêu vượt quá số dư thực tế có trên tài khoản thanh toán trong một hạn mức xác định.",
+        "domains": [
+          "finance/banking/lending"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "hạn mức thấu chi",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "overdraft",
+        "label": "Thấu chi",
+        "summary": "Nghiệp vụ cho vay của tổ chức tín dụng cho phép chủ tài khoản thanh toán chi tiêu vượt quá số dư thực tế có trên tài khoản thanh toán trong một hạn mức xác định.",
+        "domains": [
+          "finance/banking/lending"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
     "key": "Quá khớp",
     "match": "any-case",
     "concepts": [
@@ -5504,6 +6430,111 @@
         "summary": "Phương pháp phân chia các tập dữ liệu lớn thành từng phần hoặc từng trang nhỏ nhằm tối ưu hiệu năng và băng thông truyền tải.",
         "domains": [
           "it/web/api"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Hệ số P/E",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "pe-ratio",
+        "label": "Hệ số P/E",
+        "summary": "Chỉ số định giá tài chính đo lường tỷ lệ giữa thị giá của một cổ phiếu và thu nhập trên mỗi cổ phần (EPS) do doanh nghiệp tạo ra trong một năm.",
+        "domains": [
+          "finance/investing/valuation"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "chỉ số P/E",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "pe-ratio",
+        "label": "Hệ số P/E",
+        "summary": "Chỉ số định giá tài chính đo lường tỷ lệ giữa thị giá của một cổ phiếu và thu nhập trên mỗi cổ phần (EPS) do doanh nghiệp tạo ra trong một năm.",
+        "domains": [
+          "finance/investing/valuation"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "tỷ số P/E",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "pe-ratio",
+        "label": "Hệ số P/E",
+        "summary": "Chỉ số định giá tài chính đo lường tỷ lệ giữa thị giá của một cổ phiếu và thu nhập trên mỗi cổ phần (EPS) do doanh nghiệp tạo ra trong một năm.",
+        "domains": [
+          "finance/investing/valuation"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "tỷ số giá trên thu nhập",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "pe-ratio",
+        "label": "Hệ số P/E",
+        "summary": "Chỉ số định giá tài chính đo lường tỷ lệ giữa thị giá của một cổ phiếu và thu nhập trên mỗi cổ phần (EPS) do doanh nghiệp tạo ra trong một năm.",
+        "domains": [
+          "finance/investing/valuation"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "P/E",
+    "match": "exact-case",
+    "concepts": [
+      {
+        "id": "pe-ratio",
+        "label": "Hệ số P/E",
+        "summary": "Chỉ số định giá tài chính đo lường tỷ lệ giữa thị giá của một cổ phiếu và thu nhập trên mỗi cổ phần (EPS) do doanh nghiệp tạo ra trong một năm.",
+        "domains": [
+          "finance/investing/valuation"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Thuế thu nhập cá nhân",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "personal-income-tax",
+        "label": "Thuế thu nhập cá nhân",
+        "summary": "Khoản thuế trực thu đánh vào tiền lương, tiền công và các nguồn thu nhập hợp pháp khác của cá nhân sau khi đã trừ các khoản giảm trừ gia cảnh.",
+        "domains": [
+          "finance/personal-finance/tax"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "PIT",
+    "match": "exact-case",
+    "concepts": [
+      {
+        "id": "personal-income-tax",
+        "label": "Thuế thu nhập cá nhân",
+        "summary": "Khoản thuế trực thu đánh vào tiền lương, tiền công và các nguồn thu nhập hợp pháp khác của cá nhân sau khi đã trừ các khoản giảm trừ gia cảnh.",
+        "domains": [
+          "finance/personal-finance/tax"
         ]
       }
     ],
@@ -6587,6 +7618,36 @@
         "summary": "Cá nhân hoặc tổ chức bày tỏ sự quan tâm đến sản phẩm hoặc dịch vụ của doanh nghiệp và cung cấp thông tin liên hệ để được tư vấn tiếp theo.",
         "domains": [
           "media/digital-marketing/metrics-analytics"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Tài khoản tiết kiệm",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "savings-account",
+        "label": "Tài khoản tiết kiệm",
+        "summary": "Tài khoản tiền gửi sinh lãi tại ngân hàng hoặc tổ chức tín dụng, giúp bảo toàn vốn và cho phép rút tiền linh hoạt khi cần chi tiêu.",
+        "domains": [
+          "finance/banking/deposits"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "tiền gửi tiết kiệm",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "savings-account",
+        "label": "Tài khoản tiết kiệm",
+        "summary": "Tài khoản tiền gửi sinh lãi tại ngân hàng hoặc tổ chức tín dụng, giúp bảo toàn vốn và cho phép rút tiền linh hoạt khi cần chi tiêu.",
+        "domains": [
+          "finance/banking/deposits"
         ]
       }
     ],
@@ -7792,6 +8853,83 @@
     "autolink": true
   },
   {
+    "key": "Cổ phiếu",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "stock",
+        "label": "Cổ phiếu",
+        "qualifier": "(Tài chính)",
+        "summary": "Chứng chỉ xác nhận quyền và lợi ích hợp pháp của người sở hữu đối với một phần vốn cổ phần của tổ chức phát hành.",
+        "domains": [
+          "finance/investing/stocks"
+        ]
+      }
+    ],
+    "autolink": false
+  },
+  {
+    "key": "chứng khoán vốn",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "stock",
+        "label": "Cổ phiếu",
+        "qualifier": "(Tài chính)",
+        "summary": "Chứng chỉ xác nhận quyền và lợi ích hợp pháp của người sở hữu đối với một phần vốn cổ phần của tổ chức phát hành.",
+        "domains": [
+          "finance/investing/stocks"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Sở giao dịch chứng khoán",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "stock-exchange",
+        "label": "Sở giao dịch chứng khoán",
+        "summary": "Doanh nghiệp được thành lập và hoạt động theo quy định của pháp luật nhằm tổ chức thị trường giao dịch chứng khoán cho các chứng khoán niêm yết và đăng ký giao dịch.",
+        "domains": [
+          "finance/investing/stocks"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "sàn giao dịch chứng khoán",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "stock-exchange",
+        "label": "Sở giao dịch chứng khoán",
+        "summary": "Doanh nghiệp được thành lập và hoạt động theo quy định của pháp luật nhằm tổ chức thị trường giao dịch chứng khoán cho các chứng khoán niêm yết và đăng ký giao dịch.",
+        "domains": [
+          "finance/investing/stocks"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "sàn chứng khoán",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "stock-exchange",
+        "label": "Sở giao dịch chứng khoán",
+        "summary": "Doanh nghiệp được thành lập và hoạt động theo quy định của pháp luật nhằm tổ chức thị trường giao dịch chứng khoán cho các chứng khoán niêm yết và đăng ký giao dịch.",
+        "domains": [
+          "finance/investing/stocks"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
     "key": "Story point",
     "match": "any-case",
     "concepts": [
@@ -7987,6 +9125,51 @@
       }
     ],
     "autolink": false
+  },
+  {
+    "key": "Tiền gửi có kỳ hạn",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "term-deposit",
+        "label": "Tiền gửi có kỳ hạn",
+        "summary": "Khoản tiền gửi tại tổ chức tín dụng có thời hạn xác định, được hưởng mức lãi suất cố định cam kết và áp dụng quy định tính lãi không kỳ hạn nếu rút trước hạn.",
+        "domains": [
+          "finance/banking/deposits"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "tiết kiệm có kỳ hạn",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "term-deposit",
+        "label": "Tiền gửi có kỳ hạn",
+        "summary": "Khoản tiền gửi tại tổ chức tín dụng có thời hạn xác định, được hưởng mức lãi suất cố định cam kết và áp dụng quy định tính lãi không kỳ hạn nếu rút trước hạn.",
+        "domains": [
+          "finance/banking/deposits"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "tiền gửi định kỳ",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "term-deposit",
+        "label": "Tiền gửi có kỳ hạn",
+        "summary": "Khoản tiền gửi tại tổ chức tín dụng có thời hạn xác định, được hưởng mức lãi suất cố định cam kết và áp dụng quy định tính lãi không kỳ hạn nếu rút trước hạn.",
+        "domains": [
+          "finance/banking/deposits"
+        ]
+      }
+    ],
+    "autolink": true
   },
   {
     "key": "Throughput",
@@ -8601,6 +9784,54 @@
         "summary": "Hệ thống giả lập bằng phần mềm của một máy tính vật lý, thực thi các ứng dụng bên trong một hệ điều hành khách riêng biệt dưới sự quản lý của phần mềm ảo hóa.",
         "domains": [
           "it/infrastructure/cloud"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Độ biến động",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "volatility",
+        "label": "Độ biến động",
+        "qualifier": "(Tài chính)",
+        "summary": "Thước đo thống kê mức độ phân tán của tỷ suất sinh lời của một chứng khoán hoặc chỉ số thị trường trong một khoảng thời gian nhất định.",
+        "domains": [
+          "finance/investing/portfolio-risk"
+        ]
+      }
+    ],
+    "autolink": false
+  },
+  {
+    "key": "mức độ biến động",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "volatility",
+        "label": "Độ biến động",
+        "qualifier": "(Tài chính)",
+        "summary": "Thước đo thống kê mức độ phân tán của tỷ suất sinh lời của một chứng khoán hoặc chỉ số thị trường trong một khoảng thời gian nhất định.",
+        "domains": [
+          "finance/investing/portfolio-risk"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "biến động giá",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "volatility",
+        "label": "Độ biến động",
+        "qualifier": "(Tài chính)",
+        "summary": "Thước đo thống kê mức độ phân tán của tỷ suất sinh lời của một chứng khoán hoặc chỉ số thị trường trong một khoảng thời gian nhất định.",
+        "domains": [
+          "finance/investing/portfolio-risk"
         ]
       }
     ],

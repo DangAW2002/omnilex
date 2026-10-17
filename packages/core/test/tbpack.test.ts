@@ -221,7 +221,9 @@ describe('registry', () => {
     expect(registry.packs.finance.versions[Object.keys(registry.packs.finance.versions)[0]].url).toMatch(/^finance-.*\.tbpack$/);
     const home = path.join(temp, 'home-registry');
     const installed = await installFromRegistries({ home, registries: [path.join(out, 'registry.json')], id: 'finance' });
-    expect(installed.map((item) => item.id)).toEqual(['finance', 'finance.corporate-finance', 'finance.economics', 'finance.investing', 'finance.personal-finance']);
+    const expected = ['finance', ...Object.keys(JSON.parse(fs.readFileSync(path.join(dist, 'packs', 'finance', 'pack.json'), 'utf-8')).requires).sort()];
+    expect(expected.length).toBeGreaterThan(1);
+    expect(installed.map((item) => item.id)).toEqual(expected);
     expect(installed.every((item) => item.official === false)).toBe(true);
     await expect(installFromRegistries({ home, registries: [path.join(out, 'registry.json')], id: 'nope' })).rejects.toThrow(/not found/);
   });

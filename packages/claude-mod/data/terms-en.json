@@ -358,6 +358,81 @@
     "autolink": true
   },
   {
+    "key": "Bank transfer",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "bank-transfer",
+        "label": "Bank transfer",
+        "summary": "An electronic transfer of funds from one bank account to another across an interbank clearing and settlement network.",
+        "domains": [
+          "finance/banking/payments"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "wire transfer",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "bank-transfer",
+        "label": "Bank transfer",
+        "summary": "An electronic transfer of funds from one bank account to another across an interbank clearing and settlement network.",
+        "domains": [
+          "finance/banking/payments"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "electronic funds transfer",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "bank-transfer",
+        "label": "Bank transfer",
+        "summary": "An electronic transfer of funds from one bank account to another across an interbank clearing and settlement network.",
+        "domains": [
+          "finance/banking/payments"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "EFT",
+    "match": "exact-case",
+    "concepts": [
+      {
+        "id": "bank-transfer",
+        "label": "Bank transfer",
+        "summary": "An electronic transfer of funds from one bank account to another across an interbank clearing and settlement network.",
+        "domains": [
+          "finance/banking/payments"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "credit transfer",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "bank-transfer",
+        "label": "Bank transfer",
+        "summary": "An electronic transfer of funds from one bank account to another across an interbank clearing and settlement network.",
+        "domains": [
+          "finance/banking/payments"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
     "key": "Batch size",
     "match": "any-case",
     "concepts": [
@@ -367,6 +442,51 @@
         "summary": "The number of training samples processed simultaneously in a single iteration before the model parameters are updated.",
         "domains": [
           "it/ai-ml/foundations"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Blockchain",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "blockchain",
+        "label": "Blockchain",
+        "summary": "A decentralized, tamper-resistant digital ledger of transactions recorded cryptographically in linked chronological blocks across a distributed network.",
+        "domains": [
+          "finance/investing/digital-assets"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "distributed ledger technology",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "blockchain",
+        "label": "Blockchain",
+        "summary": "A decentralized, tamper-resistant digital ledger of transactions recorded cryptographically in linked chronological blocks across a distributed network.",
+        "domains": [
+          "finance/investing/digital-assets"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "DLT",
+    "match": "exact-case",
+    "concepts": [
+      {
+        "id": "blockchain",
+        "label": "Blockchain",
+        "summary": "A decentralized, tamper-resistant digital ledger of transactions recorded cryptographically in linked chronological blocks across a distributed network.",
+        "domains": [
+          "finance/investing/digital-assets"
         ]
       }
     ],
@@ -403,6 +523,134 @@
     "autolink": true
   },
   {
+    "key": "Bond",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "bond",
+        "label": "Bond",
+        "qualifier": "(Finance)",
+        "summary": "A fixed-income debt instrument issued by governments or corporations that pays periodic interest to bondholders and repays principal at maturity.",
+        "domains": [
+          "finance/investing/bonds"
+        ]
+      }
+    ],
+    "autolink": false
+  },
+  {
+    "key": "fixed-income security",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "bond",
+        "label": "Bond",
+        "qualifier": "(Finance)",
+        "summary": "A fixed-income debt instrument issued by governments or corporations that pays periodic interest to bondholders and repays principal at maturity.",
+        "domains": [
+          "finance/investing/bonds"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "debt security",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "bond",
+        "label": "Bond",
+        "qualifier": "(Finance)",
+        "summary": "A fixed-income debt instrument issued by governments or corporations that pays periodic interest to bondholders and repays principal at maturity.",
+        "domains": [
+          "finance/investing/bonds"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Yield",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "bond-yield",
+        "label": "Yield",
+        "qualifier": "(Finance)",
+        "summary": "The percentage rate of return generated on a bond or fixed-income investment relative to its purchase price or par value.",
+        "domains": [
+          "finance/investing/bonds"
+        ]
+      }
+    ],
+    "autolink": false
+  },
+  {
+    "key": "bond yield",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "bond-yield",
+        "label": "Yield",
+        "qualifier": "(Finance)",
+        "summary": "The percentage rate of return generated on a bond or fixed-income investment relative to its purchase price or par value.",
+        "domains": [
+          "finance/investing/bonds"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "current yield",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "bond-yield",
+        "label": "Yield",
+        "qualifier": "(Finance)",
+        "summary": "The percentage rate of return generated on a bond or fixed-income investment relative to its purchase price or par value.",
+        "domains": [
+          "finance/investing/bonds"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "yield to maturity",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "bond-yield",
+        "label": "Yield",
+        "qualifier": "(Finance)",
+        "summary": "The percentage rate of return generated on a bond or fixed-income investment relative to its purchase price or par value.",
+        "domains": [
+          "finance/investing/bonds"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "YTM",
+    "match": "exact-case",
+    "concepts": [
+      {
+        "id": "bond-yield",
+        "label": "Yield",
+        "qualifier": "(Finance)",
+        "summary": "The percentage rate of return generated on a bond or fixed-income investment relative to its purchase price or par value.",
+        "domains": [
+          "finance/investing/bonds"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
     "key": "Bounce rate",
     "match": "any-case",
     "concepts": [
@@ -427,6 +675,38 @@
         "summary": "A modification in a software interface, dependency, or system component that breaks backward compatibility and necessitates code adjustments in dependent systems.",
         "domains": [
           "it/software-engineering/practices"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Budget",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "budget",
+        "label": "Budget",
+        "qualifier": "(Personal finance)",
+        "summary": "An itemised financial plan that estimates anticipated income and allocates it toward expenses, savings, and debt payoff over a set period.",
+        "domains": [
+          "finance/personal-finance/budget"
+        ]
+      }
+    ],
+    "autolink": false
+  },
+  {
+    "key": "spending plan",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "budget",
+        "label": "Budget",
+        "qualifier": "(Personal finance)",
+        "summary": "An itemised financial plan that estimates anticipated income and allocates it toward expenses, savings, and debt payoff over a set period.",
+        "domains": [
+          "finance/personal-finance/budget"
         ]
       }
     ],
@@ -1028,6 +1308,111 @@
         "summary": "An advertising pricing model where the buyer pays a predetermined rate for every one thousand impressions their ad receives.",
         "domains": [
           "media/digital-marketing/paid-ads"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Credit card",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "credit-card",
+        "label": "Credit card",
+        "summary": "A payment card issued by a financial institution that enables cardholders to borrow funds up to an approved limit to make purchases or cash advances.",
+        "domains": [
+          "finance/personal-finance/debt-credit"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Credit score",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "credit-score",
+        "label": "Credit score",
+        "summary": "A numerical assessment calculated from credit history that indicates an individual's creditworthiness and likelihood of repaying debt obligations on time.",
+        "domains": [
+          "finance/personal-finance/debt-credit"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "credit rating",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "credit-score",
+        "label": "Credit score",
+        "summary": "A numerical assessment calculated from credit history that indicates an individual's creditworthiness and likelihood of repaying debt obligations on time.",
+        "domains": [
+          "finance/personal-finance/debt-credit"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "FICO score",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "credit-score",
+        "label": "Credit score",
+        "summary": "A numerical assessment calculated from credit history that indicates an individual's creditworthiness and likelihood of repaying debt obligations on time.",
+        "domains": [
+          "finance/personal-finance/debt-credit"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Cryptocurrency",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "cryptocurrency",
+        "label": "Cryptocurrency",
+        "summary": "A digital or virtual currency that relies on cryptographic mechanisms for security and operates across a decentralized distributed ledger.",
+        "domains": [
+          "finance/investing/digital-assets"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "crypto",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "cryptocurrency",
+        "label": "Cryptocurrency",
+        "summary": "A digital or virtual currency that relies on cryptographic mechanisms for security and operates across a decentralized distributed ledger.",
+        "domains": [
+          "finance/investing/digital-assets"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "crypto asset",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "cryptocurrency",
+        "label": "Cryptocurrency",
+        "summary": "A digital or virtual currency that relies on cryptographic mechanisms for security and operates across a decentralized distributed ledger.",
+        "domains": [
+          "finance/investing/digital-assets"
         ]
       }
     ],
@@ -1682,6 +2067,96 @@
     "autolink": true
   },
   {
+    "key": "Diversification",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "diversification",
+        "label": "Diversification",
+        "summary": "A risk-management technique that mixes a wide variety of investments within a portfolio to reduce unsystematic risk.",
+        "domains": [
+          "finance/investing/portfolio-risk"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "portfolio diversification",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "diversification",
+        "label": "Diversification",
+        "summary": "A risk-management technique that mixes a wide variety of investments within a portfolio to reduce unsystematic risk.",
+        "domains": [
+          "finance/investing/portfolio-risk"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "asset diversification",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "diversification",
+        "label": "Diversification",
+        "summary": "A risk-management technique that mixes a wide variety of investments within a portfolio to reduce unsystematic risk.",
+        "domains": [
+          "finance/investing/portfolio-risk"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Dividend",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "dividend",
+        "label": "Dividend",
+        "summary": "A distribution of a portion of a company's post-tax earnings decided by the board of directors and paid out to shareholders.",
+        "domains": [
+          "finance/investing/stocks"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "cash dividend",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "dividend",
+        "label": "Dividend",
+        "summary": "A distribution of a portion of a company's post-tax earnings decided by the board of directors and paid out to shareholders.",
+        "domains": [
+          "finance/investing/stocks"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "stock dividend",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "dividend",
+        "label": "Dividend",
+        "summary": "A distribution of a portion of a company's post-tax earnings decided by the board of directors and paid out to shareholders.",
+        "domains": [
+          "finance/investing/stocks"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
     "key": "Domain Name System (DNS)",
     "match": "any-case",
     "concepts": [
@@ -1736,6 +2211,51 @@
         "summary": "An open commercial platform providing tooling to build, share, package, and execute application containers using host operating system virtualization.",
         "domains": [
           "it/devops/containers"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "E-wallet",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "e-wallet",
+        "label": "E-wallet",
+        "summary": "An electronic application or device that securely stores digital payment credentials and funds to facilitate online, in-app, and contactless transactions.",
+        "domains": [
+          "finance/banking/payments"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "digital wallet",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "e-wallet",
+        "label": "E-wallet",
+        "summary": "An electronic application or device that securely stores digital payment credentials and funds to facilitate online, in-app, and contactless transactions.",
+        "domains": [
+          "finance/banking/payments"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "mobile wallet",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "e-wallet",
+        "label": "E-wallet",
+        "summary": "An electronic application or device that securely stores digital payment credentials and funds to facilitate online, in-app, and contactless transactions.",
+        "domains": [
+          "finance/banking/payments"
         ]
       }
     ],
@@ -1828,6 +2348,51 @@
         "summary": "A list of numbers learned by a model to represent an item such as a word or a document, so that similar items end up close together.",
         "domains": [
           "it/ai-ml/nlp"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Emergency fund",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "emergency-fund",
+        "label": "Emergency fund",
+        "summary": "A liquid cash reserve maintained specifically to absorb unforeseen expenses or income disruptions without taking on debt or liquidating long-term investments.",
+        "domains": [
+          "finance/personal-finance/saving"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "rainy day fund",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "emergency-fund",
+        "label": "Emergency fund",
+        "summary": "A liquid cash reserve maintained specifically to absorb unforeseen expenses or income disruptions without taking on debt or liquidating long-term investments.",
+        "domains": [
+          "finance/personal-finance/saving"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "emergency reserve",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "emergency-fund",
+        "label": "Emergency fund",
+        "summary": "A liquid cash reserve maintained specifically to absorb unforeseen expenses or income disruptions without taking on debt or liquidating long-term investments.",
+        "domains": [
+          "finance/personal-finance/saving"
         ]
       }
     ],
@@ -1980,6 +2545,51 @@
         "summary": "One complete training cycle during which the learning algorithm processes every sample in the training dataset exactly once.",
         "domains": [
           "it/ai-ml/foundations"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Exchange-Traded Fund (ETF)",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "etf",
+        "label": "Exchange-Traded Fund (ETF)",
+        "summary": "An investment fund traded directly on securities exchanges that holds a portfolio of assets designed to track an underlying index or sector.",
+        "domains": [
+          "finance/investing/funds"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "ETF",
+    "match": "exact-case",
+    "concepts": [
+      {
+        "id": "etf",
+        "label": "Exchange-Traded Fund (ETF)",
+        "summary": "An investment fund traded directly on securities exchanges that holds a portfolio of assets designed to track an underlying index or sector.",
+        "domains": [
+          "finance/investing/funds"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "exchange-traded fund",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "etf",
+        "label": "Exchange-Traded Fund (ETF)",
+        "summary": "An investment fund traded directly on securities exchanges that holds a portfolio of assets designed to track an underlying index or sector.",
+        "domains": [
+          "finance/investing/funds"
         ]
       }
     ],
@@ -2556,6 +3166,51 @@
     "autolink": true
   },
   {
+    "key": "Index fund",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "index-fund",
+        "label": "Index fund",
+        "summary": "A passively managed mutual fund or exchange-traded fund designed to replicate the performance and asset weighting of a specific benchmark financial market index.",
+        "domains": [
+          "finance/investing/funds"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "index-tracking fund",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "index-fund",
+        "label": "Index fund",
+        "summary": "A passively managed mutual fund or exchange-traded fund designed to replicate the performance and asset weighting of a specific benchmark financial market index.",
+        "domains": [
+          "finance/investing/funds"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "tracker fund",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "index-fund",
+        "label": "Index fund",
+        "summary": "A passively managed mutual fund or exchange-traded fund designed to replicate the performance and asset weighting of a specific benchmark financial market index.",
+        "domains": [
+          "finance/investing/funds"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
     "key": "Inference",
     "match": "any-case",
     "concepts": [
@@ -2626,6 +3281,84 @@
         "summary": "The practice of managing, provisioning, and configuring IT infrastructure through machine-readable definition files rather than manual procedures.",
         "domains": [
           "it/devops/iac"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Deductible",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "insurance-deductible",
+        "label": "Deductible",
+        "qualifier": "(Insurance)",
+        "summary": "The specified amount of out-of-pocket expenses that an insured policyholder must pay toward covered losses before the insurer begins paying benefits.",
+        "domains": [
+          "finance/personal-finance/insurance"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "insurance deductible",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "insurance-deductible",
+        "label": "Deductible",
+        "qualifier": "(Insurance)",
+        "summary": "The specified amount of out-of-pocket expenses that an insured policyholder must pay toward covered losses before the insurer begins paying benefits.",
+        "domains": [
+          "finance/personal-finance/insurance"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "out-of-pocket deductible",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "insurance-deductible",
+        "label": "Deductible",
+        "qualifier": "(Insurance)",
+        "summary": "The specified amount of out-of-pocket expenses that an insured policyholder must pay toward covered losses before the insurer begins paying benefits.",
+        "domains": [
+          "finance/personal-finance/insurance"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Insurance premium",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "insurance-premium",
+        "label": "Insurance premium",
+        "summary": "The recurring amount of money an individual or business pays to an insurance company to maintain an active insurance policy.",
+        "domains": [
+          "finance/personal-finance/insurance"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "premium",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "insurance-premium",
+        "label": "Insurance premium",
+        "summary": "The recurring amount of money an individual or business pays to an insurance company to maintain an active insurance policy.",
+        "domains": [
+          "finance/personal-finance/insurance"
         ]
       }
     ],
@@ -3365,6 +4098,36 @@
     "autolink": true
   },
   {
+    "key": "Market capitalization",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "market-capitalization",
+        "label": "Market capitalization",
+        "summary": "The aggregate dollar market value of a publicly traded company's outstanding equity shares calculated by multiplying share count by share price.",
+        "domains": [
+          "finance/investing/valuation"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "market cap",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "market-capitalization",
+        "label": "Market capitalization",
+        "summary": "The aggregate dollar market value of a publicly traded company's outstanding equity shares calculated by multiplying share count by share price.",
+        "domains": [
+          "finance/investing/valuation"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
     "key": "Marketing funnel",
     "match": "any-case",
     "concepts": [
@@ -3748,6 +4511,51 @@
     "autolink": true
   },
   {
+    "key": "Mortgage",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "mortgage",
+        "label": "Mortgage",
+        "summary": "A secured loan used to purchase or refinance real estate, where the property serves as collateral until the debt is fully amortized.",
+        "domains": [
+          "finance/banking/lending"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "home loan",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "mortgage",
+        "label": "Mortgage",
+        "summary": "A secured loan used to purchase or refinance real estate, where the property serves as collateral until the debt is fully amortized.",
+        "domains": [
+          "finance/banking/lending"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "mortgage loan",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "mortgage",
+        "label": "Mortgage",
+        "summary": "A secured loan used to purchase or refinance real estate, where the property serves as collateral until the debt is fully amortized.",
+        "domains": [
+          "finance/banking/lending"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
     "key": "MoSCoW method",
     "match": "any-case",
     "concepts": [
@@ -3772,6 +4580,51 @@
         "summary": "A qualitative prioritization technique sorting project requirements into four distinct categories: Must have, Should have, Could have, and Won't have.",
         "domains": [
           "product/delivery-planning"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Mutual fund",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "mutual-fund",
+        "label": "Mutual fund",
+        "summary": "An investment vehicle that pools capital from numerous investors to purchase a diversified portfolio of securities managed by a professional investment adviser.",
+        "domains": [
+          "finance/investing/funds"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "open-end fund",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "mutual-fund",
+        "label": "Mutual fund",
+        "summary": "An investment vehicle that pools capital from numerous investors to purchase a diversified portfolio of securities managed by a professional investment adviser.",
+        "domains": [
+          "finance/investing/funds"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "investment fund",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "mutual-fund",
+        "label": "Mutual fund",
+        "summary": "An investment vehicle that pools capital from numerous investors to purchase a diversified portfolio of securities managed by a professional investment adviser.",
+        "domains": [
+          "finance/investing/funds"
         ]
       }
     ],
@@ -4123,6 +4976,51 @@
     "autolink": true
   },
   {
+    "key": "Overdraft",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "overdraft",
+        "label": "Overdraft",
+        "summary": "An extension of credit from a lending institution that occurs when an account balance dips below zero to cover transactions.",
+        "domains": [
+          "finance/banking/lending"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "overdraft protection",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "overdraft",
+        "label": "Overdraft",
+        "summary": "An extension of credit from a lending institution that occurs when an account balance dips below zero to cover transactions.",
+        "domains": [
+          "finance/banking/lending"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "bank overdraft",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "overdraft",
+        "label": "Overdraft",
+        "summary": "An extension of credit from a lending institution that occurs when an account balance dips below zero to cover transactions.",
+        "domains": [
+          "finance/banking/lending"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
     "key": "Overfitting",
     "match": "any-case",
     "concepts": [
@@ -4177,6 +5075,126 @@
         "summary": "A design technique that breaks large data sets into discrete subsets or pages to manage bandwidth and system performance.",
         "domains": [
           "it/web/api"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Price-to-earnings ratio (P/E)",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "pe-ratio",
+        "label": "Price-to-earnings ratio (P/E)",
+        "summary": "A valuation metric that measures a company's current share price relative to its per-share earnings over a twelve-month period.",
+        "domains": [
+          "finance/investing/valuation"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "P/E",
+    "match": "exact-case",
+    "concepts": [
+      {
+        "id": "pe-ratio",
+        "label": "Price-to-earnings ratio (P/E)",
+        "summary": "A valuation metric that measures a company's current share price relative to its per-share earnings over a twelve-month period.",
+        "domains": [
+          "finance/investing/valuation"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "P/E ratio",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "pe-ratio",
+        "label": "Price-to-earnings ratio (P/E)",
+        "summary": "A valuation metric that measures a company's current share price relative to its per-share earnings over a twelve-month period.",
+        "domains": [
+          "finance/investing/valuation"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "price-to-earnings",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "pe-ratio",
+        "label": "Price-to-earnings ratio (P/E)",
+        "summary": "A valuation metric that measures a company's current share price relative to its per-share earnings over a twelve-month period.",
+        "domains": [
+          "finance/investing/valuation"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "PE ratio",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "pe-ratio",
+        "label": "Price-to-earnings ratio (P/E)",
+        "summary": "A valuation metric that measures a company's current share price relative to its per-share earnings over a twelve-month period.",
+        "domains": [
+          "finance/investing/valuation"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Personal income tax",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "personal-income-tax",
+        "label": "Personal income tax",
+        "summary": "A direct tax levied by governments on the wages, salaries, investment gains, and other financial earnings of individuals.",
+        "domains": [
+          "finance/personal-finance/tax"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "individual income tax",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "personal-income-tax",
+        "label": "Personal income tax",
+        "summary": "A direct tax levied by governments on the wages, salaries, investment gains, and other financial earnings of individuals.",
+        "domains": [
+          "finance/personal-finance/tax"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "PIT",
+    "match": "exact-case",
+    "concepts": [
+      {
+        "id": "personal-income-tax",
+        "label": "Personal income tax",
+        "summary": "A direct tax levied by governments on the wages, salaries, investment gains, and other financial earnings of individuals.",
+        "domains": [
+          "finance/personal-finance/tax"
         ]
       }
     ],
@@ -4971,6 +5989,21 @@
         "summary": "An individual or organization that has expressed interest in a business's products or services and provided contact details for future communication.",
         "domains": [
           "media/digital-marketing/metrics-analytics"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Savings account",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "savings-account",
+        "label": "Savings account",
+        "summary": "An interest-bearing deposit account held at a bank or credit union that provides capital security, liquidity, and modest interest returns.",
+        "domains": [
+          "finance/banking/deposits"
         ]
       }
     ],
@@ -5809,6 +6842,130 @@
     "autolink": true
   },
   {
+    "key": "Stock",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "stock",
+        "label": "Stock",
+        "qualifier": "(Finance)",
+        "summary": "An equity security that represents fractional ownership in a corporation and entitles the stockholder to proportionate claims on earnings and voting rights.",
+        "domains": [
+          "finance/investing/stocks"
+        ]
+      }
+    ],
+    "autolink": false
+  },
+  {
+    "key": "shares",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "stock",
+        "label": "Stock",
+        "qualifier": "(Finance)",
+        "summary": "An equity security that represents fractional ownership in a corporation and entitles the stockholder to proportionate claims on earnings and voting rights.",
+        "domains": [
+          "finance/investing/stocks"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "equities",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "stock",
+        "label": "Stock",
+        "qualifier": "(Finance)",
+        "summary": "An equity security that represents fractional ownership in a corporation and entitles the stockholder to proportionate claims on earnings and voting rights.",
+        "domains": [
+          "finance/investing/stocks"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "equity securities",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "stock",
+        "label": "Stock",
+        "qualifier": "(Finance)",
+        "summary": "An equity security that represents fractional ownership in a corporation and entitles the stockholder to proportionate claims on earnings and voting rights.",
+        "domains": [
+          "finance/investing/stocks"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Stock exchange",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "stock-exchange",
+        "label": "Stock exchange",
+        "summary": "An organized, regulated marketplace where securities such as stocks, bonds, and exchange-traded funds are bought and sold under standardized rules.",
+        "domains": [
+          "finance/investing/stocks"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "securities exchange",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "stock-exchange",
+        "label": "Stock exchange",
+        "summary": "An organized, regulated marketplace where securities such as stocks, bonds, and exchange-traded funds are bought and sold under standardized rules.",
+        "domains": [
+          "finance/investing/stocks"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "bourse",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "stock-exchange",
+        "label": "Stock exchange",
+        "summary": "An organized, regulated marketplace where securities such as stocks, bonds, and exchange-traded funds are bought and sold under standardized rules.",
+        "domains": [
+          "finance/investing/stocks"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "stock market",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "stock-exchange",
+        "label": "Stock exchange",
+        "summary": "An organized, regulated marketplace where securities such as stocks, bonds, and exchange-traded funds are bought and sold under standardized rules.",
+        "domains": [
+          "finance/investing/stocks"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
     "key": "Story point",
     "match": "any-case",
     "concepts": [
@@ -5928,6 +7085,81 @@
       }
     ],
     "autolink": false
+  },
+  {
+    "key": "Term deposit",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "term-deposit",
+        "label": "Term deposit",
+        "summary": "A fixed-term bank deposit that pays a predetermined rate of interest until a specified maturity date, imposing penalties for early withdrawal.",
+        "domains": [
+          "finance/banking/deposits"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "certificate of deposit",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "term-deposit",
+        "label": "Term deposit",
+        "summary": "A fixed-term bank deposit that pays a predetermined rate of interest until a specified maturity date, imposing penalties for early withdrawal.",
+        "domains": [
+          "finance/banking/deposits"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "CD",
+    "match": "exact-case",
+    "concepts": [
+      {
+        "id": "term-deposit",
+        "label": "Term deposit",
+        "summary": "A fixed-term bank deposit that pays a predetermined rate of interest until a specified maturity date, imposing penalties for early withdrawal.",
+        "domains": [
+          "finance/banking/deposits"
+        ]
+      }
+    ],
+    "autolink": false
+  },
+  {
+    "key": "fixed deposit",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "term-deposit",
+        "label": "Term deposit",
+        "summary": "A fixed-term bank deposit that pays a predetermined rate of interest until a specified maturity date, imposing penalties for early withdrawal.",
+        "domains": [
+          "finance/banking/deposits"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "time deposit",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "term-deposit",
+        "label": "Term deposit",
+        "summary": "A fixed-term bank deposit that pays a predetermined rate of interest until a specified maturity date, imposing penalties for early withdrawal.",
+        "domains": [
+          "finance/banking/deposits"
+        ]
+      }
+    ],
+    "autolink": true
   },
   {
     "key": "Throughput",
@@ -6420,6 +7652,54 @@
         "summary": "A software emulation of a physical computer system that executes applications within a dedicated, isolated guest operating system managed by a hypervisor.",
         "domains": [
           "it/infrastructure/cloud"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Volatility",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "volatility",
+        "label": "Volatility",
+        "qualifier": "(Finance)",
+        "summary": "A statistical measure of the dispersion of returns for a given security or market index over a specified timeframe.",
+        "domains": [
+          "finance/investing/portfolio-risk"
+        ]
+      }
+    ],
+    "autolink": false
+  },
+  {
+    "key": "price volatility",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "volatility",
+        "label": "Volatility",
+        "qualifier": "(Finance)",
+        "summary": "A statistical measure of the dispersion of returns for a given security or market index over a specified timeframe.",
+        "domains": [
+          "finance/investing/portfolio-risk"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "market volatility",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "volatility",
+        "label": "Volatility",
+        "qualifier": "(Finance)",
+        "summary": "A statistical measure of the dispersion of returns for a given security or market index over a specified timeframe.",
+        "domains": [
+          "finance/investing/portfolio-risk"
         ]
       }
     ],

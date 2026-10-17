@@ -50,7 +50,10 @@ describe('T-I6: starter pack', () => {
     expect(cards.length).toBe(pack.concepts);
     expect(cards.every((card) => card.level === 1)).toBe(true);
     const levelOne = [...repo.concepts.values()].filter((record) => record.metadata.level === 1).length;
-    expect(cards.length).toBe(Math.min(levelOne, 300));
+    // Every level-1 concept up to 300, unless the 1 MB cap stops it first.
+    const wanted = Math.min(levelOne, 300);
+    expect(cards.length).toBeLessThanOrEqual(wanted);
+    if (cards.length < wanted) expect(bytes).toBeGreaterThan(STARTER_MAX_BYTES * 0.9);
   });
 
   it('ships with the mod as a small dist of its own', () => {

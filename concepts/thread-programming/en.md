@@ -10,6 +10,7 @@ plain_descriptions:
   - "lightweight execution line running inside a process that shares memory with sibling threads"
 summary: "The smallest unit of execution within an operating system process, sharing its parent memory space and resources with other threads."
 confusable_notes:
+  thread-iot: "Thread (Programming) is a unit of execution inside a process, whereas Thread (IoT) is an IPv6 wireless mesh networking protocol for low-power devices."
   os-process: "A process owns an independent, isolated memory space and dedicated system resources, whereas a thread lives inside a process and shares its address space with sibling threads."
 follow_up_questions:
   - "How do mutex locks and semaphores prevent race conditions between concurrent threads sharing memory?"

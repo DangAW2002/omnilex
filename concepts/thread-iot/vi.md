@@ -12,6 +12,7 @@ plain_descriptions:
   - "giao thức mạng lưới tự phục hồi giúp các thiết bị gia đình kết nối thẳng mà không cần hub trung tâm"
 summary: "Giao thức mạng lưới không dây công suất thấp dựa trên nền tảng địa chỉ IPv6 và chuẩn vô tuyến IEEE 802.15.4, mang lại kết nối tin cậy và tự phục hồi cho các thiết bị nhà thông minh."
 confusable_notes:
+  thread-programming: "Thread (IoT) là giao thức mạng lưới không dây, còn Thread (Lập trình) là luồng thực thi được hệ điều hành lập lịch bên trong một tiến trình."
   matter-iot: "Thread là giao thức tầng truyền dẫn mạng lưới không dây (tầng 3), trong khi Matter là tầng ứng dụng phía trên (tầng 7) chạy được đồng thời trên cả Thread, Wi-Fi và Ethernet."
 follow_up_questions:
   - "Kỹ thuật nén tiêu đề 6LoWPAN giúp gói tin địa chỉ IPv6 truyền vừa vặn qua khung sóng vô tuyến 127 byte của chuẩn 802.15.4 như thế nào?"

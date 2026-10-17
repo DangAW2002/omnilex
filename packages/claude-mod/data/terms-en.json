@@ -32,6 +32,21 @@
     "autolink": true
   },
   {
+    "key": "Accelerometer",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "accelerometer",
+        "label": "Accelerometer",
+        "summary": "An electromechanical sensor that measures proper acceleration—the physical acceleration experienced by an object relative to freefall, including the gravitational vector.",
+        "domains": [
+          "iot/devices-sensors"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
     "key": "Acceptance criteria",
     "match": "any-case",
     "concepts": [
@@ -92,6 +107,38 @@
     "autolink": true
   },
   {
+    "key": "ACID",
+    "match": "exact-case",
+    "concepts": [
+      {
+        "id": "acid",
+        "label": "ACID",
+        "qualifier": "(Database)",
+        "summary": "A set of four fundamental properties (Atomicity, Consistency, Isolation, Durability) that guarantee database transactions are processed reliably.",
+        "domains": [
+          "it/data/database"
+        ]
+      }
+    ],
+    "autolink": false
+  },
+  {
+    "key": "ACID properties",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "acid",
+        "label": "ACID",
+        "qualifier": "(Database)",
+        "summary": "A set of four fundamental properties (Atomicity, Consistency, Isolation, Durability) that guarantee database transactions are processed reliably.",
+        "domains": [
+          "it/data/database"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
     "key": "Actuator",
     "match": "any-case",
     "concepts": [
@@ -121,6 +168,36 @@
       }
     ],
     "autolink": false
+  },
+  {
+    "key": "Analog-to-digital converter (ADC)",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "adc",
+        "label": "Analog-to-digital converter (ADC)",
+        "summary": "An electronic circuit system that samples a continuous analog voltage waveform and quantizes it into discrete multi-bit digital numeric values.",
+        "domains": [
+          "iot/devices-sensors"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "ADC",
+    "match": "exact-case",
+    "concepts": [
+      {
+        "id": "adc",
+        "label": "Analog-to-digital converter (ADC)",
+        "summary": "An electronic circuit system that samples a continuous analog voltage waveform and quantizes it into discrete multi-bit digital numeric values.",
+        "domains": [
+          "iot/devices-sensors"
+        ]
+      }
+    ],
+    "autolink": true
   },
   {
     "key": "Agent",
@@ -231,6 +308,128 @@
     "autolink": true
   },
   {
+    "key": "Apache Airflow",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "apache-airflow",
+        "label": "Apache Airflow",
+        "summary": "An open-source platform used to programmatically author, schedule, and monitor complex data engineering workflows.",
+        "domains": [
+          "it/data/data-engineering"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Airflow",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "apache-airflow",
+        "label": "Apache Airflow",
+        "summary": "An open-source platform used to programmatically author, schedule, and monitor complex data engineering workflows.",
+        "domains": [
+          "it/data/data-engineering"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Apache Flink",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "apache-flink",
+        "label": "Apache Flink",
+        "summary": "An open-source distributed engine engineered for low-latency stateful stream calculations across finite and infinite event feeds.",
+        "domains": [
+          "it/data/data-engineering"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Flink",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "apache-flink",
+        "label": "Apache Flink",
+        "summary": "An open-source distributed engine engineered for low-latency stateful stream calculations across finite and infinite event feeds.",
+        "domains": [
+          "it/data/data-engineering"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Apache Kafka",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "apache-kafka",
+        "label": "Apache Kafka",
+        "summary": "A distributed event streaming platform used for high-throughput data pipelines, streaming analytics, and system integration.",
+        "domains": [
+          "it/data/data-engineering",
+          "it/web/backend"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Kafka",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "apache-kafka",
+        "label": "Apache Kafka",
+        "summary": "A distributed event streaming platform used for high-throughput data pipelines, streaming analytics, and system integration.",
+        "domains": [
+          "it/data/data-engineering",
+          "it/web/backend"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Apache Spark",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "apache-spark",
+        "label": "Apache Spark",
+        "summary": "An open-source distributed computing framework designed for fast processing of large-scale datasets using in-memory abstractions.",
+        "domains": [
+          "it/data/data-engineering"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Spark",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "apache-spark",
+        "label": "Apache Spark",
+        "summary": "An open-source distributed computing framework designed for fast processing of large-scale datasets using in-memory abstractions.",
+        "domains": [
+          "it/data/data-engineering"
+        ]
+      }
+    ],
+    "autolink": false
+  },
+  {
     "key": "Application Programming Interface (API)",
     "match": "any-case",
     "concepts": [
@@ -289,6 +488,53 @@
         "summary": "A dedicated network address and URL path exposed by an API where clients access a specific service or resource.",
         "domains": [
           "it/web/api"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "API gateway",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "api-gateway",
+        "label": "API gateway",
+        "summary": "An intermediary server pattern that acts as a single point of entry for external clients, routing requests to internal microservices while handling cross-cutting concerns.",
+        "domains": [
+          "it/web/api",
+          "it/software-engineering/architecture"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Gateway routing",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "api-gateway",
+        "label": "API gateway",
+        "summary": "An intermediary server pattern that acts as a single point of entry for external clients, routing requests to internal microservices while handling cross-cutting concerns.",
+        "domains": [
+          "it/web/api",
+          "it/software-engineering/architecture"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Arduino",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "arduino",
+        "label": "Arduino",
+        "summary": "An open-source electronics prototyping platform encompassing programmable microcontroller hardware boards and a simplified software development environment for controlling physical actuators and sensors.",
+        "domains": [
+          "iot/devices-sensors"
         ]
       }
     ],
@@ -586,6 +832,51 @@
     "autolink": true
   },
   {
+    "key": "Backpressure",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "backpressure",
+        "label": "Backpressure",
+        "summary": "A flow-control mechanism in asynchronous software pipelines where downstream consumers signal their capacity upstream to prevent producers from overwhelming them with data.",
+        "domains": [
+          "it/software-engineering/architecture"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Flow control",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "backpressure",
+        "label": "Backpressure",
+        "summary": "A flow-control mechanism in asynchronous software pipelines where downstream consumers signal their capacity upstream to prevent producers from overwhelming them with data.",
+        "domains": [
+          "it/software-engineering/architecture"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Back-pressure",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "backpressure",
+        "label": "Backpressure",
+        "summary": "A flow-control mechanism in asynchronous software pipelines where downstream consumers signal their capacity upstream to prevent producers from overwhelming them with data.",
+        "domains": [
+          "it/software-engineering/architecture"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
     "key": "Balance sheet",
     "match": "any-case",
     "concepts": [
@@ -685,6 +976,36 @@
         "summary": "An electronic transfer of funds from one bank account to another across an interbank clearing and settlement network.",
         "domains": [
           "finance/banking/payments"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Batch processing",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "batch-processing",
+        "label": "Batch processing",
+        "summary": "The execution of a series of non-interactive computing jobs on large accumulated blocks of data without manual intervention.",
+        "domains": [
+          "it/data/data-engineering"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "bulk processing",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "batch-processing",
+        "label": "Batch processing",
+        "summary": "The execution of a series of non-interactive computing jobs on large accumulated blocks of data without manual intervention.",
+        "domains": [
+          "it/data/data-engineering"
         ]
       }
     ],
@@ -1045,6 +1366,51 @@
     "autolink": true
   },
   {
+    "key": "Browser cache",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "browser-cache",
+        "label": "Browser cache",
+        "summary": "A temporary storage mechanism within a web browser that retains previously fetched HTTP resources to speed up future requests.",
+        "domains": [
+          "it/web/frontend"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "web cache",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "browser-cache",
+        "label": "Browser cache",
+        "summary": "A temporary storage mechanism within a web browser that retains previously fetched HTTP resources to speed up future requests.",
+        "domains": [
+          "it/web/frontend"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "HTTP cache",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "browser-cache",
+        "label": "Browser cache",
+        "summary": "A temporary storage mechanism within a web browser that retains previously fetched HTTP resources to speed up future requests.",
+        "domains": [
+          "it/web/frontend"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
     "key": "Budget",
     "match": "any-case",
     "concepts": [
@@ -1077,6 +1443,38 @@
     "autolink": true
   },
   {
+    "key": "Bundler",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "bundler",
+        "label": "Bundler",
+        "qualifier": "(JavaScript)",
+        "summary": "A build tool that traverses project dependencies to combine and optimize multiple code and asset files into production-ready web bundles.",
+        "domains": [
+          "it/web/frontend"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "module bundler",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "bundler",
+        "label": "Bundler",
+        "qualifier": "(JavaScript)",
+        "summary": "A build tool that traverses project dependencies to combine and optimize multiple code and asset files into production-ready web bundles.",
+        "domains": [
+          "it/web/frontend"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
     "key": "Burndown chart",
     "match": "any-case",
     "concepts": [
@@ -1086,6 +1484,38 @@
         "summary": "A graphical representation of work left to do versus time, utilized by agile squads to forecast sprint completion trajectories.",
         "domains": [
           "product/delivery-planning"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Business intelligence (BI)",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "business-intelligence",
+        "label": "Business intelligence (BI)",
+        "summary": "Strategies and software technologies used by enterprises to analyze historical business data and guide operational decision-making.",
+        "domains": [
+          "it/data/analytics",
+          "it/business-systems/enterprise-apps"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "BI",
+    "match": "exact-case",
+    "concepts": [
+      {
+        "id": "business-intelligence",
+        "label": "Business intelligence (BI)",
+        "summary": "Strategies and software technologies used by enterprises to analyze historical business data and guide operational decision-making.",
+        "domains": [
+          "it/data/analytics",
+          "it/business-systems/enterprise-apps"
         ]
       }
     ],
@@ -1231,6 +1661,36 @@
     "autolink": true
   },
   {
+    "key": "CAP theorem",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "cap-theorem",
+        "label": "CAP theorem",
+        "summary": "A fundamental principle of distributed computing stating that a distributed data store can simultaneously provide at most two out of three guarantees, Consistency, Availability, and Partition tolerance.",
+        "domains": [
+          "it/data/database"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Brewer's theorem",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "cap-theorem",
+        "label": "CAP theorem",
+        "summary": "A fundamental principle of distributed computing stating that a distributed data store can simultaneously provide at most two out of three guarantees, Consistency, Availability, and Partition tolerance.",
+        "domains": [
+          "it/data/database"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
     "key": "Cash flow statement",
     "match": "any-case",
     "concepts": [
@@ -1330,6 +1790,36 @@
         "summary": "A prompting technique that asks a model to reason through intermediate steps before it gives the final answer.",
         "domains": [
           "it/ai-ml/llm-agents"
+        ]
+      }
+    ],
+    "autolink": false
+  },
+  {
+    "key": "Change data capture (CDC)",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "change-data-capture",
+        "label": "Change data capture (CDC)",
+        "summary": "A set of software design patterns and techniques used to capture and deliver row-level data modifications as they happen.",
+        "domains": [
+          "it/data/data-engineering"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "CDC",
+    "match": "exact-case",
+    "concepts": [
+      {
+        "id": "change-data-capture",
+        "label": "Change data capture (CDC)",
+        "summary": "A set of software design patterns and techniques used to capture and deliver row-level data modifications as they happen.",
+        "domains": [
+          "it/data/data-engineering"
         ]
       }
     ],
@@ -1444,6 +1934,38 @@
     "autolink": true
   },
   {
+    "key": "Circuit breaker",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "circuit-breaker",
+        "label": "Circuit breaker",
+        "qualifier": "(Software)",
+        "summary": "A design pattern that prevents an application from repeatedly attempting an operation likely to fail, tripping to fail fast and recovering automatically when healthy.",
+        "domains": [
+          "it/software-engineering/architecture"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Circuit breaker pattern",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "circuit-breaker",
+        "label": "Circuit breaker",
+        "qualifier": "(Software)",
+        "summary": "A design pattern that prevents an application from repeatedly attempting an operation likely to fail, tripping to fail fast and recovering automatically when healthy.",
+        "domains": [
+          "it/software-engineering/architecture"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
     "key": "Class",
     "match": "any-case",
     "concepts": [
@@ -1460,6 +1982,51 @@
     "autolink": false
   },
   {
+    "key": "Clean architecture",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "clean-architecture",
+        "label": "Clean architecture",
+        "summary": "A software architectural paradigm structured in concentric layers where dependencies point strictly inward toward domain logic, decoupling business rules from frameworks and databases.",
+        "domains": [
+          "it/software-engineering/architecture"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Onion architecture",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "clean-architecture",
+        "label": "Clean architecture",
+        "summary": "A software architectural paradigm structured in concentric layers where dependencies point strictly inward toward domain logic, decoupling business rules from frameworks and databases.",
+        "domains": [
+          "it/software-engineering/architecture"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Hexagonal architecture",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "clean-architecture",
+        "label": "Clean architecture",
+        "summary": "A software architectural paradigm structured in concentric layers where dependencies point strictly inward toward domain logic, decoupling business rules from frameworks and databases.",
+        "domains": [
+          "it/software-engineering/architecture"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
     "key": "Closure",
     "match": "any-case",
     "concepts": [
@@ -1470,6 +2037,38 @@
         "summary": "A function packaged with references to its surrounding lexical scope, enabling it to access enclosing variables even after the outer function finishes executing.",
         "domains": [
           "it/software-engineering/programming-concepts"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Content management system (CMS)",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "cms",
+        "label": "Content management system (CMS)",
+        "summary": "Software that lets editors create, format, publish, and organize digital content on the web without editing source code directly.",
+        "domains": [
+          "it/business-systems/enterprise-apps",
+          "media/publishing/distribution-platforms"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "CMS",
+    "match": "exact-case",
+    "concepts": [
+      {
+        "id": "cms",
+        "label": "Content management system (CMS)",
+        "summary": "Software that lets editors create, format, publish, and organize digital content on the web without editing source code directly.",
+        "domains": [
+          "it/business-systems/enterprise-apps",
+          "media/publishing/distribution-platforms"
         ]
       }
     ],
@@ -1521,6 +2120,36 @@
     "autolink": true
   },
   {
+    "key": "Code splitting",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "code-splitting",
+        "label": "Code splitting",
+        "summary": "A technique of splitting a single application bundle into multiple smaller chunks that can be loaded on demand or in parallel.",
+        "domains": [
+          "it/web/frontend"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "bundle splitting",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "code-splitting",
+        "label": "Code splitting",
+        "summary": "A technique of splitting a single application bundle into multiple smaller chunks that can be loaded on demand or in parallel.",
+        "domains": [
+          "it/web/frontend"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
     "key": "Color grading",
     "match": "any-case",
     "concepts": [
@@ -1560,6 +2189,51 @@
         "summary": "The creative process in video post-production where color properties, tonal balances, and contrast curves are altered to produce an artistic mood or stylized look.",
         "domains": [
           "media/content-production/editing"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Columnar storage",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "columnar-storage",
+        "label": "Columnar storage",
+        "summary": "A database storage method where data blocks group values by column across records rather than by row, accelerating analytical aggregation queries.",
+        "domains": [
+          "it/data/database"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "columnar database",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "columnar-storage",
+        "label": "Columnar storage",
+        "summary": "A database storage method where data blocks group values by column across records rather than by row, accelerating analytical aggregation queries.",
+        "domains": [
+          "it/data/database"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "column-oriented storage",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "columnar-storage",
+        "label": "Columnar storage",
+        "summary": "A database storage method where data blocks group values by column across records rather than by row, accelerating analytical aggregation queries.",
+        "domains": [
+          "it/data/database"
         ]
       }
     ],
@@ -1622,6 +2296,81 @@
         "summary": "The composition and coordination of multiple computational tasks executing over overlapping time intervals.",
         "domains": [
           "it/software-engineering/programming-concepts"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Connection pool",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "connection-pool",
+        "label": "Connection pool",
+        "summary": "A cache of open, reusable database connection objects maintained so that applications avoid the high overhead of establishing new connections for each request.",
+        "domains": [
+          "it/data/database"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "database connection pool",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "connection-pool",
+        "label": "Connection pool",
+        "summary": "A cache of open, reusable database connection objects maintained so that applications avoid the high overhead of establishing new connections for each request.",
+        "domains": [
+          "it/data/database"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Consistent hashing",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "consistent-hashing",
+        "label": "Consistent hashing",
+        "summary": "A distributed hashing algorithm where resizing the bucket array requires only K/N keys to be remapped on average, mapping nodes and data keys onto a circular ring space.",
+        "domains": [
+          "it/software-engineering/architecture"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Hash ring",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "consistent-hashing",
+        "label": "Consistent hashing",
+        "summary": "A distributed hashing algorithm where resizing the bucket array requires only K/N keys to be remapped on average, mapping nodes and data keys onto a circular ring space.",
+        "domains": [
+          "it/software-engineering/architecture"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Ring hashing",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "consistent-hashing",
+        "label": "Consistent hashing",
+        "summary": "A distributed hashing algorithm where resizing the bucket array requires only K/N keys to be remapped on average, mapping nodes and data keys onto a circular ring space.",
+        "domains": [
+          "it/software-engineering/architecture"
         ]
       }
     ],
@@ -1814,6 +2563,38 @@
     "autolink": true
   },
   {
+    "key": "Core Web Vitals",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "core-web-vitals",
+        "label": "Core Web Vitals",
+        "summary": "A set of standardized metrics established by Google to evaluate real-world user experience across loading speed, responsiveness, and visual stability.",
+        "domains": [
+          "it/web/frontend",
+          "media/digital-marketing/seo"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "CWV",
+    "match": "exact-case",
+    "concepts": [
+      {
+        "id": "core-web-vitals",
+        "label": "Core Web Vitals",
+        "summary": "A set of standardized metrics established by Google to evaluate real-world user experience across loading speed, responsiveness, and visual stability.",
+        "domains": [
+          "it/web/frontend",
+          "media/digital-marketing/seo"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
     "key": "Cross-Origin Resource Sharing (CORS)",
     "match": "any-case",
     "concepts": [
@@ -1945,6 +2726,36 @@
         "summary": "An advertising pricing model where the buyer pays a predetermined rate for every one thousand impressions their ad receives.",
         "domains": [
           "media/digital-marketing/paid-ads"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Command Query Responsibility Segregation (CQRS)",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "cqrs",
+        "label": "Command Query Responsibility Segregation (CQRS)",
+        "summary": "An architectural pattern that separates operations that mutate state from operations that read data into distinct models and pipelines.",
+        "domains": [
+          "it/software-engineering/architecture"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "CQRS",
+    "match": "exact-case",
+    "concepts": [
+      {
+        "id": "cqrs",
+        "label": "Command Query Responsibility Segregation (CQRS)",
+        "summary": "An architectural pattern that separates operations that mutate state from operations that read data into distinct models and pipelines.",
+        "domains": [
+          "it/software-engineering/architecture"
         ]
       }
     ],
@@ -2086,6 +2897,36 @@
     "autolink": true
   },
   {
+    "key": "Customer relationship management (CRM)",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "crm",
+        "label": "Customer relationship management (CRM)",
+        "summary": "A business system that organizes customer details, communications, and sales opportunities in one shared workspace.",
+        "domains": [
+          "it/business-systems/enterprise-apps"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "CRM",
+    "match": "exact-case",
+    "concepts": [
+      {
+        "id": "crm",
+        "label": "Customer relationship management (CRM)",
+        "summary": "A business system that organizes customer details, communications, and sales opportunities in one shared workspace.",
+        "domains": [
+          "it/business-systems/enterprise-apps"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
     "key": "Cryptocurrency",
     "match": "any-case",
     "concepts": [
@@ -2155,6 +2996,36 @@
         "summary": "An attack that tricks an authenticated web browser into sending unauthorized commands to a vulnerable web application without the user’s consent.",
         "domains": [
           "it/security/vulnerabilities"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "CSS",
+    "match": "exact-case",
+    "concepts": [
+      {
+        "id": "css",
+        "label": "CSS",
+        "summary": "A declarative styling language for rendering visual layout, typographic formatting, and color palettes on markup documents.",
+        "domains": [
+          "it/web/frontend"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Cascading Style Sheets",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "css",
+        "label": "CSS",
+        "summary": "A declarative styling language for rendering visual layout, typographic formatting, and color palettes on markup documents.",
+        "domains": [
+          "it/web/frontend"
         ]
       }
     ],
@@ -2328,6 +3199,36 @@
     "autolink": true
   },
   {
+    "key": "Data governance",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "data-governance",
+        "label": "Data governance",
+        "summary": "The overall management framework of data availability, usability, integrity, and security across an enterprise.",
+        "domains": [
+          "it/data/data-engineering"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "enterprise data governance",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "data-governance",
+        "label": "Data governance",
+        "summary": "The overall management framework of data availability, usability, integrity, and security across an enterprise.",
+        "domains": [
+          "it/data/data-engineering"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
     "key": "Data lake",
     "match": "any-case",
     "concepts": [
@@ -2358,6 +3259,66 @@
     "autolink": true
   },
   {
+    "key": "Data lakehouse",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "data-lakehouse",
+        "label": "Data lakehouse",
+        "summary": "A modern data management architecture that combines the cost-effective storage of data lakes with the ACID transactions of data warehouses.",
+        "domains": [
+          "it/data/data-engineering"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "lakehouse",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "data-lakehouse",
+        "label": "Data lakehouse",
+        "summary": "A modern data management architecture that combines the cost-effective storage of data lakes with the ACID transactions of data warehouses.",
+        "domains": [
+          "it/data/data-engineering"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Data lineage",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "data-lineage",
+        "label": "Data lineage",
+        "summary": "The recorded lifecycle and lifecycle path of data that documents its origin, movement, transformations, and destinations over time.",
+        "domains": [
+          "it/data/data-engineering"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "pipeline lineage",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "data-lineage",
+        "label": "Data lineage",
+        "summary": "The recorded lifecycle and lifecycle path of data that documents its origin, movement, transformations, and destinations over time.",
+        "domains": [
+          "it/data/data-engineering"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
     "key": "Data pipeline",
     "match": "any-case",
     "concepts": [
@@ -2365,6 +3326,36 @@
         "id": "data-pipeline",
         "label": "Data pipeline",
         "summary": "An automated sequence of processes that ingests, processes, and transfers raw data from source systems to destination storage.",
+        "domains": [
+          "it/data/data-engineering"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Data quality",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "data-quality",
+        "label": "Data quality",
+        "summary": "The measurement of how well a dataset satisfies requirements for accuracy, completeness, consistency, validity, and timeliness.",
+        "domains": [
+          "it/data/data-engineering"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "dataset quality",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "data-quality",
+        "label": "Data quality",
+        "summary": "The measurement of how well a dataset satisfies requirements for accuracy, completeness, consistency, validity, and timeliness.",
         "domains": [
           "it/data/data-engineering"
         ]
@@ -2382,6 +3373,21 @@
         "summary": "A specialized format for organizing, processing, retrieving, and storing data efficiently within computer systems.",
         "domains": [
           "it/software-engineering/programming-concepts"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Data visualization",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "data-visualization",
+        "label": "Data visualization",
+        "summary": "The practice of representing quantitative data graphically through charts, maps, and visual plots to communicate insights clearly.",
+        "domains": [
+          "it/data/analytics"
         ]
       }
     ],
@@ -2506,6 +3512,54 @@
         "label": "Migration",
         "qualifier": "(Database)",
         "summary": "A version-controlled set of programmatic scripts that safely alter database schemas over time without losing existing data.",
+        "domains": [
+          "it/data/database"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Normalization",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "database-normalization",
+        "label": "Normalization",
+        "qualifier": "(Database)",
+        "summary": "The process of structuring a relational database in accordance with normal forms to reduce data redundancy and improve data integrity.",
+        "domains": [
+          "it/data/database"
+        ]
+      }
+    ],
+    "autolink": false
+  },
+  {
+    "key": "database normalization",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "database-normalization",
+        "label": "Normalization",
+        "qualifier": "(Database)",
+        "summary": "The process of structuring a relational database in accordance with normal forms to reduce data redundancy and improve data integrity.",
+        "domains": [
+          "it/data/database"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "relational normalization",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "database-normalization",
+        "label": "Normalization",
+        "qualifier": "(Database)",
+        "summary": "The process of structuring a relational database in accordance with normal forms to reduce data redundancy and improve data integrity.",
         "domains": [
           "it/data/database"
         ]
@@ -2673,6 +3727,38 @@
     "autolink": true
   },
   {
+    "key": "Deadlock",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "deadlock",
+        "label": "Deadlock",
+        "summary": "A permanent state of mutual blocking where two or more concurrent processes each hold a resource while waiting for another resource held by the other.",
+        "domains": [
+          "it/data/database",
+          "it/software-engineering/programming-concepts"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "mutual blocking",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "deadlock",
+        "label": "Deadlock",
+        "summary": "A permanent state of mutual blocking where two or more concurrent processes each hold a resource while waiting for another resource held by the other.",
+        "domains": [
+          "it/data/database",
+          "it/software-engineering/programming-concepts"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
     "key": "Debt-to-equity ratio (D/E)",
     "match": "any-case",
     "concepts": [
@@ -2808,6 +3894,51 @@
     "autolink": true
   },
   {
+    "key": "Dependency injection",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "dependency-injection",
+        "label": "Dependency injection",
+        "summary": "A software design pattern where an object receives its dependencies from an external assembler rather than instantiating them internally, implementing inversion of control.",
+        "domains": [
+          "it/software-engineering/programming-concepts"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "DI",
+    "match": "exact-case",
+    "concepts": [
+      {
+        "id": "dependency-injection",
+        "label": "Dependency injection",
+        "summary": "A software design pattern where an object receives its dependencies from an external assembler rather than instantiating them internally, implementing inversion of control.",
+        "domains": [
+          "it/software-engineering/programming-concepts"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Inversion of control",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "dependency-injection",
+        "label": "Dependency injection",
+        "summary": "A software design pattern where an object receives its dependencies from an external assembler rather than instantiating them internally, implementing inversion of control.",
+        "domains": [
+          "it/software-engineering/programming-concepts"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
     "key": "Deprecation",
     "match": "any-case",
     "concepts": [
@@ -2902,6 +4033,21 @@
     "autolink": true
   },
   {
+    "key": "Digital transformation",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "digital-transformation",
+        "label": "Digital transformation",
+        "summary": "The strategic and cultural integration of digital technology across all areas of an organization to fundamentally modernize operations and deliver customer value.",
+        "domains": [
+          "it/business-systems/enterprise-apps"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
     "key": "Digital twin",
     "match": "any-case",
     "concepts": [
@@ -2911,6 +4057,66 @@
         "summary": "A virtual representation that serves as the real-time computational counterpart of a physical object, process, or system synchronized through continuous telemetry.",
         "domains": [
           "iot/industrial"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Disaster recovery (DR)",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "disaster-recovery",
+        "label": "Disaster recovery (DR)",
+        "summary": "A coordinated set of policies, tools, and technical procedures designed to recover and resume mission-critical technology infrastructure and operations after a catastrophic event.",
+        "domains": [
+          "it/devops/sre-operations"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "DR",
+    "match": "exact-case",
+    "concepts": [
+      {
+        "id": "disaster-recovery",
+        "label": "Disaster recovery (DR)",
+        "summary": "A coordinated set of policies, tools, and technical procedures designed to recover and resume mission-critical technology infrastructure and operations after a catastrophic event.",
+        "domains": [
+          "it/devops/sre-operations"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Distributed system",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "distributed-system",
+        "label": "Distributed system",
+        "summary": "A system whose hardware and software components communicate and coordinate their actions over a network, presenting themselves to end users as a unified cohesive computing facility.",
+        "domains": [
+          "it/software-engineering/architecture"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Distributed architecture",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "distributed-system",
+        "label": "Distributed system",
+        "summary": "A system whose hardware and software components communicate and coordinate their actions over a network, presenting themselves to end users as a unified cohesive computing facility.",
+        "domains": [
+          "it/software-engineering/architecture"
         ]
       }
     ],
@@ -3112,6 +4318,111 @@
     "autolink": true
   },
   {
+    "key": "Document database",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "document-database",
+        "label": "Document database",
+        "summary": "A specialized NoSQL database architecture built to store, retrieve, and manage semi-structured data formatted as documents like JSON or BSON.",
+        "domains": [
+          "it/data/database"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "document-oriented database",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "document-database",
+        "label": "Document database",
+        "summary": "A specialized NoSQL database architecture built to store, retrieve, and manage semi-structured data formatted as documents like JSON or BSON.",
+        "domains": [
+          "it/data/database"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "document store",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "document-database",
+        "label": "Document database",
+        "summary": "A specialized NoSQL database architecture built to store, retrieve, and manage semi-structured data formatted as documents like JSON or BSON.",
+        "domains": [
+          "it/data/database"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Document Object Model (DOM)",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "dom",
+        "label": "Document Object Model (DOM)",
+        "summary": "A cross-platform, language-independent programming interface that treats an HTML or XML document as a tree structure of nodes.",
+        "domains": [
+          "it/web/frontend"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "DOM",
+    "match": "exact-case",
+    "concepts": [
+      {
+        "id": "dom",
+        "label": "Document Object Model (DOM)",
+        "summary": "A cross-platform, language-independent programming interface that treats an HTML or XML document as a tree structure of nodes.",
+        "domains": [
+          "it/web/frontend"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Domain-driven design (DDD)",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "domain-driven-design",
+        "label": "Domain-driven design (DDD)",
+        "summary": "A software architectural methodology centering system design and implementation around core business models, ubiquitous language, and bounded contexts.",
+        "domains": [
+          "it/software-engineering/architecture"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "DDD",
+    "match": "exact-case",
+    "concepts": [
+      {
+        "id": "domain-driven-design",
+        "label": "Domain-driven design (DDD)",
+        "summary": "A software architectural methodology centering system design and implementation around core business models, ubiquitous language, and bounded contexts.",
+        "domains": [
+          "it/software-engineering/architecture"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
     "key": "Double-entry bookkeeping",
     "match": "any-case",
     "concepts": [
@@ -3136,6 +4447,21 @@
         "summary": "The universal bookkeeping method wherein every economic transaction is recorded in at least two separate ledger accounts with offsetting debit and credit entries.",
         "domains": [
           "finance/accounting/bookkeeping"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "E-commerce platform",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "e-commerce-platform",
+        "label": "E-commerce platform",
+        "summary": "A comprehensive software suite that enables businesses to build online stores, showcase product catalogs, manage shopping carts, and fulfill digital orders.",
+        "domains": [
+          "it/business-systems/enterprise-apps"
         ]
       }
     ],
@@ -3232,6 +4558,21 @@
     "autolink": true
   },
   {
+    "key": "Elasticsearch",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "elasticsearch",
+        "label": "Elasticsearch",
+        "summary": "A distributed, JSON-based search and analytics engine built on Apache Lucene, designed for horizontal scalability, reliability, and real-time search.",
+        "domains": [
+          "it/data/database"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
     "key": "Open rate",
     "match": "any-case",
     "concepts": [
@@ -3258,6 +4599,21 @@
         "summary": "The percentage of successfully delivered emails opened by subscribers, indicating subject line effectiveness and audience engagement.",
         "domains": [
           "media/digital-marketing/email"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Embedded system",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "embedded-system",
+        "label": "Embedded system",
+        "summary": "A dedicated computing assembly combining a microprocessor, firmware, and peripheral interfaces engineered to execute predefined control operations within an encompassing machine.",
+        "domains": [
+          "iot/devices-sensors"
         ]
       }
     ],
@@ -3414,6 +4770,36 @@
     "autolink": true
   },
   {
+    "key": "Energy harvesting",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "energy-harvesting",
+        "label": "Energy harvesting",
+        "summary": "The process of capturing minute quantities of energy from ambient environmental sources—such as light, thermal gradients, mechanical vibrations, or radio waves—and converting it into electrical power for electronics.",
+        "domains": [
+          "iot/devices-sensors"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Power harvesting",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "energy-harvesting",
+        "label": "Energy harvesting",
+        "summary": "The process of capturing minute quantities of energy from ambient environmental sources—such as light, thermal gradients, mechanical vibrations, or radio waves—and converting it into electrical power for electronics.",
+        "domains": [
+          "iot/devices-sensors"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
     "key": "Engagement rate",
     "match": "any-case",
     "concepts": [
@@ -3554,6 +4940,51 @@
     "autolink": true
   },
   {
+    "key": "Enterprise resource planning (ERP)",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "erp",
+        "label": "Enterprise resource planning (ERP)",
+        "summary": "An integrated suite of core business applications that synchronizes finance, purchasing, inventory, and production across an organization.",
+        "domains": [
+          "it/business-systems/enterprise-apps"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "ERP",
+    "match": "exact-case",
+    "concepts": [
+      {
+        "id": "erp",
+        "label": "Enterprise resource planning (ERP)",
+        "summary": "An integrated suite of core business applications that synchronizes finance, purchasing, inventory, and production across an organization.",
+        "domains": [
+          "it/business-systems/enterprise-apps"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "ESP32",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "esp32",
+        "label": "ESP32",
+        "summary": "A low-cost, low-power system on a chip microcontroller series featuring integrated Wi-Fi and dual-mode Bluetooth designed for wireless IoT product engineering.",
+        "domains": [
+          "iot/devices-sensors"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
     "key": "Exchange-Traded Fund (ETF)",
     "match": "any-case",
     "concepts": [
@@ -3629,6 +5060,126 @@
     "autolink": true
   },
   {
+    "key": "Event-driven architecture",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "event-driven-architecture",
+        "label": "Event-driven architecture",
+        "summary": "A software architecture paradigm where decoupled components communicate asynchronously by generating, detecting, and reacting to significant state changes known as events.",
+        "domains": [
+          "it/software-engineering/architecture"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "EDA",
+    "match": "exact-case",
+    "concepts": [
+      {
+        "id": "event-driven-architecture",
+        "label": "Event-driven architecture",
+        "summary": "A software architecture paradigm where decoupled components communicate asynchronously by generating, detecting, and reacting to significant state changes known as events.",
+        "domains": [
+          "it/software-engineering/architecture"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Event sourcing",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "event-sourcing",
+        "label": "Event sourcing",
+        "summary": "A persistence design pattern where all state changes are stored as an append-only, ordered sequence of immutable domain events instead of overwriting current entity records.",
+        "domains": [
+          "it/software-engineering/architecture"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Event-sourced persistence",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "event-sourcing",
+        "label": "Event sourcing",
+        "summary": "A persistence design pattern where all state changes are stored as an append-only, ordered sequence of immutable domain events instead of overwriting current entity records.",
+        "domains": [
+          "it/software-engineering/architecture"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Event streaming",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "event-streaming",
+        "label": "Event streaming",
+        "summary": "The practice of capturing, storing, and analyzing continuous flows of data records in real time as events occur.",
+        "domains": [
+          "it/data/data-engineering"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "data streaming",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "event-streaming",
+        "label": "Event streaming",
+        "summary": "The practice of capturing, storing, and analyzing continuous flows of data records in real time as events occur.",
+        "domains": [
+          "it/data/data-engineering"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Eventual consistency",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "eventual-consistency",
+        "label": "Eventual consistency",
+        "summary": "A consistency model used in distributed computing where all replicas of a data item will eventually converge to the same value given sufficient time without new updates.",
+        "domains": [
+          "it/data/database"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "optimistic consistency",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "eventual-consistency",
+        "label": "Eventual consistency",
+        "summary": "A consistency model used in distributed computing where all replicas of a data item will eventually converge to the same value given sufficient time without new updates.",
+        "domains": [
+          "it/data/database"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
     "key": "Exception",
     "match": "any-case",
     "concepts": [
@@ -3690,6 +5241,36 @@
     "autolink": true
   },
   {
+    "key": "Exponential backoff",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "exponential-backoff",
+        "label": "Exponential backoff",
+        "summary": "An algorithm that progressively multiplies the delay interval between successive retries to prevent overwhelming struggling network services.",
+        "domains": [
+          "it/software-engineering/architecture"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Exponential retry",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "exponential-backoff",
+        "label": "Exponential backoff",
+        "summary": "An algorithm that progressively multiplies the delay interval between successive retries to prevent overwhelming struggling network services.",
+        "domains": [
+          "it/software-engineering/architecture"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
     "key": "Fact-checking",
     "match": "any-case",
     "concepts": [
@@ -3699,6 +5280,36 @@
         "summary": "The disciplined verification process of assessing factual assertions in published text, speeches, or broadcast reports against reliable primary documentation.",
         "domains": [
           "media/journalism/ethics"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Failover",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "failover",
+        "label": "Failover",
+        "summary": "An operational procedure that automatically or manually redirects processing tasks and network traffic to a redundant standby system upon failure of the primary component.",
+        "domains": [
+          "it/devops/sre-operations"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Automated failover",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "failover",
+        "label": "Failover",
+        "summary": "An operational procedure that automatically or manually redirects processing tasks and network traffic to a redundant standby system upon failure of the primary component.",
+        "domains": [
+          "it/devops/sre-operations"
         ]
       }
     ],
@@ -3834,6 +5445,81 @@
         "summary": "Low-level software programmed directly into non-volatile memory that provides operational instructions and hardware abstraction for electronic devices.",
         "domains": [
           "iot/devices-sensors"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Foreign key",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "foreign-key",
+        "label": "Foreign key",
+        "summary": "A column or set of columns in a relational database table that provides a link between data in two tables by referencing the primary key of another table.",
+        "domains": [
+          "it/data/database"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "FK",
+    "match": "exact-case",
+    "concepts": [
+      {
+        "id": "foreign-key",
+        "label": "Foreign key",
+        "summary": "A column or set of columns in a relational database table that provides a link between data in two tables by referencing the primary key of another table.",
+        "domains": [
+          "it/data/database"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Full-text search",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "full-text-search",
+        "label": "Full-text search",
+        "summary": "A technique for searching computer-stored documents or database text fields by matching words, linguistic stems, and phrases against an inverted index.",
+        "domains": [
+          "it/data/database"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "FTS",
+    "match": "exact-case",
+    "concepts": [
+      {
+        "id": "full-text-search",
+        "label": "Full-text search",
+        "summary": "A technique for searching computer-stored documents or database text fields by matching words, linguistic stems, and phrases against an inverted index.",
+        "domains": [
+          "it/data/database"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "text search",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "full-text-search",
+        "label": "Full-text search",
+        "summary": "A technique for searching computer-stored documents or database text fields by matching words, linguistic stems, and phrases against an inverted index.",
+        "domains": [
+          "it/data/database"
         ]
       }
     ],
@@ -4039,6 +5725,81 @@
     "autolink": true
   },
   {
+    "key": "GNSS",
+    "match": "exact-case",
+    "concepts": [
+      {
+        "id": "gnss",
+        "label": "GNSS",
+        "summary": "The worldwide collection of satellite constellations and augmentation systems that transmit radio signals used by ground receivers to compute autonomous geospatial positioning and atomic time.",
+        "domains": [
+          "iot/devices-sensors"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Global Navigation Satellite System",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "gnss",
+        "label": "GNSS",
+        "summary": "The worldwide collection of satellite constellations and augmentation systems that transmit radio signals used by ground receivers to compute autonomous geospatial positioning and atomic time.",
+        "domains": [
+          "iot/devices-sensors"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "GPS",
+    "match": "exact-case",
+    "concepts": [
+      {
+        "id": "gnss",
+        "label": "GNSS",
+        "summary": "The worldwide collection of satellite constellations and augmentation systems that transmit radio signals used by ground receivers to compute autonomous geospatial positioning and atomic time.",
+        "domains": [
+          "iot/devices-sensors"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "General-purpose input/output (GPIO)",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "gpio",
+        "label": "General-purpose input/output (GPIO)",
+        "summary": "An uncommitted digital signal pin on an integrated circuit whose electrical direction and voltage state can be configured dynamically by software at runtime.",
+        "domains": [
+          "iot/devices-sensors"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "GPIO",
+    "match": "exact-case",
+    "concepts": [
+      {
+        "id": "gpio",
+        "label": "General-purpose input/output (GPIO)",
+        "summary": "An uncommitted digital signal pin on an integrated circuit whose electrical direction and voltage state can be configured dynamically by software at runtime.",
+        "domains": [
+          "iot/devices-sensors"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
     "key": "Graphics Processing Unit (GPU)",
     "match": "any-case",
     "concepts": [
@@ -4086,6 +5847,36 @@
     "autolink": true
   },
   {
+    "key": "Graph database",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "graph-database",
+        "label": "Graph database",
+        "summary": "A database that uses graph structures with nodes, edges, and properties to represent and store interconnected data.",
+        "domains": [
+          "it/data/database"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "graph store",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "graph-database",
+        "label": "Graph database",
+        "summary": "A database that uses graph structures with nodes, edges, and properties to represent and store interconnected data.",
+        "domains": [
+          "it/data/database"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
     "key": "GraphQL",
     "match": "any-case",
     "concepts": [
@@ -4111,6 +5902,36 @@
         "summary": "The process of constraining a model's outputs to factual, verifiable evidence retrieved from trusted external data sources.",
         "domains": [
           "it/ai-ml/llm-agents"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "gRPC",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "grpc",
+        "label": "gRPC",
+        "summary": "A high-performance, open-source universal RPC framework that uses Protocol Buffers for structured binary serialization and HTTP/2 for efficient multiplexed transport.",
+        "domains": [
+          "it/web/api"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "gRPC Remote Procedure Call",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "grpc",
+        "label": "gRPC",
+        "summary": "A high-performance, open-source universal RPC framework that uses Protocol Buffers for structured binary serialization and HTTP/2 for efficient multiplexed transport.",
+        "domains": [
+          "it/web/api"
         ]
       }
     ],
@@ -4273,6 +6094,96 @@
     "autolink": true
   },
   {
+    "key": "Help desk",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "help-desk",
+        "label": "Help desk",
+        "summary": "A dedicated support service and software application designed to log, route, track, and resolve user technical problems and service requests.",
+        "domains": [
+          "it/business-systems/enterprise-apps"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "High availability (HA)",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "high-availability",
+        "label": "High availability (HA)",
+        "summary": "A system design characteristic ensuring operational performance and accessibility over extended periods by minimizing unplanned downtime through redundancy and fault tolerance.",
+        "domains": [
+          "it/devops/sre-operations"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "HA",
+    "match": "exact-case",
+    "concepts": [
+      {
+        "id": "high-availability",
+        "label": "High availability (HA)",
+        "summary": "A system design characteristic ensuring operational performance and accessibility over extended periods by minimizing unplanned downtime through redundancy and fault tolerance.",
+        "domains": [
+          "it/devops/sre-operations"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Horizontal scaling",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "horizontal-scaling",
+        "label": "Horizontal scaling",
+        "summary": "The practice of increasing system capacity and handling greater load by adding more independent compute nodes or instances to a resource pool.",
+        "domains": [
+          "it/infrastructure/cloud"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Scale out",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "horizontal-scaling",
+        "label": "Horizontal scaling",
+        "summary": "The practice of increasing system capacity and handling greater load by adding more independent compute nodes or instances to a resource pool.",
+        "domains": [
+          "it/infrastructure/cloud"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Scaling out",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "horizontal-scaling",
+        "label": "Horizontal scaling",
+        "summary": "The practice of increasing system capacity and handling greater load by adding more independent compute nodes or instances to a resource pool.",
+        "domains": [
+          "it/infrastructure/cloud"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
     "key": "Hotfix",
     "match": "any-case",
     "concepts": [
@@ -4282,6 +6193,98 @@
         "summary": "An expedited software patch created and deployed directly to production systems outside standard release cycles to resolve critical defects or security flaws.",
         "domains": [
           "it/software-engineering/practices"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Human resource management system (HRMS)",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "hrm-system",
+        "label": "Human resource management system (HRMS)",
+        "summary": "Software that automates personnel administration by maintaining worker records, attendance tracking, payroll, and benefits in one platform.",
+        "domains": [
+          "it/business-systems/enterprise-apps"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "HRMS",
+    "match": "exact-case",
+    "concepts": [
+      {
+        "id": "hrm-system",
+        "label": "Human resource management system (HRMS)",
+        "summary": "Software that automates personnel administration by maintaining worker records, attendance tracking, payroll, and benefits in one platform.",
+        "domains": [
+          "it/business-systems/enterprise-apps"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "HTML",
+    "match": "exact-case",
+    "concepts": [
+      {
+        "id": "html",
+        "label": "HTML",
+        "summary": "The standard markup language used to structure documents and content displayed in web browsers.",
+        "domains": [
+          "it/web/frontend"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "HyperText Markup Language",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "html",
+        "label": "HTML",
+        "summary": "The standard markup language used to structure documents and content displayed in web browsers.",
+        "domains": [
+          "it/web/frontend"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Hypertext Transfer Protocol (HTTP)",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "http",
+        "label": "Hypertext Transfer Protocol (HTTP)",
+        "summary": "A foundational client-server networking specification governing how web browsers fetch and submit hypermedia assets.",
+        "domains": [
+          "it/web/api",
+          "it/infrastructure/networking"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "HTTP",
+    "match": "exact-case",
+    "concepts": [
+      {
+        "id": "http",
+        "label": "Hypertext Transfer Protocol (HTTP)",
+        "summary": "A foundational client-server networking specification governing how web browsers fetch and submit hypermedia assets.",
+        "domains": [
+          "it/web/api",
+          "it/infrastructure/networking"
         ]
       }
     ],
@@ -4333,6 +6336,68 @@
     "autolink": true
   },
   {
+    "key": "HTTPS",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "https",
+        "label": "HTTPS",
+        "summary": "An extension of HTTP that encrypts bidirectional communication using Transport Layer Security (TLS).",
+        "domains": [
+          "it/web/api"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Hypertext Transfer Protocol Secure",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "https",
+        "label": "HTTPS",
+        "summary": "An extension of HTTP that encrypts bidirectional communication using Transport Layer Security (TLS).",
+        "domains": [
+          "it/web/api"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Hydration",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "hydration",
+        "label": "Hydration",
+        "qualifier": "(Web)",
+        "summary": "The client-side process where framework JavaScript attaches event listeners and state management to server-rendered HTML markup.",
+        "domains": [
+          "it/web/frontend"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "client-side hydration",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "hydration",
+        "label": "Hydration",
+        "qualifier": "(Web)",
+        "summary": "The client-side process where framework JavaScript attaches event listeners and state management to server-rendered HTML markup.",
+        "domains": [
+          "it/web/frontend"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
     "key": "Hyperparameter",
     "match": "any-case",
     "concepts": [
@@ -4342,6 +6407,51 @@
         "summary": "An external configuration setting specified prior to training that governs how the model architecture is structured and optimized.",
         "domains": [
           "it/ai-ml/foundations"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "I²C",
+    "match": "exact-case",
+    "concepts": [
+      {
+        "id": "i2c",
+        "label": "I²C",
+        "summary": "A synchronous, multi-controller, multi-target serial communication bus that uses two bidirectional open-drain lines (SCL and SDA) pulled high by resistors to network peripheral ICs.",
+        "domains": [
+          "iot/devices-sensors"
+        ]
+      }
+    ],
+    "autolink": false
+  },
+  {
+    "key": "I2C",
+    "match": "exact-case",
+    "concepts": [
+      {
+        "id": "i2c",
+        "label": "I²C",
+        "summary": "A synchronous, multi-controller, multi-target serial communication bus that uses two bidirectional open-drain lines (SCL and SDA) pulled high by resistors to network peripheral ICs.",
+        "domains": [
+          "iot/devices-sensors"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Inter-Integrated Circuit",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "i2c",
+        "label": "I²C",
+        "summary": "A synchronous, multi-controller, multi-target serial communication bus that uses two bidirectional open-drain lines (SCL and SDA) pulled high by resistors to network peripheral ICs.",
+        "domains": [
+          "iot/devices-sensors"
         ]
       }
     ],
@@ -4432,6 +6542,36 @@
         "summary": "The property of an object or data structure that prevents its state from being altered after it has been created.",
         "domains": [
           "it/software-engineering/programming-concepts"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Inertial measurement unit (IMU)",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "imu",
+        "label": "Inertial measurement unit (IMU)",
+        "summary": "An integrated multi-axis sensor package combining accelerometers, gyroscopes, and frequently magnetometers to measure a body linear acceleration, angular velocity, and heading.",
+        "domains": [
+          "iot/devices-sensors"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "IMU",
+    "match": "exact-case",
+    "concepts": [
+      {
+        "id": "imu",
+        "label": "Inertial measurement unit (IMU)",
+        "summary": "An integrated multi-axis sensor package combining accelerometers, gyroscopes, and frequently magnetometers to measure a body linear acceleration, angular velocity, and heading.",
+        "domains": [
+          "iot/devices-sensors"
         ]
       }
     ],
@@ -4901,6 +7041,36 @@
     "autolink": true
   },
   {
+    "key": "Integration platform as a service (iPaaS)",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "ipaas",
+        "label": "Integration platform as a service (iPaaS)",
+        "summary": "A cloud-based suite of services that standardizes, orchestrates, and monitors data integration flows between disparate applications across cloud and on-premises environments.",
+        "domains": [
+          "it/business-systems/automation"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "iPaaS",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "ipaas",
+        "label": "Integration platform as a service (iPaaS)",
+        "summary": "A cloud-based suite of services that standardizes, orchestrates, and monitors data integration flows between disparate applications across cloud and on-premises environments.",
+        "domains": [
+          "it/business-systems/automation"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
     "key": "Initial Public Offering (IPO)",
     "match": "any-case",
     "concepts": [
@@ -4946,6 +7116,66 @@
     "autolink": true
   },
   {
+    "key": "ITIL",
+    "match": "exact-case",
+    "concepts": [
+      {
+        "id": "itil",
+        "label": "ITIL",
+        "summary": "A globally recognized framework of best practices for delivering, supporting, and governing IT service management workflows.",
+        "domains": [
+          "it/business-systems/enterprise-apps"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Information Technology Infrastructure Library",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "itil",
+        "label": "ITIL",
+        "summary": "A globally recognized framework of best practices for delivering, supporting, and governing IT service management workflows.",
+        "domains": [
+          "it/business-systems/enterprise-apps"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "IT service management (ITSM)",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "itsm",
+        "label": "IT service management (ITSM)",
+        "summary": "The operational discipline and set of practices through which an organization plans, delivers, operates, and controls information technology services provided to business users.",
+        "domains": [
+          "it/business-systems/enterprise-apps"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "ITSM",
+    "match": "exact-case",
+    "concepts": [
+      {
+        "id": "itsm",
+        "label": "IT service management (ITSM)",
+        "summary": "The operational discipline and set of practices through which an organization plans, delivers, operates, and controls information technology services provided to business users.",
+        "domains": [
+          "it/business-systems/enterprise-apps"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
     "key": "Jailbreak",
     "match": "any-case",
     "concepts": [
@@ -4956,6 +7186,38 @@
         "summary": "A prompt designed to make a model ignore its safety guidelines and produce content it is meant to refuse.",
         "domains": [
           "it/ai-ml/ai-safety-governance"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "JavaScript",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "javascript",
+        "label": "JavaScript",
+        "summary": "A dynamic multi-paradigm programming language featuring prototype inheritance that powers client-side web browser behavior.",
+        "domains": [
+          "it/web/frontend",
+          "it/software-engineering/programming-concepts"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "JS",
+    "match": "exact-case",
+    "concepts": [
+      {
+        "id": "javascript",
+        "label": "JavaScript",
+        "summary": "A dynamic multi-paradigm programming language featuring prototype inheritance that powers client-side web browser behavior.",
+        "domains": [
+          "it/web/frontend",
+          "it/software-engineering/programming-concepts"
         ]
       }
     ],
@@ -5031,6 +7293,51 @@
         "summary": "A visual workflow management method designed to optimize continuous flow, limit work in progress, and maximize efficiency.",
         "domains": [
           "product/agile-scrum"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Key-value store",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "key-value-store",
+        "label": "Key-value store",
+        "summary": "A high-performance NoSQL database model utilizing a direct associative array data model where every data item is indexed by a distinct key.",
+        "domains": [
+          "it/data/database"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "KV store",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "key-value-store",
+        "label": "Key-value store",
+        "summary": "A high-performance NoSQL database model utilizing a direct associative array data model where every data item is indexed by a distinct key.",
+        "domains": [
+          "it/data/database"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "key-value database",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "key-value-store",
+        "label": "Key-value store",
+        "summary": "A high-performance NoSQL database model utilizing a direct associative array data model where every data item is indexed by a distinct key.",
+        "domains": [
+          "it/data/database"
         ]
       }
     ],
@@ -5239,6 +7546,51 @@
     "autolink": true
   },
   {
+    "key": "Lazy loading",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "lazy-loading",
+        "label": "Lazy loading",
+        "summary": "A performance optimization pattern that defers the loading of non-critical resources until they are needed by the user.",
+        "domains": [
+          "it/web/frontend"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "deferred loading",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "lazy-loading",
+        "label": "Lazy loading",
+        "summary": "A performance optimization pattern that defers the loading of non-critical resources until they are needed by the user.",
+        "domains": [
+          "it/web/frontend"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "on-demand loading",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "lazy-loading",
+        "label": "Lazy loading",
+        "summary": "A performance optimization pattern that defers the loading of non-critical resources until they are needed by the user.",
+        "domains": [
+          "it/web/frontend"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
     "key": "Principle of least privilege",
     "match": "any-case",
     "concepts": [
@@ -5326,6 +7678,21 @@
         "summary": "A present financial obligation of an enterprise arising from past events, settlement of which requires an outflow of economic resources.",
         "domains": [
           "finance/accounting/bookkeeping"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "LiDAR",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "lidar",
+        "label": "LiDAR",
+        "summary": "A remote-sensing method that illuminates a target with pulsed laser light and measures reflected return times to generate high-resolution three-dimensional spatial coordinates.",
+        "domains": [
+          "iot/devices-sensors"
         ]
       }
     ],
@@ -5501,6 +7868,66 @@
     "autolink": true
   },
   {
+    "key": "Load testing",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "load-testing",
+        "label": "Load testing",
+        "summary": "A non-functional software testing technique that subjects an application or system to simulated concurrent usage to evaluate its throughput, latency, and operational stability.",
+        "domains": [
+          "it/software-engineering/testing"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Performance load testing",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "load-testing",
+        "label": "Load testing",
+        "summary": "A non-functional software testing technique that subjects an application or system to simulated concurrent usage to evaluate its throughput, latency, and operational stability.",
+        "domains": [
+          "it/software-engineering/testing"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "localStorage",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "local-storage",
+        "label": "localStorage",
+        "summary": "A Web Storage API mechanism that allows web applications to store persistent key-value pairs locally within the user’s browser.",
+        "domains": [
+          "it/web/frontend"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Web Storage",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "local-storage",
+        "label": "localStorage",
+        "summary": "A Web Storage API mechanism that allows web applications to store persistent key-value pairs locally within the user’s browser.",
+        "domains": [
+          "it/web/frontend"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
     "key": "Log",
     "match": "any-case",
     "concepts": [
@@ -5571,6 +7998,7 @@
       {
         "id": "lora",
         "label": "Low-Rank Adaptation",
+        "qualifier": "(AI)",
         "summary": "A parameter-efficient fine-tuning method that freezes the original weights and trains small low-rank matrices that represent the weight update.",
         "domains": [
           "it/ai-ml/mlops"
@@ -5586,9 +8014,35 @@
       {
         "id": "lora",
         "label": "Low-Rank Adaptation",
+        "qualifier": "(AI)",
         "summary": "A parameter-efficient fine-tuning method that freezes the original weights and trains small low-rank matrices that represent the weight update.",
         "domains": [
           "it/ai-ml/mlops"
+        ]
+      },
+      {
+        "id": "lora-radio",
+        "label": "LoRa",
+        "qualifier": "(IoT)",
+        "summary": "A proprietary physical-layer wireless radio frequency modulation technique derived from Chirp Spread Spectrum (CSS) that enables long-range, low-power data communications across license-free sub-gigahertz bands.",
+        "domains": [
+          "iot/connectivity-protocols"
+        ]
+      }
+    ],
+    "autolink": false
+  },
+  {
+    "key": "Long Range radio",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "lora-radio",
+        "label": "LoRa",
+        "qualifier": "(IoT)",
+        "summary": "A proprietary physical-layer wireless radio frequency modulation technique derived from Chirp Spread Spectrum (CSS) that enables long-range, low-power data communications across license-free sub-gigahertz bands.",
+        "domains": [
+          "iot/connectivity-protocols"
         ]
       }
     ],
@@ -5649,6 +8103,69 @@
         "summary": "A mathematical function quantifying the discrepancy between a model's predicted outputs and true ground-truth targets.",
         "domains": [
           "it/ai-ml/foundations"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Low-code",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "low-code",
+        "label": "Low-code",
+        "summary": "A software development approach combining graphical user interfaces and modular building blocks to construct digital solutions rapidly while accommodating hand-written programming extensions.",
+        "domains": [
+          "it/business-systems/automation"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Sleep mode",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "low-power-mode",
+        "label": "Sleep mode",
+        "qualifier": "(Embedded)",
+        "summary": "A reduced-consumption operational state in microcontrollers where clock oscillators, high-speed peripherals, and processing cores are gated off until an external interrupt or timer triggers awakening.",
+        "domains": [
+          "iot/devices-sensors"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Low-power mode",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "low-power-mode",
+        "label": "Sleep mode",
+        "qualifier": "(Embedded)",
+        "summary": "A reduced-consumption operational state in microcontrollers where clock oscillators, high-speed peripherals, and processing cores are gated off until an external interrupt or timer triggers awakening.",
+        "domains": [
+          "iot/devices-sensors"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Deep sleep",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "low-power-mode",
+        "label": "Sleep mode",
+        "qualifier": "(Embedded)",
+        "summary": "A reduced-consumption operational state in microcontrollers where clock oscillators, high-speed peripherals, and processing cores are gated off until an external interrupt or timer triggers awakening.",
+        "domains": [
+          "iot/devices-sensors"
         ]
       }
     ],
@@ -5811,6 +8328,68 @@
         "summary": "A strategic framework illustrating the progressive stages of a customer's journey, from initial brand awareness through consideration to final purchase and retention.",
         "domains": [
           "media/digital-marketing/metrics-analytics"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Materialized view",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "materialized-view",
+        "label": "Materialized view",
+        "summary": "A database object that contains the pre-computed results of a query stored physically on disk for high-speed retrieval.",
+        "domains": [
+          "it/data/database"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "snapshot view",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "materialized-view",
+        "label": "Materialized view",
+        "summary": "A database object that contains the pre-computed results of a query stored physically on disk for high-speed retrieval.",
+        "domains": [
+          "it/data/database"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Matter",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "matter-iot",
+        "label": "Matter",
+        "qualifier": "(IoT)",
+        "summary": "An open-source, interoperable smart home connectivity standard operating over IP that allows certified devices to communicate seamlessly across Apple Home, Google Home, and Amazon Alexa ecosystems.",
+        "domains": [
+          "iot/connectivity-protocols"
+        ]
+      }
+    ],
+    "autolink": false
+  },
+  {
+    "key": "Matter standard",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "matter-iot",
+        "label": "Matter",
+        "qualifier": "(IoT)",
+        "summary": "An open-source, interoperable smart home connectivity standard operating over IP that allows certified devices to communicate seamlessly across Apple Home, Google Home, and Amazon Alexa ecosystems.",
+        "domains": [
+          "iot/connectivity-protocols"
         ]
       }
     ],
@@ -6200,6 +8779,66 @@
     "autolink": false
   },
   {
+    "key": "MongoDB",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "mongodb",
+        "label": "MongoDB",
+        "summary": "A popular open-source document database that stores operational data in flexible, JSON-like BSON documents.",
+        "domains": [
+          "it/data/database"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Monolithic architecture",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "monolith",
+        "label": "Monolithic architecture",
+        "summary": "An architectural model where all business capabilities, user interfaces, and database operations are packaged and deployed as a single combined system.",
+        "domains": [
+          "it/software-engineering/architecture"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Monolith",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "monolith",
+        "label": "Monolithic architecture",
+        "summary": "An architectural model where all business capabilities, user interfaces, and database operations are packaged and deployed as a single combined system.",
+        "domains": [
+          "it/software-engineering/architecture"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Monolithic system",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "monolith",
+        "label": "Monolithic architecture",
+        "summary": "An architectural model where all business capabilities, user interfaces, and database operations are packaged and deployed as a single combined system.",
+        "domains": [
+          "it/software-engineering/architecture"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
     "key": "Monorepo",
     "match": "any-case",
     "concepts": [
@@ -6511,6 +9150,97 @@
     "autolink": true
   },
   {
+    "key": "Near-field communication (NFC)",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "nfc",
+        "label": "Near-field communication (NFC)",
+        "summary": "A short-range, high-frequency standards-based wireless connectivity technology operating at 13.56 MHz that enables intuitive two-way communication when devices are brought within 4 centimeters.",
+        "domains": [
+          "iot/connectivity-protocols"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "NFC",
+    "match": "exact-case",
+    "concepts": [
+      {
+        "id": "nfc",
+        "label": "Near-field communication (NFC)",
+        "summary": "A short-range, high-frequency standards-based wireless connectivity technology operating at 13.56 MHz that enables intuitive two-way communication when devices are brought within 4 centimeters.",
+        "domains": [
+          "iot/connectivity-protocols"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Nginx",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "nginx",
+        "label": "Nginx",
+        "summary": "A high-performance HTTP web server, reverse proxy, and load balancer designed for maximum concurrency and low memory usage.",
+        "domains": [
+          "it/web/backend",
+          "it/infrastructure/networking"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "No-code",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "no-code",
+        "label": "No-code",
+        "summary": "A software creation method that empowers non-technical users to build functional applications and workflows entirely through graphical drag-and-drop interfaces without writing source code.",
+        "domains": [
+          "it/business-systems/automation"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Node.js",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "nodejs",
+        "label": "Node.js",
+        "summary": "A standalone server runtime that compiles and executes JavaScript code outside browser sandboxes via Google V8 engine.",
+        "domains": [
+          "it/web/backend"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Node",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "nodejs",
+        "label": "Node.js",
+        "summary": "A standalone server runtime that compiles and executes JavaScript code outside browser sandboxes via Google V8 engine.",
+        "domains": [
+          "it/web/backend"
+        ]
+      }
+    ],
+    "autolink": false
+  },
+  {
     "key": "North Star metric",
     "match": "any-case",
     "concepts": [
@@ -6520,6 +9250,36 @@
         "summary": "The primary operational metric capturing the core value delivered to customers that serves as the leading indicator of sustainable business growth.",
         "domains": [
           "product/metrics"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "NoSQL",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "nosql",
+        "label": "NoSQL",
+        "summary": "A broad class of non-relational database systems designed to handle flexible data models, high velocity, and horizontal scalability.",
+        "domains": [
+          "it/data/database"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "non-relational database",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "nosql",
+        "label": "NoSQL",
+        "summary": "A broad class of non-relational database systems designed to handle flexible data models, high velocity, and horizontal scalability.",
+        "domains": [
+          "it/data/database"
         ]
       }
     ],
@@ -6700,6 +9460,66 @@
         "summary": "A collaborative goal-setting framework pairing ambitious qualitative objectives with measurable key results to track organizational progress.",
         "domains": [
           "product/metrics"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Online Analytical Processing (OLAP)",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "olap",
+        "label": "Online Analytical Processing (OLAP)",
+        "summary": "A category of software tools and database engines optimized for performing multidimensional analysis across massive archives of historical metrics with sub-second latency.",
+        "domains": [
+          "it/data/analytics"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "OLAP",
+    "match": "exact-case",
+    "concepts": [
+      {
+        "id": "olap",
+        "label": "Online Analytical Processing (OLAP)",
+        "summary": "A category of software tools and database engines optimized for performing multidimensional analysis across massive archives of historical metrics with sub-second latency.",
+        "domains": [
+          "it/data/analytics"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Online Transaction Processing (OLTP)",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "oltp",
+        "label": "Online Transaction Processing (OLTP)",
+        "summary": "A category of data processing focused on executing and recording a high volume of short, immediate database transactions.",
+        "domains": [
+          "it/data/database"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "OLTP",
+    "match": "exact-case",
+    "concepts": [
+      {
+        "id": "oltp",
+        "label": "Online Transaction Processing (OLTP)",
+        "summary": "A category of data processing focused on executing and recording a high volume of short, immediate database transactions.",
+        "domains": [
+          "it/data/database"
         ]
       }
     ],
@@ -7038,6 +9858,22 @@
     "autolink": true
   },
   {
+    "key": "Payment gateway",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "payment-gateway",
+        "label": "Payment gateway",
+        "summary": "A technology service that authorizes online credit card and digital payment transactions between e-commerce merchants and financial networks.",
+        "domains": [
+          "it/business-systems/enterprise-apps",
+          "finance/banking/payments"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
     "key": "Paywall",
     "match": "any-case",
     "concepts": [
@@ -7323,6 +10159,66 @@
     "autolink": true
   },
   {
+    "key": "Point of sale (POS)",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "pos-system",
+        "label": "Point of sale (POS)",
+        "summary": "The combined hardware and software terminal where retail transactions are completed, payments processed, and inventory deducted.",
+        "domains": [
+          "it/business-systems/enterprise-apps"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "POS",
+    "match": "exact-case",
+    "concepts": [
+      {
+        "id": "pos-system",
+        "label": "Point of sale (POS)",
+        "summary": "The combined hardware and software terminal where retail transactions are completed, payments processed, and inventory deducted.",
+        "domains": [
+          "it/business-systems/enterprise-apps"
+        ]
+      }
+    ],
+    "autolink": false
+  },
+  {
+    "key": "PostgreSQL",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "postgresql",
+        "label": "PostgreSQL",
+        "summary": "A powerful, open-source object-relational database system renowned for reliability, feature robustness, and SQL standards compliance.",
+        "domains": [
+          "it/data/database"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Postgres",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "postgresql",
+        "label": "PostgreSQL",
+        "summary": "A powerful, open-source object-relational database system renowned for reliability, feature robustness, and SQL standards compliance.",
+        "domains": [
+          "it/data/database"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
     "key": "Postmortem",
     "match": "any-case",
     "concepts": [
@@ -7554,6 +10450,36 @@
     "autolink": true
   },
   {
+    "key": "Primary key",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "primary-key",
+        "label": "Primary key",
+        "summary": "A specific column or set of columns in a relational database table that uniquely identifies each individual record in that table.",
+        "domains": [
+          "it/data/database"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "PK",
+    "match": "exact-case",
+    "concepts": [
+      {
+        "id": "primary-key",
+        "label": "Primary key",
+        "summary": "A specific column or set of columns in a relational database table that uniquely identifies each individual record in that table.",
+        "domains": [
+          "it/data/database"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
     "key": "Principal",
     "match": "any-case",
     "concepts": [
@@ -7769,6 +10695,36 @@
     "autolink": true
   },
   {
+    "key": "Progressive web app (PWA)",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "progressive-web-app",
+        "label": "Progressive web app (PWA)",
+        "summary": "A web application built using web technologies that delivers app-like experiences, offline capabilities, and device installation.",
+        "domains": [
+          "it/web/frontend"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "PWA",
+    "match": "exact-case",
+    "concepts": [
+      {
+        "id": "progressive-web-app",
+        "label": "Progressive web app (PWA)",
+        "summary": "A web application built using web technologies that delivers app-like experiences, offline capabilities, and device installation.",
+        "domains": [
+          "it/web/frontend"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
     "key": "Promise",
     "match": "any-case",
     "concepts": [
@@ -7830,6 +10786,54 @@
     "autolink": true
   },
   {
+    "key": "Publish-subscribe (pub/sub)",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "publish-subscribe",
+        "label": "Publish-subscribe (pub/sub)",
+        "summary": "An asynchronous architectural messaging pattern where message senders categorize broadcasts without directing them to specific individual subscribers.",
+        "domains": [
+          "it/web/backend",
+          "it/data/data-engineering"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "pub/sub",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "publish-subscribe",
+        "label": "Publish-subscribe (pub/sub)",
+        "summary": "An asynchronous architectural messaging pattern where message senders categorize broadcasts without directing them to specific individual subscribers.",
+        "domains": [
+          "it/web/backend",
+          "it/data/data-engineering"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "pub-sub",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "publish-subscribe",
+        "label": "Publish-subscribe (pub/sub)",
+        "summary": "An asynchronous architectural messaging pattern where message senders categorize broadcasts without directing them to specific individual subscribers.",
+        "domains": [
+          "it/web/backend",
+          "it/data/data-engineering"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
     "key": "Pull request (PR)",
     "match": "any-case",
     "concepts": [
@@ -7869,6 +10873,36 @@
         "summary": "A mechanism in distributed version control platforms that allows a developer to propose changes from a feature branch and request peer review before merging.",
         "domains": [
           "it/software-engineering/version-control"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Pulse-width modulation (PWM)",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "pwm",
+        "label": "Pulse-width modulation (PWM)",
+        "summary": "A modulation method that regulates the effective average power delivered to a load by varying the duty cycle of a rapid square-wave switching signal.",
+        "domains": [
+          "iot/devices-sensors"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "PWM",
+    "match": "exact-case",
+    "concepts": [
+      {
+        "id": "pwm",
+        "label": "Pulse-width modulation (PWM)",
+        "summary": "A modulation method that regulates the effective average power delivered to a load by varying the duty cycle of a rapid square-wave switching signal.",
+        "domains": [
+          "iot/devices-sensors"
         ]
       }
     ],
@@ -7952,6 +10986,21 @@
     "autolink": true
   },
   {
+    "key": "RabbitMQ",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "rabbitmq",
+        "label": "RabbitMQ",
+        "summary": "An open-source message broker that routes messages between distributed applications using protocols like AMQP.",
+        "domains": [
+          "it/web/backend"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
     "key": "Race condition",
     "match": "any-case",
     "concepts": [
@@ -7991,6 +11040,36 @@
         "summary": "A technique that retrieves relevant documents when a question arrives and adds them to the prompt so the model answers from them.",
         "domains": [
           "it/ai-ml/llm-agents"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Raspberry Pi",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "raspberry-pi",
+        "label": "Raspberry Pi",
+        "summary": "A widely adopted series of compact, cost-effective ARM-based single-board computers equipped with a standard 40-pin header for peripheral interfacing and education.",
+        "domains": [
+          "iot/devices-sensors"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "RPi",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "raspberry-pi",
+        "label": "Raspberry Pi",
+        "summary": "A widely adopted series of compact, cost-effective ARM-based single-board computers equipped with a standard 40-pin header for peripheral interfacing and education.",
+        "domains": [
+          "iot/devices-sensors"
         ]
       }
     ],
@@ -8051,6 +11130,54 @@
         "summary": "A defensive network control mechanism that caps the number of requests a client can submit to an API or service within a specified time window.",
         "domains": [
           "it/web/api"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "React",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "react",
+        "label": "React",
+        "qualifier": "(Library)",
+        "summary": "A free and open-source front-end JavaScript library for building user interfaces based on components.",
+        "domains": [
+          "it/web/frontend"
+        ]
+      }
+    ],
+    "autolink": false
+  },
+  {
+    "key": "React.js",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "react",
+        "label": "React",
+        "qualifier": "(Library)",
+        "summary": "A free and open-source front-end JavaScript library for building user interfaces based on components.",
+        "domains": [
+          "it/web/frontend"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "ReactJS",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "react",
+        "label": "React",
+        "qualifier": "(Library)",
+        "summary": "A free and open-source front-end JavaScript library for building user interfaces based on components.",
+        "domains": [
+          "it/web/frontend"
         ]
       }
     ],
@@ -8132,6 +11259,22 @@
     "autolink": true
   },
   {
+    "key": "Redis",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "redis",
+        "label": "Redis",
+        "summary": "An open-source, in-memory data structure store used as a high-speed database, cache, message broker, and streaming engine.",
+        "domains": [
+          "it/data/database",
+          "it/web/backend"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
     "key": "Refactoring",
     "match": "any-case",
     "concepts": [
@@ -8186,6 +11329,96 @@
         "summary": "A sequence of characters defining a search pattern used by string-searching algorithms for matching, validation, and text transformation.",
         "domains": [
           "it/software-engineering/programming-concepts"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Relational database",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "relational-database",
+        "label": "Relational database",
+        "summary": "A type of database that stores and provides access to data points that are related to one another through organized tables with predefined schemas.",
+        "domains": [
+          "it/data/database"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "RDBMS",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "relational-database",
+        "label": "Relational database",
+        "summary": "A type of database that stores and provides access to data points that are related to one another through organized tables with predefined schemas.",
+        "domains": [
+          "it/data/database"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "relational database management system",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "relational-database",
+        "label": "Relational database",
+        "summary": "A type of database that stores and provides access to data points that are related to one another through organized tables with predefined schemas.",
+        "domains": [
+          "it/data/database"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Responsive design",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "responsive-design",
+        "label": "Responsive design",
+        "summary": "An approach to web design that makes web pages render well on a variety of devices and screen window sizes.",
+        "domains": [
+          "it/web/frontend"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "responsive web design",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "responsive-design",
+        "label": "Responsive design",
+        "summary": "An approach to web design that makes web pages render well on a variety of devices and screen window sizes.",
+        "domains": [
+          "it/web/frontend"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "RWD",
+    "match": "exact-case",
+    "concepts": [
+      {
+        "id": "responsive-design",
+        "label": "Responsive design",
+        "summary": "An approach to web design that makes web pages render well on a variety of devices and screen window sizes.",
+        "domains": [
+          "it/web/frontend"
         ]
       }
     ],
@@ -8342,6 +11575,66 @@
     "autolink": true
   },
   {
+    "key": "Reverse proxy",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "reverse-proxy",
+        "label": "Reverse proxy",
+        "summary": "A server sitting in front of web servers that intercepts incoming client requests and routes them to internal targets, providing anonymity, load distribution, and TLS termination.",
+        "domains": [
+          "it/infrastructure/networking"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Reverse proxy server",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "reverse-proxy",
+        "label": "Reverse proxy",
+        "summary": "A server sitting in front of web servers that intercepts incoming client requests and routes them to internal targets, providing anonymity, load distribution, and TLS termination.",
+        "domains": [
+          "it/infrastructure/networking"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Radio-frequency identification (RFID)",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "rfid",
+        "label": "Radio-frequency identification (RFID)",
+        "summary": "A wireless identification technology employing electromagnetic radio frequency fields to automatically detect and read encoded data stored on passive or active electronic tags.",
+        "domains": [
+          "iot/devices-sensors"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "RFID",
+    "match": "exact-case",
+    "concepts": [
+      {
+        "id": "rfid",
+        "label": "Radio-frequency identification (RFID)",
+        "summary": "A wireless identification technology employing electromagnetic radio frequency fields to automatically detect and read encoded data stored on passive or active electronic tags.",
+        "domains": [
+          "iot/devices-sensors"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
     "key": "RICE scoring",
     "match": "any-case",
     "concepts": [
@@ -8434,6 +11727,96 @@
     "autolink": true
   },
   {
+    "key": "Robotic process automation (RPA)",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "rpa",
+        "label": "Robotic process automation (RPA)",
+        "summary": "A business automation technology that uses software bots to mimic rule-based human interactions with graphical computer interfaces.",
+        "domains": [
+          "it/business-systems/automation"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "RPA",
+    "match": "exact-case",
+    "concepts": [
+      {
+        "id": "rpa",
+        "label": "Robotic process automation (RPA)",
+        "summary": "A business automation technology that uses software bots to mimic rule-based human interactions with graphical computer interfaces.",
+        "domains": [
+          "it/business-systems/automation"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Recovery Point Objective (RPO)",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "rpo",
+        "label": "Recovery Point Objective (RPO)",
+        "summary": "The maximum acceptable age of data files or transactions that must be recovered from backup storage for normal operations to resume if a computer system crashes.",
+        "domains": [
+          "it/devops/sre-operations"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "RPO",
+    "match": "exact-case",
+    "concepts": [
+      {
+        "id": "rpo",
+        "label": "Recovery Point Objective (RPO)",
+        "summary": "The maximum acceptable age of data files or transactions that must be recovered from backup storage for normal operations to resume if a computer system crashes.",
+        "domains": [
+          "it/devops/sre-operations"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Recovery Time Objective (RTO)",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "rto",
+        "label": "Recovery Time Objective (RTO)",
+        "summary": "The maximum acceptable length of time that a system, application, or service can remain offline following a disaster or disruption before intolerable business damage occurs.",
+        "domains": [
+          "it/devops/sre-operations"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "RTO",
+    "match": "exact-case",
+    "concepts": [
+      {
+        "id": "rto",
+        "label": "Recovery Time Objective (RTO)",
+        "summary": "The maximum acceptable length of time that a system, application, or service can remain offline following a disaster or disruption before intolerable business damage occurs.",
+        "domains": [
+          "it/devops/sre-operations"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
     "key": "Real-time operating system (RTOS)",
     "match": "any-case",
     "concepts": [
@@ -8458,6 +11841,36 @@
         "summary": "An operating system designed to execute processes with deterministic timing guarantees and minimal scheduling latency for mission-critical embedded devices.",
         "domains": [
           "iot/devices-sensors"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Saga pattern",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "saga-pattern",
+        "label": "Saga pattern",
+        "summary": "A design pattern that manages distributed transactions across multiple microservices using a sequence of local transactions and compensating actions to handle failures.",
+        "domains": [
+          "it/software-engineering/architecture"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Saga distributed transaction",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "saga-pattern",
+        "label": "Saga pattern",
+        "summary": "A design pattern that manages distributed transactions across multiple microservices using a sequence of local transactions and compensating actions to handle failures.",
+        "domains": [
+          "it/software-engineering/architecture"
         ]
       }
     ],
@@ -8684,6 +12097,22 @@
     "autolink": true
   },
   {
+    "key": "Secure boot",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "secure-boot",
+        "label": "Secure boot",
+        "summary": "A security standard ensuring that an electronic device boots using only firmware and software that is verified and cryptographically signed by trusted manufacturers.",
+        "domains": [
+          "iot/devices-sensors",
+          "it/security/cryptography"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
     "key": "Semantic versioning",
     "match": "any-case",
     "concepts": [
@@ -8805,6 +12234,81 @@
     "autolink": true
   },
   {
+    "key": "Server-sent events (SSE)",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "server-sent-events",
+        "label": "Server-sent events (SSE)",
+        "summary": "A web technology where a browser client receives automatic real-time event streams from a server over an open standard HTTP connection.",
+        "domains": [
+          "it/web/api"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "SSE",
+    "match": "exact-case",
+    "concepts": [
+      {
+        "id": "server-sent-events",
+        "label": "Server-sent events (SSE)",
+        "summary": "A web technology where a browser client receives automatic real-time event streams from a server over an open standard HTTP connection.",
+        "domains": [
+          "it/web/api"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "EventSource API",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "server-sent-events",
+        "label": "Server-sent events (SSE)",
+        "summary": "A web technology where a browser client receives automatic real-time event streams from a server over an open standard HTTP connection.",
+        "domains": [
+          "it/web/api"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Server-side rendering (SSR)",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "server-side-rendering",
+        "label": "Server-side rendering (SSR)",
+        "summary": "The process of rendering web components into complete HTML strings on the server in response to user requests.",
+        "domains": [
+          "it/web/frontend"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "SSR",
+    "match": "exact-case",
+    "concepts": [
+      {
+        "id": "server-side-rendering",
+        "label": "Server-side rendering (SSR)",
+        "summary": "The process of rendering web components into complete HTML strings on the server in response to user requests.",
+        "domains": [
+          "it/web/frontend"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
     "key": "Serverless",
     "match": "any-case",
     "concepts": [
@@ -8844,6 +12348,66 @@
         "summary": "A cloud computing execution model where the cloud provider dynamically manages server infrastructure and charges only for resource consumption during code execution.",
         "domains": [
           "it/infrastructure/cloud"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Service mesh",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "service-mesh",
+        "label": "Service mesh",
+        "summary": "A dedicated infrastructure layer of networked sidecar proxies that manages, secures, and observes service-to-service communications without modifying application code.",
+        "domains": [
+          "it/software-engineering/architecture"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Sidecar proxy mesh",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "service-mesh",
+        "label": "Service mesh",
+        "summary": "A dedicated infrastructure layer of networked sidecar proxies that manages, secures, and observes service-to-service communications without modifying application code.",
+        "domains": [
+          "it/software-engineering/architecture"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Service worker",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "service-worker",
+        "label": "Service worker",
+        "summary": "An event-driven background worker script that intercepts network requests, manages caching strategies, and powers push notifications.",
+        "domains": [
+          "it/web/frontend"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "service workers",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "service-worker",
+        "label": "Service worker",
+        "summary": "An event-driven background worker script that intercepts network requests, manages caching strategies, and powers push notifications.",
+        "domains": [
+          "it/web/frontend"
         ]
       }
     ],
@@ -8921,6 +12485,96 @@
         "domains": [
           "finance/personal-finance/saving",
           "finance/banking/lending"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Single-board computer (SBC)",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "single-board-computer",
+        "label": "Single-board computer (SBC)",
+        "summary": "A complete functional computer whose microprocessor, system memory, storage interfaces, input-output controllers, and networking ports are assembled onto a single physical printed circuit board.",
+        "domains": [
+          "iot/devices-sensors"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "SBC",
+    "match": "exact-case",
+    "concepts": [
+      {
+        "id": "single-board-computer",
+        "label": "Single-board computer (SBC)",
+        "summary": "A complete functional computer whose microprocessor, system memory, storage interfaces, input-output controllers, and networking ports are assembled onto a single physical printed circuit board.",
+        "domains": [
+          "iot/devices-sensors"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Single-page application (SPA)",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "single-page-application",
+        "label": "Single-page application (SPA)",
+        "summary": "A web application that interacts with the user by dynamically rewriting the current web page rather than loading entire new pages from a server.",
+        "domains": [
+          "it/web/frontend"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "SPA",
+    "match": "exact-case",
+    "concepts": [
+      {
+        "id": "single-page-application",
+        "label": "Single-page application (SPA)",
+        "summary": "A web application that interacts with the user by dynamically rewriting the current web page rather than loading entire new pages from a server.",
+        "domains": [
+          "it/web/frontend"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Single point of failure (SPOF)",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "single-point-of-failure",
+        "label": "Single point of failure (SPOF)",
+        "summary": "A potential risk in system architecture where a single component failure will trigger the cessation of the entire system because no redundancy exists.",
+        "domains": [
+          "it/devops/sre-operations"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "SPOF",
+    "match": "exact-case",
+    "concepts": [
+      {
+        "id": "single-point-of-failure",
+        "label": "Single point of failure (SPOF)",
+        "summary": "A potential risk in system architecture where a single component failure will trigger the cessation of the entire system because no redundancy exists.",
+        "domains": [
+          "it/devops/sre-operations"
         ]
       }
     ],
@@ -9024,6 +12678,21 @@
         "id": "smart-home",
         "label": "Smart home",
         "summary": "A residential environment equipped with interconnected electronic devices that automate domestic tasks, optimize utility usage, and enable centralized remote monitoring.",
+        "domains": [
+          "iot/devices-sensors"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Smart meter",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "smart-meter",
+        "label": "Smart meter",
+        "summary": "An advanced electronic utility metering device that records consumption of electric energy, water, or gas in real time and communicates intervals back to the utility provider via automated networks.",
         "domains": [
           "iot/devices-sensors"
         ]
@@ -9186,6 +12855,36 @@
         "summary": "A packaged collection of pre-written functions, classes, and subroutines that developers import and call directly to accomplish specific programmatic tasks.",
         "domains": [
           "it/software-engineering/programming-concepts"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Serial Peripheral Interface (SPI)",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "spi-bus",
+        "label": "Serial Peripheral Interface (SPI)",
+        "summary": "A high-speed, synchronous four-wire serial interface providing full-duplex data transfer between a master device and one or more selected peripheral devices using dedicated chip select lines.",
+        "domains": [
+          "iot/devices-sensors"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "SPI",
+    "match": "exact-case",
+    "concepts": [
+      {
+        "id": "spi-bus",
+        "label": "Serial Peripheral Interface (SPI)",
+        "summary": "A high-speed, synchronous four-wire serial interface providing full-duplex data transfer between a master device and one or more selected peripheral devices using dedicated chip select lines.",
+        "domains": [
+          "iot/devices-sensors"
         ]
       }
     ],
@@ -9494,6 +13193,36 @@
     "autolink": true
   },
   {
+    "key": "Static site generation (SSG)",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "static-site-generation",
+        "label": "Static site generation (SSG)",
+        "summary": "A build method that pre-renders full HTML pages at compile time rather than on demand for each user request.",
+        "domains": [
+          "it/web/frontend"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "SSG",
+    "match": "exact-case",
+    "concepts": [
+      {
+        "id": "static-site-generation",
+        "label": "Static site generation (SSG)",
+        "summary": "A build method that pre-renders full HTML pages at compile time rather than on demand for each user request.",
+        "domains": [
+          "it/web/frontend"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
     "key": "Stock",
     "match": "any-case",
     "concepts": [
@@ -9672,6 +13401,36 @@
         "summary": "A sequential visual layout of illustrations and annotations representing proposed camera angles, character movements, and staging before production begins.",
         "domains": [
           "media/content-production/video"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Stream processing",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "stream-processing",
+        "label": "Stream processing",
+        "summary": "The continuous ingestion and real-time computation of data records directly as they are generated.",
+        "domains": [
+          "it/data/data-engineering"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "streaming computation",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "stream-processing",
+        "label": "Stream processing",
+        "summary": "The continuous ingestion and real-time computation of data records directly as they are generated.",
+        "domains": [
+          "it/data/data-engineering"
         ]
       }
     ],
@@ -9863,6 +13622,15 @@
     "match": "any-case",
     "concepts": [
       {
+        "id": "thread-iot",
+        "label": "Thread",
+        "qualifier": "(IoT)",
+        "summary": "An IPv6-based, low-power wireless mesh networking protocol built on IEEE 802.15.4 that provides reliable, secure, and self-healing connectivity for smart home devices without requiring a central hub.",
+        "domains": [
+          "iot/connectivity-protocols"
+        ]
+      },
+      {
         "id": "thread-programming",
         "label": "Thread",
         "qualifier": "(Programming)",
@@ -9873,6 +13641,22 @@
       }
     ],
     "autolink": false
+  },
+  {
+    "key": "Thread protocol",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "thread-iot",
+        "label": "Thread",
+        "qualifier": "(IoT)",
+        "summary": "An IPv6-based, low-power wireless mesh networking protocol built on IEEE 802.15.4 that provides reliable, secure, and self-healing connectivity for smart home devices without requiring a central hub.",
+        "domains": [
+          "iot/connectivity-protocols"
+        ]
+      }
+    ],
+    "autolink": true
   },
   {
     "key": "Throughput",
@@ -9929,6 +13713,70 @@
         "summary": "The rate at which a computer system, communication channel, or application successfully processes and delivers data or transactions per unit of time.",
         "domains": [
           "it/infrastructure/networking"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Time-series database",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "time-series-database",
+        "label": "Time-series database",
+        "summary": "A database optimized for storing, querying, and analyzing sequences of data points indexed in chronological order.",
+        "domains": [
+          "it/data/database",
+          "iot/edge-cloud"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "TSDB",
+    "match": "exact-case",
+    "concepts": [
+      {
+        "id": "time-series-database",
+        "label": "Time-series database",
+        "summary": "A database optimized for storing, querying, and analyzing sequences of data points indexed in chronological order.",
+        "domains": [
+          "it/data/database",
+          "iot/edge-cloud"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "TinyML",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "tinyml",
+        "label": "TinyML",
+        "summary": "A subfield of machine learning focused on optimizing and executing neural network models directly on resource-constrained microcontrollers operating in the milliwatt or microwatt power envelope.",
+        "domains": [
+          "iot/edge-cloud",
+          "it/ai-ml/mlops"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Tiny Machine Learning",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "tinyml",
+        "label": "TinyML",
+        "summary": "A subfield of machine learning focused on optimizing and executing neural network models directly on resource-constrained microcontrollers operating in the milliwatt or microwatt power envelope.",
+        "domains": [
+          "iot/edge-cloud",
+          "it/ai-ml/mlops"
         ]
       }
     ],
@@ -10145,6 +13993,36 @@
     "autolink": true
   },
   {
+    "key": "Tree shaking",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "tree-shaking",
+        "label": "Tree shaking",
+        "summary": "A dead-code elimination technique commonly used in modern JavaScript bundlers to remove unused exports from final production bundles.",
+        "domains": [
+          "it/web/frontend"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "dead code elimination",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "tree-shaking",
+        "label": "Tree shaking",
+        "summary": "A dead-code elimination technique commonly used in modern JavaScript bundlers to remove unused exports from final production bundles.",
+        "domains": [
+          "it/web/frontend"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
     "key": "Type checking",
     "match": "any-case",
     "concepts": [
@@ -10158,6 +14036,38 @@
       }
     ],
     "autolink": true
+  },
+  {
+    "key": "TypeScript",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "typescript",
+        "label": "TypeScript",
+        "summary": "A strongly typed programming language that builds on JavaScript, giving developers better tooling and early error detection.",
+        "domains": [
+          "it/web/frontend",
+          "it/software-engineering/programming-concepts"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "TS",
+    "match": "exact-case",
+    "concepts": [
+      {
+        "id": "typescript",
+        "label": "TypeScript",
+        "summary": "A strongly typed programming language that builds on JavaScript, giving developers better tooling and early error detection.",
+        "domains": [
+          "it/web/frontend",
+          "it/software-engineering/programming-concepts"
+        ]
+      }
+    ],
+    "autolink": false
   },
   {
     "key": "Typography",
@@ -10199,6 +14109,36 @@
         "summary": "The art, craft, and technique of selecting and arranging typefaces, font weights, kerning, and spacing to render written language legible, readable, and visually engaging.",
         "domains": [
           "media/content-production/visual-design"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "UART",
+    "match": "exact-case",
+    "concepts": [
+      {
+        "id": "uart",
+        "label": "UART",
+        "summary": "A physical integrated circuit hardware block that translates parallel computing data into sequential asynchronous serial bitstreams over paired transmit (TX) and receive (RX) wires.",
+        "domains": [
+          "iot/devices-sensors"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Universal Asynchronous Receiver-Transmitter",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "uart",
+        "label": "UART",
+        "summary": "A physical integrated circuit hardware block that translates parallel computing data into sequential asynchronous serial bitstreams over paired transmit (TX) and receive (RX) wires.",
+        "domains": [
+          "iot/devices-sensors"
         ]
       }
     ],
@@ -10259,6 +14199,51 @@
         "summary": "The proportion or duration of time that a computer system, network, or application remains fully functional and accessible to users.",
         "domains": [
           "it/devops/sre-operations"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "URL",
+    "match": "exact-case",
+    "concepts": [
+      {
+        "id": "url",
+        "label": "URL",
+        "summary": "A structured reference syntax identifying network location coordinates and retrieval protocols for internet resources.",
+        "domains": [
+          "it/web/frontend"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Uniform Resource Locator",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "url",
+        "label": "URL",
+        "summary": "A structured reference syntax identifying network location coordinates and retrieval protocols for internet resources.",
+        "domains": [
+          "it/web/frontend"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "web address",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "url",
+        "label": "URL",
+        "summary": "A structured reference syntax identifying network location coordinates and retrieval protocols for internet resources.",
+        "domains": [
+          "it/web/frontend"
         ]
       }
     ],
@@ -10495,6 +14480,51 @@
     "autolink": true
   },
   {
+    "key": "Vertical scaling",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "vertical-scaling",
+        "label": "Vertical scaling",
+        "summary": "The practice of increasing system capacity by provisioning more compute resources, such as CPU cores, RAM, or storage speed, to a single server instance.",
+        "domains": [
+          "it/infrastructure/cloud"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Scale up",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "vertical-scaling",
+        "label": "Vertical scaling",
+        "summary": "The practice of increasing system capacity by provisioning more compute resources, such as CPU cores, RAM, or storage speed, to a single server instance.",
+        "domains": [
+          "it/infrastructure/cloud"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Scaling up",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "vertical-scaling",
+        "label": "Vertical scaling",
+        "summary": "The practice of increasing system capacity by provisioning more compute resources, such as CPU cores, RAM, or storage speed, to a single server instance.",
+        "domains": [
+          "it/infrastructure/cloud"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
     "key": "Virtual machine (VM)",
     "match": "any-case",
     "concepts": [
@@ -10663,6 +14693,141 @@
     "autolink": true
   },
   {
+    "key": "WCAG",
+    "match": "exact-case",
+    "concepts": [
+      {
+        "id": "wcag",
+        "label": "WCAG",
+        "summary": "A set of formal web accessibility recommendations published by the W3C Web Accessibility Initiative.",
+        "domains": [
+          "it/web/frontend"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Web Content Accessibility Guidelines",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "wcag",
+        "label": "WCAG",
+        "summary": "A set of formal web accessibility recommendations published by the W3C Web Accessibility Initiative.",
+        "domains": [
+          "it/web/frontend"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Wearable device",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "wearable",
+        "label": "Wearable device",
+        "summary": "A category of compact electronic devices designed to be comfortably worn on the body or clothing, incorporating sensors, processing, and wireless transceivers for continuous biometric tracking.",
+        "domains": [
+          "iot/devices-sensors"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Wearable",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "wearable",
+        "label": "Wearable device",
+        "summary": "A category of compact electronic devices designed to be comfortably worn on the body or clothing, incorporating sensors, processing, and wireless transceivers for continuous biometric tracking.",
+        "domains": [
+          "iot/devices-sensors"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Web accessibility (a11y)",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "web-accessibility",
+        "label": "Web accessibility (a11y)",
+        "summary": "The inclusive practice of ensuring there are no barriers that prevent interaction with websites by people with physical, sensory, or cognitive disabilities.",
+        "domains": [
+          "it/web/frontend"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "a11y",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "web-accessibility",
+        "label": "Web accessibility (a11y)",
+        "summary": "The inclusive practice of ensuring there are no barriers that prevent interaction with websites by people with physical, sensory, or cognitive disabilities.",
+        "domains": [
+          "it/web/frontend"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "accessibility",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "web-accessibility",
+        "label": "Web accessibility (a11y)",
+        "summary": "The inclusive practice of ensuring there are no barriers that prevent interaction with websites by people with physical, sensory, or cognitive disabilities.",
+        "domains": [
+          "it/web/frontend"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Web server",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "web-server",
+        "label": "Web server",
+        "summary": "A computer system or software application that processes incoming network requests over HTTP and serves web content to clients.",
+        "domains": [
+          "it/web/backend"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "HTTP server",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "web-server",
+        "label": "Web server",
+        "summary": "A computer system or software application that processes incoming network requests over HTTP and serves web content to clients.",
+        "domains": [
+          "it/web/backend"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
     "key": "Session",
     "match": "any-case",
     "concepts": [
@@ -10741,6 +14906,99 @@
     "autolink": true
   },
   {
+    "key": "WebSocket",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "websocket",
+        "label": "WebSocket",
+        "summary": "A computer communications protocol providing full-duplex, bidirectional communication channels over a single persistent TCP connection initiated via an HTTP upgrade handshake.",
+        "domains": [
+          "it/web/api"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "WebSocket protocol",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "websocket",
+        "label": "WebSocket",
+        "summary": "A computer communications protocol providing full-duplex, bidirectional communication channels over a single persistent TCP connection initiated via an HTTP upgrade handshake.",
+        "domains": [
+          "it/web/api"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Wi-Fi",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "wifi",
+        "label": "Wi-Fi",
+        "summary": "A family of wireless network protocols based on the IEEE 802.11 standards used for local area networking of devices and high-speed internet access across licensed-exempt radio bands.",
+        "domains": [
+          "iot/connectivity-protocols",
+          "it/infrastructure/networking"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "WiFi",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "wifi",
+        "label": "Wi-Fi",
+        "summary": "A family of wireless network protocols based on the IEEE 802.11 standards used for local area networking of devices and high-speed internet access across licensed-exempt radio bands.",
+        "domains": [
+          "iot/connectivity-protocols",
+          "it/infrastructure/networking"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "IEEE 802.11",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "wifi",
+        "label": "Wi-Fi",
+        "summary": "A family of wireless network protocols based on the IEEE 802.11 standards used for local area networking of devices and high-speed internet access across licensed-exempt radio bands.",
+        "domains": [
+          "iot/connectivity-protocols",
+          "it/infrastructure/networking"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Workflow automation",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "workflow-automation",
+        "label": "Workflow automation",
+        "summary": "The design and execution of automated sequences that pass data and trigger tasks across multiple business tools based on defined logical rules.",
+        "domains": [
+          "it/business-systems/automation"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
     "key": "Working capital",
     "match": "any-case",
     "concepts": [
@@ -10810,6 +15068,21 @@
         "summary": "A web application flaw permitting attackers to embed rogue executable scripts into viewed pages, running unauthorized actions inside visitor browsers.",
         "domains": [
           "it/security/vulnerabilities"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Z-Wave",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "z-wave",
+        "label": "Z-Wave",
+        "summary": "A wireless communications protocol operating in the sub-gigahertz frequency spectrum designed specifically for reliable, interference-free mesh networking in residential home automation.",
+        "domains": [
+          "iot/connectivity-protocols"
         ]
       }
     ],

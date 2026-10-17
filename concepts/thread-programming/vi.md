@@ -16,6 +16,7 @@ plain_descriptions:
   - "nhánh chạy lệnh gọn nhẹ bên trong một tiến trình dùng chung bộ nhớ với các luồng anh em"
 summary: "Đơn vị thực thi nhỏ nhất bên trong một tiến trình hệ điều hành, chia sẻ không gian bộ nhớ và tài nguyên của tiến trình cha với các luồng khác."
 confusable_notes:
+  thread-iot: "Thread (Lập trình) là một luồng thực thi bên trong tiến trình, còn Thread (IoT) là giao thức mạng lưới không dây IPv6 cho thiết bị tiết kiệm năng lượng."
   os-process: "Tiến trình sở hữu không gian bộ nhớ độc lập và tài nguyên hệ thống riêng biệt, trong khi luồng nằm bên trong tiến trình và dùng chung không gian địa chỉ với các luồng khác."
 follow_up_questions:
   - "Khóa mutex và semaphore ngăn chặn xung đột tương tranh (race condition) giữa các luồng dùng chung bộ nhớ ra sao?"

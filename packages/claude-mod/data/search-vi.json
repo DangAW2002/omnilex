@@ -22,6 +22,27 @@
     "status": "draft"
   },
   {
+    "id": "accelerometer",
+    "label": "Accelerometer",
+    "aliases": [
+      "Gia tốc kế",
+      "Cảm biến gia tốc"
+    ],
+    "loanwords": [
+      "accelerometer"
+    ],
+    "plain_descriptions": [
+      "cảm biến nhận biết rung lắc, chuyển động và lực hút trọng lực của Trái Đất",
+      "con chip đo lực gia tốc giúp điện thoại tự xoay ngang màn hình khi bạn nghiêng máy"
+    ],
+    "summary": "Cảm biến cơ điện vi mô đo gia tốc riêng của vật thể—tốc độ thay đổi vận tốc tuyến tính trên các trục tọa độ bao gồm cả trọng lực Trái Đất.",
+    "domains": [
+      "iot/devices-sensors"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
     "id": "acceptance-criteria",
     "label": "Acceptance criteria",
     "aliases": [
@@ -58,6 +79,27 @@
     "summary": "Nguyên tắc kế toán quy định mọi nghiệp vụ kinh tế tài chính phải được ghi sổ vào thời điểm phát sinh, không căn cứ vào thời điểm thực tế thu hoặc chi tiền.",
     "domains": [
       "finance/accounting/standards"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
+    "id": "acid",
+    "label": "ACID",
+    "qualifier": "(Cơ sở dữ liệu)",
+    "aliases": [
+      "tính chất ACID"
+    ],
+    "loanwords": [
+      "ACID"
+    ],
+    "plain_descriptions": [
+      "bốn nguyên tắc an toàn bảo đảm giao dịch cơ sở dữ liệu luôn hoàn thành trọn vẹn và không bị lỗi",
+      "lời cam kết của hệ thống rằng giao dịch tiền bạc hoặc thành công 100% hoặc không để lại dấu vết"
+    ],
+    "summary": "Bộ bốn đặc tính cơ bản (Nguyên tử, Nhất quán, Cô lập, Bền vững) bảo đảm các giao dịch cơ sở dữ liệu được xử lý an toàn và tin cậy.",
+    "domains": [
+      "it/data/database"
     ],
     "level": 2,
     "status": "draft"
@@ -101,6 +143,27 @@
       "media/digital-marketing/paid-ads"
     ],
     "level": 1,
+    "status": "draft"
+  },
+  {
+    "id": "adc",
+    "label": "Analog-to-digital converter (ADC)",
+    "aliases": [
+      "ADC",
+      "Bộ chuyển đổi tương tự sang số"
+    ],
+    "loanwords": [
+      "adc"
+    ],
+    "plain_descriptions": [
+      "mạch điện tử biến đổi điện áp thực tế liên tục thành các con số số hóa",
+      "bộ phận đọc cảm biến chuyển tín hiệu điện áp mượt mà thành số để vi tính tính toán"
+    ],
+    "summary": "Mạch điện tử thực hiện lấy mẫu tín hiệu điện áp tương tự liên tục theo thời gian và lượng tử hóa thành chuỗi các giá trị số nhị phân để máy tính xử lý.",
+    "domains": [
+      "iot/devices-sensors"
+    ],
+    "level": 2,
     "status": "draft"
   },
   {
@@ -182,6 +245,91 @@
     "status": "draft"
   },
   {
+    "id": "apache-airflow",
+    "label": "Apache Airflow",
+    "aliases": [
+      "Airflow"
+    ],
+    "loanwords": [
+      "Apache Airflow",
+      "Airflow"
+    ],
+    "plain_descriptions": [
+      "công cụ lập lịch và theo dõi đường ống dữ liệu nhiều bước bằng mã nguồn Python",
+      "người điều phối tự động giúp chạy các tác vụ trích xuất và xuất báo cáo dữ liệu theo đúng thứ tự"
+    ],
+    "summary": "Nền tảng mã nguồn mở dùng để lập trình, lập lịch và giám sát các luồng công việc kỹ thuật dữ liệu phức tạp.",
+    "domains": [
+      "it/data/data-engineering"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
+    "id": "apache-flink",
+    "label": "Apache Flink",
+    "aliases": [
+      "Flink"
+    ],
+    "loanwords": [
+      "Apache Flink",
+      "Flink"
+    ],
+    "plain_descriptions": [
+      "khung phần mềm mã nguồn mở chuyên tính toán thời gian thực trên các dòng dữ liệu liên tục",
+      "công cụ xử lý sự kiện tốc độ cao giúp cập nhật số liệu thống kê liên tục mà không cần dừng lại"
+    ],
+    "summary": "Khung xử lý phân tán mã nguồn mở dành cho các tính toán có trạng thái trên cả luồng dữ liệu vô hạn và hữu hạn.",
+    "domains": [
+      "it/data/data-engineering"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
+    "id": "apache-kafka",
+    "label": "Apache Kafka",
+    "aliases": [
+      "Kafka"
+    ],
+    "loanwords": [
+      "Apache Kafka",
+      "Kafka"
+    ],
+    "plain_descriptions": [
+      "nền tảng phần mềm phân tán ghi nhận các luồng dữ liệu liên tục qua nhiều máy chủ",
+      "trục truyền tin thời gian thực giúp lưu lịch sử sự kiện an toàn và phát lại khi cần"
+    ],
+    "summary": "Nền tảng luồng sự kiện phân tán dùng cho đường ống dữ liệu hiệu năng cao, phân tích thời gian thực và tích hợp hệ thống.",
+    "domains": [
+      "it/data/data-engineering",
+      "it/web/backend"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
+    "id": "apache-spark",
+    "label": "Apache Spark",
+    "aliases": [
+      "Spark"
+    ],
+    "loanwords": [
+      "Apache Spark",
+      "Spark"
+    ],
+    "plain_descriptions": [
+      "công cụ điện toán dữ liệu lớn xử lý các tập dữ liệu khổng lồ ngay trong bộ nhớ RAM",
+      "khung phần mềm mã nguồn mở để biến đổi dữ liệu lớn và chạy học máy trên nhiều máy chủ"
+    ],
+    "summary": "Khung điện toán phân tán mã nguồn mở được thiết kế để xử lý nhanh các tập dữ liệu quy mô lớn nhờ cơ chế lưu trữ trên bộ nhớ.",
+    "domains": [
+      "it/data/data-engineering"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
     "id": "api",
     "label": "Application Programming Interface (API)",
     "aliases": [
@@ -222,6 +370,45 @@
     "summary": "Địa chỉ URL cụ thể do hệ thống API mở ra để tiếp nhận các yêu cầu xử lý tài nguyên hoặc dịch vụ nghiệp vụ.",
     "domains": [
       "it/web/api"
+    ],
+    "level": 1,
+    "status": "draft"
+  },
+  {
+    "id": "api-gateway",
+    "label": "API gateway",
+    "aliases": [
+      "Cổng API"
+    ],
+    "loanwords": [
+      "api gateway"
+    ],
+    "plain_descriptions": [
+      "cửa ngõ đón mọi yêu cầu từ người dùng rồi phân luồng về các dịch vụ phía sau",
+      "máy chủ trung gian kiểm tra quyền, giới hạn lưu lượng và định tuyến gọi API"
+    ],
+    "summary": "Mẫu máy chủ đóng vai trò cửa ngõ tập trung đón nhận yêu cầu từ client, chuyển tiếp tới các dịch vụ nội bộ phù hợp và thực thi các tác vụ kiểm soát chung.",
+    "domains": [
+      "it/web/api",
+      "it/software-engineering/architecture"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
+    "id": "arduino",
+    "label": "Arduino",
+    "aliases": [],
+    "loanwords": [
+      "arduino"
+    ],
+    "plain_descriptions": [
+      "bo mạch điện tử mã nguồn mở giúp lập trình điều khiển đèn còi và động cơ dễ dàng",
+      "nền tảng chế tạo thiết bị thông minh dùng vi điều khiển với phần mềm nạp lệnh đơn giản"
+    ],
+    "summary": "Nền tảng phần cứng và phần mềm mã nguồn mở dựa trên vi điều khiển, được thiết kế để giúp người dùng dễ dàng lập trình và tương tác với các cảm biến, linh kiện điện tử.",
+    "domains": [
+      "iot/devices-sensors"
     ],
     "level": 1,
     "status": "draft"
@@ -413,6 +600,27 @@
     "status": "draft"
   },
   {
+    "id": "backpressure",
+    "label": "Backpressure",
+    "aliases": [
+      "Áp lực ngược",
+      "Kiểm soát dòng dữ liệu"
+    ],
+    "loanwords": [
+      "backpressure"
+    ],
+    "plain_descriptions": [
+      "phát tín hiệu yêu cầu nguồn gửi dữ liệu chậm lại để bên nhận không bị quá tải sập nguồn",
+      "cơ chế bên tiêu thụ thông báo số lượng bản ghi có thể xử lý cho bên sản xuất biết"
+    ],
+    "summary": "Cơ chế điều tiết luồng dữ liệu trong các đường ống xử lý bất đồng bộ, trong đó thành phần tiêu thụ gửi tín hiệu ngược về phía sản xuất để giới hạn tốc độ truyền tải tránh gây quá tải bộ nhớ.",
+    "domains": [
+      "it/software-engineering/architecture"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
     "id": "balance-sheet",
     "label": "Bảng cân đối kế toán",
     "aliases": [
@@ -452,6 +660,26 @@
       "finance/banking/payments"
     ],
     "level": 1,
+    "status": "draft"
+  },
+  {
+    "id": "batch-processing",
+    "label": "Batch processing",
+    "aliases": [
+      "xử lý theo lô"
+    ],
+    "loanwords": [
+      "Batch processing"
+    ],
+    "plain_descriptions": [
+      "xử lý các khối dữ liệu gom lại cùng một lúc theo lịch hẹn định kỳ",
+      "chạy tính toán khối lượng lớn vào ban đêm trên toàn bộ doanh số bán hàng của ngày hôm trước"
+    ],
+    "summary": "Việc thực thi chuỗi công việc tính toán tự động trên các khối dữ liệu lớn đã tích lũy mà không cần can thiệp thủ công.",
+    "domains": [
+      "it/data/data-engineering"
+    ],
+    "level": 2,
     "status": "draft"
   },
   {
@@ -709,6 +937,27 @@
     "status": "draft"
   },
   {
+    "id": "browser-cache",
+    "label": "Bộ nhớ đệm trình duyệt",
+    "aliases": [
+      "browser cache",
+      "web cache"
+    ],
+    "loanwords": [
+      "browser cache"
+    ],
+    "plain_descriptions": [
+      "ngăn lưu tạm nơi trình duyệt giữ lại hình ảnh và tệp để mở lại trang nhanh hơn",
+      "bộ nhớ tạm lưu các tài nguyên web đã tải giúp tránh việc phải tải lại nhiều lần"
+    ],
+    "summary": "Cơ chế lưu trữ tạm thời trong trình duyệt web giúp giữ lại các tài nguyên HTTP đã tải về để tái sử dụng trong các lần truy cập tiếp theo.",
+    "domains": [
+      "it/web/frontend"
+    ],
+    "level": 1,
+    "status": "draft"
+  },
+  {
     "id": "budget",
     "label": "Ngân sách",
     "qualifier": "(Tài chính cá nhân)",
@@ -730,6 +979,29 @@
     "status": "draft"
   },
   {
+    "id": "bundler",
+    "label": "Bundler",
+    "qualifier": "(JavaScript)",
+    "aliases": [
+      "module bundler",
+      "bộ đóng gói mã"
+    ],
+    "loanwords": [
+      "Bundler",
+      "module bundler"
+    ],
+    "plain_descriptions": [
+      "công cụ gom hàng trăm tệp mã nguồn nhỏ thành vài tệp gọn gàng để trình duyệt tải nhanh hơn",
+      "chương trình đóng gói và tối ưu hóa các tệp JavaScript, CSS trước khi đưa lên mạng"
+    ],
+    "summary": "Công cụ đóng gói và xử lý các tệp mã nguồn cùng tài nguyên liên quan thành các gói tệp hoàn chỉnh để triển khai lên web.",
+    "domains": [
+      "it/web/frontend"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
     "id": "burndown-chart",
     "label": "Burndown chart",
     "aliases": [
@@ -746,6 +1018,29 @@
     "summary": "Biểu đồ trực quan biểu diễn khối lượng công việc còn lại theo thời gian, giúp nhóm Agile dự báo khả năng hoàn thành mục tiêu đúng hạn.",
     "domains": [
       "product/delivery-planning"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
+    "id": "business-intelligence",
+    "label": "Kinh doanh thông minh",
+    "aliases": [
+      "Business intelligence",
+      "BI"
+    ],
+    "loanwords": [
+      "BI",
+      "Business intelligence"
+    ],
+    "plain_descriptions": [
+      "công cụ biến bảng tính phức tạp thành biểu đồ theo dõi sức khỏe doanh nghiệp",
+      "hệ thống trích xuất và phân tích số liệu kinh doanh để tìm kiếm xu hướng"
+    ],
+    "summary": "Phương pháp và công nghệ phân tích dữ liệu hoạt động trong quá khứ nhằm hỗ trợ ban lãnh đạo đưa ra quyết định kinh doanh.",
+    "domains": [
+      "it/data/analytics",
+      "it/business-systems/enterprise-apps"
     ],
     "level": 2,
     "status": "draft"
@@ -859,6 +1154,25 @@
     "status": "draft"
   },
   {
+    "id": "cap-theorem",
+    "label": "Định lý CAP",
+    "aliases": [
+      "định lý Brewer",
+      "CAP theorem"
+    ],
+    "loanwords": [],
+    "plain_descriptions": [
+      "nguyên tắc cốt lõi khẳng định hệ thống phân tán chỉ có thể chọn tối đa hai trong ba yếu tố nhất quán, sẵn sàng và chịu lỗi mạng",
+      "quy luật chỉ ra khi mạng đứt, cơ sở dữ liệu buộc phải chọn giữa việc trả lời đúng số liệu mới nhất hay vẫn tiếp tục phục vụ"
+    ],
+    "summary": "Nguyên lý cơ bản của điện toán phân tán khẳng định một kho lưu trữ phân tán chỉ có thể đồng thời đáp ứng tối đa hai trong ba bảo đảm, Nhất quán, Sẵn sàng và Chịu lỗi mạng.",
+    "domains": [
+      "it/data/database"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
     "id": "cash-flow-statement",
     "label": "Báo cáo lưu chuyển tiền tệ",
     "aliases": [
@@ -915,6 +1229,27 @@
     "summary": "Kỹ thuật viết prompt yêu cầu mô hình lập luận qua các bước trung gian trước khi đưa ra câu trả lời cuối cùng.",
     "domains": [
       "it/ai-ml/llm-agents"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
+    "id": "change-data-capture",
+    "label": "Change data capture (CDC)",
+    "aliases": [
+      "CDC"
+    ],
+    "loanwords": [
+      "Change data capture (CDC)",
+      "Change data capture"
+    ],
+    "plain_descriptions": [
+      "nhận diện và theo dõi các thay đổi dòng trong cơ sở dữ liệu để hệ thống khác tự cập nhật theo",
+      "theo dõi nhật ký giao dịch của cơ sở dữ liệu để đồng bộ dữ liệu sửa đổi sang bộ nhớ đệm và tìm kiếm"
+    ],
+    "summary": "Tập hợp các kỹ thuật và mẫu thiết kế giúp ghi nhận và truyền tải các thao tác sửa đổi dữ liệu cấp dòng ngay khi xảy ra.",
+    "domains": [
+      "it/data/data-engineering"
     ],
     "level": 2,
     "status": "draft"
@@ -983,6 +1318,28 @@
     "status": "draft"
   },
   {
+    "id": "circuit-breaker",
+    "label": "Circuit breaker",
+    "qualifier": "(Phần mềm)",
+    "aliases": [
+      "Bộ ngắt mạch",
+      "Mẫu ngắt mạch"
+    ],
+    "loanwords": [
+      "circuit breaker"
+    ],
+    "plain_descriptions": [
+      "cầu dao tự động ngắt kết nối tới dịch vụ đang hỏng để cứu cả hệ thống",
+      "cơ chế phản hồi lỗi tức thì khi máy chủ phía sau ngừng tiếp nhận tín hiệu"
+    ],
+    "summary": "Mẫu thiết kế ngăn chặn ứng dụng liên tục gọi một dịch vụ đang gặp sự cố, tự động ngắt mạch để trả về phản hồi lỗi ngay lập tức và tự hồi phục khi đối tác khỏe lại.",
+    "domains": [
+      "it/software-engineering/architecture"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
     "id": "class-oop",
     "label": "Class",
     "qualifier": "(Lập trình)",
@@ -1004,6 +1361,26 @@
     "status": "draft"
   },
   {
+    "id": "clean-architecture",
+    "label": "Clean architecture",
+    "aliases": [
+      "Kiến trúc sạch"
+    ],
+    "loanwords": [
+      "clean architecture"
+    ],
+    "plain_descriptions": [
+      "xếp tầng mã nguồn sao cho nghiệp vụ cốt lõi không bị trói buộc vào cơ sở dữ liệu hay thư viện",
+      "cách tổ chức code với các lớp phụ thuộc hướng vào trong để dễ dàng thay đổi công nghệ bên ngoài"
+    ],
+    "summary": "Mô hình kiến trúc phần mềm tổ chức thành các vòng tròn đồng tâm với nguyên tắc phụ thuộc nghiêm ngặt hướng vào trong, giúp lõi nghiệp vụ hoàn toàn độc lập với khung phát triển và giao diện ngoài.",
+    "domains": [
+      "it/software-engineering/architecture"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
     "id": "closure",
     "label": "Closure",
     "qualifier": "(Lập trình)",
@@ -1022,6 +1399,28 @@
       "it/software-engineering/programming-concepts"
     ],
     "level": 2,
+    "status": "draft"
+  },
+  {
+    "id": "cms",
+    "label": "CMS",
+    "aliases": [
+      "Content management system",
+      "Hệ thống quản lý nội dung"
+    ],
+    "loanwords": [
+      "CMS"
+    ],
+    "plain_descriptions": [
+      "phần mềm tạo và đăng bài viết lên website không cần biết lập trình",
+      "trang quản trị đăng tải tin tức và hình ảnh cho trang web"
+    ],
+    "summary": "Ứng dụng hỗ trợ người dùng biên soạn, chỉnh sửa, lưu trữ và xuất bản nội dung số lên website mà không cần can thiệp mã nguồn.",
+    "domains": [
+      "it/business-systems/enterprise-apps",
+      "media/publishing/distribution-platforms"
+    ],
+    "level": 1,
     "status": "draft"
   },
   {
@@ -1066,6 +1465,27 @@
     "status": "draft"
   },
   {
+    "id": "code-splitting",
+    "label": "Code splitting",
+    "aliases": [
+      "phân tách mã nguồn",
+      "chia nhỏ gói mã"
+    ],
+    "loanwords": [
+      "Code splitting"
+    ],
+    "plain_descriptions": [
+      "chia nhỏ ứng dụng web thành từng phần để chỉ tải về khi người dùng cần",
+      "cắt nhỏ tệp mã lớn thành các gói nhỏ giúp mở trang đầu nhanh hơn"
+    ],
+    "summary": "Kỹ thuật chia nhỏ gói mã nguồn thành nhiều phần nhỏ hơn để tải theo yêu cầu hoặc tải song song nhằm tăng tốc độ tải trang.",
+    "domains": [
+      "it/web/frontend"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
     "id": "color-grading",
     "label": "Color grading",
     "aliases": [
@@ -1082,6 +1502,25 @@
     "summary": "Quy trình sáng tạo trong hậu kỳ video nhằm thay đổi đặc tính màu sắc, độ tương phản và sắc độ để tạo phong cách thẩm mỹ và cảm xúc cho tác phẩm.",
     "domains": [
       "media/content-production/editing"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
+    "id": "columnar-storage",
+    "label": "Lưu trữ theo cột",
+    "aliases": [
+      "columnar storage",
+      "cơ sở dữ liệu theo cột"
+    ],
+    "loanwords": [],
+    "plain_descriptions": [
+      "cách sắp xếp dữ liệu trên ổ cứng theo từng cột thay vì theo từng hàng",
+      "gom tất cả giá tiền nằm liền nhau trên ổ đĩa để tính tổng mà không cần đọc tên khách hàng"
+    ],
+    "summary": "Phương pháp lưu trữ cơ sở dữ liệu nhóm các giá trị theo cột thay vì theo hàng trên ổ đĩa, giúp tăng tốc tối đa các truy vấn tổng hợp phân tích.",
+    "domains": [
+      "it/data/database"
     ],
     "level": 2,
     "status": "draft"
@@ -1145,6 +1584,48 @@
       "it/software-engineering/programming-concepts"
     ],
     "level": 2,
+    "status": "draft"
+  },
+  {
+    "id": "connection-pool",
+    "label": "Connection pool",
+    "aliases": [
+      "hồ chứa kết nối",
+      "vùng kết nối"
+    ],
+    "loanwords": [
+      "Connection pool"
+    ],
+    "plain_descriptions": [
+      "tập hợp các kết nối cơ sở dữ liệu được mở sẵn để ứng dụng dùng ngay mà không cần kết nối lại",
+      "việc duy trì sẵn các đường truyền tới cơ sở dữ liệu để tránh mất thời gian bắt tay mạng"
+    ],
+    "summary": "Bộ nhớ lưu trữ các kết nối cơ sở dữ liệu mở sẵn và có thể tái sử dụng, giúp ứng dụng tránh chi phí thiết lập kết nối mới cho mỗi yêu cầu.",
+    "domains": [
+      "it/data/database"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
+    "id": "consistent-hashing",
+    "label": "Consistent hashing",
+    "aliases": [
+      "Băm nhất quán",
+      "Vòng băm"
+    ],
+    "loanwords": [
+      "consistent hashing"
+    ],
+    "plain_descriptions": [
+      "kỹ thuật phân bổ dữ liệu giúp hạn chế tối đa việc xáo trộn vị trí khi thêm bớt máy chủ",
+      "thuật toán băm xếp máy chủ và dữ liệu lên một vòng tròn để tránh xáo trộn bộ nhớ đệm"
+    ],
+    "summary": "Thuật toán băm phân tán trong đó việc tăng giảm số lượng nút lưu trữ chỉ làm chuyển dịch trung bình K/N khóa, bằng cách ánh xạ cả máy chủ và dữ liệu lên một không gian vòng tròn định danh.",
+    "domains": [
+      "it/software-engineering/architecture"
+    ],
+    "level": 3,
     "status": "draft"
   },
   {
@@ -1289,6 +1770,29 @@
     "status": "draft"
   },
   {
+    "id": "core-web-vitals",
+    "label": "Core Web Vitals",
+    "aliases": [
+      "CWV",
+      "chỉ số hiệu năng web cốt lõi"
+    ],
+    "loanwords": [
+      "Core Web Vitals",
+      "CWV"
+    ],
+    "plain_descriptions": [
+      "bộ tiêu chuẩn của Google đo lường tốc độ, độ nhạy và tính ổn định của trang web",
+      "các chỉ số hiệu năng thực tế quyết định trải nghiệm người dùng và thứ hạng tìm kiếm"
+    ],
+    "summary": "Tập hợp các chỉ số chuẩn hóa do Google đề xuất nhằm đo lường trải nghiệm thực tế của người dùng về tốc độ tải, độ phản hồi và độ ổn định giao diện.",
+    "domains": [
+      "it/web/frontend",
+      "media/digital-marketing/seo"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
     "id": "cors",
     "label": "Cross-Origin Resource Sharing (CORS)",
     "aliases": [
@@ -1372,6 +1876,27 @@
     "status": "draft"
   },
   {
+    "id": "cqrs",
+    "label": "Command Query Responsibility Segregation (CQRS)",
+    "aliases": [
+      "CQRS"
+    ],
+    "loanwords": [
+      "command query responsibility segregation (cqrs)",
+      "cqrs"
+    ],
+    "plain_descriptions": [
+      "tách biệt hoàn toàn nhánh ghi dữ liệu và nhánh đọc dữ liệu thành hai mô hình riêng",
+      "mẫu kiến trúc dùng các luồng khác nhau để thay đổi và tra cứu thông tin"
+    ],
+    "summary": "Mẫu kiến trúc phân chia rạch ròi các thao tác cập nhật trạng thái dữ liệu (lệnh ghi) và các thao tác tra cứu dữ liệu (truy vấn) thành hai mô hình xử lý độc lập.",
+    "domains": [
+      "it/software-engineering/architecture"
+    ],
+    "level": 3,
+    "status": "draft"
+  },
+  {
     "id": "creative-commons",
     "label": "Creative Commons",
     "aliases": [
@@ -1449,6 +1974,26 @@
     "status": "draft"
   },
   {
+    "id": "crm",
+    "label": "CRM",
+    "aliases": [
+      "Customer relationship management"
+    ],
+    "loanwords": [
+      "CRM"
+    ],
+    "plain_descriptions": [
+      "phần mềm ghi lại lịch sử trao đổi và hợp đồng của khách hàng",
+      "sổ tay khách hàng dùng chung cho toàn bộ đội bán hàng và hỗ trợ"
+    ],
+    "summary": "Hệ thống phần mềm hợp nhất dữ liệu liên hệ, tiến độ thương vụ và lịch sử tương tác với khách hàng trong một nền tảng.",
+    "domains": [
+      "it/business-systems/enterprise-apps"
+    ],
+    "level": 1,
+    "status": "draft"
+  },
+  {
     "id": "cryptocurrency",
     "label": "Tiền mã hóa",
     "aliases": [
@@ -1489,6 +2034,27 @@
       "it/security/vulnerabilities"
     ],
     "level": 2,
+    "status": "draft"
+  },
+  {
+    "id": "css",
+    "label": "CSS",
+    "aliases": [
+      "Cascading Style Sheets"
+    ],
+    "loanwords": [
+      "CSS",
+      "Cascading Style Sheets"
+    ],
+    "plain_descriptions": [
+      "tập hợp quy tắc quyết định màu sắc, phông chữ và cách căn chỉnh giao diện web",
+      "ngôn ngữ định dạng giúp trang web trở nên đẹp mắt và chuyên nghiệp"
+    ],
+    "summary": "Ngôn ngữ bảng kiểu dùng để định dạng cách trình bày, bố cục và màu sắc của tài liệu HTML.",
+    "domains": [
+      "it/web/frontend"
+    ],
+    "level": 1,
     "status": "draft"
   },
   {
@@ -1604,6 +2170,24 @@
     "status": "draft"
   },
   {
+    "id": "data-governance",
+    "label": "Quản trị dữ liệu",
+    "aliases": [
+      "data governance"
+    ],
+    "loanwords": [],
+    "plain_descriptions": [
+      "các quy định và quy trình bảo đảm dữ liệu của công ty luôn an toàn, chính xác và dùng đúng mục đích",
+      "việc phân công ai là người sở hữu, kiểm soát và được phép truy cập vào các nguồn dữ liệu doanh nghiệp"
+    ],
+    "summary": "Khung quản lý tổng thể về tính sẵn sàng, tính khả dụng, tính toàn vẹn và độ bảo mật của dữ liệu trong doanh nghiệp.",
+    "domains": [
+      "it/data/data-engineering"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
     "id": "data-lake",
     "label": "Data lake",
     "aliases": [
@@ -1617,6 +2201,48 @@
       "bể chứa dữ liệu linh hoạt chứa cả tệp âm thanh, video, nhật ký hệ thống mà không bắt buộc tạo bảng"
     ],
     "summary": "Kho lưu trữ tập trung có khả năng lưu giữ khối lượng lớn dữ liệu thô ở định dạng nguyên bản, từ dữ liệu có cấu trúc đến phi cấu trúc.",
+    "domains": [
+      "it/data/data-engineering"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
+    "id": "data-lakehouse",
+    "label": "Data lakehouse",
+    "aliases": [
+      "lakehouse"
+    ],
+    "loanwords": [
+      "Data lakehouse",
+      "lakehouse"
+    ],
+    "plain_descriptions": [
+      "mô hình lưu trữ hiện đại kết hợp chi phí rẻ của kho tệp thô với tốc độ truy vấn của kho dữ liệu",
+      "kiến trúc cho phép chạy báo cáo kinh doanh và huấn luyện học máy trực tiếp trên cùng một nguồn tệp"
+    ],
+    "summary": "Kiến trúc quản lý dữ liệu hiện đại kết hợp khả năng lưu trữ linh hoạt của data lake với tính toàn vẹn ACID của data warehouse.",
+    "domains": [
+      "it/data/data-engineering"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
+    "id": "data-lineage",
+    "label": "Data lineage",
+    "aliases": [
+      "nguồn gốc dữ liệu",
+      "phả hệ dữ liệu"
+    ],
+    "loanwords": [
+      "Data lineage"
+    ],
+    "plain_descriptions": [
+      "việc truy vết toàn bộ đường đi của dữ liệu từ nơi sinh ra cho đến các bảng báo cáo cuối cùng",
+      "cây phả hệ trực quan cho biết các bản ghi thô đã trải qua những bước biến đổi nào"
+    ],
+    "summary": "Lịch sử và đường đi được ghi nhận của dữ liệu, mô tả chi tiết nguồn gốc, sự di chuyển, các bước biến đổi và đích đến theo thời gian.",
     "domains": [
       "it/data/data-engineering"
     ],
@@ -1644,6 +2270,24 @@
     "status": "draft"
   },
   {
+    "id": "data-quality",
+    "label": "Chất lượng dữ liệu",
+    "aliases": [
+      "data quality"
+    ],
+    "loanwords": [],
+    "plain_descriptions": [
+      "mức độ tin cậy, sạch sẽ và đầy đủ của thông tin trước khi mang ra sử dụng cho công việc",
+      "việc kiểm tra xem các bản ghi có đúng, cập nhật và không bị trùng lặp hay không"
+    ],
+    "summary": "Thước đo đánh giá mức độ một tập dữ liệu đáp ứng các yêu cầu về tính chính xác, tính đầy đủ, tính nhất quán, tính hợp lệ và độ kịp thời.",
+    "domains": [
+      "it/data/data-engineering"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
     "id": "data-structure",
     "label": "Cấu trúc dữ liệu",
     "aliases": [],
@@ -1657,6 +2301,26 @@
     "summary": "Định dạng chuyên biệt dùng để tổ chức, xử lý, truy xuất và lưu trữ dữ liệu hiệu quả trong hệ thống máy tính.",
     "domains": [
       "it/software-engineering/programming-concepts"
+    ],
+    "level": 1,
+    "status": "draft"
+  },
+  {
+    "id": "data-visualization",
+    "label": "Data visualization",
+    "aliases": [
+      "Trực quan hóa dữ liệu"
+    ],
+    "loanwords": [
+      "data visualization"
+    ],
+    "plain_descriptions": [
+      "cách vẽ số liệu thành các biểu đồ và hình ảnh dễ nhìn",
+      "trình bày dữ liệu dạng đồ thị hoặc bản đồ nhiệt để người xem dễ hiểu"
+    ],
+    "summary": "Kỹ thuật biểu diễn số liệu định lượng thành các đồ thị, biểu đồ và bản đồ trực quan giúp người xem nhận diện xu hướng nhanh chóng.",
+    "domains": [
+      "it/data/analytics"
     ],
     "level": 1,
     "status": "draft"
@@ -1719,6 +2383,26 @@
       "tập lệnh thêm cột hoặc tạo bảng mới cho cơ sở dữ liệu đang chạy"
     ],
     "summary": "Tập hợp các đoạn mã được quản lý phiên bản nhằm biến đổi và nâng cấp cấu trúc cơ sở dữ liệu an toàn theo thời gian mà không làm mất dữ liệu hiện có.",
+    "domains": [
+      "it/data/database"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
+    "id": "database-normalization",
+    "label": "Chuẩn hóa dữ liệu",
+    "qualifier": "(Cơ sở dữ liệu)",
+    "aliases": [
+      "chuẩn hóa cơ sở dữ liệu",
+      "normalization"
+    ],
+    "loanwords": [],
+    "plain_descriptions": [
+      "sắp xếp lại các bảng dữ liệu để loại bỏ việc lưu lặp đi lặp lại cùng một thông tin",
+      "chia tách bảng sao cho mỗi mẩu thông tin chỉ cần lưu ở một nơi duy nhất"
+    ],
+    "summary": "Quá trình tổ chức lại các bảng trong cơ sở dữ liệu quan hệ theo các dạng chuẩn nhằm giảm thiểu dư thừa dữ liệu và nâng cao tính toàn vẹn.",
     "domains": [
       "it/data/database"
     ],
@@ -1807,6 +2491,28 @@
       "it/ai-ml/foundations"
     ],
     "level": 1,
+    "status": "draft"
+  },
+  {
+    "id": "deadlock",
+    "label": "Deadlock",
+    "aliases": [
+      "khóa chết",
+      "bế tắc"
+    ],
+    "loanwords": [
+      "Deadlock"
+    ],
+    "plain_descriptions": [
+      "tình trạng tê liệt khi hai chương trình mải chờ tài nguyên của nhau mà không chịu nhường",
+      "cảnh ùn tắc giao thông trong bộ nhớ khi các giao dịch giữ khóa chặn nhau không thể tiếp tục"
+    ],
+    "summary": "Tình trạng bế tắc vĩnh viễn khi hai hoặc nhiều tiến trình đồng thời cùng giữ một tài nguyên và chờ đợi tài nguyên do tiến trình kia nắm giữ.",
+    "domains": [
+      "it/data/database",
+      "it/software-engineering/programming-concepts"
+    ],
+    "level": 2,
     "status": "draft"
   },
   {
@@ -1907,6 +2613,28 @@
     "status": "draft"
   },
   {
+    "id": "dependency-injection",
+    "label": "Dependency injection",
+    "aliases": [
+      "DI",
+      "Tiêm phụ thuộc"
+    ],
+    "loanwords": [
+      "dependency injection",
+      "di"
+    ],
+    "plain_descriptions": [
+      "truyền đối tượng cần thiết từ bên ngoài vào thay vì để lớp tự khởi tạo bên trong",
+      "đưa các dịch vụ phụ thuộc vào hàm dựng giúp dễ dàng viết mã kiểm thử"
+    ],
+    "summary": "Mẫu thiết kế phần mềm trong đó một đối tượng nhận các thành phần phụ thuộc của nó từ một bộ cấu hình bên ngoài thay vì tự khởi tạo bên trong, hiện thực hóa nguyên lý đảo ngược điều khiển.",
+    "domains": [
+      "it/software-engineering/programming-concepts"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
     "id": "deprecation",
     "label": "Deprecation",
     "qualifier": "(Phần mềm)",
@@ -1989,6 +2717,26 @@
     "status": "draft"
   },
   {
+    "id": "digital-transformation",
+    "label": "Chuyển đổi số",
+    "aliases": [
+      "Digital transformation"
+    ],
+    "loanwords": [
+      "digital transformation"
+    ],
+    "plain_descriptions": [
+      "thay đổi toàn diện cách thức hoạt động của công ty bằng công nghệ số",
+      "thay thế giấy tờ thủ công bằng quy trình phần mềm và điện toán đám mây"
+    ],
+    "summary": "Quá trình tích hợp công nghệ số vào mọi mặt hoạt động của tổ chức nhằm đổi mới căn bản cách thức vận hành và cung cấp giá trị cho khách hàng.",
+    "domains": [
+      "it/business-systems/enterprise-apps"
+    ],
+    "level": 1,
+    "status": "draft"
+  },
+  {
     "id": "digital-twin",
     "label": "Bản sao kỹ thuật số",
     "aliases": [
@@ -2007,6 +2755,49 @@
       "iot/industrial"
     ],
     "level": 2,
+    "status": "draft"
+  },
+  {
+    "id": "disaster-recovery",
+    "label": "Disaster recovery (DR)",
+    "aliases": [
+      "DR",
+      "Khắc phục thảm họa"
+    ],
+    "loanwords": [
+      "disaster recovery (dr)",
+      "dr"
+    ],
+    "plain_descriptions": [
+      "kế hoạch và quy trình khôi phục hệ thống khi xảy ra sự cố nghiêm trọng phá hủy hạ tầng",
+      "các bước cứu vãn dữ liệu và máy chủ sau thảm họa thiên tai hoặc mất điện toàn vùng"
+    ],
+    "summary": "Tập hợp các chính sách, công cụ và quy trình kỹ thuật nhằm khôi phục và duy trì các hạ tầng công nghệ thiết yếu sau một thảm họa diện rộng gây gián đoạn hoàn toàn.",
+    "domains": [
+      "it/devops/sre-operations"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
+    "id": "distributed-system",
+    "label": "Distributed system",
+    "aliases": [
+      "Hệ thống phân tán",
+      "Hệ phân tán"
+    ],
+    "loanwords": [
+      "distributed system"
+    ],
+    "plain_descriptions": [
+      "tập hợp nhiều máy tính riêng lẻ kết nối qua mạng phối hợp làm việc như một máy tính duy nhất",
+      "phần mềm chạy rải rác trên nhiều máy chủ khác nhau cùng xử lý chung một bài toán lớn"
+    ],
+    "summary": "Hệ thống bao gồm nhiều máy tính độc lập được kết nối qua mạng, liên lạc và phối hợp với nhau để xuất hiện trước người dùng như một khối xử lý thống nhất duy nhất.",
+    "domains": [
+      "it/software-engineering/architecture"
+    ],
+    "level": 1,
     "status": "draft"
   },
   {
@@ -2117,6 +2908,70 @@
     "status": "draft"
   },
   {
+    "id": "document-database",
+    "label": "Document database",
+    "aliases": [
+      "cơ sở dữ liệu tài liệu",
+      "document store"
+    ],
+    "loanwords": [
+      "Document database"
+    ],
+    "plain_descriptions": [
+      "cơ sở dữ liệu lưu trữ các bản ghi dưới dạng các tệp tài liệu số tương tự như định dạng JSON",
+      "hệ thống linh hoạt nơi mỗi hồ sơ khách hàng tự chứa danh sách thông tin lồng nhau mà không cần ghép bảng"
+    ],
+    "summary": "Loại cơ sở dữ liệu phi quan hệ được thiết kế để lưu trữ, truy xuất và quản lý dữ liệu bán cấu trúc dưới dạng tài liệu như JSON hoặc BSON.",
+    "domains": [
+      "it/data/database"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
+    "id": "dom",
+    "label": "Document Object Model (DOM)",
+    "aliases": [
+      "DOM"
+    ],
+    "loanwords": [
+      "Document Object Model (DOM)",
+      "DOM"
+    ],
+    "plain_descriptions": [
+      "cây cấu trúc bên trong trang web cho phép mã lập trình đọc và chỉnh sửa",
+      "mô hình đối tượng đại diện cho các phần tử HTML trên màn hình trình duyệt"
+    ],
+    "summary": "Giao diện lập trình ứng dụng biểu diễn tài liệu HTML dưới dạng cây phân cấp các đối tượng có thể truy xuất và sửa đổi.",
+    "domains": [
+      "it/web/frontend"
+    ],
+    "level": 1,
+    "status": "draft"
+  },
+  {
+    "id": "domain-driven-design",
+    "label": "Domain-driven design (DDD)",
+    "aliases": [
+      "DDD",
+      "Thiết kế hướng miền"
+    ],
+    "loanwords": [
+      "domain-driven design (ddd)",
+      "ddd"
+    ],
+    "plain_descriptions": [
+      "phương pháp thiết kế phần mềm lấy mô hình nghiệp vụ thực tế làm trung tâm",
+      "xây dựng mã nguồn xoay quanh ngôn ngữ chung giữa chuyên gia nghiệp vụ và kỹ sư"
+    ],
+    "summary": "Phương pháp phát triển phần mềm đặt trọng tâm kiến trúc và mã nguồn vào việc mô hình hóa chính xác nghiệp vụ thực tế, sử dụng ngôn ngữ chung và phân tách các ngữ cảnh giới hạn.",
+    "domains": [
+      "it/software-engineering/architecture"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
     "id": "double-entry-bookkeeping",
     "label": "Kế toán kép",
     "aliases": [
@@ -2132,6 +2987,26 @@
     "summary": "Phương pháp ghi chép kế toán phản ánh các nghiệp vụ kinh tế tài chính vào ít nhất hai tài khoản kế toán theo quan hệ đối ứng Nợ và Có.",
     "domains": [
       "finance/accounting/bookkeeping"
+    ],
+    "level": 1,
+    "status": "draft"
+  },
+  {
+    "id": "e-commerce-platform",
+    "label": "Nền tảng thương mại điện tử",
+    "aliases": [
+      "E-commerce platform"
+    ],
+    "loanwords": [
+      "e-commerce platform"
+    ],
+    "plain_descriptions": [
+      "phần mềm tạo website bán hàng có sẵn giỏ hàng và danh mục sản phẩm",
+      "hệ thống quản lý gian hàng trực tuyến từ chọn đồ đến đặt hàng và giao vận"
+    ],
+    "summary": "Bộ giải pháp phần mềm cho phép doanh nghiệp thiết lập cửa hàng trực tuyến, quản lý danh mục sản phẩm, giỏ hàng và xử lý đơn hàng.",
+    "domains": [
+      "it/business-systems/enterprise-apps"
     ],
     "level": 1,
     "status": "draft"
@@ -2220,6 +3095,24 @@
     "status": "draft"
   },
   {
+    "id": "elasticsearch",
+    "label": "Elasticsearch",
+    "aliases": [],
+    "loanwords": [
+      "Elasticsearch"
+    ],
+    "plain_descriptions": [
+      "công cụ tìm kiếm và phân tích siêu tốc có thể rà soát hàng triệu tài liệu chỉ trong vài giây",
+      "phần mềm chuyên tìm kiếm bài viết theo từ khóa, lọc sản phẩm và theo dõi lỗi máy chủ"
+    ],
+    "summary": "Công cụ tìm kiếm và phân tích phân tán dựa trên định dạng JSON được xây dựng trên Apache Lucene, tối ưu cho tìm kiếm thời gian thực.",
+    "domains": [
+      "it/data/database"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
     "id": "email-open-rate",
     "label": "Open rate",
     "qualifier": "(Email)",
@@ -2240,6 +3133,26 @@
       "media/digital-marketing/email"
     ],
     "level": 2,
+    "status": "draft"
+  },
+  {
+    "id": "embedded-system",
+    "label": "Hệ thống nhúng",
+    "aliases": [
+      "Hệ thống tích hợp"
+    ],
+    "loanwords": [
+      "embedded system"
+    ],
+    "plain_descriptions": [
+      "máy tính chuyên dụng lắp ngầm bên trong thiết bị để làm một nhiệm vụ cố định",
+      "mạch vi điều khiển được lập trình sẵn để quản lý các cỗ máy gia dụng hoặc xe hơi"
+    ],
+    "summary": "Tổ hợp tính toán chuyên dụng gồm vi xử lý, phần mềm nhúng và các cổng ngoại vi được thiết kế tối ưu để thực hiện một nhóm chức năng cố định trong một thiết bị lớn hơn.",
+    "domains": [
+      "iot/devices-sensors"
+    ],
+    "level": 1,
     "status": "draft"
   },
   {
@@ -2322,6 +3235,27 @@
     "summary": "Phương pháp kiểm thử toàn diện mô phỏng luồng thao tác của người dùng từ giao diện đồ họa qua tất cả dịch vụ máy chủ, hạ tầng và cơ sở dữ liệu.",
     "domains": [
       "it/software-engineering/testing"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
+    "id": "energy-harvesting",
+    "label": "Energy harvesting",
+    "aliases": [
+      "Thu hoạch năng lượng",
+      "Thu hồi năng lượng tự nhiên"
+    ],
+    "loanwords": [
+      "energy harvesting"
+    ],
+    "plain_descriptions": [
+      "thu gom năng lượng từ ánh sáng, nhiệt độ hoặc rung động xung quanh để chạy máy không cần pin",
+      "công nghệ tự nạp điện từ môi trường giúp cảm biến hoạt động vĩnh cửu không lo hết pin"
+    ],
+    "summary": "Quá trình thu nhận những lượng năng lượng nhỏ từ môi trường xung quanh như ánh sáng, chênh lệch nhiệt độ hay rung động cơ học để biến đổi thành điện năng nuôi các mạch điện tử.",
+    "domains": [
+      "iot/devices-sensors"
     ],
     "level": 2,
     "status": "draft"
@@ -2429,6 +3363,45 @@
     "status": "draft"
   },
   {
+    "id": "erp",
+    "label": "ERP",
+    "aliases": [
+      "Enterprise resource planning",
+      "Hoạch định tài nguyên doanh nghiệp"
+    ],
+    "loanwords": [
+      "ERP"
+    ],
+    "plain_descriptions": [
+      "phần mềm tổng quản trị dòng tiền và kho hàng của công ty",
+      "hệ thống kết nối số liệu kế toán với mua hàng và sản xuất"
+    ],
+    "summary": "Bộ phần mềm quản trị tổng thể kết nối tài chính, mua hàng, tồn kho và sản xuất trên một cơ sở dữ liệu chung.",
+    "domains": [
+      "it/business-systems/enterprise-apps"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
+    "id": "esp32",
+    "label": "ESP32",
+    "aliases": [],
+    "loanwords": [
+      "esp32"
+    ],
+    "plain_descriptions": [
+      "dòng chip vi điều khiển giá rẻ có sẵn Wi-Fi và Bluetooth để làm thiết bị IoT",
+      "bộ não vi mạch 32-bit nhỏ gọn có kết nối không dây cho các đồ dùng thông minh"
+    ],
+    "summary": "Dòng vi mạch tích hợp hệ thống trên chip (SoC) giá rẻ, tiêu thụ ít điện năng, tích hợp sẵn Wi-Fi và Bluetooth chuyên dùng để phát triển các thiết bị Internet vạn vật.",
+    "domains": [
+      "iot/devices-sensors"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
     "id": "etf",
     "label": "Quỹ hoán đổi danh mục",
     "aliases": [
@@ -2466,6 +3439,88 @@
     "summary": "Quy trình tích hợp dữ liệu gồm ba bước: trích xuất từ các nguồn khác nhau, biến đổi theo chuẩn phân tích và nạp vào kho dữ liệu đích.",
     "domains": [
       "it/data/data-engineering"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
+    "id": "event-driven-architecture",
+    "label": "Event-driven architecture",
+    "aliases": [
+      "Kiến trúc hướng sự kiện",
+      "EDA"
+    ],
+    "loanwords": [
+      "event-driven architecture",
+      "eda"
+    ],
+    "plain_descriptions": [
+      "kiến trúc phần mềm mà các thành phần trao đổi qua việc phát và bắt sự kiện",
+      "mô hình lập trình phản ứng với các thay đổi trạng thái thay vì chờ nhau hoàn thành"
+    ],
+    "summary": "Mô hình kiến trúc phần mềm trong đó các thành phần tách rời giao tiếp bất đồng bộ thông qua việc phát sinh, truyền tải và xử lý các sự kiện ghi nhận thay đổi trạng thái.",
+    "domains": [
+      "it/software-engineering/architecture"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
+    "id": "event-sourcing",
+    "label": "Event sourcing",
+    "aliases": [
+      "Lưu vết sự kiện"
+    ],
+    "loanwords": [
+      "event sourcing"
+    ],
+    "plain_descriptions": [
+      "lưu toàn bộ lịch sử thay đổi dưới dạng danh sách sự kiện chỉ thêm mà không xóa sửa",
+      "lưu vết biến động như sổ kế toán thay vì chỉ ghi đè giá trị hiện tại"
+    ],
+    "summary": "Mẫu thiết kế lưu trữ dữ liệu trong đó mọi thay đổi trạng thái được ghi nhận thành chuỗi các sự kiện bất biến nối tiếp nhau, thay vì ghi đè lên trạng thái hiện thời của bản ghi.",
+    "domains": [
+      "it/software-engineering/architecture"
+    ],
+    "level": 3,
+    "status": "draft"
+  },
+  {
+    "id": "event-streaming",
+    "label": "Event streaming",
+    "aliases": [
+      "luồng sự kiện"
+    ],
+    "loanwords": [
+      "Event streaming"
+    ],
+    "plain_descriptions": [
+      "liên tục ghi nhận và xử lý bản ghi kỹ thuật số ngay khi hành động vừa diễn ra",
+      "truyền dữ liệu vận hành tức thời giữa các phần mềm mà không phải đợi kết xuất file ban đêm"
+    ],
+    "summary": "Phương thức thu thập, lưu trữ và phân tích các luồng bản ghi dữ liệu liên tục theo thời gian thực khi sự kiện phát sinh.",
+    "domains": [
+      "it/data/data-engineering"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
+    "id": "eventual-consistency",
+    "label": "Eventual consistency",
+    "aliases": [
+      "tính nhất quán cuối cùng"
+    ],
+    "loanwords": [
+      "Eventual consistency"
+    ],
+    "plain_descriptions": [
+      "lời cam kết rằng tất cả máy chủ bản sao rồi sẽ có dữ liệu giống nhau nếu không có sửa đổi mới",
+      "cơ chế cho phép bạn bè nhìn thấy bài đăng của bạn trễ hơn vài giây sau khi bạn bấm đăng"
+    ],
+    "summary": "Mô hình nhất quán trong điện toán phân tán bảo đảm rằng mọi bản sao dữ liệu cuối cùng sẽ hội tụ về cùng một giá trị nếu có đủ thời gian và không có thêm cập nhật mới.",
+    "domains": [
+      "it/data/database"
     ],
     "level": 2,
     "status": "draft"
@@ -2511,6 +3566,27 @@
     "status": "draft"
   },
   {
+    "id": "exponential-backoff",
+    "label": "Exponential backoff",
+    "aliases": [
+      "Lùi lũy thừa",
+      "Chờ lùi theo hàm mũ"
+    ],
+    "loanwords": [
+      "exponential backoff"
+    ],
+    "plain_descriptions": [
+      "tăng gấp đôi thời gian chờ sau mỗi lần thử lại lệnh bị lỗi",
+      "thuật toán giãn cách thời gian gọi lại để hệ thống đích kịp hồi sức"
+    ],
+    "summary": "Thuật toán tăng dần độ trễ giữa các lần thử lại sau mỗi lần thất bại theo hàm số mũ nhằm tránh gây quá tải dồn dập cho dịch vụ đang nghẽn.",
+    "domains": [
+      "it/software-engineering/architecture"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
     "id": "fact-checking",
     "label": "Kiểm chứng thông tin",
     "aliases": [
@@ -2527,6 +3603,27 @@
     "summary": "Quy trình xác minh độc lập các khẳng định dữ kiện trong văn bản, bài phát biểu hoặc chương trình phát sóng dựa trên tài liệu gốc đáng tin cậy.",
     "domains": [
       "media/journalism/ethics"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
+    "id": "failover",
+    "label": "Failover",
+    "aliases": [
+      "Chuyển đổi dự phòng",
+      "Chuyển giao dự phòng"
+    ],
+    "loanwords": [
+      "failover"
+    ],
+    "plain_descriptions": [
+      "tự động chuyển quyền xử lý sang máy chủ phụ khi máy chủ chính gặp sự cố",
+      "quy trình bàn giao lưu lượng sang nút dự phòng mà người dùng không nhận ra"
+    ],
+    "summary": "Quy trình vận hành tự động hoặc thủ công chuyển tiếp toàn bộ tác vụ xử lý và lưu lượng sang một hệ thống dự phòng đang ở trạng thái sẵn sàng ngay khi hệ thống chính gặp lỗi.",
+    "domains": [
+      "it/devops/sre-operations"
     ],
     "level": 2,
     "status": "draft"
@@ -2630,6 +3727,44 @@
       "iot/devices-sensors"
     ],
     "level": 1,
+    "status": "draft"
+  },
+  {
+    "id": "foreign-key",
+    "label": "Khóa ngoại",
+    "aliases": [
+      "foreign key",
+      "FK"
+    ],
+    "loanwords": [],
+    "plain_descriptions": [
+      "cột dữ liệu trong một bảng trỏ tới mã nhận diện của dòng trong bảng khác để tạo liên kết",
+      "mối liên kết bảo đảm rằng một đơn hàng không thể được tạo cho một khách hàng không tồn tại"
+    ],
+    "summary": "Cột hoặc tập hợp các cột trong bảng cơ sở dữ liệu quan hệ dùng để tạo mối liên kết dữ liệu giữa hai bảng bằng cách tham chiếu tới khóa chính của bảng khác.",
+    "domains": [
+      "it/data/database"
+    ],
+    "level": 1,
+    "status": "draft"
+  },
+  {
+    "id": "full-text-search",
+    "label": "Tìm kiếm toàn văn",
+    "aliases": [
+      "full-text search",
+      "FTS"
+    ],
+    "loanwords": [],
+    "plain_descriptions": [
+      "việc tìm từ và cụm từ bên trong các tài liệu dài thay vì chỉ so khớp mã số chính xác",
+      "kỹ thuật tìm kiếm thông minh hiểu được từ gốc, bỏ qua từ nối thông thường và chấp nhận sai lỗi nhỏ"
+    ],
+    "summary": "Kỹ thuật tìm kiếm các tài liệu văn bản hoặc trường dữ liệu bằng cách so khớp từ ngữ, gốc từ và cụm từ thông qua chỉ mục đảo.",
+    "domains": [
+      "it/data/database"
+    ],
+    "level": 2,
     "status": "draft"
   },
   {
@@ -2813,6 +3948,49 @@
     "status": "draft"
   },
   {
+    "id": "gnss",
+    "label": "GNSS",
+    "aliases": [
+      "Hệ thống vệ tinh định vị toàn cầu",
+      "GPS"
+    ],
+    "loanwords": [
+      "gnss",
+      "gps"
+    ],
+    "plain_descriptions": [
+      "tên gọi chung cho các hệ thống vệ tinh định vị vị trí trên toàn cầu như GPS hay Galileo",
+      "công nghệ định vị vệ tinh giúp xác định chính xác tọa độ kinh độ và vĩ độ trên mặt đất"
+    ],
+    "summary": "Hệ thống định vị vệ tinh toàn cầu bao gồm các chùm vệ tinh nhân tạo quay quanh Trái Đất, phát tín hiệu vô tuyến để thiết bị mặt đất tính toán tọa độ địa lý và thời gian chính xác.",
+    "domains": [
+      "iot/devices-sensors"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
+    "id": "gpio",
+    "label": "General-purpose input/output (GPIO)",
+    "aliases": [
+      "GPIO",
+      "Chân vào ra đa dụng"
+    ],
+    "loanwords": [
+      "gpio"
+    ],
+    "plain_descriptions": [
+      "các chân kim loại trên vi mạch cho phép phần mềm bật tắt hoặc đọc tín hiệu điện",
+      "cổng vào ra kỹ thuật số đa năng dùng để cắm nối với đèn LED, nút bấm và cảm biến"
+    ],
+    "summary": "Các chân tín hiệu số trên vi mạch tích hợp mà phần mềm có thể linh hoạt lập trình để đóng vai trò làm đầu vào đọc dữ liệu hoặc đầu ra điều khiển thiết bị điện tử.",
+    "domains": [
+      "iot/devices-sensors"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
     "id": "gpu",
     "label": "Bộ xử lý đồ họa (GPU)",
     "aliases": [
@@ -2855,6 +4033,26 @@
     "status": "draft"
   },
   {
+    "id": "graph-database",
+    "label": "Graph database",
+    "aliases": [
+      "cơ sở dữ liệu đồ thị"
+    ],
+    "loanwords": [
+      "Graph database"
+    ],
+    "plain_descriptions": [
+      "cơ sở dữ liệu chuyên dụng lưu trữ mối quan hệ và sự kết nối giữa các đối tượng một cách trực tiếp",
+      "hệ thống được xây dựng để tìm kiếm đường đi và mối liên kết giữa con người, tuyến đường hay mạng lưới lừa đảo"
+    ],
+    "summary": "Cơ sở dữ liệu sử dụng cấu trúc đồ thị gồm các đỉnh, cạnh và thuộc tính để biểu diễn và lưu trữ dữ liệu có tính liên kết chặt chẽ.",
+    "domains": [
+      "it/data/database"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
     "id": "graphql",
     "label": "GraphQL",
     "aliases": [],
@@ -2889,6 +4087,26 @@
     "summary": "Quá trình ràng buộc câu trả lời của mô hình vào các dữ kiện thực tế có thể kiểm chứng được trích xuất từ các nguồn thông tin tin cậy.",
     "domains": [
       "it/ai-ml/llm-agents"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
+    "id": "grpc",
+    "label": "gRPC",
+    "aliases": [
+      "Khung RPC của Google"
+    ],
+    "loanwords": [
+      "grpc"
+    ],
+    "plain_descriptions": [
+      "nền tảng gọi hàm từ xa tốc độ cao sử dụng định dạng nhị phân Protocol Buffers",
+      "giao thức gọi dịch vụ truyền dữ liệu nhị phân qua HTTP/2 cho hệ thống vi dịch vụ"
+    ],
+    "summary": "Khung gọi thủ tục từ xa (RPC) mã nguồn mở hiệu năng cao, sử dụng định dạng Protocol Buffers để đóng gói nhị phân và chạy trên nền tảng HTTP/2 để truyền thông đa kênh tối ưu.",
+    "domains": [
+      "it/web/api"
     ],
     "level": 2,
     "status": "draft"
@@ -3018,6 +4236,70 @@
     "status": "draft"
   },
   {
+    "id": "help-desk",
+    "label": "Help desk",
+    "aliases": [
+      "Bộ phận trợ giúp"
+    ],
+    "loanwords": [
+      "help desk"
+    ],
+    "plain_descriptions": [
+      "phần mềm biến các khiếu nại kỹ thuật thành phiếu yêu cầu xử lý",
+      "đầu mối tiếp nhận và giải quyết trục trặc máy tính cho nhân viên và khách hàng"
+    ],
+    "summary": "Bộ phận chuyên trách và phần mềm hỗ trợ tiếp nhận, phân loại, theo dõi và giải quyết các sự cố kỹ thuật hoặc yêu cầu dịch vụ của người dùng.",
+    "domains": [
+      "it/business-systems/enterprise-apps"
+    ],
+    "level": 1,
+    "status": "draft"
+  },
+  {
+    "id": "high-availability",
+    "label": "High availability (HA)",
+    "aliases": [
+      "HA",
+      "Tính sẵn sàng cao"
+    ],
+    "loanwords": [
+      "high availability (ha)",
+      "ha"
+    ],
+    "plain_descriptions": [
+      "khả năng hệ thống duy trì hoạt động liên tục gần như không có thời gian chết",
+      "thiết kế máy chủ có phương án dự phòng để luôn sẵn sàng phục vụ người dùng"
+    ],
+    "summary": "Đặc tính thiết kế hệ thống đảm bảo ứng dụng vận hành liên tục và ổn định trong thời gian dài bằng cách giảm thiểu tối đa thời gian gián đoạn thông qua các thành phần dự phòng.",
+    "domains": [
+      "it/devops/sre-operations"
+    ],
+    "level": 1,
+    "status": "draft"
+  },
+  {
+    "id": "horizontal-scaling",
+    "label": "Horizontal scaling",
+    "aliases": [
+      "Scale out",
+      "Mở rộng theo chiều ngang"
+    ],
+    "loanwords": [
+      "horizontal scaling",
+      "scale out"
+    ],
+    "plain_descriptions": [
+      "thêm nhiều máy chủ mới vào hệ thống để cùng chia tải công việc",
+      "tăng năng lực xử lý bằng cách chạy nhiều bản sao ứng dụng trên nhiều máy khác nhau"
+    ],
+    "summary": "Biện pháp gia tăng năng lực xử lý của hệ thống bằng cách bổ sung thêm nhiều máy chủ hoặc thực thể tính toán độc lập vào cụm tài nguyên để phân tán tải.",
+    "domains": [
+      "it/infrastructure/cloud"
+    ],
+    "level": 1,
+    "status": "draft"
+  },
+  {
     "id": "hotfix",
     "label": "Hotfix",
     "aliases": [
@@ -3036,6 +4318,70 @@
       "it/software-engineering/practices"
     ],
     "level": 2,
+    "status": "draft"
+  },
+  {
+    "id": "hrm-system",
+    "label": "HRMS",
+    "aliases": [
+      "Human resource management system",
+      "Phần mềm quản trị nhân sự"
+    ],
+    "loanwords": [
+      "HRMS"
+    ],
+    "plain_descriptions": [
+      "cổng quản lý hồ sơ nhân viên, ngày phép và tính lương",
+      "phần mềm nội bộ theo dõi chấm công và chế độ phúc lợi của công ty"
+    ],
+    "summary": "Phần mềm số hóa công tác nhân sự, theo dõi hồ sơ lao động, lịch chấm công, tiền lương và chế độ đãi ngộ tập trung.",
+    "domains": [
+      "it/business-systems/enterprise-apps"
+    ],
+    "level": 1,
+    "status": "draft"
+  },
+  {
+    "id": "html",
+    "label": "HTML",
+    "aliases": [
+      "HyperText Markup Language"
+    ],
+    "loanwords": [
+      "HTML",
+      "HyperText Markup Language"
+    ],
+    "plain_descriptions": [
+      "các thẻ mã dùng để dựng khung bài viết, tiêu đề và liên kết của trang web",
+      "ngôn ngữ đánh dấu cơ bản định hình cấu trúc nội dung của mọi trang web"
+    ],
+    "summary": "Ngôn ngữ đánh dấu tiêu chuẩn dùng để tạo khung cấu trúc và sắp xếp nội dung hiển thị trong trình duyệt web.",
+    "domains": [
+      "it/web/frontend"
+    ],
+    "level": 1,
+    "status": "draft"
+  },
+  {
+    "id": "http",
+    "label": "Hypertext Transfer Protocol (HTTP)",
+    "aliases": [
+      "HTTP"
+    ],
+    "loanwords": [
+      "Hypertext Transfer Protocol (HTTP)",
+      "HTTP"
+    ],
+    "plain_descriptions": [
+      "quy tắc giao tiếp để trình duyệt và máy chủ trao đổi trang web",
+      "giao thức truyền tải yêu cầu và dữ liệu phản hồi trên mạng internet"
+    ],
+    "summary": "Giao thức tầng ứng dụng dùng để truyền tải các tài liệu siêu văn bản giữa trình duyệt và máy chủ web.",
+    "domains": [
+      "it/web/api",
+      "it/infrastructure/networking"
+    ],
+    "level": 1,
     "status": "draft"
   },
   {
@@ -3062,6 +4408,50 @@
     "status": "draft"
   },
   {
+    "id": "https",
+    "label": "HTTPS",
+    "aliases": [
+      "Hypertext Transfer Protocol Secure"
+    ],
+    "loanwords": [
+      "HTTPS",
+      "Hypertext Transfer Protocol Secure"
+    ],
+    "plain_descriptions": [
+      "kết nối web được mã hóa giúp bảo vệ thông tin không bị xem trộm",
+      "phiên bản an toàn của HTTP với biểu tượng ổ khóa trên thanh địa chỉ"
+    ],
+    "summary": "Phiên bản bảo mật của giao thức HTTP sử dụng mã hóa TLS để bảo vệ toàn bộ dữ liệu truyền giữa trình duyệt và máy chủ.",
+    "domains": [
+      "it/web/api"
+    ],
+    "level": 1,
+    "status": "draft"
+  },
+  {
+    "id": "hydration",
+    "label": "Hydration",
+    "qualifier": "(Web)",
+    "aliases": [
+      "bù nước",
+      "client-side hydration"
+    ],
+    "loanwords": [
+      "Hydration",
+      "client-side hydration"
+    ],
+    "plain_descriptions": [
+      "gắn các tính năng tương tác và bấm nút vào trang web tĩnh đã tạo sẵn",
+      "quá trình dùng JavaScript kích hoạt sức sống cho khung HTML máy chủ gửi về"
+    ],
+    "summary": "Quá trình phía trình duyệt kích hoạt mã JavaScript để gắn các sự kiện tương tác vào trang HTML tĩnh do máy chủ gửi về.",
+    "domains": [
+      "it/web/frontend"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
     "id": "hyperparameter",
     "label": "Siêu tham số",
     "aliases": [],
@@ -3075,6 +4465,28 @@
     "summary": "Tham số cấu hình bên ngoài được xác lập trước khi huấn luyện nhằm điều phối kiến trúc và quy trình tối ưu hóa của thuật toán.",
     "domains": [
       "it/ai-ml/foundations"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
+    "id": "i2c",
+    "label": "I²C",
+    "aliases": [
+      "I2C",
+      "Inter-Integrated Circuit"
+    ],
+    "loanwords": [
+      "i2c",
+      "i²c"
+    ],
+    "plain_descriptions": [
+      "chuẩn giao tiếp hai dây cho phép kết nối nhiều cảm biến vào cùng một vi điều khiển",
+      "giao thức truyền thông nối tiếp dùng một dây xung nhịp và một dây dữ liệu có định địa chỉ"
+    ],
+    "summary": "Chuẩn giao tiếp nối tiếp đồng bộ sử dụng hai đường dây hai chiều (SCL và SDA) có điện trở kéo lên nguồn để kết nối vi điều khiển với nhiều vi mạch ngoại vi trên cùng một bo mạch.",
+    "domains": [
+      "iot/devices-sensors"
     ],
     "level": 2,
     "status": "draft"
@@ -3155,6 +4567,27 @@
     "summary": "Đặc tính của đối tượng hoặc cấu trúc dữ liệu không cho phép trạng thái bên trong bị biến đổi sau khi đã được tạo ra trong bộ nhớ.",
     "domains": [
       "it/software-engineering/programming-concepts"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
+    "id": "imu",
+    "label": "Inertial measurement unit (IMU)",
+    "aliases": [
+      "IMU",
+      "Bộ đo lường quán tính"
+    ],
+    "loanwords": [
+      "imu"
+    ],
+    "plain_descriptions": [
+      "cụm cảm biến kết hợp đo gia tốc và con quay hồi chuyển để theo dõi hướng và chuyển động",
+      "cảm biến tư thế giúp điện thoại hay drone biết nó đang nghiêng, quay hay di chuyển hướng nào"
+    ],
+    "summary": "Khối cảm biến tích hợp đa trục kết hợp gia tốc kế, con quay hồi chuyển và từ kế để đo đạc gia tốc tuyến tính, vận tốc góc và hướng không gian của vật thể chuyển động.",
+    "domains": [
+      "iot/devices-sensors"
     ],
     "level": 2,
     "status": "draft"
@@ -3471,6 +4904,27 @@
     "status": "draft"
   },
   {
+    "id": "ipaas",
+    "label": "iPaaS",
+    "aliases": [
+      "Integration platform as a service",
+      "Nền tảng tích hợp dưới dạng dịch vụ"
+    ],
+    "loanwords": [
+      "iPaaS"
+    ],
+    "plain_descriptions": [
+      "dịch vụ đám mây làm cầu nối kết nối các phần mềm doanh nghiệp lại với nhau",
+      "trạm trung chuyển dữ liệu an toàn giữa ứng dụng đám mây và máy chủ nội bộ"
+    ],
+    "summary": "Nền tảng đám mây cung cấp các công cụ và dịch vụ trung gian giúp kết nối, đồng bộ và quản lý luồng dữ liệu giữa các hệ thống phần mềm phân tán.",
+    "domains": [
+      "it/business-systems/automation"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
     "id": "ipo",
     "label": "Phát hành lần đầu ra công chúng",
     "aliases": [
@@ -3485,6 +4939,47 @@
     "summary": "Hoạt động chào bán chứng khoán lần đầu tiên ra công chúng nhằm huy động vốn rộng rãi và đưa cổ phiếu lên giao dịch trên thị trường tập trung.",
     "domains": [
       "finance/corporate-finance/fundraising"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
+    "id": "itil",
+    "label": "ITIL",
+    "aliases": [
+      "Information Technology Infrastructure Library"
+    ],
+    "loanwords": [
+      "ITIL"
+    ],
+    "plain_descriptions": [
+      "bộ cẩm nang quy tắc chuẩn mực quốc tế về vận hành dịch vụ công nghệ",
+      "khung hướng dẫn thực hành tốt nhất cho các đội ngũ quản lý hệ thống CNTT"
+    ],
+    "summary": "Bộ khung hướng dẫn thực hành chuẩn mực quốc tế dành cho việc thiết kế, vận hành và quản trị các dịch vụ công nghệ thông tin.",
+    "domains": [
+      "it/business-systems/enterprise-apps"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
+    "id": "itsm",
+    "label": "ITSM",
+    "aliases": [
+      "IT service management",
+      "Quản trị dịch vụ công nghệ thông tin"
+    ],
+    "loanwords": [
+      "ITSM"
+    ],
+    "plain_descriptions": [
+      "phương pháp quản lý và cung cấp các dịch vụ công nghệ một cách bài bản trong công ty",
+      "quy trình chuẩn hóa việc vận hành máy chủ, cập nhật phần mềm và xử lý sự cố"
+    ],
+    "summary": "Hoạt động quản trị toàn diện việc thiết kế, cung cấp, vận hành và kiểm soát các dịch vụ công nghệ thông tin phục vụ hoạt động doanh nghiệp.",
+    "domains": [
+      "it/business-systems/enterprise-apps"
     ],
     "level": 2,
     "status": "draft"
@@ -3506,6 +5001,28 @@
       "it/ai-ml/ai-safety-governance"
     ],
     "level": 2,
+    "status": "draft"
+  },
+  {
+    "id": "javascript",
+    "label": "JavaScript",
+    "aliases": [
+      "JS"
+    ],
+    "loanwords": [
+      "JavaScript",
+      "JS"
+    ],
+    "plain_descriptions": [
+      "ngôn ngữ lập trình giúp trang web có thể tương tác và chuyển động linh hoạt",
+      "ngôn ngữ kịch bản chạy trực tiếp trong mọi trình duyệt web hiện đại"
+    ],
+    "summary": "Ngôn ngữ lập trình thông dịch đa nền tảng, cho phép tạo ra các tính năng tương tác phức tạp trên trang web.",
+    "domains": [
+      "it/web/frontend",
+      "it/software-engineering/programming-concepts"
+    ],
+    "level": 1,
     "status": "draft"
   },
   {
@@ -3566,6 +5083,27 @@
       "product/agile-scrum"
     ],
     "level": 1,
+    "status": "draft"
+  },
+  {
+    "id": "key-value-store",
+    "label": "Key-value store",
+    "aliases": [
+      "cơ sở dữ liệu khóa - giá trị",
+      "kho khóa - giá trị"
+    ],
+    "loanwords": [
+      "Key-value store"
+    ],
+    "plain_descriptions": [
+      "cơ sở dữ liệu đơn giản và siêu nhanh lưu trữ và tìm kiếm bản ghi dựa vào khóa định danh duy nhất",
+      "kho dữ liệu dạng từ điển nơi bạn đưa ra một từ khóa để nhận lại giá trị tương ứng ngay lập tức"
+    ],
+    "summary": "Loại cơ sở dữ liệu phi quan hệ sử dụng mô hình mảng kết hợp đơn giản, trong đó mỗi phần tử dữ liệu được đánh chỉ mục bằng một khóa riêng biệt.",
+    "domains": [
+      "it/data/database"
+    ],
+    "level": 2,
     "status": "draft"
   },
   {
@@ -3697,6 +5235,28 @@
     "status": "draft"
   },
   {
+    "id": "lazy-loading",
+    "label": "Lazy loading",
+    "aliases": [
+      "tải chậm",
+      "tải lười",
+      "tải theo yêu cầu"
+    ],
+    "loanwords": [
+      "Lazy loading"
+    ],
+    "plain_descriptions": [
+      "chờ người dùng cuộn chuột tới nơi mới bắt đầu tải hình ảnh và nội dung về",
+      "trì hoãn việc nạp dữ liệu để tiết kiệm mạng và giúp trang web mở nhanh hơn"
+    ],
+    "summary": "Mô hình tối ưu hóa hiệu năng bằng cách trì hoãn tải các tài nguyên chưa cần thiết cho đến khi người dùng tương tác tới.",
+    "domains": [
+      "it/web/frontend"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
     "id": "least-privilege",
     "label": "Principle of least privilege",
     "aliases": [
@@ -3736,6 +5296,27 @@
       "finance/accounting/bookkeeping"
     ],
     "level": 1,
+    "status": "draft"
+  },
+  {
+    "id": "lidar",
+    "label": "LiDAR",
+    "aliases": [
+      "Lidar",
+      "Hệ thống quét laser"
+    ],
+    "loanwords": [
+      "lidar"
+    ],
+    "plain_descriptions": [
+      "cảm biến phát tia laser và đo thời gian dội lại để vẽ bản đồ không gian ba chiều",
+      "mắt thần quét laser đo khoảng cách lắp trên xe tự lái và máy hút bụi thông minh"
+    ],
+    "summary": "Phương pháp viễn thám quang học sử dụng chùm tia laser xung chiếu vào vật thể và đo thời gian phản xạ ánh sáng dội lại để lập bản đồ tọa độ ba chiều với độ chính xác cao.",
+    "domains": [
+      "iot/devices-sensors"
+    ],
+    "level": 2,
     "status": "draft"
   },
   {
@@ -3841,6 +5422,48 @@
     "status": "draft"
   },
   {
+    "id": "load-testing",
+    "label": "Load testing",
+    "aliases": [
+      "Kiểm thử tải",
+      "Thử tải"
+    ],
+    "loanwords": [
+      "load testing"
+    ],
+    "plain_descriptions": [
+      "kiểm tra phần mềm bằng cách giả lập lượng người dùng truy cập lớn để xem máy chủ chịu được không",
+      "tạo ra hàng loạt yêu cầu ảo để đo tốc độ phản hồi và giới hạn chịu đựng của hệ thống"
+    ],
+    "summary": "Phương pháp kiểm thử phi chức năng bằng cách đặt hệ thống dưới một lượng tải người dùng đồng thời giả lập để đo lường thông lượng, độ trễ và độ ổn định vận hành.",
+    "domains": [
+      "it/software-engineering/testing"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
+    "id": "local-storage",
+    "label": "localStorage",
+    "aliases": [
+      "Web Storage",
+      "bộ nhớ cục bộ"
+    ],
+    "loanwords": [
+      "localStorage"
+    ],
+    "plain_descriptions": [
+      "ngăn chứa trong trình duyệt nơi trang web ghi nhớ sở thích của bạn vĩnh viễn",
+      "bộ nhớ lưu trữ dữ liệu dạng khóa - giá trị không bị mất đi khi đóng tab"
+    ],
+    "summary": "Giao diện lưu trữ dữ liệu phía trình duyệt cho phép lưu các cặp khóa - giá trị lâu dài theo từng tên miền mà không có thời hạn hết hạn.",
+    "domains": [
+      "it/web/frontend"
+    ],
+    "level": 1,
+    "status": "draft"
+  },
+  {
     "id": "log",
     "label": "Log",
     "qualifier": "(Phần mềm)",
@@ -3865,6 +5488,7 @@
   {
     "id": "lora",
     "label": "Low-Rank Adaptation",
+    "qualifier": "(AI)",
     "aliases": [
       "LoRA"
     ],
@@ -3880,6 +5504,28 @@
       "it/ai-ml/mlops"
     ],
     "level": 3,
+    "status": "draft"
+  },
+  {
+    "id": "lora-radio",
+    "label": "LoRa",
+    "qualifier": "(IoT)",
+    "aliases": [
+      "Công nghệ sóng LoRa",
+      "Long Range"
+    ],
+    "loanwords": [
+      "lora"
+    ],
+    "plain_descriptions": [
+      "công nghệ sóng vô tuyến truyền dữ liệu xa hàng chục cây số chỉ tốn rất ít pin",
+      "kỹ thuật phát sóng trải phổ giúp cảm biến phát tín hiệu xuyên qua thành phố về trạm thu"
+    ],
+    "summary": "Kỹ thuật điều chế sóng vô tuyến tầng vật lý dựa trên công nghệ trải phổ tiếng chim hót (Chirp Spread Spectrum), cho phép truyền dữ liệu khoảng cách xa với công suất tiêu thụ điện cực nhỏ.",
+    "domains": [
+      "iot/connectivity-protocols"
+    ],
+    "level": 2,
     "status": "draft"
   },
   {
@@ -3917,6 +5563,50 @@
     "summary": "Hàm toán học dùng để định lượng sai số giữa kết quả dự đoán của mô hình và giá trị mục tiêu thực tế.",
     "domains": [
       "it/ai-ml/foundations"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
+    "id": "low-code",
+    "label": "Low-code",
+    "aliases": [
+      "Nền tảng lập trình tinh giản"
+    ],
+    "loanwords": [
+      "low-code"
+    ],
+    "plain_descriptions": [
+      "cách làm ứng dụng bằng thao tác kéo thả và chỉ phải viết rất ít mã nguồn",
+      "nền tảng phát triển phần mềm nhanh dựa trên các khối giao diện dựng sẵn"
+    ],
+    "summary": "Phương pháp phát triển phần mềm sử dụng giao diện trực quan và các khối chức năng dựng sẵn, cho phép viết thêm mã nguồn khi cần tùy biến sâu.",
+    "domains": [
+      "it/business-systems/automation"
+    ],
+    "level": 1,
+    "status": "draft"
+  },
+  {
+    "id": "low-power-mode",
+    "label": "Sleep mode",
+    "qualifier": "(Embedded)",
+    "aliases": [
+      "Chế độ ngủ",
+      "Deep sleep",
+      "Chế độ tiết kiệm pin"
+    ],
+    "loanwords": [
+      "sleep mode",
+      "deep sleep"
+    ],
+    "plain_descriptions": [
+      "trạng thái ngủ tiết kiệm điện giúp vi điều khiển chạy pin được nhiều năm liền",
+      "chế độ tạm ngừng của chip vi mạch ngắt bớt bộ phận không dùng để giảm tiêu thụ điện"
+    ],
+    "summary": "Trạng thái vận hành tiết kiệm năng lượng của vi điều khiển, trong đó các nhân xử lý, bộ dao động xung nhịp và mạch ngoại vi được tạm ngắt cho đến khi nhận được tín hiệu đánh thức.",
+    "domains": [
+      "iot/devices-sensors"
     ],
     "level": 2,
     "status": "draft"
@@ -4002,6 +5692,48 @@
     "summary": "Khung mô hình chiến lược minh họa các giai đoạn tuần tự trong hành trình của khách hàng, từ nhận biết thương hiệu ban đầu, cân nhắc, cho đến quyết định mua hàng và gắn bó.",
     "domains": [
       "media/digital-marketing/metrics-analytics"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
+    "id": "materialized-view",
+    "label": "Materialized view",
+    "aliases": [
+      "khung nhìn cụ thể hóa",
+      "view vật lý"
+    ],
+    "loanwords": [
+      "Materialized view"
+    ],
+    "plain_descriptions": [
+      "bảng báo cáo cơ sở dữ liệu lưu sẵn kết quả tính toán xuống ổ cứng để xem lại ngay lập tức",
+      "việc chạy trước một phép ghép bảng phức tạp tốn thời gian rồi cất bản kết quả đó lên ổ đĩa"
+    ],
+    "summary": "Đối tượng cơ sở dữ liệu chứa kết quả tính toán sẵn của một câu truy vấn được lưu trữ vật lý trên ổ đĩa để truy xuất tốc độ cao.",
+    "domains": [
+      "it/data/database"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
+    "id": "matter-iot",
+    "label": "Matter",
+    "qualifier": "(IoT)",
+    "aliases": [
+      "Chuẩn Matter"
+    ],
+    "loanwords": [
+      "matter"
+    ],
+    "plain_descriptions": [
+      "chuẩn chung giúp các thiết bị nhà thông minh của Apple, Google và Amazon kết nối được với nhau",
+      "ngôn ngữ giao tiếp chung cho đèn, khóa và phích cắm thông minh không lo xung đột thương hiệu"
+    ],
+    "summary": "Tiêu chuẩn kết nối nhà thông minh mã nguồn mở hoạt động trên nền giao thức Internet (IP), cho phép các thiết bị tương thích kết nối mượt mà qua các nền tảng Apple Home, Google Home và Amazon Alexa.",
+    "domains": [
+      "iot/connectivity-protocols"
     ],
     "level": 2,
     "status": "draft"
@@ -4298,6 +6030,46 @@
     "status": "draft"
   },
   {
+    "id": "mongodb",
+    "label": "MongoDB",
+    "aliases": [],
+    "loanwords": [
+      "MongoDB"
+    ],
+    "plain_descriptions": [
+      "cơ sở dữ liệu phổ biến lưu trữ bản ghi dưới dạng các tài liệu JSON linh hoạt thay vì các bảng cứng nhắc",
+      "phần mềm cơ sở dữ liệu dạng tài liệu được giới lập trình web yêu thích nhờ khả năng lưu dữ liệu tùy biến dễ dàng"
+    ],
+    "summary": "Cơ sở dữ liệu tài liệu mã nguồn mở phổ biến lưu trữ dữ liệu vận hành dưới dạng các tài liệu BSON linh hoạt tương tự JSON.",
+    "domains": [
+      "it/data/database"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
+    "id": "monolith",
+    "label": "Monolithic architecture",
+    "aliases": [
+      "Monolith",
+      "Kiến trúc nguyên khối"
+    ],
+    "loanwords": [
+      "monolithic architecture",
+      "monolith"
+    ],
+    "plain_descriptions": [
+      "ứng dụng toàn bộ chạy trong một khối mã nguồn duy nhất",
+      "phần mềm gom mọi tính năng vào một tiến trình và cơ sở dữ liệu chung"
+    ],
+    "summary": "Mô hình kiến trúc trong đó toàn bộ tính năng nghiệp vụ, giao diện và logic truy cập dữ liệu được đóng gói và vận hành dưới dạng một hệ thống duy nhất.",
+    "domains": [
+      "it/software-engineering/architecture"
+    ],
+    "level": 1,
+    "status": "draft"
+  },
+  {
     "id": "monorepo",
     "label": "Monorepo",
     "aliases": [
@@ -4506,6 +6278,90 @@
     "status": "draft"
   },
   {
+    "id": "nfc",
+    "label": "Near-field communication (NFC)",
+    "aliases": [
+      "NFC",
+      "Giao tiếp tầm ngắn"
+    ],
+    "loanwords": [
+      "nfc"
+    ],
+    "plain_descriptions": [
+      "công nghệ chạm không dây tầm gần dùng để thanh toán bằng điện thoại hoặc quẹt thẻ xe buýt",
+      "chuẩn truyền sóng vô tuyến khoảng cách vài centimet giúp hai máy chạm nhau là truyền được dữ liệu"
+    ],
+    "summary": "Chuẩn kết nối không dây tầm ngắn tần số cao hoạt động ở băng tần 13.56 MHz, cho phép hai thiết bị trao đổi dữ liệu an toàn khi đặt cách nhau dưới 4 centimet.",
+    "domains": [
+      "iot/connectivity-protocols"
+    ],
+    "level": 1,
+    "status": "draft"
+  },
+  {
+    "id": "nginx",
+    "label": "Nginx",
+    "aliases": [
+      "NGINX"
+    ],
+    "loanwords": [
+      "Nginx",
+      "NGINX"
+    ],
+    "plain_descriptions": [
+      "phần mềm máy chủ web hiệu năng cao nổi tiếng chuyên gánh lượng truy cập lớn",
+      "chương trình máy chủ mã nguồn mở chuyên phân phối tải và làm trạm chuyển tiếp proxy"
+    ],
+    "summary": "Phần mềm máy chủ web và trạm chuyển tiếp đảo ngược (reverse proxy) mã nguồn mở nổi tiếng với hiệu năng cao và tiêu tốn ít bộ nhớ.",
+    "domains": [
+      "it/web/backend",
+      "it/infrastructure/networking"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
+    "id": "no-code",
+    "label": "No-code",
+    "aliases": [
+      "Nền tảng không cần mã nguồn"
+    ],
+    "loanwords": [
+      "no-code"
+    ],
+    "plain_descriptions": [
+      "công cụ tạo ứng dụng hoàn toàn bằng thao tác trực quan không cần viết một dòng mã nào",
+      "phần mềm cho phép người làm nghiệp vụ tự làm biểu mẫu và quy trình tự động"
+    ],
+    "summary": "Phương pháp xây dựng ứng dụng cho phép người dùng không có chuyên môn lập trình tự tạo phần mềm thông qua giao diện kéo thả trực quan.",
+    "domains": [
+      "it/business-systems/automation"
+    ],
+    "level": 1,
+    "status": "draft"
+  },
+  {
+    "id": "nodejs",
+    "label": "Node.js",
+    "aliases": [
+      "Node"
+    ],
+    "loanwords": [
+      "Node.js",
+      "Node"
+    ],
+    "plain_descriptions": [
+      "môi trường cho phép chạy mã JavaScript trực tiếp trên máy chủ thay vì trong trình duyệt",
+      "nền tảng chạy mã JavaScript phía backend giúp xây dựng các dịch vụ web tốc độ cao"
+    ],
+    "summary": "Môi trường thực thi JavaScript đa nền tảng, mã nguồn mở, cho phép chạy mã nguồn JavaScript bên ngoài trình duyệt web.",
+    "domains": [
+      "it/web/backend"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
     "id": "north-star-metric",
     "label": "North Star metric",
     "aliases": [
@@ -4523,6 +6379,26 @@
       "product/metrics"
     ],
     "level": 2,
+    "status": "draft"
+  },
+  {
+    "id": "nosql",
+    "label": "NoSQL",
+    "aliases": [
+      "cơ sở dữ liệu phi quan hệ"
+    ],
+    "loanwords": [
+      "NoSQL"
+    ],
+    "plain_descriptions": [
+      "cơ sở dữ liệu hiện đại lưu trữ thông tin linh hoạt mà không cần ép vào các bảng cố định",
+      "hệ thống cơ sở dữ liệu phân tán có khả năng mở rộng dễ dàng trên hàng trăm máy chủ đám mây"
+    ],
+    "summary": "Nhóm các hệ thống quản trị cơ sở dữ liệu phi quan hệ được thiết kế để xử lý các mô hình dữ liệu linh hoạt, tốc độ cao và khả năng mở rộng ngang.",
+    "domains": [
+      "it/data/database"
+    ],
+    "level": 1,
     "status": "draft"
   },
   {
@@ -4651,6 +6527,50 @@
       "product/metrics"
     ],
     "level": 1,
+    "status": "draft"
+  },
+  {
+    "id": "olap",
+    "label": "Online Analytical Processing (OLAP)",
+    "aliases": [
+      "OLAP",
+      "xử lý phân tích trực tuyến"
+    ],
+    "loanwords": [
+      "Online Analytical Processing (OLAP)",
+      "OLAP"
+    ],
+    "plain_descriptions": [
+      "hệ thống phần mềm chuyên phân tích nhanh số liệu kinh doanh lịch sử theo nhiều góc nhìn khác nhau",
+      "cơ sở dữ liệu phục vụ các câu hỏi tổng thể về xu hướng doanh thu qua nhiều năm"
+    ],
+    "summary": "Nhóm công cụ phần mềm và cơ sở dữ liệu được tối ưu hóa để phân tích đa chiều với tốc độ cao trên khối lượng lớn dữ liệu lịch sử.",
+    "domains": [
+      "it/data/analytics"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
+    "id": "oltp",
+    "label": "Online Transaction Processing (OLTP)",
+    "aliases": [
+      "OLTP",
+      "xử lý giao dịch trực tuyến"
+    ],
+    "loanwords": [
+      "Online Transaction Processing (OLTP)",
+      "OLTP"
+    ],
+    "plain_descriptions": [
+      "hệ thống cơ sở dữ liệu xử lý tức thì hàng nghìn thao tác mua hàng và thanh toán mỗi phút",
+      "phần mềm ghi nhận các giao dịch quẹt thẻ ngân hàng và xác nhận đơn hàng theo thời gian thực"
+    ],
+    "summary": "Nhóm hệ thống xử lý dữ liệu tập trung vào việc thực thi và ghi nhận khối lượng lớn các giao dịch cơ sở dữ liệu ngắn tức thì.",
+    "domains": [
+      "it/data/database"
+    ],
+    "level": 2,
     "status": "draft"
   },
   {
@@ -4880,6 +6800,27 @@
     "status": "draft"
   },
   {
+    "id": "payment-gateway",
+    "label": "Cổng thanh toán",
+    "aliases": [
+      "Payment gateway"
+    ],
+    "loanwords": [
+      "payment gateway"
+    ],
+    "plain_descriptions": [
+      "dịch vụ trực tuyến kết nối website với ngân hàng để trừ tiền thẻ",
+      "cầu nối thanh toán điện tử tiếp nhận và xử lý giao dịch mua hàng qua mạng"
+    ],
+    "summary": "Dịch vụ công nghệ trung gian tiếp nhận, mã hóa và truyền tải thông tin giao dịch giữa website bán lẻ với ngân hàng và mạng lưới thẻ.",
+    "domains": [
+      "it/business-systems/enterprise-apps",
+      "finance/banking/payments"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
     "id": "paywall",
     "label": "Paywall",
     "aliases": [
@@ -5006,6 +6947,48 @@
     "status": "draft"
   },
   {
+    "id": "pos-system",
+    "label": "POS",
+    "aliases": [
+      "Point of sale",
+      "Hệ thống điểm bán lẻ"
+    ],
+    "loanwords": [
+      "POS"
+    ],
+    "plain_descriptions": [
+      "máy thu ngân tính tiền và in hóa đơn tại quầy thanh toán",
+      "thiết bị bán hàng ghi nhận đơn và trừ tồn kho ngay tại cửa hàng"
+    ],
+    "summary": "Hệ thống thiết bị và phần mềm đặt tại điểm bán để quét mã hàng, thu tiền và đồng bộ lượng hàng tồn kho.",
+    "domains": [
+      "it/business-systems/enterprise-apps"
+    ],
+    "level": 1,
+    "status": "draft"
+  },
+  {
+    "id": "postgresql",
+    "label": "PostgreSQL",
+    "aliases": [
+      "Postgres"
+    ],
+    "loanwords": [
+      "PostgreSQL",
+      "Postgres"
+    ],
+    "plain_descriptions": [
+      "cơ sở dữ liệu quan hệ mã nguồn mở mạnh mẽ, nổi tiếng về độ tin cậy và tính năng phong phú",
+      "hệ quản trị cơ sở dữ liệu SQL cao cấp hỗ trợ cả tài liệu JSON bên cạnh các bảng truyền thống"
+    ],
+    "summary": "Hệ quản trị cơ sở dữ liệu quan hệ - đối tượng mã nguồn mở mạnh mẽ, nổi tiếng về độ ổn định, tính toàn vẹn và tuân thủ chuẩn SQL.",
+    "domains": [
+      "it/data/database"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
     "id": "postmortem",
     "label": "Postmortem",
     "qualifier": "(CNTT)",
@@ -5126,6 +7109,25 @@
     "summary": "Văn bản tuyên bố chính thức được cơ quan, tổ chức hoặc doanh nghiệp phát hành tới báo chí nhằm cung cấp thông tin chuẩn xác về một sự kiện.",
     "domains": [
       "media/pr-communications/media-relations"
+    ],
+    "level": 1,
+    "status": "draft"
+  },
+  {
+    "id": "primary-key",
+    "label": "Khóa chính",
+    "aliases": [
+      "primary key",
+      "PK"
+    ],
+    "loanwords": [],
+    "plain_descriptions": [
+      "mã định danh duy nhất giúp phân biệt một dòng với toàn bộ các dòng khác trong bảng dữ liệu",
+      "cột nhận diện độc nhất (như số căn cước công dân) để bảo đảm không bao giờ có bản ghi trùng lặp"
+    ],
+    "summary": "Một cột hoặc tập hợp các cột trong bảng cơ sở dữ liệu quan hệ dùng để định danh duy nhất mỗi bản ghi trong bảng đó.",
+    "domains": [
+      "it/data/database"
     ],
     "level": 1,
     "status": "draft"
@@ -5302,6 +7304,27 @@
     "status": "draft"
   },
   {
+    "id": "progressive-web-app",
+    "label": "Progressive web app (PWA)",
+    "aliases": [
+      "PWA"
+    ],
+    "loanwords": [
+      "Progressive web app (PWA)",
+      "PWA"
+    ],
+    "plain_descriptions": [
+      "trang web có thể cài ra màn hình điện thoại và hoạt động khi mất mạng",
+      "ứng dụng web mang trải nghiệm mượt mà và tính năng thông báo như app cài đặt"
+    ],
+    "summary": "Ứng dụng xây dựng bằng công nghệ web có khả năng cài đặt lên thiết bị, chạy ngoại tuyến và gửi thông báo như ứng dụng gốc.",
+    "domains": [
+      "it/web/frontend"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
     "id": "promise",
     "label": "Promise",
     "qualifier": "(Lập trình)",
@@ -5375,6 +7398,30 @@
     "status": "draft"
   },
   {
+    "id": "publish-subscribe",
+    "label": "Publish-subscribe (pub/sub)",
+    "aliases": [
+      "pub/sub",
+      "pub-sub",
+      "xuất bản - đăng ký"
+    ],
+    "loanwords": [
+      "Publish-subscribe (pub/sub)",
+      "pub/sub"
+    ],
+    "plain_descriptions": [
+      "cách truyền tin mà bên gửi phát thông báo mà không cần biết ai sẽ là người nhận cụ thể",
+      "thiết kế liên lạc nơi các ứng dụng tự đăng ký chủ đề để tự động nhận thông báo khi có tin mới"
+    ],
+    "summary": "Mẫu kiến trúc truyền tin bất đồng bộ nơi bên gửi phân loại tin phát mà không gửi trực tiếp đến từng người nhận riêng lẻ.",
+    "domains": [
+      "it/web/backend",
+      "it/data/data-engineering"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
     "id": "pull-request",
     "label": "Pull request (PR)",
     "aliases": [
@@ -5395,6 +7442,27 @@
       "it/software-engineering/version-control"
     ],
     "level": 1,
+    "status": "draft"
+  },
+  {
+    "id": "pwm",
+    "label": "Pulse-width modulation (PWM)",
+    "aliases": [
+      "PWM",
+      "Điều chế độ rộng xung"
+    ],
+    "loanwords": [
+      "pwm"
+    ],
+    "plain_descriptions": [
+      "bật tắt dòng điện siêu nhanh để chỉnh độ sáng đèn hoặc tốc độ quay của quạt",
+      "kỹ thuật băm xung điện tử giúp điều khiển công suất động cơ mượt mà mà không sinh nhiệt"
+    ],
+    "summary": "Phương pháp điều chế công suất điện cung cấp cho tải bằng cách thay đổi tỷ lệ thời gian đóng và ngắt (chu kỳ nhiệm vụ) của chuỗi xung vuông ở tần số cao.",
+    "domains": [
+      "iot/devices-sensors"
+    ],
+    "level": 2,
     "status": "draft"
   },
   {
@@ -5455,6 +7523,24 @@
     "status": "draft"
   },
   {
+    "id": "rabbitmq",
+    "label": "RabbitMQ",
+    "aliases": [],
+    "loanwords": [
+      "RabbitMQ"
+    ],
+    "plain_descriptions": [
+      "phần mềm trung gian mã nguồn mở định tuyến công việc chạy ngầm an toàn giữa các chương trình",
+      "bưu tá trung gian tiếp nhận, lưu trữ và chia việc cho các máy chủ xử lý đang rảnh rỗi"
+    ],
+    "summary": "Phần mềm môi giới tin nhắn mã nguồn mở giúp định tuyến thông điệp giữa các ứng dụng phân tán qua giao thức như AMQP.",
+    "domains": [
+      "it/web/backend"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
     "id": "race-condition",
     "label": "Race condition",
     "aliases": [
@@ -5495,6 +7581,27 @@
     "status": "draft"
   },
   {
+    "id": "raspberry-pi",
+    "label": "Raspberry Pi",
+    "aliases": [
+      "RPi"
+    ],
+    "loanwords": [
+      "raspberry pi",
+      "rpi"
+    ],
+    "plain_descriptions": [
+      "dòng máy tính đơn bo cỡ nhỏ giá rẻ rất phổ biến để học tập và chế tạo thiết bị",
+      "bo mạch máy tính chạy Linux có hàng chân cắm điều khiển linh kiện điện tử"
+    ],
+    "summary": "Dòng máy tính đơn bo kích thước nhỏ sử dụng vi xử lý kiến trúc ARM rất phổ biến, hỗ trợ hệ điều hành Linux và tích hợp hàng chân cắm GPIO 40 chân để giao tiếp thiết bị.",
+    "domains": [
+      "iot/devices-sensors"
+    ],
+    "level": 1,
+    "status": "draft"
+  },
+  {
     "id": "rate-limiting",
     "label": "Rate limiting",
     "aliases": [
@@ -5512,6 +7619,30 @@
     "summary": "Cơ chế kiểm soát mạng phòng ngừa nhằm hạn chế số lượng yêu cầu mà một máy khách có thể gửi tới giao diện lập trình ứng dụng (API) trong một khoảng thời gian.",
     "domains": [
       "it/web/api"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
+    "id": "react",
+    "label": "React",
+    "qualifier": "(Thư viện)",
+    "aliases": [
+      "React.js",
+      "ReactJS"
+    ],
+    "loanwords": [
+      "React",
+      "React.js",
+      "ReactJS"
+    ],
+    "plain_descriptions": [
+      "công cụ JavaScript phổ biến giúp lắp ráp giao diện web từ các mảnh ghép thành phần",
+      "thư viện lập trình giao diện theo mô hình thành phần tái sử dụng và cập nhật tự động"
+    ],
+    "summary": "Thư viện JavaScript mã nguồn mở chuyên dùng để xây dựng giao diện người dùng dựa trên các thành phần (component).",
+    "domains": [
+      "it/web/frontend"
     ],
     "level": 2,
     "status": "draft"
@@ -5569,6 +7700,25 @@
     "summary": "Kỹ thuật giải quyết bài toán trong đó một hàm tự gọi lại chính nó với các phiên bản thu nhỏ cho đến khi thỏa mãn điều kiện dừng.",
     "domains": [
       "it/software-engineering/programming-concepts"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
+    "id": "redis",
+    "label": "Redis",
+    "aliases": [],
+    "loanwords": [
+      "Redis"
+    ],
+    "plain_descriptions": [
+      "kho dữ liệu siêu tốc trên bộ nhớ RAM dùng làm bộ đệm để tăng tốc độ trang web",
+      "phần mềm ghi nhớ tức thì các phép đếm và thông tin người dùng chỉ trong một phần nghìn giây"
+    ],
+    "summary": "Kho lưu trữ cấu trúc dữ liệu trên bộ nhớ mã nguồn mở được dùng làm cơ sở dữ liệu tốc độ cao, bộ nhớ đệm, môi giới tin nhắn và công cụ luồng.",
+    "domains": [
+      "it/data/database",
+      "it/web/backend"
     ],
     "level": 2,
     "status": "draft"
@@ -5634,6 +7784,46 @@
       "it/software-engineering/programming-concepts"
     ],
     "level": 2,
+    "status": "draft"
+  },
+  {
+    "id": "relational-database",
+    "label": "Cơ sở dữ liệu quan hệ",
+    "aliases": [
+      "RDBMS",
+      "relational database"
+    ],
+    "loanwords": [],
+    "plain_descriptions": [
+      "hệ thống lưu trữ điện tử sắp xếp dữ liệu thành các bảng ngăn nắp liên kết với nhau qua các khóa",
+      "phần mềm cơ sở dữ liệu có cấu trúc dùng lệnh SQL để giữ thông tin kết nối và chính xác tuyệt đối"
+    ],
+    "summary": "Loại cơ sở dữ liệu lưu trữ và quản lý thông tin dưới dạng các bảng có cấu trúc xác định trước và liên kết với nhau qua các mối quan hệ logic.",
+    "domains": [
+      "it/data/database"
+    ],
+    "level": 1,
+    "status": "draft"
+  },
+  {
+    "id": "responsive-design",
+    "label": "Thiết kế web đáp ứng",
+    "aliases": [
+      "responsive web design",
+      "responsive design"
+    ],
+    "loanwords": [
+      "responsive design"
+    ],
+    "plain_descriptions": [
+      "cách làm web tự động co giãn đẹp mắt trên cả điện thoại, máy tính bảng và laptop",
+      "thiết kế giao diện linh hoạt tự sắp xếp lại bố cục theo kích thước màn hình"
+    ],
+    "summary": "Phương pháp thiết kế giúp giao diện trang web tự động điều chỉnh bố cục phù hợp với mọi kích thước màn hình của thiết bị.",
+    "domains": [
+      "it/web/frontend"
+    ],
+    "level": 1,
     "status": "draft"
   },
   {
@@ -5720,6 +7910,47 @@
     "status": "draft"
   },
   {
+    "id": "reverse-proxy",
+    "label": "Reverse proxy",
+    "aliases": [
+      "Máy chủ ủy nhiệm ngược"
+    ],
+    "loanwords": [
+      "reverse proxy"
+    ],
+    "plain_descriptions": [
+      "máy chủ đứng trước che chắn và chia tải cho các máy chủ chứa nội dung thực tế",
+      "trạm trung gian tiếp nhận yêu cầu từ internet rồi chuyển tiếp tới mạng nội bộ"
+    ],
+    "summary": "Máy chủ trung gian đứng trước cụm máy chủ nội bộ nhằm tiếp nhận yêu cầu từ client bên ngoài, thực hiện định tuyến, giải mã TLS và cân bằng lưu lượng.",
+    "domains": [
+      "it/infrastructure/networking"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
+    "id": "rfid",
+    "label": "Radio-frequency identification (RFID)",
+    "aliases": [
+      "RFID",
+      "Nhận dạng qua tần số vô tuyến"
+    ],
+    "loanwords": [
+      "rfid"
+    ],
+    "plain_descriptions": [
+      "công nghệ quét thẻ không dây bằng sóng vô tuyến để nhận biết đồ vật từ xa",
+      "hệ thống tem từ điện tử gắn trên hàng hóa hoặc xe ô tô để máy đọc tự động nhận dạng"
+    ],
+    "summary": "Công nghệ nhận dạng và thu thập dữ liệu tự động sử dụng sóng điện từ vô tuyến để đọc thông tin mã hóa được lưu trữ trong các thẻ điện tử từ khoảng cách xa.",
+    "domains": [
+      "iot/devices-sensors"
+    ],
+    "level": 1,
+    "status": "draft"
+  },
+  {
     "id": "rice-scoring",
     "label": "RICE scoring",
     "aliases": [
@@ -5786,6 +8017,71 @@
     "status": "draft"
   },
   {
+    "id": "rpa",
+    "label": "RPA",
+    "aliases": [
+      "Robotic process automation",
+      "Tự động hóa quy trình bằng robot"
+    ],
+    "loanwords": [
+      "RPA"
+    ],
+    "plain_descriptions": [
+      "robot phần mềm tự động nhấp chuột và gõ phím bắt chước thao tác người dùng",
+      "công cụ tự động sao chép và nhập liệu giữa các phần mềm kế toán cũ"
+    ],
+    "summary": "Công nghệ tự động hóa sử dụng robot phần mềm để mô phỏng lại các thao tác giao diện người dùng lặp đi lặp lại theo quy tắc định sẵn.",
+    "domains": [
+      "it/business-systems/automation"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
+    "id": "rpo",
+    "label": "Recovery Point Objective (RPO)",
+    "aliases": [
+      "RPO",
+      "Điểm phục hồi mục tiêu"
+    ],
+    "loanwords": [
+      "recovery point objective (rpo)",
+      "rpo"
+    ],
+    "plain_descriptions": [
+      "lượng dữ liệu tối đa tính theo thời gian mà doanh nghiệp chấp nhận bị mất khi có sự cố",
+      "khoảng lùi thời gian của bản sao lưu gần nhất cần khôi phục khi cơ sở dữ liệu hỏng"
+    ],
+    "summary": "Khoảng thời gian tối đa mà dữ liệu giao dịch có thể bị mất mát tính từ thời điểm xảy ra sự cố lùi về trước mà doanh nghiệp vẫn có thể chấp nhận được.",
+    "domains": [
+      "it/devops/sre-operations"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
+    "id": "rto",
+    "label": "Recovery Time Objective (RTO)",
+    "aliases": [
+      "RTO",
+      "Thời gian phục hồi mục tiêu"
+    ],
+    "loanwords": [
+      "recovery time objective (rto)",
+      "rto"
+    ],
+    "plain_descriptions": [
+      "khoảng thời gian tối đa doanh nghiệp chấp nhận để hệ thống sập trước khi bật lại được",
+      "hạn mức thời gian phải đưa dịch vụ trở lại trạng thái phục vụ khách hàng sau thảm họa"
+    ],
+    "summary": "Khoảng thời gian gián đoạn tối đa mà một hệ thống hoặc quy trình nghiệp vụ được phép ngừng hoạt động sau sự cố trước khi gây ra thiệt hại không thể chấp nhận cho doanh nghiệp.",
+    "domains": [
+      "it/devops/sre-operations"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
     "id": "rtos",
     "label": "Hệ điều hành thời gian thực",
     "aliases": [
@@ -5803,6 +8099,27 @@
       "iot/devices-sensors"
     ],
     "level": 2,
+    "status": "draft"
+  },
+  {
+    "id": "saga-pattern",
+    "label": "Saga pattern",
+    "aliases": [
+      "Mẫu Saga",
+      "Giao dịch phân tán Saga"
+    ],
+    "loanwords": [
+      "saga pattern"
+    ],
+    "plain_descriptions": [
+      "xử lý giao dịch qua nhiều dịch vụ bằng chuỗi các bước cục bộ nối tiếp nhau",
+      "quy trình thanh toán nhiều bước tự chạy hành động bù trừ để hoàn tác khi lỗi"
+    ],
+    "summary": "Mẫu thiết kế quản lý các giao dịch phân tán trải dài trên nhiều dịch vụ độc lập thông qua chuỗi giao dịch cục bộ kèm theo các hành động bù trừ để phục hồi trạng thái khi gặp sự cố.",
+    "domains": [
+      "it/software-engineering/architecture"
+    ],
+    "level": 3,
     "status": "draft"
   },
   {
@@ -5975,6 +8292,28 @@
     "status": "draft"
   },
   {
+    "id": "secure-boot",
+    "label": "Secure boot",
+    "aliases": [
+      "Khởi động an toàn",
+      "Quy trình khởi động bảo mật"
+    ],
+    "loanwords": [
+      "secure boot"
+    ],
+    "plain_descriptions": [
+      "quy trình bảo mật đảm bảo thiết bị chỉ khởi động phần mềm chính hãng đã được ký duyệt",
+      "cơ chế kiểm tra chữ ký điện tử ngăn chặn mã độc can thiệp vào quá trình mở máy"
+    ],
+    "summary": "Tiêu chuẩn bảo mật phần cứng đảm bảo thiết bị điện tử chỉ khởi động bằng các đoạn mã và phần mềm firmware đã được nhà sản xuất chứng thực và ký số mật mã.",
+    "domains": [
+      "iot/devices-sensors",
+      "it/security/cryptography"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
     "id": "semantic-versioning",
     "label": "Semantic versioning",
     "aliases": [
@@ -6080,6 +8419,49 @@
     "status": "draft"
   },
   {
+    "id": "server-sent-events",
+    "label": "Server-sent events (SSE)",
+    "aliases": [
+      "SSE",
+      "Sự kiện từ máy chủ"
+    ],
+    "loanwords": [
+      "server-sent events (sse)",
+      "sse"
+    ],
+    "plain_descriptions": [
+      "máy chủ tự động đẩy các bản tin văn bản mới về trình duyệt qua một kết nối HTTP duy nhất",
+      "luồng truyền một chiều gửi sự kiện trực tiếp từ máy chủ xuống client theo thời gian thực"
+    ],
+    "summary": "Công nghệ web cho phép máy khách nhận luồng dữ liệu sự kiện cập nhật liên tục từ máy chủ theo thời gian thực qua một kết nối HTTP tiêu chuẩn được mở sẵn.",
+    "domains": [
+      "it/web/api"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
+    "id": "server-side-rendering",
+    "label": "Server-side rendering (SSR)",
+    "aliases": [
+      "SSR"
+    ],
+    "loanwords": [
+      "Server-side rendering (SSR)",
+      "SSR"
+    ],
+    "plain_descriptions": [
+      "tạo sẵn toàn bộ trang HTML tại máy chủ rồi mới gửi về cho trình duyệt",
+      "kết xuất trang web tại máy chủ giúp nội dung hiển thị nhanh và tối ưu SEO"
+    ],
+    "summary": "Kỹ thuật kết xuất giao diện thành mã HTML hoàn chỉnh trên máy chủ theo từng yêu cầu của người dùng trước khi gửi về trình duyệt.",
+    "domains": [
+      "it/web/frontend"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
     "id": "serverless",
     "label": "Serverless",
     "aliases": [
@@ -6098,6 +8480,46 @@
       "it/infrastructure/cloud"
     ],
     "level": 2,
+    "status": "draft"
+  },
+  {
+    "id": "service-mesh",
+    "label": "Service mesh",
+    "aliases": [
+      "Lưới dịch vụ"
+    ],
+    "loanwords": [
+      "service mesh"
+    ],
+    "plain_descriptions": [
+      "lớp hạ tầng chuyên quản lý kết nối mạng giữa các dịch vụ microservice",
+      "mạng lưới proxy sidecar bảo mật và theo dõi liên lạc nội bộ giữa các dịch vụ"
+    ],
+    "summary": "Lớp hạ tầng chuyên dụng gồm các proxy sidecar đảm nhiệm điều phối, mã hóa an toàn và giám sát lưu lượng giao tiếp giữa các vi dịch vụ mà không can thiệp mã nguồn ứng dụng.",
+    "domains": [
+      "it/software-engineering/architecture"
+    ],
+    "level": 3,
+    "status": "draft"
+  },
+  {
+    "id": "service-worker",
+    "label": "Service worker",
+    "aliases": [
+      "tiến trình dịch vụ ngầm"
+    ],
+    "loanwords": [
+      "Service worker"
+    ],
+    "plain_descriptions": [
+      "tệp mã chạy ngầm hoạt động như người gác cổng trung gian giữa trình duyệt và mạng internet",
+      "công nghệ chạy nền giúp trang web hoạt động ngoại tuyến và nhận tin nhắn thông báo"
+    ],
+    "summary": "Kịch bản chạy nền điều khiển sự kiện, đóng vai trò trạm đại diện (proxy) đánh chặn các yêu cầu mạng và quản lý bộ nhớ đệm.",
+    "domains": [
+      "it/web/frontend"
+    ],
+    "level": 3,
     "status": "draft"
   },
   {
@@ -6162,6 +8584,71 @@
     ],
     "level": 1,
     "status": "reviewed"
+  },
+  {
+    "id": "single-board-computer",
+    "label": "Single-board computer (SBC)",
+    "aliases": [
+      "SBC",
+      "Máy tính đơn bo"
+    ],
+    "loanwords": [
+      "single-board computer",
+      "sbc"
+    ],
+    "plain_descriptions": [
+      "chiếc máy tính hoàn chỉnh được tích hợp gọn gàng trên duy nhất một bo mạch",
+      "bo mạch cỡ thẻ ngân hàng chứa đủ chip, RAM và cổng kết nối để chạy hệ điều hành"
+    ],
+    "summary": "Một chiếc máy tính đầy đủ tính năng có vi xử lý, bộ nhớ RAM, chip quản lý nguồn và các cổng kết nối ngoại vi được gắn liền trên duy nhất một bản mạch in.",
+    "domains": [
+      "iot/devices-sensors"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
+    "id": "single-page-application",
+    "label": "Single-page application (SPA)",
+    "aliases": [
+      "SPA"
+    ],
+    "loanwords": [
+      "Single-page application (SPA)",
+      "SPA"
+    ],
+    "plain_descriptions": [
+      "trang web đổi nội dung mượt mà mà không bao giờ phải nạp lại toàn bộ trang",
+      "ứng dụng web tải một khung duy nhất và chuyển màn hình bằng JavaScript"
+    ],
+    "summary": "Kiến trúc ứng dụng web tải một trang HTML duy nhất và cập nhật nội dung linh hoạt mà không tải lại toàn trang.",
+    "domains": [
+      "it/web/frontend"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
+    "id": "single-point-of-failure",
+    "label": "Single point of failure (SPOF)",
+    "aliases": [
+      "SPOF",
+      "Điểm lỗi đơn lẻ"
+    ],
+    "loanwords": [
+      "single point of failure (spof)",
+      "spof"
+    ],
+    "plain_descriptions": [
+      "một điểm yếu duy nhất trong hệ thống mà nếu hỏng sẽ khiến toàn bộ dịch vụ sập theo",
+      "linh kiện hoặc máy chủ không có bản sao dự phòng dễ gây ngừng trệ toàn bộ"
+    ],
+    "summary": "Thành phần hoặc mắt xích đơn lẻ trong một hệ thống mà sự cố của nó sẽ làm toàn bộ hệ thống ngừng hoạt động hoàn toàn do thiếu cơ chế dự phòng thay thế.",
+    "domains": [
+      "it/devops/sre-operations"
+    ],
+    "level": 1,
+    "status": "draft"
   },
   {
     "id": "sla",
@@ -6244,6 +8731,27 @@
       "hệ thống thiết bị gia dụng liên kết với nhau để quản lý từ xa qua điện thoại"
     ],
     "summary": "Không gian nhà ở được tích hợp các thiết bị điện tử có khả năng kết nối mạng, cho phép tự động hóa sinh hoạt và quản lý tập trung từ xa.",
+    "domains": [
+      "iot/devices-sensors"
+    ],
+    "level": 1,
+    "status": "draft"
+  },
+  {
+    "id": "smart-meter",
+    "label": "Smart meter",
+    "aliases": [
+      "Đồng hồ đo thông minh",
+      "Công tơ điện tử thông minh"
+    ],
+    "loanwords": [
+      "smart meter"
+    ],
+    "plain_descriptions": [
+      "công tơ điện hoặc đồng hồ nước điện tử tự động gửi số đo về công ty cung cấp",
+      "đồng hồ đo điện năng kết nối mạng giúp thu tiền điện từ xa mà không cần nhân viên đi ghi số"
+    ],
+    "summary": "Thiết bị đo lường tiện ích điện tử tiên tiến có khả năng tự động ghi nhận lượng tiêu thụ điện, nước hoặc khí đốt theo thời gian thực và truyền dữ liệu về đơn vị cung cấp qua mạng viễn thông.",
     "domains": [
       "iot/devices-sensors"
     ],
@@ -6359,6 +8867,28 @@
       "it/software-engineering/programming-concepts"
     ],
     "level": 1,
+    "status": "draft"
+  },
+  {
+    "id": "spi-bus",
+    "label": "Serial Peripheral Interface (SPI)",
+    "aliases": [
+      "SPI",
+      "Giao diện ngoại vi nối tiếp"
+    ],
+    "loanwords": [
+      "spi",
+      "spi bus"
+    ],
+    "plain_descriptions": [
+      "chuẩn truyền dữ liệu bốn dây tốc độ cao nối vi điều khiển với thẻ nhớ và màn hình",
+      "giao thức truyền thông nối tiếp đồng bộ cho phép vừa gửi vừa nhận dữ liệu cùng lúc"
+    ],
+    "summary": "Chuẩn giao tiếp nối tiếp đồng bộ bốn dây tốc độ cao, hỗ trợ truyền dữ liệu song công toàn phần (full-duplex) giữa chip điều khiển chủ và các thiết bị ngoại vi thông qua chân chọn chip.",
+    "domains": [
+      "iot/devices-sensors"
+    ],
+    "level": 2,
     "status": "draft"
   },
   {
@@ -6591,6 +9121,27 @@
     "status": "draft"
   },
   {
+    "id": "static-site-generation",
+    "label": "Static site generation (SSG)",
+    "aliases": [
+      "SSG"
+    ],
+    "loanwords": [
+      "Static site generation (SSG)",
+      "SSG"
+    ],
+    "plain_descriptions": [
+      "tạo sẵn toàn bộ các tệp trang web từ trước để phát cho người đọc ngay lập tức",
+      "biên dịch bài viết thành các tệp HTML cố định giúp tải trang siêu nhanh qua mạng CDN"
+    ],
+    "summary": "Quy trình tạo sẵn các tệp HTML tĩnh từ lúc biên dịch dự án thay vì chờ người dùng truy cập mới tạo nội dung.",
+    "domains": [
+      "it/web/frontend"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
     "id": "stock",
     "label": "Cổ phiếu",
     "qualifier": "(Tài chính)",
@@ -6675,6 +9226,26 @@
       "media/content-production/video"
     ],
     "level": 1,
+    "status": "draft"
+  },
+  {
+    "id": "stream-processing",
+    "label": "Stream processing",
+    "aliases": [
+      "xử lý luồng"
+    ],
+    "loanwords": [
+      "Stream processing"
+    ],
+    "plain_descriptions": [
+      "phân tích và tính toán dữ liệu tức thì ngay khi từng mẩu tin vừa gửi tới",
+      "tính toán số liệu kinh doanh liên tục mà không cần dừng lại gom thành từng tệp lớn"
+    ],
+    "summary": "Quá trình tiếp nhận và tính toán liên tục trên các bản ghi dữ liệu theo thời gian thực ngay khi chúng vừa phát sinh.",
+    "domains": [
+      "it/data/data-engineering"
+    ],
+    "level": 2,
     "status": "draft"
   },
   {
@@ -6820,6 +9391,27 @@
     "status": "draft"
   },
   {
+    "id": "thread-iot",
+    "label": "Thread",
+    "qualifier": "(IoT)",
+    "aliases": [
+      "Giao thức Thread"
+    ],
+    "loanwords": [
+      "thread"
+    ],
+    "plain_descriptions": [
+      "chuẩn mạng lưới không dây tiết kiệm điện dùng địa chỉ IPv6 cho thiết bị nhà thông minh",
+      "giao thức mạng lưới tự phục hồi giúp các thiết bị gia đình kết nối thẳng mà không cần hub trung tâm"
+    ],
+    "summary": "Giao thức mạng lưới không dây công suất thấp dựa trên nền tảng địa chỉ IPv6 và chuẩn vô tuyến IEEE 802.15.4, mang lại kết nối tin cậy và tự phục hồi cho các thiết bị nhà thông minh.",
+    "domains": [
+      "iot/connectivity-protocols"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
     "id": "thread-programming",
     "label": "Thread",
     "qualifier": "(Lập trình)",
@@ -6861,6 +9453,49 @@
       "it/infrastructure/networking"
     ],
     "level": 2,
+    "status": "draft"
+  },
+  {
+    "id": "time-series-database",
+    "label": "Time-series database",
+    "aliases": [
+      "cơ sở dữ liệu chuỗi thời gian",
+      "TSDB"
+    ],
+    "loanwords": [
+      "Time-series database"
+    ],
+    "plain_descriptions": [
+      "cơ sở dữ liệu chuyên biệt để theo dõi các chỉ số đo đạc biến đổi theo từng giây, từng giờ và từng ngày",
+      "phần mềm tối ưu cho các tín hiệu cảm biến liên tục, biểu đồ giá chứng khoán và đồ thị máy chủ"
+    ],
+    "summary": "Cơ sở dữ liệu được tối ưu hóa để lưu trữ, truy vấn và phân tích các chuỗi điểm dữ liệu được đánh chỉ mục theo thứ tự thời gian.",
+    "domains": [
+      "it/data/database",
+      "iot/edge-cloud"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
+    "id": "tinyml",
+    "label": "TinyML",
+    "aliases": [
+      "Học máy trên vi điều khiển"
+    ],
+    "loanwords": [
+      "tinyml"
+    ],
+    "plain_descriptions": [
+      "chạy các mô hình trí tuệ nhân tạo trực tiếp trên chip vi điều khiển siêu nhỏ tiết kiệm pin",
+      "thuật toán học máy thông minh được thu gọn để hoạt động trong các thiết bị điện tử chỉ dùng vài mili-oát điện"
+    ],
+    "summary": "Phân ngành học máy tập trung vào việc tối ưu hóa và thực thi các mô hình mạng nơ-ron trực tiếp trên các chip vi điều khiển có tài nguyên phần cứng hạn chế và mức tiêu thụ điện năng cực thấp.",
+    "domains": [
+      "iot/edge-cloud",
+      "it/ai-ml/mlops"
+    ],
+    "level": 3,
     "status": "draft"
   },
   {
@@ -7009,6 +9644,27 @@
     "status": "draft"
   },
   {
+    "id": "tree-shaking",
+    "label": "Tree shaking",
+    "aliases": [
+      "loại bỏ mã thừa",
+      "dead code elimination"
+    ],
+    "loanwords": [
+      "Tree shaking"
+    ],
+    "plain_descriptions": [
+      "lọc bỏ những đoạn mã không dùng đến để tệp tải về nhẹ hơn",
+      "kỹ thuật rung cây rụng lá úa giúp loại bỏ các hàm không bao giờ được gọi tới"
+    ],
+    "summary": "Kỹ thuật tối ưu hóa trong quá trình đóng gói giúp loại bỏ mã nguồn không được sử dụng khỏi sản phẩm cuối cùng.",
+    "domains": [
+      "it/web/frontend"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
     "id": "type-checking",
     "label": "Type checking",
     "aliases": [
@@ -7023,6 +9679,28 @@
     ],
     "summary": "Quy trình kiểm chứng nhằm xác thực các giá trị dữ liệu gán cho biến hoặc truyền vào hàm có tuân thủ đúng quy tắc hệ thống kiểu của ngôn ngữ lập trình hay không.",
     "domains": [
+      "it/software-engineering/programming-concepts"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
+    "id": "typescript",
+    "label": "TypeScript",
+    "aliases": [
+      "TS"
+    ],
+    "loanwords": [
+      "TypeScript",
+      "TS"
+    ],
+    "plain_descriptions": [
+      "phiên bản JavaScript bổ sung kiểm tra kiểu dữ liệu để tránh lỗi phần mềm",
+      "ngôn ngữ mở rộng của JavaScript giúp viết mã an toàn và dễ bảo trì hơn"
+    ],
+    "summary": "Ngôn ngữ lập trình mã nguồn mở phát triển từ JavaScript, bổ sung hệ thống kiểu tĩnh giúp phát hiện lỗi sớm trước khi chạy.",
+    "domains": [
+      "it/web/frontend",
       "it/software-engineering/programming-concepts"
     ],
     "level": 2,
@@ -7048,6 +9726,26 @@
       "media/content-production/visual-design"
     ],
     "level": 1,
+    "status": "draft"
+  },
+  {
+    "id": "uart",
+    "label": "UART",
+    "aliases": [
+      "Bộ thu phát bất đồng bộ vạn năng"
+    ],
+    "loanwords": [
+      "uart"
+    ],
+    "plain_descriptions": [
+      "mạch giao tiếp hai dây truyền nhận ký tự từng chút một không cần dây xung nhịp",
+      "cổng nối tiếp bất đồng bộ hay dùng để xuất thông báo gỡ lỗi vi điều khiển lên máy tính"
+    ],
+    "summary": "Khối phần cứng điện tử chuyển đổi dữ liệu song song nội bộ thành chuỗi bit nối tiếp bất đồng bộ trên hai đường truyền phát (TX) và nhận (RX) độc lập.",
+    "domains": [
+      "iot/devices-sensors"
+    ],
+    "level": 2,
     "status": "draft"
   },
   {
@@ -7088,6 +9786,28 @@
     "summary": "Tỷ lệ hoặc khoảng thời gian mà hệ thống máy tính, mạng hoặc ứng dụng duy trì trạng thái hoạt động bình thường và sẵn sàng phục vụ người dùng.",
     "domains": [
       "it/devops/sre-operations"
+    ],
+    "level": 1,
+    "status": "draft"
+  },
+  {
+    "id": "url",
+    "label": "URL",
+    "aliases": [
+      "Uniform Resource Locator",
+      "địa chỉ web"
+    ],
+    "loanwords": [
+      "URL",
+      "Uniform Resource Locator"
+    ],
+    "plain_descriptions": [
+      "chuỗi địa chỉ bạn gõ vào thanh tìm kiếm của trình duyệt để vào trang web",
+      "đường link tiêu chuẩn chỉ đúng vị trí của tài liệu trên mạng internet"
+    ],
+    "summary": "Chuỗi định danh tiêu chuẩn chỉ định vị trí cụ thể và phương thức truy cập của một tài nguyên trên mạng.",
+    "domains": [
+      "it/web/frontend"
     ],
     "level": 1,
     "status": "draft"
@@ -7240,6 +9960,28 @@
     "status": "draft"
   },
   {
+    "id": "vertical-scaling",
+    "label": "Vertical scaling",
+    "aliases": [
+      "Scale up",
+      "Mở rộng theo chiều dọc"
+    ],
+    "loanwords": [
+      "vertical scaling",
+      "scale up"
+    ],
+    "plain_descriptions": [
+      "nâng cấp phần cứng mạnh hơn như tăng CPU và RAM cho một máy chủ sẵn có",
+      "nâng dung lượng máy bằng cách chuyển sang gói máy chủ lớn hơn"
+    ],
+    "summary": "Biện pháp gia tăng năng lực xử lý của hệ thống bằng cách bổ sung thêm tài nguyên tính toán như bộ xử lý, bộ nhớ RAM hoặc dung lượng ổ đĩa vào một máy chủ duy nhất.",
+    "domains": [
+      "it/infrastructure/cloud"
+    ],
+    "level": 1,
+    "status": "draft"
+  },
+  {
     "id": "virtual-machine",
     "label": "Máy ảo",
     "aliases": [
@@ -7325,6 +10067,93 @@
     "status": "draft"
   },
   {
+    "id": "wcag",
+    "label": "WCAG",
+    "aliases": [
+      "Web Content Accessibility Guidelines"
+    ],
+    "loanwords": [
+      "WCAG",
+      "Web Content Accessibility Guidelines"
+    ],
+    "plain_descriptions": [
+      "bộ tiêu chuẩn quốc tế chính thức về việc xây dựng trang web thân thiện cho mọi người",
+      "hướng dẫn kỹ thuật đo lường mức độ tiếp cận của nội dung web đối với người khuyết tật"
+    ],
+    "summary": "Bộ hướng dẫn tiếp cận nội dung web do Tổ chức World Wide Web Consortium (W3C) ban hành nhằm chuẩn hóa khả năng tiếp cận kỹ thuật số.",
+    "domains": [
+      "it/web/frontend"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
+    "id": "wearable",
+    "label": "Wearable device",
+    "aliases": [
+      "Thiết bị đeo",
+      "Thiết bị đeo thông minh"
+    ],
+    "loanwords": [
+      "wearable",
+      "wearable device"
+    ],
+    "plain_descriptions": [
+      "đồ công nghệ đeo trên người như đồng hồ thông minh hoặc vòng theo dõi sức khỏe",
+      "thiết bị điện tử nhỏ gọn gắn trên cơ thể để đo nhịp tim và đếm bước chân"
+    ],
+    "summary": "Nhóm thiết bị điện tử thông minh nhỏ gọn được thiết kế để đeo trên cơ thể hoặc tích hợp vào trang phục, trang bị cảm biến sinh trắc học và kết nối không dây để theo dõi sức khỏe liên tục.",
+    "domains": [
+      "iot/devices-sensors"
+    ],
+    "level": 1,
+    "status": "draft"
+  },
+  {
+    "id": "web-accessibility",
+    "label": "Khả năng tiếp cận web",
+    "aliases": [
+      "a11y",
+      "web accessibility",
+      "khả năng truy cập web"
+    ],
+    "loanwords": [
+      "a11y",
+      "web accessibility"
+    ],
+    "plain_descriptions": [
+      "làm cho trang web dễ sử dụng với tất cả mọi người, kể cả người khuyết tật",
+      "xây dựng sản phẩm web tương thích tốt với các phần mềm đọc màn hình"
+    ],
+    "summary": "Thực tiễn thiết kế và xây dựng trang web sao cho mọi người, bao gồm người có khiếm khuyết về giác quan hoặc thể chất, đều có thể sử dụng thuận tiện.",
+    "domains": [
+      "it/web/frontend"
+    ],
+    "level": 1,
+    "status": "draft"
+  },
+  {
+    "id": "web-server",
+    "label": "Máy chủ web",
+    "aliases": [
+      "web server",
+      "máy chủ HTTP"
+    ],
+    "loanwords": [
+      "web server"
+    ],
+    "plain_descriptions": [
+      "máy tính và phần mềm chuyên tiếp nhận yêu cầu và gửi trang web cho người dùng",
+      "hệ thống lưu trữ và phân phát các tệp HTML, hình ảnh qua mạng internet"
+    ],
+    "summary": "Hệ thống phần cứng hoặc phần mềm chuyên xử lý các yêu cầu từ máy khách qua giao thức HTTP để cung cấp tài nguyên trang web.",
+    "domains": [
+      "it/web/backend"
+    ],
+    "level": 1,
+    "status": "draft"
+  },
+  {
     "id": "web-session",
     "label": "Session",
     "qualifier": "(Web)",
@@ -7367,6 +10196,70 @@
     "status": "draft"
   },
   {
+    "id": "websocket",
+    "label": "WebSocket",
+    "aliases": [
+      "Giao thức WebSocket"
+    ],
+    "loanwords": [
+      "websocket"
+    ],
+    "plain_descriptions": [
+      "đường truyền liên tục hai chiều cho phép máy chủ và trình duyệt trao đổi tức thì",
+      "kết nối mạng duy trì thường trực sau bước nâng cấp từ yêu cầu HTTP"
+    ],
+    "summary": "Giao thức truyền thông máy tính cung cấp kênh giao tiếp song công hai chiều toàn phần qua một kết nối TCP duy nhất, được khởi tạo thông qua cái bắt tay nâng cấp từ HTTP.",
+    "domains": [
+      "it/web/api"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
+    "id": "wifi",
+    "label": "Wi-Fi",
+    "aliases": [
+      "WiFi",
+      "Mạng không dây Wi-Fi"
+    ],
+    "loanwords": [
+      "wi-fi",
+      "wifi"
+    ],
+    "plain_descriptions": [
+      "công nghệ sóng không dây phổ biến nhất giúp điện thoại và máy tính vào mạng Internet",
+      "chuẩn mạng không dây tốc độ cao phủ sóng trong nhà ở các dải tần 2.4 GHz và 5 GHz"
+    ],
+    "summary": "Tập hợp các giao thức mạng cục bộ không dây (WLAN) dựa trên bộ tiêu chuẩn IEEE 802.11, cung cấp khả năng kết nối mạng không dây tốc độ cao cho các thiết bị điện tử trong cự ly gần.",
+    "domains": [
+      "iot/connectivity-protocols",
+      "it/infrastructure/networking"
+    ],
+    "level": 1,
+    "status": "draft"
+  },
+  {
+    "id": "workflow-automation",
+    "label": "Tự động hóa quy trình",
+    "aliases": [
+      "Workflow automation",
+      "Tự động hóa quy trình làm việc"
+    ],
+    "loanwords": [
+      "workflow automation"
+    ],
+    "plain_descriptions": [
+      "thiết lập các điều kiện tự động truyền dữ liệu giữa các phần mềm văn phòng",
+      "kết nối các tác vụ hàng ngày để máy tính tự thực hiện thay vì con người bấm tay"
+    ],
+    "summary": "Thiết lập chuỗi các bước công việc tự động kích hoạt và xử lý dữ liệu giữa các ứng dụng nghiệp vụ theo các quy tắc định sẵn.",
+    "domains": [
+      "it/business-systems/automation"
+    ],
+    "level": 1,
+    "status": "draft"
+  },
+  {
     "id": "working-capital",
     "label": "Vốn lưu động",
     "aliases": [
@@ -7400,6 +10293,24 @@
     "summary": "Lỗ hổng tiêm mã độc phía client cho phép tin tặc cài cắm các đoạn mã kịch bản độc hại vào trang web uy tín để thực thi trên trình duyệt của nạn nhân.",
     "domains": [
       "it/security/vulnerabilities"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
+    "id": "z-wave",
+    "label": "Z-Wave",
+    "aliases": [],
+    "loanwords": [
+      "z-wave"
+    ],
+    "plain_descriptions": [
+      "chuẩn sóng không dây cho nhà thông minh chạy dải tần riêng không lo bị nghẽn mạng Wi-Fi",
+      "giao thức mạng lưới tầm xa dưới 1 GHz giúp cảm biến và khóa cửa xuyên tường tốt hơn"
+    ],
+    "summary": "Giao thức truyền thông không dây mạng lưới hoạt động ở dải tần số dưới 1 GHz (sub-GHz), được thiết kế chuyên biệt để tự động hóa nhà ở mà không bị nhiễu sóng bởi mạng Wi-Fi.",
+    "domains": [
+      "iot/connectivity-protocols"
     ],
     "level": 2,
     "status": "draft"

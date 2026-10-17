@@ -6,6 +6,7 @@ relations:
   prerequisites:
     - "os-process"
   confusable:
+    - "thread-iot"
     - "os-process"
   related:
     - "concurrency"

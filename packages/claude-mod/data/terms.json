@@ -48,6 +48,51 @@
     "autolink": true
   },
   {
+    "key": "Accelerometer",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "accelerometer",
+        "label": "Accelerometer",
+        "summary": "Cảm biến cơ điện vi mô đo gia tốc riêng của vật thể—tốc độ thay đổi vận tốc tuyến tính trên các trục tọa độ bao gồm cả trọng lực Trái Đất.",
+        "domains": [
+          "iot/devices-sensors"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Gia tốc kế",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "accelerometer",
+        "label": "Accelerometer",
+        "summary": "Cảm biến cơ điện vi mô đo gia tốc riêng của vật thể—tốc độ thay đổi vận tốc tuyến tính trên các trục tọa độ bao gồm cả trọng lực Trái Đất.",
+        "domains": [
+          "iot/devices-sensors"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Cảm biến gia tốc",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "accelerometer",
+        "label": "Accelerometer",
+        "summary": "Cảm biến cơ điện vi mô đo gia tốc riêng của vật thể—tốc độ thay đổi vận tốc tuyến tính trên các trục tọa độ bao gồm cả trọng lực Trái Đất.",
+        "domains": [
+          "iot/devices-sensors"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
     "key": "Acceptance criteria",
     "match": "any-case",
     "concepts": [
@@ -138,6 +183,38 @@
     "autolink": true
   },
   {
+    "key": "ACID",
+    "match": "exact-case",
+    "concepts": [
+      {
+        "id": "acid",
+        "label": "ACID",
+        "qualifier": "(Cơ sở dữ liệu)",
+        "summary": "Bộ bốn đặc tính cơ bản (Nguyên tử, Nhất quán, Cô lập, Bền vững) bảo đảm các giao dịch cơ sở dữ liệu được xử lý an toàn và tin cậy.",
+        "domains": [
+          "it/data/database"
+        ]
+      }
+    ],
+    "autolink": false
+  },
+  {
+    "key": "tính chất ACID",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "acid",
+        "label": "ACID",
+        "qualifier": "(Cơ sở dữ liệu)",
+        "summary": "Bộ bốn đặc tính cơ bản (Nguyên tử, Nhất quán, Cô lập, Bền vững) bảo đảm các giao dịch cơ sở dữ liệu được xử lý an toàn và tin cậy.",
+        "domains": [
+          "it/data/database"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
     "key": "Cơ cấu chấp hành",
     "match": "any-case",
     "concepts": [
@@ -194,6 +271,51 @@
         "summary": "Chỉ số ghi nhận mỗi lần mẩu quảng cáo được nạp thành công và xuất hiện trong khung nhìn màn hình của người dùng.",
         "domains": [
           "media/digital-marketing/paid-ads"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Analog-to-digital converter (ADC)",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "adc",
+        "label": "Analog-to-digital converter (ADC)",
+        "summary": "Mạch điện tử thực hiện lấy mẫu tín hiệu điện áp tương tự liên tục theo thời gian và lượng tử hóa thành chuỗi các giá trị số nhị phân để máy tính xử lý.",
+        "domains": [
+          "iot/devices-sensors"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "ADC",
+    "match": "exact-case",
+    "concepts": [
+      {
+        "id": "adc",
+        "label": "Analog-to-digital converter (ADC)",
+        "summary": "Mạch điện tử thực hiện lấy mẫu tín hiệu điện áp tương tự liên tục theo thời gian và lượng tử hóa thành chuỗi các giá trị số nhị phân để máy tính xử lý.",
+        "domains": [
+          "iot/devices-sensors"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Bộ chuyển đổi tương tự sang số",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "adc",
+        "label": "Analog-to-digital converter (ADC)",
+        "summary": "Mạch điện tử thực hiện lấy mẫu tín hiệu điện áp tương tự liên tục theo thời gian và lượng tử hóa thành chuỗi các giá trị số nhị phân để máy tính xử lý.",
+        "domains": [
+          "iot/devices-sensors"
         ]
       }
     ],
@@ -324,6 +446,128 @@
     "autolink": true
   },
   {
+    "key": "Apache Airflow",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "apache-airflow",
+        "label": "Apache Airflow",
+        "summary": "Nền tảng mã nguồn mở dùng để lập trình, lập lịch và giám sát các luồng công việc kỹ thuật dữ liệu phức tạp.",
+        "domains": [
+          "it/data/data-engineering"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Airflow",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "apache-airflow",
+        "label": "Apache Airflow",
+        "summary": "Nền tảng mã nguồn mở dùng để lập trình, lập lịch và giám sát các luồng công việc kỹ thuật dữ liệu phức tạp.",
+        "domains": [
+          "it/data/data-engineering"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Apache Flink",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "apache-flink",
+        "label": "Apache Flink",
+        "summary": "Khung xử lý phân tán mã nguồn mở dành cho các tính toán có trạng thái trên cả luồng dữ liệu vô hạn và hữu hạn.",
+        "domains": [
+          "it/data/data-engineering"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Flink",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "apache-flink",
+        "label": "Apache Flink",
+        "summary": "Khung xử lý phân tán mã nguồn mở dành cho các tính toán có trạng thái trên cả luồng dữ liệu vô hạn và hữu hạn.",
+        "domains": [
+          "it/data/data-engineering"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Apache Kafka",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "apache-kafka",
+        "label": "Apache Kafka",
+        "summary": "Nền tảng luồng sự kiện phân tán dùng cho đường ống dữ liệu hiệu năng cao, phân tích thời gian thực và tích hợp hệ thống.",
+        "domains": [
+          "it/data/data-engineering",
+          "it/web/backend"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Kafka",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "apache-kafka",
+        "label": "Apache Kafka",
+        "summary": "Nền tảng luồng sự kiện phân tán dùng cho đường ống dữ liệu hiệu năng cao, phân tích thời gian thực và tích hợp hệ thống.",
+        "domains": [
+          "it/data/data-engineering",
+          "it/web/backend"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Apache Spark",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "apache-spark",
+        "label": "Apache Spark",
+        "summary": "Khung điện toán phân tán mã nguồn mở được thiết kế để xử lý nhanh các tập dữ liệu quy mô lớn nhờ cơ chế lưu trữ trên bộ nhớ.",
+        "domains": [
+          "it/data/data-engineering"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Spark",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "apache-spark",
+        "label": "Apache Spark",
+        "summary": "Khung điện toán phân tán mã nguồn mở được thiết kế để xử lý nhanh các tập dữ liệu quy mô lớn nhờ cơ chế lưu trữ trên bộ nhớ.",
+        "domains": [
+          "it/data/data-engineering"
+        ]
+      }
+    ],
+    "autolink": false
+  },
+  {
     "key": "Application Programming Interface (API)",
     "match": "any-case",
     "concepts": [
@@ -414,6 +658,53 @@
         "summary": "Địa chỉ URL cụ thể do hệ thống API mở ra để tiếp nhận các yêu cầu xử lý tài nguyên hoặc dịch vụ nghiệp vụ.",
         "domains": [
           "it/web/api"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "API gateway",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "api-gateway",
+        "label": "API gateway",
+        "summary": "Mẫu máy chủ đóng vai trò cửa ngõ tập trung đón nhận yêu cầu từ client, chuyển tiếp tới các dịch vụ nội bộ phù hợp và thực thi các tác vụ kiểm soát chung.",
+        "domains": [
+          "it/web/api",
+          "it/software-engineering/architecture"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Cổng API",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "api-gateway",
+        "label": "API gateway",
+        "summary": "Mẫu máy chủ đóng vai trò cửa ngõ tập trung đón nhận yêu cầu từ client, chuyển tiếp tới các dịch vụ nội bộ phù hợp và thực thi các tác vụ kiểm soát chung.",
+        "domains": [
+          "it/web/api",
+          "it/software-engineering/architecture"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Arduino",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "arduino",
+        "label": "Arduino",
+        "summary": "Nền tảng phần cứng và phần mềm mã nguồn mở dựa trên vi điều khiển, được thiết kế để giúp người dùng dễ dàng lập trình và tương tác với các cảm biến, linh kiện điện tử.",
+        "domains": [
+          "iot/devices-sensors"
         ]
       }
     ],
@@ -803,6 +1094,51 @@
     "autolink": true
   },
   {
+    "key": "Backpressure",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "backpressure",
+        "label": "Backpressure",
+        "summary": "Cơ chế điều tiết luồng dữ liệu trong các đường ống xử lý bất đồng bộ, trong đó thành phần tiêu thụ gửi tín hiệu ngược về phía sản xuất để giới hạn tốc độ truyền tải tránh gây quá tải bộ nhớ.",
+        "domains": [
+          "it/software-engineering/architecture"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Áp lực ngược",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "backpressure",
+        "label": "Backpressure",
+        "summary": "Cơ chế điều tiết luồng dữ liệu trong các đường ống xử lý bất đồng bộ, trong đó thành phần tiêu thụ gửi tín hiệu ngược về phía sản xuất để giới hạn tốc độ truyền tải tránh gây quá tải bộ nhớ.",
+        "domains": [
+          "it/software-engineering/architecture"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Kiểm soát dòng dữ liệu",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "backpressure",
+        "label": "Backpressure",
+        "summary": "Cơ chế điều tiết luồng dữ liệu trong các đường ống xử lý bất đồng bộ, trong đó thành phần tiêu thụ gửi tín hiệu ngược về phía sản xuất để giới hạn tốc độ truyền tải tránh gây quá tải bộ nhớ.",
+        "domains": [
+          "it/software-engineering/architecture"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
     "key": "Bảng cân đối kế toán",
     "match": "any-case",
     "concepts": [
@@ -887,6 +1223,36 @@
         "summary": "Giao dịch chuyển tiền điện tử từ tài khoản của người gửi sang tài khoản của người nhận thông qua hệ thống thanh toán liên ngân hàng.",
         "domains": [
           "finance/banking/payments"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Batch processing",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "batch-processing",
+        "label": "Batch processing",
+        "summary": "Việc thực thi chuỗi công việc tính toán tự động trên các khối dữ liệu lớn đã tích lũy mà không cần can thiệp thủ công.",
+        "domains": [
+          "it/data/data-engineering"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "xử lý theo lô",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "batch-processing",
+        "label": "Batch processing",
+        "summary": "Việc thực thi chuỗi công việc tính toán tự động trên các khối dữ liệu lớn đã tích lũy mà không cần can thiệp thủ công.",
+        "domains": [
+          "it/data/data-engineering"
         ]
       }
     ],
@@ -1411,6 +1777,51 @@
     "autolink": true
   },
   {
+    "key": "Bộ nhớ đệm trình duyệt",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "browser-cache",
+        "label": "Bộ nhớ đệm trình duyệt",
+        "summary": "Cơ chế lưu trữ tạm thời trong trình duyệt web giúp giữ lại các tài nguyên HTTP đã tải về để tái sử dụng trong các lần truy cập tiếp theo.",
+        "domains": [
+          "it/web/frontend"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "browser cache",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "browser-cache",
+        "label": "Bộ nhớ đệm trình duyệt",
+        "summary": "Cơ chế lưu trữ tạm thời trong trình duyệt web giúp giữ lại các tài nguyên HTTP đã tải về để tái sử dụng trong các lần truy cập tiếp theo.",
+        "domains": [
+          "it/web/frontend"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "web cache",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "browser-cache",
+        "label": "Bộ nhớ đệm trình duyệt",
+        "summary": "Cơ chế lưu trữ tạm thời trong trình duyệt web giúp giữ lại các tài nguyên HTTP đã tải về để tái sử dụng trong các lần truy cập tiếp theo.",
+        "domains": [
+          "it/web/frontend"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
     "key": "Ngân sách",
     "match": "any-case",
     "concepts": [
@@ -1437,6 +1848,54 @@
         "summary": "Kế hoạch tài chính chi tiết ước tính các khoản thu nhập dự kiến và phân bổ vào chi phí sinh hoạt, tiết kiệm và trả nợ trong một khoảng thời gian nhất định.",
         "domains": [
           "finance/personal-finance/budget"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Bundler",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "bundler",
+        "label": "Bundler",
+        "qualifier": "(JavaScript)",
+        "summary": "Công cụ đóng gói và xử lý các tệp mã nguồn cùng tài nguyên liên quan thành các gói tệp hoàn chỉnh để triển khai lên web.",
+        "domains": [
+          "it/web/frontend"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "module bundler",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "bundler",
+        "label": "Bundler",
+        "qualifier": "(JavaScript)",
+        "summary": "Công cụ đóng gói và xử lý các tệp mã nguồn cùng tài nguyên liên quan thành các gói tệp hoàn chỉnh để triển khai lên web.",
+        "domains": [
+          "it/web/frontend"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "bộ đóng gói mã",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "bundler",
+        "label": "Bundler",
+        "qualifier": "(JavaScript)",
+        "summary": "Công cụ đóng gói và xử lý các tệp mã nguồn cùng tài nguyên liên quan thành các gói tệp hoàn chỉnh để triển khai lên web.",
+        "domains": [
+          "it/web/frontend"
         ]
       }
     ],
@@ -1482,6 +1941,54 @@
         "summary": "Biểu đồ trực quan biểu diễn khối lượng công việc còn lại theo thời gian, giúp nhóm Agile dự báo khả năng hoàn thành mục tiêu đúng hạn.",
         "domains": [
           "product/delivery-planning"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Kinh doanh thông minh",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "business-intelligence",
+        "label": "Kinh doanh thông minh",
+        "summary": "Phương pháp và công nghệ phân tích dữ liệu hoạt động trong quá khứ nhằm hỗ trợ ban lãnh đạo đưa ra quyết định kinh doanh.",
+        "domains": [
+          "it/data/analytics",
+          "it/business-systems/enterprise-apps"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Business intelligence",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "business-intelligence",
+        "label": "Kinh doanh thông minh",
+        "summary": "Phương pháp và công nghệ phân tích dữ liệu hoạt động trong quá khứ nhằm hỗ trợ ban lãnh đạo đưa ra quyết định kinh doanh.",
+        "domains": [
+          "it/data/analytics",
+          "it/business-systems/enterprise-apps"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "BI",
+    "match": "exact-case",
+    "concepts": [
+      {
+        "id": "business-intelligence",
+        "label": "Kinh doanh thông minh",
+        "summary": "Phương pháp và công nghệ phân tích dữ liệu hoạt động trong quá khứ nhằm hỗ trợ ban lãnh đạo đưa ra quyết định kinh doanh.",
+        "domains": [
+          "it/data/analytics",
+          "it/business-systems/enterprise-apps"
         ]
       }
     ],
@@ -1718,6 +2225,51 @@
     "autolink": true
   },
   {
+    "key": "Định lý CAP",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "cap-theorem",
+        "label": "Định lý CAP",
+        "summary": "Nguyên lý cơ bản của điện toán phân tán khẳng định một kho lưu trữ phân tán chỉ có thể đồng thời đáp ứng tối đa hai trong ba bảo đảm, Nhất quán, Sẵn sàng và Chịu lỗi mạng.",
+        "domains": [
+          "it/data/database"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "định lý Brewer",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "cap-theorem",
+        "label": "Định lý CAP",
+        "summary": "Nguyên lý cơ bản của điện toán phân tán khẳng định một kho lưu trữ phân tán chỉ có thể đồng thời đáp ứng tối đa hai trong ba bảo đảm, Nhất quán, Sẵn sàng và Chịu lỗi mạng.",
+        "domains": [
+          "it/data/database"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "CAP theorem",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "cap-theorem",
+        "label": "Định lý CAP",
+        "summary": "Nguyên lý cơ bản của điện toán phân tán khẳng định một kho lưu trữ phân tán chỉ có thể đồng thời đáp ứng tối đa hai trong ba bảo đảm, Nhất quán, Sẵn sàng và Chịu lỗi mạng.",
+        "domains": [
+          "it/data/database"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
     "key": "Báo cáo lưu chuyển tiền tệ",
     "match": "any-case",
     "concepts": [
@@ -1832,6 +2384,36 @@
         "summary": "Kỹ thuật viết prompt yêu cầu mô hình lập luận qua các bước trung gian trước khi đưa ra câu trả lời cuối cùng.",
         "domains": [
           "it/ai-ml/llm-agents"
+        ]
+      }
+    ],
+    "autolink": false
+  },
+  {
+    "key": "Change data capture (CDC)",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "change-data-capture",
+        "label": "Change data capture (CDC)",
+        "summary": "Tập hợp các kỹ thuật và mẫu thiết kế giúp ghi nhận và truyền tải các thao tác sửa đổi dữ liệu cấp dòng ngay khi xảy ra.",
+        "domains": [
+          "it/data/data-engineering"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "CDC",
+    "match": "exact-case",
+    "concepts": [
+      {
+        "id": "change-data-capture",
+        "label": "Change data capture (CDC)",
+        "summary": "Tập hợp các kỹ thuật và mẫu thiết kế giúp ghi nhận và truyền tải các thao tác sửa đổi dữ liệu cấp dòng ngay khi xảy ra.",
+        "domains": [
+          "it/data/data-engineering"
         ]
       }
     ],
@@ -1961,6 +2543,54 @@
     "autolink": true
   },
   {
+    "key": "Circuit breaker",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "circuit-breaker",
+        "label": "Circuit breaker",
+        "qualifier": "(Phần mềm)",
+        "summary": "Mẫu thiết kế ngăn chặn ứng dụng liên tục gọi một dịch vụ đang gặp sự cố, tự động ngắt mạch để trả về phản hồi lỗi ngay lập tức và tự hồi phục khi đối tác khỏe lại.",
+        "domains": [
+          "it/software-engineering/architecture"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Bộ ngắt mạch",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "circuit-breaker",
+        "label": "Circuit breaker",
+        "qualifier": "(Phần mềm)",
+        "summary": "Mẫu thiết kế ngăn chặn ứng dụng liên tục gọi một dịch vụ đang gặp sự cố, tự động ngắt mạch để trả về phản hồi lỗi ngay lập tức và tự hồi phục khi đối tác khỏe lại.",
+        "domains": [
+          "it/software-engineering/architecture"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Mẫu ngắt mạch",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "circuit-breaker",
+        "label": "Circuit breaker",
+        "qualifier": "(Phần mềm)",
+        "summary": "Mẫu thiết kế ngăn chặn ứng dụng liên tục gọi một dịch vụ đang gặp sự cố, tự động ngắt mạch để trả về phản hồi lỗi ngay lập tức và tự hồi phục khi đối tác khỏe lại.",
+        "domains": [
+          "it/software-engineering/architecture"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
     "key": "Class",
     "match": "any-case",
     "concepts": [
@@ -1993,6 +2623,36 @@
     "autolink": false
   },
   {
+    "key": "Clean architecture",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "clean-architecture",
+        "label": "Clean architecture",
+        "summary": "Mô hình kiến trúc phần mềm tổ chức thành các vòng tròn đồng tâm với nguyên tắc phụ thuộc nghiêm ngặt hướng vào trong, giúp lõi nghiệp vụ hoàn toàn độc lập với khung phát triển và giao diện ngoài.",
+        "domains": [
+          "it/software-engineering/architecture"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Kiến trúc sạch",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "clean-architecture",
+        "label": "Clean architecture",
+        "summary": "Mô hình kiến trúc phần mềm tổ chức thành các vòng tròn đồng tâm với nguyên tắc phụ thuộc nghiêm ngặt hướng vào trong, giúp lõi nghiệp vụ hoàn toàn độc lập với khung phát triển và giao diện ngoài.",
+        "domains": [
+          "it/software-engineering/architecture"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
     "key": "Closure",
     "match": "any-case",
     "concepts": [
@@ -2019,6 +2679,54 @@
         "summary": "Hàm được đóng gói cùng môi trường từ vựng xung quanh, cho phép nó truy cập các biến của phạm vi bao bọc bên ngoài ngay cả khi hàm ngoài đã kết thúc.",
         "domains": [
           "it/software-engineering/programming-concepts"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "CMS",
+    "match": "exact-case",
+    "concepts": [
+      {
+        "id": "cms",
+        "label": "CMS",
+        "summary": "Ứng dụng hỗ trợ người dùng biên soạn, chỉnh sửa, lưu trữ và xuất bản nội dung số lên website mà không cần can thiệp mã nguồn.",
+        "domains": [
+          "it/business-systems/enterprise-apps",
+          "media/publishing/distribution-platforms"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Content management system",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "cms",
+        "label": "CMS",
+        "summary": "Ứng dụng hỗ trợ người dùng biên soạn, chỉnh sửa, lưu trữ và xuất bản nội dung số lên website mà không cần can thiệp mã nguồn.",
+        "domains": [
+          "it/business-systems/enterprise-apps",
+          "media/publishing/distribution-platforms"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Hệ thống quản lý nội dung",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "cms",
+        "label": "CMS",
+        "summary": "Ứng dụng hỗ trợ người dùng biên soạn, chỉnh sửa, lưu trữ và xuất bản nội dung số lên website mà không cần can thiệp mã nguồn.",
+        "domains": [
+          "it/business-systems/enterprise-apps",
+          "media/publishing/distribution-platforms"
         ]
       }
     ],
@@ -2085,6 +2793,51 @@
     "autolink": true
   },
   {
+    "key": "Code splitting",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "code-splitting",
+        "label": "Code splitting",
+        "summary": "Kỹ thuật chia nhỏ gói mã nguồn thành nhiều phần nhỏ hơn để tải theo yêu cầu hoặc tải song song nhằm tăng tốc độ tải trang.",
+        "domains": [
+          "it/web/frontend"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "phân tách mã nguồn",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "code-splitting",
+        "label": "Code splitting",
+        "summary": "Kỹ thuật chia nhỏ gói mã nguồn thành nhiều phần nhỏ hơn để tải theo yêu cầu hoặc tải song song nhằm tăng tốc độ tải trang.",
+        "domains": [
+          "it/web/frontend"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "chia nhỏ gói mã",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "code-splitting",
+        "label": "Code splitting",
+        "summary": "Kỹ thuật chia nhỏ gói mã nguồn thành nhiều phần nhỏ hơn để tải theo yêu cầu hoặc tải song song nhằm tăng tốc độ tải trang.",
+        "domains": [
+          "it/web/frontend"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
     "key": "Color grading",
     "match": "any-case",
     "concepts": [
@@ -2124,6 +2877,51 @@
         "summary": "Quy trình sáng tạo trong hậu kỳ video nhằm thay đổi đặc tính màu sắc, độ tương phản và sắc độ để tạo phong cách thẩm mỹ và cảm xúc cho tác phẩm.",
         "domains": [
           "media/content-production/editing"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Lưu trữ theo cột",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "columnar-storage",
+        "label": "Lưu trữ theo cột",
+        "summary": "Phương pháp lưu trữ cơ sở dữ liệu nhóm các giá trị theo cột thay vì theo hàng trên ổ đĩa, giúp tăng tốc tối đa các truy vấn tổng hợp phân tích.",
+        "domains": [
+          "it/data/database"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "columnar storage",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "columnar-storage",
+        "label": "Lưu trữ theo cột",
+        "summary": "Phương pháp lưu trữ cơ sở dữ liệu nhóm các giá trị theo cột thay vì theo hàng trên ổ đĩa, giúp tăng tốc tối đa các truy vấn tổng hợp phân tích.",
+        "domains": [
+          "it/data/database"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "cơ sở dữ liệu theo cột",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "columnar-storage",
+        "label": "Lưu trữ theo cột",
+        "summary": "Phương pháp lưu trữ cơ sở dữ liệu nhóm các giá trị theo cột thay vì theo hàng trên ổ đĩa, giúp tăng tốc tối đa các truy vấn tổng hợp phân tích.",
+        "domains": [
+          "it/data/database"
         ]
       }
     ],
@@ -2216,6 +3014,96 @@
         "summary": "Khả năng cấu trúc và điều phối nhiều tác vụ tính toán độc lập cùng tiến triển trong các khoảng thời gian đan xen nhau.",
         "domains": [
           "it/software-engineering/programming-concepts"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Connection pool",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "connection-pool",
+        "label": "Connection pool",
+        "summary": "Bộ nhớ lưu trữ các kết nối cơ sở dữ liệu mở sẵn và có thể tái sử dụng, giúp ứng dụng tránh chi phí thiết lập kết nối mới cho mỗi yêu cầu.",
+        "domains": [
+          "it/data/database"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "hồ chứa kết nối",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "connection-pool",
+        "label": "Connection pool",
+        "summary": "Bộ nhớ lưu trữ các kết nối cơ sở dữ liệu mở sẵn và có thể tái sử dụng, giúp ứng dụng tránh chi phí thiết lập kết nối mới cho mỗi yêu cầu.",
+        "domains": [
+          "it/data/database"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "vùng kết nối",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "connection-pool",
+        "label": "Connection pool",
+        "summary": "Bộ nhớ lưu trữ các kết nối cơ sở dữ liệu mở sẵn và có thể tái sử dụng, giúp ứng dụng tránh chi phí thiết lập kết nối mới cho mỗi yêu cầu.",
+        "domains": [
+          "it/data/database"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Consistent hashing",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "consistent-hashing",
+        "label": "Consistent hashing",
+        "summary": "Thuật toán băm phân tán trong đó việc tăng giảm số lượng nút lưu trữ chỉ làm chuyển dịch trung bình K/N khóa, bằng cách ánh xạ cả máy chủ và dữ liệu lên một không gian vòng tròn định danh.",
+        "domains": [
+          "it/software-engineering/architecture"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Băm nhất quán",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "consistent-hashing",
+        "label": "Consistent hashing",
+        "summary": "Thuật toán băm phân tán trong đó việc tăng giảm số lượng nút lưu trữ chỉ làm chuyển dịch trung bình K/N khóa, bằng cách ánh xạ cả máy chủ và dữ liệu lên một không gian vòng tròn định danh.",
+        "domains": [
+          "it/software-engineering/architecture"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Vòng băm",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "consistent-hashing",
+        "label": "Consistent hashing",
+        "summary": "Thuật toán băm phân tán trong đó việc tăng giảm số lượng nút lưu trữ chỉ làm chuyển dịch trung bình K/N khóa, bằng cách ánh xạ cả máy chủ và dữ liệu lên một không gian vòng tròn định danh.",
+        "domains": [
+          "it/software-engineering/architecture"
         ]
       }
     ],
@@ -2453,6 +3341,54 @@
     "autolink": true
   },
   {
+    "key": "Core Web Vitals",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "core-web-vitals",
+        "label": "Core Web Vitals",
+        "summary": "Tập hợp các chỉ số chuẩn hóa do Google đề xuất nhằm đo lường trải nghiệm thực tế của người dùng về tốc độ tải, độ phản hồi và độ ổn định giao diện.",
+        "domains": [
+          "it/web/frontend",
+          "media/digital-marketing/seo"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "CWV",
+    "match": "exact-case",
+    "concepts": [
+      {
+        "id": "core-web-vitals",
+        "label": "Core Web Vitals",
+        "summary": "Tập hợp các chỉ số chuẩn hóa do Google đề xuất nhằm đo lường trải nghiệm thực tế của người dùng về tốc độ tải, độ phản hồi và độ ổn định giao diện.",
+        "domains": [
+          "it/web/frontend",
+          "media/digital-marketing/seo"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "chỉ số hiệu năng web cốt lõi",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "core-web-vitals",
+        "label": "Core Web Vitals",
+        "summary": "Tập hợp các chỉ số chuẩn hóa do Google đề xuất nhằm đo lường trải nghiệm thực tế của người dùng về tốc độ tải, độ phản hồi và độ ổn định giao diện.",
+        "domains": [
+          "it/web/frontend",
+          "media/digital-marketing/seo"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
     "key": "Cross-Origin Resource Sharing (CORS)",
     "match": "any-case",
     "concepts": [
@@ -2605,6 +3541,36 @@
     "autolink": true
   },
   {
+    "key": "Command Query Responsibility Segregation (CQRS)",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "cqrs",
+        "label": "Command Query Responsibility Segregation (CQRS)",
+        "summary": "Mẫu kiến trúc phân chia rạch ròi các thao tác cập nhật trạng thái dữ liệu (lệnh ghi) và các thao tác tra cứu dữ liệu (truy vấn) thành hai mô hình xử lý độc lập.",
+        "domains": [
+          "it/software-engineering/architecture"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "CQRS",
+    "match": "exact-case",
+    "concepts": [
+      {
+        "id": "cqrs",
+        "label": "Command Query Responsibility Segregation (CQRS)",
+        "summary": "Mẫu kiến trúc phân chia rạch ròi các thao tác cập nhật trạng thái dữ liệu (lệnh ghi) và các thao tác tra cứu dữ liệu (truy vấn) thành hai mô hình xử lý độc lập.",
+        "domains": [
+          "it/software-engineering/architecture"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
     "key": "Creative Commons",
     "match": "any-case",
     "concepts": [
@@ -2725,6 +3691,36 @@
     "autolink": true
   },
   {
+    "key": "CRM",
+    "match": "exact-case",
+    "concepts": [
+      {
+        "id": "crm",
+        "label": "CRM",
+        "summary": "Hệ thống phần mềm hợp nhất dữ liệu liên hệ, tiến độ thương vụ và lịch sử tương tác với khách hàng trong một nền tảng.",
+        "domains": [
+          "it/business-systems/enterprise-apps"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Customer relationship management",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "crm",
+        "label": "CRM",
+        "summary": "Hệ thống phần mềm hợp nhất dữ liệu liên hệ, tiến độ thương vụ và lịch sử tương tác với khách hàng trong một nền tảng.",
+        "domains": [
+          "it/business-systems/enterprise-apps"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
     "key": "Tiền mã hóa",
     "match": "any-case",
     "concepts": [
@@ -2809,6 +3805,36 @@
         "summary": "Hình thức tấn công đánh lừa trình duyệt của người dùng gửi các yêu cầu giả mạo tới một ứng dụng web mà người đó đã xác thực từ trước.",
         "domains": [
           "it/security/vulnerabilities"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "CSS",
+    "match": "exact-case",
+    "concepts": [
+      {
+        "id": "css",
+        "label": "CSS",
+        "summary": "Ngôn ngữ bảng kiểu dùng để định dạng cách trình bày, bố cục và màu sắc của tài liệu HTML.",
+        "domains": [
+          "it/web/frontend"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Cascading Style Sheets",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "css",
+        "label": "CSS",
+        "summary": "Ngôn ngữ bảng kiểu dùng để định dạng cách trình bày, bố cục và màu sắc của tài liệu HTML.",
+        "domains": [
+          "it/web/frontend"
         ]
       }
     ],
@@ -3059,6 +4085,36 @@
     "autolink": true
   },
   {
+    "key": "Quản trị dữ liệu",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "data-governance",
+        "label": "Quản trị dữ liệu",
+        "summary": "Khung quản lý tổng thể về tính sẵn sàng, tính khả dụng, tính toàn vẹn và độ bảo mật của dữ liệu trong doanh nghiệp.",
+        "domains": [
+          "it/data/data-engineering"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "data governance",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "data-governance",
+        "label": "Quản trị dữ liệu",
+        "summary": "Khung quản lý tổng thể về tính sẵn sàng, tính khả dụng, tính toàn vẹn và độ bảo mật của dữ liệu trong doanh nghiệp.",
+        "domains": [
+          "it/data/data-engineering"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
     "key": "Data lake",
     "match": "any-case",
     "concepts": [
@@ -3081,6 +4137,81 @@
         "id": "data-lake",
         "label": "Data lake",
         "summary": "Kho lưu trữ tập trung có khả năng lưu giữ khối lượng lớn dữ liệu thô ở định dạng nguyên bản, từ dữ liệu có cấu trúc đến phi cấu trúc.",
+        "domains": [
+          "it/data/data-engineering"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Data lakehouse",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "data-lakehouse",
+        "label": "Data lakehouse",
+        "summary": "Kiến trúc quản lý dữ liệu hiện đại kết hợp khả năng lưu trữ linh hoạt của data lake với tính toàn vẹn ACID của data warehouse.",
+        "domains": [
+          "it/data/data-engineering"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "lakehouse",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "data-lakehouse",
+        "label": "Data lakehouse",
+        "summary": "Kiến trúc quản lý dữ liệu hiện đại kết hợp khả năng lưu trữ linh hoạt của data lake với tính toàn vẹn ACID của data warehouse.",
+        "domains": [
+          "it/data/data-engineering"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Data lineage",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "data-lineage",
+        "label": "Data lineage",
+        "summary": "Lịch sử và đường đi được ghi nhận của dữ liệu, mô tả chi tiết nguồn gốc, sự di chuyển, các bước biến đổi và đích đến theo thời gian.",
+        "domains": [
+          "it/data/data-engineering"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "nguồn gốc dữ liệu",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "data-lineage",
+        "label": "Data lineage",
+        "summary": "Lịch sử và đường đi được ghi nhận của dữ liệu, mô tả chi tiết nguồn gốc, sự di chuyển, các bước biến đổi và đích đến theo thời gian.",
+        "domains": [
+          "it/data/data-engineering"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "phả hệ dữ liệu",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "data-lineage",
+        "label": "Data lineage",
+        "summary": "Lịch sử và đường đi được ghi nhận của dữ liệu, mô tả chi tiết nguồn gốc, sự di chuyển, các bước biến đổi và đích đến theo thời gian.",
         "domains": [
           "it/data/data-engineering"
         ]
@@ -3119,6 +4250,36 @@
     "autolink": true
   },
   {
+    "key": "Chất lượng dữ liệu",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "data-quality",
+        "label": "Chất lượng dữ liệu",
+        "summary": "Thước đo đánh giá mức độ một tập dữ liệu đáp ứng các yêu cầu về tính chính xác, tính đầy đủ, tính nhất quán, tính hợp lệ và độ kịp thời.",
+        "domains": [
+          "it/data/data-engineering"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "data quality",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "data-quality",
+        "label": "Chất lượng dữ liệu",
+        "summary": "Thước đo đánh giá mức độ một tập dữ liệu đáp ứng các yêu cầu về tính chính xác, tính đầy đủ, tính nhất quán, tính hợp lệ và độ kịp thời.",
+        "domains": [
+          "it/data/data-engineering"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
     "key": "Cấu trúc dữ liệu",
     "match": "any-case",
     "concepts": [
@@ -3128,6 +4289,36 @@
         "summary": "Định dạng chuyên biệt dùng để tổ chức, xử lý, truy xuất và lưu trữ dữ liệu hiệu quả trong hệ thống máy tính.",
         "domains": [
           "it/software-engineering/programming-concepts"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Data visualization",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "data-visualization",
+        "label": "Data visualization",
+        "summary": "Kỹ thuật biểu diễn số liệu định lượng thành các đồ thị, biểu đồ và bản đồ trực quan giúp người xem nhận diện xu hướng nhanh chóng.",
+        "domains": [
+          "it/data/analytics"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Trực quan hóa dữ liệu",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "data-visualization",
+        "label": "Data visualization",
+        "summary": "Kỹ thuật biểu diễn số liệu định lượng thành các đồ thị, biểu đồ và bản đồ trực quan giúp người xem nhận diện xu hướng nhanh chóng.",
+        "domains": [
+          "it/data/analytics"
         ]
       }
     ],
@@ -3252,6 +4443,54 @@
         "label": "Migration",
         "qualifier": "(Cơ sở dữ liệu)",
         "summary": "Tập hợp các đoạn mã được quản lý phiên bản nhằm biến đổi và nâng cấp cấu trúc cơ sở dữ liệu an toàn theo thời gian mà không làm mất dữ liệu hiện có.",
+        "domains": [
+          "it/data/database"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Chuẩn hóa dữ liệu",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "database-normalization",
+        "label": "Chuẩn hóa dữ liệu",
+        "qualifier": "(Cơ sở dữ liệu)",
+        "summary": "Quá trình tổ chức lại các bảng trong cơ sở dữ liệu quan hệ theo các dạng chuẩn nhằm giảm thiểu dư thừa dữ liệu và nâng cao tính toàn vẹn.",
+        "domains": [
+          "it/data/database"
+        ]
+      }
+    ],
+    "autolink": false
+  },
+  {
+    "key": "chuẩn hóa cơ sở dữ liệu",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "database-normalization",
+        "label": "Chuẩn hóa dữ liệu",
+        "qualifier": "(Cơ sở dữ liệu)",
+        "summary": "Quá trình tổ chức lại các bảng trong cơ sở dữ liệu quan hệ theo các dạng chuẩn nhằm giảm thiểu dư thừa dữ liệu và nâng cao tính toàn vẹn.",
+        "domains": [
+          "it/data/database"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "normalization",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "database-normalization",
+        "label": "Chuẩn hóa dữ liệu",
+        "qualifier": "(Cơ sở dữ liệu)",
+        "summary": "Quá trình tổ chức lại các bảng trong cơ sở dữ liệu quan hệ theo các dạng chuẩn nhằm giảm thiểu dư thừa dữ liệu và nâng cao tính toàn vẹn.",
         "domains": [
           "it/data/database"
         ]
@@ -3413,6 +4652,54 @@
         "summary": "Tập hợp có cấu trúc gồm các bản ghi dữ liệu, đặc trưng và nhãn mục tiêu được phân chia để huấn luyện, tinh chỉnh và kiểm thử thuật toán.",
         "domains": [
           "it/ai-ml/foundations"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Deadlock",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "deadlock",
+        "label": "Deadlock",
+        "summary": "Tình trạng bế tắc vĩnh viễn khi hai hoặc nhiều tiến trình đồng thời cùng giữ một tài nguyên và chờ đợi tài nguyên do tiến trình kia nắm giữ.",
+        "domains": [
+          "it/data/database",
+          "it/software-engineering/programming-concepts"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "khóa chết",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "deadlock",
+        "label": "Deadlock",
+        "summary": "Tình trạng bế tắc vĩnh viễn khi hai hoặc nhiều tiến trình đồng thời cùng giữ một tài nguyên và chờ đợi tài nguyên do tiến trình kia nắm giữ.",
+        "domains": [
+          "it/data/database",
+          "it/software-engineering/programming-concepts"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "bế tắc",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "deadlock",
+        "label": "Deadlock",
+        "summary": "Tình trạng bế tắc vĩnh viễn khi hai hoặc nhiều tiến trình đồng thời cùng giữ một tài nguyên và chờ đợi tài nguyên do tiến trình kia nắm giữ.",
+        "domains": [
+          "it/data/database",
+          "it/software-engineering/programming-concepts"
         ]
       }
     ],
@@ -3584,6 +4871,51 @@
     "autolink": true
   },
   {
+    "key": "Dependency injection",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "dependency-injection",
+        "label": "Dependency injection",
+        "summary": "Mẫu thiết kế phần mềm trong đó một đối tượng nhận các thành phần phụ thuộc của nó từ một bộ cấu hình bên ngoài thay vì tự khởi tạo bên trong, hiện thực hóa nguyên lý đảo ngược điều khiển.",
+        "domains": [
+          "it/software-engineering/programming-concepts"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "DI",
+    "match": "exact-case",
+    "concepts": [
+      {
+        "id": "dependency-injection",
+        "label": "Dependency injection",
+        "summary": "Mẫu thiết kế phần mềm trong đó một đối tượng nhận các thành phần phụ thuộc của nó từ một bộ cấu hình bên ngoài thay vì tự khởi tạo bên trong, hiện thực hóa nguyên lý đảo ngược điều khiển.",
+        "domains": [
+          "it/software-engineering/programming-concepts"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Tiêm phụ thuộc",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "dependency-injection",
+        "label": "Dependency injection",
+        "summary": "Mẫu thiết kế phần mềm trong đó một đối tượng nhận các thành phần phụ thuộc của nó từ một bộ cấu hình bên ngoài thay vì tự khởi tạo bên trong, hiện thực hóa nguyên lý đảo ngược điều khiển.",
+        "domains": [
+          "it/software-engineering/programming-concepts"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
     "key": "Deprecation",
     "match": "any-case",
     "concepts": [
@@ -3740,6 +5072,36 @@
     "autolink": true
   },
   {
+    "key": "Chuyển đổi số",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "digital-transformation",
+        "label": "Chuyển đổi số",
+        "summary": "Quá trình tích hợp công nghệ số vào mọi mặt hoạt động của tổ chức nhằm đổi mới căn bản cách thức vận hành và cung cấp giá trị cho khách hàng.",
+        "domains": [
+          "it/business-systems/enterprise-apps"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Digital transformation",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "digital-transformation",
+        "label": "Chuyển đổi số",
+        "summary": "Quá trình tích hợp công nghệ số vào mọi mặt hoạt động của tổ chức nhằm đổi mới căn bản cách thức vận hành và cung cấp giá trị cho khách hàng.",
+        "domains": [
+          "it/business-systems/enterprise-apps"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
     "key": "Bản sao kỹ thuật số",
     "match": "any-case",
     "concepts": [
@@ -3779,6 +5141,96 @@
         "summary": "Mô hình ảo sống động mô phỏng chính xác trạng thái, hành vi và vòng đời của một đối tượng hoặc quy trình vật lý thông qua dòng dữ liệu cảm biến thời gian thực.",
         "domains": [
           "iot/industrial"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Disaster recovery (DR)",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "disaster-recovery",
+        "label": "Disaster recovery (DR)",
+        "summary": "Tập hợp các chính sách, công cụ và quy trình kỹ thuật nhằm khôi phục và duy trì các hạ tầng công nghệ thiết yếu sau một thảm họa diện rộng gây gián đoạn hoàn toàn.",
+        "domains": [
+          "it/devops/sre-operations"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "DR",
+    "match": "exact-case",
+    "concepts": [
+      {
+        "id": "disaster-recovery",
+        "label": "Disaster recovery (DR)",
+        "summary": "Tập hợp các chính sách, công cụ và quy trình kỹ thuật nhằm khôi phục và duy trì các hạ tầng công nghệ thiết yếu sau một thảm họa diện rộng gây gián đoạn hoàn toàn.",
+        "domains": [
+          "it/devops/sre-operations"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Khắc phục thảm họa",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "disaster-recovery",
+        "label": "Disaster recovery (DR)",
+        "summary": "Tập hợp các chính sách, công cụ và quy trình kỹ thuật nhằm khôi phục và duy trì các hạ tầng công nghệ thiết yếu sau một thảm họa diện rộng gây gián đoạn hoàn toàn.",
+        "domains": [
+          "it/devops/sre-operations"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Distributed system",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "distributed-system",
+        "label": "Distributed system",
+        "summary": "Hệ thống bao gồm nhiều máy tính độc lập được kết nối qua mạng, liên lạc và phối hợp với nhau để xuất hiện trước người dùng như một khối xử lý thống nhất duy nhất.",
+        "domains": [
+          "it/software-engineering/architecture"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Hệ thống phân tán",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "distributed-system",
+        "label": "Distributed system",
+        "summary": "Hệ thống bao gồm nhiều máy tính độc lập được kết nối qua mạng, liên lạc và phối hợp với nhau để xuất hiện trước người dùng như một khối xử lý thống nhất duy nhất.",
+        "domains": [
+          "it/software-engineering/architecture"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Hệ phân tán",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "distributed-system",
+        "label": "Distributed system",
+        "summary": "Hệ thống bao gồm nhiều máy tính độc lập được kết nối qua mạng, liên lạc và phối hợp với nhau để xuất hiện trước người dùng như một khối xử lý thống nhất duy nhất.",
+        "domains": [
+          "it/software-engineering/architecture"
         ]
       }
     ],
@@ -4025,6 +5477,126 @@
     "autolink": true
   },
   {
+    "key": "Document database",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "document-database",
+        "label": "Document database",
+        "summary": "Loại cơ sở dữ liệu phi quan hệ được thiết kế để lưu trữ, truy xuất và quản lý dữ liệu bán cấu trúc dưới dạng tài liệu như JSON hoặc BSON.",
+        "domains": [
+          "it/data/database"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "cơ sở dữ liệu tài liệu",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "document-database",
+        "label": "Document database",
+        "summary": "Loại cơ sở dữ liệu phi quan hệ được thiết kế để lưu trữ, truy xuất và quản lý dữ liệu bán cấu trúc dưới dạng tài liệu như JSON hoặc BSON.",
+        "domains": [
+          "it/data/database"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "document store",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "document-database",
+        "label": "Document database",
+        "summary": "Loại cơ sở dữ liệu phi quan hệ được thiết kế để lưu trữ, truy xuất và quản lý dữ liệu bán cấu trúc dưới dạng tài liệu như JSON hoặc BSON.",
+        "domains": [
+          "it/data/database"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Document Object Model (DOM)",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "dom",
+        "label": "Document Object Model (DOM)",
+        "summary": "Giao diện lập trình ứng dụng biểu diễn tài liệu HTML dưới dạng cây phân cấp các đối tượng có thể truy xuất và sửa đổi.",
+        "domains": [
+          "it/web/frontend"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "DOM",
+    "match": "exact-case",
+    "concepts": [
+      {
+        "id": "dom",
+        "label": "Document Object Model (DOM)",
+        "summary": "Giao diện lập trình ứng dụng biểu diễn tài liệu HTML dưới dạng cây phân cấp các đối tượng có thể truy xuất và sửa đổi.",
+        "domains": [
+          "it/web/frontend"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Domain-driven design (DDD)",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "domain-driven-design",
+        "label": "Domain-driven design (DDD)",
+        "summary": "Phương pháp phát triển phần mềm đặt trọng tâm kiến trúc và mã nguồn vào việc mô hình hóa chính xác nghiệp vụ thực tế, sử dụng ngôn ngữ chung và phân tách các ngữ cảnh giới hạn.",
+        "domains": [
+          "it/software-engineering/architecture"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "DDD",
+    "match": "exact-case",
+    "concepts": [
+      {
+        "id": "domain-driven-design",
+        "label": "Domain-driven design (DDD)",
+        "summary": "Phương pháp phát triển phần mềm đặt trọng tâm kiến trúc và mã nguồn vào việc mô hình hóa chính xác nghiệp vụ thực tế, sử dụng ngôn ngữ chung và phân tách các ngữ cảnh giới hạn.",
+        "domains": [
+          "it/software-engineering/architecture"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Thiết kế hướng miền",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "domain-driven-design",
+        "label": "Domain-driven design (DDD)",
+        "summary": "Phương pháp phát triển phần mềm đặt trọng tâm kiến trúc và mã nguồn vào việc mô hình hóa chính xác nghiệp vụ thực tế, sử dụng ngôn ngữ chung và phân tách các ngữ cảnh giới hạn.",
+        "domains": [
+          "it/software-engineering/architecture"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
     "key": "Kế toán kép",
     "match": "any-case",
     "concepts": [
@@ -4079,6 +5651,36 @@
         "summary": "Phương pháp ghi chép kế toán phản ánh các nghiệp vụ kinh tế tài chính vào ít nhất hai tài khoản kế toán theo quan hệ đối ứng Nợ và Có.",
         "domains": [
           "finance/accounting/bookkeeping"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Nền tảng thương mại điện tử",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "e-commerce-platform",
+        "label": "Nền tảng thương mại điện tử",
+        "summary": "Bộ giải pháp phần mềm cho phép doanh nghiệp thiết lập cửa hàng trực tuyến, quản lý danh mục sản phẩm, giỏ hàng và xử lý đơn hàng.",
+        "domains": [
+          "it/business-systems/enterprise-apps"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "E-commerce platform",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "e-commerce-platform",
+        "label": "Nền tảng thương mại điện tử",
+        "summary": "Bộ giải pháp phần mềm cho phép doanh nghiệp thiết lập cửa hàng trực tuyến, quản lý danh mục sản phẩm, giỏ hàng và xử lý đơn hàng.",
+        "domains": [
+          "it/business-systems/enterprise-apps"
         ]
       }
     ],
@@ -4235,6 +5837,21 @@
     "autolink": true
   },
   {
+    "key": "Elasticsearch",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "elasticsearch",
+        "label": "Elasticsearch",
+        "summary": "Công cụ tìm kiếm và phân tích phân tán dựa trên định dạng JSON được xây dựng trên Apache Lucene, tối ưu cho tìm kiếm thời gian thực.",
+        "domains": [
+          "it/data/database"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
     "key": "Open rate",
     "match": "any-case",
     "concepts": [
@@ -4293,6 +5910,36 @@
         "summary": "Tỷ lệ phần trăm số email được gửi thành công mà người nhận mở ra đọc, phản ánh sức hấp dẫn của tiêu đề thư và mức độ quan tâm của độc giả.",
         "domains": [
           "media/digital-marketing/email"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Hệ thống nhúng",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "embedded-system",
+        "label": "Hệ thống nhúng",
+        "summary": "Tổ hợp tính toán chuyên dụng gồm vi xử lý, phần mềm nhúng và các cổng ngoại vi được thiết kế tối ưu để thực hiện một nhóm chức năng cố định trong một thiết bị lớn hơn.",
+        "domains": [
+          "iot/devices-sensors"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Hệ thống tích hợp",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "embedded-system",
+        "label": "Hệ thống nhúng",
+        "summary": "Tổ hợp tính toán chuyên dụng gồm vi xử lý, phần mềm nhúng và các cổng ngoại vi được thiết kế tối ưu để thực hiện một nhóm chức năng cố định trong một thiết bị lớn hơn.",
+        "domains": [
+          "iot/devices-sensors"
         ]
       }
     ],
@@ -4458,6 +6105,51 @@
         "summary": "Phương pháp kiểm thử toàn diện mô phỏng luồng thao tác của người dùng từ giao diện đồ họa qua tất cả dịch vụ máy chủ, hạ tầng và cơ sở dữ liệu.",
         "domains": [
           "it/software-engineering/testing"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Energy harvesting",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "energy-harvesting",
+        "label": "Energy harvesting",
+        "summary": "Quá trình thu nhận những lượng năng lượng nhỏ từ môi trường xung quanh như ánh sáng, chênh lệch nhiệt độ hay rung động cơ học để biến đổi thành điện năng nuôi các mạch điện tử.",
+        "domains": [
+          "iot/devices-sensors"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Thu hoạch năng lượng",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "energy-harvesting",
+        "label": "Energy harvesting",
+        "summary": "Quá trình thu nhận những lượng năng lượng nhỏ từ môi trường xung quanh như ánh sáng, chênh lệch nhiệt độ hay rung động cơ học để biến đổi thành điện năng nuôi các mạch điện tử.",
+        "domains": [
+          "iot/devices-sensors"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Thu hồi năng lượng tự nhiên",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "energy-harvesting",
+        "label": "Energy harvesting",
+        "summary": "Quá trình thu nhận những lượng năng lượng nhỏ từ môi trường xung quanh như ánh sáng, chênh lệch nhiệt độ hay rung động cơ học để biến đổi thành điện năng nuôi các mạch điện tử.",
+        "domains": [
+          "iot/devices-sensors"
         ]
       }
     ],
@@ -4635,6 +6327,66 @@
     "autolink": true
   },
   {
+    "key": "ERP",
+    "match": "exact-case",
+    "concepts": [
+      {
+        "id": "erp",
+        "label": "ERP",
+        "summary": "Bộ phần mềm quản trị tổng thể kết nối tài chính, mua hàng, tồn kho và sản xuất trên một cơ sở dữ liệu chung.",
+        "domains": [
+          "it/business-systems/enterprise-apps"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Enterprise resource planning",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "erp",
+        "label": "ERP",
+        "summary": "Bộ phần mềm quản trị tổng thể kết nối tài chính, mua hàng, tồn kho và sản xuất trên một cơ sở dữ liệu chung.",
+        "domains": [
+          "it/business-systems/enterprise-apps"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Hoạch định tài nguyên doanh nghiệp",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "erp",
+        "label": "ERP",
+        "summary": "Bộ phần mềm quản trị tổng thể kết nối tài chính, mua hàng, tồn kho và sản xuất trên một cơ sở dữ liệu chung.",
+        "domains": [
+          "it/business-systems/enterprise-apps"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "ESP32",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "esp32",
+        "label": "ESP32",
+        "summary": "Dòng vi mạch tích hợp hệ thống trên chip (SoC) giá rẻ, tiêu thụ ít điện năng, tích hợp sẵn Wi-Fi và Bluetooth chuyên dùng để phát triển các thiết bị Internet vạn vật.",
+        "domains": [
+          "iot/devices-sensors"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
     "key": "Quỹ hoán đổi danh mục",
     "match": "any-case",
     "concepts": [
@@ -4704,6 +6456,141 @@
         "summary": "Quy trình tích hợp dữ liệu gồm ba bước: trích xuất từ các nguồn khác nhau, biến đổi theo chuẩn phân tích và nạp vào kho dữ liệu đích.",
         "domains": [
           "it/data/data-engineering"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Event-driven architecture",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "event-driven-architecture",
+        "label": "Event-driven architecture",
+        "summary": "Mô hình kiến trúc phần mềm trong đó các thành phần tách rời giao tiếp bất đồng bộ thông qua việc phát sinh, truyền tải và xử lý các sự kiện ghi nhận thay đổi trạng thái.",
+        "domains": [
+          "it/software-engineering/architecture"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Kiến trúc hướng sự kiện",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "event-driven-architecture",
+        "label": "Event-driven architecture",
+        "summary": "Mô hình kiến trúc phần mềm trong đó các thành phần tách rời giao tiếp bất đồng bộ thông qua việc phát sinh, truyền tải và xử lý các sự kiện ghi nhận thay đổi trạng thái.",
+        "domains": [
+          "it/software-engineering/architecture"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "EDA",
+    "match": "exact-case",
+    "concepts": [
+      {
+        "id": "event-driven-architecture",
+        "label": "Event-driven architecture",
+        "summary": "Mô hình kiến trúc phần mềm trong đó các thành phần tách rời giao tiếp bất đồng bộ thông qua việc phát sinh, truyền tải và xử lý các sự kiện ghi nhận thay đổi trạng thái.",
+        "domains": [
+          "it/software-engineering/architecture"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Event sourcing",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "event-sourcing",
+        "label": "Event sourcing",
+        "summary": "Mẫu thiết kế lưu trữ dữ liệu trong đó mọi thay đổi trạng thái được ghi nhận thành chuỗi các sự kiện bất biến nối tiếp nhau, thay vì ghi đè lên trạng thái hiện thời của bản ghi.",
+        "domains": [
+          "it/software-engineering/architecture"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Lưu vết sự kiện",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "event-sourcing",
+        "label": "Event sourcing",
+        "summary": "Mẫu thiết kế lưu trữ dữ liệu trong đó mọi thay đổi trạng thái được ghi nhận thành chuỗi các sự kiện bất biến nối tiếp nhau, thay vì ghi đè lên trạng thái hiện thời của bản ghi.",
+        "domains": [
+          "it/software-engineering/architecture"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Event streaming",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "event-streaming",
+        "label": "Event streaming",
+        "summary": "Phương thức thu thập, lưu trữ và phân tích các luồng bản ghi dữ liệu liên tục theo thời gian thực khi sự kiện phát sinh.",
+        "domains": [
+          "it/data/data-engineering"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "luồng sự kiện",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "event-streaming",
+        "label": "Event streaming",
+        "summary": "Phương thức thu thập, lưu trữ và phân tích các luồng bản ghi dữ liệu liên tục theo thời gian thực khi sự kiện phát sinh.",
+        "domains": [
+          "it/data/data-engineering"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Eventual consistency",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "eventual-consistency",
+        "label": "Eventual consistency",
+        "summary": "Mô hình nhất quán trong điện toán phân tán bảo đảm rằng mọi bản sao dữ liệu cuối cùng sẽ hội tụ về cùng một giá trị nếu có đủ thời gian và không có thêm cập nhật mới.",
+        "domains": [
+          "it/data/database"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "tính nhất quán cuối cùng",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "eventual-consistency",
+        "label": "Eventual consistency",
+        "summary": "Mô hình nhất quán trong điện toán phân tán bảo đảm rằng mọi bản sao dữ liệu cuối cùng sẽ hội tụ về cùng một giá trị nếu có đủ thời gian và không có thêm cập nhật mới.",
+        "domains": [
+          "it/data/database"
         ]
       }
     ],
@@ -4787,6 +6674,51 @@
     "autolink": true
   },
   {
+    "key": "Exponential backoff",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "exponential-backoff",
+        "label": "Exponential backoff",
+        "summary": "Thuật toán tăng dần độ trễ giữa các lần thử lại sau mỗi lần thất bại theo hàm số mũ nhằm tránh gây quá tải dồn dập cho dịch vụ đang nghẽn.",
+        "domains": [
+          "it/software-engineering/architecture"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Lùi lũy thừa",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "exponential-backoff",
+        "label": "Exponential backoff",
+        "summary": "Thuật toán tăng dần độ trễ giữa các lần thử lại sau mỗi lần thất bại theo hàm số mũ nhằm tránh gây quá tải dồn dập cho dịch vụ đang nghẽn.",
+        "domains": [
+          "it/software-engineering/architecture"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Chờ lùi theo hàm mũ",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "exponential-backoff",
+        "label": "Exponential backoff",
+        "summary": "Thuật toán tăng dần độ trễ giữa các lần thử lại sau mỗi lần thất bại theo hàm số mũ nhằm tránh gây quá tải dồn dập cho dịch vụ đang nghẽn.",
+        "domains": [
+          "it/software-engineering/architecture"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
     "key": "Kiểm chứng thông tin",
     "match": "any-case",
     "concepts": [
@@ -4826,6 +6758,51 @@
         "summary": "Quy trình xác minh độc lập các khẳng định dữ kiện trong văn bản, bài phát biểu hoặc chương trình phát sóng dựa trên tài liệu gốc đáng tin cậy.",
         "domains": [
           "media/journalism/ethics"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Failover",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "failover",
+        "label": "Failover",
+        "summary": "Quy trình vận hành tự động hoặc thủ công chuyển tiếp toàn bộ tác vụ xử lý và lưu lượng sang một hệ thống dự phòng đang ở trạng thái sẵn sàng ngay khi hệ thống chính gặp lỗi.",
+        "domains": [
+          "it/devops/sre-operations"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Chuyển đổi dự phòng",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "failover",
+        "label": "Failover",
+        "summary": "Quy trình vận hành tự động hoặc thủ công chuyển tiếp toàn bộ tác vụ xử lý và lưu lượng sang một hệ thống dự phòng đang ở trạng thái sẵn sàng ngay khi hệ thống chính gặp lỗi.",
+        "domains": [
+          "it/devops/sre-operations"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Chuyển giao dự phòng",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "failover",
+        "label": "Failover",
+        "summary": "Quy trình vận hành tự động hoặc thủ công chuyển tiếp toàn bộ tác vụ xử lý và lưu lượng sang một hệ thống dự phòng đang ở trạng thái sẵn sàng ngay khi hệ thống chính gặp lỗi.",
+        "domains": [
+          "it/devops/sre-operations"
         ]
       }
     ],
@@ -5006,6 +6983,96 @@
         "summary": "Phần mềm cấp thấp được nạp cố định vào bộ nhớ bất biến của thiết bị, cung cấp các chỉ lệnh nền tảng giúp phần cứng vận hành và tương tác.",
         "domains": [
           "iot/devices-sensors"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Khóa ngoại",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "foreign-key",
+        "label": "Khóa ngoại",
+        "summary": "Cột hoặc tập hợp các cột trong bảng cơ sở dữ liệu quan hệ dùng để tạo mối liên kết dữ liệu giữa hai bảng bằng cách tham chiếu tới khóa chính của bảng khác.",
+        "domains": [
+          "it/data/database"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "foreign key",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "foreign-key",
+        "label": "Khóa ngoại",
+        "summary": "Cột hoặc tập hợp các cột trong bảng cơ sở dữ liệu quan hệ dùng để tạo mối liên kết dữ liệu giữa hai bảng bằng cách tham chiếu tới khóa chính của bảng khác.",
+        "domains": [
+          "it/data/database"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "FK",
+    "match": "exact-case",
+    "concepts": [
+      {
+        "id": "foreign-key",
+        "label": "Khóa ngoại",
+        "summary": "Cột hoặc tập hợp các cột trong bảng cơ sở dữ liệu quan hệ dùng để tạo mối liên kết dữ liệu giữa hai bảng bằng cách tham chiếu tới khóa chính của bảng khác.",
+        "domains": [
+          "it/data/database"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Tìm kiếm toàn văn",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "full-text-search",
+        "label": "Tìm kiếm toàn văn",
+        "summary": "Kỹ thuật tìm kiếm các tài liệu văn bản hoặc trường dữ liệu bằng cách so khớp từ ngữ, gốc từ và cụm từ thông qua chỉ mục đảo.",
+        "domains": [
+          "it/data/database"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "full-text search",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "full-text-search",
+        "label": "Tìm kiếm toàn văn",
+        "summary": "Kỹ thuật tìm kiếm các tài liệu văn bản hoặc trường dữ liệu bằng cách so khớp từ ngữ, gốc từ và cụm từ thông qua chỉ mục đảo.",
+        "domains": [
+          "it/data/database"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "FTS",
+    "match": "exact-case",
+    "concepts": [
+      {
+        "id": "full-text-search",
+        "label": "Tìm kiếm toàn văn",
+        "summary": "Kỹ thuật tìm kiếm các tài liệu văn bản hoặc trường dữ liệu bằng cách so khớp từ ngữ, gốc từ và cụm từ thông qua chỉ mục đảo.",
+        "domains": [
+          "it/data/database"
         ]
       }
     ],
@@ -5289,6 +7356,96 @@
     "autolink": true
   },
   {
+    "key": "GNSS",
+    "match": "exact-case",
+    "concepts": [
+      {
+        "id": "gnss",
+        "label": "GNSS",
+        "summary": "Hệ thống định vị vệ tinh toàn cầu bao gồm các chùm vệ tinh nhân tạo quay quanh Trái Đất, phát tín hiệu vô tuyến để thiết bị mặt đất tính toán tọa độ địa lý và thời gian chính xác.",
+        "domains": [
+          "iot/devices-sensors"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Hệ thống vệ tinh định vị toàn cầu",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "gnss",
+        "label": "GNSS",
+        "summary": "Hệ thống định vị vệ tinh toàn cầu bao gồm các chùm vệ tinh nhân tạo quay quanh Trái Đất, phát tín hiệu vô tuyến để thiết bị mặt đất tính toán tọa độ địa lý và thời gian chính xác.",
+        "domains": [
+          "iot/devices-sensors"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "GPS",
+    "match": "exact-case",
+    "concepts": [
+      {
+        "id": "gnss",
+        "label": "GNSS",
+        "summary": "Hệ thống định vị vệ tinh toàn cầu bao gồm các chùm vệ tinh nhân tạo quay quanh Trái Đất, phát tín hiệu vô tuyến để thiết bị mặt đất tính toán tọa độ địa lý và thời gian chính xác.",
+        "domains": [
+          "iot/devices-sensors"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "General-purpose input/output (GPIO)",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "gpio",
+        "label": "General-purpose input/output (GPIO)",
+        "summary": "Các chân tín hiệu số trên vi mạch tích hợp mà phần mềm có thể linh hoạt lập trình để đóng vai trò làm đầu vào đọc dữ liệu hoặc đầu ra điều khiển thiết bị điện tử.",
+        "domains": [
+          "iot/devices-sensors"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "GPIO",
+    "match": "exact-case",
+    "concepts": [
+      {
+        "id": "gpio",
+        "label": "General-purpose input/output (GPIO)",
+        "summary": "Các chân tín hiệu số trên vi mạch tích hợp mà phần mềm có thể linh hoạt lập trình để đóng vai trò làm đầu vào đọc dữ liệu hoặc đầu ra điều khiển thiết bị điện tử.",
+        "domains": [
+          "iot/devices-sensors"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Chân vào ra đa dụng",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "gpio",
+        "label": "General-purpose input/output (GPIO)",
+        "summary": "Các chân tín hiệu số trên vi mạch tích hợp mà phần mềm có thể linh hoạt lập trình để đóng vai trò làm đầu vào đọc dữ liệu hoặc đầu ra điều khiển thiết bị điện tử.",
+        "domains": [
+          "iot/devices-sensors"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
     "key": "Bộ xử lý đồ họa (GPU)",
     "match": "any-case",
     "concepts": [
@@ -5351,6 +7508,36 @@
     "autolink": true
   },
   {
+    "key": "Graph database",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "graph-database",
+        "label": "Graph database",
+        "summary": "Cơ sở dữ liệu sử dụng cấu trúc đồ thị gồm các đỉnh, cạnh và thuộc tính để biểu diễn và lưu trữ dữ liệu có tính liên kết chặt chẽ.",
+        "domains": [
+          "it/data/database"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "cơ sở dữ liệu đồ thị",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "graph-database",
+        "label": "Graph database",
+        "summary": "Cơ sở dữ liệu sử dụng cấu trúc đồ thị gồm các đỉnh, cạnh và thuộc tính để biểu diễn và lưu trữ dữ liệu có tính liên kết chặt chẽ.",
+        "domains": [
+          "it/data/database"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
     "key": "GraphQL",
     "match": "any-case",
     "concepts": [
@@ -5392,6 +7579,36 @@
         "summary": "Quá trình ràng buộc câu trả lời của mô hình vào các dữ kiện thực tế có thể kiểm chứng được trích xuất từ các nguồn thông tin tin cậy.",
         "domains": [
           "it/ai-ml/llm-agents"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "gRPC",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "grpc",
+        "label": "gRPC",
+        "summary": "Khung gọi thủ tục từ xa (RPC) mã nguồn mở hiệu năng cao, sử dụng định dạng Protocol Buffers để đóng gói nhị phân và chạy trên nền tảng HTTP/2 để truyền thông đa kênh tối ưu.",
+        "domains": [
+          "it/web/api"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Khung RPC của Google",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "grpc",
+        "label": "gRPC",
+        "summary": "Khung gọi thủ tục từ xa (RPC) mã nguồn mở hiệu năng cao, sử dụng định dạng Protocol Buffers để đóng gói nhị phân và chạy trên nền tảng HTTP/2 để truyền thông đa kênh tối ưu.",
+        "domains": [
+          "it/web/api"
         ]
       }
     ],
@@ -5644,6 +7861,126 @@
     "autolink": true
   },
   {
+    "key": "Help desk",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "help-desk",
+        "label": "Help desk",
+        "summary": "Bộ phận chuyên trách và phần mềm hỗ trợ tiếp nhận, phân loại, theo dõi và giải quyết các sự cố kỹ thuật hoặc yêu cầu dịch vụ của người dùng.",
+        "domains": [
+          "it/business-systems/enterprise-apps"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Bộ phận trợ giúp",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "help-desk",
+        "label": "Help desk",
+        "summary": "Bộ phận chuyên trách và phần mềm hỗ trợ tiếp nhận, phân loại, theo dõi và giải quyết các sự cố kỹ thuật hoặc yêu cầu dịch vụ của người dùng.",
+        "domains": [
+          "it/business-systems/enterprise-apps"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "High availability (HA)",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "high-availability",
+        "label": "High availability (HA)",
+        "summary": "Đặc tính thiết kế hệ thống đảm bảo ứng dụng vận hành liên tục và ổn định trong thời gian dài bằng cách giảm thiểu tối đa thời gian gián đoạn thông qua các thành phần dự phòng.",
+        "domains": [
+          "it/devops/sre-operations"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "HA",
+    "match": "exact-case",
+    "concepts": [
+      {
+        "id": "high-availability",
+        "label": "High availability (HA)",
+        "summary": "Đặc tính thiết kế hệ thống đảm bảo ứng dụng vận hành liên tục và ổn định trong thời gian dài bằng cách giảm thiểu tối đa thời gian gián đoạn thông qua các thành phần dự phòng.",
+        "domains": [
+          "it/devops/sre-operations"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Tính sẵn sàng cao",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "high-availability",
+        "label": "High availability (HA)",
+        "summary": "Đặc tính thiết kế hệ thống đảm bảo ứng dụng vận hành liên tục và ổn định trong thời gian dài bằng cách giảm thiểu tối đa thời gian gián đoạn thông qua các thành phần dự phòng.",
+        "domains": [
+          "it/devops/sre-operations"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Horizontal scaling",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "horizontal-scaling",
+        "label": "Horizontal scaling",
+        "summary": "Biện pháp gia tăng năng lực xử lý của hệ thống bằng cách bổ sung thêm nhiều máy chủ hoặc thực thể tính toán độc lập vào cụm tài nguyên để phân tán tải.",
+        "domains": [
+          "it/infrastructure/cloud"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Scale out",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "horizontal-scaling",
+        "label": "Horizontal scaling",
+        "summary": "Biện pháp gia tăng năng lực xử lý của hệ thống bằng cách bổ sung thêm nhiều máy chủ hoặc thực thể tính toán độc lập vào cụm tài nguyên để phân tán tải.",
+        "domains": [
+          "it/infrastructure/cloud"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Mở rộng theo chiều ngang",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "horizontal-scaling",
+        "label": "Horizontal scaling",
+        "summary": "Biện pháp gia tăng năng lực xử lý của hệ thống bằng cách bổ sung thêm nhiều máy chủ hoặc thực thể tính toán độc lập vào cụm tài nguyên để phân tán tải.",
+        "domains": [
+          "it/infrastructure/cloud"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
     "key": "Hotfix",
     "match": "any-case",
     "concepts": [
@@ -5683,6 +8020,113 @@
         "summary": "Bản sửa lỗi khẩn cấp được tạo và đưa thẳng lên môi trường sản xuất ngoài quy trình phát hành thông thường nhằm khắc phục các sự cố gián đoạn hoặc lỗ hổng bảo mật nghiêm trọng.",
         "domains": [
           "it/software-engineering/practices"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "HRMS",
+    "match": "exact-case",
+    "concepts": [
+      {
+        "id": "hrm-system",
+        "label": "HRMS",
+        "summary": "Phần mềm số hóa công tác nhân sự, theo dõi hồ sơ lao động, lịch chấm công, tiền lương và chế độ đãi ngộ tập trung.",
+        "domains": [
+          "it/business-systems/enterprise-apps"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Human resource management system",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "hrm-system",
+        "label": "HRMS",
+        "summary": "Phần mềm số hóa công tác nhân sự, theo dõi hồ sơ lao động, lịch chấm công, tiền lương và chế độ đãi ngộ tập trung.",
+        "domains": [
+          "it/business-systems/enterprise-apps"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Phần mềm quản trị nhân sự",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "hrm-system",
+        "label": "HRMS",
+        "summary": "Phần mềm số hóa công tác nhân sự, theo dõi hồ sơ lao động, lịch chấm công, tiền lương và chế độ đãi ngộ tập trung.",
+        "domains": [
+          "it/business-systems/enterprise-apps"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "HTML",
+    "match": "exact-case",
+    "concepts": [
+      {
+        "id": "html",
+        "label": "HTML",
+        "summary": "Ngôn ngữ đánh dấu tiêu chuẩn dùng để tạo khung cấu trúc và sắp xếp nội dung hiển thị trong trình duyệt web.",
+        "domains": [
+          "it/web/frontend"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "HyperText Markup Language",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "html",
+        "label": "HTML",
+        "summary": "Ngôn ngữ đánh dấu tiêu chuẩn dùng để tạo khung cấu trúc và sắp xếp nội dung hiển thị trong trình duyệt web.",
+        "domains": [
+          "it/web/frontend"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Hypertext Transfer Protocol (HTTP)",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "http",
+        "label": "Hypertext Transfer Protocol (HTTP)",
+        "summary": "Giao thức tầng ứng dụng dùng để truyền tải các tài liệu siêu văn bản giữa trình duyệt và máy chủ web.",
+        "domains": [
+          "it/web/api",
+          "it/infrastructure/networking"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "HTTP",
+    "match": "exact-case",
+    "concepts": [
+      {
+        "id": "http",
+        "label": "Hypertext Transfer Protocol (HTTP)",
+        "summary": "Giao thức tầng ứng dụng dùng để truyền tải các tài liệu siêu văn bản giữa trình duyệt và máy chủ web.",
+        "domains": [
+          "it/web/api",
+          "it/infrastructure/networking"
         ]
       }
     ],
@@ -5749,6 +8193,84 @@
     "autolink": true
   },
   {
+    "key": "HTTPS",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "https",
+        "label": "HTTPS",
+        "summary": "Phiên bản bảo mật của giao thức HTTP sử dụng mã hóa TLS để bảo vệ toàn bộ dữ liệu truyền giữa trình duyệt và máy chủ.",
+        "domains": [
+          "it/web/api"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Hypertext Transfer Protocol Secure",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "https",
+        "label": "HTTPS",
+        "summary": "Phiên bản bảo mật của giao thức HTTP sử dụng mã hóa TLS để bảo vệ toàn bộ dữ liệu truyền giữa trình duyệt và máy chủ.",
+        "domains": [
+          "it/web/api"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Hydration",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "hydration",
+        "label": "Hydration",
+        "qualifier": "(Web)",
+        "summary": "Quá trình phía trình duyệt kích hoạt mã JavaScript để gắn các sự kiện tương tác vào trang HTML tĩnh do máy chủ gửi về.",
+        "domains": [
+          "it/web/frontend"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "bù nước",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "hydration",
+        "label": "Hydration",
+        "qualifier": "(Web)",
+        "summary": "Quá trình phía trình duyệt kích hoạt mã JavaScript để gắn các sự kiện tương tác vào trang HTML tĩnh do máy chủ gửi về.",
+        "domains": [
+          "it/web/frontend"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "client-side hydration",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "hydration",
+        "label": "Hydration",
+        "qualifier": "(Web)",
+        "summary": "Quá trình phía trình duyệt kích hoạt mã JavaScript để gắn các sự kiện tương tác vào trang HTML tĩnh do máy chủ gửi về.",
+        "domains": [
+          "it/web/frontend"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
     "key": "Siêu tham số",
     "match": "any-case",
     "concepts": [
@@ -5758,6 +8280,51 @@
         "summary": "Tham số cấu hình bên ngoài được xác lập trước khi huấn luyện nhằm điều phối kiến trúc và quy trình tối ưu hóa của thuật toán.",
         "domains": [
           "it/ai-ml/foundations"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "I²C",
+    "match": "exact-case",
+    "concepts": [
+      {
+        "id": "i2c",
+        "label": "I²C",
+        "summary": "Chuẩn giao tiếp nối tiếp đồng bộ sử dụng hai đường dây hai chiều (SCL và SDA) có điện trở kéo lên nguồn để kết nối vi điều khiển với nhiều vi mạch ngoại vi trên cùng một bo mạch.",
+        "domains": [
+          "iot/devices-sensors"
+        ]
+      }
+    ],
+    "autolink": false
+  },
+  {
+    "key": "I2C",
+    "match": "exact-case",
+    "concepts": [
+      {
+        "id": "i2c",
+        "label": "I²C",
+        "summary": "Chuẩn giao tiếp nối tiếp đồng bộ sử dụng hai đường dây hai chiều (SCL và SDA) có điện trở kéo lên nguồn để kết nối vi điều khiển với nhiều vi mạch ngoại vi trên cùng một bo mạch.",
+        "domains": [
+          "iot/devices-sensors"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Inter-Integrated Circuit",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "i2c",
+        "label": "I²C",
+        "summary": "Chuẩn giao tiếp nối tiếp đồng bộ sử dụng hai đường dây hai chiều (SCL và SDA) có điện trở kéo lên nguồn để kết nối vi điều khiển với nhiều vi mạch ngoại vi trên cùng một bo mạch.",
+        "domains": [
+          "iot/devices-sensors"
         ]
       }
     ],
@@ -5908,6 +8475,51 @@
         "summary": "Đặc tính của đối tượng hoặc cấu trúc dữ liệu không cho phép trạng thái bên trong bị biến đổi sau khi đã được tạo ra trong bộ nhớ.",
         "domains": [
           "it/software-engineering/programming-concepts"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Inertial measurement unit (IMU)",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "imu",
+        "label": "Inertial measurement unit (IMU)",
+        "summary": "Khối cảm biến tích hợp đa trục kết hợp gia tốc kế, con quay hồi chuyển và từ kế để đo đạc gia tốc tuyến tính, vận tốc góc và hướng không gian của vật thể chuyển động.",
+        "domains": [
+          "iot/devices-sensors"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "IMU",
+    "match": "exact-case",
+    "concepts": [
+      {
+        "id": "imu",
+        "label": "Inertial measurement unit (IMU)",
+        "summary": "Khối cảm biến tích hợp đa trục kết hợp gia tốc kế, con quay hồi chuyển và từ kế để đo đạc gia tốc tuyến tính, vận tốc góc và hướng không gian của vật thể chuyển động.",
+        "domains": [
+          "iot/devices-sensors"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Bộ đo lường quán tính",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "imu",
+        "label": "Inertial measurement unit (IMU)",
+        "summary": "Khối cảm biến tích hợp đa trục kết hợp gia tốc kế, con quay hồi chuyển và từ kế để đo đạc gia tốc tuyến tính, vận tốc góc và hướng không gian của vật thể chuyển động.",
+        "domains": [
+          "iot/devices-sensors"
         ]
       }
     ],
@@ -6530,6 +9142,51 @@
     "autolink": true
   },
   {
+    "key": "iPaaS",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "ipaas",
+        "label": "iPaaS",
+        "summary": "Nền tảng đám mây cung cấp các công cụ và dịch vụ trung gian giúp kết nối, đồng bộ và quản lý luồng dữ liệu giữa các hệ thống phần mềm phân tán.",
+        "domains": [
+          "it/business-systems/automation"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Integration platform as a service",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "ipaas",
+        "label": "iPaaS",
+        "summary": "Nền tảng đám mây cung cấp các công cụ và dịch vụ trung gian giúp kết nối, đồng bộ và quản lý luồng dữ liệu giữa các hệ thống phần mềm phân tán.",
+        "domains": [
+          "it/business-systems/automation"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Nền tảng tích hợp dưới dạng dịch vụ",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "ipaas",
+        "label": "iPaaS",
+        "summary": "Nền tảng đám mây cung cấp các công cụ và dịch vụ trung gian giúp kết nối, đồng bộ và quản lý luồng dữ liệu giữa các hệ thống phần mềm phân tán.",
+        "domains": [
+          "it/business-systems/automation"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
     "key": "Phát hành lần đầu ra công chúng",
     "match": "any-case",
     "concepts": [
@@ -6575,6 +9232,81 @@
     "autolink": true
   },
   {
+    "key": "ITIL",
+    "match": "exact-case",
+    "concepts": [
+      {
+        "id": "itil",
+        "label": "ITIL",
+        "summary": "Bộ khung hướng dẫn thực hành chuẩn mực quốc tế dành cho việc thiết kế, vận hành và quản trị các dịch vụ công nghệ thông tin.",
+        "domains": [
+          "it/business-systems/enterprise-apps"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Information Technology Infrastructure Library",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "itil",
+        "label": "ITIL",
+        "summary": "Bộ khung hướng dẫn thực hành chuẩn mực quốc tế dành cho việc thiết kế, vận hành và quản trị các dịch vụ công nghệ thông tin.",
+        "domains": [
+          "it/business-systems/enterprise-apps"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "ITSM",
+    "match": "exact-case",
+    "concepts": [
+      {
+        "id": "itsm",
+        "label": "ITSM",
+        "summary": "Hoạt động quản trị toàn diện việc thiết kế, cung cấp, vận hành và kiểm soát các dịch vụ công nghệ thông tin phục vụ hoạt động doanh nghiệp.",
+        "domains": [
+          "it/business-systems/enterprise-apps"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "IT service management",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "itsm",
+        "label": "ITSM",
+        "summary": "Hoạt động quản trị toàn diện việc thiết kế, cung cấp, vận hành và kiểm soát các dịch vụ công nghệ thông tin phục vụ hoạt động doanh nghiệp.",
+        "domains": [
+          "it/business-systems/enterprise-apps"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Quản trị dịch vụ công nghệ thông tin",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "itsm",
+        "label": "ITSM",
+        "summary": "Hoạt động quản trị toàn diện việc thiết kế, cung cấp, vận hành và kiểm soát các dịch vụ công nghệ thông tin phục vụ hoạt động doanh nghiệp.",
+        "domains": [
+          "it/business-systems/enterprise-apps"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
     "key": "Jailbreak",
     "match": "any-case",
     "concepts": [
@@ -6585,6 +9317,38 @@
         "summary": "Prompt được soạn để khiến mô hình bỏ qua nguyên tắc an toàn và tạo ra nội dung mà lẽ ra nó phải từ chối.",
         "domains": [
           "it/ai-ml/ai-safety-governance"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "JavaScript",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "javascript",
+        "label": "JavaScript",
+        "summary": "Ngôn ngữ lập trình thông dịch đa nền tảng, cho phép tạo ra các tính năng tương tác phức tạp trên trang web.",
+        "domains": [
+          "it/web/frontend",
+          "it/software-engineering/programming-concepts"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "JS",
+    "match": "exact-case",
+    "concepts": [
+      {
+        "id": "javascript",
+        "label": "JavaScript",
+        "summary": "Ngôn ngữ lập trình thông dịch đa nền tảng, cho phép tạo ra các tính năng tương tác phức tạp trên trang web.",
+        "domains": [
+          "it/web/frontend",
+          "it/software-engineering/programming-concepts"
         ]
       }
     ],
@@ -6675,6 +9439,51 @@
         "summary": "Phương pháp quản lý luồng công việc trực quan nhằm tối ưu hóa dòng chảy giá trị, kiểm soát công việc đang làm và phát hiện điểm nghẽn.",
         "domains": [
           "product/agile-scrum"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Key-value store",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "key-value-store",
+        "label": "Key-value store",
+        "summary": "Loại cơ sở dữ liệu phi quan hệ sử dụng mô hình mảng kết hợp đơn giản, trong đó mỗi phần tử dữ liệu được đánh chỉ mục bằng một khóa riêng biệt.",
+        "domains": [
+          "it/data/database"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "cơ sở dữ liệu khóa - giá trị",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "key-value-store",
+        "label": "Key-value store",
+        "summary": "Loại cơ sở dữ liệu phi quan hệ sử dụng mô hình mảng kết hợp đơn giản, trong đó mỗi phần tử dữ liệu được đánh chỉ mục bằng một khóa riêng biệt.",
+        "domains": [
+          "it/data/database"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "kho khóa - giá trị",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "key-value-store",
+        "label": "Key-value store",
+        "summary": "Loại cơ sở dữ liệu phi quan hệ sử dụng mô hình mảng kết hợp đơn giản, trong đó mỗi phần tử dữ liệu được đánh chỉ mục bằng một khóa riêng biệt.",
+        "domains": [
+          "it/data/database"
         ]
       }
     ],
@@ -6914,6 +9723,66 @@
     "autolink": false
   },
   {
+    "key": "Lazy loading",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "lazy-loading",
+        "label": "Lazy loading",
+        "summary": "Mô hình tối ưu hóa hiệu năng bằng cách trì hoãn tải các tài nguyên chưa cần thiết cho đến khi người dùng tương tác tới.",
+        "domains": [
+          "it/web/frontend"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "tải chậm",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "lazy-loading",
+        "label": "Lazy loading",
+        "summary": "Mô hình tối ưu hóa hiệu năng bằng cách trì hoãn tải các tài nguyên chưa cần thiết cho đến khi người dùng tương tác tới.",
+        "domains": [
+          "it/web/frontend"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "tải lười",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "lazy-loading",
+        "label": "Lazy loading",
+        "summary": "Mô hình tối ưu hóa hiệu năng bằng cách trì hoãn tải các tài nguyên chưa cần thiết cho đến khi người dùng tương tác tới.",
+        "domains": [
+          "it/web/frontend"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "tải theo yêu cầu",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "lazy-loading",
+        "label": "Lazy loading",
+        "summary": "Mô hình tối ưu hóa hiệu năng bằng cách trì hoãn tải các tài nguyên chưa cần thiết cho đến khi người dùng tương tác tới.",
+        "domains": [
+          "it/web/frontend"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
     "key": "Principle of least privilege",
     "match": "any-case",
     "concepts": [
@@ -7000,6 +9869,36 @@
         "summary": "Nghĩa vụ hiện tại của doanh nghiệp phát sinh từ các giao dịch và sự kiện đã qua mà doanh nghiệp phải thanh toán từ các nguồn lực của mình.",
         "domains": [
           "finance/accounting/bookkeeping"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "LiDAR",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "lidar",
+        "label": "LiDAR",
+        "summary": "Phương pháp viễn thám quang học sử dụng chùm tia laser xung chiếu vào vật thể và đo thời gian phản xạ ánh sáng dội lại để lập bản đồ tọa độ ba chiều với độ chính xác cao.",
+        "domains": [
+          "iot/devices-sensors"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Hệ thống quét laser",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "lidar",
+        "label": "LiDAR",
+        "summary": "Phương pháp viễn thám quang học sử dụng chùm tia laser xung chiếu vào vật thể và đo thời gian phản xạ ánh sáng dội lại để lập bản đồ tọa độ ba chiều với độ chính xác cao.",
+        "domains": [
+          "iot/devices-sensors"
         ]
       }
     ],
@@ -7175,6 +10074,96 @@
     "autolink": true
   },
   {
+    "key": "Load testing",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "load-testing",
+        "label": "Load testing",
+        "summary": "Phương pháp kiểm thử phi chức năng bằng cách đặt hệ thống dưới một lượng tải người dùng đồng thời giả lập để đo lường thông lượng, độ trễ và độ ổn định vận hành.",
+        "domains": [
+          "it/software-engineering/testing"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Kiểm thử tải",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "load-testing",
+        "label": "Load testing",
+        "summary": "Phương pháp kiểm thử phi chức năng bằng cách đặt hệ thống dưới một lượng tải người dùng đồng thời giả lập để đo lường thông lượng, độ trễ và độ ổn định vận hành.",
+        "domains": [
+          "it/software-engineering/testing"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Thử tải",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "load-testing",
+        "label": "Load testing",
+        "summary": "Phương pháp kiểm thử phi chức năng bằng cách đặt hệ thống dưới một lượng tải người dùng đồng thời giả lập để đo lường thông lượng, độ trễ và độ ổn định vận hành.",
+        "domains": [
+          "it/software-engineering/testing"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "localStorage",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "local-storage",
+        "label": "localStorage",
+        "summary": "Giao diện lưu trữ dữ liệu phía trình duyệt cho phép lưu các cặp khóa - giá trị lâu dài theo từng tên miền mà không có thời hạn hết hạn.",
+        "domains": [
+          "it/web/frontend"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Web Storage",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "local-storage",
+        "label": "localStorage",
+        "summary": "Giao diện lưu trữ dữ liệu phía trình duyệt cho phép lưu các cặp khóa - giá trị lâu dài theo từng tên miền mà không có thời hạn hết hạn.",
+        "domains": [
+          "it/web/frontend"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "bộ nhớ cục bộ",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "local-storage",
+        "label": "localStorage",
+        "summary": "Giao diện lưu trữ dữ liệu phía trình duyệt cho phép lưu các cặp khóa - giá trị lâu dài theo từng tên miền mà không có thời hạn hết hạn.",
+        "domains": [
+          "it/web/frontend"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
     "key": "Log",
     "match": "any-case",
     "concepts": [
@@ -7229,6 +10218,7 @@
       {
         "id": "lora",
         "label": "Low-Rank Adaptation",
+        "qualifier": "(AI)",
         "summary": "Phương pháp fine-tuning tiết kiệm tham số: giữ nguyên trọng số gốc và chỉ huấn luyện các ma trận hạng thấp nhỏ biểu diễn phần cập nhật trọng số.",
         "domains": [
           "it/ai-ml/mlops"
@@ -7244,9 +10234,51 @@
       {
         "id": "lora",
         "label": "Low-Rank Adaptation",
+        "qualifier": "(AI)",
         "summary": "Phương pháp fine-tuning tiết kiệm tham số: giữ nguyên trọng số gốc và chỉ huấn luyện các ma trận hạng thấp nhỏ biểu diễn phần cập nhật trọng số.",
         "domains": [
           "it/ai-ml/mlops"
+        ]
+      },
+      {
+        "id": "lora-radio",
+        "label": "LoRa",
+        "qualifier": "(IoT)",
+        "summary": "Kỹ thuật điều chế sóng vô tuyến tầng vật lý dựa trên công nghệ trải phổ tiếng chim hót (Chirp Spread Spectrum), cho phép truyền dữ liệu khoảng cách xa với công suất tiêu thụ điện cực nhỏ.",
+        "domains": [
+          "iot/connectivity-protocols"
+        ]
+      }
+    ],
+    "autolink": false
+  },
+  {
+    "key": "Công nghệ sóng LoRa",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "lora-radio",
+        "label": "LoRa",
+        "qualifier": "(IoT)",
+        "summary": "Kỹ thuật điều chế sóng vô tuyến tầng vật lý dựa trên công nghệ trải phổ tiếng chim hót (Chirp Spread Spectrum), cho phép truyền dữ liệu khoảng cách xa với công suất tiêu thụ điện cực nhỏ.",
+        "domains": [
+          "iot/connectivity-protocols"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Long Range",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "lora-radio",
+        "label": "LoRa",
+        "qualifier": "(IoT)",
+        "summary": "Kỹ thuật điều chế sóng vô tuyến tầng vật lý dựa trên công nghệ trải phổ tiếng chim hót (Chirp Spread Spectrum), cho phép truyền dữ liệu khoảng cách xa với công suất tiêu thụ điện cực nhỏ.",
+        "domains": [
+          "iot/connectivity-protocols"
         ]
       }
     ],
@@ -7307,6 +10339,100 @@
         "summary": "Hàm toán học dùng để định lượng sai số giữa kết quả dự đoán của mô hình và giá trị mục tiêu thực tế.",
         "domains": [
           "it/ai-ml/foundations"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Low-code",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "low-code",
+        "label": "Low-code",
+        "summary": "Phương pháp phát triển phần mềm sử dụng giao diện trực quan và các khối chức năng dựng sẵn, cho phép viết thêm mã nguồn khi cần tùy biến sâu.",
+        "domains": [
+          "it/business-systems/automation"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Nền tảng lập trình tinh giản",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "low-code",
+        "label": "Low-code",
+        "summary": "Phương pháp phát triển phần mềm sử dụng giao diện trực quan và các khối chức năng dựng sẵn, cho phép viết thêm mã nguồn khi cần tùy biến sâu.",
+        "domains": [
+          "it/business-systems/automation"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Sleep mode",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "low-power-mode",
+        "label": "Sleep mode",
+        "qualifier": "(Embedded)",
+        "summary": "Trạng thái vận hành tiết kiệm năng lượng của vi điều khiển, trong đó các nhân xử lý, bộ dao động xung nhịp và mạch ngoại vi được tạm ngắt cho đến khi nhận được tín hiệu đánh thức.",
+        "domains": [
+          "iot/devices-sensors"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Chế độ ngủ",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "low-power-mode",
+        "label": "Sleep mode",
+        "qualifier": "(Embedded)",
+        "summary": "Trạng thái vận hành tiết kiệm năng lượng của vi điều khiển, trong đó các nhân xử lý, bộ dao động xung nhịp và mạch ngoại vi được tạm ngắt cho đến khi nhận được tín hiệu đánh thức.",
+        "domains": [
+          "iot/devices-sensors"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Deep sleep",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "low-power-mode",
+        "label": "Sleep mode",
+        "qualifier": "(Embedded)",
+        "summary": "Trạng thái vận hành tiết kiệm năng lượng của vi điều khiển, trong đó các nhân xử lý, bộ dao động xung nhịp và mạch ngoại vi được tạm ngắt cho đến khi nhận được tín hiệu đánh thức.",
+        "domains": [
+          "iot/devices-sensors"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Chế độ tiết kiệm pin",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "low-power-mode",
+        "label": "Sleep mode",
+        "qualifier": "(Embedded)",
+        "summary": "Trạng thái vận hành tiết kiệm năng lượng của vi điều khiển, trong đó các nhân xử lý, bộ dao động xung nhịp và mạch ngoại vi được tạm ngắt cho đến khi nhận được tín hiệu đánh thức.",
+        "domains": [
+          "iot/devices-sensors"
         ]
       }
     ],
@@ -7499,6 +10625,83 @@
         "summary": "Khung mô hình chiến lược minh họa các giai đoạn tuần tự trong hành trình của khách hàng, từ nhận biết thương hiệu ban đầu, cân nhắc, cho đến quyết định mua hàng và gắn bó.",
         "domains": [
           "media/digital-marketing/metrics-analytics"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Materialized view",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "materialized-view",
+        "label": "Materialized view",
+        "summary": "Đối tượng cơ sở dữ liệu chứa kết quả tính toán sẵn của một câu truy vấn được lưu trữ vật lý trên ổ đĩa để truy xuất tốc độ cao.",
+        "domains": [
+          "it/data/database"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "khung nhìn cụ thể hóa",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "materialized-view",
+        "label": "Materialized view",
+        "summary": "Đối tượng cơ sở dữ liệu chứa kết quả tính toán sẵn của một câu truy vấn được lưu trữ vật lý trên ổ đĩa để truy xuất tốc độ cao.",
+        "domains": [
+          "it/data/database"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "view vật lý",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "materialized-view",
+        "label": "Materialized view",
+        "summary": "Đối tượng cơ sở dữ liệu chứa kết quả tính toán sẵn của một câu truy vấn được lưu trữ vật lý trên ổ đĩa để truy xuất tốc độ cao.",
+        "domains": [
+          "it/data/database"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Matter",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "matter-iot",
+        "label": "Matter",
+        "qualifier": "(IoT)",
+        "summary": "Tiêu chuẩn kết nối nhà thông minh mã nguồn mở hoạt động trên nền giao thức Internet (IP), cho phép các thiết bị tương thích kết nối mượt mà qua các nền tảng Apple Home, Google Home và Amazon Alexa.",
+        "domains": [
+          "iot/connectivity-protocols"
+        ]
+      }
+    ],
+    "autolink": false
+  },
+  {
+    "key": "Chuẩn Matter",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "matter-iot",
+        "label": "Matter",
+        "qualifier": "(IoT)",
+        "summary": "Tiêu chuẩn kết nối nhà thông minh mã nguồn mở hoạt động trên nền giao thức Internet (IP), cho phép các thiết bị tương thích kết nối mượt mà qua các nền tảng Apple Home, Google Home và Amazon Alexa.",
+        "domains": [
+          "iot/connectivity-protocols"
         ]
       }
     ],
@@ -8012,6 +11215,66 @@
     "autolink": false
   },
   {
+    "key": "MongoDB",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "mongodb",
+        "label": "MongoDB",
+        "summary": "Cơ sở dữ liệu tài liệu mã nguồn mở phổ biến lưu trữ dữ liệu vận hành dưới dạng các tài liệu BSON linh hoạt tương tự JSON.",
+        "domains": [
+          "it/data/database"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Monolithic architecture",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "monolith",
+        "label": "Monolithic architecture",
+        "summary": "Mô hình kiến trúc trong đó toàn bộ tính năng nghiệp vụ, giao diện và logic truy cập dữ liệu được đóng gói và vận hành dưới dạng một hệ thống duy nhất.",
+        "domains": [
+          "it/software-engineering/architecture"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Monolith",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "monolith",
+        "label": "Monolithic architecture",
+        "summary": "Mô hình kiến trúc trong đó toàn bộ tính năng nghiệp vụ, giao diện và logic truy cập dữ liệu được đóng gói và vận hành dưới dạng một hệ thống duy nhất.",
+        "domains": [
+          "it/software-engineering/architecture"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Kiến trúc nguyên khối",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "monolith",
+        "label": "Monolithic architecture",
+        "summary": "Mô hình kiến trúc trong đó toàn bộ tính năng nghiệp vụ, giao diện và logic truy cập dữ liệu được đóng gói và vận hành dưới dạng một hệ thống duy nhất.",
+        "domains": [
+          "it/software-engineering/architecture"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
     "key": "Monorepo",
     "match": "any-case",
     "concepts": [
@@ -8430,6 +11693,127 @@
     "autolink": true
   },
   {
+    "key": "Near-field communication (NFC)",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "nfc",
+        "label": "Near-field communication (NFC)",
+        "summary": "Chuẩn kết nối không dây tầm ngắn tần số cao hoạt động ở băng tần 13.56 MHz, cho phép hai thiết bị trao đổi dữ liệu an toàn khi đặt cách nhau dưới 4 centimet.",
+        "domains": [
+          "iot/connectivity-protocols"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "NFC",
+    "match": "exact-case",
+    "concepts": [
+      {
+        "id": "nfc",
+        "label": "Near-field communication (NFC)",
+        "summary": "Chuẩn kết nối không dây tầm ngắn tần số cao hoạt động ở băng tần 13.56 MHz, cho phép hai thiết bị trao đổi dữ liệu an toàn khi đặt cách nhau dưới 4 centimet.",
+        "domains": [
+          "iot/connectivity-protocols"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Giao tiếp tầm ngắn",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "nfc",
+        "label": "Near-field communication (NFC)",
+        "summary": "Chuẩn kết nối không dây tầm ngắn tần số cao hoạt động ở băng tần 13.56 MHz, cho phép hai thiết bị trao đổi dữ liệu an toàn khi đặt cách nhau dưới 4 centimet.",
+        "domains": [
+          "iot/connectivity-protocols"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Nginx",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "nginx",
+        "label": "Nginx",
+        "summary": "Phần mềm máy chủ web và trạm chuyển tiếp đảo ngược (reverse proxy) mã nguồn mở nổi tiếng với hiệu năng cao và tiêu tốn ít bộ nhớ.",
+        "domains": [
+          "it/web/backend",
+          "it/infrastructure/networking"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "No-code",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "no-code",
+        "label": "No-code",
+        "summary": "Phương pháp xây dựng ứng dụng cho phép người dùng không có chuyên môn lập trình tự tạo phần mềm thông qua giao diện kéo thả trực quan.",
+        "domains": [
+          "it/business-systems/automation"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Nền tảng không cần mã nguồn",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "no-code",
+        "label": "No-code",
+        "summary": "Phương pháp xây dựng ứng dụng cho phép người dùng không có chuyên môn lập trình tự tạo phần mềm thông qua giao diện kéo thả trực quan.",
+        "domains": [
+          "it/business-systems/automation"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Node.js",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "nodejs",
+        "label": "Node.js",
+        "summary": "Môi trường thực thi JavaScript đa nền tảng, mã nguồn mở, cho phép chạy mã nguồn JavaScript bên ngoài trình duyệt web.",
+        "domains": [
+          "it/web/backend"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Node",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "nodejs",
+        "label": "Node.js",
+        "summary": "Môi trường thực thi JavaScript đa nền tảng, mã nguồn mở, cho phép chạy mã nguồn JavaScript bên ngoài trình duyệt web.",
+        "domains": [
+          "it/web/backend"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
     "key": "North Star metric",
     "match": "any-case",
     "concepts": [
@@ -8454,6 +11838,36 @@
         "summary": "Chỉ số cốt lõi duy nhất thể hiện giá trị chân thực mà khách hàng nhận được từ sản phẩm và là chỉ báo dẫn dắt cho sự tăng trưởng kinh doanh bền vững.",
         "domains": [
           "product/metrics"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "NoSQL",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "nosql",
+        "label": "NoSQL",
+        "summary": "Nhóm các hệ thống quản trị cơ sở dữ liệu phi quan hệ được thiết kế để xử lý các mô hình dữ liệu linh hoạt, tốc độ cao và khả năng mở rộng ngang.",
+        "domains": [
+          "it/data/database"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "cơ sở dữ liệu phi quan hệ",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "nosql",
+        "label": "NoSQL",
+        "summary": "Nhóm các hệ thống quản trị cơ sở dữ liệu phi quan hệ được thiết kế để xử lý các mô hình dữ liệu linh hoạt, tốc độ cao và khả năng mở rộng ngang.",
+        "domains": [
+          "it/data/database"
         ]
       }
     ],
@@ -8724,6 +12138,96 @@
         "summary": "Khung quản trị mục tiêu liên kết giữa các mục tiêu định tính đầy tham vọng (Objectives) và các kết quả then chốt định lượng đo đếm được (Key Results).",
         "domains": [
           "product/metrics"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Online Analytical Processing (OLAP)",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "olap",
+        "label": "Online Analytical Processing (OLAP)",
+        "summary": "Nhóm công cụ phần mềm và cơ sở dữ liệu được tối ưu hóa để phân tích đa chiều với tốc độ cao trên khối lượng lớn dữ liệu lịch sử.",
+        "domains": [
+          "it/data/analytics"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "OLAP",
+    "match": "exact-case",
+    "concepts": [
+      {
+        "id": "olap",
+        "label": "Online Analytical Processing (OLAP)",
+        "summary": "Nhóm công cụ phần mềm và cơ sở dữ liệu được tối ưu hóa để phân tích đa chiều với tốc độ cao trên khối lượng lớn dữ liệu lịch sử.",
+        "domains": [
+          "it/data/analytics"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "xử lý phân tích trực tuyến",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "olap",
+        "label": "Online Analytical Processing (OLAP)",
+        "summary": "Nhóm công cụ phần mềm và cơ sở dữ liệu được tối ưu hóa để phân tích đa chiều với tốc độ cao trên khối lượng lớn dữ liệu lịch sử.",
+        "domains": [
+          "it/data/analytics"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Online Transaction Processing (OLTP)",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "oltp",
+        "label": "Online Transaction Processing (OLTP)",
+        "summary": "Nhóm hệ thống xử lý dữ liệu tập trung vào việc thực thi và ghi nhận khối lượng lớn các giao dịch cơ sở dữ liệu ngắn tức thì.",
+        "domains": [
+          "it/data/database"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "OLTP",
+    "match": "exact-case",
+    "concepts": [
+      {
+        "id": "oltp",
+        "label": "Online Transaction Processing (OLTP)",
+        "summary": "Nhóm hệ thống xử lý dữ liệu tập trung vào việc thực thi và ghi nhận khối lượng lớn các giao dịch cơ sở dữ liệu ngắn tức thì.",
+        "domains": [
+          "it/data/database"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "xử lý giao dịch trực tuyến",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "oltp",
+        "label": "Online Transaction Processing (OLTP)",
+        "summary": "Nhóm hệ thống xử lý dữ liệu tập trung vào việc thực thi và ghi nhận khối lượng lớn các giao dịch cơ sở dữ liệu ngắn tức thì.",
+        "domains": [
+          "it/data/database"
         ]
       }
     ],
@@ -9140,6 +12644,38 @@
     "autolink": true
   },
   {
+    "key": "Cổng thanh toán",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "payment-gateway",
+        "label": "Cổng thanh toán",
+        "summary": "Dịch vụ công nghệ trung gian tiếp nhận, mã hóa và truyền tải thông tin giao dịch giữa website bán lẻ với ngân hàng và mạng lưới thẻ.",
+        "domains": [
+          "it/business-systems/enterprise-apps",
+          "finance/banking/payments"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Payment gateway",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "payment-gateway",
+        "label": "Cổng thanh toán",
+        "summary": "Dịch vụ công nghệ trung gian tiếp nhận, mã hóa và truyền tải thông tin giao dịch giữa website bán lẻ với ngân hàng và mạng lưới thẻ.",
+        "domains": [
+          "it/business-systems/enterprise-apps",
+          "finance/banking/payments"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
     "key": "Paywall",
     "match": "any-case",
     "concepts": [
@@ -9404,6 +12940,81 @@
         "summary": "Các mức lãi suất do cơ quan quản lý tiền tệ quốc gia công bố nhằm điều tiết thanh khoản hệ thống và định hướng mặt bằng lãi suất thị trường.",
         "domains": [
           "finance/economics/interest-rates-monetary-policy"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "POS",
+    "match": "exact-case",
+    "concepts": [
+      {
+        "id": "pos-system",
+        "label": "POS",
+        "summary": "Hệ thống thiết bị và phần mềm đặt tại điểm bán để quét mã hàng, thu tiền và đồng bộ lượng hàng tồn kho.",
+        "domains": [
+          "it/business-systems/enterprise-apps"
+        ]
+      }
+    ],
+    "autolink": false
+  },
+  {
+    "key": "Point of sale",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "pos-system",
+        "label": "POS",
+        "summary": "Hệ thống thiết bị và phần mềm đặt tại điểm bán để quét mã hàng, thu tiền và đồng bộ lượng hàng tồn kho.",
+        "domains": [
+          "it/business-systems/enterprise-apps"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Hệ thống điểm bán lẻ",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "pos-system",
+        "label": "POS",
+        "summary": "Hệ thống thiết bị và phần mềm đặt tại điểm bán để quét mã hàng, thu tiền và đồng bộ lượng hàng tồn kho.",
+        "domains": [
+          "it/business-systems/enterprise-apps"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "PostgreSQL",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "postgresql",
+        "label": "PostgreSQL",
+        "summary": "Hệ quản trị cơ sở dữ liệu quan hệ - đối tượng mã nguồn mở mạnh mẽ, nổi tiếng về độ ổn định, tính toàn vẹn và tuân thủ chuẩn SQL.",
+        "domains": [
+          "it/data/database"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Postgres",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "postgresql",
+        "label": "PostgreSQL",
+        "summary": "Hệ quản trị cơ sở dữ liệu quan hệ - đối tượng mã nguồn mở mạnh mẽ, nổi tiếng về độ ổn định, tính toàn vẹn và tuân thủ chuẩn SQL.",
+        "domains": [
+          "it/data/database"
         ]
       }
     ],
@@ -9682,6 +13293,51 @@
         "summary": "Văn bản tuyên bố chính thức được cơ quan, tổ chức hoặc doanh nghiệp phát hành tới báo chí nhằm cung cấp thông tin chuẩn xác về một sự kiện.",
         "domains": [
           "media/pr-communications/media-relations"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Khóa chính",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "primary-key",
+        "label": "Khóa chính",
+        "summary": "Một cột hoặc tập hợp các cột trong bảng cơ sở dữ liệu quan hệ dùng để định danh duy nhất mỗi bản ghi trong bảng đó.",
+        "domains": [
+          "it/data/database"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "primary key",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "primary-key",
+        "label": "Khóa chính",
+        "summary": "Một cột hoặc tập hợp các cột trong bảng cơ sở dữ liệu quan hệ dùng để định danh duy nhất mỗi bản ghi trong bảng đó.",
+        "domains": [
+          "it/data/database"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "PK",
+    "match": "exact-case",
+    "concepts": [
+      {
+        "id": "primary-key",
+        "label": "Khóa chính",
+        "summary": "Một cột hoặc tập hợp các cột trong bảng cơ sở dữ liệu quan hệ dùng để định danh duy nhất mỗi bản ghi trong bảng đó.",
+        "domains": [
+          "it/data/database"
         ]
       }
     ],
@@ -9994,6 +13650,36 @@
     "autolink": true
   },
   {
+    "key": "Progressive web app (PWA)",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "progressive-web-app",
+        "label": "Progressive web app (PWA)",
+        "summary": "Ứng dụng xây dựng bằng công nghệ web có khả năng cài đặt lên thiết bị, chạy ngoại tuyến và gửi thông báo như ứng dụng gốc.",
+        "domains": [
+          "it/web/frontend"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "PWA",
+    "match": "exact-case",
+    "concepts": [
+      {
+        "id": "progressive-web-app",
+        "label": "Progressive web app (PWA)",
+        "summary": "Ứng dụng xây dựng bằng công nghệ web có khả năng cài đặt lên thiết bị, chạy ngoại tuyến và gửi thông báo như ứng dụng gốc.",
+        "domains": [
+          "it/web/frontend"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
     "key": "Promise",
     "match": "any-case",
     "concepts": [
@@ -10055,6 +13741,70 @@
     "autolink": true
   },
   {
+    "key": "Publish-subscribe (pub/sub)",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "publish-subscribe",
+        "label": "Publish-subscribe (pub/sub)",
+        "summary": "Mẫu kiến trúc truyền tin bất đồng bộ nơi bên gửi phân loại tin phát mà không gửi trực tiếp đến từng người nhận riêng lẻ.",
+        "domains": [
+          "it/web/backend",
+          "it/data/data-engineering"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "pub/sub",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "publish-subscribe",
+        "label": "Publish-subscribe (pub/sub)",
+        "summary": "Mẫu kiến trúc truyền tin bất đồng bộ nơi bên gửi phân loại tin phát mà không gửi trực tiếp đến từng người nhận riêng lẻ.",
+        "domains": [
+          "it/web/backend",
+          "it/data/data-engineering"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "pub-sub",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "publish-subscribe",
+        "label": "Publish-subscribe (pub/sub)",
+        "summary": "Mẫu kiến trúc truyền tin bất đồng bộ nơi bên gửi phân loại tin phát mà không gửi trực tiếp đến từng người nhận riêng lẻ.",
+        "domains": [
+          "it/web/backend",
+          "it/data/data-engineering"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "xuất bản - đăng ký",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "publish-subscribe",
+        "label": "Publish-subscribe (pub/sub)",
+        "summary": "Mẫu kiến trúc truyền tin bất đồng bộ nơi bên gửi phân loại tin phát mà không gửi trực tiếp đến từng người nhận riêng lẻ.",
+        "domains": [
+          "it/web/backend",
+          "it/data/data-engineering"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
     "key": "Pull request (PR)",
     "match": "any-case",
     "concepts": [
@@ -10109,6 +13859,51 @@
         "summary": "Cơ chế trên các nền tảng quản lý mã nguồn phân tán cho phép lập trình viên thông báo về các thay đổi trên nhánh làm việc và yêu cầu rà soát trước khi gộp vào nhánh đích.",
         "domains": [
           "it/software-engineering/version-control"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Pulse-width modulation (PWM)",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "pwm",
+        "label": "Pulse-width modulation (PWM)",
+        "summary": "Phương pháp điều chế công suất điện cung cấp cho tải bằng cách thay đổi tỷ lệ thời gian đóng và ngắt (chu kỳ nhiệm vụ) của chuỗi xung vuông ở tần số cao.",
+        "domains": [
+          "iot/devices-sensors"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "PWM",
+    "match": "exact-case",
+    "concepts": [
+      {
+        "id": "pwm",
+        "label": "Pulse-width modulation (PWM)",
+        "summary": "Phương pháp điều chế công suất điện cung cấp cho tải bằng cách thay đổi tỷ lệ thời gian đóng và ngắt (chu kỳ nhiệm vụ) của chuỗi xung vuông ở tần số cao.",
+        "domains": [
+          "iot/devices-sensors"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Điều chế độ rộng xung",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "pwm",
+        "label": "Pulse-width modulation (PWM)",
+        "summary": "Phương pháp điều chế công suất điện cung cấp cho tải bằng cách thay đổi tỷ lệ thời gian đóng và ngắt (chu kỳ nhiệm vụ) của chuỗi xung vuông ở tần số cao.",
+        "domains": [
+          "iot/devices-sensors"
         ]
       }
     ],
@@ -10192,6 +13987,21 @@
     "autolink": true
   },
   {
+    "key": "RabbitMQ",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "rabbitmq",
+        "label": "RabbitMQ",
+        "summary": "Phần mềm môi giới tin nhắn mã nguồn mở giúp định tuyến thông điệp giữa các ứng dụng phân tán qua giao thức như AMQP.",
+        "domains": [
+          "it/web/backend"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
     "key": "Race condition",
     "match": "any-case",
     "concepts": [
@@ -10252,6 +14062,36 @@
     "autolink": true
   },
   {
+    "key": "Raspberry Pi",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "raspberry-pi",
+        "label": "Raspberry Pi",
+        "summary": "Dòng máy tính đơn bo kích thước nhỏ sử dụng vi xử lý kiến trúc ARM rất phổ biến, hỗ trợ hệ điều hành Linux và tích hợp hàng chân cắm GPIO 40 chân để giao tiếp thiết bị.",
+        "domains": [
+          "iot/devices-sensors"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "RPi",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "raspberry-pi",
+        "label": "Raspberry Pi",
+        "summary": "Dòng máy tính đơn bo kích thước nhỏ sử dụng vi xử lý kiến trúc ARM rất phổ biến, hỗ trợ hệ điều hành Linux và tích hợp hàng chân cắm GPIO 40 chân để giao tiếp thiết bị.",
+        "domains": [
+          "iot/devices-sensors"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
     "key": "Rate limiting",
     "match": "any-case",
     "concepts": [
@@ -10306,6 +14146,54 @@
         "summary": "Cơ chế kiểm soát mạng phòng ngừa nhằm hạn chế số lượng yêu cầu mà một máy khách có thể gửi tới giao diện lập trình ứng dụng (API) trong một khoảng thời gian.",
         "domains": [
           "it/web/api"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "React",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "react",
+        "label": "React",
+        "qualifier": "(Thư viện)",
+        "summary": "Thư viện JavaScript mã nguồn mở chuyên dùng để xây dựng giao diện người dùng dựa trên các thành phần (component).",
+        "domains": [
+          "it/web/frontend"
+        ]
+      }
+    ],
+    "autolink": false
+  },
+  {
+    "key": "React.js",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "react",
+        "label": "React",
+        "qualifier": "(Thư viện)",
+        "summary": "Thư viện JavaScript mã nguồn mở chuyên dùng để xây dựng giao diện người dùng dựa trên các thành phần (component).",
+        "domains": [
+          "it/web/frontend"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "ReactJS",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "react",
+        "label": "React",
+        "qualifier": "(Thư viện)",
+        "summary": "Thư viện JavaScript mã nguồn mở chuyên dùng để xây dựng giao diện người dùng dựa trên các thành phần (component).",
+        "domains": [
+          "it/web/frontend"
         ]
       }
     ],
@@ -10396,6 +14284,22 @@
         "summary": "Kỹ thuật giải quyết bài toán trong đó một hàm tự gọi lại chính nó với các phiên bản thu nhỏ cho đến khi thỏa mãn điều kiện dừng.",
         "domains": [
           "it/software-engineering/programming-concepts"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Redis",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "redis",
+        "label": "Redis",
+        "summary": "Kho lưu trữ cấu trúc dữ liệu trên bộ nhớ mã nguồn mở được dùng làm cơ sở dữ liệu tốc độ cao, bộ nhớ đệm, môi giới tin nhắn và công cụ luồng.",
+        "domains": [
+          "it/data/database",
+          "it/web/backend"
         ]
       }
     ],
@@ -10501,6 +14405,96 @@
         "summary": "Chuỗi các ký tự định nghĩa mẫu tìm kiếm được các giải thuật xử lý văn bản sử dụng để so khớp, kiểm thực và biến đổi chuỗi.",
         "domains": [
           "it/software-engineering/programming-concepts"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Cơ sở dữ liệu quan hệ",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "relational-database",
+        "label": "Cơ sở dữ liệu quan hệ",
+        "summary": "Loại cơ sở dữ liệu lưu trữ và quản lý thông tin dưới dạng các bảng có cấu trúc xác định trước và liên kết với nhau qua các mối quan hệ logic.",
+        "domains": [
+          "it/data/database"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "RDBMS",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "relational-database",
+        "label": "Cơ sở dữ liệu quan hệ",
+        "summary": "Loại cơ sở dữ liệu lưu trữ và quản lý thông tin dưới dạng các bảng có cấu trúc xác định trước và liên kết với nhau qua các mối quan hệ logic.",
+        "domains": [
+          "it/data/database"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "relational database",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "relational-database",
+        "label": "Cơ sở dữ liệu quan hệ",
+        "summary": "Loại cơ sở dữ liệu lưu trữ và quản lý thông tin dưới dạng các bảng có cấu trúc xác định trước và liên kết với nhau qua các mối quan hệ logic.",
+        "domains": [
+          "it/data/database"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Thiết kế web đáp ứng",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "responsive-design",
+        "label": "Thiết kế web đáp ứng",
+        "summary": "Phương pháp thiết kế giúp giao diện trang web tự động điều chỉnh bố cục phù hợp với mọi kích thước màn hình của thiết bị.",
+        "domains": [
+          "it/web/frontend"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "responsive web design",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "responsive-design",
+        "label": "Thiết kế web đáp ứng",
+        "summary": "Phương pháp thiết kế giúp giao diện trang web tự động điều chỉnh bố cục phù hợp với mọi kích thước màn hình của thiết bị.",
+        "domains": [
+          "it/web/frontend"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "responsive design",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "responsive-design",
+        "label": "Thiết kế web đáp ứng",
+        "summary": "Phương pháp thiết kế giúp giao diện trang web tự động điều chỉnh bố cục phù hợp với mọi kích thước màn hình của thiết bị.",
+        "domains": [
+          "it/web/frontend"
         ]
       }
     ],
@@ -10672,6 +14666,81 @@
     "autolink": true
   },
   {
+    "key": "Reverse proxy",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "reverse-proxy",
+        "label": "Reverse proxy",
+        "summary": "Máy chủ trung gian đứng trước cụm máy chủ nội bộ nhằm tiếp nhận yêu cầu từ client bên ngoài, thực hiện định tuyến, giải mã TLS và cân bằng lưu lượng.",
+        "domains": [
+          "it/infrastructure/networking"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Máy chủ ủy nhiệm ngược",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "reverse-proxy",
+        "label": "Reverse proxy",
+        "summary": "Máy chủ trung gian đứng trước cụm máy chủ nội bộ nhằm tiếp nhận yêu cầu từ client bên ngoài, thực hiện định tuyến, giải mã TLS và cân bằng lưu lượng.",
+        "domains": [
+          "it/infrastructure/networking"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Radio-frequency identification (RFID)",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "rfid",
+        "label": "Radio-frequency identification (RFID)",
+        "summary": "Công nghệ nhận dạng và thu thập dữ liệu tự động sử dụng sóng điện từ vô tuyến để đọc thông tin mã hóa được lưu trữ trong các thẻ điện tử từ khoảng cách xa.",
+        "domains": [
+          "iot/devices-sensors"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "RFID",
+    "match": "exact-case",
+    "concepts": [
+      {
+        "id": "rfid",
+        "label": "Radio-frequency identification (RFID)",
+        "summary": "Công nghệ nhận dạng và thu thập dữ liệu tự động sử dụng sóng điện từ vô tuyến để đọc thông tin mã hóa được lưu trữ trong các thẻ điện tử từ khoảng cách xa.",
+        "domains": [
+          "iot/devices-sensors"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Nhận dạng qua tần số vô tuyến",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "rfid",
+        "label": "Radio-frequency identification (RFID)",
+        "summary": "Công nghệ nhận dạng và thu thập dữ liệu tự động sử dụng sóng điện từ vô tuyến để đọc thông tin mã hóa được lưu trữ trong các thẻ điện tử từ khoảng cách xa.",
+        "domains": [
+          "iot/devices-sensors"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
     "key": "RICE scoring",
     "match": "any-case",
     "concepts": [
@@ -10810,6 +14879,141 @@
     "autolink": true
   },
   {
+    "key": "RPA",
+    "match": "exact-case",
+    "concepts": [
+      {
+        "id": "rpa",
+        "label": "RPA",
+        "summary": "Công nghệ tự động hóa sử dụng robot phần mềm để mô phỏng lại các thao tác giao diện người dùng lặp đi lặp lại theo quy tắc định sẵn.",
+        "domains": [
+          "it/business-systems/automation"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Robotic process automation",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "rpa",
+        "label": "RPA",
+        "summary": "Công nghệ tự động hóa sử dụng robot phần mềm để mô phỏng lại các thao tác giao diện người dùng lặp đi lặp lại theo quy tắc định sẵn.",
+        "domains": [
+          "it/business-systems/automation"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Tự động hóa quy trình bằng robot",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "rpa",
+        "label": "RPA",
+        "summary": "Công nghệ tự động hóa sử dụng robot phần mềm để mô phỏng lại các thao tác giao diện người dùng lặp đi lặp lại theo quy tắc định sẵn.",
+        "domains": [
+          "it/business-systems/automation"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Recovery Point Objective (RPO)",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "rpo",
+        "label": "Recovery Point Objective (RPO)",
+        "summary": "Khoảng thời gian tối đa mà dữ liệu giao dịch có thể bị mất mát tính từ thời điểm xảy ra sự cố lùi về trước mà doanh nghiệp vẫn có thể chấp nhận được.",
+        "domains": [
+          "it/devops/sre-operations"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "RPO",
+    "match": "exact-case",
+    "concepts": [
+      {
+        "id": "rpo",
+        "label": "Recovery Point Objective (RPO)",
+        "summary": "Khoảng thời gian tối đa mà dữ liệu giao dịch có thể bị mất mát tính từ thời điểm xảy ra sự cố lùi về trước mà doanh nghiệp vẫn có thể chấp nhận được.",
+        "domains": [
+          "it/devops/sre-operations"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Điểm phục hồi mục tiêu",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "rpo",
+        "label": "Recovery Point Objective (RPO)",
+        "summary": "Khoảng thời gian tối đa mà dữ liệu giao dịch có thể bị mất mát tính từ thời điểm xảy ra sự cố lùi về trước mà doanh nghiệp vẫn có thể chấp nhận được.",
+        "domains": [
+          "it/devops/sre-operations"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Recovery Time Objective (RTO)",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "rto",
+        "label": "Recovery Time Objective (RTO)",
+        "summary": "Khoảng thời gian gián đoạn tối đa mà một hệ thống hoặc quy trình nghiệp vụ được phép ngừng hoạt động sau sự cố trước khi gây ra thiệt hại không thể chấp nhận cho doanh nghiệp.",
+        "domains": [
+          "it/devops/sre-operations"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "RTO",
+    "match": "exact-case",
+    "concepts": [
+      {
+        "id": "rto",
+        "label": "Recovery Time Objective (RTO)",
+        "summary": "Khoảng thời gian gián đoạn tối đa mà một hệ thống hoặc quy trình nghiệp vụ được phép ngừng hoạt động sau sự cố trước khi gây ra thiệt hại không thể chấp nhận cho doanh nghiệp.",
+        "domains": [
+          "it/devops/sre-operations"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Thời gian phục hồi mục tiêu",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "rto",
+        "label": "Recovery Time Objective (RTO)",
+        "summary": "Khoảng thời gian gián đoạn tối đa mà một hệ thống hoặc quy trình nghiệp vụ được phép ngừng hoạt động sau sự cố trước khi gây ra thiệt hại không thể chấp nhận cho doanh nghiệp.",
+        "domains": [
+          "it/devops/sre-operations"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
     "key": "Hệ điều hành thời gian thực",
     "match": "any-case",
     "concepts": [
@@ -10834,6 +15038,51 @@
         "summary": "Hệ điều hành được thiết kế chuyên biệt để xử lý các tác vụ với cam kết tính tiền định về mặt thời gian và độ trễ tối thiểu.",
         "domains": [
           "iot/devices-sensors"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Saga pattern",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "saga-pattern",
+        "label": "Saga pattern",
+        "summary": "Mẫu thiết kế quản lý các giao dịch phân tán trải dài trên nhiều dịch vụ độc lập thông qua chuỗi giao dịch cục bộ kèm theo các hành động bù trừ để phục hồi trạng thái khi gặp sự cố.",
+        "domains": [
+          "it/software-engineering/architecture"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Mẫu Saga",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "saga-pattern",
+        "label": "Saga pattern",
+        "summary": "Mẫu thiết kế quản lý các giao dịch phân tán trải dài trên nhiều dịch vụ độc lập thông qua chuỗi giao dịch cục bộ kèm theo các hành động bù trừ để phục hồi trạng thái khi gặp sự cố.",
+        "domains": [
+          "it/software-engineering/architecture"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Giao dịch phân tán Saga",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "saga-pattern",
+        "label": "Saga pattern",
+        "summary": "Mẫu thiết kế quản lý các giao dịch phân tán trải dài trên nhiều dịch vụ độc lập thông qua chuỗi giao dịch cục bộ kèm theo các hành động bù trừ để phục hồi trạng thái khi gặp sự cố.",
+        "domains": [
+          "it/software-engineering/architecture"
         ]
       }
     ],
@@ -11151,6 +15400,54 @@
     "autolink": true
   },
   {
+    "key": "Secure boot",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "secure-boot",
+        "label": "Secure boot",
+        "summary": "Tiêu chuẩn bảo mật phần cứng đảm bảo thiết bị điện tử chỉ khởi động bằng các đoạn mã và phần mềm firmware đã được nhà sản xuất chứng thực và ký số mật mã.",
+        "domains": [
+          "iot/devices-sensors",
+          "it/security/cryptography"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Khởi động an toàn",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "secure-boot",
+        "label": "Secure boot",
+        "summary": "Tiêu chuẩn bảo mật phần cứng đảm bảo thiết bị điện tử chỉ khởi động bằng các đoạn mã và phần mềm firmware đã được nhà sản xuất chứng thực và ký số mật mã.",
+        "domains": [
+          "iot/devices-sensors",
+          "it/security/cryptography"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Quy trình khởi động bảo mật",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "secure-boot",
+        "label": "Secure boot",
+        "summary": "Tiêu chuẩn bảo mật phần cứng đảm bảo thiết bị điện tử chỉ khởi động bằng các đoạn mã và phần mềm firmware đã được nhà sản xuất chứng thực và ký số mật mã.",
+        "domains": [
+          "iot/devices-sensors",
+          "it/security/cryptography"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
     "key": "Semantic versioning",
     "match": "any-case",
     "concepts": [
@@ -11333,6 +15630,81 @@
     "autolink": true
   },
   {
+    "key": "Server-sent events (SSE)",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "server-sent-events",
+        "label": "Server-sent events (SSE)",
+        "summary": "Công nghệ web cho phép máy khách nhận luồng dữ liệu sự kiện cập nhật liên tục từ máy chủ theo thời gian thực qua một kết nối HTTP tiêu chuẩn được mở sẵn.",
+        "domains": [
+          "it/web/api"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "SSE",
+    "match": "exact-case",
+    "concepts": [
+      {
+        "id": "server-sent-events",
+        "label": "Server-sent events (SSE)",
+        "summary": "Công nghệ web cho phép máy khách nhận luồng dữ liệu sự kiện cập nhật liên tục từ máy chủ theo thời gian thực qua một kết nối HTTP tiêu chuẩn được mở sẵn.",
+        "domains": [
+          "it/web/api"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Sự kiện từ máy chủ",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "server-sent-events",
+        "label": "Server-sent events (SSE)",
+        "summary": "Công nghệ web cho phép máy khách nhận luồng dữ liệu sự kiện cập nhật liên tục từ máy chủ theo thời gian thực qua một kết nối HTTP tiêu chuẩn được mở sẵn.",
+        "domains": [
+          "it/web/api"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Server-side rendering (SSR)",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "server-side-rendering",
+        "label": "Server-side rendering (SSR)",
+        "summary": "Kỹ thuật kết xuất giao diện thành mã HTML hoàn chỉnh trên máy chủ theo từng yêu cầu của người dùng trước khi gửi về trình duyệt.",
+        "domains": [
+          "it/web/frontend"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "SSR",
+    "match": "exact-case",
+    "concepts": [
+      {
+        "id": "server-side-rendering",
+        "label": "Server-side rendering (SSR)",
+        "summary": "Kỹ thuật kết xuất giao diện thành mã HTML hoàn chỉnh trên máy chủ theo từng yêu cầu của người dùng trước khi gửi về trình duyệt.",
+        "domains": [
+          "it/web/frontend"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
     "key": "Serverless",
     "match": "any-case",
     "concepts": [
@@ -11372,6 +15744,66 @@
         "summary": "Mô hình điện toán đám mây trong đó nhà cung cấp tự động quản lý hạ tầng máy chủ và chỉ tính phí theo lượng tài nguyên thực tế tiêu thụ khi mã chạy.",
         "domains": [
           "it/infrastructure/cloud"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Service mesh",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "service-mesh",
+        "label": "Service mesh",
+        "summary": "Lớp hạ tầng chuyên dụng gồm các proxy sidecar đảm nhiệm điều phối, mã hóa an toàn và giám sát lưu lượng giao tiếp giữa các vi dịch vụ mà không can thiệp mã nguồn ứng dụng.",
+        "domains": [
+          "it/software-engineering/architecture"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Lưới dịch vụ",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "service-mesh",
+        "label": "Service mesh",
+        "summary": "Lớp hạ tầng chuyên dụng gồm các proxy sidecar đảm nhiệm điều phối, mã hóa an toàn và giám sát lưu lượng giao tiếp giữa các vi dịch vụ mà không can thiệp mã nguồn ứng dụng.",
+        "domains": [
+          "it/software-engineering/architecture"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Service worker",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "service-worker",
+        "label": "Service worker",
+        "summary": "Kịch bản chạy nền điều khiển sự kiện, đóng vai trò trạm đại diện (proxy) đánh chặn các yêu cầu mạng và quản lý bộ nhớ đệm.",
+        "domains": [
+          "it/web/frontend"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "tiến trình dịch vụ ngầm",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "service-worker",
+        "label": "Service worker",
+        "summary": "Kịch bản chạy nền điều khiển sự kiện, đóng vai trò trạm đại diện (proxy) đánh chặn các yêu cầu mạng và quản lý bộ nhớ đệm.",
+        "domains": [
+          "it/web/frontend"
         ]
       }
     ],
@@ -11481,6 +15913,126 @@
         "domains": [
           "finance/personal-finance/saving",
           "finance/banking/lending"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Single-board computer (SBC)",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "single-board-computer",
+        "label": "Single-board computer (SBC)",
+        "summary": "Một chiếc máy tính đầy đủ tính năng có vi xử lý, bộ nhớ RAM, chip quản lý nguồn và các cổng kết nối ngoại vi được gắn liền trên duy nhất một bản mạch in.",
+        "domains": [
+          "iot/devices-sensors"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "SBC",
+    "match": "exact-case",
+    "concepts": [
+      {
+        "id": "single-board-computer",
+        "label": "Single-board computer (SBC)",
+        "summary": "Một chiếc máy tính đầy đủ tính năng có vi xử lý, bộ nhớ RAM, chip quản lý nguồn và các cổng kết nối ngoại vi được gắn liền trên duy nhất một bản mạch in.",
+        "domains": [
+          "iot/devices-sensors"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Máy tính đơn bo",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "single-board-computer",
+        "label": "Single-board computer (SBC)",
+        "summary": "Một chiếc máy tính đầy đủ tính năng có vi xử lý, bộ nhớ RAM, chip quản lý nguồn và các cổng kết nối ngoại vi được gắn liền trên duy nhất một bản mạch in.",
+        "domains": [
+          "iot/devices-sensors"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Single-page application (SPA)",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "single-page-application",
+        "label": "Single-page application (SPA)",
+        "summary": "Kiến trúc ứng dụng web tải một trang HTML duy nhất và cập nhật nội dung linh hoạt mà không tải lại toàn trang.",
+        "domains": [
+          "it/web/frontend"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "SPA",
+    "match": "exact-case",
+    "concepts": [
+      {
+        "id": "single-page-application",
+        "label": "Single-page application (SPA)",
+        "summary": "Kiến trúc ứng dụng web tải một trang HTML duy nhất và cập nhật nội dung linh hoạt mà không tải lại toàn trang.",
+        "domains": [
+          "it/web/frontend"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Single point of failure (SPOF)",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "single-point-of-failure",
+        "label": "Single point of failure (SPOF)",
+        "summary": "Thành phần hoặc mắt xích đơn lẻ trong một hệ thống mà sự cố của nó sẽ làm toàn bộ hệ thống ngừng hoạt động hoàn toàn do thiếu cơ chế dự phòng thay thế.",
+        "domains": [
+          "it/devops/sre-operations"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "SPOF",
+    "match": "exact-case",
+    "concepts": [
+      {
+        "id": "single-point-of-failure",
+        "label": "Single point of failure (SPOF)",
+        "summary": "Thành phần hoặc mắt xích đơn lẻ trong một hệ thống mà sự cố của nó sẽ làm toàn bộ hệ thống ngừng hoạt động hoàn toàn do thiếu cơ chế dự phòng thay thế.",
+        "domains": [
+          "it/devops/sre-operations"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Điểm lỗi đơn lẻ",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "single-point-of-failure",
+        "label": "Single point of failure (SPOF)",
+        "summary": "Thành phần hoặc mắt xích đơn lẻ trong một hệ thống mà sự cố của nó sẽ làm toàn bộ hệ thống ngừng hoạt động hoàn toàn do thiếu cơ chế dự phòng thay thế.",
+        "domains": [
+          "it/devops/sre-operations"
         ]
       }
     ],
@@ -11659,6 +16211,51 @@
         "id": "smart-home",
         "label": "Nhà thông minh",
         "summary": "Không gian nhà ở được tích hợp các thiết bị điện tử có khả năng kết nối mạng, cho phép tự động hóa sinh hoạt và quản lý tập trung từ xa.",
+        "domains": [
+          "iot/devices-sensors"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Smart meter",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "smart-meter",
+        "label": "Smart meter",
+        "summary": "Thiết bị đo lường tiện ích điện tử tiên tiến có khả năng tự động ghi nhận lượng tiêu thụ điện, nước hoặc khí đốt theo thời gian thực và truyền dữ liệu về đơn vị cung cấp qua mạng viễn thông.",
+        "domains": [
+          "iot/devices-sensors"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Đồng hồ đo thông minh",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "smart-meter",
+        "label": "Smart meter",
+        "summary": "Thiết bị đo lường tiện ích điện tử tiên tiến có khả năng tự động ghi nhận lượng tiêu thụ điện, nước hoặc khí đốt theo thời gian thực và truyền dữ liệu về đơn vị cung cấp qua mạng viễn thông.",
+        "domains": [
+          "iot/devices-sensors"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Công tơ điện tử thông minh",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "smart-meter",
+        "label": "Smart meter",
+        "summary": "Thiết bị đo lường tiện ích điện tử tiên tiến có khả năng tự động ghi nhận lượng tiêu thụ điện, nước hoặc khí đốt theo thời gian thực và truyền dữ liệu về đơn vị cung cấp qua mạng viễn thông.",
         "domains": [
           "iot/devices-sensors"
         ]
@@ -11869,6 +16466,51 @@
         "summary": "Tập hợp các hàm, lớp và đoạn mã viết sẵn được đóng gói để lập trình viên nhập vào và chủ động gọi thực thi khi cần xử lý các tác vụ chuyên biệt.",
         "domains": [
           "it/software-engineering/programming-concepts"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Serial Peripheral Interface (SPI)",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "spi-bus",
+        "label": "Serial Peripheral Interface (SPI)",
+        "summary": "Chuẩn giao tiếp nối tiếp đồng bộ bốn dây tốc độ cao, hỗ trợ truyền dữ liệu song công toàn phần (full-duplex) giữa chip điều khiển chủ và các thiết bị ngoại vi thông qua chân chọn chip.",
+        "domains": [
+          "iot/devices-sensors"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "SPI",
+    "match": "exact-case",
+    "concepts": [
+      {
+        "id": "spi-bus",
+        "label": "Serial Peripheral Interface (SPI)",
+        "summary": "Chuẩn giao tiếp nối tiếp đồng bộ bốn dây tốc độ cao, hỗ trợ truyền dữ liệu song công toàn phần (full-duplex) giữa chip điều khiển chủ và các thiết bị ngoại vi thông qua chân chọn chip.",
+        "domains": [
+          "iot/devices-sensors"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Giao diện ngoại vi nối tiếp",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "spi-bus",
+        "label": "Serial Peripheral Interface (SPI)",
+        "summary": "Chuẩn giao tiếp nối tiếp đồng bộ bốn dây tốc độ cao, hỗ trợ truyền dữ liệu song công toàn phần (full-duplex) giữa chip điều khiển chủ và các thiết bị ngoại vi thông qua chân chọn chip.",
+        "domains": [
+          "iot/devices-sensors"
         ]
       }
     ],
@@ -12329,6 +16971,36 @@
     "autolink": true
   },
   {
+    "key": "Static site generation (SSG)",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "static-site-generation",
+        "label": "Static site generation (SSG)",
+        "summary": "Quy trình tạo sẵn các tệp HTML tĩnh từ lúc biên dịch dự án thay vì chờ người dùng truy cập mới tạo nội dung.",
+        "domains": [
+          "it/web/frontend"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "SSG",
+    "match": "exact-case",
+    "concepts": [
+      {
+        "id": "static-site-generation",
+        "label": "Static site generation (SSG)",
+        "summary": "Quy trình tạo sẵn các tệp HTML tĩnh từ lúc biên dịch dự án thay vì chờ người dùng truy cập mới tạo nội dung.",
+        "domains": [
+          "it/web/frontend"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
     "key": "Cổ phiếu",
     "match": "any-case",
     "concepts": [
@@ -12505,6 +17177,36 @@
         "summary": "Bản thiết kế trực quan gồm chuỗi các khung hình phác thảo kèm ghi chú về góc máy, chuyển động và âm thanh để định hình video trước khi bấm máy.",
         "domains": [
           "media/content-production/video"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Stream processing",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "stream-processing",
+        "label": "Stream processing",
+        "summary": "Quá trình tiếp nhận và tính toán liên tục trên các bản ghi dữ liệu theo thời gian thực ngay khi chúng vừa phát sinh.",
+        "domains": [
+          "it/data/data-engineering"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "xử lý luồng",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "stream-processing",
+        "label": "Stream processing",
+        "summary": "Quá trình tiếp nhận và tính toán liên tục trên các bản ghi dữ liệu theo thời gian thực ngay khi chúng vừa phát sinh.",
+        "domains": [
+          "it/data/data-engineering"
         ]
       }
     ],
@@ -12727,6 +17429,15 @@
     "match": "any-case",
     "concepts": [
       {
+        "id": "thread-iot",
+        "label": "Thread",
+        "qualifier": "(IoT)",
+        "summary": "Giao thức mạng lưới không dây công suất thấp dựa trên nền tảng địa chỉ IPv6 và chuẩn vô tuyến IEEE 802.15.4, mang lại kết nối tin cậy và tự phục hồi cho các thiết bị nhà thông minh.",
+        "domains": [
+          "iot/connectivity-protocols"
+        ]
+      },
+      {
         "id": "thread-programming",
         "label": "Thread",
         "qualifier": "(Lập trình)",
@@ -12737,6 +17448,22 @@
       }
     ],
     "autolink": false
+  },
+  {
+    "key": "Giao thức Thread",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "thread-iot",
+        "label": "Thread",
+        "qualifier": "(IoT)",
+        "summary": "Giao thức mạng lưới không dây công suất thấp dựa trên nền tảng địa chỉ IPv6 và chuẩn vô tuyến IEEE 802.15.4, mang lại kết nối tin cậy và tự phục hồi cho các thiết bị nhà thông minh.",
+        "domains": [
+          "iot/connectivity-protocols"
+        ]
+      }
+    ],
+    "autolink": true
   },
   {
     "key": "Luồng",
@@ -12825,6 +17552,86 @@
         "summary": "Tốc độ mà một hệ thống máy tính, kênh truyền thông hoặc ứng dụng xử lý và chuyển giao thành công dữ liệu hoặc giao dịch trong một đơn vị thời gian.",
         "domains": [
           "it/infrastructure/networking"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Time-series database",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "time-series-database",
+        "label": "Time-series database",
+        "summary": "Cơ sở dữ liệu được tối ưu hóa để lưu trữ, truy vấn và phân tích các chuỗi điểm dữ liệu được đánh chỉ mục theo thứ tự thời gian.",
+        "domains": [
+          "it/data/database",
+          "iot/edge-cloud"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "cơ sở dữ liệu chuỗi thời gian",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "time-series-database",
+        "label": "Time-series database",
+        "summary": "Cơ sở dữ liệu được tối ưu hóa để lưu trữ, truy vấn và phân tích các chuỗi điểm dữ liệu được đánh chỉ mục theo thứ tự thời gian.",
+        "domains": [
+          "it/data/database",
+          "iot/edge-cloud"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "TSDB",
+    "match": "exact-case",
+    "concepts": [
+      {
+        "id": "time-series-database",
+        "label": "Time-series database",
+        "summary": "Cơ sở dữ liệu được tối ưu hóa để lưu trữ, truy vấn và phân tích các chuỗi điểm dữ liệu được đánh chỉ mục theo thứ tự thời gian.",
+        "domains": [
+          "it/data/database",
+          "iot/edge-cloud"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "TinyML",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "tinyml",
+        "label": "TinyML",
+        "summary": "Phân ngành học máy tập trung vào việc tối ưu hóa và thực thi các mô hình mạng nơ-ron trực tiếp trên các chip vi điều khiển có tài nguyên phần cứng hạn chế và mức tiêu thụ điện năng cực thấp.",
+        "domains": [
+          "iot/edge-cloud",
+          "it/ai-ml/mlops"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Học máy trên vi điều khiển",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "tinyml",
+        "label": "TinyML",
+        "summary": "Phân ngành học máy tập trung vào việc tối ưu hóa và thực thi các mô hình mạng nơ-ron trực tiếp trên các chip vi điều khiển có tài nguyên phần cứng hạn chế và mức tiêu thụ điện năng cực thấp.",
+        "domains": [
+          "iot/edge-cloud",
+          "it/ai-ml/mlops"
         ]
       }
     ],
@@ -13056,6 +17863,51 @@
     "autolink": true
   },
   {
+    "key": "Tree shaking",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "tree-shaking",
+        "label": "Tree shaking",
+        "summary": "Kỹ thuật tối ưu hóa trong quá trình đóng gói giúp loại bỏ mã nguồn không được sử dụng khỏi sản phẩm cuối cùng.",
+        "domains": [
+          "it/web/frontend"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "loại bỏ mã thừa",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "tree-shaking",
+        "label": "Tree shaking",
+        "summary": "Kỹ thuật tối ưu hóa trong quá trình đóng gói giúp loại bỏ mã nguồn không được sử dụng khỏi sản phẩm cuối cùng.",
+        "domains": [
+          "it/web/frontend"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "dead code elimination",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "tree-shaking",
+        "label": "Tree shaking",
+        "summary": "Kỹ thuật tối ưu hóa trong quá trình đóng gói giúp loại bỏ mã nguồn không được sử dụng khỏi sản phẩm cuối cùng.",
+        "domains": [
+          "it/web/frontend"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
     "key": "Type checking",
     "match": "any-case",
     "concepts": [
@@ -13084,6 +17936,38 @@
       }
     ],
     "autolink": true
+  },
+  {
+    "key": "TypeScript",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "typescript",
+        "label": "TypeScript",
+        "summary": "Ngôn ngữ lập trình mã nguồn mở phát triển từ JavaScript, bổ sung hệ thống kiểu tĩnh giúp phát hiện lỗi sớm trước khi chạy.",
+        "domains": [
+          "it/web/frontend",
+          "it/software-engineering/programming-concepts"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "TS",
+    "match": "exact-case",
+    "concepts": [
+      {
+        "id": "typescript",
+        "label": "TypeScript",
+        "summary": "Ngôn ngữ lập trình mã nguồn mở phát triển từ JavaScript, bổ sung hệ thống kiểu tĩnh giúp phát hiện lỗi sớm trước khi chạy.",
+        "domains": [
+          "it/web/frontend",
+          "it/software-engineering/programming-concepts"
+        ]
+      }
+    ],
+    "autolink": false
   },
   {
     "key": "Typography",
@@ -13140,6 +18024,36 @@
         "summary": "Nghệ thuật và kỹ thuật lựa chọn, sắp xếp các kiểu chữ, độ đậm nhạt, khoảng cách chữ và dòng nhằm giúp văn bản rõ ràng, dễ đọc và truyền tải cảm xúc thị giác.",
         "domains": [
           "media/content-production/visual-design"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "UART",
+    "match": "exact-case",
+    "concepts": [
+      {
+        "id": "uart",
+        "label": "UART",
+        "summary": "Khối phần cứng điện tử chuyển đổi dữ liệu song song nội bộ thành chuỗi bit nối tiếp bất đồng bộ trên hai đường truyền phát (TX) và nhận (RX) độc lập.",
+        "domains": [
+          "iot/devices-sensors"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Bộ thu phát bất đồng bộ vạn năng",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "uart",
+        "label": "UART",
+        "summary": "Khối phần cứng điện tử chuyển đổi dữ liệu song song nội bộ thành chuỗi bit nối tiếp bất đồng bộ trên hai đường truyền phát (TX) và nhận (RX) độc lập.",
+        "domains": [
+          "iot/devices-sensors"
         ]
       }
     ],
@@ -13230,6 +18144,51 @@
         "summary": "Tỷ lệ hoặc khoảng thời gian mà hệ thống máy tính, mạng hoặc ứng dụng duy trì trạng thái hoạt động bình thường và sẵn sàng phục vụ người dùng.",
         "domains": [
           "it/devops/sre-operations"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "URL",
+    "match": "exact-case",
+    "concepts": [
+      {
+        "id": "url",
+        "label": "URL",
+        "summary": "Chuỗi định danh tiêu chuẩn chỉ định vị trí cụ thể và phương thức truy cập của một tài nguyên trên mạng.",
+        "domains": [
+          "it/web/frontend"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Uniform Resource Locator",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "url",
+        "label": "URL",
+        "summary": "Chuỗi định danh tiêu chuẩn chỉ định vị trí cụ thể và phương thức truy cập của một tài nguyên trên mạng.",
+        "domains": [
+          "it/web/frontend"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "địa chỉ web",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "url",
+        "label": "URL",
+        "summary": "Chuỗi định danh tiêu chuẩn chỉ định vị trí cụ thể và phương thức truy cập của một tài nguyên trên mạng.",
+        "domains": [
+          "it/web/frontend"
         ]
       }
     ],
@@ -13561,6 +18520,51 @@
     "autolink": true
   },
   {
+    "key": "Vertical scaling",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "vertical-scaling",
+        "label": "Vertical scaling",
+        "summary": "Biện pháp gia tăng năng lực xử lý của hệ thống bằng cách bổ sung thêm tài nguyên tính toán như bộ xử lý, bộ nhớ RAM hoặc dung lượng ổ đĩa vào một máy chủ duy nhất.",
+        "domains": [
+          "it/infrastructure/cloud"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Scale up",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "vertical-scaling",
+        "label": "Vertical scaling",
+        "summary": "Biện pháp gia tăng năng lực xử lý của hệ thống bằng cách bổ sung thêm tài nguyên tính toán như bộ xử lý, bộ nhớ RAM hoặc dung lượng ổ đĩa vào một máy chủ duy nhất.",
+        "domains": [
+          "it/infrastructure/cloud"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Mở rộng theo chiều dọc",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "vertical-scaling",
+        "label": "Vertical scaling",
+        "summary": "Biện pháp gia tăng năng lực xử lý của hệ thống bằng cách bổ sung thêm tài nguyên tính toán như bộ xử lý, bộ nhớ RAM hoặc dung lượng ổ đĩa vào một máy chủ duy nhất.",
+        "domains": [
+          "it/infrastructure/cloud"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
     "key": "Máy ảo",
     "match": "any-case",
     "concepts": [
@@ -13759,6 +18763,186 @@
     "autolink": true
   },
   {
+    "key": "WCAG",
+    "match": "exact-case",
+    "concepts": [
+      {
+        "id": "wcag",
+        "label": "WCAG",
+        "summary": "Bộ hướng dẫn tiếp cận nội dung web do Tổ chức World Wide Web Consortium (W3C) ban hành nhằm chuẩn hóa khả năng tiếp cận kỹ thuật số.",
+        "domains": [
+          "it/web/frontend"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Web Content Accessibility Guidelines",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "wcag",
+        "label": "WCAG",
+        "summary": "Bộ hướng dẫn tiếp cận nội dung web do Tổ chức World Wide Web Consortium (W3C) ban hành nhằm chuẩn hóa khả năng tiếp cận kỹ thuật số.",
+        "domains": [
+          "it/web/frontend"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Wearable device",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "wearable",
+        "label": "Wearable device",
+        "summary": "Nhóm thiết bị điện tử thông minh nhỏ gọn được thiết kế để đeo trên cơ thể hoặc tích hợp vào trang phục, trang bị cảm biến sinh trắc học và kết nối không dây để theo dõi sức khỏe liên tục.",
+        "domains": [
+          "iot/devices-sensors"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Thiết bị đeo",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "wearable",
+        "label": "Wearable device",
+        "summary": "Nhóm thiết bị điện tử thông minh nhỏ gọn được thiết kế để đeo trên cơ thể hoặc tích hợp vào trang phục, trang bị cảm biến sinh trắc học và kết nối không dây để theo dõi sức khỏe liên tục.",
+        "domains": [
+          "iot/devices-sensors"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Thiết bị đeo thông minh",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "wearable",
+        "label": "Wearable device",
+        "summary": "Nhóm thiết bị điện tử thông minh nhỏ gọn được thiết kế để đeo trên cơ thể hoặc tích hợp vào trang phục, trang bị cảm biến sinh trắc học và kết nối không dây để theo dõi sức khỏe liên tục.",
+        "domains": [
+          "iot/devices-sensors"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Khả năng tiếp cận web",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "web-accessibility",
+        "label": "Khả năng tiếp cận web",
+        "summary": "Thực tiễn thiết kế và xây dựng trang web sao cho mọi người, bao gồm người có khiếm khuyết về giác quan hoặc thể chất, đều có thể sử dụng thuận tiện.",
+        "domains": [
+          "it/web/frontend"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "a11y",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "web-accessibility",
+        "label": "Khả năng tiếp cận web",
+        "summary": "Thực tiễn thiết kế và xây dựng trang web sao cho mọi người, bao gồm người có khiếm khuyết về giác quan hoặc thể chất, đều có thể sử dụng thuận tiện.",
+        "domains": [
+          "it/web/frontend"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "web accessibility",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "web-accessibility",
+        "label": "Khả năng tiếp cận web",
+        "summary": "Thực tiễn thiết kế và xây dựng trang web sao cho mọi người, bao gồm người có khiếm khuyết về giác quan hoặc thể chất, đều có thể sử dụng thuận tiện.",
+        "domains": [
+          "it/web/frontend"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "khả năng truy cập web",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "web-accessibility",
+        "label": "Khả năng tiếp cận web",
+        "summary": "Thực tiễn thiết kế và xây dựng trang web sao cho mọi người, bao gồm người có khiếm khuyết về giác quan hoặc thể chất, đều có thể sử dụng thuận tiện.",
+        "domains": [
+          "it/web/frontend"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Máy chủ web",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "web-server",
+        "label": "Máy chủ web",
+        "summary": "Hệ thống phần cứng hoặc phần mềm chuyên xử lý các yêu cầu từ máy khách qua giao thức HTTP để cung cấp tài nguyên trang web.",
+        "domains": [
+          "it/web/backend"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "web server",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "web-server",
+        "label": "Máy chủ web",
+        "summary": "Hệ thống phần cứng hoặc phần mềm chuyên xử lý các yêu cầu từ máy khách qua giao thức HTTP để cung cấp tài nguyên trang web.",
+        "domains": [
+          "it/web/backend"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "máy chủ HTTP",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "web-server",
+        "label": "Máy chủ web",
+        "summary": "Hệ thống phần cứng hoặc phần mềm chuyên xử lý các yêu cầu từ máy khách qua giao thức HTTP để cung cấp tài nguyên trang web.",
+        "domains": [
+          "it/web/backend"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
     "key": "Session",
     "match": "any-case",
     "concepts": [
@@ -13837,6 +19021,129 @@
     "autolink": true
   },
   {
+    "key": "WebSocket",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "websocket",
+        "label": "WebSocket",
+        "summary": "Giao thức truyền thông máy tính cung cấp kênh giao tiếp song công hai chiều toàn phần qua một kết nối TCP duy nhất, được khởi tạo thông qua cái bắt tay nâng cấp từ HTTP.",
+        "domains": [
+          "it/web/api"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Giao thức WebSocket",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "websocket",
+        "label": "WebSocket",
+        "summary": "Giao thức truyền thông máy tính cung cấp kênh giao tiếp song công hai chiều toàn phần qua một kết nối TCP duy nhất, được khởi tạo thông qua cái bắt tay nâng cấp từ HTTP.",
+        "domains": [
+          "it/web/api"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Wi-Fi",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "wifi",
+        "label": "Wi-Fi",
+        "summary": "Tập hợp các giao thức mạng cục bộ không dây (WLAN) dựa trên bộ tiêu chuẩn IEEE 802.11, cung cấp khả năng kết nối mạng không dây tốc độ cao cho các thiết bị điện tử trong cự ly gần.",
+        "domains": [
+          "iot/connectivity-protocols",
+          "it/infrastructure/networking"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "WiFi",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "wifi",
+        "label": "Wi-Fi",
+        "summary": "Tập hợp các giao thức mạng cục bộ không dây (WLAN) dựa trên bộ tiêu chuẩn IEEE 802.11, cung cấp khả năng kết nối mạng không dây tốc độ cao cho các thiết bị điện tử trong cự ly gần.",
+        "domains": [
+          "iot/connectivity-protocols",
+          "it/infrastructure/networking"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Mạng không dây Wi-Fi",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "wifi",
+        "label": "Wi-Fi",
+        "summary": "Tập hợp các giao thức mạng cục bộ không dây (WLAN) dựa trên bộ tiêu chuẩn IEEE 802.11, cung cấp khả năng kết nối mạng không dây tốc độ cao cho các thiết bị điện tử trong cự ly gần.",
+        "domains": [
+          "iot/connectivity-protocols",
+          "it/infrastructure/networking"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Tự động hóa quy trình",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "workflow-automation",
+        "label": "Tự động hóa quy trình",
+        "summary": "Thiết lập chuỗi các bước công việc tự động kích hoạt và xử lý dữ liệu giữa các ứng dụng nghiệp vụ theo các quy tắc định sẵn.",
+        "domains": [
+          "it/business-systems/automation"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Workflow automation",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "workflow-automation",
+        "label": "Tự động hóa quy trình",
+        "summary": "Thiết lập chuỗi các bước công việc tự động kích hoạt và xử lý dữ liệu giữa các ứng dụng nghiệp vụ theo các quy tắc định sẵn.",
+        "domains": [
+          "it/business-systems/automation"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Tự động hóa quy trình làm việc",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "workflow-automation",
+        "label": "Tự động hóa quy trình",
+        "summary": "Thiết lập chuỗi các bước công việc tự động kích hoạt và xử lý dữ liệu giữa các ứng dụng nghiệp vụ theo các quy tắc định sẵn.",
+        "domains": [
+          "it/business-systems/automation"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
     "key": "Vốn lưu động",
     "match": "any-case",
     "concepts": [
@@ -13891,6 +19198,21 @@
         "summary": "Lỗ hổng tiêm mã độc phía client cho phép tin tặc cài cắm các đoạn mã kịch bản độc hại vào trang web uy tín để thực thi trên trình duyệt của nạn nhân.",
         "domains": [
           "it/security/vulnerabilities"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Z-Wave",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "z-wave",
+        "label": "Z-Wave",
+        "summary": "Giao thức truyền thông không dây mạng lưới hoạt động ở dải tần số dưới 1 GHz (sub-GHz), được thiết kế chuyên biệt để tự động hóa nhà ở mà không bị nhiễu sóng bởi mạng Wi-Fi.",
+        "domains": [
+          "iot/connectivity-protocols"
         ]
       }
     ],

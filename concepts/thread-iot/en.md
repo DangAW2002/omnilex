@@ -12,6 +12,7 @@ plain_descriptions:
   - "IPv6-based mesh radio protocol that lets home devices talk to each other without single failure points"
 summary: "An IPv6-based, low-power wireless mesh networking protocol built on IEEE 802.15.4 that provides reliable, secure, and self-healing connectivity for smart home devices without requiring a central hub."
 confusable_notes:
+  thread-programming: "Thread (IoT) is a wireless mesh networking protocol, whereas Thread (Programming) is a unit of execution scheduled inside an operating system process."
   matter-iot: "Thread is a low-power wireless mesh network transport layer (Layer 3), whereas Matter is an overarching application layer (Layer 7) that runs on top of Thread, Wi-Fi, and Ethernet."
 follow_up_questions:
   - "How does 6LoWPAN packet compression enable full IPv6 addressing across constrained 127-byte 802.15.4 radio frames?"

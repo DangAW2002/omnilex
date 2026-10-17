@@ -14,6 +14,10 @@ Terms sharing a label or alias, distinguished by context:
 - [**Lead (Báo chí)**](../../concepts/news-lead/vi.md) [media/journalism/reporting]: Đoạn văn hoặc câu mở đầu của một bài báo truyền tải ngay lập tức những dữ kiện thiết yếu nhất của sự kiện đến độc giả.
 - [**Lead (Marketing)**](../../concepts/sales-lead/vi.md) [media/digital-marketing/metrics-analytics]: Cá nhân hoặc tổ chức bày tỏ sự quan tâm đến sản phẩm hoặc dịch vụ của doanh nghiệp và cung cấp thông tin liên hệ để được tư vấn tiếp theo.
 
+## Thread
+- [**Thread (IoT)**](../../concepts/thread-iot/vi.md) [iot/connectivity-protocols]: Giao thức mạng lưới không dây công suất thấp dựa trên nền tảng địa chỉ IPv6 và chuẩn vô tuyến IEEE 802.15.4, mang lại kết nối tin cậy và tự phục hồi cho các thiết bị nhà thông minh.
+- [**Thread (Lập trình)**](../../concepts/thread-programming/vi.md) [it/software-engineering/programming-concepts]: Đơn vị thực thi nhỏ nhất bên trong một tiến trình hệ điều hành, chia sẻ không gian bộ nhớ và tài nguyên của tiến trình cha với các luồng khác.
+
 ## Token
 - [**Token (Xác thực)**](../../concepts/token-auth/vi.md) [it/security/authentication, it/web/api]: Chuỗi mã hóa gửi kèm theo mỗi yêu cầu để chứng minh danh tính và quyền hạn của người dùng hoặc ứng dụng.
 - [**Token (Tiền mã hóa)**](../../concepts/token-crypto/vi.md) [finance/investing/digital-assets]: Đơn vị tài sản kỹ thuật số được tạo ra và quản lý bằng hợp đồng thông minh trên một mạng blockchain sẵn có.

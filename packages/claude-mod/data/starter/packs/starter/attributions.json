@@ -18,9 +18,7 @@
       "principal",
       "revenue",
       "roi",
-      "simple-interest",
-      "stock",
-      "stock-exchange"
+      "simple-interest"
     ]
   },
   {
@@ -44,12 +42,16 @@
     "concepts": [
       "actuator",
       "algorithm",
+      "embedded-system",
       "encryption",
       "firmware",
       "interpreter",
       "mfa",
       "microcontroller",
+      "nfc",
+      "rfid",
       "sensor",
+      "smart-meter",
       "stakeholder"
     ]
   },
@@ -64,8 +66,7 @@
       "balance-sheet",
       "cash-flow-statement",
       "equity-finance",
-      "income-statement",
-      "working-capital"
+      "income-statement"
     ]
   }
 ]

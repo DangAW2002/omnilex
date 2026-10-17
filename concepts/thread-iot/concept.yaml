@@ -6,6 +6,7 @@ relations:
   prerequisites:
     - "mesh-network"
   confusable:
+    - "thread-programming"
     - "matter-iot"
   related:
     - "smart-home"

@@ -1,0 +1,24 @@
+id: content-marketing
+domains:
+  - media/digital-marketing/social-media
+level: 1
+relations:
+  prerequisites: []
+  confusable: []
+  related:
+    - seo
+    - influencer-marketing
+    - newsletter
+status: draft
+provenance:
+  drafted_by: ai
+sources:
+  - ref: google-search-central
+    locator: https://developers.google.com/search/docs/fundamentals/creating-helpful-content
+    title: "Creating helpful, reliable, people-first content"
+    language: en
+    accessed: '2026-10-16'
+    retrieved_by: ai
+    supports:
+      - definition
+      - summary

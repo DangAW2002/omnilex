@@ -1,0 +1,25 @@
+id: bounce-rate
+domains:
+  - media/digital-marketing/metrics-analytics
+level: 2
+relations:
+  prerequisites:
+    - landing-page
+  confusable: []
+  related:
+    - engagement-rate
+    - conversion-rate
+    - organic-traffic
+status: draft
+provenance:
+  drafted_by: ai
+sources:
+  - ref: google-analytics-help
+    locator: https://support.google.com/analytics/answer/12195621?hl=en
+    title: "[GA4] Engagement rate and bounce rate"
+    language: en
+    accessed: '2026-10-16'
+    retrieved_by: ai
+    supports:
+      - definition
+      - summary

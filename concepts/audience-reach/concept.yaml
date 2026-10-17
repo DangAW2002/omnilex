@@ -1,0 +1,24 @@
+id: audience-reach
+domains:
+  - media/digital-marketing/social-media
+level: 1
+relations:
+  prerequisites: []
+  confusable:
+    - ad-impression
+  related:
+    - engagement-rate
+    - cpm
+status: draft
+provenance:
+  drafted_by: ai
+sources:
+  - ref: google-ads-help
+    locator: https://support.google.com/google-ads/answer/9012727?hl=en
+    title: "Unique Reach: Definition"
+    language: en
+    accessed: '2026-10-16'
+    retrieved_by: ai
+    supports:
+      - definition
+      - summary

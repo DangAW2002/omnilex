@@ -84,7 +84,7 @@ microsoft-learn:
   languages: [en, vi]
   license: CC-BY-4.0
   reuse: paraphrase-only
-  domains: [it/software-engineering, it/infrastructure, it/data]
+  domains: [it/software-engineering, it/infrastructure, it/data, media/digital-marketing/metrics-analytics]
   verified_license_at: "2026-10-14"
 
 google-cloud-docs:
@@ -300,3 +300,96 @@ topdev:
   reuse: paraphrase-only
   domains: [it]
   verified_license_at: "2026-10-16"
+
+# wave2 medb
+google-search-central:
+  title: Google Search Central Documentation
+  publisher: Google LLC
+  url: https://developers.google.com/search/docs
+  type: docs
+  tier: B
+  languages: [en, vi]
+  license: CC-BY-4.0
+  reuse: paraphrase-only
+  domains: [media/digital-marketing/seo, media/digital-marketing/social-media]
+  verified_license_at: "2026-10-16"
+  license_evidence: https://developers.google.com/search/docs
+
+google-ads-help:
+  title: Google Ads Help Center
+  publisher: Google LLC
+  url: https://support.google.com/google-ads
+  type: docs
+  tier: B
+  languages: [en, vi]
+  license: all-rights-reserved
+  reuse: paraphrase-only
+  domains: [media/digital-marketing/paid-ads, media/digital-marketing/metrics-analytics]
+  verified_license_at: "2026-10-16"
+  license_evidence: https://support.google.com/google-ads
+
+google-analytics-help:
+  title: Google Analytics Help Center
+  publisher: Google LLC
+  url: https://support.google.com/analytics
+  type: docs
+  tier: B
+  languages: [en, vi]
+  license: all-rights-reserved
+  reuse: paraphrase-only
+  domains: [media/digital-marketing/metrics-analytics, media/digital-marketing/seo]
+  verified_license_at: "2026-10-16"
+  license_evidence: https://support.google.com/analytics
+
+youtube-help:
+  title: YouTube Help Center
+  publisher: Google LLC
+  url: https://support.google.com/youtube
+  type: docs
+  tier: B
+  languages: [en, vi]
+  license: all-rights-reserved
+  reuse: paraphrase-only
+  domains: [media/digital-marketing/social-media]
+  verified_license_at: "2026-10-16"
+  license_evidence: https://support.google.com/youtube
+
+ftc-gov:
+  title: Federal Trade Commission Business Guidance
+  publisher: Federal Trade Commission
+  url: https://www.ftc.gov
+  type: docs
+  tier: B
+  languages: [en]
+  license: public-domain-us-gov
+  reuse: paraphrase-only
+  domains: [media/digital-marketing/social-media]
+  verified_license_at: "2026-10-16"
+  license_evidence: https://www.ftc.gov
+
+hubspot-knowledge-base:
+  title: HubSpot Knowledge Base and Glossary
+  publisher: HubSpot, Inc.
+  url: https://knowledge.hubspot.com
+  type: glossary
+  tier: C
+  languages: [en]
+  license: all-rights-reserved
+  reuse: paraphrase-only
+  domains: [media/digital-marketing/metrics-analytics, media/digital-marketing/social-media]
+  verified_license_at: "2026-10-16"
+  license_evidence: https://knowledge.hubspot.com
+
+mailchimp-help:
+  title: Mailchimp Help Center
+  publisher: Intuit Inc.
+  url: https://mailchimp.com/help
+  type: docs
+  tier: B
+  languages: [en]
+  license: all-rights-reserved
+  reuse: paraphrase-only
+  domains: [media/digital-marketing/email]
+  verified_license_at: "2026-10-16"
+  license_evidence: https://mailchimp.com/help
+

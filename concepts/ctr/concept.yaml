@@ -1,0 +1,26 @@
+id: ctr
+domains:
+  - media/digital-marketing/metrics-analytics
+  - media/digital-marketing/paid-ads
+level: 2
+relations:
+  prerequisites:
+    - ad-impression
+  confusable:
+    - conversion-rate
+  related:
+    - cpc
+    - cpm
+status: draft
+provenance:
+  drafted_by: ai
+sources:
+  - ref: google-ads-help
+    locator: https://support.google.com/google-ads/answer/2615875?hl=en
+    title: "Clickthrough rate (CTR): Definition"
+    language: en
+    accessed: '2026-10-16'
+    retrieved_by: ai
+    supports:
+      - definition
+      - summary

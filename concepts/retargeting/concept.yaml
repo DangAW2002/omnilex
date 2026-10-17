@@ -1,0 +1,24 @@
+id: retargeting
+domains:
+  - media/digital-marketing/paid-ads
+level: 2
+relations:
+  prerequisites:
+    - ad-impression
+  confusable: []
+  related:
+    - landing-page
+    - conversion-rate
+status: draft
+provenance:
+  drafted_by: ai
+sources:
+  - ref: google-ads-help
+    locator: https://support.google.com/google-ads/answer/2404239?hl=en
+    title: "Reach your audience on apps and websites"
+    language: en
+    accessed: '2026-10-16'
+    retrieved_by: ai
+    supports:
+      - definition
+      - summary

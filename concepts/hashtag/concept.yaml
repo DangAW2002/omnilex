@@ -1,0 +1,23 @@
+id: hashtag
+domains:
+  - media/digital-marketing/social-media
+level: 1
+relations:
+  prerequisites: []
+  confusable: []
+  related:
+    - engagement-rate
+    - content-marketing
+status: draft
+provenance:
+  drafted_by: ai
+sources:
+  - ref: youtube-help
+    locator: https://support.google.com/youtube/answer/6390658?hl=en
+    title: "Find playlists & videos using hashtags"
+    language: en
+    accessed: '2026-10-16'
+    retrieved_by: ai
+    supports:
+      - definition
+      - summary

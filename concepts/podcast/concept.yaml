@@ -1,0 +1,22 @@
+id: podcast
+domains:
+- media/content-production/audio-podcasts
+level: 1
+relations:
+  prerequisites: []
+  confusable: []
+  related:
+  - voice-over
+status: draft
+provenance:
+  drafted_by: ai
+sources:
+- ref: apple-podcasts
+  locator: https://podcasters.apple.com/support/
+  title: Support - Apple Podcasts for Creators
+  language: en
+  accessed: '2026-10-16'
+  retrieved_by: ai
+  supports:
+  - definition
+  - summary

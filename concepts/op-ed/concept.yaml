@@ -1,0 +1,23 @@
+id: op-ed
+domains:
+- media/journalism/genres
+level: 2
+relations:
+  prerequisites: []
+  confusable: []
+  related:
+  - byline
+  - fact-checking
+status: draft
+provenance:
+  drafted_by: ai
+sources:
+- ref: journalists-resource
+  locator: https://journalistsresource.org/home/how-to-write-an-op-ed-or-column/
+  title: How to write an op-ed or column - The Journalist's Resource
+  language: en
+  accessed: '2026-10-16'
+  retrieved_by: ai
+  supports:
+  - definition
+  - summary

@@ -1,0 +1,31 @@
+id: voice-over
+domains:
+- media/content-production/audio-podcasts
+level: 1
+relations:
+  prerequisites: []
+  confusable: []
+  related:
+  - podcast
+  - b-roll
+status: draft
+provenance:
+  drafted_by: ai
+sources:
+- ref: apple-podcasts
+  locator: https://support.apple.com/guide/final-cut-pro/record-voiceovers-verc1faa9c5/mac
+  title: Record voiceovers in Final Cut Pro for Mac
+  language: en
+  accessed: '2026-10-17'
+  retrieved_by: ai
+  supports:
+  - definition
+- ref: oxford-dict
+  locator: https://www.oxfordlearnersdictionaries.com/definition/english/voice-over
+  title: voice-over noun - Oxford Learner's Dictionaries
+  language: en
+  accessed: '2026-10-16'
+  retrieved_by: ai
+  supports:
+  - definition
+  - summary

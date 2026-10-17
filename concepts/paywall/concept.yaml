@@ -1,0 +1,23 @@
+id: paywall
+domains:
+- media/publishing/distribution-platforms
+level: 1
+relations:
+  prerequisites: []
+  confusable: []
+  related:
+  - breaking-news
+  - op-ed
+status: draft
+provenance:
+  drafted_by: ai
+sources:
+- ref: reuters-institute
+  locator: https://reutersinstitute.politics.ox.ac.uk/digital-news-report/2023/dnr-executive-summary
+  title: Overview and key findings of the 2023 Digital News Report
+  language: en
+  accessed: '2026-10-16'
+  retrieved_by: ai
+  supports:
+  - definition
+  - summary

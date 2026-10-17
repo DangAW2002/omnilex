@@ -1,0 +1,23 @@
+id: fact-checking
+domains:
+- media/journalism/ethics
+level: 2
+relations:
+  prerequisites: []
+  confusable: []
+  related:
+  - anonymous-source
+  - breaking-news
+status: draft
+provenance:
+  drafted_by: ai
+sources:
+- ref: duke-reporters-lab
+  locator: https://reporterslab.org/fact-checking/
+  title: Fact-Checking Sites Around the World - Reporters' Lab
+  language: en
+  accessed: '2026-10-16'
+  retrieved_by: ai
+  supports:
+  - definition
+  - summary

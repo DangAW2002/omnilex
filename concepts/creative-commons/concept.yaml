@@ -1,0 +1,23 @@
+id: creative-commons
+domains:
+- media/publishing/copyright-licensing
+level: 1
+relations:
+  prerequisites:
+  - copyright
+  confusable: []
+  related:
+  - fair-use
+status: draft
+provenance:
+  drafted_by: ai
+sources:
+- ref: creative-commons-org
+  locator: https://creativecommons.org/what-we-do/
+  title: What We Do - Creative Commons
+  language: en
+  accessed: '2026-10-16'
+  retrieved_by: ai
+  supports:
+  - definition
+  - summary

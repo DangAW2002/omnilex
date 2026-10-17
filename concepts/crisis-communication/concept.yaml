@@ -1,0 +1,24 @@
+id: crisis-communication
+domains:
+- media/pr-communications/crisis-communications
+level: 2
+relations:
+  prerequisites:
+  - spokesperson
+  confusable: []
+  related:
+  - press-release
+  - press-conference
+status: draft
+provenance:
+  drafted_by: ai
+sources:
+- ref: uk-govs
+  locator: https://www.gov.uk/government/publications/government-functional-standard-govs-011-communication
+  title: 'Government Functional Standard GovS 011: Communication - GOV.UK'
+  language: en
+  accessed: '2026-10-16'
+  retrieved_by: ai
+  supports:
+  - definition
+  - summary

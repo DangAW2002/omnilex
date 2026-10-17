@@ -1,0 +1,22 @@
+id: typography
+domains:
+- media/content-production/visual-design
+level: 1
+relations:
+  prerequisites: []
+  confusable: []
+  related:
+  - visual-hierarchy
+status: draft
+provenance:
+  drafted_by: ai
+sources:
+- ref: w3c
+  locator: https://www.w3.org/TR/css-fonts-4/
+  title: CSS Fonts Module Level 4
+  language: en
+  accessed: '2026-10-16'
+  retrieved_by: ai
+  supports:
+  - definition
+  - summary

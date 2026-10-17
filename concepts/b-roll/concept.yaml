@@ -1,0 +1,23 @@
+id: b-roll
+domains:
+- media/content-production/video
+level: 1
+relations:
+  prerequisites: []
+  confusable: []
+  related:
+  - storyboard
+  - voice-over
+status: draft
+provenance:
+  drafted_by: ai
+sources:
+- ref: nasa-svs
+  locator: https://svs.gsfc.nasa.gov/search/
+  title: NASA Scientific Visualization Studio Galleries
+  language: en
+  accessed: '2026-10-16'
+  retrieved_by: ai
+  supports:
+  - definition
+  - summary

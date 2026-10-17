@@ -1,0 +1,31 @@
+id: storyboard
+domains:
+- media/content-production/video
+level: 1
+relations:
+  prerequisites: []
+  confusable: []
+  related:
+  - aspect-ratio
+  - b-roll
+status: draft
+provenance:
+  drafted_by: ai
+sources:
+- ref: adobe-docs
+  locator: https://www.adobe.com/creativecloud/video/discover/storyboarding.html
+  title: How to get started on storyboarding | Adobe
+  language: en
+  accessed: '2026-10-17'
+  retrieved_by: ai
+  supports:
+  - definition
+- ref: oxford-dict
+  locator: https://www.oxfordlearnersdictionaries.com/definition/english/storyboard_1
+  title: storyboard noun - Oxford Learner's Dictionaries
+  language: en
+  accessed: '2026-10-16'
+  retrieved_by: ai
+  supports:
+  - definition
+  - summary

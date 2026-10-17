@@ -1031,3 +1031,256 @@ tapchikinhtetaichinh:
   reuse: paraphrase-only
   domains: [finance]
   verified_license_at: "2026-10-16"
+
+# wave2 meda
+oxford-dict:
+  title: Oxford Learner's Dictionaries
+  publisher: Oxford University Press
+  url: https://www.oxfordlearnersdictionaries.com
+  type: dictionary
+  tier: C
+  languages: [en]
+  license: all-rights-reserved
+  reuse: paraphrase-only
+  domains: [media]
+  verified_license_at: "2026-10-16"
+
+purdue-owl:
+  title: Purdue Online Writing Lab (OWL)
+  publisher: Purdue University
+  url: https://owl.purdue.edu
+  type: guide
+  tier: B
+  languages: [en]
+  license: all-rights-reserved
+  reuse: paraphrase-only
+  domains: [media/journalism]
+  verified_license_at: "2026-10-16"
+
+journalists-resource:
+  title: The Journalist's Resource
+  publisher: Shorenstein Center on Media, Politics and Public Policy, Harvard Kennedy School
+  url: https://journalistsresource.org
+  type: research
+  tier: B
+  languages: [en]
+  license: CC-BY-ND-4.0
+  reuse: paraphrase-only
+  domains: [media/journalism]
+  verified_license_at: "2026-10-16"
+
+duke-reporters-lab:
+  title: Duke Reporters' Lab
+  publisher: Sanford School of Public Policy, Duke University
+  url: https://reporterslab.org
+  type: research
+  tier: B
+  languages: [en]
+  license: all-rights-reserved
+  reuse: paraphrase-only
+  domains: [media/journalism]
+  verified_license_at: "2026-10-16"
+
+reuters-institute:
+  title: Reuters Institute for the Study of Journalism
+  publisher: University of Oxford
+  url: https://reutersinstitute.politics.ox.ac.uk
+  type: research
+  tier: B
+  languages: [en]
+  license: CC-BY-4.0
+  reuse: paraphrase-only
+  domains: [media/journalism, media/publishing]
+  verified_license_at: "2026-10-16"
+
+uk-govs:
+  title: "UK Government Functional Standard GovS 011: Communication"
+  publisher: Government Communication Service, UK Government
+  url: https://www.gov.uk
+  type: standard
+  tier: B
+  languages: [en]
+  license: Open-Government-Licence-v3.0
+  reuse: paraphrase-only
+  domains: [media/pr-communications]
+  verified_license_at: "2026-10-16"
+
+us-copyright-office:
+  title: U.S. Copyright Office Documentation
+  publisher: U.S. Copyright Office, Library of Congress
+  url: https://www.copyright.gov
+  type: docs
+  tier: B
+  languages: [en]
+  license: public-domain-us-gov
+  reuse: paraphrase-only
+  domains: [media/publishing]
+  verified_license_at: "2026-10-16"
+
+creative-commons-org:
+  title: Creative Commons Official Website
+  publisher: Creative Commons
+  url: https://creativecommons.org
+  type: docs
+  tier: A
+  languages: [en]
+  license: CC-BY-4.0
+  reuse: paraphrase-only
+  domains: [media/publishing]
+  verified_license_at: "2026-10-16"
+
+apple-podcasts:
+  title: Apple Podcasts for Creators Documentation
+  publisher: Apple Inc.
+  url: https://podcasters.apple.com
+  type: docs
+  tier: B
+  languages: [en]
+  license: all-rights-reserved
+  reuse: paraphrase-only
+  domains: [media/content-production]
+  verified_license_at: "2026-10-16"
+
+blender-docs:
+  title: Blender Manual
+  publisher: Blender Foundation
+  url: https://docs.blender.org/manual/en/latest/
+  type: docs
+  tier: B
+  languages: [en]
+  license: CC-BY-SA-4.0
+  reuse: paraphrase-only
+  domains: [media/content-production]
+  verified_license_at: "2026-10-16"
+
+nasa-svs:
+  title: NASA Scientific Visualization Studio
+  publisher: National Aeronautics and Space Administration
+  url: https://svs.gsfc.nasa.gov
+  type: docs
+  tier: B
+  languages: [en]
+  license: public-domain-us-gov
+  reuse: paraphrase-only
+  domains: [media/content-production]
+  verified_license_at: "2026-10-16"
+
+nngroup:
+  title: Nielsen Norman Group Articles & Research
+  publisher: Nielsen Norman Group
+  url: https://www.nngroup.com
+  type: research
+  tier: B
+  languages: [en]
+  license: all-rights-reserved
+  reuse: paraphrase-only
+  domains: [media/content-production]
+  verified_license_at: "2026-10-16"
+
+vietnamplus:
+  title: VietnamPlus - Thông tấn xã Việt Nam
+  publisher: Thông tấn xã Việt Nam (VNA)
+  url: https://www.vietnamplus.vn
+  type: news
+  tier: D
+  languages: [vi]
+  license: all-rights-reserved
+  reuse: paraphrase-only
+  domains: [media]
+  verified_license_at: "2026-10-16"
+
+baochinhphu:
+  title: Báo Điện tử Chính phủ
+  publisher: Cổng Thông tin điện tử Chính phủ
+  url: https://baochinhphu.vn
+  type: news
+  tier: C
+  languages: [vi]
+  license: all-rights-reserved
+  reuse: paraphrase-only
+  domains: [media]
+  verified_license_at: "2026-10-16"
+
+tuoitre:
+  title: Báo Tuổi Trẻ Online
+  publisher: Báo Tuổi Trẻ
+  url: https://tuoitre.vn
+  type: news
+  tier: D
+  languages: [vi]
+  license: all-rights-reserved
+  reuse: paraphrase-only
+  domains: [media]
+  verified_license_at: "2026-10-16"
+
+ku-ctb:
+  title: Community Tool Box
+  publisher: University of Kansas
+  url: https://ctb.ku.edu
+  type: guide
+  tier: B
+  languages: [en]
+  license: CC-BY-NC-SA-3.0
+  reuse: paraphrase-only
+  domains: [media/pr-communications]
+  verified_license_at: "2026-10-17"
+
+prsa:
+  title: Public Relations Society of America Official Publications
+  publisher: Public Relations Society of America
+  url: https://www.prsa.org
+  type: docs
+  tier: B
+  languages: [en]
+  license: all-rights-reserved
+  reuse: paraphrase-only
+  domains: [media/pr-communications]
+  verified_license_at: "2026-10-17"
+
+adobe-docs:
+  title: Adobe Creative Cloud Discover & Documentation
+  publisher: Adobe Inc.
+  url: https://www.adobe.com
+  type: docs
+  tier: B
+  languages: [en]
+  license: all-rights-reserved
+  reuse: paraphrase-only
+  domains: [media/content-production]
+  verified_license_at: "2026-10-17"
+
+vjst:
+  title: Tạp chí Khoa học và Công nghệ Việt Nam
+  publisher: Bộ Khoa học và Công nghệ
+  url: https://b.vjst.vn
+  type: research
+  tier: B
+  languages: [vi]
+  license: CC-BY-4.0
+  reuse: paraphrase-only
+  domains: [media/pr-communications]
+  verified_license_at: "2026-10-17"
+
+nytimes-standards:
+  title: The New York Times Editorial Standards
+  publisher: The New York Times Company
+  url: https://www.nytimes.com/editorial-standards/
+  type: docs
+  tier: B
+  languages: [en]
+  license: all-rights-reserved
+  reuse: paraphrase-only
+  domains: [media/journalism]
+  verified_license_at: "2026-10-17"
+
+cdc:
+  title: CDC Crisis and Emergency Risk Communication (CERC)
+  publisher: U.S. Centers for Disease Control and Prevention
+  url: https://www.cdc.gov/cerc/
+  type: docs
+  tier: B
+  languages: [en]
+  license: public-domain-us-gov
+  reuse: paraphrase-only
+  domains: [media/pr-communications]
+  verified_license_at: "2026-10-17"

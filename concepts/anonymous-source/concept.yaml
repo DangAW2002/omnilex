@@ -1,0 +1,23 @@
+id: anonymous-source
+domains:
+- media/journalism/ethics
+level: 2
+relations:
+  prerequisites: []
+  confusable: []
+  related:
+  - fact-checking
+  - byline
+status: draft
+provenance:
+  drafted_by: ai
+sources:
+- ref: journalists-resource
+  locator: https://journalistsresource.org/media/journalistic-method-tip-sheet-blending-analysis-narrative/
+  title: 'The journalistic method: Five principles for blending analysis and narrative'
+  language: en
+  accessed: '2026-10-16'
+  retrieved_by: ai
+  supports:
+  - definition
+  - summary

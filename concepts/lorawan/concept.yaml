@@ -1,0 +1,25 @@
+id: lorawan
+domains:
+  - iot/connectivity-protocols
+level: 2
+relations:
+  prerequisites: []
+  confusable:
+    - nb-iot
+  related:
+    - nb-iot
+    - iot-gateway
+    - telemetry
+status: draft
+provenance:
+  drafted_by: ai
+sources:
+  - ref: lora-alliance
+    locator: https://lora-alliance.org/about-lorawan/
+    title: "About LoRaWAN - LoRa Alliance"
+    language: en
+    accessed: '2026-10-16'
+    retrieved_by: ai
+    supports:
+      - definition
+      - summary

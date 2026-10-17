@@ -1,0 +1,25 @@
+id: iot-platform
+domains:
+  - iot/edge-cloud
+level: 2
+relations:
+  prerequisites: []
+  confusable: []
+  related:
+    - iot-gateway
+    - device-provisioning
+    - telemetry
+    - edge-computing
+status: draft
+provenance:
+  drafted_by: ai
+sources:
+  - ref: microsoft-learn
+    locator: https://learn.microsoft.com/en-us/azure/iot-hub/iot-concepts-and-iot-hub
+    title: "What is Azure IoT Hub? - Azure IoT Hub | Microsoft Learn"
+    language: en
+    accessed: '2026-10-16'
+    retrieved_by: ai
+    supports:
+      - definition
+      - summary

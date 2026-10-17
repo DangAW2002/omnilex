@@ -1,0 +1,23 @@
+id: mesh-network
+domains:
+  - iot/connectivity-protocols
+level: 2
+relations:
+  prerequisites: []
+  confusable: []
+  related:
+    - zigbee
+    - smart-home
+status: draft
+provenance:
+  drafted_by: ai
+sources:
+  - ref: ietf
+    locator: https://www.rfc-editor.org/rfc/rfc6550.html
+    title: "RFC 6550: RPL: IPv6 Routing Protocol for Low-Power and Lossy Networks"
+    language: en
+    accessed: '2026-10-16'
+    retrieved_by: ai
+    supports:
+      - definition
+      - summary

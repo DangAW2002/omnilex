@@ -1,0 +1,25 @@
+id: mqtt
+domains:
+  - iot/connectivity-protocols
+level: 2
+relations:
+  prerequisites: []
+  confusable:
+    - coap
+  related:
+    - coap
+    - iot-gateway
+    - telemetry
+status: draft
+provenance:
+  drafted_by: ai
+sources:
+  - ref: oasis-open
+    locator: https://docs.oasis-open.org/mqtt/mqtt/v5.0/os/mqtt-v5.0-os.html
+    title: "MQTT Version 5.0 | OASIS Standard"
+    language: en
+    accessed: '2026-10-16'
+    retrieved_by: ai
+    supports:
+      - definition
+      - summary

@@ -1,0 +1,25 @@
+id: smart-home
+domains:
+  - iot/devices-sensors
+level: 1
+relations:
+  prerequisites: []
+  confusable: []
+  related:
+    - sensor
+    - actuator
+    - zigbee
+    - iot-gateway
+status: draft
+provenance:
+  drafted_by: ai
+sources:
+  - ref: csa-iot
+    locator: https://csa-iot.org/all-solutions/matter/
+    title: "Build With Matter | Smart Home Device Solution"
+    language: en
+    accessed: '2026-10-16'
+    retrieved_by: ai
+    supports:
+      - definition
+      - summary

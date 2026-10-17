@@ -1,0 +1,24 @@
+id: ota-update
+domains:
+  - iot/edge-cloud
+level: 2
+relations:
+  prerequisites:
+    - firmware
+  confusable: []
+  related:
+    - device-provisioning
+    - iot-platform
+status: draft
+provenance:
+  drafted_by: ai
+sources:
+  - ref: microsoft-learn
+    locator: https://learn.microsoft.com/en-us/azure/iot-hub-device-update/understand-device-update
+    title: "Introduction to Device Update for Azure IoT Hub | Microsoft Learn"
+    language: en
+    accessed: '2026-10-16'
+    retrieved_by: ai
+    supports:
+      - definition
+      - summary

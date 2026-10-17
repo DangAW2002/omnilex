@@ -1,0 +1,24 @@
+id: ble
+domains:
+  - iot/connectivity-protocols
+level: 2
+relations:
+  prerequisites: []
+  confusable: []
+  related:
+    - zigbee
+    - sensor
+    - smart-home
+status: draft
+provenance:
+  drafted_by: ai
+sources:
+  - ref: bluetooth-sig
+    locator: https://www.bluetooth.com/learn-about-bluetooth/tech-overview/
+    title: "Bluetooth Technology Overview | Bluetooth Technology Website"
+    language: en
+    accessed: '2026-10-16'
+    retrieved_by: ai
+    supports:
+      - definition
+      - summary

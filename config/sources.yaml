@@ -300,3 +300,89 @@ topdev:
   reuse: paraphrase-only
   domains: [it]
   verified_license_at: "2026-10-16"
+
+# wave2 iot
+csa-iot:
+  title: Connectivity Standards Alliance Specifications
+  publisher: Connectivity Standards Alliance
+  url: https://csa-iot.org
+  type: standard
+  tier: A
+  languages: [en]
+  license: all-rights-reserved
+  reuse: paraphrase-only
+  domains: [iot/devices-sensors, iot/connectivity-protocols]
+  verified_license_at: "2026-10-16"
+
+oasis-open:
+  title: OASIS Standards and Technical Committees Documentation
+  publisher: OASIS Open
+  url: https://docs.oasis-open.org
+  type: standard
+  tier: A
+  languages: [en]
+  license: all-rights-reserved
+  reuse: paraphrase-only
+  domains: [iot/connectivity-protocols]
+  verified_license_at: "2026-10-16"
+
+bluetooth-sig:
+  title: Bluetooth Core Specification and Technology Overview
+  publisher: Bluetooth Special Interest Group
+  url: https://www.bluetooth.com
+  type: standard
+  tier: A
+  languages: [en]
+  license: all-rights-reserved
+  reuse: paraphrase-only
+  domains: [iot/connectivity-protocols]
+  verified_license_at: "2026-10-16"
+
+lora-alliance:
+  title: LoRaWAN Technical Specifications
+  publisher: LoRa Alliance
+  url: https://lora-alliance.org
+  type: standard
+  tier: A
+  languages: [en]
+  license: all-rights-reserved
+  reuse: paraphrase-only
+  domains: [iot/connectivity-protocols]
+  verified_license_at: "2026-10-16"
+
+itu:
+  title: ITU-T Recommendations
+  publisher: International Telecommunication Union
+  url: https://www.itu.int
+  type: standard
+  tier: A
+  languages: [en]
+  license: copyright-itu
+  reuse: paraphrase-only
+  domains: [iot/connectivity-protocols, it/infrastructure]
+  verified_license_at: "2026-10-16"
+
+opc-foundation:
+  title: OPC Unified Architecture Specifications
+  publisher: OPC Foundation
+  url: https://opcfoundation.org
+  type: standard
+  tier: A
+  languages: [en]
+  license: all-rights-reserved
+  reuse: paraphrase-only
+  domains: [iot/industrial]
+  verified_license_at: "2026-10-16"
+
+cisco:
+  title: Cisco Industrial Networking and Switching Documentation
+  publisher: Cisco Systems, Inc.
+  url: https://www.cisco.com
+  type: docs
+  tier: B
+  languages: [en]
+  license: all-rights-reserved
+  reuse: paraphrase-only
+  domains: [iot/industrial, it/infrastructure]
+  verified_license_at: "2026-10-16"
+

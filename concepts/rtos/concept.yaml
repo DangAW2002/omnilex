@@ -1,0 +1,25 @@
+id: rtos
+domains:
+  - iot/devices-sensors
+level: 2
+relations:
+  prerequisites:
+    - microcontroller
+    - firmware
+  confusable: []
+  related:
+    - edge-computing
+    - plc
+status: draft
+provenance:
+  drafted_by: ai
+sources:
+  - ref: aws-docs
+    locator: https://docs.aws.amazon.com/freertos/latest/userguide/what-is-freertos.html
+    title: "What is FreeRTOS? - FreeRTOS User Guide"
+    language: en
+    accessed: '2026-10-16'
+    retrieved_by: ai
+    supports:
+      - definition
+      - summary

@@ -1,0 +1,24 @@
+id: coap
+domains:
+  - iot/connectivity-protocols
+level: 2
+relations:
+  prerequisites: []
+  confusable:
+    - mqtt
+  related:
+    - mqtt
+    - iot-gateway
+status: draft
+provenance:
+  drafted_by: ai
+sources:
+  - ref: ietf
+    locator: https://www.rfc-editor.org/rfc/rfc7252.html
+    title: "RFC 7252: The Constrained Application Protocol (CoAP)"
+    language: en
+    accessed: '2026-10-16'
+    retrieved_by: ai
+    supports:
+      - definition
+      - summary

@@ -1,0 +1,153 @@
+batch: ml
+candidates:
+  - id: generative-ai
+    term: Generative AI
+    domain: it/ai-ml/foundations
+    note: alias GenAI
+    batch: ml
+  - id: natural-language-processing
+    term: Natural language processing (NLP)
+    domain: it/ai-ml/nlp
+    note: acronym always
+    batch: ml
+  - id: computer-vision
+    term: Computer vision
+    domain: it/ai-ml/computer-vision
+    batch: ml
+  - id: speech-recognition
+    term: Speech recognition
+    domain: it/ai-ml/nlp
+    note: alias ASR
+    batch: ml
+  - id: ocr
+    term: Optical character recognition (OCR)
+    domain: it/ai-ml/computer-vision
+    note: acronym always
+    batch: ml
+  - id: supervised-learning
+    term: Supervised learning
+    domain: it/ai-ml/foundations
+    batch: ml
+  - id: unsupervised-learning
+    term: Unsupervised learning
+    domain: it/ai-ml/foundations
+    batch: ml
+  - id: reinforcement-learning
+    term: Reinforcement learning
+    domain: it/ai-ml/foundations
+    batch: ml
+  - id: rlhf
+    term: Reinforcement learning from human feedback (RLHF)
+    domain: it/ai-ml/llm-agents
+    note: acronym always
+    batch: ml
+  - id: classification-ml
+    term: Classification
+    qualifier: (ML)
+    domain: it/ai-ml/foundations
+    note: "generic word: autolink label never"
+    batch: ml
+  - id: regression-ml
+    term: Regression
+    qualifier: (ML)
+    domain: it/ai-ml/foundations
+    note: 'generic word: autolink label never; do not alias "regression testing"'
+    batch: ml
+  - id: clustering
+    term: Clustering
+    qualifier: (ML)
+    domain: it/ai-ml/foundations
+    batch: ml
+  - id: feature-engineering
+    term: Feature engineering
+    domain: it/ai-ml/mlops
+    batch: ml
+  - id: precision-recall
+    term: Precision and recall
+    domain: it/ai-ml/mlops
+    batch: ml
+  - id: f1-score
+    term: F1 score
+    domain: it/ai-ml/mlops
+    batch: ml
+  - id: confusion-matrix
+    term: Confusion matrix
+    domain: it/ai-ml/mlops
+    batch: ml
+  - id: underfitting
+    term: Underfitting
+    domain: it/ai-ml/foundations
+    batch: ml
+  - id: regularization
+    term: Regularization
+    qualifier: (ML)
+    domain: it/ai-ml/foundations
+    batch: ml
+  - id: cnn
+    term: Convolutional neural network (CNN)
+    domain: it/ai-ml/computer-vision
+    note: "alias CNN: never (news channel)"
+    batch: ml
+  - id: rnn
+    term: Recurrent neural network (RNN)
+    domain: it/ai-ml/nlp
+    note: acronym always
+    batch: ml
+  - id: transfer-learning
+    term: Transfer learning
+    domain: it/ai-ml/foundations
+    batch: ml
+  - id: foundation-model
+    term: Foundation model
+    domain: it/ai-ml/foundations
+    batch: ml
+  - id: open-weight-model
+    term: Open-weight model
+    domain: it/ai-ml/llm-agents
+    batch: ml
+  - id: multimodal-model
+    term: Multimodal model
+    domain: it/ai-ml/llm-agents
+    batch: ml
+  - id: diffusion-model
+    term: Diffusion model
+    domain: it/ai-ml/computer-vision
+    batch: ml
+  - id: model-drift
+    term: Model drift
+    domain: it/ai-ml/mlops
+    batch: ml
+  - id: data-labeling
+    term: Data labeling
+    domain: it/ai-ml/mlops
+    batch: ml
+  - id: synthetic-data
+    term: Synthetic data
+    domain: it/ai-ml/mlops
+    batch: ml
+  - id: semantic-search
+    term: Semantic search
+    domain: it/ai-ml/nlp
+    batch: ml
+  - id: reranking
+    term: Reranking
+    domain: it/ai-ml/llm-agents
+    batch: ml
+  - id: chunking
+    term: Chunking
+    qualifier: (RAG)
+    domain: it/ai-ml/llm-agents
+    batch: ml
+  - id: red-teaming
+    term: Red teaming
+    qualifier: (AI)
+    domain: it/ai-ml/ai-safety-governance
+    batch: ml
+  - id: ai-alignment
+    term: AI alignment
+    domain: it/ai-ml/ai-safety-governance
+    batch: ml
+  - id: mlops
+    term: MLOps
+    domain: it/ai-ml/mlops
+    batch: ml

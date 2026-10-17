@@ -1,0 +1,150 @@
+batch: cloud
+candidates:
+  - id: iaas
+    term: Infrastructure as a Service (IaaS)
+    domain: it/infrastructure/cloud
+    note: acronym always
+    batch: cloud
+  - id: paas
+    term: Platform as a Service (PaaS)
+    domain: it/infrastructure/cloud
+    note: acronym always
+    batch: cloud
+  - id: saas
+    term: Software as a Service (SaaS)
+    domain: it/infrastructure/cloud
+    also_domains:
+      - it/business-systems/enterprise-apps
+    note: acronym always
+    batch: cloud
+  - id: hybrid-cloud
+    term: Hybrid cloud
+    domain: it/infrastructure/cloud
+    batch: cloud
+  - id: multi-cloud
+    term: Multi-cloud
+    domain: it/infrastructure/cloud
+    batch: cloud
+  - id: cloud-region
+    term: Region
+    qualifier: (Cloud)
+    domain: it/infrastructure/cloud
+    note: "generic word: autolink label never"
+    batch: cloud
+  - id: availability-zone
+    term: Availability zone (AZ)
+    domain: it/infrastructure/cloud
+    batch: cloud
+  - id: vpc
+    term: Virtual Private Cloud (VPC)
+    domain: it/infrastructure/cloud
+    note: acronym always
+    batch: cloud
+  - id: subnet
+    term: Subnet
+    domain: it/infrastructure/networking
+    batch: cloud
+  - id: firewall
+    term: Firewall
+    domain: it/infrastructure/networking
+    also_domains:
+      - it/security/vulnerabilities
+    batch: cloud
+  - id: nat
+    term: Network Address Translation (NAT)
+    domain: it/infrastructure/networking
+    note: acronym always
+    batch: cloud
+  - id: ip-address
+    term: IP address
+    domain: it/infrastructure/networking
+    batch: cloud
+  - id: tcp
+    term: Transmission Control Protocol (TCP)
+    domain: it/infrastructure/networking
+    note: acronym always
+    batch: cloud
+  - id: udp
+    term: User Datagram Protocol (UDP)
+    domain: it/infrastructure/networking
+    note: acronym always
+    batch: cloud
+  - id: ssh
+    term: Secure Shell (SSH)
+    domain: it/infrastructure/networking
+    also_domains:
+      - it/security/authentication
+    note: acronym always
+    batch: cloud
+  - id: vpn
+    term: Virtual Private Network (VPN)
+    domain: it/infrastructure/networking
+    note: acronym always
+    batch: cloud
+  - id: proxy-server
+    term: Proxy server
+    domain: it/infrastructure/networking
+    batch: cloud
+  - id: network-port
+    term: Port
+    qualifier: (Networking)
+    domain: it/infrastructure/networking
+    note: "generic word: autolink label never"
+    batch: cloud
+  - id: object-storage
+    term: Object storage
+    domain: it/infrastructure/cloud
+    batch: cloud
+  - id: block-storage
+    term: Block storage
+    domain: it/infrastructure/cloud
+    batch: cloud
+  - id: cold-start
+    term: Cold start
+    qualifier: (Serverless)
+    domain: it/infrastructure/cloud
+    batch: cloud
+  - id: cloud-instance
+    term: Instance
+    qualifier: (Cloud)
+    domain: it/infrastructure/cloud
+    note: "generic word: autolink label never"
+    batch: cloud
+  - id: spot-instance
+    term: Spot instance
+    domain: it/infrastructure/cloud
+    batch: cloud
+  - id: finops
+    term: FinOps
+    domain: it/infrastructure/cloud
+    batch: cloud
+  - id: terraform
+    term: Terraform
+    domain: it/devops/iac
+    batch: cloud
+  - id: ansible
+    term: Ansible
+    domain: it/devops/iac
+    batch: cloud
+  - id: helm
+    term: Helm
+    qualifier: (Kubernetes)
+    domain: it/devops/containers
+    batch: cloud
+  - id: docker-compose
+    term: Docker Compose
+    domain: it/devops/containers
+    batch: cloud
+  - id: container-registry
+    term: Container registry
+    domain: it/devops/containers
+    batch: cloud
+  - id: service-discovery
+    term: Service discovery
+    domain: it/infrastructure/networking
+    batch: cloud
+  - id: bandwidth
+    term: Bandwidth
+    qualifier: (Network)
+    domain: it/infrastructure/networking
+    batch: cloud

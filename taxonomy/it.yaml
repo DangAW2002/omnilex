@@ -150,3 +150,16 @@ children:
         labels:
           vi: Lỗ hổng
           en: Vulnerabilities
+  - id: business-systems
+    labels:
+      vi: Hệ thống doanh nghiệp
+      en: Business systems
+    children:
+      - id: enterprise-apps
+        labels:
+          vi: Ứng dụng doanh nghiệp
+          en: Enterprise applications
+      - id: automation
+        labels:
+          vi: Tự động hóa quy trình
+          en: Process automation

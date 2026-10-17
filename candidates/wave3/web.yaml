@@ -1,0 +1,139 @@
+batch: web
+candidates:
+  - id: http
+    term: Hypertext Transfer Protocol (HTTP)
+    domain: it/web/api
+    also_domains:
+      - it/infrastructure/networking
+    note: acronym always
+    batch: web
+  - id: https
+    term: HTTPS
+    domain: it/web/api
+    batch: web
+  - id: url
+    term: URL
+    domain: it/web/frontend
+    note: acronym always
+    batch: web
+  - id: html
+    term: HTML
+    domain: it/web/frontend
+    note: acronym always
+    batch: web
+  - id: css
+    term: CSS
+    domain: it/web/frontend
+    note: acronym always
+    batch: web
+  - id: javascript
+    term: JavaScript
+    domain: it/web/frontend
+    also_domains:
+      - it/software-engineering/programming-concepts
+    note: alias JS
+    batch: web
+  - id: typescript
+    term: TypeScript
+    domain: it/web/frontend
+    also_domains:
+      - it/software-engineering/programming-concepts
+    note: "alias TS: never"
+    batch: web
+  - id: dom
+    term: Document Object Model (DOM)
+    domain: it/web/frontend
+    note: acronym always
+    batch: web
+  - id: single-page-application
+    term: Single-page application (SPA)
+    domain: it/web/frontend
+    note: acronym always
+    batch: web
+  - id: server-side-rendering
+    term: Server-side rendering (SSR)
+    domain: it/web/frontend
+    note: acronym always
+    batch: web
+  - id: static-site-generation
+    term: Static site generation (SSG)
+    domain: it/web/frontend
+    batch: web
+  - id: hydration
+    term: Hydration
+    qualifier: (Web)
+    domain: it/web/frontend
+    batch: web
+  - id: progressive-web-app
+    term: Progressive web app (PWA)
+    domain: it/web/frontend
+    note: acronym always
+    batch: web
+  - id: responsive-design
+    term: Responsive design
+    domain: it/web/frontend
+    batch: web
+  - id: web-accessibility
+    term: Web accessibility (a11y)
+    domain: it/web/frontend
+    batch: web
+  - id: wcag
+    term: WCAG
+    domain: it/web/frontend
+    note: acronym always
+    batch: web
+  - id: react
+    term: React
+    qualifier: (Library)
+    domain: it/web/frontend
+    note: "generic word: autolink label never"
+    batch: web
+  - id: nodejs
+    term: Node.js
+    domain: it/web/backend
+    batch: web
+  - id: bundler
+    term: Bundler
+    qualifier: (JavaScript)
+    domain: it/web/frontend
+    batch: web
+  - id: tree-shaking
+    term: Tree shaking
+    domain: it/web/frontend
+    batch: web
+  - id: code-splitting
+    term: Code splitting
+    domain: it/web/frontend
+    batch: web
+  - id: lazy-loading
+    term: Lazy loading
+    domain: it/web/frontend
+    batch: web
+  - id: core-web-vitals
+    term: Core Web Vitals
+    domain: it/web/frontend
+    also_domains:
+      - media/digital-marketing/seo
+    batch: web
+  - id: local-storage
+    term: localStorage
+    domain: it/web/frontend
+    batch: web
+  - id: service-worker
+    term: Service worker
+    domain: it/web/frontend
+    batch: web
+  - id: browser-cache
+    term: Browser cache
+    domain: it/web/frontend
+    batch: web
+  - id: web-server
+    term: Web server
+    domain: it/web/backend
+    batch: web
+  - id: nginx
+    term: Nginx
+    domain: it/web/backend
+    also_domains:
+      - it/infrastructure/networking
+    batch: web

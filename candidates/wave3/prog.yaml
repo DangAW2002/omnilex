@@ -1,0 +1,165 @@
+batch: prog
+candidates:
+  - id: variable
+    term: Variable
+    qualifier: (Programming)
+    domain: it/software-engineering/programming-concepts
+    note: "generic word: autolink label never"
+    batch: prog
+  - id: function-programming
+    term: Function
+    qualifier: (Programming)
+    domain: it/software-engineering/programming-concepts
+    note: "generic word: autolink label never"
+    batch: prog
+  - id: class-oop
+    term: Class
+    qualifier: (Programming)
+    domain: it/software-engineering/programming-concepts
+    note: "generic word: autolink label never"
+    batch: prog
+  - id: object-oriented-programming
+    term: Object-oriented programming (OOP)
+    domain: it/software-engineering/programming-concepts
+    note: acronym always
+    batch: prog
+  - id: functional-programming
+    term: Functional programming
+    domain: it/software-engineering/programming-concepts
+    batch: prog
+  - id: recursion
+    term: Recursion
+    domain: it/software-engineering/programming-concepts
+    batch: prog
+  - id: closure
+    term: Closure
+    qualifier: (Programming)
+    domain: it/software-engineering/programming-concepts
+    batch: prog
+  - id: async-await
+    term: Async/await
+    domain: it/software-engineering/programming-concepts
+    batch: prog
+  - id: promise
+    term: Promise
+    qualifier: (Programming)
+    domain: it/software-engineering/programming-concepts
+    note: "generic word: autolink label never"
+    batch: prog
+  - id: callback
+    term: Callback
+    qualifier: (Programming)
+    domain: it/software-engineering/programming-concepts
+    batch: prog
+  - id: thread-programming
+    term: Thread
+    qualifier: (Programming)
+    domain: it/software-engineering/programming-concepts
+    note: homonym with thread-iot (batch iota); autolink label never
+    batch: prog
+  - id: os-process
+    term: Process
+    qualifier: (Operating system)
+    domain: it/software-engineering/programming-concepts
+    note: "generic word: autolink label never"
+    batch: prog
+  - id: concurrency
+    term: Concurrency
+    domain: it/software-engineering/programming-concepts
+    batch: prog
+  - id: parallelism
+    term: Parallelism
+    qualifier: (Computing)
+    domain: it/software-engineering/programming-concepts
+    batch: prog
+  - id: memory-leak
+    term: Memory leak
+    domain: it/software-engineering/programming-concepts
+    batch: prog
+  - id: garbage-collection
+    term: Garbage collection
+    domain: it/software-engineering/programming-concepts
+    batch: prog
+  - id: compiler
+    term: Compiler
+    domain: it/software-engineering/programming-concepts
+    batch: prog
+  - id: interpreter
+    term: Interpreter
+    qualifier: (Programming)
+    domain: it/software-engineering/programming-concepts
+    batch: prog
+  - id: exception-handling
+    term: Exception
+    qualifier: (Programming)
+    domain: it/software-engineering/programming-concepts
+    note: "generic word: autolink label never"
+    batch: prog
+  - id: stack-trace
+    term: Stack trace
+    domain: it/software-engineering/programming-concepts
+    batch: prog
+  - id: debugging
+    term: Debugging
+    domain: it/software-engineering/practices
+    batch: prog
+  - id: breakpoint
+    term: Breakpoint
+    qualifier: (Debugging)
+    domain: it/software-engineering/practices
+    batch: prog
+  - id: regular-expression
+    term: Regular expression (regex)
+    domain: it/software-engineering/programming-concepts
+    batch: prog
+  - id: algorithm
+    term: Algorithm
+    domain: it/software-engineering/programming-concepts
+    batch: prog
+  - id: data-structure
+    term: Data structure
+    domain: it/software-engineering/programming-concepts
+    batch: prog
+  - id: big-o-notation
+    term: Big O notation
+    domain: it/software-engineering/programming-concepts
+    batch: prog
+  - id: hash-table
+    term: Hash table
+    domain: it/software-engineering/programming-concepts
+    batch: prog
+  - id: array
+    term: Array
+    qualifier: (Programming)
+    domain: it/software-engineering/programming-concepts
+    note: "generic word: autolink label never"
+    batch: prog
+  - id: stack-data-structure
+    term: Stack
+    qualifier: (Data structure)
+    domain: it/software-engineering/programming-concepts
+    note: "generic word: autolink label never"
+    batch: prog
+  - id: binary-search
+    term: Binary search
+    domain: it/software-engineering/programming-concepts
+    batch: prog
+  - id: null-reference
+    term: Null reference
+    domain: it/software-engineering/programming-concepts
+    note: alias null pointer
+    batch: prog
+  - id: immutability
+    term: Immutability
+    domain: it/software-engineering/programming-concepts
+    batch: prog
+  - id: generics
+    term: Generics
+    qualifier: (Programming)
+    domain: it/software-engineering/programming-concepts
+    batch: prog
+  - id: python
+    term: Python
+    qualifier: (Programming language)
+    domain: it/software-engineering/programming-concepts
+    batch: prog

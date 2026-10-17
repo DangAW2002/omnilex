@@ -1,0 +1,141 @@
+batch: sec
+candidates:
+  - id: authorization
+    term: Authorization
+    qualifier: (Security)
+    domain: it/security/authentication
+    batch: sec
+  - id: authentication
+    term: Authentication
+    domain: it/security/authentication
+    batch: sec
+  - id: rbac
+    term: Role-based access control (RBAC)
+    domain: it/security/authentication
+    note: acronym always
+    batch: sec
+  - id: sso
+    term: Single sign-on (SSO)
+    domain: it/security/authentication
+    note: acronym always
+    batch: sec
+  - id: saml
+    term: SAML
+    domain: it/security/authentication
+    note: acronym always
+    batch: sec
+  - id: openid-connect
+    term: OpenID Connect (OIDC)
+    domain: it/security/authentication
+    batch: sec
+  - id: api-key
+    term: API key
+    domain: it/security/authentication
+    also_domains:
+      - it/web/api
+    batch: sec
+  - id: password-salting
+    term: Salt
+    qualifier: (Cryptography)
+    domain: it/security/cryptography
+    note: "generic word: autolink label never"
+    batch: sec
+  - id: public-key-cryptography
+    term: Public-key cryptography
+    domain: it/security/cryptography
+    batch: sec
+  - id: digital-signature
+    term: Digital signature
+    domain: it/security/cryptography
+    batch: sec
+  - id: tls-certificate
+    term: Certificate
+    qualifier: (TLS)
+    domain: it/security/cryptography
+    note: "generic word: autolink label never"
+    batch: sec
+  - id: certificate-authority
+    term: Certificate authority (CA)
+    domain: it/security/cryptography
+    batch: sec
+  - id: end-to-end-encryption
+    term: End-to-end encryption (E2EE)
+    domain: it/security/cryptography
+    batch: sec
+  - id: phishing
+    term: Phishing
+    domain: it/security/vulnerabilities
+    batch: sec
+  - id: ransomware
+    term: Ransomware
+    domain: it/security/vulnerabilities
+    batch: sec
+  - id: malware
+    term: Malware
+    domain: it/security/vulnerabilities
+    batch: sec
+  - id: ddos
+    term: Distributed denial-of-service (DDoS)
+    domain: it/security/vulnerabilities
+    note: acronym always
+    batch: sec
+  - id: brute-force-attack
+    term: Brute-force attack
+    domain: it/security/vulnerabilities
+    batch: sec
+  - id: penetration-testing
+    term: Penetration testing
+    domain: it/security/vulnerabilities
+    note: alias pentest
+    batch: sec
+  - id: sast
+    term: Static application security testing (SAST)
+    domain: it/security/vulnerabilities
+    note: acronym always
+    batch: sec
+  - id: dast
+    term: Dynamic application security testing (DAST)
+    domain: it/security/vulnerabilities
+    note: acronym always
+    batch: sec
+  - id: supply-chain-attack
+    term: Supply chain attack
+    qualifier: (Software)
+    domain: it/security/vulnerabilities
+    batch: sec
+  - id: waf
+    term: Web application firewall (WAF)
+    domain: it/security/vulnerabilities
+    note: acronym always
+    batch: sec
+  - id: intrusion-detection-system
+    term: Intrusion detection system (IDS)
+    domain: it/security/vulnerabilities
+    note: acronym always
+    batch: sec
+  - id: siem
+    term: SIEM
+    domain: it/security/vulnerabilities
+    note: acronym always
+    batch: sec
+  - id: soc-security
+    term: Security Operations Center (SOC)
+    domain: it/security/vulnerabilities
+    note: "alias SOC: never"
+    batch: sec
+  - id: threat-modeling
+    term: Threat modeling
+    domain: it/security/vulnerabilities
+    batch: sec
+  - id: owasp-top-10
+    term: OWASP Top 10
+    domain: it/security/vulnerabilities
+    batch: sec
+  - id: zero-day
+    term: Zero-day vulnerability
+    domain: it/security/vulnerabilities
+    batch: sec
+  - id: security-patch
+    term: Security patch
+    domain: it/security/vulnerabilities
+    batch: sec

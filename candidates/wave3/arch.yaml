@@ -1,0 +1,123 @@
+batch: arch
+candidates:
+  - id: monolith
+    term: Monolithic architecture
+    domain: it/software-engineering/architecture
+    note: alias monolith
+    batch: arch
+  - id: api-gateway
+    term: API gateway
+    domain: it/web/api
+    also_domains:
+      - it/software-engineering/architecture
+    batch: arch
+  - id: service-mesh
+    term: Service mesh
+    domain: it/software-engineering/architecture
+    batch: arch
+  - id: reverse-proxy
+    term: Reverse proxy
+    domain: it/infrastructure/networking
+    batch: arch
+  - id: circuit-breaker
+    term: Circuit breaker
+    qualifier: (Software)
+    domain: it/software-engineering/architecture
+    batch: arch
+  - id: exponential-backoff
+    term: Exponential backoff
+    domain: it/software-engineering/architecture
+    batch: arch
+  - id: event-driven-architecture
+    term: Event-driven architecture
+    domain: it/software-engineering/architecture
+    batch: arch
+  - id: event-sourcing
+    term: Event sourcing
+    domain: it/software-engineering/architecture
+    batch: arch
+  - id: cqrs
+    term: Command Query Responsibility Segregation (CQRS)
+    domain: it/software-engineering/architecture
+    note: acronym always
+    batch: arch
+  - id: saga-pattern
+    term: Saga pattern
+    domain: it/software-engineering/architecture
+    batch: arch
+  - id: domain-driven-design
+    term: Domain-driven design (DDD)
+    domain: it/software-engineering/architecture
+    batch: arch
+  - id: clean-architecture
+    term: Clean architecture
+    domain: it/software-engineering/architecture
+    batch: arch
+  - id: dependency-injection
+    term: Dependency injection
+    domain: it/software-engineering/programming-concepts
+    batch: arch
+  - id: grpc
+    term: gRPC
+    domain: it/web/api
+    batch: arch
+  - id: websocket
+    term: WebSocket
+    domain: it/web/api
+    batch: arch
+  - id: server-sent-events
+    term: Server-sent events (SSE)
+    domain: it/web/api
+    batch: arch
+  - id: horizontal-scaling
+    term: Horizontal scaling
+    domain: it/infrastructure/cloud
+    note: alias scale out
+    batch: arch
+  - id: vertical-scaling
+    term: Vertical scaling
+    domain: it/infrastructure/cloud
+    note: alias scale up
+    batch: arch
+  - id: high-availability
+    term: High availability (HA)
+    domain: it/devops/sre-operations
+    batch: arch
+  - id: failover
+    term: Failover
+    domain: it/devops/sre-operations
+    batch: arch
+  - id: disaster-recovery
+    term: Disaster recovery (DR)
+    domain: it/devops/sre-operations
+    batch: arch
+  - id: rto
+    term: Recovery Time Objective (RTO)
+    domain: it/devops/sre-operations
+    note: acronym always
+    batch: arch
+  - id: rpo
+    term: Recovery Point Objective (RPO)
+    domain: it/devops/sre-operations
+    note: acronym always
+    batch: arch
+  - id: single-point-of-failure
+    term: Single point of failure (SPOF)
+    domain: it/devops/sre-operations
+    batch: arch
+  - id: consistent-hashing
+    term: Consistent hashing
+    domain: it/software-engineering/architecture
+    batch: arch
+  - id: load-testing
+    term: Load testing
+    domain: it/software-engineering/testing
+    batch: arch
+  - id: backpressure
+    term: Backpressure
+    domain: it/software-engineering/architecture
+    batch: arch
+  - id: distributed-system
+    term: Distributed system
+    domain: it/software-engineering/architecture
+    batch: arch

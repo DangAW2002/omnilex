@@ -1,0 +1,138 @@
+batch: iota
+candidates:
+  - id: embedded-system
+    term: Embedded system
+    domain: iot/devices-sensors
+    batch: iota
+  - id: single-board-computer
+    term: Single-board computer (SBC)
+    domain: iot/devices-sensors
+    batch: iota
+  - id: raspberry-pi
+    term: Raspberry Pi
+    domain: iot/devices-sensors
+    batch: iota
+  - id: arduino
+    term: Arduino
+    domain: iot/devices-sensors
+    batch: iota
+  - id: esp32
+    term: ESP32
+    domain: iot/devices-sensors
+    batch: iota
+  - id: gpio
+    term: General-purpose input/output (GPIO)
+    domain: iot/devices-sensors
+    note: acronym always
+    batch: iota
+  - id: i2c
+    term: I²C
+    domain: iot/devices-sensors
+    note: alias I2C
+    batch: iota
+  - id: spi-bus
+    term: Serial Peripheral Interface (SPI)
+    domain: iot/devices-sensors
+    note: "alias SPI: always"
+    batch: iota
+  - id: uart
+    term: UART
+    domain: iot/devices-sensors
+    note: acronym always
+    batch: iota
+  - id: adc
+    term: Analog-to-digital converter (ADC)
+    domain: iot/devices-sensors
+    note: acronym always
+    batch: iota
+  - id: pwm
+    term: Pulse-width modulation (PWM)
+    domain: iot/devices-sensors
+    note: acronym always
+    batch: iota
+  - id: rfid
+    term: Radio-frequency identification (RFID)
+    domain: iot/devices-sensors
+    note: acronym always
+    batch: iota
+  - id: nfc
+    term: Near-field communication (NFC)
+    domain: iot/connectivity-protocols
+    note: acronym always
+    batch: iota
+  - id: gnss
+    term: GNSS
+    domain: iot/devices-sensors
+    note: alias GPS
+    batch: iota
+  - id: lidar
+    term: LiDAR
+    domain: iot/devices-sensors
+    batch: iota
+  - id: imu
+    term: Inertial measurement unit (IMU)
+    domain: iot/devices-sensors
+    note: acronym always
+    batch: iota
+  - id: accelerometer
+    term: Accelerometer
+    domain: iot/devices-sensors
+    batch: iota
+  - id: wearable
+    term: Wearable device
+    domain: iot/devices-sensors
+    batch: iota
+  - id: smart-meter
+    term: Smart meter
+    domain: iot/devices-sensors
+    batch: iota
+  - id: low-power-mode
+    term: Sleep mode
+    qualifier: (Embedded)
+    domain: iot/devices-sensors
+    batch: iota
+  - id: energy-harvesting
+    term: Energy harvesting
+    domain: iot/devices-sensors
+    batch: iota
+  - id: secure-boot
+    term: Secure boot
+    domain: iot/devices-sensors
+    also_domains:
+      - it/security/cryptography
+    batch: iota
+  - id: thread-iot
+    term: Thread
+    qualifier: (IoT)
+    domain: iot/connectivity-protocols
+    note: homonym with thread-programming (batch prog); autolink label never
+    batch: iota
+  - id: matter-iot
+    term: Matter
+    qualifier: (IoT)
+    domain: iot/connectivity-protocols
+    note: "generic word: autolink label never"
+    batch: iota
+  - id: z-wave
+    term: Z-Wave
+    domain: iot/connectivity-protocols
+    batch: iota
+  - id: wifi
+    term: Wi-Fi
+    domain: iot/connectivity-protocols
+    also_domains:
+      - it/infrastructure/networking
+    batch: iota
+  - id: lora-radio
+    term: LoRa
+    qualifier: (IoT)
+    domain: iot/connectivity-protocols
+    note: "homonym with existing lora (LoRA, AI): keep exact-case LoRa, orchestrator
+      links them at integration"
+    batch: iota
+  - id: tinyml
+    term: TinyML
+    domain: iot/edge-cloud
+    also_domains:
+      - it/ai-ml/mlops
+    batch: iota

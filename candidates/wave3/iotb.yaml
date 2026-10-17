@@ -1,0 +1,137 @@
+batch: iotb
+candidates:
+  - id: lpwan
+    term: Low-power wide-area network (LPWAN)
+    domain: iot/connectivity-protocols
+    note: acronym always
+    batch: iotb
+  - id: lte-m
+    term: LTE-M
+    domain: iot/connectivity-protocols
+    batch: iotb
+  - id: 5g
+    term: 5G
+    domain: iot/connectivity-protocols
+    batch: iotb
+  - id: esim
+    term: eSIM
+    domain: iot/connectivity-protocols
+    batch: iotb
+  - id: m2m
+    term: Machine-to-machine (M2M)
+    domain: iot/connectivity-protocols
+    note: acronym always
+    batch: iotb
+  - id: lwm2m
+    term: LwM2M
+    domain: iot/connectivity-protocols
+    batch: iotb
+  - id: dtls
+    term: DTLS
+    domain: iot/connectivity-protocols
+    also_domains:
+      - it/security/cryptography
+    note: acronym always
+    batch: iotb
+  - id: can-bus
+    term: CAN bus
+    domain: iot/industrial
+    batch: iotb
+  - id: bacnet
+    term: BACnet
+    domain: iot/industrial
+    batch: iotb
+  - id: poe
+    term: Power over Ethernet (PoE)
+    domain: iot/devices-sensors
+    note: acronym always
+    batch: iotb
+  - id: fog-computing
+    term: Fog computing
+    domain: iot/edge-cloud
+    batch: iotb
+  - id: edge-ai
+    term: Edge AI
+    domain: iot/edge-cloud
+    also_domains:
+      - it/ai-ml/mlops
+    batch: iotb
+  - id: device-shadow
+    term: Device shadow
+    domain: iot/edge-cloud
+    batch: iotb
+  - id: fleet-management-iot
+    term: Device fleet management
+    domain: iot/edge-cloud
+    batch: iotb
+  - id: iiot
+    term: Industrial Internet of Things (IIoT)
+    domain: iot/industrial
+    note: acronym always
+    batch: iotb
+  - id: industry-4-0
+    term: Industry 4.0
+    domain: iot/industrial
+    batch: iotb
+  - id: hmi
+    term: Human-machine interface (HMI)
+    domain: iot/industrial
+    note: acronym always
+    batch: iotb
+  - id: rtu
+    term: Remote terminal unit (RTU)
+    domain: iot/industrial
+    note: acronym always
+    batch: iotb
+  - id: dcs
+    term: Distributed control system (DCS)
+    domain: iot/industrial
+    note: acronym always
+    batch: iotb
+  - id: mes
+    term: Manufacturing execution system (MES)
+    domain: iot/industrial
+    note: acronym always
+    batch: iotb
+  - id: oee
+    term: Overall equipment effectiveness (OEE)
+    domain: iot/industrial
+    note: acronym always
+    batch: iotb
+  - id: condition-monitoring
+    term: Condition monitoring
+    domain: iot/industrial
+    batch: iotb
+  - id: asset-tracking
+    term: Asset tracking
+    domain: iot/applications
+    batch: iotb
+  - id: geofencing
+    term: Geofencing
+    domain: iot/applications
+    batch: iotb
+  - id: smart-city
+    term: Smart city
+    domain: iot/applications
+    batch: iotb
+  - id: smart-agriculture
+    term: Smart agriculture
+    domain: iot/applications
+    batch: iotb
+  - id: telematics
+    term: Telematics
+    domain: iot/applications
+    batch: iotb
+  - id: v2x
+    term: Vehicle-to-everything (V2X)
+    domain: iot/applications
+    note: acronym always
+    batch: iotb
+  - id: cold-chain-monitoring
+    term: Cold chain monitoring
+    domain: iot/applications
+    batch: iotb
+  - id: smart-building
+    term: Smart building
+    domain: iot/applications
+    batch: iotb

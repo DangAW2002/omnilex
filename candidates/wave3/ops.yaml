@@ -1,0 +1,112 @@
+batch: ops
+candidates:
+  - id: gitops
+    term: GitOps
+    domain: it/devops/ci-cd
+    batch: ops
+  - id: github-actions
+    term: GitHub Actions
+    domain: it/devops/ci-cd
+    batch: ops
+  - id: jenkins
+    term: Jenkins
+    domain: it/devops/ci-cd
+    batch: ops
+  - id: build-artifact
+    term: Artifact
+    qualifier: (Build)
+    domain: it/devops/ci-cd
+    note: "generic word: autolink label never"
+    batch: ops
+  - id: trunk-based-development
+    term: Trunk-based development
+    domain: it/software-engineering/version-control
+    batch: ops
+  - id: chaos-engineering
+    term: Chaos engineering
+    domain: it/devops/sre-operations
+    batch: ops
+  - id: runbook
+    term: Runbook
+    domain: it/devops/sre-operations
+    batch: ops
+  - id: alerting
+    term: Alerting
+    domain: it/devops/observability
+    batch: ops
+  - id: error-budget
+    term: Error budget
+    domain: it/devops/sre-operations
+    batch: ops
+  - id: mttr
+    term: Mean time to recovery (MTTR)
+    domain: it/devops/sre-operations
+    note: acronym always
+    batch: ops
+  - id: capacity-planning
+    term: Capacity planning
+    domain: it/devops/sre-operations
+    batch: ops
+  - id: prometheus
+    term: Prometheus
+    qualifier: (Monitoring)
+    domain: it/devops/observability
+    batch: ops
+  - id: grafana
+    term: Grafana
+    domain: it/devops/observability
+    batch: ops
+  - id: opentelemetry
+    term: OpenTelemetry
+    domain: it/devops/observability
+    batch: ops
+  - id: apm
+    term: Application performance monitoring (APM)
+    domain: it/devops/observability
+    note: acronym always
+    batch: ops
+  - id: health-check
+    term: Health check
+    qualifier: (Software)
+    domain: it/devops/sre-operations
+    batch: ops
+  - id: liveness-probe
+    term: Liveness probe
+    domain: it/devops/containers
+    batch: ops
+  - id: readiness-probe
+    term: Readiness probe
+    domain: it/devops/containers
+    batch: ops
+  - id: configuration-management
+    term: Configuration management
+    domain: it/devops/iac
+    batch: ops
+  - id: immutable-infrastructure
+    term: Immutable infrastructure
+    domain: it/devops/iac
+    batch: ops
+  - id: devops
+    term: DevOps
+    domain: it/devops/ci-cd
+    batch: ops
+  - id: sre
+    term: Site reliability engineering (SRE)
+    domain: it/devops/sre-operations
+    note: acronym always
+    batch: ops
+  - id: platform-engineering
+    term: Platform engineering
+    domain: it/devops/sre-operations
+    batch: ops
+  - id: toil
+    term: Toil
+    qualifier: (SRE)
+    domain: it/devops/sre-operations
+    batch: ops
+  - id: dashboard-monitoring
+    term: Dashboard
+    qualifier: (Monitoring)
+    domain: it/devops/observability
+    note: "generic word: autolink label never"
+    batch: ops

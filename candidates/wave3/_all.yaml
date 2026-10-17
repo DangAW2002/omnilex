@@ -1,0 +1,1499 @@
+note: "Wave 2 master keyword list. One id belongs to exactly one batch.
+  Generated from the orchestrator list; scaffold with: tb new --from <batch
+  file>"
+candidates:
+  - id: apache-kafka
+    term: Apache Kafka
+    domain: it/data/data-engineering
+    also_domains:
+      - it/web/backend
+    note: alias Kafka
+    batch: data
+  - id: event-streaming
+    term: Event streaming
+    domain: it/data/data-engineering
+    batch: data
+  - id: publish-subscribe
+    term: Publish-subscribe (pub/sub)
+    domain: it/web/backend
+    also_domains:
+      - it/data/data-engineering
+    note: alias pub/sub
+    batch: data
+  - id: rabbitmq
+    term: RabbitMQ
+    domain: it/web/backend
+    batch: data
+  - id: change-data-capture
+    term: Change data capture (CDC)
+    domain: it/data/data-engineering
+    note: "alias CDC: never (collides with other meanings)"
+    batch: data
+  - id: stream-processing
+    term: Stream processing
+    domain: it/data/data-engineering
+    batch: data
+  - id: batch-processing
+    term: Batch processing
+    domain: it/data/data-engineering
+    batch: data
+  - id: apache-spark
+    term: Apache Spark
+    domain: it/data/data-engineering
+    note: "alias Spark: never"
+    batch: data
+  - id: apache-flink
+    term: Apache Flink
+    domain: it/data/data-engineering
+    batch: data
+  - id: apache-airflow
+    term: Apache Airflow
+    domain: it/data/data-engineering
+    note: alias Airflow
+    batch: data
+  - id: data-lakehouse
+    term: Data lakehouse
+    domain: it/data/data-engineering
+    batch: data
+  - id: data-governance
+    term: Data governance
+    domain: it/data/data-engineering
+    batch: data
+  - id: data-lineage
+    term: Data lineage
+    domain: it/data/data-engineering
+    batch: data
+  - id: data-quality
+    term: Data quality
+    domain: it/data/data-engineering
+    batch: data
+  - id: olap
+    term: Online Analytical Processing (OLAP)
+    domain: it/data/analytics
+    note: acronym always
+    batch: data
+  - id: oltp
+    term: Online Transaction Processing (OLTP)
+    domain: it/data/database
+    note: acronym always
+    batch: data
+  - id: columnar-storage
+    term: Columnar storage
+    domain: it/data/database
+    batch: data
+  - id: relational-database
+    term: Relational database
+    domain: it/data/database
+    batch: data
+  - id: nosql
+    term: NoSQL
+    domain: it/data/database
+    batch: data
+  - id: primary-key
+    term: Primary key
+    domain: it/data/database
+    batch: data
+  - id: foreign-key
+    term: Foreign key
+    domain: it/data/database
+    batch: data
+  - id: database-normalization
+    term: Normalization
+    qualifier: (Database)
+    domain: it/data/database
+    note: "generic word: autolink label never"
+    batch: data
+  - id: acid
+    term: ACID
+    qualifier: (Database)
+    domain: it/data/database
+    note: acronym; autolink label never (common word acid)
+    batch: data
+  - id: cap-theorem
+    term: CAP theorem
+    domain: it/data/database
+    batch: data
+  - id: eventual-consistency
+    term: Eventual consistency
+    domain: it/data/database
+    batch: data
+  - id: deadlock
+    term: Deadlock
+    domain: it/data/database
+    also_domains:
+      - it/software-engineering/programming-concepts
+    batch: data
+  - id: connection-pool
+    term: Connection pool
+    domain: it/data/database
+    batch: data
+  - id: key-value-store
+    term: Key-value store
+    domain: it/data/database
+    batch: data
+  - id: document-database
+    term: Document database
+    domain: it/data/database
+    batch: data
+  - id: graph-database
+    term: Graph database
+    domain: it/data/database
+    batch: data
+  - id: time-series-database
+    term: Time-series database
+    domain: it/data/database
+    also_domains:
+      - iot/edge-cloud
+    batch: data
+  - id: postgresql
+    term: PostgreSQL
+    domain: it/data/database
+    note: alias Postgres
+    batch: data
+  - id: mongodb
+    term: MongoDB
+    domain: it/data/database
+    batch: data
+  - id: redis
+    term: Redis
+    domain: it/data/database
+    also_domains:
+      - it/web/backend
+    batch: data
+  - id: elasticsearch
+    term: Elasticsearch
+    domain: it/data/database
+    batch: data
+  - id: full-text-search
+    term: Full-text search
+    domain: it/data/database
+    batch: data
+  - id: materialized-view
+    term: Materialized view
+    domain: it/data/database
+    batch: data
+  - id: monolith
+    term: Monolithic architecture
+    domain: it/software-engineering/architecture
+    note: alias monolith
+    batch: arch
+  - id: api-gateway
+    term: API gateway
+    domain: it/web/api
+    also_domains:
+      - it/software-engineering/architecture
+    batch: arch
+  - id: service-mesh
+    term: Service mesh
+    domain: it/software-engineering/architecture
+    batch: arch
+  - id: reverse-proxy
+    term: Reverse proxy
+    domain: it/infrastructure/networking
+    batch: arch
+  - id: circuit-breaker
+    term: Circuit breaker
+    qualifier: (Software)
+    domain: it/software-engineering/architecture
+    batch: arch
+  - id: exponential-backoff
+    term: Exponential backoff
+    domain: it/software-engineering/architecture
+    batch: arch
+  - id: event-driven-architecture
+    term: Event-driven architecture
+    domain: it/software-engineering/architecture
+    batch: arch
+  - id: event-sourcing
+    term: Event sourcing
+    domain: it/software-engineering/architecture
+    batch: arch
+  - id: cqrs
+    term: Command Query Responsibility Segregation (CQRS)
+    domain: it/software-engineering/architecture
+    note: acronym always
+    batch: arch
+  - id: saga-pattern
+    term: Saga pattern
+    domain: it/software-engineering/architecture
+    batch: arch
+  - id: domain-driven-design
+    term: Domain-driven design (DDD)
+    domain: it/software-engineering/architecture
+    batch: arch
+  - id: clean-architecture
+    term: Clean architecture
+    domain: it/software-engineering/architecture
+    batch: arch
+  - id: dependency-injection
+    term: Dependency injection
+    domain: it/software-engineering/programming-concepts
+    batch: arch
+  - id: grpc
+    term: gRPC
+    domain: it/web/api
+    batch: arch
+  - id: websocket
+    term: WebSocket
+    domain: it/web/api
+    batch: arch
+  - id: server-sent-events
+    term: Server-sent events (SSE)
+    domain: it/web/api
+    batch: arch
+  - id: horizontal-scaling
+    term: Horizontal scaling
+    domain: it/infrastructure/cloud
+    note: alias scale out
+    batch: arch
+  - id: vertical-scaling
+    term: Vertical scaling
+    domain: it/infrastructure/cloud
+    note: alias scale up
+    batch: arch
+  - id: high-availability
+    term: High availability (HA)
+    domain: it/devops/sre-operations
+    batch: arch
+  - id: failover
+    term: Failover
+    domain: it/devops/sre-operations
+    batch: arch
+  - id: disaster-recovery
+    term: Disaster recovery (DR)
+    domain: it/devops/sre-operations
+    batch: arch
+  - id: rto
+    term: Recovery Time Objective (RTO)
+    domain: it/devops/sre-operations
+    note: acronym always
+    batch: arch
+  - id: rpo
+    term: Recovery Point Objective (RPO)
+    domain: it/devops/sre-operations
+    note: acronym always
+    batch: arch
+  - id: single-point-of-failure
+    term: Single point of failure (SPOF)
+    domain: it/devops/sre-operations
+    batch: arch
+  - id: consistent-hashing
+    term: Consistent hashing
+    domain: it/software-engineering/architecture
+    batch: arch
+  - id: load-testing
+    term: Load testing
+    domain: it/software-engineering/testing
+    batch: arch
+  - id: backpressure
+    term: Backpressure
+    domain: it/software-engineering/architecture
+    batch: arch
+  - id: distributed-system
+    term: Distributed system
+    domain: it/software-engineering/architecture
+    batch: arch
+  - id: http
+    term: Hypertext Transfer Protocol (HTTP)
+    domain: it/web/api
+    also_domains:
+      - it/infrastructure/networking
+    note: acronym always
+    batch: web
+  - id: https
+    term: HTTPS
+    domain: it/web/api
+    batch: web
+  - id: url
+    term: URL
+    domain: it/web/frontend
+    note: acronym always
+    batch: web
+  - id: html
+    term: HTML
+    domain: it/web/frontend
+    note: acronym always
+    batch: web
+  - id: css
+    term: CSS
+    domain: it/web/frontend
+    note: acronym always
+    batch: web
+  - id: javascript
+    term: JavaScript
+    domain: it/web/frontend
+    also_domains:
+      - it/software-engineering/programming-concepts
+    note: alias JS
+    batch: web
+  - id: typescript
+    term: TypeScript
+    domain: it/web/frontend
+    also_domains:
+      - it/software-engineering/programming-concepts
+    note: "alias TS: never"
+    batch: web
+  - id: dom
+    term: Document Object Model (DOM)
+    domain: it/web/frontend
+    note: acronym always
+    batch: web
+  - id: single-page-application
+    term: Single-page application (SPA)
+    domain: it/web/frontend
+    note: acronym always
+    batch: web
+  - id: server-side-rendering
+    term: Server-side rendering (SSR)
+    domain: it/web/frontend
+    note: acronym always
+    batch: web
+  - id: static-site-generation
+    term: Static site generation (SSG)
+    domain: it/web/frontend
+    batch: web
+  - id: hydration
+    term: Hydration
+    qualifier: (Web)
+    domain: it/web/frontend
+    batch: web
+  - id: progressive-web-app
+    term: Progressive web app (PWA)
+    domain: it/web/frontend
+    note: acronym always
+    batch: web
+  - id: responsive-design
+    term: Responsive design
+    domain: it/web/frontend
+    batch: web
+  - id: web-accessibility
+    term: Web accessibility (a11y)
+    domain: it/web/frontend
+    batch: web
+  - id: wcag
+    term: WCAG
+    domain: it/web/frontend
+    note: acronym always
+    batch: web
+  - id: react
+    term: React
+    qualifier: (Library)
+    domain: it/web/frontend
+    note: "generic word: autolink label never"
+    batch: web
+  - id: nodejs
+    term: Node.js
+    domain: it/web/backend
+    batch: web
+  - id: bundler
+    term: Bundler
+    qualifier: (JavaScript)
+    domain: it/web/frontend
+    batch: web
+  - id: tree-shaking
+    term: Tree shaking
+    domain: it/web/frontend
+    batch: web
+  - id: code-splitting
+    term: Code splitting
+    domain: it/web/frontend
+    batch: web
+  - id: lazy-loading
+    term: Lazy loading
+    domain: it/web/frontend
+    batch: web
+  - id: core-web-vitals
+    term: Core Web Vitals
+    domain: it/web/frontend
+    also_domains:
+      - media/digital-marketing/seo
+    batch: web
+  - id: local-storage
+    term: localStorage
+    domain: it/web/frontend
+    batch: web
+  - id: service-worker
+    term: Service worker
+    domain: it/web/frontend
+    batch: web
+  - id: browser-cache
+    term: Browser cache
+    domain: it/web/frontend
+    batch: web
+  - id: web-server
+    term: Web server
+    domain: it/web/backend
+    batch: web
+  - id: nginx
+    term: Nginx
+    domain: it/web/backend
+    also_domains:
+      - it/infrastructure/networking
+    batch: web
+  - id: variable
+    term: Variable
+    qualifier: (Programming)
+    domain: it/software-engineering/programming-concepts
+    note: "generic word: autolink label never"
+    batch: prog
+  - id: function-programming
+    term: Function
+    qualifier: (Programming)
+    domain: it/software-engineering/programming-concepts
+    note: "generic word: autolink label never"
+    batch: prog
+  - id: class-oop
+    term: Class
+    qualifier: (Programming)
+    domain: it/software-engineering/programming-concepts
+    note: "generic word: autolink label never"
+    batch: prog
+  - id: object-oriented-programming
+    term: Object-oriented programming (OOP)
+    domain: it/software-engineering/programming-concepts
+    note: acronym always
+    batch: prog
+  - id: functional-programming
+    term: Functional programming
+    domain: it/software-engineering/programming-concepts
+    batch: prog
+  - id: recursion
+    term: Recursion
+    domain: it/software-engineering/programming-concepts
+    batch: prog
+  - id: closure
+    term: Closure
+    qualifier: (Programming)
+    domain: it/software-engineering/programming-concepts
+    batch: prog
+  - id: async-await
+    term: Async/await
+    domain: it/software-engineering/programming-concepts
+    batch: prog
+  - id: promise
+    term: Promise
+    qualifier: (Programming)
+    domain: it/software-engineering/programming-concepts
+    note: "generic word: autolink label never"
+    batch: prog
+  - id: callback
+    term: Callback
+    qualifier: (Programming)
+    domain: it/software-engineering/programming-concepts
+    batch: prog
+  - id: thread-programming
+    term: Thread
+    qualifier: (Programming)
+    domain: it/software-engineering/programming-concepts
+    note: homonym with thread-iot (batch iota); autolink label never
+    batch: prog
+  - id: os-process
+    term: Process
+    qualifier: (Operating system)
+    domain: it/software-engineering/programming-concepts
+    note: "generic word: autolink label never"
+    batch: prog
+  - id: concurrency
+    term: Concurrency
+    domain: it/software-engineering/programming-concepts
+    batch: prog
+  - id: parallelism
+    term: Parallelism
+    qualifier: (Computing)
+    domain: it/software-engineering/programming-concepts
+    batch: prog
+  - id: memory-leak
+    term: Memory leak
+    domain: it/software-engineering/programming-concepts
+    batch: prog
+  - id: garbage-collection
+    term: Garbage collection
+    domain: it/software-engineering/programming-concepts
+    batch: prog
+  - id: compiler
+    term: Compiler
+    domain: it/software-engineering/programming-concepts
+    batch: prog
+  - id: interpreter
+    term: Interpreter
+    qualifier: (Programming)
+    domain: it/software-engineering/programming-concepts
+    batch: prog
+  - id: exception-handling
+    term: Exception
+    qualifier: (Programming)
+    domain: it/software-engineering/programming-concepts
+    note: "generic word: autolink label never"
+    batch: prog
+  - id: stack-trace
+    term: Stack trace
+    domain: it/software-engineering/programming-concepts
+    batch: prog
+  - id: debugging
+    term: Debugging
+    domain: it/software-engineering/practices
+    batch: prog
+  - id: breakpoint
+    term: Breakpoint
+    qualifier: (Debugging)
+    domain: it/software-engineering/practices
+    batch: prog
+  - id: regular-expression
+    term: Regular expression (regex)
+    domain: it/software-engineering/programming-concepts
+    batch: prog
+  - id: algorithm
+    term: Algorithm
+    domain: it/software-engineering/programming-concepts
+    batch: prog
+  - id: data-structure
+    term: Data structure
+    domain: it/software-engineering/programming-concepts
+    batch: prog
+  - id: big-o-notation
+    term: Big O notation
+    domain: it/software-engineering/programming-concepts
+    batch: prog
+  - id: hash-table
+    term: Hash table
+    domain: it/software-engineering/programming-concepts
+    batch: prog
+  - id: array
+    term: Array
+    qualifier: (Programming)
+    domain: it/software-engineering/programming-concepts
+    note: "generic word: autolink label never"
+    batch: prog
+  - id: stack-data-structure
+    term: Stack
+    qualifier: (Data structure)
+    domain: it/software-engineering/programming-concepts
+    note: "generic word: autolink label never"
+    batch: prog
+  - id: binary-search
+    term: Binary search
+    domain: it/software-engineering/programming-concepts
+    batch: prog
+  - id: null-reference
+    term: Null reference
+    domain: it/software-engineering/programming-concepts
+    note: alias null pointer
+    batch: prog
+  - id: immutability
+    term: Immutability
+    domain: it/software-engineering/programming-concepts
+    batch: prog
+  - id: generics
+    term: Generics
+    qualifier: (Programming)
+    domain: it/software-engineering/programming-concepts
+    batch: prog
+  - id: python
+    term: Python
+    qualifier: (Programming language)
+    domain: it/software-engineering/programming-concepts
+    batch: prog
+  - id: iaas
+    term: Infrastructure as a Service (IaaS)
+    domain: it/infrastructure/cloud
+    note: acronym always
+    batch: cloud
+  - id: paas
+    term: Platform as a Service (PaaS)
+    domain: it/infrastructure/cloud
+    note: acronym always
+    batch: cloud
+  - id: saas
+    term: Software as a Service (SaaS)
+    domain: it/infrastructure/cloud
+    also_domains:
+      - it/business-systems/enterprise-apps
+    note: acronym always
+    batch: cloud
+  - id: hybrid-cloud
+    term: Hybrid cloud
+    domain: it/infrastructure/cloud
+    batch: cloud
+  - id: multi-cloud
+    term: Multi-cloud
+    domain: it/infrastructure/cloud
+    batch: cloud
+  - id: cloud-region
+    term: Region
+    qualifier: (Cloud)
+    domain: it/infrastructure/cloud
+    note: "generic word: autolink label never"
+    batch: cloud
+  - id: availability-zone
+    term: Availability zone (AZ)
+    domain: it/infrastructure/cloud
+    batch: cloud
+  - id: vpc
+    term: Virtual Private Cloud (VPC)
+    domain: it/infrastructure/cloud
+    note: acronym always
+    batch: cloud
+  - id: subnet
+    term: Subnet
+    domain: it/infrastructure/networking
+    batch: cloud
+  - id: firewall
+    term: Firewall
+    domain: it/infrastructure/networking
+    also_domains:
+      - it/security/vulnerabilities
+    batch: cloud
+  - id: nat
+    term: Network Address Translation (NAT)
+    domain: it/infrastructure/networking
+    note: acronym always
+    batch: cloud
+  - id: ip-address
+    term: IP address
+    domain: it/infrastructure/networking
+    batch: cloud
+  - id: tcp
+    term: Transmission Control Protocol (TCP)
+    domain: it/infrastructure/networking
+    note: acronym always
+    batch: cloud
+  - id: udp
+    term: User Datagram Protocol (UDP)
+    domain: it/infrastructure/networking
+    note: acronym always
+    batch: cloud
+  - id: ssh
+    term: Secure Shell (SSH)
+    domain: it/infrastructure/networking
+    also_domains:
+      - it/security/authentication
+    note: acronym always
+    batch: cloud
+  - id: vpn
+    term: Virtual Private Network (VPN)
+    domain: it/infrastructure/networking
+    note: acronym always
+    batch: cloud
+  - id: proxy-server
+    term: Proxy server
+    domain: it/infrastructure/networking
+    batch: cloud
+  - id: network-port
+    term: Port
+    qualifier: (Networking)
+    domain: it/infrastructure/networking
+    note: "generic word: autolink label never"
+    batch: cloud
+  - id: object-storage
+    term: Object storage
+    domain: it/infrastructure/cloud
+    batch: cloud
+  - id: block-storage
+    term: Block storage
+    domain: it/infrastructure/cloud
+    batch: cloud
+  - id: cold-start
+    term: Cold start
+    qualifier: (Serverless)
+    domain: it/infrastructure/cloud
+    batch: cloud
+  - id: cloud-instance
+    term: Instance
+    qualifier: (Cloud)
+    domain: it/infrastructure/cloud
+    note: "generic word: autolink label never"
+    batch: cloud
+  - id: spot-instance
+    term: Spot instance
+    domain: it/infrastructure/cloud
+    batch: cloud
+  - id: finops
+    term: FinOps
+    domain: it/infrastructure/cloud
+    batch: cloud
+  - id: terraform
+    term: Terraform
+    domain: it/devops/iac
+    batch: cloud
+  - id: ansible
+    term: Ansible
+    domain: it/devops/iac
+    batch: cloud
+  - id: helm
+    term: Helm
+    qualifier: (Kubernetes)
+    domain: it/devops/containers
+    batch: cloud
+  - id: docker-compose
+    term: Docker Compose
+    domain: it/devops/containers
+    batch: cloud
+  - id: container-registry
+    term: Container registry
+    domain: it/devops/containers
+    batch: cloud
+  - id: service-discovery
+    term: Service discovery
+    domain: it/infrastructure/networking
+    batch: cloud
+  - id: bandwidth
+    term: Bandwidth
+    qualifier: (Network)
+    domain: it/infrastructure/networking
+    batch: cloud
+  - id: authorization
+    term: Authorization
+    qualifier: (Security)
+    domain: it/security/authentication
+    batch: sec
+  - id: authentication
+    term: Authentication
+    domain: it/security/authentication
+    batch: sec
+  - id: rbac
+    term: Role-based access control (RBAC)
+    domain: it/security/authentication
+    note: acronym always
+    batch: sec
+  - id: sso
+    term: Single sign-on (SSO)
+    domain: it/security/authentication
+    note: acronym always
+    batch: sec
+  - id: saml
+    term: SAML
+    domain: it/security/authentication
+    note: acronym always
+    batch: sec
+  - id: openid-connect
+    term: OpenID Connect (OIDC)
+    domain: it/security/authentication
+    batch: sec
+  - id: api-key
+    term: API key
+    domain: it/security/authentication
+    also_domains:
+      - it/web/api
+    batch: sec
+  - id: password-salting
+    term: Salt
+    qualifier: (Cryptography)
+    domain: it/security/cryptography
+    note: "generic word: autolink label never"
+    batch: sec
+  - id: public-key-cryptography
+    term: Public-key cryptography
+    domain: it/security/cryptography
+    batch: sec
+  - id: digital-signature
+    term: Digital signature
+    domain: it/security/cryptography
+    batch: sec
+  - id: tls-certificate
+    term: Certificate
+    qualifier: (TLS)
+    domain: it/security/cryptography
+    note: "generic word: autolink label never"
+    batch: sec
+  - id: certificate-authority
+    term: Certificate authority (CA)
+    domain: it/security/cryptography
+    batch: sec
+  - id: end-to-end-encryption
+    term: End-to-end encryption (E2EE)
+    domain: it/security/cryptography
+    batch: sec
+  - id: phishing
+    term: Phishing
+    domain: it/security/vulnerabilities
+    batch: sec
+  - id: ransomware
+    term: Ransomware
+    domain: it/security/vulnerabilities
+    batch: sec
+  - id: malware
+    term: Malware
+    domain: it/security/vulnerabilities
+    batch: sec
+  - id: ddos
+    term: Distributed denial-of-service (DDoS)
+    domain: it/security/vulnerabilities
+    note: acronym always
+    batch: sec
+  - id: brute-force-attack
+    term: Brute-force attack
+    domain: it/security/vulnerabilities
+    batch: sec
+  - id: penetration-testing
+    term: Penetration testing
+    domain: it/security/vulnerabilities
+    note: alias pentest
+    batch: sec
+  - id: sast
+    term: Static application security testing (SAST)
+    domain: it/security/vulnerabilities
+    note: acronym always
+    batch: sec
+  - id: dast
+    term: Dynamic application security testing (DAST)
+    domain: it/security/vulnerabilities
+    note: acronym always
+    batch: sec
+  - id: supply-chain-attack
+    term: Supply chain attack
+    qualifier: (Software)
+    domain: it/security/vulnerabilities
+    batch: sec
+  - id: waf
+    term: Web application firewall (WAF)
+    domain: it/security/vulnerabilities
+    note: acronym always
+    batch: sec
+  - id: intrusion-detection-system
+    term: Intrusion detection system (IDS)
+    domain: it/security/vulnerabilities
+    note: acronym always
+    batch: sec
+  - id: siem
+    term: SIEM
+    domain: it/security/vulnerabilities
+    note: acronym always
+    batch: sec
+  - id: soc-security
+    term: Security Operations Center (SOC)
+    domain: it/security/vulnerabilities
+    note: "alias SOC: never"
+    batch: sec
+  - id: threat-modeling
+    term: Threat modeling
+    domain: it/security/vulnerabilities
+    batch: sec
+  - id: owasp-top-10
+    term: OWASP Top 10
+    domain: it/security/vulnerabilities
+    batch: sec
+  - id: zero-day
+    term: Zero-day vulnerability
+    domain: it/security/vulnerabilities
+    batch: sec
+  - id: security-patch
+    term: Security patch
+    domain: it/security/vulnerabilities
+    batch: sec
+  - id: gitops
+    term: GitOps
+    domain: it/devops/ci-cd
+    batch: ops
+  - id: github-actions
+    term: GitHub Actions
+    domain: it/devops/ci-cd
+    batch: ops
+  - id: jenkins
+    term: Jenkins
+    domain: it/devops/ci-cd
+    batch: ops
+  - id: build-artifact
+    term: Artifact
+    qualifier: (Build)
+    domain: it/devops/ci-cd
+    note: "generic word: autolink label never"
+    batch: ops
+  - id: trunk-based-development
+    term: Trunk-based development
+    domain: it/software-engineering/version-control
+    batch: ops
+  - id: chaos-engineering
+    term: Chaos engineering
+    domain: it/devops/sre-operations
+    batch: ops
+  - id: runbook
+    term: Runbook
+    domain: it/devops/sre-operations
+    batch: ops
+  - id: alerting
+    term: Alerting
+    domain: it/devops/observability
+    batch: ops
+  - id: error-budget
+    term: Error budget
+    domain: it/devops/sre-operations
+    batch: ops
+  - id: mttr
+    term: Mean time to recovery (MTTR)
+    domain: it/devops/sre-operations
+    note: acronym always
+    batch: ops
+  - id: capacity-planning
+    term: Capacity planning
+    domain: it/devops/sre-operations
+    batch: ops
+  - id: prometheus
+    term: Prometheus
+    qualifier: (Monitoring)
+    domain: it/devops/observability
+    batch: ops
+  - id: grafana
+    term: Grafana
+    domain: it/devops/observability
+    batch: ops
+  - id: opentelemetry
+    term: OpenTelemetry
+    domain: it/devops/observability
+    batch: ops
+  - id: apm
+    term: Application performance monitoring (APM)
+    domain: it/devops/observability
+    note: acronym always
+    batch: ops
+  - id: health-check
+    term: Health check
+    qualifier: (Software)
+    domain: it/devops/sre-operations
+    batch: ops
+  - id: liveness-probe
+    term: Liveness probe
+    domain: it/devops/containers
+    batch: ops
+  - id: readiness-probe
+    term: Readiness probe
+    domain: it/devops/containers
+    batch: ops
+  - id: configuration-management
+    term: Configuration management
+    domain: it/devops/iac
+    batch: ops
+  - id: immutable-infrastructure
+    term: Immutable infrastructure
+    domain: it/devops/iac
+    batch: ops
+  - id: devops
+    term: DevOps
+    domain: it/devops/ci-cd
+    batch: ops
+  - id: sre
+    term: Site reliability engineering (SRE)
+    domain: it/devops/sre-operations
+    note: acronym always
+    batch: ops
+  - id: platform-engineering
+    term: Platform engineering
+    domain: it/devops/sre-operations
+    batch: ops
+  - id: toil
+    term: Toil
+    qualifier: (SRE)
+    domain: it/devops/sre-operations
+    batch: ops
+  - id: dashboard-monitoring
+    term: Dashboard
+    qualifier: (Monitoring)
+    domain: it/devops/observability
+    note: "generic word: autolink label never"
+    batch: ops
+  - id: generative-ai
+    term: Generative AI
+    domain: it/ai-ml/foundations
+    note: alias GenAI
+    batch: ml
+  - id: natural-language-processing
+    term: Natural language processing (NLP)
+    domain: it/ai-ml/nlp
+    note: acronym always
+    batch: ml
+  - id: computer-vision
+    term: Computer vision
+    domain: it/ai-ml/computer-vision
+    batch: ml
+  - id: speech-recognition
+    term: Speech recognition
+    domain: it/ai-ml/nlp
+    note: alias ASR
+    batch: ml
+  - id: ocr
+    term: Optical character recognition (OCR)
+    domain: it/ai-ml/computer-vision
+    note: acronym always
+    batch: ml
+  - id: supervised-learning
+    term: Supervised learning
+    domain: it/ai-ml/foundations
+    batch: ml
+  - id: unsupervised-learning
+    term: Unsupervised learning
+    domain: it/ai-ml/foundations
+    batch: ml
+  - id: reinforcement-learning
+    term: Reinforcement learning
+    domain: it/ai-ml/foundations
+    batch: ml
+  - id: rlhf
+    term: Reinforcement learning from human feedback (RLHF)
+    domain: it/ai-ml/llm-agents
+    note: acronym always
+    batch: ml
+  - id: classification-ml
+    term: Classification
+    qualifier: (ML)
+    domain: it/ai-ml/foundations
+    note: "generic word: autolink label never"
+    batch: ml
+  - id: regression-ml
+    term: Regression
+    qualifier: (ML)
+    domain: it/ai-ml/foundations
+    note: 'generic word: autolink label never; do not alias "regression testing"'
+    batch: ml
+  - id: clustering
+    term: Clustering
+    qualifier: (ML)
+    domain: it/ai-ml/foundations
+    batch: ml
+  - id: feature-engineering
+    term: Feature engineering
+    domain: it/ai-ml/mlops
+    batch: ml
+  - id: precision-recall
+    term: Precision and recall
+    domain: it/ai-ml/mlops
+    batch: ml
+  - id: f1-score
+    term: F1 score
+    domain: it/ai-ml/mlops
+    batch: ml
+  - id: confusion-matrix
+    term: Confusion matrix
+    domain: it/ai-ml/mlops
+    batch: ml
+  - id: underfitting
+    term: Underfitting
+    domain: it/ai-ml/foundations
+    batch: ml
+  - id: regularization
+    term: Regularization
+    qualifier: (ML)
+    domain: it/ai-ml/foundations
+    batch: ml
+  - id: cnn
+    term: Convolutional neural network (CNN)
+    domain: it/ai-ml/computer-vision
+    note: "alias CNN: never (news channel)"
+    batch: ml
+  - id: rnn
+    term: Recurrent neural network (RNN)
+    domain: it/ai-ml/nlp
+    note: acronym always
+    batch: ml
+  - id: transfer-learning
+    term: Transfer learning
+    domain: it/ai-ml/foundations
+    batch: ml
+  - id: foundation-model
+    term: Foundation model
+    domain: it/ai-ml/foundations
+    batch: ml
+  - id: open-weight-model
+    term: Open-weight model
+    domain: it/ai-ml/llm-agents
+    batch: ml
+  - id: multimodal-model
+    term: Multimodal model
+    domain: it/ai-ml/llm-agents
+    batch: ml
+  - id: diffusion-model
+    term: Diffusion model
+    domain: it/ai-ml/computer-vision
+    batch: ml
+  - id: model-drift
+    term: Model drift
+    domain: it/ai-ml/mlops
+    batch: ml
+  - id: data-labeling
+    term: Data labeling
+    domain: it/ai-ml/mlops
+    batch: ml
+  - id: synthetic-data
+    term: Synthetic data
+    domain: it/ai-ml/mlops
+    batch: ml
+  - id: semantic-search
+    term: Semantic search
+    domain: it/ai-ml/nlp
+    batch: ml
+  - id: reranking
+    term: Reranking
+    domain: it/ai-ml/llm-agents
+    batch: ml
+  - id: chunking
+    term: Chunking
+    qualifier: (RAG)
+    domain: it/ai-ml/llm-agents
+    batch: ml
+  - id: red-teaming
+    term: Red teaming
+    qualifier: (AI)
+    domain: it/ai-ml/ai-safety-governance
+    batch: ml
+  - id: ai-alignment
+    term: AI alignment
+    domain: it/ai-ml/ai-safety-governance
+    batch: ml
+  - id: mlops
+    term: MLOps
+    domain: it/ai-ml/mlops
+    batch: ml
+  - id: crm
+    term: Customer relationship management (CRM)
+    domain: it/business-systems/enterprise-apps
+    note: acronym always
+    batch: biz
+  - id: erp
+    term: Enterprise resource planning (ERP)
+    domain: it/business-systems/enterprise-apps
+    note: acronym always
+    batch: biz
+  - id: cms
+    term: Content management system (CMS)
+    domain: it/business-systems/enterprise-apps
+    also_domains:
+      - media/publishing/distribution-platforms
+    note: acronym always
+    batch: biz
+  - id: hrm-system
+    term: Human resource management system (HRMS)
+    domain: it/business-systems/enterprise-apps
+    batch: biz
+  - id: pos-system
+    term: Point of sale (POS)
+    domain: it/business-systems/enterprise-apps
+    note: "alias POS: never"
+    batch: biz
+  - id: business-intelligence
+    term: Business intelligence (BI)
+    domain: it/data/analytics
+    also_domains:
+      - it/business-systems/enterprise-apps
+    batch: biz
+  - id: data-visualization
+    term: Data visualization
+    domain: it/data/analytics
+    batch: biz
+  - id: payment-gateway
+    term: Payment gateway
+    domain: it/business-systems/enterprise-apps
+    also_domains:
+      - finance/banking/payments
+    batch: biz
+  - id: e-commerce-platform
+    term: E-commerce platform
+    domain: it/business-systems/enterprise-apps
+    batch: biz
+  - id: help-desk
+    term: Help desk
+    domain: it/business-systems/enterprise-apps
+    batch: biz
+  - id: itsm
+    term: IT service management (ITSM)
+    domain: it/business-systems/enterprise-apps
+    note: acronym always
+    batch: biz
+  - id: itil
+    term: ITIL
+    domain: it/business-systems/enterprise-apps
+    note: acronym always
+    batch: biz
+  - id: rpa
+    term: Robotic process automation (RPA)
+    domain: it/business-systems/automation
+    note: acronym always
+    batch: biz
+  - id: low-code
+    term: Low-code
+    domain: it/business-systems/automation
+    batch: biz
+  - id: no-code
+    term: No-code
+    domain: it/business-systems/automation
+    batch: biz
+  - id: workflow-automation
+    term: Workflow automation
+    domain: it/business-systems/automation
+    batch: biz
+  - id: ipaas
+    term: Integration platform as a service (iPaaS)
+    domain: it/business-systems/automation
+    batch: biz
+  - id: digital-transformation
+    term: Digital transformation
+    domain: it/business-systems/enterprise-apps
+    batch: biz
+  - id: embedded-system
+    term: Embedded system
+    domain: iot/devices-sensors
+    batch: iota
+  - id: single-board-computer
+    term: Single-board computer (SBC)
+    domain: iot/devices-sensors
+    batch: iota
+  - id: raspberry-pi
+    term: Raspberry Pi
+    domain: iot/devices-sensors
+    batch: iota
+  - id: arduino
+    term: Arduino
+    domain: iot/devices-sensors
+    batch: iota
+  - id: esp32
+    term: ESP32
+    domain: iot/devices-sensors
+    batch: iota
+  - id: gpio
+    term: General-purpose input/output (GPIO)
+    domain: iot/devices-sensors
+    note: acronym always
+    batch: iota
+  - id: i2c
+    term: I²C
+    domain: iot/devices-sensors
+    note: alias I2C
+    batch: iota
+  - id: spi-bus
+    term: Serial Peripheral Interface (SPI)
+    domain: iot/devices-sensors
+    note: "alias SPI: always"
+    batch: iota
+  - id: uart
+    term: UART
+    domain: iot/devices-sensors
+    note: acronym always
+    batch: iota
+  - id: adc
+    term: Analog-to-digital converter (ADC)
+    domain: iot/devices-sensors
+    note: acronym always
+    batch: iota
+  - id: pwm
+    term: Pulse-width modulation (PWM)
+    domain: iot/devices-sensors
+    note: acronym always
+    batch: iota
+  - id: rfid
+    term: Radio-frequency identification (RFID)
+    domain: iot/devices-sensors
+    note: acronym always
+    batch: iota
+  - id: nfc
+    term: Near-field communication (NFC)
+    domain: iot/connectivity-protocols
+    note: acronym always
+    batch: iota
+  - id: gnss
+    term: GNSS
+    domain: iot/devices-sensors
+    note: alias GPS
+    batch: iota
+  - id: lidar
+    term: LiDAR
+    domain: iot/devices-sensors
+    batch: iota
+  - id: imu
+    term: Inertial measurement unit (IMU)
+    domain: iot/devices-sensors
+    note: acronym always
+    batch: iota
+  - id: accelerometer
+    term: Accelerometer
+    domain: iot/devices-sensors
+    batch: iota
+  - id: wearable
+    term: Wearable device
+    domain: iot/devices-sensors
+    batch: iota
+  - id: smart-meter
+    term: Smart meter
+    domain: iot/devices-sensors
+    batch: iota
+  - id: low-power-mode
+    term: Sleep mode
+    qualifier: (Embedded)
+    domain: iot/devices-sensors
+    batch: iota
+  - id: energy-harvesting
+    term: Energy harvesting
+    domain: iot/devices-sensors
+    batch: iota
+  - id: secure-boot
+    term: Secure boot
+    domain: iot/devices-sensors
+    also_domains:
+      - it/security/cryptography
+    batch: iota
+  - id: thread-iot
+    term: Thread
+    qualifier: (IoT)
+    domain: iot/connectivity-protocols
+    note: homonym with thread-programming (batch prog); autolink label never
+    batch: iota
+  - id: matter-iot
+    term: Matter
+    qualifier: (IoT)
+    domain: iot/connectivity-protocols
+    note: "generic word: autolink label never"
+    batch: iota
+  - id: z-wave
+    term: Z-Wave
+    domain: iot/connectivity-protocols
+    batch: iota
+  - id: wifi
+    term: Wi-Fi
+    domain: iot/connectivity-protocols
+    also_domains:
+      - it/infrastructure/networking
+    batch: iota
+  - id: lora-radio
+    term: LoRa
+    qualifier: (IoT)
+    domain: iot/connectivity-protocols
+    note: "homonym with existing lora (LoRA, AI): keep exact-case LoRa, orchestrator
+      links them at integration"
+    batch: iota
+  - id: tinyml
+    term: TinyML
+    domain: iot/edge-cloud
+    also_domains:
+      - it/ai-ml/mlops
+    batch: iota
+  - id: lpwan
+    term: Low-power wide-area network (LPWAN)
+    domain: iot/connectivity-protocols
+    note: acronym always
+    batch: iotb
+  - id: lte-m
+    term: LTE-M
+    domain: iot/connectivity-protocols
+    batch: iotb
+  - id: 5g
+    term: 5G
+    domain: iot/connectivity-protocols
+    batch: iotb
+  - id: esim
+    term: eSIM
+    domain: iot/connectivity-protocols
+    batch: iotb
+  - id: m2m
+    term: Machine-to-machine (M2M)
+    domain: iot/connectivity-protocols
+    note: acronym always
+    batch: iotb
+  - id: lwm2m
+    term: LwM2M
+    domain: iot/connectivity-protocols
+    batch: iotb
+  - id: dtls
+    term: DTLS
+    domain: iot/connectivity-protocols
+    also_domains:
+      - it/security/cryptography
+    note: acronym always
+    batch: iotb
+  - id: can-bus
+    term: CAN bus
+    domain: iot/industrial
+    batch: iotb
+  - id: bacnet
+    term: BACnet
+    domain: iot/industrial
+    batch: iotb
+  - id: poe
+    term: Power over Ethernet (PoE)
+    domain: iot/devices-sensors
+    note: acronym always
+    batch: iotb
+  - id: fog-computing
+    term: Fog computing
+    domain: iot/edge-cloud
+    batch: iotb
+  - id: edge-ai
+    term: Edge AI
+    domain: iot/edge-cloud
+    also_domains:
+      - it/ai-ml/mlops
+    batch: iotb
+  - id: device-shadow
+    term: Device shadow
+    domain: iot/edge-cloud
+    batch: iotb
+  - id: fleet-management-iot
+    term: Device fleet management
+    domain: iot/edge-cloud
+    batch: iotb
+  - id: iiot
+    term: Industrial Internet of Things (IIoT)
+    domain: iot/industrial
+    note: acronym always
+    batch: iotb
+  - id: industry-4-0
+    term: Industry 4.0
+    domain: iot/industrial
+    batch: iotb
+  - id: hmi
+    term: Human-machine interface (HMI)
+    domain: iot/industrial
+    note: acronym always
+    batch: iotb
+  - id: rtu
+    term: Remote terminal unit (RTU)
+    domain: iot/industrial
+    note: acronym always
+    batch: iotb
+  - id: dcs
+    term: Distributed control system (DCS)
+    domain: iot/industrial
+    note: acronym always
+    batch: iotb
+  - id: mes
+    term: Manufacturing execution system (MES)
+    domain: iot/industrial
+    note: acronym always
+    batch: iotb
+  - id: oee
+    term: Overall equipment effectiveness (OEE)
+    domain: iot/industrial
+    note: acronym always
+    batch: iotb
+  - id: condition-monitoring
+    term: Condition monitoring
+    domain: iot/industrial
+    batch: iotb
+  - id: asset-tracking
+    term: Asset tracking
+    domain: iot/applications
+    batch: iotb
+  - id: geofencing
+    term: Geofencing
+    domain: iot/applications
+    batch: iotb
+  - id: smart-city
+    term: Smart city
+    domain: iot/applications
+    batch: iotb
+  - id: smart-agriculture
+    term: Smart agriculture
+    domain: iot/applications
+    batch: iotb
+  - id: telematics
+    term: Telematics
+    domain: iot/applications
+    batch: iotb
+  - id: v2x
+    term: Vehicle-to-everything (V2X)
+    domain: iot/applications
+    note: acronym always
+    batch: iotb
+  - id: cold-chain-monitoring
+    term: Cold chain monitoring
+    domain: iot/applications
+    batch: iotb
+  - id: smart-building
+    term: Smart building
+    domain: iot/applications
+    batch: iotb

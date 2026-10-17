@@ -1,0 +1,87 @@
+batch: biz
+candidates:
+  - id: crm
+    term: Customer relationship management (CRM)
+    domain: it/business-systems/enterprise-apps
+    note: acronym always
+    batch: biz
+  - id: erp
+    term: Enterprise resource planning (ERP)
+    domain: it/business-systems/enterprise-apps
+    note: acronym always
+    batch: biz
+  - id: cms
+    term: Content management system (CMS)
+    domain: it/business-systems/enterprise-apps
+    also_domains:
+      - media/publishing/distribution-platforms
+    note: acronym always
+    batch: biz
+  - id: hrm-system
+    term: Human resource management system (HRMS)
+    domain: it/business-systems/enterprise-apps
+    batch: biz
+  - id: pos-system
+    term: Point of sale (POS)
+    domain: it/business-systems/enterprise-apps
+    note: "alias POS: never"
+    batch: biz
+  - id: business-intelligence
+    term: Business intelligence (BI)
+    domain: it/data/analytics
+    also_domains:
+      - it/business-systems/enterprise-apps
+    batch: biz
+  - id: data-visualization
+    term: Data visualization
+    domain: it/data/analytics
+    batch: biz
+  - id: payment-gateway
+    term: Payment gateway
+    domain: it/business-systems/enterprise-apps
+    also_domains:
+      - finance/banking/payments
+    batch: biz
+  - id: e-commerce-platform
+    term: E-commerce platform
+    domain: it/business-systems/enterprise-apps
+    batch: biz
+  - id: help-desk
+    term: Help desk
+    domain: it/business-systems/enterprise-apps
+    batch: biz
+  - id: itsm
+    term: IT service management (ITSM)
+    domain: it/business-systems/enterprise-apps
+    note: acronym always
+    batch: biz
+  - id: itil
+    term: ITIL
+    domain: it/business-systems/enterprise-apps
+    note: acronym always
+    batch: biz
+  - id: rpa
+    term: Robotic process automation (RPA)
+    domain: it/business-systems/automation
+    note: acronym always
+    batch: biz
+  - id: low-code
+    term: Low-code
+    domain: it/business-systems/automation
+    batch: biz
+  - id: no-code
+    term: No-code
+    domain: it/business-systems/automation
+    batch: biz
+  - id: workflow-automation
+    term: Workflow automation
+    domain: it/business-systems/automation
+    batch: biz
+  - id: ipaas
+    term: Integration platform as a service (iPaaS)
+    domain: it/business-systems/automation
+    batch: biz
+  - id: digital-transformation
+    term: Digital transformation
+    domain: it/business-systems/enterprise-apps
+    batch: biz

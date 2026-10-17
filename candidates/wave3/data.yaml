@@ -1,0 +1,172 @@
+batch: data
+candidates:
+  - id: apache-kafka
+    term: Apache Kafka
+    domain: it/data/data-engineering
+    also_domains:
+      - it/web/backend
+    note: alias Kafka
+    batch: data
+  - id: event-streaming
+    term: Event streaming
+    domain: it/data/data-engineering
+    batch: data
+  - id: publish-subscribe
+    term: Publish-subscribe (pub/sub)
+    domain: it/web/backend
+    also_domains:
+      - it/data/data-engineering
+    note: alias pub/sub
+    batch: data
+  - id: rabbitmq
+    term: RabbitMQ
+    domain: it/web/backend
+    batch: data
+  - id: change-data-capture
+    term: Change data capture (CDC)
+    domain: it/data/data-engineering
+    note: "alias CDC: never (collides with other meanings)"
+    batch: data
+  - id: stream-processing
+    term: Stream processing
+    domain: it/data/data-engineering
+    batch: data
+  - id: batch-processing
+    term: Batch processing
+    domain: it/data/data-engineering
+    batch: data
+  - id: apache-spark
+    term: Apache Spark
+    domain: it/data/data-engineering
+    note: "alias Spark: never"
+    batch: data
+  - id: apache-flink
+    term: Apache Flink
+    domain: it/data/data-engineering
+    batch: data
+  - id: apache-airflow
+    term: Apache Airflow
+    domain: it/data/data-engineering
+    note: alias Airflow
+    batch: data
+  - id: data-lakehouse
+    term: Data lakehouse
+    domain: it/data/data-engineering
+    batch: data
+  - id: data-governance
+    term: Data governance
+    domain: it/data/data-engineering
+    batch: data
+  - id: data-lineage
+    term: Data lineage
+    domain: it/data/data-engineering
+    batch: data
+  - id: data-quality
+    term: Data quality
+    domain: it/data/data-engineering
+    batch: data
+  - id: olap
+    term: Online Analytical Processing (OLAP)
+    domain: it/data/analytics
+    note: acronym always
+    batch: data
+  - id: oltp
+    term: Online Transaction Processing (OLTP)
+    domain: it/data/database
+    note: acronym always
+    batch: data
+  - id: columnar-storage
+    term: Columnar storage
+    domain: it/data/database
+    batch: data
+  - id: relational-database
+    term: Relational database
+    domain: it/data/database
+    batch: data
+  - id: nosql
+    term: NoSQL
+    domain: it/data/database
+    batch: data
+  - id: primary-key
+    term: Primary key
+    domain: it/data/database
+    batch: data
+  - id: foreign-key
+    term: Foreign key
+    domain: it/data/database
+    batch: data
+  - id: database-normalization
+    term: Normalization
+    qualifier: (Database)
+    domain: it/data/database
+    note: "generic word: autolink label never"
+    batch: data
+  - id: acid
+    term: ACID
+    qualifier: (Database)
+    domain: it/data/database
+    note: acronym; autolink label never (common word acid)
+    batch: data
+  - id: cap-theorem
+    term: CAP theorem
+    domain: it/data/database
+    batch: data
+  - id: eventual-consistency
+    term: Eventual consistency
+    domain: it/data/database
+    batch: data
+  - id: deadlock
+    term: Deadlock
+    domain: it/data/database
+    also_domains:
+      - it/software-engineering/programming-concepts
+    batch: data
+  - id: connection-pool
+    term: Connection pool
+    domain: it/data/database
+    batch: data
+  - id: key-value-store
+    term: Key-value store
+    domain: it/data/database
+    batch: data
+  - id: document-database
+    term: Document database
+    domain: it/data/database
+    batch: data
+  - id: graph-database
+    term: Graph database
+    domain: it/data/database
+    batch: data
+  - id: time-series-database
+    term: Time-series database
+    domain: it/data/database
+    also_domains:
+      - iot/edge-cloud
+    batch: data
+  - id: postgresql
+    term: PostgreSQL
+    domain: it/data/database
+    note: alias Postgres
+    batch: data
+  - id: mongodb
+    term: MongoDB
+    domain: it/data/database
+    batch: data
+  - id: redis
+    term: Redis
+    domain: it/data/database
+    also_domains:
+      - it/web/backend
+    batch: data
+  - id: elasticsearch
+    term: Elasticsearch
+    domain: it/data/database
+    batch: data
+  - id: full-text-search
+    term: Full-text search
+    domain: it/data/database
+    batch: data
+  - id: materialized-view
+    term: Materialized view
+    domain: it/data/database
+    batch: data

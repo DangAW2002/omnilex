@@ -19,3 +19,7 @@ children:
     labels:
       vi: IoT công nghiệp
       en: Industrial IoT
+  - id: applications
+    labels:
+      vi: Ứng dụng IoT
+      en: IoT applications

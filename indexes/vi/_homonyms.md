@@ -2,6 +2,10 @@
 
 Terms sharing a label or alias, distinguished by context:
 
+## LoRA
+- [**Low-Rank Adaptation (AI)**](../../concepts/lora/vi.md) [it/ai-ml/mlops]: Phương pháp fine-tuning tiết kiệm tham số: giữ nguyên trọng số gốc và chỉ huấn luyện các ma trận hạng thấp nhỏ biểu diễn phần cập nhật trọng số.
+- [**LoRa (IoT)**](../../concepts/lora-radio/vi.md) [iot/connectivity-protocols]: Kỹ thuật điều chế sóng vô tuyến tầng vật lý dựa trên công nghệ trải phổ tiếng chim hót (Chirp Spread Spectrum), cho phép truyền dữ liệu khoảng cách xa với công suất tiêu thụ điện cực nhỏ.
+
 ## margin
 - [**Ký quỹ (Chứng khoán)**](../../concepts/margin/vi.md) [finance/investing/stocks]: Tài sản trong tài khoản được dùng làm bảo đảm khi nhà đầu tư vay tiền từ công ty chứng khoán để giao dịch.
 - [**Biên lợi nhuận (Kế toán)**](../../concepts/profit-margin/vi.md) [finance/corporate-finance/financial-statements]: Tỷ lệ phần trăm cho biết doanh nghiệp giữ lại bao nhiêu lợi nhuận từ doanh thu theo cách tính được chọn.

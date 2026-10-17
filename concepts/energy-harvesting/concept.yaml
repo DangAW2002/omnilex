@@ -1,12 +1,24 @@
 id: energy-harvesting
 domains:
   - iot/devices-sensors
-level: 1
+level: 2
 relations:
-  prerequisites: []
+  prerequisites:
+    - "sensor"
   confusable: []
-  related: []
+  related:
+    - "low-power-mode"
+    - "embedded-system"
 status: draft
 provenance:
   drafted_by: ai
-sources: []
+sources:
+  - ref: ti
+    locator: https://www.ti.com/lit/wp/slat151/slat151.pdf
+    title: "Energy Harvesting for Low-Power IoT | Texas Instruments"
+    language: en
+    accessed: '2026-10-17'
+    retrieved_by: ai
+    supports:
+      - definition
+      - summary

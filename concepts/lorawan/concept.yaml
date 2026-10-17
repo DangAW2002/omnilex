@@ -6,6 +6,7 @@ relations:
   prerequisites: []
   confusable:
     - nb-iot
+    - lora-radio
   related:
     - nb-iot
     - iot-gateway

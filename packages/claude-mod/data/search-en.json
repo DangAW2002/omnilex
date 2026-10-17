@@ -21,6 +21,24 @@
     "status": "draft"
   },
   {
+    "id": "accelerometer",
+    "label": "Accelerometer",
+    "aliases": [],
+    "loanwords": [
+      "accelerometer"
+    ],
+    "plain_descriptions": [
+      "sensor that detects motion, shakes, and the pull of gravity on a device",
+      "microchip that measures changes in speed and tells a phone to rotate its screen"
+    ],
+    "summary": "An electromechanical sensor that measures proper acceleration—the physical acceleration experienced by an object relative to freefall, including the gravitational vector.",
+    "domains": [
+      "iot/devices-sensors"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
     "id": "acceptance-criteria",
     "label": "Acceptance criteria",
     "aliases": [
@@ -90,6 +108,26 @@
       "media/digital-marketing/paid-ads"
     ],
     "level": 1,
+    "status": "draft"
+  },
+  {
+    "id": "adc",
+    "label": "Analog-to-digital converter (ADC)",
+    "aliases": [
+      "ADC"
+    ],
+    "loanwords": [
+      "adc"
+    ],
+    "plain_descriptions": [
+      "electronic circuit that converts smooth continuous physical voltages into discrete digital numbers",
+      "sensor-reading chip that turns real-world voltage levels into numbers a computer can process"
+    ],
+    "summary": "An electronic circuit system that samples a continuous analog voltage waveform and quantizes it into discrete multi-bit digital numeric values.",
+    "domains": [
+      "iot/devices-sensors"
+    ],
+    "level": 2,
     "status": "draft"
   },
   {
@@ -181,6 +219,24 @@
     "summary": "A dedicated network address and URL path exposed by an API where clients access a specific service or resource.",
     "domains": [
       "it/web/api"
+    ],
+    "level": 1,
+    "status": "draft"
+  },
+  {
+    "id": "arduino",
+    "label": "Arduino",
+    "aliases": [],
+    "loanwords": [
+      "arduino"
+    ],
+    "plain_descriptions": [
+      "open-source microcontroller board and software platform for controlling physical electronics",
+      "easy-to-program electronic prototyping board that reads buttons and turns on motors"
+    ],
+    "summary": "An open-source electronics prototyping platform encompassing programmable microcontroller hardware boards and a simplified software development environment for controlling physical actuators and sensors.",
+    "domains": [
+      "iot/devices-sensors"
     ],
     "level": 1,
     "status": "draft"
@@ -1751,6 +1807,22 @@
     "status": "draft"
   },
   {
+    "id": "embedded-system",
+    "label": "Embedded system",
+    "aliases": [],
+    "loanwords": [],
+    "plain_descriptions": [
+      "specialized computer built inside a larger machine to run dedicated tasks",
+      "compact microprocessor hardware dedicated entirely to single-purpose equipment control"
+    ],
+    "summary": "A dedicated computing assembly combining a microprocessor, firmware, and peripheral interfaces engineered to execute predefined control operations within an encompassing machine.",
+    "domains": [
+      "iot/devices-sensors"
+    ],
+    "level": 1,
+    "status": "draft"
+  },
+  {
     "id": "embedding",
     "label": "Embedding",
     "aliases": [
@@ -1820,6 +1892,26 @@
     "summary": "A comprehensive testing methodology that validates the flow of an application from the user interface down through all underlying backend services and databases.",
     "domains": [
       "it/software-engineering/testing"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
+    "id": "energy-harvesting",
+    "label": "Energy harvesting",
+    "aliases": [
+      "Power harvesting"
+    ],
+    "loanwords": [
+      "energy harvesting"
+    ],
+    "plain_descriptions": [
+      "capturing ambient energy from light, heat, or vibrations to power electronics without batteries",
+      "technology that scavenges electricity from the environment for maintenance-free sensors"
+    ],
+    "summary": "The process of capturing minute quantities of energy from ambient environmental sources—such as light, thermal gradients, mechanical vibrations, or radio waves—and converting it into electrical power for electronics.",
+    "domains": [
+      "iot/devices-sensors"
     ],
     "level": 2,
     "status": "draft"
@@ -1913,6 +2005,24 @@
       "finance/corporate-finance/capital-structure"
     ],
     "level": 1,
+    "status": "draft"
+  },
+  {
+    "id": "esp32",
+    "label": "ESP32",
+    "aliases": [],
+    "loanwords": [
+      "esp32"
+    ],
+    "plain_descriptions": [
+      "powerful, low-cost microchip with built-in Wi-Fi and Bluetooth for connected devices",
+      "dual-core microcontroller chip engineered specifically for wireless IoT gadgets"
+    ],
+    "summary": "A low-cost, low-power system on a chip microcontroller series featuring integrated Wi-Fi and dual-mode Bluetooth designed for wireless IoT product engineering.",
+    "domains": [
+      "iot/devices-sensors"
+    ],
+    "level": 2,
     "status": "draft"
   },
   {
@@ -2166,6 +2276,48 @@
     "status": "draft"
   },
   {
+    "id": "gnss",
+    "label": "GNSS",
+    "aliases": [
+      "Global Navigation Satellite System",
+      "GPS"
+    ],
+    "loanwords": [
+      "gnss",
+      "gps"
+    ],
+    "plain_descriptions": [
+      "umbrella term for satellite constellations like GPS, Galileo, and BeiDou that provide global positioning",
+      "satellite navigation technology that calculates exact latitude, longitude, and time anywhere on Earth"
+    ],
+    "summary": "The worldwide collection of satellite constellations and augmentation systems that transmit radio signals used by ground receivers to compute autonomous geospatial positioning and atomic time.",
+    "domains": [
+      "iot/devices-sensors"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
+    "id": "gpio",
+    "label": "General-purpose input/output (GPIO)",
+    "aliases": [
+      "GPIO"
+    ],
+    "loanwords": [
+      "gpio"
+    ],
+    "plain_descriptions": [
+      "physical pins on a microchip that software can toggle on, off, or read as digital signals",
+      "programmable electrical pins used to communicate with switches, LEDs, and external circuits"
+    ],
+    "summary": "An uncommitted digital signal pin on an integrated circuit whose electrical direction and voltage state can be configured dynamically by software at runtime.",
+    "domains": [
+      "iot/devices-sensors"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
     "id": "gpu",
     "label": "Graphics Processing Unit (GPU)",
     "aliases": [
@@ -2373,6 +2525,28 @@
     "status": "draft"
   },
   {
+    "id": "i2c",
+    "label": "I²C",
+    "aliases": [
+      "I2C",
+      "Inter-Integrated Circuit"
+    ],
+    "loanwords": [
+      "i2c",
+      "i²c"
+    ],
+    "plain_descriptions": [
+      "two-wire communication bus for connecting multiple sensors to a microchip",
+      "serial data protocol using a clock line and a data line with unique device addresses"
+    ],
+    "summary": "A synchronous, multi-controller, multi-target serial communication bus that uses two bidirectional open-drain lines (SCL and SDA) pulled high by resistors to network peripheral ICs.",
+    "domains": [
+      "iot/devices-sensors"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
     "id": "idempotency",
     "label": "Idempotency",
     "aliases": [],
@@ -2419,6 +2593,26 @@
     "summary": "A computer vision task in which an algorithm analyzes an entire image and assigns it one or more discrete categorical labels from a predefined taxonomy.",
     "domains": [
       "it/ai-ml/computer-vision"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
+    "id": "imu",
+    "label": "Inertial measurement unit (IMU)",
+    "aliases": [
+      "IMU"
+    ],
+    "loanwords": [
+      "imu"
+    ],
+    "plain_descriptions": [
+      "sensor pack combining an accelerometer and gyroscope to track orientation and movement",
+      "electronic motion sensor that measures how fast a device is tilting, turning, and accelerating"
+    ],
+    "summary": "An integrated multi-axis sensor package combining accelerometers, gyroscopes, and frequently magnetometers to measure a body linear acceleration, angular velocity, and heading.",
+    "domains": [
+      "iot/devices-sensors"
     ],
     "level": 2,
     "status": "draft"
@@ -2925,6 +3119,27 @@
     "status": "draft"
   },
   {
+    "id": "lidar",
+    "label": "LiDAR",
+    "aliases": [
+      "Lidar",
+      "LIDAR"
+    ],
+    "loanwords": [
+      "lidar"
+    ],
+    "plain_descriptions": [
+      "sensor that shoots laser beams and times reflections to create accurate 3D maps",
+      "laser-scanning distance measurement system used in self-driving vehicles and robotic vacuums"
+    ],
+    "summary": "A remote-sensing method that illuminates a target with pulsed laser light and measures reflected return times to generate high-resolution three-dimensional spatial coordinates.",
+    "domains": [
+      "iot/devices-sensors"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
     "id": "linter",
     "label": "Linter",
     "aliases": [],
@@ -3040,6 +3255,7 @@
   {
     "id": "lora",
     "label": "Low-Rank Adaptation",
+    "qualifier": "(AI)",
     "aliases": [
       "LoRA"
     ],
@@ -3053,6 +3269,27 @@
       "it/ai-ml/mlops"
     ],
     "level": 3,
+    "status": "draft"
+  },
+  {
+    "id": "lora-radio",
+    "label": "LoRa",
+    "qualifier": "(IoT)",
+    "aliases": [
+      "Long Range radio"
+    ],
+    "loanwords": [
+      "lora"
+    ],
+    "plain_descriptions": [
+      "long-distance, low-power radio modulation that sends small sensor messages across kilometers",
+      "chirp-based wireless technology that enables battery-operated sensors to transmit data across cities"
+    ],
+    "summary": "A proprietary physical-layer wireless radio frequency modulation technique derived from Chirp Spread Spectrum (CSS) that enables long-range, low-power data communications across license-free sub-gigahertz bands.",
+    "domains": [
+      "iot/connectivity-protocols"
+    ],
+    "level": 2,
     "status": "draft"
   },
   {
@@ -3088,6 +3325,29 @@
     "summary": "A mathematical function quantifying the discrepancy between a model's predicted outputs and true ground-truth targets.",
     "domains": [
       "it/ai-ml/foundations"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
+    "id": "low-power-mode",
+    "label": "Sleep mode",
+    "qualifier": "(Embedded)",
+    "aliases": [
+      "Low-power mode",
+      "Deep sleep"
+    ],
+    "loanwords": [
+      "sleep mode",
+      "deep sleep"
+    ],
+    "plain_descriptions": [
+      "power-saving state where a microchip shuts down most circuits to preserve battery life",
+      "standby mode that drops microchip power consumption from milliamps to microamps"
+    ],
+    "summary": "A reduced-consumption operational state in microcontrollers where clock oscillators, high-speed peripherals, and processing cores are gated off until an external interrupt or timer triggers awakening.",
+    "domains": [
+      "iot/devices-sensors"
     ],
     "level": 2,
     "status": "draft"
@@ -3162,6 +3422,27 @@
     "summary": "A strategic framework illustrating the progressive stages of a customer's journey, from initial brand awareness through consideration to final purchase and retention.",
     "domains": [
       "media/digital-marketing/metrics-analytics"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
+    "id": "matter-iot",
+    "label": "Matter",
+    "qualifier": "(IoT)",
+    "aliases": [
+      "Matter standard"
+    ],
+    "loanwords": [
+      "matter"
+    ],
+    "plain_descriptions": [
+      "unified smart home standard that lets Apple, Google, and Amazon devices work seamlessly together",
+      "universal language for smart lights, locks, and plugs across different smart home ecosystems"
+    ],
+    "summary": "An open-source, interoperable smart home connectivity standard operating over IP that allows certified devices to communicate seamlessly across Apple Home, Google Home, and Amazon Alexa ecosystems.",
+    "domains": [
+      "iot/connectivity-protocols"
     ],
     "level": 2,
     "status": "draft"
@@ -3585,6 +3866,26 @@
     "summary": "A regularly distributed direct-to-inbox electronic publication focused on sharing news, curated insights, and company updates with an opted-in subscriber base.",
     "domains": [
       "media/digital-marketing/email"
+    ],
+    "level": 1,
+    "status": "draft"
+  },
+  {
+    "id": "nfc",
+    "label": "Near-field communication (NFC)",
+    "aliases": [
+      "NFC"
+    ],
+    "loanwords": [
+      "nfc"
+    ],
+    "plain_descriptions": [
+      "short-range wireless touch technology used for contactless payments and transit taps",
+      "close-contact wireless standard that transfers credentials when devices are tapped together"
+    ],
+    "summary": "A short-range, high-frequency standards-based wireless connectivity technology operating at 13.56 MHz that enables intuitive two-way communication when devices are brought within 4 centimeters.",
+    "domains": [
+      "iot/connectivity-protocols"
     ],
     "level": 1,
     "status": "draft"
@@ -4309,6 +4610,26 @@
     "status": "draft"
   },
   {
+    "id": "pwm",
+    "label": "Pulse-width modulation (PWM)",
+    "aliases": [
+      "PWM"
+    ],
+    "loanwords": [
+      "pwm"
+    ],
+    "plain_descriptions": [
+      "rapidly switching a digital signal on and off to simulate variable electrical power",
+      "flickering a voltage line fast enough to dim lights or adjust electric motor speeds"
+    ],
+    "summary": "A modulation method that regulates the effective average power delivered to a load by varying the duty cycle of a rapid square-wave switching signal.",
+    "domains": [
+      "iot/devices-sensors"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
     "id": "quantitative-easing",
     "label": "Quantitative easing (QE)",
     "aliases": [
@@ -4376,6 +4697,27 @@
       "it/ai-ml/llm-agents"
     ],
     "level": 2,
+    "status": "draft"
+  },
+  {
+    "id": "raspberry-pi",
+    "label": "Raspberry Pi",
+    "aliases": [
+      "RPi"
+    ],
+    "loanwords": [
+      "raspberry pi",
+      "rpi"
+    ],
+    "plain_descriptions": [
+      "popular series of small, affordable single-board computers for learning and prototyping",
+      "credit-card-sized computer board featuring 40 GPIO pins used widely in DIY and IoT builds"
+    ],
+    "summary": "A widely adopted series of compact, cost-effective ARM-based single-board computers equipped with a standard 40-pin header for peripheral interfacing and education.",
+    "domains": [
+      "iot/devices-sensors"
+    ],
+    "level": 1,
     "status": "draft"
   },
   {
@@ -4537,6 +4879,26 @@
     "summary": "The total monetary intake realized by an enterprise through ordinary business activities before deducting operational costs and expenses.",
     "domains": [
       "finance/corporate-finance/financial-statements"
+    ],
+    "level": 1,
+    "status": "draft"
+  },
+  {
+    "id": "rfid",
+    "label": "Radio-frequency identification (RFID)",
+    "aliases": [
+      "RFID"
+    ],
+    "loanwords": [
+      "rfid"
+    ],
+    "plain_descriptions": [
+      "wireless technology using radio waves to identify and track tags attached to objects",
+      "electronic tagging system that scans toll transponders and inventory tags from meters away"
+    ],
+    "summary": "A wireless identification technology employing electromagnetic radio frequency fields to automatically detect and read encoded data stored on passive or active electronic tags.",
+    "domains": [
+      "iot/devices-sensors"
     ],
     "level": 1,
     "status": "draft"
@@ -4769,6 +5131,25 @@
     "status": "draft"
   },
   {
+    "id": "secure-boot",
+    "label": "Secure boot",
+    "aliases": [],
+    "loanwords": [
+      "secure boot"
+    ],
+    "plain_descriptions": [
+      "security check that ensures a computer or chip only boots trusted, authorized software",
+      "cryptographic startup process that stops malicious firmware from running on a device"
+    ],
+    "summary": "A security standard ensuring that an electronic device boots using only firmware and software that is verified and cryptographically signed by trusted manufacturers.",
+    "domains": [
+      "iot/devices-sensors",
+      "it/security/cryptography"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
     "id": "semantic-versioning",
     "label": "Semantic versioning",
     "aliases": [
@@ -4928,6 +5309,27 @@
     "status": "reviewed"
   },
   {
+    "id": "single-board-computer",
+    "label": "Single-board computer (SBC)",
+    "aliases": [
+      "SBC"
+    ],
+    "loanwords": [
+      "single-board computer",
+      "sbc"
+    ],
+    "plain_descriptions": [
+      "complete computer built entirely onto one single circuit board",
+      "compact circuit board containing processor, memory, and ports capable of booting an OS"
+    ],
+    "summary": "A complete functional computer whose microprocessor, system memory, storage interfaces, input-output controllers, and networking ports are assembled onto a single physical printed circuit board.",
+    "domains": [
+      "iot/devices-sensors"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
     "id": "sla",
     "label": "Service Level Agreement (SLA)",
     "aliases": [
@@ -4991,6 +5393,24 @@
       "networked household setup where appliances communicate and can be managed remotely"
     ],
     "summary": "A residential environment equipped with interconnected electronic devices that automate domestic tasks, optimize utility usage, and enable centralized remote monitoring.",
+    "domains": [
+      "iot/devices-sensors"
+    ],
+    "level": 1,
+    "status": "draft"
+  },
+  {
+    "id": "smart-meter",
+    "label": "Smart meter",
+    "aliases": [],
+    "loanwords": [
+      "smart meter"
+    ],
+    "plain_descriptions": [
+      "digital utility meter that measures electricity, water, or gas and sends readings automatically",
+      "connected electric meter that reports consumption to the power company without manual meter readers"
+    ],
+    "summary": "An advanced electronic utility metering device that records consumption of electric energy, water, or gas in real time and communicates intervals back to the utility provider via automated networks.",
     "domains": [
       "iot/devices-sensors"
     ],
@@ -5090,6 +5510,27 @@
       "it/software-engineering/programming-concepts"
     ],
     "level": 1,
+    "status": "draft"
+  },
+  {
+    "id": "spi-bus",
+    "label": "Serial Peripheral Interface (SPI)",
+    "aliases": [
+      "SPI"
+    ],
+    "loanwords": [
+      "spi",
+      "spi bus"
+    ],
+    "plain_descriptions": [
+      "high-speed, four-wire data connection between a microchip and external memory or displays",
+      "synchronous serial communication interface using separate lines for sending and receiving data simultaneously"
+    ],
+    "summary": "A high-speed, synchronous four-wire serial interface providing full-duplex data transfer between a master device and one or more selected peripheral devices using dedicated chip select lines.",
+    "domains": [
+      "iot/devices-sensors"
+    ],
+    "level": 2,
     "status": "draft"
   },
   {
@@ -5463,6 +5904,27 @@
     "status": "draft"
   },
   {
+    "id": "thread-iot",
+    "label": "Thread",
+    "qualifier": "(IoT)",
+    "aliases": [
+      "Thread protocol"
+    ],
+    "loanwords": [
+      "thread"
+    ],
+    "plain_descriptions": [
+      "secure, self-healing wireless mesh networking standard designed for smart home gadgets",
+      "IPv6-based mesh radio protocol that lets home devices talk to each other without single failure points"
+    ],
+    "summary": "An IPv6-based, low-power wireless mesh networking protocol built on IEEE 802.15.4 that provides reliable, secure, and self-healing connectivity for smart home devices without requiring a central hub.",
+    "domains": [
+      "iot/connectivity-protocols"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
     "id": "throughput",
     "label": "Throughput",
     "aliases": [
@@ -5480,6 +5942,27 @@
       "it/infrastructure/networking"
     ],
     "level": 2,
+    "status": "draft"
+  },
+  {
+    "id": "tinyml",
+    "label": "TinyML",
+    "aliases": [
+      "Tiny Machine Learning"
+    ],
+    "loanwords": [
+      "tinyml"
+    ],
+    "plain_descriptions": [
+      "running artificial intelligence models directly on tiny, low-power microcontrollers",
+      "smart machine learning algorithms optimized to execute inside microchips using milliwatts of power"
+    ],
+    "summary": "A subfield of machine learning focused on optimizing and executing neural network models directly on resource-constrained microcontrollers operating in the milliwatt or microwatt power envelope.",
+    "domains": [
+      "iot/edge-cloud",
+      "it/ai-ml/mlops"
+    ],
+    "level": 3,
     "status": "draft"
   },
   {
@@ -5645,6 +6128,26 @@
       "media/content-production/visual-design"
     ],
     "level": 1,
+    "status": "draft"
+  },
+  {
+    "id": "uart",
+    "label": "UART",
+    "aliases": [
+      "Universal Asynchronous Receiver-Transmitter"
+    ],
+    "loanwords": [
+      "uart"
+    ],
+    "plain_descriptions": [
+      "two-wire hardware circuit that sends and receives data character by character without a shared clock",
+      "asynchronous serial communication module commonly used for terminal logs and debugging"
+    ],
+    "summary": "A physical integrated circuit hardware block that translates parallel computing data into sequential asynchronous serial bitstreams over paired transmit (TX) and receive (RX) wires.",
+    "domains": [
+      "iot/devices-sensors"
+    ],
+    "level": 2,
     "status": "draft"
   },
   {
@@ -5874,6 +6377,27 @@
     "status": "draft"
   },
   {
+    "id": "wearable",
+    "label": "Wearable device",
+    "aliases": [
+      "Wearable"
+    ],
+    "loanwords": [
+      "wearable",
+      "wearable device"
+    ],
+    "plain_descriptions": [
+      "electronic gadget worn directly on the human body to monitor activity and health",
+      "body-worn tech like smartwatches, fitness rings, and biometric patches"
+    ],
+    "summary": "A category of compact electronic devices designed to be comfortably worn on the body or clothing, incorporating sensors, processing, and wireless transceivers for continuous biometric tracking.",
+    "domains": [
+      "iot/devices-sensors"
+    ],
+    "level": 1,
+    "status": "draft"
+  },
+  {
     "id": "web-session",
     "label": "Session",
     "qualifier": "(Web)",
@@ -5912,6 +6436,29 @@
     "status": "draft"
   },
   {
+    "id": "wifi",
+    "label": "Wi-Fi",
+    "aliases": [
+      "WiFi",
+      "IEEE 802.11"
+    ],
+    "loanwords": [
+      "wi-fi",
+      "wifi"
+    ],
+    "plain_descriptions": [
+      "ubiquitous wireless radio technology that connects computers, phones, and IoT devices to the internet",
+      "high-speed wireless local area network standard operating over 2.4 GHz, 5 GHz, and 6 GHz bands"
+    ],
+    "summary": "A family of wireless network protocols based on the IEEE 802.11 standards used for local area networking of devices and high-speed internet access across licensed-exempt radio bands.",
+    "domains": [
+      "iot/connectivity-protocols",
+      "it/infrastructure/networking"
+    ],
+    "level": 1,
+    "status": "draft"
+  },
+  {
     "id": "working-capital",
     "label": "Working capital",
     "aliases": [
@@ -5944,6 +6491,24 @@
     "summary": "A web application flaw permitting attackers to embed rogue executable scripts into viewed pages, running unauthorized actions inside visitor browsers.",
     "domains": [
       "it/security/vulnerabilities"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
+    "id": "z-wave",
+    "label": "Z-Wave",
+    "aliases": [],
+    "loanwords": [
+      "z-wave"
+    ],
+    "plain_descriptions": [
+      "sub-gigahertz wireless mesh protocol for smart homes that avoids crowded Wi-Fi channels",
+      "reliable home automation radio standard operating on dedicated sub-1GHz frequencies"
+    ],
+    "summary": "A wireless communications protocol operating in the sub-gigahertz frequency spectrum designed specifically for reliable, interference-free mesh networking in residential home automation.",
+    "domains": [
+      "iot/connectivity-protocols"
     ],
     "level": 2,
     "status": "draft"

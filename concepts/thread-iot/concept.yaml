@@ -1,12 +1,26 @@
 id: thread-iot
 domains:
   - iot/connectivity-protocols
-level: 1
+level: 2
 relations:
-  prerequisites: []
-  confusable: []
-  related: []
+  prerequisites:
+    - "mesh-network"
+  confusable:
+    - "matter-iot"
+  related:
+    - "smart-home"
+    - "ble"
+    - "zigbee"
 status: draft
 provenance:
   drafted_by: ai
-sources: []
+sources:
+  - ref: thread-group
+    locator: https://threadgroup.org/what-is-thread/overview
+    title: "Thread Technology Overview | Thread Group"
+    language: en
+    accessed: '2026-10-17'
+    retrieved_by: ai
+    supports:
+      - definition
+      - summary

@@ -1,12 +1,25 @@
 id: lora-radio
 domains:
   - iot/connectivity-protocols
-level: 1
+level: 2
 relations:
   prerequisites: []
-  confusable: []
-  related: []
+  confusable:
+    - "lora"
+    - "lorawan"
+  related:
+    - "telemetry"
+    - "smart-meter"
 status: draft
 provenance:
   drafted_by: ai
-sources: []
+sources:
+  - ref: lora-alliance
+    locator: https://lora-alliance.org/about-lorawan/
+    title: "What is LoRaWAN? - LoRa Alliance"
+    language: en
+    accessed: '2026-10-17'
+    retrieved_by: ai
+    supports:
+      - definition
+      - summary

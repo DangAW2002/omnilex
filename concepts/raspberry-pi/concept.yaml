@@ -3,10 +3,23 @@ domains:
   - iot/devices-sensors
 level: 1
 relations:
-  prerequisites: []
-  confusable: []
-  related: []
+  prerequisites:
+    - "single-board-computer"
+  confusable:
+    - "arduino"
+  related:
+    - "gpio"
+    - "embedded-system"
 status: draft
 provenance:
   drafted_by: ai
-sources: []
+sources:
+  - ref: ti
+    locator: https://www.ti.com/product-category/microcontrollers-processors/overview.html
+    title: "Microcontrollers & Processors Overview | Texas Instruments"
+    language: en
+    accessed: '2026-10-17'
+    retrieved_by: ai
+    supports:
+      - definition
+      - summary

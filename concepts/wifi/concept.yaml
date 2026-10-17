@@ -1,12 +1,26 @@
 id: wifi
 domains:
   - iot/connectivity-protocols
+  - it/infrastructure/networking
 level: 1
 relations:
   prerequisites: []
   confusable: []
-  related: []
+  related:
+    - "iot-gateway"
+    - "esp32"
+    - "matter-iot"
+    - "ble"
 status: draft
 provenance:
   drafted_by: ai
-sources: []
+sources:
+  - ref: wifi-alliance
+    locator: https://www.wi-fi.org/who-we-are
+    title: "Who We Are | Wi-Fi Alliance"
+    language: en
+    accessed: '2026-10-17'
+    retrieved_by: ai
+    supports:
+      - definition
+      - summary

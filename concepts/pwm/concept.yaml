@@ -1,12 +1,25 @@
 id: pwm
 domains:
   - iot/devices-sensors
-level: 1
+level: 2
 relations:
-  prerequisites: []
-  confusable: []
-  related: []
+  prerequisites:
+    - "gpio"
+  confusable:
+    - "adc"
+  related:
+    - "actuator"
+    - "microcontroller"
 status: draft
 provenance:
   drafted_by: ai
-sources: []
+sources:
+  - ref: ti
+    locator: https://www.ti.com/lit/an/spra285/spra285.pdf
+    title: "PWM Generation Techniques | Texas Instruments"
+    language: en
+    accessed: '2026-10-17'
+    retrieved_by: ai
+    supports:
+      - definition
+      - summary

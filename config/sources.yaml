@@ -1284,3 +1284,136 @@ cdc:
   reuse: paraphrase-only
   domains: [media/pr-communications]
   verified_license_at: "2026-10-17"
+
+# wave3 iota
+ti:
+  title: Texas Instruments Technical Documentation & Application Notes
+  publisher: Texas Instruments Incorporated
+  url: https://www.ti.com
+  type: docs
+  tier: B
+  languages: [en]
+  license: all-rights-reserved
+  reuse: paraphrase-only
+  domains: [iot/devices-sensors]
+  verified_license_at: "2026-10-17"
+
+linux-kernel:
+  title: Linux Kernel Documentation
+  publisher: The Linux Kernel Organization
+  url: https://docs.kernel.org
+  type: docs
+  tier: B
+  languages: [en]
+  license: GPL-2.0
+  reuse: paraphrase-only
+  domains: [iot/devices-sensors, it/infrastructure]
+  verified_license_at: "2026-10-17"
+
+espressif:
+  title: Espressif ESP-IDF Programming Guide
+  publisher: Espressif Systems
+  url: https://docs.espressif.com
+  type: docs
+  tier: B
+  languages: [en]
+  license: all-rights-reserved
+  reuse: paraphrase-only
+  domains: [iot/devices-sensors]
+  verified_license_at: "2026-10-17"
+
+arduino-docs:
+  title: Arduino Documentation & Getting Started Guide
+  publisher: Arduino LLC
+  url: https://docs.arduino.cc
+  type: docs
+  tier: B
+  languages: [en]
+  license: all-rights-reserved
+  reuse: paraphrase-only
+  domains: [iot/devices-sensors]
+  verified_license_at: "2026-10-17"
+
+fda-gov:
+  title: U.S. Food and Drug Administration Regulatory Science & Guidance
+  publisher: U.S. Food and Drug Administration
+  url: https://www.fda.gov
+  type: docs
+  tier: B
+  languages: [en]
+  license: public-domain-us-gov
+  reuse: paraphrase-only
+  domains: [iot/devices-sensors]
+  verified_license_at: "2026-10-17"
+
+faa-gov:
+  title: Federal Aviation Administration Navigation Services
+  publisher: Federal Aviation Administration
+  url: https://www.faa.gov
+  type: docs
+  tier: B
+  languages: [en]
+  license: public-domain-us-gov
+  reuse: paraphrase-only
+  domains: [iot/devices-sensors]
+  verified_license_at: "2026-10-17"
+
+noaa-gov:
+  title: National Oceanic and Atmospheric Administration Ocean Service
+  publisher: National Oceanic and Atmospheric Administration
+  url: https://oceanservice.noaa.gov
+  type: docs
+  tier: B
+  languages: [en]
+  license: public-domain-us-gov
+  reuse: paraphrase-only
+  domains: [iot/devices-sensors]
+  verified_license_at: "2026-10-17"
+
+doe-gov:
+  title: U.S. Department of Energy Grid Modernization Reports
+  publisher: U.S. Department of Energy
+  url: https://www.energy.gov
+  type: docs
+  tier: B
+  languages: [en]
+  license: public-domain-us-gov
+  reuse: paraphrase-only
+  domains: [iot/devices-sensors]
+  verified_license_at: "2026-10-17"
+
+thread-group:
+  title: Thread Group Technology Overview & Whitepapers
+  publisher: Thread Group, Inc.
+  url: https://threadgroup.org
+  type: standard
+  tier: A
+  languages: [en]
+  license: all-rights-reserved
+  reuse: paraphrase-only
+  domains: [iot/connectivity-protocols]
+  verified_license_at: "2026-10-17"
+
+wifi-alliance:
+  title: Wi-Fi Alliance Technology Specifications & Programs
+  publisher: Wi-Fi Alliance
+  url: https://www.wi-fi.org
+  type: standard
+  tier: A
+  languages: [en]
+  license: all-rights-reserved
+  reuse: paraphrase-only
+  domains: [iot/connectivity-protocols]
+  verified_license_at: "2026-10-17"
+
+tinyml-org:
+  title: tinyML Foundation Resources and Standards
+  publisher: tinyML Foundation
+  url: https://tinyml.org
+  type: docs
+  tier: B
+  languages: [en]
+  license: all-rights-reserved
+  reuse: paraphrase-only
+  domains: [iot/edge-cloud, it/ai-ml]
+  verified_license_at: "2026-10-17"

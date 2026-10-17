@@ -1,12 +1,25 @@
 id: tinyml
 domains:
   - iot/edge-cloud
-level: 1
+  - it/ai-ml/mlops
+level: 3
 relations:
-  prerequisites: []
+  prerequisites:
+    - "microcontroller"
   confusable: []
-  related: []
+  related:
+    - "sensor"
+    - "low-power-mode"
 status: draft
 provenance:
   drafted_by: ai
-sources: []
+sources:
+  - ref: tinyml-org
+    locator: https://tinyml.org/
+    title: "tinyML Foundation"
+    language: en
+    accessed: '2026-10-17'
+    retrieved_by: ai
+    supports:
+      - definition
+      - summary

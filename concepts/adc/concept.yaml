@@ -1,12 +1,25 @@
 id: adc
 domains:
   - iot/devices-sensors
-level: 1
+level: 2
 relations:
-  prerequisites: []
-  confusable: []
-  related: []
+  prerequisites:
+    - "gpio"
+  confusable:
+    - "pwm"
+  related:
+    - "sensor"
+    - "microcontroller"
 status: draft
 provenance:
   drafted_by: ai
-sources: []
+sources:
+  - ref: ti
+    locator: https://www.ti.com/product-category/data-converters/adcs/overview.html
+    title: "Analog-to-Digital Converters (ADCs) | Texas Instruments"
+    language: en
+    accessed: '2026-10-17'
+    retrieved_by: ai
+    supports:
+      - definition
+      - summary

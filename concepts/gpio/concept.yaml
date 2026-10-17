@@ -1,12 +1,26 @@
 id: gpio
 domains:
   - iot/devices-sensors
-level: 1
+level: 2
 relations:
-  prerequisites: []
+  prerequisites:
+    - "microcontroller"
   confusable: []
-  related: []
+  related:
+    - "i2c"
+    - "spi-bus"
+    - "uart"
+    - "pwm"
 status: draft
 provenance:
   drafted_by: ai
-sources: []
+sources:
+  - ref: linux-kernel
+    locator: https://docs.kernel.org/driver-api/gpio/intro.html
+    title: "Introduction to GPIO - The Linux Kernel Documentation"
+    language: en
+    accessed: '2026-10-17'
+    retrieved_by: ai
+    supports:
+      - definition
+      - summary

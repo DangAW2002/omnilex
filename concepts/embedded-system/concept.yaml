@@ -3,10 +3,25 @@ domains:
   - iot/devices-sensors
 level: 1
 relations:
-  prerequisites: []
-  confusable: []
-  related: []
+  prerequisites:
+    - "microcontroller"
+  confusable:
+    - "single-board-computer"
+  related:
+    - "sensor"
+    - "actuator"
+    - "firmware"
+    - "rtos"
 status: draft
 provenance:
   drafted_by: ai
-sources: []
+sources:
+  - ref: nist-csrc
+    locator: https://csrc.nist.gov/glossary/term/embedded_control_unit
+    title: "Embedded Control Unit - Glossary | CSRC"
+    language: en
+    accessed: '2026-10-17'
+    retrieved_by: ai
+    supports:
+      - definition
+      - summary

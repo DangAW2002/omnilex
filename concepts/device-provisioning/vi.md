@@ -8,7 +8,8 @@ plain_descriptions:
   - quy trình tự động đăng ký cấp phát chứng thư số và thiết lập cấu hình ban đầu cho thiết bị
   - bước gia nhập và xác thực danh tính của máy móc mới vào hệ thống quản lý tập trung
 summary: Quy trình khởi tạo tự động nhằm xác thực danh tính, đăng ký và thiết lập cấu hình vận hành ban đầu cho thiết bị phần cứng mới kết nối vào nền tảng đám mây.
-confusable_notes: {}
+confusable_notes:
+  esim: "Device provisioning là toàn bộ quy trình cấu hình danh tính phần mềm, chứng chỉ số và tài nguyên đám mây cho thiết bị, trong khi eSIM chỉ quản lý hồ sơ chứng thực và kết nối mạng viễn thông di động của nhà mạng."
 follow_up_questions:
   - Chip bảo mật phần cứng TPM và chứng chỉ số X.509 hỗ trợ quy trình khởi tạo không chạm (zero-touch) như thế nào?
   - Dịch vụ cấp phát phân luồng thiết bị về cụm máy chủ đám mây gần nhất theo vị trí địa lý ra sao?

@@ -4,7 +4,9 @@ domains:
 level: 2
 relations:
   prerequisites: []
-  confusable: []
+  confusable:
+    - poe
+    - lpwan
   related:
     - zigbee
     - smart-home

@@ -13,7 +13,8 @@ plain_descriptions:
   - máy tính công nghiệp chuyên dụng điều khiển dây chuyền máy móc tự động trong nhà máy
   - bộ điều khiển phần cứng kháng bụi rung chịu nhiệt thi hành các lệnh đóng ngắt tự động
 summary: Máy tính kỹ thuật số công nghiệp chuyên dụng được thiết kế bền bỉ để thực thi các lệnh điều khiển logic tiền định thời gian thực cho dây chuyền sản xuất.
-confusable_notes: {}
+confusable_notes:
+  rtu: "PLC được thiết kế chuyên biệt cho việc điều khiển vòng lặp tốc độ cao, siêu chính xác trong nhà máy, còn RTU được tối ưu hóa cho việc truyền dữ liệu từ xa qua sóng vô tuyến, vệ tinh hoặc mạng di động với mức tiêu thụ điện thấp thích hợp chạy pin năng lượng mặt trời."
 follow_up_questions:
   - Ngôn ngữ hình thang Ladder Logic và ngôn ngữ văn bản Structured Text theo chuẩn IEC 61131-3 khác nhau ra sao?
   - Những thiết kế phần cứng đặc thù nào giúp PLC chịu được sốc điện, bụi bẩn và nhiệt độ cao trong nhà xưởng?

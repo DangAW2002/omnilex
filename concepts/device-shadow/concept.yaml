@@ -1,0 +1,27 @@
+id: device-shadow
+domains:
+  - iot/edge-cloud
+level: 2
+relations:
+  prerequisites:
+    - "iot-platform"
+  confusable:
+    - "digital-twin"
+    - "lwm2m"
+  related:
+    - "telemetry"
+    - "ota-update"
+    - "lwm2m"
+status: draft
+provenance:
+  drafted_by: ai
+sources:
+  - ref: aws-docs
+    locator: https://docs.aws.amazon.com/iot/latest/developerguide/iot-device-shadows.html
+    title: "Device Shadow Service for AWS IoT - Developer Guide"
+    language: en
+    accessed: '2026-10-17'
+    retrieved_by: ai
+    supports:
+      - definition
+      - summary

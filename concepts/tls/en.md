@@ -10,7 +10,8 @@ plain_descriptions:
   - the security protocol that powers the padlock icon and https in your browser address bar
   - an encrypted communications tunnel protecting internet traffic from eavesdropping and tampering
 summary: A cryptographic communication protocol that provides privacy, data integrity, and authentication for communications over computer networks.
-confusable_notes: {}
+confusable_notes:
+  dtls: "TLS provides cryptographic security over connection-oriented, reliable TCP byte streams, whereas DTLS adapts TLS to secure connectionless, packet-based datagram transport protocols such as UDP."
 follow_up_questions:
   - How does TLS 1.3 reduce handshake latency to a single round-trip time (1-RTT) compared to TLS 1.2?
   - Why is forward secrecy essential to prevent retroactively decrypting recorded network traffic?

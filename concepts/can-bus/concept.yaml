@@ -1,0 +1,27 @@
+id: can-bus
+domains:
+  - iot/industrial
+level: 1
+relations:
+  prerequisites:
+    - "sensor"
+  confusable:
+    - "modbus"
+    - "bacnet"
+  related:
+    - "telematics"
+    - "plc"
+    - "rtu"
+status: draft
+provenance:
+  drafted_by: ai
+sources:
+  - ref: ti
+    locator: https://www.ti.com/lit/an/sloa101b/sloa101b.pdf
+    title: "Introduction to the Controller Area Network (CAN) - Application Report SLOA101B"
+    language: en
+    accessed: '2026-10-17'
+    retrieved_by: ai
+    supports:
+      - definition
+      - summary

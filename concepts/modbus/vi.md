@@ -8,6 +8,7 @@ plain_descriptions:
   - chuẩn truyền thông nối tiếp và tcp đơn giản phổ biến nhất trong hệ thống tự động hóa
 summary: Giao thức truyền thông công nghiệp theo mô hình chủ - tớ (master/slave) được sử dụng rộng rãi để đọc và ghi các bảng thanh ghi dữ liệu qua đường truyền nối tiếp hoặc mạng Ethernet.
 confusable_notes:
+  can-bus: "Modbus bắt buộc phải theo mô hình master-slave trong đó thiết bị tớ chỉ được phản hồi khi máy chủ thăm dò, còn CAN bus phân xử tranh chấp đường truyền theo mức ưu tiên của gói tin cho phép mọi thiết bị chủ động phát tin khi cần."
   opc-ua: Modbus truyền dữ liệu qua các bảng thanh ghi 16-bit và cờ nhị phân thô không có mã hóa, trong khi OPC UA là mô hình hướng đối tượng đa tầng có gắn ngữ nghĩa và chứng chỉ bảo mật đầy đủ.
 follow_up_questions:
   - Sự khác biệt về cấu trúc khung truyền giữa Modbus RTU nhị phân qua cổng RS-485 và gói tin Modbus TCP qua cổng 502 là gì?

@@ -9,7 +9,8 @@ plain_descriptions:
   - mô hình ảo trên máy tính mô phỏng chính xác trạng thái thực tế của máy móc qua dữ liệu cảm biến
   - bản sao phần mềm sống động phản ánh hành vi và vòng đời của thiết bị ngoài đời thực
 summary: Mô hình ảo sống động mô phỏng chính xác trạng thái, hành vi và vòng đời của một đối tượng hoặc quy trình vật lý thông qua dòng dữ liệu cảm biến thời gian thực.
-confusable_notes: {}
+confusable_notes:
+  device-shadow: "Digital twin là mô hình mô phỏng kỹ thuật số hoàn chỉnh chứa cả thuật toán vật lý và lịch sử vận hành sâu rộng, trong khi device shadow là tệp tài liệu JSON gọn nhẹ lưu trữ trạng thái đồng bộ (mong muốn và thực tế) của phần cứng trên đám mây."
 follow_up_questions:
   - Ngôn ngữ mô hình hóa đồ thị như DTDL định nghĩa các mối quan hệ không gian và thuộc tính trong bản sao số như thế nào?
   - Bản sao số kết hợp số liệu đo từ xa với các mô phỏng vật lý ra sao để dự báo độ mỏi vật liệu của thiết bị?

@@ -1,0 +1,27 @@
+id: v2x
+domains:
+  - iot/applications
+level: 2
+relations:
+  prerequisites:
+    - "telematics"
+    - "5g"
+  confusable:
+    - "telematics"
+  related:
+    - "smart-city"
+    - "edge-ai"
+    - "can-bus"
+status: draft
+provenance:
+  drafted_by: ai
+sources:
+  - ref: itu
+    locator: https://www.itu.int/rec/T-REC-Y.4471/en
+    title: "Y.4471: Functional architecture of network-based driving assistance for autonomous vehicles"
+    language: en
+    accessed: '2026-10-17'
+    retrieved_by: ai
+    supports:
+      - definition
+      - summary

@@ -9,7 +9,8 @@ plain_descriptions:
   - phương pháp theo dõi dữ liệu máy móc để dự báo chính xác thời điểm hỏng hóc trước khi xảy ra
   - chiến lược bảo dưỡng thiết bị dựa trên đo lường độ hao mòn thực tế thay vì lịch định kỳ
 summary: Chiến lược quản trị tài sản chủ động dựa trên dữ liệu cảm biến đo từ xa để phát hiện sớm dấu hiệu suy hao và dự báo thời điểm bảo dưỡng máy móc trước khi xảy ra sự cố hỏng hóc.
-confusable_notes: {}
+confusable_notes:
+  condition-monitoring: "Bảo trì dự đoán là chiến lược bảo dưỡng toàn diện kết hợp dữ liệu cảm biến, lịch sử hỏng hóc và mô hình thống kê để dự báo sự cố và lên lịch sửa chữa, trong khi giám sát tình trạng là quy trình đo đạc liên tục các thông số vật lý của máy móc để phát hiện hao mòn."
 follow_up_questions:
   - Phân tích phổ dao động Fast Fourier Transform (FFT) giúp nhận biết sớm vết nứt tế vi trong ổ bi động cơ như thế nào?
   - Về mặt hiệu quả đầu tư ROI, bảo trì dự đoán vượt trội hơn bảo trì định kỳ theo lịch và bảo trì chữa cháy ra sao?

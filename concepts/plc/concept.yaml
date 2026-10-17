@@ -6,7 +6,8 @@ relations:
   prerequisites:
     - sensor
     - actuator
-  confusable: []
+  confusable:
+    - rtu
   related:
     - scada
     - modbus

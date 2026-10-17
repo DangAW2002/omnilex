@@ -1,0 +1,26 @@
+id: geofencing
+domains:
+  - iot/applications
+level: 1
+relations:
+  prerequisites:
+    - "asset-tracking"
+  confusable:
+    - "asset-tracking"
+  related:
+    - "telematics"
+    - "v2x"
+    - "fleet-management-iot"
+status: draft
+provenance:
+  drafted_by: ai
+sources:
+  - ref: aws-docs
+    locator: https://docs.aws.amazon.com/location/latest/developerguide/geofences.html
+    title: "Amazon Location Service Developer Guide - Geofences and Geofence Collections"
+    language: en
+    accessed: '2026-10-17'
+    retrieved_by: ai
+    supports:
+      - definition
+      - summary

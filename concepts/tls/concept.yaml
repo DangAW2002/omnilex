@@ -4,6 +4,8 @@ domains:
   - it/infrastructure/networking
 level: 2
 relations:
+  confusable:
+    - dtls
   related:
     - encryption
     - hashing

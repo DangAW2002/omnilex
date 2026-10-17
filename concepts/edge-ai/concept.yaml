@@ -1,0 +1,26 @@
+id: edge-ai
+domains:
+  - iot/edge-cloud
+  - it/ai-ml/mlops
+level: 2
+relations:
+  prerequisites:
+    - "edge-computing"
+  confusable:
+    - "fog-computing"
+  related:
+    - "device-shadow"
+    - "deep-learning"
+status: draft
+provenance:
+  drafted_by: ai
+sources:
+  - ref: itu
+    locator: https://www.itu.int/rec/T-REC-Y.4475/en
+    title: "Y.4475: Lightweight intelligent software framework for Internet of things devices"
+    language: en
+    accessed: '2026-10-17'
+    retrieved_by: ai
+    supports:
+      - definition
+      - summary

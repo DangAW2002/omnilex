@@ -1,0 +1,26 @@
+id: oee
+domains:
+  - iot/industrial
+level: 2
+relations:
+  prerequisites:
+    - "sensor"
+  confusable:
+    - "mes"
+  related:
+    - "condition-monitoring"
+    - "iiot"
+    - "kpi"
+status: draft
+provenance:
+  drafted_by: ai
+sources:
+  - ref: aws-docs
+    locator: https://docs.aws.amazon.com/iot-sitewise/latest/userguide/what-is-sitewise.html
+    title: "AWS IoT SiteWise User Guide - Asset Modeling and Overall Equipment Effectiveness"
+    language: en
+    accessed: '2026-10-17'
+    retrieved_by: ai
+    supports:
+      - definition
+      - summary

@@ -1,0 +1,27 @@
+id: fog-computing
+domains:
+  - iot/edge-cloud
+level: 2
+relations:
+  prerequisites:
+    - "edge-computing"
+  confusable:
+    - "edge-computing"
+    - "edge-ai"
+  related:
+    - "iot-gateway"
+    - "edge-ai"
+    - "device-shadow"
+status: draft
+provenance:
+  drafted_by: ai
+sources:
+  - ref: nist-csrc
+    locator: https://csrc.nist.gov/pubs/sp/500/325/final
+    title: "NIST Special Publication 500-325: Fog Computing Conceptual Model"
+    language: en
+    accessed: '2026-10-17'
+    retrieved_by: ai
+    supports:
+      - definition
+      - summary

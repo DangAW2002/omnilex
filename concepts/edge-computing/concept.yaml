@@ -4,7 +4,8 @@ domains:
 level: 2
 relations:
   prerequisites: []
-  confusable: []
+  confusable:
+    - fog-computing
   related:
     - iot-gateway
     - iot-platform

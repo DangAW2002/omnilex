@@ -1845,3 +1845,51 @@ stanford-hai:
   reuse: paraphrase-only
   domains: [it/ai-ml]
   verified_license_at: "2026-10-17"
+
+ieee:
+  title: IEEE Standards Association Technical Specifications
+  publisher: Institute of Electrical and Electronics Engineers
+  url: https://standards.ieee.org
+  type: standard
+  tier: A
+  languages: [en]
+  license: all-rights-reserved
+  reuse: paraphrase-only
+  domains: [iot/devices-sensors, iot/connectivity-protocols]
+  verified_license_at: "2026-10-17"
+
+bacnet-international:
+  title: BACnet International Technical Resources & Specifications
+  publisher: BACnet International
+  url: https://www.bacnet.org
+  type: standard
+  tier: A
+  languages: [en]
+  license: all-rights-reserved
+  reuse: paraphrase-only
+  domains: [iot/industrial, iot/applications]
+  verified_license_at: "2026-10-17"
+
+oma:
+  title: Open Mobile Alliance Specifications
+  publisher: Open Mobile Alliance
+  url: https://openmobilealliance.org
+  type: standard
+  tier: A
+  languages: [en]
+  license: all-rights-reserved
+  reuse: paraphrase-only
+  domains: [iot/connectivity-protocols, iot/edge-cloud]
+  verified_license_at: "2026-10-17"
+
+vietnamnet:
+  title: Báo VietNamNet
+  publisher: Báo VietNamNet - Bộ Thông tin và Truyền thông
+  url: https://vietnamnet.vn
+  type: news
+  tier: D
+  languages: [vi]
+  license: all-rights-reserved
+  reuse: paraphrase-only
+  domains: [iot/applications, it]
+  verified_license_at: "2026-10-17"

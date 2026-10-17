@@ -1,0 +1,29 @@
+id: iiot
+domains:
+  - iot/industrial
+level: 1
+relations:
+  prerequisites:
+    - "sensor"
+    - "plc"
+  confusable:
+    - "m2m"
+    - "industry-4-0"
+  related:
+    - "industry-4-0"
+    - "scada"
+    - "predictive-maintenance"
+    - "opc-ua"
+status: draft
+provenance:
+  drafted_by: ai
+sources:
+  - ref: nist-csrc
+    locator: https://csrc.nist.gov/glossary/term/industrial_internet_of_things
+    title: "Industrial Internet of Things (IIoT) - Computer Security Resource Center Glossary"
+    language: en
+    accessed: '2026-10-17'
+    retrieved_by: ai
+    supports:
+      - definition
+      - summary

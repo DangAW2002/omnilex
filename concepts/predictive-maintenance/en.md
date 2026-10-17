@@ -7,7 +7,8 @@ plain_descriptions:
   - maintenance technique using sensor telemetry and analytics to forecast equipment failures before they happen
   - strategy that schedules machine servicing according to real time condition metrics rather than fixed calendar intervals
 summary: A proactive asset management strategy that continuously monitors operational sensor telemetry to forecast machinery degradation and schedule servicing before mechanical failure occurs.
-confusable_notes: {}
+confusable_notes:
+  condition-monitoring: "Predictive maintenance is the comprehensive maintenance strategy using sensor data, historical failure records, and statistical models to forecast failures and schedule repairs, whereas condition monitoring is the continuous sensor-level measurement process detecting developing physical flaws."
 follow_up_questions:
   - How does Fast Fourier Transform (FFT) vibration spectral analysis detect microscopic bearing defects before thermal runaway?
   - How does predictive maintenance compare in lifecycle ROI against calendar-based preventive maintenance and reactive run-to-failure approaches?

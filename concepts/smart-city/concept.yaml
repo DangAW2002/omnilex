@@ -1,0 +1,27 @@
+id: smart-city
+domains:
+  - iot/applications
+level: 1
+relations:
+  prerequisites:
+    - "iot-gateway"
+  confusable:
+    - "smart-building"
+    - "smart-agriculture"
+  related:
+    - "v2x"
+    - "smart-home"
+    - "fog-computing"
+status: draft
+provenance:
+  drafted_by: ai
+sources:
+  - ref: itu
+    locator: https://www.itu.int/rec/T-REC-Y.4201/en
+    title: "Y.4201: High-level requirements and reference framework of smart city platforms"
+    language: en
+    accessed: '2026-10-17'
+    retrieved_by: ai
+    supports:
+      - definition
+      - summary

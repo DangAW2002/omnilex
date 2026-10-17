@@ -1,0 +1,27 @@
+id: smart-agriculture
+domains:
+  - iot/applications
+level: 1
+relations:
+  prerequisites:
+    - "sensor"
+    - "lpwan"
+  confusable:
+    - "smart-city"
+  related:
+    - "telemetry"
+    - "condition-monitoring"
+    - "edge-ai"
+status: draft
+provenance:
+  drafted_by: ai
+sources:
+  - ref: itu
+    locator: https://www.itu.int/rec/T-REC-Y.4450/en
+    title: "Y.4450: Overview of Smart Farming based on networks"
+    language: en
+    accessed: '2026-10-17'
+    retrieved_by: ai
+    supports:
+      - definition
+      - summary

@@ -1,0 +1,26 @@
+id: bacnet
+domains:
+  - iot/industrial
+level: 2
+relations:
+  prerequisites:
+    - "modbus"
+  confusable:
+    - "can-bus"
+  related:
+    - "smart-building"
+    - "hmi"
+    - "dcs"
+status: draft
+provenance:
+  drafted_by: ai
+sources:
+  - ref: bacnet-international
+    locator: https://www.bacnet.org/faq/
+    title: "BACnet Answers - Technical Overview and Specifications"
+    language: en
+    accessed: '2026-10-17'
+    retrieved_by: ai
+    supports:
+      - definition
+      - summary

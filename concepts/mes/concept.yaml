@@ -1,0 +1,27 @@
+id: mes
+domains:
+  - iot/industrial
+level: 2
+relations:
+  prerequisites:
+    - "plc"
+    - "scada"
+  confusable:
+    - "oee"
+  related:
+    - "industry-4-0"
+    - "iiot"
+    - "dcs"
+status: draft
+provenance:
+  drafted_by: ai
+sources:
+  - ref: nist-csrc
+    locator: https://csrc.nist.gov/glossary/term/manufacturing_execution_system
+    title: "Manufacturing Execution System (MES) - Computer Security Resource Center Glossary"
+    language: en
+    accessed: '2026-10-17'
+    retrieved_by: ai
+    supports:
+      - definition
+      - summary

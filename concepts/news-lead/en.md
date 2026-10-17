@@ -11,7 +11,8 @@ plain_descriptions:
 - the first few sentences delivering the most crucial facts
 summary: The introductory sentence or paragraph of a news story that delivers the
   most essential facts immediately to the audience.
-confusable_notes: {}
+confusable_notes:
+  sales-lead: In marketing a lead is a potential customer; in journalism the lead is the opening of a story.
 follow_up_questions:
 - What is the difference between a direct news lead and an anecdotal feature lead?
 - How does the 5W1H formula shape the construction of a lead paragraph?

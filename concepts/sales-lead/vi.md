@@ -13,7 +13,8 @@ plain_descriptions:
   - một khách hàng tương lai đã để lại thông tin liên lạc hoặc bày tỏ sự quan tâm đến sản phẩm
   - người có nhu cầu và khả năng mua hàng của doanh nghiệp trong thời gian tới
 summary: Cá nhân hoặc tổ chức bày tỏ sự quan tâm đến sản phẩm hoặc dịch vụ của doanh nghiệp và cung cấp thông tin liên hệ để được tư vấn tiếp theo.
-confusable_notes: {}
+confusable_notes:
+  news-lead: Trong báo chí, lead là đoạn mở đầu của bài viết; trong marketing, lead là khách hàng tiềm năng.
 follow_up_questions:
   - Điểm khác nhau giữa khách hàng tiềm năng đủ điều kiện tiếp thị (MQL) và đủ điều kiện bán hàng (SQL) là gì?
   - Các hệ thống chấm điểm khách tiềm năng (lead scoring) giúp đội ngũ kinh doanh ưu tiên chăm sóc khách hàng như thế nào?

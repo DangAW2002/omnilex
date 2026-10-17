@@ -9,7 +9,7 @@ autolink:
 plain_descriptions:
   - the percentage of people who click on your link after seeing it
   - clicks divided by impressions expressed as a percentage
-summary: The ratio of total clicks received by an advertisement or link divided by the total number of times it was viewed.
+summary: Clicks on an ad or link as a share of the times it was shown.
 confusable_notes:
   conversion-rate: "CTR measures the proportion of viewers who click a link out of total impressions, whereas conversion rate measures the proportion of visitors who complete a desired business goal after arriving."
 follow_up_questions:

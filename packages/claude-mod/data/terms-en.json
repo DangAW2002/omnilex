@@ -171,6 +171,51 @@
     "autolink": true
   },
   {
+    "key": "Anonymous source",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "anonymous-source",
+        "label": "Anonymous source",
+        "summary": "An informant who shares factual intelligence or testimony with a reporter under an agreement that their personal identity will remain confidential.",
+        "domains": [
+          "media/journalism/ethics"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "unnamed source",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "anonymous-source",
+        "label": "Anonymous source",
+        "summary": "An informant who shares factual intelligence or testimony with a reporter under an agreement that their personal identity will remain confidential.",
+        "domains": [
+          "media/journalism/ethics"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "confidential source",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "anonymous-source",
+        "label": "Anonymous source",
+        "summary": "An informant who shares factual intelligence or testimony with a reporter under an agreement that their personal identity will remain confidential.",
+        "domains": [
+          "media/journalism/ethics"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
     "key": "Application Programming Interface (API)",
     "match": "any-case",
     "concepts": [
@@ -229,6 +274,21 @@
         "summary": "A dedicated network address and URL path exposed by an API where clients access a specific service or resource.",
         "domains": [
           "it/web/api"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Aspect ratio",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "aspect-ratio",
+        "label": "Aspect ratio",
+        "summary": "The proportional ratio describing the relationship of an image, frame, or display device's width relative to its height.",
+        "domains": [
+          "media/content-production/video"
         ]
       }
     ],
@@ -399,6 +459,51 @@
         "summary": "A cloud mechanism that automatically adjusts the number of active computing resources up or down based on real-time demand metrics.",
         "domains": [
           "it/infrastructure/cloud"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "B-roll",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "b-roll",
+        "label": "B-roll",
+        "summary": "Supplemental video footage spliced alongside primary interview or action shots to illustrate topics, hide edit splices, and enrich storytelling.",
+        "domains": [
+          "media/content-production/video"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "cutaway footage",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "b-roll",
+        "label": "B-roll",
+        "summary": "Supplemental video footage spliced alongside primary interview or action shots to illustrate topics, hide edit splices, and enrich storytelling.",
+        "domains": [
+          "media/content-production/video"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "supplemental footage",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "b-roll",
+        "label": "B-roll",
+        "summary": "Supplemental video footage spliced alongside primary interview or action shots to illustrate topics, hide edit splices, and enrich storytelling.",
+        "domains": [
+          "media/content-production/video"
         ]
       }
     ],
@@ -818,6 +923,21 @@
     "autolink": true
   },
   {
+    "key": "Breaking news",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "breaking-news",
+        "label": "Breaking news",
+        "summary": "Newly received information about an urgent, ongoing event that warrants immediate public dissemination across news outlets.",
+        "domains": [
+          "media/journalism/genres"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
     "key": "Budget",
     "match": "any-case",
     "concepts": [
@@ -859,6 +979,21 @@
         "summary": "A graphical representation of work left to do versus time, utilized by agile squads to forecast sprint completion trajectories.",
         "domains": [
           "product/delivery-planning"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Byline",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "byline",
+        "label": "Byline",
+        "summary": "A line in a publication identifying the writer or contributor responsible for the reporting and prose of an article.",
+        "domains": [
+          "media/journalism/reporting"
         ]
       }
     ],
@@ -1231,6 +1366,51 @@
     "autolink": true
   },
   {
+    "key": "Color grading",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "color-grading",
+        "label": "Color grading",
+        "summary": "The creative process in video post-production where color properties, tonal balances, and contrast curves are altered to produce an artistic mood or stylized look.",
+        "domains": [
+          "media/content-production/editing"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "digital grading",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "color-grading",
+        "label": "Color grading",
+        "summary": "The creative process in video post-production where color properties, tonal balances, and contrast curves are altered to produce an artistic mood or stylized look.",
+        "domains": [
+          "media/content-production/editing"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "color timing",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "color-grading",
+        "label": "Color grading",
+        "summary": "The creative process in video post-production where color properties, tonal balances, and contrast curves are altered to produce an artistic mood or stylized look.",
+        "domains": [
+          "media/content-production/editing"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
     "key": "Compound Interest",
     "match": "any-case",
     "concepts": [
@@ -1419,6 +1599,36 @@
     "autolink": true
   },
   {
+    "key": "Copyright",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "copyright",
+        "label": "Copyright",
+        "summary": "A form of intellectual property law protecting original works of authorship fixed in any tangible medium of expression from unauthorized copying and distribution.",
+        "domains": [
+          "media/publishing/copyright-licensing"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "author's right",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "copyright",
+        "label": "Copyright",
+        "summary": "A form of intellectual property law protecting original works of authorship fixed in any tangible medium of expression from unauthorized copying and distribution.",
+        "domains": [
+          "media/publishing/copyright-licensing"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
     "key": "Cross-Origin Resource Sharing (CORS)",
     "match": "any-case",
     "concepts": [
@@ -1556,6 +1766,36 @@
     "autolink": true
   },
   {
+    "key": "Creative Commons",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "creative-commons",
+        "label": "Creative Commons",
+        "summary": "A nonprofit organization and legal framework providing standardized copyright licenses that permit free public distribution and remixing of creative works under specified conditions.",
+        "domains": [
+          "media/publishing/copyright-licensing"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "CC licenses",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "creative-commons",
+        "label": "Creative Commons",
+        "summary": "A nonprofit organization and legal framework providing standardized copyright licenses that permit free public distribution and remixing of creative works under specified conditions.",
+        "domains": [
+          "media/publishing/copyright-licensing"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
     "key": "Credit card",
     "match": "any-case",
     "concepts": [
@@ -1610,6 +1850,51 @@
         "summary": "A numerical assessment calculated from credit history that indicates an individual's creditworthiness and likelihood of repaying debt obligations on time.",
         "domains": [
           "finance/personal-finance/debt-credit"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Crisis communication",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "crisis-communication",
+        "label": "Crisis communication",
+        "summary": "Strategic public communications deployed during emergencies to mitigate reputational damage, protect public safety, and convey truthful instructions.",
+        "domains": [
+          "media/pr-communications/crisis-communications"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "crisis PR",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "crisis-communication",
+        "label": "Crisis communication",
+        "summary": "Strategic public communications deployed during emergencies to mitigate reputational damage, protect public safety, and convey truthful instructions.",
+        "domains": [
+          "media/pr-communications/crisis-communications"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "crisis management communications",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "crisis-communication",
+        "label": "Crisis communication",
+        "summary": "Strategic public communications deployed during emergencies to mitigate reputational damage, protect public safety, and convey truthful instructions.",
+        "domains": [
+          "media/pr-communications/crisis-communications"
         ]
       }
     ],
@@ -1697,7 +1982,7 @@
       {
         "id": "ctr",
         "label": "Click-through rate (CTR)",
-        "summary": "The ratio of total clicks received by an advertisement or link divided by the total number of times it was viewed.",
+        "summary": "Clicks on an ad or link as a share of the times it was shown.",
         "domains": [
           "media/digital-marketing/metrics-analytics",
           "media/digital-marketing/paid-ads"
@@ -1713,7 +1998,7 @@
       {
         "id": "ctr",
         "label": "Click-through rate (CTR)",
-        "summary": "The ratio of total clicks received by an advertisement or link divided by the total number of times it was viewed.",
+        "summary": "Clicks on an ad or link as a share of the times it was shown.",
         "domains": [
           "media/digital-marketing/metrics-analytics",
           "media/digital-marketing/paid-ads"
@@ -3174,6 +3459,51 @@
     "autolink": true
   },
   {
+    "key": "Fact-checking",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "fact-checking",
+        "label": "Fact-checking",
+        "summary": "The disciplined verification process of assessing factual assertions in published text, speeches, or broadcast reports against reliable primary documentation.",
+        "domains": [
+          "media/journalism/ethics"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Fair use",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "fair-use",
+        "label": "Fair use",
+        "summary": "A legal doctrine permitting limited quotation and borrowing of copyrighted works without permission for purposes such as criticism, news reporting, teaching, or scholarship.",
+        "domains": [
+          "media/publishing/copyright-licensing"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "fair dealing",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "fair-use",
+        "label": "Fair use",
+        "summary": "A legal doctrine permitting limited quotation and borrowing of copyrighted works without permission for purposes such as criticism, news reporting, teaching, or scholarship.",
+        "domains": [
+          "media/publishing/copyright-licensing"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
     "key": "Feature flag",
     "match": "any-case",
     "concepts": [
@@ -3605,6 +3935,21 @@
     "autolink": true
   },
   {
+    "key": "Headline",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "headline",
+        "label": "Headline",
+        "summary": "The prominent heading positioned above a news article that encapsulates its core subject and catches the reader's attention.",
+        "domains": [
+          "media/journalism/reporting"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
     "key": "Hotfix",
     "match": "any-case",
     "concepts": [
@@ -3686,7 +4031,7 @@
       {
         "id": "idempotency",
         "label": "Idempotency",
-        "summary": "A property of an operation whereby performing it multiple times with the same parameters produces the identical outcome and system state as performing it a single time.",
+        "summary": "A property of an operation whereby running it again with identical inputs leaves the system in the same state as running it once.",
         "domains": [
           "it/software-engineering/programming-concepts"
         ]
@@ -4134,6 +4479,21 @@
         "domains": [
           "finance/economics/interest-rates-monetary-policy",
           "finance/banking/deposits"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Inverted pyramid",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "inverted-pyramid",
+        "label": "Inverted pyramid",
+        "summary": "A storytelling framework in journalism where the most vital facts appear at the top, followed by supporting details in declining order of importance.",
+        "domains": [
+          "media/journalism/reporting"
         ]
       }
     ],
@@ -5696,6 +6056,47 @@
     "autolink": true
   },
   {
+    "key": "Lead",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "news-lead",
+        "label": "Lead",
+        "qualifier": "(Journalism)",
+        "summary": "The introductory sentence or paragraph of a news story that delivers the most essential facts immediately to the audience.",
+        "domains": [
+          "media/journalism/reporting"
+        ]
+      },
+      {
+        "id": "sales-lead",
+        "label": "Lead",
+        "qualifier": "(Marketing)",
+        "summary": "An individual or organization that has expressed interest in a business's products or services and provided contact details for future communication.",
+        "domains": [
+          "media/digital-marketing/metrics-analytics"
+        ]
+      }
+    ],
+    "autolink": false
+  },
+  {
+    "key": "lede",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "news-lead",
+        "label": "Lead",
+        "qualifier": "(Journalism)",
+        "summary": "The introductory sentence or paragraph of a news story that delivers the most essential facts immediately to the audience.",
+        "domains": [
+          "media/journalism/reporting"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
     "key": "Newsletter",
     "match": "any-case",
     "concepts": [
@@ -5921,6 +6322,51 @@
     "autolink": true
   },
   {
+    "key": "Op-ed",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "op-ed",
+        "label": "Op-ed",
+        "summary": "An opinion piece published in a newspaper or journal reflecting the specific viewpoint of a named author unaffiliated with the publication's editorial board.",
+        "domains": [
+          "media/journalism/genres"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "opinion editorial",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "op-ed",
+        "label": "Op-ed",
+        "summary": "An opinion piece published in a newspaper or journal reflecting the specific viewpoint of a named author unaffiliated with the publication's editorial board.",
+        "domains": [
+          "media/journalism/genres"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "op-ed column",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "op-ed",
+        "label": "Op-ed",
+        "summary": "An opinion piece published in a newspaper or journal reflecting the specific viewpoint of a named author unaffiliated with the publication's editorial board.",
+        "domains": [
+          "media/journalism/genres"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
     "key": "OPC UA",
     "match": "any-case",
     "concepts": [
@@ -6131,6 +6577,51 @@
     "autolink": true
   },
   {
+    "key": "Paywall",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "paywall",
+        "label": "Paywall",
+        "summary": "A digital mechanism on online media websites restricting full access to premium articles and content behind paid subscriptions or memberships.",
+        "domains": [
+          "media/publishing/distribution-platforms"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "content gate",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "paywall",
+        "label": "Paywall",
+        "summary": "A digital mechanism on online media websites restricting full access to premium articles and content behind paid subscriptions or memberships.",
+        "domains": [
+          "media/publishing/distribution-platforms"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "subscription wall",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "paywall",
+        "label": "Paywall",
+        "summary": "A digital mechanism on online media websites restricting full access to premium articles and content behind paid subscriptions or memberships.",
+        "domains": [
+          "media/publishing/distribution-platforms"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
     "key": "Price-to-earnings ratio (P/E)",
     "match": "any-case",
     "concepts": [
@@ -6281,6 +6772,51 @@
     "autolink": true
   },
   {
+    "key": "Podcast",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "podcast",
+        "label": "Podcast",
+        "summary": "An episodic series of spoken-word digital audio files distributed over the internet that users can stream, download, and subscribe to automatically via feeds.",
+        "domains": [
+          "media/content-production/audio-podcasts"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "audio series",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "podcast",
+        "label": "Podcast",
+        "summary": "An episodic series of spoken-word digital audio files distributed over the internet that users can stream, download, and subscribe to automatically via feeds.",
+        "domains": [
+          "media/content-production/audio-podcasts"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "netcast",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "podcast",
+        "label": "Podcast",
+        "summary": "An episodic series of spoken-word digital audio files distributed over the internet that users can stream, download, and subscribe to automatically via feeds.",
+        "domains": [
+          "media/content-production/audio-podcasts"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
     "key": "Policy rate",
     "match": "any-case",
     "concepts": [
@@ -6413,6 +6949,144 @@
         "summary": "A proactive asset management strategy that continuously monitors operational sensor telemetry to forecast machinery degradation and schedule servicing before mechanical failure occurs.",
         "domains": [
           "iot/industrial"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Press conference",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "press-conference",
+        "label": "Press conference",
+        "summary": "An organized event where an institution invites reporters to hear an announcement and ask questions on the record.",
+        "domains": [
+          "media/pr-communications/media-relations"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "media conference",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "press-conference",
+        "label": "Press conference",
+        "summary": "An organized event where an institution invites reporters to hear an announcement and ask questions on the record.",
+        "domains": [
+          "media/pr-communications/media-relations"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "presser",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "press-conference",
+        "label": "Press conference",
+        "summary": "An organized event where an institution invites reporters to hear an announcement and ask questions on the record.",
+        "domains": [
+          "media/pr-communications/media-relations"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Embargo",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "press-embargo",
+        "label": "Embargo",
+        "qualifier": "(Media)",
+        "summary": "A temporary restriction requested by an information source requiring media outlets to refrain from publishing shared material until a stipulated timestamp.",
+        "domains": [
+          "media/pr-communications/media-relations"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "press embargo",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "press-embargo",
+        "label": "Embargo",
+        "qualifier": "(Media)",
+        "summary": "A temporary restriction requested by an information source requiring media outlets to refrain from publishing shared material until a stipulated timestamp.",
+        "domains": [
+          "media/pr-communications/media-relations"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "news embargo",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "press-embargo",
+        "label": "Embargo",
+        "qualifier": "(Media)",
+        "summary": "A temporary restriction requested by an information source requiring media outlets to refrain from publishing shared material until a stipulated timestamp.",
+        "domains": [
+          "media/pr-communications/media-relations"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Press release",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "press-release",
+        "label": "Press release",
+        "summary": "A formal written communication distributed to news organizations to deliver official announcements and generate accurate news coverage.",
+        "domains": [
+          "media/pr-communications/media-relations"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "news release",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "press-release",
+        "label": "Press release",
+        "summary": "A formal written communication distributed to news organizations to deliver official announcements and generate accurate news coverage.",
+        "domains": [
+          "media/pr-communications/media-relations"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "media release",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "press-release",
+        "label": "Press release",
+        "summary": "A formal written communication distributed to news organizations to deliver official announcements and generate accurate news coverage.",
+        "domains": [
+          "media/pr-communications/media-relations"
         ]
       }
     ],
@@ -7252,22 +7926,6 @@
     "autolink": true
   },
   {
-    "key": "Lead",
-    "match": "any-case",
-    "concepts": [
-      {
-        "id": "sales-lead",
-        "label": "Lead",
-        "qualifier": "(Marketing)",
-        "summary": "An individual or organization that has expressed interest in a business's products or services and provided contact details for future communication.",
-        "domains": [
-          "media/digital-marketing/metrics-analytics"
-        ]
-      }
-    ],
-    "autolink": false
-  },
-  {
     "key": "Sales lead",
     "match": "any-case",
     "concepts": [
@@ -7996,6 +8654,51 @@
     "autolink": true
   },
   {
+    "key": "Spokesperson",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "spokesperson",
+        "label": "Spokesperson",
+        "summary": "An official designated to speak on behalf of a government body, corporation, or group, presenting its positions and answering queries.",
+        "domains": [
+          "media/pr-communications/media-relations"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "spokesman",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "spokesperson",
+        "label": "Spokesperson",
+        "summary": "An official designated to speak on behalf of a government body, corporation, or group, presenting its positions and answering queries.",
+        "domains": [
+          "media/pr-communications/media-relations"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "spokeswoman",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "spokesperson",
+        "label": "Spokesperson",
+        "summary": "An official designated to speak on behalf of a government body, corporation, or group, presenting its positions and answering queries.",
+        "domains": [
+          "media/pr-communications/media-relations"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
     "key": "Sprint",
     "match": "any-case",
     "concepts": [
@@ -8374,6 +9077,36 @@
       }
     ],
     "autolink": false
+  },
+  {
+    "key": "Storyboard",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "storyboard",
+        "label": "Storyboard",
+        "summary": "A sequential visual layout of illustrations and annotations representing proposed camera angles, character movements, and staging before production begins.",
+        "domains": [
+          "media/content-production/video"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "shot plan",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "storyboard",
+        "label": "Storyboard",
+        "summary": "A sequential visual layout of illustrations and annotations representing proposed camera angles, character movements, and staging before production begins.",
+        "domains": [
+          "media/content-production/video"
+        ]
+      }
+    ],
+    "autolink": true
   },
   {
     "key": "Structured output",
@@ -8842,6 +9575,51 @@
     "autolink": true
   },
   {
+    "key": "Typography",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "typography",
+        "label": "Typography",
+        "summary": "The art, craft, and technique of selecting and arranging typefaces, font weights, kerning, and spacing to render written language legible, readable, and visually engaging.",
+        "domains": [
+          "media/content-production/visual-design"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "type design",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "typography",
+        "label": "Typography",
+        "summary": "The art, craft, and technique of selecting and arranging typefaces, font weights, kerning, and spacing to render written language legible, readable, and visually engaging.",
+        "domains": [
+          "media/content-production/visual-design"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "font styling",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "typography",
+        "label": "Typography",
+        "summary": "The art, craft, and technique of selecting and arranging typefaces, font weights, kerning, and spacing to render written language legible, readable, and visually engaging.",
+        "domains": [
+          "media/content-production/visual-design"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
     "key": "Unit test",
     "match": "any-case",
     "concepts": [
@@ -9140,6 +9918,96 @@
         "summary": "A software emulation of a physical computer system that executes applications within a dedicated, isolated guest operating system managed by a hypervisor.",
         "domains": [
           "it/infrastructure/cloud"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Visual hierarchy",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "visual-hierarchy",
+        "label": "Visual hierarchy",
+        "summary": "The strategic arrangement and presentation of graphic design elements in deliberate order of importance, guiding the viewer's eye across the layout seamlessly.",
+        "domains": [
+          "media/content-production/visual-design"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "information hierarchy",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "visual-hierarchy",
+        "label": "Visual hierarchy",
+        "summary": "The strategic arrangement and presentation of graphic design elements in deliberate order of importance, guiding the viewer's eye across the layout seamlessly.",
+        "domains": [
+          "media/content-production/visual-design"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "visual order",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "visual-hierarchy",
+        "label": "Visual hierarchy",
+        "summary": "The strategic arrangement and presentation of graphic design elements in deliberate order of importance, guiding the viewer's eye across the layout seamlessly.",
+        "domains": [
+          "media/content-production/visual-design"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Voice-over",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "voice-over",
+        "label": "Voice-over",
+        "summary": "A production technique where an unseen narrator's spoken commentary is recorded and played over accompanying visual material or broadcast segments.",
+        "domains": [
+          "media/content-production/audio-podcasts"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "narration",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "voice-over",
+        "label": "Voice-over",
+        "summary": "A production technique where an unseen narrator's spoken commentary is recorded and played over accompanying visual material or broadcast segments.",
+        "domains": [
+          "media/content-production/audio-podcasts"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "off-camera voice",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "voice-over",
+        "label": "Voice-over",
+        "summary": "A production technique where an unseen narrator's spoken commentary is recorded and played over accompanying visual material or broadcast segments.",
+        "domains": [
+          "media/content-production/audio-podcasts"
         ]
       }
     ],

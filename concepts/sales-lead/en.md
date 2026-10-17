@@ -11,7 +11,8 @@ plain_descriptions:
   - a prospective customer who has shared contact information or shown interest in your product
   - someone who might buy from your business in the near future
 summary: An individual or organization that has expressed interest in a business's products or services and provided contact details for future communication.
-confusable_notes: {}
+confusable_notes:
+  news-lead: In journalism the lead is the opening of a story; in marketing a lead is a potential customer.
 follow_up_questions:
   - How do marketing qualified leads (MQLs) differ from sales qualified leads (SQLs)?
   - What lead scoring models help sales teams prioritize high-value prospects?

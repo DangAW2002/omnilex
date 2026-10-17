@@ -17,7 +17,7 @@ translation: native
 Imagine standing on a foggy hill where you cannot see the bottom: you feel the slope of the ground under your shoes and take cautious steps in the steepest downhill direction until you reach the lowest point.
 
 ## Details
-Gradient descent calculates the vector of partial derivatives of the loss function with respect to every trainable parameter. Because the gradient points in the direction of steepest increase, parameters are updated iteratively in the opposite direction, scaled by a learning rate hyperparameter. Practical implementations use mini-batch stochastic gradient descent (SGD) paired with momentum, Adam, or AdamW optimizers to traverse complex non-convex loss surfaces efficiently without stalling in shallow plateaus.
+At each step the method works out how the loss changes as each trainable parameter changes (the gradient). Since that vector shows where the loss rises fastest, parameters are updated iteratively in the opposite direction, scaled by a learning rate hyperparameter. Practical implementations use mini-batch stochastic gradient descent (SGD) paired with momentum, Adam, or AdamW optimizers to traverse complex non-convex loss surfaces efficiently without stalling in shallow plateaus.
 
 ## Technical definition
 A first-order iterative numerical optimization method that computes parameter adjustments proportional to the negative gradient of an objective cost functional.

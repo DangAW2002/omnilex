@@ -6,7 +6,7 @@ loanwords: []
 plain_descriptions:
   - "the property where executing an action multiple times produces the exact same result as doing it once"
   - "safely retrying an operation without causing duplicate charges or unintended side effects"
-summary: "A property of an operation whereby performing it multiple times with the same parameters produces the identical outcome and system state as performing it a single time."
+summary: "A property of an operation whereby running it again with identical inputs leaves the system in the same state as running it once."
 confusable_notes:
   {}
 follow_up_questions:

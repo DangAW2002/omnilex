@@ -129,6 +129,25 @@
     "status": "draft"
   },
   {
+    "id": "anonymous-source",
+    "label": "Anonymous source",
+    "aliases": [
+      "unnamed source",
+      "confidential source"
+    ],
+    "loanwords": [],
+    "plain_descriptions": [
+      "an informant providing facts to a journalist without their identity being publicly disclosed",
+      "a protected whistleblower or insider quoted without their real name"
+    ],
+    "summary": "An informant who shares factual intelligence or testimony with a reporter under an agreement that their personal identity will remain confidential.",
+    "domains": [
+      "media/journalism/ethics"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
     "id": "api",
     "label": "Application Programming Interface (API)",
     "aliases": [
@@ -162,6 +181,22 @@
     "summary": "A dedicated network address and URL path exposed by an API where clients access a specific service or resource.",
     "domains": [
       "it/web/api"
+    ],
+    "level": 1,
+    "status": "draft"
+  },
+  {
+    "id": "aspect-ratio",
+    "label": "Aspect ratio",
+    "aliases": [],
+    "loanwords": [],
+    "plain_descriptions": [
+      "the proportional relationship between the width and height of an image or screen",
+      "screen dimension proportion such as 16:9 widescreen or 9:16 vertical smartphone format"
+    ],
+    "summary": "The proportional ratio describing the relationship of an image, frame, or display device's width relative to its height.",
+    "domains": [
+      "media/content-production/video"
     ],
     "level": 1,
     "status": "draft"
@@ -241,6 +276,25 @@
       "it/infrastructure/cloud"
     ],
     "level": 2,
+    "status": "draft"
+  },
+  {
+    "id": "b-roll",
+    "label": "B-roll",
+    "aliases": [
+      "cutaway footage",
+      "supplemental footage"
+    ],
+    "loanwords": [],
+    "plain_descriptions": [
+      "secondary video footage cut into a scene to visually support the primary interview or narrative",
+      "background and illustrative camera shots used in film editing to cover cuts and enhance context"
+    ],
+    "summary": "Supplemental video footage spliced alongside primary interview or action shots to illustrate topics, hide edit splices, and enrich storytelling.",
+    "domains": [
+      "media/content-production/video"
+    ],
+    "level": 1,
     "status": "draft"
   },
   {
@@ -448,6 +502,22 @@
     "status": "draft"
   },
   {
+    "id": "breaking-news",
+    "label": "Breaking news",
+    "aliases": [],
+    "loanwords": [],
+    "plain_descriptions": [
+      "real-time reports on urgent events developing as we speak",
+      "immediate media updates about sudden occurrences of high public interest"
+    ],
+    "summary": "Newly received information about an urgent, ongoing event that warrants immediate public dissemination across news outlets.",
+    "domains": [
+      "media/journalism/genres"
+    ],
+    "level": 1,
+    "status": "draft"
+  },
+  {
     "id": "budget",
     "label": "Budget",
     "qualifier": "(Personal finance)",
@@ -482,6 +552,22 @@
       "product/delivery-planning"
     ],
     "level": 2,
+    "status": "draft"
+  },
+  {
+    "id": "byline",
+    "label": "Byline",
+    "aliases": [],
+    "loanwords": [],
+    "plain_descriptions": [
+      "the line crediting the reporter who investigated and wrote the piece",
+      "attribution stating who authored a printed or online article"
+    ],
+    "summary": "A line in a publication identifying the writer or contributor responsible for the reporting and prose of an article.",
+    "domains": [
+      "media/journalism/reporting"
+    ],
+    "level": 1,
     "status": "draft"
   },
   {
@@ -690,6 +776,25 @@
     "status": "draft"
   },
   {
+    "id": "color-grading",
+    "label": "Color grading",
+    "aliases": [
+      "digital grading",
+      "color timing"
+    ],
+    "loanwords": [],
+    "plain_descriptions": [
+      "stylized color adjustment enhancing emotional tone and artistic mood in videos and photographs",
+      "post-production color manipulation shaping the visual palette and atmosphere of footage"
+    ],
+    "summary": "The creative process in video post-production where color properties, tonal balances, and contrast curves are altered to produce an artistic mood or stylized look.",
+    "domains": [
+      "media/content-production/editing"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
     "id": "compound-interest",
     "label": "Compound Interest",
     "aliases": [
@@ -813,6 +918,24 @@
     "status": "reviewed"
   },
   {
+    "id": "copyright",
+    "label": "Copyright",
+    "aliases": [
+      "author's right"
+    ],
+    "loanwords": [],
+    "plain_descriptions": [
+      "the legal right giving creators exclusive control over how their works are copied and shared",
+      "intellectual property protection preventing unauthorized reproduction of original creative works"
+    ],
+    "summary": "A form of intellectual property law protecting original works of authorship fixed in any tangible medium of expression from unauthorized copying and distribution.",
+    "domains": [
+      "media/publishing/copyright-licensing"
+    ],
+    "level": 1,
+    "status": "draft"
+  },
+  {
     "id": "cors",
     "label": "Cross-Origin Resource Sharing (CORS)",
     "aliases": [
@@ -887,6 +1010,24 @@
     "status": "draft"
   },
   {
+    "id": "creative-commons",
+    "label": "Creative Commons",
+    "aliases": [
+      "CC licenses"
+    ],
+    "loanwords": [],
+    "plain_descriptions": [
+      "standardized public licenses enabling creators to share works with flexible permissions",
+      "open copyright framework allowing free cultural reuse while reserving specific conditions"
+    ],
+    "summary": "A nonprofit organization and legal framework providing standardized copyright licenses that permit free public distribution and remixing of creative works under specified conditions.",
+    "domains": [
+      "media/publishing/copyright-licensing"
+    ],
+    "level": 1,
+    "status": "draft"
+  },
+  {
     "id": "credit-card",
     "label": "Credit card",
     "aliases": [],
@@ -919,6 +1060,25 @@
       "finance/personal-finance/debt-credit"
     ],
     "level": 1,
+    "status": "draft"
+  },
+  {
+    "id": "crisis-communication",
+    "label": "Crisis communication",
+    "aliases": [
+      "crisis PR",
+      "crisis management communications"
+    ],
+    "loanwords": [],
+    "plain_descriptions": [
+      "messaging strategies used to protect reputation during unexpected emergencies",
+      "handling media and public briefings when an institution faces severe operational failure"
+    ],
+    "summary": "Strategic public communications deployed during emergencies to mitigate reputational damage, protect public safety, and convey truthful instructions.",
+    "domains": [
+      "media/pr-communications/crisis-communications"
+    ],
+    "level": 2,
     "status": "draft"
   },
   {
@@ -969,7 +1129,7 @@
       "the percentage of people who click on your link after seeing it",
       "clicks divided by impressions expressed as a percentage"
     ],
-    "summary": "The ratio of total clicks received by an advertisement or link divided by the total number of times it was viewed.",
+    "summary": "Clicks on an ad or link as a share of the times it was shown.",
     "domains": [
       "media/digital-marketing/metrics-analytics",
       "media/digital-marketing/paid-ads"
@@ -1812,6 +1972,40 @@
     "status": "draft"
   },
   {
+    "id": "fact-checking",
+    "label": "Fact-checking",
+    "aliases": [],
+    "loanwords": [],
+    "plain_descriptions": [
+      "verifying that claims, quotes, and statistics match verifiable evidence",
+      "investigating whether statements made by politicians and public figures are truthful"
+    ],
+    "summary": "The disciplined verification process of assessing factual assertions in published text, speeches, or broadcast reports against reliable primary documentation.",
+    "domains": [
+      "media/journalism/ethics"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
+    "id": "fair-use",
+    "label": "Fair use",
+    "aliases": [
+      "fair dealing"
+    ],
+    "loanwords": [],
+    "plain_descriptions": [
+      "legal exception allowing limited quotation of copyrighted material for review or teaching",
+      "rule permitting unlicensed use of creative works for criticism, parody, or news reporting"
+    ],
+    "summary": "A legal doctrine permitting limited quotation and borrowing of copyrighted works without permission for purposes such as criticism, news reporting, teaching, or scholarship.",
+    "domains": [
+      "media/publishing/copyright-licensing"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
     "id": "feature-flag",
     "label": "Feature flag",
     "aliases": [
@@ -2112,6 +2306,22 @@
     "status": "draft"
   },
   {
+    "id": "headline",
+    "label": "Headline",
+    "aliases": [],
+    "loanwords": [],
+    "plain_descriptions": [
+      "the prominent title placed at the start of a news story",
+      "large text that tells readers what an article is about"
+    ],
+    "summary": "The prominent heading positioned above a news article that encapsulates its core subject and catches the reader's attention.",
+    "domains": [
+      "media/journalism/reporting"
+    ],
+    "level": 1,
+    "status": "draft"
+  },
+  {
     "id": "hotfix",
     "label": "Hotfix",
     "aliases": [],
@@ -2171,7 +2381,7 @@
       "the property where executing an action multiple times produces the exact same result as doing it once",
       "safely retrying an operation without causing duplicate charges or unintended side effects"
     ],
-    "summary": "A property of an operation whereby performing it multiple times with the same parameters produces the identical outcome and system state as performing it a single time.",
+    "summary": "A property of an operation whereby running it again with identical inputs leaves the system in the same state as running it once.",
     "domains": [
       "it/software-engineering/programming-concepts"
     ],
@@ -2414,6 +2624,22 @@
     ],
     "level": 1,
     "status": "reviewed"
+  },
+  {
+    "id": "inverted-pyramid",
+    "label": "Inverted pyramid",
+    "aliases": [],
+    "loanwords": [],
+    "plain_descriptions": [
+      "news writing structure putting the most vital details right at the start",
+      "narrative framework where facts decrease in significance toward the end"
+    ],
+    "summary": "A storytelling framework in journalism where the most vital facts appear at the top, followed by supporting details in declining order of importance.",
+    "domains": [
+      "media/journalism/reporting"
+    ],
+    "level": 2,
+    "status": "draft"
   },
   {
     "id": "iot-gateway",
@@ -3326,6 +3552,25 @@
     "status": "draft"
   },
   {
+    "id": "news-lead",
+    "label": "Lead",
+    "qualifier": "(Journalism)",
+    "aliases": [
+      "lede"
+    ],
+    "loanwords": [],
+    "plain_descriptions": [
+      "the opening paragraph of a news article answering key questions",
+      "the first few sentences delivering the most crucial facts"
+    ],
+    "summary": "The introductory sentence or paragraph of a news story that delivers the most essential facts immediately to the audience.",
+    "domains": [
+      "media/journalism/reporting"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
     "id": "newsletter",
     "label": "Newsletter",
     "aliases": [
@@ -3451,6 +3696,25 @@
     "summary": "An operational duty rotation where designated engineers remain available to receive alerts and remediate critical production incidents outside or during standard working hours.",
     "domains": [
       "it/devops/sre-operations"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
+    "id": "op-ed",
+    "label": "Op-ed",
+    "aliases": [
+      "opinion editorial",
+      "op-ed column"
+    ],
+    "loanwords": [],
+    "plain_descriptions": [
+      "an opinion essay written by an outside contributor or guest author",
+      "a signed article offering reasoned personal perspectives on current issues"
+    ],
+    "summary": "An opinion piece published in a newspaper or journal reflecting the specific viewpoint of a named author unaffiliated with the publication's editorial board.",
+    "domains": [
+      "media/journalism/genres"
     ],
     "level": 2,
     "status": "draft"
@@ -3584,6 +3848,25 @@
     "status": "draft"
   },
   {
+    "id": "paywall",
+    "label": "Paywall",
+    "aliases": [
+      "content gate",
+      "subscription wall"
+    ],
+    "loanwords": [],
+    "plain_descriptions": [
+      "digital barrier restricting full access to online news articles to paying subscribers",
+      "a website system requiring a payment or membership before viewing restricted media content"
+    ],
+    "summary": "A digital mechanism on online media websites restricting full access to premium articles and content behind paid subscriptions or memberships.",
+    "domains": [
+      "media/publishing/distribution-platforms"
+    ],
+    "level": 1,
+    "status": "draft"
+  },
+  {
     "id": "pe-ratio",
     "label": "Price-to-earnings ratio (P/E)",
     "aliases": [
@@ -3641,6 +3924,25 @@
       "iot/industrial"
     ],
     "level": 2,
+    "status": "draft"
+  },
+  {
+    "id": "podcast",
+    "label": "Podcast",
+    "aliases": [
+      "audio series",
+      "netcast"
+    ],
+    "loanwords": [],
+    "plain_descriptions": [
+      "episodic digital audio program syndicated online for on-demand streaming and listening",
+      "spoken-word audio show subscribed to and played through streaming applications"
+    ],
+    "summary": "An episodic series of spoken-word digital audio files distributed over the internet that users can stream, download, and subscribe to automatically via feeds.",
+    "domains": [
+      "media/content-production/audio-podcasts"
+    ],
+    "level": 1,
     "status": "draft"
   },
   {
@@ -3719,6 +4021,64 @@
       "iot/industrial"
     ],
     "level": 2,
+    "status": "draft"
+  },
+  {
+    "id": "press-conference",
+    "label": "Press conference",
+    "aliases": [
+      "media conference",
+      "presser"
+    ],
+    "loanwords": [],
+    "plain_descriptions": [
+      "a media briefing where reporters ask questions directly to organizational representatives",
+      "an organized gathering where public figures deliver statements and take press queries"
+    ],
+    "summary": "An organized event where an institution invites reporters to hear an announcement and ask questions on the record.",
+    "domains": [
+      "media/pr-communications/media-relations"
+    ],
+    "level": 1,
+    "status": "draft"
+  },
+  {
+    "id": "press-embargo",
+    "label": "Embargo",
+    "qualifier": "(Media)",
+    "aliases": [
+      "press embargo",
+      "news embargo"
+    ],
+    "loanwords": [],
+    "plain_descriptions": [
+      "an advance agreement not to publish given information until a specified date and time",
+      "a temporary ban on releasing a news announcement before a set deadline"
+    ],
+    "summary": "A temporary restriction requested by an information source requiring media outlets to refrain from publishing shared material until a stipulated timestamp.",
+    "domains": [
+      "media/pr-communications/media-relations"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
+    "id": "press-release",
+    "label": "Press release",
+    "aliases": [
+      "news release",
+      "media release"
+    ],
+    "loanwords": [],
+    "plain_descriptions": [
+      "an official written statement distributed by an organization to journalists",
+      "a prepared announcement presenting news from a company, government agency, or institution"
+    ],
+    "summary": "A formal written communication distributed to news organizations to deliver official announcements and generate accurate news coverage.",
+    "domains": [
+      "media/pr-communications/media-relations"
+    ],
+    "level": 1,
     "status": "draft"
   },
   {
@@ -4733,6 +5093,25 @@
     "status": "draft"
   },
   {
+    "id": "spokesperson",
+    "label": "Spokesperson",
+    "aliases": [
+      "spokesman",
+      "spokeswoman"
+    ],
+    "loanwords": [],
+    "plain_descriptions": [
+      "the designated individual authorized to speak on behalf of an entity",
+      "an official representative delivering public statements for an organization"
+    ],
+    "summary": "An official designated to speak on behalf of a government body, corporation, or group, presenting its positions and answering queries.",
+    "domains": [
+      "media/pr-communications/media-relations"
+    ],
+    "level": 1,
+    "status": "draft"
+  },
+  {
     "id": "sprint-agile",
     "label": "Sprint",
     "qualifier": "(Agile)",
@@ -4941,6 +5320,24 @@
       "product/agile-scrum"
     ],
     "level": 2,
+    "status": "draft"
+  },
+  {
+    "id": "storyboard",
+    "label": "Storyboard",
+    "aliases": [
+      "shot plan"
+    ],
+    "loanwords": [],
+    "plain_descriptions": [
+      "visual sequence of illustrated panels sketching camera angles and action for a video shoot",
+      "drawn comic-strip plan showing how a commercial, animation, or movie scene will unfold"
+    ],
+    "summary": "A sequential visual layout of illustrations and annotations representing proposed camera angles, character movements, and staging before production begins.",
+    "domains": [
+      "media/content-production/video"
+    ],
+    "level": 1,
     "status": "draft"
   },
   {
@@ -5232,6 +5629,25 @@
     "status": "draft"
   },
   {
+    "id": "typography",
+    "label": "Typography",
+    "aliases": [
+      "type design",
+      "font styling"
+    ],
+    "loanwords": [],
+    "plain_descriptions": [
+      "the craft of arranging fonts and text layout to make printed or digital words legible and appealing",
+      "artistic styling and formatting of letterforms across page and screen compositions"
+    ],
+    "summary": "The art, craft, and technique of selecting and arranging typefaces, font weights, kerning, and spacing to render written language legible, readable, and visually engaging.",
+    "domains": [
+      "media/content-production/visual-design"
+    ],
+    "level": 1,
+    "status": "draft"
+  },
+  {
     "id": "unit-test",
     "label": "Unit test",
     "aliases": [],
@@ -5395,6 +5811,44 @@
     "summary": "A software emulation of a physical computer system that executes applications within a dedicated, isolated guest operating system managed by a hypervisor.",
     "domains": [
       "it/infrastructure/cloud"
+    ],
+    "level": 1,
+    "status": "draft"
+  },
+  {
+    "id": "visual-hierarchy",
+    "label": "Visual hierarchy",
+    "aliases": [
+      "information hierarchy",
+      "visual order"
+    ],
+    "loanwords": [],
+    "plain_descriptions": [
+      "the layout principle organizing design elements in order of visual importance",
+      "arranging scale, color, and placement so viewers intuitively spot the most crucial information first"
+    ],
+    "summary": "The strategic arrangement and presentation of graphic design elements in deliberate order of importance, guiding the viewer's eye across the layout seamlessly.",
+    "domains": [
+      "media/content-production/visual-design"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
+    "id": "voice-over",
+    "label": "Voice-over",
+    "aliases": [
+      "narration",
+      "off-camera voice"
+    ],
+    "loanwords": [],
+    "plain_descriptions": [
+      "off-screen spoken audio narrating or explaining visual actions in a video or documentary",
+      "vocal recording heard by viewers where the speaker does not appear directly on screen"
+    ],
+    "summary": "A production technique where an unseen narrator's spoken commentary is recorded and played over accompanying visual material or broadcast segments.",
+    "domains": [
+      "media/content-production/audio-podcasts"
     ],
     "level": 1,
     "status": "draft"

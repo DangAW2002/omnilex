@@ -4,7 +4,8 @@ domains:
 level: 1
 relations:
   prerequisites: []
-  confusable: []
+  confusable:
+    - news-lead
   related:
     - marketing-funnel
     - conversion-rate

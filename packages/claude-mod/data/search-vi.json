@@ -145,6 +145,25 @@
     "status": "draft"
   },
   {
+    "id": "anonymous-source",
+    "label": "Nguồn tin ẩn danh",
+    "aliases": [
+      "Nguồn tin giấu tên",
+      "Người cung cấp tin bí mật"
+    ],
+    "loanwords": [],
+    "plain_descriptions": [
+      "người cung cấp tài liệu nội bộ cho nhà báo với điều kiện được giấu danh tính",
+      "nhân chứng hoặc nguồn tin thạo tin không nêu tên thật trên mặt báo"
+    ],
+    "summary": "Người cung cấp thông tin hoặc tài liệu cho phóng viên theo thỏa thuận rằng danh tính cá nhân của họ sẽ được giữ bí mật trên mặt báo.",
+    "domains": [
+      "media/journalism/ethics"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
     "id": "api",
     "label": "Application Programming Interface (API)",
     "aliases": [
@@ -185,6 +204,25 @@
     "summary": "Địa chỉ URL cụ thể do hệ thống API mở ra để tiếp nhận các yêu cầu xử lý tài nguyên hoặc dịch vụ nghiệp vụ.",
     "domains": [
       "it/web/api"
+    ],
+    "level": 1,
+    "status": "draft"
+  },
+  {
+    "id": "aspect-ratio",
+    "label": "Tỷ lệ khung hình",
+    "aliases": [
+      "Tỷ lệ khung ảnh",
+      "Tỷ lệ hiển thị"
+    ],
+    "loanwords": [],
+    "plain_descriptions": [
+      "tương quan tỷ lệ giữa chiều rộng và chiều cao của khung hình video hoặc màn hình",
+      "tỷ lệ kích thước màn ảnh như chuẩn ngang 16:9 trên truyền hình hay dọc 9:16 trên điện thoại"
+    ],
+    "summary": "Tỷ lệ toán học thể hiện mối quan hệ tương quan giữa chiều ngang và chiều cao của một khung hình, hình ảnh hoặc thiết bị hiển thị.",
+    "domains": [
+      "media/content-production/video"
     ],
     "level": 1,
     "status": "draft"
@@ -272,6 +310,28 @@
       "it/infrastructure/cloud"
     ],
     "level": 2,
+    "status": "draft"
+  },
+  {
+    "id": "b-roll",
+    "label": "B-roll",
+    "aliases": [
+      "Cảnh quay phụ",
+      "Cảnh quay bổ trợ",
+      "Cảnh đệm"
+    ],
+    "loanwords": [
+      "b-roll"
+    ],
+    "plain_descriptions": [
+      "các cảnh quay tư liệu bổ trợ chèn vào video để minh họa cho lời kể của nhân vật",
+      "những góc máy quay bối cảnh phụ giúp che đi các mối nối cắt ghép trong dựng phim"
+    ],
+    "summary": "Thước phim phụ trợ được lồng ghép xen kẽ với cảnh quay phỏng vấn chính nhằm minh họa cho nội dung câu chuyện và che các điểm cắt nối khi dựng video.",
+    "domains": [
+      "media/content-production/video"
+    ],
+    "level": 1,
     "status": "draft"
   },
   {
@@ -510,6 +570,28 @@
     "status": "draft"
   },
   {
+    "id": "breaking-news",
+    "label": "Breaking news",
+    "aliases": [
+      "Tin nóng",
+      "Tin giờ chót",
+      "Tin khẩn"
+    ],
+    "loanwords": [
+      "breaking news"
+    ],
+    "plain_descriptions": [
+      "bản tin phát ngay lập tức về một biến cố bất ngờ vừa mới xảy ra",
+      "thông tin cập nhật từng phút về sự kiện đang được công chúng quan tâm sát sao"
+    ],
+    "summary": "Thông tin mới nhận về một sự kiện cấp bách đang diễn ra, đòi hỏi các cơ quan thông tấn phải truyền phát ngay lập tức đến công chúng.",
+    "domains": [
+      "media/journalism/genres"
+    ],
+    "level": 1,
+    "status": "draft"
+  },
+  {
     "id": "budget",
     "label": "Ngân sách",
     "qualifier": "(Tài chính cá nhân)",
@@ -549,6 +631,27 @@
       "product/delivery-planning"
     ],
     "level": 2,
+    "status": "draft"
+  },
+  {
+    "id": "byline",
+    "label": "Byline",
+    "aliases": [
+      "Dòng tên tác giả",
+      "Tên người viết"
+    ],
+    "loanwords": [
+      "byline"
+    ],
+    "plain_descriptions": [
+      "dòng ghi nhận tên phóng viên hoặc tác giả thực hiện bài viết",
+      "phần ghi chú danh tính người viết nằm dưới tiêu đề"
+    ],
+    "summary": "Dòng chữ trong một ấn phẩm ghi nhận danh tính của phóng viên hoặc tác giả chịu trách nhiệm về nội dung bài viết.",
+    "domains": [
+      "media/journalism/reporting"
+    ],
+    "level": 1,
     "status": "draft"
   },
   {
@@ -783,6 +886,27 @@
     "status": "draft"
   },
   {
+    "id": "color-grading",
+    "label": "Color grading",
+    "aliases": [
+      "Chỉnh màu nghệ thuật",
+      "Định hình tông màu"
+    ],
+    "loanwords": [
+      "color grading"
+    ],
+    "plain_descriptions": [
+      "quá trình hiệu chỉnh sắc thái màu sắc để tạo nên cảm xúc và phong cách thẩm mỹ cho phim",
+      "bước can thiệp màu sắc hậu kỳ nhằm mang lại bầu không khí điện ảnh đặc trưng cho khung hình"
+    ],
+    "summary": "Quy trình sáng tạo trong hậu kỳ video nhằm thay đổi đặc tính màu sắc, độ tương phản và sắc độ để tạo phong cách thẩm mỹ và cảm xúc cho tác phẩm.",
+    "domains": [
+      "media/content-production/editing"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
     "id": "compound-interest",
     "label": "Lãi kép",
     "aliases": [
@@ -928,6 +1052,24 @@
     "status": "reviewed"
   },
   {
+    "id": "copyright",
+    "label": "Bản quyền",
+    "aliases": [
+      "Quyền tác giả"
+    ],
+    "loanwords": [],
+    "plain_descriptions": [
+      "quyền pháp lý bảo hộ tác giả không bị người khác tự ý sao chép tác phẩm",
+      "luật sở hữu trí tuệ công nhận quyền sử dụng và định đoạt đối với sáng tạo nghệ thuật, văn học"
+    ],
+    "summary": "Hình thức bảo hộ pháp lý theo luật sở hữu trí tuệ dành cho tác giả đối với tác phẩm văn học, nghệ thuật và khoa học do mình sáng tạo ra.",
+    "domains": [
+      "media/publishing/copyright-licensing"
+    ],
+    "level": 1,
+    "status": "draft"
+  },
+  {
     "id": "cors",
     "label": "Cross-Origin Resource Sharing (CORS)",
     "aliases": [
@@ -1011,6 +1153,26 @@
     "status": "draft"
   },
   {
+    "id": "creative-commons",
+    "label": "Creative Commons",
+    "aliases": [
+      "Giấy phép CC"
+    ],
+    "loanwords": [
+      "creative commons"
+    ],
+    "plain_descriptions": [
+      "hệ thống giấy phép mở cho phép tác giả chia sẻ tác phẩm với các điều kiện bản quyền linh hoạt",
+      "khung cấp phép pháp lý giúp công chúng tái sử dụng tài liệu miễn phí nhưng vẫn ghi công người tạo ra"
+    ],
+    "summary": "Tổ chức phi lợi nhuận và khung pháp lý cung cấp các giấy phép bản quyền chuẩn hóa, cho phép phân phối và tái sử dụng tác phẩm tự do theo các điều kiện xác định.",
+    "domains": [
+      "media/publishing/copyright-licensing"
+    ],
+    "level": 1,
+    "status": "draft"
+  },
+  {
     "id": "credit-card",
     "label": "Thẻ tín dụng",
     "aliases": [],
@@ -1047,6 +1209,24 @@
       "finance/personal-finance/debt-credit"
     ],
     "level": 1,
+    "status": "draft"
+  },
+  {
+    "id": "crisis-communication",
+    "label": "Truyền thông khủng hoảng",
+    "aliases": [
+      "Xử lý khủng hoảng truyền thông"
+    ],
+    "loanwords": [],
+    "plain_descriptions": [
+      "biện pháp phát ngôn và đối thoại với dư luận khi tổ chức gặp sự cố nghiêm trọng",
+      "kế hoạch kiểm soát thông tin để bảo vệ uy tín thương hiệu trong biến cố bất ngờ"
+    ],
+    "summary": "Chiến lược truyền thông ứng phó khẩn cấp nhằm giảm thiểu tổn hại danh tiếng, bảo vệ sự an toàn của cộng đồng và truyền đạt thông điệp minh bạch trong khủng hoảng.",
+    "domains": [
+      "media/pr-communications/crisis-communications"
+    ],
+    "level": 2,
     "status": "draft"
   },
   {
@@ -2053,6 +2233,46 @@
     "status": "draft"
   },
   {
+    "id": "fact-checking",
+    "label": "Kiểm chứng thông tin",
+    "aliases": [
+      "Xác minh dữ kiện",
+      "Fact-checking"
+    ],
+    "loanwords": [
+      "fact-checking"
+    ],
+    "plain_descriptions": [
+      "đối chiếu các con số và phát ngôn với tài liệu gốc để phát hiện sai lệch",
+      "quy trình điều tra làm rõ một tuyên bố công khai là đúng hay sai sự thật"
+    ],
+    "summary": "Quy trình xác minh độc lập các khẳng định dữ kiện trong văn bản, bài phát biểu hoặc chương trình phát sóng dựa trên tài liệu gốc đáng tin cậy.",
+    "domains": [
+      "media/journalism/ethics"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
+    "id": "fair-use",
+    "label": "Sử dụng hợp lý",
+    "aliases": [
+      "Sử dụng công bằng",
+      "Ngoại lệ quyền tác giả"
+    ],
+    "loanwords": [],
+    "plain_descriptions": [
+      "ngoại lệ pháp lý cho phép trích dẫn tác phẩm có bản quyền để bình luận hay dạy học mà không cần xin phép",
+      "điều khoản cho phép mượn một phần nội dung có sẵn phục vụ mục đích phê bình hoặc tin tức"
+    ],
+    "summary": "Học thuyết pháp lý cho phép sử dụng có giới hạn các tư liệu có bản quyền mà không cần xin phép tác giả cho các mục đích như phê bình, bình luận, báo chí hoặc giảng dạy.",
+    "domains": [
+      "media/publishing/copyright-licensing"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
     "id": "feature-flag",
     "label": "Feature flag",
     "aliases": [
@@ -2397,6 +2617,25 @@
     "summary": "Nhãn siêu dữ liệu bắt đầu bằng ký tự dấu thăng (#) dùng trên mạng xã hội để phân loại nội dung và hỗ trợ người dùng tìm kiếm theo chủ đề.",
     "domains": [
       "media/digital-marketing/social-media"
+    ],
+    "level": 1,
+    "status": "draft"
+  },
+  {
+    "id": "headline",
+    "label": "Tiêu đề",
+    "aliases": [
+      "Tít báo",
+      "Đầu đề"
+    ],
+    "loanwords": [],
+    "plain_descriptions": [
+      "dòng chữ lớn in đậm mở đầu một bài báo",
+      "câu tóm lược ngắn gọn nội dung để người đọc quyết định xem tiếp"
+    ],
+    "summary": "Dòng chữ nổi bật đặt ở đầu bài báo nhằm thâu tóm nội dung chính của sự kiện và thu hút sự chú ý của độc giả.",
+    "domains": [
+      "media/journalism/reporting"
     ],
     "level": 1,
     "status": "draft"
@@ -2753,6 +2992,24 @@
     ],
     "level": 1,
     "status": "reviewed"
+  },
+  {
+    "id": "inverted-pyramid",
+    "label": "Kim tự tháp ngược",
+    "aliases": [
+      "Mô hình kim tự tháp ngược"
+    ],
+    "loanwords": [],
+    "plain_descriptions": [
+      "cách viết tin đưa thông tin quan trọng nhất lên đầu rồi mới tới chi tiết phụ",
+      "kết cấu bài báo sắp xếp dữ liệu theo thứ tự giảm dần mức độ ưu tiên"
+    ],
+    "summary": "Cấu trúc biên soạn bài báo trong đó những thông tin quan trọng nhất được đưa lên đầu, tiếp theo là các chi tiết bổ trợ theo thứ tự giảm dần.",
+    "domains": [
+      "media/journalism/reporting"
+    ],
+    "level": 2,
+    "status": "draft"
   },
   {
     "id": "iot-gateway",
@@ -3770,6 +4027,29 @@
     "status": "draft"
   },
   {
+    "id": "news-lead",
+    "label": "Lead",
+    "qualifier": "(Báo chí)",
+    "aliases": [
+      "Đoạn mở đầu",
+      "Sa-pô",
+      "Đoạn dẫn"
+    ],
+    "loanwords": [
+      "lead"
+    ],
+    "plain_descriptions": [
+      "đoạn văn đầu tiên tóm tắt các điểm then chốt của bài báo",
+      "phần mở bài nêu bật ngay sự kiện chính cho người đọc"
+    ],
+    "summary": "Đoạn văn hoặc câu mở đầu của một bài báo truyền tải ngay lập tức những dữ kiện thiết yếu nhất của sự kiện đến độc giả.",
+    "domains": [
+      "media/journalism/reporting"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
     "id": "newsletter",
     "label": "Newsletter",
     "aliases": [
@@ -3918,6 +4198,27 @@
     "status": "draft"
   },
   {
+    "id": "op-ed",
+    "label": "Op-ed",
+    "aliases": [
+      "Bài bình luận",
+      "Chuyên mục bình luận tác giả"
+    ],
+    "loanwords": [
+      "op-ed"
+    ],
+    "plain_descriptions": [
+      "bài viết thể hiện góc nhìn và lập luận cá nhân của một chuyên gia bên ngoài",
+      "bài phân tích quan điểm độc lập của tác giả không thuộc ban biên tập"
+    ],
+    "summary": "Bài viết bình luận thể hiện quan điểm riêng của một tác giả cụ thể, độc lập với ban biên tập của cơ quan báo chí.",
+    "domains": [
+      "media/journalism/genres"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
     "id": "opc-ua",
     "label": "OPC UA",
     "aliases": [],
@@ -4058,6 +4359,27 @@
     "status": "draft"
   },
   {
+    "id": "paywall",
+    "label": "Paywall",
+    "aliases": [
+      "Tường thu phí",
+      "Bức tường thu phí"
+    ],
+    "loanwords": [
+      "paywall"
+    ],
+    "plain_descriptions": [
+      "rào cản kỹ thuật yêu cầu độc giả phải trả tiền đăng ký theo tháng để đọc trọn vẹn bài báo",
+      "hệ thống khóa các bài viết độc quyền trên trang tin điện tử đối với người dùng chưa trả phí"
+    ],
+    "summary": "Cơ chế kỹ thuật trên các trang báo điện tử nhằm hạn chế người đọc phổ thông và chỉ cho phép những người đã trả phí theo dõi toàn văn bài viết.",
+    "domains": [
+      "media/publishing/distribution-platforms"
+    ],
+    "level": 1,
+    "status": "draft"
+  },
+  {
     "id": "pe-ratio",
     "label": "Hệ số P/E",
     "aliases": [
@@ -4121,6 +4443,27 @@
       "iot/industrial"
     ],
     "level": 2,
+    "status": "draft"
+  },
+  {
+    "id": "podcast",
+    "label": "Podcast",
+    "aliases": [
+      "Chương trình phát thanh số",
+      "Bản ghi âm định kỳ"
+    ],
+    "loanwords": [
+      "podcast"
+    ],
+    "plain_descriptions": [
+      "chương trình âm thanh kỹ thuật số nhiều tập được phát trên mạng để nghe theo yêu cầu",
+      "chuỗi bài nói chuyện hoặc phỏng vấn thu âm có thể đăng ký theo dõi trên điện thoại"
+    ],
+    "summary": "Loạt chương trình âm thanh kỹ thuật số định kỳ được phân phối qua mạng internet cho phép người nghe phát trực tuyến, tải về hoặc đăng ký theo dõi tự động.",
+    "domains": [
+      "media/content-production/audio-podcasts"
+    ],
+    "level": 1,
     "status": "draft"
   },
   {
@@ -4205,6 +4548,65 @@
       "iot/industrial"
     ],
     "level": 2,
+    "status": "draft"
+  },
+  {
+    "id": "press-conference",
+    "label": "Họp báo",
+    "aliases": [
+      "Cuộc họp báo"
+    ],
+    "loanwords": [],
+    "plain_descriptions": [
+      "cuộc gặp gỡ trực tiếp giữa người phát ngôn với các phóng viên báo đài",
+      "sự kiện công bố thông tin và trả lời chất vấn trước giới truyền thông"
+    ],
+    "summary": "Sự kiện do cơ quan, tổ chức tổ chức để mời các nhà báo đến lắng nghe thông báo chính thức và trực tiếp đặt câu hỏi chất vấn.",
+    "domains": [
+      "media/pr-communications/media-relations"
+    ],
+    "level": 1,
+    "status": "draft"
+  },
+  {
+    "id": "press-embargo",
+    "label": "Embargo",
+    "qualifier": "(Truyền thông)",
+    "aliases": [
+      "Cấm vận thông tin",
+      "Lệnh hoãn công bố thông tin",
+      "Lệnh phong tỏa tin tức"
+    ],
+    "loanwords": [
+      "embargo"
+    ],
+    "plain_descriptions": [
+      "thỏa thuận giữ kín thông tin nhận trước và chỉ được đăng sau một mốc giờ nhất định",
+      "quy ước không phát sóng bản tin trước thời điểm do bên cung cấp chỉ định"
+    ],
+    "summary": "Yêu cầu hạn chế tạm thời từ bên cung cấp thông tin, buộc các cơ quan truyền thông không được công bố tư liệu trước một mốc thời gian cụ thể.",
+    "domains": [
+      "media/pr-communications/media-relations"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
+    "id": "press-release",
+    "label": "Thông cáo báo chí",
+    "aliases": [
+      "Bản tin báo chí"
+    ],
+    "loanwords": [],
+    "plain_descriptions": [
+      "văn bản tuyên bố chính thức của cơ quan hoặc doanh nghiệp gửi cho phóng viên",
+      "tài liệu tóm lược sự kiện mới phát đi để báo đài khai thác tin tức"
+    ],
+    "summary": "Văn bản tuyên bố chính thức được cơ quan, tổ chức hoặc doanh nghiệp phát hành tới báo chí nhằm cung cấp thông tin chuẩn xác về một sự kiện.",
+    "domains": [
+      "media/pr-communications/media-relations"
+    ],
+    "level": 1,
     "status": "draft"
   },
   {
@@ -5360,6 +5762,24 @@
     "status": "draft"
   },
   {
+    "id": "spokesperson",
+    "label": "Người phát ngôn",
+    "aliases": [
+      "Đại diện phát ngôn"
+    ],
+    "loanwords": [],
+    "plain_descriptions": [
+      "người được ủy quyền chính thức phát biểu trước công chúng thay mặt cho một tổ chức",
+      "đại diện trả lời phỏng vấn báo chí và truyền đạt quan điểm của cơ quan"
+    ],
+    "summary": "Cá nhân được giao thẩm quyền chính thức để phát ngôn, truyền đạt thông điệp và giải đáp thắc mắc của dư luận thay mặt cho một cơ quan hoặc tổ chức.",
+    "domains": [
+      "media/pr-communications/media-relations"
+    ],
+    "level": 1,
+    "status": "draft"
+  },
+  {
     "id": "sprint-agile",
     "label": "Sprint",
     "qualifier": "(Agile)",
@@ -5592,6 +6012,27 @@
       "product/agile-scrum"
     ],
     "level": 2,
+    "status": "draft"
+  },
+  {
+    "id": "storyboard",
+    "label": "Storyboard",
+    "aliases": [
+      "Bảng phân cảnh",
+      "Bảng kịch bản hình ảnh"
+    ],
+    "loanwords": [
+      "storyboard"
+    ],
+    "plain_descriptions": [
+      "chuỗi tranh vẽ phác thảo từng góc quay và hành động của nhân vật trước khi bấm máy",
+      "bản vẽ giống truyện tranh minh họa diễn biến các phân cảnh của một bộ phim hay video quảng cáo"
+    ],
+    "summary": "Bản thiết kế trực quan gồm chuỗi các khung hình phác thảo kèm ghi chú về góc máy, chuyển động và âm thanh để định hình video trước khi bấm máy.",
+    "domains": [
+      "media/content-production/video"
+    ],
+    "level": 1,
     "status": "draft"
   },
   {
@@ -5924,6 +6365,28 @@
     "status": "draft"
   },
   {
+    "id": "typography",
+    "label": "Typography",
+    "aliases": [
+      "Nghệ thuật chữ",
+      "Thiết kế kiểu chữ",
+      "Nghệ thuật sắp đặt chữ"
+    ],
+    "loanwords": [
+      "typography"
+    ],
+    "plain_descriptions": [
+      "kỹ thuật sắp đặt phông chữ và bố cục văn bản để bài viết dễ đọc và có tính thẩm mỹ cao",
+      "nghệ thuật lựa chọn kích cỡ, khoảng cách và kiểu dáng chữ trên trang in hoặc giao diện màn hình"
+    ],
+    "summary": "Nghệ thuật và kỹ thuật lựa chọn, sắp xếp các kiểu chữ, độ đậm nhạt, khoảng cách chữ và dòng nhằm giúp văn bản rõ ràng, dễ đọc và truyền tải cảm xúc thị giác.",
+    "domains": [
+      "media/content-production/visual-design"
+    ],
+    "level": 1,
+    "status": "draft"
+  },
+  {
     "id": "unit-test",
     "label": "Unit test",
     "aliases": [
@@ -6108,6 +6571,47 @@
     "summary": "Hệ thống giả lập bằng phần mềm của một máy tính vật lý, thực thi các ứng dụng bên trong một hệ điều hành khách riêng biệt dưới sự quản lý của phần mềm ảo hóa.",
     "domains": [
       "it/infrastructure/cloud"
+    ],
+    "level": 1,
+    "status": "draft"
+  },
+  {
+    "id": "visual-hierarchy",
+    "label": "Phân cấp thị giác",
+    "aliases": [
+      "Hệ thống phân cấp thị giác",
+      "Trật tự thị giác"
+    ],
+    "loanwords": [],
+    "plain_descriptions": [
+      "nguyên tắc sắp xếp độ lớn, màu sắc và vị trí để người nhìn thấy ngay chi tiết quan trọng nhất",
+      "bố cục điều hướng ánh mắt của người xem theo trình tự ưu tiên tự nhiên từ chính đến phụ"
+    ],
+    "summary": "Nguyên tắc sắp xếp và trình bày các yếu tố đồ họa theo thứ tự ưu tiên chủ đích, giúp dẫn dắt ánh nhìn của người xem qua bố cục một cách tự nhiên và mạch lạc.",
+    "domains": [
+      "media/content-production/visual-design"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
+    "id": "voice-over",
+    "label": "Thuyết minh",
+    "aliases": [
+      "Lời bình",
+      "Lồng tiếng thuyết minh",
+      "Voice-over"
+    ],
+    "loanwords": [
+      "voice-over"
+    ],
+    "plain_descriptions": [
+      "giọng nói đọc lời giải thích hoặc dẫn chuyện vang lên mà không nhìn thấy mặt người nói trên hình",
+      "phần âm thanh thu âm giọng đọc đè lên các thước phim tài liệu hoặc phóng sự truyền hình"
+    ],
+    "summary": "Kỹ thuật sản xuất âm thanh trong đó giọng đọc dẫn chuyện của một người không xuất hiện trên màn hình được thu lại và phát đè lên hình ảnh.",
+    "domains": [
+      "media/content-production/audio-podcasts"
     ],
     "level": 1,
     "status": "draft"

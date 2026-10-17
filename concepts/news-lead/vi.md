@@ -14,7 +14,8 @@ plain_descriptions:
 - phần mở bài nêu bật ngay sự kiện chính cho người đọc
 summary: Đoạn văn hoặc câu mở đầu của một bài báo truyền tải ngay lập tức những dữ
   kiện thiết yếu nhất của sự kiện đến độc giả.
-confusable_notes: {}
+confusable_notes:
+  sales-lead: Trong marketing, lead là khách hàng tiềm năng; trong báo chí, lead là đoạn mở đầu của bài viết.
 follow_up_questions:
 - Khi nào nên dùng đoạn dẫn trực diện thay vì đoạn dẫn kể chuyện hay gợi mở?
 - Công thức 5W1H chi phối cách viết câu mở đầu bài báo như thế nào?

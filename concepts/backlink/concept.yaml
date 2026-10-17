@@ -1,0 +1,24 @@
+id: backlink
+domains:
+  - media/digital-marketing/seo
+level: 2
+relations:
+  prerequisites:
+    - seo
+  confusable: []
+  related:
+    - serp
+    - seo-keyword
+status: draft
+provenance:
+  drafted_by: ai
+sources:
+  - ref: google-search-central
+    locator: https://developers.google.com/search/docs/crawling-indexing/qualify-outbound-links
+    title: "Qualify Outbound Links to Google"
+    language: en
+    accessed: '2026-10-16'
+    retrieved_by: ai
+    supports:
+      - definition
+      - summary

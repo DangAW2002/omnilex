@@ -1,0 +1,24 @@
+id: email-open-rate
+domains:
+  - media/digital-marketing/email
+level: 2
+relations:
+  prerequisites:
+    - newsletter
+  confusable: []
+  related:
+    - ctr
+    - bounce-rate
+status: draft
+provenance:
+  drafted_by: ai
+sources:
+  - ref: mailchimp-help
+    locator: https://mailchimp.com/help/about-open-and-click-rates/
+    title: "About Open and Click Rates"
+    language: en
+    accessed: '2026-10-16'
+    retrieved_by: ai
+    supports:
+      - definition
+      - summary

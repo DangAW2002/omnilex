@@ -1,0 +1,24 @@
+id: seo-keyword
+domains:
+  - media/digital-marketing/seo
+level: 1
+relations:
+  prerequisites:
+    - seo
+  confusable: []
+  related:
+    - serp
+    - backlink
+status: draft
+provenance:
+  drafted_by: ai
+sources:
+  - ref: google-search-central
+    locator: https://developers.google.com/search/docs/essentials/spam-policies
+    title: "Spam Policies for Google Web Search"
+    language: en
+    accessed: '2026-10-16'
+    retrieved_by: ai
+    supports:
+      - definition
+      - summary

@@ -1,0 +1,23 @@
+id: sales-lead
+domains:
+  - media/digital-marketing/metrics-analytics
+level: 1
+relations:
+  prerequisites: []
+  confusable: []
+  related:
+    - marketing-funnel
+    - conversion-rate
+status: draft
+provenance:
+  drafted_by: ai
+sources:
+  - ref: microsoft-learn
+    locator: https://learn.microsoft.com/en-us/dynamics365/sales/create-edit-lead-sales
+    title: "Create or edit leads | Microsoft Learn"
+    language: en
+    accessed: '2026-10-16'
+    retrieved_by: ai
+    supports:
+      - definition
+      - summary

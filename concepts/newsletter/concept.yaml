@@ -1,0 +1,23 @@
+id: newsletter
+domains:
+  - media/digital-marketing/email
+level: 1
+relations:
+  prerequisites: []
+  confusable: []
+  related:
+    - email-open-rate
+    - content-marketing
+status: draft
+provenance:
+  drafted_by: ai
+sources:
+  - ref: mailchimp-help
+    locator: https://mailchimp.com/help/create-and-send-regular-email/
+    title: "Create and Send a Regular Email Campaign"
+    language: en
+    accessed: '2026-10-16'
+    retrieved_by: ai
+    supports:
+      - definition
+      - summary

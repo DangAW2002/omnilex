@@ -1,0 +1,24 @@
+id: marketing-funnel
+domains:
+  - media/digital-marketing/metrics-analytics
+level: 2
+relations:
+  prerequisites: []
+  confusable: []
+  related:
+    - conversion-rate
+    - sales-lead
+    - call-to-action
+status: draft
+provenance:
+  drafted_by: ai
+sources:
+  - ref: google-analytics-help
+    locator: https://support.google.com/analytics/answer/9327974?hl=en
+    title: "[GA4] Funnel exploration"
+    language: en
+    accessed: '2026-10-16'
+    retrieved_by: ai
+    supports:
+      - definition
+      - summary

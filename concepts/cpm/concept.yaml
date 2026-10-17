@@ -1,0 +1,25 @@
+id: cpm
+domains:
+  - media/digital-marketing/paid-ads
+level: 2
+relations:
+  prerequisites:
+    - ad-impression
+  confusable:
+    - cpc
+  related:
+    - ctr
+    - audience-reach
+status: draft
+provenance:
+  drafted_by: ai
+sources:
+  - ref: google-ads-help
+    locator: https://support.google.com/google-ads/answer/6310?hl=en
+    title: "Cost-per-thousand impressions (CPM): Definition"
+    language: en
+    accessed: '2026-10-16'
+    retrieved_by: ai
+    supports:
+      - definition
+      - summary

@@ -1,0 +1,24 @@
+id: engagement-rate
+domains:
+  - media/digital-marketing/social-media
+level: 2
+relations:
+  prerequisites:
+    - audience-reach
+  confusable: []
+  related:
+    - bounce-rate
+    - ctr
+status: draft
+provenance:
+  drafted_by: ai
+sources:
+  - ref: google-analytics-help
+    locator: https://support.google.com/analytics/answer/12195621?hl=en
+    title: "[GA4] Engagement rate and bounce rate"
+    language: en
+    accessed: '2026-10-16'
+    retrieved_by: ai
+    supports:
+      - definition
+      - summary

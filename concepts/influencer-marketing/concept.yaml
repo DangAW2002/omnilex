@@ -1,0 +1,23 @@
+id: influencer-marketing
+domains:
+  - media/digital-marketing/social-media
+level: 2
+relations:
+  prerequisites: []
+  confusable: []
+  related:
+    - audience-reach
+    - content-marketing
+status: draft
+provenance:
+  drafted_by: ai
+sources:
+  - ref: ftc-gov
+    locator: https://www.ftc.gov/business-guidance/resources/disclosures-101-social-media-influencers
+    title: "Disclosures 101 for Social Media Influencers"
+    language: en
+    accessed: '2026-10-16'
+    retrieved_by: ai
+    supports:
+      - definition
+      - summary

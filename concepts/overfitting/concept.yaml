@@ -3,6 +3,8 @@ domains:
   - it/ai-ml/foundations
 level: 1
 relations:
+  confusable:
+    - underfitting
   prerequisites:
     - model-training
     - dataset

@@ -1,0 +1,24 @@
+id: precision-recall
+domains:
+  - it/ai-ml/mlops
+level: 2
+relations:
+  prerequisites:
+    - classification-ml
+  confusable: []
+  related:
+    - f1-score
+    - confusion-matrix
+status: draft
+provenance:
+  drafted_by: ai
+sources:
+  - ref: google-ml-glossary
+    locator: https://developers.google.com/machine-learning/glossary#precision-recall-curve
+    title: "precision-recall curve"
+    language: en
+    accessed: '2026-10-17'
+    retrieved_by: ai
+    supports:
+      - definition
+      - summary

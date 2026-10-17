@@ -1,0 +1,25 @@
+id: transfer-learning
+domains:
+  - it/ai-ml/foundations
+level: 2
+relations:
+  prerequisites:
+    - model-training
+    - ml-model
+  confusable: []
+  related:
+    - foundation-model
+    - fine-tuning
+status: draft
+provenance:
+  drafted_by: ai
+sources:
+  - ref: google-ml-glossary
+    locator: https://developers.google.com/machine-learning/glossary#transfer-learning
+    title: "transfer learning"
+    language: en
+    accessed: '2026-10-17'
+    retrieved_by: ai
+    supports:
+      - definition
+      - summary

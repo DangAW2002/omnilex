@@ -6,7 +6,8 @@ plain_descriptions:
   - when an AI memorizes practice data so closely that it fails on fresh inputs
   - an AI model scoring near perfect in practice tests but failing real exams
 summary: A modeling pathology where an algorithm learns idiosyncratic noise in training samples, severely impairing its ability to generalize to unseen data.
-confusable_notes: {}
+confusable_notes:
+  underfitting: Overfitting learns training noise and fails to generalize; underfitting fails to capture the underlying pattern even on the training data.
 follow_up_questions:
   - Which regularization methods are most effective at curbing overfitting in deep models?
   - How can monitoring validation loss curves alert engineers to onset overfitting?

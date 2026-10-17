@@ -1,0 +1,25 @@
+id: chunking
+domains:
+  - it/ai-ml/llm-agents
+level: 2
+relations:
+  prerequisites:
+    - rag
+  confusable: []
+  related:
+    - embedding
+    - vector-database
+    - context-window
+status: draft
+provenance:
+  drafted_by: ai
+sources:
+  - ref: aws-docs
+    locator: https://docs.aws.amazon.com/bedrock/latest/userguide/kb-chunking.html
+    title: "Knowledge base chunking strategies"
+    language: en
+    accessed: '2026-10-17'
+    retrieved_by: ai
+    supports:
+      - definition
+      - summary

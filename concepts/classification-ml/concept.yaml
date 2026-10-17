@@ -1,0 +1,26 @@
+id: classification-ml
+domains:
+  - it/ai-ml/foundations
+level: 1
+relations:
+  prerequisites:
+    - supervised-learning
+  confusable:
+    - regression-ml
+  related:
+    - confusion-matrix
+    - precision-recall
+    - f1-score
+status: draft
+provenance:
+  drafted_by: ai
+sources:
+  - ref: google-ml-glossary
+    locator: https://developers.google.com/machine-learning/glossary#classification-model
+    title: "classification model"
+    language: en
+    accessed: '2026-10-17'
+    retrieved_by: ai
+    supports:
+      - definition
+      - summary

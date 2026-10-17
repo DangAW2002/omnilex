@@ -1,0 +1,27 @@
+id: foundation-model
+domains:
+  - it/ai-ml/foundations
+level: 2
+relations:
+  prerequisites:
+    - deep-learning
+    - transfer-learning
+  confusable: []
+  related:
+    - open-weight-model
+    - multimodal-model
+    - generative-ai
+    - llm
+status: draft
+provenance:
+  drafted_by: ai
+sources:
+  - ref: google-ml-glossary
+    locator: https://developers.google.com/machine-learning/glossary#foundation-model
+    title: "foundation model"
+    language: en
+    accessed: '2026-10-17'
+    retrieved_by: ai
+    supports:
+      - definition
+      - summary

@@ -1,0 +1,25 @@
+id: multimodal-model
+domains:
+  - it/ai-ml/llm-agents
+level: 2
+relations:
+  prerequisites:
+    - foundation-model
+  confusable: []
+  related:
+    - computer-vision
+    - natural-language-processing
+    - speech-recognition
+status: draft
+provenance:
+  drafted_by: ai
+sources:
+  - ref: google-ml-glossary
+    locator: https://developers.google.com/machine-learning/glossary#multimodal-model
+    title: "multimodal model"
+    language: en
+    accessed: '2026-10-17'
+    retrieved_by: ai
+    supports:
+      - definition
+      - summary

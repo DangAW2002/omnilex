@@ -1,0 +1,24 @@
+id: ocr
+domains:
+  - it/ai-ml/computer-vision
+level: 2
+relations:
+  prerequisites:
+    - computer-vision
+  confusable: []
+  related:
+    - speech-recognition
+    - natural-language-processing
+status: draft
+provenance:
+  drafted_by: ai
+sources:
+  - ref: microsoft-learn
+    locator: https://learn.microsoft.com/en-us/azure/ai-services/computer-vision/overview-ocr
+    title: "Azure AI Vision OCR overview"
+    language: en
+    accessed: '2026-10-17'
+    retrieved_by: ai
+    supports:
+      - definition
+      - summary

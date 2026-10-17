@@ -7,7 +7,8 @@ plain_descriptions:
   - hiện tượng AI học vẹt dữ liệu mẫu khiến nó đoán sai khi gặp trường hợp mới
   - mô hình đạt điểm số tuyệt đối khi luyện tập nhưng thất bại trong thực tế
 summary: Hiện tượng mô hình học máy ghi nhớ máy móc các biến thiên ngẫu nhiên và nhiễu của dữ liệu huấn luyện, làm suy giảm nghiêm trọng khả năng tổng quát hóa.
-confusable_notes: {}
+confusable_notes:
+  underfitting: Quá khớp là mô hình ghi nhớ cả nhiễu và kém tổng quát hóa; dưới khớp là mô hình quá đơn giản đến mức không học được quy luật ngay trên tập huấn luyện.
 follow_up_questions:
   - Những kỹ thuật điều chuẩn nào giúp ngăn chặn tình trạng quá khớp hiệu quả nhất?
   - Biểu đồ hàm mất mát trên tập kiểm định báo hiệu thời điểm xảy ra quá khớp như thế nào?

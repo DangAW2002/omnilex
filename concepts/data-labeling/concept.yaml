@@ -1,0 +1,25 @@
+id: data-labeling
+domains:
+  - it/ai-ml/mlops
+level: 1
+relations:
+  prerequisites:
+    - dataset
+  confusable: []
+  related:
+    - supervised-learning
+    - synthetic-data
+    - mlops
+status: draft
+provenance:
+  drafted_by: ai
+sources:
+  - ref: aws-docs
+    locator: https://aws.amazon.com/what-is/data-labeling/
+    title: "What is Data Labeling?"
+    language: en
+    accessed: '2026-10-17'
+    retrieved_by: ai
+    supports:
+      - definition
+      - summary

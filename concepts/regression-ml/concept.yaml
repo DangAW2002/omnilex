@@ -1,0 +1,25 @@
+id: regression-ml
+domains:
+  - it/ai-ml/foundations
+level: 1
+relations:
+  prerequisites:
+    - supervised-learning
+  confusable:
+    - classification-ml
+  related:
+    - underfitting
+    - regularization
+status: draft
+provenance:
+  drafted_by: ai
+sources:
+  - ref: google-ml-glossary
+    locator: https://developers.google.com/machine-learning/glossary#linear-regression
+    title: "linear regression"
+    language: en
+    accessed: '2026-10-17'
+    retrieved_by: ai
+    supports:
+      - definition
+      - summary

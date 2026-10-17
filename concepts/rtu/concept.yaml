@@ -1,12 +1,26 @@
 id: rtu
 domains:
   - iot/industrial
-level: 1
+level: 2
 relations:
-  prerequisites: []
-  confusable: []
-  related: []
+  prerequisites:
+    - "sensor"
+  confusable:
+    - "plc"
+  related:
+    - "scada"
+    - "telemetry"
+    - "dcs"
 status: draft
 provenance:
   drafted_by: ai
-sources: []
+sources:
+  - ref: nist-csrc
+    locator: https://csrc.nist.gov/glossary/term/remote_terminal_unit
+    title: "Remote Terminal Unit (RTU) - Computer Security Resource Center Glossary"
+    language: en
+    accessed: '2026-10-17'
+    retrieved_by: ai
+    supports:
+      - definition
+      - summary

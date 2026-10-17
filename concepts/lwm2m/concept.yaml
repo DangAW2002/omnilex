@@ -1,12 +1,27 @@
 id: lwm2m
 domains:
   - iot/connectivity-protocols
-level: 1
+level: 3
 relations:
-  prerequisites: []
-  confusable: []
-  related: []
+  prerequisites:
+    - "coap"
+    - "dtls"
+  confusable:
+    - "device-shadow"
+  related:
+    - "ota-update"
+    - "m2m"
+    - "device-provisioning"
 status: draft
 provenance:
   drafted_by: ai
-sources: []
+sources:
+  - ref: oma
+    locator: https://openmobilealliance.org/release/LightweightM2M/
+    title: "OMA Lightweight M2M (LwM2M) Technical Specifications"
+    language: en
+    accessed: '2026-10-17'
+    retrieved_by: ai
+    supports:
+      - definition
+      - summary

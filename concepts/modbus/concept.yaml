@@ -5,6 +5,7 @@ level: 2
 relations:
   prerequisites: []
   confusable:
+    - can-bus
     - opc-ua
   related:
     - plc

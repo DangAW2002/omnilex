@@ -1,12 +1,26 @@
 id: lte-m
 domains:
   - iot/connectivity-protocols
-level: 1
+level: 2
 relations:
-  prerequisites: []
-  confusable: []
-  related: []
+  prerequisites:
+    - "lpwan"
+  confusable:
+    - "nb-iot"
+    - "5g"
+  related:
+    - "telemetry"
+    - "esim"
 status: draft
 provenance:
   drafted_by: ai
-sources: []
+sources:
+  - ref: itu
+    locator: https://www.itu.int/rec/R-REC-M.2150/en
+    title: "M.2150: Detailed specifications of the terrestrial radio interfaces of IMT-2020"
+    language: en
+    accessed: '2026-10-17'
+    retrieved_by: ai
+    supports:
+      - definition
+      - summary

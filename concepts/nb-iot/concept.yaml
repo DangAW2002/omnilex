@@ -5,6 +5,7 @@ level: 2
 relations:
   prerequisites: []
   confusable:
+    - lte-m
     - lorawan
   related:
     - lorawan

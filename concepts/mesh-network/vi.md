@@ -10,7 +10,9 @@ plain_descriptions:
   - cấu trúc mạng mà các thiết bị tự bắt sóng và truyền tiếp dữ liệu vòng qua nhau
   - mô hình mạng không dây phân tán nơi mỗi nút vừa là điểm nhận vừa là trạm chuyển tiếp
 summary: Cấu trúc mạng phân tán trong đó các thiết bị liên kết đa hướng với nhau để tự động chuyển tiếp dữ liệu qua nhiều chặng mà không lệ thuộc vào một trạm phát trung tâm duy nhất.
-confusable_notes: {}
+confusable_notes:
+  poe: "Mesh network là cấu trúc định tuyến không dây chuyển tiếp gói tin giữa các trạm sóng, còn PoE là phương thức cấp nguồn điện vật lý trực tiếp qua dây cáp mạng đồng Ethernet."
+  lpwan: "Mesh network chuyển tiếp gói tin qua nhiều nút trung gian liền kề theo cấu trúc phi tập trung, trong khi LPWAN kết nối trực tiếp thiết bị đầu cuối tới trạm thu phát hoặc gateway cách xa nhiều km theo cấu trúc sao."
 follow_up_questions:
   - Thuật toán định tuyến tự chữa lành định lại lộ trình gói tin như thế nào khi một nút chuyển tiếp bị mất tín hiệu?
   - Tại sao độ trễ tích lũy và phụ phí gói tin lại tăng cao khi mạng mesh có quá nhiều chặng nhảy?

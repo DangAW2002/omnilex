@@ -7,7 +7,8 @@ plain_descriptions:
   - process of enrolling configuring and registering a new hardware unit into a cloud service
   - initial automated onboarding workflow that assigns credentials and configurations to devices
 summary: The automated onboarding process that authenticates, registers, and configures newly deployed hardware devices into a centralized cloud management platform.
-confusable_notes: {}
+confusable_notes:
+  esim: "Device provisioning configures the full software identities, application certificates, and cloud endpoints of an IoT unit, whereas eSIM specifically manages mobile network operator credentials and cryptographically authenticated cellular subscriptions."
 follow_up_questions:
   - How do hardware secure elements and X.509 certificates achieve zero-touch device provisioning at factory scale?
   - How does an enrollment service route a connecting device to the nearest geographic cloud hub?

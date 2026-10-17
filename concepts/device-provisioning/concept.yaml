@@ -4,7 +4,8 @@ domains:
 level: 2
 relations:
   prerequisites: []
-  confusable: []
+  confusable:
+    - esim
   related:
     - iot-platform
     - ota-update

@@ -8,7 +8,8 @@ plain_descriptions:
   - mô hình xử lý và phân tích dữ liệu ngay tại chỗ thay vì chuyển hết về trung tâm dữ liệu
   - phương pháp tính toán đặt máy chủ xử lý tác vụ sát nguồn phát sinh dữ liệu của thiết bị
 summary: Mô hình tính toán phân tán đưa các tác vụ xử lý tính toán và lưu trữ dữ liệu về gần sát vị trí vật lý nơi thông tin được thu thập nhằm tối ưu độ trễ.
-confusable_notes: {}
+confusable_notes:
+  fog-computing: "Edge computing tập trung vào việc tính toán thực hiện ngay tại thiết bị đầu cuối hoặc vi điều khiển biên, trong khi fog computing nhấn mạnh vào hạ tầng mạng trung gian nhiều tầng kết nối các cụm thiết bị với đám mây."
 follow_up_questions:
   - Điện toán biên triệt tiêu độ trễ mạng trong các hệ thống thị giác máy tính công nghiệp theo cơ chế nào?
   - Các nền tảng điều phối container như Azure IoT Edge hay K3s đồng bộ hóa mô hình trí tuệ nhân tạo xuống rìa mạng ra sao?

@@ -5,7 +5,8 @@ level: 2
 relations:
   prerequisites:
     - telemetry
-  confusable: []
+  confusable:
+    - condition-monitoring
   related:
     - digital-twin
     - scada

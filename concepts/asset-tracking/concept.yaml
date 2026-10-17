@@ -3,10 +3,25 @@ domains:
   - iot/applications
 level: 1
 relations:
-  prerequisites: []
-  confusable: []
-  related: []
+  prerequisites:
+    - "sensor"
+  confusable:
+    - "fleet-management-iot"
+    - "geofencing"
+  related:
+    - "geofencing"
+    - "telematics"
+    - "cold-chain-monitoring"
 status: draft
 provenance:
   drafted_by: ai
-sources: []
+sources:
+  - ref: aws-docs
+    locator: https://docs.aws.amazon.com/location/latest/developerguide/trackers.html
+    title: "Amazon Location Service Developer Guide - Trackers and Device Location Management"
+    language: en
+    accessed: '2026-10-17'
+    retrieved_by: ai
+    supports:
+      - definition
+      - summary

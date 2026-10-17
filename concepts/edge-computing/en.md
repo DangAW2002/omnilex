@@ -7,7 +7,8 @@ plain_descriptions:
   - computing paradigm that analyzes and processes information near the data source location
   - decentralized framework running analytics directly on local hardware instead of remote servers
 summary: A distributed computing paradigm that brings computational logic and data storage closer to the physical devices and sensors where information is generated.
-confusable_notes: {}
+confusable_notes:
+  fog-computing: "Edge computing focuses directly on computations executed on endpoints or immediate local gateways, whereas fog computing emphasizes an organized, multi-layered hierarchical network fabric bridging local nodes to the cloud."
 follow_up_questions:
   - How does edge computing eliminate round-trip network latency for real-time robotic vision systems?
   - How do containerized deployment platforms (such as Azure IoT Edge or K3s) synchronize machine learning models to the edge?

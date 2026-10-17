@@ -1,12 +1,27 @@
 id: telematics
 domains:
   - iot/applications
-level: 1
+level: 2
 relations:
-  prerequisites: []
-  confusable: []
-  related: []
+  prerequisites:
+    - "can-bus"
+    - "asset-tracking"
+  confusable:
+    - "v2x"
+  related:
+    - "geofencing"
+    - "cold-chain-monitoring"
+    - "fleet-management-iot"
 status: draft
 provenance:
   drafted_by: ai
-sources: []
+sources:
+  - ref: itu
+    locator: https://www.itu.int/rec/T-REC-Y.4457/en
+    title: "Y.4457: Architectural framework for transportation safety services"
+    language: en
+    accessed: '2026-10-17'
+    retrieved_by: ai
+    supports:
+      - definition
+      - summary

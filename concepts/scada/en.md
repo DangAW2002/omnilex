@@ -9,7 +9,9 @@ plain_descriptions:
   - system architecture combining software and hardware to monitor and control expansive industrial facilities
   - supervisory control setup displaying plant telemetry graphics and handling operator commands
 summary: An industrial control system architecture that gathers real-time telemetry from geographically dispersed field controllers, visualizes operational state, and allows supervisory commands.
-confusable_notes: {}
+confusable_notes:
+  hmi: "SCADA is an expansive multi-station supervisory control network managing entire regional facilities and gathering field telemetry, whereas an HMI is typically a localized touchscreen panel mounted directly on an individual machine for local operator interaction."
+  dcs: "SCADA monitors geographically dispersed assets (such as cross-country pipelines or electrical distribution grids) over wide-area networks, whereas a DCS is deployed inside a single contiguous manufacturing plant (such as a chemical refinery) with tightly coupled redundant controllers."
 follow_up_questions:
   - How does a SCADA system differ functionally and topologically from a Distributed Control System (DCS)?
   - What network segmentation rules under the Purdue Enterprise Reference Architecture isolate SCADA networks from corporate IT threats?

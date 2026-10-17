@@ -7,7 +7,9 @@ plain_descriptions:
   - network topology where nodes interconnect directly to dynamically relay data for each other
   - decentralized layout where each participant acts as a forwarding router without a single failure point
 summary: A decentralized network topology where interconnected nodes collaborate to dynamically relay data across multiple hops without relying on a single central hub.
-confusable_notes: {}
+confusable_notes:
+  poe: "A mesh network is a logical wireless network topology relaying packets across multiple radio nodes, whereas PoE is a physical cabling method that delivers direct DC electrical power alongside data over copper Ethernet lines."
+  lpwan: "A mesh network relays packets hop-by-hop across nearby peer nodes in a decentralized topology, whereas LPWAN connects endpoints directly to regional base stations or gateways over kilometers in a star topology."
 follow_up_questions:
   - How does a self-healing routing protocol recompute paths when an intermediate mesh node unexpectedly fails?
   - Why does protocol packet overhead scale significantly as node density expands in large wireless meshes?

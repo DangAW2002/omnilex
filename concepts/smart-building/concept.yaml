@@ -3,10 +3,25 @@ domains:
   - iot/applications
 level: 1
 relations:
-  prerequisites: []
-  confusable: []
-  related: []
+  prerequisites:
+    - "bacnet"
+    - "sensor"
+  confusable:
+    - "smart-city"
+  related:
+    - "smart-home"
+    - "poe"
+    - "condition-monitoring"
 status: draft
 provenance:
   drafted_by: ai
-sources: []
+sources:
+  - ref: itu
+    locator: https://www.itu.int/rec/T-REC-Y.4409/en
+    title: "Y.4409: Requirements and architecture of the home energy management system and home network services"
+    language: en
+    accessed: '2026-10-17'
+    retrieved_by: ai
+    supports:
+      - definition
+      - summary

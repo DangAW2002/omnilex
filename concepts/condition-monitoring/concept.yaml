@@ -1,12 +1,28 @@
 id: condition-monitoring
 domains:
   - iot/industrial
-level: 1
+level: 2
 relations:
-  prerequisites: []
-  confusable: []
-  related: []
+  prerequisites:
+    - "sensor"
+    - "telemetry"
+  confusable:
+    - "predictive-maintenance"
+    - "cold-chain-monitoring"
+  related:
+    - "oee"
+    - "iiot"
+    - "digital-twin"
 status: draft
 provenance:
   drafted_by: ai
-sources: []
+sources:
+  - ref: aws-docs
+    locator: https://docs.aws.amazon.com/iot-sitewise/latest/userguide/what-is-sitewise.html
+    title: "AWS IoT SiteWise User Guide - Industrial Asset Condition Monitoring"
+    language: en
+    accessed: '2026-10-17'
+    retrieved_by: ai
+    supports:
+      - definition
+      - summary

@@ -3,10 +3,23 @@ domains:
   - iot/devices-sensors
 level: 1
 relations:
-  prerequisites: []
-  confusable: []
-  related: []
+  prerequisites:
+    - "sensor"
+  confusable:
+    - "mesh-network"
+  related:
+    - "iot-gateway"
+    - "smart-building"
 status: draft
 provenance:
   drafted_by: ai
-sources: []
+sources:
+  - ref: ieee
+    locator: https://standards.ieee.org/ieee/802.3bt/5586/
+    title: "IEEE 802.3bt: Standard for Ethernet - 4-Pair Power over Ethernet"
+    language: en
+    accessed: '2026-10-17'
+    retrieved_by: ai
+    supports:
+      - definition
+      - summary

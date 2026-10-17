@@ -10,6 +10,7 @@ plain_descriptions:
   - mạng vô tuyến của nhà mạng tối ưu cho thiết bị iot gửi lượng tin nhỏ xuyên hầm sâu
 summary: Công nghệ mạng vô tuyến di động băng hẹp do 3GPP chuẩn hóa, tối ưu cho các kết nối vạn vật mật độ cao trên hạ tầng phổ tần số viễn thông được cấp phép.
 confusable_notes:
+  lte-m: "NB-IoT chỉ có băng thông hẹp 200 kHz, tiết kiệm pin hơn nhưng không hỗ trợ chuyển trạm liên tục, trong khi LTE-M hỗ trợ tốc độ truyền lên tới 1 Mbps, cho phép chuyển vùng trạm phát sóng khi di chuyển và hỗ trợ cuộc gọi thoại."
   lorawan: NB-IoT là chuẩn viễn thông di động của 3GPP đòi hỏi thuê bao SIM và trạm phát sóng di động của nhà mạng, còn LoRaWAN hoạt động trên dải tần mở với các trạm thu phát do người dùng hoặc doanh nghiệp tự sở hữu.
 follow_up_questions:
   - Chế độ tiết kiệm năng lượng PSM và chu kỳ thu gián đoạn eDRX giúp thiết bị NB-IoT chạy pin nhiều năm như thế nào?

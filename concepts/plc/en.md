@@ -11,7 +11,8 @@ plain_descriptions:
   - ruggedized industrial computer built to execute deterministic automated factory workflows
   - hardened controller that reads field sensors and governs machinery through programmed logic
 summary: A ruggedized industrial digital computer designed to execute deterministic, real-time control logic over manufacturing machinery and industrial processes.
-confusable_notes: {}
+confusable_notes:
+  rtu: "A PLC is engineered for high-speed, deterministic millisecond loop control inside factory enclosures, whereas an RTU is optimized for wide-area telemetry over solar, battery, and low-bandwidth wireless links across remote geographic terrain."
 follow_up_questions:
   - How do Ladder Logic and Structured Text program representations compare under the IEC 61131-3 standard?
   - What physical and electrical hardening techniques protect PLCs from electrical transients and thermal extremes on the factory floor?

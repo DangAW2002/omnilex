@@ -3,10 +3,25 @@ domains:
   - iot/industrial
 level: 1
 relations:
-  prerequisites: []
-  confusable: []
-  related: []
+  prerequisites:
+    - "iiot"
+    - "plc"
+  confusable:
+    - "iiot"
+  related:
+    - "digital-twin"
+    - "mes"
+    - "edge-ai"
 status: draft
 provenance:
   drafted_by: ai
-sources: []
+sources:
+  - ref: nist-csrc
+    locator: https://csrc.nist.gov/pubs/sp/800/82/r3/final
+    title: "NIST Special Publication 800-82 Revision 3: Guide to Operational Technology (OT) Security"
+    language: en
+    accessed: '2026-10-17'
+    retrieved_by: ai
+    supports:
+      - definition
+      - summary

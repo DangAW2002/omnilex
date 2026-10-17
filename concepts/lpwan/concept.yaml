@@ -3,10 +3,24 @@ domains:
   - iot/connectivity-protocols
 level: 1
 relations:
-  prerequisites: []
-  confusable: []
-  related: []
+  prerequisites:
+    - "sensor"
+  confusable:
+    - "mesh-network"
+  related:
+    - "lorawan"
+    - "nb-iot"
+    - "lte-m"
 status: draft
 provenance:
   drafted_by: ai
-sources: []
+sources:
+  - ref: itu
+    locator: https://www.itu.int/rec/T-REC-Y.4451/en
+    title: "Y.4451: Framework of constrained device networking in the IoT environments"
+    language: en
+    accessed: '2026-10-17'
+    retrieved_by: ai
+    supports:
+      - definition
+      - summary

@@ -10,6 +10,7 @@ plain_descriptions:
   - licensed telecom network specification enabling deep indoor coverage for battery powered meters
 summary: A narrowband cellular radio technology standard developed by 3GPP, designed for massive machine-type communication on licensed telecommunication frequencies.
 confusable_notes:
+  lte-m: "NB-IoT offers narrower 200 kHz bandwidth, longer battery life, and lacks cell handover mobility, whereas LTE-M provides higher throughput up to 1 Mbps, seamless cell handover for moving assets, and VoLTE voice support."
   lorawan: NB-IoT is a 3GPP cellular standard requiring dedicated telecom SIM subscriptions and mobile carrier base stations, whereas LoRaWAN uses unlicensed radio bands and private gateway infrastructure.
 follow_up_questions:
   - How do Power Saving Mode (PSM) and extended Discontinuous Reception (eDRX) enable ten-year battery lifespans in NB-IoT?

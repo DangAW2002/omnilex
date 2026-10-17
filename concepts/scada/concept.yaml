@@ -5,7 +5,9 @@ level: 2
 relations:
   prerequisites:
     - plc
-  confusable: []
+  confusable:
+    - hmi
+    - dcs
   related:
     - modbus
     - opc-ua

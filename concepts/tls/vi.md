@@ -11,7 +11,8 @@ plain_descriptions:
   - giao thức bảo mật tạo nên biểu tượng ổ khóa và chữ https trên thanh địa chỉ trình duyệt web
   - đường hầm liên lạc được mã hóa bảo vệ thông tin truyền trên mạng khỏi bị nghe lén hoặc sửa đổi
 summary: Giao thức bảo mật mật mã học cung cấp tính riêng tư, toàn vẹn dữ liệu và xác thực danh tính cho các kết nối truyền thông qua mạng máy tính.
-confusable_notes: {}
+confusable_notes:
+  dtls: "TLS cung cấp bảo mật mật mã trên các luồng byte TCP có kết nối và đảm bảo thứ tự, trong khi DTLS điều chỉnh TLS để bảo vệ các giao thức truyền tải dạng gói tin không kết nối như UDP."
 follow_up_questions:
   - Chuẩn TLS 1.3 đã rút ngắn thời gian bắt tay xuống còn 1 vòng truyền nhận (1-RTT) so với TLS 1.2 như thế nào?
   - Vì sao tính năng bảo mật chuyển tiếp (forward secrecy) lại quan trọng để ngăn việc giải mã các gói tin bị ghi lại trong quá khứ?

@@ -1,12 +1,27 @@
 id: fleet-management-iot
 domains:
   - iot/edge-cloud
-level: 1
+level: 2
 relations:
-  prerequisites: []
-  confusable: []
-  related: []
+  prerequisites:
+    - "iot-platform"
+    - "device-provisioning"
+  confusable:
+    - "asset-tracking"
+  related:
+    - "ota-update"
+    - "telemetry"
+    - "condition-monitoring"
 status: draft
 provenance:
   drafted_by: ai
-sources: []
+sources:
+  - ref: aws-docs
+    locator: https://docs.aws.amazon.com/iot/latest/developerguide/iot-fleet-management.html
+    title: "AWS IoT Device Management Fleet Hub - Developer Guide"
+    language: en
+    accessed: '2026-10-17'
+    retrieved_by: ai
+    supports:
+      - definition
+      - summary

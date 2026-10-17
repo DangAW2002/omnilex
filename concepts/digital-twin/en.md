@@ -7,7 +7,8 @@ plain_descriptions:
   - virtual software counterpart of a physical asset updated with real time sensor metrics
   - computational model reflecting the live state behavior and lifecycle of real world machines
 summary: A virtual representation that serves as the real-time computational counterpart of a physical object, process, or system synchronized through continuous telemetry.
-confusable_notes: {}
+confusable_notes:
+  device-shadow: "A digital twin is an expansive physics-based or data-driven computational model simulating operational behavior over time, whereas a device shadow is a lightweight cloud state-synchronization JSON document tracking desired versus reported settings."
 follow_up_questions:
   - How do graph-based modeling languages (such as DTDL) describe complex relationships between physical components in a digital twin?
   - How does a digital twin combine real-time sensor streams with physics simulations to evaluate equipment stress?

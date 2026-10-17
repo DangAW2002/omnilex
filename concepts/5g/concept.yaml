@@ -3,10 +3,24 @@ domains:
   - iot/connectivity-protocols
 level: 1
 relations:
-  prerequisites: []
-  confusable: []
-  related: []
+  prerequisites:
+    - "mesh-network"
+  confusable:
+    - "lte-m"
+  related:
+    - "edge-computing"
+    - "v2x"
+    - "iiot"
 status: draft
 provenance:
   drafted_by: ai
-sources: []
+sources:
+  - ref: nist-csrc
+    locator: https://csrc.nist.gov/glossary/term/5g
+    title: "5G - Computer Security Resource Center Glossary"
+    language: en
+    accessed: '2026-10-17'
+    retrieved_by: ai
+    supports:
+      - definition
+      - summary

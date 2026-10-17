@@ -8,6 +8,7 @@ plain_descriptions:
   - simple serial and tcp communication format widely implemented across manufacturing equipment
 summary: A de facto industrial request-response communication protocol that reads and writes discrete memory coils and 16-bit numerical registers across serial and Ethernet links.
 confusable_notes:
+  can-bus: "Modbus strictly operates as a master-slave polling architecture where slaves only respond when interrogated, whereas CAN bus implements non-destructive bitwise arbitration allowing any node to initiate transmissions based on message priority."
   opc-ua: Modbus communicates using plain, unauthenticated numerical memory tables (coils and 16-bit registers), whereas OPC UA features a structured, object-oriented semantic framework with native cryptographic security.
 follow_up_questions:
   - What are the structural differences between binary Modbus RTU frames over RS-485 and Modbus TCP packets over Ethernet port 502?

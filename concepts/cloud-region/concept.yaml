@@ -3,10 +3,23 @@ domains:
   - it/infrastructure/cloud
 level: 1
 relations:
-  prerequisites: []
-  confusable: []
-  related: []
+  prerequisites:
+    - iaas
+  confusable:
+    - availability-zone
+  related:
+    - vpc
+    - multi-cloud
 status: draft
 provenance:
   drafted_by: ai
-sources: []
+sources:
+  - ref: aws-docs
+    locator: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/using-regions-availability-zones.html
+    title: Regions and Availability Zones
+    language: en
+    accessed: '2026-10-17'
+    retrieved_by: ai
+    supports:
+      - definition
+      - summary

@@ -3,10 +3,24 @@ domains:
   - it/infrastructure/cloud
 level: 1
 relations:
-  prerequisites: []
-  confusable: []
-  related: []
+  prerequisites:
+    - iaas
+  confusable:
+    - iaas
+    - saas
+  related:
+    - serverless
+    - docker-compose
 status: draft
 provenance:
   drafted_by: ai
-sources: []
+sources:
+  - ref: nist-csrc
+    locator: https://csrc.nist.gov/glossary/term/platform_as_a_service
+    title: platform as a service
+    language: en
+    accessed: '2026-10-17'
+    retrieved_by: ai
+    supports:
+      - definition
+      - summary

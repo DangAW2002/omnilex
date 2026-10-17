@@ -1284,3 +1284,53 @@ cdc:
   reuse: paraphrase-only
   domains: [media/pr-communications]
   verified_license_at: "2026-10-17"
+
+# wave3 cloud
+finops-foundation:
+  title: FinOps Framework and Documentation
+  publisher: FinOps Foundation (Linux Foundation)
+  url: https://www.finops.org/framework/
+  type: standard
+  tier: A
+  languages: [en]
+  license: CC-BY-4.0
+  reuse: paraphrase-only
+  domains: [it/infrastructure]
+  verified_license_at: "2026-10-17"
+
+hashicorp-docs:
+  title: HashiCorp Developer Documentation
+  publisher: HashiCorp, Inc.
+  url: https://developer.hashicorp.com
+  type: docs
+  tier: B
+  languages: [en]
+  license: all-rights-reserved
+  reuse: paraphrase-only
+  domains: [it/devops, it/infrastructure]
+  verified_license_at: "2026-10-17"
+
+ansible-docs:
+  title: Ansible Documentation
+  publisher: Red Hat, Inc.
+  url: https://docs.ansible.com
+  type: docs
+  tier: B
+  languages: [en]
+  license: GPL-3.0-or-later
+  reuse: paraphrase-only
+  domains: [it/devops]
+  verified_license_at: "2026-10-17"
+
+helm-docs:
+  title: Helm Documentation
+  publisher: Cloud Native Computing Foundation
+  url: https://helm.sh/docs/
+  type: docs
+  tier: A
+  languages: [en]
+  license: Apache-2.0
+  reuse: paraphrase-only
+  domains: [it/devops]
+  verified_license_at: "2026-10-17"
+

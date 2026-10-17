@@ -164,6 +164,24 @@
     "status": "draft"
   },
   {
+    "id": "ansible",
+    "label": "Ansible",
+    "aliases": [],
+    "loanwords": [
+      "ansible"
+    ],
+    "plain_descriptions": [
+      "công cụ tự động hóa cấu hình máy chủ và cài đặt phần mềm từ xa qua giao thức SSH",
+      "phần mềm quản trị hệ thống dùng tệp kịch bản YAML mà không cần cài phần mềm đặc vụ"
+    ],
+    "summary": "Bộ công cụ tự động hóa CNTT mã nguồn mở chuyên quản lý cấu hình, triển khai ứng dụng và điều phối tác vụ mà không cần cài đặt phần mềm đại lý (agent) trên các máy chủ đích.",
+    "domains": [
+      "it/devops/iac"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
     "id": "api",
     "label": "Application Programming Interface (API)",
     "aliases": [
@@ -313,6 +331,26 @@
     "status": "draft"
   },
   {
+    "id": "availability-zone",
+    "label": "Availability zone (AZ)",
+    "aliases": [
+      "AZ"
+    ],
+    "loanwords": [
+      "availability zone (az)"
+    ],
+    "plain_descriptions": [
+      "trung tâm dữ liệu độc lập về nguồn điện và mạng trong một khu vực đám mây",
+      "vùng sẵn sàng chịu lỗi giúp hệ thống vẫn chạy khi một cơ sở gặp sự cố"
+    ],
+    "summary": "Một hoặc nhiều trung tâm dữ liệu vật lý riêng biệt trong một region, có nguồn điện, hệ thống làm mát và kết nối mạng độc lập.",
+    "domains": [
+      "it/infrastructure/cloud"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
     "id": "b-roll",
     "label": "B-roll",
     "aliases": [
@@ -369,6 +407,25 @@
     "summary": "Báo cáo tài chính tổng hợp phản ánh toàn bộ giá trị tài sản hiện có và nguồn hình thành tài sản của doanh nghiệp tại một thời điểm nhất định.",
     "domains": [
       "finance/corporate-finance/financial-statements"
+    ],
+    "level": 1,
+    "status": "draft"
+  },
+  {
+    "id": "bandwidth",
+    "label": "Băng thông",
+    "qualifier": "(Mạng)",
+    "aliases": [],
+    "loanwords": [
+      "bandwidth"
+    ],
+    "plain_descriptions": [
+      "lượng dữ liệu tối đa có thể truyền qua một đường truyền mạng trong một giây",
+      "độ rộng của đường truyền internet đo bằng megabit hoặc gigabit trên giây"
+    ],
+    "summary": "Tốc độ truyền tải dữ liệu tối đa trên một kênh truyền thông mạng xác định trong một đơn vị thời gian, thường đo bằng bit trên giây (bps).",
+    "domains": [
+      "it/infrastructure/networking"
     ],
     "level": 1,
     "status": "draft"
@@ -436,6 +493,24 @@
     "summary": "Công nghệ mạng cá nhân không dây cự ly ngắn được thiết kế để truyền tải dữ liệu với mức tiêu thụ điện năng cực thấp.",
     "domains": [
       "iot/connectivity-protocols"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
+    "id": "block-storage",
+    "label": "Block storage",
+    "aliases": [],
+    "loanwords": [
+      "block storage"
+    ],
+    "plain_descriptions": [
+      "ổ cứng ảo gắn trực tiếp vào máy chủ đám mây để cài hệ điều hành hoặc cơ sở dữ liệu",
+      "dịch vụ lưu trữ tốc độ cao chia thành từng khối dung lượng cố định cho máy ảo"
+    ],
+    "summary": "Kiến trúc lưu trữ chia nhỏ dữ liệu thành các khối thô có kích thước cố định, gắn kết vào máy ảo như một ổ đĩa cục bộ phục vụ các tác vụ đọc ghi tốc độ cao.",
+    "domains": [
+      "it/infrastructure/cloud"
     ],
     "level": 2,
     "status": "draft"
@@ -845,6 +920,44 @@
     "status": "draft"
   },
   {
+    "id": "cloud-instance",
+    "label": "Instance",
+    "qualifier": "(Đám mây)",
+    "aliases": [],
+    "loanwords": [
+      "instance"
+    ],
+    "plain_descriptions": [
+      "máy chủ ảo chạy trên đám mây được cấp phát dung lượng CPU và bộ nhớ RAM cụ thể",
+      "máy tính ảo thuê trên đám mây có thể bật tắt hoặc thay đổi cấu hình linh hoạt"
+    ],
+    "summary": "Môi trường máy tính ảo được cấp phát trên hạ tầng đám mây với dung lượng CPU ảo, bộ nhớ RAM và băng thông mạng xác định.",
+    "domains": [
+      "it/infrastructure/cloud"
+    ],
+    "level": 1,
+    "status": "draft"
+  },
+  {
+    "id": "cloud-region",
+    "label": "Region",
+    "qualifier": "(Đám mây)",
+    "aliases": [],
+    "loanwords": [
+      "region"
+    ],
+    "plain_descriptions": [
+      "khu vực địa lý riêng biệt gom các cụm trung tâm dữ liệu đám mây",
+      "vùng lãnh thổ hoặc thành phố đặt hạ tầng máy chủ đám mây độc lập"
+    ],
+    "summary": "Khu vực địa lý riêng biệt chứa nhiều vùng sẵn sàng độc lập được kết nối với nhau qua mạng nội bộ độ trễ thấp.",
+    "domains": [
+      "it/infrastructure/cloud"
+    ],
+    "level": 1,
+    "status": "draft"
+  },
+  {
     "id": "coap",
     "label": "Constrained Application Protocol (CoAP)",
     "aliases": [
@@ -883,6 +996,25 @@
       "it/software-engineering/practices"
     ],
     "level": 1,
+    "status": "draft"
+  },
+  {
+    "id": "cold-start",
+    "label": "Cold start",
+    "qualifier": "(Serverless)",
+    "aliases": [],
+    "loanwords": [
+      "cold start"
+    ],
+    "plain_descriptions": [
+      "độ trễ khi hàm serverless phải khởi động lại từ đầu sau thời gian không có lượt gọi",
+      "khoảng chờ ban đầu để nhà cung cấp đám mây dựng container mới chạy mã nguồn"
+    ],
+    "summary": "Độ trễ trong lần gọi đầu tiên của điện toán serverless khi nền tảng phải cấp phát môi trường, tải mã nguồn và khởi động hệ thống thực thi.",
+    "domains": [
+      "it/infrastructure/cloud"
+    ],
+    "level": 2,
     "status": "draft"
   },
   {
@@ -946,6 +1078,24 @@
       "gói tệp chỉ đọc chứa sẵn mã nguồn, thư viện hệ thống và lệnh khởi động"
     ],
     "summary": "Gói tệp chỉ đọc bất biến chứa mã nhị phân, thư viện phụ thuộc, cấu hình và siêu dữ liệu cần thiết để khởi chạy một container.",
+    "domains": [
+      "it/devops/containers"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
+    "id": "container-registry",
+    "label": "Container registry",
+    "aliases": [],
+    "loanwords": [
+      "container registry"
+    ],
+    "plain_descriptions": [
+      "kho lưu trữ tập trung để xuất bản, chia sẻ và tải về các ảnh container",
+      "thư viện trực tuyến lưu trữ các bản dựng Docker image để máy chủ tải về triển khai"
+    ],
+    "summary": "Hệ thống kho lưu trữ và phân phối tập trung dùng để quản lý, lập chỉ mục và phân phối các ảnh container phục vụ quá trình phát triển và vận hành hệ thống.",
     "domains": [
       "it/devops/containers"
     ],
@@ -1860,6 +2010,24 @@
     "status": "draft"
   },
   {
+    "id": "docker-compose",
+    "label": "Docker Compose",
+    "aliases": [],
+    "loanwords": [
+      "docker compose"
+    ],
+    "plain_descriptions": [
+      "công cụ định nghĩa và khởi chạy nhiều container Docker cùng lúc từ một tệp cấu hình",
+      "cách nhanh nhất để khởi động đồng thời cả web, cơ sở dữ liệu và bộ nhớ đệm cho lập trình viên"
+    ],
+    "summary": "Công cụ điều phối và vận hành các ứng dụng Docker đa container trên một máy chủ bằng cách khai báo tập trung trong một tệp cấu hình YAML.",
+    "domains": [
+      "it/devops/containers"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
     "id": "double-entry-bookkeeping",
     "label": "Kế toán kép",
     "aliases": [
@@ -2335,6 +2503,43 @@
     "status": "draft"
   },
   {
+    "id": "finops",
+    "label": "FinOps",
+    "aliases": [],
+    "loanwords": [
+      "finops"
+    ],
+    "plain_descriptions": [
+      "quản lý và tối ưu hóa chi phí đám mây giữa đội ngũ kỹ thuật và tài chính",
+      "văn hóa kiểm soát hóa đơn điện toán đám mây để mang lại hiệu quả kinh doanh cao nhất"
+    ],
+    "summary": "Khung phương pháp và văn hóa quản trị tài chính đám mây giúp quy trách nhiệm chi tiêu minh bạch cho mô hình chi phí biến đổi của điện toán đám mây.",
+    "domains": [
+      "it/infrastructure/cloud"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
+    "id": "firewall",
+    "label": "Tường lửa",
+    "aliases": [],
+    "loanwords": [
+      "firewall"
+    ],
+    "plain_descriptions": [
+      "hệ thống rào chắn ngăn chặn các kết nối mạng trái phép vào máy tính",
+      "người gác cổng kỹ thuật số kiểm soát dữ liệu mạng truyền vào và ra"
+    ],
+    "summary": "Hệ thống an ninh mạng chuyên giám sát và lọc các gói dữ liệu truyền vào và ra dựa trên các quy tắc bảo mật được thiết lập trước.",
+    "domains": [
+      "it/infrastructure/networking",
+      "it/security/vulnerabilities"
+    ],
+    "level": 1,
+    "status": "draft"
+  },
+  {
     "id": "firmware",
     "label": "Firmware",
     "aliases": [
@@ -2641,6 +2846,25 @@
     "status": "draft"
   },
   {
+    "id": "helm",
+    "label": "Helm",
+    "qualifier": "(Kubernetes)",
+    "aliases": [],
+    "loanwords": [
+      "helm"
+    ],
+    "plain_descriptions": [
+      "trình quản lý gói cho Kubernetes giúp đóng gói ứng dụng phức tạp thành các biểu đồ mẫu",
+      "công cụ cài đặt và nâng cấp các ứng dụng chạy trên Kubernetes chỉ bằng một câu lệnh"
+    ],
+    "summary": "Trình quản lý gói chuyên dụng cho Kubernetes giúp đơn giản hóa việc định nghĩa, cài đặt và nâng cấp các ứng dụng container phức tạp thông qua các gói cấu hình chart.",
+    "domains": [
+      "it/devops/containers"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
     "id": "hotfix",
     "label": "Hotfix",
     "aliases": [
@@ -2685,6 +2909,24 @@
     "status": "draft"
   },
   {
+    "id": "hybrid-cloud",
+    "label": "Hybrid cloud",
+    "aliases": [],
+    "loanwords": [
+      "hybrid cloud"
+    ],
+    "plain_descriptions": [
+      "kết hợp trung tâm dữ liệu nội bộ với máy chủ điện toán đám mây công cộng",
+      "mô hình đám mây lai giữa hạ tầng tự sở hữu và dịch vụ đám mây thuê ngoài"
+    ],
+    "summary": "Mô hình kiến trúc CNTT kết nối hạ tầng máy chủ nội bộ với đám mây công cộng nhằm cho phép chia sẻ dữ liệu và điều chuyển khối lượng công việc linh hoạt.",
+    "domains": [
+      "it/infrastructure/cloud"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
     "id": "hyperparameter",
     "label": "Siêu tham số",
     "aliases": [],
@@ -2700,6 +2942,26 @@
       "it/ai-ml/foundations"
     ],
     "level": 2,
+    "status": "draft"
+  },
+  {
+    "id": "iaas",
+    "label": "Infrastructure as a Service (IaaS)",
+    "aliases": [
+      "IaaS"
+    ],
+    "loanwords": [
+      "infrastructure as a service"
+    ],
+    "plain_descriptions": [
+      "thuê máy chủ ảo và ổ cứng qua mạng thay vì mua máy vật lý",
+      "dịch vụ hạ tầng điện toán đám mây trả tiền theo giờ"
+    ],
+    "summary": "Mô hình điện toán đám mây cung cấp tài nguyên hạ tầng thô gồm máy chủ ảo, bộ nhớ và mạng qua internet theo nhu cầu sử dụng.",
+    "domains": [
+      "it/infrastructure/cloud"
+    ],
+    "level": 1,
     "status": "draft"
   },
   {
@@ -3052,6 +3314,24 @@
       "iot/edge-cloud"
     ],
     "level": 2,
+    "status": "draft"
+  },
+  {
+    "id": "ip-address",
+    "label": "Địa chỉ IP",
+    "aliases": [],
+    "loanwords": [
+      "ip address"
+    ],
+    "plain_descriptions": [
+      "dãy số định danh duy nhất của mỗi thiết bị kết nối vào mạng máy tính",
+      "địa chỉ bưu điện hoặc số điện thoại kỹ thuật số để gửi dữ liệu đến đúng máy tính"
+    ],
+    "summary": "Mã số định danh duy nhất được gán cho từng thiết bị tham gia vào mạng máy tính có sử dụng Giao thức Internet để liên lạc.",
+    "domains": [
+      "it/infrastructure/networking"
+    ],
+    "level": 1,
     "status": "draft"
   },
   {
@@ -3945,6 +4225,24 @@
     "status": "draft"
   },
   {
+    "id": "multi-cloud",
+    "label": "Multi-cloud",
+    "aliases": [],
+    "loanwords": [
+      "multi-cloud"
+    ],
+    "plain_descriptions": [
+      "sử dụng dịch vụ của nhiều hãng đám mây công cộng khác nhau cùng lúc",
+      "chiến lược phân bổ hệ thống lên nhiều nhà cung cấp để tránh phụ thuộc vào một nơi"
+    ],
+    "summary": "Chiến lược kiến trúc sử dụng dịch vụ từ hai hoặc nhiều nhà cung cấp điện toán đám mây công cộng độc lập trong cùng một doanh nghiệp.",
+    "domains": [
+      "it/infrastructure/cloud"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
     "id": "mutual-fund",
     "label": "Quỹ tương hỗ",
     "aliases": [
@@ -3989,6 +4287,26 @@
     "status": "draft"
   },
   {
+    "id": "nat",
+    "label": "Network Address Translation (NAT)",
+    "aliases": [
+      "NAT"
+    ],
+    "loanwords": [
+      "network address translation (nat)"
+    ],
+    "plain_descriptions": [
+      "chia sẻ một địa chỉ mạng công khai cho nhiều thiết bị nội bộ cùng vào internet",
+      "kỹ thuật đổi địa chỉ IP riêng của máy tính thành địa chỉ IP công cộng"
+    ],
+    "summary": "Phương pháp mạng ánh xạ không gian địa chỉ IP này sang không gian địa chỉ IP khác bằng cách sửa đổi phần đầu gói tin IP khi đang truyền tải.",
+    "domains": [
+      "it/infrastructure/networking"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
     "id": "nb-iot",
     "label": "NB-IoT",
     "aliases": [],
@@ -4004,6 +4322,25 @@
       "iot/connectivity-protocols"
     ],
     "level": 2,
+    "status": "draft"
+  },
+  {
+    "id": "network-port",
+    "label": "Cổng",
+    "qualifier": "(Mạng)",
+    "aliases": [],
+    "loanwords": [
+      "port"
+    ],
+    "plain_descriptions": [
+      "con số đánh dấu kênh truyền đưa dữ liệu đến đúng phần mềm đang chạy trên máy",
+      "cửa giao tiếp mạng phân biệt luồng dữ liệu web, email hay cơ sở dữ liệu trên cùng một máy chủ"
+    ],
+    "summary": "Chỉ số 16-bit trong tiêu đề tầng giao vận dùng để định danh một tiến trình dịch vụ hoặc điểm cuối truyền thông cụ thể trên máy tính.",
+    "domains": [
+      "it/infrastructure/networking"
+    ],
+    "level": 1,
     "status": "draft"
   },
   {
@@ -4128,6 +4465,24 @@
     "summary": "Kỹ thuật thị giác máy tính vừa nhận diện nhãn danh mục vừa xác định tọa độ khung bao của từng đối tượng riêng biệt xuất hiện trong một bức ảnh.",
     "domains": [
       "it/ai-ml/computer-vision"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
+    "id": "object-storage",
+    "label": "Object storage",
+    "aliases": [],
+    "loanwords": [
+      "object storage"
+    ],
+    "plain_descriptions": [
+      "lưu trữ tệp dữ liệu trên đám mây truy cập qua đường dẫn web HTTP với mã định danh",
+      "nơi lưu trữ ảnh, video và tệp sao lưu dưới dạng đối tượng không cần chia thư mục lồng nhau"
+    ],
+    "summary": "Kiến trúc lưu trữ dữ liệu phi cấu trúc dưới dạng các đối tượng riêng biệt kèm siêu dữ liệu phong phú và định danh duy nhất trong không gian địa chỉ phẳng truy cập qua API.",
+    "domains": [
+      "it/infrastructure/cloud"
     ],
     "level": 2,
     "status": "draft"
@@ -4334,6 +4689,26 @@
     "summary": "Hiện tượng mô hình học máy ghi nhớ máy móc các biến thiên ngẫu nhiên và nhiễu của dữ liệu huấn luyện, làm suy giảm nghiêm trọng khả năng tổng quát hóa.",
     "domains": [
       "it/ai-ml/foundations"
+    ],
+    "level": 1,
+    "status": "draft"
+  },
+  {
+    "id": "paas",
+    "label": "Platform as a Service (PaaS)",
+    "aliases": [
+      "PaaS"
+    ],
+    "loanwords": [
+      "platform as a service (paas)"
+    ],
+    "plain_descriptions": [
+      "nền tảng chạy ứng dụng không cần tự cấu hình hay quản lý máy chủ",
+      "môi trường đưa mã nguồn lên web có sẵn hệ điều hành và phần mềm hỗ trợ"
+    ],
+    "summary": "Mô hình dịch vụ đám mây cung cấp sẵn môi trường thực thi và công cụ hỗ trợ để lập trình viên triển khai ứng dụng mà không cần quản trị hệ điều hành.",
+    "domains": [
+      "it/infrastructure/cloud"
     ],
     "level": 1,
     "status": "draft"
@@ -4835,6 +5210,24 @@
     "status": "draft"
   },
   {
+    "id": "proxy-server",
+    "label": "Máy chủ proxy",
+    "aliases": [],
+    "loanwords": [
+      "proxy server"
+    ],
+    "plain_descriptions": [
+      "máy chủ trung gian đứng ra gửi và nhận dữ liệu thay cho máy tính khác",
+      "thiết bị trung chuyển lọc nội dung web hoặc lưu bộ nhớ đệm cho người dùng"
+    ],
+    "summary": "Máy chủ trung gian đóng vai trò đại diện tiếp nhận yêu cầu từ máy trạm và chuyển tiếp tới các máy chủ đích khác trên mạng.",
+    "domains": [
+      "it/infrastructure/networking"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
     "id": "pull-request",
     "label": "Pull request (PR)",
     "aliases": [
@@ -5206,6 +5599,27 @@
     "status": "draft"
   },
   {
+    "id": "saas",
+    "label": "Software as a Service (SaaS)",
+    "aliases": [
+      "SaaS"
+    ],
+    "loanwords": [
+      "software as a service (saas)"
+    ],
+    "plain_descriptions": [
+      "sử dụng phần mềm qua trình duyệt mạng theo gói thuê bao định kỳ",
+      "ứng dụng đám mây dùng ngay không cần cài đặt hay bảo trì trên máy tính"
+    ],
+    "summary": "Mô hình phân phối phần mềm trong đó ứng dụng hoàn chỉnh được nhà cung cấp lưu trữ trên đám mây và người dùng truy cập qua mạng internet.",
+    "domains": [
+      "it/infrastructure/cloud",
+      "it/business-systems/enterprise-apps"
+    ],
+    "level": 1,
+    "status": "draft"
+  },
+  {
     "id": "sales-lead",
     "label": "Lead",
     "qualifier": "(Marketing)",
@@ -5501,6 +5915,24 @@
     "status": "draft"
   },
   {
+    "id": "service-discovery",
+    "label": "Service discovery",
+    "aliases": [],
+    "loanwords": [
+      "service discovery"
+    ],
+    "plain_descriptions": [
+      "cơ chế tự động giúp các dịch vụ phần mềm tìm thấy nhau trong mạng đám mây động",
+      "danh bạ mạng tự động cập nhật địa chỉ IP liên tục khi máy chủ co giãn hoặc khởi động lại"
+    ],
+    "summary": "Cơ chế tự động phát hiện và định vị địa chỉ mạng của các phiên bản dịch vụ trong hệ thống phân tán thông qua một sổ đăng ký cập nhật liên tục.",
+    "domains": [
+      "it/infrastructure/networking"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
     "id": "sharding",
     "label": "Sharding",
     "aliases": [
@@ -5780,6 +6212,24 @@
     "status": "draft"
   },
   {
+    "id": "spot-instance",
+    "label": "Spot instance",
+    "aliases": [],
+    "loanwords": [
+      "spot instance"
+    ],
+    "plain_descriptions": [
+      "máy chủ ảo đám mây giảm giá sâu nhưng có thể bị thu hồi bất ngờ với cảnh báo ngắn",
+      "tài nguyên tính toán nhàn rỗi được thuê với giá rẻ cho các tác vụ xử lý hàng loạt"
+    ],
+    "summary": "Máy chủ ảo tận dụng năng lực tính toán dư thừa của nhà cung cấp đám mây với mức giảm giá lớn, nhưng có thể bị thu hồi khi nhà cung cấp cần tài nguyên.",
+    "domains": [
+      "it/infrastructure/cloud"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
     "id": "sprint-agile",
     "label": "Sprint",
     "qualifier": "(Agile)",
@@ -5882,6 +6332,27 @@
     "summary": "Lỗ hổng bảo mật web cho phép kẻ tấn công can thiệp vào các truy vấn cơ sở dữ liệu bằng cách chèn các đoạn mã SQL trái phép vào ô nhập liệu.",
     "domains": [
       "it/security/vulnerabilities"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
+    "id": "ssh",
+    "label": "Secure Shell (SSH)",
+    "aliases": [
+      "SSH"
+    ],
+    "loanwords": [
+      "secure shell (ssh)"
+    ],
+    "plain_descriptions": [
+      "công cụ đăng nhập và điều khiển máy chủ từ xa an toàn qua mạng mã hóa",
+      "kết nối dòng lệnh từ xa bảo mật thay thế cho giao thức Telnet không mã hóa"
+    ],
+    "summary": "Giao thức mạng mật mã dùng để vận hành các dịch vụ mạng an toàn trên môi trường mạng không tin cậy, phổ biến nhất để đăng nhập dòng lệnh từ xa.",
+    "domains": [
+      "it/infrastructure/networking",
+      "it/security/authentication"
     ],
     "level": 2,
     "status": "draft"
@@ -6076,6 +6547,24 @@
     "status": "draft"
   },
   {
+    "id": "subnet",
+    "label": "Subnet",
+    "aliases": [],
+    "loanwords": [
+      "subnet"
+    ],
+    "plain_descriptions": [
+      "mạng con phân chia từ một dải địa chỉ IP mạng lớn hơn",
+      "chia nhỏ hệ thống mạng thành các khu vực riêng để tăng cường bảo mật"
+    ],
+    "summary": "Phân đoạn mạng logic được chia nhỏ từ một dải địa chỉ IP lớn nhằm cô lập lưu lượng, tăng hiệu quả định tuyến và siết chặt an ninh mạng.",
+    "domains": [
+      "it/infrastructure/networking"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
     "id": "system-prompt",
     "label": "System prompt",
     "aliases": [],
@@ -6091,6 +6580,26 @@
       "it/ai-ml/llm-agents"
     ],
     "level": 2,
+    "status": "draft"
+  },
+  {
+    "id": "tcp",
+    "label": "Transmission Control Protocol (TCP)",
+    "aliases": [
+      "TCP"
+    ],
+    "loanwords": [
+      "transmission control protocol (tcp)"
+    ],
+    "plain_descriptions": [
+      "giao thức mạng tin cậy đảm bảo dữ liệu truyền đi đầy đủ và đúng thứ tự",
+      "bộ quy tắc truyền dữ liệu có kiểm tra lỗi và gửi lại nếu bị rơi mất gói tin"
+    ],
+    "summary": "Giao thức truyền vận hướng kết nối đảm bảo việc truyền tải luồng dữ liệu một cách tin cậy, đúng thứ tự và có kiểm tra phát hiện lỗi.",
+    "domains": [
+      "it/infrastructure/networking"
+    ],
+    "level": 1,
     "status": "draft"
   },
   {
@@ -6173,6 +6682,24 @@
     "summary": "Khoản tiền gửi tại tổ chức tín dụng có thời hạn xác định, được hưởng mức lãi suất cố định cam kết và áp dụng quy định tính lãi không kỳ hạn nếu rút trước hạn.",
     "domains": [
       "finance/banking/deposits"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
+    "id": "terraform",
+    "label": "Terraform",
+    "aliases": [],
+    "loanwords": [
+      "terraform"
+    ],
+    "plain_descriptions": [
+      "công cụ khởi tạo và quản lý máy chủ đám mây bằng các tệp mã nguồn",
+      "phần mềm hạ tầng dạng mã nguồn giúp tạo tài nguyên tự động trên nhiều hãng đám mây"
+    ],
+    "summary": "Công cụ hạ tầng dạng mã nguồn (IaC) cho phép khởi tạo, thay đổi và quản lý phiên bản các tài nguyên đám mây một cách an toàn và nhất quán bằng ngôn ngữ khai báo.",
+    "domains": [
+      "it/devops/iac"
     ],
     "level": 2,
     "status": "draft"
@@ -6382,6 +6909,26 @@
     "summary": "Nghệ thuật và kỹ thuật lựa chọn, sắp xếp các kiểu chữ, độ đậm nhạt, khoảng cách chữ và dòng nhằm giúp văn bản rõ ràng, dễ đọc và truyền tải cảm xúc thị giác.",
     "domains": [
       "media/content-production/visual-design"
+    ],
+    "level": 1,
+    "status": "draft"
+  },
+  {
+    "id": "udp",
+    "label": "User Datagram Protocol (UDP)",
+    "aliases": [
+      "UDP"
+    ],
+    "loanwords": [
+      "user datagram protocol (udp)"
+    ],
+    "plain_descriptions": [
+      "giao thức mạng tốc độ cao gửi dữ liệu tức thì không cần xác nhận đã nhận được",
+      "bộ quy tắc truyền gói tin không kết nối dùng cho game online, livestream và DNS"
+    ],
+    "summary": "Giao thức truyền vận không kết nối chuyển tải các gói dữ liệu mà không cần bắt tay hay đảm bảo biên nhận, ưu tiên tốc độ tối đa thay vì độ tin cậy.",
+    "domains": [
+      "it/infrastructure/networking"
     ],
     "level": 1,
     "status": "draft"
@@ -6634,6 +7181,46 @@
     "summary": "Thước đo thống kê mức độ phân tán của tỷ suất sinh lời của một chứng khoán hoặc chỉ số thị trường trong một khoảng thời gian nhất định.",
     "domains": [
       "finance/investing/portfolio-risk"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
+    "id": "vpc",
+    "label": "Virtual Private Cloud (VPC)",
+    "aliases": [
+      "VPC"
+    ],
+    "loanwords": [
+      "virtual private cloud (vpc)"
+    ],
+    "plain_descriptions": [
+      "mạng ảo riêng biệt và biệt lập bên trong đám mây công cộng",
+      "vùng mạng an toàn bảo vệ máy chủ đám mây khỏi truy cập internet tự do"
+    ],
+    "summary": "Mạng ảo cách ly logic dành riêng cho tài khoản đám mây, cho phép toàn quyền kiểm soát dải địa chỉ IP, mạng con và bảng định tuyến.",
+    "domains": [
+      "it/infrastructure/cloud"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
+    "id": "vpn",
+    "label": "Mạng riêng ảo",
+    "aliases": [
+      "VPN"
+    ],
+    "loanwords": [
+      "virtual private network (vpn)"
+    ],
+    "plain_descriptions": [
+      "đường truyền kết nối mã hóa an toàn giữa máy tính từ xa và mạng nội bộ",
+      "cách an toàn để nhân viên làm việc tại nhà truy cập hệ thống máy chủ công ty"
+    ],
+    "summary": "Kênh truyền thông được mã hóa thiết lập trên nền tảng mạng công cộng nhằm cung cấp quyền truy cập từ xa an toàn và liên kết các chi nhánh mạng riêng biệt.",
+    "domains": [
+      "it/infrastructure/networking"
     ],
     "level": 2,
     "status": "draft"

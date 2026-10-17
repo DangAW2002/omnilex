@@ -9,7 +9,8 @@ plain_descriptions:
 summary: >-
   An open-source container orchestration system for automating deployment, scaling, management, and self-healing of
   containerized applications.
-confusable_notes: {}
+confusable_notes:
+  docker-compose: Kubernetes orchestrates container fleets across clusters of distributed physical nodes in production, whereas Docker Compose manages multi-container stacks on a single local host.
 follow_up_questions:
   - What role does the control plane etcd database play in maintaining cluster state?
   - How does Kubernetes detect and replace failed application pods automatically?

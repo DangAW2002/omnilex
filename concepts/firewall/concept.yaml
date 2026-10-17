@@ -1,12 +1,27 @@
 id: firewall
 domains:
   - it/infrastructure/networking
+  - it/security/vulnerabilities
 level: 1
 relations:
-  prerequisites: []
+  prerequisites:
+    - ip-address
+    - network-port
   confusable: []
-  related: []
+  related:
+    - vpc
+    - subnet
+    - proxy-server
 status: draft
 provenance:
   drafted_by: ai
-sources: []
+sources:
+  - ref: nist-csrc
+    locator: https://csrc.nist.gov/glossary/term/firewall
+    title: firewall
+    language: en
+    accessed: '2026-10-17'
+    retrieved_by: ai
+    supports:
+      - definition
+      - summary

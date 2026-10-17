@@ -3,10 +3,23 @@ domains:
   - it/infrastructure/networking
 level: 1
 relations:
-  prerequisites: []
-  confusable: []
-  related: []
+  prerequisites:
+    - ip-address
+    - network-port
+  confusable:
+    - tcp
+  related:
+    - bandwidth
 status: draft
 provenance:
   drafted_by: ai
-sources: []
+sources:
+  - ref: ietf
+    locator: https://www.rfc-editor.org/info/rfc768/
+    title: User Datagram Protocol
+    language: en
+    accessed: '2026-10-17'
+    retrieved_by: ai
+    supports:
+      - definition
+      - summary

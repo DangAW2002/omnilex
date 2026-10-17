@@ -148,6 +148,22 @@
     "status": "draft"
   },
   {
+    "id": "ansible",
+    "label": "Ansible",
+    "aliases": [],
+    "loanwords": [],
+    "plain_descriptions": [
+      "agentless tool for configuring servers and automating software setups via SSH",
+      "automation engine using YAML playbooks to install and manage software across machines"
+    ],
+    "summary": "An open-source automation engine that automates cloud provisioning, configuration management, and application deployment without installing agents on managed nodes.",
+    "domains": [
+      "it/devops/iac"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
     "id": "api",
     "label": "Application Programming Interface (API)",
     "aliases": [
@@ -279,6 +295,24 @@
     "status": "draft"
   },
   {
+    "id": "availability-zone",
+    "label": "Availability zone (AZ)",
+    "aliases": [
+      "AZ"
+    ],
+    "loanwords": [],
+    "plain_descriptions": [
+      "isolated data center location within a cloud region with its own power",
+      "discrete fault domain designed to keep systems running if another center fails"
+    ],
+    "summary": "One or more discrete physical data centers within a region with independent power, cooling, and networking designed for fault tolerance.",
+    "domains": [
+      "it/infrastructure/cloud"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
     "id": "b-roll",
     "label": "B-roll",
     "aliases": [
@@ -329,6 +363,23 @@
     "summary": "A core financial statement summarizing an entity’s assets, liabilities, and shareholders’ equity at a specific point in time.",
     "domains": [
       "finance/corporate-finance/financial-statements"
+    ],
+    "level": 1,
+    "status": "draft"
+  },
+  {
+    "id": "bandwidth",
+    "label": "Bandwidth",
+    "qualifier": "(Network)",
+    "aliases": [],
+    "loanwords": [],
+    "plain_descriptions": [
+      "maximum amount of data that can travel through an internet connection per second",
+      "width of a network data highway measured in megabits or gigabits per second"
+    ],
+    "summary": "The maximum rate of data transfer across a given network communication path, typically measured in bits per second.",
+    "domains": [
+      "it/infrastructure/networking"
     ],
     "level": 1,
     "status": "draft"
@@ -386,6 +437,22 @@
     "summary": "A power-optimized wireless personal area network technology designed for short-range communication with minimal electrical energy consumption.",
     "domains": [
       "iot/connectivity-protocols"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
+    "id": "block-storage",
+    "label": "Block storage",
+    "aliases": [],
+    "loanwords": [],
+    "plain_descriptions": [
+      "raw virtual hard disk volume attached directly to a cloud virtual machine",
+      "high-speed storage split into fixed-size blocks for databases and operating systems"
+    ],
+    "summary": "A storage architecture that splits data into evenly sized raw blocks, exposed as virtual disk volumes attached to compute instances for high-speed I/O.",
+    "domains": [
+      "it/infrastructure/cloud"
     ],
     "level": 2,
     "status": "draft"
@@ -740,6 +807,40 @@
     "status": "draft"
   },
   {
+    "id": "cloud-instance",
+    "label": "Instance",
+    "qualifier": "(Cloud)",
+    "aliases": [],
+    "loanwords": [],
+    "plain_descriptions": [
+      "virtual server running in the cloud with assigned CPU and memory",
+      "rented cloud computer instance that you can start or stop on demand"
+    ],
+    "summary": "A virtual compute environment provisioned on cloud infrastructure with dedicated allocations of vCPUs, memory, and network capabilities.",
+    "domains": [
+      "it/infrastructure/cloud"
+    ],
+    "level": 1,
+    "status": "draft"
+  },
+  {
+    "id": "cloud-region",
+    "label": "Region",
+    "qualifier": "(Cloud)",
+    "aliases": [],
+    "loanwords": [],
+    "plain_descriptions": [
+      "separate geographic location where cloud data centers are clustered",
+      "physical territory or city hosting isolated cloud infrastructure"
+    ],
+    "summary": "A distinct physical geographical area comprising multiple isolated and physically separated availability zones interconnected via private low-latency links.",
+    "domains": [
+      "it/infrastructure/cloud"
+    ],
+    "level": 1,
+    "status": "draft"
+  },
+  {
     "id": "coap",
     "label": "Constrained Application Protocol (CoAP)",
     "aliases": [
@@ -773,6 +874,23 @@
       "it/software-engineering/practices"
     ],
     "level": 1,
+    "status": "draft"
+  },
+  {
+    "id": "cold-start",
+    "label": "Cold start",
+    "qualifier": "(Serverless)",
+    "aliases": [],
+    "loanwords": [],
+    "plain_descriptions": [
+      "delay when a serverless function starts up from scratch after idle time",
+      "initial pause while the cloud provider spins up a new container for your code"
+    ],
+    "summary": "The initial invocation latency experienced in serverless computing when the platform must download code, initialize a container, and boot the runtime.",
+    "domains": [
+      "it/infrastructure/cloud"
+    ],
+    "level": 2,
     "status": "draft"
   },
   {
@@ -827,6 +945,22 @@
       "a frozen snapshot of software files, system libraries, and startup commands"
     ],
     "summary": "An immutable, read-only package containing application binaries, libraries, configuration files, and metadata required to launch a container.",
+    "domains": [
+      "it/devops/containers"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
+    "id": "container-registry",
+    "label": "Container registry",
+    "aliases": [],
+    "loanwords": [],
+    "plain_descriptions": [
+      "storage repository for publishing, sharing, and downloading container images",
+      "app store library where Docker images are stored and pulled by servers"
+    ],
+    "summary": "A centralized storage and content delivery system for storing, managing, and distributing container images across development and production environments.",
     "domains": [
       "it/devops/containers"
     ],
@@ -1645,6 +1779,22 @@
     "status": "draft"
   },
   {
+    "id": "docker-compose",
+    "label": "Docker Compose",
+    "aliases": [],
+    "loanwords": [],
+    "plain_descriptions": [
+      "coordinating interconnected microservice containers from a single project file",
+      "easy way to spin up a web app, database, and cache together using docker-compose.yml"
+    ],
+    "summary": "An orchestration utility that launches and connects groups of containerized application services using centralized declarative YAML specifications.",
+    "domains": [
+      "it/devops/containers"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
     "id": "double-entry-bookkeeping",
     "label": "Double-entry bookkeeping",
     "aliases": [
@@ -2060,6 +2210,39 @@
     "status": "draft"
   },
   {
+    "id": "finops",
+    "label": "FinOps",
+    "aliases": [],
+    "loanwords": [],
+    "plain_descriptions": [
+      "managing and optimizing cloud spending across engineering and finance teams",
+      "cultural practice ensuring companies get the best business value from their cloud bills"
+    ],
+    "summary": "An operational cultural framework and discipline that brings financial accountability to the variable spend model of cloud computing.",
+    "domains": [
+      "it/infrastructure/cloud"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
+    "id": "firewall",
+    "label": "Firewall",
+    "aliases": [],
+    "loanwords": [],
+    "plain_descriptions": [
+      "security barrier that blocks unauthorized network traffic into a computer",
+      "digital security guard inspecting incoming and outgoing data packets"
+    ],
+    "summary": "A network security system that monitors and filters incoming and outgoing network traffic based on predetermined security rules.",
+    "domains": [
+      "it/infrastructure/networking",
+      "it/security/vulnerabilities"
+    ],
+    "level": 1,
+    "status": "draft"
+  },
+  {
     "id": "firmware",
     "label": "Firmware",
     "aliases": [],
@@ -2322,6 +2505,23 @@
     "status": "draft"
   },
   {
+    "id": "helm",
+    "label": "Helm",
+    "qualifier": "(Kubernetes)",
+    "aliases": [],
+    "loanwords": [],
+    "plain_descriptions": [
+      "package manager for Kubernetes that bundles complex apps into reusable charts",
+      "tool for installing and upgrading containerized applications on Kubernetes with one command"
+    ],
+    "summary": "The dedicated package manager for Kubernetes that streamlines defining, installing, and upgrading complex container applications using parameterized charts.",
+    "domains": [
+      "it/devops/containers"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
     "id": "hotfix",
     "label": "Hotfix",
     "aliases": [],
@@ -2357,6 +2557,22 @@
     "status": "draft"
   },
   {
+    "id": "hybrid-cloud",
+    "label": "Hybrid cloud",
+    "aliases": [],
+    "loanwords": [],
+    "plain_descriptions": [
+      "connecting a company private data center with public cloud servers",
+      "combining internal on-premises hardware with public cloud capacity"
+    ],
+    "summary": "An IT infrastructure design connecting private on-premises data centers with public cloud environments to enable workload and data portability.",
+    "domains": [
+      "it/infrastructure/cloud"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
     "id": "hyperparameter",
     "label": "Hyperparameter",
     "aliases": [],
@@ -2370,6 +2586,24 @@
       "it/ai-ml/foundations"
     ],
     "level": 2,
+    "status": "draft"
+  },
+  {
+    "id": "iaas",
+    "label": "Infrastructure as a Service (IaaS)",
+    "aliases": [
+      "IaaS"
+    ],
+    "loanwords": [],
+    "plain_descriptions": [
+      "renting raw virtual servers and storage over the internet",
+      "paying for computing hardware by the hour instead of buying physical boxes"
+    ],
+    "summary": "A cloud computing model where vendors deliver on-demand fundamental compute, network, and storage resources over the internet.",
+    "domains": [
+      "it/infrastructure/cloud"
+    ],
+    "level": 1,
     "status": "draft"
   },
   {
@@ -2678,6 +2912,22 @@
       "iot/edge-cloud"
     ],
     "level": 2,
+    "status": "draft"
+  },
+  {
+    "id": "ip-address",
+    "label": "IP address",
+    "aliases": [],
+    "loanwords": [],
+    "plain_descriptions": [
+      "unique numerical label assigned to every device connected to a computer network",
+      "digital phone number or postal address identifying a computer on the internet"
+    ],
+    "summary": "A unique numerical identifier assigned to each device connected to a computer network utilizing the Internet Protocol for communication.",
+    "domains": [
+      "it/infrastructure/networking"
+    ],
+    "level": 1,
     "status": "draft"
   },
   {
@@ -3476,6 +3726,22 @@
     "status": "draft"
   },
   {
+    "id": "multi-cloud",
+    "label": "Multi-cloud",
+    "aliases": [],
+    "loanwords": [],
+    "plain_descriptions": [
+      "using more than one public cloud provider at the same time",
+      "spreading workloads across multiple vendors to avoid depending on just one"
+    ],
+    "summary": "An architectural strategy utilizing cloud services from multiple independent public cloud vendors within a single organization.",
+    "domains": [
+      "it/infrastructure/cloud"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
     "id": "mutual-fund",
     "label": "Mutual fund",
     "aliases": [
@@ -3516,6 +3782,24 @@
     "status": "draft"
   },
   {
+    "id": "nat",
+    "label": "Network Address Translation (NAT)",
+    "aliases": [
+      "NAT"
+    ],
+    "loanwords": [],
+    "plain_descriptions": [
+      "sharing one public internet address among many private home or office devices",
+      "remapping internal private IP addresses to an external internet address"
+    ],
+    "summary": "A networking method that remaps an IP address space into another by modifying network address information in the IP header of packets in transit.",
+    "domains": [
+      "it/infrastructure/networking"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
     "id": "nb-iot",
     "label": "NB-IoT",
     "aliases": [],
@@ -3531,6 +3815,23 @@
       "iot/connectivity-protocols"
     ],
     "level": 2,
+    "status": "draft"
+  },
+  {
+    "id": "network-port",
+    "label": "Port",
+    "qualifier": "(Networking)",
+    "aliases": [],
+    "loanwords": [],
+    "plain_descriptions": [
+      "numerical channel number directing network data to a specific software program",
+      "software communication door that differentiates web, email, or database traffic on one computer"
+    ],
+    "summary": "A 16-bit unsigned number in transport layer headers that identifies a specific application service or communication endpoint on a host.",
+    "domains": [
+      "it/infrastructure/networking"
+    ],
+    "level": 1,
     "status": "draft"
   },
   {
@@ -3638,6 +3939,22 @@
     "summary": "A computer vision technique that simultaneously identifies the semantic class and spatial coordinates of multiple individual objects within an image.",
     "domains": [
       "it/ai-ml/computer-vision"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
+    "id": "object-storage",
+    "label": "Object storage",
+    "aliases": [],
+    "loanwords": [],
+    "plain_descriptions": [
+      "flat cloud file storage accessible over web HTTP using unique keys",
+      "storing photos, videos, and backups as discrete objects without directory hierarchies"
+    ],
+    "summary": "A scalable storage architecture that manages data as distinct objects paired with rich metadata and a unique identifier in a flat address space accessed via HTTP APIs.",
+    "domains": [
+      "it/infrastructure/cloud"
     ],
     "level": 2,
     "status": "draft"
@@ -3824,6 +4141,24 @@
     "summary": "A modeling pathology where an algorithm learns idiosyncratic noise in training samples, severely impairing its ability to generalize to unseen data.",
     "domains": [
       "it/ai-ml/foundations"
+    ],
+    "level": 1,
+    "status": "draft"
+  },
+  {
+    "id": "paas",
+    "label": "Platform as a Service (PaaS)",
+    "aliases": [
+      "PaaS"
+    ],
+    "loanwords": [],
+    "plain_descriptions": [
+      "cloud platform where you deploy code without managing servers",
+      "ready-to-use application hosting environment managed by a vendor"
+    ],
+    "summary": "A cloud delivery model providing a managed execution environment and tooling for developers to deploy applications without operating system administration.",
+    "domains": [
+      "it/infrastructure/cloud"
     ],
     "level": 1,
     "status": "draft"
@@ -4290,6 +4625,22 @@
     "status": "draft"
   },
   {
+    "id": "proxy-server",
+    "label": "Proxy server",
+    "aliases": [],
+    "loanwords": [],
+    "plain_descriptions": [
+      "middleman server that makes requests on behalf of other computers",
+      "intermediary computer that filters web traffic or caches responses"
+    ],
+    "summary": "An intermediary server application that acts as an agent for clients seeking resources from other destination servers.",
+    "domains": [
+      "it/infrastructure/networking"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
     "id": "pull-request",
     "label": "Pull request (PR)",
     "aliases": [
@@ -4618,6 +4969,25 @@
     "status": "draft"
   },
   {
+    "id": "saas",
+    "label": "Software as a Service (SaaS)",
+    "aliases": [
+      "SaaS"
+    ],
+    "loanwords": [],
+    "plain_descriptions": [
+      "accessing online software through a browser on subscription",
+      "using cloud applications without installing or maintaining local software"
+    ],
+    "summary": "A cloud distribution model where complete software applications are hosted by a provider and accessed by consumers over the internet.",
+    "domains": [
+      "it/infrastructure/cloud",
+      "it/business-systems/enterprise-apps"
+    ],
+    "level": 1,
+    "status": "draft"
+  },
+  {
     "id": "sales-lead",
     "label": "Lead",
     "qualifier": "(Marketing)",
@@ -4875,6 +5245,22 @@
     "status": "draft"
   },
   {
+    "id": "service-discovery",
+    "label": "Service discovery",
+    "aliases": [],
+    "loanwords": [],
+    "plain_descriptions": [
+      "automatic mechanism for microservices to find each other on dynamic cloud networks",
+      "automated network phonebook that tracks changing server IP addresses in real time"
+    ],
+    "summary": "The automatic detection and location resolution of microservices, instances, and endpoints on a network through a centralized or distributed registry.",
+    "domains": [
+      "it/infrastructure/networking"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
     "id": "sharding",
     "label": "Sharding",
     "aliases": [
@@ -5112,6 +5498,22 @@
     "status": "draft"
   },
   {
+    "id": "spot-instance",
+    "label": "Spot instance",
+    "aliases": [],
+    "loanwords": [],
+    "plain_descriptions": [
+      "deeply discounted cloud virtual server that can be interrupted with short notice",
+      "spare cloud computing capacity rented cheaply for non-urgent computations and resilient workloads"
+    ],
+    "summary": "An unused cloud computing instance available at steep discounts compared to on-demand rates, subject to reclamation when the provider needs capacity.",
+    "domains": [
+      "it/infrastructure/cloud"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
     "id": "sprint-agile",
     "label": "Sprint",
     "qualifier": "(Agile)",
@@ -5201,6 +5603,25 @@
     "summary": "A web security vulnerability that allows an attacker to interfere with backend database queries by injecting malicious SQL statements into input fields.",
     "domains": [
       "it/security/vulnerabilities"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
+    "id": "ssh",
+    "label": "Secure Shell (SSH)",
+    "aliases": [
+      "SSH"
+    ],
+    "loanwords": [],
+    "plain_descriptions": [
+      "secure encrypted tool for logging into and running commands on remote servers",
+      "encrypted remote terminal terminal connection replacing insecure Telnet"
+    ],
+    "summary": "A cryptographic network protocol for operating network services securely over an unsecured network, most commonly used for remote command-line login.",
+    "domains": [
+      "it/infrastructure/networking",
+      "it/security/authentication"
     ],
     "level": 2,
     "status": "draft"
@@ -5375,6 +5796,22 @@
     "status": "draft"
   },
   {
+    "id": "subnet",
+    "label": "Subnet",
+    "aliases": [],
+    "loanwords": [],
+    "plain_descriptions": [
+      "smaller segmented portion of a larger IP network range",
+      "dividing a big network into isolated zones for security and organization"
+    ],
+    "summary": "A logical subdivision of an IP network designed to segment broadcast domains, improve routing efficiency, and enforce security boundaries.",
+    "domains": [
+      "it/infrastructure/networking"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
     "id": "system-prompt",
     "label": "System prompt",
     "aliases": [],
@@ -5388,6 +5825,24 @@
       "it/ai-ml/llm-agents"
     ],
     "level": 2,
+    "status": "draft"
+  },
+  {
+    "id": "tcp",
+    "label": "Transmission Control Protocol (TCP)",
+    "aliases": [
+      "TCP"
+    ],
+    "loanwords": [],
+    "plain_descriptions": [
+      "reliable networking protocol that guarantees all data arrives completely and in order",
+      "connection-oriented rulebook ensuring web pages and files download without missing parts"
+    ],
+    "summary": "A connection-oriented transport layer protocol that provides reliable, ordered, and error-checked delivery of a stream of data packets.",
+    "domains": [
+      "it/infrastructure/networking"
+    ],
+    "level": 1,
     "status": "draft"
   },
   {
@@ -5458,6 +5913,22 @@
     "summary": "A fixed-term bank deposit that pays a predetermined rate of interest until a specified maturity date, imposing penalties for early withdrawal.",
     "domains": [
       "finance/banking/deposits"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
+    "id": "terraform",
+    "label": "Terraform",
+    "aliases": [],
+    "loanwords": [],
+    "plain_descriptions": [
+      "tool for creating and managing cloud servers using readable code files",
+      "infrastructure as code software that provisions resources on multiple clouds"
+    ],
+    "summary": "An open-source infrastructure as code software tool that enables operators to provision and version multi-cloud data center resources using declarative configuration files.",
+    "domains": [
+      "it/devops/iac"
     ],
     "level": 2,
     "status": "draft"
@@ -5643,6 +6114,24 @@
     "summary": "The art, craft, and technique of selecting and arranging typefaces, font weights, kerning, and spacing to render written language legible, readable, and visually engaging.",
     "domains": [
       "media/content-production/visual-design"
+    ],
+    "level": 1,
+    "status": "draft"
+  },
+  {
+    "id": "udp",
+    "label": "User Datagram Protocol (UDP)",
+    "aliases": [
+      "UDP"
+    ],
+    "loanwords": [],
+    "plain_descriptions": [
+      "fast lightweight network protocol that sends data without checking if it arrived",
+      "connectionless protocol used for real-time gaming, video streaming, and DNS"
+    ],
+    "summary": "A connectionless transport layer protocol that transmits data packets without prior connection handshakes or delivery guarantees, prioritizing speed over reliability.",
+    "domains": [
+      "it/infrastructure/networking"
     ],
     "level": 1,
     "status": "draft"
@@ -5869,6 +6358,42 @@
     "summary": "A statistical measure of the dispersion of returns for a given security or market index over a specified timeframe.",
     "domains": [
       "finance/investing/portfolio-risk"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
+    "id": "vpc",
+    "label": "Virtual Private Cloud (VPC)",
+    "aliases": [
+      "VPC"
+    ],
+    "loanwords": [],
+    "plain_descriptions": [
+      "isolated private network section inside a public cloud provider",
+      "virtual boundary that protects your cloud servers from public internet access"
+    ],
+    "summary": "A logically isolated virtual network dedicated to a cloud account, providing complete control over IP address ranges, subnets, and routing tables.",
+    "domains": [
+      "it/infrastructure/cloud"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
+    "id": "vpn",
+    "label": "Virtual Private Network (VPN)",
+    "aliases": [
+      "VPN"
+    ],
+    "loanwords": [],
+    "plain_descriptions": [
+      "encrypted connection tunnel between your computer and a remote private network",
+      "secure way for employees to access internal company systems from home"
+    ],
+    "summary": "An encrypted communication channel constructed over a public network infrastructure to provide secure remote access and private site-to-site connectivity.",
+    "domains": [
+      "it/infrastructure/networking"
     ],
     "level": 2,
     "status": "draft"

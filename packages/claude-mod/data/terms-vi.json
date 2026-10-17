@@ -309,6 +309,21 @@
     "autolink": true
   },
   {
+    "key": "Ansible",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "ansible",
+        "label": "Ansible",
+        "summary": "Bộ công cụ tự động hóa CNTT mã nguồn mở chuyên quản lý cấu hình, triển khai ứng dụng và điều phối tác vụ mà không cần cài đặt phần mềm đại lý (agent) trên các máy chủ đích.",
+        "domains": [
+          "it/devops/iac"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
     "key": "Application Programming Interface (API)",
     "match": "any-case",
     "concepts": [
@@ -636,6 +651,36 @@
     "autolink": true
   },
   {
+    "key": "Availability zone (AZ)",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "availability-zone",
+        "label": "Availability zone (AZ)",
+        "summary": "Một hoặc nhiều trung tâm dữ liệu vật lý riêng biệt trong một region, có nguồn điện, hệ thống làm mát và kết nối mạng độc lập.",
+        "domains": [
+          "it/infrastructure/cloud"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "AZ",
+    "match": "exact-case",
+    "concepts": [
+      {
+        "id": "availability-zone",
+        "label": "Availability zone (AZ)",
+        "summary": "Một hoặc nhiều trung tâm dữ liệu vật lý riêng biệt trong một region, có nguồn điện, hệ thống làm mát và kết nối mạng độc lập.",
+        "domains": [
+          "it/infrastructure/cloud"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
     "key": "B-roll",
     "match": "any-case",
     "concepts": [
@@ -765,6 +810,22 @@
         "summary": "Báo cáo tài chính tổng hợp phản ánh toàn bộ giá trị tài sản hiện có và nguồn hình thành tài sản của doanh nghiệp tại một thời điểm nhất định.",
         "domains": [
           "finance/corporate-finance/financial-statements"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Băng thông",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "bandwidth",
+        "label": "Băng thông",
+        "qualifier": "(Mạng)",
+        "summary": "Tốc độ truyền tải dữ liệu tối đa trên một kênh truyền thông mạng xác định trong một đơn vị thời gian, thường đo bằng bit trên giây (bps).",
+        "domains": [
+          "it/infrastructure/networking"
         ]
       }
     ],
@@ -915,6 +976,21 @@
         "summary": "Công nghệ mạng cá nhân không dây cự ly ngắn được thiết kế để truyền tải dữ liệu với mức tiêu thụ điện năng cực thấp.",
         "domains": [
           "iot/connectivity-protocols"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Block storage",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "block-storage",
+        "label": "Block storage",
+        "summary": "Kiến trúc lưu trữ chia nhỏ dữ liệu thành các khối thô có kích thước cố định, gắn kết vào máy ảo như một ổ đĩa cục bộ phục vụ các tác vụ đọc ghi tốc độ cao.",
+        "domains": [
+          "it/infrastructure/cloud"
         ]
       }
     ],
@@ -1775,6 +1851,38 @@
     "autolink": true
   },
   {
+    "key": "Instance",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "cloud-instance",
+        "label": "Instance",
+        "qualifier": "(Đám mây)",
+        "summary": "Môi trường máy tính ảo được cấp phát trên hạ tầng đám mây với dung lượng CPU ảo, bộ nhớ RAM và băng thông mạng xác định.",
+        "domains": [
+          "it/infrastructure/cloud"
+        ]
+      }
+    ],
+    "autolink": false
+  },
+  {
+    "key": "Region",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "cloud-region",
+        "label": "Region",
+        "qualifier": "(Đám mây)",
+        "summary": "Khu vực địa lý riêng biệt chứa nhiều vùng sẵn sàng độc lập được kết nối với nhau qua mạng nội bộ độ trễ thấp.",
+        "domains": [
+          "it/infrastructure/cloud"
+        ]
+      }
+    ],
+    "autolink": false
+  },
+  {
     "key": "Constrained Application Protocol (CoAP)",
     "match": "any-case",
     "concepts": [
@@ -1829,6 +1937,22 @@
         "summary": "Quy trình kiểm tra chéo giữa các lập trình viên nhằm rà soát các thay đổi mã nguồn, phát hiện lỗi tiềm ẩn, đảm bảo chuẩn kiến trúc và chia sẻ kiến thức dự án.",
         "domains": [
           "it/software-engineering/practices"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Cold start",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "cold-start",
+        "label": "Cold start",
+        "qualifier": "(Serverless)",
+        "summary": "Độ trễ trong lần gọi đầu tiên của điện toán serverless khi nền tảng phải cấp phát môi trường, tải mã nguồn và khởi động hệ thống thực thi.",
+        "domains": [
+          "it/infrastructure/cloud"
         ]
       }
     ],
@@ -1968,6 +2092,21 @@
         "label": "Image",
         "qualifier": "(Container)",
         "summary": "Gói tệp chỉ đọc bất biến chứa mã nhị phân, thư viện phụ thuộc, cấu hình và siêu dữ liệu cần thiết để khởi chạy một container.",
+        "domains": [
+          "it/devops/containers"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Container registry",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "container-registry",
+        "label": "Container registry",
+        "summary": "Hệ thống kho lưu trữ và phân phối tập trung dùng để quản lý, lập chỉ mục và phân phối các ảnh container phục vụ quá trình phát triển và vận hành hệ thống.",
         "domains": [
           "it/devops/containers"
         ]
@@ -3670,6 +3809,21 @@
     "autolink": true
   },
   {
+    "key": "Docker Compose",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "docker-compose",
+        "label": "Docker Compose",
+        "summary": "Công cụ điều phối và vận hành các ứng dụng Docker đa container trên một máy chủ bằng cách khai báo tập trung trong một tệp cấu hình YAML.",
+        "domains": [
+          "it/devops/containers"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
     "key": "Kế toán kép",
     "match": "any-case",
     "concepts": [
@@ -4595,6 +4749,37 @@
     "autolink": true
   },
   {
+    "key": "FinOps",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "finops",
+        "label": "FinOps",
+        "summary": "Khung phương pháp và văn hóa quản trị tài chính đám mây giúp quy trách nhiệm chi tiêu minh bạch cho mô hình chi phí biến đổi của điện toán đám mây.",
+        "domains": [
+          "it/infrastructure/cloud"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Tường lửa",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "firewall",
+        "label": "Tường lửa",
+        "summary": "Hệ thống an ninh mạng chuyên giám sát và lọc các gói dữ liệu truyền vào và ra dựa trên các quy tắc bảo mật được thiết lập trước.",
+        "domains": [
+          "it/infrastructure/networking",
+          "it/security/vulnerabilities"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
     "key": "Firmware",
     "match": "any-case",
     "concepts": [
@@ -5119,6 +5304,22 @@
     "autolink": true
   },
   {
+    "key": "Helm",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "helm",
+        "label": "Helm",
+        "qualifier": "(Kubernetes)",
+        "summary": "Trình quản lý gói chuyên dụng cho Kubernetes giúp đơn giản hóa việc định nghĩa, cài đặt và nâng cấp các ứng dụng container phức tạp thông qua các gói cấu hình chart.",
+        "domains": [
+          "it/devops/containers"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
     "key": "Hotfix",
     "match": "any-case",
     "concepts": [
@@ -5224,6 +5425,21 @@
     "autolink": true
   },
   {
+    "key": "Hybrid cloud",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "hybrid-cloud",
+        "label": "Hybrid cloud",
+        "summary": "Mô hình kiến trúc CNTT kết nối hạ tầng máy chủ nội bộ với đám mây công cộng nhằm cho phép chia sẻ dữ liệu và điều chuyển khối lượng công việc linh hoạt.",
+        "domains": [
+          "it/infrastructure/cloud"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
     "key": "Siêu tham số",
     "match": "any-case",
     "concepts": [
@@ -5233,6 +5449,36 @@
         "summary": "Tham số cấu hình bên ngoài được xác lập trước khi huấn luyện nhằm điều phối kiến trúc và quy trình tối ưu hóa của thuật toán.",
         "domains": [
           "it/ai-ml/foundations"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Infrastructure as a Service (IaaS)",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "iaas",
+        "label": "Infrastructure as a Service (IaaS)",
+        "summary": "Mô hình điện toán đám mây cung cấp tài nguyên hạ tầng thô gồm máy chủ ảo, bộ nhớ và mạng qua internet theo nhu cầu sử dụng.",
+        "domains": [
+          "it/infrastructure/cloud"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "IaaS",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "iaas",
+        "label": "Infrastructure as a Service (IaaS)",
+        "summary": "Mô hình điện toán đám mây cung cấp tài nguyên hạ tầng thô gồm máy chủ ảo, bộ nhớ và mạng qua internet theo nhu cầu sử dụng.",
+        "domains": [
+          "it/infrastructure/cloud"
         ]
       }
     ],
@@ -5953,6 +6199,21 @@
         "summary": "Hệ thống phần mềm trung gian đa tầng cung cấp hạ tầng kết nối, quản lý vòng đời thiết bị, tiếp nhận dữ liệu đo đạc và tích hợp ứng dụng nghiệp vụ cho các giải pháp IoT.",
         "domains": [
           "iot/edge-cloud"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Địa chỉ IP",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "ip-address",
+        "label": "Địa chỉ IP",
+        "summary": "Mã số định danh duy nhất được gán cho từng thiết bị tham gia vào mạng máy tính có sử dụng Giao thức Internet để liên lạc.",
+        "domains": [
+          "it/infrastructure/networking"
         ]
       }
     ],
@@ -7561,6 +7822,21 @@
     "autolink": true
   },
   {
+    "key": "Multi-cloud",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "multi-cloud",
+        "label": "Multi-cloud",
+        "summary": "Chiến lược kiến trúc sử dụng dịch vụ từ hai hoặc nhiều nhà cung cấp điện toán đám mây công cộng độc lập trong cùng một doanh nghiệp.",
+        "domains": [
+          "it/infrastructure/cloud"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
     "key": "Quỹ tương hỗ",
     "match": "any-case",
     "concepts": [
@@ -7666,6 +7942,36 @@
     "autolink": true
   },
   {
+    "key": "Network Address Translation (NAT)",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "nat",
+        "label": "Network Address Translation (NAT)",
+        "summary": "Phương pháp mạng ánh xạ không gian địa chỉ IP này sang không gian địa chỉ IP khác bằng cách sửa đổi phần đầu gói tin IP khi đang truyền tải.",
+        "domains": [
+          "it/infrastructure/networking"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "NAT",
+    "match": "exact-case",
+    "concepts": [
+      {
+        "id": "nat",
+        "label": "Network Address Translation (NAT)",
+        "summary": "Phương pháp mạng ánh xạ không gian địa chỉ IP này sang không gian địa chỉ IP khác bằng cách sửa đổi phần đầu gói tin IP khi đang truyền tải.",
+        "domains": [
+          "it/infrastructure/networking"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
     "key": "NB-IoT",
     "match": "any-case",
     "concepts": [
@@ -7679,6 +7985,22 @@
       }
     ],
     "autolink": true
+  },
+  {
+    "key": "Cổng",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "network-port",
+        "label": "Cổng",
+        "qualifier": "(Mạng)",
+        "summary": "Chỉ số 16-bit trong tiêu đề tầng giao vận dùng để định danh một tiến trình dịch vụ hoặc điểm cuối truyền thông cụ thể trên máy tính.",
+        "domains": [
+          "it/infrastructure/networking"
+        ]
+      }
+    ],
+    "autolink": false
   },
   {
     "key": "Mạng nơ-ron",
@@ -7943,6 +8265,21 @@
         "summary": "Kỹ thuật thị giác máy tính vừa nhận diện nhãn danh mục vừa xác định tọa độ khung bao của từng đối tượng riêng biệt xuất hiện trong một bức ảnh.",
         "domains": [
           "it/ai-ml/computer-vision"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Object storage",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "object-storage",
+        "label": "Object storage",
+        "summary": "Kiến trúc lưu trữ dữ liệu phi cấu trúc dưới dạng các đối tượng riêng biệt kèm siêu dữ liệu phong phú và định danh duy nhất trong không gian địa chỉ phẳng truy cập qua API.",
+        "domains": [
+          "it/infrastructure/cloud"
         ]
       }
     ],
@@ -8333,6 +8670,36 @@
         "summary": "Hiện tượng mô hình học máy ghi nhớ máy móc các biến thiên ngẫu nhiên và nhiễu của dữ liệu huấn luyện, làm suy giảm nghiêm trọng khả năng tổng quát hóa.",
         "domains": [
           "it/ai-ml/foundations"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Platform as a Service (PaaS)",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "paas",
+        "label": "Platform as a Service (PaaS)",
+        "summary": "Mô hình dịch vụ đám mây cung cấp sẵn môi trường thực thi và công cụ hỗ trợ để lập trình viên triển khai ứng dụng mà không cần quản trị hệ điều hành.",
+        "domains": [
+          "it/infrastructure/cloud"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "PaaS",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "paas",
+        "label": "Platform as a Service (PaaS)",
+        "summary": "Mô hình dịch vụ đám mây cung cấp sẵn môi trường thực thi và công cụ hỗ trợ để lập trình viên triển khai ứng dụng mà không cần quản trị hệ điều hành.",
+        "domains": [
+          "it/infrastructure/cloud"
         ]
       }
     ],
@@ -9268,6 +9635,21 @@
     "autolink": true
   },
   {
+    "key": "Máy chủ proxy",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "proxy-server",
+        "label": "Máy chủ proxy",
+        "summary": "Máy chủ trung gian đóng vai trò đại diện tiếp nhận yêu cầu từ máy trạm và chuyển tiếp tới các máy chủ đích khác trên mạng.",
+        "domains": [
+          "it/infrastructure/networking"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
     "key": "Pull request (PR)",
     "match": "any-case",
     "concepts": [
@@ -9977,6 +10359,38 @@
     "autolink": true
   },
   {
+    "key": "Software as a Service (SaaS)",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "saas",
+        "label": "Software as a Service (SaaS)",
+        "summary": "Mô hình phân phối phần mềm trong đó ứng dụng hoàn chỉnh được nhà cung cấp lưu trữ trên đám mây và người dùng truy cập qua mạng internet.",
+        "domains": [
+          "it/infrastructure/cloud",
+          "it/business-systems/enterprise-apps"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "SaaS",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "saas",
+        "label": "Software as a Service (SaaS)",
+        "summary": "Mô hình phân phối phần mềm trong đó ứng dụng hoàn chỉnh được nhà cung cấp lưu trữ trên đám mây và người dùng truy cập qua mạng internet.",
+        "domains": [
+          "it/infrastructure/cloud",
+          "it/business-systems/enterprise-apps"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
     "key": "Khách hàng tiềm năng",
     "match": "any-case",
     "concepts": [
@@ -10515,6 +10929,21 @@
     "autolink": true
   },
   {
+    "key": "Service discovery",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "service-discovery",
+        "label": "Service discovery",
+        "summary": "Cơ chế tự động phát hiện và định vị địa chỉ mạng của các phiên bản dịch vụ trong hệ thống phân tán thông qua một sổ đăng ký cập nhật liên tục.",
+        "domains": [
+          "it/infrastructure/networking"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
     "key": "Sharding",
     "match": "any-case",
     "concepts": [
@@ -11042,6 +11471,21 @@
     "autolink": true
   },
   {
+    "key": "Spot instance",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "spot-instance",
+        "label": "Spot instance",
+        "summary": "Máy chủ ảo tận dụng năng lực tính toán dư thừa của nhà cung cấp đám mây với mức giảm giá lớn, nhưng có thể bị thu hồi khi nhà cung cấp cần tài nguyên.",
+        "domains": [
+          "it/infrastructure/cloud"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
     "key": "Sprint",
     "match": "any-case",
     "concepts": [
@@ -11248,6 +11692,38 @@
         "summary": "Lỗ hổng bảo mật web cho phép kẻ tấn công can thiệp vào các truy vấn cơ sở dữ liệu bằng cách chèn các đoạn mã SQL trái phép vào ô nhập liệu.",
         "domains": [
           "it/security/vulnerabilities"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Secure Shell (SSH)",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "ssh",
+        "label": "Secure Shell (SSH)",
+        "summary": "Giao thức mạng mật mã dùng để vận hành các dịch vụ mạng an toàn trên môi trường mạng không tin cậy, phổ biến nhất để đăng nhập dòng lệnh từ xa.",
+        "domains": [
+          "it/infrastructure/networking",
+          "it/security/authentication"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "SSH",
+    "match": "exact-case",
+    "concepts": [
+      {
+        "id": "ssh",
+        "label": "Secure Shell (SSH)",
+        "summary": "Giao thức mạng mật mã dùng để vận hành các dịch vụ mạng an toàn trên môi trường mạng không tin cậy, phổ biến nhất để đăng nhập dòng lệnh từ xa.",
+        "domains": [
+          "it/infrastructure/networking",
+          "it/security/authentication"
         ]
       }
     ],
@@ -11631,6 +12107,21 @@
     "autolink": true
   },
   {
+    "key": "Subnet",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "subnet",
+        "label": "Subnet",
+        "summary": "Phân đoạn mạng logic được chia nhỏ từ một dải địa chỉ IP lớn nhằm cô lập lưu lượng, tăng hiệu quả định tuyến và siết chặt an ninh mạng.",
+        "domains": [
+          "it/infrastructure/networking"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
     "key": "System prompt",
     "match": "any-case",
     "concepts": [
@@ -11640,6 +12131,36 @@
         "summary": "Phần chỉ dẫn đặt trước cuộc hội thoại, quy định vai trò, quy tắc và giọng văn của mô hình cho mọi tin nhắn sau đó.",
         "domains": [
           "it/ai-ml/llm-agents"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Transmission Control Protocol (TCP)",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "tcp",
+        "label": "Transmission Control Protocol (TCP)",
+        "summary": "Giao thức truyền vận hướng kết nối đảm bảo việc truyền tải luồng dữ liệu một cách tin cậy, đúng thứ tự và có kiểm tra phát hiện lỗi.",
+        "domains": [
+          "it/infrastructure/networking"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "TCP",
+    "match": "exact-case",
+    "concepts": [
+      {
+        "id": "tcp",
+        "label": "Transmission Control Protocol (TCP)",
+        "summary": "Giao thức truyền vận hướng kết nối đảm bảo việc truyền tải luồng dữ liệu một cách tin cậy, đúng thứ tự và có kiểm tra phát hiện lỗi.",
+        "domains": [
+          "it/infrastructure/networking"
         ]
       }
     ],
@@ -11777,6 +12298,21 @@
         "summary": "Khoản tiền gửi tại tổ chức tín dụng có thời hạn xác định, được hưởng mức lãi suất cố định cam kết và áp dụng quy định tính lãi không kỳ hạn nếu rút trước hạn.",
         "domains": [
           "finance/banking/deposits"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Terraform",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "terraform",
+        "label": "Terraform",
+        "summary": "Công cụ hạ tầng dạng mã nguồn (IaC) cho phép khởi tạo, thay đổi và quản lý phiên bản các tài nguyên đám mây một cách an toàn và nhất quán bằng ngôn ngữ khai báo.",
+        "domains": [
+          "it/devops/iac"
         ]
       }
     ],
@@ -12152,6 +12688,36 @@
         "summary": "Nghệ thuật và kỹ thuật lựa chọn, sắp xếp các kiểu chữ, độ đậm nhạt, khoảng cách chữ và dòng nhằm giúp văn bản rõ ràng, dễ đọc và truyền tải cảm xúc thị giác.",
         "domains": [
           "media/content-production/visual-design"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "User Datagram Protocol (UDP)",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "udp",
+        "label": "User Datagram Protocol (UDP)",
+        "summary": "Giao thức truyền vận không kết nối chuyển tải các gói dữ liệu mà không cần bắt tay hay đảm bảo biên nhận, ưu tiên tốc độ tối đa thay vì độ tin cậy.",
+        "domains": [
+          "it/infrastructure/networking"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "UDP",
+    "match": "exact-case",
+    "concepts": [
+      {
+        "id": "udp",
+        "label": "User Datagram Protocol (UDP)",
+        "summary": "Giao thức truyền vận không kết nối chuyển tải các gói dữ liệu mà không cần bắt tay hay đảm bảo biên nhận, ưu tiên tốc độ tối đa thay vì độ tin cậy.",
+        "domains": [
+          "it/infrastructure/networking"
         ]
       }
     ],
@@ -12717,6 +13283,66 @@
         "summary": "Thước đo thống kê mức độ phân tán của tỷ suất sinh lời của một chứng khoán hoặc chỉ số thị trường trong một khoảng thời gian nhất định.",
         "domains": [
           "finance/investing/portfolio-risk"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Virtual Private Cloud (VPC)",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "vpc",
+        "label": "Virtual Private Cloud (VPC)",
+        "summary": "Mạng ảo cách ly logic dành riêng cho tài khoản đám mây, cho phép toàn quyền kiểm soát dải địa chỉ IP, mạng con và bảng định tuyến.",
+        "domains": [
+          "it/infrastructure/cloud"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "VPC",
+    "match": "exact-case",
+    "concepts": [
+      {
+        "id": "vpc",
+        "label": "Virtual Private Cloud (VPC)",
+        "summary": "Mạng ảo cách ly logic dành riêng cho tài khoản đám mây, cho phép toàn quyền kiểm soát dải địa chỉ IP, mạng con và bảng định tuyến.",
+        "domains": [
+          "it/infrastructure/cloud"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Mạng riêng ảo",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "vpn",
+        "label": "Mạng riêng ảo",
+        "summary": "Kênh truyền thông được mã hóa thiết lập trên nền tảng mạng công cộng nhằm cung cấp quyền truy cập từ xa an toàn và liên kết các chi nhánh mạng riêng biệt.",
+        "domains": [
+          "it/infrastructure/networking"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "VPN",
+    "match": "exact-case",
+    "concepts": [
+      {
+        "id": "vpn",
+        "label": "Mạng riêng ảo",
+        "summary": "Kênh truyền thông được mã hóa thiết lập trên nền tảng mạng công cộng nhằm cung cấp quyền truy cập từ xa an toàn và liên kết các chi nhánh mạng riêng biệt.",
+        "domains": [
+          "it/infrastructure/networking"
         ]
       }
     ],

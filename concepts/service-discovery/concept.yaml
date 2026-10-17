@@ -1,12 +1,26 @@
 id: service-discovery
 domains:
   - it/infrastructure/networking
-level: 1
+level: 2
 relations:
-  prerequisites: []
+  prerequisites:
+    - ip-address
+    - network-port
   confusable: []
-  related: []
+  related:
+    - vpc
+    - kubernetes
+    - proxy-server
 status: draft
 provenance:
   drafted_by: ai
-sources: []
+sources:
+  - ref: k8s-glossary
+    locator: https://kubernetes.io/docs/concepts/services-networking/service/
+    title: Service
+    language: en
+    accessed: '2026-10-17'
+    retrieved_by: ai
+    supports:
+      - definition
+      - summary

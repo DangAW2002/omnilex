@@ -11,7 +11,8 @@ plain_descriptions:
 summary: >-
   Hệ thống điều phối container mã nguồn mở giúp tự động hóa quá trình triển khai, mở rộng quy mô, quản lý và tự phục hồi
   các ứng dụng đóng gói trong container.
-confusable_notes: {}
+confusable_notes:
+  docker-compose: Kubernetes quản trị các cụm container phân tán quy mô lớn trên nhiều máy chủ vật lý trong môi trường thực tế, trong khi Docker Compose chủ yếu điều phối các nhóm container trên một máy phát triển duy nhất.
 follow_up_questions:
   - Cơ sở dữ liệu etcd trong cụm điều khiển giữ vai trò gì để duy trì trạng thái của Kubernetes?
   - Kubernetes tự động phát hiện và thay thế các pod bị lỗi bằng cơ chế nào?

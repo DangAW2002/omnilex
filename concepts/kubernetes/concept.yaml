@@ -5,6 +5,8 @@ level: 2
 relations:
   prerequisites:
     - software-container
+  confusable:
+    - docker-compose
   related:
     - docker
     - kubernetes-pod

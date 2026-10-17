@@ -1,12 +1,26 @@
 id: vpc
 domains:
   - it/infrastructure/cloud
-level: 1
+level: 2
 relations:
-  prerequisites: []
-  confusable: []
-  related: []
+  prerequisites:
+    - iaas
+  confusable:
+    - vpn
+  related:
+    - subnet
+    - firewall
+    - cloud-instance
 status: draft
 provenance:
   drafted_by: ai
-sources: []
+sources:
+  - ref: aws-docs
+    locator: https://docs.aws.amazon.com/vpc/latest/userguide/what-is-amazon-vpc.html
+    title: What is Amazon VPC?
+    language: en
+    accessed: '2026-10-17'
+    retrieved_by: ai
+    supports:
+      - definition
+      - summary

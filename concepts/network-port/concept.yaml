@@ -3,10 +3,23 @@ domains:
   - it/infrastructure/networking
 level: 1
 relations:
-  prerequisites: []
+  prerequisites:
+    - ip-address
   confusable: []
-  related: []
+  related:
+    - tcp
+    - udp
+    - firewall
 status: draft
 provenance:
   drafted_by: ai
-sources: []
+sources:
+  - ref: ietf
+    locator: https://www.rfc-editor.org/info/rfc6335/
+    title: Internet Assigned Numbers Authority (IANA) Procedures for the Management of the Service Name and Transport Protocol Port Number Registry
+    language: en
+    accessed: '2026-10-17'
+    retrieved_by: ai
+    supports:
+      - definition
+      - summary

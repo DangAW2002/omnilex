@@ -3,10 +3,26 @@ domains:
   - it/infrastructure/cloud
 level: 1
 relations:
-  prerequisites: []
-  confusable: []
-  related: []
+  prerequisites:
+    - virtual-machine
+  confusable:
+    - paas
+    - saas
+  related:
+    - cloud-instance
+    - object-storage
+    - block-storage
+    - vpc
 status: draft
 provenance:
   drafted_by: ai
-sources: []
+sources:
+  - ref: nist-csrc
+    locator: https://csrc.nist.gov/glossary/term/infrastructure_as_a_service
+    title: infrastructure as a service
+    language: en
+    accessed: '2026-10-17'
+    retrieved_by: ai
+    supports:
+      - definition
+      - summary

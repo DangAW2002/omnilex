@@ -1,12 +1,24 @@
 id: finops
 domains:
   - it/infrastructure/cloud
-level: 1
+level: 2
 relations:
-  prerequisites: []
+  prerequisites:
+    - iaas
   confusable: []
-  related: []
+  related:
+    - spot-instance
+    - cloud-instance
 status: draft
 provenance:
   drafted_by: ai
-sources: []
+sources:
+  - ref: finops-foundation
+    locator: https://www.finops.org/framework/
+    title: FinOps Framework
+    language: en
+    accessed: '2026-10-17'
+    retrieved_by: ai
+    supports:
+      - definition
+      - summary

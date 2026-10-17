@@ -1,12 +1,25 @@
 id: proxy-server
 domains:
   - it/infrastructure/networking
-level: 1
+level: 2
 relations:
-  prerequisites: []
+  prerequisites:
+    - ip-address
+    - network-port
   confusable: []
-  related: []
+  related:
+    - firewall
+    - tcp
 status: draft
 provenance:
   drafted_by: ai
-sources: []
+sources:
+  - ref: nist-csrc
+    locator: https://csrc.nist.gov/glossary/term/proxy_server
+    title: proxy server
+    language: en
+    accessed: '2026-10-17'
+    retrieved_by: ai
+    supports:
+      - definition
+      - summary

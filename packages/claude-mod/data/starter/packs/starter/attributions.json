@@ -44,9 +44,13 @@
     "concepts": [
       "actuator",
       "encryption",
+      "firewall",
       "firmware",
+      "iaas",
       "mfa",
       "microcontroller",
+      "paas",
+      "saas",
       "sensor",
       "stakeholder"
     ]

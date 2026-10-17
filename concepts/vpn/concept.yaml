@@ -1,12 +1,25 @@
 id: vpn
 domains:
   - it/infrastructure/networking
-level: 1
+level: 2
 relations:
-  prerequisites: []
-  confusable: []
-  related: []
+  prerequisites:
+    - ip-address
+  confusable:
+    - vpc
+  related:
+    - hybrid-cloud
+    - firewall
 status: draft
 provenance:
   drafted_by: ai
-sources: []
+sources:
+  - ref: nist-csrc
+    locator: https://csrc.nist.gov/glossary/term/virtual_private_network
+    title: virtual private network
+    language: en
+    accessed: '2026-10-17'
+    retrieved_by: ai
+    supports:
+      - definition
+      - summary

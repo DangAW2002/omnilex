@@ -216,6 +216,21 @@
     "autolink": true
   },
   {
+    "key": "Ansible",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "ansible",
+        "label": "Ansible",
+        "summary": "An open-source automation engine that automates cloud provisioning, configuration management, and application deployment without installing agents on managed nodes.",
+        "domains": [
+          "it/devops/iac"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
     "key": "Application Programming Interface (API)",
     "match": "any-case",
     "concepts": [
@@ -465,6 +480,36 @@
     "autolink": true
   },
   {
+    "key": "Availability zone (AZ)",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "availability-zone",
+        "label": "Availability zone (AZ)",
+        "summary": "One or more discrete physical data centers within a region with independent power, cooling, and networking designed for fault tolerance.",
+        "domains": [
+          "it/infrastructure/cloud"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "AZ",
+    "match": "exact-case",
+    "concepts": [
+      {
+        "id": "availability-zone",
+        "label": "Availability zone (AZ)",
+        "summary": "One or more discrete physical data centers within a region with independent power, cooling, and networking designed for fault tolerance.",
+        "domains": [
+          "it/infrastructure/cloud"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
     "key": "B-roll",
     "match": "any-case",
     "concepts": [
@@ -564,6 +609,22 @@
         "summary": "A core financial statement summarizing an entity’s assets, liabilities, and shareholders’ equity at a specific point in time.",
         "domains": [
           "finance/corporate-finance/financial-statements"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Bandwidth",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "bandwidth",
+        "label": "Bandwidth",
+        "qualifier": "(Network)",
+        "summary": "The maximum rate of data transfer across a given network communication path, typically measured in bits per second.",
+        "domains": [
+          "it/infrastructure/networking"
         ]
       }
     ],
@@ -684,6 +745,21 @@
         "summary": "A power-optimized wireless personal area network technology designed for short-range communication with minimal electrical energy consumption.",
         "domains": [
           "iot/connectivity-protocols"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Block storage",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "block-storage",
+        "label": "Block storage",
+        "summary": "A storage architecture that splits data into evenly sized raw blocks, exposed as virtual disk volumes attached to compute instances for high-speed I/O.",
+        "domains": [
+          "it/infrastructure/cloud"
         ]
       }
     ],
@@ -1321,6 +1397,38 @@
     "autolink": true
   },
   {
+    "key": "Instance",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "cloud-instance",
+        "label": "Instance",
+        "qualifier": "(Cloud)",
+        "summary": "A virtual compute environment provisioned on cloud infrastructure with dedicated allocations of vCPUs, memory, and network capabilities.",
+        "domains": [
+          "it/infrastructure/cloud"
+        ]
+      }
+    ],
+    "autolink": false
+  },
+  {
+    "key": "Region",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "cloud-region",
+        "label": "Region",
+        "qualifier": "(Cloud)",
+        "summary": "A distinct physical geographical area comprising multiple isolated and physically separated availability zones interconnected via private low-latency links.",
+        "domains": [
+          "it/infrastructure/cloud"
+        ]
+      }
+    ],
+    "autolink": false
+  },
+  {
     "key": "Constrained Application Protocol (CoAP)",
     "match": "any-case",
     "concepts": [
@@ -1360,6 +1468,22 @@
         "summary": "A collaborative peer-review practice where software engineers systematically examine proposed code changes to identify defects, enforce architectural standards, and share knowledge.",
         "domains": [
           "it/software-engineering/practices"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Cold start",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "cold-start",
+        "label": "Cold start",
+        "qualifier": "(Serverless)",
+        "summary": "The initial invocation latency experienced in serverless computing when the platform must download code, initialize a container, and boot the runtime.",
+        "domains": [
+          "it/infrastructure/cloud"
         ]
       }
     ],
@@ -1483,6 +1607,21 @@
         "label": "Image",
         "qualifier": "(Container)",
         "summary": "An immutable, read-only package containing application binaries, libraries, configuration files, and metadata required to launch a container.",
+        "domains": [
+          "it/devops/containers"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Container registry",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "container-registry",
+        "label": "Container registry",
+        "summary": "A centralized storage and content delivery system for storing, managing, and distributing container images across development and production environments.",
         "domains": [
           "it/devops/containers"
         ]
@@ -2897,6 +3036,21 @@
     "autolink": true
   },
   {
+    "key": "Docker Compose",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "docker-compose",
+        "label": "Docker Compose",
+        "summary": "An orchestration utility that launches and connects groups of containerized application services using centralized declarative YAML specifications.",
+        "domains": [
+          "it/devops/containers"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
     "key": "Double-entry bookkeeping",
     "match": "any-case",
     "concepts": [
@@ -3594,6 +3748,37 @@
     "autolink": true
   },
   {
+    "key": "FinOps",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "finops",
+        "label": "FinOps",
+        "summary": "An operational cultural framework and discipline that brings financial accountability to the variable spend model of cloud computing.",
+        "domains": [
+          "it/infrastructure/cloud"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Firewall",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "firewall",
+        "label": "Firewall",
+        "summary": "A network security system that monitors and filters incoming and outgoing network traffic based on predetermined security rules.",
+        "domains": [
+          "it/infrastructure/networking",
+          "it/security/vulnerabilities"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
     "key": "Firmware",
     "match": "any-case",
     "concepts": [
@@ -3950,6 +4135,22 @@
     "autolink": true
   },
   {
+    "key": "Helm",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "helm",
+        "label": "Helm",
+        "qualifier": "(Kubernetes)",
+        "summary": "The dedicated package manager for Kubernetes that streamlines defining, installing, and upgrading complex container applications using parameterized charts.",
+        "domains": [
+          "it/devops/containers"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
     "key": "Hotfix",
     "match": "any-case",
     "concepts": [
@@ -4010,6 +4211,21 @@
     "autolink": true
   },
   {
+    "key": "Hybrid cloud",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "hybrid-cloud",
+        "label": "Hybrid cloud",
+        "summary": "An IT infrastructure design connecting private on-premises data centers with public cloud environments to enable workload and data portability.",
+        "domains": [
+          "it/infrastructure/cloud"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
     "key": "Hyperparameter",
     "match": "any-case",
     "concepts": [
@@ -4019,6 +4235,36 @@
         "summary": "An external configuration setting specified prior to training that governs how the model architecture is structured and optimized.",
         "domains": [
           "it/ai-ml/foundations"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Infrastructure as a Service (IaaS)",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "iaas",
+        "label": "Infrastructure as a Service (IaaS)",
+        "summary": "A cloud computing model where vendors deliver on-demand fundamental compute, network, and storage resources over the internet.",
+        "domains": [
+          "it/infrastructure/cloud"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "IaaS",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "iaas",
+        "label": "Infrastructure as a Service (IaaS)",
+        "summary": "A cloud computing model where vendors deliver on-demand fundamental compute, network, and storage resources over the internet.",
+        "domains": [
+          "it/infrastructure/cloud"
         ]
       }
     ],
@@ -4541,6 +4787,21 @@
         "summary": "A multi-layered middleware software suite that provides connectivity, fleet device management, data ingestion, and application integration for IoT deployments.",
         "domains": [
           "iot/edge-cloud"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "IP address",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "ip-address",
+        "label": "IP address",
+        "summary": "A unique numerical identifier assigned to each device connected to a computer network utilizing the Internet Protocol for communication.",
+        "domains": [
+          "it/infrastructure/networking"
         ]
       }
     ],
@@ -5936,6 +6197,21 @@
     "autolink": true
   },
   {
+    "key": "Multi-cloud",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "multi-cloud",
+        "label": "Multi-cloud",
+        "summary": "An architectural strategy utilizing cloud services from multiple independent public cloud vendors within a single organization.",
+        "domains": [
+          "it/infrastructure/cloud"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
     "key": "Mutual fund",
     "match": "any-case",
     "concepts": [
@@ -6011,6 +6287,36 @@
     "autolink": true
   },
   {
+    "key": "Network Address Translation (NAT)",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "nat",
+        "label": "Network Address Translation (NAT)",
+        "summary": "A networking method that remaps an IP address space into another by modifying network address information in the IP header of packets in transit.",
+        "domains": [
+          "it/infrastructure/networking"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "NAT",
+    "match": "exact-case",
+    "concepts": [
+      {
+        "id": "nat",
+        "label": "Network Address Translation (NAT)",
+        "summary": "A networking method that remaps an IP address space into another by modifying network address information in the IP header of packets in transit.",
+        "domains": [
+          "it/infrastructure/networking"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
     "key": "NB-IoT",
     "match": "any-case",
     "concepts": [
@@ -6024,6 +6330,22 @@
       }
     ],
     "autolink": true
+  },
+  {
+    "key": "Port",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "network-port",
+        "label": "Port",
+        "qualifier": "(Networking)",
+        "summary": "A 16-bit unsigned number in transport layer headers that identifies a specific application service or communication endpoint on a host.",
+        "domains": [
+          "it/infrastructure/networking"
+        ]
+      }
+    ],
+    "autolink": false
   },
   {
     "key": "Neural network",
@@ -6211,6 +6533,21 @@
         "summary": "A computer vision technique that simultaneously identifies the semantic class and spatial coordinates of multiple individual objects within an image.",
         "domains": [
           "it/ai-ml/computer-vision"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Object storage",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "object-storage",
+        "label": "Object storage",
+        "summary": "A scalable storage architecture that manages data as distinct objects paired with rich metadata and a unique identifier in a flat address space accessed via HTTP APIs.",
+        "domains": [
+          "it/infrastructure/cloud"
         ]
       }
     ],
@@ -6526,6 +6863,36 @@
         "summary": "A modeling pathology where an algorithm learns idiosyncratic noise in training samples, severely impairing its ability to generalize to unseen data.",
         "domains": [
           "it/ai-ml/foundations"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Platform as a Service (PaaS)",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "paas",
+        "label": "Platform as a Service (PaaS)",
+        "summary": "A cloud delivery model providing a managed execution environment and tooling for developers to deploy applications without operating system administration.",
+        "domains": [
+          "it/infrastructure/cloud"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "PaaS",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "paas",
+        "label": "Platform as a Service (PaaS)",
+        "summary": "A cloud delivery model providing a managed execution environment and tooling for developers to deploy applications without operating system administration.",
+        "domains": [
+          "it/infrastructure/cloud"
         ]
       }
     ],
@@ -7353,6 +7720,21 @@
     "autolink": true
   },
   {
+    "key": "Proxy server",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "proxy-server",
+        "label": "Proxy server",
+        "summary": "An intermediary server application that acts as an agent for clients seeking resources from other destination servers.",
+        "domains": [
+          "it/infrastructure/networking"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
     "key": "Pull request (PR)",
     "match": "any-case",
     "concepts": [
@@ -7926,6 +8308,38 @@
     "autolink": true
   },
   {
+    "key": "Software as a Service (SaaS)",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "saas",
+        "label": "Software as a Service (SaaS)",
+        "summary": "A cloud distribution model where complete software applications are hosted by a provider and accessed by consumers over the internet.",
+        "domains": [
+          "it/infrastructure/cloud",
+          "it/business-systems/enterprise-apps"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "SaaS",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "saas",
+        "label": "Software as a Service (SaaS)",
+        "summary": "A cloud distribution model where complete software applications are hosted by a provider and accessed by consumers over the internet.",
+        "domains": [
+          "it/infrastructure/cloud",
+          "it/business-systems/enterprise-apps"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
     "key": "Sales lead",
     "match": "any-case",
     "concepts": [
@@ -8306,6 +8720,21 @@
         "summary": "A cloud computing execution model where the cloud provider dynamically manages server infrastructure and charges only for resource consumption during code execution.",
         "domains": [
           "it/infrastructure/cloud"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Service discovery",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "service-discovery",
+        "label": "Service discovery",
+        "summary": "The automatic detection and location resolution of microservices, instances, and endpoints on a network through a centralized or distributed registry.",
+        "domains": [
+          "it/infrastructure/networking"
         ]
       }
     ],
@@ -8699,6 +9128,21 @@
     "autolink": true
   },
   {
+    "key": "Spot instance",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "spot-instance",
+        "label": "Spot instance",
+        "summary": "An unused cloud computing instance available at steep discounts compared to on-demand rates, subject to reclamation when the provider needs capacity.",
+        "domains": [
+          "it/infrastructure/cloud"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
     "key": "Sprint",
     "match": "any-case",
     "concepts": [
@@ -8814,6 +9258,38 @@
         "summary": "A web security vulnerability that allows an attacker to interfere with backend database queries by injecting malicious SQL statements into input fields.",
         "domains": [
           "it/security/vulnerabilities"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Secure Shell (SSH)",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "ssh",
+        "label": "Secure Shell (SSH)",
+        "summary": "A cryptographic network protocol for operating network services securely over an unsecured network, most commonly used for remote command-line login.",
+        "domains": [
+          "it/infrastructure/networking",
+          "it/security/authentication"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "SSH",
+    "match": "exact-case",
+    "concepts": [
+      {
+        "id": "ssh",
+        "label": "Secure Shell (SSH)",
+        "summary": "A cryptographic network protocol for operating network services securely over an unsecured network, most commonly used for remote command-line login.",
+        "domains": [
+          "it/infrastructure/networking",
+          "it/security/authentication"
         ]
       }
     ],
@@ -9154,6 +9630,21 @@
     "autolink": true
   },
   {
+    "key": "Subnet",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "subnet",
+        "label": "Subnet",
+        "summary": "A logical subdivision of an IP network designed to segment broadcast domains, improve routing efficiency, and enforce security boundaries.",
+        "domains": [
+          "it/infrastructure/networking"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
     "key": "System prompt",
     "match": "any-case",
     "concepts": [
@@ -9163,6 +9654,36 @@
         "summary": "Instructions placed before the conversation that set the model’s role, rules and style for every later message.",
         "domains": [
           "it/ai-ml/llm-agents"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Transmission Control Protocol (TCP)",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "tcp",
+        "label": "Transmission Control Protocol (TCP)",
+        "summary": "A connection-oriented transport layer protocol that provides reliable, ordered, and error-checked delivery of a stream of data packets.",
+        "domains": [
+          "it/infrastructure/networking"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "TCP",
+    "match": "exact-case",
+    "concepts": [
+      {
+        "id": "tcp",
+        "label": "Transmission Control Protocol (TCP)",
+        "summary": "A connection-oriented transport layer protocol that provides reliable, ordered, and error-checked delivery of a stream of data packets.",
+        "domains": [
+          "it/infrastructure/networking"
         ]
       }
     ],
@@ -9284,6 +9805,21 @@
         "summary": "A fixed-term bank deposit that pays a predetermined rate of interest until a specified maturity date, imposing penalties for early withdrawal.",
         "domains": [
           "finance/banking/deposits"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Terraform",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "terraform",
+        "label": "Terraform",
+        "summary": "An open-source infrastructure as code software tool that enables operators to provision and version multi-cloud data center resources using declarative configuration files.",
+        "domains": [
+          "it/devops/iac"
         ]
       }
     ],
@@ -9614,6 +10150,36 @@
         "summary": "The art, craft, and technique of selecting and arranging typefaces, font weights, kerning, and spacing to render written language legible, readable, and visually engaging.",
         "domains": [
           "media/content-production/visual-design"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "User Datagram Protocol (UDP)",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "udp",
+        "label": "User Datagram Protocol (UDP)",
+        "summary": "A connectionless transport layer protocol that transmits data packets without prior connection handshakes or delivery guarantees, prioritizing speed over reliability.",
+        "domains": [
+          "it/infrastructure/networking"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "UDP",
+    "match": "exact-case",
+    "concepts": [
+      {
+        "id": "udp",
+        "label": "User Datagram Protocol (UDP)",
+        "summary": "A connectionless transport layer protocol that transmits data packets without prior connection handshakes or delivery guarantees, prioritizing speed over reliability.",
+        "domains": [
+          "it/infrastructure/networking"
         ]
       }
     ],
@@ -10056,6 +10622,66 @@
         "summary": "A statistical measure of the dispersion of returns for a given security or market index over a specified timeframe.",
         "domains": [
           "finance/investing/portfolio-risk"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Virtual Private Cloud (VPC)",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "vpc",
+        "label": "Virtual Private Cloud (VPC)",
+        "summary": "A logically isolated virtual network dedicated to a cloud account, providing complete control over IP address ranges, subnets, and routing tables.",
+        "domains": [
+          "it/infrastructure/cloud"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "VPC",
+    "match": "exact-case",
+    "concepts": [
+      {
+        "id": "vpc",
+        "label": "Virtual Private Cloud (VPC)",
+        "summary": "A logically isolated virtual network dedicated to a cloud account, providing complete control over IP address ranges, subnets, and routing tables.",
+        "domains": [
+          "it/infrastructure/cloud"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Virtual Private Network (VPN)",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "vpn",
+        "label": "Virtual Private Network (VPN)",
+        "summary": "An encrypted communication channel constructed over a public network infrastructure to provide secure remote access and private site-to-site connectivity.",
+        "domains": [
+          "it/infrastructure/networking"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "VPN",
+    "match": "exact-case",
+    "concepts": [
+      {
+        "id": "vpn",
+        "label": "Virtual Private Network (VPN)",
+        "summary": "An encrypted communication channel constructed over a public network infrastructure to provide secure remote access and private site-to-site connectivity.",
+        "domains": [
+          "it/infrastructure/networking"
         ]
       }
     ],

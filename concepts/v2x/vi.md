@@ -23,17 +23,13 @@ translation: translated
 translated_from: en
 translated_by: ai
 translated_at: '2026-10-17'
-label_evidence:
-  - ref: vietnamnet
-    locator: https://vietnamnet.vn/cong-nghe-v2x-la-gi-va-vai-tro-trong-giao-thong-thong-minh-2201452.html
-    accessed: '2026-10-17'
 ---
 
 ## Giải thích dễ hiểu
 Giống như việc trang bị cho ô tô một giác quan thứ sáu không dây: giúp chiếc xe phát hiện và tự động kích hoạt phanh khẩn cấp khi có một chiếc xe tải khuất sau bức tường sắp vượt đèn đỏ lao tới, hoặc báo động khi có người đi bộ chuẩn bị bước qua đường từ sau đuôi xe buýt.
 
 ## Chi tiết
-Được chuẩn hóa bởi tổ chức 3GPP dưới tên gọi C-V2X và tham chiếu trong khuyến nghị ITU-T Y.4471, V2X phân chia thành bốn nhóm kết nối chính: Xe với xe (V2V) để chống đâm va, Xe với hạ tầng (V2I) để đồng bộ nhịp đèn tín hiệu và biển báo, Xe với người đi bộ (V2P) để bảo vệ người đi đường, và Xe với mạng viễn thông (V2N) để cập nhật tình trạng giao thông. Công nghệ khai thác dải tần chuyên dụng 5,9 GHz thông qua kênh liên kết trực tiếp Sidelink PC5, cho phép các xe tự phát bản tin an toàn mười lần mỗi giây với độ trễ dưới mười mili giây mà không cần đi qua trạm thu phát sóng di động của nhà mạng.
+Được chuẩn hóa bởi tổ chức 3GPP dưới tên gọi C-V2X, V2X phân chia thành bốn nhóm kết nối chính: Xe với xe (V2V) để chống đâm va, Xe với hạ tầng (V2I) để đồng bộ nhịp đèn tín hiệu và biển báo, Xe với người đi bộ (V2P) để bảo vệ người đi đường, và Xe với mạng viễn thông (V2N) để cập nhật tình trạng giao thông. Công nghệ khai thác dải tần chuyên dụng 5,9 GHz thông qua kênh liên kết trực tiếp Sidelink PC5, cho phép các xe tự phát bản tin an toàn mười lần mỗi giây với độ trễ dưới mười mili giây mà không cần đi qua trạm thu phát sóng di động của nhà mạng.
 
 ## Định nghĩa chuyên ngành
 Hệ thống tiêu chuẩn truyền thông vô tuyến ô tô tạo điều kiện cho việc trao đổi dữ liệu phản xạ tức thì giữa phương tiện và môi trường ngoại cảnh phục vụ việc lái xe hợp tác, nhận thức môi trường và phòng chống tai nạn.

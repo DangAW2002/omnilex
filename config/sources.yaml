@@ -1345,3 +1345,12 @@ vietnamnet:
   reuse: paraphrase-only
   domains: [iot/applications, it]
   verified_license_at: "2026-10-17"
+
+ocd-vn:
+  title: OCD Blog
+  publisher: Công ty Tư vấn Quản lý OCD
+  url: https://ocd.vn
+  type: community
+  tier: D
+  languages: [vi]
+  reuse: cite-only

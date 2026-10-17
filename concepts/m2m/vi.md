@@ -21,10 +21,6 @@ translation: translated
 translated_from: en
 translated_by: ai
 translated_at: '2026-10-17'
-label_evidence:
-  - ref: wikipedia-vi
-    locator: https://vi.wikipedia.org/wiki/M2M
-    accessed: '2026-10-17'
 ---
 
 ## Giải thích dễ hiểu

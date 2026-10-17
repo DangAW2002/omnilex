@@ -19,8 +19,8 @@ translated_from: en
 translated_by: ai
 translated_at: '2026-10-17'
 label_evidence:
-  - ref: vietnamnet
-    locator: https://vietnamnet.vn/toa-nha-thong-minh-xu-huong-tat-yeu-cua-bat-dong-san-hien-dai-2194821.html
+  - ref: ocd-vn
+    locator: https://ocd.vn/toa-nha-thong-minh-va-nhung-cong-nghe-ung-dung/
     accessed: '2026-10-17'
 ---
 

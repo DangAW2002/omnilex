@@ -1,10 +1,7 @@
 ---
-label: "Viễn thông tin học"
+label: "Telematics"
 qualifier: "(Giao thông)"
-aliases:
-  - "Telematics"
-  - "Viễn tin học"
-  - "Viễn thông tin học giao thông"
+aliases: []
 loanwords:
   - "telematics"
 plain_descriptions:
@@ -20,17 +17,13 @@ translation: translated
 translated_from: en
 translated_by: ai
 translated_at: '2026-10-17'
-label_evidence:
-  - ref: vietnamnet
-    locator: https://vietnamnet.vn/cong-nghe-telematics-la-gi-va-ung-dung-trong-nganh-xe-2189381.html
-    accessed: '2026-10-17'
 ---
 
 ## Giải thích dễ hiểu
 Giống như một chiếc hộp đen máy bay được gắn lên xe ô tô tải: liên tục theo dõi xem tài xế chạy nhanh hay chậm, có phanh gấp hay không, xe còn bao nhiêu xăng và máy có bị quá nhiệt hay không, rồi tự động gửi toàn bộ thông tin về văn phòng cho điều phối viên.
 
 ## Chi tiết
-Viễn thông tin học trong giao thông (Telematics) là sự kết hợp hoàn hảo giữa công nghệ định vị vệ tinh GPS, kết nối di động viễn thông và máy tính trên xe. Hộp điều khiển telematics (TCU) cắm trực tiếp vào cổng chẩn đoán OBD-II của xe con hoặc chuẩn J1939 trên xe tải nặng để trích xuất dữ liệu từ mạng CAN bus nội bộ. Cảm biến gia tốc con quay hồi chuyển ba trục tích hợp sẵn trên thiết bị đo lường chính xác các cú phanh cháy đường, tăng tốc đột ngột hoặc cua gấp. Dữ liệu này được truyền về máy chủ để chấm điểm an toàn tài xế, tính phí bảo hiểm theo hành vi lái và nhắc lịch bảo dưỡng động cơ.
+Telematics trong giao thông là sự kết hợp hoàn hảo giữa công nghệ định vị vệ tinh GPS, kết nối di động viễn thông và máy tính trên xe. Hộp điều khiển telematics (TCU) cắm trực tiếp vào cổng chẩn đoán OBD-II của xe con hoặc chuẩn J1939 trên xe tải nặng để trích xuất dữ liệu từ mạng CAN bus nội bộ. Cảm biến gia tốc con quay hồi chuyển ba trục tích hợp sẵn trên thiết bị đo lường chính xác các cú phanh cháy đường, tăng tốc đột ngột hoặc cua gấp. Dữ liệu này được truyền về máy chủ để chấm điểm an toàn tài xế, tính phí bảo hiểm theo hành vi lái và nhắc lịch bảo dưỡng động cơ.
 
 ## Định nghĩa chuyên ngành
 Ngành khoa học ứng dụng kết hợp giữa truyền thông không dây diện rộng và hệ thống máy tính nhúng trên phương tiện giao thông phục vụ việc truyền nhận dữ liệu chẩn đoán, giám sát lộ trình và quản lý vận hành.

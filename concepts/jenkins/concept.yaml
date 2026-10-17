@@ -1,0 +1,12 @@
+id: jenkins
+domains:
+  - it/devops/ci-cd
+level: 1
+relations:
+  prerequisites: []
+  confusable: []
+  related: []
+status: draft
+provenance:
+  drafted_by: ai
+sources: []

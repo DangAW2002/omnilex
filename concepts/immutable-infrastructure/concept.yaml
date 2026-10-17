@@ -1,0 +1,12 @@
+id: immutable-infrastructure
+domains:
+  - it/devops/iac
+level: 1
+relations:
+  prerequisites: []
+  confusable: []
+  related: []
+status: draft
+provenance:
+  drafted_by: ai
+sources: []

@@ -44,6 +44,26 @@
     "status": "draft"
   },
   {
+    "id": "actuator",
+    "label": "Cơ cấu chấp hành",
+    "aliases": [
+      "cơ cấu tác động"
+    ],
+    "loanwords": [
+      "actuator"
+    ],
+    "plain_descriptions": [
+      "bộ phận biến lệnh điều khiển điện tử thành hành động vật lý như đóng van hay quay motor",
+      "linh kiện tạo ra chuyển động cơ học từ tín hiệu điều khiển"
+    ],
+    "summary": "Thiết bị đầu ra có chức năng chuyển đổi các tín hiệu điều khiển điện tử thành chuyển động cơ học, lực kéo hoặc tác động vật lý.",
+    "domains": [
+      "iot/devices-sensors"
+    ],
+    "level": 1,
+    "status": "draft"
+  },
+  {
     "id": "ad-impression",
     "label": "Lượt hiển thị",
     "qualifier": "(Quảng cáo)",
@@ -278,6 +298,28 @@
     "summary": "Số lượng mẫu huấn luyện được xử lý đồng thời trong một bước lặp trước khi các tham số của mô hình được cập nhật.",
     "domains": [
       "it/ai-ml/foundations"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
+    "id": "ble",
+    "label": "Bluetooth Low Energy (BLE)",
+    "aliases": [
+      "BLE",
+      "Bluetooth năng lượng thấp"
+    ],
+    "loanwords": [
+      "bluetooth low energy",
+      "ble"
+    ],
+    "plain_descriptions": [
+      "công nghệ vô tuyến tầm ngắn tiêu thụ cực ít pin dùng cho vòng đeo tay và phụ kiện",
+      "chuẩn bluetooth tiết kiệm năng lượng kết nối cảm biến với điện thoại ở cự ly gần"
+    ],
+    "summary": "Công nghệ mạng cá nhân không dây cự ly ngắn được thiết kế để truyền tải dữ liệu với mức tiêu thụ điện năng cực thấp.",
+    "domains": [
+      "iot/connectivity-protocols"
     ],
     "level": 2,
     "status": "draft"
@@ -621,6 +663,27 @@
     "summary": "Chuỗi các giai đoạn thực thi tự động tuần tự thực hiện biên dịch, kiểm thử và đóng gói các bản cập nhật phần mềm.",
     "domains": [
       "it/devops/ci-cd"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
+    "id": "coap",
+    "label": "Constrained Application Protocol (CoAP)",
+    "aliases": [
+      "CoAP"
+    ],
+    "loanwords": [
+      "constrained application protocol",
+      "coap"
+    ],
+    "plain_descriptions": [
+      "giao thức truyền web tương tự http nhưng chạy trên udp siêu nhẹ cho vi mạch nhỏ",
+      "chuẩn giao tiếp dạng rest thu nhỏ dành riêng cho các mạng vô tuyến băng thông hẹp"
+    ],
+    "summary": "Giao thức truyền tải web dạng RESTful chạy trên nền UDP do IETF chuẩn hóa, chuyên dùng cho các vi điều khiển bị giới hạn bộ nhớ và mạng vô tuyến hay mất gói.",
+    "domains": [
+      "iot/connectivity-protocols"
     ],
     "level": 2,
     "status": "draft"
@@ -1320,6 +1383,47 @@
     "status": "draft"
   },
   {
+    "id": "device-provisioning",
+    "label": "Device provisioning",
+    "aliases": [
+      "Khởi tạo thiết bị"
+    ],
+    "loanwords": [
+      "device provisioning"
+    ],
+    "plain_descriptions": [
+      "quy trình tự động đăng ký cấp phát chứng thư số và thiết lập cấu hình ban đầu cho thiết bị",
+      "bước gia nhập và xác thực danh tính của máy móc mới vào hệ thống quản lý tập trung"
+    ],
+    "summary": "Quy trình khởi tạo tự động nhằm xác thực danh tính, đăng ký và thiết lập cấu hình vận hành ban đầu cho thiết bị phần cứng mới kết nối vào nền tảng đám mây.",
+    "domains": [
+      "iot/edge-cloud"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
+    "id": "digital-twin",
+    "label": "Bản sao kỹ thuật số",
+    "aliases": [
+      "Bản sao số",
+      "Digital twin"
+    ],
+    "loanwords": [
+      "digital twin"
+    ],
+    "plain_descriptions": [
+      "mô hình ảo trên máy tính mô phỏng chính xác trạng thái thực tế của máy móc qua dữ liệu cảm biến",
+      "bản sao phần mềm sống động phản ánh hành vi và vòng đời của thiết bị ngoài đời thực"
+    ],
+    "summary": "Mô hình ảo sống động mô phỏng chính xác trạng thái, hành vi và vòng đời của một đối tượng hoặc quy trình vật lý thông qua dòng dữ liệu cảm biến thời gian thực.",
+    "domains": [
+      "iot/industrial"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
     "id": "distributed-tracing",
     "label": "Distributed tracing",
     "aliases": [
@@ -1465,6 +1569,26 @@
     "summary": "Tình huống vận hành hoặc dữ liệu đầu vào đặc biệt chỉ xuất hiện ở các giới hạn cực tiểu hoặc cực đại của tham số, kiểm tra độ bền vững ở các ranh giới của hệ thống.",
     "domains": [
       "it/software-engineering/testing"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
+    "id": "edge-computing",
+    "label": "Edge computing",
+    "aliases": [
+      "Điện toán biên"
+    ],
+    "loanwords": [
+      "edge computing"
+    ],
+    "plain_descriptions": [
+      "mô hình xử lý và phân tích dữ liệu ngay tại chỗ thay vì chuyển hết về trung tâm dữ liệu",
+      "phương pháp tính toán đặt máy chủ xử lý tác vụ sát nguồn phát sinh dữ liệu của thiết bị"
+    ],
+    "summary": "Mô hình tính toán phân tán đưa các tác vụ xử lý tính toán và lưu trữ dữ liệu về gần sát vị trí vật lý nơi thông tin được thu thập nhằm tối ưu độ trễ.",
+    "domains": [
+      "iot/edge-cloud"
     ],
     "level": 2,
     "status": "draft"
@@ -1760,6 +1884,26 @@
       "it/ai-ml/mlops"
     ],
     "level": 2,
+    "status": "draft"
+  },
+  {
+    "id": "firmware",
+    "label": "Firmware",
+    "aliases": [
+      "Phần mềm nhúng"
+    ],
+    "loanwords": [
+      "firmware"
+    ],
+    "plain_descriptions": [
+      "chương trình cơ sở được nạp thẳng vào bộ nhớ phần cứng để máy vận hành",
+      "phần mềm cấp thấp điều khiển trực tiếp các linh kiện của thiết bị điện tử"
+    ],
+    "summary": "Phần mềm cấp thấp được nạp cố định vào bộ nhớ bất biến của thiết bị, cung cấp các chỉ lệnh nền tảng giúp phần cứng vận hành và tương tác.",
+    "domains": [
+      "iot/devices-sensors"
+    ],
+    "level": 1,
     "status": "draft"
   },
   {
@@ -2308,6 +2452,49 @@
     "status": "reviewed"
   },
   {
+    "id": "iot-gateway",
+    "label": "Gateway",
+    "qualifier": "(IoT)",
+    "aliases": [
+      "IoT gateway",
+      "Cổng kết nối IoT"
+    ],
+    "loanwords": [
+      "gateway",
+      "iot gateway"
+    ],
+    "plain_descriptions": [
+      "thiết bị trung gian thu thập dữ liệu từ cảm biến địa phương rồi chuyển tiếp lên đám mây",
+      "hộp chuyển đổi kết nối chuyển ngữ các giao thức vô tuyến nội bộ sang mạng internet"
+    ],
+    "summary": "Thiết bị phần cứng hoặc phần mềm trung gian có nhiệm vụ thu thập dữ liệu từ mạng cảm biến trường, chuyển đổi giao thức và định tuyến an toàn lên đám mây.",
+    "domains": [
+      "iot/edge-cloud"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
+    "id": "iot-platform",
+    "label": "IoT platform",
+    "aliases": [
+      "Nền tảng IoT"
+    ],
+    "loanwords": [
+      "iot platform"
+    ],
+    "plain_descriptions": [
+      "hệ thống phần mềm trung tâm kết nối quản lý từ xa và gom dữ liệu của hàng triệu thiết bị",
+      "bộ công cụ đám mây điều phối an ninh liên lạc và phân tích số liệu cho mạng lưới cảm biến"
+    ],
+    "summary": "Hệ thống phần mềm trung gian đa tầng cung cấp hạ tầng kết nối, quản lý vòng đời thiết bị, tiếp nhận dữ liệu đo đạc và tích hợp ứng dụng nghiệp vụ cho các giải pháp IoT.",
+    "domains": [
+      "iot/edge-cloud"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
     "id": "jailbreak",
     "label": "Jailbreak",
     "qualifier": "(AI)",
@@ -2663,6 +2850,24 @@
     "status": "draft"
   },
   {
+    "id": "lorawan",
+    "label": "LoRaWAN",
+    "aliases": [],
+    "loanwords": [
+      "lorawan"
+    ],
+    "plain_descriptions": [
+      "công nghệ sóng vô tuyến truyền dữ liệu xa hàng chục cây số mà không tốn pin",
+      "chuẩn mạng diện rộng năng lượng thấp kết nối cảm biến ngoài trời không cần sim 4g"
+    ],
+    "summary": "Giao thức mạng diện rộng công suất thấp (LPWAN) cho phép các thiết bị cảm biến chạy pin truyền dữ liệu tầm xa trên các dải tần vô tuyến không cần cấp phép.",
+    "domains": [
+      "iot/connectivity-protocols"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
     "id": "loss-function",
     "label": "Hàm mất mát",
     "aliases": [
@@ -2809,6 +3014,28 @@
     "status": "draft"
   },
   {
+    "id": "mesh-network",
+    "label": "Mesh network",
+    "aliases": [
+      "Mạng lưới",
+      "Mạng mesh"
+    ],
+    "loanwords": [
+      "mesh network",
+      "mạng mesh"
+    ],
+    "plain_descriptions": [
+      "cấu trúc mạng mà các thiết bị tự bắt sóng và truyền tiếp dữ liệu vòng qua nhau",
+      "mô hình mạng không dây phân tán nơi mỗi nút vừa là điểm nhận vừa là trạm chuyển tiếp"
+    ],
+    "summary": "Cấu trúc mạng phân tán trong đó các thiết bị liên kết đa hướng với nhau để tự động chuyển tiếp dữ liệu qua nhiều chặng mà không lệ thuộc vào một trạm phát trung tâm duy nhất.",
+    "domains": [
+      "iot/connectivity-protocols"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
     "id": "message-queue",
     "label": "Message queue",
     "aliases": [
@@ -2876,6 +3103,26 @@
     "status": "draft"
   },
   {
+    "id": "microcontroller",
+    "label": "Vi điều khiển",
+    "aliases": [
+      "MCU"
+    ],
+    "loanwords": [
+      "microcontroller"
+    ],
+    "plain_descriptions": [
+      "con chip nhỏ tích hợp vi xử lý bộ nhớ và chân giao tiếp để điều khiển thiết bị",
+      "vi mạch máy tính thu nhỏ chuyên dùng cho các tác vụ nhúng chuyên biệt"
+    ],
+    "summary": "Vi mạch tích hợp chứa lõi vi xử lý, bộ nhớ và các cổng ngoại vi lập trình được, chuyên dùng để điều khiển các ứng dụng nhúng chuyên biệt.",
+    "domains": [
+      "iot/devices-sensors"
+    ],
+    "level": 1,
+    "status": "draft"
+  },
+  {
     "id": "microservices",
     "label": "Microservices",
     "aliases": [
@@ -2934,6 +3181,24 @@
     "summary": "Đối tượng giả lập mô phỏng hành vi của thành phần thật một cách có kiểm soát, giúp xác minh các lệnh gọi phương thức và tương tác khi kiểm thử độc lập.",
     "domains": [
       "it/software-engineering/testing"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
+    "id": "modbus",
+    "label": "Modbus",
+    "aliases": [],
+    "loanwords": [
+      "modbus"
+    ],
+    "plain_descriptions": [
+      "giao thức công nghiệp kinh điển giao tiếp giữa thiết bị chủ và thiết bị tớ qua thanh ghi số",
+      "chuẩn truyền thông nối tiếp và tcp đơn giản phổ biến nhất trong hệ thống tự động hóa"
+    ],
+    "summary": "Giao thức truyền thông công nghiệp theo mô hình chủ - tớ (master/slave) được sử dụng rộng rãi để đọc và ghi các bảng thanh ghi dữ liệu qua đường truyền nối tiếp hoặc mạng Ethernet.",
+    "domains": [
+      "iot/industrial"
     ],
     "level": 2,
     "status": "draft"
@@ -3045,6 +3310,24 @@
     "status": "draft"
   },
   {
+    "id": "mqtt",
+    "label": "MQTT",
+    "aliases": [],
+    "loanwords": [
+      "mqtt"
+    ],
+    "plain_descriptions": [
+      "giao thức nhắn tin siêu nhẹ trung chuyển dữ liệu giữa cảm biến và máy chủ qua broker",
+      "chuẩn truyền tin theo cơ chế xuất bản và đăng ký qua mạng tcp cho thiết bị iot"
+    ],
+    "summary": "Giao thức truyền thông điệp gọn nhẹ theo mô hình xuất bản - đăng ký trên nền TCP, được tối ưu cho các thiết bị phần cứng hạn chế và mạng có độ trễ cao.",
+    "domains": [
+      "iot/connectivity-protocols"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
     "id": "mutual-fund",
     "label": "Quỹ tương hỗ",
     "aliases": [
@@ -3086,6 +3369,24 @@
       "product/product-management"
     ],
     "level": 1,
+    "status": "draft"
+  },
+  {
+    "id": "nb-iot",
+    "label": "NB-IoT",
+    "aliases": [],
+    "loanwords": [
+      "nb-iot"
+    ],
+    "plain_descriptions": [
+      "chuẩn sóng di động viễn thông băng hẹp chuyên dùng cho đồng hồ nước và điện thông minh",
+      "mạng vô tuyến của nhà mạng tối ưu cho thiết bị iot gửi lượng tin nhỏ xuyên hầm sâu"
+    ],
+    "summary": "Công nghệ mạng vô tuyến di động băng hẹp do 3GPP chuẩn hóa, tối ưu cho các kết nối vạn vật mật độ cao trên hạ tầng phổ tần số viễn thông được cấp phép.",
+    "domains": [
+      "iot/connectivity-protocols"
+    ],
+    "level": 2,
     "status": "draft"
   },
   {
@@ -3257,6 +3558,24 @@
     "status": "draft"
   },
   {
+    "id": "opc-ua",
+    "label": "OPC UA",
+    "aliases": [],
+    "loanwords": [
+      "opc ua"
+    ],
+    "plain_descriptions": [
+      "chuẩn giao tiếp công nghiệp hiện đại bảo mật và đa nền tảng kết nối máy móc của nhiều hãng",
+      "kiến trúc truyền thông độc lập hệ điều hành giúp các thiết bị tự động hóa hiểu ngữ nghĩa của nhau"
+    ],
+    "summary": "Kiến trúc truyền thông công nghiệp đa nền tảng và hướng dịch vụ, cung cấp khả năng mô hình hóa thông tin ngữ nghĩa phong phú cùng cơ chế bảo mật mã hóa toàn diện.",
+    "domains": [
+      "iot/industrial"
+    ],
+    "level": 3,
+    "status": "draft"
+  },
+  {
     "id": "organic-traffic",
     "label": "Organic traffic",
     "aliases": [
@@ -3293,6 +3612,28 @@
     "summary": "Kỹ thuật lập trình tạo cầu nối chuyển đổi giữa các đối tượng trong mã nguồn hướng đối tượng và các bảng trong cơ sở dữ liệu quan hệ.",
     "domains": [
       "it/web/backend"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
+    "id": "ota-update",
+    "label": "Over-the-air update (OTA)",
+    "aliases": [
+      "OTA",
+      "Cập nhật OTA"
+    ],
+    "loanwords": [
+      "over-the-air update",
+      "ota"
+    ],
+    "plain_descriptions": [
+      "cập nhật phần mềm và vá lỗi cho thiết bị điện tử từ xa qua sóng vô tuyến",
+      "nâng cấp chương trình nhúng cho máy móc tự động qua mạng internet không cần cắm dây"
+    ],
+    "summary": "Phương thức phân phối và cài đặt các bản cập nhật phần mềm hoặc firmware từ xa qua mạng không dây mà không cần can thiệp vật lý.",
+    "domains": [
+      "iot/edge-cloud"
     ],
     "level": 2,
     "status": "draft"
@@ -3401,6 +3742,28 @@
     "status": "draft"
   },
   {
+    "id": "plc",
+    "label": "Programmable Logic Controller (PLC)",
+    "aliases": [
+      "PLC",
+      "Bộ điều khiển logic khả trình"
+    ],
+    "loanwords": [
+      "programmable logic controller",
+      "plc"
+    ],
+    "plain_descriptions": [
+      "máy tính công nghiệp chuyên dụng điều khiển dây chuyền máy móc tự động trong nhà máy",
+      "bộ điều khiển phần cứng kháng bụi rung chịu nhiệt thi hành các lệnh đóng ngắt tự động"
+    ],
+    "summary": "Máy tính kỹ thuật số công nghiệp chuyên dụng được thiết kế bền bỉ để thực thi các lệnh điều khiển logic tiền định thời gian thực cho dây chuyền sản xuất.",
+    "domains": [
+      "iot/industrial"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
     "id": "postmortem",
     "label": "Postmortem",
     "qualifier": "(CNTT)",
@@ -3441,6 +3804,27 @@
     "summary": "Tài liệu mô tả đầy đủ mục đích, đối tượng người dùng, yêu cầu chức năng và tiêu chuẩn đo lường thành công của một sản phẩm trước khi xây dựng.",
     "domains": [
       "product/product-management"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
+    "id": "predictive-maintenance",
+    "label": "Predictive maintenance",
+    "aliases": [
+      "Bảo trì dự đoán",
+      "Bảo trì tiên đoán"
+    ],
+    "loanwords": [
+      "predictive maintenance"
+    ],
+    "plain_descriptions": [
+      "phương pháp theo dõi dữ liệu máy móc để dự báo chính xác thời điểm hỏng hóc trước khi xảy ra",
+      "chiến lược bảo dưỡng thiết bị dựa trên đo lường độ hao mòn thực tế thay vì lịch định kỳ"
+    ],
+    "summary": "Chiến lược quản trị tài sản chủ động dựa trên dữ liệu cảm biến đo từ xa để phát hiện sớm dấu hiệu suy hao và dự báo thời điểm bảo dưỡng máy móc trước khi xảy ra sự cố hỏng hóc.",
+    "domains": [
+      "iot/industrial"
     ],
     "level": 2,
     "status": "draft"
@@ -3966,6 +4350,26 @@
     "status": "draft"
   },
   {
+    "id": "rtos",
+    "label": "Hệ điều hành thời gian thực",
+    "aliases": [
+      "RTOS"
+    ],
+    "loanwords": [
+      "rtos"
+    ],
+    "plain_descriptions": [
+      "hệ điều hành đảm bảo xử lý tác vụ trong khung thời gian chính xác tới từng phần nghìn giây",
+      "phần mềm nền tảng lập lịch định thời chuẩn xác cho các hệ thống nhúng quan trọng"
+    ],
+    "summary": "Hệ điều hành được thiết kế chuyên biệt để xử lý các tác vụ với cam kết tính tiền định về mặt thời gian và độ trễ tối thiểu.",
+    "domains": [
+      "iot/devices-sensors"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
     "id": "sales-lead",
     "label": "Lead",
     "qualifier": "(Marketing)",
@@ -4006,6 +4410,24 @@
       "finance/banking/deposits"
     ],
     "level": 1,
+    "status": "draft"
+  },
+  {
+    "id": "scada",
+    "label": "SCADA",
+    "aliases": [],
+    "loanwords": [
+      "scada"
+    ],
+    "plain_descriptions": [
+      "hệ thống điều khiển giám sát và thu thập dữ liệu trung tâm cho nhà máy hoặc lưới điện",
+      "phần mềm phòng điều hành hiển thị đồ họa toàn cảnh nhà máy và phát lệnh vận hành"
+    ],
+    "summary": "Kiến trúc hệ thống điều khiển công nghiệp thu thập dữ liệu thời gian thực từ các bộ điều khiển phân tán, hiển thị đồ họa trực quan và cho phép điều hành từ xa.",
+    "domains": [
+      "iot/industrial"
+    ],
+    "level": 2,
     "status": "draft"
   },
   {
@@ -4134,6 +4556,24 @@
     "summary": "Quy chuẩn đánh số phiên bản phần mềm theo định dạng ba chữ số (MAJOR.MINOR.PATCH) nhằm truyền tải mức độ ảnh hưởng và tính tương thích của bản phát hành.",
     "domains": [
       "it/software-engineering/practices"
+    ],
+    "level": 1,
+    "status": "draft"
+  },
+  {
+    "id": "sensor",
+    "label": "Cảm biến",
+    "aliases": [],
+    "loanwords": [
+      "sensor"
+    ],
+    "plain_descriptions": [
+      "bộ phận điện tử nhận biết thay đổi của môi trường như nhiệt độ hay chuyển động",
+      "linh kiện chuyển đổi hiện tượng vật lý thành tín hiệu điện"
+    ],
+    "summary": "Linh kiện phần cứng đầu vào có chức năng nhận biết các kích thích vật lý từ môi trường và chuyển đổi thành tín hiệu điện có thể đo lường.",
+    "domains": [
+      "iot/devices-sensors"
     ],
     "level": 1,
     "status": "draft"
@@ -4352,6 +4792,26 @@
       "it/devops/sre-operations"
     ],
     "level": 2,
+    "status": "draft"
+  },
+  {
+    "id": "smart-home",
+    "label": "Nhà thông minh",
+    "aliases": [
+      "smart home"
+    ],
+    "loanwords": [
+      "smart home"
+    ],
+    "plain_descriptions": [
+      "ngôi nhà gắn các thiết bị kết nối mạng tự động điều khiển đèn rèm và điều hòa",
+      "hệ thống thiết bị gia dụng liên kết với nhau để quản lý từ xa qua điện thoại"
+    ],
+    "summary": "Không gian nhà ở được tích hợp các thiết bị điện tử có khả năng kết nối mạng, cho phép tự động hóa sinh hoạt và quản lý tập trung từ xa.",
+    "domains": [
+      "iot/devices-sensors"
+    ],
+    "level": 1,
     "status": "draft"
   },
   {
@@ -4755,6 +5215,26 @@
     "summary": "Chi phí tiềm ẩn phát sinh trong tương lai khi đội ngũ lựa chọn giải pháp viết mã nhanh chóng, chắp vá thay vì xây dựng kiến trúc chuẩn mực.",
     "domains": [
       "it/software-engineering/practices"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
+    "id": "telemetry",
+    "label": "Telemetry",
+    "aliases": [
+      "Đo từ xa"
+    ],
+    "loanwords": [
+      "telemetry"
+    ],
+    "plain_descriptions": [
+      "quá trình tự động thu thập các chỉ số vận hành từ xa và gửi về trạm theo dõi trung tâm",
+      "dòng dữ liệu đo đạc liên tục từ các thiết bị hiện trường truyền về hệ thống điều hành"
+    ],
+    "summary": "Quá trình tự động đo lường, thu thập các chỉ số hoạt động từ những thiết bị ở xa và truyền tải dữ liệu về trung tâm giám sát.",
+    "domains": [
+      "iot/edge-cloud"
     ],
     "level": 2,
     "status": "draft"
@@ -5242,6 +5722,24 @@
       "it/security/authentication"
     ],
     "level": 3,
+    "status": "draft"
+  },
+  {
+    "id": "zigbee",
+    "label": "Zigbee",
+    "aliases": [],
+    "loanwords": [
+      "zigbee"
+    ],
+    "plain_descriptions": [
+      "chuẩn sóng không dây tạo mạng lưới liên kết các công tắc và cảm biến trong nhà",
+      "giao thức mạng lưới tiêu thụ ít điện năng truyền tiếp tín hiệu qua các bóng đèn thông minh"
+    ],
+    "summary": "Chuẩn mạng lưới không dây công suất thấp dựa trên nền tảng IEEE 802.15.4, chuyên dùng cho các thiết bị điều khiển và tự động hóa nhà ở.",
+    "domains": [
+      "iot/connectivity-protocols"
+    ],
+    "level": 2,
     "status": "draft"
   }
 ]

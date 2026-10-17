@@ -42,6 +42,22 @@
     "status": "draft"
   },
   {
+    "id": "actuator",
+    "label": "Actuator",
+    "aliases": [],
+    "loanwords": [],
+    "plain_descriptions": [
+      "mechanism that converts electrical control commands into physical motion",
+      "component that moves or controls a physical mechanism in response to a signal"
+    ],
+    "summary": "An output device that converts electrical control signals into physical movement, force, or mechanical displacement.",
+    "domains": [
+      "iot/devices-sensors"
+    ],
+    "level": 1,
+    "status": "draft"
+  },
+  {
     "id": "ad-impression",
     "label": "Impression",
     "qualifier": "(Ads)",
@@ -241,6 +257,26 @@
     "summary": "The number of training samples processed simultaneously in a single iteration before the model parameters are updated.",
     "domains": [
       "it/ai-ml/foundations"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
+    "id": "ble",
+    "label": "Bluetooth Low Energy (BLE)",
+    "aliases": [
+      "BLE"
+    ],
+    "loanwords": [
+      "bluetooth low energy"
+    ],
+    "plain_descriptions": [
+      "short range wireless personal area network technology designed for minimal battery drain",
+      "power efficient radio specification for exchanging sensor data with nearby devices"
+    ],
+    "summary": "A power-optimized wireless personal area network technology designed for short-range communication with minimal electrical energy consumption.",
+    "domains": [
+      "iot/connectivity-protocols"
     ],
     "level": 2,
     "status": "draft"
@@ -540,6 +576,26 @@
     "summary": "A defined sequential series of automated execution steps that compiles, tests, and packages application updates.",
     "domains": [
       "it/devops/ci-cd"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
+    "id": "coap",
+    "label": "Constrained Application Protocol (CoAP)",
+    "aliases": [
+      "CoAP"
+    ],
+    "loanwords": [
+      "constrained application protocol"
+    ],
+    "plain_descriptions": [
+      "web transfer protocol tailored for constrained nodes and low bandwidth networks using udp",
+      "lightweight http alternative designed to run restful requests on tiny microcontrollers"
+    ],
+    "summary": "A specialized RESTful web transfer protocol designed by the IETF for resource-constrained microcontrollers and low-power wireless networks using UDP.",
+    "domains": [
+      "iot/connectivity-protocols"
     ],
     "level": 2,
     "status": "draft"
@@ -1151,6 +1207,42 @@
     "status": "draft"
   },
   {
+    "id": "device-provisioning",
+    "label": "Device provisioning",
+    "aliases": [],
+    "loanwords": [
+      "device provisioning"
+    ],
+    "plain_descriptions": [
+      "process of enrolling configuring and registering a new hardware unit into a cloud service",
+      "initial automated onboarding workflow that assigns credentials and configurations to devices"
+    ],
+    "summary": "The automated onboarding process that authenticates, registers, and configures newly deployed hardware devices into a centralized cloud management platform.",
+    "domains": [
+      "iot/edge-cloud"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
+    "id": "digital-twin",
+    "label": "Digital twin",
+    "aliases": [],
+    "loanwords": [
+      "digital twin"
+    ],
+    "plain_descriptions": [
+      "virtual software counterpart of a physical asset updated with real time sensor metrics",
+      "computational model reflecting the live state behavior and lifecycle of real world machines"
+    ],
+    "summary": "A virtual representation that serves as the real-time computational counterpart of a physical object, process, or system synchronized through continuous telemetry.",
+    "domains": [
+      "iot/industrial"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
     "id": "distributed-tracing",
     "label": "Distributed tracing",
     "aliases": [
@@ -1274,6 +1366,24 @@
     "summary": "A problem or operational situation that occurs only at extreme minimum or maximum operating parameters, testing the boundaries of system resilience.",
     "domains": [
       "it/software-engineering/testing"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
+    "id": "edge-computing",
+    "label": "Edge computing",
+    "aliases": [],
+    "loanwords": [
+      "edge computing"
+    ],
+    "plain_descriptions": [
+      "computing paradigm that analyzes and processes information near the data source location",
+      "decentralized framework running analytics directly on local hardware instead of remote servers"
+    ],
+    "summary": "A distributed computing paradigm that brings computational logic and data storage closer to the physical devices and sensors where information is generated.",
+    "domains": [
+      "iot/edge-cloud"
     ],
     "level": 2,
     "status": "draft"
@@ -1531,6 +1641,24 @@
       "it/ai-ml/mlops"
     ],
     "level": 2,
+    "status": "draft"
+  },
+  {
+    "id": "firmware",
+    "label": "Firmware",
+    "aliases": [],
+    "loanwords": [
+      "firmware"
+    ],
+    "plain_descriptions": [
+      "permanent low level software programmed directly into device non volatile storage",
+      "foundational code that instructs hardware components how to communicate and operate"
+    ],
+    "summary": "Low-level software programmed directly into non-volatile memory that provides operational instructions and hardware abstraction for electronic devices.",
+    "domains": [
+      "iot/devices-sensors"
+    ],
+    "level": 1,
     "status": "draft"
   },
   {
@@ -1991,6 +2119,45 @@
     "status": "reviewed"
   },
   {
+    "id": "iot-gateway",
+    "label": "Gateway",
+    "qualifier": "(IoT)",
+    "aliases": [
+      "IoT gateway"
+    ],
+    "loanwords": [
+      "gateway"
+    ],
+    "plain_descriptions": [
+      "bridge unit connecting field sensors with external cloud networks and translating protocols",
+      "physical hub that aggregates local device signals and forwards filtered payloads upstream"
+    ],
+    "summary": "A bridging hardware device or software appliance that aggregates field sensor data, translates communication protocols, and securely routes telemetry to cloud networks.",
+    "domains": [
+      "iot/edge-cloud"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
+    "id": "iot-platform",
+    "label": "IoT platform",
+    "aliases": [],
+    "loanwords": [
+      "iot platform"
+    ],
+    "plain_descriptions": [
+      "cloud or server suite that manages connects and analyzes fleets of connected hardware",
+      "central software environment handling communication security and data processing for iot fleets"
+    ],
+    "summary": "A multi-layered middleware software suite that provides connectivity, fleet device management, data ingestion, and application integration for IoT deployments.",
+    "domains": [
+      "iot/edge-cloud"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
     "id": "jailbreak",
     "label": "Jailbreak",
     "qualifier": "(AI)",
@@ -2308,6 +2475,24 @@
     "status": "draft"
   },
   {
+    "id": "lorawan",
+    "label": "LoRaWAN",
+    "aliases": [],
+    "loanwords": [
+      "lorawan"
+    ],
+    "plain_descriptions": [
+      "long range low power wireless networking protocol for remote sensor deployments",
+      "wide area communication standard that connects battery powered iot devices over kilometers"
+    ],
+    "summary": "A point-to-multipoint Low-Power Wide-Area Network (LPWAN) protocol designed for wireless, battery-operated devices communicating over long distances on unlicensed radio spectrum.",
+    "domains": [
+      "iot/connectivity-protocols"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
     "id": "loss-function",
     "label": "Loss function",
     "aliases": [
@@ -2435,6 +2620,24 @@
     "status": "draft"
   },
   {
+    "id": "mesh-network",
+    "label": "Mesh network",
+    "aliases": [],
+    "loanwords": [
+      "mesh network"
+    ],
+    "plain_descriptions": [
+      "network topology where nodes interconnect directly to dynamically relay data for each other",
+      "decentralized layout where each participant acts as a forwarding router without a single failure point"
+    ],
+    "summary": "A decentralized network topology where interconnected nodes collaborate to dynamically relay data across multiple hops without relying on a single central hub.",
+    "domains": [
+      "iot/connectivity-protocols"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
     "id": "message-queue",
     "label": "Message queue",
     "aliases": [
@@ -2494,6 +2697,24 @@
     "status": "draft"
   },
   {
+    "id": "microcontroller",
+    "label": "Microcontroller (MCU)",
+    "aliases": [
+      "MCU"
+    ],
+    "loanwords": [],
+    "plain_descriptions": [
+      "compact single chip computer designed to govern dedicated hardware tasks",
+      "integrated circuit containing a processor core memory and input output peripherals"
+    ],
+    "summary": "A compact integrated circuit containing a processor core, memory, and programmable input/output peripherals designed for embedded control operations.",
+    "domains": [
+      "iot/devices-sensors"
+    ],
+    "level": 1,
+    "status": "draft"
+  },
+  {
     "id": "microservices",
     "label": "Microservices",
     "aliases": [
@@ -2543,6 +2764,24 @@
     "summary": "A simulated object that mimics the behavior of a real component in controlled ways, allowing developers to verify interactions and method invocations in isolation.",
     "domains": [
       "it/software-engineering/testing"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
+    "id": "modbus",
+    "label": "Modbus",
+    "aliases": [],
+    "loanwords": [
+      "modbus"
+    ],
+    "plain_descriptions": [
+      "de facto standard industrial protocol that queries memory registers using master client polling",
+      "simple serial and tcp communication format widely implemented across manufacturing equipment"
+    ],
+    "summary": "A de facto industrial request-response communication protocol that reads and writes discrete memory coils and 16-bit numerical registers across serial and Ethernet links.",
+    "domains": [
+      "iot/industrial"
     ],
     "level": 2,
     "status": "draft"
@@ -2638,6 +2877,24 @@
     "status": "draft"
   },
   {
+    "id": "mqtt",
+    "label": "MQTT",
+    "aliases": [],
+    "loanwords": [
+      "mqtt"
+    ],
+    "plain_descriptions": [
+      "lightweight messaging protocol using a publish subscribe broker model for iot devices",
+      "network standard for sending small data packets between sensors and servers over tcp"
+    ],
+    "summary": "A lightweight publish-subscribe network messaging protocol running over TCP, designed for constrained hardware and low-bandwidth connections.",
+    "domains": [
+      "iot/connectivity-protocols"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
     "id": "mutual-fund",
     "label": "Mutual fund",
     "aliases": [
@@ -2675,6 +2932,24 @@
       "product/product-management"
     ],
     "level": 1,
+    "status": "draft"
+  },
+  {
+    "id": "nb-iot",
+    "label": "NB-IoT",
+    "aliases": [],
+    "loanwords": [
+      "nb-iot"
+    ],
+    "plain_descriptions": [
+      "cellular radio standard optimized for low bandwidth high density iot device deployments",
+      "licensed telecom network specification enabling deep indoor coverage for battery powered meters"
+    ],
+    "summary": "A narrowband cellular radio technology standard developed by 3GPP, designed for massive machine-type communication on licensed telecommunication frequencies.",
+    "domains": [
+      "iot/connectivity-protocols"
+    ],
+    "level": 2,
     "status": "draft"
   },
   {
@@ -2826,6 +3101,24 @@
     "status": "draft"
   },
   {
+    "id": "opc-ua",
+    "label": "OPC UA",
+    "aliases": [],
+    "loanwords": [
+      "opc ua"
+    ],
+    "plain_descriptions": [
+      "cross platform industrial communication architecture providing semantic data modeling and secure transport",
+      "machine to machine standard ensuring interoperability between manufacturing hardware across vendors"
+    ],
+    "summary": "A platform-independent, service-oriented communication architecture designed for industrial automation that provides rich semantic information modeling and built-in cryptographic security.",
+    "domains": [
+      "iot/industrial"
+    ],
+    "level": 3,
+    "status": "draft"
+  },
+  {
     "id": "organic-traffic",
     "label": "Organic traffic",
     "aliases": [
@@ -2857,6 +3150,26 @@
     "summary": "A software technique that bridges object-oriented code and relational databases by mapping database tables to programming language classes.",
     "domains": [
       "it/web/backend"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
+    "id": "ota-update",
+    "label": "Over-the-air update (OTA)",
+    "aliases": [
+      "OTA"
+    ],
+    "loanwords": [
+      "over-the-air update"
+    ],
+    "plain_descriptions": [
+      "remote wireless delivery of firmware and software updates to connected hardware fleets",
+      "process of patching device software over network connections without physical physical contact"
+    ],
+    "summary": "The remote wireless distribution and installation of new software or firmware updates to connected hardware without physical tethering.",
+    "domains": [
+      "iot/edge-cloud"
     ],
     "level": 2,
     "status": "draft"
@@ -2956,6 +3269,26 @@
     "status": "draft"
   },
   {
+    "id": "plc",
+    "label": "Programmable Logic Controller (PLC)",
+    "aliases": [
+      "PLC"
+    ],
+    "loanwords": [
+      "programmable logic controller"
+    ],
+    "plain_descriptions": [
+      "ruggedized industrial computer built to execute deterministic automated factory workflows",
+      "hardened controller that reads field sensors and governs machinery through programmed logic"
+    ],
+    "summary": "A ruggedized industrial digital computer designed to execute deterministic, real-time control logic over manufacturing machinery and industrial processes.",
+    "domains": [
+      "iot/industrial"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
     "id": "postmortem",
     "label": "Postmortem",
     "qualifier": "(IT)",
@@ -2992,6 +3325,24 @@
     "summary": "A definitive planning document detailing product purpose, target personas, functional requirements, and measurable success criteria for delivery teams.",
     "domains": [
       "product/product-management"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
+    "id": "predictive-maintenance",
+    "label": "Predictive maintenance",
+    "aliases": [],
+    "loanwords": [
+      "predictive maintenance"
+    ],
+    "plain_descriptions": [
+      "maintenance technique using sensor telemetry and analytics to forecast equipment failures before they happen",
+      "strategy that schedules machine servicing according to real time condition metrics rather than fixed calendar intervals"
+    ],
+    "summary": "A proactive asset management strategy that continuously monitors operational sensor telemetry to forecast machinery degradation and schedule servicing before mechanical failure occurs.",
+    "domains": [
+      "iot/industrial"
     ],
     "level": 2,
     "status": "draft"
@@ -3458,6 +3809,24 @@
     "status": "draft"
   },
   {
+    "id": "rtos",
+    "label": "Real-time operating system (RTOS)",
+    "aliases": [
+      "RTOS"
+    ],
+    "loanwords": [],
+    "plain_descriptions": [
+      "operating system engineered to process events within guaranteed timing constraints",
+      "lightweight system that schedules tasks with deterministic latency for embedded hardware"
+    ],
+    "summary": "An operating system designed to execute processes with deterministic timing guarantees and minimal scheduling latency for mission-critical embedded devices.",
+    "domains": [
+      "iot/devices-sensors"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
     "id": "sales-lead",
     "label": "Lead",
     "qualifier": "(Marketing)",
@@ -3491,6 +3860,24 @@
       "finance/banking/deposits"
     ],
     "level": 1,
+    "status": "draft"
+  },
+  {
+    "id": "scada",
+    "label": "SCADA",
+    "aliases": [],
+    "loanwords": [
+      "scada"
+    ],
+    "plain_descriptions": [
+      "system architecture combining software and hardware to monitor and control expansive industrial facilities",
+      "supervisory control setup displaying plant telemetry graphics and handling operator commands"
+    ],
+    "summary": "An industrial control system architecture that gathers real-time telemetry from geographically dispersed field controllers, visualizes operational state, and allows supervisory commands.",
+    "domains": [
+      "iot/industrial"
+    ],
+    "level": 2,
     "status": "draft"
   },
   {
@@ -3604,6 +3991,22 @@
     "summary": "A formal versioning specification utilizing a three-part numbering format (MAJOR.MINOR.PATCH) to communicate the compatibility nature of software changes.",
     "domains": [
       "it/software-engineering/practices"
+    ],
+    "level": 1,
+    "status": "draft"
+  },
+  {
+    "id": "sensor",
+    "label": "Sensor",
+    "aliases": [],
+    "loanwords": [],
+    "plain_descriptions": [
+      "electronic part that detects physical changes like temperature or motion",
+      "hardware module that converts real world signals into digital data"
+    ],
+    "summary": "An input hardware component that senses physical attributes of the environment and converts them into measurable electrical signals.",
+    "domains": [
+      "iot/devices-sensors"
     ],
     "level": 1,
     "status": "draft"
@@ -3785,6 +4188,22 @@
       "it/devops/sre-operations"
     ],
     "level": 2,
+    "status": "draft"
+  },
+  {
+    "id": "smart-home",
+    "label": "Smart home",
+    "aliases": [],
+    "loanwords": [],
+    "plain_descriptions": [
+      "residence equipped with connected devices that automate lighting climate and security",
+      "networked household setup where appliances communicate and can be managed remotely"
+    ],
+    "summary": "A residential environment equipped with interconnected electronic devices that automate domestic tasks, optimize utility usage, and enable centralized remote monitoring.",
+    "domains": [
+      "iot/devices-sensors"
+    ],
+    "level": 1,
     "status": "draft"
   },
   {
@@ -4137,6 +4556,24 @@
     "summary": "The accumulated implied cost of additional future rework caused by choosing an expedited, suboptimal technical solution instead of a well-architected approach.",
     "domains": [
       "it/software-engineering/practices"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
+    "id": "telemetry",
+    "label": "Telemetry",
+    "aliases": [],
+    "loanwords": [
+      "telemetry"
+    ],
+    "plain_descriptions": [
+      "automated collection and remote transmission of sensor measurements to a monitoring station",
+      "continuous stream of operational readings emitted by field hardware across a network"
+    ],
+    "summary": "The automated process of collecting operational metrics and status measurements from remote points and transmitting them across communications channels for monitoring and analysis.",
+    "domains": [
+      "iot/edge-cloud"
     ],
     "level": 2,
     "status": "draft"
@@ -4566,6 +5003,24 @@
       "it/security/authentication"
     ],
     "level": 3,
+    "status": "draft"
+  },
+  {
+    "id": "zigbee",
+    "label": "Zigbee",
+    "aliases": [],
+    "loanwords": [
+      "zigbee"
+    ],
+    "plain_descriptions": [
+      "low power wireless mesh networking standard commonly used in home automation systems",
+      "radio protocol that routes sensor messages across interconnected household devices"
+    ],
+    "summary": "A low-power, wireless mesh networking standard built upon IEEE 802.15.4, designed for multi-device home automation and smart energy management.",
+    "domains": [
+      "iot/connectivity-protocols"
+    ],
+    "level": 2,
     "status": "draft"
   }
 ]

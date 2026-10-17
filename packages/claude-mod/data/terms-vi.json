@@ -93,6 +93,36 @@
     "autolink": true
   },
   {
+    "key": "Cơ cấu chấp hành",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "actuator",
+        "label": "Cơ cấu chấp hành",
+        "summary": "Thiết bị đầu ra có chức năng chuyển đổi các tín hiệu điều khiển điện tử thành chuyển động cơ học, lực kéo hoặc tác động vật lý.",
+        "domains": [
+          "iot/devices-sensors"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "cơ cấu tác động",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "actuator",
+        "label": "Cơ cấu chấp hành",
+        "summary": "Thiết bị đầu ra có chức năng chuyển đổi các tín hiệu điều khiển điện tử thành chuyển động cơ học, lực kéo hoặc tác động vật lý.",
+        "domains": [
+          "iot/devices-sensors"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
     "key": "Lượt hiển thị",
     "match": "any-case",
     "concepts": [
@@ -583,6 +613,51 @@
         "summary": "Số lượng mẫu huấn luyện được xử lý đồng thời trong một bước lặp trước khi các tham số của mô hình được cập nhật.",
         "domains": [
           "it/ai-ml/foundations"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Bluetooth Low Energy (BLE)",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "ble",
+        "label": "Bluetooth Low Energy (BLE)",
+        "summary": "Công nghệ mạng cá nhân không dây cự ly ngắn được thiết kế để truyền tải dữ liệu với mức tiêu thụ điện năng cực thấp.",
+        "domains": [
+          "iot/connectivity-protocols"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "BLE",
+    "match": "exact-case",
+    "concepts": [
+      {
+        "id": "ble",
+        "label": "Bluetooth Low Energy (BLE)",
+        "summary": "Công nghệ mạng cá nhân không dây cự ly ngắn được thiết kế để truyền tải dữ liệu với mức tiêu thụ điện năng cực thấp.",
+        "domains": [
+          "iot/connectivity-protocols"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Bluetooth năng lượng thấp",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "ble",
+        "label": "Bluetooth Low Energy (BLE)",
+        "summary": "Công nghệ mạng cá nhân không dây cự ly ngắn được thiết kế để truyền tải dữ liệu với mức tiêu thụ điện năng cực thấp.",
+        "domains": [
+          "iot/connectivity-protocols"
         ]
       }
     ],
@@ -1302,6 +1377,36 @@
         "summary": "Chuỗi các giai đoạn thực thi tự động tuần tự thực hiện biên dịch, kiểm thử và đóng gói các bản cập nhật phần mềm.",
         "domains": [
           "it/devops/ci-cd"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Constrained Application Protocol (CoAP)",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "coap",
+        "label": "Constrained Application Protocol (CoAP)",
+        "summary": "Giao thức truyền tải web dạng RESTful chạy trên nền UDP do IETF chuẩn hóa, chuyên dùng cho các vi điều khiển bị giới hạn bộ nhớ và mạng vô tuyến hay mất gói.",
+        "domains": [
+          "iot/connectivity-protocols"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "CoAP",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "coap",
+        "label": "Constrained Application Protocol (CoAP)",
+        "summary": "Giao thức truyền tải web dạng RESTful chạy trên nền UDP do IETF chuẩn hóa, chuyên dùng cho các vi điều khiển bị giới hạn bộ nhớ và mạng vô tuyến hay mất gói.",
+        "domains": [
+          "iot/connectivity-protocols"
         ]
       }
     ],
@@ -2570,6 +2675,81 @@
     "autolink": true
   },
   {
+    "key": "Device provisioning",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "device-provisioning",
+        "label": "Device provisioning",
+        "summary": "Quy trình khởi tạo tự động nhằm xác thực danh tính, đăng ký và thiết lập cấu hình vận hành ban đầu cho thiết bị phần cứng mới kết nối vào nền tảng đám mây.",
+        "domains": [
+          "iot/edge-cloud"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Khởi tạo thiết bị",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "device-provisioning",
+        "label": "Device provisioning",
+        "summary": "Quy trình khởi tạo tự động nhằm xác thực danh tính, đăng ký và thiết lập cấu hình vận hành ban đầu cho thiết bị phần cứng mới kết nối vào nền tảng đám mây.",
+        "domains": [
+          "iot/edge-cloud"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Bản sao kỹ thuật số",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "digital-twin",
+        "label": "Bản sao kỹ thuật số",
+        "summary": "Mô hình ảo sống động mô phỏng chính xác trạng thái, hành vi và vòng đời của một đối tượng hoặc quy trình vật lý thông qua dòng dữ liệu cảm biến thời gian thực.",
+        "domains": [
+          "iot/industrial"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Bản sao số",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "digital-twin",
+        "label": "Bản sao kỹ thuật số",
+        "summary": "Mô hình ảo sống động mô phỏng chính xác trạng thái, hành vi và vòng đời của một đối tượng hoặc quy trình vật lý thông qua dòng dữ liệu cảm biến thời gian thực.",
+        "domains": [
+          "iot/industrial"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Digital twin",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "digital-twin",
+        "label": "Bản sao kỹ thuật số",
+        "summary": "Mô hình ảo sống động mô phỏng chính xác trạng thái, hành vi và vòng đời của một đối tượng hoặc quy trình vật lý thông qua dòng dữ liệu cảm biến thời gian thực.",
+        "domains": [
+          "iot/industrial"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
     "key": "Distributed tracing",
     "match": "any-case",
     "concepts": [
@@ -2894,6 +3074,36 @@
         "summary": "Tình huống vận hành hoặc dữ liệu đầu vào đặc biệt chỉ xuất hiện ở các giới hạn cực tiểu hoặc cực đại của tham số, kiểm tra độ bền vững ở các ranh giới của hệ thống.",
         "domains": [
           "it/software-engineering/testing"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Edge computing",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "edge-computing",
+        "label": "Edge computing",
+        "summary": "Mô hình tính toán phân tán đưa các tác vụ xử lý tính toán và lưu trữ dữ liệu về gần sát vị trí vật lý nơi thông tin được thu thập nhằm tối ưu độ trễ.",
+        "domains": [
+          "iot/edge-cloud"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Điện toán biên",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "edge-computing",
+        "label": "Edge computing",
+        "summary": "Mô hình tính toán phân tán đưa các tác vụ xử lý tính toán và lưu trữ dữ liệu về gần sát vị trí vật lý nơi thông tin được thu thập nhằm tối ưu độ trễ.",
+        "domains": [
+          "iot/edge-cloud"
         ]
       }
     ],
@@ -3426,6 +3636,36 @@
         "summary": "Việc huấn luyện tiếp một mô hình đã huấn luyện trước trên bộ dữ liệu nhỏ, chuyên cho một nhiệm vụ, để nó làm tốt hơn nhiệm vụ hay văn phong đó.",
         "domains": [
           "it/ai-ml/mlops"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Firmware",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "firmware",
+        "label": "Firmware",
+        "summary": "Phần mềm cấp thấp được nạp cố định vào bộ nhớ bất biến của thiết bị, cung cấp các chỉ lệnh nền tảng giúp phần cứng vận hành và tương tác.",
+        "domains": [
+          "iot/devices-sensors"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Phần mềm nhúng",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "firmware",
+        "label": "Firmware",
+        "summary": "Phần mềm cấp thấp được nạp cố định vào bộ nhớ bất biến của thiết bị, cung cấp các chỉ lệnh nền tảng giúp phần cứng vận hành và tương tác.",
+        "domains": [
+          "iot/devices-sensors"
         ]
       }
     ],
@@ -4448,6 +4688,84 @@
     "autolink": true
   },
   {
+    "key": "Gateway",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "iot-gateway",
+        "label": "Gateway",
+        "qualifier": "(IoT)",
+        "summary": "Thiết bị phần cứng hoặc phần mềm trung gian có nhiệm vụ thu thập dữ liệu từ mạng cảm biến trường, chuyển đổi giao thức và định tuyến an toàn lên đám mây.",
+        "domains": [
+          "iot/edge-cloud"
+        ]
+      }
+    ],
+    "autolink": false
+  },
+  {
+    "key": "IoT gateway",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "iot-gateway",
+        "label": "Gateway",
+        "qualifier": "(IoT)",
+        "summary": "Thiết bị phần cứng hoặc phần mềm trung gian có nhiệm vụ thu thập dữ liệu từ mạng cảm biến trường, chuyển đổi giao thức và định tuyến an toàn lên đám mây.",
+        "domains": [
+          "iot/edge-cloud"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Cổng kết nối IoT",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "iot-gateway",
+        "label": "Gateway",
+        "qualifier": "(IoT)",
+        "summary": "Thiết bị phần cứng hoặc phần mềm trung gian có nhiệm vụ thu thập dữ liệu từ mạng cảm biến trường, chuyển đổi giao thức và định tuyến an toàn lên đám mây.",
+        "domains": [
+          "iot/edge-cloud"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "IoT platform",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "iot-platform",
+        "label": "IoT platform",
+        "summary": "Hệ thống phần mềm trung gian đa tầng cung cấp hạ tầng kết nối, quản lý vòng đời thiết bị, tiếp nhận dữ liệu đo đạc và tích hợp ứng dụng nghiệp vụ cho các giải pháp IoT.",
+        "domains": [
+          "iot/edge-cloud"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Nền tảng IoT",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "iot-platform",
+        "label": "IoT platform",
+        "summary": "Hệ thống phần mềm trung gian đa tầng cung cấp hạ tầng kết nối, quản lý vòng đời thiết bị, tiếp nhận dữ liệu đo đạc và tích hợp ứng dụng nghiệp vụ cho các giải pháp IoT.",
+        "domains": [
+          "iot/edge-cloud"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
     "key": "Jailbreak",
     "match": "any-case",
     "concepts": [
@@ -5062,6 +5380,21 @@
     "autolink": true
   },
   {
+    "key": "LoRaWAN",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "lorawan",
+        "label": "LoRaWAN",
+        "summary": "Giao thức mạng diện rộng công suất thấp (LPWAN) cho phép các thiết bị cảm biến chạy pin truyền dữ liệu tầm xa trên các dải tần vô tuyến không cần cấp phép.",
+        "domains": [
+          "iot/connectivity-protocols"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
     "key": "Hàm mất mát",
     "match": "any-case",
     "concepts": [
@@ -5359,6 +5692,51 @@
     "autolink": true
   },
   {
+    "key": "Mesh network",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "mesh-network",
+        "label": "Mesh network",
+        "summary": "Cấu trúc mạng phân tán trong đó các thiết bị liên kết đa hướng với nhau để tự động chuyển tiếp dữ liệu qua nhiều chặng mà không lệ thuộc vào một trạm phát trung tâm duy nhất.",
+        "domains": [
+          "iot/connectivity-protocols"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Mạng lưới",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "mesh-network",
+        "label": "Mesh network",
+        "summary": "Cấu trúc mạng phân tán trong đó các thiết bị liên kết đa hướng với nhau để tự động chuyển tiếp dữ liệu qua nhiều chặng mà không lệ thuộc vào một trạm phát trung tâm duy nhất.",
+        "domains": [
+          "iot/connectivity-protocols"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Mạng mesh",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "mesh-network",
+        "label": "Mesh network",
+        "summary": "Cấu trúc mạng phân tán trong đó các thiết bị liên kết đa hướng với nhau để tự động chuyển tiếp dữ liệu qua nhiều chặng mà không lệ thuộc vào một trạm phát trung tâm duy nhất.",
+        "domains": [
+          "iot/connectivity-protocols"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
     "key": "Message queue",
     "match": "any-case",
     "concepts": [
@@ -5527,6 +5905,36 @@
     "autolink": true
   },
   {
+    "key": "Vi điều khiển",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "microcontroller",
+        "label": "Vi điều khiển",
+        "summary": "Vi mạch tích hợp chứa lõi vi xử lý, bộ nhớ và các cổng ngoại vi lập trình được, chuyên dùng để điều khiển các ứng dụng nhúng chuyên biệt.",
+        "domains": [
+          "iot/devices-sensors"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "MCU",
+    "match": "exact-case",
+    "concepts": [
+      {
+        "id": "microcontroller",
+        "label": "Vi điều khiển",
+        "summary": "Vi mạch tích hợp chứa lõi vi xử lý, bộ nhớ và các cổng ngoại vi lập trình được, chuyên dùng để điều khiển các ứng dụng nhúng chuyên biệt.",
+        "domains": [
+          "iot/devices-sensors"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
     "key": "Microservices",
     "match": "any-case",
     "concepts": [
@@ -5615,6 +6023,21 @@
         "summary": "Đối tượng giả lập mô phỏng hành vi của thành phần thật một cách có kiểm soát, giúp xác minh các lệnh gọi phương thức và tương tác khi kiểm thử độc lập.",
         "domains": [
           "it/software-engineering/testing"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Modbus",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "modbus",
+        "label": "Modbus",
+        "summary": "Giao thức truyền thông công nghiệp theo mô hình chủ - tớ (master/slave) được sử dụng rộng rãi để đọc và ghi các bảng thanh ghi dữ liệu qua đường truyền nối tiếp hoặc mạng Ethernet.",
+        "domains": [
+          "iot/industrial"
         ]
       }
     ],
@@ -5821,6 +6244,21 @@
     "autolink": true
   },
   {
+    "key": "MQTT",
+    "match": "exact-case",
+    "concepts": [
+      {
+        "id": "mqtt",
+        "label": "MQTT",
+        "summary": "Giao thức truyền thông điệp gọn nhẹ theo mô hình xuất bản - đăng ký trên nền TCP, được tối ưu cho các thiết bị phần cứng hạn chế và mạng có độ trễ cao.",
+        "domains": [
+          "iot/connectivity-protocols"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
     "key": "Quỹ tương hỗ",
     "match": "any-case",
     "concepts": [
@@ -5920,6 +6358,21 @@
         "summary": "Phiên bản sản phẩm sơ khai có vừa đủ tính năng cốt lõi để thu thập phản hồi có kiểm chứng từ người dùng thực tế với nỗ lực kỹ thuật tối thiểu.",
         "domains": [
           "product/product-management"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "NB-IoT",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "nb-iot",
+        "label": "NB-IoT",
+        "summary": "Công nghệ mạng vô tuyến di động băng hẹp do 3GPP chuẩn hóa, tối ưu cho các kết nối vạn vật mật độ cao trên hạ tầng phổ tần số viễn thông được cấp phép.",
+        "domains": [
+          "iot/connectivity-protocols"
         ]
       }
     ],
@@ -6271,6 +6724,21 @@
     "autolink": true
   },
   {
+    "key": "OPC UA",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "opc-ua",
+        "label": "OPC UA",
+        "summary": "Kiến trúc truyền thông công nghiệp đa nền tảng và hướng dịch vụ, cung cấp khả năng mô hình hóa thông tin ngữ nghĩa phong phú cùng cơ chế bảo mật mã hóa toàn diện.",
+        "domains": [
+          "iot/industrial"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
     "key": "Organic traffic",
     "match": "any-case",
     "concepts": [
@@ -6340,6 +6808,51 @@
         "summary": "Kỹ thuật lập trình tạo cầu nối chuyển đổi giữa các đối tượng trong mã nguồn hướng đối tượng và các bảng trong cơ sở dữ liệu quan hệ.",
         "domains": [
           "it/web/backend"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Over-the-air update (OTA)",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "ota-update",
+        "label": "Over-the-air update (OTA)",
+        "summary": "Phương thức phân phối và cài đặt các bản cập nhật phần mềm hoặc firmware từ xa qua mạng không dây mà không cần can thiệp vật lý.",
+        "domains": [
+          "iot/edge-cloud"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "OTA",
+    "match": "exact-case",
+    "concepts": [
+      {
+        "id": "ota-update",
+        "label": "Over-the-air update (OTA)",
+        "summary": "Phương thức phân phối và cài đặt các bản cập nhật phần mềm hoặc firmware từ xa qua mạng không dây mà không cần can thiệp vật lý.",
+        "domains": [
+          "iot/edge-cloud"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Cập nhật OTA",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "ota-update",
+        "label": "Over-the-air update (OTA)",
+        "summary": "Phương thức phân phối và cài đặt các bản cập nhật phần mềm hoặc firmware từ xa qua mạng không dây mà không cần can thiệp vật lý.",
+        "domains": [
+          "iot/edge-cloud"
         ]
       }
     ],
@@ -6541,6 +7054,51 @@
     "autolink": true
   },
   {
+    "key": "Programmable Logic Controller (PLC)",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "plc",
+        "label": "Programmable Logic Controller (PLC)",
+        "summary": "Máy tính kỹ thuật số công nghiệp chuyên dụng được thiết kế bền bỉ để thực thi các lệnh điều khiển logic tiền định thời gian thực cho dây chuyền sản xuất.",
+        "domains": [
+          "iot/industrial"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "PLC",
+    "match": "exact-case",
+    "concepts": [
+      {
+        "id": "plc",
+        "label": "Programmable Logic Controller (PLC)",
+        "summary": "Máy tính kỹ thuật số công nghiệp chuyên dụng được thiết kế bền bỉ để thực thi các lệnh điều khiển logic tiền định thời gian thực cho dây chuyền sản xuất.",
+        "domains": [
+          "iot/industrial"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Bộ điều khiển logic khả trình",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "plc",
+        "label": "Programmable Logic Controller (PLC)",
+        "summary": "Máy tính kỹ thuật số công nghiệp chuyên dụng được thiết kế bền bỉ để thực thi các lệnh điều khiển logic tiền định thời gian thực cho dây chuyền sản xuất.",
+        "domains": [
+          "iot/industrial"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
     "key": "Postmortem",
     "match": "any-case",
     "concepts": [
@@ -6644,6 +7202,51 @@
         "summary": "Tài liệu mô tả đầy đủ mục đích, đối tượng người dùng, yêu cầu chức năng và tiêu chuẩn đo lường thành công của một sản phẩm trước khi xây dựng.",
         "domains": [
           "product/product-management"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Predictive maintenance",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "predictive-maintenance",
+        "label": "Predictive maintenance",
+        "summary": "Chiến lược quản trị tài sản chủ động dựa trên dữ liệu cảm biến đo từ xa để phát hiện sớm dấu hiệu suy hao và dự báo thời điểm bảo dưỡng máy móc trước khi xảy ra sự cố hỏng hóc.",
+        "domains": [
+          "iot/industrial"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Bảo trì dự đoán",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "predictive-maintenance",
+        "label": "Predictive maintenance",
+        "summary": "Chiến lược quản trị tài sản chủ động dựa trên dữ liệu cảm biến đo từ xa để phát hiện sớm dấu hiệu suy hao và dự báo thời điểm bảo dưỡng máy móc trước khi xảy ra sự cố hỏng hóc.",
+        "domains": [
+          "iot/industrial"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Bảo trì tiên đoán",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "predictive-maintenance",
+        "label": "Predictive maintenance",
+        "summary": "Chiến lược quản trị tài sản chủ động dựa trên dữ liệu cảm biến đo từ xa để phát hiện sớm dấu hiệu suy hao và dự báo thời điểm bảo dưỡng máy móc trước khi xảy ra sự cố hỏng hóc.",
+        "domains": [
+          "iot/industrial"
         ]
       }
     ],
@@ -7560,6 +8163,36 @@
     "autolink": true
   },
   {
+    "key": "Hệ điều hành thời gian thực",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "rtos",
+        "label": "Hệ điều hành thời gian thực",
+        "summary": "Hệ điều hành được thiết kế chuyên biệt để xử lý các tác vụ với cam kết tính tiền định về mặt thời gian và độ trễ tối thiểu.",
+        "domains": [
+          "iot/devices-sensors"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "RTOS",
+    "match": "exact-case",
+    "concepts": [
+      {
+        "id": "rtos",
+        "label": "Hệ điều hành thời gian thực",
+        "summary": "Hệ điều hành được thiết kế chuyên biệt để xử lý các tác vụ với cam kết tính tiền định về mặt thời gian và độ trễ tối thiểu.",
+        "domains": [
+          "iot/devices-sensors"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
     "key": "Lead",
     "match": "any-case",
     "concepts": [
@@ -7648,6 +8281,21 @@
         "summary": "Tài khoản tiền gửi sinh lãi tại ngân hàng hoặc tổ chức tín dụng, giúp bảo toàn vốn và cho phép rút tiền linh hoạt khi cần chi tiêu.",
         "domains": [
           "finance/banking/deposits"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "SCADA",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "scada",
+        "label": "SCADA",
+        "summary": "Kiến trúc hệ thống điều khiển công nghiệp thu thập dữ liệu thời gian thực từ các bộ điều khiển phân tán, hiển thị đồ họa trực quan và cho phép điều hành từ xa.",
+        "domains": [
+          "iot/industrial"
         ]
       }
     ],
@@ -7911,6 +8559,21 @@
         "summary": "Quy chuẩn đánh số phiên bản phần mềm theo định dạng ba chữ số (MAJOR.MINOR.PATCH) nhằm truyền tải mức độ ảnh hưởng và tính tương thích của bản phát hành.",
         "domains": [
           "it/software-engineering/practices"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Cảm biến",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "sensor",
+        "label": "Cảm biến",
+        "summary": "Linh kiện phần cứng đầu vào có chức năng nhận biết các kích thích vật lý từ môi trường và chuyển đổi thành tín hiệu điện có thể đo lường.",
+        "domains": [
+          "iot/devices-sensors"
         ]
       }
     ],
@@ -8337,6 +9000,36 @@
         "summary": "Mục tiêu định lượng cụ thể về độ tin cậy do đội ngũ kỹ thuật nội bộ đề ra để làm chuẩn mực đánh giá chất lượng dịch vụ trong một khung thời gian.",
         "domains": [
           "it/devops/sre-operations"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Nhà thông minh",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "smart-home",
+        "label": "Nhà thông minh",
+        "summary": "Không gian nhà ở được tích hợp các thiết bị điện tử có khả năng kết nối mạng, cho phép tự động hóa sinh hoạt và quản lý tập trung từ xa.",
+        "domains": [
+          "iot/devices-sensors"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "smart home",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "smart-home",
+        "label": "Nhà thông minh",
+        "summary": "Không gian nhà ở được tích hợp các thiết bị điện tử có khả năng kết nối mạng, cho phép tự động hóa sinh hoạt và quản lý tập trung từ xa.",
+        "domains": [
+          "iot/devices-sensors"
         ]
       }
     ],
@@ -9089,6 +9782,36 @@
         "summary": "Chi phí tiềm ẩn phát sinh trong tương lai khi đội ngũ lựa chọn giải pháp viết mã nhanh chóng, chắp vá thay vì xây dựng kiến trúc chuẩn mực.",
         "domains": [
           "it/software-engineering/practices"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Telemetry",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "telemetry",
+        "label": "Telemetry",
+        "summary": "Quá trình tự động đo lường, thu thập các chỉ số hoạt động từ những thiết bị ở xa và truyền tải dữ liệu về trung tâm giám sát.",
+        "domains": [
+          "iot/edge-cloud"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Đo từ xa",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "telemetry",
+        "label": "Telemetry",
+        "summary": "Quá trình tự động đo lường, thu thập các chỉ số hoạt động từ những thiết bị ở xa và truyền tải dữ liệu về trung tâm giám sát.",
+        "domains": [
+          "iot/edge-cloud"
         ]
       }
     ],
@@ -9985,6 +10708,21 @@
         "summary": "Mô hình an ninh mạng yêu cầu liên tục xác minh danh tính của mọi người dùng và thiết bị, hoạt động trên giả định rằng mạng luôn tiềm ẩn nguy cơ bị xâm nhập.",
         "domains": [
           "it/security/authentication"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Zigbee",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "zigbee",
+        "label": "Zigbee",
+        "summary": "Chuẩn mạng lưới không dây công suất thấp dựa trên nền tảng IEEE 802.15.4, chuyên dùng cho các thiết bị điều khiển và tự động hóa nhà ở.",
+        "domains": [
+          "iot/connectivity-protocols"
         ]
       }
     ],

@@ -62,6 +62,21 @@
     "autolink": true
   },
   {
+    "key": "Actuator",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "actuator",
+        "label": "Actuator",
+        "summary": "An output device that converts electrical control signals into physical movement, force, or mechanical displacement.",
+        "domains": [
+          "iot/devices-sensors"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
     "key": "Impression",
     "match": "any-case",
     "concepts": [
@@ -442,6 +457,36 @@
         "summary": "The number of training samples processed simultaneously in a single iteration before the model parameters are updated.",
         "domains": [
           "it/ai-ml/foundations"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Bluetooth Low Energy (BLE)",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "ble",
+        "label": "Bluetooth Low Energy (BLE)",
+        "summary": "A power-optimized wireless personal area network technology designed for short-range communication with minimal electrical energy consumption.",
+        "domains": [
+          "iot/connectivity-protocols"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "BLE",
+    "match": "exact-case",
+    "concepts": [
+      {
+        "id": "ble",
+        "label": "Bluetooth Low Energy (BLE)",
+        "summary": "A power-optimized wireless personal area network technology designed for short-range communication with minimal electrical energy consumption.",
+        "domains": [
+          "iot/connectivity-protocols"
         ]
       }
     ],
@@ -1013,6 +1058,36 @@
         "summary": "A defined sequential series of automated execution steps that compiles, tests, and packages application updates.",
         "domains": [
           "it/devops/ci-cd"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Constrained Application Protocol (CoAP)",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "coap",
+        "label": "Constrained Application Protocol (CoAP)",
+        "summary": "A specialized RESTful web transfer protocol designed by the IETF for resource-constrained microcontrollers and low-power wireless networks using UDP.",
+        "domains": [
+          "iot/connectivity-protocols"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "CoAP",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "coap",
+        "label": "Constrained Application Protocol (CoAP)",
+        "summary": "A specialized RESTful web transfer protocol designed by the IETF for resource-constrained microcontrollers and low-power wireless networks using UDP.",
+        "domains": [
+          "iot/connectivity-protocols"
         ]
       }
     ],
@@ -2022,6 +2097,36 @@
     "autolink": true
   },
   {
+    "key": "Device provisioning",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "device-provisioning",
+        "label": "Device provisioning",
+        "summary": "The automated onboarding process that authenticates, registers, and configures newly deployed hardware devices into a centralized cloud management platform.",
+        "domains": [
+          "iot/edge-cloud"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Digital twin",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "digital-twin",
+        "label": "Digital twin",
+        "summary": "A virtual representation that serves as the real-time computational counterpart of a physical object, process, or system synchronized through continuous telemetry.",
+        "domains": [
+          "iot/industrial"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
     "key": "Distributed tracing",
     "match": "any-case",
     "concepts": [
@@ -2271,6 +2376,21 @@
         "summary": "A problem or operational situation that occurs only at extreme minimum or maximum operating parameters, testing the boundaries of system resilience.",
         "domains": [
           "it/software-engineering/testing"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Edge computing",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "edge-computing",
+        "label": "Edge computing",
+        "summary": "A distributed computing paradigm that brings computational logic and data storage closer to the physical devices and sensors where information is generated.",
+        "domains": [
+          "iot/edge-cloud"
         ]
       }
     ],
@@ -2710,6 +2830,21 @@
         "summary": "Further training of a pre-trained model on a smaller task-specific dataset so it performs better on that task or style.",
         "domains": [
           "it/ai-ml/mlops"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Firmware",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "firmware",
+        "label": "Firmware",
+        "summary": "Low-level software programmed directly into non-volatile memory that provides operational instructions and hardware abstraction for electronic devices.",
+        "domains": [
+          "iot/devices-sensors"
         ]
       }
     ],
@@ -3412,6 +3547,53 @@
     "autolink": true
   },
   {
+    "key": "Gateway",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "iot-gateway",
+        "label": "Gateway",
+        "qualifier": "(IoT)",
+        "summary": "A bridging hardware device or software appliance that aggregates field sensor data, translates communication protocols, and securely routes telemetry to cloud networks.",
+        "domains": [
+          "iot/edge-cloud"
+        ]
+      }
+    ],
+    "autolink": false
+  },
+  {
+    "key": "IoT gateway",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "iot-gateway",
+        "label": "Gateway",
+        "qualifier": "(IoT)",
+        "summary": "A bridging hardware device or software appliance that aggregates field sensor data, translates communication protocols, and securely routes telemetry to cloud networks.",
+        "domains": [
+          "iot/edge-cloud"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "IoT platform",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "iot-platform",
+        "label": "IoT platform",
+        "summary": "A multi-layered middleware software suite that provides connectivity, fleet device management, data ingestion, and application integration for IoT deployments.",
+        "domains": [
+          "iot/edge-cloud"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
     "key": "Jailbreak",
     "match": "any-case",
     "concepts": [
@@ -3981,6 +4163,21 @@
     "autolink": true
   },
   {
+    "key": "LoRaWAN",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "lorawan",
+        "label": "LoRaWAN",
+        "summary": "A point-to-multipoint Low-Power Wide-Area Network (LPWAN) protocol designed for wireless, battery-operated devices communicating over long distances on unlicensed radio spectrum.",
+        "domains": [
+          "iot/connectivity-protocols"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
     "key": "Loss function",
     "match": "any-case",
     "concepts": [
@@ -4233,6 +4430,21 @@
     "autolink": true
   },
   {
+    "key": "Mesh network",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "mesh-network",
+        "label": "Mesh network",
+        "summary": "A decentralized network topology where interconnected nodes collaborate to dynamically relay data across multiple hops without relying on a single central hub.",
+        "domains": [
+          "iot/connectivity-protocols"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
     "key": "Message queue",
     "match": "any-case",
     "concepts": [
@@ -4386,6 +4598,36 @@
     "autolink": true
   },
   {
+    "key": "Microcontroller (MCU)",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "microcontroller",
+        "label": "Microcontroller (MCU)",
+        "summary": "A compact integrated circuit containing a processor core, memory, and programmable input/output peripherals designed for embedded control operations.",
+        "domains": [
+          "iot/devices-sensors"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "MCU",
+    "match": "exact-case",
+    "concepts": [
+      {
+        "id": "microcontroller",
+        "label": "Microcontroller (MCU)",
+        "summary": "A compact integrated circuit containing a processor core, memory, and programmable input/output peripherals designed for embedded control operations.",
+        "domains": [
+          "iot/devices-sensors"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
     "key": "Microservices",
     "match": "any-case",
     "concepts": [
@@ -4458,6 +4700,21 @@
         "summary": "A simulated object that mimics the behavior of a real component in controlled ways, allowing developers to verify interactions and method invocations in isolation.",
         "domains": [
           "it/software-engineering/testing"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Modbus",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "modbus",
+        "label": "Modbus",
+        "summary": "A de facto industrial request-response communication protocol that reads and writes discrete memory coils and 16-bit numerical registers across serial and Ethernet links.",
+        "domains": [
+          "iot/industrial"
         ]
       }
     ],
@@ -4586,6 +4843,21 @@
     "autolink": true
   },
   {
+    "key": "MQTT",
+    "match": "exact-case",
+    "concepts": [
+      {
+        "id": "mqtt",
+        "label": "MQTT",
+        "summary": "A lightweight publish-subscribe network messaging protocol running over TCP, designed for constrained hardware and low-bandwidth connections.",
+        "domains": [
+          "iot/connectivity-protocols"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
     "key": "Mutual fund",
     "match": "any-case",
     "concepts": [
@@ -4655,6 +4927,21 @@
         "summary": "An early iteration of a product incorporating the minimum feature set necessary to validate foundational assumptions with real customers.",
         "domains": [
           "product/product-management"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "NB-IoT",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "nb-iot",
+        "label": "NB-IoT",
+        "summary": "A narrowband cellular radio technology standard developed by 3GPP, designed for massive machine-type communication on licensed telecommunication frequencies.",
+        "domains": [
+          "iot/connectivity-protocols"
         ]
       }
     ],
@@ -4916,6 +5203,21 @@
     "autolink": true
   },
   {
+    "key": "OPC UA",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "opc-ua",
+        "label": "OPC UA",
+        "summary": "A platform-independent, service-oriented communication architecture designed for industrial automation that provides rich semantic information modeling and built-in cryptographic security.",
+        "domains": [
+          "iot/industrial"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
     "key": "Organic traffic",
     "match": "any-case",
     "concepts": [
@@ -4970,6 +5272,36 @@
         "summary": "A software technique that bridges object-oriented code and relational databases by mapping database tables to programming language classes.",
         "domains": [
           "it/web/backend"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Over-the-air update (OTA)",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "ota-update",
+        "label": "Over-the-air update (OTA)",
+        "summary": "The remote wireless distribution and installation of new software or firmware updates to connected hardware without physical tethering.",
+        "domains": [
+          "iot/edge-cloud"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "OTA",
+    "match": "exact-case",
+    "concepts": [
+      {
+        "id": "ota-update",
+        "label": "Over-the-air update (OTA)",
+        "summary": "The remote wireless distribution and installation of new software or firmware updates to connected hardware without physical tethering.",
+        "domains": [
+          "iot/edge-cloud"
         ]
       }
     ],
@@ -5201,6 +5533,36 @@
     "autolink": true
   },
   {
+    "key": "Programmable Logic Controller (PLC)",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "plc",
+        "label": "Programmable Logic Controller (PLC)",
+        "summary": "A ruggedized industrial digital computer designed to execute deterministic, real-time control logic over manufacturing machinery and industrial processes.",
+        "domains": [
+          "iot/industrial"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "PLC",
+    "match": "exact-case",
+    "concepts": [
+      {
+        "id": "plc",
+        "label": "Programmable Logic Controller (PLC)",
+        "summary": "A ruggedized industrial digital computer designed to execute deterministic, real-time control logic over manufacturing machinery and industrial processes.",
+        "domains": [
+          "iot/industrial"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
     "key": "Postmortem",
     "match": "any-case",
     "concepts": [
@@ -5273,6 +5635,21 @@
         "summary": "A definitive planning document detailing product purpose, target personas, functional requirements, and measurable success criteria for delivery teams.",
         "domains": [
           "product/product-management"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Predictive maintenance",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "predictive-maintenance",
+        "label": "Predictive maintenance",
+        "summary": "A proactive asset management strategy that continuously monitors operational sensor telemetry to forecast machinery degradation and schedule servicing before mechanical failure occurs.",
+        "domains": [
+          "iot/industrial"
         ]
       }
     ],
@@ -5947,6 +6324,36 @@
     "autolink": true
   },
   {
+    "key": "Real-time operating system (RTOS)",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "rtos",
+        "label": "Real-time operating system (RTOS)",
+        "summary": "An operating system designed to execute processes with deterministic timing guarantees and minimal scheduling latency for mission-critical embedded devices.",
+        "domains": [
+          "iot/devices-sensors"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "RTOS",
+    "match": "exact-case",
+    "concepts": [
+      {
+        "id": "rtos",
+        "label": "Real-time operating system (RTOS)",
+        "summary": "An operating system designed to execute processes with deterministic timing guarantees and minimal scheduling latency for mission-critical embedded devices.",
+        "domains": [
+          "iot/devices-sensors"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
     "key": "Lead",
     "match": "any-case",
     "concepts": [
@@ -6004,6 +6411,21 @@
         "summary": "An interest-bearing deposit account held at a bank or credit union that provides capital security, liquidity, and modest interest returns.",
         "domains": [
           "finance/banking/deposits"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "SCADA",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "scada",
+        "label": "SCADA",
+        "summary": "An industrial control system architecture that gathers real-time telemetry from geographically dispersed field controllers, visualizes operational state, and allows supervisory commands.",
+        "domains": [
+          "iot/industrial"
         ]
       }
     ],
@@ -6192,6 +6614,21 @@
         "summary": "A formal versioning specification utilizing a three-part numbering format (MAJOR.MINOR.PATCH) to communicate the compatibility nature of software changes.",
         "domains": [
           "it/software-engineering/practices"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Sensor",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "sensor",
+        "label": "Sensor",
+        "summary": "An input hardware component that senses physical attributes of the environment and converts them into measurable electrical signals.",
+        "domains": [
+          "iot/devices-sensors"
         ]
       }
     ],
@@ -6480,6 +6917,21 @@
         "summary": "A precise, target reliability threshold specified by engineering teams to determine acceptable service quality over an extended duration.",
         "domains": [
           "it/devops/sre-operations"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Smart home",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "smart-home",
+        "label": "Smart home",
+        "summary": "A residential environment equipped with interconnected electronic devices that automate domestic tasks, optimize utility usage, and enable centralized remote monitoring.",
+        "domains": [
+          "iot/devices-sensors"
         ]
       }
     ],
@@ -7065,6 +7517,21 @@
         "summary": "The accumulated implied cost of additional future rework caused by choosing an expedited, suboptimal technical solution instead of a well-architected approach.",
         "domains": [
           "it/software-engineering/practices"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Telemetry",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "telemetry",
+        "label": "Telemetry",
+        "summary": "The automated process of collecting operational metrics and status measurements from remote points and transmitting them across communications channels for monitoring and analysis.",
+        "domains": [
+          "iot/edge-cloud"
         ]
       }
     ],
@@ -7838,6 +8305,21 @@
         "summary": "A cybersecurity framework requiring continuous verification of every user, device, and network transaction, operating under the assumption that breaches are already present.",
         "domains": [
           "it/security/authentication"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Zigbee",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "zigbee",
+        "label": "Zigbee",
+        "summary": "A low-power, wireless mesh networking standard built upon IEEE 802.15.4, designed for multi-device home automation and smart energy management.",
+        "domains": [
+          "iot/connectivity-protocols"
         ]
       }
     ],

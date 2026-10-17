@@ -38,8 +38,12 @@
     "license": "public-domain-us-gov",
     "license_evidence": "https://www.nist.gov/oism/copyrights",
     "concepts": [
+      "actuator",
       "encryption",
+      "firmware",
       "mfa",
+      "microcontroller",
+      "sensor",
       "stakeholder"
     ]
   }

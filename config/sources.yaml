@@ -1284,3 +1284,77 @@ cdc:
   reuse: paraphrase-only
   domains: [media/pr-communications]
   verified_license_at: "2026-10-17"
+
+# wave3 web
+vue-docs:
+  title: Vue.js Documentation
+  publisher: Vue.js Core Team
+  url: https://vuejs.org
+  type: docs
+  tier: B
+  languages: [en]
+  license: MIT
+  reuse: paraphrase-only
+  domains: [it/web]
+  verified_license_at: "2026-10-17"
+
+react-docs:
+  title: React Documentation
+  publisher: Meta Platforms, Inc.
+  url: https://react.dev
+  type: docs
+  tier: B
+  languages: [en]
+  license: CC-BY-4.0
+  reuse: paraphrase-only
+  domains: [it/web]
+  verified_license_at: "2026-10-17"
+
+nodejs-docs:
+  title: Node.js Documentation
+  publisher: OpenJS Foundation
+  url: https://nodejs.org
+  type: docs
+  tier: B
+  languages: [en]
+  license: MIT
+  reuse: paraphrase-only
+  domains: [it/web]
+  verified_license_at: "2026-10-17"
+
+webpack-docs:
+  title: Webpack Documentation
+  publisher: OpenJS Foundation
+  url: https://webpack.js.org
+  type: docs
+  tier: B
+  languages: [en]
+  license: CC-BY-4.0
+  reuse: paraphrase-only
+  domains: [it/web]
+  verified_license_at: "2026-10-17"
+
+google-web-dev:
+  title: web.dev Guidance and Documentation
+  publisher: Google LLC
+  url: https://web.dev
+  type: docs
+  tier: B
+  languages: [en]
+  license: CC-BY-4.0
+  reuse: paraphrase-only
+  domains: [it/web]
+  verified_license_at: "2026-10-17"
+
+nginx-docs:
+  title: Nginx Documentation
+  publisher: F5, Inc.
+  url: https://nginx.org
+  type: docs
+  tier: B
+  languages: [en]
+  license: 2-clause-bsd
+  reuse: paraphrase-only
+  domains: [it/web, it/infrastructure]
+  verified_license_at: "2026-10-17"
+

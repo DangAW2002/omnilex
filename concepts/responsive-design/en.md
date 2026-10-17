@@ -1,24 +1,32 @@
 ---
-label: Responsive design
-aliases: []
+label: "Responsive design"
+aliases:
+  - "responsive web design"
+  - "RWD"
 loanwords: []
+autolink:
+  label: auto
+  aliases:
+    RWD: always
 plain_descriptions:
-  - first plain description
-  - second plain description
-summary: One sentence summary.
+  - "designing web pages to adapt smoothly across phones, tablets, and desktop screens"
+  - "flexible website styling that looks great on any screen resolution"
+summary: "An approach to web design that makes web pages render well on a variety of devices and screen window sizes."
 confusable_notes: {}
-follow_up_questions: []
+follow_up_questions:
+  - "How do CSS media queries establish layout breakpoints for mobile and desktop viewports?"
+  - "Why has fluid typography and relative unit sizing replaced fixed pixel constraints?"
 translation: native
 ---
 
 ## Easy explanation
-Intuitive real world analogy.
+Responsive design is like water poured into different containers: it naturally flows and takes the exact shape of a small cup, a wide bowl, or a tall pitcher.
 
 ## Details
-Operational details and mechanics.
+Coined by Ethan Marcotte, responsive web design relies on three core technical pillars: fluid grid layouts based on relative units (percentages, fr units), flexible media that scale within container boundaries, and CSS media queries that apply conditional styles at specific viewport breakpoints. This approach ensures optimal usability, touch ergonomics, and readable typography across small smartphones, tablets, and widescreen desktop monitors.
 
 ## Technical definition
-Authoritative industry definition.
+A client-side styling methodology combining fluid grids, flexible images, and media query breakpoints to dynamically conform layouts to viewport dimensions.
 
 ## Examples
-Practical examples or numerical scenarios.
+A newspaper layout that renders in a multi-column grid on desktop screens automatically stacks into a single-column readable stream on mobile screens narrower than 768 pixels.

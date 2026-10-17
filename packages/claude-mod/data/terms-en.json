@@ -938,6 +938,51 @@
     "autolink": true
   },
   {
+    "key": "Browser cache",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "browser-cache",
+        "label": "Browser cache",
+        "summary": "A temporary storage mechanism within a web browser that retains previously fetched HTTP resources to speed up future requests.",
+        "domains": [
+          "it/web/frontend"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "web cache",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "browser-cache",
+        "label": "Browser cache",
+        "summary": "A temporary storage mechanism within a web browser that retains previously fetched HTTP resources to speed up future requests.",
+        "domains": [
+          "it/web/frontend"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "HTTP cache",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "browser-cache",
+        "label": "Browser cache",
+        "summary": "A temporary storage mechanism within a web browser that retains previously fetched HTTP resources to speed up future requests.",
+        "domains": [
+          "it/web/frontend"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
     "key": "Budget",
     "match": "any-case",
     "concepts": [
@@ -964,6 +1009,38 @@
         "summary": "An itemised financial plan that estimates anticipated income and allocates it toward expenses, savings, and debt payoff over a set period.",
         "domains": [
           "finance/personal-finance/budget"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Bundler",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "bundler",
+        "label": "Bundler",
+        "qualifier": "(JavaScript)",
+        "summary": "A build tool that traverses project dependencies to combine and optimize multiple code and asset files into production-ready web bundles.",
+        "domains": [
+          "it/web/frontend"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "module bundler",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "bundler",
+        "label": "Bundler",
+        "qualifier": "(JavaScript)",
+        "summary": "A build tool that traverses project dependencies to combine and optimize multiple code and asset files into production-ready web bundles.",
+        "domains": [
+          "it/web/frontend"
         ]
       }
     ],
@@ -1366,6 +1443,36 @@
     "autolink": true
   },
   {
+    "key": "Code splitting",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "code-splitting",
+        "label": "Code splitting",
+        "summary": "A technique of splitting a single application bundle into multiple smaller chunks that can be loaded on demand or in parallel.",
+        "domains": [
+          "it/web/frontend"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "bundle splitting",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "code-splitting",
+        "label": "Code splitting",
+        "summary": "A technique of splitting a single application bundle into multiple smaller chunks that can be loaded on demand or in parallel.",
+        "domains": [
+          "it/web/frontend"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
     "key": "Color grading",
     "match": "any-case",
     "concepts": [
@@ -1623,6 +1730,38 @@
         "summary": "A form of intellectual property law protecting original works of authorship fixed in any tangible medium of expression from unauthorized copying and distribution.",
         "domains": [
           "media/publishing/copyright-licensing"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Core Web Vitals",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "core-web-vitals",
+        "label": "Core Web Vitals",
+        "summary": "A set of standardized metrics established by Google to evaluate real-world user experience across loading speed, responsiveness, and visual stability.",
+        "domains": [
+          "it/web/frontend",
+          "media/digital-marketing/seo"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "CWV",
+    "match": "exact-case",
+    "concepts": [
+      {
+        "id": "core-web-vitals",
+        "label": "Core Web Vitals",
+        "summary": "A set of standardized metrics established by Google to evaluate real-world user experience across loading speed, responsiveness, and visual stability.",
+        "domains": [
+          "it/web/frontend",
+          "media/digital-marketing/seo"
         ]
       }
     ],
@@ -1970,6 +2109,36 @@
         "summary": "An attack that tricks an authenticated web browser into sending unauthorized commands to a vulnerable web application without the user’s consent.",
         "domains": [
           "it/security/vulnerabilities"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "CSS",
+    "match": "exact-case",
+    "concepts": [
+      {
+        "id": "css",
+        "label": "CSS",
+        "summary": "A declarative styling language for rendering visual layout, typographic formatting, and color palettes on markup documents.",
+        "domains": [
+          "it/web/frontend"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Cascading Style Sheets",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "css",
+        "label": "CSS",
+        "summary": "A declarative styling language for rendering visual layout, typographic formatting, and color palettes on markup documents.",
+        "domains": [
+          "it/web/frontend"
         ]
       }
     ],
@@ -2891,6 +3060,36 @@
         "summary": "An open commercial platform providing tooling to build, share, package, and execute application containers using host operating system virtualization.",
         "domains": [
           "it/devops/containers"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Document Object Model (DOM)",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "dom",
+        "label": "Document Object Model (DOM)",
+        "summary": "A cross-platform, language-independent programming interface that treats an HTML or XML document as a tree structure of nodes.",
+        "domains": [
+          "it/web/frontend"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "DOM",
+    "match": "exact-case",
+    "concepts": [
+      {
+        "id": "dom",
+        "label": "Document Object Model (DOM)",
+        "summary": "A cross-platform, language-independent programming interface that treats an HTML or XML document as a tree structure of nodes.",
+        "domains": [
+          "it/web/frontend"
         ]
       }
     ],
@@ -3965,6 +4164,68 @@
     "autolink": true
   },
   {
+    "key": "HTML",
+    "match": "exact-case",
+    "concepts": [
+      {
+        "id": "html",
+        "label": "HTML",
+        "summary": "The standard markup language used to structure documents and content displayed in web browsers.",
+        "domains": [
+          "it/web/frontend"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "HyperText Markup Language",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "html",
+        "label": "HTML",
+        "summary": "The standard markup language used to structure documents and content displayed in web browsers.",
+        "domains": [
+          "it/web/frontend"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Hypertext Transfer Protocol (HTTP)",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "http",
+        "label": "Hypertext Transfer Protocol (HTTP)",
+        "summary": "A foundational client-server networking specification governing how web browsers fetch and submit hypermedia assets.",
+        "domains": [
+          "it/web/api",
+          "it/infrastructure/networking"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "HTTP",
+    "match": "exact-case",
+    "concepts": [
+      {
+        "id": "http",
+        "label": "Hypertext Transfer Protocol (HTTP)",
+        "summary": "A foundational client-server networking specification governing how web browsers fetch and submit hypermedia assets.",
+        "domains": [
+          "it/web/api",
+          "it/infrastructure/networking"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
     "key": "HTTP status code",
     "match": "any-case",
     "concepts": [
@@ -4004,6 +4265,68 @@
         "summary": "A standardized three-digit integer returned by a server indicating the outcome of a client’s HTTP request.",
         "domains": [
           "it/web/api"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "HTTPS",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "https",
+        "label": "HTTPS",
+        "summary": "An extension of HTTP that encrypts bidirectional communication using Transport Layer Security (TLS).",
+        "domains": [
+          "it/web/api"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Hypertext Transfer Protocol Secure",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "https",
+        "label": "HTTPS",
+        "summary": "An extension of HTTP that encrypts bidirectional communication using Transport Layer Security (TLS).",
+        "domains": [
+          "it/web/api"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Hydration",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "hydration",
+        "label": "Hydration",
+        "qualifier": "(Web)",
+        "summary": "The client-side process where framework JavaScript attaches event listeners and state management to server-rendered HTML markup.",
+        "domains": [
+          "it/web/frontend"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "client-side hydration",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "hydration",
+        "label": "Hydration",
+        "qualifier": "(Web)",
+        "summary": "The client-side process where framework JavaScript attaches event listeners and state management to server-rendered HTML markup.",
+        "domains": [
+          "it/web/frontend"
         ]
       }
     ],
@@ -4608,6 +4931,38 @@
     "autolink": true
   },
   {
+    "key": "JavaScript",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "javascript",
+        "label": "JavaScript",
+        "summary": "A dynamic multi-paradigm programming language featuring prototype inheritance that powers client-side web browser behavior.",
+        "domains": [
+          "it/web/frontend",
+          "it/software-engineering/programming-concepts"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "JS",
+    "match": "exact-case",
+    "concepts": [
+      {
+        "id": "javascript",
+        "label": "JavaScript",
+        "summary": "A dynamic multi-paradigm programming language featuring prototype inheritance that powers client-side web browser behavior.",
+        "domains": [
+          "it/web/frontend",
+          "it/software-engineering/programming-concepts"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
     "key": "JSON",
     "match": "exact-case",
     "concepts": [
@@ -4885,6 +5240,51 @@
     "autolink": true
   },
   {
+    "key": "Lazy loading",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "lazy-loading",
+        "label": "Lazy loading",
+        "summary": "A performance optimization pattern that defers the loading of non-critical resources until they are needed by the user.",
+        "domains": [
+          "it/web/frontend"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "deferred loading",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "lazy-loading",
+        "label": "Lazy loading",
+        "summary": "A performance optimization pattern that defers the loading of non-critical resources until they are needed by the user.",
+        "domains": [
+          "it/web/frontend"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "on-demand loading",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "lazy-loading",
+        "label": "Lazy loading",
+        "summary": "A performance optimization pattern that defers the loading of non-critical resources until they are needed by the user.",
+        "domains": [
+          "it/web/frontend"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
     "key": "Principle of least privilege",
     "match": "any-case",
     "concepts": [
@@ -5141,6 +5541,36 @@
         "summary": "A networking component that distributes incoming application or network traffic across a pool of backend destination servers.",
         "domains": [
           "it/infrastructure/networking"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "localStorage",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "local-storage",
+        "label": "localStorage",
+        "summary": "A Web Storage API mechanism that allows web applications to store persistent key-value pairs locally within the user’s browser.",
+        "domains": [
+          "it/web/frontend"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Web Storage",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "local-storage",
+        "label": "localStorage",
+        "summary": "A Web Storage API mechanism that allows web applications to store persistent key-value pairs locally within the user’s browser.",
+        "domains": [
+          "it/web/frontend"
         ]
       }
     ],
@@ -6140,6 +6570,52 @@
       }
     ],
     "autolink": true
+  },
+  {
+    "key": "Nginx",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "nginx",
+        "label": "Nginx",
+        "summary": "A high-performance HTTP web server, reverse proxy, and load balancer designed for maximum concurrency and low memory usage.",
+        "domains": [
+          "it/web/backend",
+          "it/infrastructure/networking"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Node.js",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "nodejs",
+        "label": "Node.js",
+        "summary": "A standalone server runtime that compiles and executes JavaScript code outside browser sandboxes via Google V8 engine.",
+        "domains": [
+          "it/web/backend"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Node",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "nodejs",
+        "label": "Node.js",
+        "summary": "A standalone server runtime that compiles and executes JavaScript code outside browser sandboxes via Google V8 engine.",
+        "domains": [
+          "it/web/backend"
+        ]
+      }
+    ],
+    "autolink": false
   },
   {
     "key": "North Star metric",
@@ -7308,6 +7784,36 @@
     "autolink": true
   },
   {
+    "key": "Progressive web app (PWA)",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "progressive-web-app",
+        "label": "Progressive web app (PWA)",
+        "summary": "A web application built using web technologies that delivers app-like experiences, offline capabilities, and device installation.",
+        "domains": [
+          "it/web/frontend"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "PWA",
+    "match": "exact-case",
+    "concepts": [
+      {
+        "id": "progressive-web-app",
+        "label": "Progressive web app (PWA)",
+        "summary": "A web application built using web technologies that delivers app-like experiences, offline capabilities, and device installation.",
+        "domains": [
+          "it/web/frontend"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
     "key": "Prompt",
     "match": "any-case",
     "concepts": [
@@ -7564,6 +8070,54 @@
     "autolink": true
   },
   {
+    "key": "React",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "react",
+        "label": "React",
+        "qualifier": "(Library)",
+        "summary": "A free and open-source front-end JavaScript library for building user interfaces based on components.",
+        "domains": [
+          "it/web/frontend"
+        ]
+      }
+    ],
+    "autolink": false
+  },
+  {
+    "key": "React.js",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "react",
+        "label": "React",
+        "qualifier": "(Library)",
+        "summary": "A free and open-source front-end JavaScript library for building user interfaces based on components.",
+        "domains": [
+          "it/web/frontend"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "ReactJS",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "react",
+        "label": "React",
+        "qualifier": "(Library)",
+        "summary": "A free and open-source front-end JavaScript library for building user interfaces based on components.",
+        "domains": [
+          "it/web/frontend"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
     "key": "Reasoning model",
     "match": "any-case",
     "concepts": [
@@ -7648,6 +8202,51 @@
         "summary": "The practice of re-executing test suites against an updated application to ensure that recent code modifications or bug fixes have not disrupted previously working functionality.",
         "domains": [
           "it/software-engineering/testing"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Responsive design",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "responsive-design",
+        "label": "Responsive design",
+        "summary": "An approach to web design that makes web pages render well on a variety of devices and screen window sizes.",
+        "domains": [
+          "it/web/frontend"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "responsive web design",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "responsive-design",
+        "label": "Responsive design",
+        "summary": "An approach to web design that makes web pages render well on a variety of devices and screen window sizes.",
+        "domains": [
+          "it/web/frontend"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "RWD",
+    "match": "exact-case",
+    "concepts": [
+      {
+        "id": "responsive-design",
+        "label": "Responsive design",
+        "summary": "An approach to web design that makes web pages render well on a variety of devices and screen window sizes.",
+        "domains": [
+          "it/web/frontend"
         ]
       }
     ],
@@ -8267,6 +8866,36 @@
     "autolink": true
   },
   {
+    "key": "Server-side rendering (SSR)",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "server-side-rendering",
+        "label": "Server-side rendering (SSR)",
+        "summary": "The process of rendering web components into complete HTML strings on the server in response to user requests.",
+        "domains": [
+          "it/web/frontend"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "SSR",
+    "match": "exact-case",
+    "concepts": [
+      {
+        "id": "server-side-rendering",
+        "label": "Server-side rendering (SSR)",
+        "summary": "The process of rendering web components into complete HTML strings on the server in response to user requests.",
+        "domains": [
+          "it/web/frontend"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
     "key": "Serverless",
     "match": "any-case",
     "concepts": [
@@ -8306,6 +8935,36 @@
         "summary": "A cloud computing execution model where the cloud provider dynamically manages server infrastructure and charges only for resource consumption during code execution.",
         "domains": [
           "it/infrastructure/cloud"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Service worker",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "service-worker",
+        "label": "Service worker",
+        "summary": "An event-driven background worker script that intercepts network requests, manages caching strategies, and powers push notifications.",
+        "domains": [
+          "it/web/frontend"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "service workers",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "service-worker",
+        "label": "Service worker",
+        "summary": "An event-driven background worker script that intercepts network requests, manages caching strategies, and powers push notifications.",
+        "domains": [
+          "it/web/frontend"
         ]
       }
     ],
@@ -8383,6 +9042,36 @@
         "domains": [
           "finance/personal-finance/saving",
           "finance/banking/lending"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Single-page application (SPA)",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "single-page-application",
+        "label": "Single-page application (SPA)",
+        "summary": "A web application that interacts with the user by dynamically rewriting the current web page rather than loading entire new pages from a server.",
+        "domains": [
+          "it/web/frontend"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "SPA",
+    "match": "exact-case",
+    "concepts": [
+      {
+        "id": "single-page-application",
+        "label": "Single-page application (SPA)",
+        "summary": "A web application that interacts with the user by dynamically rewriting the current web page rather than loading entire new pages from a server.",
+        "domains": [
+          "it/web/frontend"
         ]
       }
     ],
@@ -8919,6 +9608,36 @@
         "summary": "The agreed valuation of a private enterprise determined prior to receiving an external injection of new investment capital.",
         "domains": [
           "finance/corporate-finance/fundraising"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Static site generation (SSG)",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "static-site-generation",
+        "label": "Static site generation (SSG)",
+        "summary": "A build method that pre-renders full HTML pages at compile time rather than on demand for each user request.",
+        "domains": [
+          "it/web/frontend"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "SSG",
+    "match": "exact-case",
+    "concepts": [
+      {
+        "id": "static-site-generation",
+        "label": "Static site generation (SSG)",
+        "summary": "A build method that pre-renders full HTML pages at compile time rather than on demand for each user request.",
+        "domains": [
+          "it/web/frontend"
         ]
       }
     ],
@@ -9560,6 +10279,36 @@
     "autolink": true
   },
   {
+    "key": "Tree shaking",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "tree-shaking",
+        "label": "Tree shaking",
+        "summary": "A dead-code elimination technique commonly used in modern JavaScript bundlers to remove unused exports from final production bundles.",
+        "domains": [
+          "it/web/frontend"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "dead code elimination",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "tree-shaking",
+        "label": "Tree shaking",
+        "summary": "A dead-code elimination technique commonly used in modern JavaScript bundlers to remove unused exports from final production bundles.",
+        "domains": [
+          "it/web/frontend"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
     "key": "Type checking",
     "match": "any-case",
     "concepts": [
@@ -9573,6 +10322,38 @@
       }
     ],
     "autolink": true
+  },
+  {
+    "key": "TypeScript",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "typescript",
+        "label": "TypeScript",
+        "summary": "A strongly typed programming language that builds on JavaScript, giving developers better tooling and early error detection.",
+        "domains": [
+          "it/web/frontend",
+          "it/software-engineering/programming-concepts"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "TS",
+    "match": "exact-case",
+    "concepts": [
+      {
+        "id": "typescript",
+        "label": "TypeScript",
+        "summary": "A strongly typed programming language that builds on JavaScript, giving developers better tooling and early error detection.",
+        "domains": [
+          "it/web/frontend",
+          "it/software-engineering/programming-concepts"
+        ]
+      }
+    ],
+    "autolink": false
   },
   {
     "key": "Typography",
@@ -9674,6 +10455,51 @@
         "summary": "The proportion or duration of time that a computer system, network, or application remains fully functional and accessible to users.",
         "domains": [
           "it/devops/sre-operations"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "URL",
+    "match": "exact-case",
+    "concepts": [
+      {
+        "id": "url",
+        "label": "URL",
+        "summary": "A structured reference syntax identifying network location coordinates and retrieval protocols for internet resources.",
+        "domains": [
+          "it/web/frontend"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Uniform Resource Locator",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "url",
+        "label": "URL",
+        "summary": "A structured reference syntax identifying network location coordinates and retrieval protocols for internet resources.",
+        "domains": [
+          "it/web/frontend"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "web address",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "url",
+        "label": "URL",
+        "summary": "A structured reference syntax identifying network location coordinates and retrieval protocols for internet resources.",
+        "domains": [
+          "it/web/frontend"
         ]
       }
     ],
@@ -10056,6 +10882,111 @@
         "summary": "A statistical measure of the dispersion of returns for a given security or market index over a specified timeframe.",
         "domains": [
           "finance/investing/portfolio-risk"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "WCAG",
+    "match": "exact-case",
+    "concepts": [
+      {
+        "id": "wcag",
+        "label": "WCAG",
+        "summary": "A set of formal web accessibility recommendations published by the W3C Web Accessibility Initiative.",
+        "domains": [
+          "it/web/frontend"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Web Content Accessibility Guidelines",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "wcag",
+        "label": "WCAG",
+        "summary": "A set of formal web accessibility recommendations published by the W3C Web Accessibility Initiative.",
+        "domains": [
+          "it/web/frontend"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Web accessibility (a11y)",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "web-accessibility",
+        "label": "Web accessibility (a11y)",
+        "summary": "The inclusive practice of ensuring there are no barriers that prevent interaction with websites by people with physical, sensory, or cognitive disabilities.",
+        "domains": [
+          "it/web/frontend"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "a11y",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "web-accessibility",
+        "label": "Web accessibility (a11y)",
+        "summary": "The inclusive practice of ensuring there are no barriers that prevent interaction with websites by people with physical, sensory, or cognitive disabilities.",
+        "domains": [
+          "it/web/frontend"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "accessibility",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "web-accessibility",
+        "label": "Web accessibility (a11y)",
+        "summary": "The inclusive practice of ensuring there are no barriers that prevent interaction with websites by people with physical, sensory, or cognitive disabilities.",
+        "domains": [
+          "it/web/frontend"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Web server",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "web-server",
+        "label": "Web server",
+        "summary": "A computer system or software application that processes incoming network requests over HTTP and serves web content to clients.",
+        "domains": [
+          "it/web/backend"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "HTTP server",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "web-server",
+        "label": "Web server",
+        "summary": "A computer system or software application that processes incoming network requests over HTTP and serves web content to clients.",
+        "domains": [
+          "it/web/backend"
         ]
       }
     ],

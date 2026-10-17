@@ -592,6 +592,27 @@
     "status": "draft"
   },
   {
+    "id": "browser-cache",
+    "label": "Bộ nhớ đệm trình duyệt",
+    "aliases": [
+      "browser cache",
+      "web cache"
+    ],
+    "loanwords": [
+      "browser cache"
+    ],
+    "plain_descriptions": [
+      "ngăn lưu tạm nơi trình duyệt giữ lại hình ảnh và tệp để mở lại trang nhanh hơn",
+      "bộ nhớ tạm lưu các tài nguyên web đã tải giúp tránh việc phải tải lại nhiều lần"
+    ],
+    "summary": "Cơ chế lưu trữ tạm thời trong trình duyệt web giúp giữ lại các tài nguyên HTTP đã tải về để tái sử dụng trong các lần truy cập tiếp theo.",
+    "domains": [
+      "it/web/frontend"
+    ],
+    "level": 1,
+    "status": "draft"
+  },
+  {
     "id": "budget",
     "label": "Ngân sách",
     "qualifier": "(Tài chính cá nhân)",
@@ -610,6 +631,29 @@
       "finance/personal-finance/budget"
     ],
     "level": 1,
+    "status": "draft"
+  },
+  {
+    "id": "bundler",
+    "label": "Bundler",
+    "qualifier": "(JavaScript)",
+    "aliases": [
+      "module bundler",
+      "bộ đóng gói mã"
+    ],
+    "loanwords": [
+      "Bundler",
+      "module bundler"
+    ],
+    "plain_descriptions": [
+      "công cụ gom hàng trăm tệp mã nguồn nhỏ thành vài tệp gọn gàng để trình duyệt tải nhanh hơn",
+      "chương trình đóng gói và tối ưu hóa các tệp JavaScript, CSS trước khi đưa lên mạng"
+    ],
+    "summary": "Công cụ đóng gói và xử lý các tệp mã nguồn cùng tài nguyên liên quan thành các gói tệp hoàn chỉnh để triển khai lên web.",
+    "domains": [
+      "it/web/frontend"
+    ],
+    "level": 2,
     "status": "draft"
   },
   {
@@ -886,6 +930,27 @@
     "status": "draft"
   },
   {
+    "id": "code-splitting",
+    "label": "Code splitting",
+    "aliases": [
+      "phân tách mã nguồn",
+      "chia nhỏ gói mã"
+    ],
+    "loanwords": [
+      "Code splitting"
+    ],
+    "plain_descriptions": [
+      "chia nhỏ ứng dụng web thành từng phần để chỉ tải về khi người dùng cần",
+      "cắt nhỏ tệp mã lớn thành các gói nhỏ giúp mở trang đầu nhanh hơn"
+    ],
+    "summary": "Kỹ thuật chia nhỏ gói mã nguồn thành nhiều phần nhỏ hơn để tải theo yêu cầu hoặc tải song song nhằm tăng tốc độ tải trang.",
+    "domains": [
+      "it/web/frontend"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
     "id": "color-grading",
     "label": "Color grading",
     "aliases": [
@@ -1067,6 +1132,29 @@
       "media/publishing/copyright-licensing"
     ],
     "level": 1,
+    "status": "draft"
+  },
+  {
+    "id": "core-web-vitals",
+    "label": "Core Web Vitals",
+    "aliases": [
+      "CWV",
+      "chỉ số hiệu năng web cốt lõi"
+    ],
+    "loanwords": [
+      "Core Web Vitals",
+      "CWV"
+    ],
+    "plain_descriptions": [
+      "bộ tiêu chuẩn của Google đo lường tốc độ, độ nhạy và tính ổn định của trang web",
+      "các chỉ số hiệu năng thực tế quyết định trải nghiệm người dùng và thứ hạng tìm kiếm"
+    ],
+    "summary": "Tập hợp các chỉ số chuẩn hóa do Google đề xuất nhằm đo lường trải nghiệm thực tế của người dùng về tốc độ tải, độ phản hồi và độ ổn định giao diện.",
+    "domains": [
+      "it/web/frontend",
+      "media/digital-marketing/seo"
+    ],
+    "level": 2,
     "status": "draft"
   },
   {
@@ -1270,6 +1358,27 @@
       "it/security/vulnerabilities"
     ],
     "level": 2,
+    "status": "draft"
+  },
+  {
+    "id": "css",
+    "label": "CSS",
+    "aliases": [
+      "Cascading Style Sheets"
+    ],
+    "loanwords": [
+      "CSS",
+      "Cascading Style Sheets"
+    ],
+    "plain_descriptions": [
+      "tập hợp quy tắc quyết định màu sắc, phông chữ và cách căn chỉnh giao diện web",
+      "ngôn ngữ định dạng giúp trang web trở nên đẹp mắt và chuyên nghiệp"
+    ],
+    "summary": "Ngôn ngữ bảng kiểu dùng để định dạng cách trình bày, bố cục và màu sắc của tài liệu HTML.",
+    "domains": [
+      "it/web/frontend"
+    ],
+    "level": 1,
     "status": "draft"
   },
   {
@@ -1855,6 +1964,27 @@
     "summary": "Nền tảng phần mềm cung cấp công cụ xây dựng, chia sẻ và thực thi các container ứng dụng thông qua cơ chế ảo hóa của hệ điều hành máy chủ.",
     "domains": [
       "it/devops/containers"
+    ],
+    "level": 1,
+    "status": "draft"
+  },
+  {
+    "id": "dom",
+    "label": "Document Object Model (DOM)",
+    "aliases": [
+      "DOM"
+    ],
+    "loanwords": [
+      "Document Object Model (DOM)",
+      "DOM"
+    ],
+    "plain_descriptions": [
+      "cây cấu trúc bên trong trang web cho phép mã lập trình đọc và chỉnh sửa",
+      "mô hình đối tượng đại diện cho các phần tử HTML trên màn hình trình duyệt"
+    ],
+    "summary": "Giao diện lập trình ứng dụng biểu diễn tài liệu HTML dưới dạng cây phân cấp các đối tượng có thể truy xuất và sửa đổi.",
+    "domains": [
+      "it/web/frontend"
     ],
     "level": 1,
     "status": "draft"
@@ -2662,6 +2792,49 @@
     "status": "draft"
   },
   {
+    "id": "html",
+    "label": "HTML",
+    "aliases": [
+      "HyperText Markup Language"
+    ],
+    "loanwords": [
+      "HTML",
+      "HyperText Markup Language"
+    ],
+    "plain_descriptions": [
+      "các thẻ mã dùng để dựng khung bài viết, tiêu đề và liên kết của trang web",
+      "ngôn ngữ đánh dấu cơ bản định hình cấu trúc nội dung của mọi trang web"
+    ],
+    "summary": "Ngôn ngữ đánh dấu tiêu chuẩn dùng để tạo khung cấu trúc và sắp xếp nội dung hiển thị trong trình duyệt web.",
+    "domains": [
+      "it/web/frontend"
+    ],
+    "level": 1,
+    "status": "draft"
+  },
+  {
+    "id": "http",
+    "label": "Hypertext Transfer Protocol (HTTP)",
+    "aliases": [
+      "HTTP"
+    ],
+    "loanwords": [
+      "Hypertext Transfer Protocol (HTTP)",
+      "HTTP"
+    ],
+    "plain_descriptions": [
+      "quy tắc giao tiếp để trình duyệt và máy chủ trao đổi trang web",
+      "giao thức truyền tải yêu cầu và dữ liệu phản hồi trên mạng internet"
+    ],
+    "summary": "Giao thức tầng ứng dụng dùng để truyền tải các tài liệu siêu văn bản giữa trình duyệt và máy chủ web.",
+    "domains": [
+      "it/web/api",
+      "it/infrastructure/networking"
+    ],
+    "level": 1,
+    "status": "draft"
+  },
+  {
     "id": "http-status-code",
     "label": "HTTP status code",
     "aliases": [
@@ -2682,6 +2855,50 @@
       "it/web/api"
     ],
     "level": 1,
+    "status": "draft"
+  },
+  {
+    "id": "https",
+    "label": "HTTPS",
+    "aliases": [
+      "Hypertext Transfer Protocol Secure"
+    ],
+    "loanwords": [
+      "HTTPS",
+      "Hypertext Transfer Protocol Secure"
+    ],
+    "plain_descriptions": [
+      "kết nối web được mã hóa giúp bảo vệ thông tin không bị xem trộm",
+      "phiên bản an toàn của HTTP với biểu tượng ổ khóa trên thanh địa chỉ"
+    ],
+    "summary": "Phiên bản bảo mật của giao thức HTTP sử dụng mã hóa TLS để bảo vệ toàn bộ dữ liệu truyền giữa trình duyệt và máy chủ.",
+    "domains": [
+      "it/web/api"
+    ],
+    "level": 1,
+    "status": "draft"
+  },
+  {
+    "id": "hydration",
+    "label": "Hydration",
+    "qualifier": "(Web)",
+    "aliases": [
+      "bù nước",
+      "client-side hydration"
+    ],
+    "loanwords": [
+      "Hydration",
+      "client-side hydration"
+    ],
+    "plain_descriptions": [
+      "gắn các tính năng tương tác và bấm nút vào trang web tĩnh đã tạo sẵn",
+      "quá trình dùng JavaScript kích hoạt sức sống cho khung HTML máy chủ gửi về"
+    ],
+    "summary": "Quá trình phía trình duyệt kích hoạt mã JavaScript để gắn các sự kiện tương tác vào trang HTML tĩnh do máy chủ gửi về.",
+    "domains": [
+      "it/web/frontend"
+    ],
+    "level": 2,
     "status": "draft"
   },
   {
@@ -3093,6 +3310,28 @@
     "status": "draft"
   },
   {
+    "id": "javascript",
+    "label": "JavaScript",
+    "aliases": [
+      "JS"
+    ],
+    "loanwords": [
+      "JavaScript",
+      "JS"
+    ],
+    "plain_descriptions": [
+      "ngôn ngữ lập trình giúp trang web có thể tương tác và chuyển động linh hoạt",
+      "ngôn ngữ kịch bản chạy trực tiếp trong mọi trình duyệt web hiện đại"
+    ],
+    "summary": "Ngôn ngữ lập trình thông dịch đa nền tảng, cho phép tạo ra các tính năng tương tác phức tạp trên trang web.",
+    "domains": [
+      "it/web/frontend",
+      "it/software-engineering/programming-concepts"
+    ],
+    "level": 1,
+    "status": "draft"
+  },
+  {
     "id": "json",
     "label": "JSON",
     "aliases": [
@@ -3281,6 +3520,28 @@
     "status": "draft"
   },
   {
+    "id": "lazy-loading",
+    "label": "Lazy loading",
+    "aliases": [
+      "tải chậm",
+      "tải lười",
+      "tải theo yêu cầu"
+    ],
+    "loanwords": [
+      "Lazy loading"
+    ],
+    "plain_descriptions": [
+      "chờ người dùng cuộn chuột tới nơi mới bắt đầu tải hình ảnh và nội dung về",
+      "trì hoãn việc nạp dữ liệu để tiết kiệm mạng và giúp trang web mở nhanh hơn"
+    ],
+    "summary": "Mô hình tối ưu hóa hiệu năng bằng cách trì hoãn tải các tài nguyên chưa cần thiết cho đến khi người dùng tương tác tới.",
+    "domains": [
+      "it/web/frontend"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
     "id": "least-privilege",
     "label": "Principle of least privilege",
     "aliases": [
@@ -3422,6 +3683,27 @@
       "it/infrastructure/networking"
     ],
     "level": 2,
+    "status": "draft"
+  },
+  {
+    "id": "local-storage",
+    "label": "localStorage",
+    "aliases": [
+      "Web Storage",
+      "bộ nhớ cục bộ"
+    ],
+    "loanwords": [
+      "localStorage"
+    ],
+    "plain_descriptions": [
+      "ngăn chứa trong trình duyệt nơi trang web ghi nhớ sở thích của bạn vĩnh viễn",
+      "bộ nhớ lưu trữ dữ liệu dạng khóa - giá trị không bị mất đi khi đóng tab"
+    ],
+    "summary": "Giao diện lưu trữ dữ liệu phía trình duyệt cho phép lưu các cặp khóa - giá trị lâu dài theo từng tên miền mà không có thời hạn hết hạn.",
+    "domains": [
+      "it/web/frontend"
+    ],
+    "level": 1,
     "status": "draft"
   },
   {
@@ -4069,6 +4351,49 @@
       "media/digital-marketing/email"
     ],
     "level": 1,
+    "status": "draft"
+  },
+  {
+    "id": "nginx",
+    "label": "Nginx",
+    "aliases": [
+      "NGINX"
+    ],
+    "loanwords": [
+      "Nginx",
+      "NGINX"
+    ],
+    "plain_descriptions": [
+      "phần mềm máy chủ web hiệu năng cao nổi tiếng chuyên gánh lượng truy cập lớn",
+      "chương trình máy chủ mã nguồn mở chuyên phân phối tải và làm trạm chuyển tiếp proxy"
+    ],
+    "summary": "Phần mềm máy chủ web và trạm chuyển tiếp đảo ngược (reverse proxy) mã nguồn mở nổi tiếng với hiệu năng cao và tiêu tốn ít bộ nhớ.",
+    "domains": [
+      "it/web/backend",
+      "it/infrastructure/networking"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
+    "id": "nodejs",
+    "label": "Node.js",
+    "aliases": [
+      "Node"
+    ],
+    "loanwords": [
+      "Node.js",
+      "Node"
+    ],
+    "plain_descriptions": [
+      "môi trường cho phép chạy mã JavaScript trực tiếp trên máy chủ thay vì trong trình duyệt",
+      "nền tảng chạy mã JavaScript phía backend giúp xây dựng các dịch vụ web tốc độ cao"
+    ],
+    "summary": "Môi trường thực thi JavaScript đa nền tảng, mã nguồn mở, cho phép chạy mã nguồn JavaScript bên ngoài trình duyệt web.",
+    "domains": [
+      "it/web/backend"
+    ],
+    "level": 2,
     "status": "draft"
   },
   {
@@ -4781,6 +5106,27 @@
     "status": "draft"
   },
   {
+    "id": "progressive-web-app",
+    "label": "Progressive web app (PWA)",
+    "aliases": [
+      "PWA"
+    ],
+    "loanwords": [
+      "Progressive web app (PWA)",
+      "PWA"
+    ],
+    "plain_descriptions": [
+      "trang web có thể cài ra màn hình điện thoại và hoạt động khi mất mạng",
+      "ứng dụng web mang trải nghiệm mượt mà và tính năng thông báo như app cài đặt"
+    ],
+    "summary": "Ứng dụng xây dựng bằng công nghệ web có khả năng cài đặt lên thiết bị, chạy ngoại tuyến và gửi thông báo như ứng dụng gốc.",
+    "domains": [
+      "it/web/frontend"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
     "id": "prompt",
     "label": "Prompt",
     "aliases": [],
@@ -4958,6 +5304,30 @@
     "status": "draft"
   },
   {
+    "id": "react",
+    "label": "React",
+    "qualifier": "(Thư viện)",
+    "aliases": [
+      "React.js",
+      "ReactJS"
+    ],
+    "loanwords": [
+      "React",
+      "React.js",
+      "ReactJS"
+    ],
+    "plain_descriptions": [
+      "công cụ JavaScript phổ biến giúp lắp ráp giao diện web từ các mảnh ghép thành phần",
+      "thư viện lập trình giao diện theo mô hình thành phần tái sử dụng và cập nhật tự động"
+    ],
+    "summary": "Thư viện JavaScript mã nguồn mở chuyên dùng để xây dựng giao diện người dùng dựa trên các thành phần (component).",
+    "domains": [
+      "it/web/frontend"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
     "id": "reasoning-model",
     "label": "Reasoning model",
     "aliases": [
@@ -5034,6 +5404,27 @@
       "it/software-engineering/testing"
     ],
     "level": 2,
+    "status": "draft"
+  },
+  {
+    "id": "responsive-design",
+    "label": "Thiết kế web đáp ứng",
+    "aliases": [
+      "responsive web design",
+      "responsive design"
+    ],
+    "loanwords": [
+      "responsive design"
+    ],
+    "plain_descriptions": [
+      "cách làm web tự động co giãn đẹp mắt trên cả điện thoại, máy tính bảng và laptop",
+      "thiết kế giao diện linh hoạt tự sắp xếp lại bố cục theo kích thước màn hình"
+    ],
+    "summary": "Phương pháp thiết kế giúp giao diện trang web tự động điều chỉnh bố cục phù hợp với mọi kích thước màn hình của thiết bị.",
+    "domains": [
+      "it/web/frontend"
+    ],
+    "level": 1,
     "status": "draft"
   },
   {
@@ -5480,6 +5871,27 @@
     "status": "draft"
   },
   {
+    "id": "server-side-rendering",
+    "label": "Server-side rendering (SSR)",
+    "aliases": [
+      "SSR"
+    ],
+    "loanwords": [
+      "Server-side rendering (SSR)",
+      "SSR"
+    ],
+    "plain_descriptions": [
+      "tạo sẵn toàn bộ trang HTML tại máy chủ rồi mới gửi về cho trình duyệt",
+      "kết xuất trang web tại máy chủ giúp nội dung hiển thị nhanh và tối ưu SEO"
+    ],
+    "summary": "Kỹ thuật kết xuất giao diện thành mã HTML hoàn chỉnh trên máy chủ theo từng yêu cầu của người dùng trước khi gửi về trình duyệt.",
+    "domains": [
+      "it/web/frontend"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
     "id": "serverless",
     "label": "Serverless",
     "aliases": [
@@ -5498,6 +5910,26 @@
       "it/infrastructure/cloud"
     ],
     "level": 2,
+    "status": "draft"
+  },
+  {
+    "id": "service-worker",
+    "label": "Service worker",
+    "aliases": [
+      "tiến trình dịch vụ ngầm"
+    ],
+    "loanwords": [
+      "Service worker"
+    ],
+    "plain_descriptions": [
+      "tệp mã chạy ngầm hoạt động như người gác cổng trung gian giữa trình duyệt và mạng internet",
+      "công nghệ chạy nền giúp trang web hoạt động ngoại tuyến và nhận tin nhắn thông báo"
+    ],
+    "summary": "Kịch bản chạy nền điều khiển sự kiện, đóng vai trò trạm đại diện (proxy) đánh chặn các yêu cầu mạng và quản lý bộ nhớ đệm.",
+    "domains": [
+      "it/web/frontend"
+    ],
+    "level": 3,
     "status": "draft"
   },
   {
@@ -5562,6 +5994,27 @@
     ],
     "level": 1,
     "status": "reviewed"
+  },
+  {
+    "id": "single-page-application",
+    "label": "Single-page application (SPA)",
+    "aliases": [
+      "SPA"
+    ],
+    "loanwords": [
+      "Single-page application (SPA)",
+      "SPA"
+    ],
+    "plain_descriptions": [
+      "trang web đổi nội dung mượt mà mà không bao giờ phải nạp lại toàn bộ trang",
+      "ứng dụng web tải một khung duy nhất và chuyển màn hình bằng JavaScript"
+    ],
+    "summary": "Kiến trúc ứng dụng web tải một trang HTML duy nhất và cập nhật nội dung linh hoạt mà không tải lại toàn trang.",
+    "domains": [
+      "it/web/frontend"
+    ],
+    "level": 2,
+    "status": "draft"
   },
   {
     "id": "sla",
@@ -5944,6 +6397,27 @@
     "summary": "Giá trị doanh nghiệp được xác định và thỏa thuận giữa nhà sáng lập và nhà đầu tư trước khi dòng tiền tài trợ mới được rót vào tài khoản.",
     "domains": [
       "finance/corporate-finance/fundraising"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
+    "id": "static-site-generation",
+    "label": "Static site generation (SSG)",
+    "aliases": [
+      "SSG"
+    ],
+    "loanwords": [
+      "Static site generation (SSG)",
+      "SSG"
+    ],
+    "plain_descriptions": [
+      "tạo sẵn toàn bộ các tệp trang web từ trước để phát cho người đọc ngay lập tức",
+      "biên dịch bài viết thành các tệp HTML cố định giúp tải trang siêu nhanh qua mạng CDN"
+    ],
+    "summary": "Quy trình tạo sẵn các tệp HTML tĩnh từ lúc biên dịch dự án thay vì chờ người dùng truy cập mới tạo nội dung.",
+    "domains": [
+      "it/web/frontend"
     ],
     "level": 2,
     "status": "draft"
@@ -6345,6 +6819,27 @@
     "status": "draft"
   },
   {
+    "id": "tree-shaking",
+    "label": "Tree shaking",
+    "aliases": [
+      "loại bỏ mã thừa",
+      "dead code elimination"
+    ],
+    "loanwords": [
+      "Tree shaking"
+    ],
+    "plain_descriptions": [
+      "lọc bỏ những đoạn mã không dùng đến để tệp tải về nhẹ hơn",
+      "kỹ thuật rung cây rụng lá úa giúp loại bỏ các hàm không bao giờ được gọi tới"
+    ],
+    "summary": "Kỹ thuật tối ưu hóa trong quá trình đóng gói giúp loại bỏ mã nguồn không được sử dụng khỏi sản phẩm cuối cùng.",
+    "domains": [
+      "it/web/frontend"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
     "id": "type-checking",
     "label": "Type checking",
     "aliases": [
@@ -6359,6 +6854,28 @@
     ],
     "summary": "Quy trình kiểm chứng nhằm xác thực các giá trị dữ liệu gán cho biến hoặc truyền vào hàm có tuân thủ đúng quy tắc hệ thống kiểu của ngôn ngữ lập trình hay không.",
     "domains": [
+      "it/software-engineering/programming-concepts"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
+    "id": "typescript",
+    "label": "TypeScript",
+    "aliases": [
+      "TS"
+    ],
+    "loanwords": [
+      "TypeScript",
+      "TS"
+    ],
+    "plain_descriptions": [
+      "phiên bản JavaScript bổ sung kiểm tra kiểu dữ liệu để tránh lỗi phần mềm",
+      "ngôn ngữ mở rộng của JavaScript giúp viết mã an toàn và dễ bảo trì hơn"
+    ],
+    "summary": "Ngôn ngữ lập trình mã nguồn mở phát triển từ JavaScript, bổ sung hệ thống kiểu tĩnh giúp phát hiện lỗi sớm trước khi chạy.",
+    "domains": [
+      "it/web/frontend",
       "it/software-engineering/programming-concepts"
     ],
     "level": 2,
@@ -6424,6 +6941,28 @@
     "summary": "Tỷ lệ hoặc khoảng thời gian mà hệ thống máy tính, mạng hoặc ứng dụng duy trì trạng thái hoạt động bình thường và sẵn sàng phục vụ người dùng.",
     "domains": [
       "it/devops/sre-operations"
+    ],
+    "level": 1,
+    "status": "draft"
+  },
+  {
+    "id": "url",
+    "label": "URL",
+    "aliases": [
+      "Uniform Resource Locator",
+      "địa chỉ web"
+    ],
+    "loanwords": [
+      "URL",
+      "Uniform Resource Locator"
+    ],
+    "plain_descriptions": [
+      "chuỗi địa chỉ bạn gõ vào thanh tìm kiếm của trình duyệt để vào trang web",
+      "đường link tiêu chuẩn chỉ đúng vị trí của tài liệu trên mạng internet"
+    ],
+    "summary": "Chuỗi định danh tiêu chuẩn chỉ định vị trí cụ thể và phương thức truy cập của một tài nguyên trên mạng.",
+    "domains": [
+      "it/web/frontend"
     ],
     "level": 1,
     "status": "draft"
@@ -6636,6 +7175,71 @@
       "finance/investing/portfolio-risk"
     ],
     "level": 2,
+    "status": "draft"
+  },
+  {
+    "id": "wcag",
+    "label": "WCAG",
+    "aliases": [
+      "Web Content Accessibility Guidelines"
+    ],
+    "loanwords": [
+      "WCAG",
+      "Web Content Accessibility Guidelines"
+    ],
+    "plain_descriptions": [
+      "bộ tiêu chuẩn quốc tế chính thức về việc xây dựng trang web thân thiện cho mọi người",
+      "hướng dẫn kỹ thuật đo lường mức độ tiếp cận của nội dung web đối với người khuyết tật"
+    ],
+    "summary": "Bộ hướng dẫn tiếp cận nội dung web do Tổ chức World Wide Web Consortium (W3C) ban hành nhằm chuẩn hóa khả năng tiếp cận kỹ thuật số.",
+    "domains": [
+      "it/web/frontend"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
+    "id": "web-accessibility",
+    "label": "Khả năng tiếp cận web",
+    "aliases": [
+      "a11y",
+      "web accessibility",
+      "khả năng truy cập web"
+    ],
+    "loanwords": [
+      "a11y",
+      "web accessibility"
+    ],
+    "plain_descriptions": [
+      "làm cho trang web dễ sử dụng với tất cả mọi người, kể cả người khuyết tật",
+      "xây dựng sản phẩm web tương thích tốt với các phần mềm đọc màn hình"
+    ],
+    "summary": "Thực tiễn thiết kế và xây dựng trang web sao cho mọi người, bao gồm người có khiếm khuyết về giác quan hoặc thể chất, đều có thể sử dụng thuận tiện.",
+    "domains": [
+      "it/web/frontend"
+    ],
+    "level": 1,
+    "status": "draft"
+  },
+  {
+    "id": "web-server",
+    "label": "Máy chủ web",
+    "aliases": [
+      "web server",
+      "máy chủ HTTP"
+    ],
+    "loanwords": [
+      "web server"
+    ],
+    "plain_descriptions": [
+      "máy tính và phần mềm chuyên tiếp nhận yêu cầu và gửi trang web cho người dùng",
+      "hệ thống lưu trữ và phân phát các tệp HTML, hình ảnh qua mạng internet"
+    ],
+    "summary": "Hệ thống phần cứng hoặc phần mềm chuyên xử lý các yêu cầu từ máy khách qua giao thức HTTP để cung cấp tài nguyên trang web.",
+    "domains": [
+      "it/web/backend"
+    ],
+    "level": 1,
     "status": "draft"
   },
   {

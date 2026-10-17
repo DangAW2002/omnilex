@@ -1,12 +1,25 @@
 id: progressive-web-app
 domains:
   - it/web/frontend
-level: 1
+level: 2
 relations:
-  prerequisites: []
+  prerequisites:
+    - service-worker
+    - browser-cache
   confusable: []
-  related: []
+  related:
+    - responsive-design
+    - local-storage
 status: draft
 provenance:
   drafted_by: ai
-sources: []
+sources:
+  - ref: mdn
+    locator: https://developer.mozilla.org/en-US/docs/Web/Progressive_web_apps
+    title: "Progressive web apps (PWAs) | MDN"
+    language: en
+    accessed: "2026-10-17"
+    retrieved_by: ai
+    supports:
+      - definition
+      - summary

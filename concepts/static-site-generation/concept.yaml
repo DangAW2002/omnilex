@@ -1,12 +1,27 @@
 id: static-site-generation
 domains:
   - it/web/frontend
-level: 1
+level: 2
 relations:
-  prerequisites: []
-  confusable: []
-  related: []
+  prerequisites:
+    - html
+    - dom
+  confusable:
+    - server-side-rendering
+  related:
+    - server-side-rendering
+    - single-page-application
+    - hydration
 status: draft
 provenance:
   drafted_by: ai
-sources: []
+sources:
+  - ref: mdn
+    locator: https://developer.mozilla.org/en-US/docs/Glossary/SSG
+    title: "SSG (Static-site generation) | MDN"
+    language: en
+    accessed: "2026-10-17"
+    retrieved_by: ai
+    supports:
+      - definition
+      - summary

@@ -518,6 +518,25 @@
     "status": "draft"
   },
   {
+    "id": "browser-cache",
+    "label": "Browser cache",
+    "aliases": [
+      "web cache",
+      "HTTP cache"
+    ],
+    "loanwords": [],
+    "plain_descriptions": [
+      "a temporary storage folder where your browser saves images and files to reload sites faster",
+      "local memory holding downloaded web assets to avoid requesting them repeatedly"
+    ],
+    "summary": "A temporary storage mechanism within a web browser that retains previously fetched HTTP resources to speed up future requests.",
+    "domains": [
+      "it/web/frontend"
+    ],
+    "level": 1,
+    "status": "draft"
+  },
+  {
     "id": "budget",
     "label": "Budget",
     "qualifier": "(Personal finance)",
@@ -534,6 +553,25 @@
       "finance/personal-finance/budget"
     ],
     "level": 1,
+    "status": "draft"
+  },
+  {
+    "id": "bundler",
+    "label": "Bundler",
+    "qualifier": "(JavaScript)",
+    "aliases": [
+      "module bundler"
+    ],
+    "loanwords": [],
+    "plain_descriptions": [
+      "a development tool that packages hundreds of code files into clean web bundles",
+      "a build program that combines JavaScript modules, styles, and assets for fast browser loading"
+    ],
+    "summary": "A build tool that traverses project dependencies to combine and optimize multiple code and asset files into production-ready web bundles.",
+    "domains": [
+      "it/web/frontend"
+    ],
+    "level": 2,
     "status": "draft"
   },
   {
@@ -776,6 +814,24 @@
     "status": "draft"
   },
   {
+    "id": "code-splitting",
+    "label": "Code splitting",
+    "aliases": [
+      "bundle splitting"
+    ],
+    "loanwords": [],
+    "plain_descriptions": [
+      "splitting a large web app into smaller chunks that load only when needed",
+      "breaking up big JavaScript files so users do not download unnecessary code up front"
+    ],
+    "summary": "A technique of splitting a single application bundle into multiple smaller chunks that can be loaded on demand or in parallel.",
+    "domains": [
+      "it/web/frontend"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
     "id": "color-grading",
     "label": "Color grading",
     "aliases": [
@@ -933,6 +989,25 @@
       "media/publishing/copyright-licensing"
     ],
     "level": 1,
+    "status": "draft"
+  },
+  {
+    "id": "core-web-vitals",
+    "label": "Core Web Vitals",
+    "aliases": [
+      "CWV"
+    ],
+    "loanwords": [],
+    "plain_descriptions": [
+      "Google standards measuring how fast, responsive, and visually stable a website is",
+      "key performance scores that directly influence web page ranking and user experience"
+    ],
+    "summary": "A set of standardized metrics established by Google to evaluate real-world user experience across loading speed, responsiveness, and visual stability.",
+    "domains": [
+      "it/web/frontend",
+      "media/digital-marketing/seo"
+    ],
+    "level": 2,
     "status": "draft"
   },
   {
@@ -1116,6 +1191,24 @@
       "it/security/vulnerabilities"
     ],
     "level": 2,
+    "status": "draft"
+  },
+  {
+    "id": "css",
+    "label": "CSS",
+    "aliases": [
+      "Cascading Style Sheets"
+    ],
+    "loanwords": [],
+    "plain_descriptions": [
+      "the code rules that control colors, fonts, and layouts on a website",
+      "the styling stylesheet language that makes web pages visually appealing"
+    ],
+    "summary": "A declarative styling language for rendering visual layout, typographic formatting, and color palettes on markup documents.",
+    "domains": [
+      "it/web/frontend"
+    ],
+    "level": 1,
     "status": "draft"
   },
   {
@@ -1640,6 +1733,24 @@
     "summary": "An open commercial platform providing tooling to build, share, package, and execute application containers using host operating system virtualization.",
     "domains": [
       "it/devops/containers"
+    ],
+    "level": 1,
+    "status": "draft"
+  },
+  {
+    "id": "dom",
+    "label": "Document Object Model (DOM)",
+    "aliases": [
+      "DOM"
+    ],
+    "loanwords": [],
+    "plain_descriptions": [
+      "the internal tree structure of a webpage that scripts can read and change",
+      "the programming interface representing webpage elements as interactive objects"
+    ],
+    "summary": "A cross-platform, language-independent programming interface that treats an HTML or XML document as a tree structure of nodes.",
+    "domains": [
+      "it/web/frontend"
     ],
     "level": 1,
     "status": "draft"
@@ -2338,6 +2449,43 @@
     "status": "draft"
   },
   {
+    "id": "html",
+    "label": "HTML",
+    "aliases": [
+      "HyperText Markup Language"
+    ],
+    "loanwords": [],
+    "plain_descriptions": [
+      "the code tags that structure paragraphs, headings, and links on a webpage",
+      "the fundamental skeletal markup language of the web"
+    ],
+    "summary": "The standard markup language used to structure documents and content displayed in web browsers.",
+    "domains": [
+      "it/web/frontend"
+    ],
+    "level": 1,
+    "status": "draft"
+  },
+  {
+    "id": "http",
+    "label": "Hypertext Transfer Protocol (HTTP)",
+    "aliases": [
+      "HTTP"
+    ],
+    "loanwords": [],
+    "plain_descriptions": [
+      "the communication rules that browsers and servers use to exchange web pages",
+      "the protocol delivering requests and responses across the World Wide Web"
+    ],
+    "summary": "A foundational client-server networking specification governing how web browsers fetch and submit hypermedia assets.",
+    "domains": [
+      "it/web/api",
+      "it/infrastructure/networking"
+    ],
+    "level": 1,
+    "status": "draft"
+  },
+  {
     "id": "http-status-code",
     "label": "HTTP status code",
     "aliases": [
@@ -2354,6 +2502,43 @@
       "it/web/api"
     ],
     "level": 1,
+    "status": "draft"
+  },
+  {
+    "id": "https",
+    "label": "HTTPS",
+    "aliases": [
+      "Hypertext Transfer Protocol Secure"
+    ],
+    "loanwords": [],
+    "plain_descriptions": [
+      "encrypted web browsing that protects information from snooping",
+      "the secure version of HTTP marked by the padlock in browsers"
+    ],
+    "summary": "An extension of HTTP that encrypts bidirectional communication using Transport Layer Security (TLS).",
+    "domains": [
+      "it/web/api"
+    ],
+    "level": 1,
+    "status": "draft"
+  },
+  {
+    "id": "hydration",
+    "label": "Hydration",
+    "qualifier": "(Web)",
+    "aliases": [
+      "client-side hydration"
+    ],
+    "loanwords": [],
+    "plain_descriptions": [
+      "attaching click listeners and interactivity to a pre-rendered HTML page",
+      "the process of bringing static server HTML to life with client JavaScript"
+    ],
+    "summary": "The client-side process where framework JavaScript attaches event listeners and state management to server-rendered HTML markup.",
+    "domains": [
+      "it/web/frontend"
+    ],
+    "level": 2,
     "status": "draft"
   },
   {
@@ -2717,6 +2902,25 @@
     "status": "draft"
   },
   {
+    "id": "javascript",
+    "label": "JavaScript",
+    "aliases": [
+      "JS"
+    ],
+    "loanwords": [],
+    "plain_descriptions": [
+      "the programming language that makes websites interactive and dynamic",
+      "the standard scripting engine running inside modern web browsers"
+    ],
+    "summary": "A dynamic multi-paradigm programming language featuring prototype inheritance that powers client-side web browser behavior.",
+    "domains": [
+      "it/web/frontend",
+      "it/software-engineering/programming-concepts"
+    ],
+    "level": 1,
+    "status": "draft"
+  },
+  {
     "id": "json",
     "label": "JSON",
     "aliases": [
@@ -2886,6 +3090,25 @@
     "status": "draft"
   },
   {
+    "id": "lazy-loading",
+    "label": "Lazy loading",
+    "aliases": [
+      "deferred loading",
+      "on-demand loading"
+    ],
+    "loanwords": [],
+    "plain_descriptions": [
+      "waiting to load images and content until the user actually scrolls to them",
+      "delaying resource downloads until they are needed on screen"
+    ],
+    "summary": "A performance optimization pattern that defers the loading of non-critical resources until they are needed by the user.",
+    "domains": [
+      "it/web/frontend"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
     "id": "least-privilege",
     "label": "Principle of least privilege",
     "aliases": [
@@ -3014,6 +3237,24 @@
       "it/infrastructure/networking"
     ],
     "level": 2,
+    "status": "draft"
+  },
+  {
+    "id": "local-storage",
+    "label": "localStorage",
+    "aliases": [
+      "Web Storage"
+    ],
+    "loanwords": [],
+    "plain_descriptions": [
+      "a storage compartment in your browser where websites save preferences permanently",
+      "key-value web storage that keeps information even after closing browser tabs"
+    ],
+    "summary": "A Web Storage API mechanism that allows web applications to store persistent key-value pairs locally within the user’s browser.",
+    "domains": [
+      "it/web/frontend"
+    ],
+    "level": 1,
     "status": "draft"
   },
   {
@@ -3587,6 +3828,43 @@
       "media/digital-marketing/email"
     ],
     "level": 1,
+    "status": "draft"
+  },
+  {
+    "id": "nginx",
+    "label": "Nginx",
+    "aliases": [
+      "NGINX"
+    ],
+    "loanwords": [],
+    "plain_descriptions": [
+      "a high-performance web server software popular for handling heavy internet traffic",
+      "a fast open-source program that serves websites, load-balances traffic, and routes proxies"
+    ],
+    "summary": "A high-performance HTTP web server, reverse proxy, and load balancer designed for maximum concurrency and low memory usage.",
+    "domains": [
+      "it/web/backend",
+      "it/infrastructure/networking"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
+    "id": "nodejs",
+    "label": "Node.js",
+    "aliases": [
+      "Node"
+    ],
+    "loanwords": [],
+    "plain_descriptions": [
+      "a system that lets programmers run JavaScript on servers instead of inside browsers",
+      "a fast backend JavaScript environment designed for real-time web services"
+    ],
+    "summary": "A standalone server runtime that compiles and executes JavaScript code outside browser sandboxes via Google V8 engine.",
+    "domains": [
+      "it/web/backend"
+    ],
+    "level": 2,
     "status": "draft"
   },
   {
@@ -4242,6 +4520,24 @@
     "status": "draft"
   },
   {
+    "id": "progressive-web-app",
+    "label": "Progressive web app (PWA)",
+    "aliases": [
+      "PWA"
+    ],
+    "loanwords": [],
+    "plain_descriptions": [
+      "a website that works offline and can be installed like a phone app",
+      "web applications combining modern browser capabilities with native app features"
+    ],
+    "summary": "A web application built using web technologies that delivers app-like experiences, offline capabilities, and device installation.",
+    "domains": [
+      "it/web/frontend"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
     "id": "prompt",
     "label": "Prompt",
     "aliases": [],
@@ -4399,6 +4695,26 @@
     "status": "draft"
   },
   {
+    "id": "react",
+    "label": "React",
+    "qualifier": "(Library)",
+    "aliases": [
+      "React.js",
+      "ReactJS"
+    ],
+    "loanwords": [],
+    "plain_descriptions": [
+      "a popular JavaScript tool for building user interfaces with reusable Lego-like components",
+      "a declarative frontend library for constructing reactive interactive web apps"
+    ],
+    "summary": "A free and open-source front-end JavaScript library for building user interfaces based on components.",
+    "domains": [
+      "it/web/frontend"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
     "id": "reasoning-model",
     "label": "Reasoning model",
     "aliases": [],
@@ -4463,6 +4779,25 @@
       "it/software-engineering/testing"
     ],
     "level": 2,
+    "status": "draft"
+  },
+  {
+    "id": "responsive-design",
+    "label": "Responsive design",
+    "aliases": [
+      "responsive web design",
+      "RWD"
+    ],
+    "loanwords": [],
+    "plain_descriptions": [
+      "designing web pages to adapt smoothly across phones, tablets, and desktop screens",
+      "flexible website styling that looks great on any screen resolution"
+    ],
+    "summary": "An approach to web design that makes web pages render well on a variety of devices and screen window sizes.",
+    "domains": [
+      "it/web/frontend"
+    ],
+    "level": 1,
     "status": "draft"
   },
   {
@@ -4856,6 +5191,24 @@
     "status": "draft"
   },
   {
+    "id": "server-side-rendering",
+    "label": "Server-side rendering (SSR)",
+    "aliases": [
+      "SSR"
+    ],
+    "loanwords": [],
+    "plain_descriptions": [
+      "creating the complete HTML web page on the server before sending it to the user",
+      "server-generated web pages that display fast and help search engines index content"
+    ],
+    "summary": "The process of rendering web components into complete HTML strings on the server in response to user requests.",
+    "domains": [
+      "it/web/frontend"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
     "id": "serverless",
     "label": "Serverless",
     "aliases": [
@@ -4872,6 +5225,24 @@
       "it/infrastructure/cloud"
     ],
     "level": 2,
+    "status": "draft"
+  },
+  {
+    "id": "service-worker",
+    "label": "Service worker",
+    "aliases": [
+      "service workers"
+    ],
+    "loanwords": [],
+    "plain_descriptions": [
+      "a background background script that acts as an invisible network proxy for web apps",
+      "the technical engine that enables web apps to work offline and receive push notifications"
+    ],
+    "summary": "An event-driven background worker script that intercepts network requests, manages caching strategies, and powers push notifications.",
+    "domains": [
+      "it/web/frontend"
+    ],
+    "level": 3,
     "status": "draft"
   },
   {
@@ -4926,6 +5297,24 @@
     ],
     "level": 1,
     "status": "reviewed"
+  },
+  {
+    "id": "single-page-application",
+    "label": "Single-page application (SPA)",
+    "aliases": [
+      "SPA"
+    ],
+    "loanwords": [],
+    "plain_descriptions": [
+      "a website that updates content seamlessly without reloading the entire page",
+      "a web app loading a single HTML shell and switching views with JavaScript"
+    ],
+    "summary": "A web application that interacts with the user by dynamically rewriting the current web page rather than loading entire new pages from a server.",
+    "domains": [
+      "it/web/frontend"
+    ],
+    "level": 2,
+    "status": "draft"
   },
   {
     "id": "sla",
@@ -5257,6 +5646,24 @@
     "summary": "The agreed valuation of a private enterprise determined prior to receiving an external injection of new investment capital.",
     "domains": [
       "finance/corporate-finance/fundraising"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
+    "id": "static-site-generation",
+    "label": "Static site generation (SSG)",
+    "aliases": [
+      "SSG"
+    ],
+    "loanwords": [],
+    "plain_descriptions": [
+      "pre-building every page of a website into ready files before visitors arrive",
+      "generating fixed HTML pages during development for ultra-fast CDN delivery"
+    ],
+    "summary": "A build method that pre-renders full HTML pages at compile time rather than on demand for each user request.",
+    "domains": [
+      "it/web/frontend"
     ],
     "level": 2,
     "status": "draft"
@@ -5613,6 +6020,24 @@
     "status": "draft"
   },
   {
+    "id": "tree-shaking",
+    "label": "Tree shaking",
+    "aliases": [
+      "dead code elimination"
+    ],
+    "loanwords": [],
+    "plain_descriptions": [
+      "removing unused pieces of code from final program files to save download size",
+      "an optimization step that strips away unreferenced functions and variables"
+    ],
+    "summary": "A dead-code elimination technique commonly used in modern JavaScript bundlers to remove unused exports from final production bundles.",
+    "domains": [
+      "it/web/frontend"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
     "id": "type-checking",
     "label": "Type checking",
     "aliases": [],
@@ -5623,6 +6048,25 @@
     ],
     "summary": "The verification process that evaluates whether data values assigned to variables or passed to functions comply with the rules of a programming language type system.",
     "domains": [
+      "it/software-engineering/programming-concepts"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
+    "id": "typescript",
+    "label": "TypeScript",
+    "aliases": [
+      "TS"
+    ],
+    "loanwords": [],
+    "plain_descriptions": [
+      "a version of JavaScript that checks data types to prevent coding bugs",
+      "a typed superset of JavaScript that compiles down to plain JavaScript"
+    ],
+    "summary": "A strongly typed programming language that builds on JavaScript, giving developers better tooling and early error detection.",
+    "domains": [
+      "it/web/frontend",
       "it/software-engineering/programming-concepts"
     ],
     "level": 2,
@@ -5678,6 +6122,25 @@
     "summary": "The proportion or duration of time that a computer system, network, or application remains fully functional and accessible to users.",
     "domains": [
       "it/devops/sre-operations"
+    ],
+    "level": 1,
+    "status": "draft"
+  },
+  {
+    "id": "url",
+    "label": "URL",
+    "aliases": [
+      "Uniform Resource Locator",
+      "web address"
+    ],
+    "loanwords": [],
+    "plain_descriptions": [
+      "the complete address you type into a browser to visit a webpage",
+      "the standardized reference string locating internet documents and resources"
+    ],
+    "summary": "A structured reference syntax identifying network location coordinates and retrieval protocols for internet resources.",
+    "domains": [
+      "it/web/frontend"
     ],
     "level": 1,
     "status": "draft"
@@ -5871,6 +6334,61 @@
       "finance/investing/portfolio-risk"
     ],
     "level": 2,
+    "status": "draft"
+  },
+  {
+    "id": "wcag",
+    "label": "WCAG",
+    "aliases": [
+      "Web Content Accessibility Guidelines"
+    ],
+    "loanwords": [],
+    "plain_descriptions": [
+      "the international official rulebook for digital accessibility compliance",
+      "the technical standards defining how to make websites accessible to people with disabilities"
+    ],
+    "summary": "A set of formal web accessibility recommendations published by the W3C Web Accessibility Initiative.",
+    "domains": [
+      "it/web/frontend"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
+    "id": "web-accessibility",
+    "label": "Web accessibility (a11y)",
+    "aliases": [
+      "a11y",
+      "accessibility"
+    ],
+    "loanwords": [],
+    "plain_descriptions": [
+      "making websites usable for everyone, including people with visual or physical disabilities",
+      "building digital products that work seamlessly with assistive tools like screen readers"
+    ],
+    "summary": "The inclusive practice of ensuring there are no barriers that prevent interaction with websites by people with physical, sensory, or cognitive disabilities.",
+    "domains": [
+      "it/web/frontend"
+    ],
+    "level": 1,
+    "status": "draft"
+  },
+  {
+    "id": "web-server",
+    "label": "Web server",
+    "aliases": [
+      "HTTP server"
+    ],
+    "loanwords": [],
+    "plain_descriptions": [
+      "a computer and software program that delivers web pages to visitors over the internet",
+      "the system that listens for web requests and sends back HTML, images, and data"
+    ],
+    "summary": "A computer system or software application that processes incoming network requests over HTTP and serves web content to clients.",
+    "domains": [
+      "it/web/backend"
+    ],
+    "level": 1,
     "status": "draft"
   },
   {

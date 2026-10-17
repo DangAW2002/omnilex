@@ -1,12 +1,27 @@
 id: single-page-application
 domains:
   - it/web/frontend
-level: 1
+level: 2
 relations:
-  prerequisites: []
-  confusable: []
-  related: []
+  prerequisites:
+    - dom
+    - javascript
+  confusable:
+    - server-side-rendering
+  related:
+    - server-side-rendering
+    - static-site-generation
+    - react
 status: draft
 provenance:
   drafted_by: ai
-sources: []
+sources:
+  - ref: mdn
+    locator: https://developer.mozilla.org/en-US/docs/Glossary/SPA
+    title: "SPA (Single-page application) | MDN"
+    language: en
+    accessed: "2026-10-17"
+    retrieved_by: ai
+    supports:
+      - definition
+      - summary

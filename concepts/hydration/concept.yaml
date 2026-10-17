@@ -1,12 +1,26 @@
 id: hydration
 domains:
   - it/web/frontend
-level: 1
+level: 2
 relations:
-  prerequisites: []
+  prerequisites:
+    - dom
+    - javascript
+    - server-side-rendering
   confusable: []
-  related: []
+  related:
+    - single-page-application
+    - react
 status: draft
 provenance:
   drafted_by: ai
-sources: []
+sources:
+  - ref: vue-docs
+    locator: https://vuejs.org/guide/scaling-up/ssr.html
+    title: "Server-Side Rendering (SSR) | Vue.js"
+    language: en
+    accessed: "2026-10-17"
+    retrieved_by: ai
+    supports:
+      - definition
+      - summary

@@ -1,12 +1,24 @@
 id: bundler
 domains:
   - it/web/frontend
-level: 1
+level: 2
 relations:
-  prerequisites: []
+  prerequisites:
+    - javascript
   confusable: []
-  related: []
+  related:
+    - tree-shaking
+    - code-splitting
 status: draft
 provenance:
   drafted_by: ai
-sources: []
+sources:
+  - ref: webpack-docs
+    locator: https://webpack.js.org/concepts/
+    title: "Concepts | webpack"
+    language: en
+    accessed: "2026-10-17"
+    retrieved_by: ai
+    supports:
+      - definition
+      - summary

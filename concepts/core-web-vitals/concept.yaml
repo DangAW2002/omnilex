@@ -1,12 +1,25 @@
 id: core-web-vitals
 domains:
   - it/web/frontend
-level: 1
+  - media/digital-marketing/seo
+level: 2
 relations:
-  prerequisites: []
+  prerequisites:
+    - responsive-design
   confusable: []
-  related: []
+  related:
+    - lazy-loading
+    - browser-cache
 status: draft
 provenance:
   drafted_by: ai
-sources: []
+sources:
+  - ref: google-web-dev
+    locator: https://web.dev/articles/vitals
+    title: "Web Vitals | web.dev"
+    language: en
+    accessed: "2026-10-17"
+    retrieved_by: ai
+    supports:
+      - definition
+      - summary

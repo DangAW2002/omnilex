@@ -1,0 +1,25 @@
+id: responsive-design
+domains:
+  - it/web/frontend
+level: 1
+relations:
+  prerequisites:
+    - css
+    - html
+  confusable: []
+  related:
+    - web-accessibility
+    - core-web-vitals
+status: draft
+provenance:
+  drafted_by: ai
+sources:
+  - ref: mdn
+    locator: https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/CSS_layout/Responsive_Design
+    title: "Responsive design | MDN"
+    language: en
+    accessed: "2026-10-17"
+    retrieved_by: ai
+    supports:
+      - definition
+      - summary

@@ -1,0 +1,24 @@
+id: wcag
+domains:
+  - it/web/frontend
+level: 2
+relations:
+  prerequisites:
+    - web-accessibility
+  confusable: []
+  related:
+    - html
+    - css
+status: draft
+provenance:
+  drafted_by: ai
+sources:
+  - ref: w3c
+    locator: https://www.w3.org/WAI/standards-guidelines/wcag/
+    title: "Web Content Accessibility Guidelines (WCAG) Overview | W3C WAI"
+    language: en
+    accessed: "2026-10-17"
+    retrieved_by: ai
+    supports:
+      - definition
+      - summary

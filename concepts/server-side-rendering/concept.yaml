@@ -1,0 +1,29 @@
+id: server-side-rendering
+domains:
+  - it/web/frontend
+level: 2
+relations:
+  prerequisites:
+    - html
+    - dom
+    - web-server
+  confusable:
+    - single-page-application
+    - static-site-generation
+  related:
+    - single-page-application
+    - static-site-generation
+    - hydration
+status: draft
+provenance:
+  drafted_by: ai
+sources:
+  - ref: mdn
+    locator: https://developer.mozilla.org/en-US/docs/Glossary/SSR
+    title: "SSR (Server-side rendering) | MDN"
+    language: en
+    accessed: "2026-10-17"
+    retrieved_by: ai
+    supports:
+      - definition
+      - summary

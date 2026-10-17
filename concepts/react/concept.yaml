@@ -1,0 +1,25 @@
+id: react
+domains:
+  - it/web/frontend
+level: 2
+relations:
+  prerequisites:
+    - javascript
+    - dom
+  confusable: []
+  related:
+    - single-page-application
+    - hydration
+status: draft
+provenance:
+  drafted_by: ai
+sources:
+  - ref: react-docs
+    locator: https://react.dev/
+    title: "React"
+    language: en
+    accessed: "2026-10-17"
+    retrieved_by: ai
+    supports:
+      - definition
+      - summary

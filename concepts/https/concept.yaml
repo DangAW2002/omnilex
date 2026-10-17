@@ -1,0 +1,26 @@
+id: https
+domains:
+  - it/web/api
+level: 1
+relations:
+  prerequisites:
+    - http
+    - tls
+  confusable:
+    - http
+  related:
+    - url
+    - web-server
+status: draft
+provenance:
+  drafted_by: ai
+sources:
+  - ref: mdn
+    locator: https://developer.mozilla.org/en-US/docs/Glossary/HTTPS
+    title: "HTTPS | MDN"
+    language: en
+    accessed: "2026-10-17"
+    retrieved_by: ai
+    supports:
+      - definition
+      - summary

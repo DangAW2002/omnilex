@@ -1,0 +1,26 @@
+id: web-server
+domains:
+  - it/web/backend
+level: 1
+relations:
+  prerequisites:
+    - http
+  confusable:
+    - nginx
+  related:
+    - nginx
+    - nodejs
+    - web-accessibility
+status: draft
+provenance:
+  drafted_by: ai
+sources:
+  - ref: mdn
+    locator: https://developer.mozilla.org/en-US/docs/Learn_web_development/Howto/Web_mechanics/What_is_a_web_server
+    title: "What is a web server? | MDN"
+    language: en
+    accessed: "2026-10-17"
+    retrieved_by: ai
+    supports:
+      - definition
+      - summary

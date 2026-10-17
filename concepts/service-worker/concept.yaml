@@ -1,0 +1,25 @@
+id: service-worker
+domains:
+  - it/web/frontend
+level: 3
+relations:
+  prerequisites:
+    - javascript
+    - browser-cache
+  confusable: []
+  related:
+    - progressive-web-app
+    - local-storage
+status: draft
+provenance:
+  drafted_by: ai
+sources:
+  - ref: mdn
+    locator: https://developer.mozilla.org/en-US/docs/Web/API/Service_Worker_API
+    title: "Service Worker API | MDN"
+    language: en
+    accessed: "2026-10-17"
+    retrieved_by: ai
+    supports:
+      - definition
+      - summary

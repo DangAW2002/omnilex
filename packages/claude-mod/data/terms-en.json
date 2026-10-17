@@ -280,38 +280,6 @@
     "autolink": true
   },
   {
-    "key": "API gateway",
-    "match": "any-case",
-    "concepts": [
-      {
-        "id": "api-gateway",
-        "label": "API gateway",
-        "summary": "An intermediary server pattern that acts as a single point of entry for external clients, routing requests to internal microservices while handling cross-cutting concerns.",
-        "domains": [
-          "it/web/api",
-          "it/software-engineering/architecture"
-        ]
-      }
-    ],
-    "autolink": true
-  },
-  {
-    "key": "Gateway routing",
-    "match": "any-case",
-    "concepts": [
-      {
-        "id": "api-gateway",
-        "label": "API gateway",
-        "summary": "An intermediary server pattern that acts as a single point of entry for external clients, routing requests to internal microservices while handling cross-cutting concerns.",
-        "domains": [
-          "it/web/api",
-          "it/software-engineering/architecture"
-        ]
-      }
-    ],
-    "autolink": true
-  },
-  {
     "key": "Aspect ratio",
     "match": "any-case",
     "concepts": [
@@ -566,51 +534,6 @@
         "summary": "An incoming hyperlink from an external web domain directing users and web crawlers to a target page on another website.",
         "domains": [
           "media/digital-marketing/seo"
-        ]
-      }
-    ],
-    "autolink": true
-  },
-  {
-    "key": "Backpressure",
-    "match": "any-case",
-    "concepts": [
-      {
-        "id": "backpressure",
-        "label": "Backpressure",
-        "summary": "A flow-control mechanism in asynchronous software pipelines where downstream consumers signal their capacity upstream to prevent producers from overwhelming them with data.",
-        "domains": [
-          "it/software-engineering/architecture"
-        ]
-      }
-    ],
-    "autolink": true
-  },
-  {
-    "key": "Flow control",
-    "match": "any-case",
-    "concepts": [
-      {
-        "id": "backpressure",
-        "label": "Backpressure",
-        "summary": "A flow-control mechanism in asynchronous software pipelines where downstream consumers signal their capacity upstream to prevent producers from overwhelming them with data.",
-        "domains": [
-          "it/software-engineering/architecture"
-        ]
-      }
-    ],
-    "autolink": true
-  },
-  {
-    "key": "Back-pressure",
-    "match": "any-case",
-    "concepts": [
-      {
-        "id": "backpressure",
-        "label": "Backpressure",
-        "summary": "A flow-control mechanism in asynchronous software pipelines where downstream consumers signal their capacity upstream to prevent producers from overwhelming them with data.",
-        "domains": [
-          "it/software-engineering/architecture"
         ]
       }
     ],
@@ -1015,6 +938,51 @@
     "autolink": true
   },
   {
+    "key": "Browser cache",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "browser-cache",
+        "label": "Browser cache",
+        "summary": "A temporary storage mechanism within a web browser that retains previously fetched HTTP resources to speed up future requests.",
+        "domains": [
+          "it/web/frontend"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "web cache",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "browser-cache",
+        "label": "Browser cache",
+        "summary": "A temporary storage mechanism within a web browser that retains previously fetched HTTP resources to speed up future requests.",
+        "domains": [
+          "it/web/frontend"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "HTTP cache",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "browser-cache",
+        "label": "Browser cache",
+        "summary": "A temporary storage mechanism within a web browser that retains previously fetched HTTP resources to speed up future requests.",
+        "domains": [
+          "it/web/frontend"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
     "key": "Budget",
     "match": "any-case",
     "concepts": [
@@ -1041,6 +1009,38 @@
         "summary": "An itemised financial plan that estimates anticipated income and allocates it toward expenses, savings, and debt payoff over a set period.",
         "domains": [
           "finance/personal-finance/budget"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Bundler",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "bundler",
+        "label": "Bundler",
+        "qualifier": "(JavaScript)",
+        "summary": "A build tool that traverses project dependencies to combine and optimize multiple code and asset files into production-ready web bundles.",
+        "domains": [
+          "it/web/frontend"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "module bundler",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "bundler",
+        "label": "Bundler",
+        "qualifier": "(JavaScript)",
+        "summary": "A build tool that traverses project dependencies to combine and optimize multiple code and asset files into production-ready web bundles.",
+        "domains": [
+          "it/web/frontend"
         ]
       }
     ],
@@ -1398,83 +1398,6 @@
     "autolink": true
   },
   {
-    "key": "Circuit breaker",
-    "match": "any-case",
-    "concepts": [
-      {
-        "id": "circuit-breaker",
-        "label": "Circuit breaker",
-        "qualifier": "(Software)",
-        "summary": "A design pattern that prevents an application from repeatedly attempting an operation likely to fail, tripping to fail fast and recovering automatically when healthy.",
-        "domains": [
-          "it/software-engineering/architecture"
-        ]
-      }
-    ],
-    "autolink": true
-  },
-  {
-    "key": "Circuit breaker pattern",
-    "match": "any-case",
-    "concepts": [
-      {
-        "id": "circuit-breaker",
-        "label": "Circuit breaker",
-        "qualifier": "(Software)",
-        "summary": "A design pattern that prevents an application from repeatedly attempting an operation likely to fail, tripping to fail fast and recovering automatically when healthy.",
-        "domains": [
-          "it/software-engineering/architecture"
-        ]
-      }
-    ],
-    "autolink": true
-  },
-  {
-    "key": "Clean architecture",
-    "match": "any-case",
-    "concepts": [
-      {
-        "id": "clean-architecture",
-        "label": "Clean architecture",
-        "summary": "A software architectural paradigm structured in concentric layers where dependencies point strictly inward toward domain logic, decoupling business rules from frameworks and databases.",
-        "domains": [
-          "it/software-engineering/architecture"
-        ]
-      }
-    ],
-    "autolink": true
-  },
-  {
-    "key": "Onion architecture",
-    "match": "any-case",
-    "concepts": [
-      {
-        "id": "clean-architecture",
-        "label": "Clean architecture",
-        "summary": "A software architectural paradigm structured in concentric layers where dependencies point strictly inward toward domain logic, decoupling business rules from frameworks and databases.",
-        "domains": [
-          "it/software-engineering/architecture"
-        ]
-      }
-    ],
-    "autolink": true
-  },
-  {
-    "key": "Hexagonal architecture",
-    "match": "any-case",
-    "concepts": [
-      {
-        "id": "clean-architecture",
-        "label": "Clean architecture",
-        "summary": "A software architectural paradigm structured in concentric layers where dependencies point strictly inward toward domain logic, decoupling business rules from frameworks and databases.",
-        "domains": [
-          "it/software-engineering/architecture"
-        ]
-      }
-    ],
-    "autolink": true
-  },
-  {
     "key": "Constrained Application Protocol (CoAP)",
     "match": "any-case",
     "concepts": [
@@ -1514,6 +1437,36 @@
         "summary": "A collaborative peer-review practice where software engineers systematically examine proposed code changes to identify defects, enforce architectural standards, and share knowledge.",
         "domains": [
           "it/software-engineering/practices"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Code splitting",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "code-splitting",
+        "label": "Code splitting",
+        "summary": "A technique of splitting a single application bundle into multiple smaller chunks that can be loaded on demand or in parallel.",
+        "domains": [
+          "it/web/frontend"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "bundle splitting",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "code-splitting",
+        "label": "Code splitting",
+        "summary": "A technique of splitting a single application bundle into multiple smaller chunks that can be loaded on demand or in parallel.",
+        "domains": [
+          "it/web/frontend"
         ]
       }
     ],
@@ -1591,51 +1544,6 @@
         "domains": [
           "finance/personal-finance/saving",
           "finance/investing/portfolio-risk"
-        ]
-      }
-    ],
-    "autolink": true
-  },
-  {
-    "key": "Consistent hashing",
-    "match": "any-case",
-    "concepts": [
-      {
-        "id": "consistent-hashing",
-        "label": "Consistent hashing",
-        "summary": "A distributed hashing algorithm where resizing the bucket array requires only K/N keys to be remapped on average, mapping nodes and data keys onto a circular ring space.",
-        "domains": [
-          "it/software-engineering/architecture"
-        ]
-      }
-    ],
-    "autolink": true
-  },
-  {
-    "key": "Hash ring",
-    "match": "any-case",
-    "concepts": [
-      {
-        "id": "consistent-hashing",
-        "label": "Consistent hashing",
-        "summary": "A distributed hashing algorithm where resizing the bucket array requires only K/N keys to be remapped on average, mapping nodes and data keys onto a circular ring space.",
-        "domains": [
-          "it/software-engineering/architecture"
-        ]
-      }
-    ],
-    "autolink": true
-  },
-  {
-    "key": "Ring hashing",
-    "match": "any-case",
-    "concepts": [
-      {
-        "id": "consistent-hashing",
-        "label": "Consistent hashing",
-        "summary": "A distributed hashing algorithm where resizing the bucket array requires only K/N keys to be remapped on average, mapping nodes and data keys onto a circular ring space.",
-        "domains": [
-          "it/software-engineering/architecture"
         ]
       }
     ],
@@ -1828,6 +1736,38 @@
     "autolink": true
   },
   {
+    "key": "Core Web Vitals",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "core-web-vitals",
+        "label": "Core Web Vitals",
+        "summary": "A set of standardized metrics established by Google to evaluate real-world user experience across loading speed, responsiveness, and visual stability.",
+        "domains": [
+          "it/web/frontend",
+          "media/digital-marketing/seo"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "CWV",
+    "match": "exact-case",
+    "concepts": [
+      {
+        "id": "core-web-vitals",
+        "label": "Core Web Vitals",
+        "summary": "A set of standardized metrics established by Google to evaluate real-world user experience across loading speed, responsiveness, and visual stability.",
+        "domains": [
+          "it/web/frontend",
+          "media/digital-marketing/seo"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
     "key": "Cross-Origin Resource Sharing (CORS)",
     "match": "any-case",
     "concepts": [
@@ -1959,36 +1899,6 @@
         "summary": "An advertising pricing model where the buyer pays a predetermined rate for every one thousand impressions their ad receives.",
         "domains": [
           "media/digital-marketing/paid-ads"
-        ]
-      }
-    ],
-    "autolink": true
-  },
-  {
-    "key": "Command Query Responsibility Segregation (CQRS)",
-    "match": "any-case",
-    "concepts": [
-      {
-        "id": "cqrs",
-        "label": "Command Query Responsibility Segregation (CQRS)",
-        "summary": "An architectural pattern that separates operations that mutate state from operations that read data into distinct models and pipelines.",
-        "domains": [
-          "it/software-engineering/architecture"
-        ]
-      }
-    ],
-    "autolink": true
-  },
-  {
-    "key": "CQRS",
-    "match": "exact-case",
-    "concepts": [
-      {
-        "id": "cqrs",
-        "label": "Command Query Responsibility Segregation (CQRS)",
-        "summary": "An architectural pattern that separates operations that mutate state from operations that read data into distinct models and pipelines.",
-        "domains": [
-          "it/software-engineering/architecture"
         ]
       }
     ],
@@ -2199,6 +2109,36 @@
         "summary": "An attack that tricks an authenticated web browser into sending unauthorized commands to a vulnerable web application without the user’s consent.",
         "domains": [
           "it/security/vulnerabilities"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "CSS",
+    "match": "exact-case",
+    "concepts": [
+      {
+        "id": "css",
+        "label": "CSS",
+        "summary": "A declarative styling language for rendering visual layout, typographic formatting, and color palettes on markup documents.",
+        "domains": [
+          "it/web/frontend"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Cascading Style Sheets",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "css",
+        "label": "CSS",
+        "summary": "A declarative styling language for rendering visual layout, typographic formatting, and color palettes on markup documents.",
+        "domains": [
+          "it/web/frontend"
         ]
       }
     ],
@@ -2822,51 +2762,6 @@
     "autolink": true
   },
   {
-    "key": "Dependency injection",
-    "match": "any-case",
-    "concepts": [
-      {
-        "id": "dependency-injection",
-        "label": "Dependency injection",
-        "summary": "A software design pattern where an object receives its dependencies from an external assembler rather than instantiating them internally, implementing inversion of control.",
-        "domains": [
-          "it/software-engineering/programming-concepts"
-        ]
-      }
-    ],
-    "autolink": true
-  },
-  {
-    "key": "DI",
-    "match": "exact-case",
-    "concepts": [
-      {
-        "id": "dependency-injection",
-        "label": "Dependency injection",
-        "summary": "A software design pattern where an object receives its dependencies from an external assembler rather than instantiating them internally, implementing inversion of control.",
-        "domains": [
-          "it/software-engineering/programming-concepts"
-        ]
-      }
-    ],
-    "autolink": true
-  },
-  {
-    "key": "Inversion of control",
-    "match": "any-case",
-    "concepts": [
-      {
-        "id": "dependency-injection",
-        "label": "Dependency injection",
-        "summary": "A software design pattern where an object receives its dependencies from an external assembler rather than instantiating them internally, implementing inversion of control.",
-        "domains": [
-          "it/software-engineering/programming-concepts"
-        ]
-      }
-    ],
-    "autolink": true
-  },
-  {
     "key": "Deprecation",
     "match": "any-case",
     "concepts": [
@@ -2970,66 +2865,6 @@
         "summary": "A virtual representation that serves as the real-time computational counterpart of a physical object, process, or system synchronized through continuous telemetry.",
         "domains": [
           "iot/industrial"
-        ]
-      }
-    ],
-    "autolink": true
-  },
-  {
-    "key": "Disaster recovery (DR)",
-    "match": "any-case",
-    "concepts": [
-      {
-        "id": "disaster-recovery",
-        "label": "Disaster recovery (DR)",
-        "summary": "A coordinated set of policies, tools, and technical procedures designed to recover and resume mission-critical technology infrastructure and operations after a catastrophic event.",
-        "domains": [
-          "it/devops/sre-operations"
-        ]
-      }
-    ],
-    "autolink": true
-  },
-  {
-    "key": "DR",
-    "match": "exact-case",
-    "concepts": [
-      {
-        "id": "disaster-recovery",
-        "label": "Disaster recovery (DR)",
-        "summary": "A coordinated set of policies, tools, and technical procedures designed to recover and resume mission-critical technology infrastructure and operations after a catastrophic event.",
-        "domains": [
-          "it/devops/sre-operations"
-        ]
-      }
-    ],
-    "autolink": true
-  },
-  {
-    "key": "Distributed system",
-    "match": "any-case",
-    "concepts": [
-      {
-        "id": "distributed-system",
-        "label": "Distributed system",
-        "summary": "A system whose hardware and software components communicate and coordinate their actions over a network, presenting themselves to end users as a unified cohesive computing facility.",
-        "domains": [
-          "it/software-engineering/architecture"
-        ]
-      }
-    ],
-    "autolink": true
-  },
-  {
-    "key": "Distributed architecture",
-    "match": "any-case",
-    "concepts": [
-      {
-        "id": "distributed-system",
-        "label": "Distributed system",
-        "summary": "A system whose hardware and software components communicate and coordinate their actions over a network, presenting themselves to end users as a unified cohesive computing facility.",
-        "domains": [
-          "it/software-engineering/architecture"
         ]
       }
     ],
@@ -3231,30 +3066,30 @@
     "autolink": true
   },
   {
-    "key": "Domain-driven design (DDD)",
+    "key": "Document Object Model (DOM)",
     "match": "any-case",
     "concepts": [
       {
-        "id": "domain-driven-design",
-        "label": "Domain-driven design (DDD)",
-        "summary": "A software architectural methodology centering system design and implementation around core business models, ubiquitous language, and bounded contexts.",
+        "id": "dom",
+        "label": "Document Object Model (DOM)",
+        "summary": "A cross-platform, language-independent programming interface that treats an HTML or XML document as a tree structure of nodes.",
         "domains": [
-          "it/software-engineering/architecture"
+          "it/web/frontend"
         ]
       }
     ],
     "autolink": true
   },
   {
-    "key": "DDD",
+    "key": "DOM",
     "match": "exact-case",
     "concepts": [
       {
-        "id": "domain-driven-design",
-        "label": "Domain-driven design (DDD)",
-        "summary": "A software architectural methodology centering system design and implementation around core business models, ubiquitous language, and bounded contexts.",
+        "id": "dom",
+        "label": "Document Object Model (DOM)",
+        "summary": "A cross-platform, language-independent programming interface that treats an HTML or XML document as a tree structure of nodes.",
         "domains": [
-          "it/software-engineering/architecture"
+          "it/web/frontend"
         ]
       }
     ],
@@ -3778,66 +3613,6 @@
     "autolink": true
   },
   {
-    "key": "Event-driven architecture",
-    "match": "any-case",
-    "concepts": [
-      {
-        "id": "event-driven-architecture",
-        "label": "Event-driven architecture",
-        "summary": "A software architecture paradigm where decoupled components communicate asynchronously by generating, detecting, and reacting to significant state changes known as events.",
-        "domains": [
-          "it/software-engineering/architecture"
-        ]
-      }
-    ],
-    "autolink": true
-  },
-  {
-    "key": "EDA",
-    "match": "exact-case",
-    "concepts": [
-      {
-        "id": "event-driven-architecture",
-        "label": "Event-driven architecture",
-        "summary": "A software architecture paradigm where decoupled components communicate asynchronously by generating, detecting, and reacting to significant state changes known as events.",
-        "domains": [
-          "it/software-engineering/architecture"
-        ]
-      }
-    ],
-    "autolink": true
-  },
-  {
-    "key": "Event sourcing",
-    "match": "any-case",
-    "concepts": [
-      {
-        "id": "event-sourcing",
-        "label": "Event sourcing",
-        "summary": "A persistence design pattern where all state changes are stored as an append-only, ordered sequence of immutable domain events instead of overwriting current entity records.",
-        "domains": [
-          "it/software-engineering/architecture"
-        ]
-      }
-    ],
-    "autolink": true
-  },
-  {
-    "key": "Event-sourced persistence",
-    "match": "any-case",
-    "concepts": [
-      {
-        "id": "event-sourcing",
-        "label": "Event sourcing",
-        "summary": "A persistence design pattern where all state changes are stored as an append-only, ordered sequence of immutable domain events instead of overwriting current entity records.",
-        "domains": [
-          "it/software-engineering/architecture"
-        ]
-      }
-    ],
-    "autolink": true
-  },
-  {
     "key": "Exchange rate",
     "match": "any-case",
     "concepts": [
@@ -3883,36 +3658,6 @@
     "autolink": true
   },
   {
-    "key": "Exponential backoff",
-    "match": "any-case",
-    "concepts": [
-      {
-        "id": "exponential-backoff",
-        "label": "Exponential backoff",
-        "summary": "An algorithm that progressively multiplies the delay interval between successive retries to prevent overwhelming struggling network services.",
-        "domains": [
-          "it/software-engineering/architecture"
-        ]
-      }
-    ],
-    "autolink": true
-  },
-  {
-    "key": "Exponential retry",
-    "match": "any-case",
-    "concepts": [
-      {
-        "id": "exponential-backoff",
-        "label": "Exponential backoff",
-        "summary": "An algorithm that progressively multiplies the delay interval between successive retries to prevent overwhelming struggling network services.",
-        "domains": [
-          "it/software-engineering/architecture"
-        ]
-      }
-    ],
-    "autolink": true
-  },
-  {
     "key": "Fact-checking",
     "match": "any-case",
     "concepts": [
@@ -3922,36 +3667,6 @@
         "summary": "The disciplined verification process of assessing factual assertions in published text, speeches, or broadcast reports against reliable primary documentation.",
         "domains": [
           "media/journalism/ethics"
-        ]
-      }
-    ],
-    "autolink": true
-  },
-  {
-    "key": "Failover",
-    "match": "any-case",
-    "concepts": [
-      {
-        "id": "failover",
-        "label": "Failover",
-        "summary": "An operational procedure that automatically or manually redirects processing tasks and network traffic to a redundant standby system upon failure of the primary component.",
-        "domains": [
-          "it/devops/sre-operations"
-        ]
-      }
-    ],
-    "autolink": true
-  },
-  {
-    "key": "Automated failover",
-    "match": "any-case",
-    "concepts": [
-      {
-        "id": "failover",
-        "label": "Failover",
-        "summary": "An operational procedure that automatically or manually redirects processing tasks and network traffic to a redundant standby system upon failure of the primary component.",
-        "domains": [
-          "it/devops/sre-operations"
         ]
       }
     ],
@@ -4308,36 +4023,6 @@
     "autolink": true
   },
   {
-    "key": "gRPC",
-    "match": "any-case",
-    "concepts": [
-      {
-        "id": "grpc",
-        "label": "gRPC",
-        "summary": "A high-performance, open-source universal RPC framework that uses Protocol Buffers for structured binary serialization and HTTP/2 for efficient multiplexed transport.",
-        "domains": [
-          "it/web/api"
-        ]
-      }
-    ],
-    "autolink": true
-  },
-  {
-    "key": "gRPC Remote Procedure Call",
-    "match": "any-case",
-    "concepts": [
-      {
-        "id": "grpc",
-        "label": "gRPC",
-        "summary": "A high-performance, open-source universal RPC framework that uses Protocol Buffers for structured binary serialization and HTTP/2 for efficient multiplexed transport.",
-        "domains": [
-          "it/web/api"
-        ]
-      }
-    ],
-    "autolink": true
-  },
-  {
     "key": "Guardrail",
     "match": "any-case",
     "concepts": [
@@ -4464,81 +4149,6 @@
     "autolink": true
   },
   {
-    "key": "High availability (HA)",
-    "match": "any-case",
-    "concepts": [
-      {
-        "id": "high-availability",
-        "label": "High availability (HA)",
-        "summary": "A system design characteristic ensuring operational performance and accessibility over extended periods by minimizing unplanned downtime through redundancy and fault tolerance.",
-        "domains": [
-          "it/devops/sre-operations"
-        ]
-      }
-    ],
-    "autolink": true
-  },
-  {
-    "key": "HA",
-    "match": "exact-case",
-    "concepts": [
-      {
-        "id": "high-availability",
-        "label": "High availability (HA)",
-        "summary": "A system design characteristic ensuring operational performance and accessibility over extended periods by minimizing unplanned downtime through redundancy and fault tolerance.",
-        "domains": [
-          "it/devops/sre-operations"
-        ]
-      }
-    ],
-    "autolink": true
-  },
-  {
-    "key": "Horizontal scaling",
-    "match": "any-case",
-    "concepts": [
-      {
-        "id": "horizontal-scaling",
-        "label": "Horizontal scaling",
-        "summary": "The practice of increasing system capacity and handling greater load by adding more independent compute nodes or instances to a resource pool.",
-        "domains": [
-          "it/infrastructure/cloud"
-        ]
-      }
-    ],
-    "autolink": true
-  },
-  {
-    "key": "Scale out",
-    "match": "any-case",
-    "concepts": [
-      {
-        "id": "horizontal-scaling",
-        "label": "Horizontal scaling",
-        "summary": "The practice of increasing system capacity and handling greater load by adding more independent compute nodes or instances to a resource pool.",
-        "domains": [
-          "it/infrastructure/cloud"
-        ]
-      }
-    ],
-    "autolink": true
-  },
-  {
-    "key": "Scaling out",
-    "match": "any-case",
-    "concepts": [
-      {
-        "id": "horizontal-scaling",
-        "label": "Horizontal scaling",
-        "summary": "The practice of increasing system capacity and handling greater load by adding more independent compute nodes or instances to a resource pool.",
-        "domains": [
-          "it/infrastructure/cloud"
-        ]
-      }
-    ],
-    "autolink": true
-  },
-  {
     "key": "Hotfix",
     "match": "any-case",
     "concepts": [
@@ -4548,6 +4158,68 @@
         "summary": "An expedited software patch created and deployed directly to production systems outside standard release cycles to resolve critical defects or security flaws.",
         "domains": [
           "it/software-engineering/practices"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "HTML",
+    "match": "exact-case",
+    "concepts": [
+      {
+        "id": "html",
+        "label": "HTML",
+        "summary": "The standard markup language used to structure documents and content displayed in web browsers.",
+        "domains": [
+          "it/web/frontend"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "HyperText Markup Language",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "html",
+        "label": "HTML",
+        "summary": "The standard markup language used to structure documents and content displayed in web browsers.",
+        "domains": [
+          "it/web/frontend"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Hypertext Transfer Protocol (HTTP)",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "http",
+        "label": "Hypertext Transfer Protocol (HTTP)",
+        "summary": "A foundational client-server networking specification governing how web browsers fetch and submit hypermedia assets.",
+        "domains": [
+          "it/web/api",
+          "it/infrastructure/networking"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "HTTP",
+    "match": "exact-case",
+    "concepts": [
+      {
+        "id": "http",
+        "label": "Hypertext Transfer Protocol (HTTP)",
+        "summary": "A foundational client-server networking specification governing how web browsers fetch and submit hypermedia assets.",
+        "domains": [
+          "it/web/api",
+          "it/infrastructure/networking"
         ]
       }
     ],
@@ -4593,6 +4265,68 @@
         "summary": "A standardized three-digit integer returned by a server indicating the outcome of a client’s HTTP request.",
         "domains": [
           "it/web/api"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "HTTPS",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "https",
+        "label": "HTTPS",
+        "summary": "An extension of HTTP that encrypts bidirectional communication using Transport Layer Security (TLS).",
+        "domains": [
+          "it/web/api"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Hypertext Transfer Protocol Secure",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "https",
+        "label": "HTTPS",
+        "summary": "An extension of HTTP that encrypts bidirectional communication using Transport Layer Security (TLS).",
+        "domains": [
+          "it/web/api"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Hydration",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "hydration",
+        "label": "Hydration",
+        "qualifier": "(Web)",
+        "summary": "The client-side process where framework JavaScript attaches event listeners and state management to server-rendered HTML markup.",
+        "domains": [
+          "it/web/frontend"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "client-side hydration",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "hydration",
+        "label": "Hydration",
+        "qualifier": "(Web)",
+        "summary": "The client-side process where framework JavaScript attaches event listeners and state management to server-rendered HTML markup.",
+        "domains": [
+          "it/web/frontend"
         ]
       }
     ],
@@ -5197,6 +4931,38 @@
     "autolink": true
   },
   {
+    "key": "JavaScript",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "javascript",
+        "label": "JavaScript",
+        "summary": "A dynamic multi-paradigm programming language featuring prototype inheritance that powers client-side web browser behavior.",
+        "domains": [
+          "it/web/frontend",
+          "it/software-engineering/programming-concepts"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "JS",
+    "match": "exact-case",
+    "concepts": [
+      {
+        "id": "javascript",
+        "label": "JavaScript",
+        "summary": "A dynamic multi-paradigm programming language featuring prototype inheritance that powers client-side web browser behavior.",
+        "domains": [
+          "it/web/frontend",
+          "it/software-engineering/programming-concepts"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
     "key": "JSON",
     "match": "exact-case",
     "concepts": [
@@ -5474,6 +5240,51 @@
     "autolink": true
   },
   {
+    "key": "Lazy loading",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "lazy-loading",
+        "label": "Lazy loading",
+        "summary": "A performance optimization pattern that defers the loading of non-critical resources until they are needed by the user.",
+        "domains": [
+          "it/web/frontend"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "deferred loading",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "lazy-loading",
+        "label": "Lazy loading",
+        "summary": "A performance optimization pattern that defers the loading of non-critical resources until they are needed by the user.",
+        "domains": [
+          "it/web/frontend"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "on-demand loading",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "lazy-loading",
+        "label": "Lazy loading",
+        "summary": "A performance optimization pattern that defers the loading of non-critical resources until they are needed by the user.",
+        "domains": [
+          "it/web/frontend"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
     "key": "Principle of least privilege",
     "match": "any-case",
     "concepts": [
@@ -5736,30 +5547,30 @@
     "autolink": true
   },
   {
-    "key": "Load testing",
+    "key": "localStorage",
     "match": "any-case",
     "concepts": [
       {
-        "id": "load-testing",
-        "label": "Load testing",
-        "summary": "A non-functional software testing technique that subjects an application or system to simulated concurrent usage to evaluate its throughput, latency, and operational stability.",
+        "id": "local-storage",
+        "label": "localStorage",
+        "summary": "A Web Storage API mechanism that allows web applications to store persistent key-value pairs locally within the user’s browser.",
         "domains": [
-          "it/software-engineering/testing"
+          "it/web/frontend"
         ]
       }
     ],
     "autolink": true
   },
   {
-    "key": "Performance load testing",
+    "key": "Web Storage",
     "match": "any-case",
     "concepts": [
       {
-        "id": "load-testing",
-        "label": "Load testing",
-        "summary": "A non-functional software testing technique that subjects an application or system to simulated concurrent usage to evaluate its throughput, latency, and operational stability.",
+        "id": "local-storage",
+        "label": "localStorage",
+        "summary": "A Web Storage API mechanism that allows web applications to store persistent key-value pairs locally within the user’s browser.",
         "domains": [
-          "it/software-engineering/testing"
+          "it/web/frontend"
         ]
       }
     ],
@@ -6450,51 +6261,6 @@
     "autolink": false
   },
   {
-    "key": "Monolithic architecture",
-    "match": "any-case",
-    "concepts": [
-      {
-        "id": "monolith",
-        "label": "Monolithic architecture",
-        "summary": "An architectural model where all business capabilities, user interfaces, and database operations are packaged and deployed as a single combined system.",
-        "domains": [
-          "it/software-engineering/architecture"
-        ]
-      }
-    ],
-    "autolink": true
-  },
-  {
-    "key": "Monolith",
-    "match": "any-case",
-    "concepts": [
-      {
-        "id": "monolith",
-        "label": "Monolithic architecture",
-        "summary": "An architectural model where all business capabilities, user interfaces, and database operations are packaged and deployed as a single combined system.",
-        "domains": [
-          "it/software-engineering/architecture"
-        ]
-      }
-    ],
-    "autolink": true
-  },
-  {
-    "key": "Monolithic system",
-    "match": "any-case",
-    "concepts": [
-      {
-        "id": "monolith",
-        "label": "Monolithic architecture",
-        "summary": "An architectural model where all business capabilities, user interfaces, and database operations are packaged and deployed as a single combined system.",
-        "domains": [
-          "it/software-engineering/architecture"
-        ]
-      }
-    ],
-    "autolink": true
-  },
-  {
     "key": "Monorepo",
     "match": "any-case",
     "concepts": [
@@ -6804,6 +6570,52 @@
       }
     ],
     "autolink": true
+  },
+  {
+    "key": "Nginx",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "nginx",
+        "label": "Nginx",
+        "summary": "A high-performance HTTP web server, reverse proxy, and load balancer designed for maximum concurrency and low memory usage.",
+        "domains": [
+          "it/web/backend",
+          "it/infrastructure/networking"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Node.js",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "nodejs",
+        "label": "Node.js",
+        "summary": "A standalone server runtime that compiles and executes JavaScript code outside browser sandboxes via Google V8 engine.",
+        "domains": [
+          "it/web/backend"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Node",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "nodejs",
+        "label": "Node.js",
+        "summary": "A standalone server runtime that compiles and executes JavaScript code outside browser sandboxes via Google V8 engine.",
+        "domains": [
+          "it/web/backend"
+        ]
+      }
+    ],
+    "autolink": false
   },
   {
     "key": "North Star metric",
@@ -7972,6 +7784,36 @@
     "autolink": true
   },
   {
+    "key": "Progressive web app (PWA)",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "progressive-web-app",
+        "label": "Progressive web app (PWA)",
+        "summary": "A web application built using web technologies that delivers app-like experiences, offline capabilities, and device installation.",
+        "domains": [
+          "it/web/frontend"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "PWA",
+    "match": "exact-case",
+    "concepts": [
+      {
+        "id": "progressive-web-app",
+        "label": "Progressive web app (PWA)",
+        "summary": "A web application built using web technologies that delivers app-like experiences, offline capabilities, and device installation.",
+        "domains": [
+          "it/web/frontend"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
     "key": "Prompt",
     "match": "any-case",
     "concepts": [
@@ -8228,6 +8070,54 @@
     "autolink": true
   },
   {
+    "key": "React",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "react",
+        "label": "React",
+        "qualifier": "(Library)",
+        "summary": "A free and open-source front-end JavaScript library for building user interfaces based on components.",
+        "domains": [
+          "it/web/frontend"
+        ]
+      }
+    ],
+    "autolink": false
+  },
+  {
+    "key": "React.js",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "react",
+        "label": "React",
+        "qualifier": "(Library)",
+        "summary": "A free and open-source front-end JavaScript library for building user interfaces based on components.",
+        "domains": [
+          "it/web/frontend"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "ReactJS",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "react",
+        "label": "React",
+        "qualifier": "(Library)",
+        "summary": "A free and open-source front-end JavaScript library for building user interfaces based on components.",
+        "domains": [
+          "it/web/frontend"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
     "key": "Reasoning model",
     "match": "any-case",
     "concepts": [
@@ -8312,6 +8202,51 @@
         "summary": "The practice of re-executing test suites against an updated application to ensure that recent code modifications or bug fixes have not disrupted previously working functionality.",
         "domains": [
           "it/software-engineering/testing"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Responsive design",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "responsive-design",
+        "label": "Responsive design",
+        "summary": "An approach to web design that makes web pages render well on a variety of devices and screen window sizes.",
+        "domains": [
+          "it/web/frontend"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "responsive web design",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "responsive-design",
+        "label": "Responsive design",
+        "summary": "An approach to web design that makes web pages render well on a variety of devices and screen window sizes.",
+        "domains": [
+          "it/web/frontend"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "RWD",
+    "match": "exact-case",
+    "concepts": [
+      {
+        "id": "responsive-design",
+        "label": "Responsive design",
+        "summary": "An approach to web design that makes web pages render well on a variety of devices and screen window sizes.",
+        "domains": [
+          "it/web/frontend"
         ]
       }
     ],
@@ -8468,36 +8403,6 @@
     "autolink": true
   },
   {
-    "key": "Reverse proxy",
-    "match": "any-case",
-    "concepts": [
-      {
-        "id": "reverse-proxy",
-        "label": "Reverse proxy",
-        "summary": "A server sitting in front of web servers that intercepts incoming client requests and routes them to internal targets, providing anonymity, load distribution, and TLS termination.",
-        "domains": [
-          "it/infrastructure/networking"
-        ]
-      }
-    ],
-    "autolink": true
-  },
-  {
-    "key": "Reverse proxy server",
-    "match": "any-case",
-    "concepts": [
-      {
-        "id": "reverse-proxy",
-        "label": "Reverse proxy",
-        "summary": "A server sitting in front of web servers that intercepts incoming client requests and routes them to internal targets, providing anonymity, load distribution, and TLS termination.",
-        "domains": [
-          "it/infrastructure/networking"
-        ]
-      }
-    ],
-    "autolink": true
-  },
-  {
     "key": "RICE scoring",
     "match": "any-case",
     "concepts": [
@@ -8590,66 +8495,6 @@
     "autolink": true
   },
   {
-    "key": "Recovery Point Objective (RPO)",
-    "match": "any-case",
-    "concepts": [
-      {
-        "id": "rpo",
-        "label": "Recovery Point Objective (RPO)",
-        "summary": "The maximum acceptable age of data files or transactions that must be recovered from backup storage for normal operations to resume if a computer system crashes.",
-        "domains": [
-          "it/devops/sre-operations"
-        ]
-      }
-    ],
-    "autolink": true
-  },
-  {
-    "key": "RPO",
-    "match": "exact-case",
-    "concepts": [
-      {
-        "id": "rpo",
-        "label": "Recovery Point Objective (RPO)",
-        "summary": "The maximum acceptable age of data files or transactions that must be recovered from backup storage for normal operations to resume if a computer system crashes.",
-        "domains": [
-          "it/devops/sre-operations"
-        ]
-      }
-    ],
-    "autolink": true
-  },
-  {
-    "key": "Recovery Time Objective (RTO)",
-    "match": "any-case",
-    "concepts": [
-      {
-        "id": "rto",
-        "label": "Recovery Time Objective (RTO)",
-        "summary": "The maximum acceptable length of time that a system, application, or service can remain offline following a disaster or disruption before intolerable business damage occurs.",
-        "domains": [
-          "it/devops/sre-operations"
-        ]
-      }
-    ],
-    "autolink": true
-  },
-  {
-    "key": "RTO",
-    "match": "exact-case",
-    "concepts": [
-      {
-        "id": "rto",
-        "label": "Recovery Time Objective (RTO)",
-        "summary": "The maximum acceptable length of time that a system, application, or service can remain offline following a disaster or disruption before intolerable business damage occurs.",
-        "domains": [
-          "it/devops/sre-operations"
-        ]
-      }
-    ],
-    "autolink": true
-  },
-  {
     "key": "Real-time operating system (RTOS)",
     "match": "any-case",
     "concepts": [
@@ -8674,36 +8519,6 @@
         "summary": "An operating system designed to execute processes with deterministic timing guarantees and minimal scheduling latency for mission-critical embedded devices.",
         "domains": [
           "iot/devices-sensors"
-        ]
-      }
-    ],
-    "autolink": true
-  },
-  {
-    "key": "Saga pattern",
-    "match": "any-case",
-    "concepts": [
-      {
-        "id": "saga-pattern",
-        "label": "Saga pattern",
-        "summary": "A design pattern that manages distributed transactions across multiple microservices using a sequence of local transactions and compensating actions to handle failures.",
-        "domains": [
-          "it/software-engineering/architecture"
-        ]
-      }
-    ],
-    "autolink": true
-  },
-  {
-    "key": "Saga distributed transaction",
-    "match": "any-case",
-    "concepts": [
-      {
-        "id": "saga-pattern",
-        "label": "Saga pattern",
-        "summary": "A design pattern that manages distributed transactions across multiple microservices using a sequence of local transactions and compensating actions to handle failures.",
-        "domains": [
-          "it/software-engineering/architecture"
         ]
       }
     ],
@@ -9051,45 +8866,30 @@
     "autolink": true
   },
   {
-    "key": "Server-sent events (SSE)",
+    "key": "Server-side rendering (SSR)",
     "match": "any-case",
     "concepts": [
       {
-        "id": "server-sent-events",
-        "label": "Server-sent events (SSE)",
-        "summary": "A web technology where a browser client receives automatic real-time event streams from a server over an open standard HTTP connection.",
+        "id": "server-side-rendering",
+        "label": "Server-side rendering (SSR)",
+        "summary": "The process of rendering web components into complete HTML strings on the server in response to user requests.",
         "domains": [
-          "it/web/api"
+          "it/web/frontend"
         ]
       }
     ],
     "autolink": true
   },
   {
-    "key": "SSE",
+    "key": "SSR",
     "match": "exact-case",
     "concepts": [
       {
-        "id": "server-sent-events",
-        "label": "Server-sent events (SSE)",
-        "summary": "A web technology where a browser client receives automatic real-time event streams from a server over an open standard HTTP connection.",
+        "id": "server-side-rendering",
+        "label": "Server-side rendering (SSR)",
+        "summary": "The process of rendering web components into complete HTML strings on the server in response to user requests.",
         "domains": [
-          "it/web/api"
-        ]
-      }
-    ],
-    "autolink": true
-  },
-  {
-    "key": "EventSource API",
-    "match": "any-case",
-    "concepts": [
-      {
-        "id": "server-sent-events",
-        "label": "Server-sent events (SSE)",
-        "summary": "A web technology where a browser client receives automatic real-time event streams from a server over an open standard HTTP connection.",
-        "domains": [
-          "it/web/api"
+          "it/web/frontend"
         ]
       }
     ],
@@ -9141,30 +8941,30 @@
     "autolink": true
   },
   {
-    "key": "Service mesh",
+    "key": "Service worker",
     "match": "any-case",
     "concepts": [
       {
-        "id": "service-mesh",
-        "label": "Service mesh",
-        "summary": "A dedicated infrastructure layer of networked sidecar proxies that manages, secures, and observes service-to-service communications without modifying application code.",
+        "id": "service-worker",
+        "label": "Service worker",
+        "summary": "An event-driven background worker script that intercepts network requests, manages caching strategies, and powers push notifications.",
         "domains": [
-          "it/software-engineering/architecture"
+          "it/web/frontend"
         ]
       }
     ],
     "autolink": true
   },
   {
-    "key": "Sidecar proxy mesh",
+    "key": "service workers",
     "match": "any-case",
     "concepts": [
       {
-        "id": "service-mesh",
-        "label": "Service mesh",
-        "summary": "A dedicated infrastructure layer of networked sidecar proxies that manages, secures, and observes service-to-service communications without modifying application code.",
+        "id": "service-worker",
+        "label": "Service worker",
+        "summary": "An event-driven background worker script that intercepts network requests, manages caching strategies, and powers push notifications.",
         "domains": [
-          "it/software-engineering/architecture"
+          "it/web/frontend"
         ]
       }
     ],
@@ -9248,30 +9048,30 @@
     "autolink": true
   },
   {
-    "key": "Single point of failure (SPOF)",
+    "key": "Single-page application (SPA)",
     "match": "any-case",
     "concepts": [
       {
-        "id": "single-point-of-failure",
-        "label": "Single point of failure (SPOF)",
-        "summary": "A potential risk in system architecture where a single component failure will trigger the cessation of the entire system because no redundancy exists.",
+        "id": "single-page-application",
+        "label": "Single-page application (SPA)",
+        "summary": "A web application that interacts with the user by dynamically rewriting the current web page rather than loading entire new pages from a server.",
         "domains": [
-          "it/devops/sre-operations"
+          "it/web/frontend"
         ]
       }
     ],
     "autolink": true
   },
   {
-    "key": "SPOF",
+    "key": "SPA",
     "match": "exact-case",
     "concepts": [
       {
-        "id": "single-point-of-failure",
-        "label": "Single point of failure (SPOF)",
-        "summary": "A potential risk in system architecture where a single component failure will trigger the cessation of the entire system because no redundancy exists.",
+        "id": "single-page-application",
+        "label": "Single-page application (SPA)",
+        "summary": "A web application that interacts with the user by dynamically rewriting the current web page rather than loading entire new pages from a server.",
         "domains": [
-          "it/devops/sre-operations"
+          "it/web/frontend"
         ]
       }
     ],
@@ -9808,6 +9608,36 @@
         "summary": "The agreed valuation of a private enterprise determined prior to receiving an external injection of new investment capital.",
         "domains": [
           "finance/corporate-finance/fundraising"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Static site generation (SSG)",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "static-site-generation",
+        "label": "Static site generation (SSG)",
+        "summary": "A build method that pre-renders full HTML pages at compile time rather than on demand for each user request.",
+        "domains": [
+          "it/web/frontend"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "SSG",
+    "match": "exact-case",
+    "concepts": [
+      {
+        "id": "static-site-generation",
+        "label": "Static site generation (SSG)",
+        "summary": "A build method that pre-renders full HTML pages at compile time rather than on demand for each user request.",
+        "domains": [
+          "it/web/frontend"
         ]
       }
     ],
@@ -10449,6 +10279,36 @@
     "autolink": true
   },
   {
+    "key": "Tree shaking",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "tree-shaking",
+        "label": "Tree shaking",
+        "summary": "A dead-code elimination technique commonly used in modern JavaScript bundlers to remove unused exports from final production bundles.",
+        "domains": [
+          "it/web/frontend"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "dead code elimination",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "tree-shaking",
+        "label": "Tree shaking",
+        "summary": "A dead-code elimination technique commonly used in modern JavaScript bundlers to remove unused exports from final production bundles.",
+        "domains": [
+          "it/web/frontend"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
     "key": "Type checking",
     "match": "any-case",
     "concepts": [
@@ -10462,6 +10322,38 @@
       }
     ],
     "autolink": true
+  },
+  {
+    "key": "TypeScript",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "typescript",
+        "label": "TypeScript",
+        "summary": "A strongly typed programming language that builds on JavaScript, giving developers better tooling and early error detection.",
+        "domains": [
+          "it/web/frontend",
+          "it/software-engineering/programming-concepts"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "TS",
+    "match": "exact-case",
+    "concepts": [
+      {
+        "id": "typescript",
+        "label": "TypeScript",
+        "summary": "A strongly typed programming language that builds on JavaScript, giving developers better tooling and early error detection.",
+        "domains": [
+          "it/web/frontend",
+          "it/software-engineering/programming-concepts"
+        ]
+      }
+    ],
+    "autolink": false
   },
   {
     "key": "Typography",
@@ -10563,6 +10455,51 @@
         "summary": "The proportion or duration of time that a computer system, network, or application remains fully functional and accessible to users.",
         "domains": [
           "it/devops/sre-operations"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "URL",
+    "match": "exact-case",
+    "concepts": [
+      {
+        "id": "url",
+        "label": "URL",
+        "summary": "A structured reference syntax identifying network location coordinates and retrieval protocols for internet resources.",
+        "domains": [
+          "it/web/frontend"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Uniform Resource Locator",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "url",
+        "label": "URL",
+        "summary": "A structured reference syntax identifying network location coordinates and retrieval protocols for internet resources.",
+        "domains": [
+          "it/web/frontend"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "web address",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "url",
+        "label": "URL",
+        "summary": "A structured reference syntax identifying network location coordinates and retrieval protocols for internet resources.",
+        "domains": [
+          "it/web/frontend"
         ]
       }
     ],
@@ -10783,51 +10720,6 @@
     "autolink": true
   },
   {
-    "key": "Vertical scaling",
-    "match": "any-case",
-    "concepts": [
-      {
-        "id": "vertical-scaling",
-        "label": "Vertical scaling",
-        "summary": "The practice of increasing system capacity by provisioning more compute resources, such as CPU cores, RAM, or storage speed, to a single server instance.",
-        "domains": [
-          "it/infrastructure/cloud"
-        ]
-      }
-    ],
-    "autolink": true
-  },
-  {
-    "key": "Scale up",
-    "match": "any-case",
-    "concepts": [
-      {
-        "id": "vertical-scaling",
-        "label": "Vertical scaling",
-        "summary": "The practice of increasing system capacity by provisioning more compute resources, such as CPU cores, RAM, or storage speed, to a single server instance.",
-        "domains": [
-          "it/infrastructure/cloud"
-        ]
-      }
-    ],
-    "autolink": true
-  },
-  {
-    "key": "Scaling up",
-    "match": "any-case",
-    "concepts": [
-      {
-        "id": "vertical-scaling",
-        "label": "Vertical scaling",
-        "summary": "The practice of increasing system capacity by provisioning more compute resources, such as CPU cores, RAM, or storage speed, to a single server instance.",
-        "domains": [
-          "it/infrastructure/cloud"
-        ]
-      }
-    ],
-    "autolink": true
-  },
-  {
     "key": "Virtual machine (VM)",
     "match": "any-case",
     "concepts": [
@@ -10996,6 +10888,111 @@
     "autolink": true
   },
   {
+    "key": "WCAG",
+    "match": "exact-case",
+    "concepts": [
+      {
+        "id": "wcag",
+        "label": "WCAG",
+        "summary": "A set of formal web accessibility recommendations published by the W3C Web Accessibility Initiative.",
+        "domains": [
+          "it/web/frontend"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Web Content Accessibility Guidelines",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "wcag",
+        "label": "WCAG",
+        "summary": "A set of formal web accessibility recommendations published by the W3C Web Accessibility Initiative.",
+        "domains": [
+          "it/web/frontend"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Web accessibility (a11y)",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "web-accessibility",
+        "label": "Web accessibility (a11y)",
+        "summary": "The inclusive practice of ensuring there are no barriers that prevent interaction with websites by people with physical, sensory, or cognitive disabilities.",
+        "domains": [
+          "it/web/frontend"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "a11y",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "web-accessibility",
+        "label": "Web accessibility (a11y)",
+        "summary": "The inclusive practice of ensuring there are no barriers that prevent interaction with websites by people with physical, sensory, or cognitive disabilities.",
+        "domains": [
+          "it/web/frontend"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "accessibility",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "web-accessibility",
+        "label": "Web accessibility (a11y)",
+        "summary": "The inclusive practice of ensuring there are no barriers that prevent interaction with websites by people with physical, sensory, or cognitive disabilities.",
+        "domains": [
+          "it/web/frontend"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Web server",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "web-server",
+        "label": "Web server",
+        "summary": "A computer system or software application that processes incoming network requests over HTTP and serves web content to clients.",
+        "domains": [
+          "it/web/backend"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "HTTP server",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "web-server",
+        "label": "Web server",
+        "summary": "A computer system or software application that processes incoming network requests over HTTP and serves web content to clients.",
+        "domains": [
+          "it/web/backend"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
     "key": "Session",
     "match": "any-case",
     "concepts": [
@@ -11066,36 +11063,6 @@
         "id": "webhook",
         "label": "Webhook",
         "summary": "An automated HTTP POST callback triggered by an origin system to deliver real-time event payloads to external receiver endpoints.",
-        "domains": [
-          "it/web/api"
-        ]
-      }
-    ],
-    "autolink": true
-  },
-  {
-    "key": "WebSocket",
-    "match": "any-case",
-    "concepts": [
-      {
-        "id": "websocket",
-        "label": "WebSocket",
-        "summary": "A computer communications protocol providing full-duplex, bidirectional communication channels over a single persistent TCP connection initiated via an HTTP upgrade handshake.",
-        "domains": [
-          "it/web/api"
-        ]
-      }
-    ],
-    "autolink": true
-  },
-  {
-    "key": "WebSocket protocol",
-    "match": "any-case",
-    "concepts": [
-      {
-        "id": "websocket",
-        "label": "WebSocket",
-        "summary": "A computer communications protocol providing full-duplex, bidirectional communication channels over a single persistent TCP connection initiated via an HTTP upgrade handshake.",
         "domains": [
           "it/web/api"
         ]

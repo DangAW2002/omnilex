@@ -1,0 +1,26 @@
+id: browser-cache
+domains:
+  - it/web/frontend
+level: 1
+relations:
+  prerequisites:
+    - http
+  confusable:
+    - local-storage
+  related:
+    - service-worker
+    - local-storage
+    - cache
+status: draft
+provenance:
+  drafted_by: ai
+sources:
+  - ref: mdn
+    locator: https://developer.mozilla.org/en-US/docs/Web/HTTP/Guides/Caching
+    title: "HTTP caching | MDN"
+    language: en
+    accessed: "2026-10-17"
+    retrieved_by: ai
+    supports:
+      - definition
+      - summary

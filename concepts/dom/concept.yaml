@@ -1,0 +1,25 @@
+id: dom
+domains:
+  - it/web/frontend
+level: 1
+relations:
+  prerequisites:
+    - html
+  confusable: []
+  related:
+    - javascript
+    - css
+    - react
+status: draft
+provenance:
+  drafted_by: ai
+sources:
+  - ref: mdn
+    locator: https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model
+    title: "Document Object Model (DOM) | MDN"
+    language: en
+    accessed: "2026-10-17"
+    retrieved_by: ai
+    supports:
+      - definition
+      - summary

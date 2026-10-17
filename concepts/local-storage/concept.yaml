@@ -1,0 +1,26 @@
+id: local-storage
+domains:
+  - it/web/frontend
+level: 1
+relations:
+  prerequisites:
+    - javascript
+  confusable:
+    - browser-cache
+  related:
+    - browser-cache
+    - service-worker
+    - cookie
+status: draft
+provenance:
+  drafted_by: ai
+sources:
+  - ref: mdn
+    locator: https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage
+    title: "Window: localStorage property | MDN"
+    language: en
+    accessed: "2026-10-17"
+    retrieved_by: ai
+    supports:
+      - definition
+      - summary

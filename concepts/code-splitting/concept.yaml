@@ -1,0 +1,26 @@
+id: code-splitting
+domains:
+  - it/web/frontend
+level: 2
+relations:
+  prerequisites:
+    - javascript
+    - bundler
+  confusable:
+    - lazy-loading
+  related:
+    - lazy-loading
+    - tree-shaking
+status: draft
+provenance:
+  drafted_by: ai
+sources:
+  - ref: mdn
+    locator: https://developer.mozilla.org/en-US/docs/Glossary/Code_splitting
+    title: "Code splitting | MDN"
+    language: en
+    accessed: "2026-10-17"
+    retrieved_by: ai
+    supports:
+      - definition
+      - summary

@@ -405,38 +405,6 @@
     "autolink": true
   },
   {
-    "key": "API gateway",
-    "match": "any-case",
-    "concepts": [
-      {
-        "id": "api-gateway",
-        "label": "API gateway",
-        "summary": "Mẫu máy chủ đóng vai trò cửa ngõ tập trung đón nhận yêu cầu từ client, chuyển tiếp tới các dịch vụ nội bộ phù hợp và thực thi các tác vụ kiểm soát chung.",
-        "domains": [
-          "it/web/api",
-          "it/software-engineering/architecture"
-        ]
-      }
-    ],
-    "autolink": true
-  },
-  {
-    "key": "Cổng API",
-    "match": "any-case",
-    "concepts": [
-      {
-        "id": "api-gateway",
-        "label": "API gateway",
-        "summary": "Mẫu máy chủ đóng vai trò cửa ngõ tập trung đón nhận yêu cầu từ client, chuyển tiếp tới các dịch vụ nội bộ phù hợp và thực thi các tác vụ kiểm soát chung.",
-        "domains": [
-          "it/web/api",
-          "it/software-engineering/architecture"
-        ]
-      }
-    ],
-    "autolink": true
-  },
-  {
     "key": "Tỷ lệ khung hình",
     "match": "any-case",
     "concepts": [
@@ -767,51 +735,6 @@
         "summary": "Liên kết siêu văn bản từ một tên miền bên ngoài trỏ người dùng và bot tìm kiếm về trang đích trên website của bạn.",
         "domains": [
           "media/digital-marketing/seo"
-        ]
-      }
-    ],
-    "autolink": true
-  },
-  {
-    "key": "Backpressure",
-    "match": "any-case",
-    "concepts": [
-      {
-        "id": "backpressure",
-        "label": "Backpressure",
-        "summary": "Cơ chế điều tiết luồng dữ liệu trong các đường ống xử lý bất đồng bộ, trong đó thành phần tiêu thụ gửi tín hiệu ngược về phía sản xuất để giới hạn tốc độ truyền tải tránh gây quá tải bộ nhớ.",
-        "domains": [
-          "it/software-engineering/architecture"
-        ]
-      }
-    ],
-    "autolink": true
-  },
-  {
-    "key": "Áp lực ngược",
-    "match": "any-case",
-    "concepts": [
-      {
-        "id": "backpressure",
-        "label": "Backpressure",
-        "summary": "Cơ chế điều tiết luồng dữ liệu trong các đường ống xử lý bất đồng bộ, trong đó thành phần tiêu thụ gửi tín hiệu ngược về phía sản xuất để giới hạn tốc độ truyền tải tránh gây quá tải bộ nhớ.",
-        "domains": [
-          "it/software-engineering/architecture"
-        ]
-      }
-    ],
-    "autolink": true
-  },
-  {
-    "key": "Kiểm soát dòng dữ liệu",
-    "match": "any-case",
-    "concepts": [
-      {
-        "id": "backpressure",
-        "label": "Backpressure",
-        "summary": "Cơ chế điều tiết luồng dữ liệu trong các đường ống xử lý bất đồng bộ, trong đó thành phần tiêu thụ gửi tín hiệu ngược về phía sản xuất để giới hạn tốc độ truyền tải tránh gây quá tải bộ nhớ.",
-        "domains": [
-          "it/software-engineering/architecture"
         ]
       }
     ],
@@ -1334,6 +1257,51 @@
     "autolink": true
   },
   {
+    "key": "Bộ nhớ đệm trình duyệt",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "browser-cache",
+        "label": "Bộ nhớ đệm trình duyệt",
+        "summary": "Cơ chế lưu trữ tạm thời trong trình duyệt web giúp giữ lại các tài nguyên HTTP đã tải về để tái sử dụng trong các lần truy cập tiếp theo.",
+        "domains": [
+          "it/web/frontend"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "browser cache",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "browser-cache",
+        "label": "Bộ nhớ đệm trình duyệt",
+        "summary": "Cơ chế lưu trữ tạm thời trong trình duyệt web giúp giữ lại các tài nguyên HTTP đã tải về để tái sử dụng trong các lần truy cập tiếp theo.",
+        "domains": [
+          "it/web/frontend"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "web cache",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "browser-cache",
+        "label": "Bộ nhớ đệm trình duyệt",
+        "summary": "Cơ chế lưu trữ tạm thời trong trình duyệt web giúp giữ lại các tài nguyên HTTP đã tải về để tái sử dụng trong các lần truy cập tiếp theo.",
+        "domains": [
+          "it/web/frontend"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
     "key": "Ngân sách",
     "match": "any-case",
     "concepts": [
@@ -1360,6 +1328,54 @@
         "summary": "Kế hoạch tài chính chi tiết ước tính các khoản thu nhập dự kiến và phân bổ vào chi phí sinh hoạt, tiết kiệm và trả nợ trong một khoảng thời gian nhất định.",
         "domains": [
           "finance/personal-finance/budget"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Bundler",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "bundler",
+        "label": "Bundler",
+        "qualifier": "(JavaScript)",
+        "summary": "Công cụ đóng gói và xử lý các tệp mã nguồn cùng tài nguyên liên quan thành các gói tệp hoàn chỉnh để triển khai lên web.",
+        "domains": [
+          "it/web/frontend"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "module bundler",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "bundler",
+        "label": "Bundler",
+        "qualifier": "(JavaScript)",
+        "summary": "Công cụ đóng gói và xử lý các tệp mã nguồn cùng tài nguyên liên quan thành các gói tệp hoàn chỉnh để triển khai lên web.",
+        "domains": [
+          "it/web/frontend"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "bộ đóng gói mã",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "bundler",
+        "label": "Bundler",
+        "qualifier": "(JavaScript)",
+        "summary": "Công cụ đóng gói và xử lý các tệp mã nguồn cùng tài nguyên liên quan thành các gói tệp hoàn chỉnh để triển khai lên web.",
+        "domains": [
+          "it/web/frontend"
         ]
       }
     ],
@@ -1852,84 +1868,6 @@
     "autolink": true
   },
   {
-    "key": "Circuit breaker",
-    "match": "any-case",
-    "concepts": [
-      {
-        "id": "circuit-breaker",
-        "label": "Circuit breaker",
-        "qualifier": "(Phần mềm)",
-        "summary": "Mẫu thiết kế ngăn chặn ứng dụng liên tục gọi một dịch vụ đang gặp sự cố, tự động ngắt mạch để trả về phản hồi lỗi ngay lập tức và tự hồi phục khi đối tác khỏe lại.",
-        "domains": [
-          "it/software-engineering/architecture"
-        ]
-      }
-    ],
-    "autolink": true
-  },
-  {
-    "key": "Bộ ngắt mạch",
-    "match": "any-case",
-    "concepts": [
-      {
-        "id": "circuit-breaker",
-        "label": "Circuit breaker",
-        "qualifier": "(Phần mềm)",
-        "summary": "Mẫu thiết kế ngăn chặn ứng dụng liên tục gọi một dịch vụ đang gặp sự cố, tự động ngắt mạch để trả về phản hồi lỗi ngay lập tức và tự hồi phục khi đối tác khỏe lại.",
-        "domains": [
-          "it/software-engineering/architecture"
-        ]
-      }
-    ],
-    "autolink": true
-  },
-  {
-    "key": "Mẫu ngắt mạch",
-    "match": "any-case",
-    "concepts": [
-      {
-        "id": "circuit-breaker",
-        "label": "Circuit breaker",
-        "qualifier": "(Phần mềm)",
-        "summary": "Mẫu thiết kế ngăn chặn ứng dụng liên tục gọi một dịch vụ đang gặp sự cố, tự động ngắt mạch để trả về phản hồi lỗi ngay lập tức và tự hồi phục khi đối tác khỏe lại.",
-        "domains": [
-          "it/software-engineering/architecture"
-        ]
-      }
-    ],
-    "autolink": true
-  },
-  {
-    "key": "Clean architecture",
-    "match": "any-case",
-    "concepts": [
-      {
-        "id": "clean-architecture",
-        "label": "Clean architecture",
-        "summary": "Mô hình kiến trúc phần mềm tổ chức thành các vòng tròn đồng tâm với nguyên tắc phụ thuộc nghiêm ngặt hướng vào trong, giúp lõi nghiệp vụ hoàn toàn độc lập với khung phát triển và giao diện ngoài.",
-        "domains": [
-          "it/software-engineering/architecture"
-        ]
-      }
-    ],
-    "autolink": true
-  },
-  {
-    "key": "Kiến trúc sạch",
-    "match": "any-case",
-    "concepts": [
-      {
-        "id": "clean-architecture",
-        "label": "Clean architecture",
-        "summary": "Mô hình kiến trúc phần mềm tổ chức thành các vòng tròn đồng tâm với nguyên tắc phụ thuộc nghiêm ngặt hướng vào trong, giúp lõi nghiệp vụ hoàn toàn độc lập với khung phát triển và giao diện ngoài.",
-        "domains": [
-          "it/software-engineering/architecture"
-        ]
-      }
-    ],
-    "autolink": true
-  },
-  {
     "key": "Constrained Application Protocol (CoAP)",
     "match": "any-case",
     "concepts": [
@@ -1984,6 +1922,51 @@
         "summary": "Quy trình kiểm tra chéo giữa các lập trình viên nhằm rà soát các thay đổi mã nguồn, phát hiện lỗi tiềm ẩn, đảm bảo chuẩn kiến trúc và chia sẻ kiến thức dự án.",
         "domains": [
           "it/software-engineering/practices"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Code splitting",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "code-splitting",
+        "label": "Code splitting",
+        "summary": "Kỹ thuật chia nhỏ gói mã nguồn thành nhiều phần nhỏ hơn để tải theo yêu cầu hoặc tải song song nhằm tăng tốc độ tải trang.",
+        "domains": [
+          "it/web/frontend"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "phân tách mã nguồn",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "code-splitting",
+        "label": "Code splitting",
+        "summary": "Kỹ thuật chia nhỏ gói mã nguồn thành nhiều phần nhỏ hơn để tải theo yêu cầu hoặc tải song song nhằm tăng tốc độ tải trang.",
+        "domains": [
+          "it/web/frontend"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "chia nhỏ gói mã",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "code-splitting",
+        "label": "Code splitting",
+        "summary": "Kỹ thuật chia nhỏ gói mã nguồn thành nhiều phần nhỏ hơn để tải theo yêu cầu hoặc tải song song nhằm tăng tốc độ tải trang.",
+        "domains": [
+          "it/web/frontend"
         ]
       }
     ],
@@ -2061,51 +2044,6 @@
         "domains": [
           "finance/personal-finance/saving",
           "finance/investing/portfolio-risk"
-        ]
-      }
-    ],
-    "autolink": true
-  },
-  {
-    "key": "Consistent hashing",
-    "match": "any-case",
-    "concepts": [
-      {
-        "id": "consistent-hashing",
-        "label": "Consistent hashing",
-        "summary": "Thuật toán băm phân tán trong đó việc tăng giảm số lượng nút lưu trữ chỉ làm chuyển dịch trung bình K/N khóa, bằng cách ánh xạ cả máy chủ và dữ liệu lên một không gian vòng tròn định danh.",
-        "domains": [
-          "it/software-engineering/architecture"
-        ]
-      }
-    ],
-    "autolink": true
-  },
-  {
-    "key": "Băm nhất quán",
-    "match": "any-case",
-    "concepts": [
-      {
-        "id": "consistent-hashing",
-        "label": "Consistent hashing",
-        "summary": "Thuật toán băm phân tán trong đó việc tăng giảm số lượng nút lưu trữ chỉ làm chuyển dịch trung bình K/N khóa, bằng cách ánh xạ cả máy chủ và dữ liệu lên một không gian vòng tròn định danh.",
-        "domains": [
-          "it/software-engineering/architecture"
-        ]
-      }
-    ],
-    "autolink": true
-  },
-  {
-    "key": "Vòng băm",
-    "match": "any-case",
-    "concepts": [
-      {
-        "id": "consistent-hashing",
-        "label": "Consistent hashing",
-        "summary": "Thuật toán băm phân tán trong đó việc tăng giảm số lượng nút lưu trữ chỉ làm chuyển dịch trung bình K/N khóa, bằng cách ánh xạ cả máy chủ và dữ liệu lên một không gian vòng tròn định danh.",
-        "domains": [
-          "it/software-engineering/architecture"
         ]
       }
     ],
@@ -2343,6 +2281,54 @@
     "autolink": true
   },
   {
+    "key": "Core Web Vitals",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "core-web-vitals",
+        "label": "Core Web Vitals",
+        "summary": "Tập hợp các chỉ số chuẩn hóa do Google đề xuất nhằm đo lường trải nghiệm thực tế của người dùng về tốc độ tải, độ phản hồi và độ ổn định giao diện.",
+        "domains": [
+          "it/web/frontend",
+          "media/digital-marketing/seo"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "CWV",
+    "match": "exact-case",
+    "concepts": [
+      {
+        "id": "core-web-vitals",
+        "label": "Core Web Vitals",
+        "summary": "Tập hợp các chỉ số chuẩn hóa do Google đề xuất nhằm đo lường trải nghiệm thực tế của người dùng về tốc độ tải, độ phản hồi và độ ổn định giao diện.",
+        "domains": [
+          "it/web/frontend",
+          "media/digital-marketing/seo"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "chỉ số hiệu năng web cốt lõi",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "core-web-vitals",
+        "label": "Core Web Vitals",
+        "summary": "Tập hợp các chỉ số chuẩn hóa do Google đề xuất nhằm đo lường trải nghiệm thực tế của người dùng về tốc độ tải, độ phản hồi và độ ổn định giao diện.",
+        "domains": [
+          "it/web/frontend",
+          "media/digital-marketing/seo"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
     "key": "Cross-Origin Resource Sharing (CORS)",
     "match": "any-case",
     "concepts": [
@@ -2489,36 +2475,6 @@
         "summary": "Phương thức định giá quảng cáo trong đó nhà tài trợ chi trả một mức phí cố định cho mỗi 1.000 lượt hiển thị của mẫu quảng cáo.",
         "domains": [
           "media/digital-marketing/paid-ads"
-        ]
-      }
-    ],
-    "autolink": true
-  },
-  {
-    "key": "Command Query Responsibility Segregation (CQRS)",
-    "match": "any-case",
-    "concepts": [
-      {
-        "id": "cqrs",
-        "label": "Command Query Responsibility Segregation (CQRS)",
-        "summary": "Mẫu kiến trúc phân chia rạch ròi các thao tác cập nhật trạng thái dữ liệu (lệnh ghi) và các thao tác tra cứu dữ liệu (truy vấn) thành hai mô hình xử lý độc lập.",
-        "domains": [
-          "it/software-engineering/architecture"
-        ]
-      }
-    ],
-    "autolink": true
-  },
-  {
-    "key": "CQRS",
-    "match": "exact-case",
-    "concepts": [
-      {
-        "id": "cqrs",
-        "label": "Command Query Responsibility Segregation (CQRS)",
-        "summary": "Mẫu kiến trúc phân chia rạch ròi các thao tác cập nhật trạng thái dữ liệu (lệnh ghi) và các thao tác tra cứu dữ liệu (truy vấn) thành hai mô hình xử lý độc lập.",
-        "domains": [
-          "it/software-engineering/architecture"
         ]
       }
     ],
@@ -2729,6 +2685,36 @@
         "summary": "Hình thức tấn công đánh lừa trình duyệt của người dùng gửi các yêu cầu giả mạo tới một ứng dụng web mà người đó đã xác thực từ trước.",
         "domains": [
           "it/security/vulnerabilities"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "CSS",
+    "match": "exact-case",
+    "concepts": [
+      {
+        "id": "css",
+        "label": "CSS",
+        "summary": "Ngôn ngữ bảng kiểu dùng để định dạng cách trình bày, bố cục và màu sắc của tài liệu HTML.",
+        "domains": [
+          "it/web/frontend"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Cascading Style Sheets",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "css",
+        "label": "CSS",
+        "summary": "Ngôn ngữ bảng kiểu dùng để định dạng cách trình bày, bố cục và màu sắc của tài liệu HTML.",
+        "domains": [
+          "it/web/frontend"
         ]
       }
     ],
@@ -3459,51 +3445,6 @@
     "autolink": true
   },
   {
-    "key": "Dependency injection",
-    "match": "any-case",
-    "concepts": [
-      {
-        "id": "dependency-injection",
-        "label": "Dependency injection",
-        "summary": "Mẫu thiết kế phần mềm trong đó một đối tượng nhận các thành phần phụ thuộc của nó từ một bộ cấu hình bên ngoài thay vì tự khởi tạo bên trong, hiện thực hóa nguyên lý đảo ngược điều khiển.",
-        "domains": [
-          "it/software-engineering/programming-concepts"
-        ]
-      }
-    ],
-    "autolink": true
-  },
-  {
-    "key": "DI",
-    "match": "exact-case",
-    "concepts": [
-      {
-        "id": "dependency-injection",
-        "label": "Dependency injection",
-        "summary": "Mẫu thiết kế phần mềm trong đó một đối tượng nhận các thành phần phụ thuộc của nó từ một bộ cấu hình bên ngoài thay vì tự khởi tạo bên trong, hiện thực hóa nguyên lý đảo ngược điều khiển.",
-        "domains": [
-          "it/software-engineering/programming-concepts"
-        ]
-      }
-    ],
-    "autolink": true
-  },
-  {
-    "key": "Tiêm phụ thuộc",
-    "match": "any-case",
-    "concepts": [
-      {
-        "id": "dependency-injection",
-        "label": "Dependency injection",
-        "summary": "Mẫu thiết kế phần mềm trong đó một đối tượng nhận các thành phần phụ thuộc của nó từ một bộ cấu hình bên ngoài thay vì tự khởi tạo bên trong, hiện thực hóa nguyên lý đảo ngược điều khiển.",
-        "domains": [
-          "it/software-engineering/programming-concepts"
-        ]
-      }
-    ],
-    "autolink": true
-  },
-  {
     "key": "Deprecation",
     "match": "any-case",
     "concepts": [
@@ -3699,96 +3640,6 @@
         "summary": "Mô hình ảo sống động mô phỏng chính xác trạng thái, hành vi và vòng đời của một đối tượng hoặc quy trình vật lý thông qua dòng dữ liệu cảm biến thời gian thực.",
         "domains": [
           "iot/industrial"
-        ]
-      }
-    ],
-    "autolink": true
-  },
-  {
-    "key": "Disaster recovery (DR)",
-    "match": "any-case",
-    "concepts": [
-      {
-        "id": "disaster-recovery",
-        "label": "Disaster recovery (DR)",
-        "summary": "Tập hợp các chính sách, công cụ và quy trình kỹ thuật nhằm khôi phục và duy trì các hạ tầng công nghệ thiết yếu sau một thảm họa diện rộng gây gián đoạn hoàn toàn.",
-        "domains": [
-          "it/devops/sre-operations"
-        ]
-      }
-    ],
-    "autolink": true
-  },
-  {
-    "key": "DR",
-    "match": "exact-case",
-    "concepts": [
-      {
-        "id": "disaster-recovery",
-        "label": "Disaster recovery (DR)",
-        "summary": "Tập hợp các chính sách, công cụ và quy trình kỹ thuật nhằm khôi phục và duy trì các hạ tầng công nghệ thiết yếu sau một thảm họa diện rộng gây gián đoạn hoàn toàn.",
-        "domains": [
-          "it/devops/sre-operations"
-        ]
-      }
-    ],
-    "autolink": true
-  },
-  {
-    "key": "Khắc phục thảm họa",
-    "match": "any-case",
-    "concepts": [
-      {
-        "id": "disaster-recovery",
-        "label": "Disaster recovery (DR)",
-        "summary": "Tập hợp các chính sách, công cụ và quy trình kỹ thuật nhằm khôi phục và duy trì các hạ tầng công nghệ thiết yếu sau một thảm họa diện rộng gây gián đoạn hoàn toàn.",
-        "domains": [
-          "it/devops/sre-operations"
-        ]
-      }
-    ],
-    "autolink": true
-  },
-  {
-    "key": "Distributed system",
-    "match": "any-case",
-    "concepts": [
-      {
-        "id": "distributed-system",
-        "label": "Distributed system",
-        "summary": "Hệ thống bao gồm nhiều máy tính độc lập được kết nối qua mạng, liên lạc và phối hợp với nhau để xuất hiện trước người dùng như một khối xử lý thống nhất duy nhất.",
-        "domains": [
-          "it/software-engineering/architecture"
-        ]
-      }
-    ],
-    "autolink": true
-  },
-  {
-    "key": "Hệ thống phân tán",
-    "match": "any-case",
-    "concepts": [
-      {
-        "id": "distributed-system",
-        "label": "Distributed system",
-        "summary": "Hệ thống bao gồm nhiều máy tính độc lập được kết nối qua mạng, liên lạc và phối hợp với nhau để xuất hiện trước người dùng như một khối xử lý thống nhất duy nhất.",
-        "domains": [
-          "it/software-engineering/architecture"
-        ]
-      }
-    ],
-    "autolink": true
-  },
-  {
-    "key": "Hệ phân tán",
-    "match": "any-case",
-    "concepts": [
-      {
-        "id": "distributed-system",
-        "label": "Distributed system",
-        "summary": "Hệ thống bao gồm nhiều máy tính độc lập được kết nối qua mạng, liên lạc và phối hợp với nhau để xuất hiện trước người dùng như một khối xử lý thống nhất duy nhất.",
-        "domains": [
-          "it/software-engineering/architecture"
         ]
       }
     ],
@@ -4035,45 +3886,30 @@
     "autolink": true
   },
   {
-    "key": "Domain-driven design (DDD)",
+    "key": "Document Object Model (DOM)",
     "match": "any-case",
     "concepts": [
       {
-        "id": "domain-driven-design",
-        "label": "Domain-driven design (DDD)",
-        "summary": "Phương pháp phát triển phần mềm đặt trọng tâm kiến trúc và mã nguồn vào việc mô hình hóa chính xác nghiệp vụ thực tế, sử dụng ngôn ngữ chung và phân tách các ngữ cảnh giới hạn.",
+        "id": "dom",
+        "label": "Document Object Model (DOM)",
+        "summary": "Giao diện lập trình ứng dụng biểu diễn tài liệu HTML dưới dạng cây phân cấp các đối tượng có thể truy xuất và sửa đổi.",
         "domains": [
-          "it/software-engineering/architecture"
+          "it/web/frontend"
         ]
       }
     ],
     "autolink": true
   },
   {
-    "key": "DDD",
+    "key": "DOM",
     "match": "exact-case",
     "concepts": [
       {
-        "id": "domain-driven-design",
-        "label": "Domain-driven design (DDD)",
-        "summary": "Phương pháp phát triển phần mềm đặt trọng tâm kiến trúc và mã nguồn vào việc mô hình hóa chính xác nghiệp vụ thực tế, sử dụng ngôn ngữ chung và phân tách các ngữ cảnh giới hạn.",
+        "id": "dom",
+        "label": "Document Object Model (DOM)",
+        "summary": "Giao diện lập trình ứng dụng biểu diễn tài liệu HTML dưới dạng cây phân cấp các đối tượng có thể truy xuất và sửa đổi.",
         "domains": [
-          "it/software-engineering/architecture"
-        ]
-      }
-    ],
-    "autolink": true
-  },
-  {
-    "key": "Thiết kế hướng miền",
-    "match": "any-case",
-    "concepts": [
-      {
-        "id": "domain-driven-design",
-        "label": "Domain-driven design (DDD)",
-        "summary": "Phương pháp phát triển phần mềm đặt trọng tâm kiến trúc và mã nguồn vào việc mô hình hóa chính xác nghiệp vụ thực tế, sử dụng ngôn ngữ chung và phân tách các ngữ cảnh giới hạn.",
-        "domains": [
-          "it/software-engineering/architecture"
+          "it/web/frontend"
         ]
       }
     ],
@@ -4765,81 +4601,6 @@
     "autolink": true
   },
   {
-    "key": "Event-driven architecture",
-    "match": "any-case",
-    "concepts": [
-      {
-        "id": "event-driven-architecture",
-        "label": "Event-driven architecture",
-        "summary": "Mô hình kiến trúc phần mềm trong đó các thành phần tách rời giao tiếp bất đồng bộ thông qua việc phát sinh, truyền tải và xử lý các sự kiện ghi nhận thay đổi trạng thái.",
-        "domains": [
-          "it/software-engineering/architecture"
-        ]
-      }
-    ],
-    "autolink": true
-  },
-  {
-    "key": "Kiến trúc hướng sự kiện",
-    "match": "any-case",
-    "concepts": [
-      {
-        "id": "event-driven-architecture",
-        "label": "Event-driven architecture",
-        "summary": "Mô hình kiến trúc phần mềm trong đó các thành phần tách rời giao tiếp bất đồng bộ thông qua việc phát sinh, truyền tải và xử lý các sự kiện ghi nhận thay đổi trạng thái.",
-        "domains": [
-          "it/software-engineering/architecture"
-        ]
-      }
-    ],
-    "autolink": true
-  },
-  {
-    "key": "EDA",
-    "match": "exact-case",
-    "concepts": [
-      {
-        "id": "event-driven-architecture",
-        "label": "Event-driven architecture",
-        "summary": "Mô hình kiến trúc phần mềm trong đó các thành phần tách rời giao tiếp bất đồng bộ thông qua việc phát sinh, truyền tải và xử lý các sự kiện ghi nhận thay đổi trạng thái.",
-        "domains": [
-          "it/software-engineering/architecture"
-        ]
-      }
-    ],
-    "autolink": true
-  },
-  {
-    "key": "Event sourcing",
-    "match": "any-case",
-    "concepts": [
-      {
-        "id": "event-sourcing",
-        "label": "Event sourcing",
-        "summary": "Mẫu thiết kế lưu trữ dữ liệu trong đó mọi thay đổi trạng thái được ghi nhận thành chuỗi các sự kiện bất biến nối tiếp nhau, thay vì ghi đè lên trạng thái hiện thời của bản ghi.",
-        "domains": [
-          "it/software-engineering/architecture"
-        ]
-      }
-    ],
-    "autolink": true
-  },
-  {
-    "key": "Lưu vết sự kiện",
-    "match": "any-case",
-    "concepts": [
-      {
-        "id": "event-sourcing",
-        "label": "Event sourcing",
-        "summary": "Mẫu thiết kế lưu trữ dữ liệu trong đó mọi thay đổi trạng thái được ghi nhận thành chuỗi các sự kiện bất biến nối tiếp nhau, thay vì ghi đè lên trạng thái hiện thời của bản ghi.",
-        "domains": [
-          "it/software-engineering/architecture"
-        ]
-      }
-    ],
-    "autolink": true
-  },
-  {
     "key": "Tỷ giá hối đoái",
     "match": "any-case",
     "concepts": [
@@ -4885,51 +4646,6 @@
     "autolink": true
   },
   {
-    "key": "Exponential backoff",
-    "match": "any-case",
-    "concepts": [
-      {
-        "id": "exponential-backoff",
-        "label": "Exponential backoff",
-        "summary": "Thuật toán tăng dần độ trễ giữa các lần thử lại sau mỗi lần thất bại theo hàm số mũ nhằm tránh gây quá tải dồn dập cho dịch vụ đang nghẽn.",
-        "domains": [
-          "it/software-engineering/architecture"
-        ]
-      }
-    ],
-    "autolink": true
-  },
-  {
-    "key": "Lùi lũy thừa",
-    "match": "any-case",
-    "concepts": [
-      {
-        "id": "exponential-backoff",
-        "label": "Exponential backoff",
-        "summary": "Thuật toán tăng dần độ trễ giữa các lần thử lại sau mỗi lần thất bại theo hàm số mũ nhằm tránh gây quá tải dồn dập cho dịch vụ đang nghẽn.",
-        "domains": [
-          "it/software-engineering/architecture"
-        ]
-      }
-    ],
-    "autolink": true
-  },
-  {
-    "key": "Chờ lùi theo hàm mũ",
-    "match": "any-case",
-    "concepts": [
-      {
-        "id": "exponential-backoff",
-        "label": "Exponential backoff",
-        "summary": "Thuật toán tăng dần độ trễ giữa các lần thử lại sau mỗi lần thất bại theo hàm số mũ nhằm tránh gây quá tải dồn dập cho dịch vụ đang nghẽn.",
-        "domains": [
-          "it/software-engineering/architecture"
-        ]
-      }
-    ],
-    "autolink": true
-  },
-  {
     "key": "Kiểm chứng thông tin",
     "match": "any-case",
     "concepts": [
@@ -4969,51 +4685,6 @@
         "summary": "Quy trình xác minh độc lập các khẳng định dữ kiện trong văn bản, bài phát biểu hoặc chương trình phát sóng dựa trên tài liệu gốc đáng tin cậy.",
         "domains": [
           "media/journalism/ethics"
-        ]
-      }
-    ],
-    "autolink": true
-  },
-  {
-    "key": "Failover",
-    "match": "any-case",
-    "concepts": [
-      {
-        "id": "failover",
-        "label": "Failover",
-        "summary": "Quy trình vận hành tự động hoặc thủ công chuyển tiếp toàn bộ tác vụ xử lý và lưu lượng sang một hệ thống dự phòng đang ở trạng thái sẵn sàng ngay khi hệ thống chính gặp lỗi.",
-        "domains": [
-          "it/devops/sre-operations"
-        ]
-      }
-    ],
-    "autolink": true
-  },
-  {
-    "key": "Chuyển đổi dự phòng",
-    "match": "any-case",
-    "concepts": [
-      {
-        "id": "failover",
-        "label": "Failover",
-        "summary": "Quy trình vận hành tự động hoặc thủ công chuyển tiếp toàn bộ tác vụ xử lý và lưu lượng sang một hệ thống dự phòng đang ở trạng thái sẵn sàng ngay khi hệ thống chính gặp lỗi.",
-        "domains": [
-          "it/devops/sre-operations"
-        ]
-      }
-    ],
-    "autolink": true
-  },
-  {
-    "key": "Chuyển giao dự phòng",
-    "match": "any-case",
-    "concepts": [
-      {
-        "id": "failover",
-        "label": "Failover",
-        "summary": "Quy trình vận hành tự động hoặc thủ công chuyển tiếp toàn bộ tác vụ xử lý và lưu lượng sang một hệ thống dự phòng đang ở trạng thái sẵn sàng ngay khi hệ thống chính gặp lỗi.",
-        "domains": [
-          "it/devops/sre-operations"
         ]
       }
     ],
@@ -5493,36 +5164,6 @@
     "autolink": true
   },
   {
-    "key": "gRPC",
-    "match": "any-case",
-    "concepts": [
-      {
-        "id": "grpc",
-        "label": "gRPC",
-        "summary": "Khung gọi thủ tục từ xa (RPC) mã nguồn mở hiệu năng cao, sử dụng định dạng Protocol Buffers để đóng gói nhị phân và chạy trên nền tảng HTTP/2 để truyền thông đa kênh tối ưu.",
-        "domains": [
-          "it/web/api"
-        ]
-      }
-    ],
-    "autolink": true
-  },
-  {
-    "key": "Khung RPC của Google",
-    "match": "any-case",
-    "concepts": [
-      {
-        "id": "grpc",
-        "label": "gRPC",
-        "summary": "Khung gọi thủ tục từ xa (RPC) mã nguồn mở hiệu năng cao, sử dụng định dạng Protocol Buffers để đóng gói nhị phân và chạy trên nền tảng HTTP/2 để truyền thông đa kênh tối ưu.",
-        "domains": [
-          "it/web/api"
-        ]
-      }
-    ],
-    "autolink": true
-  },
-  {
     "key": "Guardrail",
     "match": "any-case",
     "concepts": [
@@ -5724,96 +5365,6 @@
     "autolink": true
   },
   {
-    "key": "High availability (HA)",
-    "match": "any-case",
-    "concepts": [
-      {
-        "id": "high-availability",
-        "label": "High availability (HA)",
-        "summary": "Đặc tính thiết kế hệ thống đảm bảo ứng dụng vận hành liên tục và ổn định trong thời gian dài bằng cách giảm thiểu tối đa thời gian gián đoạn thông qua các thành phần dự phòng.",
-        "domains": [
-          "it/devops/sre-operations"
-        ]
-      }
-    ],
-    "autolink": true
-  },
-  {
-    "key": "HA",
-    "match": "exact-case",
-    "concepts": [
-      {
-        "id": "high-availability",
-        "label": "High availability (HA)",
-        "summary": "Đặc tính thiết kế hệ thống đảm bảo ứng dụng vận hành liên tục và ổn định trong thời gian dài bằng cách giảm thiểu tối đa thời gian gián đoạn thông qua các thành phần dự phòng.",
-        "domains": [
-          "it/devops/sre-operations"
-        ]
-      }
-    ],
-    "autolink": true
-  },
-  {
-    "key": "Tính sẵn sàng cao",
-    "match": "any-case",
-    "concepts": [
-      {
-        "id": "high-availability",
-        "label": "High availability (HA)",
-        "summary": "Đặc tính thiết kế hệ thống đảm bảo ứng dụng vận hành liên tục và ổn định trong thời gian dài bằng cách giảm thiểu tối đa thời gian gián đoạn thông qua các thành phần dự phòng.",
-        "domains": [
-          "it/devops/sre-operations"
-        ]
-      }
-    ],
-    "autolink": true
-  },
-  {
-    "key": "Horizontal scaling",
-    "match": "any-case",
-    "concepts": [
-      {
-        "id": "horizontal-scaling",
-        "label": "Horizontal scaling",
-        "summary": "Biện pháp gia tăng năng lực xử lý của hệ thống bằng cách bổ sung thêm nhiều máy chủ hoặc thực thể tính toán độc lập vào cụm tài nguyên để phân tán tải.",
-        "domains": [
-          "it/infrastructure/cloud"
-        ]
-      }
-    ],
-    "autolink": true
-  },
-  {
-    "key": "Scale out",
-    "match": "any-case",
-    "concepts": [
-      {
-        "id": "horizontal-scaling",
-        "label": "Horizontal scaling",
-        "summary": "Biện pháp gia tăng năng lực xử lý của hệ thống bằng cách bổ sung thêm nhiều máy chủ hoặc thực thể tính toán độc lập vào cụm tài nguyên để phân tán tải.",
-        "domains": [
-          "it/infrastructure/cloud"
-        ]
-      }
-    ],
-    "autolink": true
-  },
-  {
-    "key": "Mở rộng theo chiều ngang",
-    "match": "any-case",
-    "concepts": [
-      {
-        "id": "horizontal-scaling",
-        "label": "Horizontal scaling",
-        "summary": "Biện pháp gia tăng năng lực xử lý của hệ thống bằng cách bổ sung thêm nhiều máy chủ hoặc thực thể tính toán độc lập vào cụm tài nguyên để phân tán tải.",
-        "domains": [
-          "it/infrastructure/cloud"
-        ]
-      }
-    ],
-    "autolink": true
-  },
-  {
     "key": "Hotfix",
     "match": "any-case",
     "concepts": [
@@ -5853,6 +5404,68 @@
         "summary": "Bản sửa lỗi khẩn cấp được tạo và đưa thẳng lên môi trường sản xuất ngoài quy trình phát hành thông thường nhằm khắc phục các sự cố gián đoạn hoặc lỗ hổng bảo mật nghiêm trọng.",
         "domains": [
           "it/software-engineering/practices"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "HTML",
+    "match": "exact-case",
+    "concepts": [
+      {
+        "id": "html",
+        "label": "HTML",
+        "summary": "Ngôn ngữ đánh dấu tiêu chuẩn dùng để tạo khung cấu trúc và sắp xếp nội dung hiển thị trong trình duyệt web.",
+        "domains": [
+          "it/web/frontend"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "HyperText Markup Language",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "html",
+        "label": "HTML",
+        "summary": "Ngôn ngữ đánh dấu tiêu chuẩn dùng để tạo khung cấu trúc và sắp xếp nội dung hiển thị trong trình duyệt web.",
+        "domains": [
+          "it/web/frontend"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Hypertext Transfer Protocol (HTTP)",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "http",
+        "label": "Hypertext Transfer Protocol (HTTP)",
+        "summary": "Giao thức tầng ứng dụng dùng để truyền tải các tài liệu siêu văn bản giữa trình duyệt và máy chủ web.",
+        "domains": [
+          "it/web/api",
+          "it/infrastructure/networking"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "HTTP",
+    "match": "exact-case",
+    "concepts": [
+      {
+        "id": "http",
+        "label": "Hypertext Transfer Protocol (HTTP)",
+        "summary": "Giao thức tầng ứng dụng dùng để truyền tải các tài liệu siêu văn bản giữa trình duyệt và máy chủ web.",
+        "domains": [
+          "it/web/api",
+          "it/infrastructure/networking"
         ]
       }
     ],
@@ -5913,6 +5526,84 @@
         "summary": "Mã số tiêu chuẩn gồm ba chữ số do máy chủ trả về nhằm phản ánh kết quả xử lý của một yêu cầu HTTP.",
         "domains": [
           "it/web/api"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "HTTPS",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "https",
+        "label": "HTTPS",
+        "summary": "Phiên bản bảo mật của giao thức HTTP sử dụng mã hóa TLS để bảo vệ toàn bộ dữ liệu truyền giữa trình duyệt và máy chủ.",
+        "domains": [
+          "it/web/api"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Hypertext Transfer Protocol Secure",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "https",
+        "label": "HTTPS",
+        "summary": "Phiên bản bảo mật của giao thức HTTP sử dụng mã hóa TLS để bảo vệ toàn bộ dữ liệu truyền giữa trình duyệt và máy chủ.",
+        "domains": [
+          "it/web/api"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Hydration",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "hydration",
+        "label": "Hydration",
+        "qualifier": "(Web)",
+        "summary": "Quá trình phía trình duyệt kích hoạt mã JavaScript để gắn các sự kiện tương tác vào trang HTML tĩnh do máy chủ gửi về.",
+        "domains": [
+          "it/web/frontend"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "bù nước",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "hydration",
+        "label": "Hydration",
+        "qualifier": "(Web)",
+        "summary": "Quá trình phía trình duyệt kích hoạt mã JavaScript để gắn các sự kiện tương tác vào trang HTML tĩnh do máy chủ gửi về.",
+        "domains": [
+          "it/web/frontend"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "client-side hydration",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "hydration",
+        "label": "Hydration",
+        "qualifier": "(Web)",
+        "summary": "Quá trình phía trình duyệt kích hoạt mã JavaScript để gắn các sự kiện tương tác vào trang HTML tĩnh do máy chủ gửi về.",
+        "domains": [
+          "it/web/frontend"
         ]
       }
     ],
@@ -6715,6 +6406,38 @@
     "autolink": true
   },
   {
+    "key": "JavaScript",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "javascript",
+        "label": "JavaScript",
+        "summary": "Ngôn ngữ lập trình thông dịch đa nền tảng, cho phép tạo ra các tính năng tương tác phức tạp trên trang web.",
+        "domains": [
+          "it/web/frontend",
+          "it/software-engineering/programming-concepts"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "JS",
+    "match": "exact-case",
+    "concepts": [
+      {
+        "id": "javascript",
+        "label": "JavaScript",
+        "summary": "Ngôn ngữ lập trình thông dịch đa nền tảng, cho phép tạo ra các tính năng tương tác phức tạp trên trang web.",
+        "domains": [
+          "it/web/frontend",
+          "it/software-engineering/programming-concepts"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
     "key": "JSON",
     "match": "exact-case",
     "concepts": [
@@ -7038,6 +6761,66 @@
     "autolink": false
   },
   {
+    "key": "Lazy loading",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "lazy-loading",
+        "label": "Lazy loading",
+        "summary": "Mô hình tối ưu hóa hiệu năng bằng cách trì hoãn tải các tài nguyên chưa cần thiết cho đến khi người dùng tương tác tới.",
+        "domains": [
+          "it/web/frontend"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "tải chậm",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "lazy-loading",
+        "label": "Lazy loading",
+        "summary": "Mô hình tối ưu hóa hiệu năng bằng cách trì hoãn tải các tài nguyên chưa cần thiết cho đến khi người dùng tương tác tới.",
+        "domains": [
+          "it/web/frontend"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "tải lười",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "lazy-loading",
+        "label": "Lazy loading",
+        "summary": "Mô hình tối ưu hóa hiệu năng bằng cách trì hoãn tải các tài nguyên chưa cần thiết cho đến khi người dùng tương tác tới.",
+        "domains": [
+          "it/web/frontend"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "tải theo yêu cầu",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "lazy-loading",
+        "label": "Lazy loading",
+        "summary": "Mô hình tối ưu hóa hiệu năng bằng cách trì hoãn tải các tài nguyên chưa cần thiết cho đến khi người dùng tương tác tới.",
+        "domains": [
+          "it/web/frontend"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
     "key": "Principle of least privilege",
     "match": "any-case",
     "concepts": [
@@ -7299,45 +7082,45 @@
     "autolink": true
   },
   {
-    "key": "Load testing",
+    "key": "localStorage",
     "match": "any-case",
     "concepts": [
       {
-        "id": "load-testing",
-        "label": "Load testing",
-        "summary": "Phương pháp kiểm thử phi chức năng bằng cách đặt hệ thống dưới một lượng tải người dùng đồng thời giả lập để đo lường thông lượng, độ trễ và độ ổn định vận hành.",
+        "id": "local-storage",
+        "label": "localStorage",
+        "summary": "Giao diện lưu trữ dữ liệu phía trình duyệt cho phép lưu các cặp khóa - giá trị lâu dài theo từng tên miền mà không có thời hạn hết hạn.",
         "domains": [
-          "it/software-engineering/testing"
+          "it/web/frontend"
         ]
       }
     ],
     "autolink": true
   },
   {
-    "key": "Kiểm thử tải",
+    "key": "Web Storage",
     "match": "any-case",
     "concepts": [
       {
-        "id": "load-testing",
-        "label": "Load testing",
-        "summary": "Phương pháp kiểm thử phi chức năng bằng cách đặt hệ thống dưới một lượng tải người dùng đồng thời giả lập để đo lường thông lượng, độ trễ và độ ổn định vận hành.",
+        "id": "local-storage",
+        "label": "localStorage",
+        "summary": "Giao diện lưu trữ dữ liệu phía trình duyệt cho phép lưu các cặp khóa - giá trị lâu dài theo từng tên miền mà không có thời hạn hết hạn.",
         "domains": [
-          "it/software-engineering/testing"
+          "it/web/frontend"
         ]
       }
     ],
     "autolink": true
   },
   {
-    "key": "Thử tải",
+    "key": "bộ nhớ cục bộ",
     "match": "any-case",
     "concepts": [
       {
-        "id": "load-testing",
-        "label": "Load testing",
-        "summary": "Phương pháp kiểm thử phi chức năng bằng cách đặt hệ thống dưới một lượng tải người dùng đồng thời giả lập để đo lường thông lượng, độ trễ và độ ổn định vận hành.",
+        "id": "local-storage",
+        "label": "localStorage",
+        "summary": "Giao diện lưu trữ dữ liệu phía trình duyệt cho phép lưu các cặp khóa - giá trị lâu dài theo từng tên miền mà không có thời hạn hết hạn.",
         "domains": [
-          "it/software-engineering/testing"
+          "it/web/frontend"
         ]
       }
     ],
@@ -8166,51 +7949,6 @@
     "autolink": false
   },
   {
-    "key": "Monolithic architecture",
-    "match": "any-case",
-    "concepts": [
-      {
-        "id": "monolith",
-        "label": "Monolithic architecture",
-        "summary": "Mô hình kiến trúc trong đó toàn bộ tính năng nghiệp vụ, giao diện và logic truy cập dữ liệu được đóng gói và vận hành dưới dạng một hệ thống duy nhất.",
-        "domains": [
-          "it/software-engineering/architecture"
-        ]
-      }
-    ],
-    "autolink": true
-  },
-  {
-    "key": "Monolith",
-    "match": "any-case",
-    "concepts": [
-      {
-        "id": "monolith",
-        "label": "Monolithic architecture",
-        "summary": "Mô hình kiến trúc trong đó toàn bộ tính năng nghiệp vụ, giao diện và logic truy cập dữ liệu được đóng gói và vận hành dưới dạng một hệ thống duy nhất.",
-        "domains": [
-          "it/software-engineering/architecture"
-        ]
-      }
-    ],
-    "autolink": true
-  },
-  {
-    "key": "Kiến trúc nguyên khối",
-    "match": "any-case",
-    "concepts": [
-      {
-        "id": "monolith",
-        "label": "Monolithic architecture",
-        "summary": "Mô hình kiến trúc trong đó toàn bộ tính năng nghiệp vụ, giao diện và logic truy cập dữ liệu được đóng gói và vận hành dưới dạng một hệ thống duy nhất.",
-        "domains": [
-          "it/software-engineering/architecture"
-        ]
-      }
-    ],
-    "autolink": true
-  },
-  {
     "key": "Monorepo",
     "match": "any-case",
     "concepts": [
@@ -8623,6 +8361,52 @@
         "summary": "Ấn phẩm điện tử được gửi định kỳ trực tiếp vào hòm thư của người đăng ký nhằm chia sẻ tin tức, kiến thức chuyên ngành và cập nhật từ doanh nghiệp.",
         "domains": [
           "media/digital-marketing/email"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Nginx",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "nginx",
+        "label": "Nginx",
+        "summary": "Phần mềm máy chủ web và trạm chuyển tiếp đảo ngược (reverse proxy) mã nguồn mở nổi tiếng với hiệu năng cao và tiêu tốn ít bộ nhớ.",
+        "domains": [
+          "it/web/backend",
+          "it/infrastructure/networking"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Node.js",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "nodejs",
+        "label": "Node.js",
+        "summary": "Môi trường thực thi JavaScript đa nền tảng, mã nguồn mở, cho phép chạy mã nguồn JavaScript bên ngoài trình duyệt web.",
+        "domains": [
+          "it/web/backend"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Node",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "nodejs",
+        "label": "Node.js",
+        "summary": "Môi trường thực thi JavaScript đa nền tảng, mã nguồn mở, cho phép chạy mã nguồn JavaScript bên ngoài trình duyệt web.",
+        "domains": [
+          "it/web/backend"
         ]
       }
     ],
@@ -10008,6 +9792,36 @@
     "autolink": true
   },
   {
+    "key": "Progressive web app (PWA)",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "progressive-web-app",
+        "label": "Progressive web app (PWA)",
+        "summary": "Ứng dụng xây dựng bằng công nghệ web có khả năng cài đặt lên thiết bị, chạy ngoại tuyến và gửi thông báo như ứng dụng gốc.",
+        "domains": [
+          "it/web/frontend"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "PWA",
+    "match": "exact-case",
+    "concepts": [
+      {
+        "id": "progressive-web-app",
+        "label": "Progressive web app (PWA)",
+        "summary": "Ứng dụng xây dựng bằng công nghệ web có khả năng cài đặt lên thiết bị, chạy ngoại tuyến và gửi thông báo như ứng dụng gốc.",
+        "domains": [
+          "it/web/frontend"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
     "key": "Prompt",
     "match": "any-case",
     "concepts": [
@@ -10294,6 +10108,54 @@
     "autolink": true
   },
   {
+    "key": "React",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "react",
+        "label": "React",
+        "qualifier": "(Thư viện)",
+        "summary": "Thư viện JavaScript mã nguồn mở chuyên dùng để xây dựng giao diện người dùng dựa trên các thành phần (component).",
+        "domains": [
+          "it/web/frontend"
+        ]
+      }
+    ],
+    "autolink": false
+  },
+  {
+    "key": "React.js",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "react",
+        "label": "React",
+        "qualifier": "(Thư viện)",
+        "summary": "Thư viện JavaScript mã nguồn mở chuyên dùng để xây dựng giao diện người dùng dựa trên các thành phần (component).",
+        "domains": [
+          "it/web/frontend"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "ReactJS",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "react",
+        "label": "React",
+        "qualifier": "(Thư viện)",
+        "summary": "Thư viện JavaScript mã nguồn mở chuyên dùng để xây dựng giao diện người dùng dựa trên các thành phần (component).",
+        "domains": [
+          "it/web/frontend"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
     "key": "Reasoning model",
     "match": "any-case",
     "concepts": [
@@ -10423,6 +10285,51 @@
         "summary": "Quy trình chạy lại các bộ kiểm thử tự động nhằm đảm bảo những thay đổi mã nguồn hoặc bản vá lỗi mới không làm ảnh hưởng đến các chức năng vốn đang hoạt động bình thường.",
         "domains": [
           "it/software-engineering/testing"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Thiết kế web đáp ứng",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "responsive-design",
+        "label": "Thiết kế web đáp ứng",
+        "summary": "Phương pháp thiết kế giúp giao diện trang web tự động điều chỉnh bố cục phù hợp với mọi kích thước màn hình của thiết bị.",
+        "domains": [
+          "it/web/frontend"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "responsive web design",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "responsive-design",
+        "label": "Thiết kế web đáp ứng",
+        "summary": "Phương pháp thiết kế giúp giao diện trang web tự động điều chỉnh bố cục phù hợp với mọi kích thước màn hình của thiết bị.",
+        "domains": [
+          "it/web/frontend"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "responsive design",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "responsive-design",
+        "label": "Thiết kế web đáp ứng",
+        "summary": "Phương pháp thiết kế giúp giao diện trang web tự động điều chỉnh bố cục phù hợp với mọi kích thước màn hình của thiết bị.",
+        "domains": [
+          "it/web/frontend"
         ]
       }
     ],
@@ -10594,36 +10501,6 @@
     "autolink": true
   },
   {
-    "key": "Reverse proxy",
-    "match": "any-case",
-    "concepts": [
-      {
-        "id": "reverse-proxy",
-        "label": "Reverse proxy",
-        "summary": "Máy chủ trung gian đứng trước cụm máy chủ nội bộ nhằm tiếp nhận yêu cầu từ client bên ngoài, thực hiện định tuyến, giải mã TLS và cân bằng lưu lượng.",
-        "domains": [
-          "it/infrastructure/networking"
-        ]
-      }
-    ],
-    "autolink": true
-  },
-  {
-    "key": "Máy chủ ủy nhiệm ngược",
-    "match": "any-case",
-    "concepts": [
-      {
-        "id": "reverse-proxy",
-        "label": "Reverse proxy",
-        "summary": "Máy chủ trung gian đứng trước cụm máy chủ nội bộ nhằm tiếp nhận yêu cầu từ client bên ngoài, thực hiện định tuyến, giải mã TLS và cân bằng lưu lượng.",
-        "domains": [
-          "it/infrastructure/networking"
-        ]
-      }
-    ],
-    "autolink": true
-  },
-  {
     "key": "RICE scoring",
     "match": "any-case",
     "concepts": [
@@ -10762,96 +10639,6 @@
     "autolink": true
   },
   {
-    "key": "Recovery Point Objective (RPO)",
-    "match": "any-case",
-    "concepts": [
-      {
-        "id": "rpo",
-        "label": "Recovery Point Objective (RPO)",
-        "summary": "Khoảng thời gian tối đa mà dữ liệu giao dịch có thể bị mất mát tính từ thời điểm xảy ra sự cố lùi về trước mà doanh nghiệp vẫn có thể chấp nhận được.",
-        "domains": [
-          "it/devops/sre-operations"
-        ]
-      }
-    ],
-    "autolink": true
-  },
-  {
-    "key": "RPO",
-    "match": "exact-case",
-    "concepts": [
-      {
-        "id": "rpo",
-        "label": "Recovery Point Objective (RPO)",
-        "summary": "Khoảng thời gian tối đa mà dữ liệu giao dịch có thể bị mất mát tính từ thời điểm xảy ra sự cố lùi về trước mà doanh nghiệp vẫn có thể chấp nhận được.",
-        "domains": [
-          "it/devops/sre-operations"
-        ]
-      }
-    ],
-    "autolink": true
-  },
-  {
-    "key": "Điểm phục hồi mục tiêu",
-    "match": "any-case",
-    "concepts": [
-      {
-        "id": "rpo",
-        "label": "Recovery Point Objective (RPO)",
-        "summary": "Khoảng thời gian tối đa mà dữ liệu giao dịch có thể bị mất mát tính từ thời điểm xảy ra sự cố lùi về trước mà doanh nghiệp vẫn có thể chấp nhận được.",
-        "domains": [
-          "it/devops/sre-operations"
-        ]
-      }
-    ],
-    "autolink": true
-  },
-  {
-    "key": "Recovery Time Objective (RTO)",
-    "match": "any-case",
-    "concepts": [
-      {
-        "id": "rto",
-        "label": "Recovery Time Objective (RTO)",
-        "summary": "Khoảng thời gian gián đoạn tối đa mà một hệ thống hoặc quy trình nghiệp vụ được phép ngừng hoạt động sau sự cố trước khi gây ra thiệt hại không thể chấp nhận cho doanh nghiệp.",
-        "domains": [
-          "it/devops/sre-operations"
-        ]
-      }
-    ],
-    "autolink": true
-  },
-  {
-    "key": "RTO",
-    "match": "exact-case",
-    "concepts": [
-      {
-        "id": "rto",
-        "label": "Recovery Time Objective (RTO)",
-        "summary": "Khoảng thời gian gián đoạn tối đa mà một hệ thống hoặc quy trình nghiệp vụ được phép ngừng hoạt động sau sự cố trước khi gây ra thiệt hại không thể chấp nhận cho doanh nghiệp.",
-        "domains": [
-          "it/devops/sre-operations"
-        ]
-      }
-    ],
-    "autolink": true
-  },
-  {
-    "key": "Thời gian phục hồi mục tiêu",
-    "match": "any-case",
-    "concepts": [
-      {
-        "id": "rto",
-        "label": "Recovery Time Objective (RTO)",
-        "summary": "Khoảng thời gian gián đoạn tối đa mà một hệ thống hoặc quy trình nghiệp vụ được phép ngừng hoạt động sau sự cố trước khi gây ra thiệt hại không thể chấp nhận cho doanh nghiệp.",
-        "domains": [
-          "it/devops/sre-operations"
-        ]
-      }
-    ],
-    "autolink": true
-  },
-  {
     "key": "Hệ điều hành thời gian thực",
     "match": "any-case",
     "concepts": [
@@ -10876,51 +10663,6 @@
         "summary": "Hệ điều hành được thiết kế chuyên biệt để xử lý các tác vụ với cam kết tính tiền định về mặt thời gian và độ trễ tối thiểu.",
         "domains": [
           "iot/devices-sensors"
-        ]
-      }
-    ],
-    "autolink": true
-  },
-  {
-    "key": "Saga pattern",
-    "match": "any-case",
-    "concepts": [
-      {
-        "id": "saga-pattern",
-        "label": "Saga pattern",
-        "summary": "Mẫu thiết kế quản lý các giao dịch phân tán trải dài trên nhiều dịch vụ độc lập thông qua chuỗi giao dịch cục bộ kèm theo các hành động bù trừ để phục hồi trạng thái khi gặp sự cố.",
-        "domains": [
-          "it/software-engineering/architecture"
-        ]
-      }
-    ],
-    "autolink": true
-  },
-  {
-    "key": "Mẫu Saga",
-    "match": "any-case",
-    "concepts": [
-      {
-        "id": "saga-pattern",
-        "label": "Saga pattern",
-        "summary": "Mẫu thiết kế quản lý các giao dịch phân tán trải dài trên nhiều dịch vụ độc lập thông qua chuỗi giao dịch cục bộ kèm theo các hành động bù trừ để phục hồi trạng thái khi gặp sự cố.",
-        "domains": [
-          "it/software-engineering/architecture"
-        ]
-      }
-    ],
-    "autolink": true
-  },
-  {
-    "key": "Giao dịch phân tán Saga",
-    "match": "any-case",
-    "concepts": [
-      {
-        "id": "saga-pattern",
-        "label": "Saga pattern",
-        "summary": "Mẫu thiết kế quản lý các giao dịch phân tán trải dài trên nhiều dịch vụ độc lập thông qua chuỗi giao dịch cục bộ kèm theo các hành động bù trừ để phục hồi trạng thái khi gặp sự cố.",
-        "domains": [
-          "it/software-engineering/architecture"
         ]
       }
     ],
@@ -11420,45 +11162,30 @@
     "autolink": true
   },
   {
-    "key": "Server-sent events (SSE)",
+    "key": "Server-side rendering (SSR)",
     "match": "any-case",
     "concepts": [
       {
-        "id": "server-sent-events",
-        "label": "Server-sent events (SSE)",
-        "summary": "Công nghệ web cho phép máy khách nhận luồng dữ liệu sự kiện cập nhật liên tục từ máy chủ theo thời gian thực qua một kết nối HTTP tiêu chuẩn được mở sẵn.",
+        "id": "server-side-rendering",
+        "label": "Server-side rendering (SSR)",
+        "summary": "Kỹ thuật kết xuất giao diện thành mã HTML hoàn chỉnh trên máy chủ theo từng yêu cầu của người dùng trước khi gửi về trình duyệt.",
         "domains": [
-          "it/web/api"
+          "it/web/frontend"
         ]
       }
     ],
     "autolink": true
   },
   {
-    "key": "SSE",
+    "key": "SSR",
     "match": "exact-case",
     "concepts": [
       {
-        "id": "server-sent-events",
-        "label": "Server-sent events (SSE)",
-        "summary": "Công nghệ web cho phép máy khách nhận luồng dữ liệu sự kiện cập nhật liên tục từ máy chủ theo thời gian thực qua một kết nối HTTP tiêu chuẩn được mở sẵn.",
+        "id": "server-side-rendering",
+        "label": "Server-side rendering (SSR)",
+        "summary": "Kỹ thuật kết xuất giao diện thành mã HTML hoàn chỉnh trên máy chủ theo từng yêu cầu của người dùng trước khi gửi về trình duyệt.",
         "domains": [
-          "it/web/api"
-        ]
-      }
-    ],
-    "autolink": true
-  },
-  {
-    "key": "Sự kiện từ máy chủ",
-    "match": "any-case",
-    "concepts": [
-      {
-        "id": "server-sent-events",
-        "label": "Server-sent events (SSE)",
-        "summary": "Công nghệ web cho phép máy khách nhận luồng dữ liệu sự kiện cập nhật liên tục từ máy chủ theo thời gian thực qua một kết nối HTTP tiêu chuẩn được mở sẵn.",
-        "domains": [
-          "it/web/api"
+          "it/web/frontend"
         ]
       }
     ],
@@ -11510,30 +11237,30 @@
     "autolink": true
   },
   {
-    "key": "Service mesh",
+    "key": "Service worker",
     "match": "any-case",
     "concepts": [
       {
-        "id": "service-mesh",
-        "label": "Service mesh",
-        "summary": "Lớp hạ tầng chuyên dụng gồm các proxy sidecar đảm nhiệm điều phối, mã hóa an toàn và giám sát lưu lượng giao tiếp giữa các vi dịch vụ mà không can thiệp mã nguồn ứng dụng.",
+        "id": "service-worker",
+        "label": "Service worker",
+        "summary": "Kịch bản chạy nền điều khiển sự kiện, đóng vai trò trạm đại diện (proxy) đánh chặn các yêu cầu mạng và quản lý bộ nhớ đệm.",
         "domains": [
-          "it/software-engineering/architecture"
+          "it/web/frontend"
         ]
       }
     ],
     "autolink": true
   },
   {
-    "key": "Lưới dịch vụ",
+    "key": "tiến trình dịch vụ ngầm",
     "match": "any-case",
     "concepts": [
       {
-        "id": "service-mesh",
-        "label": "Service mesh",
-        "summary": "Lớp hạ tầng chuyên dụng gồm các proxy sidecar đảm nhiệm điều phối, mã hóa an toàn và giám sát lưu lượng giao tiếp giữa các vi dịch vụ mà không can thiệp mã nguồn ứng dụng.",
+        "id": "service-worker",
+        "label": "Service worker",
+        "summary": "Kịch bản chạy nền điều khiển sự kiện, đóng vai trò trạm đại diện (proxy) đánh chặn các yêu cầu mạng và quản lý bộ nhớ đệm.",
         "domains": [
-          "it/software-engineering/architecture"
+          "it/web/frontend"
         ]
       }
     ],
@@ -11649,45 +11376,30 @@
     "autolink": true
   },
   {
-    "key": "Single point of failure (SPOF)",
+    "key": "Single-page application (SPA)",
     "match": "any-case",
     "concepts": [
       {
-        "id": "single-point-of-failure",
-        "label": "Single point of failure (SPOF)",
-        "summary": "Thành phần hoặc mắt xích đơn lẻ trong một hệ thống mà sự cố của nó sẽ làm toàn bộ hệ thống ngừng hoạt động hoàn toàn do thiếu cơ chế dự phòng thay thế.",
+        "id": "single-page-application",
+        "label": "Single-page application (SPA)",
+        "summary": "Kiến trúc ứng dụng web tải một trang HTML duy nhất và cập nhật nội dung linh hoạt mà không tải lại toàn trang.",
         "domains": [
-          "it/devops/sre-operations"
+          "it/web/frontend"
         ]
       }
     ],
     "autolink": true
   },
   {
-    "key": "SPOF",
+    "key": "SPA",
     "match": "exact-case",
     "concepts": [
       {
-        "id": "single-point-of-failure",
-        "label": "Single point of failure (SPOF)",
-        "summary": "Thành phần hoặc mắt xích đơn lẻ trong một hệ thống mà sự cố của nó sẽ làm toàn bộ hệ thống ngừng hoạt động hoàn toàn do thiếu cơ chế dự phòng thay thế.",
+        "id": "single-page-application",
+        "label": "Single-page application (SPA)",
+        "summary": "Kiến trúc ứng dụng web tải một trang HTML duy nhất và cập nhật nội dung linh hoạt mà không tải lại toàn trang.",
         "domains": [
-          "it/devops/sre-operations"
-        ]
-      }
-    ],
-    "autolink": true
-  },
-  {
-    "key": "Điểm lỗi đơn lẻ",
-    "match": "any-case",
-    "concepts": [
-      {
-        "id": "single-point-of-failure",
-        "label": "Single point of failure (SPOF)",
-        "summary": "Thành phần hoặc mắt xích đơn lẻ trong một hệ thống mà sự cố của nó sẽ làm toàn bộ hệ thống ngừng hoạt động hoàn toàn do thiếu cơ chế dự phòng thay thế.",
-        "domains": [
-          "it/devops/sre-operations"
+          "it/web/frontend"
         ]
       }
     ],
@@ -12459,6 +12171,36 @@
     "autolink": true
   },
   {
+    "key": "Static site generation (SSG)",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "static-site-generation",
+        "label": "Static site generation (SSG)",
+        "summary": "Quy trình tạo sẵn các tệp HTML tĩnh từ lúc biên dịch dự án thay vì chờ người dùng truy cập mới tạo nội dung.",
+        "domains": [
+          "it/web/frontend"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "SSG",
+    "match": "exact-case",
+    "concepts": [
+      {
+        "id": "static-site-generation",
+        "label": "Static site generation (SSG)",
+        "summary": "Quy trình tạo sẵn các tệp HTML tĩnh từ lúc biên dịch dự án thay vì chờ người dùng truy cập mới tạo nội dung.",
+        "domains": [
+          "it/web/frontend"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
     "key": "Cổ phiếu",
     "match": "any-case",
     "concepts": [
@@ -13138,6 +12880,51 @@
     "autolink": true
   },
   {
+    "key": "Tree shaking",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "tree-shaking",
+        "label": "Tree shaking",
+        "summary": "Kỹ thuật tối ưu hóa trong quá trình đóng gói giúp loại bỏ mã nguồn không được sử dụng khỏi sản phẩm cuối cùng.",
+        "domains": [
+          "it/web/frontend"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "loại bỏ mã thừa",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "tree-shaking",
+        "label": "Tree shaking",
+        "summary": "Kỹ thuật tối ưu hóa trong quá trình đóng gói giúp loại bỏ mã nguồn không được sử dụng khỏi sản phẩm cuối cùng.",
+        "domains": [
+          "it/web/frontend"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "dead code elimination",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "tree-shaking",
+        "label": "Tree shaking",
+        "summary": "Kỹ thuật tối ưu hóa trong quá trình đóng gói giúp loại bỏ mã nguồn không được sử dụng khỏi sản phẩm cuối cùng.",
+        "domains": [
+          "it/web/frontend"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
     "key": "Type checking",
     "match": "any-case",
     "concepts": [
@@ -13166,6 +12953,38 @@
       }
     ],
     "autolink": true
+  },
+  {
+    "key": "TypeScript",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "typescript",
+        "label": "TypeScript",
+        "summary": "Ngôn ngữ lập trình mã nguồn mở phát triển từ JavaScript, bổ sung hệ thống kiểu tĩnh giúp phát hiện lỗi sớm trước khi chạy.",
+        "domains": [
+          "it/web/frontend",
+          "it/software-engineering/programming-concepts"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "TS",
+    "match": "exact-case",
+    "concepts": [
+      {
+        "id": "typescript",
+        "label": "TypeScript",
+        "summary": "Ngôn ngữ lập trình mã nguồn mở phát triển từ JavaScript, bổ sung hệ thống kiểu tĩnh giúp phát hiện lỗi sớm trước khi chạy.",
+        "domains": [
+          "it/web/frontend",
+          "it/software-engineering/programming-concepts"
+        ]
+      }
+    ],
+    "autolink": false
   },
   {
     "key": "Typography",
@@ -13312,6 +13131,51 @@
         "summary": "Tỷ lệ hoặc khoảng thời gian mà hệ thống máy tính, mạng hoặc ứng dụng duy trì trạng thái hoạt động bình thường và sẵn sàng phục vụ người dùng.",
         "domains": [
           "it/devops/sre-operations"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "URL",
+    "match": "exact-case",
+    "concepts": [
+      {
+        "id": "url",
+        "label": "URL",
+        "summary": "Chuỗi định danh tiêu chuẩn chỉ định vị trí cụ thể và phương thức truy cập của một tài nguyên trên mạng.",
+        "domains": [
+          "it/web/frontend"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Uniform Resource Locator",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "url",
+        "label": "URL",
+        "summary": "Chuỗi định danh tiêu chuẩn chỉ định vị trí cụ thể và phương thức truy cập của một tài nguyên trên mạng.",
+        "domains": [
+          "it/web/frontend"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "địa chỉ web",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "url",
+        "label": "URL",
+        "summary": "Chuỗi định danh tiêu chuẩn chỉ định vị trí cụ thể và phương thức truy cập của một tài nguyên trên mạng.",
+        "domains": [
+          "it/web/frontend"
         ]
       }
     ],
@@ -13595,51 +13459,6 @@
     "autolink": true
   },
   {
-    "key": "Vertical scaling",
-    "match": "any-case",
-    "concepts": [
-      {
-        "id": "vertical-scaling",
-        "label": "Vertical scaling",
-        "summary": "Biện pháp gia tăng năng lực xử lý của hệ thống bằng cách bổ sung thêm tài nguyên tính toán như bộ xử lý, bộ nhớ RAM hoặc dung lượng ổ đĩa vào một máy chủ duy nhất.",
-        "domains": [
-          "it/infrastructure/cloud"
-        ]
-      }
-    ],
-    "autolink": true
-  },
-  {
-    "key": "Scale up",
-    "match": "any-case",
-    "concepts": [
-      {
-        "id": "vertical-scaling",
-        "label": "Vertical scaling",
-        "summary": "Biện pháp gia tăng năng lực xử lý của hệ thống bằng cách bổ sung thêm tài nguyên tính toán như bộ xử lý, bộ nhớ RAM hoặc dung lượng ổ đĩa vào một máy chủ duy nhất.",
-        "domains": [
-          "it/infrastructure/cloud"
-        ]
-      }
-    ],
-    "autolink": true
-  },
-  {
-    "key": "Mở rộng theo chiều dọc",
-    "match": "any-case",
-    "concepts": [
-      {
-        "id": "vertical-scaling",
-        "label": "Vertical scaling",
-        "summary": "Biện pháp gia tăng năng lực xử lý của hệ thống bằng cách bổ sung thêm tài nguyên tính toán như bộ xử lý, bộ nhớ RAM hoặc dung lượng ổ đĩa vào một máy chủ duy nhất.",
-        "domains": [
-          "it/infrastructure/cloud"
-        ]
-      }
-    ],
-    "autolink": true
-  },
-  {
     "key": "Máy ảo",
     "match": "any-case",
     "concepts": [
@@ -13838,6 +13657,141 @@
     "autolink": true
   },
   {
+    "key": "WCAG",
+    "match": "exact-case",
+    "concepts": [
+      {
+        "id": "wcag",
+        "label": "WCAG",
+        "summary": "Bộ hướng dẫn tiếp cận nội dung web do Tổ chức World Wide Web Consortium (W3C) ban hành nhằm chuẩn hóa khả năng tiếp cận kỹ thuật số.",
+        "domains": [
+          "it/web/frontend"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Web Content Accessibility Guidelines",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "wcag",
+        "label": "WCAG",
+        "summary": "Bộ hướng dẫn tiếp cận nội dung web do Tổ chức World Wide Web Consortium (W3C) ban hành nhằm chuẩn hóa khả năng tiếp cận kỹ thuật số.",
+        "domains": [
+          "it/web/frontend"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Khả năng tiếp cận web",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "web-accessibility",
+        "label": "Khả năng tiếp cận web",
+        "summary": "Thực tiễn thiết kế và xây dựng trang web sao cho mọi người, bao gồm người có khiếm khuyết về giác quan hoặc thể chất, đều có thể sử dụng thuận tiện.",
+        "domains": [
+          "it/web/frontend"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "a11y",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "web-accessibility",
+        "label": "Khả năng tiếp cận web",
+        "summary": "Thực tiễn thiết kế và xây dựng trang web sao cho mọi người, bao gồm người có khiếm khuyết về giác quan hoặc thể chất, đều có thể sử dụng thuận tiện.",
+        "domains": [
+          "it/web/frontend"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "web accessibility",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "web-accessibility",
+        "label": "Khả năng tiếp cận web",
+        "summary": "Thực tiễn thiết kế và xây dựng trang web sao cho mọi người, bao gồm người có khiếm khuyết về giác quan hoặc thể chất, đều có thể sử dụng thuận tiện.",
+        "domains": [
+          "it/web/frontend"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "khả năng truy cập web",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "web-accessibility",
+        "label": "Khả năng tiếp cận web",
+        "summary": "Thực tiễn thiết kế và xây dựng trang web sao cho mọi người, bao gồm người có khiếm khuyết về giác quan hoặc thể chất, đều có thể sử dụng thuận tiện.",
+        "domains": [
+          "it/web/frontend"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Máy chủ web",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "web-server",
+        "label": "Máy chủ web",
+        "summary": "Hệ thống phần cứng hoặc phần mềm chuyên xử lý các yêu cầu từ máy khách qua giao thức HTTP để cung cấp tài nguyên trang web.",
+        "domains": [
+          "it/web/backend"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "web server",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "web-server",
+        "label": "Máy chủ web",
+        "summary": "Hệ thống phần cứng hoặc phần mềm chuyên xử lý các yêu cầu từ máy khách qua giao thức HTTP để cung cấp tài nguyên trang web.",
+        "domains": [
+          "it/web/backend"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "máy chủ HTTP",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "web-server",
+        "label": "Máy chủ web",
+        "summary": "Hệ thống phần cứng hoặc phần mềm chuyên xử lý các yêu cầu từ máy khách qua giao thức HTTP để cung cấp tài nguyên trang web.",
+        "domains": [
+          "it/web/backend"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
     "key": "Session",
     "match": "any-case",
     "concepts": [
@@ -13908,36 +13862,6 @@
         "id": "webhook",
         "label": "Webhook",
         "summary": "Cơ chế gọi ngược HTTP tự động kích hoạt bởi hệ thống nguồn để bắn dữ liệu sự kiện thời gian thực sang máy chủ tiếp nhận.",
-        "domains": [
-          "it/web/api"
-        ]
-      }
-    ],
-    "autolink": true
-  },
-  {
-    "key": "WebSocket",
-    "match": "any-case",
-    "concepts": [
-      {
-        "id": "websocket",
-        "label": "WebSocket",
-        "summary": "Giao thức truyền thông máy tính cung cấp kênh giao tiếp song công hai chiều toàn phần qua một kết nối TCP duy nhất, được khởi tạo thông qua cái bắt tay nâng cấp từ HTTP.",
-        "domains": [
-          "it/web/api"
-        ]
-      }
-    ],
-    "autolink": true
-  },
-  {
-    "key": "Giao thức WebSocket",
-    "match": "any-case",
-    "concepts": [
-      {
-        "id": "websocket",
-        "label": "WebSocket",
-        "summary": "Giao thức truyền thông máy tính cung cấp kênh giao tiếp song công hai chiều toàn phần qua một kết nối TCP duy nhất, được khởi tạo thông qua cái bắt tay nâng cấp từ HTTP.",
         "domains": [
           "it/web/api"
         ]

@@ -1,0 +1,24 @@
+id: html
+domains:
+  - it/web/frontend
+level: 1
+relations:
+  prerequisites: []
+  confusable: []
+  related:
+    - css
+    - javascript
+    - dom
+status: draft
+provenance:
+  drafted_by: ai
+sources:
+  - ref: mdn
+    locator: https://developer.mozilla.org/en-US/docs/Web/HTML
+    title: "HTML: HyperText Markup Language | MDN"
+    language: en
+    accessed: "2026-10-17"
+    retrieved_by: ai
+    supports:
+      - definition
+      - summary

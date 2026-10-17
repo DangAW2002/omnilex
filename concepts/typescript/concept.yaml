@@ -1,0 +1,26 @@
+id: typescript
+domains:
+  - it/web/frontend
+  - it/software-engineering/programming-concepts
+level: 2
+relations:
+  prerequisites:
+    - javascript
+  confusable:
+    - javascript
+  related:
+    - nodejs
+    - react
+status: draft
+provenance:
+  drafted_by: ai
+sources:
+  - ref: typescript-docs
+    locator: https://www.typescriptlang.org/docs/
+    title: "TypeScript Documentation"
+    language: en
+    accessed: "2026-10-17"
+    retrieved_by: ai
+    supports:
+      - definition
+      - summary

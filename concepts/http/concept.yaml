@@ -1,0 +1,26 @@
+id: http
+domains:
+  - it/web/api
+  - it/infrastructure/networking
+level: 1
+relations:
+  prerequisites: []
+  confusable:
+    - https
+  related:
+    - https
+    - url
+    - web-server
+status: draft
+provenance:
+  drafted_by: ai
+sources:
+  - ref: mdn
+    locator: https://developer.mozilla.org/en-US/docs/Web/HTTP
+    title: "HTTP | MDN"
+    language: en
+    accessed: "2026-10-17"
+    retrieved_by: ai
+    supports:
+      - definition
+      - summary

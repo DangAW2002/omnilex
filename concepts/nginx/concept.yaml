@@ -1,0 +1,27 @@
+id: nginx
+domains:
+  - it/web/backend
+  - it/infrastructure/networking
+level: 2
+relations:
+  prerequisites:
+    - web-server
+    - http
+  confusable:
+    - web-server
+  related:
+    - nodejs
+    - https
+status: draft
+provenance:
+  drafted_by: ai
+sources:
+  - ref: nginx-docs
+    locator: https://nginx.org/en/
+    title: "nginx news"
+    language: en
+    accessed: "2026-10-17"
+    retrieved_by: ai
+    supports:
+      - definition
+      - summary

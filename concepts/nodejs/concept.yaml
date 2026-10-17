@@ -1,0 +1,24 @@
+id: nodejs
+domains:
+  - it/web/backend
+level: 2
+relations:
+  prerequisites:
+    - javascript
+  confusable: []
+  related:
+    - web-server
+    - nginx
+status: draft
+provenance:
+  drafted_by: ai
+sources:
+  - ref: nodejs-docs
+    locator: https://nodejs.org/en/about
+    title: "About Node.js"
+    language: en
+    accessed: "2026-10-17"
+    retrieved_by: ai
+    supports:
+      - definition
+      - summary

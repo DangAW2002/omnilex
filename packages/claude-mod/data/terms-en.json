@@ -62,6 +62,36 @@
     "autolink": true
   },
   {
+    "key": "Accrual accounting",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "accrual-accounting",
+        "label": "Accrual accounting",
+        "summary": "The financial reporting method recording revenues when earned and expenses when incurred, regardless of the timing of cash receipts or disbursements.",
+        "domains": [
+          "finance/accounting/standards"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Accrual basis of accounting",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "accrual-accounting",
+        "label": "Accrual accounting",
+        "summary": "The financial reporting method recording revenues when earned and expenses when incurred, regardless of the timing of cash receipts or disbursements.",
+        "domains": [
+          "finance/accounting/standards"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
     "key": "Actuator",
     "match": "any-case",
     "concepts": [
@@ -199,6 +229,38 @@
         "summary": "A dedicated network address and URL path exposed by an API where clients access a specific service or resource.",
         "domains": [
           "it/web/api"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Asset",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "asset",
+        "label": "Asset",
+        "qualifier": "(Accounting)",
+        "summary": "A present economic resource controlled by an entity as a result of past events from which future economic benefits are expected to flow.",
+        "domains": [
+          "finance/accounting/bookkeeping"
+        ]
+      }
+    ],
+    "autolink": false
+  },
+  {
+    "key": "Economic resource",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "asset",
+        "label": "Asset",
+        "qualifier": "(Accounting)",
+        "summary": "A present economic resource controlled by an entity as a result of past events from which future economic benefits are expected to flow.",
+        "domains": [
+          "finance/accounting/bookkeeping"
         ]
       }
     ],
@@ -367,6 +429,36 @@
         "summary": "An incoming hyperlink from an external web domain directing users and web crawlers to a target page on another website.",
         "domains": [
           "media/digital-marketing/seo"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Balance sheet",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "balance-sheet",
+        "label": "Balance sheet",
+        "summary": "A core financial statement summarizing an entity’s assets, liabilities, and shareholders’ equity at a specific point in time.",
+        "domains": [
+          "finance/corporate-finance/financial-statements"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Statement of financial position",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "balance-sheet",
+        "label": "Balance sheet",
+        "summary": "A core financial statement summarizing an entity’s assets, liabilities, and shareholders’ equity at a specific point in time.",
+        "domains": [
+          "finance/corporate-finance/financial-statements"
         ]
       }
     ],
@@ -881,6 +973,36 @@
     "autolink": true
   },
   {
+    "key": "Cash flow statement",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "cash-flow-statement",
+        "label": "Cash flow statement",
+        "summary": "A financial statement tracking the aggregate inflows and outflows of actual cash across operating, investing, and financing operations.",
+        "domains": [
+          "finance/corporate-finance/financial-statements"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Statement of cash flows",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "cash-flow-statement",
+        "label": "Cash flow statement",
+        "summary": "A financial statement tracking the aggregate inflows and outflows of actual cash across operating, investing, and financing operations.",
+        "domains": [
+          "finance/corporate-finance/financial-statements"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
     "key": "Content Delivery Network (CDN)",
     "match": "any-case",
     "concepts": [
@@ -1353,6 +1475,51 @@
         "summary": "An online advertising pricing model where the advertiser pays a fee each time a user clicks on one of their ads.",
         "domains": [
           "media/digital-marketing/paid-ads"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Consumer Price Index (CPI)",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "cpi",
+        "label": "Consumer Price Index (CPI)",
+        "summary": "A statistical index measuring the weighted average change over time in prices paid by households for a representative basket of consumer goods and services.",
+        "domains": [
+          "finance/economics/inflation"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "CPI",
+    "match": "exact-case",
+    "concepts": [
+      {
+        "id": "cpi",
+        "label": "Consumer Price Index (CPI)",
+        "summary": "A statistical index measuring the weighted average change over time in prices paid by households for a representative basket of consumer goods and services.",
+        "domains": [
+          "finance/economics/inflation"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Headline inflation index",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "cpi",
+        "label": "Consumer Price Index (CPI)",
+        "summary": "A statistical index measuring the weighted average change over time in prices paid by households for a representative basket of consumer goods and services.",
+        "domains": [
+          "finance/economics/inflation"
         ]
       }
     ],
@@ -2021,6 +2188,51 @@
     "autolink": true
   },
   {
+    "key": "Debt-to-equity ratio (D/E)",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "debt-to-equity-ratio",
+        "label": "Debt-to-equity ratio (D/E)",
+        "summary": "A financial leverage metric calculated by dividing an entity’s total debt obligations by its shareholders’ equity.",
+        "domains": [
+          "finance/corporate-finance/capital-structure"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "D/E",
+    "match": "exact-case",
+    "concepts": [
+      {
+        "id": "debt-to-equity-ratio",
+        "label": "Debt-to-equity ratio (D/E)",
+        "summary": "A financial leverage metric calculated by dividing an entity’s total debt obligations by its shareholders’ equity.",
+        "domains": [
+          "finance/corporate-finance/capital-structure"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "D/E ratio",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "debt-to-equity-ratio",
+        "label": "Debt-to-equity ratio (D/E)",
+        "summary": "A financial leverage metric calculated by dividing an entity’s total debt obligations by its shareholders’ equity.",
+        "domains": [
+          "finance/corporate-finance/capital-structure"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
     "key": "Deep learning",
     "match": "any-case",
     "concepts": [
@@ -2066,6 +2278,36 @@
     "autolink": true
   },
   {
+    "key": "Deflation",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "deflation",
+        "label": "Deflation",
+        "summary": "A persistent and widespread decline in the general price level of goods and services across an economy.",
+        "domains": [
+          "finance/economics/inflation"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Negative inflation",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "deflation",
+        "label": "Deflation",
+        "summary": "A persistent and widespread decline in the general price level of goods and services across an economy.",
+        "domains": [
+          "finance/economics/inflation"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
     "key": "Deprecation",
     "match": "any-case",
     "concepts": [
@@ -2076,6 +2318,54 @@
         "summary": "The practice of marking a software feature, API, or package as obsolete and discouraged from use, signaling that it will be removed in a future release.",
         "domains": [
           "it/software-engineering/practices"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Depreciation",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "depreciation-accounting",
+        "label": "Depreciation",
+        "qualifier": "(Accounting)",
+        "summary": "The systematic allocation of the depreciable cost of a tangible fixed asset over its estimated useful economic lifespan.",
+        "domains": [
+          "finance/accounting/bookkeeping"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Asset depreciation",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "depreciation-accounting",
+        "label": "Depreciation",
+        "qualifier": "(Accounting)",
+        "summary": "The systematic allocation of the depreciable cost of a tangible fixed asset over its estimated useful economic lifespan.",
+        "domains": [
+          "finance/accounting/bookkeeping"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Depreciation expense",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "depreciation-accounting",
+        "label": "Depreciation",
+        "qualifier": "(Accounting)",
+        "summary": "The systematic allocation of the depreciable cost of a tangible fixed asset over its estimated useful economic lifespan.",
+        "domains": [
+          "finance/accounting/bookkeeping"
         ]
       }
     ],
@@ -2322,6 +2612,36 @@
     "autolink": true
   },
   {
+    "key": "Double-entry bookkeeping",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "double-entry-bookkeeping",
+        "label": "Double-entry bookkeeping",
+        "summary": "The universal bookkeeping method wherein every economic transaction is recorded in at least two separate ledger accounts with offsetting debit and credit entries.",
+        "domains": [
+          "finance/accounting/bookkeeping"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Double-entry accounting",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "double-entry-bookkeeping",
+        "label": "Double-entry bookkeeping",
+        "summary": "The universal bookkeeping method wherein every economic transaction is recorded in at least two separate ledger accounts with offsetting debit and credit entries.",
+        "domains": [
+          "finance/accounting/bookkeeping"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
     "key": "E-wallet",
     "match": "any-case",
     "concepts": [
@@ -2361,6 +2681,21 @@
         "summary": "An electronic application or device that securely stores digital payment credentials and funds to facilitate online, in-app, and contactless transactions.",
         "domains": [
           "finance/banking/payments"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "EBITDA",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "ebitda",
+        "label": "EBITDA",
+        "summary": "An earnings metric measuring core operating profitability before interest, tax, depreciation, and amortization deductions.",
+        "domains": [
+          "finance/corporate-finance/financial-statements"
         ]
       }
     ],
@@ -2671,6 +3006,54 @@
     "autolink": true
   },
   {
+    "key": "Equity",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "equity-finance",
+        "label": "Equity",
+        "qualifier": "(Finance)",
+        "summary": "The residual economic interest in an entity’s assets after deducting all of its liabilities.",
+        "domains": [
+          "finance/corporate-finance/capital-structure"
+        ]
+      }
+    ],
+    "autolink": false
+  },
+  {
+    "key": "Shareholders' equity",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "equity-finance",
+        "label": "Equity",
+        "qualifier": "(Finance)",
+        "summary": "The residual economic interest in an entity’s assets after deducting all of its liabilities.",
+        "domains": [
+          "finance/corporate-finance/capital-structure"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Book value",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "equity-finance",
+        "label": "Equity",
+        "qualifier": "(Finance)",
+        "summary": "The residual economic interest in an entity’s assets after deducting all of its liabilities.",
+        "domains": [
+          "finance/corporate-finance/capital-structure"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
     "key": "Exchange-Traded Fund (ETF)",
     "match": "any-case",
     "concepts": [
@@ -2740,6 +3123,51 @@
         "summary": "A data integration process that extracts data from multiple sources, transforms it to meet analytical requirements, and loads it into a destination store.",
         "domains": [
           "it/data/data-engineering"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Exchange rate",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "exchange-rate",
+        "label": "Exchange rate",
+        "summary": "The comparative price of one national currency expressed in terms of another currency.",
+        "domains": [
+          "finance/economics/exchange-rates"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Foreign exchange rate",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "exchange-rate",
+        "label": "Exchange rate",
+        "summary": "The comparative price of one national currency expressed in terms of another currency.",
+        "domains": [
+          "finance/economics/exchange-rates"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "FX rate",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "exchange-rate",
+        "label": "Exchange rate",
+        "summary": "The comparative price of one national currency expressed in terms of another currency.",
+        "domains": [
+          "finance/economics/exchange-rates"
         ]
       }
     ],
@@ -2890,6 +3318,51 @@
         "summary": "A model capability to reply with a structured request to call a tool the developer defined; the app runs it and returns the result.",
         "domains": [
           "it/ai-ml/llm-agents"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Gross Domestic Product (GDP)",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "gdp",
+        "label": "Gross Domestic Product (GDP)",
+        "summary": "The total monetary or market value of all final goods and services produced within a country’s domestic borders over a specific timeframe.",
+        "domains": [
+          "finance/economics/inflation"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "GDP",
+    "match": "exact-case",
+    "concepts": [
+      {
+        "id": "gdp",
+        "label": "Gross Domestic Product (GDP)",
+        "summary": "The total monetary or market value of all final goods and services produced within a country’s domestic borders over a specific timeframe.",
+        "domains": [
+          "finance/economics/inflation"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "National output",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "gdp",
+        "label": "Gross Domestic Product (GDP)",
+        "summary": "The total monetary or market value of all final goods and services produced within a country’s domestic borders over a specific timeframe.",
+        "domains": [
+          "finance/economics/inflation"
         ]
       }
     ],
@@ -3222,6 +3695,51 @@
     "autolink": true
   },
   {
+    "key": "International Financial Reporting Standards (IFRS)",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "ifrs",
+        "label": "International Financial Reporting Standards (IFRS)",
+        "summary": "A globally recognized framework of principles-based reporting rules established by IASB authorities to unify corporate accounts.",
+        "domains": [
+          "finance/accounting/standards"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "IFRS",
+    "match": "exact-case",
+    "concepts": [
+      {
+        "id": "ifrs",
+        "label": "International Financial Reporting Standards (IFRS)",
+        "summary": "A globally recognized framework of principles-based reporting rules established by IASB authorities to unify corporate accounts.",
+        "domains": [
+          "finance/accounting/standards"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "IFRS Standards",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "ifrs",
+        "label": "International Financial Reporting Standards (IFRS)",
+        "summary": "A globally recognized framework of principles-based reporting rules established by IASB authorities to unify corporate accounts.",
+        "domains": [
+          "finance/accounting/standards"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
     "key": "Image classification",
     "match": "any-case",
     "concepts": [
@@ -3301,6 +3819,51 @@
     "autolink": true
   },
   {
+    "key": "Income statement",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "income-statement",
+        "label": "Income statement",
+        "summary": "A financial report illustrating a company’s operational revenues, expenses, and resultant net earnings over a specified period.",
+        "domains": [
+          "finance/corporate-finance/financial-statements"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Profit and loss statement",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "income-statement",
+        "label": "Income statement",
+        "summary": "A financial report illustrating a company’s operational revenues, expenses, and resultant net earnings over a specified period.",
+        "domains": [
+          "finance/corporate-finance/financial-statements"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "P&L",
+    "match": "exact-case",
+    "concepts": [
+      {
+        "id": "income-statement",
+        "label": "Income statement",
+        "summary": "A financial report illustrating a company’s operational revenues, expenses, and resultant net earnings over a specified period.",
+        "domains": [
+          "finance/corporate-finance/financial-statements"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
     "key": "Index fund",
     "match": "any-case",
     "concepts": [
@@ -3356,6 +3919,36 @@
         "summary": "The operational stage where a trained model processes live inputs to generate predictions, decisions, or outputs without updating its parameters.",
         "domains": [
           "it/ai-ml/foundations"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Inflation",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "inflation",
+        "label": "Inflation",
+        "summary": "A broad and sustained increase in the general price level of goods and services over time, eroding currency purchasing power.",
+        "domains": [
+          "finance/economics/inflation"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Price inflation",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "inflation",
+        "label": "Inflation",
+        "summary": "A broad and sustained increase in the general price level of goods and services over time, eroding currency purchasing power.",
+        "domains": [
+          "finance/economics/inflation"
         ]
       }
     ],
@@ -3588,6 +4181,51 @@
         "summary": "A multi-layered middleware software suite that provides connectivity, fleet device management, data ingestion, and application integration for IoT deployments.",
         "domains": [
           "iot/edge-cloud"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Initial Public Offering (IPO)",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "ipo",
+        "label": "Initial Public Offering (IPO)",
+        "summary": "The inaugural public sale of corporate stock on a securities exchange, transforming a private company into a publicly traded entity.",
+        "domains": [
+          "finance/corporate-finance/fundraising"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "IPO",
+    "match": "exact-case",
+    "concepts": [
+      {
+        "id": "ipo",
+        "label": "Initial Public Offering (IPO)",
+        "summary": "The inaugural public sale of corporate stock on a securities exchange, transforming a private company into a publicly traded entity.",
+        "domains": [
+          "finance/corporate-finance/fundraising"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Stock market flotation",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "ipo",
+        "label": "Initial Public Offering (IPO)",
+        "summary": "The inaugural public sale of corporate stock on a securities exchange, transforming a private company into a publicly traded entity.",
+        "domains": [
+          "finance/corporate-finance/fundraising"
         ]
       }
     ],
@@ -3932,6 +4570,54 @@
     "autolink": true
   },
   {
+    "key": "Liability",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "liability",
+        "label": "Liability",
+        "qualifier": "(Accounting)",
+        "summary": "A present financial obligation of an enterprise arising from past events, settlement of which requires an outflow of economic resources.",
+        "domains": [
+          "finance/accounting/bookkeeping"
+        ]
+      }
+    ],
+    "autolink": false
+  },
+  {
+    "key": "Debt obligation",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "liability",
+        "label": "Liability",
+        "qualifier": "(Accounting)",
+        "summary": "A present financial obligation of an enterprise arising from past events, settlement of which requires an outflow of economic resources.",
+        "domains": [
+          "finance/accounting/bookkeeping"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Financial liability",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "liability",
+        "label": "Liability",
+        "qualifier": "(Accounting)",
+        "summary": "A present financial obligation of an enterprise arising from past events, settlement of which requires an outflow of economic resources.",
+        "domains": [
+          "finance/accounting/bookkeeping"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
     "key": "Linter",
     "match": "any-case",
     "concepts": [
@@ -3941,6 +4627,38 @@
         "summary": "A static code analysis tool that inspects source code for programmatic errors, stylistic inconsistencies, security antipatterns, and non-standard syntax before runtime.",
         "domains": [
           "it/software-engineering/practices"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Liquidity",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "liquidity",
+        "label": "Liquidity",
+        "qualifier": "(Finance)",
+        "summary": "The operational ease and velocity with which an economic asset can be converted into spendable currency without suffering significant price erosion.",
+        "domains": [
+          "finance/corporate-finance/capital-structure"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Market liquidity",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "liquidity",
+        "label": "Liquidity",
+        "qualifier": "(Finance)",
+        "summary": "The operational ease and velocity with which an economic asset can be converted into spendable currency without suffering significant price erosion.",
+        "domains": [
+          "finance/corporate-finance/capital-structure"
         ]
       }
     ],
@@ -5563,6 +6281,51 @@
     "autolink": true
   },
   {
+    "key": "Policy rate",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "policy-rate",
+        "label": "Policy rate",
+        "summary": "The benchmark interest rate established by a monetary authority to control commercial interbank lending and steer macroeconomic conditions.",
+        "domains": [
+          "finance/economics/interest-rates-monetary-policy"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Base rate",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "policy-rate",
+        "label": "Policy rate",
+        "summary": "The benchmark interest rate established by a monetary authority to control commercial interbank lending and steer macroeconomic conditions.",
+        "domains": [
+          "finance/economics/interest-rates-monetary-policy"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Central bank interest rate",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "policy-rate",
+        "label": "Policy rate",
+        "summary": "The benchmark interest rate established by a monetary authority to control commercial interbank lending and steer macroeconomic conditions.",
+        "domains": [
+          "finance/economics/interest-rates-monetary-policy"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
     "key": "Postmortem",
     "match": "any-case",
     "concepts": [
@@ -5961,6 +6724,51 @@
     "autolink": true
   },
   {
+    "key": "Quantitative easing (QE)",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "quantitative-easing",
+        "label": "Quantitative easing (QE)",
+        "summary": "An unconventional monetary policy tool whereby a central bank purchases large volumes of sovereign and financial assets to stimulate liquidity.",
+        "domains": [
+          "finance/economics/interest-rates-monetary-policy"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "QE",
+    "match": "exact-case",
+    "concepts": [
+      {
+        "id": "quantitative-easing",
+        "label": "Quantitative easing (QE)",
+        "summary": "An unconventional monetary policy tool whereby a central bank purchases large volumes of sovereign and financial assets to stimulate liquidity.",
+        "domains": [
+          "finance/economics/interest-rates-monetary-policy"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Asset purchase program",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "quantitative-easing",
+        "label": "Quantitative easing (QE)",
+        "summary": "An unconventional monetary policy tool whereby a central bank purchases large volumes of sovereign and financial assets to stimulate liquidity.",
+        "domains": [
+          "finance/economics/interest-rates-monetary-policy"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
     "key": "Quantization",
     "match": "any-case",
     "concepts": [
@@ -6097,6 +6905,51 @@
     "autolink": true
   },
   {
+    "key": "Recession",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "recession",
+        "label": "Recession",
+        "summary": "A significant, widespread, and prolonged contraction in economic activity across an economy lasting more than a few months.",
+        "domains": [
+          "finance/economics/inflation"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Economic recession",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "recession",
+        "label": "Recession",
+        "summary": "A significant, widespread, and prolonged contraction in economic activity across an economy lasting more than a few months.",
+        "domains": [
+          "finance/economics/inflation"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Downturn",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "recession",
+        "label": "Recession",
+        "summary": "A significant, widespread, and prolonged contraction in economic activity across an economy lasting more than a few months.",
+        "domains": [
+          "finance/economics/inflation"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
     "key": "Refactoring",
     "match": "any-case",
     "concepts": [
@@ -6226,6 +7079,51 @@
         "summary": "The percentage of customers that a business retains over a specified duration, reflecting enduring product value and satisfaction.",
         "domains": [
           "product/metrics"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Revenue",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "revenue",
+        "label": "Revenue",
+        "summary": "The total monetary intake realized by an enterprise through ordinary business activities before deducting operational costs and expenses.",
+        "domains": [
+          "finance/corporate-finance/financial-statements"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Gross sales",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "revenue",
+        "label": "Revenue",
+        "summary": "The total monetary intake realized by an enterprise through ordinary business activities before deducting operational costs and expenses.",
+        "domains": [
+          "finance/corporate-finance/financial-statements"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Turnover",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "revenue",
+        "label": "Revenue",
+        "summary": "The total monetary intake realized by an enterprise through ordinary business activities before deducting operational costs and expenses.",
+        "domains": [
+          "finance/corporate-finance/financial-statements"
         ]
       }
     ],
@@ -7294,6 +8192,36 @@
     "autolink": true
   },
   {
+    "key": "Pre-money valuation",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "startup-valuation",
+        "label": "Pre-money valuation",
+        "summary": "The agreed valuation of a private enterprise determined prior to receiving an external injection of new investment capital.",
+        "domains": [
+          "finance/corporate-finance/fundraising"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Pre-money value",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "startup-valuation",
+        "label": "Pre-money valuation",
+        "summary": "The agreed valuation of a private enterprise determined prior to receiving an external injection of new investment capital.",
+        "domains": [
+          "finance/corporate-finance/fundraising"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
     "key": "Stock",
     "match": "any-case",
     "concepts": [
@@ -8064,6 +8992,54 @@
     "autolink": true
   },
   {
+    "key": "Value-Added Tax (VAT)",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "vat",
+        "label": "Value-Added Tax (VAT)",
+        "summary": "A multi-stage consumption tax levied on the incremental value added to goods and services across each stage of production and distribution.",
+        "domains": [
+          "finance/accounting/standards",
+          "finance/personal-finance/tax"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "VAT",
+    "match": "exact-case",
+    "concepts": [
+      {
+        "id": "vat",
+        "label": "Value-Added Tax (VAT)",
+        "summary": "A multi-stage consumption tax levied on the incremental value added to goods and services across each stage of production and distribution.",
+        "domains": [
+          "finance/accounting/standards",
+          "finance/personal-finance/tax"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Goods and services tax",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "vat",
+        "label": "Value-Added Tax (VAT)",
+        "summary": "A multi-stage consumption tax levied on the incremental value added to goods and services across each stage of production and distribution.",
+        "domains": [
+          "finance/accounting/standards",
+          "finance/personal-finance/tax"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
     "key": "Vector database",
     "match": "any-case",
     "concepts": [
@@ -8093,6 +9069,51 @@
       }
     ],
     "autolink": false
+  },
+  {
+    "key": "Venture capital (VC)",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "venture-capital",
+        "label": "Venture capital (VC)",
+        "summary": "A specialized form of private equity financing provided by investment funds to early-stage startups with exceptional growth potential.",
+        "domains": [
+          "finance/corporate-finance/fundraising"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "VC",
+    "match": "exact-case",
+    "concepts": [
+      {
+        "id": "venture-capital",
+        "label": "Venture capital (VC)",
+        "summary": "A specialized form of private equity financing provided by investment funds to early-stage startups with exceptional growth potential.",
+        "domains": [
+          "finance/corporate-finance/fundraising"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Venture funding",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "venture-capital",
+        "label": "Venture capital (VC)",
+        "summary": "A specialized form of private equity financing provided by investment funds to early-stage startups with exceptional growth potential.",
+        "domains": [
+          "finance/corporate-finance/fundraising"
+        ]
+      }
+    ],
+    "autolink": true
   },
   {
     "key": "Virtual machine (VM)",
@@ -8245,6 +9266,51 @@
         "summary": "An automated HTTP POST callback triggered by an origin system to deliver real-time event payloads to external receiver endpoints.",
         "domains": [
           "it/web/api"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Working capital",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "working-capital",
+        "label": "Working capital",
+        "summary": "The operational capital buffer calculated as total current assets minus total current liabilities.",
+        "domains": [
+          "finance/corporate-finance/capital-structure"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Net working capital",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "working-capital",
+        "label": "Working capital",
+        "summary": "The operational capital buffer calculated as total current assets minus total current liabilities.",
+        "domains": [
+          "finance/corporate-finance/capital-structure"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "NWC",
+    "match": "exact-case",
+    "concepts": [
+      {
+        "id": "working-capital",
+        "label": "Working capital",
+        "summary": "The operational capital buffer calculated as total current assets minus total current liabilities.",
+        "domains": [
+          "finance/corporate-finance/capital-structure"
         ]
       }
     ],

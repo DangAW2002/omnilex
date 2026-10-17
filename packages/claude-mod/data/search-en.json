@@ -42,6 +42,24 @@
     "status": "draft"
   },
   {
+    "id": "accrual-accounting",
+    "label": "Accrual accounting",
+    "aliases": [
+      "Accrual basis of accounting"
+    ],
+    "loanwords": [],
+    "plain_descriptions": [
+      "accounting standard recording sales when earned and costs when incurred, not when cash changes hands",
+      "financial reporting principle linking revenues with related expenses regardless of payment dates"
+    ],
+    "summary": "The financial reporting method recording revenues when earned and expenses when incurred, regardless of the timing of cash receipts or disbursements.",
+    "domains": [
+      "finance/accounting/standards"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
     "id": "actuator",
     "label": "Actuator",
     "aliases": [],
@@ -149,6 +167,25 @@
     "status": "draft"
   },
   {
+    "id": "asset",
+    "label": "Asset",
+    "qualifier": "(Accounting)",
+    "aliases": [
+      "Economic resource"
+    ],
+    "loanwords": [],
+    "plain_descriptions": [
+      "anything of economic value owned or controlled by a person or company",
+      "valuable resource expected to generate future financial benefits or cash"
+    ],
+    "summary": "A present economic resource controlled by an entity as a result of past events from which future economic benefits are expected to flow.",
+    "domains": [
+      "finance/accounting/bookkeeping"
+    ],
+    "level": 1,
+    "status": "draft"
+  },
+  {
     "id": "attention-mechanism",
     "label": "Attention mechanism",
     "aliases": [
@@ -222,6 +259,24 @@
       "media/digital-marketing/seo"
     ],
     "level": 2,
+    "status": "draft"
+  },
+  {
+    "id": "balance-sheet",
+    "label": "Balance sheet",
+    "aliases": [
+      "Statement of financial position"
+    ],
+    "loanwords": [],
+    "plain_descriptions": [
+      "financial snapshot showing what a business owns and owes at one moment",
+      "document balancing company assets against debts and owner equity"
+    ],
+    "summary": "A core financial statement summarizing an entity’s assets, liabilities, and shareholders’ equity at a specific point in time.",
+    "domains": [
+      "finance/corporate-finance/financial-statements"
+    ],
+    "level": 1,
     "status": "draft"
   },
   {
@@ -483,6 +538,24 @@
       "it/devops/ci-cd"
     ],
     "level": 2,
+    "status": "draft"
+  },
+  {
+    "id": "cash-flow-statement",
+    "label": "Cash flow statement",
+    "aliases": [
+      "Statement of cash flows"
+    ],
+    "loanwords": [],
+    "plain_descriptions": [
+      "document tracking hard currency entering and leaving corporate bank accounts",
+      "financial report breaking down cash changes into operating, investing, and financing"
+    ],
+    "summary": "A financial statement tracking the aggregate inflows and outflows of actual cash across operating, investing, and financing operations.",
+    "domains": [
+      "finance/corporate-finance/financial-statements"
+    ],
+    "level": 1,
     "status": "draft"
   },
   {
@@ -774,6 +847,25 @@
       "media/digital-marketing/paid-ads"
     ],
     "level": 2,
+    "status": "draft"
+  },
+  {
+    "id": "cpi",
+    "label": "Consumer Price Index (CPI)",
+    "aliases": [
+      "CPI",
+      "Headline inflation index"
+    ],
+    "loanwords": [],
+    "plain_descriptions": [
+      "statistical basket tracking price changes for everyday goods bought by households",
+      "standard economic benchmark measuring the cost of living fluctuations"
+    ],
+    "summary": "A statistical index measuring the weighted average change over time in prices paid by households for a representative basket of consumer goods and services.",
+    "domains": [
+      "finance/economics/inflation"
+    ],
+    "level": 1,
     "status": "draft"
   },
   {
@@ -1137,6 +1229,25 @@
     "status": "draft"
   },
   {
+    "id": "debt-to-equity-ratio",
+    "label": "Debt-to-equity ratio (D/E)",
+    "aliases": [
+      "D/E",
+      "D/E ratio"
+    ],
+    "loanwords": [],
+    "plain_descriptions": [
+      "proportion comparing how much a company borrows against how much shareholders own",
+      "financial leverage yardstick measuring debt dollars per dollar of net equity"
+    ],
+    "summary": "A financial leverage metric calculated by dividing an entity’s total debt obligations by its shareholders’ equity.",
+    "domains": [
+      "finance/corporate-finance/capital-structure"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
     "id": "deep-learning",
     "label": "Deep learning",
     "aliases": [],
@@ -1174,6 +1285,24 @@
     "status": "draft"
   },
   {
+    "id": "deflation",
+    "label": "Deflation",
+    "aliases": [
+      "Negative inflation"
+    ],
+    "loanwords": [],
+    "plain_descriptions": [
+      "ongoing drop in general retail prices across an entire economy",
+      "economic condition where goods get cheaper but debts become harder to repay"
+    ],
+    "summary": "A persistent and widespread decline in the general price level of goods and services across an economy.",
+    "domains": [
+      "finance/economics/inflation"
+    ],
+    "level": 1,
+    "status": "draft"
+  },
+  {
     "id": "deprecation",
     "label": "Deprecation",
     "qualifier": "(Software)",
@@ -1186,6 +1315,26 @@
     "summary": "The practice of marking a software feature, API, or package as obsolete and discouraged from use, signaling that it will be removed in a future release.",
     "domains": [
       "it/software-engineering/practices"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
+    "id": "depreciation-accounting",
+    "label": "Depreciation",
+    "qualifier": "(Accounting)",
+    "aliases": [
+      "Asset depreciation",
+      "Depreciation expense"
+    ],
+    "loanwords": [],
+    "plain_descriptions": [
+      "spreading out the purchase cost of heavy equipment over the years it gets used",
+      "accounting write-down reflecting wear, tear, and aging of physical assets"
+    ],
+    "summary": "The systematic allocation of the depreciable cost of a tangible fixed asset over its estimated useful economic lifespan.",
+    "domains": [
+      "finance/accounting/bookkeeping"
     ],
     "level": 2,
     "status": "draft"
@@ -1336,6 +1485,24 @@
     "status": "draft"
   },
   {
+    "id": "double-entry-bookkeeping",
+    "label": "Double-entry bookkeeping",
+    "aliases": [
+      "Double-entry accounting"
+    ],
+    "loanwords": [],
+    "plain_descriptions": [
+      "accounting rule requiring every single financial transaction to be recorded in at least two accounts",
+      "system matching debits against credits to keep financial balance sheets in equilibrium"
+    ],
+    "summary": "The universal bookkeeping method wherein every economic transaction is recorded in at least two separate ledger accounts with offsetting debit and credit entries.",
+    "domains": [
+      "finance/accounting/bookkeeping"
+    ],
+    "level": 1,
+    "status": "draft"
+  },
+  {
     "id": "e-wallet",
     "label": "E-wallet",
     "aliases": [
@@ -1352,6 +1519,22 @@
       "finance/banking/payments"
     ],
     "level": 1,
+    "status": "draft"
+  },
+  {
+    "id": "ebitda",
+    "label": "EBITDA",
+    "aliases": [],
+    "loanwords": [],
+    "plain_descriptions": [
+      "profit gauge ignoring interest payments, tax bills, and asset wear and tear",
+      "operational cash earnings metric stripping out financing and accounting choices"
+    ],
+    "summary": "An earnings metric measuring core operating profitability before interest, tax, depreciation, and amortization deductions.",
+    "domains": [
+      "finance/corporate-finance/financial-statements"
+    ],
+    "level": 2,
     "status": "draft"
   },
   {
@@ -1553,6 +1736,26 @@
     "status": "draft"
   },
   {
+    "id": "equity-finance",
+    "label": "Equity",
+    "qualifier": "(Finance)",
+    "aliases": [
+      "Shareholders' equity",
+      "Book value"
+    ],
+    "loanwords": [],
+    "plain_descriptions": [
+      "value left for owners after paying off all business liabilities",
+      "total stake held by shareholders including contributed capital and accumulated profits"
+    ],
+    "summary": "The residual economic interest in an entity’s assets after deducting all of its liabilities.",
+    "domains": [
+      "finance/corporate-finance/capital-structure"
+    ],
+    "level": 1,
+    "status": "draft"
+  },
+  {
     "id": "etf",
     "label": "Exchange-Traded Fund (ETF)",
     "aliases": [
@@ -1587,6 +1790,25 @@
       "it/data/data-engineering"
     ],
     "level": 2,
+    "status": "draft"
+  },
+  {
+    "id": "exchange-rate",
+    "label": "Exchange rate",
+    "aliases": [
+      "Foreign exchange rate",
+      "FX rate"
+    ],
+    "loanwords": [],
+    "plain_descriptions": [
+      "relative price tag determining how much foreign currency you get for one unit of domestic money",
+      "conversion value used when exchanging one nation’s currency for another"
+    ],
+    "summary": "The comparative price of one national currency expressed in terms of another currency.",
+    "domains": [
+      "finance/economics/exchange-rates"
+    ],
+    "level": 1,
     "status": "draft"
   },
   {
@@ -1678,6 +1900,25 @@
       "it/ai-ml/llm-agents"
     ],
     "level": 2,
+    "status": "draft"
+  },
+  {
+    "id": "gdp",
+    "label": "Gross Domestic Product (GDP)",
+    "aliases": [
+      "GDP",
+      "National output"
+    ],
+    "loanwords": [],
+    "plain_descriptions": [
+      "total monetary value of all finished goods and services made within a country during a year",
+      "master scoreboard measuring the overall size and health of a nation’s economy"
+    ],
+    "summary": "The total monetary or market value of all final goods and services produced within a country’s domestic borders over a specific timeframe.",
+    "domains": [
+      "finance/economics/inflation"
+    ],
+    "level": 1,
     "status": "draft"
   },
   {
@@ -1938,6 +2179,25 @@
     "status": "draft"
   },
   {
+    "id": "ifrs",
+    "label": "International Financial Reporting Standards (IFRS)",
+    "aliases": [
+      "IFRS",
+      "IFRS Standards"
+    ],
+    "loanwords": [],
+    "plain_descriptions": [
+      "global rulebook ensuring company financial statements look consistent across different countries",
+      "international accounting standards bringing transparency and comparability to corporate reports"
+    ],
+    "summary": "A globally recognized framework of principles-based reporting rules established by IASB authorities to unify corporate accounts.",
+    "domains": [
+      "finance/accounting/standards"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
     "id": "image-classification",
     "label": "Image classification",
     "aliases": [],
@@ -1975,6 +2235,25 @@
     "status": "draft"
   },
   {
+    "id": "income-statement",
+    "label": "Income statement",
+    "aliases": [
+      "Profit and loss statement",
+      "P&L"
+    ],
+    "loanwords": [],
+    "plain_descriptions": [
+      "scorecard showing money earned and spent by a company over a duration",
+      "financial report demonstrating net profit or loss during a quarter or year"
+    ],
+    "summary": "A financial report illustrating a company’s operational revenues, expenses, and resultant net earnings over a specified period.",
+    "domains": [
+      "finance/corporate-finance/financial-statements"
+    ],
+    "level": 1,
+    "status": "draft"
+  },
+  {
     "id": "index-fund",
     "label": "Index fund",
     "aliases": [
@@ -2006,6 +2285,24 @@
     "summary": "The operational stage where a trained model processes live inputs to generate predictions, decisions, or outputs without updating its parameters.",
     "domains": [
       "it/ai-ml/foundations"
+    ],
+    "level": 1,
+    "status": "draft"
+  },
+  {
+    "id": "inflation",
+    "label": "Inflation",
+    "aliases": [
+      "Price inflation"
+    ],
+    "loanwords": [],
+    "plain_descriptions": [
+      "general rise in prices across an economy that makes money lose purchasing power",
+      "situation where your cash buys fewer groceries and goods than it did previously"
+    ],
+    "summary": "A broad and sustained increase in the general price level of goods and services over time, eroding currency purchasing power.",
+    "domains": [
+      "finance/economics/inflation"
     ],
     "level": 1,
     "status": "draft"
@@ -2153,6 +2450,25 @@
     "summary": "A multi-layered middleware software suite that provides connectivity, fleet device management, data ingestion, and application integration for IoT deployments.",
     "domains": [
       "iot/edge-cloud"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
+    "id": "ipo",
+    "label": "Initial Public Offering (IPO)",
+    "aliases": [
+      "IPO",
+      "Stock market flotation"
+    ],
+    "loanwords": [],
+    "plain_descriptions": [
+      "first time a private company sells its shares to everyday public investors",
+      "corporate transition when a privately held startup lists on an exchange"
+    ],
+    "summary": "The inaugural public sale of corporate stock on a securities exchange, transforming a private company into a publicly traded entity.",
+    "domains": [
+      "finance/corporate-finance/fundraising"
     ],
     "level": 2,
     "status": "draft"
@@ -2363,6 +2679,26 @@
     "status": "draft"
   },
   {
+    "id": "liability",
+    "label": "Liability",
+    "qualifier": "(Accounting)",
+    "aliases": [
+      "Debt obligation",
+      "Financial liability"
+    ],
+    "loanwords": [],
+    "plain_descriptions": [
+      "financial debt or legal obligation owed by an individual or business to outside parties",
+      "money that must be paid back to lenders, vendors, or the government over time"
+    ],
+    "summary": "A present financial obligation of an enterprise arising from past events, settlement of which requires an outflow of economic resources.",
+    "domains": [
+      "finance/accounting/bookkeeping"
+    ],
+    "level": 1,
+    "status": "draft"
+  },
+  {
     "id": "linter",
     "label": "Linter",
     "aliases": [],
@@ -2374,6 +2710,25 @@
     "summary": "A static code analysis tool that inspects source code for programmatic errors, stylistic inconsistencies, security antipatterns, and non-standard syntax before runtime.",
     "domains": [
       "it/software-engineering/practices"
+    ],
+    "level": 1,
+    "status": "draft"
+  },
+  {
+    "id": "liquidity",
+    "label": "Liquidity",
+    "qualifier": "(Finance)",
+    "aliases": [
+      "Market liquidity"
+    ],
+    "loanwords": [],
+    "plain_descriptions": [
+      "ease and speed with which an asset can be converted into ready cash without losing value",
+      "ability of an individual or company to pay off immediate debts on time"
+    ],
+    "summary": "The operational ease and velocity with which an economic asset can be converted into spendable currency without suffering significant price erosion.",
+    "domains": [
+      "finance/corporate-finance/capital-structure"
     ],
     "level": 1,
     "status": "draft"
@@ -3289,6 +3644,25 @@
     "status": "draft"
   },
   {
+    "id": "policy-rate",
+    "label": "Policy rate",
+    "aliases": [
+      "Base rate",
+      "Central bank interest rate"
+    ],
+    "loanwords": [],
+    "plain_descriptions": [
+      "benchmark interest rate set by the central bank to guide borrowing costs across the economy",
+      "headline monetary lever raised to curb inflation or lowered to boost job growth"
+    ],
+    "summary": "The benchmark interest rate established by a monetary authority to control commercial interbank lending and steer macroeconomic conditions.",
+    "domains": [
+      "finance/economics/interest-rates-monetary-policy"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
     "id": "postmortem",
     "label": "Postmortem",
     "qualifier": "(IT)",
@@ -3575,6 +3949,25 @@
     "status": "draft"
   },
   {
+    "id": "quantitative-easing",
+    "label": "Quantitative easing (QE)",
+    "aliases": [
+      "QE",
+      "Asset purchase program"
+    ],
+    "loanwords": [],
+    "plain_descriptions": [
+      "unconventional policy where central banks create digital money to buy bonds and flood markets with cash",
+      "large-scale bond purchasing strategy deployed when regular interest rates hit zero"
+    ],
+    "summary": "An unconventional monetary policy tool whereby a central bank purchases large volumes of sovereign and financial assets to stimulate liquidity.",
+    "domains": [
+      "finance/economics/interest-rates-monetary-policy"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
     "id": "quantization",
     "label": "Quantization",
     "qualifier": "(AI)",
@@ -3659,6 +4052,25 @@
       "it/ai-ml/llm-agents"
     ],
     "level": 2,
+    "status": "draft"
+  },
+  {
+    "id": "recession",
+    "label": "Recession",
+    "aliases": [
+      "Economic recession",
+      "Downturn"
+    ],
+    "loanwords": [],
+    "plain_descriptions": [
+      "widespread economic decline where output shrinks, businesses struggle, and jobs are lost",
+      "prolonged period of falling national economic activity lasting across several months"
+    ],
+    "summary": "A significant, widespread, and prolonged contraction in economic activity across an economy lasting more than a few months.",
+    "domains": [
+      "finance/economics/inflation"
+    ],
+    "level": 1,
     "status": "draft"
   },
   {
@@ -3748,6 +4160,25 @@
       "product/metrics"
     ],
     "level": 2,
+    "status": "draft"
+  },
+  {
+    "id": "revenue",
+    "label": "Revenue",
+    "aliases": [
+      "Gross sales",
+      "Turnover"
+    ],
+    "loanwords": [],
+    "plain_descriptions": [
+      "total amount of money brought in through sales before subtracting any costs",
+      "top-line intake generated from delivering products and services to clients"
+    ],
+    "summary": "The total monetary intake realized by an enterprise through ordinary business activities before deducting operational costs and expenses.",
+    "domains": [
+      "finance/corporate-finance/financial-statements"
+    ],
+    "level": 1,
     "status": "draft"
   },
   {
@@ -4434,6 +4865,24 @@
     "status": "draft"
   },
   {
+    "id": "startup-valuation",
+    "label": "Pre-money valuation",
+    "aliases": [
+      "Pre-money value"
+    ],
+    "loanwords": [],
+    "plain_descriptions": [
+      "agreed worth of a startup immediately before fresh investment cash is added",
+      "baseline company price tag determining equity dilution in a financing round"
+    ],
+    "summary": "The agreed valuation of a private enterprise determined prior to receiving an external injection of new investment capital.",
+    "domains": [
+      "finance/corporate-finance/fundraising"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
     "id": "stock",
     "label": "Stock",
     "qualifier": "(Finance)",
@@ -4859,6 +5308,26 @@
     "status": "draft"
   },
   {
+    "id": "vat",
+    "label": "Value-Added Tax (VAT)",
+    "aliases": [
+      "VAT",
+      "Goods and services tax"
+    ],
+    "loanwords": [],
+    "plain_descriptions": [
+      "consumption tax added at each stage of manufacturing and distribution",
+      "sales tax fractionally collected by businesses but borne by retail shoppers"
+    ],
+    "summary": "A multi-stage consumption tax levied on the incremental value added to goods and services across each stage of production and distribution.",
+    "domains": [
+      "finance/accounting/standards",
+      "finance/personal-finance/tax"
+    ],
+    "level": 1,
+    "status": "draft"
+  },
+  {
     "id": "vector-database",
     "label": "Vector database",
     "aliases": [],
@@ -4889,6 +5358,25 @@
     "summary": "A planning metric tracking the average volume of story points or backlog items completed by a team per sprint.",
     "domains": [
       "product/agile-scrum"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
+    "id": "venture-capital",
+    "label": "Venture capital (VC)",
+    "aliases": [
+      "VC",
+      "Venture funding"
+    ],
+    "loanwords": [],
+    "plain_descriptions": [
+      "professional investment money backing risky young startups in exchange for shares",
+      "funding ecosystem helping innovative high-growth ideas scale rapidly"
+    ],
+    "summary": "A specialized form of private equity financing provided by investment funds to early-stage startups with exceptional growth potential.",
+    "domains": [
+      "finance/corporate-finance/fundraising"
     ],
     "level": 2,
     "status": "draft"
@@ -4967,6 +5455,25 @@
       "it/web/api"
     ],
     "level": 2,
+    "status": "draft"
+  },
+  {
+    "id": "working-capital",
+    "label": "Working capital",
+    "aliases": [
+      "Net working capital",
+      "NWC"
+    ],
+    "loanwords": [],
+    "plain_descriptions": [
+      "cash and short-term assets left over after setting aside money for near-term bills",
+      "cushion of operating funds needed to keep daily corporate activities humming"
+    ],
+    "summary": "The operational capital buffer calculated as total current assets minus total current liabilities.",
+    "domains": [
+      "finance/corporate-finance/capital-structure"
+    ],
+    "level": 1,
     "status": "draft"
   },
   {

@@ -147,7 +147,8 @@ describe('reports', () => {
     const rows = coverageReport(repo, 'finance');
     expect(rows.every((row) => row.branch.startsWith('finance/'))).toBe(true);
     // Expected counts come from the content itself, so the test survives new concepts.
-    const inPersonal = [...repo.concepts.values()].filter((record) => record.metadata.domains.some((d: string) => d === 'finance/personal-finance' || d.startsWith('finance/personal-finance/')));
+    // Coverage groups each concept under its primary (first) domain.
+    const inPersonal = [...repo.concepts.values()].filter((record) => { const d = record.metadata.domains[0]; return d === 'finance/personal-finance' || d.startsWith('finance/personal-finance/'); });
     const personal = rows.find((row) => row.branch === 'finance/personal-finance')!;
     expect(inPersonal.length).toBeGreaterThan(0);
     expect(personal.concepts).toBe(inPersonal.length);

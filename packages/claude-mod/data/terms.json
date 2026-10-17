@@ -93,6 +93,51 @@
     "autolink": true
   },
   {
+    "key": "Kế toán dồn tích",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "accrual-accounting",
+        "label": "Kế toán dồn tích",
+        "summary": "Nguyên tắc kế toán quy định mọi nghiệp vụ kinh tế tài chính phải được ghi sổ vào thời điểm phát sinh, không căn cứ vào thời điểm thực tế thu hoặc chi tiền.",
+        "domains": [
+          "finance/accounting/standards"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Cơ sở kế toán dồn tích",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "accrual-accounting",
+        "label": "Kế toán dồn tích",
+        "summary": "Nguyên tắc kế toán quy định mọi nghiệp vụ kinh tế tài chính phải được ghi sổ vào thời điểm phát sinh, không căn cứ vào thời điểm thực tế thu hoặc chi tiền.",
+        "domains": [
+          "finance/accounting/standards"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Cơ sở dồn tích",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "accrual-accounting",
+        "label": "Kế toán dồn tích",
+        "summary": "Nguyên tắc kế toán quy định mọi nghiệp vụ kinh tế tài chính phải được ghi sổ vào thời điểm phát sinh, không căn cứ vào thời điểm thực tế thu hoặc chi tiền.",
+        "domains": [
+          "finance/accounting/standards"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
     "key": "Cơ cấu chấp hành",
     "match": "any-case",
     "concepts": [
@@ -315,6 +360,38 @@
     "autolink": true
   },
   {
+    "key": "Tài sản",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "asset",
+        "label": "Tài sản",
+        "qualifier": "(Kế toán)",
+        "summary": "Nguồn lực do doanh nghiệp kiểm soát và có thể thu được lợi ích kinh tế trong tương lai từ các sự kiện đã qua.",
+        "domains": [
+          "finance/accounting/bookkeeping"
+        ]
+      }
+    ],
+    "autolink": false
+  },
+  {
+    "key": "Nguồn lực kinh tế",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "asset",
+        "label": "Tài sản",
+        "qualifier": "(Kế toán)",
+        "summary": "Nguồn lực do doanh nghiệp kiểm soát và có thể thu được lợi ích kinh tế trong tương lai từ các sự kiện đã qua.",
+        "domains": [
+          "finance/accounting/bookkeeping"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
     "key": "Attention mechanism",
     "match": "any-case",
     "concepts": [
@@ -508,6 +585,36 @@
         "summary": "Liên kết siêu văn bản từ một tên miền bên ngoài trỏ người dùng và bot tìm kiếm về trang đích trên website của bạn.",
         "domains": [
           "media/digital-marketing/seo"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Bảng cân đối kế toán",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "balance-sheet",
+        "label": "Bảng cân đối kế toán",
+        "summary": "Báo cáo tài chính tổng hợp phản ánh toàn bộ giá trị tài sản hiện có và nguồn hình thành tài sản của doanh nghiệp tại một thời điểm nhất định.",
+        "domains": [
+          "finance/corporate-finance/financial-statements"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Báo cáo tình hình tài chính",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "balance-sheet",
+        "label": "Bảng cân đối kế toán",
+        "summary": "Báo cáo tài chính tổng hợp phản ánh toàn bộ giá trị tài sản hiện có và nguồn hình thành tài sản của doanh nghiệp tại một thời điểm nhất định.",
+        "domains": [
+          "finance/corporate-finance/financial-statements"
         ]
       }
     ],
@@ -1170,6 +1277,36 @@
     "autolink": true
   },
   {
+    "key": "Báo cáo lưu chuyển tiền tệ",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "cash-flow-statement",
+        "label": "Báo cáo lưu chuyển tiền tệ",
+        "summary": "Báo cáo tài chính phản ánh việc hình thành và sử dụng các luồng tiền phát sinh từ hoạt động kinh doanh, hoạt động đầu tư và hoạt động tài chính trong kỳ.",
+        "domains": [
+          "finance/corporate-finance/financial-statements"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Báo cáo dòng tiền",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "cash-flow-statement",
+        "label": "Báo cáo lưu chuyển tiền tệ",
+        "summary": "Báo cáo tài chính phản ánh việc hình thành và sử dụng các luồng tiền phát sinh từ hoạt động kinh doanh, hoạt động đầu tư và hoạt động tài chính trong kỳ.",
+        "domains": [
+          "finance/corporate-finance/financial-statements"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
     "key": "Content Delivery Network (CDN)",
     "match": "any-case",
     "concepts": [
@@ -1747,6 +1884,36 @@
         "summary": "Mô hình định giá quảng cáo trực tuyến trong đó nhà quảng cáo chỉ trả tiền mỗi khi người dùng nhấp vào mẩu quảng cáo của họ.",
         "domains": [
           "media/digital-marketing/paid-ads"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Chỉ số giá tiêu dùng (CPI)",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "cpi",
+        "label": "Chỉ số giá tiêu dùng (CPI)",
+        "summary": "Chỉ tiêu thống kê đo lường xu hướng và mức độ biến động giá bán lẻ theo thời gian của một giỏ hàng hóa và dịch vụ tiêu dùng đại diện.",
+        "domains": [
+          "finance/economics/inflation"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "CPI",
+    "match": "exact-case",
+    "concepts": [
+      {
+        "id": "cpi",
+        "label": "Chỉ số giá tiêu dùng (CPI)",
+        "summary": "Chỉ tiêu thống kê đo lường xu hướng và mức độ biến động giá bán lẻ theo thời gian của một giỏ hàng hóa và dịch vụ tiêu dùng đại diện.",
+        "domains": [
+          "finance/economics/inflation"
         ]
       }
     ],
@@ -2537,6 +2704,51 @@
     "autolink": true
   },
   {
+    "key": "Tỷ số nợ trên vốn chủ sở hữu",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "debt-to-equity-ratio",
+        "label": "Tỷ số nợ trên vốn chủ sở hữu",
+        "summary": "Hệ số đòn bẩy tài chính đo lường tỷ lệ giữa tổng số nợ phải trả so với tổng vốn chủ sở hữu của doanh nghiệp.",
+        "domains": [
+          "finance/corporate-finance/capital-structure"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Hệ số nợ trên vốn chủ sở hữu",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "debt-to-equity-ratio",
+        "label": "Tỷ số nợ trên vốn chủ sở hữu",
+        "summary": "Hệ số đòn bẩy tài chính đo lường tỷ lệ giữa tổng số nợ phải trả so với tổng vốn chủ sở hữu của doanh nghiệp.",
+        "domains": [
+          "finance/corporate-finance/capital-structure"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "D/E",
+    "match": "exact-case",
+    "concepts": [
+      {
+        "id": "debt-to-equity-ratio",
+        "label": "Tỷ số nợ trên vốn chủ sở hữu",
+        "summary": "Hệ số đòn bẩy tài chính đo lường tỷ lệ giữa tổng số nợ phải trả so với tổng vốn chủ sở hữu của doanh nghiệp.",
+        "domains": [
+          "finance/corporate-finance/capital-structure"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
     "key": "Học sâu",
     "match": "any-case",
     "concepts": [
@@ -2597,6 +2809,36 @@
     "autolink": true
   },
   {
+    "key": "Giảm phát",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "deflation",
+        "label": "Giảm phát",
+        "summary": "Sự sụt giảm liên tục và kéo dài của mức giá chung đối với hàng hóa và dịch vụ trong toàn bộ nền kinh tế.",
+        "domains": [
+          "finance/economics/inflation"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Lạm phát âm",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "deflation",
+        "label": "Giảm phát",
+        "summary": "Sự sụt giảm liên tục và kéo dài của mức giá chung đối với hàng hóa và dịch vụ trong toàn bộ nền kinh tế.",
+        "domains": [
+          "finance/economics/inflation"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
     "key": "Deprecation",
     "match": "any-case",
     "concepts": [
@@ -2639,6 +2881,54 @@
         "summary": "Thông báo chính thức về việc ngừng hỗ trợ và khuyến cáo không tiếp tục sử dụng một tính năng hoặc API trước khi loại bỏ hoàn toàn trong tương lai.",
         "domains": [
           "it/software-engineering/practices"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Khấu hao",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "depreciation-accounting",
+        "label": "Khấu hao",
+        "qualifier": "(Kế toán)",
+        "summary": "Việc tính toán và phân bổ một cách có hệ thống nguyên giá của tài sản cố định vào chi phí sản xuất kinh doanh trong thời gian trích khấu hao.",
+        "domains": [
+          "finance/accounting/bookkeeping"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Khấu hao tài sản cố định",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "depreciation-accounting",
+        "label": "Khấu hao",
+        "qualifier": "(Kế toán)",
+        "summary": "Việc tính toán và phân bổ một cách có hệ thống nguyên giá của tài sản cố định vào chi phí sản xuất kinh doanh trong thời gian trích khấu hao.",
+        "domains": [
+          "finance/accounting/bookkeeping"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Chi phí khấu hao",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "depreciation-accounting",
+        "label": "Khấu hao",
+        "qualifier": "(Kế toán)",
+        "summary": "Việc tính toán và phân bổ một cách có hệ thống nguyên giá của tài sản cố định vào chi phí sản xuất kinh doanh trong thời gian trích khấu hao.",
+        "domains": [
+          "finance/accounting/bookkeeping"
         ]
       }
     ],
@@ -2990,6 +3280,66 @@
     "autolink": true
   },
   {
+    "key": "Kế toán kép",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "double-entry-bookkeeping",
+        "label": "Kế toán kép",
+        "summary": "Phương pháp ghi chép kế toán phản ánh các nghiệp vụ kinh tế tài chính vào ít nhất hai tài khoản kế toán theo quan hệ đối ứng Nợ và Có.",
+        "domains": [
+          "finance/accounting/bookkeeping"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Ghi sổ kép",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "double-entry-bookkeeping",
+        "label": "Kế toán kép",
+        "summary": "Phương pháp ghi chép kế toán phản ánh các nghiệp vụ kinh tế tài chính vào ít nhất hai tài khoản kế toán theo quan hệ đối ứng Nợ và Có.",
+        "domains": [
+          "finance/accounting/bookkeeping"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Hệ thống ghi sổ kép",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "double-entry-bookkeeping",
+        "label": "Kế toán kép",
+        "summary": "Phương pháp ghi chép kế toán phản ánh các nghiệp vụ kinh tế tài chính vào ít nhất hai tài khoản kế toán theo quan hệ đối ứng Nợ và Có.",
+        "domains": [
+          "finance/accounting/bookkeeping"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Bút toán kép",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "double-entry-bookkeeping",
+        "label": "Kế toán kép",
+        "summary": "Phương pháp ghi chép kế toán phản ánh các nghiệp vụ kinh tế tài chính vào ít nhất hai tài khoản kế toán theo quan hệ đối ứng Nợ và Có.",
+        "domains": [
+          "finance/accounting/bookkeeping"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
     "key": "Ví điện tử",
     "match": "any-case",
     "concepts": [
@@ -3029,6 +3379,36 @@
         "summary": "Dịch vụ tài khoản điện tử do các tổ chức trung gian thanh toán cung ứng, cho phép lưu trữ giá trị tiền tệ điện tử và thực hiện các giao dịch thanh toán không dùng tiền mặt.",
         "domains": [
           "finance/banking/payments"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "EBITDA",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "ebitda",
+        "label": "EBITDA",
+        "summary": "Chỉ số đo lường hiệu quả hoạt động kinh doanh thuần túy trước khi trừ chi phí lãi vay, thuế thu nhập doanh nghiệp và chi phí khấu hao tài sản.",
+        "domains": [
+          "finance/corporate-finance/financial-statements"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Lợi nhuận trước lãi vay, thuế và khấu hao",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "ebitda",
+        "label": "EBITDA",
+        "summary": "Chỉ số đo lường hiệu quả hoạt động kinh doanh thuần túy trước khi trừ chi phí lãi vay, thuế thu nhập doanh nghiệp và chi phí khấu hao tài sản.",
+        "domains": [
+          "finance/corporate-finance/financial-statements"
         ]
       }
     ],
@@ -3462,6 +3842,54 @@
     "autolink": true
   },
   {
+    "key": "Vốn chủ sở hữu",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "equity-finance",
+        "label": "Vốn chủ sở hữu",
+        "qualifier": "(Tài chính)",
+        "summary": "Phần quyền lợi còn lại trong tài sản của doanh nghiệp sau khi đã trừ đi toàn bộ nghĩa vụ nợ phải trả.",
+        "domains": [
+          "finance/corporate-finance/capital-structure"
+        ]
+      }
+    ],
+    "autolink": false
+  },
+  {
+    "key": "Vốn chủ",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "equity-finance",
+        "label": "Vốn chủ sở hữu",
+        "qualifier": "(Tài chính)",
+        "summary": "Phần quyền lợi còn lại trong tài sản của doanh nghiệp sau khi đã trừ đi toàn bộ nghĩa vụ nợ phải trả.",
+        "domains": [
+          "finance/corporate-finance/capital-structure"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Giá trị sổ sách thuần",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "equity-finance",
+        "label": "Vốn chủ sở hữu",
+        "qualifier": "(Tài chính)",
+        "summary": "Phần quyền lợi còn lại trong tài sản của doanh nghiệp sau khi đã trừ đi toàn bộ nghĩa vụ nợ phải trả.",
+        "domains": [
+          "finance/corporate-finance/capital-structure"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
     "key": "Quỹ hoán đổi danh mục",
     "match": "any-case",
     "concepts": [
@@ -3531,6 +3959,51 @@
         "summary": "Quy trình tích hợp dữ liệu gồm ba bước: trích xuất từ các nguồn khác nhau, biến đổi theo chuẩn phân tích và nạp vào kho dữ liệu đích.",
         "domains": [
           "it/data/data-engineering"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Tỷ giá hối đoái",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "exchange-rate",
+        "label": "Tỷ giá hối đoái",
+        "summary": "Tỷ giá hối đoái là giá trị của một đơn vị tiền tệ của một quốc gia được biểu thị bằng số đơn vị tiền tệ của một quốc gia khác.",
+        "domains": [
+          "finance/economics/exchange-rates"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Tỷ giá",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "exchange-rate",
+        "label": "Tỷ giá hối đoái",
+        "summary": "Tỷ giá hối đoái là giá trị của một đơn vị tiền tệ của một quốc gia được biểu thị bằng số đơn vị tiền tệ của một quốc gia khác.",
+        "domains": [
+          "finance/economics/exchange-rates"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Tỷ giá ngoại tệ",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "exchange-rate",
+        "label": "Tỷ giá hối đoái",
+        "summary": "Tỷ giá hối đoái là giá trị của một đơn vị tiền tệ của một quốc gia được biểu thị bằng số đơn vị tiền tệ của một quốc gia khác.",
+        "domains": [
+          "finance/economics/exchange-rates"
         ]
       }
     ],
@@ -3711,6 +4184,51 @@
         "summary": "Khả năng của mô hình trả về một yêu cầu có cấu trúc để gọi công cụ do nhà phát triển định nghĩa; ứng dụng chạy nó rồi gửi lại kết quả.",
         "domains": [
           "it/ai-ml/llm-agents"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Tổng sản phẩm nội địa (GDP)",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "gdp",
+        "label": "Tổng sản phẩm nội địa (GDP)",
+        "summary": "Giá trị thị trường của tất cả hàng hóa và dịch vụ cuối cùng được sản xuất ra trong phạm vi một quốc gia trong một thời kỳ nhất định.",
+        "domains": [
+          "finance/economics/inflation"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "GDP",
+    "match": "exact-case",
+    "concepts": [
+      {
+        "id": "gdp",
+        "label": "Tổng sản phẩm nội địa (GDP)",
+        "summary": "Giá trị thị trường của tất cả hàng hóa và dịch vụ cuối cùng được sản xuất ra trong phạm vi một quốc gia trong một thời kỳ nhất định.",
+        "domains": [
+          "finance/economics/inflation"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Tổng sản phẩm quốc nội",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "gdp",
+        "label": "Tổng sản phẩm nội địa (GDP)",
+        "summary": "Giá trị thị trường của tất cả hàng hóa và dịch vụ cuối cùng được sản xuất ra trong phạm vi một quốc gia trong một thời kỳ nhất định.",
+        "domains": [
+          "finance/economics/inflation"
         ]
       }
     ],
@@ -4226,6 +4744,51 @@
     "autolink": true
   },
   {
+    "key": "Chuẩn mực Báo cáo Tài chính Quốc tế (IFRS)",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "ifrs",
+        "label": "Chuẩn mực Báo cáo Tài chính Quốc tế (IFRS)",
+        "summary": "Hệ thống các chuẩn mực kế toán quốc tế dựa trên nguyên tắc do Hội đồng Chuẩn mực Kế toán Quốc tế (IASB) ban hành nhằm thống nhất ngôn ngữ báo cáo tài chính toàn cầu.",
+        "domains": [
+          "finance/accounting/standards"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "IFRS",
+    "match": "exact-case",
+    "concepts": [
+      {
+        "id": "ifrs",
+        "label": "Chuẩn mực Báo cáo Tài chính Quốc tế (IFRS)",
+        "summary": "Hệ thống các chuẩn mực kế toán quốc tế dựa trên nguyên tắc do Hội đồng Chuẩn mực Kế toán Quốc tế (IASB) ban hành nhằm thống nhất ngôn ngữ báo cáo tài chính toàn cầu.",
+        "domains": [
+          "finance/accounting/standards"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Chuẩn mực báo cáo tài chính quốc tế",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "ifrs",
+        "label": "Chuẩn mực Báo cáo Tài chính Quốc tế (IFRS)",
+        "summary": "Hệ thống các chuẩn mực kế toán quốc tế dựa trên nguyên tắc do Hội đồng Chuẩn mực Kế toán Quốc tế (IASB) ban hành nhằm thống nhất ngôn ngữ báo cáo tài chính toàn cầu.",
+        "domains": [
+          "finance/accounting/standards"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
     "key": "Image classification",
     "match": "any-case",
     "concepts": [
@@ -4335,6 +4898,51 @@
     "autolink": true
   },
   {
+    "key": "Báo cáo kết quả kinh doanh",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "income-statement",
+        "label": "Báo cáo kết quả kinh doanh",
+        "summary": "Báo cáo tài chính phản ánh tình hình và kết quả hoạt động kinh doanh của doanh nghiệp bao gồm doanh thu, chi phí và lợi nhuận thuần trong một thời kỳ.",
+        "domains": [
+          "finance/corporate-finance/financial-statements"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Báo cáo kết quả hoạt động kinh doanh",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "income-statement",
+        "label": "Báo cáo kết quả kinh doanh",
+        "summary": "Báo cáo tài chính phản ánh tình hình và kết quả hoạt động kinh doanh của doanh nghiệp bao gồm doanh thu, chi phí và lợi nhuận thuần trong một thời kỳ.",
+        "domains": [
+          "finance/corporate-finance/financial-statements"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Báo cáo lãi lỗ",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "income-statement",
+        "label": "Báo cáo kết quả kinh doanh",
+        "summary": "Báo cáo tài chính phản ánh tình hình và kết quả hoạt động kinh doanh của doanh nghiệp bao gồm doanh thu, chi phí và lợi nhuận thuần trong một thời kỳ.",
+        "domains": [
+          "finance/corporate-finance/financial-statements"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
     "key": "Quỹ chỉ số",
     "match": "any-case",
     "concepts": [
@@ -4426,6 +5034,36 @@
       }
     ],
     "autolink": false
+  },
+  {
+    "key": "Lạm phát",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "inflation",
+        "label": "Lạm phát",
+        "summary": "Sự gia tăng liên tục và diện rộng của mức giá chung trong nền kinh tế theo thời gian, làm suy giảm sức mua của đồng tiền.",
+        "domains": [
+          "finance/economics/inflation"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Mất giá tiền tệ",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "inflation",
+        "label": "Lạm phát",
+        "summary": "Sự gia tăng liên tục và diện rộng của mức giá chung trong nền kinh tế theo thời gian, làm suy giảm sức mua của đồng tiền.",
+        "domains": [
+          "finance/economics/inflation"
+        ]
+      }
+    ],
+    "autolink": true
   },
   {
     "key": "Influencer marketing",
@@ -4760,6 +5398,51 @@
         "summary": "Hệ thống phần mềm trung gian đa tầng cung cấp hạ tầng kết nối, quản lý vòng đời thiết bị, tiếp nhận dữ liệu đo đạc và tích hợp ứng dụng nghiệp vụ cho các giải pháp IoT.",
         "domains": [
           "iot/edge-cloud"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Phát hành lần đầu ra công chúng",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "ipo",
+        "label": "Phát hành lần đầu ra công chúng",
+        "summary": "Hoạt động chào bán chứng khoán lần đầu tiên ra công chúng nhằm huy động vốn rộng rãi và đưa cổ phiếu lên giao dịch trên thị trường tập trung.",
+        "domains": [
+          "finance/corporate-finance/fundraising"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "IPO",
+    "match": "exact-case",
+    "concepts": [
+      {
+        "id": "ipo",
+        "label": "Phát hành lần đầu ra công chúng",
+        "summary": "Hoạt động chào bán chứng khoán lần đầu tiên ra công chúng nhằm huy động vốn rộng rãi và đưa cổ phiếu lên giao dịch trên thị trường tập trung.",
+        "domains": [
+          "finance/corporate-finance/fundraising"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Phát hành cổ phiếu lần đầu ra công chúng",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "ipo",
+        "label": "Phát hành lần đầu ra công chúng",
+        "summary": "Hoạt động chào bán chứng khoán lần đầu tiên ra công chúng nhằm huy động vốn rộng rãi và đưa cổ phiếu lên giao dịch trên thị trường tập trung.",
+        "domains": [
+          "finance/corporate-finance/fundraising"
         ]
       }
     ],
@@ -5165,6 +5848,38 @@
     "autolink": true
   },
   {
+    "key": "Nợ phải trả",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "liability",
+        "label": "Nợ phải trả",
+        "qualifier": "(Kế toán)",
+        "summary": "Nghĩa vụ hiện tại của doanh nghiệp phát sinh từ các giao dịch và sự kiện đã qua mà doanh nghiệp phải thanh toán từ các nguồn lực của mình.",
+        "domains": [
+          "finance/accounting/bookkeeping"
+        ]
+      }
+    ],
+    "autolink": false
+  },
+  {
+    "key": "Nghĩa vụ nợ",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "liability",
+        "label": "Nợ phải trả",
+        "qualifier": "(Kế toán)",
+        "summary": "Nghĩa vụ hiện tại của doanh nghiệp phát sinh từ các giao dịch và sự kiện đã qua mà doanh nghiệp phải thanh toán từ các nguồn lực của mình.",
+        "domains": [
+          "finance/accounting/bookkeeping"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
     "key": "Linter",
     "match": "any-case",
     "concepts": [
@@ -5189,6 +5904,38 @@
         "summary": "Công cụ phân tích tĩnh mã nguồn nhằm phát hiện lỗi lập trình, điểm bất thường về cú pháp, vi phạm quy ước định dạng và các nguy cơ bảo mật trước khi chạy mã.",
         "domains": [
           "it/software-engineering/practices"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Thanh khoản",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "liquidity",
+        "label": "Thanh khoản",
+        "qualifier": "(Tài chính)",
+        "summary": "Đặc tính của một tài sản phản ánh mức độ dễ dàng và tốc độ chuyển đổi thành tiền mặt phục vụ thanh toán mà không làm giảm sút giá trị đáng kể.",
+        "domains": [
+          "finance/corporate-finance/capital-structure"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Tính thanh khoản",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "liquidity",
+        "label": "Thanh khoản",
+        "qualifier": "(Tài chính)",
+        "summary": "Đặc tính của một tài sản phản ánh mức độ dễ dàng và tốc độ chuyển đổi thành tiền mặt phục vụ thanh toán mà không làm giảm sút giá trị đáng kể.",
+        "domains": [
+          "finance/corporate-finance/capital-structure"
         ]
       }
     ],
@@ -7099,6 +7846,36 @@
     "autolink": true
   },
   {
+    "key": "Lãi suất điều hành",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "policy-rate",
+        "label": "Lãi suất điều hành",
+        "summary": "Các mức lãi suất do cơ quan quản lý tiền tệ quốc gia công bố nhằm điều tiết thanh khoản hệ thống và định hướng mặt bằng lãi suất thị trường.",
+        "domains": [
+          "finance/economics/interest-rates-monetary-policy"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Lãi suất chính sách",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "policy-rate",
+        "label": "Lãi suất điều hành",
+        "summary": "Các mức lãi suất do cơ quan quản lý tiền tệ quốc gia công bố nhằm điều tiết thanh khoản hệ thống và định hướng mặt bằng lãi suất thị trường.",
+        "domains": [
+          "finance/economics/interest-rates-monetary-policy"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
     "key": "Postmortem",
     "match": "any-case",
     "concepts": [
@@ -7664,6 +8441,51 @@
     "autolink": true
   },
   {
+    "key": "Nới lỏng định lượng (QE)",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "quantitative-easing",
+        "label": "Nới lỏng định lượng (QE)",
+        "summary": "Chính sách tiền tệ phi truyền thống trong đó ngân hàng trung ương tạo ra tiền điện tử để mua lượng lớn trái phiếu và tài sản tài chính dài hạn nhằm kích thích kinh tế.",
+        "domains": [
+          "finance/economics/interest-rates-monetary-policy"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "QE",
+    "match": "exact-case",
+    "concepts": [
+      {
+        "id": "quantitative-easing",
+        "label": "Nới lỏng định lượng (QE)",
+        "summary": "Chính sách tiền tệ phi truyền thống trong đó ngân hàng trung ương tạo ra tiền điện tử để mua lượng lớn trái phiếu và tài sản tài chính dài hạn nhằm kích thích kinh tế.",
+        "domains": [
+          "finance/economics/interest-rates-monetary-policy"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Nới lỏng định lượng",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "quantitative-easing",
+        "label": "Nới lỏng định lượng (QE)",
+        "summary": "Chính sách tiền tệ phi truyền thống trong đó ngân hàng trung ương tạo ra tiền điện tử để mua lượng lớn trái phiếu và tài sản tài chính dài hạn nhằm kích thích kinh tế.",
+        "domains": [
+          "finance/economics/interest-rates-monetary-policy"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
     "key": "Lượng tử hóa",
     "match": "any-case",
     "concepts": [
@@ -7824,6 +8646,51 @@
         "summary": "Mô hình ngôn ngữ được huấn luyện để sinh ra chuỗi suy luận trung gian (thường bị ẩn hoặc chỉ hiện bản tóm tắt cho người dùng), cho phép cân nhắc và tự kiểm tra từng bước tính toán trước khi đưa ra câu trả lời cuối cùng.",
         "domains": [
           "it/ai-ml/llm-agents"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Suy thoái kinh tế",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "recession",
+        "label": "Suy thoái kinh tế",
+        "summary": "Tình trạng suy giảm đáng kể, lan rộng và kéo dài trong hoạt động kinh tế của một quốc gia, thể hiện qua việc sụt giảm GDP thực tế và gia tăng tỷ lệ thất nghiệp.",
+        "domains": [
+          "finance/economics/inflation"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Suy thoái",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "recession",
+        "label": "Suy thoái kinh tế",
+        "summary": "Tình trạng suy giảm đáng kể, lan rộng và kéo dài trong hoạt động kinh tế của một quốc gia, thể hiện qua việc sụt giảm GDP thực tế và gia tăng tỷ lệ thất nghiệp.",
+        "domains": [
+          "finance/economics/inflation"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Khủng hoảng suy thoái",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "recession",
+        "label": "Suy thoái kinh tế",
+        "summary": "Tình trạng suy giảm đáng kể, lan rộng và kéo dài trong hoạt động kinh tế của một quốc gia, thể hiện qua việc sụt giảm GDP thực tế và gia tăng tỷ lệ thất nghiệp.",
+        "domains": [
+          "finance/economics/inflation"
         ]
       }
     ],
@@ -8019,6 +8886,36 @@
         "summary": "Tỷ lệ phần trăm khách hàng tiếp tục gắn bó, sử dụng hoặc gia hạn dịch vụ trong một khoảng thời gian xác định.",
         "domains": [
           "product/metrics"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Doanh thu",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "revenue",
+        "label": "Doanh thu",
+        "summary": "Tổng giá trị các lợi ích kinh tế doanh nghiệp thu được trong kỳ kế toán, phát sinh từ các hoạt động sản xuất kinh doanh thông thường.",
+        "domains": [
+          "finance/corporate-finance/financial-statements"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Doanh thu bán hàng",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "revenue",
+        "label": "Doanh thu",
+        "summary": "Tổng giá trị các lợi ích kinh tế doanh nghiệp thu được trong kỳ kế toán, phát sinh từ các hoạt động sản xuất kinh doanh thông thường.",
+        "domains": [
+          "finance/corporate-finance/financial-statements"
         ]
       }
     ],
@@ -9546,6 +10443,51 @@
     "autolink": true
   },
   {
+    "key": "Định giá trước đầu tư",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "startup-valuation",
+        "label": "Định giá trước đầu tư",
+        "summary": "Giá trị doanh nghiệp được xác định và thỏa thuận giữa nhà sáng lập và nhà đầu tư trước khi dòng tiền tài trợ mới được rót vào tài khoản.",
+        "domains": [
+          "finance/corporate-finance/fundraising"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Pre-money valuation",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "startup-valuation",
+        "label": "Định giá trước đầu tư",
+        "summary": "Giá trị doanh nghiệp được xác định và thỏa thuận giữa nhà sáng lập và nhà đầu tư trước khi dòng tiền tài trợ mới được rót vào tài khoản.",
+        "domains": [
+          "finance/corporate-finance/fundraising"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Định giá pre-money",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "startup-valuation",
+        "label": "Định giá trước đầu tư",
+        "summary": "Giá trị doanh nghiệp được xác định và thỏa thuận giữa nhà sáng lập và nhà đầu tư trước khi dòng tiền tài trợ mới được rót vào tài khoản.",
+        "domains": [
+          "finance/corporate-finance/fundraising"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
     "key": "Cổ phiếu",
     "match": "any-case",
     "concepts": [
@@ -10405,6 +11347,70 @@
     "autolink": true
   },
   {
+    "key": "Thuế giá trị gia tăng (VAT)",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "vat",
+        "label": "Thuế giá trị gia tăng (VAT)",
+        "summary": "Thuế tính trên giá trị tăng thêm của hàng hóa, dịch vụ phát sinh trong quá trình từ sản xuất, lưu thông đến tiêu dùng.",
+        "domains": [
+          "finance/accounting/standards",
+          "finance/personal-finance/tax"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "VAT",
+    "match": "exact-case",
+    "concepts": [
+      {
+        "id": "vat",
+        "label": "Thuế giá trị gia tăng (VAT)",
+        "summary": "Thuế tính trên giá trị tăng thêm của hàng hóa, dịch vụ phát sinh trong quá trình từ sản xuất, lưu thông đến tiêu dùng.",
+        "domains": [
+          "finance/accounting/standards",
+          "finance/personal-finance/tax"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Thuế GTGT",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "vat",
+        "label": "Thuế giá trị gia tăng (VAT)",
+        "summary": "Thuế tính trên giá trị tăng thêm của hàng hóa, dịch vụ phát sinh trong quá trình từ sản xuất, lưu thông đến tiêu dùng.",
+        "domains": [
+          "finance/accounting/standards",
+          "finance/personal-finance/tax"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "GTGT",
+    "match": "exact-case",
+    "concepts": [
+      {
+        "id": "vat",
+        "label": "Thuế giá trị gia tăng (VAT)",
+        "summary": "Thuế tính trên giá trị tăng thêm của hàng hóa, dịch vụ phát sinh trong quá trình từ sản xuất, lưu thông đến tiêu dùng.",
+        "domains": [
+          "finance/accounting/standards",
+          "finance/personal-finance/tax"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
     "key": "Cơ sở dữ liệu vector",
     "match": "any-case",
     "concepts": [
@@ -10462,6 +11468,51 @@
         "summary": "Thước đo lập kế hoạch theo dõi tổng số điểm story point mà một nhóm phát triển hoàn thành đạt chuẩn trong một sprint.",
         "domains": [
           "product/agile-scrum"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Đầu tư mạo hiểm",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "venture-capital",
+        "label": "Đầu tư mạo hiểm",
+        "summary": "Hình thức cung ứng vốn đầu tư của các quỹ tài chính dành cho các doanh nghiệp khởi nghiệp đổi mới sáng tạo có tiềm năng tăng trưởng đột biến nhưng rủi ro cao.",
+        "domains": [
+          "finance/corporate-finance/fundraising"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "VC",
+    "match": "exact-case",
+    "concepts": [
+      {
+        "id": "venture-capital",
+        "label": "Đầu tư mạo hiểm",
+        "summary": "Hình thức cung ứng vốn đầu tư của các quỹ tài chính dành cho các doanh nghiệp khởi nghiệp đổi mới sáng tạo có tiềm năng tăng trưởng đột biến nhưng rủi ro cao.",
+        "domains": [
+          "finance/corporate-finance/fundraising"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Vốn đầu tư mạo hiểm",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "venture-capital",
+        "label": "Đầu tư mạo hiểm",
+        "summary": "Hình thức cung ứng vốn đầu tư của các quỹ tài chính dành cho các doanh nghiệp khởi nghiệp đổi mới sáng tạo có tiềm năng tăng trưởng đột biến nhưng rủi ro cao.",
+        "domains": [
+          "finance/corporate-finance/fundraising"
         ]
       }
     ],
@@ -10633,6 +11684,36 @@
         "summary": "Cơ chế gọi ngược HTTP tự động kích hoạt bởi hệ thống nguồn để bắn dữ liệu sự kiện thời gian thực sang máy chủ tiếp nhận.",
         "domains": [
           "it/web/api"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Vốn lưu động",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "working-capital",
+        "label": "Vốn lưu động",
+        "summary": "Thước đo tài chính đo lường mức dôi dư giữa tổng tài sản ngắn hạn và tổng nợ ngắn hạn dùng để trang trải hoạt động thường nhật.",
+        "domains": [
+          "finance/corporate-finance/capital-structure"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Vốn lưu động ròng",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "working-capital",
+        "label": "Vốn lưu động",
+        "summary": "Thước đo tài chính đo lường mức dôi dư giữa tổng tài sản ngắn hạn và tổng nợ ngắn hạn dùng để trang trải hoạt động thường nhật.",
+        "domains": [
+          "finance/corporate-finance/capital-structure"
         ]
       }
     ],

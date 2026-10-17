@@ -44,6 +44,25 @@
     "status": "draft"
   },
   {
+    "id": "accrual-accounting",
+    "label": "Kế toán dồn tích",
+    "aliases": [
+      "Cơ sở kế toán dồn tích",
+      "Cơ sở dồn tích"
+    ],
+    "loanwords": [],
+    "plain_descriptions": [
+      "nguyên tắc ghi nhận doanh thu khi giao hàng và chi phí khi phát sinh, bất kể tiền đã về túi hay chưa",
+      "phương pháp kế toán phản ánh đúng bản chất giao dịch kinh tế thay vì phụ thuộc vào việc chuyển khoản"
+    ],
+    "summary": "Nguyên tắc kế toán quy định mọi nghiệp vụ kinh tế tài chính phải được ghi sổ vào thời điểm phát sinh, không căn cứ vào thời điểm thực tế thu hoặc chi tiền.",
+    "domains": [
+      "finance/accounting/standards"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
     "id": "actuator",
     "label": "Cơ cấu chấp hành",
     "aliases": [
@@ -171,6 +190,25 @@
     "status": "draft"
   },
   {
+    "id": "asset",
+    "label": "Tài sản",
+    "qualifier": "(Kế toán)",
+    "aliases": [
+      "Nguồn lực kinh tế"
+    ],
+    "loanwords": [],
+    "plain_descriptions": [
+      "mọi thứ có giá trị thuộc quyền sở hữu hoặc kiểm soát của một người hoặc công ty",
+      "nguồn lực dự kiến sẽ đem lại tiền bạc hoặc lợi ích kinh tế trong tương lai"
+    ],
+    "summary": "Nguồn lực do doanh nghiệp kiểm soát và có thể thu được lợi ích kinh tế trong tương lai từ các sự kiện đã qua.",
+    "domains": [
+      "finance/accounting/bookkeeping"
+    ],
+    "level": 1,
+    "status": "draft"
+  },
+  {
     "id": "attention-mechanism",
     "label": "Attention mechanism",
     "aliases": [
@@ -255,6 +293,24 @@
       "media/digital-marketing/seo"
     ],
     "level": 2,
+    "status": "draft"
+  },
+  {
+    "id": "balance-sheet",
+    "label": "Bảng cân đối kế toán",
+    "aliases": [
+      "Báo cáo tình hình tài chính"
+    ],
+    "loanwords": [],
+    "plain_descriptions": [
+      "bức ảnh chụp nhanh tài sản và nợ của doanh nghiệp tại một thời điểm",
+      "bảng tổng kết xem công ty đang sở hữu những gì và nợ những ai"
+    ],
+    "summary": "Báo cáo tài chính tổng hợp phản ánh toàn bộ giá trị tài sản hiện có và nguồn hình thành tài sản của doanh nghiệp tại một thời điểm nhất định.",
+    "domains": [
+      "finance/corporate-finance/financial-statements"
+    ],
+    "level": 1,
     "status": "draft"
   },
   {
@@ -559,6 +615,24 @@
       "it/devops/ci-cd"
     ],
     "level": 2,
+    "status": "draft"
+  },
+  {
+    "id": "cash-flow-statement",
+    "label": "Báo cáo lưu chuyển tiền tệ",
+    "aliases": [
+      "Báo cáo dòng tiền"
+    ],
+    "loanwords": [],
+    "plain_descriptions": [
+      "báo cáo theo dõi tiền mặt thực tế chảy vào và chảy ra khỏi công ty",
+      "bảng theo dõi dòng tiền phân theo hoạt động kinh doanh, đầu tư và tài chính"
+    ],
+    "summary": "Báo cáo tài chính phản ánh việc hình thành và sử dụng các luồng tiền phát sinh từ hoạt động kinh doanh, hoạt động đầu tư và hoạt động tài chính trong kỳ.",
+    "domains": [
+      "finance/corporate-finance/financial-statements"
+    ],
+    "level": 1,
     "status": "draft"
   },
   {
@@ -894,6 +968,24 @@
       "media/digital-marketing/paid-ads"
     ],
     "level": 2,
+    "status": "draft"
+  },
+  {
+    "id": "cpi",
+    "label": "Chỉ số giá tiêu dùng (CPI)",
+    "aliases": [
+      "CPI"
+    ],
+    "loanwords": [],
+    "plain_descriptions": [
+      "thước đo thống kê theo dõi sự tăng giảm giá của giỏ hàng hóa sinh hoạt hàng ngày",
+      "chỉ số biểu thị biến động chi phí sinh hoạt của các hộ gia đình theo thời gian"
+    ],
+    "summary": "Chỉ tiêu thống kê đo lường xu hướng và mức độ biến động giá bán lẻ theo thời gian của một giỏ hàng hóa và dịch vụ tiêu dùng đại diện.",
+    "domains": [
+      "finance/economics/inflation"
+    ],
+    "level": 1,
     "status": "draft"
   },
   {
@@ -1301,6 +1393,25 @@
     "status": "draft"
   },
   {
+    "id": "debt-to-equity-ratio",
+    "label": "Tỷ số nợ trên vốn chủ sở hữu",
+    "aliases": [
+      "Hệ số nợ trên vốn chủ sở hữu",
+      "D/E"
+    ],
+    "loanwords": [],
+    "plain_descriptions": [
+      "tỷ lệ so sánh xem doanh nghiệp đang làm ăn bằng tiền đi vay nhiều hơn hay tiền tự có nhiều hơn",
+      "thước đo đòn bẩy tài chính tính bằng tổng số nợ chia cho vốn của các cổ đông"
+    ],
+    "summary": "Hệ số đòn bẩy tài chính đo lường tỷ lệ giữa tổng số nợ phải trả so với tổng vốn chủ sở hữu của doanh nghiệp.",
+    "domains": [
+      "finance/corporate-finance/capital-structure"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
     "id": "deep-learning",
     "label": "Học sâu",
     "aliases": [],
@@ -1341,6 +1452,24 @@
     "status": "draft"
   },
   {
+    "id": "deflation",
+    "label": "Giảm phát",
+    "aliases": [
+      "Lạm phát âm"
+    ],
+    "loanwords": [],
+    "plain_descriptions": [
+      "tình trạng mặt bằng giá cả hàng hóa đồng loạt sụt giảm kéo dài",
+      "hiện tượng đồ đạc ngày càng rẻ đi nhưng nợ nần lại nặng nề hơn và khó kiếm việc làm"
+    ],
+    "summary": "Sự sụt giảm liên tục và kéo dài của mức giá chung đối với hàng hóa và dịch vụ trong toàn bộ nền kinh tế.",
+    "domains": [
+      "finance/economics/inflation"
+    ],
+    "level": 1,
+    "status": "draft"
+  },
+  {
     "id": "deprecation",
     "label": "Deprecation",
     "qualifier": "(Phần mềm)",
@@ -1358,6 +1487,26 @@
     "summary": "Thông báo chính thức về việc ngừng hỗ trợ và khuyến cáo không tiếp tục sử dụng một tính năng hoặc API trước khi loại bỏ hoàn toàn trong tương lai.",
     "domains": [
       "it/software-engineering/practices"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
+    "id": "depreciation-accounting",
+    "label": "Khấu hao",
+    "qualifier": "(Kế toán)",
+    "aliases": [
+      "Khấu hao tài sản cố định",
+      "Chi phí khấu hao"
+    ],
+    "loanwords": [],
+    "plain_descriptions": [
+      "chia nhỏ giá tiền mua máy móc thiết bị đắt đỏ vào chi phí của nhiều năm sử dụng",
+      "khoản trừ dần trên sổ sách kế toán phản ánh sự hao mòn và cũ đi của tài sản"
+    ],
+    "summary": "Việc tính toán và phân bổ một cách có hệ thống nguyên giá của tài sản cố định vào chi phí sản xuất kinh doanh trong thời gian trích khấu hao.",
+    "domains": [
+      "finance/accounting/bookkeeping"
     ],
     "level": 2,
     "status": "draft"
@@ -1531,6 +1680,26 @@
     "status": "draft"
   },
   {
+    "id": "double-entry-bookkeeping",
+    "label": "Kế toán kép",
+    "aliases": [
+      "Ghi sổ kép",
+      "Hệ thống ghi sổ kép",
+      "Bút toán kép"
+    ],
+    "loanwords": [],
+    "plain_descriptions": [
+      "nguyên tắc kế toán bắt buộc mỗi giao dịch tiền bạc đều phải ghi vào ít nhất hai tài khoản",
+      "hệ thống ghi Nợ và Có đối ứng để sổ sách kế toán luôn cân bằng"
+    ],
+    "summary": "Phương pháp ghi chép kế toán phản ánh các nghiệp vụ kinh tế tài chính vào ít nhất hai tài khoản kế toán theo quan hệ đối ứng Nợ và Có.",
+    "domains": [
+      "finance/accounting/bookkeeping"
+    ],
+    "level": 1,
+    "status": "draft"
+  },
+  {
     "id": "e-wallet",
     "label": "Ví điện tử",
     "aliases": [
@@ -1550,6 +1719,26 @@
       "finance/banking/payments"
     ],
     "level": 1,
+    "status": "draft"
+  },
+  {
+    "id": "ebitda",
+    "label": "EBITDA",
+    "aliases": [
+      "Lợi nhuận trước lãi vay, thuế và khấu hao"
+    ],
+    "loanwords": [
+      "EBITDA"
+    ],
+    "plain_descriptions": [
+      "thước đo lợi nhuận bỏ qua chi phí lãi vay ngân hàng, thuế và hao mòn máy móc",
+      "chỉ số đo lường dòng tiền từ hoạt động cốt lõi trước khi trừ chi phí tài chính"
+    ],
+    "summary": "Chỉ số đo lường hiệu quả hoạt động kinh doanh thuần túy trước khi trừ chi phí lãi vay, thuế thu nhập doanh nghiệp và chi phí khấu hao tài sản.",
+    "domains": [
+      "finance/corporate-finance/financial-statements"
+    ],
+    "level": 2,
     "status": "draft"
   },
   {
@@ -1783,6 +1972,26 @@
     "status": "draft"
   },
   {
+    "id": "equity-finance",
+    "label": "Vốn chủ sở hữu",
+    "qualifier": "(Tài chính)",
+    "aliases": [
+      "Vốn chủ",
+      "Giá trị sổ sách thuần"
+    ],
+    "loanwords": [],
+    "plain_descriptions": [
+      "phần giá trị tài sản thực tế thuộc về các cổ đông sau khi đã thanh toán hết nợ nần",
+      "tổng số tiền các nhà đầu tư đã góp vào công ty cộng với phần lợi nhuận giữ lại để tái đầu tư"
+    ],
+    "summary": "Phần quyền lợi còn lại trong tài sản của doanh nghiệp sau khi đã trừ đi toàn bộ nghĩa vụ nợ phải trả.",
+    "domains": [
+      "finance/corporate-finance/capital-structure"
+    ],
+    "level": 1,
+    "status": "draft"
+  },
+  {
     "id": "etf",
     "label": "Quỹ hoán đổi danh mục",
     "aliases": [
@@ -1822,6 +2031,25 @@
       "it/data/data-engineering"
     ],
     "level": 2,
+    "status": "draft"
+  },
+  {
+    "id": "exchange-rate",
+    "label": "Tỷ giá hối đoái",
+    "aliases": [
+      "Tỷ giá",
+      "Tỷ giá ngoại tệ"
+    ],
+    "loanwords": [],
+    "plain_descriptions": [
+      "mức giá quy đổi cho biết một đồng tiền của nước này đổi được bao nhiêu tiền của nước khác",
+      "giá cả của đồng ngoại tệ tính bằng đồng tiền trong nước khi thực hiện giao dịch quốc tế"
+    ],
+    "summary": "Tỷ giá hối đoái là giá trị của một đơn vị tiền tệ của một quốc gia được biểu thị bằng số đơn vị tiền tệ của một quốc gia khác.",
+    "domains": [
+      "finance/economics/exchange-rates"
+    ],
+    "level": 1,
     "status": "draft"
   },
   {
@@ -1925,6 +2153,25 @@
       "it/ai-ml/llm-agents"
     ],
     "level": 2,
+    "status": "draft"
+  },
+  {
+    "id": "gdp",
+    "label": "Tổng sản phẩm nội địa (GDP)",
+    "aliases": [
+      "GDP",
+      "Tổng sản phẩm quốc nội"
+    ],
+    "loanwords": [],
+    "plain_descriptions": [
+      "tổng giá trị bằng tiền của toàn bộ hàng hóa và dịch vụ được làm ra trên lãnh thổ một quốc gia trong năm",
+      "thước đo lớn nhất phản ánh quy mô và sức khỏe của cả nền kinh tế"
+    ],
+    "summary": "Giá trị thị trường của tất cả hàng hóa và dịch vụ cuối cùng được sản xuất ra trong phạm vi một quốc gia trong một thời kỳ nhất định.",
+    "domains": [
+      "finance/economics/inflation"
+    ],
+    "level": 1,
     "status": "draft"
   },
   {
@@ -2237,6 +2484,25 @@
     "status": "draft"
   },
   {
+    "id": "ifrs",
+    "label": "Chuẩn mực Báo cáo Tài chính Quốc tế (IFRS)",
+    "aliases": [
+      "IFRS",
+      "Chuẩn mực báo cáo tài chính quốc tế"
+    ],
+    "loanwords": [],
+    "plain_descriptions": [
+      "bộ quy tắc kế toán quốc tế giúp báo cáo tài chính của các nước có thể so sánh được với nhau",
+      "chuẩn mực báo cáo tài chính toàn cầu mang lại tính minh bạch cho các công ty niêm yết"
+    ],
+    "summary": "Hệ thống các chuẩn mực kế toán quốc tế dựa trên nguyên tắc do Hội đồng Chuẩn mực Kế toán Quốc tế (IASB) ban hành nhằm thống nhất ngôn ngữ báo cáo tài chính toàn cầu.",
+    "domains": [
+      "finance/accounting/standards"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
     "id": "image-classification",
     "label": "Image classification",
     "aliases": [
@@ -2281,6 +2547,25 @@
     "status": "draft"
   },
   {
+    "id": "income-statement",
+    "label": "Báo cáo kết quả kinh doanh",
+    "aliases": [
+      "Báo cáo kết quả hoạt động kinh doanh",
+      "Báo cáo lãi lỗ"
+    ],
+    "loanwords": [],
+    "plain_descriptions": [
+      "bản tổng kết doanh thu và chi phí để biết công ty lãi hay lỗ trong kỳ",
+      "thước đo hiệu quả kiếm tiền của doanh nghiệp trong quý hoặc năm"
+    ],
+    "summary": "Báo cáo tài chính phản ánh tình hình và kết quả hoạt động kinh doanh của doanh nghiệp bao gồm doanh thu, chi phí và lợi nhuận thuần trong một thời kỳ.",
+    "domains": [
+      "finance/corporate-finance/financial-statements"
+    ],
+    "level": 1,
+    "status": "draft"
+  },
+  {
     "id": "index-fund",
     "label": "Quỹ chỉ số",
     "aliases": [
@@ -2319,6 +2604,24 @@
     "summary": "Giai đoạn vận hành thực tế khi mô hình đã huấn luyện tiếp nhận dữ liệu mới để đưa ra dự đoán hoặc kết quả mà không thay đổi trọng số.",
     "domains": [
       "it/ai-ml/foundations"
+    ],
+    "level": 1,
+    "status": "draft"
+  },
+  {
+    "id": "inflation",
+    "label": "Lạm phát",
+    "aliases": [
+      "Mất giá tiền tệ"
+    ],
+    "loanwords": [],
+    "plain_descriptions": [
+      "hiện tượng giá cả hàng hóa ngoài chợ leo thang làm đồng tiền bị mất giá",
+      "tình trạng cùng một số tiền nhưng mua được ít đồ ăn và đồ dùng hơn so với trước"
+    ],
+    "summary": "Sự gia tăng liên tục và diện rộng của mức giá chung trong nền kinh tế theo thời gian, làm suy giảm sức mua của đồng tiền.",
+    "domains": [
+      "finance/economics/inflation"
     ],
     "level": 1,
     "status": "draft"
@@ -2490,6 +2793,25 @@
     "summary": "Hệ thống phần mềm trung gian đa tầng cung cấp hạ tầng kết nối, quản lý vòng đời thiết bị, tiếp nhận dữ liệu đo đạc và tích hợp ứng dụng nghiệp vụ cho các giải pháp IoT.",
     "domains": [
       "iot/edge-cloud"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
+    "id": "ipo",
+    "label": "Phát hành lần đầu ra công chúng",
+    "aliases": [
+      "IPO",
+      "Phát hành cổ phiếu lần đầu ra công chúng"
+    ],
+    "loanwords": [],
+    "plain_descriptions": [
+      "lần đầu tiên công ty tư nhân mở bán cổ phần công khai cho mọi nhà đầu tư",
+      "bước chuyển mình đưa cổ phiếu của doanh nghiệp lên niêm yết trên sàn chứng khoán"
+    ],
+    "summary": "Hoạt động chào bán chứng khoán lần đầu tiên ra công chúng nhằm huy động vốn rộng rãi và đưa cổ phiếu lên giao dịch trên thị trường tập trung.",
+    "domains": [
+      "finance/corporate-finance/fundraising"
     ],
     "level": 2,
     "status": "draft"
@@ -2725,6 +3047,25 @@
     "status": "draft"
   },
   {
+    "id": "liability",
+    "label": "Nợ phải trả",
+    "qualifier": "(Kế toán)",
+    "aliases": [
+      "Nghĩa vụ nợ"
+    ],
+    "loanwords": [],
+    "plain_descriptions": [
+      "khoản tiền hoặc nghĩa vụ mà doanh nghiệp có trách nhiệm phải thanh toán cho người khác",
+      "toàn bộ các món nợ vay ngân hàng, nợ nhà cung cấp và tiền thuế còn thiếu"
+    ],
+    "summary": "Nghĩa vụ hiện tại của doanh nghiệp phát sinh từ các giao dịch và sự kiện đã qua mà doanh nghiệp phải thanh toán từ các nguồn lực của mình.",
+    "domains": [
+      "finance/accounting/bookkeeping"
+    ],
+    "level": 1,
+    "status": "draft"
+  },
+  {
     "id": "linter",
     "label": "Linter",
     "aliases": [
@@ -2740,6 +3081,25 @@
     "summary": "Công cụ phân tích tĩnh mã nguồn nhằm phát hiện lỗi lập trình, điểm bất thường về cú pháp, vi phạm quy ước định dạng và các nguy cơ bảo mật trước khi chạy mã.",
     "domains": [
       "it/software-engineering/practices"
+    ],
+    "level": 1,
+    "status": "draft"
+  },
+  {
+    "id": "liquidity",
+    "label": "Thanh khoản",
+    "qualifier": "(Tài chính)",
+    "aliases": [
+      "Tính thanh khoản"
+    ],
+    "loanwords": [],
+    "plain_descriptions": [
+      "khả năng và mức độ nhanh chóng chuyển đổi một tài sản thành tiền mặt mà không bị mất giá",
+      "năng lực tài chính sẵn sàng chi trả các khoản nợ đến hạn mà không gặp khó khăn"
+    ],
+    "summary": "Đặc tính của một tài sản phản ánh mức độ dễ dàng và tốc độ chuyển đổi thành tiền mặt phục vụ thanh toán mà không làm giảm sút giá trị đáng kể.",
+    "domains": [
+      "finance/corporate-finance/capital-structure"
     ],
     "level": 1,
     "status": "draft"
@@ -3764,6 +4124,24 @@
     "status": "draft"
   },
   {
+    "id": "policy-rate",
+    "label": "Lãi suất điều hành",
+    "aliases": [
+      "Lãi suất chính sách"
+    ],
+    "loanwords": [],
+    "plain_descriptions": [
+      "mức lãi suất then chốt do Ngân hàng Nhà nước ấn định để định hướng lãi suất vay mượn toàn thị trường",
+      "công cụ tiền tệ được nâng lên để kiềm chế lạm phát hoặc hạ xuống để kích thích kinh doanh"
+    ],
+    "summary": "Các mức lãi suất do cơ quan quản lý tiền tệ quốc gia công bố nhằm điều tiết thanh khoản hệ thống và định hướng mặt bằng lãi suất thị trường.",
+    "domains": [
+      "finance/economics/interest-rates-monetary-policy"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
     "id": "postmortem",
     "label": "Postmortem",
     "qualifier": "(CNTT)",
@@ -4078,6 +4456,25 @@
     "status": "draft"
   },
   {
+    "id": "quantitative-easing",
+    "label": "Nới lỏng định lượng (QE)",
+    "aliases": [
+      "QE",
+      "Nới lỏng định lượng"
+    ],
+    "loanwords": [],
+    "plain_descriptions": [
+      "chính sách tiền tệ đặc biệt khi ngân hàng trung ương in thêm tiền điện tử để mua lại trái phiếu chính phủ",
+      "biện pháp bơm tiền ồ ạt vào hệ thống tài chính khi lãi suất đã chạm đáy không thể giảm thêm"
+    ],
+    "summary": "Chính sách tiền tệ phi truyền thống trong đó ngân hàng trung ương tạo ra tiền điện tử để mua lượng lớn trái phiếu và tài sản tài chính dài hạn nhằm kích thích kinh tế.",
+    "domains": [
+      "finance/economics/interest-rates-monetary-policy"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
     "id": "quantization",
     "label": "Lượng tử hóa",
     "qualifier": "(AI)",
@@ -4176,6 +4573,25 @@
       "it/ai-ml/llm-agents"
     ],
     "level": 2,
+    "status": "draft"
+  },
+  {
+    "id": "recession",
+    "label": "Suy thoái kinh tế",
+    "aliases": [
+      "Suy thoái",
+      "Khủng hoảng suy thoái"
+    ],
+    "loanwords": [],
+    "plain_descriptions": [
+      "thời kỳ kinh tế khó khăn kéo dài khi sản xuất đình đốn, buôn bán ảm đạm và thất nghiệp tăng cao",
+      "giai đoạn quy mô nền kinh tế bị thu hẹp lại trong nhiều tháng liên tiếp"
+    ],
+    "summary": "Tình trạng suy giảm đáng kể, lan rộng và kéo dài trong hoạt động kinh tế của một quốc gia, thể hiện qua việc sụt giảm GDP thực tế và gia tăng tỷ lệ thất nghiệp.",
+    "domains": [
+      "finance/economics/inflation"
+    ],
+    "level": 1,
     "status": "draft"
   },
   {
@@ -4281,6 +4697,24 @@
       "product/metrics"
     ],
     "level": 2,
+    "status": "draft"
+  },
+  {
+    "id": "revenue",
+    "label": "Doanh thu",
+    "aliases": [
+      "Doanh thu bán hàng"
+    ],
+    "loanwords": [],
+    "plain_descriptions": [
+      "toàn bộ số tiền thu được từ bán hàng trước khi trừ đi bất kỳ chi phí nào",
+      "tổng giá trị hàng hóa và dịch vụ đã cung cấp cho khách hàng trong kỳ"
+    ],
+    "summary": "Tổng giá trị các lợi ích kinh tế doanh nghiệp thu được trong kỳ kế toán, phát sinh từ các hoạt động sản xuất kinh doanh thông thường.",
+    "domains": [
+      "finance/corporate-finance/financial-statements"
+    ],
+    "level": 1,
     "status": "draft"
   },
   {
@@ -5076,6 +5510,25 @@
     "status": "draft"
   },
   {
+    "id": "startup-valuation",
+    "label": "Định giá trước đầu tư",
+    "aliases": [
+      "Pre-money valuation",
+      "Định giá pre-money"
+    ],
+    "loanwords": [],
+    "plain_descriptions": [
+      "giá trị thỏa thuận của công ty khởi nghiệp ngay trước khi nhận thêm tiền đầu tư mới",
+      "mức định giá nền tảng quyết định tỷ lệ cổ phần mà nhà đầu tư sẽ nhận được"
+    ],
+    "summary": "Giá trị doanh nghiệp được xác định và thỏa thuận giữa nhà sáng lập và nhà đầu tư trước khi dòng tiền tài trợ mới được rót vào tài khoản.",
+    "domains": [
+      "finance/corporate-finance/fundraising"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
     "id": "stock",
     "label": "Cổ phiếu",
     "qualifier": "(Tài chính)",
@@ -5558,6 +6011,27 @@
     "status": "draft"
   },
   {
+    "id": "vat",
+    "label": "Thuế giá trị gia tăng (VAT)",
+    "aliases": [
+      "VAT",
+      "Thuế GTGT",
+      "GTGT"
+    ],
+    "loanwords": [],
+    "plain_descriptions": [
+      "thuế tiêu dùng đánh thêm vào từng khâu sản xuất và bán hàng cho tới người tiêu dùng cuối",
+      "khoản thuế gián thu do người mua hàng gánh chịu và doanh nghiệp thu hộ nhà nước"
+    ],
+    "summary": "Thuế tính trên giá trị tăng thêm của hàng hóa, dịch vụ phát sinh trong quá trình từ sản xuất, lưu thông đến tiêu dùng.",
+    "domains": [
+      "finance/accounting/standards",
+      "finance/personal-finance/tax"
+    ],
+    "level": 1,
+    "status": "draft"
+  },
+  {
     "id": "vector-database",
     "label": "Cơ sở dữ liệu vector",
     "aliases": [],
@@ -5593,6 +6067,25 @@
     "summary": "Thước đo lập kế hoạch theo dõi tổng số điểm story point mà một nhóm phát triển hoàn thành đạt chuẩn trong một sprint.",
     "domains": [
       "product/agile-scrum"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
+    "id": "venture-capital",
+    "label": "Đầu tư mạo hiểm",
+    "aliases": [
+      "VC",
+      "Vốn đầu tư mạo hiểm"
+    ],
+    "loanwords": [],
+    "plain_descriptions": [
+      "tiền tài trợ từ các quỹ chuyên nghiệp rót vào các công ty khởi nghiệp giàu tiềm năng",
+      "hình thức rót vốn chấp nhận rủi ro thất bại cao để đổi lấy cổ phần của công ty đột phá"
+    ],
+    "summary": "Hình thức cung ứng vốn đầu tư của các quỹ tài chính dành cho các doanh nghiệp khởi nghiệp đổi mới sáng tạo có tiềm năng tăng trưởng đột biến nhưng rủi ro cao.",
+    "domains": [
+      "finance/corporate-finance/fundraising"
     ],
     "level": 2,
     "status": "draft"
@@ -5681,6 +6174,24 @@
       "it/web/api"
     ],
     "level": 2,
+    "status": "draft"
+  },
+  {
+    "id": "working-capital",
+    "label": "Vốn lưu động",
+    "aliases": [
+      "Vốn lưu động ròng"
+    ],
+    "loanwords": [],
+    "plain_descriptions": [
+      "khoản tiền và tài sản ngắn hạn còn lại sau khi đã trừ đi các hóa đơn sắp đến hạn",
+      "nguồn vốn sẵn sàng dùng để duy trì guồng quay hoạt động buôn bán mỗi ngày"
+    ],
+    "summary": "Thước đo tài chính đo lường mức dôi dư giữa tổng tài sản ngắn hạn và tổng nợ ngắn hạn dùng để trang trải hoạt động thường nhật.",
+    "domains": [
+      "finance/corporate-finance/capital-structure"
+    ],
+    "level": 1,
     "status": "draft"
   },
   {

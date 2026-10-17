@@ -7,12 +7,16 @@
     "license": "public-domain-us-gov",
     "license_evidence": "https://www.sec.gov/privacy",
     "concepts": [
+      "asset",
       "bond",
       "compound-interest",
       "diversification",
       "emergency-fund",
       "interest-rate",
+      "liability",
+      "liquidity",
       "principal",
+      "revenue",
       "roi",
       "simple-interest",
       "stock",
@@ -45,6 +49,21 @@
       "microcontroller",
       "sensor",
       "stakeholder"
+    ]
+  },
+  {
+    "ref": "sec-gov",
+    "title": "U.S. Securities and Exchange Commission Publications",
+    "publisher": "U.S. Securities and Exchange Commission",
+    "url": "https://www.sec.gov",
+    "license": "public-domain-us-gov",
+    "license_evidence": "https://www.sec.gov/privacy",
+    "concepts": [
+      "balance-sheet",
+      "cash-flow-statement",
+      "equity-finance",
+      "income-statement",
+      "working-capital"
     ]
   }
 ]

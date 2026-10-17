@@ -1,0 +1,12 @@
+id: bandwidth
+domains:
+  - it/infrastructure/networking
+level: 1
+relations:
+  prerequisites: []
+  confusable: []
+  related: []
+status: draft
+provenance:
+  drafted_by: ai
+sources: []

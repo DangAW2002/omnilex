@@ -1381,3 +1381,21 @@ cmu-db:
   reuse: paraphrase-only
   domains: [it/data/database]
   verified_license_at: '2026-10-17'
+
+datapot:
+  title: Datapot Kiến thức
+  publisher: Datapot
+  url: https://datapot.vn
+  type: community
+  tier: D
+  languages: [vi]
+  reuse: cite-only
+
+ocd-vn:
+  title: OCD Blog
+  publisher: Công ty Tư vấn Quản lý OCD
+  url: https://ocd.vn
+  type: community
+  tier: D
+  languages: [vi]
+  reuse: cite-only

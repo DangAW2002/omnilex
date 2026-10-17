@@ -20,8 +20,8 @@ translated_from: en
 translated_by: ai
 translated_at: '2026-10-17'
 label_evidence:
-  - ref: viblo
-    locator: https://viblo.asia/search?q=full-text+search
+  - ref: ocd-vn
+    locator: https://ocd.vn/tinh-nang-tim-kiem-toan-van/
     accessed: '2026-10-17'
 ---
 

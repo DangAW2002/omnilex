@@ -17,8 +17,8 @@ translated_from: en
 translated_by: ai
 translated_at: '2026-10-17'
 label_evidence:
-  - ref: viblo
-    locator: https://viblo.asia/search?q=columnar+storage
+  - ref: datapot
+    locator: https://datapot.vn/luu-tru-du-lieu-row-based-storage-vs-column-based-storage/
     accessed: '2026-10-17'
 ---
 

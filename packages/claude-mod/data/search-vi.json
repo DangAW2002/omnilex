@@ -634,6 +634,29 @@
     "status": "draft"
   },
   {
+    "id": "business-intelligence",
+    "label": "Kinh doanh thông minh",
+    "aliases": [
+      "Business intelligence",
+      "BI"
+    ],
+    "loanwords": [
+      "BI",
+      "Business intelligence"
+    ],
+    "plain_descriptions": [
+      "công cụ biến bảng tính phức tạp thành biểu đồ theo dõi sức khỏe doanh nghiệp",
+      "hệ thống trích xuất và phân tích số liệu kinh doanh để tìm kiếm xu hướng"
+    ],
+    "summary": "Phương pháp và công nghệ phân tích dữ liệu hoạt động trong quá khứ nhằm hỗ trợ ban lãnh đạo đưa ra quyết định kinh doanh.",
+    "domains": [
+      "it/data/analytics",
+      "it/business-systems/enterprise-apps"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
     "id": "byline",
     "label": "Byline",
     "aliases": [
@@ -842,6 +865,28 @@
       "it/devops/ci-cd"
     ],
     "level": 2,
+    "status": "draft"
+  },
+  {
+    "id": "cms",
+    "label": "CMS",
+    "aliases": [
+      "Content management system",
+      "Hệ thống quản lý nội dung"
+    ],
+    "loanwords": [
+      "CMS"
+    ],
+    "plain_descriptions": [
+      "phần mềm tạo và đăng bài viết lên website không cần biết lập trình",
+      "trang quản trị đăng tải tin tức và hình ảnh cho trang web"
+    ],
+    "summary": "Ứng dụng hỗ trợ người dùng biên soạn, chỉnh sửa, lưu trữ và xuất bản nội dung số lên website mà không cần can thiệp mã nguồn.",
+    "domains": [
+      "it/business-systems/enterprise-apps",
+      "media/publishing/distribution-platforms"
+    ],
+    "level": 1,
     "status": "draft"
   },
   {
@@ -1230,6 +1275,26 @@
     "status": "draft"
   },
   {
+    "id": "crm",
+    "label": "CRM",
+    "aliases": [
+      "Customer relationship management"
+    ],
+    "loanwords": [
+      "CRM"
+    ],
+    "plain_descriptions": [
+      "phần mềm ghi lại lịch sử trao đổi và hợp đồng của khách hàng",
+      "sổ tay khách hàng dùng chung cho toàn bộ đội bán hàng và hỗ trợ"
+    ],
+    "summary": "Hệ thống phần mềm hợp nhất dữ liệu liên hệ, tiến độ thương vụ và lịch sử tương tác với khách hàng trong một nền tảng.",
+    "domains": [
+      "it/business-systems/enterprise-apps"
+    ],
+    "level": 1,
+    "status": "draft"
+  },
+  {
     "id": "cryptocurrency",
     "label": "Tiền mã hóa",
     "aliases": [
@@ -1422,6 +1487,26 @@
       "it/data/data-engineering"
     ],
     "level": 2,
+    "status": "draft"
+  },
+  {
+    "id": "data-visualization",
+    "label": "Data visualization",
+    "aliases": [
+      "Trực quan hóa dữ liệu"
+    ],
+    "loanwords": [
+      "data visualization"
+    ],
+    "plain_descriptions": [
+      "cách vẽ số liệu thành các biểu đồ và hình ảnh dễ nhìn",
+      "trình bày dữ liệu dạng đồ thị hoặc bản đồ nhiệt để người xem dễ hiểu"
+    ],
+    "summary": "Kỹ thuật biểu diễn số liệu định lượng thành các đồ thị, biểu đồ và bản đồ trực quan giúp người xem nhận diện xu hướng nhanh chóng.",
+    "domains": [
+      "it/data/analytics"
+    ],
+    "level": 1,
     "status": "draft"
   },
   {
@@ -1732,6 +1817,26 @@
     "status": "draft"
   },
   {
+    "id": "digital-transformation",
+    "label": "Chuyển đổi số",
+    "aliases": [
+      "Digital transformation"
+    ],
+    "loanwords": [
+      "digital transformation"
+    ],
+    "plain_descriptions": [
+      "thay đổi toàn diện cách thức hoạt động của công ty bằng công nghệ số",
+      "thay thế giấy tờ thủ công bằng quy trình phần mềm và điện toán đám mây"
+    ],
+    "summary": "Quá trình tích hợp công nghệ số vào mọi mặt hoạt động của tổ chức nhằm đổi mới căn bản cách thức vận hành và cung cấp giá trị cho khách hàng.",
+    "domains": [
+      "it/business-systems/enterprise-apps"
+    ],
+    "level": 1,
+    "status": "draft"
+  },
+  {
     "id": "digital-twin",
     "label": "Bản sao kỹ thuật số",
     "aliases": [
@@ -1875,6 +1980,26 @@
     "summary": "Phương pháp ghi chép kế toán phản ánh các nghiệp vụ kinh tế tài chính vào ít nhất hai tài khoản kế toán theo quan hệ đối ứng Nợ và Có.",
     "domains": [
       "finance/accounting/bookkeeping"
+    ],
+    "level": 1,
+    "status": "draft"
+  },
+  {
+    "id": "e-commerce-platform",
+    "label": "Nền tảng thương mại điện tử",
+    "aliases": [
+      "E-commerce platform"
+    ],
+    "loanwords": [
+      "e-commerce platform"
+    ],
+    "plain_descriptions": [
+      "phần mềm tạo website bán hàng có sẵn giỏ hàng và danh mục sản phẩm",
+      "hệ thống quản lý gian hàng trực tuyến từ chọn đồ đến đặt hàng và giao vận"
+    ],
+    "summary": "Bộ giải pháp phần mềm cho phép doanh nghiệp thiết lập cửa hàng trực tuyến, quản lý danh mục sản phẩm, giỏ hàng và xử lý đơn hàng.",
+    "domains": [
+      "it/business-systems/enterprise-apps"
     ],
     "level": 1,
     "status": "draft"
@@ -2169,6 +2294,27 @@
       "finance/corporate-finance/capital-structure"
     ],
     "level": 1,
+    "status": "draft"
+  },
+  {
+    "id": "erp",
+    "label": "ERP",
+    "aliases": [
+      "Enterprise resource planning",
+      "Hoạch định tài nguyên doanh nghiệp"
+    ],
+    "loanwords": [
+      "ERP"
+    ],
+    "plain_descriptions": [
+      "phần mềm tổng quản trị dòng tiền và kho hàng của công ty",
+      "hệ thống kết nối số liệu kế toán với mua hàng và sản xuất"
+    ],
+    "summary": "Bộ phần mềm quản trị tổng thể kết nối tài chính, mua hàng, tồn kho và sản xuất trên một cơ sở dữ liệu chung.",
+    "domains": [
+      "it/business-systems/enterprise-apps"
+    ],
+    "level": 2,
     "status": "draft"
   },
   {
@@ -2641,6 +2787,26 @@
     "status": "draft"
   },
   {
+    "id": "help-desk",
+    "label": "Help desk",
+    "aliases": [
+      "Bộ phận trợ giúp"
+    ],
+    "loanwords": [
+      "help desk"
+    ],
+    "plain_descriptions": [
+      "phần mềm biến các khiếu nại kỹ thuật thành phiếu yêu cầu xử lý",
+      "đầu mối tiếp nhận và giải quyết trục trặc máy tính cho nhân viên và khách hàng"
+    ],
+    "summary": "Bộ phận chuyên trách và phần mềm hỗ trợ tiếp nhận, phân loại, theo dõi và giải quyết các sự cố kỹ thuật hoặc yêu cầu dịch vụ của người dùng.",
+    "domains": [
+      "it/business-systems/enterprise-apps"
+    ],
+    "level": 1,
+    "status": "draft"
+  },
+  {
     "id": "hotfix",
     "label": "Hotfix",
     "aliases": [
@@ -2659,6 +2825,27 @@
       "it/software-engineering/practices"
     ],
     "level": 2,
+    "status": "draft"
+  },
+  {
+    "id": "hrm-system",
+    "label": "HRMS",
+    "aliases": [
+      "Human resource management system",
+      "Phần mềm quản trị nhân sự"
+    ],
+    "loanwords": [
+      "HRMS"
+    ],
+    "plain_descriptions": [
+      "cổng quản lý hồ sơ nhân viên, ngày phép và tính lương",
+      "phần mềm nội bộ theo dõi chấm công và chế độ phúc lợi của công ty"
+    ],
+    "summary": "Phần mềm số hóa công tác nhân sự, theo dõi hồ sơ lao động, lịch chấm công, tiền lương và chế độ đãi ngộ tập trung.",
+    "domains": [
+      "it/business-systems/enterprise-apps"
+    ],
+    "level": 1,
     "status": "draft"
   },
   {
@@ -3055,6 +3242,27 @@
     "status": "draft"
   },
   {
+    "id": "ipaas",
+    "label": "iPaaS",
+    "aliases": [
+      "Integration platform as a service",
+      "Nền tảng tích hợp dưới dạng dịch vụ"
+    ],
+    "loanwords": [
+      "iPaaS"
+    ],
+    "plain_descriptions": [
+      "dịch vụ đám mây làm cầu nối kết nối các phần mềm doanh nghiệp lại với nhau",
+      "trạm trung chuyển dữ liệu an toàn giữa ứng dụng đám mây và máy chủ nội bộ"
+    ],
+    "summary": "Nền tảng đám mây cung cấp các công cụ và dịch vụ trung gian giúp kết nối, đồng bộ và quản lý luồng dữ liệu giữa các hệ thống phần mềm phân tán.",
+    "domains": [
+      "it/business-systems/automation"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
     "id": "ipo",
     "label": "Phát hành lần đầu ra công chúng",
     "aliases": [
@@ -3069,6 +3277,47 @@
     "summary": "Hoạt động chào bán chứng khoán lần đầu tiên ra công chúng nhằm huy động vốn rộng rãi và đưa cổ phiếu lên giao dịch trên thị trường tập trung.",
     "domains": [
       "finance/corporate-finance/fundraising"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
+    "id": "itil",
+    "label": "ITIL",
+    "aliases": [
+      "Information Technology Infrastructure Library"
+    ],
+    "loanwords": [
+      "ITIL"
+    ],
+    "plain_descriptions": [
+      "bộ cẩm nang quy tắc chuẩn mực quốc tế về vận hành dịch vụ công nghệ",
+      "khung hướng dẫn thực hành tốt nhất cho các đội ngũ quản lý hệ thống CNTT"
+    ],
+    "summary": "Bộ khung hướng dẫn thực hành chuẩn mực quốc tế dành cho việc thiết kế, vận hành và quản trị các dịch vụ công nghệ thông tin.",
+    "domains": [
+      "it/business-systems/enterprise-apps"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
+    "id": "itsm",
+    "label": "ITSM",
+    "aliases": [
+      "IT service management",
+      "Quản trị dịch vụ công nghệ thông tin"
+    ],
+    "loanwords": [
+      "ITSM"
+    ],
+    "plain_descriptions": [
+      "phương pháp quản lý và cung cấp các dịch vụ công nghệ một cách bài bản trong công ty",
+      "quy trình chuẩn hóa việc vận hành máy chủ, cập nhật phần mềm và xử lý sự cố"
+    ],
+    "summary": "Hoạt động quản trị toàn diện việc thiết kế, cung cấp, vận hành và kiểm soát các dịch vụ công nghệ thông tin phục vụ hoạt động doanh nghiệp.",
+    "domains": [
+      "it/business-systems/enterprise-apps"
     ],
     "level": 2,
     "status": "draft"
@@ -3503,6 +3752,26 @@
       "it/ai-ml/foundations"
     ],
     "level": 2,
+    "status": "draft"
+  },
+  {
+    "id": "low-code",
+    "label": "Low-code",
+    "aliases": [
+      "Nền tảng lập trình tinh giản"
+    ],
+    "loanwords": [
+      "low-code"
+    ],
+    "plain_descriptions": [
+      "cách làm ứng dụng bằng thao tác kéo thả và chỉ phải viết rất ít mã nguồn",
+      "nền tảng phát triển phần mềm nhanh dựa trên các khối giao diện dựng sẵn"
+    ],
+    "summary": "Phương pháp phát triển phần mềm sử dụng giao diện trực quan và các khối chức năng dựng sẵn, cho phép viết thêm mã nguồn khi cần tùy biến sâu.",
+    "domains": [
+      "it/business-systems/automation"
+    ],
+    "level": 1,
     "status": "draft"
   },
   {
@@ -4072,6 +4341,26 @@
     "status": "draft"
   },
   {
+    "id": "no-code",
+    "label": "No-code",
+    "aliases": [
+      "Nền tảng không cần mã nguồn"
+    ],
+    "loanwords": [
+      "no-code"
+    ],
+    "plain_descriptions": [
+      "công cụ tạo ứng dụng hoàn toàn bằng thao tác trực quan không cần viết một dòng mã nào",
+      "phần mềm cho phép người làm nghiệp vụ tự làm biểu mẫu và quy trình tự động"
+    ],
+    "summary": "Phương pháp xây dựng ứng dụng cho phép người dùng không có chuyên môn lập trình tự tạo phần mềm thông qua giao diện kéo thả trực quan.",
+    "domains": [
+      "it/business-systems/automation"
+    ],
+    "level": 1,
+    "status": "draft"
+  },
+  {
     "id": "north-star-metric",
     "label": "North Star metric",
     "aliases": [
@@ -4359,6 +4648,27 @@
     "status": "draft"
   },
   {
+    "id": "payment-gateway",
+    "label": "Cổng thanh toán",
+    "aliases": [
+      "Payment gateway"
+    ],
+    "loanwords": [
+      "payment gateway"
+    ],
+    "plain_descriptions": [
+      "dịch vụ trực tuyến kết nối website với ngân hàng để trừ tiền thẻ",
+      "cầu nối thanh toán điện tử tiếp nhận và xử lý giao dịch mua hàng qua mạng"
+    ],
+    "summary": "Dịch vụ công nghệ trung gian tiếp nhận, mã hóa và truyền tải thông tin giao dịch giữa website bán lẻ với ngân hàng và mạng lưới thẻ.",
+    "domains": [
+      "it/business-systems/enterprise-apps",
+      "finance/banking/payments"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
     "id": "paywall",
     "label": "Paywall",
     "aliases": [
@@ -4482,6 +4792,27 @@
       "finance/economics/interest-rates-monetary-policy"
     ],
     "level": 2,
+    "status": "draft"
+  },
+  {
+    "id": "pos-system",
+    "label": "POS",
+    "aliases": [
+      "Point of sale",
+      "Hệ thống điểm bán lẻ"
+    ],
+    "loanwords": [
+      "POS"
+    ],
+    "plain_descriptions": [
+      "máy thu ngân tính tiền và in hóa đơn tại quầy thanh toán",
+      "thiết bị bán hàng ghi nhận đơn và trừ tồn kho ngay tại cửa hàng"
+    ],
+    "summary": "Hệ thống thiết bị và phần mềm đặt tại điểm bán để quét mã hàng, thu tiền và đồng bộ lượng hàng tồn kho.",
+    "domains": [
+      "it/business-systems/enterprise-apps"
+    ],
+    "level": 1,
     "status": "draft"
   },
   {
@@ -5181,6 +5512,27 @@
     "summary": "Hành động vận hành hoàn nguyên ứng dụng, tệp cấu hình hoặc cơ sở dữ liệu về phiên bản ổn định đã được kiểm chứng trước đó.",
     "domains": [
       "it/devops/sre-operations"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
+    "id": "rpa",
+    "label": "RPA",
+    "aliases": [
+      "Robotic process automation",
+      "Tự động hóa quy trình bằng robot"
+    ],
+    "loanwords": [
+      "RPA"
+    ],
+    "plain_descriptions": [
+      "robot phần mềm tự động nhấp chuột và gõ phím bắt chước thao tác người dùng",
+      "công cụ tự động sao chép và nhập liệu giữa các phần mềm kế toán cũ"
+    ],
+    "summary": "Công nghệ tự động hóa sử dụng robot phần mềm để mô phỏng lại các thao tác giao diện người dùng lặp đi lặp lại theo quy tắc định sẵn.",
+    "domains": [
+      "it/business-systems/automation"
     ],
     "level": 2,
     "status": "draft"
@@ -6678,6 +7030,27 @@
       "it/web/api"
     ],
     "level": 2,
+    "status": "draft"
+  },
+  {
+    "id": "workflow-automation",
+    "label": "Tự động hóa quy trình",
+    "aliases": [
+      "Workflow automation",
+      "Tự động hóa quy trình làm việc"
+    ],
+    "loanwords": [
+      "workflow automation"
+    ],
+    "plain_descriptions": [
+      "thiết lập các điều kiện tự động truyền dữ liệu giữa các phần mềm văn phòng",
+      "kết nối các tác vụ hàng ngày để máy tính tự thực hiện thay vì con người bấm tay"
+    ],
+    "summary": "Thiết lập chuỗi các bước công việc tự động kích hoạt và xử lý dữ liệu giữa các ứng dụng nghiệp vụ theo các quy tắc định sẵn.",
+    "domains": [
+      "it/business-systems/automation"
+    ],
+    "level": 1,
     "status": "draft"
   },
   {

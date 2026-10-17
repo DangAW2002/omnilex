@@ -5,8 +5,19 @@ level: 1
 relations:
   prerequisites: []
   confusable: []
-  related: []
+  related:
+    - low-code
+    - rpa
 status: draft
 provenance:
   drafted_by: ai
-sources: []
+sources:
+  - ref: microsoft-learn
+    locator: https://learn.microsoft.com/en-us/power-automate/getting-started
+    title: Explore the Power Automate home page
+    language: en
+    accessed: '2026-10-17'
+    retrieved_by: ai
+    supports:
+      - definition
+      - summary

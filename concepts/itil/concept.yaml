@@ -1,12 +1,22 @@
 id: itil
 domains:
   - it/business-systems/enterprise-apps
-level: 1
+level: 2
 relations:
   prerequisites: []
   confusable: []
-  related: []
+  related:
+    - itsm
 status: draft
 provenance:
   drafted_by: ai
-sources: []
+sources:
+  - ref: nist-csrc
+    locator: https://csrc.nist.gov/glossary/term/information_technology_infrastructure_library
+    title: Information Technology Infrastructure Library - Glossary
+    language: en
+    accessed: '2026-10-17'
+    retrieved_by: ai
+    supports:
+      - definition
+      - summary

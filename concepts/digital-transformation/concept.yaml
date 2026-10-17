@@ -5,8 +5,20 @@ level: 1
 relations:
   prerequisites: []
   confusable: []
-  related: []
+  related:
+    - erp
+    - crm
+    - workflow-automation
 status: draft
 provenance:
   drafted_by: ai
-sources: []
+sources:
+  - ref: google-cloud-docs
+    locator: https://cloud.google.com/learn/what-is-digital-transformation
+    title: What is Digital Transformation? | Google Cloud
+    language: en
+    accessed: '2026-10-17'
+    retrieved_by: ai
+    supports:
+      - definition
+      - summary

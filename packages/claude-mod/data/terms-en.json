@@ -985,6 +985,38 @@
     "autolink": true
   },
   {
+    "key": "Business intelligence (BI)",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "business-intelligence",
+        "label": "Business intelligence (BI)",
+        "summary": "Strategies and software technologies used by enterprises to analyze historical business data and guide operational decision-making.",
+        "domains": [
+          "it/data/analytics",
+          "it/business-systems/enterprise-apps"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "BI",
+    "match": "exact-case",
+    "concepts": [
+      {
+        "id": "business-intelligence",
+        "label": "Business intelligence (BI)",
+        "summary": "Strategies and software technologies used by enterprises to analyze historical business data and guide operational decision-making.",
+        "domains": [
+          "it/data/analytics",
+          "it/business-systems/enterprise-apps"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
     "key": "Byline",
     "match": "any-case",
     "concepts": [
@@ -1315,6 +1347,38 @@
         "summary": "A defined sequential series of automated execution steps that compiles, tests, and packages application updates.",
         "domains": [
           "it/devops/ci-cd"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Content management system (CMS)",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "cms",
+        "label": "Content management system (CMS)",
+        "summary": "Software that lets editors create, format, publish, and organize digital content on the web without editing source code directly.",
+        "domains": [
+          "it/business-systems/enterprise-apps",
+          "media/publishing/distribution-platforms"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "CMS",
+    "match": "exact-case",
+    "concepts": [
+      {
+        "id": "cms",
+        "label": "Content management system (CMS)",
+        "summary": "Software that lets editors create, format, publish, and organize digital content on the web without editing source code directly.",
+        "domains": [
+          "it/business-systems/enterprise-apps",
+          "media/publishing/distribution-platforms"
         ]
       }
     ],
@@ -1901,6 +1965,36 @@
     "autolink": true
   },
   {
+    "key": "Customer relationship management (CRM)",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "crm",
+        "label": "Customer relationship management (CRM)",
+        "summary": "A business system that organizes customer details, communications, and sales opportunities in one shared workspace.",
+        "domains": [
+          "it/business-systems/enterprise-apps"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "CRM",
+    "match": "exact-case",
+    "concepts": [
+      {
+        "id": "crm",
+        "label": "Customer relationship management (CRM)",
+        "summary": "A business system that organizes customer details, communications, and sales opportunities in one shared workspace.",
+        "domains": [
+          "it/business-systems/enterprise-apps"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
     "key": "Cryptocurrency",
     "match": "any-case",
     "concepts": [
@@ -2182,6 +2276,21 @@
         "summary": "An automated sequence of processes that ingests, processes, and transfers raw data from source systems to destination storage.",
         "domains": [
           "it/data/data-engineering"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Data visualization",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "data-visualization",
+        "label": "Data visualization",
+        "summary": "The practice of representing quantitative data graphically through charts, maps, and visual plots to communicate insights clearly.",
+        "domains": [
+          "it/data/analytics"
         ]
       }
     ],
@@ -2687,6 +2796,21 @@
     "autolink": true
   },
   {
+    "key": "Digital transformation",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "digital-transformation",
+        "label": "Digital transformation",
+        "summary": "The strategic and cultural integration of digital technology across all areas of an organization to fundamentally modernize operations and deliver customer value.",
+        "domains": [
+          "it/business-systems/enterprise-apps"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
     "key": "Digital twin",
     "match": "any-case",
     "concepts": [
@@ -2921,6 +3045,21 @@
         "summary": "The universal bookkeeping method wherein every economic transaction is recorded in at least two separate ledger accounts with offsetting debit and credit entries.",
         "domains": [
           "finance/accounting/bookkeeping"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "E-commerce platform",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "e-commerce-platform",
+        "label": "E-commerce platform",
+        "summary": "A comprehensive software suite that enables businesses to build online stores, showcase product catalogs, manage shopping carts, and fulfill digital orders.",
+        "domains": [
+          "it/business-systems/enterprise-apps"
         ]
       }
     ],
@@ -3333,6 +3472,36 @@
         "summary": "The residual economic interest in an entity’s assets after deducting all of its liabilities.",
         "domains": [
           "finance/corporate-finance/capital-structure"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Enterprise resource planning (ERP)",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "erp",
+        "label": "Enterprise resource planning (ERP)",
+        "summary": "An integrated suite of core business applications that synchronizes finance, purchasing, inventory, and production across an organization.",
+        "domains": [
+          "it/business-systems/enterprise-apps"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "ERP",
+    "match": "exact-case",
+    "concepts": [
+      {
+        "id": "erp",
+        "label": "Enterprise resource planning (ERP)",
+        "summary": "An integrated suite of core business applications that synchronizes finance, purchasing, inventory, and production across an organization.",
+        "domains": [
+          "it/business-systems/enterprise-apps"
         ]
       }
     ],
@@ -3950,6 +4119,21 @@
     "autolink": true
   },
   {
+    "key": "Help desk",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "help-desk",
+        "label": "Help desk",
+        "summary": "A dedicated support service and software application designed to log, route, track, and resolve user technical problems and service requests.",
+        "domains": [
+          "it/business-systems/enterprise-apps"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
     "key": "Hotfix",
     "match": "any-case",
     "concepts": [
@@ -3959,6 +4143,36 @@
         "summary": "An expedited software patch created and deployed directly to production systems outside standard release cycles to resolve critical defects or security flaws.",
         "domains": [
           "it/software-engineering/practices"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Human resource management system (HRMS)",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "hrm-system",
+        "label": "Human resource management system (HRMS)",
+        "summary": "Software that automates personnel administration by maintaining worker records, attendance tracking, payroll, and benefits in one platform.",
+        "domains": [
+          "it/business-systems/enterprise-apps"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "HRMS",
+    "match": "exact-case",
+    "concepts": [
+      {
+        "id": "hrm-system",
+        "label": "Human resource management system (HRMS)",
+        "summary": "Software that automates personnel administration by maintaining worker records, attendance tracking, payroll, and benefits in one platform.",
+        "domains": [
+          "it/business-systems/enterprise-apps"
         ]
       }
     ],
@@ -4547,6 +4761,36 @@
     "autolink": true
   },
   {
+    "key": "Integration platform as a service (iPaaS)",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "ipaas",
+        "label": "Integration platform as a service (iPaaS)",
+        "summary": "A cloud-based suite of services that standardizes, orchestrates, and monitors data integration flows between disparate applications across cloud and on-premises environments.",
+        "domains": [
+          "it/business-systems/automation"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "iPaaS",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "ipaas",
+        "label": "Integration platform as a service (iPaaS)",
+        "summary": "A cloud-based suite of services that standardizes, orchestrates, and monitors data integration flows between disparate applications across cloud and on-premises environments.",
+        "domains": [
+          "it/business-systems/automation"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
     "key": "Initial Public Offering (IPO)",
     "match": "any-case",
     "concepts": [
@@ -4586,6 +4830,66 @@
         "summary": "The inaugural public sale of corporate stock on a securities exchange, transforming a private company into a publicly traded entity.",
         "domains": [
           "finance/corporate-finance/fundraising"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "ITIL",
+    "match": "exact-case",
+    "concepts": [
+      {
+        "id": "itil",
+        "label": "ITIL",
+        "summary": "A globally recognized framework of best practices for delivering, supporting, and governing IT service management workflows.",
+        "domains": [
+          "it/business-systems/enterprise-apps"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Information Technology Infrastructure Library",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "itil",
+        "label": "ITIL",
+        "summary": "A globally recognized framework of best practices for delivering, supporting, and governing IT service management workflows.",
+        "domains": [
+          "it/business-systems/enterprise-apps"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "IT service management (ITSM)",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "itsm",
+        "label": "IT service management (ITSM)",
+        "summary": "The operational discipline and set of practices through which an organization plans, delivers, operates, and controls information technology services provided to business users.",
+        "domains": [
+          "it/business-systems/enterprise-apps"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "ITSM",
+    "match": "exact-case",
+    "concepts": [
+      {
+        "id": "itsm",
+        "label": "IT service management (ITSM)",
+        "summary": "The operational discipline and set of practices through which an organization plans, delivers, operates, and controls information technology services provided to business users.",
+        "domains": [
+          "it/business-systems/enterprise-apps"
         ]
       }
     ],
@@ -5295,6 +5599,21 @@
         "summary": "A mathematical function quantifying the discrepancy between a model's predicted outputs and true ground-truth targets.",
         "domains": [
           "it/ai-ml/foundations"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Low-code",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "low-code",
+        "label": "Low-code",
+        "summary": "A software development approach combining graphical user interfaces and modular building blocks to construct digital solutions rapidly while accommodating hand-written programming extensions.",
+        "domains": [
+          "it/business-systems/automation"
         ]
       }
     ],
@@ -6142,6 +6461,21 @@
     "autolink": true
   },
   {
+    "key": "No-code",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "no-code",
+        "label": "No-code",
+        "summary": "A software creation method that empowers non-technical users to build functional applications and workflows entirely through graphical drag-and-drop interfaces without writing source code.",
+        "domains": [
+          "it/business-systems/automation"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
     "key": "North Star metric",
     "match": "any-case",
     "concepts": [
@@ -6577,6 +6911,22 @@
     "autolink": true
   },
   {
+    "key": "Payment gateway",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "payment-gateway",
+        "label": "Payment gateway",
+        "summary": "A technology service that authorizes online credit card and digital payment transactions between e-commerce merchants and financial networks.",
+        "domains": [
+          "it/business-systems/enterprise-apps",
+          "finance/banking/payments"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
     "key": "Paywall",
     "match": "any-case",
     "concepts": [
@@ -6860,6 +7210,36 @@
       }
     ],
     "autolink": true
+  },
+  {
+    "key": "Point of sale (POS)",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "pos-system",
+        "label": "Point of sale (POS)",
+        "summary": "The combined hardware and software terminal where retail transactions are completed, payments processed, and inventory deducted.",
+        "domains": [
+          "it/business-systems/enterprise-apps"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "POS",
+    "match": "exact-case",
+    "concepts": [
+      {
+        "id": "pos-system",
+        "label": "Point of sale (POS)",
+        "summary": "The combined hardware and software terminal where retail transactions are completed, payments processed, and inventory deducted.",
+        "domains": [
+          "it/business-systems/enterprise-apps"
+        ]
+      }
+    ],
+    "autolink": false
   },
   {
     "key": "Postmortem",
@@ -7890,6 +8270,36 @@
         "summary": "The operational action of reverting an application, configuration, or database deployment to a previously verified stable release.",
         "domains": [
           "it/devops/sre-operations"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Robotic process automation (RPA)",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "rpa",
+        "label": "Robotic process automation (RPA)",
+        "summary": "A business automation technology that uses software bots to mimic rule-based human interactions with graphical computer interfaces.",
+        "domains": [
+          "it/business-systems/automation"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "RPA",
+    "match": "exact-case",
+    "concepts": [
+      {
+        "id": "rpa",
+        "label": "Robotic process automation (RPA)",
+        "summary": "A business automation technology that uses software bots to mimic rule-based human interactions with graphical computer interfaces.",
+        "domains": [
+          "it/business-systems/automation"
         ]
       }
     ],
@@ -10134,6 +10544,21 @@
         "summary": "An automated HTTP POST callback triggered by an origin system to deliver real-time event payloads to external receiver endpoints.",
         "domains": [
           "it/web/api"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Workflow automation",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "workflow-automation",
+        "label": "Workflow automation",
+        "summary": "The design and execution of automated sequences that pass data and trigger tasks across multiple business tools based on defined logical rules.",
+        "domains": [
+          "it/business-systems/automation"
         ]
       }
     ],

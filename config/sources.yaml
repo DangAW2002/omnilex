@@ -1284,3 +1284,16 @@ cdc:
   reuse: paraphrase-only
   domains: [media/pr-communications]
   verified_license_at: "2026-10-17"
+
+# wave3 biz
+stripe-docs:
+  title: Stripe Documentation
+  publisher: Stripe, Inc.
+  url: https://docs.stripe.com
+  type: docs
+  tier: B
+  languages: [en]
+  license: all-rights-reserved
+  reuse: paraphrase-only
+  domains: [it/business-systems/enterprise-apps, finance/banking/payments]
+  verified_license_at: "2026-10-17"

@@ -555,6 +555,25 @@
     "status": "draft"
   },
   {
+    "id": "business-intelligence",
+    "label": "Business intelligence (BI)",
+    "aliases": [
+      "BI"
+    ],
+    "loanwords": [],
+    "plain_descriptions": [
+      "tools that turn raw corporate spreadsheets into visual performance reports",
+      "software that queries past sales and operational data to spot trends"
+    ],
+    "summary": "Strategies and software technologies used by enterprises to analyze historical business data and guide operational decision-making.",
+    "domains": [
+      "it/data/analytics",
+      "it/business-systems/enterprise-apps"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
     "id": "byline",
     "label": "Byline",
     "aliases": [],
@@ -737,6 +756,25 @@
       "it/devops/ci-cd"
     ],
     "level": 2,
+    "status": "draft"
+  },
+  {
+    "id": "cms",
+    "label": "Content management system (CMS)",
+    "aliases": [
+      "CMS"
+    ],
+    "loanwords": [],
+    "plain_descriptions": [
+      "website platform for writing and publishing articles without code",
+      "admin dashboard where editors manage web pages and media assets"
+    ],
+    "summary": "Software that lets editors create, format, publish, and organize digital content on the web without editing source code directly.",
+    "domains": [
+      "it/business-systems/enterprise-apps",
+      "media/publishing/distribution-platforms"
+    ],
+    "level": 1,
     "status": "draft"
   },
   {
@@ -1082,6 +1120,24 @@
     "status": "draft"
   },
   {
+    "id": "crm",
+    "label": "Customer relationship management (CRM)",
+    "aliases": [
+      "CRM"
+    ],
+    "loanwords": [],
+    "plain_descriptions": [
+      "software that tracks customer interactions and deals",
+      "a shared database where sales and support log conversations"
+    ],
+    "summary": "A business system that organizes customer details, communications, and sales opportunities in one shared workspace.",
+    "domains": [
+      "it/business-systems/enterprise-apps"
+    ],
+    "level": 1,
+    "status": "draft"
+  },
+  {
     "id": "cryptocurrency",
     "label": "Cryptocurrency",
     "aliases": [
@@ -1252,6 +1308,22 @@
       "it/data/data-engineering"
     ],
     "level": 2,
+    "status": "draft"
+  },
+  {
+    "id": "data-visualization",
+    "label": "Data visualization",
+    "aliases": [],
+    "loanwords": [],
+    "plain_descriptions": [
+      "turning raw numbers into charts and graphs that people can understand",
+      "visual displays like heatmaps and line plots that show trends in data"
+    ],
+    "summary": "The practice of representing quantitative data graphically through charts, maps, and visual plots to communicate insights clearly.",
+    "domains": [
+      "it/data/analytics"
+    ],
+    "level": 1,
     "status": "draft"
   },
   {
@@ -1534,6 +1606,22 @@
     "status": "draft"
   },
   {
+    "id": "digital-transformation",
+    "label": "Digital transformation",
+    "aliases": [],
+    "loanwords": [],
+    "plain_descriptions": [
+      "rewiring an entire business to operate using modern software and cloud tools",
+      "replacing paper forms and outdated legacy routines with digital services"
+    ],
+    "summary": "The strategic and cultural integration of digital technology across all areas of an organization to fundamentally modernize operations and deliver customer value.",
+    "domains": [
+      "it/business-systems/enterprise-apps"
+    ],
+    "level": 1,
+    "status": "draft"
+  },
+  {
     "id": "digital-twin",
     "label": "Digital twin",
     "aliases": [],
@@ -1658,6 +1746,22 @@
     "summary": "The universal bookkeeping method wherein every economic transaction is recorded in at least two separate ledger accounts with offsetting debit and credit entries.",
     "domains": [
       "finance/accounting/bookkeeping"
+    ],
+    "level": 1,
+    "status": "draft"
+  },
+  {
+    "id": "e-commerce-platform",
+    "label": "E-commerce platform",
+    "aliases": [],
+    "loanwords": [],
+    "plain_descriptions": [
+      "software engine that runs web stores with shopping carts and inventory",
+      "online storefront software where merchants list items and process orders"
+    ],
+    "summary": "A comprehensive software suite that enables businesses to build online stores, showcase product catalogs, manage shopping carts, and fulfill digital orders.",
+    "domains": [
+      "it/business-systems/enterprise-apps"
     ],
     "level": 1,
     "status": "draft"
@@ -1913,6 +2017,24 @@
       "finance/corporate-finance/capital-structure"
     ],
     "level": 1,
+    "status": "draft"
+  },
+  {
+    "id": "erp",
+    "label": "Enterprise resource planning (ERP)",
+    "aliases": [
+      "ERP"
+    ],
+    "loanwords": [],
+    "plain_descriptions": [
+      "master software that runs company finances and inventory",
+      "central operational spine connecting accounting and warehouse data"
+    ],
+    "summary": "An integrated suite of core business applications that synchronizes finance, purchasing, inventory, and production across an organization.",
+    "domains": [
+      "it/business-systems/enterprise-apps"
+    ],
+    "level": 2,
     "status": "draft"
   },
   {
@@ -2322,6 +2444,22 @@
     "status": "draft"
   },
   {
+    "id": "help-desk",
+    "label": "Help desk",
+    "aliases": [],
+    "loanwords": [],
+    "plain_descriptions": [
+      "support software that converts customer complaints into trackable tickets",
+      "central team and portal where employees or customers report technical glitches"
+    ],
+    "summary": "A dedicated support service and software application designed to log, route, track, and resolve user technical problems and service requests.",
+    "domains": [
+      "it/business-systems/enterprise-apps"
+    ],
+    "level": 1,
+    "status": "draft"
+  },
+  {
     "id": "hotfix",
     "label": "Hotfix",
     "aliases": [],
@@ -2335,6 +2473,24 @@
       "it/software-engineering/practices"
     ],
     "level": 2,
+    "status": "draft"
+  },
+  {
+    "id": "hrm-system",
+    "label": "Human resource management system (HRMS)",
+    "aliases": [
+      "HRMS"
+    ],
+    "loanwords": [],
+    "plain_descriptions": [
+      "portal for employee contracts, leave requests, and payroll records",
+      "company software tracking hiring, attendance, and benefits"
+    ],
+    "summary": "Software that automates personnel administration by maintaining worker records, attendance tracking, payroll, and benefits in one platform.",
+    "domains": [
+      "it/business-systems/enterprise-apps"
+    ],
+    "level": 1,
     "status": "draft"
   },
   {
@@ -2681,6 +2837,24 @@
     "status": "draft"
   },
   {
+    "id": "ipaas",
+    "label": "Integration platform as a service (iPaaS)",
+    "aliases": [
+      "iPaaS"
+    ],
+    "loanwords": [],
+    "plain_descriptions": [
+      "cloud service that links different enterprise software and databases together",
+      "central hub that translates and moves data between cloud and on-premise apps"
+    ],
+    "summary": "A cloud-based suite of services that standardizes, orchestrates, and monitors data integration flows between disparate applications across cloud and on-premises environments.",
+    "domains": [
+      "it/business-systems/automation"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
     "id": "ipo",
     "label": "Initial Public Offering (IPO)",
     "aliases": [
@@ -2695,6 +2869,42 @@
     "summary": "The inaugural public sale of corporate stock on a securities exchange, transforming a private company into a publicly traded entity.",
     "domains": [
       "finance/corporate-finance/fundraising"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
+    "id": "itil",
+    "label": "ITIL",
+    "aliases": [
+      "Information Technology Infrastructure Library"
+    ],
+    "loanwords": [],
+    "plain_descriptions": [
+      "widely used rulebook of best practices for IT operations and support",
+      "global certification framework for managing corporate tech services"
+    ],
+    "summary": "A globally recognized framework of best practices for delivering, supporting, and governing IT service management workflows.",
+    "domains": [
+      "it/business-systems/enterprise-apps"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
+    "id": "itsm",
+    "label": "IT service management (ITSM)",
+    "aliases": [
+      "ITSM"
+    ],
+    "loanwords": [],
+    "plain_descriptions": [
+      "how IT teams design, deliver, and support corporate technology services",
+      "formal operational processes for managing servers, software deployments, and user support"
+    ],
+    "summary": "The operational discipline and set of practices through which an organization plans, delivers, operates, and controls information technology services provided to business users.",
+    "domains": [
+      "it/business-systems/enterprise-apps"
     ],
     "level": 2,
     "status": "draft"
@@ -3090,6 +3300,22 @@
       "it/ai-ml/foundations"
     ],
     "level": 2,
+    "status": "draft"
+  },
+  {
+    "id": "low-code",
+    "label": "Low-code",
+    "aliases": [],
+    "loanwords": [],
+    "plain_descriptions": [
+      "visual software development that lets developers build applications with minimal hand-coding",
+      "drag-and-drop programming platforms that speed up application delivery"
+    ],
+    "summary": "A software development approach combining graphical user interfaces and modular building blocks to construct digital solutions rapidly while accommodating hand-written programming extensions.",
+    "domains": [
+      "it/business-systems/automation"
+    ],
+    "level": 1,
     "status": "draft"
   },
   {
@@ -3590,6 +3816,22 @@
     "status": "draft"
   },
   {
+    "id": "no-code",
+    "label": "No-code",
+    "aliases": [],
+    "loanwords": [],
+    "plain_descriptions": [
+      "app building tools designed for non-technical users without writing any code",
+      "completely visual platforms where anyone can construct workflows and forms"
+    ],
+    "summary": "A software creation method that empowers non-technical users to build functional applications and workflows entirely through graphical drag-and-drop interfaces without writing source code.",
+    "domains": [
+      "it/business-systems/automation"
+    ],
+    "level": 1,
+    "status": "draft"
+  },
+  {
     "id": "north-star-metric",
     "label": "North Star metric",
     "aliases": [],
@@ -3848,6 +4090,23 @@
     "status": "draft"
   },
   {
+    "id": "payment-gateway",
+    "label": "Payment gateway",
+    "aliases": [],
+    "loanwords": [],
+    "plain_descriptions": [
+      "online checkout service that securely charges credit cards and digital wallets",
+      "digital intermediary passing customer payment details safely to banks"
+    ],
+    "summary": "A technology service that authorizes online credit card and digital payment transactions between e-commerce merchants and financial networks.",
+    "domains": [
+      "it/business-systems/enterprise-apps",
+      "finance/banking/payments"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
     "id": "paywall",
     "label": "Paywall",
     "aliases": [
@@ -3962,6 +4221,24 @@
       "finance/economics/interest-rates-monetary-policy"
     ],
     "level": 2,
+    "status": "draft"
+  },
+  {
+    "id": "pos-system",
+    "label": "Point of sale (POS)",
+    "aliases": [
+      "POS"
+    ],
+    "loanwords": [],
+    "plain_descriptions": [
+      "the checkout terminal that rings up purchases and prints receipts",
+      "cash register hardware and software used at retail checkout counters"
+    ],
+    "summary": "The combined hardware and software terminal where retail transactions are completed, payments processed, and inventory deducted.",
+    "domains": [
+      "it/business-systems/enterprise-apps"
+    ],
+    "level": 1,
     "status": "draft"
   },
   {
@@ -4595,6 +4872,24 @@
     "summary": "The operational action of reverting an application, configuration, or database deployment to a previously verified stable release.",
     "domains": [
       "it/devops/sre-operations"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
+    "id": "rpa",
+    "label": "Robotic process automation (RPA)",
+    "aliases": [
+      "RPA"
+    ],
+    "loanwords": [],
+    "plain_descriptions": [
+      "software bots that mimic human mouse clicks and keyboard typing",
+      "automated assistants that copy and paste data between legacy business systems"
+    ],
+    "summary": "A business automation technology that uses software bots to mimic rule-based human interactions with graphical computer interfaces.",
+    "domains": [
+      "it/business-systems/automation"
     ],
     "level": 2,
     "status": "draft"
@@ -5909,6 +6204,22 @@
       "it/web/api"
     ],
     "level": 2,
+    "status": "draft"
+  },
+  {
+    "id": "workflow-automation",
+    "label": "Workflow automation",
+    "aliases": [],
+    "loanwords": [],
+    "plain_descriptions": [
+      "setting up if-this-then-that rules that run recurring office chores automatically",
+      "connecting software tools so data flows between them without human intervention"
+    ],
+    "summary": "The design and execution of automated sequences that pass data and trigger tasks across multiple business tools based on defined logical rules.",
+    "domains": [
+      "it/business-systems/automation"
+    ],
+    "level": 1,
     "status": "draft"
   },
   {

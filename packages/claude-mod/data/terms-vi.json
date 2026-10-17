@@ -1334,6 +1334,54 @@
     "autolink": true
   },
   {
+    "key": "Kinh doanh thông minh",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "business-intelligence",
+        "label": "Kinh doanh thông minh",
+        "summary": "Phương pháp và công nghệ phân tích dữ liệu hoạt động trong quá khứ nhằm hỗ trợ ban lãnh đạo đưa ra quyết định kinh doanh.",
+        "domains": [
+          "it/data/analytics",
+          "it/business-systems/enterprise-apps"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Business intelligence",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "business-intelligence",
+        "label": "Kinh doanh thông minh",
+        "summary": "Phương pháp và công nghệ phân tích dữ liệu hoạt động trong quá khứ nhằm hỗ trợ ban lãnh đạo đưa ra quyết định kinh doanh.",
+        "domains": [
+          "it/data/analytics",
+          "it/business-systems/enterprise-apps"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "BI",
+    "match": "exact-case",
+    "concepts": [
+      {
+        "id": "business-intelligence",
+        "label": "Kinh doanh thông minh",
+        "summary": "Phương pháp và công nghệ phân tích dữ liệu hoạt động trong quá khứ nhằm hỗ trợ ban lãnh đạo đưa ra quyết định kinh doanh.",
+        "domains": [
+          "it/data/analytics",
+          "it/business-systems/enterprise-apps"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
     "key": "Byline",
     "match": "any-case",
     "concepts": [
@@ -1769,6 +1817,54 @@
         "summary": "Chuỗi các giai đoạn thực thi tự động tuần tự thực hiện biên dịch, kiểm thử và đóng gói các bản cập nhật phần mềm.",
         "domains": [
           "it/devops/ci-cd"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "CMS",
+    "match": "exact-case",
+    "concepts": [
+      {
+        "id": "cms",
+        "label": "CMS",
+        "summary": "Ứng dụng hỗ trợ người dùng biên soạn, chỉnh sửa, lưu trữ và xuất bản nội dung số lên website mà không cần can thiệp mã nguồn.",
+        "domains": [
+          "it/business-systems/enterprise-apps",
+          "media/publishing/distribution-platforms"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Content management system",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "cms",
+        "label": "CMS",
+        "summary": "Ứng dụng hỗ trợ người dùng biên soạn, chỉnh sửa, lưu trữ và xuất bản nội dung số lên website mà không cần can thiệp mã nguồn.",
+        "domains": [
+          "it/business-systems/enterprise-apps",
+          "media/publishing/distribution-platforms"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Hệ thống quản lý nội dung",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "cms",
+        "label": "CMS",
+        "summary": "Ứng dụng hỗ trợ người dùng biên soạn, chỉnh sửa, lưu trữ và xuất bản nội dung số lên website mà không cần can thiệp mã nguồn.",
+        "domains": [
+          "it/business-systems/enterprise-apps",
+          "media/publishing/distribution-platforms"
         ]
       }
     ],
@@ -2415,6 +2511,36 @@
     "autolink": true
   },
   {
+    "key": "CRM",
+    "match": "exact-case",
+    "concepts": [
+      {
+        "id": "crm",
+        "label": "CRM",
+        "summary": "Hệ thống phần mềm hợp nhất dữ liệu liên hệ, tiến độ thương vụ và lịch sử tương tác với khách hàng trong một nền tảng.",
+        "domains": [
+          "it/business-systems/enterprise-apps"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Customer relationship management",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "crm",
+        "label": "CRM",
+        "summary": "Hệ thống phần mềm hợp nhất dữ liệu liên hệ, tiến độ thương vụ và lịch sử tương tác với khách hàng trong một nền tảng.",
+        "domains": [
+          "it/business-systems/enterprise-apps"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
     "key": "Tiền mã hóa",
     "match": "any-case",
     "concepts": [
@@ -2803,6 +2929,36 @@
         "summary": "Chuỗi các quy trình tự động hóa thu thập, xử lý và vận chuyển dữ liệu thô từ các nguồn phát sinh về các hệ thống lưu trữ đích.",
         "domains": [
           "it/data/data-engineering"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Data visualization",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "data-visualization",
+        "label": "Data visualization",
+        "summary": "Kỹ thuật biểu diễn số liệu định lượng thành các đồ thị, biểu đồ và bản đồ trực quan giúp người xem nhận diện xu hướng nhanh chóng.",
+        "domains": [
+          "it/data/analytics"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Trực quan hóa dữ liệu",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "data-visualization",
+        "label": "Data visualization",
+        "summary": "Kỹ thuật biểu diễn số liệu định lượng thành các đồ thị, biểu đồ và bản đồ trực quan giúp người xem nhận diện xu hướng nhanh chóng.",
+        "domains": [
+          "it/data/analytics"
         ]
       }
     ],
@@ -3385,6 +3541,36 @@
     "autolink": true
   },
   {
+    "key": "Chuyển đổi số",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "digital-transformation",
+        "label": "Chuyển đổi số",
+        "summary": "Quá trình tích hợp công nghệ số vào mọi mặt hoạt động của tổ chức nhằm đổi mới căn bản cách thức vận hành và cung cấp giá trị cho khách hàng.",
+        "domains": [
+          "it/business-systems/enterprise-apps"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Digital transformation",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "digital-transformation",
+        "label": "Chuyển đổi số",
+        "summary": "Quá trình tích hợp công nghệ số vào mọi mặt hoạt động của tổ chức nhằm đổi mới căn bản cách thức vận hành và cung cấp giá trị cho khách hàng.",
+        "domains": [
+          "it/business-systems/enterprise-apps"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
     "key": "Bản sao kỹ thuật số",
     "match": "any-case",
     "concepts": [
@@ -3724,6 +3910,36 @@
         "summary": "Phương pháp ghi chép kế toán phản ánh các nghiệp vụ kinh tế tài chính vào ít nhất hai tài khoản kế toán theo quan hệ đối ứng Nợ và Có.",
         "domains": [
           "finance/accounting/bookkeeping"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Nền tảng thương mại điện tử",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "e-commerce-platform",
+        "label": "Nền tảng thương mại điện tử",
+        "summary": "Bộ giải pháp phần mềm cho phép doanh nghiệp thiết lập cửa hàng trực tuyến, quản lý danh mục sản phẩm, giỏ hàng và xử lý đơn hàng.",
+        "domains": [
+          "it/business-systems/enterprise-apps"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "E-commerce platform",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "e-commerce-platform",
+        "label": "Nền tảng thương mại điện tử",
+        "summary": "Bộ giải pháp phần mềm cho phép doanh nghiệp thiết lập cửa hàng trực tuyến, quản lý danh mục sản phẩm, giỏ hàng và xử lý đơn hàng.",
+        "domains": [
+          "it/business-systems/enterprise-apps"
         ]
       }
     ],
@@ -4274,6 +4490,51 @@
         "summary": "Phần quyền lợi còn lại trong tài sản của doanh nghiệp sau khi đã trừ đi toàn bộ nghĩa vụ nợ phải trả.",
         "domains": [
           "finance/corporate-finance/capital-structure"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "ERP",
+    "match": "exact-case",
+    "concepts": [
+      {
+        "id": "erp",
+        "label": "ERP",
+        "summary": "Bộ phần mềm quản trị tổng thể kết nối tài chính, mua hàng, tồn kho và sản xuất trên một cơ sở dữ liệu chung.",
+        "domains": [
+          "it/business-systems/enterprise-apps"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Enterprise resource planning",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "erp",
+        "label": "ERP",
+        "summary": "Bộ phần mềm quản trị tổng thể kết nối tài chính, mua hàng, tồn kho và sản xuất trên một cơ sở dữ liệu chung.",
+        "domains": [
+          "it/business-systems/enterprise-apps"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Hoạch định tài nguyên doanh nghiệp",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "erp",
+        "label": "ERP",
+        "summary": "Bộ phần mềm quản trị tổng thể kết nối tài chính, mua hàng, tồn kho và sản xuất trên một cơ sở dữ liệu chung.",
+        "domains": [
+          "it/business-systems/enterprise-apps"
         ]
       }
     ],
@@ -5119,6 +5380,36 @@
     "autolink": true
   },
   {
+    "key": "Help desk",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "help-desk",
+        "label": "Help desk",
+        "summary": "Bộ phận chuyên trách và phần mềm hỗ trợ tiếp nhận, phân loại, theo dõi và giải quyết các sự cố kỹ thuật hoặc yêu cầu dịch vụ của người dùng.",
+        "domains": [
+          "it/business-systems/enterprise-apps"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Bộ phận trợ giúp",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "help-desk",
+        "label": "Help desk",
+        "summary": "Bộ phận chuyên trách và phần mềm hỗ trợ tiếp nhận, phân loại, theo dõi và giải quyết các sự cố kỹ thuật hoặc yêu cầu dịch vụ của người dùng.",
+        "domains": [
+          "it/business-systems/enterprise-apps"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
     "key": "Hotfix",
     "match": "any-case",
     "concepts": [
@@ -5158,6 +5449,51 @@
         "summary": "Bản sửa lỗi khẩn cấp được tạo và đưa thẳng lên môi trường sản xuất ngoài quy trình phát hành thông thường nhằm khắc phục các sự cố gián đoạn hoặc lỗ hổng bảo mật nghiêm trọng.",
         "domains": [
           "it/software-engineering/practices"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "HRMS",
+    "match": "exact-case",
+    "concepts": [
+      {
+        "id": "hrm-system",
+        "label": "HRMS",
+        "summary": "Phần mềm số hóa công tác nhân sự, theo dõi hồ sơ lao động, lịch chấm công, tiền lương và chế độ đãi ngộ tập trung.",
+        "domains": [
+          "it/business-systems/enterprise-apps"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Human resource management system",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "hrm-system",
+        "label": "HRMS",
+        "summary": "Phần mềm số hóa công tác nhân sự, theo dõi hồ sơ lao động, lịch chấm công, tiền lương và chế độ đãi ngộ tập trung.",
+        "domains": [
+          "it/business-systems/enterprise-apps"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Phần mềm quản trị nhân sự",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "hrm-system",
+        "label": "HRMS",
+        "summary": "Phần mềm số hóa công tác nhân sự, theo dõi hồ sơ lao động, lịch chấm công, tiền lương và chế độ đãi ngộ tập trung.",
+        "domains": [
+          "it/business-systems/enterprise-apps"
         ]
       }
     ],
@@ -5959,6 +6295,51 @@
     "autolink": true
   },
   {
+    "key": "iPaaS",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "ipaas",
+        "label": "iPaaS",
+        "summary": "Nền tảng đám mây cung cấp các công cụ và dịch vụ trung gian giúp kết nối, đồng bộ và quản lý luồng dữ liệu giữa các hệ thống phần mềm phân tán.",
+        "domains": [
+          "it/business-systems/automation"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Integration platform as a service",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "ipaas",
+        "label": "iPaaS",
+        "summary": "Nền tảng đám mây cung cấp các công cụ và dịch vụ trung gian giúp kết nối, đồng bộ và quản lý luồng dữ liệu giữa các hệ thống phần mềm phân tán.",
+        "domains": [
+          "it/business-systems/automation"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Nền tảng tích hợp dưới dạng dịch vụ",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "ipaas",
+        "label": "iPaaS",
+        "summary": "Nền tảng đám mây cung cấp các công cụ và dịch vụ trung gian giúp kết nối, đồng bộ và quản lý luồng dữ liệu giữa các hệ thống phần mềm phân tán.",
+        "domains": [
+          "it/business-systems/automation"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
     "key": "Phát hành lần đầu ra công chúng",
     "match": "any-case",
     "concepts": [
@@ -5998,6 +6379,81 @@
         "summary": "Hoạt động chào bán chứng khoán lần đầu tiên ra công chúng nhằm huy động vốn rộng rãi và đưa cổ phiếu lên giao dịch trên thị trường tập trung.",
         "domains": [
           "finance/corporate-finance/fundraising"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "ITIL",
+    "match": "exact-case",
+    "concepts": [
+      {
+        "id": "itil",
+        "label": "ITIL",
+        "summary": "Bộ khung hướng dẫn thực hành chuẩn mực quốc tế dành cho việc thiết kế, vận hành và quản trị các dịch vụ công nghệ thông tin.",
+        "domains": [
+          "it/business-systems/enterprise-apps"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Information Technology Infrastructure Library",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "itil",
+        "label": "ITIL",
+        "summary": "Bộ khung hướng dẫn thực hành chuẩn mực quốc tế dành cho việc thiết kế, vận hành và quản trị các dịch vụ công nghệ thông tin.",
+        "domains": [
+          "it/business-systems/enterprise-apps"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "ITSM",
+    "match": "exact-case",
+    "concepts": [
+      {
+        "id": "itsm",
+        "label": "ITSM",
+        "summary": "Hoạt động quản trị toàn diện việc thiết kế, cung cấp, vận hành và kiểm soát các dịch vụ công nghệ thông tin phục vụ hoạt động doanh nghiệp.",
+        "domains": [
+          "it/business-systems/enterprise-apps"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "IT service management",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "itsm",
+        "label": "ITSM",
+        "summary": "Hoạt động quản trị toàn diện việc thiết kế, cung cấp, vận hành và kiểm soát các dịch vụ công nghệ thông tin phục vụ hoạt động doanh nghiệp.",
+        "domains": [
+          "it/business-systems/enterprise-apps"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Quản trị dịch vụ công nghệ thông tin",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "itsm",
+        "label": "ITSM",
+        "summary": "Hoạt động quản trị toàn diện việc thiết kế, cung cấp, vận hành và kiểm soát các dịch vụ công nghệ thông tin phục vụ hoạt động doanh nghiệp.",
+        "domains": [
+          "it/business-systems/enterprise-apps"
         ]
       }
     ],
@@ -6736,6 +7192,36 @@
         "summary": "Hàm toán học dùng để định lượng sai số giữa kết quả dự đoán của mô hình và giá trị mục tiêu thực tế.",
         "domains": [
           "it/ai-ml/foundations"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Low-code",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "low-code",
+        "label": "Low-code",
+        "summary": "Phương pháp phát triển phần mềm sử dụng giao diện trực quan và các khối chức năng dựng sẵn, cho phép viết thêm mã nguồn khi cần tùy biến sâu.",
+        "domains": [
+          "it/business-systems/automation"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Nền tảng lập trình tinh giản",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "low-code",
+        "label": "Low-code",
+        "summary": "Phương pháp phát triển phần mềm sử dụng giao diện trực quan và các khối chức năng dựng sẵn, cho phép viết thêm mã nguồn khi cần tùy biến sâu.",
+        "domains": [
+          "it/business-systems/automation"
         ]
       }
     ],
@@ -7844,6 +8330,36 @@
     "autolink": true
   },
   {
+    "key": "No-code",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "no-code",
+        "label": "No-code",
+        "summary": "Phương pháp xây dựng ứng dụng cho phép người dùng không có chuyên môn lập trình tự tạo phần mềm thông qua giao diện kéo thả trực quan.",
+        "domains": [
+          "it/business-systems/automation"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Nền tảng không cần mã nguồn",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "no-code",
+        "label": "No-code",
+        "summary": "Phương pháp xây dựng ứng dụng cho phép người dùng không có chuyên môn lập trình tự tạo phần mềm thông qua giao diện kéo thả trực quan.",
+        "domains": [
+          "it/business-systems/automation"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
     "key": "North Star metric",
     "match": "any-case",
     "concepts": [
@@ -8369,6 +8885,38 @@
     "autolink": true
   },
   {
+    "key": "Cổng thanh toán",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "payment-gateway",
+        "label": "Cổng thanh toán",
+        "summary": "Dịch vụ công nghệ trung gian tiếp nhận, mã hóa và truyền tải thông tin giao dịch giữa website bán lẻ với ngân hàng và mạng lưới thẻ.",
+        "domains": [
+          "it/business-systems/enterprise-apps",
+          "finance/banking/payments"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Payment gateway",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "payment-gateway",
+        "label": "Cổng thanh toán",
+        "summary": "Dịch vụ công nghệ trung gian tiếp nhận, mã hóa và truyền tải thông tin giao dịch giữa website bán lẻ với ngân hàng và mạng lưới thẻ.",
+        "domains": [
+          "it/business-systems/enterprise-apps",
+          "finance/banking/payments"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
     "key": "Paywall",
     "match": "any-case",
     "concepts": [
@@ -8633,6 +9181,51 @@
         "summary": "Các mức lãi suất do cơ quan quản lý tiền tệ quốc gia công bố nhằm điều tiết thanh khoản hệ thống và định hướng mặt bằng lãi suất thị trường.",
         "domains": [
           "finance/economics/interest-rates-monetary-policy"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "POS",
+    "match": "exact-case",
+    "concepts": [
+      {
+        "id": "pos-system",
+        "label": "POS",
+        "summary": "Hệ thống thiết bị và phần mềm đặt tại điểm bán để quét mã hàng, thu tiền và đồng bộ lượng hàng tồn kho.",
+        "domains": [
+          "it/business-systems/enterprise-apps"
+        ]
+      }
+    ],
+    "autolink": false
+  },
+  {
+    "key": "Point of sale",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "pos-system",
+        "label": "POS",
+        "summary": "Hệ thống thiết bị và phần mềm đặt tại điểm bán để quét mã hàng, thu tiền và đồng bộ lượng hàng tồn kho.",
+        "domains": [
+          "it/business-systems/enterprise-apps"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Hệ thống điểm bán lẻ",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "pos-system",
+        "label": "POS",
+        "summary": "Hệ thống thiết bị và phần mềm đặt tại điểm bán để quét mã hàng, thu tiền và đồng bộ lượng hàng tồn kho.",
+        "domains": [
+          "it/business-systems/enterprise-apps"
         ]
       }
     ],
@@ -9941,6 +10534,51 @@
         "summary": "Hành động vận hành hoàn nguyên ứng dụng, tệp cấu hình hoặc cơ sở dữ liệu về phiên bản ổn định đã được kiểm chứng trước đó.",
         "domains": [
           "it/devops/sre-operations"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "RPA",
+    "match": "exact-case",
+    "concepts": [
+      {
+        "id": "rpa",
+        "label": "RPA",
+        "summary": "Công nghệ tự động hóa sử dụng robot phần mềm để mô phỏng lại các thao tác giao diện người dùng lặp đi lặp lại theo quy tắc định sẵn.",
+        "domains": [
+          "it/business-systems/automation"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Robotic process automation",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "rpa",
+        "label": "RPA",
+        "summary": "Công nghệ tự động hóa sử dụng robot phần mềm để mô phỏng lại các thao tác giao diện người dùng lặp đi lặp lại theo quy tắc định sẵn.",
+        "domains": [
+          "it/business-systems/automation"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Tự động hóa quy trình bằng robot",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "rpa",
+        "label": "RPA",
+        "summary": "Công nghệ tự động hóa sử dụng robot phần mềm để mô phỏng lại các thao tác giao diện người dùng lặp đi lặp lại theo quy tắc định sẵn.",
+        "domains": [
+          "it/business-systems/automation"
         ]
       }
     ],
@@ -12795,6 +13433,51 @@
         "summary": "Cơ chế gọi ngược HTTP tự động kích hoạt bởi hệ thống nguồn để bắn dữ liệu sự kiện thời gian thực sang máy chủ tiếp nhận.",
         "domains": [
           "it/web/api"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Tự động hóa quy trình",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "workflow-automation",
+        "label": "Tự động hóa quy trình",
+        "summary": "Thiết lập chuỗi các bước công việc tự động kích hoạt và xử lý dữ liệu giữa các ứng dụng nghiệp vụ theo các quy tắc định sẵn.",
+        "domains": [
+          "it/business-systems/automation"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Workflow automation",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "workflow-automation",
+        "label": "Tự động hóa quy trình",
+        "summary": "Thiết lập chuỗi các bước công việc tự động kích hoạt và xử lý dữ liệu giữa các ứng dụng nghiệp vụ theo các quy tắc định sẵn.",
+        "domains": [
+          "it/business-systems/automation"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Tự động hóa quy trình làm việc",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "workflow-automation",
+        "label": "Tự động hóa quy trình",
+        "summary": "Thiết lập chuỗi các bước công việc tự động kích hoạt và xử lý dữ liệu giữa các ứng dụng nghiệp vụ theo các quy tắc định sẵn.",
+        "domains": [
+          "it/business-systems/automation"
         ]
       }
     ],

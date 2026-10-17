@@ -1,0 +1,25 @@
+id: rabbitmq
+domains:
+- it/web/backend
+level: 2
+relations:
+  prerequisites:
+  - message-queue
+  - publish-subscribe
+  confusable: []
+  related:
+  - apache-kafka
+  - event-streaming
+status: draft
+provenance:
+  drafted_by: ai
+sources:
+- ref: rabbitmq-docs
+  locator: https://www.rabbitmq.com/tutorials
+  title: RabbitMQ Tutorials and Documentation
+  language: en
+  accessed: '2026-10-17'
+  retrieved_by: ai
+  supports:
+  - definition
+  - summary

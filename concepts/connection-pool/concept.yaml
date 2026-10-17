@@ -1,0 +1,24 @@
+id: connection-pool
+domains:
+- it/data/database
+level: 2
+relations:
+  prerequisites:
+  - relational-database
+  confusable: []
+  related:
+  - database-transaction
+  - deadlock
+status: draft
+provenance:
+  drafted_by: ai
+sources:
+- ref: microsoft-learn
+  locator: https://learn.microsoft.com/en-us/dotnet/framework/data/adonet/sql-server-connection-pooling
+  title: SQL Server Connection Pooling (ADO.NET)
+  language: en
+  accessed: '2026-10-17'
+  retrieved_by: ai
+  supports:
+  - definition
+  - summary

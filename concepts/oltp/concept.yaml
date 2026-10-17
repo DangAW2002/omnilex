@@ -1,0 +1,25 @@
+id: oltp
+domains:
+- it/data/database
+level: 2
+relations:
+  prerequisites:
+  - relational-database
+  - database-transaction
+  confusable:
+  - olap
+  related:
+  - acid
+status: draft
+provenance:
+  drafted_by: ai
+sources:
+- ref: aws-docs
+  locator: https://aws.amazon.com/compare/the-difference-between-olap-and-oltp/
+  title: Difference Between OLAP and OLTP
+  language: en
+  accessed: '2026-10-17'
+  retrieved_by: ai
+  supports:
+  - definition
+  - summary

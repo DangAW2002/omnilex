@@ -1,0 +1,24 @@
+id: full-text-search
+domains:
+- it/data/database
+level: 2
+relations:
+  prerequisites:
+  - database-index
+  confusable: []
+  related:
+  - elasticsearch
+  - relational-database
+status: draft
+provenance:
+  drafted_by: ai
+sources:
+- ref: microsoft-learn
+  locator: https://learn.microsoft.com/en-us/sql/relational-databases/search/full-text-search?view=sql-server-ver17
+  title: Full-Text Search - SQL Server
+  language: en
+  accessed: '2026-10-17'
+  retrieved_by: ai
+  supports:
+  - definition
+  - summary

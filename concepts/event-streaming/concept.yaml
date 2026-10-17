@@ -1,0 +1,25 @@
+id: event-streaming
+domains:
+- it/data/data-engineering
+level: 2
+relations:
+  prerequisites:
+  - data-pipeline
+  confusable: []
+  related:
+  - stream-processing
+  - apache-kafka
+  - publish-subscribe
+status: draft
+provenance:
+  drafted_by: ai
+sources:
+- ref: aws-docs
+  locator: https://aws.amazon.com/what-is/streaming-data/
+  title: What is Streaming Data?
+  language: en
+  accessed: '2026-10-17'
+  retrieved_by: ai
+  supports:
+  - definition
+  - summary

@@ -1,0 +1,27 @@
+id: nosql
+domains:
+- it/data/database
+level: 1
+relations:
+  prerequisites:
+  - sql
+  confusable:
+  - relational-database
+  related:
+  - document-database
+  - key-value-store
+  - graph-database
+  - eventual-consistency
+status: draft
+provenance:
+  drafted_by: ai
+sources:
+- ref: aws-docs
+  locator: https://aws.amazon.com/nosql/
+  title: What is NoSQL?
+  language: en
+  accessed: '2026-10-17'
+  retrieved_by: ai
+  supports:
+  - definition
+  - summary

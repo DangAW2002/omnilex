@@ -1,0 +1,27 @@
+id: apache-kafka
+domains:
+- it/data/data-engineering
+- it/web/backend
+level: 2
+relations:
+  prerequisites:
+  - event-streaming
+  - publish-subscribe
+  confusable: []
+  related:
+  - rabbitmq
+  - stream-processing
+  - change-data-capture
+status: draft
+provenance:
+  drafted_by: ai
+sources:
+- ref: apache-org
+  locator: https://kafka.apache.org/documentation/
+  title: Apache Kafka Documentation
+  language: en
+  accessed: '2026-10-17'
+  retrieved_by: ai
+  supports:
+  - definition
+  - summary

@@ -1284,3 +1284,118 @@ cdc:
   reuse: paraphrase-only
   domains: [media/pr-communications]
   verified_license_at: "2026-10-17"
+
+# wave3 data
+apache-org:
+  title: Apache Software Foundation Official Documentation
+  publisher: Apache Software Foundation
+  url: https://www.apache.org
+  type: docs
+  tier: A
+  languages: [en]
+  license: Apache-2.0
+  reuse: paraphrase-only
+  domains: [it/data/data-engineering]
+  verified_license_at: '2026-10-17'
+
+rabbitmq-docs:
+  title: RabbitMQ Official Documentation and Tutorials
+  publisher: Broadcom Inc.
+  url: https://www.rabbitmq.com
+  type: docs
+  tier: A
+  languages: [en]
+  license: MPL-2.0
+  reuse: paraphrase-only
+  domains: [it/web/backend, it/data/data-engineering]
+  verified_license_at: '2026-10-17'
+
+postgresql-docs:
+  title: PostgreSQL Documentation
+  publisher: PostgreSQL Global Development Group
+  url: https://www.postgresql.org/docs/
+  type: docs
+  tier: A
+  languages: [en]
+  license: PostgreSQL
+  reuse: paraphrase-only
+  domains: [it/data/database]
+  verified_license_at: '2026-10-17'
+
+mongodb-docs:
+  title: MongoDB Manual and Documentation
+  publisher: MongoDB, Inc.
+  url: https://www.mongodb.com/docs/
+  type: docs
+  tier: B
+  languages: [en]
+  license: proprietary-docs
+  reuse: paraphrase-only
+  domains: [it/data/database]
+  verified_license_at: '2026-10-17'
+
+redis-docs:
+  title: Redis Documentation
+  publisher: Redis Ltd.
+  url: https://redis.io/docs/
+  type: docs
+  tier: B
+  languages: [en]
+  license: RSALv2
+  reuse: paraphrase-only
+  domains: [it/data/database, it/web/backend]
+  verified_license_at: '2026-10-17'
+
+elasticsearch-docs:
+  title: Elasticsearch Reference Documentation
+  publisher: Elasticsearch B.V.
+  url: https://www.elastic.co/docs/
+  type: docs
+  tier: B
+  languages: [en]
+  license: proprietary-docs
+  reuse: paraphrase-only
+  domains: [it/data/database]
+  verified_license_at: '2026-10-17'
+
+influxdata-docs:
+  title: InfluxData Official Documentation
+  publisher: InfluxData Inc.
+  url: https://docs.influxdata.com
+  type: docs
+  tier: B
+  languages: [en]
+  license: MIT
+  reuse: paraphrase-only
+  domains: [it/data/database, iot/edge-cloud]
+  verified_license_at: '2026-10-17'
+
+cmu-db:
+  title: CMU Database Group Lecture Readings and Papers
+  publisher: Carnegie Mellon University
+  url: https://users.ece.cmu.edu
+  type: research
+  tier: B
+  languages: [en]
+  license: all-rights-reserved
+  reuse: paraphrase-only
+  domains: [it/data/database]
+  verified_license_at: '2026-10-17'
+
+datapot:
+  title: Datapot Kiến thức
+  publisher: Datapot
+  url: https://datapot.vn
+  type: community
+  tier: D
+  languages: [vi]
+  reuse: cite-only
+
+ocd-vn:
+  title: OCD Blog
+  publisher: Công ty Tư vấn Quản lý OCD
+  url: https://ocd.vn
+  type: community
+  tier: D
+  languages: [vi]
+  reuse: cite-only

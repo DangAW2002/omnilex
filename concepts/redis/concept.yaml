@@ -1,0 +1,26 @@
+id: redis
+domains:
+- it/data/database
+- it/web/backend
+level: 2
+relations:
+  prerequisites:
+  - key-value-store
+  - cache
+  confusable: []
+  related:
+  - nosql
+  - publish-subscribe
+status: draft
+provenance:
+  drafted_by: ai
+sources:
+- ref: redis-docs
+  locator: https://redis.io/docs/latest/develop/data-types/
+  title: Redis Data Types Tutorial and Docs
+  language: en
+  accessed: '2026-10-17'
+  retrieved_by: ai
+  supports:
+  - definition
+  - summary

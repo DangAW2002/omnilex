@@ -1,0 +1,25 @@
+id: deadlock
+domains:
+- it/data/database
+- it/software-engineering/programming-concepts
+level: 2
+relations:
+  prerequisites:
+  - database-transaction
+  confusable: []
+  related:
+  - acid
+  - connection-pool
+status: draft
+provenance:
+  drafted_by: ai
+sources:
+- ref: microsoft-learn
+  locator: https://learn.microsoft.com/en-us/sql/relational-databases/sql-server-deadlocks-guide?view=sql-server-ver17
+  title: Deadlocks Guide - SQL Server
+  language: en
+  accessed: '2026-10-17'
+  retrieved_by: ai
+  supports:
+  - definition
+  - summary

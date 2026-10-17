@@ -1,0 +1,25 @@
+id: postgresql
+domains:
+- it/data/database
+level: 2
+relations:
+  prerequisites:
+  - relational-database
+  - sql
+  confusable: []
+  related:
+  - acid
+  - materialized-view
+status: draft
+provenance:
+  drafted_by: ai
+sources:
+- ref: postgresql-docs
+  locator: https://www.postgresql.org/docs/current/index.html
+  title: PostgreSQL Documentation
+  language: en
+  accessed: '2026-10-17'
+  retrieved_by: ai
+  supports:
+  - definition
+  - summary

@@ -1,0 +1,22 @@
+id: budget
+domains:
+  - finance/personal-finance/budget
+level: 1
+relations:
+  prerequisites: []
+  related:
+    - emergency-fund
+    - personal-income-tax
+status: draft
+provenance:
+  drafted_by: ai
+sources:
+  - ref: fdic
+    locator: https://www.fdic.gov/resources/consumers/consumer-news/2022-04.html
+    title: Smart Money Management for Young Adults
+    language: en
+    accessed: '2026-10-16'
+    retrieved_by: ai
+    supports:
+      - definition
+      - summary

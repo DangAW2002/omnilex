@@ -1,0 +1,26 @@
+id: etf
+domains:
+  - finance/investing/funds
+level: 2
+relations:
+  prerequisites:
+    - stock
+    - stock-exchange
+  confusable:
+    - mutual-fund
+  related:
+    - index-fund
+    - diversification
+status: draft
+provenance:
+  drafted_by: ai
+sources:
+  - ref: investor-gov
+    locator: https://www.investor.gov/introduction-investing/investing-basics/glossary/exchange-traded-fund-etf
+    title: Exchange-Traded Fund (ETF)
+    language: en
+    accessed: '2026-10-16'
+    retrieved_by: ai
+    supports:
+      - definition
+      - summary

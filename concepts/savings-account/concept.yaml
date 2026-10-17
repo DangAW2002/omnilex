@@ -1,0 +1,25 @@
+id: savings-account
+domains:
+  - finance/banking/deposits
+level: 1
+relations:
+  prerequisites:
+    - interest-rate
+  confusable:
+    - term-deposit
+  related:
+    - emergency-fund
+    - bank-transfer
+status: draft
+provenance:
+  drafted_by: ai
+sources:
+  - ref: fdic
+    locator: https://www.fdic.gov/resources/consumers/consumer-news/2022-08.html
+    title: The Importance of Deposit Insurance and Understanding Your Coverage
+    language: en
+    accessed: '2026-10-16'
+    retrieved_by: ai
+    supports:
+      - definition
+      - summary

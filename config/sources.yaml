@@ -764,3 +764,88 @@ mit-orbit:
   reuse: paraphrase-only
   domains: [product/product-management]
   verified_license_at: "2026-10-16"
+
+# wave2 fina
+fdic:
+  title: Federal Deposit Insurance Corporation Consumer Resources
+  publisher: Federal Deposit Insurance Corporation
+  url: https://www.fdic.gov
+  type: docs
+  tier: B
+  languages: [en]
+  license: public-domain-us-gov
+  reuse: paraphrase-only
+  domains: [finance/banking, finance/personal-finance]
+  verified_license_at: "2026-10-16"
+
+healthcare-gov:
+  title: HealthCare.gov Glossary
+  publisher: Centers for Medicare & Medicaid Services
+  url: https://www.healthcare.gov/glossary/
+  type: glossary
+  tier: B
+  languages: [en]
+  license: public-domain-us-gov
+  reuse: paraphrase-only
+  domains: [finance/personal-finance]
+  verified_license_at: "2026-10-16"
+
+irs:
+  title: Internal Revenue Service Guidance and Publications
+  publisher: Internal Revenue Service
+  url: https://www.irs.gov
+  type: docs
+  tier: B
+  languages: [en]
+  license: public-domain-us-gov
+  reuse: paraphrase-only
+  domains: [finance/personal-finance]
+  verified_license_at: "2026-10-16"
+
+federal-reserve:
+  title: Federal Reserve Board Payment Systems
+  publisher: Board of Governors of the Federal Reserve System
+  url: https://www.federalreserve.gov
+  type: docs
+  tier: B
+  languages: [en]
+  license: public-domain-us-gov
+  reuse: paraphrase-only
+  domains: [finance/banking]
+  verified_license_at: "2026-10-16"
+
+vietstock:
+  title: Vietstock Finance Portal
+  publisher: Tai Viet Corporation
+  url: https://vietstock.vn
+  type: community
+  tier: D
+  languages: [vi]
+  license: community-terms
+  reuse: paraphrase-only
+  domains: [finance]
+  verified_license_at: "2026-10-16"
+
+vnexpress:
+  title: VnExpress News
+  publisher: FPT Online
+  url: https://vnexpress.net
+  type: community
+  tier: D
+  languages: [vi]
+  license: community-terms
+  reuse: paraphrase-only
+  domains: [finance]
+  verified_license_at: "2026-10-16"
+
+dnse:
+  title: DNSE Học đầu tư
+  publisher: Công ty Cổ phần Chứng khoán DNSE
+  url: https://www.dnse.com.vn/hoc
+  type: article
+  tier: D
+  languages: [vi]
+  license: all-rights-reserved
+  reuse: paraphrase-only
+  domains: [finance/investing]
+  verified_license_at: "2026-10-17"

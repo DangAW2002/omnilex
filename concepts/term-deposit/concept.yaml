@@ -1,0 +1,25 @@
+id: term-deposit
+domains:
+  - finance/banking/deposits
+level: 2
+relations:
+  prerequisites:
+    - savings-account
+    - interest-rate
+  confusable:
+    - savings-account
+  related:
+    - bond
+status: draft
+provenance:
+  drafted_by: ai
+sources:
+  - ref: investor-gov
+    locator: https://www.investor.gov/introduction-investing/investing-basics/investment-products/certificates-deposit-cds
+    title: Certificates of Deposit (CDs)
+    language: en
+    accessed: '2026-10-16'
+    retrieved_by: ai
+    supports:
+      - definition
+      - summary

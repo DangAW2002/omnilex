@@ -1,0 +1,23 @@
+id: mortgage
+domains:
+  - finance/banking/lending
+level: 2
+relations:
+  prerequisites:
+    - interest-rate
+    - principal
+  related:
+    - credit-score
+status: draft
+provenance:
+  drafted_by: ai
+sources:
+  - ref: fdic
+    locator: https://www.fdic.gov/resources/consumers/consumer-assistance-topics/mortgages.html
+    title: Mortgages
+    language: en
+    accessed: '2026-10-16'
+    retrieved_by: ai
+    supports:
+      - definition
+      - summary

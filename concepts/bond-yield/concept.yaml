@@ -1,0 +1,24 @@
+id: bond-yield
+domains:
+  - finance/investing/bonds
+level: 2
+relations:
+  prerequisites:
+    - bond
+    - interest-rate
+  related:
+    - bond
+    - dividend
+status: draft
+provenance:
+  drafted_by: ai
+sources:
+  - ref: investor-gov
+    locator: https://www.investor.gov/introduction-investing/investing-basics/glossary/yield
+    title: Yield
+    language: en
+    accessed: '2026-10-16'
+    retrieved_by: ai
+    supports:
+      - definition
+      - summary

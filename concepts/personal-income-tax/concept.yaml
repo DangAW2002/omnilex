@@ -1,0 +1,21 @@
+id: personal-income-tax
+domains:
+  - finance/personal-finance/tax
+level: 1
+relations:
+  prerequisites: []
+  related:
+    - budget
+status: draft
+provenance:
+  drafted_by: ai
+sources:
+  - ref: irs
+    locator: https://www.irs.gov/businesses/small-businesses-self-employed/what-is-taxable-and-nontaxable-income
+    title: What is taxable and nontaxable income?
+    language: en
+    accessed: '2026-10-16'
+    retrieved_by: ai
+    supports:
+      - definition
+      - summary

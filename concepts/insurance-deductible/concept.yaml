@@ -1,0 +1,22 @@
+id: insurance-deductible
+domains:
+  - finance/personal-finance/insurance
+level: 2
+relations:
+  prerequisites:
+    - insurance-premium
+  related:
+    - insurance-premium
+status: draft
+provenance:
+  drafted_by: ai
+sources:
+  - ref: healthcare-gov
+    locator: https://www.healthcare.gov/glossary/deductible/
+    title: Deductible
+    language: en
+    accessed: '2026-10-16'
+    retrieved_by: ai
+    supports:
+      - definition
+      - summary

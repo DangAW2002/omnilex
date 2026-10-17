@@ -1,0 +1,22 @@
+id: bank-transfer
+domains:
+  - finance/banking/payments
+level: 1
+relations:
+  prerequisites: []
+  related:
+    - e-wallet
+    - savings-account
+status: draft
+provenance:
+  drafted_by: ai
+sources:
+  - ref: federal-reserve
+    locator: https://www.federalreserve.gov/paymentsystems/fedfunds_about.htm
+    title: Fedwire Funds Services
+    language: en
+    accessed: '2026-10-16'
+    retrieved_by: ai
+    supports:
+      - definition
+      - summary

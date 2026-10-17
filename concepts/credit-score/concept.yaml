@@ -1,0 +1,22 @@
+id: credit-score
+domains:
+  - finance/personal-finance/debt-credit
+level: 1
+relations:
+  prerequisites: []
+  related:
+    - credit-card
+    - mortgage
+status: draft
+provenance:
+  drafted_by: ai
+sources:
+  - ref: fdic
+    locator: https://www.fdic.gov/resources/consumers/consumer-news/2021-08.html
+    title: Credit Reports and Credit Scores
+    language: en
+    accessed: '2026-10-16'
+    retrieved_by: ai
+    supports:
+      - definition
+      - summary

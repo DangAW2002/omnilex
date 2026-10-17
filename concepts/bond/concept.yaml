@@ -1,0 +1,26 @@
+id: bond
+domains:
+  - finance/investing/bonds
+level: 1
+relations:
+  prerequisites:
+    - interest-rate
+    - principal
+  confusable:
+    - stock
+  related:
+    - bond-yield
+    - term-deposit
+status: draft
+provenance:
+  drafted_by: ai
+sources:
+  - ref: investor-gov
+    locator: https://www.investor.gov/introduction-investing/investing-basics/investment-products/bonds-or-fixed-income-products/bonds
+    title: Bonds
+    language: en
+    accessed: '2026-10-16'
+    retrieved_by: ai
+    supports:
+      - definition
+      - summary

@@ -1,0 +1,22 @@
+id: emergency-fund
+domains:
+  - finance/personal-finance/saving
+level: 1
+relations:
+  prerequisites:
+    - budget
+  related:
+    - savings-account
+status: draft
+provenance:
+  drafted_by: ai
+sources:
+  - ref: investor-gov
+    locator: https://www.investor.gov/introduction-investing/investing-basics/save-and-invest/save-rainy-day
+    title: Save for a Rainy Day
+    language: en
+    accessed: '2026-10-16'
+    retrieved_by: ai
+    supports:
+      - definition
+      - summary

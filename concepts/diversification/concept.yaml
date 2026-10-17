@@ -1,0 +1,25 @@
+id: diversification
+domains:
+  - finance/investing/portfolio-risk
+level: 1
+relations:
+  prerequisites:
+    - stock
+    - bond
+  related:
+    - volatility
+    - mutual-fund
+    - etf
+status: draft
+provenance:
+  drafted_by: ai
+sources:
+  - ref: investor-gov
+    locator: https://www.investor.gov/introduction-investing/investing-basics/glossary/diversification
+    title: Diversification
+    language: en
+    accessed: '2026-10-16'
+    retrieved_by: ai
+    supports:
+      - definition
+      - summary

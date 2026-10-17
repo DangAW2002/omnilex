@@ -1,0 +1,22 @@
+id: credit-card
+domains:
+  - finance/personal-finance/debt-credit
+level: 1
+relations:
+  prerequisites: []
+  related:
+    - credit-score
+    - overdraft
+status: draft
+provenance:
+  drafted_by: ai
+sources:
+  - ref: fdic
+    locator: https://www.fdic.gov/resources/consumers/consumer-news/2023-08.html
+    title: Credit Cards for Young Adults
+    language: en
+    accessed: '2026-10-16'
+    retrieved_by: ai
+    supports:
+      - definition
+      - summary

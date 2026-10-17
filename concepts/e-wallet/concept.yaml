@@ -1,0 +1,23 @@
+id: e-wallet
+domains:
+  - finance/banking/payments
+level: 1
+relations:
+  prerequisites:
+    - bank-transfer
+  related:
+    - bank-transfer
+    - cryptocurrency
+status: draft
+provenance:
+  drafted_by: ai
+sources:
+  - ref: fdic
+    locator: https://www.fdic.gov/consumer-resource-center/2024-06/banking-third-party-apps
+    title: Banking With Third-Party Apps
+    language: en
+    accessed: '2026-10-16'
+    retrieved_by: ai
+    supports:
+      - definition
+      - summary

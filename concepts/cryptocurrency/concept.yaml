@@ -1,0 +1,22 @@
+id: cryptocurrency
+domains:
+  - finance/investing/digital-assets
+level: 2
+relations:
+  prerequisites:
+    - blockchain
+  related:
+    - token-crypto
+status: draft
+provenance:
+  drafted_by: ai
+sources:
+  - ref: nist-csrc
+    locator: https://csrc.nist.gov/glossary/term/cryptocurrency
+    title: Cryptocurrency
+    language: en
+    accessed: '2026-10-16'
+    retrieved_by: ai
+    supports:
+      - definition
+      - summary

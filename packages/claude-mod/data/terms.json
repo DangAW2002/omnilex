@@ -183,6 +183,38 @@
     "autolink": true
   },
   {
+    "key": "ACID",
+    "match": "exact-case",
+    "concepts": [
+      {
+        "id": "acid",
+        "label": "ACID",
+        "qualifier": "(Cơ sở dữ liệu)",
+        "summary": "Bộ bốn đặc tính cơ bản (Nguyên tử, Nhất quán, Cô lập, Bền vững) bảo đảm các giao dịch cơ sở dữ liệu được xử lý an toàn và tin cậy.",
+        "domains": [
+          "it/data/database"
+        ]
+      }
+    ],
+    "autolink": false
+  },
+  {
+    "key": "tính chất ACID",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "acid",
+        "label": "ACID",
+        "qualifier": "(Cơ sở dữ liệu)",
+        "summary": "Bộ bốn đặc tính cơ bản (Nguyên tử, Nhất quán, Cô lập, Bền vững) bảo đảm các giao dịch cơ sở dữ liệu được xử lý an toàn và tin cậy.",
+        "domains": [
+          "it/data/database"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
     "key": "Cơ cấu chấp hành",
     "match": "any-case",
     "concepts": [
@@ -397,6 +429,128 @@
       }
     ],
     "autolink": true
+  },
+  {
+    "key": "Apache Airflow",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "apache-airflow",
+        "label": "Apache Airflow",
+        "summary": "Nền tảng mã nguồn mở dùng để lập trình, lập lịch và giám sát các luồng công việc kỹ thuật dữ liệu phức tạp.",
+        "domains": [
+          "it/data/data-engineering"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Airflow",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "apache-airflow",
+        "label": "Apache Airflow",
+        "summary": "Nền tảng mã nguồn mở dùng để lập trình, lập lịch và giám sát các luồng công việc kỹ thuật dữ liệu phức tạp.",
+        "domains": [
+          "it/data/data-engineering"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Apache Flink",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "apache-flink",
+        "label": "Apache Flink",
+        "summary": "Khung xử lý phân tán mã nguồn mở dành cho các tính toán có trạng thái trên cả luồng dữ liệu vô hạn và hữu hạn.",
+        "domains": [
+          "it/data/data-engineering"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Flink",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "apache-flink",
+        "label": "Apache Flink",
+        "summary": "Khung xử lý phân tán mã nguồn mở dành cho các tính toán có trạng thái trên cả luồng dữ liệu vô hạn và hữu hạn.",
+        "domains": [
+          "it/data/data-engineering"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Apache Kafka",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "apache-kafka",
+        "label": "Apache Kafka",
+        "summary": "Nền tảng luồng sự kiện phân tán dùng cho đường ống dữ liệu hiệu năng cao, phân tích thời gian thực và tích hợp hệ thống.",
+        "domains": [
+          "it/data/data-engineering",
+          "it/web/backend"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Kafka",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "apache-kafka",
+        "label": "Apache Kafka",
+        "summary": "Nền tảng luồng sự kiện phân tán dùng cho đường ống dữ liệu hiệu năng cao, phân tích thời gian thực và tích hợp hệ thống.",
+        "domains": [
+          "it/data/data-engineering",
+          "it/web/backend"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Apache Spark",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "apache-spark",
+        "label": "Apache Spark",
+        "summary": "Khung điện toán phân tán mã nguồn mở được thiết kế để xử lý nhanh các tập dữ liệu quy mô lớn nhờ cơ chế lưu trữ trên bộ nhớ.",
+        "domains": [
+          "it/data/data-engineering"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Spark",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "apache-spark",
+        "label": "Apache Spark",
+        "summary": "Khung điện toán phân tán mã nguồn mở được thiết kế để xử lý nhanh các tập dữ liệu quy mô lớn nhờ cơ chế lưu trữ trên bộ nhớ.",
+        "domains": [
+          "it/data/data-engineering"
+        ]
+      }
+    ],
+    "autolink": false
   },
   {
     "key": "Application Programming Interface (API)",
@@ -936,6 +1090,36 @@
     "autolink": true
   },
   {
+    "key": "Batch processing",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "batch-processing",
+        "label": "Batch processing",
+        "summary": "Việc thực thi chuỗi công việc tính toán tự động trên các khối dữ liệu lớn đã tích lũy mà không cần can thiệp thủ công.",
+        "domains": [
+          "it/data/data-engineering"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "xử lý theo lô",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "batch-processing",
+        "label": "Batch processing",
+        "summary": "Việc thực thi chuỗi công việc tính toán tự động trên các khối dữ liệu lớn đã tích lũy mà không cần can thiệp thủ công.",
+        "domains": [
+          "it/data/data-engineering"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
     "key": "Batch size",
     "match": "any-case",
     "concepts": [
@@ -1439,6 +1623,54 @@
     "autolink": true
   },
   {
+    "key": "Kinh doanh thông minh",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "business-intelligence",
+        "label": "Kinh doanh thông minh",
+        "summary": "Phương pháp và công nghệ phân tích dữ liệu hoạt động trong quá khứ nhằm hỗ trợ ban lãnh đạo đưa ra quyết định kinh doanh.",
+        "domains": [
+          "it/data/analytics",
+          "it/business-systems/enterprise-apps"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Business intelligence",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "business-intelligence",
+        "label": "Kinh doanh thông minh",
+        "summary": "Phương pháp và công nghệ phân tích dữ liệu hoạt động trong quá khứ nhằm hỗ trợ ban lãnh đạo đưa ra quyết định kinh doanh.",
+        "domains": [
+          "it/data/analytics",
+          "it/business-systems/enterprise-apps"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "BI",
+    "match": "exact-case",
+    "concepts": [
+      {
+        "id": "business-intelligence",
+        "label": "Kinh doanh thông minh",
+        "summary": "Phương pháp và công nghệ phân tích dữ liệu hoạt động trong quá khứ nhằm hỗ trợ ban lãnh đạo đưa ra quyết định kinh doanh.",
+        "domains": [
+          "it/data/analytics",
+          "it/business-systems/enterprise-apps"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
     "key": "Byline",
     "match": "any-case",
     "concepts": [
@@ -1637,6 +1869,51 @@
     "autolink": true
   },
   {
+    "key": "Định lý CAP",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "cap-theorem",
+        "label": "Định lý CAP",
+        "summary": "Nguyên lý cơ bản của điện toán phân tán khẳng định một kho lưu trữ phân tán chỉ có thể đồng thời đáp ứng tối đa hai trong ba bảo đảm, Nhất quán, Sẵn sàng và Chịu lỗi mạng.",
+        "domains": [
+          "it/data/database"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "định lý Brewer",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "cap-theorem",
+        "label": "Định lý CAP",
+        "summary": "Nguyên lý cơ bản của điện toán phân tán khẳng định một kho lưu trữ phân tán chỉ có thể đồng thời đáp ứng tối đa hai trong ba bảo đảm, Nhất quán, Sẵn sàng và Chịu lỗi mạng.",
+        "domains": [
+          "it/data/database"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "CAP theorem",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "cap-theorem",
+        "label": "Định lý CAP",
+        "summary": "Nguyên lý cơ bản của điện toán phân tán khẳng định một kho lưu trữ phân tán chỉ có thể đồng thời đáp ứng tối đa hai trong ba bảo đảm, Nhất quán, Sẵn sàng và Chịu lỗi mạng.",
+        "domains": [
+          "it/data/database"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
     "key": "Báo cáo lưu chuyển tiền tệ",
     "match": "any-case",
     "concepts": [
@@ -1751,6 +2028,36 @@
         "summary": "Kỹ thuật viết prompt yêu cầu mô hình lập luận qua các bước trung gian trước khi đưa ra câu trả lời cuối cùng.",
         "domains": [
           "it/ai-ml/llm-agents"
+        ]
+      }
+    ],
+    "autolink": false
+  },
+  {
+    "key": "Change data capture (CDC)",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "change-data-capture",
+        "label": "Change data capture (CDC)",
+        "summary": "Tập hợp các kỹ thuật và mẫu thiết kế giúp ghi nhận và truyền tải các thao tác sửa đổi dữ liệu cấp dòng ngay khi xảy ra.",
+        "domains": [
+          "it/data/data-engineering"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "CDC",
+    "match": "exact-case",
+    "concepts": [
+      {
+        "id": "change-data-capture",
+        "label": "Change data capture (CDC)",
+        "summary": "Tập hợp các kỹ thuật và mẫu thiết kế giúp ghi nhận và truyền tải các thao tác sửa đổi dữ liệu cấp dòng ngay khi xảy ra.",
+        "domains": [
+          "it/data/data-engineering"
         ]
       }
     ],
@@ -1880,6 +2187,54 @@
     "autolink": true
   },
   {
+    "key": "CMS",
+    "match": "exact-case",
+    "concepts": [
+      {
+        "id": "cms",
+        "label": "CMS",
+        "summary": "Ứng dụng hỗ trợ người dùng biên soạn, chỉnh sửa, lưu trữ và xuất bản nội dung số lên website mà không cần can thiệp mã nguồn.",
+        "domains": [
+          "it/business-systems/enterprise-apps",
+          "media/publishing/distribution-platforms"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Content management system",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "cms",
+        "label": "CMS",
+        "summary": "Ứng dụng hỗ trợ người dùng biên soạn, chỉnh sửa, lưu trữ và xuất bản nội dung số lên website mà không cần can thiệp mã nguồn.",
+        "domains": [
+          "it/business-systems/enterprise-apps",
+          "media/publishing/distribution-platforms"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Hệ thống quản lý nội dung",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "cms",
+        "label": "CMS",
+        "summary": "Ứng dụng hỗ trợ người dùng biên soạn, chỉnh sửa, lưu trữ và xuất bản nội dung số lên website mà không cần can thiệp mã nguồn.",
+        "domains": [
+          "it/business-systems/enterprise-apps",
+          "media/publishing/distribution-platforms"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
     "key": "Constrained Application Protocol (CoAP)",
     "match": "any-case",
     "concepts": [
@@ -1985,6 +2340,51 @@
     "autolink": true
   },
   {
+    "key": "Lưu trữ theo cột",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "columnar-storage",
+        "label": "Lưu trữ theo cột",
+        "summary": "Phương pháp lưu trữ cơ sở dữ liệu nhóm các giá trị theo cột thay vì theo hàng trên ổ đĩa, giúp tăng tốc tối đa các truy vấn tổng hợp phân tích.",
+        "domains": [
+          "it/data/database"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "columnar storage",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "columnar-storage",
+        "label": "Lưu trữ theo cột",
+        "summary": "Phương pháp lưu trữ cơ sở dữ liệu nhóm các giá trị theo cột thay vì theo hàng trên ổ đĩa, giúp tăng tốc tối đa các truy vấn tổng hợp phân tích.",
+        "domains": [
+          "it/data/database"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "cơ sở dữ liệu theo cột",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "columnar-storage",
+        "label": "Lưu trữ theo cột",
+        "summary": "Phương pháp lưu trữ cơ sở dữ liệu nhóm các giá trị theo cột thay vì theo hàng trên ổ đĩa, giúp tăng tốc tối đa các truy vấn tổng hợp phân tích.",
+        "domains": [
+          "it/data/database"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
     "key": "Lãi kép",
     "match": "any-case",
     "concepts": [
@@ -2011,6 +2411,51 @@
         "domains": [
           "finance/personal-finance/saving",
           "finance/investing/portfolio-risk"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Connection pool",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "connection-pool",
+        "label": "Connection pool",
+        "summary": "Bộ nhớ lưu trữ các kết nối cơ sở dữ liệu mở sẵn và có thể tái sử dụng, giúp ứng dụng tránh chi phí thiết lập kết nối mới cho mỗi yêu cầu.",
+        "domains": [
+          "it/data/database"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "hồ chứa kết nối",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "connection-pool",
+        "label": "Connection pool",
+        "summary": "Bộ nhớ lưu trữ các kết nối cơ sở dữ liệu mở sẵn và có thể tái sử dụng, giúp ứng dụng tránh chi phí thiết lập kết nối mới cho mỗi yêu cầu.",
+        "domains": [
+          "it/data/database"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "vùng kết nối",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "connection-pool",
+        "label": "Connection pool",
+        "summary": "Bộ nhớ lưu trữ các kết nối cơ sở dữ liệu mở sẵn và có thể tái sử dụng, giúp ứng dụng tránh chi phí thiết lập kết nối mới cho mỗi yêu cầu.",
+        "domains": [
+          "it/data/database"
         ]
       }
     ],
@@ -2520,6 +2965,36 @@
     "autolink": true
   },
   {
+    "key": "CRM",
+    "match": "exact-case",
+    "concepts": [
+      {
+        "id": "crm",
+        "label": "CRM",
+        "summary": "Hệ thống phần mềm hợp nhất dữ liệu liên hệ, tiến độ thương vụ và lịch sử tương tác với khách hàng trong một nền tảng.",
+        "domains": [
+          "it/business-systems/enterprise-apps"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Customer relationship management",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "crm",
+        "label": "CRM",
+        "summary": "Hệ thống phần mềm hợp nhất dữ liệu liên hệ, tiến độ thương vụ và lịch sử tương tác với khách hàng trong một nền tảng.",
+        "domains": [
+          "it/business-systems/enterprise-apps"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
     "key": "Tiền mã hóa",
     "match": "any-case",
     "concepts": [
@@ -2854,6 +3329,36 @@
     "autolink": true
   },
   {
+    "key": "Quản trị dữ liệu",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "data-governance",
+        "label": "Quản trị dữ liệu",
+        "summary": "Khung quản lý tổng thể về tính sẵn sàng, tính khả dụng, tính toàn vẹn và độ bảo mật của dữ liệu trong doanh nghiệp.",
+        "domains": [
+          "it/data/data-engineering"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "data governance",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "data-governance",
+        "label": "Quản trị dữ liệu",
+        "summary": "Khung quản lý tổng thể về tính sẵn sàng, tính khả dụng, tính toàn vẹn và độ bảo mật của dữ liệu trong doanh nghiệp.",
+        "domains": [
+          "it/data/data-engineering"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
     "key": "Data lake",
     "match": "any-case",
     "concepts": [
@@ -2876,6 +3381,81 @@
         "id": "data-lake",
         "label": "Data lake",
         "summary": "Kho lưu trữ tập trung có khả năng lưu giữ khối lượng lớn dữ liệu thô ở định dạng nguyên bản, từ dữ liệu có cấu trúc đến phi cấu trúc.",
+        "domains": [
+          "it/data/data-engineering"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Data lakehouse",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "data-lakehouse",
+        "label": "Data lakehouse",
+        "summary": "Kiến trúc quản lý dữ liệu hiện đại kết hợp khả năng lưu trữ linh hoạt của data lake với tính toàn vẹn ACID của data warehouse.",
+        "domains": [
+          "it/data/data-engineering"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "lakehouse",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "data-lakehouse",
+        "label": "Data lakehouse",
+        "summary": "Kiến trúc quản lý dữ liệu hiện đại kết hợp khả năng lưu trữ linh hoạt của data lake với tính toàn vẹn ACID của data warehouse.",
+        "domains": [
+          "it/data/data-engineering"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Data lineage",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "data-lineage",
+        "label": "Data lineage",
+        "summary": "Lịch sử và đường đi được ghi nhận của dữ liệu, mô tả chi tiết nguồn gốc, sự di chuyển, các bước biến đổi và đích đến theo thời gian.",
+        "domains": [
+          "it/data/data-engineering"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "nguồn gốc dữ liệu",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "data-lineage",
+        "label": "Data lineage",
+        "summary": "Lịch sử và đường đi được ghi nhận của dữ liệu, mô tả chi tiết nguồn gốc, sự di chuyển, các bước biến đổi và đích đến theo thời gian.",
+        "domains": [
+          "it/data/data-engineering"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "phả hệ dữ liệu",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "data-lineage",
+        "label": "Data lineage",
+        "summary": "Lịch sử và đường đi được ghi nhận của dữ liệu, mô tả chi tiết nguồn gốc, sự di chuyển, các bước biến đổi và đích đến theo thời gian.",
         "domains": [
           "it/data/data-engineering"
         ]
@@ -2908,6 +3488,66 @@
         "summary": "Chuỗi các quy trình tự động hóa thu thập, xử lý và vận chuyển dữ liệu thô từ các nguồn phát sinh về các hệ thống lưu trữ đích.",
         "domains": [
           "it/data/data-engineering"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Chất lượng dữ liệu",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "data-quality",
+        "label": "Chất lượng dữ liệu",
+        "summary": "Thước đo đánh giá mức độ một tập dữ liệu đáp ứng các yêu cầu về tính chính xác, tính đầy đủ, tính nhất quán, tính hợp lệ và độ kịp thời.",
+        "domains": [
+          "it/data/data-engineering"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "data quality",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "data-quality",
+        "label": "Chất lượng dữ liệu",
+        "summary": "Thước đo đánh giá mức độ một tập dữ liệu đáp ứng các yêu cầu về tính chính xác, tính đầy đủ, tính nhất quán, tính hợp lệ và độ kịp thời.",
+        "domains": [
+          "it/data/data-engineering"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Data visualization",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "data-visualization",
+        "label": "Data visualization",
+        "summary": "Kỹ thuật biểu diễn số liệu định lượng thành các đồ thị, biểu đồ và bản đồ trực quan giúp người xem nhận diện xu hướng nhanh chóng.",
+        "domains": [
+          "it/data/analytics"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Trực quan hóa dữ liệu",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "data-visualization",
+        "label": "Data visualization",
+        "summary": "Kỹ thuật biểu diễn số liệu định lượng thành các đồ thị, biểu đồ và bản đồ trực quan giúp người xem nhận diện xu hướng nhanh chóng.",
+        "domains": [
+          "it/data/analytics"
         ]
       }
     ],
@@ -3032,6 +3672,54 @@
         "label": "Migration",
         "qualifier": "(Cơ sở dữ liệu)",
         "summary": "Tập hợp các đoạn mã được quản lý phiên bản nhằm biến đổi và nâng cấp cấu trúc cơ sở dữ liệu an toàn theo thời gian mà không làm mất dữ liệu hiện có.",
+        "domains": [
+          "it/data/database"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Chuẩn hóa dữ liệu",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "database-normalization",
+        "label": "Chuẩn hóa dữ liệu",
+        "qualifier": "(Cơ sở dữ liệu)",
+        "summary": "Quá trình tổ chức lại các bảng trong cơ sở dữ liệu quan hệ theo các dạng chuẩn nhằm giảm thiểu dư thừa dữ liệu và nâng cao tính toàn vẹn.",
+        "domains": [
+          "it/data/database"
+        ]
+      }
+    ],
+    "autolink": false
+  },
+  {
+    "key": "chuẩn hóa cơ sở dữ liệu",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "database-normalization",
+        "label": "Chuẩn hóa dữ liệu",
+        "qualifier": "(Cơ sở dữ liệu)",
+        "summary": "Quá trình tổ chức lại các bảng trong cơ sở dữ liệu quan hệ theo các dạng chuẩn nhằm giảm thiểu dư thừa dữ liệu và nâng cao tính toàn vẹn.",
+        "domains": [
+          "it/data/database"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "normalization",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "database-normalization",
+        "label": "Chuẩn hóa dữ liệu",
+        "qualifier": "(Cơ sở dữ liệu)",
+        "summary": "Quá trình tổ chức lại các bảng trong cơ sở dữ liệu quan hệ theo các dạng chuẩn nhằm giảm thiểu dư thừa dữ liệu và nâng cao tính toàn vẹn.",
         "domains": [
           "it/data/database"
         ]
@@ -3193,6 +3881,54 @@
         "summary": "Tập hợp có cấu trúc gồm các bản ghi dữ liệu, đặc trưng và nhãn mục tiêu được phân chia để huấn luyện, tinh chỉnh và kiểm thử thuật toán.",
         "domains": [
           "it/ai-ml/foundations"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Deadlock",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "deadlock",
+        "label": "Deadlock",
+        "summary": "Tình trạng bế tắc vĩnh viễn khi hai hoặc nhiều tiến trình đồng thời cùng giữ một tài nguyên và chờ đợi tài nguyên do tiến trình kia nắm giữ.",
+        "domains": [
+          "it/data/database",
+          "it/software-engineering/programming-concepts"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "khóa chết",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "deadlock",
+        "label": "Deadlock",
+        "summary": "Tình trạng bế tắc vĩnh viễn khi hai hoặc nhiều tiến trình đồng thời cùng giữ một tài nguyên và chờ đợi tài nguyên do tiến trình kia nắm giữ.",
+        "domains": [
+          "it/data/database",
+          "it/software-engineering/programming-concepts"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "bế tắc",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "deadlock",
+        "label": "Deadlock",
+        "summary": "Tình trạng bế tắc vĩnh viễn khi hai hoặc nhiều tiến trình đồng thời cùng giữ một tài nguyên và chờ đợi tài nguyên do tiến trình kia nắm giữ.",
+        "domains": [
+          "it/data/database",
+          "it/software-engineering/programming-concepts"
         ]
       }
     ],
@@ -3490,6 +4226,36 @@
     "autolink": true
   },
   {
+    "key": "Chuyển đổi số",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "digital-transformation",
+        "label": "Chuyển đổi số",
+        "summary": "Quá trình tích hợp công nghệ số vào mọi mặt hoạt động của tổ chức nhằm đổi mới căn bản cách thức vận hành và cung cấp giá trị cho khách hàng.",
+        "domains": [
+          "it/business-systems/enterprise-apps"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Digital transformation",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "digital-transformation",
+        "label": "Chuyển đổi số",
+        "summary": "Quá trình tích hợp công nghệ số vào mọi mặt hoạt động của tổ chức nhằm đổi mới căn bản cách thức vận hành và cung cấp giá trị cho khách hàng.",
+        "domains": [
+          "it/business-systems/enterprise-apps"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
     "key": "Bản sao kỹ thuật số",
     "match": "any-case",
     "concepts": [
@@ -3775,6 +4541,51 @@
     "autolink": true
   },
   {
+    "key": "Document database",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "document-database",
+        "label": "Document database",
+        "summary": "Loại cơ sở dữ liệu phi quan hệ được thiết kế để lưu trữ, truy xuất và quản lý dữ liệu bán cấu trúc dưới dạng tài liệu như JSON hoặc BSON.",
+        "domains": [
+          "it/data/database"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "cơ sở dữ liệu tài liệu",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "document-database",
+        "label": "Document database",
+        "summary": "Loại cơ sở dữ liệu phi quan hệ được thiết kế để lưu trữ, truy xuất và quản lý dữ liệu bán cấu trúc dưới dạng tài liệu như JSON hoặc BSON.",
+        "domains": [
+          "it/data/database"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "document store",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "document-database",
+        "label": "Document database",
+        "summary": "Loại cơ sở dữ liệu phi quan hệ được thiết kế để lưu trữ, truy xuất và quản lý dữ liệu bán cấu trúc dưới dạng tài liệu như JSON hoặc BSON.",
+        "domains": [
+          "it/data/database"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
     "key": "Kế toán kép",
     "match": "any-case",
     "concepts": [
@@ -3829,6 +4640,36 @@
         "summary": "Phương pháp ghi chép kế toán phản ánh các nghiệp vụ kinh tế tài chính vào ít nhất hai tài khoản kế toán theo quan hệ đối ứng Nợ và Có.",
         "domains": [
           "finance/accounting/bookkeeping"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Nền tảng thương mại điện tử",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "e-commerce-platform",
+        "label": "Nền tảng thương mại điện tử",
+        "summary": "Bộ giải pháp phần mềm cho phép doanh nghiệp thiết lập cửa hàng trực tuyến, quản lý danh mục sản phẩm, giỏ hàng và xử lý đơn hàng.",
+        "domains": [
+          "it/business-systems/enterprise-apps"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "E-commerce platform",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "e-commerce-platform",
+        "label": "Nền tảng thương mại điện tử",
+        "summary": "Bộ giải pháp phần mềm cho phép doanh nghiệp thiết lập cửa hàng trực tuyến, quản lý danh mục sản phẩm, giỏ hàng và xử lý đơn hàng.",
+        "domains": [
+          "it/business-systems/enterprise-apps"
         ]
       }
     ],
@@ -3979,6 +4820,21 @@
         "summary": "Mô hình tính toán phân tán đưa các tác vụ xử lý tính toán và lưu trữ dữ liệu về gần sát vị trí vật lý nơi thông tin được thu thập nhằm tối ưu độ trễ.",
         "domains": [
           "iot/edge-cloud"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Elasticsearch",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "elasticsearch",
+        "label": "Elasticsearch",
+        "summary": "Công cụ tìm kiếm và phân tích phân tán dựa trên định dạng JSON được xây dựng trên Apache Lucene, tối ưu cho tìm kiếm thời gian thực.",
+        "domains": [
+          "it/data/database"
         ]
       }
     ],
@@ -4460,6 +5316,51 @@
     "autolink": true
   },
   {
+    "key": "ERP",
+    "match": "exact-case",
+    "concepts": [
+      {
+        "id": "erp",
+        "label": "ERP",
+        "summary": "Bộ phần mềm quản trị tổng thể kết nối tài chính, mua hàng, tồn kho và sản xuất trên một cơ sở dữ liệu chung.",
+        "domains": [
+          "it/business-systems/enterprise-apps"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Enterprise resource planning",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "erp",
+        "label": "ERP",
+        "summary": "Bộ phần mềm quản trị tổng thể kết nối tài chính, mua hàng, tồn kho và sản xuất trên một cơ sở dữ liệu chung.",
+        "domains": [
+          "it/business-systems/enterprise-apps"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Hoạch định tài nguyên doanh nghiệp",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "erp",
+        "label": "ERP",
+        "summary": "Bộ phần mềm quản trị tổng thể kết nối tài chính, mua hàng, tồn kho và sản xuất trên một cơ sở dữ liệu chung.",
+        "domains": [
+          "it/business-systems/enterprise-apps"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
     "key": "ESP32",
     "match": "any-case",
     "concepts": [
@@ -4544,6 +5445,66 @@
         "summary": "Quy trình tích hợp dữ liệu gồm ba bước: trích xuất từ các nguồn khác nhau, biến đổi theo chuẩn phân tích và nạp vào kho dữ liệu đích.",
         "domains": [
           "it/data/data-engineering"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Event streaming",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "event-streaming",
+        "label": "Event streaming",
+        "summary": "Phương thức thu thập, lưu trữ và phân tích các luồng bản ghi dữ liệu liên tục theo thời gian thực khi sự kiện phát sinh.",
+        "domains": [
+          "it/data/data-engineering"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "luồng sự kiện",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "event-streaming",
+        "label": "Event streaming",
+        "summary": "Phương thức thu thập, lưu trữ và phân tích các luồng bản ghi dữ liệu liên tục theo thời gian thực khi sự kiện phát sinh.",
+        "domains": [
+          "it/data/data-engineering"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Eventual consistency",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "eventual-consistency",
+        "label": "Eventual consistency",
+        "summary": "Mô hình nhất quán trong điện toán phân tán bảo đảm rằng mọi bản sao dữ liệu cuối cùng sẽ hội tụ về cùng một giá trị nếu có đủ thời gian và không có thêm cập nhật mới.",
+        "domains": [
+          "it/data/database"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "tính nhất quán cuối cùng",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "eventual-consistency",
+        "label": "Eventual consistency",
+        "summary": "Mô hình nhất quán trong điện toán phân tán bảo đảm rằng mọi bản sao dữ liệu cuối cùng sẽ hội tụ về cùng một giá trị nếu có đủ thời gian và không có thêm cập nhật mới.",
+        "domains": [
+          "it/data/database"
         ]
       }
     ],
@@ -4814,6 +5775,96 @@
         "summary": "Phần mềm cấp thấp được nạp cố định vào bộ nhớ bất biến của thiết bị, cung cấp các chỉ lệnh nền tảng giúp phần cứng vận hành và tương tác.",
         "domains": [
           "iot/devices-sensors"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Khóa ngoại",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "foreign-key",
+        "label": "Khóa ngoại",
+        "summary": "Cột hoặc tập hợp các cột trong bảng cơ sở dữ liệu quan hệ dùng để tạo mối liên kết dữ liệu giữa hai bảng bằng cách tham chiếu tới khóa chính của bảng khác.",
+        "domains": [
+          "it/data/database"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "foreign key",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "foreign-key",
+        "label": "Khóa ngoại",
+        "summary": "Cột hoặc tập hợp các cột trong bảng cơ sở dữ liệu quan hệ dùng để tạo mối liên kết dữ liệu giữa hai bảng bằng cách tham chiếu tới khóa chính của bảng khác.",
+        "domains": [
+          "it/data/database"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "FK",
+    "match": "exact-case",
+    "concepts": [
+      {
+        "id": "foreign-key",
+        "label": "Khóa ngoại",
+        "summary": "Cột hoặc tập hợp các cột trong bảng cơ sở dữ liệu quan hệ dùng để tạo mối liên kết dữ liệu giữa hai bảng bằng cách tham chiếu tới khóa chính của bảng khác.",
+        "domains": [
+          "it/data/database"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Tìm kiếm toàn văn",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "full-text-search",
+        "label": "Tìm kiếm toàn văn",
+        "summary": "Kỹ thuật tìm kiếm các tài liệu văn bản hoặc trường dữ liệu bằng cách so khớp từ ngữ, gốc từ và cụm từ thông qua chỉ mục đảo.",
+        "domains": [
+          "it/data/database"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "full-text search",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "full-text-search",
+        "label": "Tìm kiếm toàn văn",
+        "summary": "Kỹ thuật tìm kiếm các tài liệu văn bản hoặc trường dữ liệu bằng cách so khớp từ ngữ, gốc từ và cụm từ thông qua chỉ mục đảo.",
+        "domains": [
+          "it/data/database"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "FTS",
+    "match": "exact-case",
+    "concepts": [
+      {
+        "id": "full-text-search",
+        "label": "Tìm kiếm toàn văn",
+        "summary": "Kỹ thuật tìm kiếm các tài liệu văn bản hoặc trường dữ liệu bằng cách so khớp từ ngữ, gốc từ và cụm từ thông qua chỉ mục đảo.",
+        "domains": [
+          "it/data/database"
         ]
       }
     ],
@@ -5156,6 +6207,36 @@
     "autolink": true
   },
   {
+    "key": "Graph database",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "graph-database",
+        "label": "Graph database",
+        "summary": "Cơ sở dữ liệu sử dụng cấu trúc đồ thị gồm các đỉnh, cạnh và thuộc tính để biểu diễn và lưu trữ dữ liệu có tính liên kết chặt chẽ.",
+        "domains": [
+          "it/data/database"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "cơ sở dữ liệu đồ thị",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "graph-database",
+        "label": "Graph database",
+        "summary": "Cơ sở dữ liệu sử dụng cấu trúc đồ thị gồm các đỉnh, cạnh và thuộc tính để biểu diễn và lưu trữ dữ liệu có tính liên kết chặt chẽ.",
+        "domains": [
+          "it/data/database"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
     "key": "GraphQL",
     "match": "any-case",
     "concepts": [
@@ -5404,6 +6485,36 @@
     "autolink": true
   },
   {
+    "key": "Help desk",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "help-desk",
+        "label": "Help desk",
+        "summary": "Bộ phận chuyên trách và phần mềm hỗ trợ tiếp nhận, phân loại, theo dõi và giải quyết các sự cố kỹ thuật hoặc yêu cầu dịch vụ của người dùng.",
+        "domains": [
+          "it/business-systems/enterprise-apps"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Bộ phận trợ giúp",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "help-desk",
+        "label": "Help desk",
+        "summary": "Bộ phận chuyên trách và phần mềm hỗ trợ tiếp nhận, phân loại, theo dõi và giải quyết các sự cố kỹ thuật hoặc yêu cầu dịch vụ của người dùng.",
+        "domains": [
+          "it/business-systems/enterprise-apps"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
     "key": "Hotfix",
     "match": "any-case",
     "concepts": [
@@ -5443,6 +6554,51 @@
         "summary": "Bản sửa lỗi khẩn cấp được tạo và đưa thẳng lên môi trường sản xuất ngoài quy trình phát hành thông thường nhằm khắc phục các sự cố gián đoạn hoặc lỗ hổng bảo mật nghiêm trọng.",
         "domains": [
           "it/software-engineering/practices"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "HRMS",
+    "match": "exact-case",
+    "concepts": [
+      {
+        "id": "hrm-system",
+        "label": "HRMS",
+        "summary": "Phần mềm số hóa công tác nhân sự, theo dõi hồ sơ lao động, lịch chấm công, tiền lương và chế độ đãi ngộ tập trung.",
+        "domains": [
+          "it/business-systems/enterprise-apps"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Human resource management system",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "hrm-system",
+        "label": "HRMS",
+        "summary": "Phần mềm số hóa công tác nhân sự, theo dõi hồ sơ lao động, lịch chấm công, tiền lương và chế độ đãi ngộ tập trung.",
+        "domains": [
+          "it/business-systems/enterprise-apps"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Phần mềm quản trị nhân sự",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "hrm-system",
+        "label": "HRMS",
+        "summary": "Phần mềm số hóa công tác nhân sự, theo dõi hồ sơ lao động, lịch chấm công, tiền lương và chế độ đãi ngộ tập trung.",
+        "domains": [
+          "it/business-systems/enterprise-apps"
         ]
       }
     ],
@@ -6334,6 +7490,51 @@
     "autolink": true
   },
   {
+    "key": "iPaaS",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "ipaas",
+        "label": "iPaaS",
+        "summary": "Nền tảng đám mây cung cấp các công cụ và dịch vụ trung gian giúp kết nối, đồng bộ và quản lý luồng dữ liệu giữa các hệ thống phần mềm phân tán.",
+        "domains": [
+          "it/business-systems/automation"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Integration platform as a service",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "ipaas",
+        "label": "iPaaS",
+        "summary": "Nền tảng đám mây cung cấp các công cụ và dịch vụ trung gian giúp kết nối, đồng bộ và quản lý luồng dữ liệu giữa các hệ thống phần mềm phân tán.",
+        "domains": [
+          "it/business-systems/automation"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Nền tảng tích hợp dưới dạng dịch vụ",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "ipaas",
+        "label": "iPaaS",
+        "summary": "Nền tảng đám mây cung cấp các công cụ và dịch vụ trung gian giúp kết nối, đồng bộ và quản lý luồng dữ liệu giữa các hệ thống phần mềm phân tán.",
+        "domains": [
+          "it/business-systems/automation"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
     "key": "Phát hành lần đầu ra công chúng",
     "match": "any-case",
     "concepts": [
@@ -6373,6 +7574,81 @@
         "summary": "Hoạt động chào bán chứng khoán lần đầu tiên ra công chúng nhằm huy động vốn rộng rãi và đưa cổ phiếu lên giao dịch trên thị trường tập trung.",
         "domains": [
           "finance/corporate-finance/fundraising"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "ITIL",
+    "match": "exact-case",
+    "concepts": [
+      {
+        "id": "itil",
+        "label": "ITIL",
+        "summary": "Bộ khung hướng dẫn thực hành chuẩn mực quốc tế dành cho việc thiết kế, vận hành và quản trị các dịch vụ công nghệ thông tin.",
+        "domains": [
+          "it/business-systems/enterprise-apps"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Information Technology Infrastructure Library",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "itil",
+        "label": "ITIL",
+        "summary": "Bộ khung hướng dẫn thực hành chuẩn mực quốc tế dành cho việc thiết kế, vận hành và quản trị các dịch vụ công nghệ thông tin.",
+        "domains": [
+          "it/business-systems/enterprise-apps"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "ITSM",
+    "match": "exact-case",
+    "concepts": [
+      {
+        "id": "itsm",
+        "label": "ITSM",
+        "summary": "Hoạt động quản trị toàn diện việc thiết kế, cung cấp, vận hành và kiểm soát các dịch vụ công nghệ thông tin phục vụ hoạt động doanh nghiệp.",
+        "domains": [
+          "it/business-systems/enterprise-apps"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "IT service management",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "itsm",
+        "label": "ITSM",
+        "summary": "Hoạt động quản trị toàn diện việc thiết kế, cung cấp, vận hành và kiểm soát các dịch vụ công nghệ thông tin phục vụ hoạt động doanh nghiệp.",
+        "domains": [
+          "it/business-systems/enterprise-apps"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Quản trị dịch vụ công nghệ thông tin",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "itsm",
+        "label": "ITSM",
+        "summary": "Hoạt động quản trị toàn diện việc thiết kế, cung cấp, vận hành và kiểm soát các dịch vụ công nghệ thông tin phục vụ hoạt động doanh nghiệp.",
+        "domains": [
+          "it/business-systems/enterprise-apps"
         ]
       }
     ],
@@ -6479,6 +7755,51 @@
         "summary": "Phương pháp quản lý luồng công việc trực quan nhằm tối ưu hóa dòng chảy giá trị, kiểm soát công việc đang làm và phát hiện điểm nghẽn.",
         "domains": [
           "product/agile-scrum"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Key-value store",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "key-value-store",
+        "label": "Key-value store",
+        "summary": "Loại cơ sở dữ liệu phi quan hệ sử dụng mô hình mảng kết hợp đơn giản, trong đó mỗi phần tử dữ liệu được đánh chỉ mục bằng một khóa riêng biệt.",
+        "domains": [
+          "it/data/database"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "cơ sở dữ liệu khóa - giá trị",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "key-value-store",
+        "label": "Key-value store",
+        "summary": "Loại cơ sở dữ liệu phi quan hệ sử dụng mô hình mảng kết hợp đơn giản, trong đó mỗi phần tử dữ liệu được đánh chỉ mục bằng một khóa riêng biệt.",
+        "domains": [
+          "it/data/database"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "kho khóa - giá trị",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "key-value-store",
+        "label": "Key-value store",
+        "summary": "Loại cơ sở dữ liệu phi quan hệ sử dụng mô hình mảng kết hợp đơn giản, trong đó mỗi phần tử dữ liệu được đánh chỉ mục bằng một khóa riêng biệt.",
+        "domains": [
+          "it/data/database"
         ]
       }
     ],
@@ -7190,6 +8511,36 @@
     "autolink": true
   },
   {
+    "key": "Low-code",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "low-code",
+        "label": "Low-code",
+        "summary": "Phương pháp phát triển phần mềm sử dụng giao diện trực quan và các khối chức năng dựng sẵn, cho phép viết thêm mã nguồn khi cần tùy biến sâu.",
+        "domains": [
+          "it/business-systems/automation"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Nền tảng lập trình tinh giản",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "low-code",
+        "label": "Low-code",
+        "summary": "Phương pháp phát triển phần mềm sử dụng giao diện trực quan và các khối chức năng dựng sẵn, cho phép viết thêm mã nguồn khi cần tùy biến sâu.",
+        "domains": [
+          "it/business-systems/automation"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
     "key": "Sleep mode",
     "match": "any-case",
     "concepts": [
@@ -7440,6 +8791,51 @@
         "summary": "Khung mô hình chiến lược minh họa các giai đoạn tuần tự trong hành trình của khách hàng, từ nhận biết thương hiệu ban đầu, cân nhắc, cho đến quyết định mua hàng và gắn bó.",
         "domains": [
           "media/digital-marketing/metrics-analytics"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Materialized view",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "materialized-view",
+        "label": "Materialized view",
+        "summary": "Đối tượng cơ sở dữ liệu chứa kết quả tính toán sẵn của một câu truy vấn được lưu trữ vật lý trên ổ đĩa để truy xuất tốc độ cao.",
+        "domains": [
+          "it/data/database"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "khung nhìn cụ thể hóa",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "materialized-view",
+        "label": "Materialized view",
+        "summary": "Đối tượng cơ sở dữ liệu chứa kết quả tính toán sẵn của một câu truy vấn được lưu trữ vật lý trên ổ đĩa để truy xuất tốc độ cao.",
+        "domains": [
+          "it/data/database"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "view vật lý",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "materialized-view",
+        "label": "Materialized view",
+        "summary": "Đối tượng cơ sở dữ liệu chứa kết quả tính toán sẵn của một câu truy vấn được lưu trữ vật lý trên ổ đĩa để truy xuất tốc độ cao.",
+        "domains": [
+          "it/data/database"
         ]
       }
     ],
@@ -7970,6 +9366,21 @@
     "autolink": false
   },
   {
+    "key": "MongoDB",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "mongodb",
+        "label": "MongoDB",
+        "summary": "Cơ sở dữ liệu tài liệu mã nguồn mở phổ biến lưu trữ dữ liệu vận hành dưới dạng các tài liệu BSON linh hoạt tương tự JSON.",
+        "domains": [
+          "it/data/database"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
     "key": "Monorepo",
     "match": "any-case",
     "concepts": [
@@ -8433,6 +9844,36 @@
     "autolink": true
   },
   {
+    "key": "No-code",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "no-code",
+        "label": "No-code",
+        "summary": "Phương pháp xây dựng ứng dụng cho phép người dùng không có chuyên môn lập trình tự tạo phần mềm thông qua giao diện kéo thả trực quan.",
+        "domains": [
+          "it/business-systems/automation"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Nền tảng không cần mã nguồn",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "no-code",
+        "label": "No-code",
+        "summary": "Phương pháp xây dựng ứng dụng cho phép người dùng không có chuyên môn lập trình tự tạo phần mềm thông qua giao diện kéo thả trực quan.",
+        "domains": [
+          "it/business-systems/automation"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
     "key": "North Star metric",
     "match": "any-case",
     "concepts": [
@@ -8457,6 +9898,36 @@
         "summary": "Chỉ số cốt lõi duy nhất thể hiện giá trị chân thực mà khách hàng nhận được từ sản phẩm và là chỉ báo dẫn dắt cho sự tăng trưởng kinh doanh bền vững.",
         "domains": [
           "product/metrics"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "NoSQL",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "nosql",
+        "label": "NoSQL",
+        "summary": "Nhóm các hệ thống quản trị cơ sở dữ liệu phi quan hệ được thiết kế để xử lý các mô hình dữ liệu linh hoạt, tốc độ cao và khả năng mở rộng ngang.",
+        "domains": [
+          "it/data/database"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "cơ sở dữ liệu phi quan hệ",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "nosql",
+        "label": "NoSQL",
+        "summary": "Nhóm các hệ thống quản trị cơ sở dữ liệu phi quan hệ được thiết kế để xử lý các mô hình dữ liệu linh hoạt, tốc độ cao và khả năng mở rộng ngang.",
+        "domains": [
+          "it/data/database"
         ]
       }
     ],
@@ -8622,6 +10093,96 @@
         "summary": "Khung quản trị mục tiêu liên kết giữa các mục tiêu định tính đầy tham vọng (Objectives) và các kết quả then chốt định lượng đo đếm được (Key Results).",
         "domains": [
           "product/metrics"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Online Analytical Processing (OLAP)",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "olap",
+        "label": "Online Analytical Processing (OLAP)",
+        "summary": "Nhóm công cụ phần mềm và cơ sở dữ liệu được tối ưu hóa để phân tích đa chiều với tốc độ cao trên khối lượng lớn dữ liệu lịch sử.",
+        "domains": [
+          "it/data/analytics"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "OLAP",
+    "match": "exact-case",
+    "concepts": [
+      {
+        "id": "olap",
+        "label": "Online Analytical Processing (OLAP)",
+        "summary": "Nhóm công cụ phần mềm và cơ sở dữ liệu được tối ưu hóa để phân tích đa chiều với tốc độ cao trên khối lượng lớn dữ liệu lịch sử.",
+        "domains": [
+          "it/data/analytics"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "xử lý phân tích trực tuyến",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "olap",
+        "label": "Online Analytical Processing (OLAP)",
+        "summary": "Nhóm công cụ phần mềm và cơ sở dữ liệu được tối ưu hóa để phân tích đa chiều với tốc độ cao trên khối lượng lớn dữ liệu lịch sử.",
+        "domains": [
+          "it/data/analytics"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Online Transaction Processing (OLTP)",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "oltp",
+        "label": "Online Transaction Processing (OLTP)",
+        "summary": "Nhóm hệ thống xử lý dữ liệu tập trung vào việc thực thi và ghi nhận khối lượng lớn các giao dịch cơ sở dữ liệu ngắn tức thì.",
+        "domains": [
+          "it/data/database"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "OLTP",
+    "match": "exact-case",
+    "concepts": [
+      {
+        "id": "oltp",
+        "label": "Online Transaction Processing (OLTP)",
+        "summary": "Nhóm hệ thống xử lý dữ liệu tập trung vào việc thực thi và ghi nhận khối lượng lớn các giao dịch cơ sở dữ liệu ngắn tức thì.",
+        "domains": [
+          "it/data/database"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "xử lý giao dịch trực tuyến",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "oltp",
+        "label": "Online Transaction Processing (OLTP)",
+        "summary": "Nhóm hệ thống xử lý dữ liệu tập trung vào việc thực thi và ghi nhận khối lượng lớn các giao dịch cơ sở dữ liệu ngắn tức thì.",
+        "domains": [
+          "it/data/database"
         ]
       }
     ],
@@ -8958,6 +10519,38 @@
     "autolink": true
   },
   {
+    "key": "Cổng thanh toán",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "payment-gateway",
+        "label": "Cổng thanh toán",
+        "summary": "Dịch vụ công nghệ trung gian tiếp nhận, mã hóa và truyền tải thông tin giao dịch giữa website bán lẻ với ngân hàng và mạng lưới thẻ.",
+        "domains": [
+          "it/business-systems/enterprise-apps",
+          "finance/banking/payments"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Payment gateway",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "payment-gateway",
+        "label": "Cổng thanh toán",
+        "summary": "Dịch vụ công nghệ trung gian tiếp nhận, mã hóa và truyền tải thông tin giao dịch giữa website bán lẻ với ngân hàng và mạng lưới thẻ.",
+        "domains": [
+          "it/business-systems/enterprise-apps",
+          "finance/banking/payments"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
     "key": "Paywall",
     "match": "any-case",
     "concepts": [
@@ -9222,6 +10815,81 @@
         "summary": "Các mức lãi suất do cơ quan quản lý tiền tệ quốc gia công bố nhằm điều tiết thanh khoản hệ thống và định hướng mặt bằng lãi suất thị trường.",
         "domains": [
           "finance/economics/interest-rates-monetary-policy"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "POS",
+    "match": "exact-case",
+    "concepts": [
+      {
+        "id": "pos-system",
+        "label": "POS",
+        "summary": "Hệ thống thiết bị và phần mềm đặt tại điểm bán để quét mã hàng, thu tiền và đồng bộ lượng hàng tồn kho.",
+        "domains": [
+          "it/business-systems/enterprise-apps"
+        ]
+      }
+    ],
+    "autolink": false
+  },
+  {
+    "key": "Point of sale",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "pos-system",
+        "label": "POS",
+        "summary": "Hệ thống thiết bị và phần mềm đặt tại điểm bán để quét mã hàng, thu tiền và đồng bộ lượng hàng tồn kho.",
+        "domains": [
+          "it/business-systems/enterprise-apps"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Hệ thống điểm bán lẻ",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "pos-system",
+        "label": "POS",
+        "summary": "Hệ thống thiết bị và phần mềm đặt tại điểm bán để quét mã hàng, thu tiền và đồng bộ lượng hàng tồn kho.",
+        "domains": [
+          "it/business-systems/enterprise-apps"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "PostgreSQL",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "postgresql",
+        "label": "PostgreSQL",
+        "summary": "Hệ quản trị cơ sở dữ liệu quan hệ - đối tượng mã nguồn mở mạnh mẽ, nổi tiếng về độ ổn định, tính toàn vẹn và tuân thủ chuẩn SQL.",
+        "domains": [
+          "it/data/database"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Postgres",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "postgresql",
+        "label": "PostgreSQL",
+        "summary": "Hệ quản trị cơ sở dữ liệu quan hệ - đối tượng mã nguồn mở mạnh mẽ, nổi tiếng về độ ổn định, tính toàn vẹn và tuân thủ chuẩn SQL.",
+        "domains": [
+          "it/data/database"
         ]
       }
     ],
@@ -9500,6 +11168,51 @@
         "summary": "Văn bản tuyên bố chính thức được cơ quan, tổ chức hoặc doanh nghiệp phát hành tới báo chí nhằm cung cấp thông tin chuẩn xác về một sự kiện.",
         "domains": [
           "media/pr-communications/media-relations"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Khóa chính",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "primary-key",
+        "label": "Khóa chính",
+        "summary": "Một cột hoặc tập hợp các cột trong bảng cơ sở dữ liệu quan hệ dùng để định danh duy nhất mỗi bản ghi trong bảng đó.",
+        "domains": [
+          "it/data/database"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "primary key",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "primary-key",
+        "label": "Khóa chính",
+        "summary": "Một cột hoặc tập hợp các cột trong bảng cơ sở dữ liệu quan hệ dùng để định danh duy nhất mỗi bản ghi trong bảng đó.",
+        "domains": [
+          "it/data/database"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "PK",
+    "match": "exact-case",
+    "concepts": [
+      {
+        "id": "primary-key",
+        "label": "Khóa chính",
+        "summary": "Một cột hoặc tập hợp các cột trong bảng cơ sở dữ liệu quan hệ dùng để định danh duy nhất mỗi bản ghi trong bảng đó.",
+        "domains": [
+          "it/data/database"
         ]
       }
     ],
@@ -9857,6 +11570,70 @@
     "autolink": true
   },
   {
+    "key": "Publish-subscribe (pub/sub)",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "publish-subscribe",
+        "label": "Publish-subscribe (pub/sub)",
+        "summary": "Mẫu kiến trúc truyền tin bất đồng bộ nơi bên gửi phân loại tin phát mà không gửi trực tiếp đến từng người nhận riêng lẻ.",
+        "domains": [
+          "it/web/backend",
+          "it/data/data-engineering"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "pub/sub",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "publish-subscribe",
+        "label": "Publish-subscribe (pub/sub)",
+        "summary": "Mẫu kiến trúc truyền tin bất đồng bộ nơi bên gửi phân loại tin phát mà không gửi trực tiếp đến từng người nhận riêng lẻ.",
+        "domains": [
+          "it/web/backend",
+          "it/data/data-engineering"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "pub-sub",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "publish-subscribe",
+        "label": "Publish-subscribe (pub/sub)",
+        "summary": "Mẫu kiến trúc truyền tin bất đồng bộ nơi bên gửi phân loại tin phát mà không gửi trực tiếp đến từng người nhận riêng lẻ.",
+        "domains": [
+          "it/web/backend",
+          "it/data/data-engineering"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "xuất bản - đăng ký",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "publish-subscribe",
+        "label": "Publish-subscribe (pub/sub)",
+        "summary": "Mẫu kiến trúc truyền tin bất đồng bộ nơi bên gửi phân loại tin phát mà không gửi trực tiếp đến từng người nhận riêng lẻ.",
+        "domains": [
+          "it/web/backend",
+          "it/data/data-engineering"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
     "key": "Pull request (PR)",
     "match": "any-case",
     "concepts": [
@@ -10017,6 +11794,21 @@
         "summary": "Kỹ thuật nén mô hình chuyển đổi các trọng số từ định dạng dấu phẩy động độ chính xác cao sang số nguyên ít bit hơn nhằm giảm tiêu thụ bộ nhớ và tăng tốc suy luận.",
         "domains": [
           "it/ai-ml/mlops"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "RabbitMQ",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "rabbitmq",
+        "label": "RabbitMQ",
+        "summary": "Phần mềm môi giới tin nhắn mã nguồn mở giúp định tuyến thông điệp giữa các ứng dụng phân tán qua giao thức như AMQP.",
+        "domains": [
+          "it/web/backend"
         ]
       }
     ],
@@ -10248,6 +12040,22 @@
     "autolink": true
   },
   {
+    "key": "Redis",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "redis",
+        "label": "Redis",
+        "summary": "Kho lưu trữ cấu trúc dữ liệu trên bộ nhớ mã nguồn mở được dùng làm cơ sở dữ liệu tốc độ cao, bộ nhớ đệm, môi giới tin nhắn và công cụ luồng.",
+        "domains": [
+          "it/data/database",
+          "it/web/backend"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
     "key": "Refactoring",
     "match": "any-case",
     "concepts": [
@@ -10302,6 +12110,51 @@
         "summary": "Quy trình chạy lại các bộ kiểm thử tự động nhằm đảm bảo những thay đổi mã nguồn hoặc bản vá lỗi mới không làm ảnh hưởng đến các chức năng vốn đang hoạt động bình thường.",
         "domains": [
           "it/software-engineering/testing"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Cơ sở dữ liệu quan hệ",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "relational-database",
+        "label": "Cơ sở dữ liệu quan hệ",
+        "summary": "Loại cơ sở dữ liệu lưu trữ và quản lý thông tin dưới dạng các bảng có cấu trúc xác định trước và liên kết với nhau qua các mối quan hệ logic.",
+        "domains": [
+          "it/data/database"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "RDBMS",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "relational-database",
+        "label": "Cơ sở dữ liệu quan hệ",
+        "summary": "Loại cơ sở dữ liệu lưu trữ và quản lý thông tin dưới dạng các bảng có cấu trúc xác định trước và liên kết với nhau qua các mối quan hệ logic.",
+        "domains": [
+          "it/data/database"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "relational database",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "relational-database",
+        "label": "Cơ sở dữ liệu quan hệ",
+        "summary": "Loại cơ sở dữ liệu lưu trữ và quản lý thông tin dưới dạng các bảng có cấu trúc xác định trước và liên kết với nhau qua các mối quan hệ logic.",
+        "domains": [
+          "it/data/database"
         ]
       }
     ],
@@ -10650,6 +12503,51 @@
         "summary": "Hành động vận hành hoàn nguyên ứng dụng, tệp cấu hình hoặc cơ sở dữ liệu về phiên bản ổn định đã được kiểm chứng trước đó.",
         "domains": [
           "it/devops/sre-operations"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "RPA",
+    "match": "exact-case",
+    "concepts": [
+      {
+        "id": "rpa",
+        "label": "RPA",
+        "summary": "Công nghệ tự động hóa sử dụng robot phần mềm để mô phỏng lại các thao tác giao diện người dùng lặp đi lặp lại theo quy tắc định sẵn.",
+        "domains": [
+          "it/business-systems/automation"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Robotic process automation",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "rpa",
+        "label": "RPA",
+        "summary": "Công nghệ tự động hóa sử dụng robot phần mềm để mô phỏng lại các thao tác giao diện người dùng lặp đi lặp lại theo quy tắc định sẵn.",
+        "domains": [
+          "it/business-systems/automation"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Tự động hóa quy trình bằng robot",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "rpa",
+        "label": "RPA",
+        "summary": "Công nghệ tự động hóa sử dụng robot phần mềm để mô phỏng lại các thao tác giao diện người dùng lặp đi lặp lại theo quy tắc định sẵn.",
+        "domains": [
+          "it/business-systems/automation"
         ]
       }
     ],
@@ -12463,6 +14361,36 @@
     "autolink": true
   },
   {
+    "key": "Stream processing",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "stream-processing",
+        "label": "Stream processing",
+        "summary": "Quá trình tiếp nhận và tính toán liên tục trên các bản ghi dữ liệu theo thời gian thực ngay khi chúng vừa phát sinh.",
+        "domains": [
+          "it/data/data-engineering"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "xử lý luồng",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "stream-processing",
+        "label": "Stream processing",
+        "summary": "Quá trình tiếp nhận và tính toán liên tục trên các bản ghi dữ liệu theo thời gian thực ngay khi chúng vừa phát sinh.",
+        "domains": [
+          "it/data/data-engineering"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
     "key": "Structured output",
     "match": "any-case",
     "concepts": [
@@ -12761,6 +14689,54 @@
         "summary": "Tốc độ mà một hệ thống máy tính, kênh truyền thông hoặc ứng dụng xử lý và chuyển giao thành công dữ liệu hoặc giao dịch trong một đơn vị thời gian.",
         "domains": [
           "it/infrastructure/networking"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Time-series database",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "time-series-database",
+        "label": "Time-series database",
+        "summary": "Cơ sở dữ liệu được tối ưu hóa để lưu trữ, truy vấn và phân tích các chuỗi điểm dữ liệu được đánh chỉ mục theo thứ tự thời gian.",
+        "domains": [
+          "it/data/database",
+          "iot/edge-cloud"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "cơ sở dữ liệu chuỗi thời gian",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "time-series-database",
+        "label": "Time-series database",
+        "summary": "Cơ sở dữ liệu được tối ưu hóa để lưu trữ, truy vấn và phân tích các chuỗi điểm dữ liệu được đánh chỉ mục theo thứ tự thời gian.",
+        "domains": [
+          "it/data/database",
+          "iot/edge-cloud"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "TSDB",
+    "match": "exact-case",
+    "concepts": [
+      {
+        "id": "time-series-database",
+        "label": "Time-series database",
+        "summary": "Cơ sở dữ liệu được tối ưu hóa để lưu trữ, truy vấn và phân tích các chuỗi điểm dữ liệu được đánh chỉ mục theo thứ tự thời gian.",
+        "domains": [
+          "it/data/database",
+          "iot/edge-cloud"
         ]
       }
     ],
@@ -13874,6 +15850,51 @@
         "domains": [
           "iot/connectivity-protocols",
           "it/infrastructure/networking"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Tự động hóa quy trình",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "workflow-automation",
+        "label": "Tự động hóa quy trình",
+        "summary": "Thiết lập chuỗi các bước công việc tự động kích hoạt và xử lý dữ liệu giữa các ứng dụng nghiệp vụ theo các quy tắc định sẵn.",
+        "domains": [
+          "it/business-systems/automation"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Workflow automation",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "workflow-automation",
+        "label": "Tự động hóa quy trình",
+        "summary": "Thiết lập chuỗi các bước công việc tự động kích hoạt và xử lý dữ liệu giữa các ứng dụng nghiệp vụ theo các quy tắc định sẵn.",
+        "domains": [
+          "it/business-systems/automation"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Tự động hóa quy trình làm việc",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "workflow-automation",
+        "label": "Tự động hóa quy trình",
+        "summary": "Thiết lập chuỗi các bước công việc tự động kích hoạt và xử lý dữ liệu giữa các ứng dụng nghiệp vụ theo các quy tắc định sẵn.",
+        "domains": [
+          "it/business-systems/automation"
         ]
       }
     ],

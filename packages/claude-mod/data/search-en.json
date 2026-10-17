@@ -78,6 +78,25 @@
     "status": "draft"
   },
   {
+    "id": "acid",
+    "label": "ACID",
+    "qualifier": "(Database)",
+    "aliases": [
+      "ACID properties"
+    ],
+    "loanwords": [],
+    "plain_descriptions": [
+      "four safety rules guaranteeing that database transactions finish completely without corruption",
+      "the core database promise that financial transactions either succeed 100% or leave no trace"
+    ],
+    "summary": "A set of four fundamental properties (Atomicity, Consistency, Isolation, Durability) that guarantee database transactions are processed reliably.",
+    "domains": [
+      "it/data/database"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
     "id": "actuator",
     "label": "Actuator",
     "aliases": [],
@@ -181,6 +200,79 @@
     "summary": "An informant who shares factual intelligence or testimony with a reporter under an agreement that their personal identity will remain confidential.",
     "domains": [
       "media/journalism/ethics"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
+    "id": "apache-airflow",
+    "label": "Apache Airflow",
+    "aliases": [
+      "Airflow"
+    ],
+    "loanwords": [],
+    "plain_descriptions": [
+      "a tool that schedules and monitors multi-step data pipelines using Python code",
+      "an automated task manager that runs database extraction and report scripts in orderly sequence"
+    ],
+    "summary": "An open-source platform used to programmatically author, schedule, and monitor complex data engineering workflows.",
+    "domains": [
+      "it/data/data-engineering"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
+    "id": "apache-flink",
+    "label": "Apache Flink",
+    "aliases": [
+      "Flink"
+    ],
+    "loanwords": [],
+    "plain_descriptions": [
+      "an open-source framework designed for real-time calculations on continuous data streams",
+      "a high-speed event computation engine that tracks accurate running totals without stopping"
+    ],
+    "summary": "An open-source distributed engine engineered for low-latency stateful stream calculations across finite and infinite event feeds.",
+    "domains": [
+      "it/data/data-engineering"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
+    "id": "apache-kafka",
+    "label": "Apache Kafka",
+    "aliases": [
+      "Kafka"
+    ],
+    "loanwords": [],
+    "plain_descriptions": [
+      "a distributed software platform that records continuous streams of records across multiple servers",
+      "an enterprise real-time message bus that stores event history reliably and replays events on demand"
+    ],
+    "summary": "A distributed event streaming platform used for high-throughput data pipelines, streaming analytics, and system integration.",
+    "domains": [
+      "it/data/data-engineering",
+      "it/web/backend"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
+    "id": "apache-spark",
+    "label": "Apache Spark",
+    "aliases": [
+      "Spark"
+    ],
+    "loanwords": [],
+    "plain_descriptions": [
+      "a fast big-data computing engine that processes massive datasets in computer memory",
+      "an open-source framework for running large data transformations and machine learning across clusters"
+    ],
+    "summary": "An open-source distributed computing framework designed for fast processing of large-scale datasets using in-memory abstractions.",
+    "domains": [
+      "it/data/data-engineering"
     ],
     "level": 2,
     "status": "draft"
@@ -411,6 +503,24 @@
     "status": "draft"
   },
   {
+    "id": "batch-processing",
+    "label": "Batch processing",
+    "aliases": [
+      "bulk processing"
+    ],
+    "loanwords": [],
+    "plain_descriptions": [
+      "processing collected piles of business records all together at a scheduled time",
+      "running heavy calculation jobs overnight over yesterday's accumulated sales records"
+    ],
+    "summary": "The execution of a series of non-interactive computing jobs on large accumulated blocks of data without manual intervention.",
+    "domains": [
+      "it/data/data-engineering"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
     "id": "batch-size",
     "label": "Batch size",
     "aliases": [],
@@ -611,6 +721,25 @@
     "status": "draft"
   },
   {
+    "id": "business-intelligence",
+    "label": "Business intelligence (BI)",
+    "aliases": [
+      "BI"
+    ],
+    "loanwords": [],
+    "plain_descriptions": [
+      "tools that turn raw corporate spreadsheets into visual performance reports",
+      "software that queries past sales and operational data to spot trends"
+    ],
+    "summary": "Strategies and software technologies used by enterprises to analyze historical business data and guide operational decision-making.",
+    "domains": [
+      "it/data/analytics",
+      "it/business-systems/enterprise-apps"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
     "id": "byline",
     "label": "Byline",
     "aliases": [],
@@ -683,6 +812,24 @@
     "status": "draft"
   },
   {
+    "id": "cap-theorem",
+    "label": "CAP theorem",
+    "aliases": [
+      "Brewer's theorem"
+    ],
+    "loanwords": [],
+    "plain_descriptions": [
+      "a fundamental rule stating distributed systems can only provide two out of consistency, availability, and partition tolerance",
+      "the reality that when cloud networks get cut, a database must choose between giving fresh answers or staying online"
+    ],
+    "summary": "A fundamental principle of distributed computing stating that a distributed data store can simultaneously provide at most two out of three guarantees, Consistency, Availability, and Partition tolerance.",
+    "domains": [
+      "it/data/database"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
     "id": "cash-flow-statement",
     "label": "Cash flow statement",
     "aliases": [
@@ -733,6 +880,24 @@
     "summary": "A prompting technique that asks a model to reason through intermediate steps before it gives the final answer.",
     "domains": [
       "it/ai-ml/llm-agents"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
+    "id": "change-data-capture",
+    "label": "Change data capture (CDC)",
+    "aliases": [
+      "CDC"
+    ],
+    "loanwords": [],
+    "plain_descriptions": [
+      "identifying and tracking row changes in a database so other systems update automatically",
+      "watching the database transaction log to copy edits to search indexes and caches in real time"
+    ],
+    "summary": "A set of software design patterns and techniques used to capture and deliver row-level data modifications as they happen.",
+    "domains": [
+      "it/data/data-engineering"
     ],
     "level": 2,
     "status": "draft"
@@ -796,6 +961,25 @@
     "status": "draft"
   },
   {
+    "id": "cms",
+    "label": "Content management system (CMS)",
+    "aliases": [
+      "CMS"
+    ],
+    "loanwords": [],
+    "plain_descriptions": [
+      "website platform for writing and publishing articles without code",
+      "admin dashboard where editors manage web pages and media assets"
+    ],
+    "summary": "Software that lets editors create, format, publish, and organize digital content on the web without editing source code directly.",
+    "domains": [
+      "it/business-systems/enterprise-apps",
+      "media/publishing/distribution-platforms"
+    ],
+    "level": 1,
+    "status": "draft"
+  },
+  {
     "id": "coap",
     "label": "Constrained Application Protocol (CoAP)",
     "aliases": [
@@ -851,6 +1035,25 @@
     "status": "draft"
   },
   {
+    "id": "columnar-storage",
+    "label": "Columnar storage",
+    "aliases": [
+      "columnar database",
+      "column-oriented storage"
+    ],
+    "loanwords": [],
+    "plain_descriptions": [
+      "organizing database records by columns instead of rows on disk",
+      "grouping all prices together on storage drives so summing sales skips reading customer names"
+    ],
+    "summary": "A database storage method where data blocks group values by column across records rather than by row, accelerating analytical aggregation queries.",
+    "domains": [
+      "it/data/database"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
     "id": "compound-interest",
     "label": "Compound Interest",
     "aliases": [
@@ -868,6 +1071,24 @@
     ],
     "level": 1,
     "status": "reviewed"
+  },
+  {
+    "id": "connection-pool",
+    "label": "Connection pool",
+    "aliases": [
+      "database connection pool"
+    ],
+    "loanwords": [],
+    "plain_descriptions": [
+      "a shared cache of open database connections ready for apps to use without reconnecting",
+      "keeping pre-warmed database lines open so web requests avoid slow network handshakes"
+    ],
+    "summary": "A cache of open, reusable database connection objects maintained so that applications avoid the high overhead of establishing new connections for each request.",
+    "domains": [
+      "it/data/database"
+    ],
+    "level": 2,
+    "status": "draft"
   },
   {
     "id": "container-image",
@@ -1138,6 +1359,24 @@
     "status": "draft"
   },
   {
+    "id": "crm",
+    "label": "Customer relationship management (CRM)",
+    "aliases": [
+      "CRM"
+    ],
+    "loanwords": [],
+    "plain_descriptions": [
+      "software that tracks customer interactions and deals",
+      "a shared database where sales and support log conversations"
+    ],
+    "summary": "A business system that organizes customer details, communications, and sales opportunities in one shared workspace.",
+    "domains": [
+      "it/business-systems/enterprise-apps"
+    ],
+    "level": 1,
+    "status": "draft"
+  },
+  {
     "id": "cryptocurrency",
     "label": "Cryptocurrency",
     "aliases": [
@@ -1277,6 +1516,24 @@
     "status": "draft"
   },
   {
+    "id": "data-governance",
+    "label": "Data governance",
+    "aliases": [
+      "enterprise data governance"
+    ],
+    "loanwords": [],
+    "plain_descriptions": [
+      "the company rules and processes that ensure data stays secure, accurate, and properly used",
+      "managing who owns, controls, and has permission to access business records across an organization"
+    ],
+    "summary": "The overall management framework of data availability, usability, integrity, and security across an enterprise.",
+    "domains": [
+      "it/data/data-engineering"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
     "id": "data-lake",
     "label": "Data lake",
     "aliases": [
@@ -1288,6 +1545,42 @@
       "a flexible storage pool holding audio, text, images, and logs without forcing strict table structures"
     ],
     "summary": "A scalable storage repository designed to retain massive volumes of raw multi-format information without requiring an upfront database schema.",
+    "domains": [
+      "it/data/data-engineering"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
+    "id": "data-lakehouse",
+    "label": "Data lakehouse",
+    "aliases": [
+      "lakehouse"
+    ],
+    "loanwords": [],
+    "plain_descriptions": [
+      "a modern data storage setup combining cheap file storage with fast database query tables",
+      "an architecture that lets companies run business reports and machine learning directly on raw data files"
+    ],
+    "summary": "A modern data management architecture that combines the cost-effective storage of data lakes with the ACID transactions of data warehouses.",
+    "domains": [
+      "it/data/data-engineering"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
+    "id": "data-lineage",
+    "label": "Data lineage",
+    "aliases": [
+      "pipeline lineage"
+    ],
+    "loanwords": [],
+    "plain_descriptions": [
+      "tracing the full journey of information from where it was created to every final report",
+      "a visual family tree showing how raw database records get transformed along the way"
+    ],
+    "summary": "The recorded lifecycle and lifecycle path of data that documents its origin, movement, transformations, and destinations over time.",
     "domains": [
       "it/data/data-engineering"
     ],
@@ -1308,6 +1601,40 @@
       "it/data/data-engineering"
     ],
     "level": 2,
+    "status": "draft"
+  },
+  {
+    "id": "data-quality",
+    "label": "Data quality",
+    "aliases": [
+      "dataset quality"
+    ],
+    "loanwords": [],
+    "plain_descriptions": [
+      "how reliable, clean, and complete a collection of records is for business use",
+      "checking that information is accurate, up to date, and free from duplicate entries"
+    ],
+    "summary": "The measurement of how well a dataset satisfies requirements for accuracy, completeness, consistency, validity, and timeliness.",
+    "domains": [
+      "it/data/data-engineering"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
+    "id": "data-visualization",
+    "label": "Data visualization",
+    "aliases": [],
+    "loanwords": [],
+    "plain_descriptions": [
+      "turning raw numbers into charts and graphs that people can understand",
+      "visual displays like heatmaps and line plots that show trends in data"
+    ],
+    "summary": "The practice of representing quantitative data graphically through charts, maps, and visual plots to communicate insights clearly.",
+    "domains": [
+      "it/data/analytics"
+    ],
+    "level": 1,
     "status": "draft"
   },
   {
@@ -1362,6 +1689,26 @@
       "a step-by-step code file for adding new columns or tables to live databases"
     ],
     "summary": "A version-controlled set of programmatic scripts that safely alter database schemas over time without losing existing data.",
+    "domains": [
+      "it/data/database"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
+    "id": "database-normalization",
+    "label": "Normalization",
+    "qualifier": "(Database)",
+    "aliases": [
+      "database normalization",
+      "relational normalization"
+    ],
+    "loanwords": [],
+    "plain_descriptions": [
+      "organizing database tables to eliminate duplicate copies of the same information",
+      "structuring relational tables so every piece of data is stored in exactly one logical place"
+    ],
+    "summary": "The process of structuring a relational database in accordance with normal forms to reduce data redundancy and improve data integrity.",
     "domains": [
       "it/data/database"
     ],
@@ -1442,6 +1789,25 @@
       "it/ai-ml/foundations"
     ],
     "level": 1,
+    "status": "draft"
+  },
+  {
+    "id": "deadlock",
+    "label": "Deadlock",
+    "aliases": [
+      "mutual blocking"
+    ],
+    "loanwords": [],
+    "plain_descriptions": [
+      "a freeze where two programs each wait forever for the resource held by the other",
+      "a traffic gridlock in database memory where transactions cannot move forward or release locks"
+    ],
+    "summary": "A permanent state of mutual blocking where two or more concurrent processes each hold a resource while waiting for another resource held by the other.",
+    "domains": [
+      "it/data/database",
+      "it/software-engineering/programming-concepts"
+    ],
+    "level": 2,
     "status": "draft"
   },
   {
@@ -1590,6 +1956,22 @@
     "status": "draft"
   },
   {
+    "id": "digital-transformation",
+    "label": "Digital transformation",
+    "aliases": [],
+    "loanwords": [],
+    "plain_descriptions": [
+      "rewiring an entire business to operate using modern software and cloud tools",
+      "replacing paper forms and outdated legacy routines with digital services"
+    ],
+    "summary": "The strategic and cultural integration of digital technology across all areas of an organization to fundamentally modernize operations and deliver customer value.",
+    "domains": [
+      "it/business-systems/enterprise-apps"
+    ],
+    "level": 1,
+    "status": "draft"
+  },
+  {
     "id": "digital-twin",
     "label": "Digital twin",
     "aliases": [],
@@ -1701,6 +2083,25 @@
     "status": "draft"
   },
   {
+    "id": "document-database",
+    "label": "Document database",
+    "aliases": [
+      "document-oriented database",
+      "document store"
+    ],
+    "loanwords": [],
+    "plain_descriptions": [
+      "a database that stores records as self-contained JSON-like digital files",
+      "a flexible system where customer records hold their own nested lists without joining tables"
+    ],
+    "summary": "A specialized NoSQL database architecture built to store, retrieve, and manage semi-structured data formatted as documents like JSON or BSON.",
+    "domains": [
+      "it/data/database"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
     "id": "double-entry-bookkeeping",
     "label": "Double-entry bookkeeping",
     "aliases": [
@@ -1714,6 +2115,22 @@
     "summary": "The universal bookkeeping method wherein every economic transaction is recorded in at least two separate ledger accounts with offsetting debit and credit entries.",
     "domains": [
       "finance/accounting/bookkeeping"
+    ],
+    "level": 1,
+    "status": "draft"
+  },
+  {
+    "id": "e-commerce-platform",
+    "label": "E-commerce platform",
+    "aliases": [],
+    "loanwords": [],
+    "plain_descriptions": [
+      "software engine that runs web stores with shopping carts and inventory",
+      "online storefront software where merchants list items and process orders"
+    ],
+    "summary": "A comprehensive software suite that enables businesses to build online stores, showcase product catalogs, manage shopping carts, and fulfill digital orders.",
+    "domains": [
+      "it/business-systems/enterprise-apps"
     ],
     "level": 1,
     "status": "draft"
@@ -1783,6 +2200,22 @@
     "summary": "A distributed computing paradigm that brings computational logic and data storage closer to the physical devices and sensors where information is generated.",
     "domains": [
       "iot/edge-cloud"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
+    "id": "elasticsearch",
+    "label": "Elasticsearch",
+    "aliases": [],
+    "loanwords": [],
+    "plain_descriptions": [
+      "a fast search and analytics engine that combs through millions of documents in seconds",
+      "software built to search articles by keywords, filter store catalogs, and monitor server log errors"
+    ],
+    "summary": "A distributed, JSON-based search and analytics engine built on Apache Lucene, designed for horizontal scalability, reliability, and real-time search.",
+    "domains": [
+      "it/data/database"
     ],
     "level": 2,
     "status": "draft"
@@ -2008,6 +2441,24 @@
     "status": "draft"
   },
   {
+    "id": "erp",
+    "label": "Enterprise resource planning (ERP)",
+    "aliases": [
+      "ERP"
+    ],
+    "loanwords": [],
+    "plain_descriptions": [
+      "master software that runs company finances and inventory",
+      "central operational spine connecting accounting and warehouse data"
+    ],
+    "summary": "An integrated suite of core business applications that synchronizes finance, purchasing, inventory, and production across an organization.",
+    "domains": [
+      "it/business-systems/enterprise-apps"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
     "id": "esp32",
     "label": "ESP32",
     "aliases": [],
@@ -2058,6 +2509,42 @@
     "summary": "A data integration process that extracts data from multiple sources, transforms it to meet analytical requirements, and loads it into a destination store.",
     "domains": [
       "it/data/data-engineering"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
+    "id": "event-streaming",
+    "label": "Event streaming",
+    "aliases": [
+      "data streaming"
+    ],
+    "loanwords": [],
+    "plain_descriptions": [
+      "continuously capturing and processing digital records the moment an action happens",
+      "flowing operational updates across software applications without waiting for night-time file exports"
+    ],
+    "summary": "The practice of capturing, storing, and analyzing continuous flows of data records in real time as events occur.",
+    "domains": [
+      "it/data/data-engineering"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
+    "id": "eventual-consistency",
+    "label": "Eventual consistency",
+    "aliases": [
+      "optimistic consistency"
+    ],
+    "loanwords": [],
+    "plain_descriptions": [
+      "a promise that all database copies will match eventually if no new edits are made",
+      "a design where your friend might see your social post a few seconds after you hit publish"
+    ],
+    "summary": "A consistency model used in distributed computing where all replicas of a data item will eventually converge to the same value given sufficient time without new updates.",
+    "domains": [
+      "it/data/database"
     ],
     "level": 2,
     "status": "draft"
@@ -2185,6 +2672,43 @@
       "iot/devices-sensors"
     ],
     "level": 1,
+    "status": "draft"
+  },
+  {
+    "id": "foreign-key",
+    "label": "Foreign key",
+    "aliases": [
+      "FK"
+    ],
+    "loanwords": [],
+    "plain_descriptions": [
+      "a column in one table that points to the unique identifier of a row in another table",
+      "a database link ensuring an order cannot be created for a customer who does not exist"
+    ],
+    "summary": "A column or set of columns in a relational database table that provides a link between data in two tables by referencing the primary key of another table.",
+    "domains": [
+      "it/data/database"
+    ],
+    "level": 1,
+    "status": "draft"
+  },
+  {
+    "id": "full-text-search",
+    "label": "Full-text search",
+    "aliases": [
+      "FTS",
+      "text search"
+    ],
+    "loanwords": [],
+    "plain_descriptions": [
+      "searching for words and phrases across large documents instead of exact database matches",
+      "a search technique that understands word roots, ignores common filler words, and handles typos"
+    ],
+    "summary": "A technique for searching computer-stored documents or database text fields by matching words, linguistic stems, and phrases against an inverted index.",
+    "domains": [
+      "it/data/database"
+    ],
+    "level": 2,
     "status": "draft"
   },
   {
@@ -2353,6 +2877,24 @@
     "status": "draft"
   },
   {
+    "id": "graph-database",
+    "label": "Graph database",
+    "aliases": [
+      "graph store"
+    ],
+    "loanwords": [],
+    "plain_descriptions": [
+      "a specialized database that stores connections and friendships as first-class relationships",
+      "a database engine built to find paths and links between people, roads, or fraud rings quickly"
+    ],
+    "summary": "A database that uses graph structures with nodes, edges, and properties to represent and store interconnected data.",
+    "domains": [
+      "it/data/database"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
     "id": "graphql",
     "label": "GraphQL",
     "aliases": [],
@@ -2474,6 +3016,22 @@
     "status": "draft"
   },
   {
+    "id": "help-desk",
+    "label": "Help desk",
+    "aliases": [],
+    "loanwords": [],
+    "plain_descriptions": [
+      "support software that converts customer complaints into trackable tickets",
+      "central team and portal where employees or customers report technical glitches"
+    ],
+    "summary": "A dedicated support service and software application designed to log, route, track, and resolve user technical problems and service requests.",
+    "domains": [
+      "it/business-systems/enterprise-apps"
+    ],
+    "level": 1,
+    "status": "draft"
+  },
+  {
     "id": "hotfix",
     "label": "Hotfix",
     "aliases": [],
@@ -2487,6 +3045,24 @@
       "it/software-engineering/practices"
     ],
     "level": 2,
+    "status": "draft"
+  },
+  {
+    "id": "hrm-system",
+    "label": "Human resource management system (HRMS)",
+    "aliases": [
+      "HRMS"
+    ],
+    "loanwords": [],
+    "plain_descriptions": [
+      "portal for employee contracts, leave requests, and payroll records",
+      "company software tracking hiring, attendance, and benefits"
+    ],
+    "summary": "Software that automates personnel administration by maintaining worker records, attendance tracking, payroll, and benefits in one platform.",
+    "domains": [
+      "it/business-systems/enterprise-apps"
+    ],
+    "level": 1,
     "status": "draft"
   },
   {
@@ -2875,6 +3451,24 @@
     "status": "draft"
   },
   {
+    "id": "ipaas",
+    "label": "Integration platform as a service (iPaaS)",
+    "aliases": [
+      "iPaaS"
+    ],
+    "loanwords": [],
+    "plain_descriptions": [
+      "cloud service that links different enterprise software and databases together",
+      "central hub that translates and moves data between cloud and on-premise apps"
+    ],
+    "summary": "A cloud-based suite of services that standardizes, orchestrates, and monitors data integration flows between disparate applications across cloud and on-premises environments.",
+    "domains": [
+      "it/business-systems/automation"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
     "id": "ipo",
     "label": "Initial Public Offering (IPO)",
     "aliases": [
@@ -2889,6 +3483,42 @@
     "summary": "The inaugural public sale of corporate stock on a securities exchange, transforming a private company into a publicly traded entity.",
     "domains": [
       "finance/corporate-finance/fundraising"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
+    "id": "itil",
+    "label": "ITIL",
+    "aliases": [
+      "Information Technology Infrastructure Library"
+    ],
+    "loanwords": [],
+    "plain_descriptions": [
+      "widely used rulebook of best practices for IT operations and support",
+      "global certification framework for managing corporate tech services"
+    ],
+    "summary": "A globally recognized framework of best practices for delivering, supporting, and governing IT service management workflows.",
+    "domains": [
+      "it/business-systems/enterprise-apps"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
+    "id": "itsm",
+    "label": "IT service management (ITSM)",
+    "aliases": [
+      "ITSM"
+    ],
+    "loanwords": [],
+    "plain_descriptions": [
+      "how IT teams design, deliver, and support corporate technology services",
+      "formal operational processes for managing servers, software deployments, and user support"
+    ],
+    "summary": "The operational discipline and set of practices through which an organization plans, delivers, operates, and controls information technology services provided to business users.",
+    "domains": [
+      "it/business-systems/enterprise-apps"
     ],
     "level": 2,
     "status": "draft"
@@ -2962,6 +3592,25 @@
       "product/agile-scrum"
     ],
     "level": 1,
+    "status": "draft"
+  },
+  {
+    "id": "key-value-store",
+    "label": "Key-value store",
+    "aliases": [
+      "KV store",
+      "key-value database"
+    ],
+    "loanwords": [],
+    "plain_descriptions": [
+      "a simple, ultra-fast database that saves and looks up records using unique label keys",
+      "a digital dictionary storage where you provide a word tag to get the matching value instantly"
+    ],
+    "summary": "A high-performance NoSQL database model utilizing a direct associative array data model where every data item is indexed by a distinct key.",
+    "domains": [
+      "it/data/database"
+    ],
+    "level": 2,
     "status": "draft"
   },
   {
@@ -3330,6 +3979,22 @@
     "status": "draft"
   },
   {
+    "id": "low-code",
+    "label": "Low-code",
+    "aliases": [],
+    "loanwords": [],
+    "plain_descriptions": [
+      "visual software development that lets developers build applications with minimal hand-coding",
+      "drag-and-drop programming platforms that speed up application delivery"
+    ],
+    "summary": "A software development approach combining graphical user interfaces and modular building blocks to construct digital solutions rapidly while accommodating hand-written programming extensions.",
+    "domains": [
+      "it/business-systems/automation"
+    ],
+    "level": 1,
+    "status": "draft"
+  },
+  {
     "id": "low-power-mode",
     "label": "Sleep mode",
     "qualifier": "(Embedded)",
@@ -3422,6 +4087,24 @@
     "summary": "A strategic framework illustrating the progressive stages of a customer's journey, from initial brand awareness through consideration to final purchase and retention.",
     "domains": [
       "media/digital-marketing/metrics-analytics"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
+    "id": "materialized-view",
+    "label": "Materialized view",
+    "aliases": [
+      "snapshot view"
+    ],
+    "loanwords": [],
+    "plain_descriptions": [
+      "a saved database report whose calculated answers are written to disk for instant reading",
+      "pre-computing a slow multi-table join query and caching the result table physically on drive"
+    ],
+    "summary": "A database object that contains the pre-computed results of a query stored physically on disk for high-speed retrieval.",
+    "domains": [
+      "it/data/database"
     ],
     "level": 2,
     "status": "draft"
@@ -3683,6 +4366,22 @@
     "status": "draft"
   },
   {
+    "id": "mongodb",
+    "label": "MongoDB",
+    "aliases": [],
+    "loanwords": [],
+    "plain_descriptions": [
+      "a popular database that stores records as flexible JSON documents instead of tables",
+      "an open-source document database loved by web developers for storing changing data easily"
+    ],
+    "summary": "A popular open-source document database that stores operational data in flexible, JSON-like BSON documents.",
+    "domains": [
+      "it/data/database"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
     "id": "monorepo",
     "label": "Monorepo",
     "aliases": [],
@@ -3891,6 +4590,22 @@
     "status": "draft"
   },
   {
+    "id": "no-code",
+    "label": "No-code",
+    "aliases": [],
+    "loanwords": [],
+    "plain_descriptions": [
+      "app building tools designed for non-technical users without writing any code",
+      "completely visual platforms where anyone can construct workflows and forms"
+    ],
+    "summary": "A software creation method that empowers non-technical users to build functional applications and workflows entirely through graphical drag-and-drop interfaces without writing source code.",
+    "domains": [
+      "it/business-systems/automation"
+    ],
+    "level": 1,
+    "status": "draft"
+  },
+  {
     "id": "north-star-metric",
     "label": "North Star metric",
     "aliases": [],
@@ -3906,6 +4621,24 @@
       "product/metrics"
     ],
     "level": 2,
+    "status": "draft"
+  },
+  {
+    "id": "nosql",
+    "label": "NoSQL",
+    "aliases": [
+      "non-relational database"
+    ],
+    "loanwords": [],
+    "plain_descriptions": [
+      "modern databases that store unstructured or changing data without rigid spreadsheet tables",
+      "flexible database systems designed to spread easily across hundreds of cloud servers"
+    ],
+    "summary": "A broad class of non-relational database systems designed to handle flexible data models, high velocity, and horizontal scalability.",
+    "domains": [
+      "it/data/database"
+    ],
+    "level": 1,
     "status": "draft"
   },
   {
@@ -3980,6 +4713,42 @@
       "product/metrics"
     ],
     "level": 1,
+    "status": "draft"
+  },
+  {
+    "id": "olap",
+    "label": "Online Analytical Processing (OLAP)",
+    "aliases": [
+      "OLAP"
+    ],
+    "loanwords": [],
+    "plain_descriptions": [
+      "computing systems designed to analyze historical business numbers across many angles quickly",
+      "database software built for executives asking big-picture questions about sales trends over years"
+    ],
+    "summary": "A category of software tools and database engines optimized for performing multidimensional analysis across massive archives of historical metrics with sub-second latency.",
+    "domains": [
+      "it/data/analytics"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
+    "id": "oltp",
+    "label": "Online Transaction Processing (OLTP)",
+    "aliases": [
+      "OLTP"
+    ],
+    "loanwords": [],
+    "plain_descriptions": [
+      "database systems that handle thousands of immediate everyday customer clicks and payments",
+      "the software engine processing debit card withdrawals and order confirmations in real time"
+    ],
+    "summary": "A category of data processing focused on executing and recording a high volume of short, immediate database transactions.",
+    "domains": [
+      "it/data/database"
+    ],
+    "level": 2,
     "status": "draft"
   },
   {
@@ -4149,6 +4918,23 @@
     "status": "draft"
   },
   {
+    "id": "payment-gateway",
+    "label": "Payment gateway",
+    "aliases": [],
+    "loanwords": [],
+    "plain_descriptions": [
+      "online checkout service that securely charges credit cards and digital wallets",
+      "digital intermediary passing customer payment details safely to banks"
+    ],
+    "summary": "A technology service that authorizes online credit card and digital payment transactions between e-commerce merchants and financial networks.",
+    "domains": [
+      "it/business-systems/enterprise-apps",
+      "finance/banking/payments"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
     "id": "paywall",
     "label": "Paywall",
     "aliases": [
@@ -4266,6 +5052,42 @@
     "status": "draft"
   },
   {
+    "id": "pos-system",
+    "label": "Point of sale (POS)",
+    "aliases": [
+      "POS"
+    ],
+    "loanwords": [],
+    "plain_descriptions": [
+      "the checkout terminal that rings up purchases and prints receipts",
+      "cash register hardware and software used at retail checkout counters"
+    ],
+    "summary": "The combined hardware and software terminal where retail transactions are completed, payments processed, and inventory deducted.",
+    "domains": [
+      "it/business-systems/enterprise-apps"
+    ],
+    "level": 1,
+    "status": "draft"
+  },
+  {
+    "id": "postgresql",
+    "label": "PostgreSQL",
+    "aliases": [
+      "Postgres"
+    ],
+    "loanwords": [],
+    "plain_descriptions": [
+      "a powerful, open-source relational database respected for strict reliability and rich features",
+      "an advanced enterprise SQL database that supports JSON documents alongside classic tables"
+    ],
+    "summary": "A powerful, open-source object-relational database system renowned for reliability, feature robustness, and SQL standards compliance.",
+    "domains": [
+      "it/data/database"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
     "id": "postmortem",
     "label": "Postmortem",
     "qualifier": "(IT)",
@@ -4378,6 +5200,24 @@
     "summary": "A formal written communication distributed to news organizations to deliver official announcements and generate accurate news coverage.",
     "domains": [
       "media/pr-communications/media-relations"
+    ],
+    "level": 1,
+    "status": "draft"
+  },
+  {
+    "id": "primary-key",
+    "label": "Primary key",
+    "aliases": [
+      "PK"
+    ],
+    "loanwords": [],
+    "plain_descriptions": [
+      "a unique tag or number that tells one row apart from every other row in a database table",
+      "the unique identification column (like a national ID number) that ensures no duplicate records exist"
+    ],
+    "summary": "A specific column or set of columns in a relational database table that uniquely identifies each individual record in that table.",
+    "domains": [
+      "it/data/database"
     ],
     "level": 1,
     "status": "draft"
@@ -4591,6 +5431,26 @@
     "status": "draft"
   },
   {
+    "id": "publish-subscribe",
+    "label": "Publish-subscribe (pub/sub)",
+    "aliases": [
+      "pub/sub",
+      "pub-sub"
+    ],
+    "loanwords": [],
+    "plain_descriptions": [
+      "a messaging style where senders broadcast updates without knowing who the receivers are",
+      "a communication design where interested apps sign up to get specific topic alerts automatically"
+    ],
+    "summary": "An asynchronous architectural messaging pattern where message senders categorize broadcasts without directing them to specific individual subscribers.",
+    "domains": [
+      "it/web/backend",
+      "it/data/data-engineering"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
     "id": "pull-request",
     "label": "Pull request (PR)",
     "aliases": [
@@ -4661,6 +5521,22 @@
     "summary": "A model compression technique that maps high-precision numerical weights to lower-bit representations to reduce memory footprint and boost inference speed.",
     "domains": [
       "it/ai-ml/mlops"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
+    "id": "rabbitmq",
+    "label": "RabbitMQ",
+    "aliases": [],
+    "loanwords": [],
+    "plain_descriptions": [
+      "open-source message broker software that routes background tasks reliably between programs",
+      "an intermediary postal worker that accepts, stores, and hands out job tickets to waiting workers"
+    ],
+    "summary": "An open-source message broker that routes messages between distributed applications using protocols like AMQP.",
+    "domains": [
+      "it/web/backend"
     ],
     "level": 2,
     "status": "draft"
@@ -4776,6 +5652,23 @@
     "status": "draft"
   },
   {
+    "id": "redis",
+    "label": "Redis",
+    "aliases": [],
+    "loanwords": [],
+    "plain_descriptions": [
+      "an ultra-fast in-memory data store used to cache pages and speed up web applications",
+      "a RAM-based software system that remembers answers and counters in fractions of a millisecond"
+    ],
+    "summary": "An open-source, in-memory data structure store used as a high-speed database, cache, message broker, and streaming engine.",
+    "domains": [
+      "it/data/database",
+      "it/web/backend"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
     "id": "refactoring",
     "label": "Refactoring",
     "aliases": [],
@@ -4805,6 +5698,25 @@
       "it/software-engineering/testing"
     ],
     "level": 2,
+    "status": "draft"
+  },
+  {
+    "id": "relational-database",
+    "label": "Relational database",
+    "aliases": [
+      "RDBMS",
+      "relational database management system"
+    ],
+    "loanwords": [],
+    "plain_descriptions": [
+      "a digital filing system that organizes facts into neat tables linked by common keys",
+      "structured database software that uses SQL to keep table records connected and strictly accurate"
+    ],
+    "summary": "A type of database that stores and provides access to data points that are related to one another through organized tables with predefined schemas.",
+    "domains": [
+      "it/data/database"
+    ],
+    "level": 1,
     "status": "draft"
   },
   {
@@ -4957,6 +5869,24 @@
     "summary": "The operational action of reverting an application, configuration, or database deployment to a previously verified stable release.",
     "domains": [
       "it/devops/sre-operations"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
+    "id": "rpa",
+    "label": "Robotic process automation (RPA)",
+    "aliases": [
+      "RPA"
+    ],
+    "loanwords": [],
+    "plain_descriptions": [
+      "software bots that mimic human mouse clicks and keyboard typing",
+      "automated assistants that copy and paste data between legacy business systems"
+    ],
+    "summary": "A business automation technology that uses software bots to mimic rule-based human interactions with graphical computer interfaces.",
+    "domains": [
+      "it/business-systems/automation"
     ],
     "level": 2,
     "status": "draft"
@@ -5782,6 +6712,24 @@
     "status": "draft"
   },
   {
+    "id": "stream-processing",
+    "label": "Stream processing",
+    "aliases": [
+      "streaming computation"
+    ],
+    "loanwords": [],
+    "plain_descriptions": [
+      "analyzing and calculating data on the fly as individual pieces arrive",
+      "computing live business statistics continuously without stopping to bundle files"
+    ],
+    "summary": "The continuous ingestion and real-time computation of data records directly as they are generated.",
+    "domains": [
+      "it/data/data-engineering"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
     "id": "structured-output",
     "label": "Structured output",
     "aliases": [
@@ -5940,6 +6888,25 @@
     "summary": "The rate at which a computer system, communication channel, or application successfully processes and delivers data or transactions per unit of time.",
     "domains": [
       "it/infrastructure/networking"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
+    "id": "time-series-database",
+    "label": "Time-series database",
+    "aliases": [
+      "TSDB"
+    ],
+    "loanwords": [],
+    "plain_descriptions": [
+      "a database designed specifically to track measurements changing over seconds, hours, and days",
+      "specialized software built for continuous sensor readings, stock ticks, and computer CPU graphs"
+    ],
+    "summary": "A database optimized for storing, querying, and analyzing sequences of data points indexed in chronological order.",
+    "domains": [
+      "it/data/database",
+      "iot/edge-cloud"
     ],
     "level": 2,
     "status": "draft"
@@ -6454,6 +7421,22 @@
     "domains": [
       "iot/connectivity-protocols",
       "it/infrastructure/networking"
+    ],
+    "level": 1,
+    "status": "draft"
+  },
+  {
+    "id": "workflow-automation",
+    "label": "Workflow automation",
+    "aliases": [],
+    "loanwords": [],
+    "plain_descriptions": [
+      "setting up if-this-then-that rules that run recurring office chores automatically",
+      "connecting software tools so data flows between them without human intervention"
+    ],
+    "summary": "The design and execution of automated sequences that pass data and trigger tasks across multiple business tools based on defined logical rules.",
+    "domains": [
+      "it/business-systems/automation"
     ],
     "level": 1,
     "status": "draft"

@@ -752,3 +752,15 @@ mailchimp-help:
   domains: [media/digital-marketing/email]
   verified_license_at: "2026-10-16"
   license_evidence: https://mailchimp.com/help
+
+mit-orbit:
+  title: MIT Orbit Knowledge Base
+  publisher: Massachusetts Institute of Technology
+  url: https://orbit-kb.mit.edu
+  type: docs
+  tier: B
+  languages: [en]
+  license: all-rights-reserved
+  reuse: paraphrase-only
+  domains: [product/product-management]
+  verified_license_at: "2026-10-16"

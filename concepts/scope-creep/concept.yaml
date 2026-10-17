@@ -13,6 +13,14 @@ status: draft
 provenance:
   drafted_by: ai
 sources:
+  - ref: microsoft-learn
+    locator: https://support.microsoft.com/en-us/project/best-practices-for-managing-project-scope-in-project-online
+    title: "Best practices for managing project scope in Project Online"
+    language: en
+    accessed: '2026-10-16'
+    retrieved_by: ai
+    supports:
+      - definition
   - ref: atlassian-agile
     locator: https://www.atlassian.com/agile/project-management/scope-creep
     title: "Scope Creep in Project Management | Atlassian"

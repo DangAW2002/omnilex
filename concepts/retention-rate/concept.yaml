@@ -13,6 +13,14 @@ status: draft
 provenance:
   drafted_by: ai
 sources:
+  - ref: google-analytics-help
+    locator: https://support.google.com/analytics/answer/11004084
+    title: "[GA4] Retention overview report"
+    language: en
+    accessed: '2026-10-16'
+    retrieved_by: ai
+    supports:
+      - definition
   - ref: hubspot-blog
     locator: https://blog.hubspot.com/service/customer-retention-rate
     title: "7 Ways to Boost Your Customer Retention Rate"

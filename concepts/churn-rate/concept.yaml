@@ -13,6 +13,14 @@ status: draft
 provenance:
   drafted_by: ai
 sources:
+  - ref: microsoft-learn
+    locator: https://learn.microsoft.com/en-us/fabric/data-science/customer-churn
+    title: "Tutorial: Create, evaluate, and score a churn prediction model"
+    language: en
+    accessed: '2026-10-16'
+    retrieved_by: ai
+    supports:
+      - definition
   - ref: hubspot-blog
     locator: https://blog.hubspot.com/service/what-is-churn-rate
     title: "How to calculate churn rate in 5 easy steps [definition + formula]"

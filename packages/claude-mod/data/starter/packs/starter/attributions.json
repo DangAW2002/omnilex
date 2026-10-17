@@ -14,13 +14,7 @@
       "emergency-fund",
       "interest-rate",
       "liability",
-      "liquidity",
-      "principal",
-      "revenue",
-      "roi",
-      "simple-interest",
-      "stock",
-      "stock-exchange"
+      "liquidity"
     ]
   },
   {
@@ -44,17 +38,27 @@
     "license_evidence": "https://www.nist.gov/oism/copyrights",
     "concepts": [
       "actuator",
+      "algorithm",
       "authentication",
       "authorization",
+      "embedded-system",
       "encryption",
+      "firewall",
       "firmware",
+      "iaas",
+      "interpreter",
       "malware",
       "mfa",
       "microcontroller",
+      "nfc",
+      "paas",
       "phishing",
       "ransomware",
+      "rfid",
+      "saas",
       "security-patch",
       "sensor",
+      "smart-meter",
       "stakeholder"
     ]
   },
@@ -69,8 +73,7 @@
       "balance-sheet",
       "cash-flow-statement",
       "equity-finance",
-      "income-statement",
-      "working-capital"
+      "income-statement"
     ]
   }
 ]

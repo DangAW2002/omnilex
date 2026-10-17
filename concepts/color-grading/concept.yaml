@@ -1,0 +1,23 @@
+id: color-grading
+domains:
+- media/content-production/editing
+level: 2
+relations:
+  prerequisites: []
+  confusable: []
+  related:
+  - b-roll
+  - aspect-ratio
+status: draft
+provenance:
+  drafted_by: ai
+sources:
+- ref: blender-docs
+  locator: https://docs.blender.org/manual/en/latest/render/color_management/index.html
+  title: Color Management - Blender Manual
+  language: en
+  accessed: '2026-10-16'
+  retrieved_by: ai
+  supports:
+  - definition
+  - summary

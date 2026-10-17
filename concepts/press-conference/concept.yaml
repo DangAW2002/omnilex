@@ -1,0 +1,31 @@
+id: press-conference
+domains:
+- media/pr-communications/media-relations
+level: 1
+relations:
+  prerequisites: []
+  confusable: []
+  related:
+  - press-release
+  - spokesperson
+status: draft
+provenance:
+  drafted_by: ai
+sources:
+- ref: ku-ctb
+  locator: https://ctb.ku.edu/en/table-of-contents/participation/promoting-interest/press-conference/main
+  title: Chapter 6., Section 8. Arranging a Press Conference - Main Section | Community Tool Box
+  language: en
+  accessed: '2026-10-17'
+  retrieved_by: ai
+  supports:
+  - definition
+- ref: oxford-dict
+  locator: https://www.oxfordlearnersdictionaries.com/definition/english/press-conference
+  title: press conference noun - Oxford Learner's Dictionaries
+  language: en
+  accessed: '2026-10-16'
+  retrieved_by: ai
+  supports:
+  - definition
+  - summary

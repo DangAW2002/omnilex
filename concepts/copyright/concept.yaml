@@ -1,0 +1,23 @@
+id: copyright
+domains:
+- media/publishing/copyright-licensing
+level: 1
+relations:
+  prerequisites: []
+  confusable: []
+  related:
+  - fair-use
+  - creative-commons
+status: draft
+provenance:
+  drafted_by: ai
+sources:
+- ref: us-copyright-office
+  locator: https://www.copyright.gov/what-is-copyright/
+  title: What is Copyright? | U.S. Copyright Office
+  language: en
+  accessed: '2026-10-16'
+  retrieved_by: ai
+  supports:
+  - definition
+  - summary

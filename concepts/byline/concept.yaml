@@ -1,0 +1,32 @@
+id: byline
+domains:
+- media/journalism/reporting
+level: 1
+relations:
+  prerequisites: []
+  confusable: []
+  related:
+  - headline
+  - news-lead
+  - anonymous-source
+status: draft
+provenance:
+  drafted_by: ai
+sources:
+- ref: journalists-resource
+  locator: https://journalistsresource.org/about/republishing-guidelines/
+  title: "Republication guidelines: The Journalist's Resource"
+  language: en
+  accessed: '2026-10-17'
+  retrieved_by: ai
+  supports:
+  - definition
+- ref: oxford-dict
+  locator: https://www.oxfordlearnersdictionaries.com/definition/english/byline
+  title: byline noun - Oxford Learner's Dictionaries
+  language: en
+  accessed: '2026-10-16'
+  retrieved_by: ai
+  supports:
+  - definition
+  - summary

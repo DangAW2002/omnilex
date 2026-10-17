@@ -1,12 +1,26 @@
 id: configuration-management
 domains:
   - it/devops/iac
-level: 1
+level: 2
 relations:
-  prerequisites: []
-  confusable: []
-  related: []
+  prerequisites:
+    - infrastructure-as-code
+    - environment-variable
+  confusable:
+    - immutable-infrastructure
+  related:
+    - devops
+    - secret-config
 status: draft
 provenance:
   drafted_by: ai
-sources: []
+sources:
+  - ref: nist-csrc
+    locator: https://csrc.nist.gov/glossary/term/configuration_management
+    title: "configuration management"
+    language: en
+    accessed: '2026-10-17'
+    retrieved_by: ai
+    supports:
+      - definition
+      - summary

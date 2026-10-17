@@ -264,6 +264,36 @@
     "autolink": true
   },
   {
+    "key": "Alerting",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "alerting",
+        "label": "Alerting",
+        "summary": "Cơ chế tự động đối soát dữ liệu giám sát với các quy tắc định sẵn để gửi thông báo tức thời cho đội ngũ trực ban khi hệ thống phát sinh sự cố.",
+        "domains": [
+          "it/devops/observability"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Hệ thống cảnh báo",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "alerting",
+        "label": "Alerting",
+        "summary": "Cơ chế tự động đối soát dữ liệu giám sát với các quy tắc định sẵn để gửi thông báo tức thời cho đội ngũ trực ban khi hệ thống phát sinh sự cố.",
+        "domains": [
+          "it/devops/observability"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
     "key": "Nguồn tin ẩn danh",
     "match": "any-case",
     "concepts": [
@@ -399,6 +429,51 @@
         "summary": "Địa chỉ URL cụ thể do hệ thống API mở ra để tiếp nhận các yêu cầu xử lý tài nguyên hoặc dịch vụ nghiệp vụ.",
         "domains": [
           "it/web/api"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Application performance monitoring (APM)",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "apm",
+        "label": "Application performance monitoring (APM)",
+        "summary": "Bộ giải pháp giám sát chuyên sâu nhằm theo dõi tính sẵn sàng, phát hiện lỗi mã nguồn và phân tích độ trễ giao dịch trong các ứng dụng phần mềm.",
+        "domains": [
+          "it/devops/observability"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "APM",
+    "match": "exact-case",
+    "concepts": [
+      {
+        "id": "apm",
+        "label": "Application performance monitoring (APM)",
+        "summary": "Bộ giải pháp giám sát chuyên sâu nhằm theo dõi tính sẵn sàng, phát hiện lỗi mã nguồn và phân tích độ trễ giao dịch trong các ứng dụng phần mềm.",
+        "domains": [
+          "it/devops/observability"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Giám sát hiệu năng ứng dụng",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "apm",
+        "label": "Application performance monitoring (APM)",
+        "summary": "Bộ giải pháp giám sát chuyên sâu nhằm theo dõi tính sẵn sàng, phát hiện lỗi mã nguồn và phân tích độ trễ giao dịch trong các ứng dụng phần mềm.",
+        "domains": [
+          "it/devops/observability"
         ]
       }
     ],
@@ -1289,6 +1364,54 @@
     "autolink": true
   },
   {
+    "key": "Artifact",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "build-artifact",
+        "label": "Artifact",
+        "qualifier": "(Build)",
+        "summary": "Tệp hoặc tập hợp các tệp được sinh ra từ quá trình xây dựng mã nguồn nhằm phục vụ lưu trữ, kiểm thử hoặc triển khai vào môi trường vận hành.",
+        "domains": [
+          "it/devops/ci-cd"
+        ]
+      }
+    ],
+    "autolink": false
+  },
+  {
+    "key": "Tạo phẩm đóng gói",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "build-artifact",
+        "label": "Artifact",
+        "qualifier": "(Build)",
+        "summary": "Tệp hoặc tập hợp các tệp được sinh ra từ quá trình xây dựng mã nguồn nhằm phục vụ lưu trữ, kiểm thử hoặc triển khai vào môi trường vận hành.",
+        "domains": [
+          "it/devops/ci-cd"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Thành phẩm build",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "build-artifact",
+        "label": "Artifact",
+        "qualifier": "(Build)",
+        "summary": "Tệp hoặc tập hợp các tệp được sinh ra từ quá trình xây dựng mã nguồn nhằm phục vụ lưu trữ, kiểm thử hoặc triển khai vào môi trường vận hành.",
+        "domains": [
+          "it/devops/ci-cd"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
     "key": "Burndown chart",
     "match": "any-case",
     "concepts": [
@@ -1532,6 +1655,36 @@
     "autolink": true
   },
   {
+    "key": "Capacity planning",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "capacity-planning",
+        "label": "Capacity planning",
+        "summary": "Quy trình ước tính nhu cầu tài nguyên tính toán trong tương lai nhằm chuẩn bị đầy đủ hạ tầng đáp ứng sự gia tăng về lưu lượng và tải công việc.",
+        "domains": [
+          "it/devops/sre-operations"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Quy hoạch năng lực",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "capacity-planning",
+        "label": "Capacity planning",
+        "summary": "Quy trình ước tính nhu cầu tài nguyên tính toán trong tương lai nhằm chuẩn bị đầy đủ hạ tầng đáp ứng sự gia tăng về lưu lượng và tải công việc.",
+        "domains": [
+          "it/devops/sre-operations"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
     "key": "Báo cáo lưu chuyển tiền tệ",
     "match": "any-case",
     "concepts": [
@@ -1650,6 +1803,36 @@
       }
     ],
     "autolink": false
+  },
+  {
+    "key": "Chaos engineering",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "chaos-engineering",
+        "label": "Chaos engineering",
+        "summary": "Phương pháp thực nghiệm có kiểm soát trên hệ thống phân tán nhằm xây dựng niềm tin vào khả năng chịu đựng các sự cố bất ngờ trong môi trường thực tế.",
+        "domains": [
+          "it/devops/sre-operations"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Kỹ thuật hỗn loạn",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "chaos-engineering",
+        "label": "Chaos engineering",
+        "summary": "Phương pháp thực nghiệm có kiểm soát trên hệ thống phân tán nhằm xây dựng niềm tin vào khả năng chịu đựng các sự cố bất ngờ trong môi trường thực tế.",
+        "domains": [
+          "it/devops/sre-operations"
+        ]
+      }
+    ],
+    "autolink": true
   },
   {
     "key": "Churn rate",
@@ -1906,6 +2089,36 @@
         "domains": [
           "finance/personal-finance/saving",
           "finance/investing/portfolio-risk"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Configuration management",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "configuration-management",
+        "label": "Configuration management",
+        "summary": "Phương pháp kỹ thuật và công cụ nhằm thiết lập, theo dõi và duy trì tính nhất quán của các cài đặt phần mềm và cấu hình hệ thống trên toàn bộ hạ tầng.",
+        "domains": [
+          "it/devops/iac"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Quản lý cấu hình",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "configuration-management",
+        "label": "Configuration management",
+        "summary": "Phương pháp kỹ thuật và công cụ nhằm thiết lập, theo dõi và duy trì tính nhất quán của các cài đặt phần mềm và cấu hình hệ thống trên toàn bộ hạ tầng.",
+        "domains": [
+          "it/devops/iac"
         ]
       }
     ],
@@ -2749,6 +2962,38 @@
     "autolink": true
   },
   {
+    "key": "Dashboard",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "dashboard-monitoring",
+        "label": "Dashboard",
+        "qualifier": "(Giám sát)",
+        "summary": "Giao diện trực quan tổng hợp các biểu đồ và chỉ số hiệu năng theo thời gian thực trên một màn hình nhằm giúp kỹ sư nhanh chóng đánh giá tình trạng hoạt động của hệ thống.",
+        "domains": [
+          "it/devops/observability"
+        ]
+      }
+    ],
+    "autolink": false
+  },
+  {
+    "key": "Bảng điều khiển giám sát",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "dashboard-monitoring",
+        "label": "Dashboard",
+        "qualifier": "(Giám sát)",
+        "summary": "Giao diện trực quan tổng hợp các biểu đồ và chỉ số hiệu năng theo thời gian thực trên một màn hình nhằm giúp kỹ sư nhanh chóng đánh giá tình trạng hoạt động của hệ thống.",
+        "domains": [
+          "it/devops/observability"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
     "key": "Data lake",
     "match": "any-case",
     "concepts": [
@@ -3379,6 +3624,36 @@
         "summary": "Quy trình khởi tạo tự động nhằm xác thực danh tính, đăng ký và thiết lập cấu hình vận hành ban đầu cho thiết bị phần cứng mới kết nối vào nền tảng đám mây.",
         "domains": [
           "iot/edge-cloud"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "DevOps",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "devops",
+        "label": "DevOps",
+        "summary": "Triết lý văn hóa và bộ phương pháp tích hợp chặt chẽ giữa nhóm phát triển phần mềm và nhóm vận hành hệ thống nhằm rút ngắn chu kỳ chuyển giao và tăng độ tin cậy.",
+        "domains": [
+          "it/devops/ci-cd"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Phương pháp DevOps",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "devops",
+        "label": "DevOps",
+        "summary": "Triết lý văn hóa và bộ phương pháp tích hợp chặt chẽ giữa nhóm phát triển phần mềm và nhóm vận hành hệ thống nhằm rút ngắn chu kỳ chuyển giao và tăng độ tin cậy.",
+        "domains": [
+          "it/devops/ci-cd"
         ]
       }
     ],
@@ -4280,6 +4555,36 @@
     "autolink": true
   },
   {
+    "key": "Error budget",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "error-budget",
+        "label": "Error budget",
+        "summary": "Mức độ gián đoạn hoặc tỷ lệ lỗi tối đa được phép xảy ra trong một khoảng thời gian xác định căn cứ theo mục tiêu mức dịch vụ đã thỏa thuận.",
+        "domains": [
+          "it/devops/sre-operations"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Ngân sách lỗi",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "error-budget",
+        "label": "Error budget",
+        "summary": "Mức độ gián đoạn hoặc tỷ lệ lỗi tối đa được phép xảy ra trong một khoảng thời gian xác định căn cứ theo mục tiêu mức dịch vụ đã thỏa thuận.",
+        "domains": [
+          "it/devops/sre-operations"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
     "key": "Quỹ hoán đổi danh mục",
     "match": "any-case",
     "concepts": [
@@ -4809,6 +5114,66 @@
     "autolink": true
   },
   {
+    "key": "GitHub Actions",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "github-actions",
+        "label": "GitHub Actions",
+        "summary": "Nền tảng tích hợp và phân phối liên tục tích hợp sẵn trong GitHub cho phép tự động hóa quy trình xây dựng, kiểm thử và phát hành mã nguồn.",
+        "domains": [
+          "it/devops/ci-cd"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Quy trình tự động hóa GitHub",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "github-actions",
+        "label": "GitHub Actions",
+        "summary": "Nền tảng tích hợp và phân phối liên tục tích hợp sẵn trong GitHub cho phép tự động hóa quy trình xây dựng, kiểm thử và phát hành mã nguồn.",
+        "domains": [
+          "it/devops/ci-cd"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "GitOps",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "gitops",
+        "label": "GitOps",
+        "summary": "Mô hình vận hành dùng kho lưu trữ Git làm nguồn chân lý duy nhất để quản lý hạ tầng khai báo và đồng bộ triển khai ứng dụng tự động.",
+        "domains": [
+          "it/devops/ci-cd"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Vận hành qua Git",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "gitops",
+        "label": "GitOps",
+        "summary": "Mô hình vận hành dùng kho lưu trữ Git làm nguồn chân lý duy nhất để quản lý hạ tầng khai báo và đồng bộ triển khai ứng dụng tự động.",
+        "domains": [
+          "it/devops/ci-cd"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
     "key": "Bộ xử lý đồ họa (GPU)",
     "match": "any-case",
     "concepts": [
@@ -4865,6 +5230,36 @@
         "summary": "Thuật toán tối ưu hóa lặp giúp điều chỉnh tham số mô hình ngược chiều với đạo hàm của hàm mất mát nhằm giảm thiểu sai số dự đoán.",
         "domains": [
           "it/ai-ml/foundations"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Grafana",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "grafana",
+        "label": "Grafana",
+        "summary": "Ứng dụng web mã nguồn mở chuyên về phân tích và trực quan hóa dữ liệu, giúp tổng hợp các chỉ số, nhật ký và dấu vết vào các bảng điều khiển tương tác.",
+        "domains": [
+          "it/devops/observability"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Nền tảng trực quan hóa Grafana",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "grafana",
+        "label": "Grafana",
+        "summary": "Ứng dụng web mã nguồn mở chuyên về phân tích và trực quan hóa dữ liệu, giúp tổng hợp các chỉ số, nhật ký và dấu vết vào các bảng điều khiển tương tác.",
+        "domains": [
+          "it/devops/observability"
         ]
       }
     ],
@@ -5119,6 +5514,38 @@
     "autolink": true
   },
   {
+    "key": "Health check",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "health-check",
+        "label": "Health check",
+        "qualifier": "(Phần mềm)",
+        "summary": "Yêu cầu chẩn đoán được gửi định kỳ tới một dịch vụ phần mềm nhằm xác nhận trạng thái hoạt động và khả năng xử lý yêu cầu của dịch vụ đó.",
+        "domains": [
+          "it/devops/sre-operations"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Kiểm tra sức khỏe dịch vụ",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "health-check",
+        "label": "Health check",
+        "qualifier": "(Phần mềm)",
+        "summary": "Yêu cầu chẩn đoán được gửi định kỳ tới một dịch vụ phần mềm nhằm xác nhận trạng thái hoạt động và khả năng xử lý yêu cầu của dịch vụ đó.",
+        "domains": [
+          "it/devops/sre-operations"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
     "key": "Hotfix",
     "match": "any-case",
     "concepts": [
@@ -5353,6 +5780,36 @@
         "summary": "Tác vụ thị giác máy tính trong đó thuật toán phân tích toàn bộ bức ảnh để gán cho nó một hoặc nhiều nhãn danh mục từ một tập phân loại xác định.",
         "domains": [
           "it/ai-ml/computer-vision"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Immutable infrastructure",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "immutable-infrastructure",
+        "label": "Immutable infrastructure",
+        "summary": "Mô hình quản lý hạ tầng trong đó các máy chủ hoặc vùng chứa không bao giờ bị chỉnh sửa trực tiếp sau khi khởi chạy, mà luôn được thay thế bằng hình ảnh máy mới khi có thay đổi.",
+        "domains": [
+          "it/devops/iac"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Hạ tầng bất biến",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "immutable-infrastructure",
+        "label": "Immutable infrastructure",
+        "summary": "Mô hình quản lý hạ tầng trong đó các máy chủ hoặc vùng chứa không bao giờ bị chỉnh sửa trực tiếp sau khi khởi chạy, mà luôn được thay thế bằng hình ảnh máy mới khi có thay đổi.",
+        "domains": [
+          "it/devops/iac"
         ]
       }
     ],
@@ -6020,6 +6477,36 @@
     "autolink": true
   },
   {
+    "key": "Jenkins",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "jenkins",
+        "label": "Jenkins",
+        "summary": "Máy chủ tự động hóa mã nguồn mở độc lập hỗ trợ thiết lập các pipeline xây dựng, kiểm thử và triển khai phần mềm thông qua hệ thống plugin đa dạng.",
+        "domains": [
+          "it/devops/ci-cd"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Máy chủ tự động hóa Jenkins",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "jenkins",
+        "label": "Jenkins",
+        "summary": "Máy chủ tự động hóa mã nguồn mở độc lập hỗ trợ thiết lập các pipeline xây dựng, kiểm thử và triển khai phần mềm thông qua hệ thống plugin đa dạng.",
+        "domains": [
+          "it/devops/ci-cd"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
     "key": "JSON",
     "match": "exact-case",
     "concepts": [
@@ -6491,6 +6978,36 @@
         "summary": "Đặc tính của một tài sản phản ánh mức độ dễ dàng và tốc độ chuyển đổi thành tiền mặt phục vụ thanh toán mà không làm giảm sút giá trị đáng kể.",
         "domains": [
           "finance/corporate-finance/capital-structure"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Liveness probe",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "liveness-probe",
+        "label": "Liveness probe",
+        "summary": "Bộ kiểm tra định kỳ trong hệ thống điều phối container nhằm phát hiện trạng thái treo hoặc chết của tiến trình để kích hoạt cơ chế khởi động lại kịp thời.",
+        "domains": [
+          "it/devops/containers"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Đầu dò hoạt động",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "liveness-probe",
+        "label": "Liveness probe",
+        "summary": "Bộ kiểm tra định kỳ trong hệ thống điều phối container nhằm phát hiện trạng thái treo hoặc chết của tiến trình để kích hoạt cơ chế khởi động lại kịp thời.",
+        "domains": [
+          "it/devops/containers"
         ]
       }
     ],
@@ -7561,6 +8078,51 @@
     "autolink": true
   },
   {
+    "key": "Mean time to recovery (MTTR)",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "mttr",
+        "label": "Mean time to recovery (MTTR)",
+        "summary": "Chỉ số vận hành biểu thị thời gian trung bình cần thiết để khắc phục sự cố và khôi phục hệ thống về trạng thái hoạt động bình thường.",
+        "domains": [
+          "it/devops/sre-operations"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "MTTR",
+    "match": "exact-case",
+    "concepts": [
+      {
+        "id": "mttr",
+        "label": "Mean time to recovery (MTTR)",
+        "summary": "Chỉ số vận hành biểu thị thời gian trung bình cần thiết để khắc phục sự cố và khôi phục hệ thống về trạng thái hoạt động bình thường.",
+        "domains": [
+          "it/devops/sre-operations"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Thời gian phục hồi trung bình",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "mttr",
+        "label": "Mean time to recovery (MTTR)",
+        "summary": "Chỉ số vận hành biểu thị thời gian trung bình cần thiết để khắc phục sự cố và khôi phục hệ thống về trạng thái hoạt động bình thường.",
+        "domains": [
+          "it/devops/sre-operations"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
     "key": "Quỹ tương hỗ",
     "match": "any-case",
     "concepts": [
@@ -8159,6 +8721,36 @@
     "autolink": true
   },
   {
+    "key": "OpenTelemetry",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "opentelemetry",
+        "label": "OpenTelemetry",
+        "summary": "Khung làm việc mã nguồn mở trung lập của CNCF cung cấp các bộ API, SDK và công cụ chuẩn hóa nhằm tạo và xuất dữ liệu đo lường từ xa.",
+        "domains": [
+          "it/devops/observability"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Chuẩn thu thập dữ liệu đo lường OpenTelemetry",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "opentelemetry",
+        "label": "OpenTelemetry",
+        "summary": "Khung làm việc mã nguồn mở trung lập của CNCF cung cấp các bộ API, SDK và công cụ chuẩn hóa nhằm tạo và xuất dữ liệu đo lường từ xa.",
+        "domains": [
+          "it/devops/observability"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
     "key": "Organic traffic",
     "match": "any-case",
     "concepts": [
@@ -8513,6 +9105,36 @@
         "summary": "Khoản thuế trực thu đánh vào tiền lương, tiền công và các nguồn thu nhập hợp pháp khác của cá nhân sau khi đã trừ các khoản giảm trừ gia cảnh.",
         "domains": [
           "finance/personal-finance/tax"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Platform engineering",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "platform-engineering",
+        "label": "Platform engineering",
+        "summary": "Hoạt động thiết kế và xây dựng các nền tảng tự phục vụ nội bộ nhằm cung cấp chuỗi công cụ chuẩn hóa giúp các nhóm phát triển phần mềm phát hành ứng dụng độc lập và an toàn.",
+        "domains": [
+          "it/devops/sre-operations"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Kỹ thuật nền tảng",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "platform-engineering",
+        "label": "Platform engineering",
+        "summary": "Hoạt động thiết kế và xây dựng các nền tảng tự phục vụ nội bộ nhằm cung cấp chuỗi công cụ chuẩn hóa giúp các nhóm phát triển phần mềm phát hành ứng dụng độc lập và an toàn.",
+        "domains": [
+          "it/devops/sre-operations"
         ]
       }
     ],
@@ -9223,6 +9845,38 @@
     "autolink": true
   },
   {
+    "key": "Prometheus",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "prometheus",
+        "label": "Prometheus",
+        "qualifier": "(Giám sát)",
+        "summary": "Bộ công cụ giám sát và cảnh báo mã nguồn mở lưu trữ dữ liệu chỉ số theo chuỗi thời gian và hỗ trợ truy vấn đa chiều bằng ngôn ngữ PromQL.",
+        "domains": [
+          "it/devops/observability"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Hệ thống giám sát Prometheus",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "prometheus",
+        "label": "Prometheus",
+        "qualifier": "(Giám sát)",
+        "summary": "Bộ công cụ giám sát và cảnh báo mã nguồn mở lưu trữ dữ liệu chỉ số theo chuỗi thời gian và hỗ trợ truy vấn đa chiều bằng ngôn ngữ PromQL.",
+        "domains": [
+          "it/devops/observability"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
     "key": "Prompt",
     "match": "any-case",
     "concepts": [
@@ -9503,6 +10157,36 @@
         "summary": "Cơ chế kiểm soát mạng phòng ngừa nhằm hạn chế số lượng yêu cầu mà một máy khách có thể gửi tới giao diện lập trình ứng dụng (API) trong một khoảng thời gian.",
         "domains": [
           "it/web/api"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Readiness probe",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "readiness-probe",
+        "label": "Readiness probe",
+        "summary": "Bộ kiểm tra xác định xem container ứng dụng đã hoàn tất quá trình khởi tạo và sẵn sàng nhận lưu lượng truy cập mạng từ bộ cân bằng tải hay chưa.",
+        "domains": [
+          "it/devops/containers"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Đầu dò sẵn sàng",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "readiness-probe",
+        "label": "Readiness probe",
+        "summary": "Bộ kiểm tra xác định xem container ứng dụng đã hoàn tất quá trình khởi tạo và sẵn sàng nhận lưu lượng truy cập mạng từ bộ cân bằng tải hay chưa.",
+        "domains": [
+          "it/devops/containers"
         ]
       }
     ],
@@ -9971,6 +10655,51 @@
         "summary": "Hệ điều hành được thiết kế chuyên biệt để xử lý các tác vụ với cam kết tính tiền định về mặt thời gian và độ trễ tối thiểu.",
         "domains": [
           "iot/devices-sensors"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Runbook",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "runbook",
+        "label": "Runbook",
+        "summary": "Tài liệu hướng dẫn quy trình từng bước được chuẩn hóa giúp kỹ sư vận hành xử lý sự cố khẩn cấp hoặc thực hiện bảo trì hệ thống an toàn.",
+        "domains": [
+          "it/devops/sre-operations"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Sổ tay vận hành",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "runbook",
+        "label": "Runbook",
+        "summary": "Tài liệu hướng dẫn quy trình từng bước được chuẩn hóa giúp kỹ sư vận hành xử lý sự cố khẩn cấp hoặc thực hiện bảo trì hệ thống an toàn.",
+        "domains": [
+          "it/devops/sre-operations"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Quy trình xử lý sự cố",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "runbook",
+        "label": "Runbook",
+        "summary": "Tài liệu hướng dẫn quy trình từng bước được chuẩn hóa giúp kỹ sư vận hành xử lý sự cố khẩn cấp hoặc thực hiện bảo trì hệ thống an toàn.",
+        "domains": [
+          "it/devops/sre-operations"
         ]
       }
     ],
@@ -11254,6 +11983,51 @@
     "autolink": true
   },
   {
+    "key": "Site reliability engineering (SRE)",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "sre",
+        "label": "Site reliability engineering (SRE)",
+        "summary": "Chuyên ngành kỹ thuật ứng dụng các nguyên lý phát triển phần mềm để tự động hóa hoạt động vận hành và duy trì độ tin cậy cho các hệ thống quy mô lớn.",
+        "domains": [
+          "it/devops/sre-operations"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "SRE",
+    "match": "exact-case",
+    "concepts": [
+      {
+        "id": "sre",
+        "label": "Site reliability engineering (SRE)",
+        "summary": "Chuyên ngành kỹ thuật ứng dụng các nguyên lý phát triển phần mềm để tự động hóa hoạt động vận hành và duy trì độ tin cậy cho các hệ thống quy mô lớn.",
+        "domains": [
+          "it/devops/sre-operations"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Kỹ thuật độ tin cậy hệ thống",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "sre",
+        "label": "Site reliability engineering (SRE)",
+        "summary": "Chuyên ngành kỹ thuật ứng dụng các nguyên lý phát triển phần mềm để tự động hóa hoạt động vận hành và duy trì độ tin cậy cho các hệ thống quy mô lớn.",
+        "domains": [
+          "it/devops/sre-operations"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
     "key": "Staging environment",
     "match": "any-case",
     "concepts": [
@@ -11875,6 +12649,38 @@
     "autolink": true
   },
   {
+    "key": "Toil",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "toil",
+        "label": "Toil",
+        "qualifier": "(SRE)",
+        "summary": "Trong mô hình SRE, toil là loại công việc vận hành thủ công, lặp lại và có thể tự động hóa, thường tăng tuyến tính theo quy mô của dịch vụ mà không mang lại giá trị bền vững.",
+        "domains": [
+          "it/devops/sre-operations"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Công việc lao dịch",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "toil",
+        "label": "Toil",
+        "qualifier": "(SRE)",
+        "summary": "Trong mô hình SRE, toil là loại công việc vận hành thủ công, lặp lại và có thể tự động hóa, thường tăng tuyến tính theo quy mô của dịch vụ mà không mang lại giá trị bền vững.",
+        "domains": [
+          "it/devops/sre-operations"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
     "key": "Token",
     "match": "any-case",
     "concepts": [
@@ -12062,6 +12868,36 @@
         "summary": "Kiến trúc mạng nơ-ron dựa trên cơ chế tự chú ý giúp xử lý đồng thời mọi phần tử trong chuỗi dữ liệu mà không cần vòng lặp tuần tự.",
         "domains": [
           "it/ai-ml/foundations"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Trunk-based development",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "trunk-based-development",
+        "label": "Trunk-based development",
+        "summary": "Chiến lược quản lý nhánh mã nguồn trong đó các kỹ sư thường xuyên tích hợp những phần thay đổi nhỏ vào một nhánh chính duy nhất nhằm hạn chế xung đột.",
+        "domains": [
+          "it/software-engineering/version-control"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Phát triển dựa trên nhánh chính",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "trunk-based-development",
+        "label": "Trunk-based development",
+        "summary": "Chiến lược quản lý nhánh mã nguồn trong đó các kỹ sư thường xuyên tích hợp những phần thay đổi nhỏ vào một nhánh chính duy nhất nhằm hạn chế xung đột.",
+        "domains": [
+          "it/software-engineering/version-control"
         ]
       }
     ],

@@ -1,12 +1,26 @@
 id: prometheus
 domains:
   - it/devops/observability
-level: 1
+level: 2
 relations:
-  prerequisites: []
-  confusable: []
-  related: []
+  prerequisites:
+    - metric-monitoring
+    - alerting
+  confusable:
+    - grafana
+  related:
+    - opentelemetry
+    - kubernetes
 status: draft
 provenance:
   drafted_by: ai
-sources: []
+sources:
+  - ref: prometheus-docs
+    locator: https://prometheus.io/docs/introduction/overview/
+    title: "Overview of Prometheus"
+    language: en
+    accessed: '2026-10-17'
+    retrieved_by: ai
+    supports:
+      - definition
+      - summary

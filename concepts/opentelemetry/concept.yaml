@@ -1,12 +1,26 @@
 id: opentelemetry
 domains:
   - it/devops/observability
-level: 1
+level: 3
 relations:
-  prerequisites: []
+  prerequisites:
+    - distributed-tracing
+    - metric-monitoring
+    - log
   confusable: []
-  related: []
+  related:
+    - observability
+    - apm
 status: draft
 provenance:
   drafted_by: ai
-sources: []
+sources:
+  - ref: opentelemetry-docs
+    locator: https://opentelemetry.io/docs/what-is-opentelemetry/
+    title: "What is OpenTelemetry?"
+    language: en
+    accessed: '2026-10-17'
+    retrieved_by: ai
+    supports:
+      - definition
+      - summary

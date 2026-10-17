@@ -1,12 +1,25 @@
 id: build-artifact
 domains:
   - it/devops/ci-cd
-level: 1
+level: 2
 relations:
-  prerequisites: []
+  prerequisites:
+    - ci-cd
+    - ci-pipeline
   confusable: []
-  related: []
+  related:
+    - container-image
+    - software-deployment
 status: draft
 provenance:
   drafted_by: ai
-sources: []
+sources:
+  - ref: github-docs
+    locator: https://docs.github.com/en/actions/tutorials/store-and-share-data
+    title: "Store and share data with artifacts"
+    language: en
+    accessed: '2026-10-17'
+    retrieved_by: ai
+    supports:
+      - definition
+      - summary

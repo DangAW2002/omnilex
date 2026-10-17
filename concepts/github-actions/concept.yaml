@@ -1,12 +1,26 @@
 id: github-actions
 domains:
   - it/devops/ci-cd
-level: 1
+level: 2
 relations:
-  prerequisites: []
-  confusable: []
-  related: []
+  prerequisites:
+    - ci-cd
+    - git-commit
+  confusable:
+    - jenkins
+  related:
+    - build-artifact
+    - ci-pipeline
 status: draft
 provenance:
   drafted_by: ai
-sources: []
+sources:
+  - ref: github-docs
+    locator: https://docs.github.com/en/actions
+    title: "GitHub Actions Documentation"
+    language: en
+    accessed: '2026-10-17'
+    retrieved_by: ai
+    supports:
+      - definition
+      - summary

@@ -3,10 +3,24 @@ domains:
   - it/devops/ci-cd
 level: 1
 relations:
-  prerequisites: []
-  confusable: []
-  related: []
+  prerequisites:
+    - ci-cd
+    - software-deployment
+  confusable:
+    - sre
+  related:
+    - platform-engineering
+    - gitops
 status: draft
 provenance:
   drafted_by: ai
-sources: []
+sources:
+  - ref: aws-docs
+    locator: https://aws.amazon.com/devops/what-is-devops/
+    title: "What is DevOps?"
+    language: en
+    accessed: '2026-10-17'
+    retrieved_by: ai
+    supports:
+      - definition
+      - summary

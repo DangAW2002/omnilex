@@ -31,6 +31,7 @@
     "license": "CC-BY-4.0",
     "license_evidence": "https://github.com/kubernetes/website/blob/main/LICENSE",
     "concepts": [
+      "health-check",
       "software-container"
     ]
   },

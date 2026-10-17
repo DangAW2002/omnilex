@@ -145,6 +145,26 @@
     "status": "draft"
   },
   {
+    "id": "alerting",
+    "label": "Alerting",
+    "aliases": [
+      "Hệ thống cảnh báo"
+    ],
+    "loanwords": [
+      "alerting"
+    ],
+    "plain_descriptions": [
+      "cơ chế tự động gửi tin nhắn hoặc gọi điện cho kỹ sư khi máy chủ gặp sự cố bất thường",
+      "tính năng theo dõi các chỉ số và phát tín hiệu báo động khi vượt qua ngưỡng an toàn"
+    ],
+    "summary": "Cơ chế tự động đối soát dữ liệu giám sát với các quy tắc định sẵn để gửi thông báo tức thời cho đội ngũ trực ban khi hệ thống phát sinh sự cố.",
+    "domains": [
+      "it/devops/observability"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
     "id": "anonymous-source",
     "label": "Nguồn tin ẩn danh",
     "aliases": [
@@ -206,6 +226,28 @@
       "it/web/api"
     ],
     "level": 1,
+    "status": "draft"
+  },
+  {
+    "id": "apm",
+    "label": "Application performance monitoring (APM)",
+    "aliases": [
+      "APM",
+      "Giám sát hiệu năng ứng dụng"
+    ],
+    "loanwords": [
+      "application performance monitoring",
+      "apm"
+    ],
+    "plain_descriptions": [
+      "công cụ theo dõi hoạt động sâu bên trong ứng dụng giúp tìm ra hàm chạy chậm và lệnh cơ sở dữ liệu bị nghẽn",
+      "giải pháp giám sát toàn diện đo lường thời gian phản hồi, tỷ lệ lỗi và trải nghiệm của người dùng cuối"
+    ],
+    "summary": "Bộ giải pháp giám sát chuyên sâu nhằm theo dõi tính sẵn sàng, phát hiện lỗi mã nguồn và phân tích độ trễ giao dịch trong các ứng dụng phần mềm.",
+    "domains": [
+      "it/devops/observability"
+    ],
+    "level": 2,
     "status": "draft"
   },
   {
@@ -613,6 +655,28 @@
     "status": "draft"
   },
   {
+    "id": "build-artifact",
+    "label": "Artifact",
+    "qualifier": "(Build)",
+    "aliases": [
+      "Tạo phẩm đóng gói",
+      "Thành phẩm build"
+    ],
+    "loanwords": [
+      "artifact"
+    ],
+    "plain_descriptions": [
+      "tệp tin nhị phân hoặc gói phần mềm hoàn chỉnh được tạo ra sau khi biên dịch mã nguồn",
+      "sản phẩm đầu ra của quy trình build sẵn sàng để kiểm thử hoặc cài đặt lên máy chủ"
+    ],
+    "summary": "Tệp hoặc tập hợp các tệp được sinh ra từ quá trình xây dựng mã nguồn nhằm phục vụ lưu trữ, kiểm thử hoặc triển khai vào môi trường vận hành.",
+    "domains": [
+      "it/devops/ci-cd"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
     "id": "burndown-chart",
     "label": "Burndown chart",
     "aliases": [
@@ -721,6 +785,26 @@
     "status": "draft"
   },
   {
+    "id": "capacity-planning",
+    "label": "Capacity planning",
+    "aliases": [
+      "Quy hoạch năng lực"
+    ],
+    "loanwords": [
+      "capacity planning"
+    ],
+    "plain_descriptions": [
+      "dự báo trước dung lượng máy chủ và đường truyền mạng cần bổ sung khi lượng người dùng tăng cao",
+      "việc tính toán tài nguyên phần cứng để đảm bảo hệ thống không bị quá tải vào các dịp cao điểm"
+    ],
+    "summary": "Quy trình ước tính nhu cầu tài nguyên tính toán trong tương lai nhằm chuẩn bị đầy đủ hạ tầng đáp ứng sự gia tăng về lưu lượng và tải công việc.",
+    "domains": [
+      "it/devops/sre-operations"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
     "id": "cash-flow-statement",
     "label": "Báo cáo lưu chuyển tiền tệ",
     "aliases": [
@@ -779,6 +863,26 @@
       "it/ai-ml/llm-agents"
     ],
     "level": 2,
+    "status": "draft"
+  },
+  {
+    "id": "chaos-engineering",
+    "label": "Chaos engineering",
+    "aliases": [
+      "Kỹ thuật hỗn loạn"
+    ],
+    "loanwords": [
+      "chaos engineering"
+    ],
+    "plain_descriptions": [
+      "chủ động gây lỗi giả định trên hệ thống đang chạy để kiểm tra khả năng tự phục hồi",
+      "thí nghiệm ngắt kết nối mạng hoặc tắt máy chủ bất ngờ nhằm phát hiện điểm yếu tiềm ẩn"
+    ],
+    "summary": "Phương pháp thực nghiệm có kiểm soát trên hệ thống phân tán nhằm xây dựng niềm tin vào khả năng chịu đựng các sự cố bất ngờ trong môi trường thực tế.",
+    "domains": [
+      "it/devops/sre-operations"
+    ],
+    "level": 3,
     "status": "draft"
   },
   {
@@ -927,6 +1031,26 @@
     ],
     "level": 1,
     "status": "reviewed"
+  },
+  {
+    "id": "configuration-management",
+    "label": "Configuration management",
+    "aliases": [
+      "Quản lý cấu hình"
+    ],
+    "loanwords": [
+      "configuration management"
+    ],
+    "plain_descriptions": [
+      "việc dùng tập lệnh để tự động thiết lập phần mềm và các tùy chọn hệ thống đồng bộ trên nhiều máy chủ",
+      "phương pháp kiểm soát sự đồng nhất của cài đặt máy chủ bằng mã nguồn để tránh tình trạng sai lệch cấu hình"
+    ],
+    "summary": "Phương pháp kỹ thuật và công cụ nhằm thiết lập, theo dõi và duy trì tính nhất quán của các cài đặt phần mềm và cấu hình hệ thống trên toàn bộ hạ tầng.",
+    "domains": [
+      "it/devops/iac"
+    ],
+    "level": 2,
+    "status": "draft"
   },
   {
     "id": "container-image",
@@ -1385,6 +1509,27 @@
     "status": "draft"
   },
   {
+    "id": "dashboard-monitoring",
+    "label": "Dashboard",
+    "qualifier": "(Giám sát)",
+    "aliases": [
+      "Bảng điều khiển giám sát"
+    ],
+    "loanwords": [
+      "dashboard"
+    ],
+    "plain_descriptions": [
+      "màn hình giao diện trực quan tổng hợp các biểu đồ và thông số đo lường tình trạng máy chủ theo thời gian thực",
+      "bảng điều khiển tập trung giúp kỹ sư nhìn lướt qua là nắm được ngay hệ thống đang ổn định hay gặp trục trặc"
+    ],
+    "summary": "Giao diện trực quan tổng hợp các biểu đồ và chỉ số hiệu năng theo thời gian thực trên một màn hình nhằm giúp kỹ sư nhanh chóng đánh giá tình trạng hoạt động của hệ thống.",
+    "domains": [
+      "it/devops/observability"
+    ],
+    "level": 1,
+    "status": "draft"
+  },
+  {
     "id": "data-lake",
     "label": "Data lake",
     "aliases": [
@@ -1729,6 +1874,26 @@
       "iot/edge-cloud"
     ],
     "level": 2,
+    "status": "draft"
+  },
+  {
+    "id": "devops",
+    "label": "DevOps",
+    "aliases": [
+      "Phương pháp DevOps"
+    ],
+    "loanwords": [
+      "devops"
+    ],
+    "plain_descriptions": [
+      "văn hóa làm việc gắn kết lập trình viên và kỹ sư vận hành để cùng đưa phần mềm lên môi trường thực tế nhanh hơn",
+      "sự kết hợp giữa phát triển phần mềm và quản trị hệ thống thông qua các công cụ tự động hóa kiểm thử và phát hành"
+    ],
+    "summary": "Triết lý văn hóa và bộ phương pháp tích hợp chặt chẽ giữa nhóm phát triển phần mềm và nhóm vận hành hệ thống nhằm rút ngắn chu kỳ chuyển giao và tăng độ tin cậy.",
+    "domains": [
+      "it/devops/ci-cd"
+    ],
+    "level": 1,
     "status": "draft"
   },
   {
@@ -2172,6 +2337,26 @@
     "status": "draft"
   },
   {
+    "id": "error-budget",
+    "label": "Error budget",
+    "aliases": [
+      "Ngân sách lỗi"
+    ],
+    "loanwords": [
+      "error budget"
+    ],
+    "plain_descriptions": [
+      "hạn mức sự cố hoặc thời gian chết cho phép của dịch vụ trước khi buộc phải dừng ra mắt tính năng mới",
+      "khoảng đệm rủi ro được chấp nhận giữa mức độ hoàn hảo tuyệt đối và cam kết độ tin cậy thực tế"
+    ],
+    "summary": "Mức độ gián đoạn hoặc tỷ lệ lỗi tối đa được phép xảy ra trong một khoảng thời gian xác định căn cứ theo mục tiêu mức dịch vụ đã thỏa thuận.",
+    "domains": [
+      "it/devops/sre-operations"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
     "id": "etf",
     "label": "Quỹ hoán đổi danh mục",
     "aliases": [
@@ -2457,6 +2642,46 @@
     "status": "draft"
   },
   {
+    "id": "github-actions",
+    "label": "GitHub Actions",
+    "aliases": [
+      "Quy trình tự động hóa GitHub"
+    ],
+    "loanwords": [
+      "github actions"
+    ],
+    "plain_descriptions": [
+      "công cụ tự động chạy kiểm thử và xuất bản phần mềm gắn liền với từng kho chứa GitHub",
+      "nền tảng thực thi chuỗi tác vụ trên máy ảo mỗi khi lập trình viên đẩy mã nguồn mới lên GitHub"
+    ],
+    "summary": "Nền tảng tích hợp và phân phối liên tục tích hợp sẵn trong GitHub cho phép tự động hóa quy trình xây dựng, kiểm thử và phát hành mã nguồn.",
+    "domains": [
+      "it/devops/ci-cd"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
+    "id": "gitops",
+    "label": "GitOps",
+    "aliases": [
+      "Vận hành qua Git"
+    ],
+    "loanwords": [
+      "gitops"
+    ],
+    "plain_descriptions": [
+      "dùng kho chứa Git làm nơi lưu cấu hình chuẩn duy nhất để triển khai hệ thống máy chủ",
+      "công cụ tự động đồng bộ trạng thái thực tế của cụm máy chủ theo mã nguồn trên Git"
+    ],
+    "summary": "Mô hình vận hành dùng kho lưu trữ Git làm nguồn chân lý duy nhất để quản lý hạ tầng khai báo và đồng bộ triển khai ứng dụng tự động.",
+    "domains": [
+      "it/devops/ci-cd"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
     "id": "gpu",
     "label": "Bộ xử lý đồ họa (GPU)",
     "aliases": [
@@ -2494,6 +2719,26 @@
     "summary": "Thuật toán tối ưu hóa lặp giúp điều chỉnh tham số mô hình ngược chiều với đạo hàm của hàm mất mát nhằm giảm thiểu sai số dự đoán.",
     "domains": [
       "it/ai-ml/foundations"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
+    "id": "grafana",
+    "label": "Grafana",
+    "aliases": [
+      "Nền tảng trực quan hóa Grafana"
+    ],
+    "loanwords": [
+      "grafana"
+    ],
+    "plain_descriptions": [
+      "giao diện web hiển thị các biểu đồ trực quan thể hiện tình trạng máy chủ và lưu lượng truy cập theo thời gian thực",
+      "công cụ vẽ bảng thông tin tổng hợp giúp chuyển đổi các con số khô khan thành đồ thị sinh động"
+    ],
+    "summary": "Ứng dụng web mã nguồn mở chuyên về phân tích và trực quan hóa dữ liệu, giúp tổng hợp các chỉ số, nhật ký và dấu vết vào các bảng điều khiển tương tác.",
+    "domains": [
+      "it/devops/observability"
     ],
     "level": 2,
     "status": "draft"
@@ -2641,6 +2886,27 @@
     "status": "draft"
   },
   {
+    "id": "health-check",
+    "label": "Health check",
+    "qualifier": "(Phần mềm)",
+    "aliases": [
+      "Kiểm tra sức khỏe dịch vụ"
+    ],
+    "loanwords": [
+      "health check"
+    ],
+    "plain_descriptions": [
+      "lệnh kiểm tra định kỳ gửi đến máy chủ để biết dịch vụ còn sống và hoạt động bình thường hay không",
+      "đường dẫn chuyên dụng trả về mã thành công khi các thành phần cơ sở dữ liệu và bộ nhớ vẫn ổn định"
+    ],
+    "summary": "Yêu cầu chẩn đoán được gửi định kỳ tới một dịch vụ phần mềm nhằm xác nhận trạng thái hoạt động và khả năng xử lý yêu cầu của dịch vụ đó.",
+    "domains": [
+      "it/devops/sre-operations"
+    ],
+    "level": 1,
+    "status": "draft"
+  },
+  {
     "id": "hotfix",
     "label": "Hotfix",
     "aliases": [
@@ -2758,6 +3024,26 @@
     "summary": "Tác vụ thị giác máy tính trong đó thuật toán phân tích toàn bộ bức ảnh để gán cho nó một hoặc nhiều nhãn danh mục từ một tập phân loại xác định.",
     "domains": [
       "it/ai-ml/computer-vision"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
+    "id": "immutable-infrastructure",
+    "label": "Immutable infrastructure",
+    "aliases": [
+      "Hạ tầng bất biến"
+    ],
+    "loanwords": [
+      "immutable infrastructure"
+    ],
+    "plain_descriptions": [
+      "nguyên tắc không bao giờ chỉnh sửa trực tiếp trên máy chủ đang chạy mà luôn thay thế bằng một máy chủ mới hoàn toàn",
+      "cách vận hành coi máy tính như các linh kiện dùng một lần được đóng gói sẵn và thay mới mỗi khi cập nhật phần mềm"
+    ],
+    "summary": "Mô hình quản lý hạ tầng trong đó các máy chủ hoặc vùng chứa không bao giờ bị chỉnh sửa trực tiếp sau khi khởi chạy, mà luôn được thay thế bằng hình ảnh máy mới khi có thay đổi.",
+    "domains": [
+      "it/devops/iac"
     ],
     "level": 2,
     "status": "draft"
@@ -3093,6 +3379,26 @@
     "status": "draft"
   },
   {
+    "id": "jenkins",
+    "label": "Jenkins",
+    "aliases": [
+      "Máy chủ tự động hóa Jenkins"
+    ],
+    "loanwords": [
+      "jenkins"
+    ],
+    "plain_descriptions": [
+      "máy chủ tự lưu trữ dùng để lên lịch và chạy các bước đóng gói, kiểm thử phần mềm tự động",
+      "công cụ tự động hóa nguồn mở giúp điều phối quy trình phân phối phần mềm qua hàng nghìn plugin"
+    ],
+    "summary": "Máy chủ tự động hóa mã nguồn mở độc lập hỗ trợ thiết lập các pipeline xây dựng, kiểm thử và triển khai phần mềm thông qua hệ thống plugin đa dạng.",
+    "domains": [
+      "it/devops/ci-cd"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
     "id": "json",
     "label": "JSON",
     "aliases": [
@@ -3359,6 +3665,26 @@
       "finance/corporate-finance/capital-structure"
     ],
     "level": 1,
+    "status": "draft"
+  },
+  {
+    "id": "liveness-probe",
+    "label": "Liveness probe",
+    "aliases": [
+      "Đầu dò hoạt động"
+    ],
+    "loanwords": [
+      "liveness probe"
+    ],
+    "plain_descriptions": [
+      "cơ chế tự động khởi động lại container khi ứng dụng bên trong bị treo cứng hoặc rơi vào vòng lặp chết",
+      "thiết lập giám sát trong Kubernetes giúp phát hiện tiến trình bị tê liệt để dọn dẹp và bật lại bản mới"
+    ],
+    "summary": "Bộ kiểm tra định kỳ trong hệ thống điều phối container nhằm phát hiện trạng thái treo hoặc chết của tiến trình để kích hoạt cơ chế khởi động lại kịp thời.",
+    "domains": [
+      "it/devops/containers"
+    ],
+    "level": 2,
     "status": "draft"
   },
   {
@@ -3945,6 +4271,28 @@
     "status": "draft"
   },
   {
+    "id": "mttr",
+    "label": "Mean time to recovery (MTTR)",
+    "aliases": [
+      "MTTR",
+      "Thời gian phục hồi trung bình"
+    ],
+    "loanwords": [
+      "mean time to recovery",
+      "mttr"
+    ],
+    "plain_descriptions": [
+      "khoảng thời gian trung bình cần thiết để sửa xong một sự cố và đưa hệ thống hoạt động trở lại",
+      "thước đo phản ánh tốc độ khôi phục dịch vụ của đội ngũ kỹ thuật khi xảy ra sự cố ngừng trệ"
+    ],
+    "summary": "Chỉ số vận hành biểu thị thời gian trung bình cần thiết để khắc phục sự cố và khôi phục hệ thống về trạng thái hoạt động bình thường.",
+    "domains": [
+      "it/devops/sre-operations"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
     "id": "mutual-fund",
     "label": "Quỹ tương hỗ",
     "aliases": [
@@ -4237,6 +4585,26 @@
     "status": "draft"
   },
   {
+    "id": "opentelemetry",
+    "label": "OpenTelemetry",
+    "aliases": [
+      "Chuẩn thu thập dữ liệu đo lường OpenTelemetry"
+    ],
+    "loanwords": [
+      "opentelemetry"
+    ],
+    "plain_descriptions": [
+      "bộ tiêu chuẩn chung giúp thu thập dấu vết, chỉ số và nhật ký ứng dụng mà không phụ thuộc vào nhà cung cấp cụ thể",
+      "thư viện lập trình dùng để trích xuất dữ liệu đo lường từ mã nguồn và gửi tới bất kỳ hệ thống phân tích nào"
+    ],
+    "summary": "Khung làm việc mã nguồn mở trung lập của CNCF cung cấp các bộ API, SDK và công cụ chuẩn hóa nhằm tạo và xuất dữ liệu đo lường từ xa.",
+    "domains": [
+      "it/devops/observability"
+    ],
+    "level": 3,
+    "status": "draft"
+  },
+  {
     "id": "organic-traffic",
     "label": "Organic traffic",
     "aliases": [
@@ -4421,6 +4789,26 @@
       "finance/personal-finance/tax"
     ],
     "level": 1,
+    "status": "draft"
+  },
+  {
+    "id": "platform-engineering",
+    "label": "Platform engineering",
+    "aliases": [
+      "Kỹ thuật nền tảng"
+    ],
+    "loanwords": [
+      "platform engineering"
+    ],
+    "plain_descriptions": [
+      "việc xây dựng các công cụ và cổng thông tin nội bộ giúp lập trình viên tự triển khai dịch vụ mà không cần nhờ cậy bộ phận IT",
+      "thiết kế nền tảng hạ tầng như một sản phẩm phục vụ các nhóm phát triển phần mềm nhằm giảm thiểu rào cản kỹ thuật"
+    ],
+    "summary": "Hoạt động thiết kế và xây dựng các nền tảng tự phục vụ nội bộ nhằm cung cấp chuỗi công cụ chuẩn hóa giúp các nhóm phát triển phần mềm phát hành ứng dụng độc lập và an toàn.",
+    "domains": [
+      "it/devops/sre-operations"
+    ],
+    "level": 2,
     "status": "draft"
   },
   {
@@ -4781,6 +5169,27 @@
     "status": "draft"
   },
   {
+    "id": "prometheus",
+    "label": "Prometheus",
+    "qualifier": "(Giám sát)",
+    "aliases": [
+      "Hệ thống giám sát Prometheus"
+    ],
+    "loanwords": [
+      "prometheus"
+    ],
+    "plain_descriptions": [
+      "phần mềm nguồn mở định kỳ thu thập và lưu trữ các con số đo lường hiệu năng của máy chủ theo dòng thời gian",
+      "công cụ giám sát kéo dữ liệu metric về và cho phép kỹ sư tra cứu bằng ngôn ngữ PromQL"
+    ],
+    "summary": "Bộ công cụ giám sát và cảnh báo mã nguồn mở lưu trữ dữ liệu chỉ số theo chuỗi thời gian và hỗ trợ truy vấn đa chiều bằng ngôn ngữ PromQL.",
+    "domains": [
+      "it/devops/observability"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
     "id": "prompt",
     "label": "Prompt",
     "aliases": [],
@@ -4953,6 +5362,26 @@
     "summary": "Cơ chế kiểm soát mạng phòng ngừa nhằm hạn chế số lượng yêu cầu mà một máy khách có thể gửi tới giao diện lập trình ứng dụng (API) trong một khoảng thời gian.",
     "domains": [
       "it/web/api"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
+    "id": "readiness-probe",
+    "label": "Readiness probe",
+    "aliases": [
+      "Đầu dò sẵn sàng"
+    ],
+    "loanwords": [
+      "readiness probe"
+    ],
+    "plain_descriptions": [
+      "cơ chế báo cho bộ cân bằng tải biết ứng dụng đã khởi động xong và sẵn sàng tiếp nhận yêu cầu từ người dùng",
+      "bước kiểm tra tạm thời chặn khách truy cập vào máy chủ trong khi dịch vụ đang nạp bộ nhớ đệm hoặc tải dữ liệu"
+    ],
+    "summary": "Bộ kiểm tra xác định xem container ứng dụng đã hoàn tất quá trình khởi tạo và sẵn sàng nhận lưu lượng truy cập mạng từ bộ cân bằng tải hay chưa.",
+    "domains": [
+      "it/devops/containers"
     ],
     "level": 2,
     "status": "draft"
@@ -5203,6 +5632,27 @@
       "iot/devices-sensors"
     ],
     "level": 2,
+    "status": "draft"
+  },
+  {
+    "id": "runbook",
+    "label": "Runbook",
+    "aliases": [
+      "Sổ tay vận hành",
+      "Quy trình xử lý sự cố"
+    ],
+    "loanwords": [
+      "runbook"
+    ],
+    "plain_descriptions": [
+      "tài liệu hướng dẫn từng bước giúp kỹ sư trực ban khắc phục nhanh khi nhận được cảnh báo lỗi",
+      "cẩm nang thao tác kỹ thuật ghi sẵn các bước kiểm tra và xử lý sự cố thường gặp trên máy chủ"
+    ],
+    "summary": "Tài liệu hướng dẫn quy trình từng bước được chuẩn hóa giúp kỹ sư vận hành xử lý sự cố khẩn cấp hoặc thực hiện bảo trì hệ thống an toàn.",
+    "domains": [
+      "it/devops/sre-operations"
+    ],
+    "level": 1,
     "status": "draft"
   },
   {
@@ -5887,6 +6337,28 @@
     "status": "draft"
   },
   {
+    "id": "sre",
+    "label": "Site reliability engineering (SRE)",
+    "aliases": [
+      "SRE",
+      "Kỹ thuật độ tin cậy hệ thống"
+    ],
+    "loanwords": [
+      "site reliability engineering",
+      "sre"
+    ],
+    "plain_descriptions": [
+      "việc vận dụng kỹ năng lập trình phần mềm để giải quyết các bài toán vận hành và giữ cho hệ thống luôn hoạt động ổn định",
+      "ngành chuyên môn tập trung tự động hóa các thao tác thủ công nhằm đảm bảo dịch vụ trực tuyến không bị gián đoạn"
+    ],
+    "summary": "Chuyên ngành kỹ thuật ứng dụng các nguyên lý phát triển phần mềm để tự động hóa hoạt động vận hành và duy trì độ tin cậy cho các hệ thống quy mô lớn.",
+    "domains": [
+      "it/devops/sre-operations"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
     "id": "staging-environment",
     "label": "Staging environment",
     "aliases": [
@@ -6221,6 +6693,27 @@
     "status": "draft"
   },
   {
+    "id": "toil",
+    "label": "Toil",
+    "qualifier": "(SRE)",
+    "aliases": [
+      "Công việc lao dịch"
+    ],
+    "loanwords": [
+      "toil"
+    ],
+    "plain_descriptions": [
+      "các công việc vận hành thủ công lặp đi lặp lại không tạo ra giá trị lâu dài và ngày càng phình to khi dịch vụ mở rộng",
+      "những việc vặt như khởi động lại máy hay duyệt phiếu yêu cầu bằng tay mà lẽ ra phải được viết mã tự động hóa"
+    ],
+    "summary": "Trong mô hình SRE, toil là loại công việc vận hành thủ công, lặp lại và có thể tự động hóa, thường tăng tuyến tính theo quy mô của dịch vụ mà không mang lại giá trị bền vững.",
+    "domains": [
+      "it/devops/sre-operations"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
     "id": "token-auth",
     "label": "Token",
     "qualifier": "(Xác thực)",
@@ -6340,6 +6833,26 @@
     "summary": "Kiến trúc mạng nơ-ron dựa trên cơ chế tự chú ý giúp xử lý đồng thời mọi phần tử trong chuỗi dữ liệu mà không cần vòng lặp tuần tự.",
     "domains": [
       "it/ai-ml/foundations"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
+    "id": "trunk-based-development",
+    "label": "Trunk-based development",
+    "aliases": [
+      "Phát triển dựa trên nhánh chính"
+    ],
+    "loanwords": [
+      "trunk-based development"
+    ],
+    "plain_descriptions": [
+      "thói quen gom các đoạn mã nhỏ hợp nhất liên tục vào một nhánh chính duy nhất trong ngày",
+      "phương pháp làm việc bỏ qua các nhánh tính năng kéo dài nhiều tuần để tránh xung đột mã"
+    ],
+    "summary": "Chiến lược quản lý nhánh mã nguồn trong đó các kỹ sư thường xuyên tích hợp những phần thay đổi nhỏ vào một nhánh chính duy nhất nhằm hạn chế xung đột.",
+    "domains": [
+      "it/software-engineering/version-control"
     ],
     "level": 2,
     "status": "draft"

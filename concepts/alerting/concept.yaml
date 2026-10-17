@@ -1,12 +1,26 @@
 id: alerting
 domains:
   - it/devops/observability
-level: 1
+level: 2
 relations:
-  prerequisites: []
+  prerequisites:
+    - metric-monitoring
+    - log
   confusable: []
-  related: []
+  related:
+    - on-call
+    - incident
+    - runbook
 status: draft
 provenance:
   drafted_by: ai
-sources: []
+sources:
+  - ref: prometheus-docs
+    locator: https://prometheus.io/docs/alerting/latest/overview/
+    title: "Alerting overview"
+    language: en
+    accessed: '2026-10-17'
+    retrieved_by: ai
+    supports:
+      - definition
+      - summary

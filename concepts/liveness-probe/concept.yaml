@@ -1,12 +1,26 @@
 id: liveness-probe
 domains:
   - it/devops/containers
-level: 1
+level: 2
 relations:
-  prerequisites: []
-  confusable: []
-  related: []
+  prerequisites:
+    - health-check
+    - kubernetes-pod
+  confusable:
+    - readiness-probe
+  related:
+    - kubernetes
+    - docker
 status: draft
 provenance:
   drafted_by: ai
-sources: []
+sources:
+  - ref: k8s-glossary
+    locator: https://kubernetes.io/docs/tasks/configure-pod-container/configure-liveness-readiness-startup-probes/
+    title: "Configure Liveness, Readiness and Startup Probes"
+    language: en
+    accessed: '2026-10-17'
+    retrieved_by: ai
+    supports:
+      - definition
+      - summary

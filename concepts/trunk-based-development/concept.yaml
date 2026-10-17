@@ -1,12 +1,25 @@
 id: trunk-based-development
 domains:
   - it/software-engineering/version-control
-level: 1
+level: 2
 relations:
-  prerequisites: []
+  prerequisites:
+    - git-branch
+    - ci-cd
   confusable: []
-  related: []
+  related:
+    - pull-request
+    - hotfix
 status: draft
 provenance:
   drafted_by: ai
-sources: []
+sources:
+  - ref: trunk-based-dev-site
+    locator: https://trunkbaseddevelopment.com/
+    title: "Trunk Based Development"
+    language: en
+    accessed: '2026-10-17'
+    retrieved_by: ai
+    supports:
+      - definition
+      - summary

@@ -1,0 +1,24 @@
+id: block-storage
+domains:
+  - it/infrastructure/cloud
+level: 2
+relations:
+  prerequisites:
+    - iaas
+  confusable:
+    - object-storage
+  related:
+    - cloud-instance
+status: draft
+provenance:
+  drafted_by: ai
+sources:
+  - ref: aws-docs
+    locator: https://docs.aws.amazon.com/ebs/latest/userguide/what-is-ebs.html
+    title: What is Amazon Elastic Block Store (Amazon EBS)?
+    language: en
+    accessed: '2026-10-17'
+    retrieved_by: ai
+    supports:
+      - definition
+      - summary

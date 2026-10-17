@@ -1,0 +1,26 @@
+id: docker-compose
+domains:
+  - it/devops/containers
+level: 2
+relations:
+  prerequisites:
+    - docker
+    - software-container
+  confusable:
+    - kubernetes
+  related:
+    - container-registry
+    - helm
+status: draft
+provenance:
+  drafted_by: ai
+sources:
+  - ref: docker-docs
+    locator: https://docs.docker.com/compose/
+    title: Docker Compose overview
+    language: en
+    accessed: '2026-10-17'
+    retrieved_by: ai
+    supports:
+      - definition
+      - summary

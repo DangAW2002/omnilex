@@ -1,0 +1,25 @@
+id: ip-address
+domains:
+  - it/infrastructure/networking
+level: 1
+relations:
+  prerequisites: []
+  confusable: []
+  related:
+    - subnet
+    - network-port
+    - nat
+    - firewall
+status: draft
+provenance:
+  drafted_by: ai
+sources:
+  - ref: ietf
+    locator: https://www.rfc-editor.org/info/rfc791/
+    title: Internet Protocol (DARPA Internet Program Protocol Specification)
+    language: en
+    accessed: '2026-10-17'
+    retrieved_by: ai
+    supports:
+      - definition
+      - summary

@@ -1,0 +1,24 @@
+id: spot-instance
+domains:
+  - it/infrastructure/cloud
+level: 2
+relations:
+  prerequisites:
+    - cloud-instance
+  confusable:
+    - cloud-instance
+  related:
+    - finops
+status: draft
+provenance:
+  drafted_by: ai
+sources:
+  - ref: aws-docs
+    locator: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/using-spot-instances.html
+    title: Spot Instances
+    language: en
+    accessed: '2026-10-17'
+    retrieved_by: ai
+    supports:
+      - definition
+      - summary

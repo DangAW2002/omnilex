@@ -18,7 +18,9 @@
       "principal",
       "revenue",
       "roi",
-      "simple-interest"
+      "simple-interest",
+      "stock",
+      "stock-exchange"
     ]
   },
   {
@@ -41,17 +43,15 @@
     "license_evidence": "https://www.nist.gov/oism/copyrights",
     "concepts": [
       "actuator",
-      "algorithm",
-      "embedded-system",
       "encryption",
+      "firewall",
       "firmware",
-      "interpreter",
+      "iaas",
       "mfa",
       "microcontroller",
-      "nfc",
-      "rfid",
+      "paas",
+      "saas",
       "sensor",
-      "smart-meter",
       "stakeholder"
     ]
   },
@@ -66,7 +66,8 @@
       "balance-sheet",
       "cash-flow-statement",
       "equity-finance",
-      "income-statement"
+      "income-statement",
+      "working-capital"
     ]
   }
 ]

@@ -1,0 +1,26 @@
+id: tcp
+domains:
+  - it/infrastructure/networking
+level: 1
+relations:
+  prerequisites:
+    - ip-address
+    - network-port
+  confusable:
+    - udp
+  related:
+    - ssh
+    - firewall
+status: draft
+provenance:
+  drafted_by: ai
+sources:
+  - ref: ietf
+    locator: https://www.rfc-editor.org/info/rfc793/
+    title: Transmission Control Protocol Specification
+    language: en
+    accessed: '2026-10-17'
+    retrieved_by: ai
+    supports:
+      - definition
+      - summary

@@ -21,24 +21,6 @@
     "status": "draft"
   },
   {
-    "id": "accelerometer",
-    "label": "Accelerometer",
-    "aliases": [],
-    "loanwords": [
-      "accelerometer"
-    ],
-    "plain_descriptions": [
-      "sensor that detects motion, shakes, and the pull of gravity on a device",
-      "microchip that measures changes in speed and tells a phone to rotate its screen"
-    ],
-    "summary": "An electromechanical sensor that measures proper acceleration—the physical acceleration experienced by an object relative to freefall, including the gravitational vector.",
-    "domains": [
-      "iot/devices-sensors"
-    ],
-    "level": 2,
-    "status": "draft"
-  },
-  {
     "id": "acceptance-criteria",
     "label": "Acceptance criteria",
     "aliases": [
@@ -78,25 +60,6 @@
     "status": "draft"
   },
   {
-    "id": "acid",
-    "label": "ACID",
-    "qualifier": "(Database)",
-    "aliases": [
-      "ACID properties"
-    ],
-    "loanwords": [],
-    "plain_descriptions": [
-      "four safety rules guaranteeing that database transactions finish completely without corruption",
-      "the core database promise that financial transactions either succeed 100% or leave no trace"
-    ],
-    "summary": "A set of four fundamental properties (Atomicity, Consistency, Isolation, Durability) that guarantee database transactions are processed reliably.",
-    "domains": [
-      "it/data/database"
-    ],
-    "level": 2,
-    "status": "draft"
-  },
-  {
     "id": "actuator",
     "label": "Actuator",
     "aliases": [],
@@ -127,26 +90,6 @@
       "media/digital-marketing/paid-ads"
     ],
     "level": 1,
-    "status": "draft"
-  },
-  {
-    "id": "adc",
-    "label": "Analog-to-digital converter (ADC)",
-    "aliases": [
-      "ADC"
-    ],
-    "loanwords": [
-      "adc"
-    ],
-    "plain_descriptions": [
-      "electronic circuit that converts smooth continuous physical voltages into discrete digital numbers",
-      "sensor-reading chip that turns real-world voltage levels into numbers a computer can process"
-    ],
-    "summary": "An electronic circuit system that samples a continuous analog voltage waveform and quantizes it into discrete multi-bit digital numeric values.",
-    "domains": [
-      "iot/devices-sensors"
-    ],
-    "level": 2,
     "status": "draft"
   },
   {
@@ -186,22 +129,6 @@
     "status": "draft"
   },
   {
-    "id": "algorithm",
-    "label": "Algorithm",
-    "aliases": [],
-    "loanwords": [],
-    "plain_descriptions": [
-      "unambiguous, step-by-step recipe of instructions designed to solve a specific problem",
-      "computational formula that processes input data and produces a deterministic output"
-    ],
-    "summary": "A well-defined, finite sequence of unambiguous instructions designed to perform a specific computational computation or solve a problem.",
-    "domains": [
-      "it/software-engineering/programming-concepts"
-    ],
-    "level": 1,
-    "status": "draft"
-  },
-  {
     "id": "anonymous-source",
     "label": "Anonymous source",
     "aliases": [
@@ -221,74 +148,17 @@
     "status": "draft"
   },
   {
-    "id": "apache-airflow",
-    "label": "Apache Airflow",
-    "aliases": [
-      "Airflow"
-    ],
+    "id": "ansible",
+    "label": "Ansible",
+    "aliases": [],
     "loanwords": [],
     "plain_descriptions": [
-      "a tool that schedules and monitors multi-step data pipelines using Python code",
-      "an automated task manager that runs database extraction and report scripts in orderly sequence"
+      "agentless tool for configuring servers and automating software setups via SSH",
+      "automation engine using YAML playbooks to install and manage software across machines"
     ],
-    "summary": "An open-source platform used to programmatically author, schedule, and monitor complex data engineering workflows.",
+    "summary": "An open-source automation engine that automates cloud provisioning, configuration management, and application deployment without installing agents on managed nodes.",
     "domains": [
-      "it/data/data-engineering"
-    ],
-    "level": 2,
-    "status": "draft"
-  },
-  {
-    "id": "apache-flink",
-    "label": "Apache Flink",
-    "aliases": [
-      "Flink"
-    ],
-    "loanwords": [],
-    "plain_descriptions": [
-      "an open-source framework designed for real-time calculations on continuous data streams",
-      "a high-speed event computation engine that tracks accurate running totals without stopping"
-    ],
-    "summary": "An open-source distributed engine engineered for low-latency stateful stream calculations across finite and infinite event feeds.",
-    "domains": [
-      "it/data/data-engineering"
-    ],
-    "level": 2,
-    "status": "draft"
-  },
-  {
-    "id": "apache-kafka",
-    "label": "Apache Kafka",
-    "aliases": [
-      "Kafka"
-    ],
-    "loanwords": [],
-    "plain_descriptions": [
-      "a distributed software platform that records continuous streams of records across multiple servers",
-      "an enterprise real-time message bus that stores event history reliably and replays events on demand"
-    ],
-    "summary": "A distributed event streaming platform used for high-throughput data pipelines, streaming analytics, and system integration.",
-    "domains": [
-      "it/data/data-engineering",
-      "it/web/backend"
-    ],
-    "level": 2,
-    "status": "draft"
-  },
-  {
-    "id": "apache-spark",
-    "label": "Apache Spark",
-    "aliases": [
-      "Spark"
-    ],
-    "loanwords": [],
-    "plain_descriptions": [
-      "a fast big-data computing engine that processes massive datasets in computer memory",
-      "an open-source framework for running large data transformations and machine learning across clusters"
-    ],
-    "summary": "An open-source distributed computing framework designed for fast processing of large-scale datasets using in-memory abstractions.",
-    "domains": [
-      "it/data/data-engineering"
+      "it/devops/iac"
     ],
     "level": 2,
     "status": "draft"
@@ -332,60 +202,6 @@
     "status": "draft"
   },
   {
-    "id": "api-gateway",
-    "label": "API gateway",
-    "aliases": [
-      "Gateway routing"
-    ],
-    "loanwords": [],
-    "plain_descriptions": [
-      "single front entrance that directs client requests to appropriate backend services",
-      "entry server handling auth, throttling, and routing for microservices"
-    ],
-    "summary": "An intermediary server pattern that acts as a single point of entry for external clients, routing requests to internal microservices while handling cross-cutting concerns.",
-    "domains": [
-      "it/web/api",
-      "it/software-engineering/architecture"
-    ],
-    "level": 2,
-    "status": "draft"
-  },
-  {
-    "id": "arduino",
-    "label": "Arduino",
-    "aliases": [],
-    "loanwords": [
-      "arduino"
-    ],
-    "plain_descriptions": [
-      "open-source microcontroller board and software platform for controlling physical electronics",
-      "easy-to-program electronic prototyping board that reads buttons and turns on motors"
-    ],
-    "summary": "An open-source electronics prototyping platform encompassing programmable microcontroller hardware boards and a simplified software development environment for controlling physical actuators and sensors.",
-    "domains": [
-      "iot/devices-sensors"
-    ],
-    "level": 1,
-    "status": "draft"
-  },
-  {
-    "id": "array",
-    "label": "Array",
-    "qualifier": "(Programming)",
-    "aliases": [],
-    "loanwords": [],
-    "plain_descriptions": [
-      "ordered collection of elements stored at contiguous memory locations accessed by zero-based indices",
-      "basic sequence list where each item is identified by its numerical position"
-    ],
-    "summary": "A linear data structure consisting of a collection of elements identified by index or key, stored in contiguous memory locations.",
-    "domains": [
-      "it/software-engineering/programming-concepts"
-    ],
-    "level": 1,
-    "status": "draft"
-  },
-  {
     "id": "aspect-ratio",
     "label": "Aspect ratio",
     "aliases": [],
@@ -418,22 +234,6 @@
       "finance/accounting/bookkeeping"
     ],
     "level": 1,
-    "status": "draft"
-  },
-  {
-    "id": "async-await",
-    "label": "Async/await",
-    "aliases": [],
-    "loanwords": [],
-    "plain_descriptions": [
-      "syntax that lets developers write asynchronous, non-blocking code that reads like normal sequential instructions",
-      "language keywords used to pause execution until a background operation finishes without freezing the thread"
-    ],
-    "summary": "A syntactic abstraction that allows asynchronous, promise-based operations to be written and structured in a readable sequential style.",
-    "domains": [
-      "it/software-engineering/programming-concepts"
-    ],
-    "level": 2,
     "status": "draft"
   },
   {
@@ -495,6 +295,24 @@
     "status": "draft"
   },
   {
+    "id": "availability-zone",
+    "label": "Availability zone (AZ)",
+    "aliases": [
+      "AZ"
+    ],
+    "loanwords": [],
+    "plain_descriptions": [
+      "isolated data center location within a cloud region with its own power",
+      "discrete fault domain designed to keep systems running if another center fails"
+    ],
+    "summary": "One or more discrete physical data centers within a region with independent power, cooling, and networking designed for fault tolerance.",
+    "domains": [
+      "it/infrastructure/cloud"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
     "id": "b-roll",
     "label": "B-roll",
     "aliases": [
@@ -532,25 +350,6 @@
     "status": "draft"
   },
   {
-    "id": "backpressure",
-    "label": "Backpressure",
-    "aliases": [
-      "Flow control",
-      "Back-pressure"
-    ],
-    "loanwords": [],
-    "plain_descriptions": [
-      "signaling a fast sender to slow down so a slower receiver does not crash",
-      "mechanism where downstream consumers tell producers how much data they can accept"
-    ],
-    "summary": "A flow-control mechanism in asynchronous software pipelines where downstream consumers signal their capacity upstream to prevent producers from overwhelming them with data.",
-    "domains": [
-      "it/software-engineering/architecture"
-    ],
-    "level": 2,
-    "status": "draft"
-  },
-  {
     "id": "balance-sheet",
     "label": "Balance sheet",
     "aliases": [
@@ -564,6 +363,23 @@
     "summary": "A core financial statement summarizing an entity’s assets, liabilities, and shareholders’ equity at a specific point in time.",
     "domains": [
       "finance/corporate-finance/financial-statements"
+    ],
+    "level": 1,
+    "status": "draft"
+  },
+  {
+    "id": "bandwidth",
+    "label": "Bandwidth",
+    "qualifier": "(Network)",
+    "aliases": [],
+    "loanwords": [],
+    "plain_descriptions": [
+      "maximum amount of data that can travel through an internet connection per second",
+      "width of a network data highway measured in megabits or gigabits per second"
+    ],
+    "summary": "The maximum rate of data transfer across a given network communication path, typically measured in bits per second.",
+    "domains": [
+      "it/infrastructure/networking"
     ],
     "level": 1,
     "status": "draft"
@@ -590,24 +406,6 @@
     "status": "draft"
   },
   {
-    "id": "batch-processing",
-    "label": "Batch processing",
-    "aliases": [
-      "bulk processing"
-    ],
-    "loanwords": [],
-    "plain_descriptions": [
-      "processing collected piles of business records all together at a scheduled time",
-      "running heavy calculation jobs overnight over yesterday's accumulated sales records"
-    ],
-    "summary": "The execution of a series of non-interactive computing jobs on large accumulated blocks of data without manual intervention.",
-    "domains": [
-      "it/data/data-engineering"
-    ],
-    "level": 2,
-    "status": "draft"
-  },
-  {
     "id": "batch-size",
     "label": "Batch size",
     "aliases": [],
@@ -621,40 +419,6 @@
       "it/ai-ml/foundations"
     ],
     "level": 2,
-    "status": "draft"
-  },
-  {
-    "id": "big-o-notation",
-    "label": "Big O notation",
-    "aliases": [
-      "Big O"
-    ],
-    "loanwords": [],
-    "plain_descriptions": [
-      "mathematical shorthand describing how an algorithm’s runtime or memory demand grows as input size gets huge",
-      "metric that classifies algorithm efficiency by focusing on worst-case scaling behavior while ignoring hardware differences"
-    ],
-    "summary": "A mathematical notation used to describe the asymptotic upper bound of an algorithm’s time or memory requirements as the input size approaches infinity.",
-    "domains": [
-      "it/software-engineering/programming-concepts"
-    ],
-    "level": 2,
-    "status": "draft"
-  },
-  {
-    "id": "binary-search",
-    "label": "Binary search",
-    "aliases": [],
-    "loanwords": [],
-    "plain_descriptions": [
-      "fast search algorithm that finds an item in a sorted list by repeatedly dividing the search range in half",
-      "lookup technique that compares target values against the middle element of an ordered array"
-    ],
-    "summary": "An efficient search algorithm that finds the position of a target value within a sorted array by repeatedly halving the search interval.",
-    "domains": [
-      "it/software-engineering/programming-concepts"
-    ],
-    "level": 1,
     "status": "draft"
   },
   {
@@ -673,6 +437,22 @@
     "summary": "A power-optimized wireless personal area network technology designed for short-range communication with minimal electrical energy consumption.",
     "domains": [
       "iot/connectivity-protocols"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
+    "id": "block-storage",
+    "label": "Block storage",
+    "aliases": [],
+    "loanwords": [],
+    "plain_descriptions": [
+      "raw virtual hard disk volume attached directly to a cloud virtual machine",
+      "high-speed storage split into fixed-size blocks for databases and operating systems"
+    ],
+    "summary": "A storage architecture that splits data into evenly sized raw blocks, exposed as virtual disk volumes attached to compute instances for high-speed I/O.",
+    "domains": [
+      "it/infrastructure/cloud"
     ],
     "level": 2,
     "status": "draft"
@@ -805,42 +585,6 @@
     "status": "draft"
   },
   {
-    "id": "breakpoint",
-    "label": "Breakpoint",
-    "qualifier": "(Debugging)",
-    "aliases": [],
-    "loanwords": [],
-    "plain_descriptions": [
-      "intentional pause point placed in code that halts program execution so developers can inspect state",
-      "marker set on a specific line of source code where a debugger suspends the running thread"
-    ],
-    "summary": "An intentional stopping point configured in source code or instruction addresses where a debugger suspends execution to allow state inspection.",
-    "domains": [
-      "it/software-engineering/practices"
-    ],
-    "level": 1,
-    "status": "draft"
-  },
-  {
-    "id": "browser-cache",
-    "label": "Browser cache",
-    "aliases": [
-      "web cache",
-      "HTTP cache"
-    ],
-    "loanwords": [],
-    "plain_descriptions": [
-      "a temporary storage folder where your browser saves images and files to reload sites faster",
-      "local memory holding downloaded web assets to avoid requesting them repeatedly"
-    ],
-    "summary": "A temporary storage mechanism within a web browser that retains previously fetched HTTP resources to speed up future requests.",
-    "domains": [
-      "it/web/frontend"
-    ],
-    "level": 1,
-    "status": "draft"
-  },
-  {
     "id": "budget",
     "label": "Budget",
     "qualifier": "(Personal finance)",
@@ -860,25 +604,6 @@
     "status": "draft"
   },
   {
-    "id": "bundler",
-    "label": "Bundler",
-    "qualifier": "(JavaScript)",
-    "aliases": [
-      "module bundler"
-    ],
-    "loanwords": [],
-    "plain_descriptions": [
-      "a development tool that packages hundreds of code files into clean web bundles",
-      "a build program that combines JavaScript modules, styles, and assets for fast browser loading"
-    ],
-    "summary": "A build tool that traverses project dependencies to combine and optimize multiple code and asset files into production-ready web bundles.",
-    "domains": [
-      "it/web/frontend"
-    ],
-    "level": 2,
-    "status": "draft"
-  },
-  {
     "id": "burndown-chart",
     "label": "Burndown chart",
     "aliases": [],
@@ -892,25 +617,6 @@
     "summary": "A graphical representation of work left to do versus time, utilized by agile squads to forecast sprint completion trajectories.",
     "domains": [
       "product/delivery-planning"
-    ],
-    "level": 2,
-    "status": "draft"
-  },
-  {
-    "id": "business-intelligence",
-    "label": "Business intelligence (BI)",
-    "aliases": [
-      "BI"
-    ],
-    "loanwords": [],
-    "plain_descriptions": [
-      "tools that turn raw corporate spreadsheets into visual performance reports",
-      "software that queries past sales and operational data to spot trends"
-    ],
-    "summary": "Strategies and software technologies used by enterprises to analyze historical business data and guide operational decision-making.",
-    "domains": [
-      "it/data/analytics",
-      "it/business-systems/enterprise-apps"
     ],
     "level": 2,
     "status": "draft"
@@ -970,23 +676,6 @@
     "status": "draft"
   },
   {
-    "id": "callback",
-    "label": "Callback",
-    "qualifier": "(Programming)",
-    "aliases": [],
-    "loanwords": [],
-    "plain_descriptions": [
-      "executable subroutine supplied as an input parameter to be triggered upon task conclusion",
-      "packaged piece of code passed to a recipient procedure to execute when a specific event happens"
-    ],
-    "summary": "A subroutine delivered as a parameter to another procedure to be called back upon the occurrence of a predefined trigger.",
-    "domains": [
-      "it/software-engineering/programming-concepts"
-    ],
-    "level": 2,
-    "status": "draft"
-  },
-  {
     "id": "canary-release",
     "label": "Canary release",
     "aliases": [
@@ -1000,24 +689,6 @@
     "summary": "A deployment technique that exposes a new software release to a small fraction of production traffic to validate behavior before broader rollout.",
     "domains": [
       "it/devops/ci-cd"
-    ],
-    "level": 2,
-    "status": "draft"
-  },
-  {
-    "id": "cap-theorem",
-    "label": "CAP theorem",
-    "aliases": [
-      "Brewer's theorem"
-    ],
-    "loanwords": [],
-    "plain_descriptions": [
-      "a fundamental rule stating distributed systems can only provide two out of consistency, availability, and partition tolerance",
-      "the reality that when cloud networks get cut, a database must choose between giving fresh answers or staying online"
-    ],
-    "summary": "A fundamental principle of distributed computing stating that a distributed data store can simultaneously provide at most two out of three guarantees, Consistency, Availability, and Partition tolerance.",
-    "domains": [
-      "it/data/database"
     ],
     "level": 2,
     "status": "draft"
@@ -1073,24 +744,6 @@
     "summary": "A prompting technique that asks a model to reason through intermediate steps before it gives the final answer.",
     "domains": [
       "it/ai-ml/llm-agents"
-    ],
-    "level": 2,
-    "status": "draft"
-  },
-  {
-    "id": "change-data-capture",
-    "label": "Change data capture (CDC)",
-    "aliases": [
-      "CDC"
-    ],
-    "loanwords": [],
-    "plain_descriptions": [
-      "identifying and tracking row changes in a database so other systems update automatically",
-      "watching the database transaction log to copy edits to search indexes and caches in real time"
-    ],
-    "summary": "A set of software design patterns and techniques used to capture and deliver row-level data modifications as they happen.",
-    "domains": [
-      "it/data/data-engineering"
     ],
     "level": 2,
     "status": "draft"
@@ -1154,92 +807,35 @@
     "status": "draft"
   },
   {
-    "id": "circuit-breaker",
-    "label": "Circuit breaker",
-    "qualifier": "(Software)",
-    "aliases": [
-      "Circuit breaker pattern"
-    ],
-    "loanwords": [],
-    "plain_descriptions": [
-      "automatic switch stopping calls to failing services to prevent system crashes",
-      "safety mechanism tripping requests when remote dependencies become unresponsive"
-    ],
-    "summary": "A design pattern that prevents an application from repeatedly attempting an operation likely to fail, tripping to fail fast and recovering automatically when healthy.",
-    "domains": [
-      "it/software-engineering/architecture"
-    ],
-    "level": 2,
-    "status": "draft"
-  },
-  {
-    "id": "class-oop",
-    "label": "Class",
-    "qualifier": "(Programming)",
+    "id": "cloud-instance",
+    "label": "Instance",
+    "qualifier": "(Cloud)",
     "aliases": [],
     "loanwords": [],
     "plain_descriptions": [
-      "architectural template for manufacturing objects with shared attributes and behaviors",
-      "code blueprint specifying what variables and methods an instantiated entity will possess"
+      "virtual server running in the cloud with assigned CPU and memory",
+      "rented cloud computer instance that you can start or stop on demand"
     ],
-    "summary": "An extensible code template that defines the state properties and callable behaviors for constructing objects.",
+    "summary": "A virtual compute environment provisioned on cloud infrastructure with dedicated allocations of vCPUs, memory, and network capabilities.",
     "domains": [
-      "it/software-engineering/programming-concepts"
+      "it/infrastructure/cloud"
     ],
     "level": 1,
     "status": "draft"
   },
   {
-    "id": "clean-architecture",
-    "label": "Clean architecture",
-    "aliases": [
-      "Onion architecture",
-      "Hexagonal architecture"
-    ],
-    "loanwords": [],
-    "plain_descriptions": [
-      "layering software so business rules stay independent of frameworks and databases",
-      "code design where internal logic points inward and knows nothing about external tools"
-    ],
-    "summary": "A software architectural paradigm structured in concentric layers where dependencies point strictly inward toward domain logic, decoupling business rules from frameworks and databases.",
-    "domains": [
-      "it/software-engineering/architecture"
-    ],
-    "level": 2,
-    "status": "draft"
-  },
-  {
-    "id": "closure",
-    "label": "Closure",
-    "qualifier": "(Programming)",
+    "id": "cloud-region",
+    "label": "Region",
+    "qualifier": "(Cloud)",
     "aliases": [],
     "loanwords": [],
     "plain_descriptions": [
-      "function bundled together with references to its surrounding lexical environment",
-      "inner function that remembers and accesses variables from its enclosing scope even after that parent function has returned"
+      "separate geographic location where cloud data centers are clustered",
+      "physical territory or city hosting isolated cloud infrastructure"
     ],
-    "summary": "A function packaged with references to its surrounding lexical scope, enabling it to access enclosing variables even after the outer function finishes executing.",
+    "summary": "A distinct physical geographical area comprising multiple isolated and physically separated availability zones interconnected via private low-latency links.",
     "domains": [
-      "it/software-engineering/programming-concepts"
-    ],
-    "level": 2,
-    "status": "draft"
-  },
-  {
-    "id": "cms",
-    "label": "Content management system (CMS)",
-    "aliases": [
-      "CMS"
-    ],
-    "loanwords": [],
-    "plain_descriptions": [
-      "website platform for writing and publishing articles without code",
-      "admin dashboard where editors manage web pages and media assets"
-    ],
-    "summary": "Software that lets editors create, format, publish, and organize digital content on the web without editing source code directly.",
-    "domains": [
-      "it/business-systems/enterprise-apps",
-      "media/publishing/distribution-platforms"
+      "it/infrastructure/cloud"
     ],
     "level": 1,
     "status": "draft"
@@ -1281,19 +877,18 @@
     "status": "draft"
   },
   {
-    "id": "code-splitting",
-    "label": "Code splitting",
-    "aliases": [
-      "bundle splitting"
-    ],
+    "id": "cold-start",
+    "label": "Cold start",
+    "qualifier": "(Serverless)",
+    "aliases": [],
     "loanwords": [],
     "plain_descriptions": [
-      "splitting a large web app into smaller chunks that load only when needed",
-      "breaking up big JavaScript files so users do not download unnecessary code up front"
+      "delay when a serverless function starts up from scratch after idle time",
+      "initial pause while the cloud provider spins up a new container for your code"
     ],
-    "summary": "A technique of splitting a single application bundle into multiple smaller chunks that can be loaded on demand or in parallel.",
+    "summary": "The initial invocation latency experienced in serverless computing when the platform must download code, initialize a container, and boot the runtime.",
     "domains": [
-      "it/web/frontend"
+      "it/infrastructure/cloud"
     ],
     "level": 2,
     "status": "draft"
@@ -1318,41 +913,6 @@
     "status": "draft"
   },
   {
-    "id": "columnar-storage",
-    "label": "Columnar storage",
-    "aliases": [
-      "columnar database",
-      "column-oriented storage"
-    ],
-    "loanwords": [],
-    "plain_descriptions": [
-      "organizing database records by columns instead of rows on disk",
-      "grouping all prices together on storage drives so summing sales skips reading customer names"
-    ],
-    "summary": "A database storage method where data blocks group values by column across records rather than by row, accelerating analytical aggregation queries.",
-    "domains": [
-      "it/data/database"
-    ],
-    "level": 2,
-    "status": "draft"
-  },
-  {
-    "id": "compiler",
-    "label": "Compiler",
-    "aliases": [],
-    "loanwords": [],
-    "plain_descriptions": [
-      "tool that translates entire source code files into machine code or bytecode before execution",
-      "program that analyzes human-readable code and converts it into a runnable standalone binary"
-    ],
-    "summary": "A computer program that translates software source code written in a high-level programming language into machine code or an intermediate representation prior to execution.",
-    "domains": [
-      "it/software-engineering/programming-concepts"
-    ],
-    "level": 1,
-    "status": "draft"
-  },
-  {
     "id": "compound-interest",
     "label": "Compound Interest",
     "aliases": [
@@ -1372,59 +932,6 @@
     "status": "reviewed"
   },
   {
-    "id": "concurrency",
-    "label": "Concurrency",
-    "aliases": [],
-    "loanwords": [],
-    "plain_descriptions": [
-      "ability of a system to manage multiple tasks by making progress on them during overlapping time periods",
-      "software structure that interleaves or coordinates several computations without requiring them to run at the exact same physical instant"
-    ],
-    "summary": "The composition and coordination of multiple computational tasks executing over overlapping time intervals.",
-    "domains": [
-      "it/software-engineering/programming-concepts"
-    ],
-    "level": 2,
-    "status": "draft"
-  },
-  {
-    "id": "connection-pool",
-    "label": "Connection pool",
-    "aliases": [
-      "database connection pool"
-    ],
-    "loanwords": [],
-    "plain_descriptions": [
-      "a shared cache of open database connections ready for apps to use without reconnecting",
-      "keeping pre-warmed database lines open so web requests avoid slow network handshakes"
-    ],
-    "summary": "A cache of open, reusable database connection objects maintained so that applications avoid the high overhead of establishing new connections for each request.",
-    "domains": [
-      "it/data/database"
-    ],
-    "level": 2,
-    "status": "draft"
-  },
-  {
-    "id": "consistent-hashing",
-    "label": "Consistent hashing",
-    "aliases": [
-      "Hash ring",
-      "Ring hashing"
-    ],
-    "loanwords": [],
-    "plain_descriptions": [
-      "hashing technique that minimizes data movement when servers are added or removed",
-      "distributed algorithm mapping keys and nodes onto a circular ring to prevent mass rebalancing"
-    ],
-    "summary": "A distributed hashing algorithm where resizing the bucket array requires only K/N keys to be remapped on average, mapping nodes and data keys onto a circular ring space.",
-    "domains": [
-      "it/software-engineering/architecture"
-    ],
-    "level": 3,
-    "status": "draft"
-  },
-  {
     "id": "container-image",
     "label": "Image",
     "qualifier": "(Container)",
@@ -1438,6 +945,22 @@
       "a frozen snapshot of software files, system libraries, and startup commands"
     ],
     "summary": "An immutable, read-only package containing application binaries, libraries, configuration files, and metadata required to launch a container.",
+    "domains": [
+      "it/devops/containers"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
+    "id": "container-registry",
+    "label": "Container registry",
+    "aliases": [],
+    "loanwords": [],
+    "plain_descriptions": [
+      "storage repository for publishing, sharing, and downloading container images",
+      "app store library where Docker images are stored and pulled by servers"
+    ],
+    "summary": "A centralized storage and content delivery system for storing, managing, and distributing container images across development and production environments.",
     "domains": [
       "it/devops/containers"
     ],
@@ -1547,25 +1070,6 @@
     "status": "draft"
   },
   {
-    "id": "core-web-vitals",
-    "label": "Core Web Vitals",
-    "aliases": [
-      "CWV"
-    ],
-    "loanwords": [],
-    "plain_descriptions": [
-      "Google standards measuring how fast, responsive, and visually stable a website is",
-      "key performance scores that directly influence web page ranking and user experience"
-    ],
-    "summary": "A set of standardized metrics established by Google to evaluate real-world user experience across loading speed, responsiveness, and visual stability.",
-    "domains": [
-      "it/web/frontend",
-      "media/digital-marketing/seo"
-    ],
-    "level": 2,
-    "status": "draft"
-  },
-  {
     "id": "cors",
     "label": "Cross-Origin Resource Sharing (CORS)",
     "aliases": [
@@ -1637,24 +1141,6 @@
       "media/digital-marketing/paid-ads"
     ],
     "level": 2,
-    "status": "draft"
-  },
-  {
-    "id": "cqrs",
-    "label": "Command Query Responsibility Segregation (CQRS)",
-    "aliases": [
-      "CQRS"
-    ],
-    "loanwords": [],
-    "plain_descriptions": [
-      "separating data update logic from data reading logic into distinct models",
-      "architectural pattern using different models to write and read data"
-    ],
-    "summary": "An architectural pattern that separates operations that mutate state from operations that read data into distinct models and pipelines.",
-    "domains": [
-      "it/software-engineering/architecture"
-    ],
-    "level": 3,
     "status": "draft"
   },
   {
@@ -1730,24 +1216,6 @@
     "status": "draft"
   },
   {
-    "id": "crm",
-    "label": "Customer relationship management (CRM)",
-    "aliases": [
-      "CRM"
-    ],
-    "loanwords": [],
-    "plain_descriptions": [
-      "software that tracks customer interactions and deals",
-      "a shared database where sales and support log conversations"
-    ],
-    "summary": "A business system that organizes customer details, communications, and sales opportunities in one shared workspace.",
-    "domains": [
-      "it/business-systems/enterprise-apps"
-    ],
-    "level": 1,
-    "status": "draft"
-  },
-  {
     "id": "cryptocurrency",
     "label": "Cryptocurrency",
     "aliases": [
@@ -1782,24 +1250,6 @@
       "it/security/vulnerabilities"
     ],
     "level": 2,
-    "status": "draft"
-  },
-  {
-    "id": "css",
-    "label": "CSS",
-    "aliases": [
-      "Cascading Style Sheets"
-    ],
-    "loanwords": [],
-    "plain_descriptions": [
-      "the code rules that control colors, fonts, and layouts on a website",
-      "the styling stylesheet language that makes web pages visually appealing"
-    ],
-    "summary": "A declarative styling language for rendering visual layout, typographic formatting, and color palettes on markup documents.",
-    "domains": [
-      "it/web/frontend"
-    ],
-    "level": 1,
     "status": "draft"
   },
   {
@@ -1905,24 +1355,6 @@
     "status": "draft"
   },
   {
-    "id": "data-governance",
-    "label": "Data governance",
-    "aliases": [
-      "enterprise data governance"
-    ],
-    "loanwords": [],
-    "plain_descriptions": [
-      "the company rules and processes that ensure data stays secure, accurate, and properly used",
-      "managing who owns, controls, and has permission to access business records across an organization"
-    ],
-    "summary": "The overall management framework of data availability, usability, integrity, and security across an enterprise.",
-    "domains": [
-      "it/data/data-engineering"
-    ],
-    "level": 2,
-    "status": "draft"
-  },
-  {
     "id": "data-lake",
     "label": "Data lake",
     "aliases": [
@@ -1934,42 +1366,6 @@
       "a flexible storage pool holding audio, text, images, and logs without forcing strict table structures"
     ],
     "summary": "A scalable storage repository designed to retain massive volumes of raw multi-format information without requiring an upfront database schema.",
-    "domains": [
-      "it/data/data-engineering"
-    ],
-    "level": 2,
-    "status": "draft"
-  },
-  {
-    "id": "data-lakehouse",
-    "label": "Data lakehouse",
-    "aliases": [
-      "lakehouse"
-    ],
-    "loanwords": [],
-    "plain_descriptions": [
-      "a modern data storage setup combining cheap file storage with fast database query tables",
-      "an architecture that lets companies run business reports and machine learning directly on raw data files"
-    ],
-    "summary": "A modern data management architecture that combines the cost-effective storage of data lakes with the ACID transactions of data warehouses.",
-    "domains": [
-      "it/data/data-engineering"
-    ],
-    "level": 2,
-    "status": "draft"
-  },
-  {
-    "id": "data-lineage",
-    "label": "Data lineage",
-    "aliases": [
-      "pipeline lineage"
-    ],
-    "loanwords": [],
-    "plain_descriptions": [
-      "tracing the full journey of information from where it was created to every final report",
-      "a visual family tree showing how raw database records get transformed along the way"
-    ],
-    "summary": "The recorded lifecycle and lifecycle path of data that documents its origin, movement, transformations, and destinations over time.",
     "domains": [
       "it/data/data-engineering"
     ],
@@ -1990,56 +1386,6 @@
       "it/data/data-engineering"
     ],
     "level": 2,
-    "status": "draft"
-  },
-  {
-    "id": "data-quality",
-    "label": "Data quality",
-    "aliases": [
-      "dataset quality"
-    ],
-    "loanwords": [],
-    "plain_descriptions": [
-      "how reliable, clean, and complete a collection of records is for business use",
-      "checking that information is accurate, up to date, and free from duplicate entries"
-    ],
-    "summary": "The measurement of how well a dataset satisfies requirements for accuracy, completeness, consistency, validity, and timeliness.",
-    "domains": [
-      "it/data/data-engineering"
-    ],
-    "level": 2,
-    "status": "draft"
-  },
-  {
-    "id": "data-structure",
-    "label": "Data structure",
-    "aliases": [],
-    "loanwords": [],
-    "plain_descriptions": [
-      "organized layout for storing and managing information efficiently in computer memory",
-      "specialized format for grouping data items to optimize search, insertion, and retrieval operations"
-    ],
-    "summary": "A specialized format for organizing, processing, retrieving, and storing data efficiently within computer systems.",
-    "domains": [
-      "it/software-engineering/programming-concepts"
-    ],
-    "level": 1,
-    "status": "draft"
-  },
-  {
-    "id": "data-visualization",
-    "label": "Data visualization",
-    "aliases": [],
-    "loanwords": [],
-    "plain_descriptions": [
-      "turning raw numbers into charts and graphs that people can understand",
-      "visual displays like heatmaps and line plots that show trends in data"
-    ],
-    "summary": "The practice of representing quantitative data graphically through charts, maps, and visual plots to communicate insights clearly.",
-    "domains": [
-      "it/data/analytics"
-    ],
-    "level": 1,
     "status": "draft"
   },
   {
@@ -2094,26 +1440,6 @@
       "a step-by-step code file for adding new columns or tables to live databases"
     ],
     "summary": "A version-controlled set of programmatic scripts that safely alter database schemas over time without losing existing data.",
-    "domains": [
-      "it/data/database"
-    ],
-    "level": 2,
-    "status": "draft"
-  },
-  {
-    "id": "database-normalization",
-    "label": "Normalization",
-    "qualifier": "(Database)",
-    "aliases": [
-      "database normalization",
-      "relational normalization"
-    ],
-    "loanwords": [],
-    "plain_descriptions": [
-      "organizing database tables to eliminate duplicate copies of the same information",
-      "structuring relational tables so every piece of data is stored in exactly one logical place"
-    ],
-    "summary": "The process of structuring a relational database in accordance with normal forms to reduce data redundancy and improve data integrity.",
     "domains": [
       "it/data/database"
     ],
@@ -2197,25 +1523,6 @@
     "status": "draft"
   },
   {
-    "id": "deadlock",
-    "label": "Deadlock",
-    "aliases": [
-      "mutual blocking"
-    ],
-    "loanwords": [],
-    "plain_descriptions": [
-      "a freeze where two programs each wait forever for the resource held by the other",
-      "a traffic gridlock in database memory where transactions cannot move forward or release locks"
-    ],
-    "summary": "A permanent state of mutual blocking where two or more concurrent processes each hold a resource while waiting for another resource held by the other.",
-    "domains": [
-      "it/data/database",
-      "it/software-engineering/programming-concepts"
-    ],
-    "level": 2,
-    "status": "draft"
-  },
-  {
     "id": "debt-to-equity-ratio",
     "label": "Debt-to-equity ratio (D/E)",
     "aliases": [
@@ -2232,22 +1539,6 @@
       "finance/corporate-finance/capital-structure"
     ],
     "level": 2,
-    "status": "draft"
-  },
-  {
-    "id": "debugging",
-    "label": "Debugging",
-    "aliases": [],
-    "loanwords": [],
-    "plain_descriptions": [
-      "investigative process of identifying, reproducing, and fixing defects in software",
-      "methodical workflow of diagnosing anomalous behavior using logs, assertions, and stepping tools"
-    ],
-    "summary": "The systematic engineering process of detecting, isolating, and rectifying software defects or anomalies.",
-    "domains": [
-      "it/software-engineering/practices"
-    ],
-    "level": 1,
     "status": "draft"
   },
   {
@@ -2303,25 +1594,6 @@
       "finance/economics/inflation"
     ],
     "level": 1,
-    "status": "draft"
-  },
-  {
-    "id": "dependency-injection",
-    "label": "Dependency injection",
-    "aliases": [
-      "DI",
-      "Inversion of control"
-    ],
-    "loanwords": [],
-    "plain_descriptions": [
-      "passing required objects into a component from outside rather than creating them inside",
-      "supplying dependencies to a class via constructors or setters to improve testability"
-    ],
-    "summary": "A software design pattern where an object receives its dependencies from an external assembler rather than instantiating them internally, implementing inversion of control.",
-    "domains": [
-      "it/software-engineering/programming-concepts"
-    ],
-    "level": 2,
     "status": "draft"
   },
   {
@@ -2396,22 +1668,6 @@
     "status": "draft"
   },
   {
-    "id": "digital-transformation",
-    "label": "Digital transformation",
-    "aliases": [],
-    "loanwords": [],
-    "plain_descriptions": [
-      "rewiring an entire business to operate using modern software and cloud tools",
-      "replacing paper forms and outdated legacy routines with digital services"
-    ],
-    "summary": "The strategic and cultural integration of digital technology across all areas of an organization to fundamentally modernize operations and deliver customer value.",
-    "domains": [
-      "it/business-systems/enterprise-apps"
-    ],
-    "level": 1,
-    "status": "draft"
-  },
-  {
     "id": "digital-twin",
     "label": "Digital twin",
     "aliases": [],
@@ -2427,42 +1683,6 @@
       "iot/industrial"
     ],
     "level": 2,
-    "status": "draft"
-  },
-  {
-    "id": "disaster-recovery",
-    "label": "Disaster recovery (DR)",
-    "aliases": [
-      "DR"
-    ],
-    "loanwords": [],
-    "plain_descriptions": [
-      "plan and technical process to restore systems after a major outage or disaster",
-      "procedures for reviving critical business data and servers following regional catastrophes"
-    ],
-    "summary": "A coordinated set of policies, tools, and technical procedures designed to recover and resume mission-critical technology infrastructure and operations after a catastrophic event.",
-    "domains": [
-      "it/devops/sre-operations"
-    ],
-    "level": 2,
-    "status": "draft"
-  },
-  {
-    "id": "distributed-system",
-    "label": "Distributed system",
-    "aliases": [
-      "Distributed architecture"
-    ],
-    "loanwords": [],
-    "plain_descriptions": [
-      "collection of independent computers working together appearing as a single system",
-      "software spread across multiple networked machines communicating to accomplish a task"
-    ],
-    "summary": "A system whose hardware and software components communicate and coordinate their actions over a network, presenting themselves to end users as a unified cohesive computing facility.",
-    "domains": [
-      "it/software-engineering/architecture"
-    ],
-    "level": 1,
     "status": "draft"
   },
   {
@@ -2559,56 +1779,17 @@
     "status": "draft"
   },
   {
-    "id": "document-database",
-    "label": "Document database",
-    "aliases": [
-      "document-oriented database",
-      "document store"
-    ],
+    "id": "docker-compose",
+    "label": "Docker Compose",
+    "aliases": [],
     "loanwords": [],
     "plain_descriptions": [
-      "a database that stores records as self-contained JSON-like digital files",
-      "a flexible system where customer records hold their own nested lists without joining tables"
+      "coordinating interconnected microservice containers from a single project file",
+      "easy way to spin up a web app, database, and cache together using docker-compose.yml"
     ],
-    "summary": "A specialized NoSQL database architecture built to store, retrieve, and manage semi-structured data formatted as documents like JSON or BSON.",
+    "summary": "An orchestration utility that launches and connects groups of containerized application services using centralized declarative YAML specifications.",
     "domains": [
-      "it/data/database"
-    ],
-    "level": 2,
-    "status": "draft"
-  },
-  {
-    "id": "dom",
-    "label": "Document Object Model (DOM)",
-    "aliases": [
-      "DOM"
-    ],
-    "loanwords": [],
-    "plain_descriptions": [
-      "the internal tree structure of a webpage that scripts can read and change",
-      "the programming interface representing webpage elements as interactive objects"
-    ],
-    "summary": "A cross-platform, language-independent programming interface that treats an HTML or XML document as a tree structure of nodes.",
-    "domains": [
-      "it/web/frontend"
-    ],
-    "level": 1,
-    "status": "draft"
-  },
-  {
-    "id": "domain-driven-design",
-    "label": "Domain-driven design (DDD)",
-    "aliases": [
-      "DDD"
-    ],
-    "loanwords": [],
-    "plain_descriptions": [
-      "software design methodology centering code around business models and shared language",
-      "structuring complex enterprise software according to real-world domain rules"
-    ],
-    "summary": "A software architectural methodology centering system design and implementation around core business models, ubiquitous language, and bounded contexts.",
-    "domains": [
-      "it/software-engineering/architecture"
+      "it/devops/containers"
     ],
     "level": 2,
     "status": "draft"
@@ -2627,22 +1808,6 @@
     "summary": "The universal bookkeeping method wherein every economic transaction is recorded in at least two separate ledger accounts with offsetting debit and credit entries.",
     "domains": [
       "finance/accounting/bookkeeping"
-    ],
-    "level": 1,
-    "status": "draft"
-  },
-  {
-    "id": "e-commerce-platform",
-    "label": "E-commerce platform",
-    "aliases": [],
-    "loanwords": [],
-    "plain_descriptions": [
-      "software engine that runs web stores with shopping carts and inventory",
-      "online storefront software where merchants list items and process orders"
-    ],
-    "summary": "A comprehensive software suite that enables businesses to build online stores, showcase product catalogs, manage shopping carts, and fulfill digital orders.",
-    "domains": [
-      "it/business-systems/enterprise-apps"
     ],
     "level": 1,
     "status": "draft"
@@ -2717,22 +1882,6 @@
     "status": "draft"
   },
   {
-    "id": "elasticsearch",
-    "label": "Elasticsearch",
-    "aliases": [],
-    "loanwords": [],
-    "plain_descriptions": [
-      "a fast search and analytics engine that combs through millions of documents in seconds",
-      "software built to search articles by keywords, filter store catalogs, and monitor server log errors"
-    ],
-    "summary": "A distributed, JSON-based search and analytics engine built on Apache Lucene, designed for horizontal scalability, reliability, and real-time search.",
-    "domains": [
-      "it/data/database"
-    ],
-    "level": 2,
-    "status": "draft"
-  },
-  {
     "id": "email-open-rate",
     "label": "Open rate",
     "qualifier": "(Email)",
@@ -2749,22 +1898,6 @@
       "media/digital-marketing/email"
     ],
     "level": 2,
-    "status": "draft"
-  },
-  {
-    "id": "embedded-system",
-    "label": "Embedded system",
-    "aliases": [],
-    "loanwords": [],
-    "plain_descriptions": [
-      "specialized computer built inside a larger machine to run dedicated tasks",
-      "compact microprocessor hardware dedicated entirely to single-purpose equipment control"
-    ],
-    "summary": "A dedicated computing assembly combining a microprocessor, firmware, and peripheral interfaces engineered to execute predefined control operations within an encompassing machine.",
-    "domains": [
-      "iot/devices-sensors"
-    ],
-    "level": 1,
     "status": "draft"
   },
   {
@@ -2837,26 +1970,6 @@
     "summary": "A comprehensive testing methodology that validates the flow of an application from the user interface down through all underlying backend services and databases.",
     "domains": [
       "it/software-engineering/testing"
-    ],
-    "level": 2,
-    "status": "draft"
-  },
-  {
-    "id": "energy-harvesting",
-    "label": "Energy harvesting",
-    "aliases": [
-      "Power harvesting"
-    ],
-    "loanwords": [
-      "energy harvesting"
-    ],
-    "plain_descriptions": [
-      "capturing ambient energy from light, heat, or vibrations to power electronics without batteries",
-      "technology that scavenges electricity from the environment for maintenance-free sensors"
-    ],
-    "summary": "The process of capturing minute quantities of energy from ambient environmental sources—such as light, thermal gradients, mechanical vibrations, or radio waves—and converting it into electrical power for electronics.",
-    "domains": [
-      "iot/devices-sensors"
     ],
     "level": 2,
     "status": "draft"
@@ -2953,42 +2066,6 @@
     "status": "draft"
   },
   {
-    "id": "erp",
-    "label": "Enterprise resource planning (ERP)",
-    "aliases": [
-      "ERP"
-    ],
-    "loanwords": [],
-    "plain_descriptions": [
-      "master software that runs company finances and inventory",
-      "central operational spine connecting accounting and warehouse data"
-    ],
-    "summary": "An integrated suite of core business applications that synchronizes finance, purchasing, inventory, and production across an organization.",
-    "domains": [
-      "it/business-systems/enterprise-apps"
-    ],
-    "level": 2,
-    "status": "draft"
-  },
-  {
-    "id": "esp32",
-    "label": "ESP32",
-    "aliases": [],
-    "loanwords": [
-      "esp32"
-    ],
-    "plain_descriptions": [
-      "powerful, low-cost microchip with built-in Wi-Fi and Bluetooth for connected devices",
-      "dual-core microcontroller chip engineered specifically for wireless IoT gadgets"
-    ],
-    "summary": "A low-cost, low-power system on a chip microcontroller series featuring integrated Wi-Fi and dual-mode Bluetooth designed for wireless IoT product engineering.",
-    "domains": [
-      "iot/devices-sensors"
-    ],
-    "level": 2,
-    "status": "draft"
-  },
-  {
     "id": "etf",
     "label": "Exchange-Traded Fund (ETF)",
     "aliases": [
@@ -3026,95 +2103,6 @@
     "status": "draft"
   },
   {
-    "id": "event-driven-architecture",
-    "label": "Event-driven architecture",
-    "aliases": [
-      "EDA"
-    ],
-    "loanwords": [],
-    "plain_descriptions": [
-      "system architecture where decoupled services communicate by publishing and consuming events",
-      "software design reacting to state changes instead of making synchronous direct calls"
-    ],
-    "summary": "A software architecture paradigm where decoupled components communicate asynchronously by generating, detecting, and reacting to significant state changes known as events.",
-    "domains": [
-      "it/software-engineering/architecture"
-    ],
-    "level": 2,
-    "status": "draft"
-  },
-  {
-    "id": "event-sourcing",
-    "label": "Event sourcing",
-    "aliases": [
-      "Event-sourced persistence"
-    ],
-    "loanwords": [],
-    "plain_descriptions": [
-      "storing every change to application state as an append-only sequence of immutable events",
-      "tracking full history like an accounting ledger rather than only keeping current values"
-    ],
-    "summary": "A persistence design pattern where all state changes are stored as an append-only, ordered sequence of immutable domain events instead of overwriting current entity records.",
-    "domains": [
-      "it/software-engineering/architecture"
-    ],
-    "level": 3,
-    "status": "draft"
-  },
-  {
-    "id": "event-streaming",
-    "label": "Event streaming",
-    "aliases": [
-      "data streaming"
-    ],
-    "loanwords": [],
-    "plain_descriptions": [
-      "continuously capturing and processing digital records the moment an action happens",
-      "flowing operational updates across software applications without waiting for night-time file exports"
-    ],
-    "summary": "The practice of capturing, storing, and analyzing continuous flows of data records in real time as events occur.",
-    "domains": [
-      "it/data/data-engineering"
-    ],
-    "level": 2,
-    "status": "draft"
-  },
-  {
-    "id": "eventual-consistency",
-    "label": "Eventual consistency",
-    "aliases": [
-      "optimistic consistency"
-    ],
-    "loanwords": [],
-    "plain_descriptions": [
-      "a promise that all database copies will match eventually if no new edits are made",
-      "a design where your friend might see your social post a few seconds after you hit publish"
-    ],
-    "summary": "A consistency model used in distributed computing where all replicas of a data item will eventually converge to the same value given sufficient time without new updates.",
-    "domains": [
-      "it/data/database"
-    ],
-    "level": 2,
-    "status": "draft"
-  },
-  {
-    "id": "exception-handling",
-    "label": "Exception",
-    "qualifier": "(Programming)",
-    "aliases": [],
-    "loanwords": [],
-    "plain_descriptions": [
-      "unexpected event or runtime failure that interrupts the normal sequence of instructions",
-      "error signaling mechanism that transfers control up the call stack to a recovery block"
-    ],
-    "summary": "An abnormal condition or error event encountered during execution that disrupts normal instruction flow and triggers specialized handling logic.",
-    "domains": [
-      "it/software-engineering/programming-concepts"
-    ],
-    "level": 1,
-    "status": "draft"
-  },
-  {
     "id": "exchange-rate",
     "label": "Exchange rate",
     "aliases": [
@@ -3134,24 +2122,6 @@
     "status": "draft"
   },
   {
-    "id": "exponential-backoff",
-    "label": "Exponential backoff",
-    "aliases": [
-      "Exponential retry"
-    ],
-    "loanwords": [],
-    "plain_descriptions": [
-      "waiting progressively longer between retries when an operation fails",
-      "retry strategy that doubles the sleep interval after each successive error"
-    ],
-    "summary": "An algorithm that progressively multiplies the delay interval between successive retries to prevent overwhelming struggling network services.",
-    "domains": [
-      "it/software-engineering/architecture"
-    ],
-    "level": 2,
-    "status": "draft"
-  },
-  {
     "id": "fact-checking",
     "label": "Fact-checking",
     "aliases": [],
@@ -3163,24 +2133,6 @@
     "summary": "The disciplined verification process of assessing factual assertions in published text, speeches, or broadcast reports against reliable primary documentation.",
     "domains": [
       "media/journalism/ethics"
-    ],
-    "level": 2,
-    "status": "draft"
-  },
-  {
-    "id": "failover",
-    "label": "Failover",
-    "aliases": [
-      "Automated failover"
-    ],
-    "loanwords": [],
-    "plain_descriptions": [
-      "automatically switching to a backup server when the main server crashes",
-      "seamless transfer of traffic to redundant resources upon primary failure"
-    ],
-    "summary": "An operational procedure that automatically or manually redirects processing tasks and network traffic to a redundant standby system upon failure of the primary component.",
-    "domains": [
-      "it/devops/sre-operations"
     ],
     "level": 2,
     "status": "draft"
@@ -3258,6 +2210,39 @@
     "status": "draft"
   },
   {
+    "id": "finops",
+    "label": "FinOps",
+    "aliases": [],
+    "loanwords": [],
+    "plain_descriptions": [
+      "managing and optimizing cloud spending across engineering and finance teams",
+      "cultural practice ensuring companies get the best business value from their cloud bills"
+    ],
+    "summary": "An operational cultural framework and discipline that brings financial accountability to the variable spend model of cloud computing.",
+    "domains": [
+      "it/infrastructure/cloud"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
+    "id": "firewall",
+    "label": "Firewall",
+    "aliases": [],
+    "loanwords": [],
+    "plain_descriptions": [
+      "security barrier that blocks unauthorized network traffic into a computer",
+      "digital security guard inspecting incoming and outgoing data packets"
+    ],
+    "summary": "A network security system that monitors and filters incoming and outgoing network traffic based on predetermined security rules.",
+    "domains": [
+      "it/infrastructure/networking",
+      "it/security/vulnerabilities"
+    ],
+    "level": 1,
+    "status": "draft"
+  },
+  {
     "id": "firmware",
     "label": "Firmware",
     "aliases": [],
@@ -3273,43 +2258,6 @@
       "iot/devices-sensors"
     ],
     "level": 1,
-    "status": "draft"
-  },
-  {
-    "id": "foreign-key",
-    "label": "Foreign key",
-    "aliases": [
-      "FK"
-    ],
-    "loanwords": [],
-    "plain_descriptions": [
-      "a column in one table that points to the unique identifier of a row in another table",
-      "a database link ensuring an order cannot be created for a customer who does not exist"
-    ],
-    "summary": "A column or set of columns in a relational database table that provides a link between data in two tables by referencing the primary key of another table.",
-    "domains": [
-      "it/data/database"
-    ],
-    "level": 1,
-    "status": "draft"
-  },
-  {
-    "id": "full-text-search",
-    "label": "Full-text search",
-    "aliases": [
-      "FTS",
-      "text search"
-    ],
-    "loanwords": [],
-    "plain_descriptions": [
-      "searching for words and phrases across large documents instead of exact database matches",
-      "a search technique that understands word roots, ignores common filler words, and handles typos"
-    ],
-    "summary": "A technique for searching computer-stored documents or database text fields by matching words, linguistic stems, and phrases against an inverted index.",
-    "domains": [
-      "it/data/database"
-    ],
-    "level": 2,
     "status": "draft"
   },
   {
@@ -3332,55 +2280,6 @@
     "status": "draft"
   },
   {
-    "id": "function-programming",
-    "label": "Function",
-    "qualifier": "(Programming)",
-    "aliases": [],
-    "loanwords": [],
-    "plain_descriptions": [
-      "reusable block of code designed to perform a dedicated computation",
-      "packaged sequence of instructions that takes inputs and produces an output"
-    ],
-    "summary": "A self-contained block of instructions that accepts parameters, executes a computational routine, and optionally returns a result.",
-    "domains": [
-      "it/software-engineering/programming-concepts"
-    ],
-    "level": 1,
-    "status": "draft"
-  },
-  {
-    "id": "functional-programming",
-    "label": "Functional programming",
-    "aliases": [],
-    "loanwords": [],
-    "plain_descriptions": [
-      "coding style centered on evaluating mathematical functions without changing shared data",
-      "paradigm emphasizing pure functions, immutable values, and declarative transformations"
-    ],
-    "summary": "A declarative programming paradigm that treats computation as the evaluation of pure mathematical functions while avoiding mutable state.",
-    "domains": [
-      "it/software-engineering/programming-concepts"
-    ],
-    "level": 2,
-    "status": "draft"
-  },
-  {
-    "id": "garbage-collection",
-    "label": "Garbage collection",
-    "aliases": [],
-    "loanwords": [],
-    "plain_descriptions": [
-      "automatic memory management system that finds and recycles memory occupied by abandoned objects",
-      "runtime engine feature that automatically frees heap space that a program can no longer reach"
-    ],
-    "summary": "An automatic memory management mechanism in a runtime environment that detects and reclaims heap memory occupied by unreachable objects.",
-    "domains": [
-      "it/software-engineering/programming-concepts"
-    ],
-    "level": 2,
-    "status": "draft"
-  },
-  {
     "id": "gdp",
     "label": "Gross Domestic Product (GDP)",
     "aliases": [
@@ -3397,23 +2296,6 @@
       "finance/economics/inflation"
     ],
     "level": 1,
-    "status": "draft"
-  },
-  {
-    "id": "generics",
-    "label": "Generics",
-    "qualifier": "(Programming)",
-    "aliases": [],
-    "loanwords": [],
-    "plain_descriptions": [
-      "feature that lets developers write classes and functions with placeholder types supplied later",
-      "code templates that provide strong type safety across different data types without repeating logic"
-    ],
-    "summary": "A language feature that allows algorithms and data structures to be defined with placeholder types, deferred until instantiation or invocation.",
-    "domains": [
-      "it/software-engineering/programming-concepts"
-    ],
-    "level": 2,
     "status": "draft"
   },
   {
@@ -3467,48 +2349,6 @@
     "status": "draft"
   },
   {
-    "id": "gnss",
-    "label": "GNSS",
-    "aliases": [
-      "Global Navigation Satellite System",
-      "GPS"
-    ],
-    "loanwords": [
-      "gnss",
-      "gps"
-    ],
-    "plain_descriptions": [
-      "umbrella term for satellite constellations like GPS, Galileo, and BeiDou that provide global positioning",
-      "satellite navigation technology that calculates exact latitude, longitude, and time anywhere on Earth"
-    ],
-    "summary": "The worldwide collection of satellite constellations and augmentation systems that transmit radio signals used by ground receivers to compute autonomous geospatial positioning and atomic time.",
-    "domains": [
-      "iot/devices-sensors"
-    ],
-    "level": 2,
-    "status": "draft"
-  },
-  {
-    "id": "gpio",
-    "label": "General-purpose input/output (GPIO)",
-    "aliases": [
-      "GPIO"
-    ],
-    "loanwords": [
-      "gpio"
-    ],
-    "plain_descriptions": [
-      "physical pins on a microchip that software can toggle on, off, or read as digital signals",
-      "programmable electrical pins used to communicate with switches, LEDs, and external circuits"
-    ],
-    "summary": "An uncommitted digital signal pin on an integrated circuit whose electrical direction and voltage state can be configured dynamically by software at runtime.",
-    "domains": [
-      "iot/devices-sensors"
-    ],
-    "level": 2,
-    "status": "draft"
-  },
-  {
     "id": "gpu",
     "label": "Graphics Processing Unit (GPU)",
     "aliases": [
@@ -3539,24 +2379,6 @@
     "summary": "An iterative optimization algorithm that updates model parameters in the opposite direction of the loss function gradient to minimize prediction error.",
     "domains": [
       "it/ai-ml/foundations"
-    ],
-    "level": 2,
-    "status": "draft"
-  },
-  {
-    "id": "graph-database",
-    "label": "Graph database",
-    "aliases": [
-      "graph store"
-    ],
-    "loanwords": [],
-    "plain_descriptions": [
-      "a specialized database that stores connections and friendships as first-class relationships",
-      "a database engine built to find paths and links between people, roads, or fraud rings quickly"
-    ],
-    "summary": "A database that uses graph structures with nodes, edges, and properties to represent and store interconnected data.",
-    "domains": [
-      "it/data/database"
     ],
     "level": 2,
     "status": "draft"
@@ -3595,24 +2417,6 @@
     "status": "draft"
   },
   {
-    "id": "grpc",
-    "label": "gRPC",
-    "aliases": [
-      "gRPC Remote Procedure Call"
-    ],
-    "loanwords": [],
-    "plain_descriptions": [
-      "high-speed framework for calling functions on remote servers using Protocol Buffers",
-      "binary RPC framework running over HTTP/2 for efficient microservice communication"
-    ],
-    "summary": "A high-performance, open-source universal RPC framework that uses Protocol Buffers for structured binary serialization and HTTP/2 for efficient multiplexed transport.",
-    "domains": [
-      "it/web/api"
-    ],
-    "level": 2,
-    "status": "draft"
-  },
-  {
     "id": "guardrail",
     "label": "Guardrail",
     "qualifier": "(AI)",
@@ -3646,24 +2450,6 @@
       "it/ai-ml/llm-agents"
     ],
     "level": 1,
-    "status": "draft"
-  },
-  {
-    "id": "hash-table",
-    "label": "Hash table",
-    "aliases": [
-      "Hash map"
-    ],
-    "loanwords": [],
-    "plain_descriptions": [
-      "associative data structure that pairs keys with values for ultra-fast lookups",
-      "dictionary-style storage layout using a mathematical hash function to locate items in constant average time"
-    ],
-    "summary": "A data structure that implements an associative array abstract data type, mapping keys to values using a hashing function.",
-    "domains": [
-      "it/software-engineering/programming-concepts"
-    ],
-    "level": 2,
     "status": "draft"
   },
   {
@@ -3719,56 +2505,20 @@
     "status": "draft"
   },
   {
-    "id": "help-desk",
-    "label": "Help desk",
+    "id": "helm",
+    "label": "Helm",
+    "qualifier": "(Kubernetes)",
     "aliases": [],
     "loanwords": [],
     "plain_descriptions": [
-      "support software that converts customer complaints into trackable tickets",
-      "central team and portal where employees or customers report technical glitches"
+      "package manager for Kubernetes that bundles complex apps into reusable charts",
+      "tool for installing and upgrading containerized applications on Kubernetes with one command"
     ],
-    "summary": "A dedicated support service and software application designed to log, route, track, and resolve user technical problems and service requests.",
+    "summary": "The dedicated package manager for Kubernetes that streamlines defining, installing, and upgrading complex container applications using parameterized charts.",
     "domains": [
-      "it/business-systems/enterprise-apps"
+      "it/devops/containers"
     ],
-    "level": 1,
-    "status": "draft"
-  },
-  {
-    "id": "high-availability",
-    "label": "High availability (HA)",
-    "aliases": [
-      "HA"
-    ],
-    "loanwords": [],
-    "plain_descriptions": [
-      "building systems that stay online and accessible almost all the time without downtime",
-      "continuous service uptime achieved through redundant components and auto-recovery"
-    ],
-    "summary": "A system design characteristic ensuring operational performance and accessibility over extended periods by minimizing unplanned downtime through redundancy and fault tolerance.",
-    "domains": [
-      "it/devops/sre-operations"
-    ],
-    "level": 1,
-    "status": "draft"
-  },
-  {
-    "id": "horizontal-scaling",
-    "label": "Horizontal scaling",
-    "aliases": [
-      "Scale out",
-      "Scaling out"
-    ],
-    "loanwords": [],
-    "plain_descriptions": [
-      "adding more machines or server instances to share workload",
-      "expanding capacity by running multiple copies of an application across a cluster"
-    ],
-    "summary": "The practice of increasing system capacity and handling greater load by adding more independent compute nodes or instances to a resource pool.",
-    "domains": [
-      "it/infrastructure/cloud"
-    ],
-    "level": 1,
+    "level": 2,
     "status": "draft"
   },
   {
@@ -3785,61 +2535,6 @@
       "it/software-engineering/practices"
     ],
     "level": 2,
-    "status": "draft"
-  },
-  {
-    "id": "hrm-system",
-    "label": "Human resource management system (HRMS)",
-    "aliases": [
-      "HRMS"
-    ],
-    "loanwords": [],
-    "plain_descriptions": [
-      "portal for employee contracts, leave requests, and payroll records",
-      "company software tracking hiring, attendance, and benefits"
-    ],
-    "summary": "Software that automates personnel administration by maintaining worker records, attendance tracking, payroll, and benefits in one platform.",
-    "domains": [
-      "it/business-systems/enterprise-apps"
-    ],
-    "level": 1,
-    "status": "draft"
-  },
-  {
-    "id": "html",
-    "label": "HTML",
-    "aliases": [
-      "HyperText Markup Language"
-    ],
-    "loanwords": [],
-    "plain_descriptions": [
-      "the code tags that structure paragraphs, headings, and links on a webpage",
-      "the fundamental skeletal markup language of the web"
-    ],
-    "summary": "The standard markup language used to structure documents and content displayed in web browsers.",
-    "domains": [
-      "it/web/frontend"
-    ],
-    "level": 1,
-    "status": "draft"
-  },
-  {
-    "id": "http",
-    "label": "Hypertext Transfer Protocol (HTTP)",
-    "aliases": [
-      "HTTP"
-    ],
-    "loanwords": [],
-    "plain_descriptions": [
-      "the communication rules that browsers and servers use to exchange web pages",
-      "the protocol delivering requests and responses across the World Wide Web"
-    ],
-    "summary": "A foundational client-server networking specification governing how web browsers fetch and submit hypermedia assets.",
-    "domains": [
-      "it/web/api",
-      "it/infrastructure/networking"
-    ],
-    "level": 1,
     "status": "draft"
   },
   {
@@ -3862,38 +2557,17 @@
     "status": "draft"
   },
   {
-    "id": "https",
-    "label": "HTTPS",
-    "aliases": [
-      "Hypertext Transfer Protocol Secure"
-    ],
+    "id": "hybrid-cloud",
+    "label": "Hybrid cloud",
+    "aliases": [],
     "loanwords": [],
     "plain_descriptions": [
-      "encrypted web browsing that protects information from snooping",
-      "the secure version of HTTP marked by the padlock in browsers"
+      "connecting a company private data center with public cloud servers",
+      "combining internal on-premises hardware with public cloud capacity"
     ],
-    "summary": "An extension of HTTP that encrypts bidirectional communication using Transport Layer Security (TLS).",
+    "summary": "An IT infrastructure design connecting private on-premises data centers with public cloud environments to enable workload and data portability.",
     "domains": [
-      "it/web/api"
-    ],
-    "level": 1,
-    "status": "draft"
-  },
-  {
-    "id": "hydration",
-    "label": "Hydration",
-    "qualifier": "(Web)",
-    "aliases": [
-      "client-side hydration"
-    ],
-    "loanwords": [],
-    "plain_descriptions": [
-      "attaching click listeners and interactivity to a pre-rendered HTML page",
-      "the process of bringing static server HTML to life with client JavaScript"
-    ],
-    "summary": "The client-side process where framework JavaScript attaches event listeners and state management to server-rendered HTML markup.",
-    "domains": [
-      "it/web/frontend"
+      "it/infrastructure/cloud"
     ],
     "level": 2,
     "status": "draft"
@@ -3915,25 +2589,21 @@
     "status": "draft"
   },
   {
-    "id": "i2c",
-    "label": "I²C",
+    "id": "iaas",
+    "label": "Infrastructure as a Service (IaaS)",
     "aliases": [
-      "I2C",
-      "Inter-Integrated Circuit"
+      "IaaS"
     ],
-    "loanwords": [
-      "i2c",
-      "i²c"
-    ],
+    "loanwords": [],
     "plain_descriptions": [
-      "two-wire communication bus for connecting multiple sensors to a microchip",
-      "serial data protocol using a clock line and a data line with unique device addresses"
+      "renting raw virtual servers and storage over the internet",
+      "paying for computing hardware by the hour instead of buying physical boxes"
     ],
-    "summary": "A synchronous, multi-controller, multi-target serial communication bus that uses two bidirectional open-drain lines (SCL and SDA) pulled high by resistors to network peripheral ICs.",
+    "summary": "A cloud computing model where vendors deliver on-demand fundamental compute, network, and storage resources over the internet.",
     "domains": [
-      "iot/devices-sensors"
+      "it/infrastructure/cloud"
     ],
-    "level": 2,
+    "level": 1,
     "status": "draft"
   },
   {
@@ -3983,42 +2653,6 @@
     "summary": "A computer vision task in which an algorithm analyzes an entire image and assigns it one or more discrete categorical labels from a predefined taxonomy.",
     "domains": [
       "it/ai-ml/computer-vision"
-    ],
-    "level": 2,
-    "status": "draft"
-  },
-  {
-    "id": "immutability",
-    "label": "Immutability",
-    "aliases": [],
-    "loanwords": [],
-    "plain_descriptions": [
-      "characteristic of an object or data structure whose state cannot be changed after creation",
-      "programming design rule where modifications always yield fresh copies rather than updating existing memory"
-    ],
-    "summary": "The property of an object or data structure that prevents its state from being altered after it has been created.",
-    "domains": [
-      "it/software-engineering/programming-concepts"
-    ],
-    "level": 2,
-    "status": "draft"
-  },
-  {
-    "id": "imu",
-    "label": "Inertial measurement unit (IMU)",
-    "aliases": [
-      "IMU"
-    ],
-    "loanwords": [
-      "imu"
-    ],
-    "plain_descriptions": [
-      "sensor pack combining an accelerometer and gyroscope to track orientation and movement",
-      "electronic motion sensor that measures how fast a device is tilting, turning, and accelerating"
-    ],
-    "summary": "An integrated multi-axis sensor package combining accelerometers, gyroscopes, and frequently magnetometers to measure a body linear acceleration, angular velocity, and heading.",
-    "domains": [
-      "iot/devices-sensors"
     ],
     "level": 2,
     "status": "draft"
@@ -4226,23 +2860,6 @@
     "status": "reviewed"
   },
   {
-    "id": "interpreter",
-    "label": "Interpreter",
-    "qualifier": "(Programming)",
-    "aliases": [],
-    "loanwords": [],
-    "plain_descriptions": [
-      "program that reads, translates, and executes source code instructions on the fly without producing a binary file",
-      "execution engine that processes code line by line directly at runtime"
-    ],
-    "summary": "A computer program that directly executes instructions written in a programming or scripting language without requiring prior compilation into machine code.",
-    "domains": [
-      "it/software-engineering/programming-concepts"
-    ],
-    "level": 1,
-    "status": "draft"
-  },
-  {
     "id": "inverted-pyramid",
     "label": "Inverted pyramid",
     "aliases": [],
@@ -4298,21 +2915,19 @@
     "status": "draft"
   },
   {
-    "id": "ipaas",
-    "label": "Integration platform as a service (iPaaS)",
-    "aliases": [
-      "iPaaS"
-    ],
+    "id": "ip-address",
+    "label": "IP address",
+    "aliases": [],
     "loanwords": [],
     "plain_descriptions": [
-      "cloud service that links different enterprise software and databases together",
-      "central hub that translates and moves data between cloud and on-premise apps"
+      "unique numerical label assigned to every device connected to a computer network",
+      "digital phone number or postal address identifying a computer on the internet"
     ],
-    "summary": "A cloud-based suite of services that standardizes, orchestrates, and monitors data integration flows between disparate applications across cloud and on-premises environments.",
+    "summary": "A unique numerical identifier assigned to each device connected to a computer network utilizing the Internet Protocol for communication.",
     "domains": [
-      "it/business-systems/automation"
+      "it/infrastructure/networking"
     ],
-    "level": 2,
+    "level": 1,
     "status": "draft"
   },
   {
@@ -4335,42 +2950,6 @@
     "status": "draft"
   },
   {
-    "id": "itil",
-    "label": "ITIL",
-    "aliases": [
-      "Information Technology Infrastructure Library"
-    ],
-    "loanwords": [],
-    "plain_descriptions": [
-      "widely used rulebook of best practices for IT operations and support",
-      "global certification framework for managing corporate tech services"
-    ],
-    "summary": "A globally recognized framework of best practices for delivering, supporting, and governing IT service management workflows.",
-    "domains": [
-      "it/business-systems/enterprise-apps"
-    ],
-    "level": 2,
-    "status": "draft"
-  },
-  {
-    "id": "itsm",
-    "label": "IT service management (ITSM)",
-    "aliases": [
-      "ITSM"
-    ],
-    "loanwords": [],
-    "plain_descriptions": [
-      "how IT teams design, deliver, and support corporate technology services",
-      "formal operational processes for managing servers, software deployments, and user support"
-    ],
-    "summary": "The operational discipline and set of practices through which an organization plans, delivers, operates, and controls information technology services provided to business users.",
-    "domains": [
-      "it/business-systems/enterprise-apps"
-    ],
-    "level": 2,
-    "status": "draft"
-  },
-  {
     "id": "jailbreak",
     "label": "Jailbreak",
     "qualifier": "(AI)",
@@ -4385,25 +2964,6 @@
       "it/ai-ml/ai-safety-governance"
     ],
     "level": 2,
-    "status": "draft"
-  },
-  {
-    "id": "javascript",
-    "label": "JavaScript",
-    "aliases": [
-      "JS"
-    ],
-    "loanwords": [],
-    "plain_descriptions": [
-      "the programming language that makes websites interactive and dynamic",
-      "the standard scripting engine running inside modern web browsers"
-    ],
-    "summary": "A dynamic multi-paradigm programming language featuring prototype inheritance that powers client-side web browser behavior.",
-    "domains": [
-      "it/web/frontend",
-      "it/software-engineering/programming-concepts"
-    ],
-    "level": 1,
     "status": "draft"
   },
   {
@@ -4458,25 +3018,6 @@
       "product/agile-scrum"
     ],
     "level": 1,
-    "status": "draft"
-  },
-  {
-    "id": "key-value-store",
-    "label": "Key-value store",
-    "aliases": [
-      "KV store",
-      "key-value database"
-    ],
-    "loanwords": [],
-    "plain_descriptions": [
-      "a simple, ultra-fast database that saves and looks up records using unique label keys",
-      "a digital dictionary storage where you provide a word tag to get the matching value instantly"
-    ],
-    "summary": "A high-performance NoSQL database model utilizing a direct associative array data model where every data item is indexed by a distinct key.",
-    "domains": [
-      "it/data/database"
-    ],
-    "level": 2,
     "status": "draft"
   },
   {
@@ -4595,25 +3136,6 @@
     "status": "draft"
   },
   {
-    "id": "lazy-loading",
-    "label": "Lazy loading",
-    "aliases": [
-      "deferred loading",
-      "on-demand loading"
-    ],
-    "loanwords": [],
-    "plain_descriptions": [
-      "waiting to load images and content until the user actually scrolls to them",
-      "delaying resource downloads until they are needed on screen"
-    ],
-    "summary": "A performance optimization pattern that defers the loading of non-critical resources until they are needed by the user.",
-    "domains": [
-      "it/web/frontend"
-    ],
-    "level": 2,
-    "status": "draft"
-  },
-  {
     "id": "least-privilege",
     "label": "Principle of least privilege",
     "aliases": [
@@ -4650,27 +3172,6 @@
       "finance/accounting/bookkeeping"
     ],
     "level": 1,
-    "status": "draft"
-  },
-  {
-    "id": "lidar",
-    "label": "LiDAR",
-    "aliases": [
-      "Lidar",
-      "LIDAR"
-    ],
-    "loanwords": [
-      "lidar"
-    ],
-    "plain_descriptions": [
-      "sensor that shoots laser beams and times reflections to create accurate 3D maps",
-      "laser-scanning distance measurement system used in self-driving vehicles and robotic vacuums"
-    ],
-    "summary": "A remote-sensing method that illuminates a target with pulsed laser light and measures reflected return times to generate high-resolution three-dimensional spatial coordinates.",
-    "domains": [
-      "iot/devices-sensors"
-    ],
-    "level": 2,
     "status": "draft"
   },
   {
@@ -4766,42 +3267,6 @@
     "status": "draft"
   },
   {
-    "id": "load-testing",
-    "label": "Load testing",
-    "aliases": [
-      "Performance load testing"
-    ],
-    "loanwords": [],
-    "plain_descriptions": [
-      "testing software by simulating heavy user traffic to verify performance and limits",
-      "generating artificial requests to measure system responsiveness and breaking points"
-    ],
-    "summary": "A non-functional software testing technique that subjects an application or system to simulated concurrent usage to evaluate its throughput, latency, and operational stability.",
-    "domains": [
-      "it/software-engineering/testing"
-    ],
-    "level": 2,
-    "status": "draft"
-  },
-  {
-    "id": "local-storage",
-    "label": "localStorage",
-    "aliases": [
-      "Web Storage"
-    ],
-    "loanwords": [],
-    "plain_descriptions": [
-      "a storage compartment in your browser where websites save preferences permanently",
-      "key-value web storage that keeps information even after closing browser tabs"
-    ],
-    "summary": "A Web Storage API mechanism that allows web applications to store persistent key-value pairs locally within the user’s browser.",
-    "domains": [
-      "it/web/frontend"
-    ],
-    "level": 1,
-    "status": "draft"
-  },
-  {
     "id": "log",
     "label": "Log",
     "qualifier": "(Software)",
@@ -4825,7 +3290,6 @@
   {
     "id": "lora",
     "label": "Low-Rank Adaptation",
-    "qualifier": "(AI)",
     "aliases": [
       "LoRA"
     ],
@@ -4839,27 +3303,6 @@
       "it/ai-ml/mlops"
     ],
     "level": 3,
-    "status": "draft"
-  },
-  {
-    "id": "lora-radio",
-    "label": "LoRa",
-    "qualifier": "(IoT)",
-    "aliases": [
-      "Long Range radio"
-    ],
-    "loanwords": [
-      "lora"
-    ],
-    "plain_descriptions": [
-      "long-distance, low-power radio modulation that sends small sensor messages across kilometers",
-      "chirp-based wireless technology that enables battery-operated sensors to transmit data across cities"
-    ],
-    "summary": "A proprietary physical-layer wireless radio frequency modulation technique derived from Chirp Spread Spectrum (CSS) that enables long-range, low-power data communications across license-free sub-gigahertz bands.",
-    "domains": [
-      "iot/connectivity-protocols"
-    ],
-    "level": 2,
     "status": "draft"
   },
   {
@@ -4895,45 +3338,6 @@
     "summary": "A mathematical function quantifying the discrepancy between a model's predicted outputs and true ground-truth targets.",
     "domains": [
       "it/ai-ml/foundations"
-    ],
-    "level": 2,
-    "status": "draft"
-  },
-  {
-    "id": "low-code",
-    "label": "Low-code",
-    "aliases": [],
-    "loanwords": [],
-    "plain_descriptions": [
-      "visual software development that lets developers build applications with minimal hand-coding",
-      "drag-and-drop programming platforms that speed up application delivery"
-    ],
-    "summary": "A software development approach combining graphical user interfaces and modular building blocks to construct digital solutions rapidly while accommodating hand-written programming extensions.",
-    "domains": [
-      "it/business-systems/automation"
-    ],
-    "level": 1,
-    "status": "draft"
-  },
-  {
-    "id": "low-power-mode",
-    "label": "Sleep mode",
-    "qualifier": "(Embedded)",
-    "aliases": [
-      "Low-power mode",
-      "Deep sleep"
-    ],
-    "loanwords": [
-      "sleep mode",
-      "deep sleep"
-    ],
-    "plain_descriptions": [
-      "power-saving state where a microchip shuts down most circuits to preserve battery life",
-      "standby mode that drops microchip power consumption from milliamps to microamps"
-    ],
-    "summary": "A reduced-consumption operational state in microcontrollers where clock oscillators, high-speed peripherals, and processing cores are gated off until an external interrupt or timer triggers awakening.",
-    "domains": [
-      "iot/devices-sensors"
     ],
     "level": 2,
     "status": "draft"
@@ -5013,45 +3417,6 @@
     "status": "draft"
   },
   {
-    "id": "materialized-view",
-    "label": "Materialized view",
-    "aliases": [
-      "snapshot view"
-    ],
-    "loanwords": [],
-    "plain_descriptions": [
-      "a saved database report whose calculated answers are written to disk for instant reading",
-      "pre-computing a slow multi-table join query and caching the result table physically on drive"
-    ],
-    "summary": "A database object that contains the pre-computed results of a query stored physically on disk for high-speed retrieval.",
-    "domains": [
-      "it/data/database"
-    ],
-    "level": 2,
-    "status": "draft"
-  },
-  {
-    "id": "matter-iot",
-    "label": "Matter",
-    "qualifier": "(IoT)",
-    "aliases": [
-      "Matter standard"
-    ],
-    "loanwords": [
-      "matter"
-    ],
-    "plain_descriptions": [
-      "unified smart home standard that lets Apple, Google, and Amazon devices work seamlessly together",
-      "universal language for smart lights, locks, and plugs across different smart home ecosystems"
-    ],
-    "summary": "An open-source, interoperable smart home connectivity standard operating over IP that allows certified devices to communicate seamlessly across Apple Home, Google Home, and Amazon Alexa ecosystems.",
-    "domains": [
-      "iot/connectivity-protocols"
-    ],
-    "level": 2,
-    "status": "draft"
-  },
-  {
     "id": "mcp",
     "label": "Model Context Protocol",
     "aliases": [
@@ -5065,22 +3430,6 @@
     "summary": "An open protocol that standardises how AI applications connect to external tools, data sources and workflows through MCP servers.",
     "domains": [
       "it/ai-ml/llm-agents"
-    ],
-    "level": 2,
-    "status": "draft"
-  },
-  {
-    "id": "memory-leak",
-    "label": "Memory leak",
-    "aliases": [],
-    "loanwords": [],
-    "plain_descriptions": [
-      "software defect where heap storage remains allocated despite being abandoned by the application",
-      "gradual consumption of available RAM over time caused by abandoned references that cannot be cleaned up"
-    ],
-    "summary": "A resource defect occurring when a program fails to release allocated memory that is no longer required, degrading system performance over time.",
-    "domains": [
-      "it/software-engineering/programming-concepts"
     ],
     "level": 2,
     "status": "draft"
@@ -5303,41 +3652,6 @@
     "status": "draft"
   },
   {
-    "id": "mongodb",
-    "label": "MongoDB",
-    "aliases": [],
-    "loanwords": [],
-    "plain_descriptions": [
-      "a popular database that stores records as flexible JSON documents instead of tables",
-      "an open-source document database loved by web developers for storing changing data easily"
-    ],
-    "summary": "A popular open-source document database that stores operational data in flexible, JSON-like BSON documents.",
-    "domains": [
-      "it/data/database"
-    ],
-    "level": 2,
-    "status": "draft"
-  },
-  {
-    "id": "monolith",
-    "label": "Monolithic architecture",
-    "aliases": [
-      "Monolith",
-      "Monolithic system"
-    ],
-    "loanwords": [],
-    "plain_descriptions": [
-      "single software application built and deployed as a unified codebase",
-      "system where all features run inside one process and database"
-    ],
-    "summary": "An architectural model where all business capabilities, user interfaces, and database operations are packaged and deployed as a single combined system.",
-    "domains": [
-      "it/software-engineering/architecture"
-    ],
-    "level": 1,
-    "status": "draft"
-  },
-  {
     "id": "monorepo",
     "label": "Monorepo",
     "aliases": [],
@@ -5412,6 +3726,22 @@
     "status": "draft"
   },
   {
+    "id": "multi-cloud",
+    "label": "Multi-cloud",
+    "aliases": [],
+    "loanwords": [],
+    "plain_descriptions": [
+      "using more than one public cloud provider at the same time",
+      "spreading workloads across multiple vendors to avoid depending on just one"
+    ],
+    "summary": "An architectural strategy utilizing cloud services from multiple independent public cloud vendors within a single organization.",
+    "domains": [
+      "it/infrastructure/cloud"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
     "id": "mutual-fund",
     "label": "Mutual fund",
     "aliases": [
@@ -5452,6 +3782,24 @@
     "status": "draft"
   },
   {
+    "id": "nat",
+    "label": "Network Address Translation (NAT)",
+    "aliases": [
+      "NAT"
+    ],
+    "loanwords": [],
+    "plain_descriptions": [
+      "sharing one public internet address among many private home or office devices",
+      "remapping internal private IP addresses to an external internet address"
+    ],
+    "summary": "A networking method that remaps an IP address space into another by modifying network address information in the IP header of packets in transit.",
+    "domains": [
+      "it/infrastructure/networking"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
     "id": "nb-iot",
     "label": "NB-IoT",
     "aliases": [],
@@ -5467,6 +3815,23 @@
       "iot/connectivity-protocols"
     ],
     "level": 2,
+    "status": "draft"
+  },
+  {
+    "id": "network-port",
+    "label": "Port",
+    "qualifier": "(Networking)",
+    "aliases": [],
+    "loanwords": [],
+    "plain_descriptions": [
+      "numerical channel number directing network data to a specific software program",
+      "software communication door that differentiates web, email, or database traffic on one computer"
+    ],
+    "summary": "A 16-bit unsigned number in transport layer headers that identifies a specific application service or communication endpoint on a host.",
+    "domains": [
+      "it/infrastructure/networking"
+    ],
+    "level": 1,
     "status": "draft"
   },
   {
@@ -5526,79 +3891,6 @@
     "status": "draft"
   },
   {
-    "id": "nfc",
-    "label": "Near-field communication (NFC)",
-    "aliases": [
-      "NFC"
-    ],
-    "loanwords": [
-      "nfc"
-    ],
-    "plain_descriptions": [
-      "short-range wireless touch technology used for contactless payments and transit taps",
-      "close-contact wireless standard that transfers credentials when devices are tapped together"
-    ],
-    "summary": "A short-range, high-frequency standards-based wireless connectivity technology operating at 13.56 MHz that enables intuitive two-way communication when devices are brought within 4 centimeters.",
-    "domains": [
-      "iot/connectivity-protocols"
-    ],
-    "level": 1,
-    "status": "draft"
-  },
-  {
-    "id": "nginx",
-    "label": "Nginx",
-    "aliases": [
-      "NGINX"
-    ],
-    "loanwords": [],
-    "plain_descriptions": [
-      "a high-performance web server software popular for handling heavy internet traffic",
-      "a fast open-source program that serves websites, load-balances traffic, and routes proxies"
-    ],
-    "summary": "A high-performance HTTP web server, reverse proxy, and load balancer designed for maximum concurrency and low memory usage.",
-    "domains": [
-      "it/web/backend",
-      "it/infrastructure/networking"
-    ],
-    "level": 2,
-    "status": "draft"
-  },
-  {
-    "id": "no-code",
-    "label": "No-code",
-    "aliases": [],
-    "loanwords": [],
-    "plain_descriptions": [
-      "app building tools designed for non-technical users without writing any code",
-      "completely visual platforms where anyone can construct workflows and forms"
-    ],
-    "summary": "A software creation method that empowers non-technical users to build functional applications and workflows entirely through graphical drag-and-drop interfaces without writing source code.",
-    "domains": [
-      "it/business-systems/automation"
-    ],
-    "level": 1,
-    "status": "draft"
-  },
-  {
-    "id": "nodejs",
-    "label": "Node.js",
-    "aliases": [
-      "Node"
-    ],
-    "loanwords": [],
-    "plain_descriptions": [
-      "a system that lets programmers run JavaScript on servers instead of inside browsers",
-      "a fast backend JavaScript environment designed for real-time web services"
-    ],
-    "summary": "A standalone server runtime that compiles and executes JavaScript code outside browser sandboxes via Google V8 engine.",
-    "domains": [
-      "it/web/backend"
-    ],
-    "level": 2,
-    "status": "draft"
-  },
-  {
     "id": "north-star-metric",
     "label": "North Star metric",
     "aliases": [],
@@ -5614,42 +3906,6 @@
       "product/metrics"
     ],
     "level": 2,
-    "status": "draft"
-  },
-  {
-    "id": "nosql",
-    "label": "NoSQL",
-    "aliases": [
-      "non-relational database"
-    ],
-    "loanwords": [],
-    "plain_descriptions": [
-      "modern databases that store unstructured or changing data without rigid spreadsheet tables",
-      "flexible database systems designed to spread easily across hundreds of cloud servers"
-    ],
-    "summary": "A broad class of non-relational database systems designed to handle flexible data models, high velocity, and horizontal scalability.",
-    "domains": [
-      "it/data/database"
-    ],
-    "level": 1,
-    "status": "draft"
-  },
-  {
-    "id": "null-reference",
-    "label": "Null reference",
-    "aliases": [
-      "Null pointer"
-    ],
-    "loanwords": [],
-    "plain_descriptions": [
-      "pointer or variable that deliberately points to no valid memory address or object",
-      "unassigned reference state that triggers runtime crashes if dereferenced without checks"
-    ],
-    "summary": "A pointer or reference value that signifies the absence of an object or points to an invalid address in memory.",
-    "domains": [
-      "it/software-engineering/programming-concepts"
-    ],
-    "level": 1,
     "status": "draft"
   },
   {
@@ -5688,21 +3944,19 @@
     "status": "draft"
   },
   {
-    "id": "object-oriented-programming",
-    "label": "Object-oriented programming (OOP)",
-    "aliases": [
-      "OOP"
-    ],
+    "id": "object-storage",
+    "label": "Object storage",
+    "aliases": [],
     "loanwords": [],
     "plain_descriptions": [
-      "programming approach that structures code around self-contained objects holding data and behavior",
-      "software design philosophy based on modeling real world concepts as interacting entities"
+      "flat cloud file storage accessible over web HTTP using unique keys",
+      "storing photos, videos, and backups as discrete objects without directory hierarchies"
     ],
-    "summary": "A paradigm centered on modeling software as collections of cooperating objects that encapsulate state and behavior.",
+    "summary": "A scalable storage architecture that manages data as distinct objects paired with rich metadata and a unique identifier in a flat address space accessed via HTTP APIs.",
     "domains": [
-      "it/software-engineering/programming-concepts"
+      "it/infrastructure/cloud"
     ],
-    "level": 1,
+    "level": 2,
     "status": "draft"
   },
   {
@@ -5742,42 +3996,6 @@
       "product/metrics"
     ],
     "level": 1,
-    "status": "draft"
-  },
-  {
-    "id": "olap",
-    "label": "Online Analytical Processing (OLAP)",
-    "aliases": [
-      "OLAP"
-    ],
-    "loanwords": [],
-    "plain_descriptions": [
-      "computing systems designed to analyze historical business numbers across many angles quickly",
-      "database software built for executives asking big-picture questions about sales trends over years"
-    ],
-    "summary": "A category of software tools and database engines optimized for performing multidimensional analysis across massive archives of historical metrics with sub-second latency.",
-    "domains": [
-      "it/data/analytics"
-    ],
-    "level": 2,
-    "status": "draft"
-  },
-  {
-    "id": "oltp",
-    "label": "Online Transaction Processing (OLTP)",
-    "aliases": [
-      "OLTP"
-    ],
-    "loanwords": [],
-    "plain_descriptions": [
-      "database systems that handle thousands of immediate everyday customer clicks and payments",
-      "the software engine processing debit card withdrawals and order confirmations in real time"
-    ],
-    "summary": "A category of data processing focused on executing and recording a high volume of short, immediate database transactions.",
-    "domains": [
-      "it/data/database"
-    ],
-    "level": 2,
     "status": "draft"
   },
   {
@@ -5873,23 +4091,6 @@
     "status": "draft"
   },
   {
-    "id": "os-process",
-    "label": "Process",
-    "qualifier": "(Operating system)",
-    "aliases": [],
-    "loanwords": [],
-    "plain_descriptions": [
-      "running instance of a computer program with its own dedicated memory space",
-      "isolated execution environment managed by the operating system containing code, resources, and threads"
-    ],
-    "summary": "An executing instance of a computer program allocated its own isolated memory address space and operating system resources.",
-    "domains": [
-      "it/software-engineering/programming-concepts"
-    ],
-    "level": 1,
-    "status": "draft"
-  },
-  {
     "id": "ota-update",
     "label": "Over-the-air update (OTA)",
     "aliases": [
@@ -5945,6 +4146,24 @@
     "status": "draft"
   },
   {
+    "id": "paas",
+    "label": "Platform as a Service (PaaS)",
+    "aliases": [
+      "PaaS"
+    ],
+    "loanwords": [],
+    "plain_descriptions": [
+      "cloud platform where you deploy code without managing servers",
+      "ready-to-use application hosting environment managed by a vendor"
+    ],
+    "summary": "A cloud delivery model providing a managed execution environment and tooling for developers to deploy applications without operating system administration.",
+    "domains": [
+      "it/infrastructure/cloud"
+    ],
+    "level": 1,
+    "status": "draft"
+  },
+  {
     "id": "pagination",
     "label": "Pagination",
     "aliases": [
@@ -5959,40 +4178,6 @@
     "summary": "A design technique that breaks large data sets into discrete subsets or pages to manage bandwidth and system performance.",
     "domains": [
       "it/web/api"
-    ],
-    "level": 2,
-    "status": "draft"
-  },
-  {
-    "id": "parallelism",
-    "label": "Parallelism",
-    "qualifier": "(Computing)",
-    "aliases": [],
-    "loanwords": [],
-    "plain_descriptions": [
-      "executing multiple computational tasks at the exact same physical moment across separate processor cores",
-      "splitting a heavy calculation across multiple hardware processing units to finish work faster"
-    ],
-    "summary": "The simultaneous physical execution of multiple computations at the exact same instant across distinct hardware processing units.",
-    "domains": [
-      "it/software-engineering/programming-concepts"
-    ],
-    "level": 2,
-    "status": "draft"
-  },
-  {
-    "id": "payment-gateway",
-    "label": "Payment gateway",
-    "aliases": [],
-    "loanwords": [],
-    "plain_descriptions": [
-      "online checkout service that securely charges credit cards and digital wallets",
-      "digital intermediary passing customer payment details safely to banks"
-    ],
-    "summary": "A technology service that authorizes online credit card and digital payment transactions between e-commerce merchants and financial networks.",
-    "domains": [
-      "it/business-systems/enterprise-apps",
-      "finance/banking/payments"
     ],
     "level": 2,
     "status": "draft"
@@ -6115,42 +4300,6 @@
     "status": "draft"
   },
   {
-    "id": "pos-system",
-    "label": "Point of sale (POS)",
-    "aliases": [
-      "POS"
-    ],
-    "loanwords": [],
-    "plain_descriptions": [
-      "the checkout terminal that rings up purchases and prints receipts",
-      "cash register hardware and software used at retail checkout counters"
-    ],
-    "summary": "The combined hardware and software terminal where retail transactions are completed, payments processed, and inventory deducted.",
-    "domains": [
-      "it/business-systems/enterprise-apps"
-    ],
-    "level": 1,
-    "status": "draft"
-  },
-  {
-    "id": "postgresql",
-    "label": "PostgreSQL",
-    "aliases": [
-      "Postgres"
-    ],
-    "loanwords": [],
-    "plain_descriptions": [
-      "a powerful, open-source relational database respected for strict reliability and rich features",
-      "an advanced enterprise SQL database that supports JSON documents alongside classic tables"
-    ],
-    "summary": "A powerful, open-source object-relational database system renowned for reliability, feature robustness, and SQL standards compliance.",
-    "domains": [
-      "it/data/database"
-    ],
-    "level": 2,
-    "status": "draft"
-  },
-  {
     "id": "postmortem",
     "label": "Postmortem",
     "qualifier": "(IT)",
@@ -6263,24 +4412,6 @@
     "summary": "A formal written communication distributed to news organizations to deliver official announcements and generate accurate news coverage.",
     "domains": [
       "media/pr-communications/media-relations"
-    ],
-    "level": 1,
-    "status": "draft"
-  },
-  {
-    "id": "primary-key",
-    "label": "Primary key",
-    "aliases": [
-      "PK"
-    ],
-    "loanwords": [],
-    "plain_descriptions": [
-      "a unique tag or number that tells one row apart from every other row in a database table",
-      "the unique identification column (like a national ID number) that ensures no duplicate records exist"
-    ],
-    "summary": "A specific column or set of columns in a relational database table that uniquely identifies each individual record in that table.",
-    "domains": [
-      "it/data/database"
     ],
     "level": 1,
     "status": "draft"
@@ -6446,41 +4577,6 @@
     "status": "draft"
   },
   {
-    "id": "progressive-web-app",
-    "label": "Progressive web app (PWA)",
-    "aliases": [
-      "PWA"
-    ],
-    "loanwords": [],
-    "plain_descriptions": [
-      "a website that works offline and can be installed like a phone app",
-      "web applications combining modern browser capabilities with native app features"
-    ],
-    "summary": "A web application built using web technologies that delivers app-like experiences, offline capabilities, and device installation.",
-    "domains": [
-      "it/web/frontend"
-    ],
-    "level": 2,
-    "status": "draft"
-  },
-  {
-    "id": "promise",
-    "label": "Promise",
-    "qualifier": "(Programming)",
-    "aliases": [],
-    "loanwords": [],
-    "plain_descriptions": [
-      "stand-in token that holds the pending outcome of an ongoing background calculation",
-      "proxy for a future value that may succeed with data or fail with an error reason"
-    ],
-    "summary": "A stateful container representing a deferred computational outcome that will eventually yield a value or encounter failure.",
-    "domains": [
-      "it/software-engineering/programming-concepts"
-    ],
-    "level": 2,
-    "status": "draft"
-  },
-  {
     "id": "prompt",
     "label": "Prompt",
     "aliases": [],
@@ -6529,21 +4625,17 @@
     "status": "draft"
   },
   {
-    "id": "publish-subscribe",
-    "label": "Publish-subscribe (pub/sub)",
-    "aliases": [
-      "pub/sub",
-      "pub-sub"
-    ],
+    "id": "proxy-server",
+    "label": "Proxy server",
+    "aliases": [],
     "loanwords": [],
     "plain_descriptions": [
-      "a messaging style where senders broadcast updates without knowing who the receivers are",
-      "a communication design where interested apps sign up to get specific topic alerts automatically"
+      "middleman server that makes requests on behalf of other computers",
+      "intermediary computer that filters web traffic or caches responses"
     ],
-    "summary": "An asynchronous architectural messaging pattern where message senders categorize broadcasts without directing them to specific individual subscribers.",
+    "summary": "An intermediary server application that acts as an agent for clients seeking resources from other destination servers.",
     "domains": [
-      "it/web/backend",
-      "it/data/data-engineering"
+      "it/infrastructure/networking"
     ],
     "level": 2,
     "status": "draft"
@@ -6563,43 +4655,6 @@
     "summary": "A mechanism in distributed version control platforms that allows a developer to propose changes from a feature branch and request peer review before merging.",
     "domains": [
       "it/software-engineering/version-control"
-    ],
-    "level": 1,
-    "status": "draft"
-  },
-  {
-    "id": "pwm",
-    "label": "Pulse-width modulation (PWM)",
-    "aliases": [
-      "PWM"
-    ],
-    "loanwords": [
-      "pwm"
-    ],
-    "plain_descriptions": [
-      "rapidly switching a digital signal on and off to simulate variable electrical power",
-      "flickering a voltage line fast enough to dim lights or adjust electric motor speeds"
-    ],
-    "summary": "A modulation method that regulates the effective average power delivered to a load by varying the duty cycle of a rapid square-wave switching signal.",
-    "domains": [
-      "iot/devices-sensors"
-    ],
-    "level": 2,
-    "status": "draft"
-  },
-  {
-    "id": "python",
-    "label": "Python",
-    "qualifier": "(Programming language)",
-    "aliases": [],
-    "loanwords": [],
-    "plain_descriptions": [
-      "high-level, dynamically typed programming language famous for readable syntax and indentation",
-      "versatile multi-paradigm language widely used for artificial intelligence, data analysis, and web services"
-    ],
-    "summary": "A high-level, general-purpose programming language characterized by readable syntax, dynamic typing, and comprehensive standard libraries.",
-    "domains": [
-      "it/software-engineering/programming-concepts"
     ],
     "level": 1,
     "status": "draft"
@@ -6641,22 +4696,6 @@
     "status": "draft"
   },
   {
-    "id": "rabbitmq",
-    "label": "RabbitMQ",
-    "aliases": [],
-    "loanwords": [],
-    "plain_descriptions": [
-      "open-source message broker software that routes background tasks reliably between programs",
-      "an intermediary postal worker that accepts, stores, and hands out job tickets to waiting workers"
-    ],
-    "summary": "An open-source message broker that routes messages between distributed applications using protocols like AMQP.",
-    "domains": [
-      "it/web/backend"
-    ],
-    "level": 2,
-    "status": "draft"
-  },
-  {
     "id": "race-condition",
     "label": "Race condition",
     "aliases": [],
@@ -6691,27 +4730,6 @@
     "status": "draft"
   },
   {
-    "id": "raspberry-pi",
-    "label": "Raspberry Pi",
-    "aliases": [
-      "RPi"
-    ],
-    "loanwords": [
-      "raspberry pi",
-      "rpi"
-    ],
-    "plain_descriptions": [
-      "popular series of small, affordable single-board computers for learning and prototyping",
-      "credit-card-sized computer board featuring 40 GPIO pins used widely in DIY and IoT builds"
-    ],
-    "summary": "A widely adopted series of compact, cost-effective ARM-based single-board computers equipped with a standard 40-pin header for peripheral interfacing and education.",
-    "domains": [
-      "iot/devices-sensors"
-    ],
-    "level": 1,
-    "status": "draft"
-  },
-  {
     "id": "rate-limiting",
     "label": "Rate limiting",
     "aliases": [
@@ -6727,26 +4745,6 @@
     "summary": "A defensive network control mechanism that caps the number of requests a client can submit to an API or service within a specified time window.",
     "domains": [
       "it/web/api"
-    ],
-    "level": 2,
-    "status": "draft"
-  },
-  {
-    "id": "react",
-    "label": "React",
-    "qualifier": "(Library)",
-    "aliases": [
-      "React.js",
-      "ReactJS"
-    ],
-    "loanwords": [],
-    "plain_descriptions": [
-      "a popular JavaScript tool for building user interfaces with reusable Lego-like components",
-      "a declarative frontend library for constructing reactive interactive web apps"
-    ],
-    "summary": "A free and open-source front-end JavaScript library for building user interfaces based on components.",
-    "domains": [
-      "it/web/frontend"
     ],
     "level": 2,
     "status": "draft"
@@ -6787,39 +4785,6 @@
     "status": "draft"
   },
   {
-    "id": "recursion",
-    "label": "Recursion",
-    "aliases": [],
-    "loanwords": [],
-    "plain_descriptions": [
-      "problem-solving method where a function solves smaller chunks of a task by calling itself",
-      "programming technique of repeating operations through self-invoking function calls until hitting a base case"
-    ],
-    "summary": "A computational technique where a function solves a problem by invoking smaller instances of itself until reaching a terminating base condition.",
-    "domains": [
-      "it/software-engineering/programming-concepts"
-    ],
-    "level": 2,
-    "status": "draft"
-  },
-  {
-    "id": "redis",
-    "label": "Redis",
-    "aliases": [],
-    "loanwords": [],
-    "plain_descriptions": [
-      "an ultra-fast in-memory data store used to cache pages and speed up web applications",
-      "a RAM-based software system that remembers answers and counters in fractions of a millisecond"
-    ],
-    "summary": "An open-source, in-memory data structure store used as a high-speed database, cache, message broker, and streaming engine.",
-    "domains": [
-      "it/data/database",
-      "it/web/backend"
-    ],
-    "level": 2,
-    "status": "draft"
-  },
-  {
     "id": "refactoring",
     "label": "Refactoring",
     "aliases": [],
@@ -6849,63 +4814,6 @@
       "it/software-engineering/testing"
     ],
     "level": 2,
-    "status": "draft"
-  },
-  {
-    "id": "regular-expression",
-    "label": "Regular expression (regex)",
-    "aliases": [
-      "Regex",
-      "regex"
-    ],
-    "loanwords": [],
-    "plain_descriptions": [
-      "compact pattern used to search, match, and extract specific character sequences from text",
-      "formal string template describing text rules for validating inputs like emails or phone numbers"
-    ],
-    "summary": "A sequence of characters defining a search pattern used by string-searching algorithms for matching, validation, and text transformation.",
-    "domains": [
-      "it/software-engineering/programming-concepts"
-    ],
-    "level": 2,
-    "status": "draft"
-  },
-  {
-    "id": "relational-database",
-    "label": "Relational database",
-    "aliases": [
-      "RDBMS",
-      "relational database management system"
-    ],
-    "loanwords": [],
-    "plain_descriptions": [
-      "a digital filing system that organizes facts into neat tables linked by common keys",
-      "structured database software that uses SQL to keep table records connected and strictly accurate"
-    ],
-    "summary": "A type of database that stores and provides access to data points that are related to one another through organized tables with predefined schemas.",
-    "domains": [
-      "it/data/database"
-    ],
-    "level": 1,
-    "status": "draft"
-  },
-  {
-    "id": "responsive-design",
-    "label": "Responsive design",
-    "aliases": [
-      "responsive web design",
-      "RWD"
-    ],
-    "loanwords": [],
-    "plain_descriptions": [
-      "designing web pages to adapt smoothly across phones, tablets, and desktop screens",
-      "flexible website styling that looks great on any screen resolution"
-    ],
-    "summary": "An approach to web design that makes web pages render well on a variety of devices and screen window sizes.",
-    "domains": [
-      "it/web/frontend"
-    ],
-    "level": 1,
     "status": "draft"
   },
   {
@@ -6985,44 +4893,6 @@
     "status": "draft"
   },
   {
-    "id": "reverse-proxy",
-    "label": "Reverse proxy",
-    "aliases": [
-      "Reverse proxy server"
-    ],
-    "loanwords": [],
-    "plain_descriptions": [
-      "server intercepting client traffic to shield and distribute load to origin servers",
-      "front-facing proxy that retrieves resources from internal servers on behalf of clients"
-    ],
-    "summary": "A server sitting in front of web servers that intercepts incoming client requests and routes them to internal targets, providing anonymity, load distribution, and TLS termination.",
-    "domains": [
-      "it/infrastructure/networking"
-    ],
-    "level": 2,
-    "status": "draft"
-  },
-  {
-    "id": "rfid",
-    "label": "Radio-frequency identification (RFID)",
-    "aliases": [
-      "RFID"
-    ],
-    "loanwords": [
-      "rfid"
-    ],
-    "plain_descriptions": [
-      "wireless technology using radio waves to identify and track tags attached to objects",
-      "electronic tagging system that scans toll transponders and inventory tags from meters away"
-    ],
-    "summary": "A wireless identification technology employing electromagnetic radio frequency fields to automatically detect and read encoded data stored on passive or active electronic tags.",
-    "domains": [
-      "iot/devices-sensors"
-    ],
-    "level": 1,
-    "status": "draft"
-  },
-  {
     "id": "rice-scoring",
     "label": "RICE scoring",
     "aliases": [
@@ -7081,60 +4951,6 @@
     "status": "draft"
   },
   {
-    "id": "rpa",
-    "label": "Robotic process automation (RPA)",
-    "aliases": [
-      "RPA"
-    ],
-    "loanwords": [],
-    "plain_descriptions": [
-      "software bots that mimic human mouse clicks and keyboard typing",
-      "automated assistants that copy and paste data between legacy business systems"
-    ],
-    "summary": "A business automation technology that uses software bots to mimic rule-based human interactions with graphical computer interfaces.",
-    "domains": [
-      "it/business-systems/automation"
-    ],
-    "level": 2,
-    "status": "draft"
-  },
-  {
-    "id": "rpo",
-    "label": "Recovery Point Objective (RPO)",
-    "aliases": [
-      "RPO"
-    ],
-    "loanwords": [],
-    "plain_descriptions": [
-      "maximum amount of transactional data measured in time that a business can tolerate losing",
-      "age of the most recent usable backup required after recovering from a disaster"
-    ],
-    "summary": "The maximum acceptable age of data files or transactions that must be recovered from backup storage for normal operations to resume if a computer system crashes.",
-    "domains": [
-      "it/devops/sre-operations"
-    ],
-    "level": 2,
-    "status": "draft"
-  },
-  {
-    "id": "rto",
-    "label": "Recovery Time Objective (RTO)",
-    "aliases": [
-      "RTO"
-    ],
-    "loanwords": [],
-    "plain_descriptions": [
-      "maximum acceptable duration a system can be down following a disaster",
-      "target time limit within which business services must be fully restored"
-    ],
-    "summary": "The maximum acceptable length of time that a system, application, or service can remain offline following a disaster or disruption before intolerable business damage occurs.",
-    "domains": [
-      "it/devops/sre-operations"
-    ],
-    "level": 2,
-    "status": "draft"
-  },
-  {
     "id": "rtos",
     "label": "Real-time operating system (RTOS)",
     "aliases": [
@@ -7153,21 +4969,22 @@
     "status": "draft"
   },
   {
-    "id": "saga-pattern",
-    "label": "Saga pattern",
+    "id": "saas",
+    "label": "Software as a Service (SaaS)",
     "aliases": [
-      "Saga distributed transaction"
+      "SaaS"
     ],
     "loanwords": [],
     "plain_descriptions": [
-      "coordinating distributed transactions across services through a series of local steps",
-      "transaction workflow using compensating actions to undo steps when an error occurs"
+      "accessing online software through a browser on subscription",
+      "using cloud applications without installing or maintaining local software"
     ],
-    "summary": "A design pattern that manages distributed transactions across multiple microservices using a sequence of local transactions and compensating actions to handle failures.",
+    "summary": "A cloud distribution model where complete software applications are hosted by a provider and accessed by consumers over the internet.",
     "domains": [
-      "it/software-engineering/architecture"
+      "it/infrastructure/cloud",
+      "it/business-systems/enterprise-apps"
     ],
-    "level": 3,
+    "level": 1,
     "status": "draft"
   },
   {
@@ -7322,25 +5139,6 @@
     "status": "draft"
   },
   {
-    "id": "secure-boot",
-    "label": "Secure boot",
-    "aliases": [],
-    "loanwords": [
-      "secure boot"
-    ],
-    "plain_descriptions": [
-      "security check that ensures a computer or chip only boots trusted, authorized software",
-      "cryptographic startup process that stops malicious firmware from running on a device"
-    ],
-    "summary": "A security standard ensuring that an electronic device boots using only firmware and software that is verified and cryptographically signed by trusted manufacturers.",
-    "domains": [
-      "iot/devices-sensors",
-      "it/security/cryptography"
-    ],
-    "level": 2,
-    "status": "draft"
-  },
-  {
     "id": "semantic-versioning",
     "label": "Semantic versioning",
     "aliases": [
@@ -7428,43 +5226,6 @@
     "status": "draft"
   },
   {
-    "id": "server-sent-events",
-    "label": "Server-sent events (SSE)",
-    "aliases": [
-      "SSE",
-      "EventSource API"
-    ],
-    "loanwords": [],
-    "plain_descriptions": [
-      "server pushing automatic live text updates to a web browser over a single HTTP connection",
-      "one-way streaming protocol delivering real-time events from server to client"
-    ],
-    "summary": "A web technology where a browser client receives automatic real-time event streams from a server over an open standard HTTP connection.",
-    "domains": [
-      "it/web/api"
-    ],
-    "level": 2,
-    "status": "draft"
-  },
-  {
-    "id": "server-side-rendering",
-    "label": "Server-side rendering (SSR)",
-    "aliases": [
-      "SSR"
-    ],
-    "loanwords": [],
-    "plain_descriptions": [
-      "creating the complete HTML web page on the server before sending it to the user",
-      "server-generated web pages that display fast and help search engines index content"
-    ],
-    "summary": "The process of rendering web components into complete HTML strings on the server in response to user requests.",
-    "domains": [
-      "it/web/frontend"
-    ],
-    "level": 2,
-    "status": "draft"
-  },
-  {
     "id": "serverless",
     "label": "Serverless",
     "aliases": [
@@ -7484,39 +5245,19 @@
     "status": "draft"
   },
   {
-    "id": "service-mesh",
-    "label": "Service mesh",
-    "aliases": [
-      "Sidecar proxy mesh"
-    ],
+    "id": "service-discovery",
+    "label": "Service discovery",
+    "aliases": [],
     "loanwords": [],
     "plain_descriptions": [
-      "dedicated infrastructure layer managing network communication between microservices",
-      "network of sidecar proxies securing and observing service-to-service calls"
+      "automatic mechanism for microservices to find each other on dynamic cloud networks",
+      "automated network phonebook that tracks changing server IP addresses in real time"
     ],
-    "summary": "A dedicated infrastructure layer of networked sidecar proxies that manages, secures, and observes service-to-service communications without modifying application code.",
+    "summary": "The automatic detection and location resolution of microservices, instances, and endpoints on a network through a centralized or distributed registry.",
     "domains": [
-      "it/software-engineering/architecture"
+      "it/infrastructure/networking"
     ],
-    "level": 3,
-    "status": "draft"
-  },
-  {
-    "id": "service-worker",
-    "label": "Service worker",
-    "aliases": [
-      "service workers"
-    ],
-    "loanwords": [],
-    "plain_descriptions": [
-      "a background background script that acts as an invisible network proxy for web apps",
-      "the technical engine that enables web apps to work offline and receive push notifications"
-    ],
-    "summary": "An event-driven background worker script that intercepts network requests, manages caching strategies, and powers push notifications.",
-    "domains": [
-      "it/web/frontend"
-    ],
-    "level": 3,
+    "level": 2,
     "status": "draft"
   },
   {
@@ -7571,63 +5312,6 @@
     ],
     "level": 1,
     "status": "reviewed"
-  },
-  {
-    "id": "single-board-computer",
-    "label": "Single-board computer (SBC)",
-    "aliases": [
-      "SBC"
-    ],
-    "loanwords": [
-      "single-board computer",
-      "sbc"
-    ],
-    "plain_descriptions": [
-      "complete computer built entirely onto one single circuit board",
-      "compact circuit board containing processor, memory, and ports capable of booting an OS"
-    ],
-    "summary": "A complete functional computer whose microprocessor, system memory, storage interfaces, input-output controllers, and networking ports are assembled onto a single physical printed circuit board.",
-    "domains": [
-      "iot/devices-sensors"
-    ],
-    "level": 2,
-    "status": "draft"
-  },
-  {
-    "id": "single-page-application",
-    "label": "Single-page application (SPA)",
-    "aliases": [
-      "SPA"
-    ],
-    "loanwords": [],
-    "plain_descriptions": [
-      "a website that updates content seamlessly without reloading the entire page",
-      "a web app loading a single HTML shell and switching views with JavaScript"
-    ],
-    "summary": "A web application that interacts with the user by dynamically rewriting the current web page rather than loading entire new pages from a server.",
-    "domains": [
-      "it/web/frontend"
-    ],
-    "level": 2,
-    "status": "draft"
-  },
-  {
-    "id": "single-point-of-failure",
-    "label": "Single point of failure (SPOF)",
-    "aliases": [
-      "SPOF"
-    ],
-    "loanwords": [],
-    "plain_descriptions": [
-      "single part of a system whose failure stops the entire system from working",
-      "un-replicated component that can cause total system outage if it breaks"
-    ],
-    "summary": "A potential risk in system architecture where a single component failure will trigger the cessation of the entire system because no redundancy exists.",
-    "domains": [
-      "it/devops/sre-operations"
-    ],
-    "level": 1,
-    "status": "draft"
   },
   {
     "id": "sla",
@@ -7693,24 +5377,6 @@
       "networked household setup where appliances communicate and can be managed remotely"
     ],
     "summary": "A residential environment equipped with interconnected electronic devices that automate domestic tasks, optimize utility usage, and enable centralized remote monitoring.",
-    "domains": [
-      "iot/devices-sensors"
-    ],
-    "level": 1,
-    "status": "draft"
-  },
-  {
-    "id": "smart-meter",
-    "label": "Smart meter",
-    "aliases": [],
-    "loanwords": [
-      "smart meter"
-    ],
-    "plain_descriptions": [
-      "digital utility meter that measures electricity, water, or gas and sends readings automatically",
-      "connected electric meter that reports consumption to the power company without manual meter readers"
-    ],
-    "summary": "An advanced electronic utility metering device that records consumption of electric energy, water, or gas in real time and communicates intervals back to the utility provider via automated networks.",
     "domains": [
       "iot/devices-sensors"
     ],
@@ -7813,27 +5479,6 @@
     "status": "draft"
   },
   {
-    "id": "spi-bus",
-    "label": "Serial Peripheral Interface (SPI)",
-    "aliases": [
-      "SPI"
-    ],
-    "loanwords": [
-      "spi",
-      "spi bus"
-    ],
-    "plain_descriptions": [
-      "high-speed, four-wire data connection between a microchip and external memory or displays",
-      "synchronous serial communication interface using separate lines for sending and receiving data simultaneously"
-    ],
-    "summary": "A high-speed, synchronous four-wire serial interface providing full-duplex data transfer between a master device and one or more selected peripheral devices using dedicated chip select lines.",
-    "domains": [
-      "iot/devices-sensors"
-    ],
-    "level": 2,
-    "status": "draft"
-  },
-  {
     "id": "spokesperson",
     "label": "Spokesperson",
     "aliases": [
@@ -7850,6 +5495,22 @@
       "media/pr-communications/media-relations"
     ],
     "level": 1,
+    "status": "draft"
+  },
+  {
+    "id": "spot-instance",
+    "label": "Spot instance",
+    "aliases": [],
+    "loanwords": [],
+    "plain_descriptions": [
+      "deeply discounted cloud virtual server that can be interrupted with short notice",
+      "spare cloud computing capacity rented cheaply for non-urgent computations and resilient workloads"
+    ],
+    "summary": "An unused cloud computing instance available at steep discounts compared to on-demand rates, subject to reclamation when the provider needs capacity.",
+    "domains": [
+      "it/infrastructure/cloud"
+    ],
+    "level": 2,
     "status": "draft"
   },
   {
@@ -7947,34 +5608,20 @@
     "status": "draft"
   },
   {
-    "id": "stack-data-structure",
-    "label": "Stack",
-    "qualifier": "(Data structure)",
-    "aliases": [],
+    "id": "ssh",
+    "label": "Secure Shell (SSH)",
+    "aliases": [
+      "SSH"
+    ],
     "loanwords": [],
     "plain_descriptions": [
-      "last-in, first-out container where items are added and removed strictly from the top",
-      "vertical data structure operating on LIFO order with push and pop operations"
+      "secure encrypted tool for logging into and running commands on remote servers",
+      "encrypted remote terminal terminal connection replacing insecure Telnet"
     ],
-    "summary": "A linear collection following the Last-In, First-Out (LIFO) access discipline, restricting insertions and deletions to a single endpoint.",
+    "summary": "A cryptographic network protocol for operating network services securely over an unsecured network, most commonly used for remote command-line login.",
     "domains": [
-      "it/software-engineering/programming-concepts"
-    ],
-    "level": 2,
-    "status": "draft"
-  },
-  {
-    "id": "stack-trace",
-    "label": "Stack trace",
-    "aliases": [],
-    "loanwords": [],
-    "plain_descriptions": [
-      "report showing the active sequence of function calls at the moment an error occurred",
-      "diagnostic breadcrumb trail of source files and line numbers where a program crashed"
-    ],
-    "summary": "A diagnostic report detailing the active call stack frames, function names, and file line numbers at a specific moment during execution.",
-    "domains": [
-      "it/software-engineering/programming-concepts"
+      "it/infrastructure/networking",
+      "it/security/authentication"
     ],
     "level": 2,
     "status": "draft"
@@ -8031,24 +5678,6 @@
     "summary": "The agreed valuation of a private enterprise determined prior to receiving an external injection of new investment capital.",
     "domains": [
       "finance/corporate-finance/fundraising"
-    ],
-    "level": 2,
-    "status": "draft"
-  },
-  {
-    "id": "static-site-generation",
-    "label": "Static site generation (SSG)",
-    "aliases": [
-      "SSG"
-    ],
-    "loanwords": [],
-    "plain_descriptions": [
-      "pre-building every page of a website into ready files before visitors arrive",
-      "generating fixed HTML pages during development for ultra-fast CDN delivery"
-    ],
-    "summary": "A build method that pre-renders full HTML pages at compile time rather than on demand for each user request.",
-    "domains": [
-      "it/web/frontend"
     ],
     "level": 2,
     "status": "draft"
@@ -8133,24 +5762,6 @@
     "status": "draft"
   },
   {
-    "id": "stream-processing",
-    "label": "Stream processing",
-    "aliases": [
-      "streaming computation"
-    ],
-    "loanwords": [],
-    "plain_descriptions": [
-      "analyzing and calculating data on the fly as individual pieces arrive",
-      "computing live business statistics continuously without stopping to bundle files"
-    ],
-    "summary": "The continuous ingestion and real-time computation of data records directly as they are generated.",
-    "domains": [
-      "it/data/data-engineering"
-    ],
-    "level": 2,
-    "status": "draft"
-  },
-  {
     "id": "structured-output",
     "label": "Structured output",
     "aliases": [
@@ -8185,6 +5796,22 @@
     "status": "draft"
   },
   {
+    "id": "subnet",
+    "label": "Subnet",
+    "aliases": [],
+    "loanwords": [],
+    "plain_descriptions": [
+      "smaller segmented portion of a larger IP network range",
+      "dividing a big network into isolated zones for security and organization"
+    ],
+    "summary": "A logical subdivision of an IP network designed to segment broadcast domains, improve routing efficiency, and enforce security boundaries.",
+    "domains": [
+      "it/infrastructure/networking"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
     "id": "system-prompt",
     "label": "System prompt",
     "aliases": [],
@@ -8198,6 +5825,24 @@
       "it/ai-ml/llm-agents"
     ],
     "level": 2,
+    "status": "draft"
+  },
+  {
+    "id": "tcp",
+    "label": "Transmission Control Protocol (TCP)",
+    "aliases": [
+      "TCP"
+    ],
+    "loanwords": [],
+    "plain_descriptions": [
+      "reliable networking protocol that guarantees all data arrives completely and in order",
+      "connection-oriented rulebook ensuring web pages and files download without missing parts"
+    ],
+    "summary": "A connection-oriented transport layer protocol that provides reliable, ordered, and error-checked delivery of a stream of data packets.",
+    "domains": [
+      "it/infrastructure/networking"
+    ],
+    "level": 1,
     "status": "draft"
   },
   {
@@ -8273,39 +5918,17 @@
     "status": "draft"
   },
   {
-    "id": "thread-iot",
-    "label": "Thread",
-    "qualifier": "(IoT)",
-    "aliases": [
-      "Thread protocol"
-    ],
-    "loanwords": [
-      "thread"
-    ],
-    "plain_descriptions": [
-      "secure, self-healing wireless mesh networking standard designed for smart home gadgets",
-      "IPv6-based mesh radio protocol that lets home devices talk to each other without single failure points"
-    ],
-    "summary": "An IPv6-based, low-power wireless mesh networking protocol built on IEEE 802.15.4 that provides reliable, secure, and self-healing connectivity for smart home devices without requiring a central hub.",
-    "domains": [
-      "iot/connectivity-protocols"
-    ],
-    "level": 2,
-    "status": "draft"
-  },
-  {
-    "id": "thread-programming",
-    "label": "Thread",
-    "qualifier": "(Programming)",
+    "id": "terraform",
+    "label": "Terraform",
     "aliases": [],
     "loanwords": [],
     "plain_descriptions": [
-      "smallest sequence of programmed instructions that an operating system scheduler can manage independently",
-      "lightweight execution line running inside a process that shares memory with sibling threads"
+      "tool for creating and managing cloud servers using readable code files",
+      "infrastructure as code software that provisions resources on multiple clouds"
     ],
-    "summary": "The smallest unit of execution within an operating system process, sharing its parent memory space and resources with other threads.",
+    "summary": "An open-source infrastructure as code software tool that enables operators to provision and version multi-cloud data center resources using declarative configuration files.",
     "domains": [
-      "it/software-engineering/programming-concepts"
+      "it/devops/iac"
     ],
     "level": 2,
     "status": "draft"
@@ -8328,46 +5951,6 @@
       "it/infrastructure/networking"
     ],
     "level": 2,
-    "status": "draft"
-  },
-  {
-    "id": "time-series-database",
-    "label": "Time-series database",
-    "aliases": [
-      "TSDB"
-    ],
-    "loanwords": [],
-    "plain_descriptions": [
-      "a database designed specifically to track measurements changing over seconds, hours, and days",
-      "specialized software built for continuous sensor readings, stock ticks, and computer CPU graphs"
-    ],
-    "summary": "A database optimized for storing, querying, and analyzing sequences of data points indexed in chronological order.",
-    "domains": [
-      "it/data/database",
-      "iot/edge-cloud"
-    ],
-    "level": 2,
-    "status": "draft"
-  },
-  {
-    "id": "tinyml",
-    "label": "TinyML",
-    "aliases": [
-      "Tiny Machine Learning"
-    ],
-    "loanwords": [
-      "tinyml"
-    ],
-    "plain_descriptions": [
-      "running artificial intelligence models directly on tiny, low-power microcontrollers",
-      "smart machine learning algorithms optimized to execute inside microchips using milliwatts of power"
-    ],
-    "summary": "A subfield of machine learning focused on optimizing and executing neural network models directly on resource-constrained microcontrollers operating in the milliwatt or microwatt power envelope.",
-    "domains": [
-      "iot/edge-cloud",
-      "it/ai-ml/mlops"
-    ],
-    "level": 3,
     "status": "draft"
   },
   {
@@ -8501,24 +6084,6 @@
     "status": "draft"
   },
   {
-    "id": "tree-shaking",
-    "label": "Tree shaking",
-    "aliases": [
-      "dead code elimination"
-    ],
-    "loanwords": [],
-    "plain_descriptions": [
-      "removing unused pieces of code from final program files to save download size",
-      "an optimization step that strips away unreferenced functions and variables"
-    ],
-    "summary": "A dead-code elimination technique commonly used in modern JavaScript bundlers to remove unused exports from final production bundles.",
-    "domains": [
-      "it/web/frontend"
-    ],
-    "level": 2,
-    "status": "draft"
-  },
-  {
     "id": "type-checking",
     "label": "Type checking",
     "aliases": [],
@@ -8529,25 +6094,6 @@
     ],
     "summary": "The verification process that evaluates whether data values assigned to variables or passed to functions comply with the rules of a programming language type system.",
     "domains": [
-      "it/software-engineering/programming-concepts"
-    ],
-    "level": 2,
-    "status": "draft"
-  },
-  {
-    "id": "typescript",
-    "label": "TypeScript",
-    "aliases": [
-      "TS"
-    ],
-    "loanwords": [],
-    "plain_descriptions": [
-      "a version of JavaScript that checks data types to prevent coding bugs",
-      "a typed superset of JavaScript that compiles down to plain JavaScript"
-    ],
-    "summary": "A strongly typed programming language that builds on JavaScript, giving developers better tooling and early error detection.",
-    "domains": [
-      "it/web/frontend",
       "it/software-engineering/programming-concepts"
     ],
     "level": 2,
@@ -8573,23 +6119,21 @@
     "status": "draft"
   },
   {
-    "id": "uart",
-    "label": "UART",
+    "id": "udp",
+    "label": "User Datagram Protocol (UDP)",
     "aliases": [
-      "Universal Asynchronous Receiver-Transmitter"
+      "UDP"
     ],
-    "loanwords": [
-      "uart"
-    ],
+    "loanwords": [],
     "plain_descriptions": [
-      "two-wire hardware circuit that sends and receives data character by character without a shared clock",
-      "asynchronous serial communication module commonly used for terminal logs and debugging"
+      "fast lightweight network protocol that sends data without checking if it arrived",
+      "connectionless protocol used for real-time gaming, video streaming, and DNS"
     ],
-    "summary": "A physical integrated circuit hardware block that translates parallel computing data into sequential asynchronous serial bitstreams over paired transmit (TX) and receive (RX) wires.",
+    "summary": "A connectionless transport layer protocol that transmits data packets without prior connection handshakes or delivery guarantees, prioritizing speed over reliability.",
     "domains": [
-      "iot/devices-sensors"
+      "it/infrastructure/networking"
     ],
-    "level": 2,
+    "level": 1,
     "status": "draft"
   },
   {
@@ -8623,25 +6167,6 @@
     "summary": "The proportion or duration of time that a computer system, network, or application remains fully functional and accessible to users.",
     "domains": [
       "it/devops/sre-operations"
-    ],
-    "level": 1,
-    "status": "draft"
-  },
-  {
-    "id": "url",
-    "label": "URL",
-    "aliases": [
-      "Uniform Resource Locator",
-      "web address"
-    ],
-    "loanwords": [],
-    "plain_descriptions": [
-      "the complete address you type into a browser to visit a webpage",
-      "the standardized reference string locating internet documents and resources"
-    ],
-    "summary": "A structured reference syntax identifying network location coordinates and retrieval protocols for internet resources.",
-    "domains": [
-      "it/web/frontend"
     ],
     "level": 1,
     "status": "draft"
@@ -8685,23 +6210,6 @@
       "media/digital-marketing/metrics-analytics"
     ],
     "level": 2,
-    "status": "draft"
-  },
-  {
-    "id": "variable",
-    "label": "Variable",
-    "qualifier": "(Programming)",
-    "aliases": [],
-    "loanwords": [],
-    "plain_descriptions": [
-      "named container that holds data in memory while a program runs",
-      "symbolic label pointing to a value that can be read or modified"
-    ],
-    "summary": "A named storage location in memory paired with an identifier that holds data a program can manipulate.",
-    "domains": [
-      "it/software-engineering/programming-concepts"
-    ],
-    "level": 1,
     "status": "draft"
   },
   {
@@ -8776,25 +6284,6 @@
       "finance/corporate-finance/fundraising"
     ],
     "level": 2,
-    "status": "draft"
-  },
-  {
-    "id": "vertical-scaling",
-    "label": "Vertical scaling",
-    "aliases": [
-      "Scale up",
-      "Scaling up"
-    ],
-    "loanwords": [],
-    "plain_descriptions": [
-      "upgrading an existing server with more CPU, memory, or storage power",
-      "boosting capacity by replacing a machine with a larger hardware specification"
-    ],
-    "summary": "The practice of increasing system capacity by provisioning more compute resources, such as CPU cores, RAM, or storage speed, to a single server instance.",
-    "domains": [
-      "it/infrastructure/cloud"
-    ],
-    "level": 1,
     "status": "draft"
   },
   {
@@ -8874,79 +6363,39 @@
     "status": "draft"
   },
   {
-    "id": "wcag",
-    "label": "WCAG",
+    "id": "vpc",
+    "label": "Virtual Private Cloud (VPC)",
     "aliases": [
-      "Web Content Accessibility Guidelines"
+      "VPC"
     ],
     "loanwords": [],
     "plain_descriptions": [
-      "the international official rulebook for digital accessibility compliance",
-      "the technical standards defining how to make websites accessible to people with disabilities"
+      "isolated private network section inside a public cloud provider",
+      "virtual boundary that protects your cloud servers from public internet access"
     ],
-    "summary": "A set of formal web accessibility recommendations published by the W3C Web Accessibility Initiative.",
+    "summary": "A logically isolated virtual network dedicated to a cloud account, providing complete control over IP address ranges, subnets, and routing tables.",
     "domains": [
-      "it/web/frontend"
+      "it/infrastructure/cloud"
     ],
     "level": 2,
     "status": "draft"
   },
   {
-    "id": "wearable",
-    "label": "Wearable device",
+    "id": "vpn",
+    "label": "Virtual Private Network (VPN)",
     "aliases": [
-      "Wearable"
-    ],
-    "loanwords": [
-      "wearable",
-      "wearable device"
-    ],
-    "plain_descriptions": [
-      "electronic gadget worn directly on the human body to monitor activity and health",
-      "body-worn tech like smartwatches, fitness rings, and biometric patches"
-    ],
-    "summary": "A category of compact electronic devices designed to be comfortably worn on the body or clothing, incorporating sensors, processing, and wireless transceivers for continuous biometric tracking.",
-    "domains": [
-      "iot/devices-sensors"
-    ],
-    "level": 1,
-    "status": "draft"
-  },
-  {
-    "id": "web-accessibility",
-    "label": "Web accessibility (a11y)",
-    "aliases": [
-      "a11y",
-      "accessibility"
+      "VPN"
     ],
     "loanwords": [],
     "plain_descriptions": [
-      "making websites usable for everyone, including people with visual or physical disabilities",
-      "building digital products that work seamlessly with assistive tools like screen readers"
+      "encrypted connection tunnel between your computer and a remote private network",
+      "secure way for employees to access internal company systems from home"
     ],
-    "summary": "The inclusive practice of ensuring there are no barriers that prevent interaction with websites by people with physical, sensory, or cognitive disabilities.",
+    "summary": "An encrypted communication channel constructed over a public network infrastructure to provide secure remote access and private site-to-site connectivity.",
     "domains": [
-      "it/web/frontend"
+      "it/infrastructure/networking"
     ],
-    "level": 1,
-    "status": "draft"
-  },
-  {
-    "id": "web-server",
-    "label": "Web server",
-    "aliases": [
-      "HTTP server"
-    ],
-    "loanwords": [],
-    "plain_descriptions": [
-      "a computer and software program that delivers web pages to visitors over the internet",
-      "the system that listens for web requests and sends back HTML, images, and data"
-    ],
-    "summary": "A computer system or software application that processes incoming network requests over HTTP and serves web content to clients.",
-    "domains": [
-      "it/web/backend"
-    ],
-    "level": 1,
+    "level": 2,
     "status": "draft"
   },
   {
@@ -8988,63 +6437,6 @@
     "status": "draft"
   },
   {
-    "id": "websocket",
-    "label": "WebSocket",
-    "aliases": [
-      "WebSocket protocol"
-    ],
-    "loanwords": [],
-    "plain_descriptions": [
-      "continuous two-way connection allowing real-time communication between browser and server",
-      "persistent bidirectional network socket initiated via an HTTP handshake"
-    ],
-    "summary": "A computer communications protocol providing full-duplex, bidirectional communication channels over a single persistent TCP connection initiated via an HTTP upgrade handshake.",
-    "domains": [
-      "it/web/api"
-    ],
-    "level": 2,
-    "status": "draft"
-  },
-  {
-    "id": "wifi",
-    "label": "Wi-Fi",
-    "aliases": [
-      "WiFi",
-      "IEEE 802.11"
-    ],
-    "loanwords": [
-      "wi-fi",
-      "wifi"
-    ],
-    "plain_descriptions": [
-      "ubiquitous wireless radio technology that connects computers, phones, and IoT devices to the internet",
-      "high-speed wireless local area network standard operating over 2.4 GHz, 5 GHz, and 6 GHz bands"
-    ],
-    "summary": "A family of wireless network protocols based on the IEEE 802.11 standards used for local area networking of devices and high-speed internet access across licensed-exempt radio bands.",
-    "domains": [
-      "iot/connectivity-protocols",
-      "it/infrastructure/networking"
-    ],
-    "level": 1,
-    "status": "draft"
-  },
-  {
-    "id": "workflow-automation",
-    "label": "Workflow automation",
-    "aliases": [],
-    "loanwords": [],
-    "plain_descriptions": [
-      "setting up if-this-then-that rules that run recurring office chores automatically",
-      "connecting software tools so data flows between them without human intervention"
-    ],
-    "summary": "The design and execution of automated sequences that pass data and trigger tasks across multiple business tools based on defined logical rules.",
-    "domains": [
-      "it/business-systems/automation"
-    ],
-    "level": 1,
-    "status": "draft"
-  },
-  {
     "id": "working-capital",
     "label": "Working capital",
     "aliases": [
@@ -9077,24 +6469,6 @@
     "summary": "A web application flaw permitting attackers to embed rogue executable scripts into viewed pages, running unauthorized actions inside visitor browsers.",
     "domains": [
       "it/security/vulnerabilities"
-    ],
-    "level": 2,
-    "status": "draft"
-  },
-  {
-    "id": "z-wave",
-    "label": "Z-Wave",
-    "aliases": [],
-    "loanwords": [
-      "z-wave"
-    ],
-    "plain_descriptions": [
-      "sub-gigahertz wireless mesh protocol for smart homes that avoids crowded Wi-Fi channels",
-      "reliable home automation radio standard operating on dedicated sub-1GHz frequencies"
-    ],
-    "summary": "A wireless communications protocol operating in the sub-gigahertz frequency spectrum designed specifically for reliable, interference-free mesh networking in residential home automation.",
-    "domains": [
-      "iot/connectivity-protocols"
     ],
     "level": 2,
     "status": "draft"

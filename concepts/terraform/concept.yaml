@@ -1,0 +1,25 @@
+id: terraform
+domains:
+  - it/devops/iac
+level: 2
+relations:
+  prerequisites:
+    - infrastructure-as-code
+  confusable:
+    - ansible
+  related:
+    - cloud-instance
+    - vpc
+status: draft
+provenance:
+  drafted_by: ai
+sources:
+  - ref: hashicorp-docs
+    locator: https://developer.hashicorp.com/terraform/intro
+    title: What is Terraform?
+    language: en
+    accessed: '2026-10-17'
+    retrieved_by: ai
+    supports:
+      - definition
+      - summary

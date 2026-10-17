@@ -1,0 +1,25 @@
+id: subnet
+domains:
+  - it/infrastructure/networking
+level: 2
+relations:
+  prerequisites:
+    - ip-address
+  confusable: []
+  related:
+    - vpc
+    - network-port
+    - firewall
+status: draft
+provenance:
+  drafted_by: ai
+sources:
+  - ref: aws-docs
+    locator: https://docs.aws.amazon.com/vpc/latest/userguide/configure-subnets.html
+    title: Subnets for your VPC
+    language: en
+    accessed: '2026-10-17'
+    retrieved_by: ai
+    supports:
+      - definition
+      - summary

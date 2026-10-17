@@ -1,0 +1,26 @@
+id: container-registry
+domains:
+  - it/devops/containers
+level: 2
+relations:
+  prerequisites:
+    - container-image
+    - docker
+  confusable: []
+  related:
+    - helm
+    - docker-compose
+    - kubernetes
+status: draft
+provenance:
+  drafted_by: ai
+sources:
+  - ref: docker-docs
+    locator: https://docs.docker.com/get-started/docker-concepts/the-basics/what-is-a-registry/
+    title: What is a registry?
+    language: en
+    accessed: '2026-10-17'
+    retrieved_by: ai
+    supports:
+      - definition
+      - summary

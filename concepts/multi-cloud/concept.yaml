@@ -1,0 +1,25 @@
+id: multi-cloud
+domains:
+  - it/infrastructure/cloud
+level: 2
+relations:
+  prerequisites:
+    - iaas
+  confusable:
+    - hybrid-cloud
+  related:
+    - terraform
+    - container-registry
+status: draft
+provenance:
+  drafted_by: ai
+sources:
+  - ref: google-cloud-docs
+    locator: https://cloud.google.com/learn/what-is-multicloud
+    title: What is multicloud?
+    language: en
+    accessed: '2026-10-17'
+    retrieved_by: ai
+    supports:
+      - definition
+      - summary

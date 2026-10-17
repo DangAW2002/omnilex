@@ -1,0 +1,26 @@
+id: nat
+domains:
+  - it/infrastructure/networking
+level: 2
+relations:
+  prerequisites:
+    - ip-address
+    - network-port
+  confusable: []
+  related:
+    - vpc
+    - subnet
+    - firewall
+status: draft
+provenance:
+  drafted_by: ai
+sources:
+  - ref: ietf
+    locator: https://www.rfc-editor.org/info/rfc3022/
+    title: Traditional IP Network Address Translator (Traditional NAT)
+    language: en
+    accessed: '2026-10-17'
+    retrieved_by: ai
+    supports:
+      - definition
+      - summary

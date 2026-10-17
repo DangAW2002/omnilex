@@ -1,0 +1,24 @@
+id: helm
+domains:
+  - it/devops/containers
+level: 2
+relations:
+  prerequisites:
+    - kubernetes
+  confusable: []
+  related:
+    - container-registry
+    - docker-compose
+status: draft
+provenance:
+  drafted_by: ai
+sources:
+  - ref: helm-docs
+    locator: https://helm.sh/docs/
+    title: Helm Documentation
+    language: en
+    accessed: '2026-10-17'
+    retrieved_by: ai
+    supports:
+      - definition
+      - summary

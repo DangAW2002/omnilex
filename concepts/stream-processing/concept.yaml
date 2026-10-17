@@ -1,12 +1,25 @@
 id: stream-processing
 domains:
-  - it/data/data-engineering
-level: 1
+- it/data/data-engineering
+level: 2
 relations:
-  prerequisites: []
-  confusable: []
-  related: []
+  prerequisites:
+  - event-streaming
+  confusable:
+  - batch-processing
+  related:
+  - apache-flink
+  - apache-spark
 status: draft
 provenance:
   drafted_by: ai
-sources: []
+sources:
+- ref: aws-docs
+  locator: https://docs.aws.amazon.com/whitepapers/latest/big-data-analytics-options/
+  title: Big Data Analytics Options on AWS - Stream Processing
+  language: en
+  accessed: '2026-10-17'
+  retrieved_by: ai
+  supports:
+  - definition
+  - summary

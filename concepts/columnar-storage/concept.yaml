@@ -1,12 +1,24 @@
 id: columnar-storage
 domains:
-  - it/data/database
-level: 1
+- it/data/database
+level: 2
 relations:
-  prerequisites: []
+  prerequisites:
+  - relational-database
   confusable: []
-  related: []
+  related:
+  - olap
+  - data-warehouse
 status: draft
 provenance:
   drafted_by: ai
-sources: []
+sources:
+- ref: aws-docs
+  locator: https://docs.aws.amazon.com/redshift/latest/dg/c_columnar_storage_disk_mem_mgmnt.html
+  title: Columnar Storage - Amazon Redshift
+  language: en
+  accessed: '2026-10-17'
+  retrieved_by: ai
+  supports:
+  - definition
+  - summary

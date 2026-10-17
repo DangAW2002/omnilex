@@ -1,12 +1,26 @@
 id: publish-subscribe
 domains:
-  - it/web/backend
-level: 1
+- it/web/backend
+- it/data/data-engineering
+level: 2
 relations:
-  prerequisites: []
+  prerequisites:
+  - message-queue
   confusable: []
-  related: []
+  related:
+  - event-streaming
+  - apache-kafka
+  - rabbitmq
 status: draft
 provenance:
   drafted_by: ai
-sources: []
+sources:
+- ref: aws-docs
+  locator: https://aws.amazon.com/what-is/pub-sub-messaging/
+  title: What is Pub/Sub Messaging?
+  language: en
+  accessed: '2026-10-17'
+  retrieved_by: ai
+  supports:
+  - definition
+  - summary

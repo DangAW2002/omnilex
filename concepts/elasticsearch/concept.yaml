@@ -1,12 +1,24 @@
 id: elasticsearch
 domains:
-  - it/data/database
-level: 1
+- it/data/database
+level: 2
 relations:
-  prerequisites: []
+  prerequisites:
+  - full-text-search
   confusable: []
-  related: []
+  related:
+  - document-database
+  - nosql
 status: draft
 provenance:
   drafted_by: ai
-sources: []
+sources:
+- ref: elasticsearch-docs
+  locator: https://www.elastic.co/docs/reference/elasticsearch
+  title: Elasticsearch Reference Documentation
+  language: en
+  accessed: '2026-10-17'
+  retrieved_by: ai
+  supports:
+  - definition
+  - summary

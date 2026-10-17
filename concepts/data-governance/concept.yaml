@@ -1,12 +1,24 @@
 id: data-governance
 domains:
-  - it/data/data-engineering
-level: 1
+- it/data/data-engineering
+level: 2
 relations:
-  prerequisites: []
+  prerequisites:
+  - data-warehouse
   confusable: []
-  related: []
+  related:
+  - data-lineage
+  - data-quality
 status: draft
 provenance:
   drafted_by: ai
-sources: []
+sources:
+- ref: aws-docs
+  locator: https://aws.amazon.com/what-is/data-governance/
+  title: What is Data Governance?
+  language: en
+  accessed: '2026-10-17'
+  retrieved_by: ai
+  supports:
+  - definition
+  - summary

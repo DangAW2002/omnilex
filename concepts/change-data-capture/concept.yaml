@@ -1,12 +1,25 @@
 id: change-data-capture
 domains:
-  - it/data/data-engineering
-level: 1
+- it/data/data-engineering
+level: 2
 relations:
-  prerequisites: []
+  prerequisites:
+  - database-transaction
   confusable: []
-  related: []
+  related:
+  - event-streaming
+  - apache-kafka
+  - data-pipeline
 status: draft
 provenance:
   drafted_by: ai
-sources: []
+sources:
+- ref: microsoft-learn
+  locator: https://learn.microsoft.com/en-us/sql/relational-databases/track-changes/about-change-data-capture-sql-server?view=sql-server-ver17
+  title: About Change Data Capture (SQL Server)
+  language: en
+  accessed: '2026-10-17'
+  retrieved_by: ai
+  supports:
+  - definition
+  - summary

@@ -1,12 +1,24 @@
 id: graph-database
 domains:
-  - it/data/database
-level: 1
+- it/data/database
+level: 2
 relations:
-  prerequisites: []
+  prerequisites:
+  - nosql
   confusable: []
-  related: []
+  related:
+  - relational-database
+  - document-database
 status: draft
 provenance:
   drafted_by: ai
-sources: []
+sources:
+- ref: aws-docs
+  locator: https://aws.amazon.com/nosql/graph/
+  title: What is a Graph Database?
+  language: en
+  accessed: '2026-10-17'
+  retrieved_by: ai
+  supports:
+  - definition
+  - summary

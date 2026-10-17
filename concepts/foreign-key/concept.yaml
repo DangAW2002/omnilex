@@ -1,12 +1,25 @@
 id: foreign-key
 domains:
-  - it/data/database
+- it/data/database
 level: 1
 relations:
-  prerequisites: []
-  confusable: []
-  related: []
+  prerequisites:
+  - primary-key
+  confusable:
+  - primary-key
+  related:
+  - relational-database
+  - database-normalization
 status: draft
 provenance:
   drafted_by: ai
-sources: []
+sources:
+- ref: microsoft-learn
+  locator: https://learn.microsoft.com/en-us/sql/relational-databases/tables/create-foreign-key-relationships?view=sql-server-ver17
+  title: Create Foreign Key Relationships - SQL Server
+  language: en
+  accessed: '2026-10-17'
+  retrieved_by: ai
+  supports:
+  - definition
+  - summary

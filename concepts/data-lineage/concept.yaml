@@ -1,12 +1,24 @@
 id: data-lineage
 domains:
-  - it/data/data-engineering
-level: 1
+- it/data/data-engineering
+level: 2
 relations:
-  prerequisites: []
+  prerequisites:
+  - data-pipeline
   confusable: []
-  related: []
+  related:
+  - data-governance
+  - data-quality
 status: draft
 provenance:
   drafted_by: ai
-sources: []
+sources:
+- ref: microsoft-learn
+  locator: https://learn.microsoft.com/en-us/purview/data-gov-classic-lineage
+  title: Data lineage in Microsoft Purview Data Map
+  language: en
+  accessed: '2026-10-17'
+  retrieved_by: ai
+  supports:
+  - definition
+  - summary

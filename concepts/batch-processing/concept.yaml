@@ -1,12 +1,25 @@
 id: batch-processing
 domains:
-  - it/data/data-engineering
-level: 1
+- it/data/data-engineering
+level: 2
 relations:
-  prerequisites: []
-  confusable: []
-  related: []
+  prerequisites:
+  - data-pipeline
+  confusable:
+  - stream-processing
+  related:
+  - apache-spark
+  - etl
 status: draft
 provenance:
   drafted_by: ai
-sources: []
+sources:
+- ref: aws-docs
+  locator: https://aws.amazon.com/what-is/batch-processing/
+  title: What is Batch Processing?
+  language: en
+  accessed: '2026-10-17'
+  retrieved_by: ai
+  supports:
+  - definition
+  - summary

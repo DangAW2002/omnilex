@@ -1,12 +1,27 @@
 id: relational-database
 domains:
-  - it/data/database
+- it/data/database
 level: 1
 relations:
-  prerequisites: []
-  confusable: []
-  related: []
+  prerequisites:
+  - sql
+  confusable:
+  - nosql
+  related:
+  - primary-key
+  - foreign-key
+  - database-normalization
+  - acid
 status: draft
 provenance:
   drafted_by: ai
-sources: []
+sources:
+- ref: google-cloud-docs
+  locator: https://cloud.google.com/learn/what-is-a-relational-database
+  title: What is a Relational Database (RDBMS)?
+  language: en
+  accessed: '2026-10-17'
+  retrieved_by: ai
+  supports:
+  - definition
+  - summary

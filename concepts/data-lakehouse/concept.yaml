@@ -1,12 +1,25 @@
 id: data-lakehouse
 domains:
-  - it/data/data-engineering
-level: 1
+- it/data/data-engineering
+level: 2
 relations:
-  prerequisites: []
+  prerequisites:
+  - data-warehouse
+  - data-lake
   confusable: []
-  related: []
+  related:
+  - columnar-storage
+  - apache-spark
 status: draft
 provenance:
   drafted_by: ai
-sources: []
+sources:
+- ref: aws-docs
+  locator: https://aws.amazon.com/what-is/data-lakehouse/
+  title: What is a Data Lakehouse?
+  language: en
+  accessed: '2026-10-17'
+  retrieved_by: ai
+  supports:
+  - definition
+  - summary

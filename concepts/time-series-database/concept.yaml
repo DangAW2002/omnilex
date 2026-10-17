@@ -1,12 +1,25 @@
 id: time-series-database
 domains:
-  - it/data/database
-level: 1
+- it/data/database
+- iot/edge-cloud
+level: 2
 relations:
-  prerequisites: []
+  prerequisites:
+  - nosql
   confusable: []
-  related: []
+  related:
+  - columnar-storage
+  - stream-processing
 status: draft
 provenance:
   drafted_by: ai
-sources: []
+sources:
+- ref: influxdata-docs
+  locator: https://docs.influxdata.com/influxdb/v2/
+  title: InfluxDB Documentation
+  language: en
+  accessed: '2026-10-17'
+  retrieved_by: ai
+  supports:
+  - definition
+  - summary

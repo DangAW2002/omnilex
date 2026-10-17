@@ -1,12 +1,24 @@
 id: consistent-hashing
 domains:
   - it/software-engineering/architecture
-level: 1
+level: 3
 relations:
-  prerequisites: []
-  confusable: []
-  related: []
+  prerequisites:
+    - hashing
+  related:
+    - distributed-system
+    - sharding
+    - load-balancer
 status: draft
 provenance:
   drafted_by: ai
-sources: []
+sources:
+  - ref: cassandra-docs
+    locator: https://cassandra.apache.org/doc/latest/cassandra/architecture/dynamo.html
+    title: Dynamo | Apache Cassandra Documentation
+    language: en
+    accessed: '2026-10-17'
+    retrieved_by: ai
+    supports:
+      - definition
+      - summary

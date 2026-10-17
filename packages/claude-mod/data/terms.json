@@ -405,6 +405,38 @@
     "autolink": true
   },
   {
+    "key": "API gateway",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "api-gateway",
+        "label": "API gateway",
+        "summary": "Mẫu máy chủ đóng vai trò cửa ngõ tập trung đón nhận yêu cầu từ client, chuyển tiếp tới các dịch vụ nội bộ phù hợp và thực thi các tác vụ kiểm soát chung.",
+        "domains": [
+          "it/web/api",
+          "it/software-engineering/architecture"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Cổng API",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "api-gateway",
+        "label": "API gateway",
+        "summary": "Mẫu máy chủ đóng vai trò cửa ngõ tập trung đón nhận yêu cầu từ client, chuyển tiếp tới các dịch vụ nội bộ phù hợp và thực thi các tác vụ kiểm soát chung.",
+        "domains": [
+          "it/web/api",
+          "it/software-engineering/architecture"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
     "key": "Tỷ lệ khung hình",
     "match": "any-case",
     "concepts": [
@@ -735,6 +767,51 @@
         "summary": "Liên kết siêu văn bản từ một tên miền bên ngoài trỏ người dùng và bot tìm kiếm về trang đích trên website của bạn.",
         "domains": [
           "media/digital-marketing/seo"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Backpressure",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "backpressure",
+        "label": "Backpressure",
+        "summary": "Cơ chế điều tiết luồng dữ liệu trong các đường ống xử lý bất đồng bộ, trong đó thành phần tiêu thụ gửi tín hiệu ngược về phía sản xuất để giới hạn tốc độ truyền tải tránh gây quá tải bộ nhớ.",
+        "domains": [
+          "it/software-engineering/architecture"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Áp lực ngược",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "backpressure",
+        "label": "Backpressure",
+        "summary": "Cơ chế điều tiết luồng dữ liệu trong các đường ống xử lý bất đồng bộ, trong đó thành phần tiêu thụ gửi tín hiệu ngược về phía sản xuất để giới hạn tốc độ truyền tải tránh gây quá tải bộ nhớ.",
+        "domains": [
+          "it/software-engineering/architecture"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Kiểm soát dòng dữ liệu",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "backpressure",
+        "label": "Backpressure",
+        "summary": "Cơ chế điều tiết luồng dữ liệu trong các đường ống xử lý bất đồng bộ, trong đó thành phần tiêu thụ gửi tín hiệu ngược về phía sản xuất để giới hạn tốc độ truyền tải tránh gây quá tải bộ nhớ.",
+        "domains": [
+          "it/software-engineering/architecture"
         ]
       }
     ],
@@ -1775,6 +1852,84 @@
     "autolink": true
   },
   {
+    "key": "Circuit breaker",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "circuit-breaker",
+        "label": "Circuit breaker",
+        "qualifier": "(Phần mềm)",
+        "summary": "Mẫu thiết kế ngăn chặn ứng dụng liên tục gọi một dịch vụ đang gặp sự cố, tự động ngắt mạch để trả về phản hồi lỗi ngay lập tức và tự hồi phục khi đối tác khỏe lại.",
+        "domains": [
+          "it/software-engineering/architecture"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Bộ ngắt mạch",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "circuit-breaker",
+        "label": "Circuit breaker",
+        "qualifier": "(Phần mềm)",
+        "summary": "Mẫu thiết kế ngăn chặn ứng dụng liên tục gọi một dịch vụ đang gặp sự cố, tự động ngắt mạch để trả về phản hồi lỗi ngay lập tức và tự hồi phục khi đối tác khỏe lại.",
+        "domains": [
+          "it/software-engineering/architecture"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Mẫu ngắt mạch",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "circuit-breaker",
+        "label": "Circuit breaker",
+        "qualifier": "(Phần mềm)",
+        "summary": "Mẫu thiết kế ngăn chặn ứng dụng liên tục gọi một dịch vụ đang gặp sự cố, tự động ngắt mạch để trả về phản hồi lỗi ngay lập tức và tự hồi phục khi đối tác khỏe lại.",
+        "domains": [
+          "it/software-engineering/architecture"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Clean architecture",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "clean-architecture",
+        "label": "Clean architecture",
+        "summary": "Mô hình kiến trúc phần mềm tổ chức thành các vòng tròn đồng tâm với nguyên tắc phụ thuộc nghiêm ngặt hướng vào trong, giúp lõi nghiệp vụ hoàn toàn độc lập với khung phát triển và giao diện ngoài.",
+        "domains": [
+          "it/software-engineering/architecture"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Kiến trúc sạch",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "clean-architecture",
+        "label": "Clean architecture",
+        "summary": "Mô hình kiến trúc phần mềm tổ chức thành các vòng tròn đồng tâm với nguyên tắc phụ thuộc nghiêm ngặt hướng vào trong, giúp lõi nghiệp vụ hoàn toàn độc lập với khung phát triển và giao diện ngoài.",
+        "domains": [
+          "it/software-engineering/architecture"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
     "key": "Constrained Application Protocol (CoAP)",
     "match": "any-case",
     "concepts": [
@@ -1906,6 +2061,51 @@
         "domains": [
           "finance/personal-finance/saving",
           "finance/investing/portfolio-risk"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Consistent hashing",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "consistent-hashing",
+        "label": "Consistent hashing",
+        "summary": "Thuật toán băm phân tán trong đó việc tăng giảm số lượng nút lưu trữ chỉ làm chuyển dịch trung bình K/N khóa, bằng cách ánh xạ cả máy chủ và dữ liệu lên một không gian vòng tròn định danh.",
+        "domains": [
+          "it/software-engineering/architecture"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Băm nhất quán",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "consistent-hashing",
+        "label": "Consistent hashing",
+        "summary": "Thuật toán băm phân tán trong đó việc tăng giảm số lượng nút lưu trữ chỉ làm chuyển dịch trung bình K/N khóa, bằng cách ánh xạ cả máy chủ và dữ liệu lên một không gian vòng tròn định danh.",
+        "domains": [
+          "it/software-engineering/architecture"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Vòng băm",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "consistent-hashing",
+        "label": "Consistent hashing",
+        "summary": "Thuật toán băm phân tán trong đó việc tăng giảm số lượng nút lưu trữ chỉ làm chuyển dịch trung bình K/N khóa, bằng cách ánh xạ cả máy chủ và dữ liệu lên một không gian vòng tròn định danh.",
+        "domains": [
+          "it/software-engineering/architecture"
         ]
       }
     ],
@@ -2289,6 +2489,36 @@
         "summary": "Phương thức định giá quảng cáo trong đó nhà tài trợ chi trả một mức phí cố định cho mỗi 1.000 lượt hiển thị của mẫu quảng cáo.",
         "domains": [
           "media/digital-marketing/paid-ads"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Command Query Responsibility Segregation (CQRS)",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "cqrs",
+        "label": "Command Query Responsibility Segregation (CQRS)",
+        "summary": "Mẫu kiến trúc phân chia rạch ròi các thao tác cập nhật trạng thái dữ liệu (lệnh ghi) và các thao tác tra cứu dữ liệu (truy vấn) thành hai mô hình xử lý độc lập.",
+        "domains": [
+          "it/software-engineering/architecture"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "CQRS",
+    "match": "exact-case",
+    "concepts": [
+      {
+        "id": "cqrs",
+        "label": "Command Query Responsibility Segregation (CQRS)",
+        "summary": "Mẫu kiến trúc phân chia rạch ròi các thao tác cập nhật trạng thái dữ liệu (lệnh ghi) và các thao tác tra cứu dữ liệu (truy vấn) thành hai mô hình xử lý độc lập.",
+        "domains": [
+          "it/software-engineering/architecture"
         ]
       }
     ],
@@ -3229,6 +3459,51 @@
     "autolink": true
   },
   {
+    "key": "Dependency injection",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "dependency-injection",
+        "label": "Dependency injection",
+        "summary": "Mẫu thiết kế phần mềm trong đó một đối tượng nhận các thành phần phụ thuộc của nó từ một bộ cấu hình bên ngoài thay vì tự khởi tạo bên trong, hiện thực hóa nguyên lý đảo ngược điều khiển.",
+        "domains": [
+          "it/software-engineering/programming-concepts"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "DI",
+    "match": "exact-case",
+    "concepts": [
+      {
+        "id": "dependency-injection",
+        "label": "Dependency injection",
+        "summary": "Mẫu thiết kế phần mềm trong đó một đối tượng nhận các thành phần phụ thuộc của nó từ một bộ cấu hình bên ngoài thay vì tự khởi tạo bên trong, hiện thực hóa nguyên lý đảo ngược điều khiển.",
+        "domains": [
+          "it/software-engineering/programming-concepts"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Tiêm phụ thuộc",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "dependency-injection",
+        "label": "Dependency injection",
+        "summary": "Mẫu thiết kế phần mềm trong đó một đối tượng nhận các thành phần phụ thuộc của nó từ một bộ cấu hình bên ngoài thay vì tự khởi tạo bên trong, hiện thực hóa nguyên lý đảo ngược điều khiển.",
+        "domains": [
+          "it/software-engineering/programming-concepts"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
     "key": "Deprecation",
     "match": "any-case",
     "concepts": [
@@ -3424,6 +3699,96 @@
         "summary": "Mô hình ảo sống động mô phỏng chính xác trạng thái, hành vi và vòng đời của một đối tượng hoặc quy trình vật lý thông qua dòng dữ liệu cảm biến thời gian thực.",
         "domains": [
           "iot/industrial"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Disaster recovery (DR)",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "disaster-recovery",
+        "label": "Disaster recovery (DR)",
+        "summary": "Tập hợp các chính sách, công cụ và quy trình kỹ thuật nhằm khôi phục và duy trì các hạ tầng công nghệ thiết yếu sau một thảm họa diện rộng gây gián đoạn hoàn toàn.",
+        "domains": [
+          "it/devops/sre-operations"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "DR",
+    "match": "exact-case",
+    "concepts": [
+      {
+        "id": "disaster-recovery",
+        "label": "Disaster recovery (DR)",
+        "summary": "Tập hợp các chính sách, công cụ và quy trình kỹ thuật nhằm khôi phục và duy trì các hạ tầng công nghệ thiết yếu sau một thảm họa diện rộng gây gián đoạn hoàn toàn.",
+        "domains": [
+          "it/devops/sre-operations"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Khắc phục thảm họa",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "disaster-recovery",
+        "label": "Disaster recovery (DR)",
+        "summary": "Tập hợp các chính sách, công cụ và quy trình kỹ thuật nhằm khôi phục và duy trì các hạ tầng công nghệ thiết yếu sau một thảm họa diện rộng gây gián đoạn hoàn toàn.",
+        "domains": [
+          "it/devops/sre-operations"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Distributed system",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "distributed-system",
+        "label": "Distributed system",
+        "summary": "Hệ thống bao gồm nhiều máy tính độc lập được kết nối qua mạng, liên lạc và phối hợp với nhau để xuất hiện trước người dùng như một khối xử lý thống nhất duy nhất.",
+        "domains": [
+          "it/software-engineering/architecture"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Hệ thống phân tán",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "distributed-system",
+        "label": "Distributed system",
+        "summary": "Hệ thống bao gồm nhiều máy tính độc lập được kết nối qua mạng, liên lạc và phối hợp với nhau để xuất hiện trước người dùng như một khối xử lý thống nhất duy nhất.",
+        "domains": [
+          "it/software-engineering/architecture"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Hệ phân tán",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "distributed-system",
+        "label": "Distributed system",
+        "summary": "Hệ thống bao gồm nhiều máy tính độc lập được kết nối qua mạng, liên lạc và phối hợp với nhau để xuất hiện trước người dùng như một khối xử lý thống nhất duy nhất.",
+        "domains": [
+          "it/software-engineering/architecture"
         ]
       }
     ],
@@ -3664,6 +4029,51 @@
         "summary": "Nền tảng phần mềm cung cấp công cụ xây dựng, chia sẻ và thực thi các container ứng dụng thông qua cơ chế ảo hóa của hệ điều hành máy chủ.",
         "domains": [
           "it/devops/containers"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Domain-driven design (DDD)",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "domain-driven-design",
+        "label": "Domain-driven design (DDD)",
+        "summary": "Phương pháp phát triển phần mềm đặt trọng tâm kiến trúc và mã nguồn vào việc mô hình hóa chính xác nghiệp vụ thực tế, sử dụng ngôn ngữ chung và phân tách các ngữ cảnh giới hạn.",
+        "domains": [
+          "it/software-engineering/architecture"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "DDD",
+    "match": "exact-case",
+    "concepts": [
+      {
+        "id": "domain-driven-design",
+        "label": "Domain-driven design (DDD)",
+        "summary": "Phương pháp phát triển phần mềm đặt trọng tâm kiến trúc và mã nguồn vào việc mô hình hóa chính xác nghiệp vụ thực tế, sử dụng ngôn ngữ chung và phân tách các ngữ cảnh giới hạn.",
+        "domains": [
+          "it/software-engineering/architecture"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Thiết kế hướng miền",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "domain-driven-design",
+        "label": "Domain-driven design (DDD)",
+        "summary": "Phương pháp phát triển phần mềm đặt trọng tâm kiến trúc và mã nguồn vào việc mô hình hóa chính xác nghiệp vụ thực tế, sử dụng ngôn ngữ chung và phân tách các ngữ cảnh giới hạn.",
+        "domains": [
+          "it/software-engineering/architecture"
         ]
       }
     ],
@@ -4355,6 +4765,81 @@
     "autolink": true
   },
   {
+    "key": "Event-driven architecture",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "event-driven-architecture",
+        "label": "Event-driven architecture",
+        "summary": "Mô hình kiến trúc phần mềm trong đó các thành phần tách rời giao tiếp bất đồng bộ thông qua việc phát sinh, truyền tải và xử lý các sự kiện ghi nhận thay đổi trạng thái.",
+        "domains": [
+          "it/software-engineering/architecture"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Kiến trúc hướng sự kiện",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "event-driven-architecture",
+        "label": "Event-driven architecture",
+        "summary": "Mô hình kiến trúc phần mềm trong đó các thành phần tách rời giao tiếp bất đồng bộ thông qua việc phát sinh, truyền tải và xử lý các sự kiện ghi nhận thay đổi trạng thái.",
+        "domains": [
+          "it/software-engineering/architecture"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "EDA",
+    "match": "exact-case",
+    "concepts": [
+      {
+        "id": "event-driven-architecture",
+        "label": "Event-driven architecture",
+        "summary": "Mô hình kiến trúc phần mềm trong đó các thành phần tách rời giao tiếp bất đồng bộ thông qua việc phát sinh, truyền tải và xử lý các sự kiện ghi nhận thay đổi trạng thái.",
+        "domains": [
+          "it/software-engineering/architecture"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Event sourcing",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "event-sourcing",
+        "label": "Event sourcing",
+        "summary": "Mẫu thiết kế lưu trữ dữ liệu trong đó mọi thay đổi trạng thái được ghi nhận thành chuỗi các sự kiện bất biến nối tiếp nhau, thay vì ghi đè lên trạng thái hiện thời của bản ghi.",
+        "domains": [
+          "it/software-engineering/architecture"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Lưu vết sự kiện",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "event-sourcing",
+        "label": "Event sourcing",
+        "summary": "Mẫu thiết kế lưu trữ dữ liệu trong đó mọi thay đổi trạng thái được ghi nhận thành chuỗi các sự kiện bất biến nối tiếp nhau, thay vì ghi đè lên trạng thái hiện thời của bản ghi.",
+        "domains": [
+          "it/software-engineering/architecture"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
     "key": "Tỷ giá hối đoái",
     "match": "any-case",
     "concepts": [
@@ -4400,6 +4885,51 @@
     "autolink": true
   },
   {
+    "key": "Exponential backoff",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "exponential-backoff",
+        "label": "Exponential backoff",
+        "summary": "Thuật toán tăng dần độ trễ giữa các lần thử lại sau mỗi lần thất bại theo hàm số mũ nhằm tránh gây quá tải dồn dập cho dịch vụ đang nghẽn.",
+        "domains": [
+          "it/software-engineering/architecture"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Lùi lũy thừa",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "exponential-backoff",
+        "label": "Exponential backoff",
+        "summary": "Thuật toán tăng dần độ trễ giữa các lần thử lại sau mỗi lần thất bại theo hàm số mũ nhằm tránh gây quá tải dồn dập cho dịch vụ đang nghẽn.",
+        "domains": [
+          "it/software-engineering/architecture"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Chờ lùi theo hàm mũ",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "exponential-backoff",
+        "label": "Exponential backoff",
+        "summary": "Thuật toán tăng dần độ trễ giữa các lần thử lại sau mỗi lần thất bại theo hàm số mũ nhằm tránh gây quá tải dồn dập cho dịch vụ đang nghẽn.",
+        "domains": [
+          "it/software-engineering/architecture"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
     "key": "Kiểm chứng thông tin",
     "match": "any-case",
     "concepts": [
@@ -4439,6 +4969,51 @@
         "summary": "Quy trình xác minh độc lập các khẳng định dữ kiện trong văn bản, bài phát biểu hoặc chương trình phát sóng dựa trên tài liệu gốc đáng tin cậy.",
         "domains": [
           "media/journalism/ethics"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Failover",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "failover",
+        "label": "Failover",
+        "summary": "Quy trình vận hành tự động hoặc thủ công chuyển tiếp toàn bộ tác vụ xử lý và lưu lượng sang một hệ thống dự phòng đang ở trạng thái sẵn sàng ngay khi hệ thống chính gặp lỗi.",
+        "domains": [
+          "it/devops/sre-operations"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Chuyển đổi dự phòng",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "failover",
+        "label": "Failover",
+        "summary": "Quy trình vận hành tự động hoặc thủ công chuyển tiếp toàn bộ tác vụ xử lý và lưu lượng sang một hệ thống dự phòng đang ở trạng thái sẵn sàng ngay khi hệ thống chính gặp lỗi.",
+        "domains": [
+          "it/devops/sre-operations"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Chuyển giao dự phòng",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "failover",
+        "label": "Failover",
+        "summary": "Quy trình vận hành tự động hoặc thủ công chuyển tiếp toàn bộ tác vụ xử lý và lưu lượng sang một hệ thống dự phòng đang ở trạng thái sẵn sàng ngay khi hệ thống chính gặp lỗi.",
+        "domains": [
+          "it/devops/sre-operations"
         ]
       }
     ],
@@ -4918,6 +5493,36 @@
     "autolink": true
   },
   {
+    "key": "gRPC",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "grpc",
+        "label": "gRPC",
+        "summary": "Khung gọi thủ tục từ xa (RPC) mã nguồn mở hiệu năng cao, sử dụng định dạng Protocol Buffers để đóng gói nhị phân và chạy trên nền tảng HTTP/2 để truyền thông đa kênh tối ưu.",
+        "domains": [
+          "it/web/api"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Khung RPC của Google",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "grpc",
+        "label": "gRPC",
+        "summary": "Khung gọi thủ tục từ xa (RPC) mã nguồn mở hiệu năng cao, sử dụng định dạng Protocol Buffers để đóng gói nhị phân và chạy trên nền tảng HTTP/2 để truyền thông đa kênh tối ưu.",
+        "domains": [
+          "it/web/api"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
     "key": "Guardrail",
     "match": "any-case",
     "concepts": [
@@ -5113,6 +5718,96 @@
         "summary": "Dòng chữ nổi bật đặt ở đầu bài báo nhằm thâu tóm nội dung chính của sự kiện và thu hút sự chú ý của độc giả.",
         "domains": [
           "media/journalism/reporting"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "High availability (HA)",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "high-availability",
+        "label": "High availability (HA)",
+        "summary": "Đặc tính thiết kế hệ thống đảm bảo ứng dụng vận hành liên tục và ổn định trong thời gian dài bằng cách giảm thiểu tối đa thời gian gián đoạn thông qua các thành phần dự phòng.",
+        "domains": [
+          "it/devops/sre-operations"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "HA",
+    "match": "exact-case",
+    "concepts": [
+      {
+        "id": "high-availability",
+        "label": "High availability (HA)",
+        "summary": "Đặc tính thiết kế hệ thống đảm bảo ứng dụng vận hành liên tục và ổn định trong thời gian dài bằng cách giảm thiểu tối đa thời gian gián đoạn thông qua các thành phần dự phòng.",
+        "domains": [
+          "it/devops/sre-operations"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Tính sẵn sàng cao",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "high-availability",
+        "label": "High availability (HA)",
+        "summary": "Đặc tính thiết kế hệ thống đảm bảo ứng dụng vận hành liên tục và ổn định trong thời gian dài bằng cách giảm thiểu tối đa thời gian gián đoạn thông qua các thành phần dự phòng.",
+        "domains": [
+          "it/devops/sre-operations"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Horizontal scaling",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "horizontal-scaling",
+        "label": "Horizontal scaling",
+        "summary": "Biện pháp gia tăng năng lực xử lý của hệ thống bằng cách bổ sung thêm nhiều máy chủ hoặc thực thể tính toán độc lập vào cụm tài nguyên để phân tán tải.",
+        "domains": [
+          "it/infrastructure/cloud"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Scale out",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "horizontal-scaling",
+        "label": "Horizontal scaling",
+        "summary": "Biện pháp gia tăng năng lực xử lý của hệ thống bằng cách bổ sung thêm nhiều máy chủ hoặc thực thể tính toán độc lập vào cụm tài nguyên để phân tán tải.",
+        "domains": [
+          "it/infrastructure/cloud"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Mở rộng theo chiều ngang",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "horizontal-scaling",
+        "label": "Horizontal scaling",
+        "summary": "Biện pháp gia tăng năng lực xử lý của hệ thống bằng cách bổ sung thêm nhiều máy chủ hoặc thực thể tính toán độc lập vào cụm tài nguyên để phân tán tải.",
+        "domains": [
+          "it/infrastructure/cloud"
         ]
       }
     ],
@@ -6604,6 +7299,51 @@
     "autolink": true
   },
   {
+    "key": "Load testing",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "load-testing",
+        "label": "Load testing",
+        "summary": "Phương pháp kiểm thử phi chức năng bằng cách đặt hệ thống dưới một lượng tải người dùng đồng thời giả lập để đo lường thông lượng, độ trễ và độ ổn định vận hành.",
+        "domains": [
+          "it/software-engineering/testing"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Kiểm thử tải",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "load-testing",
+        "label": "Load testing",
+        "summary": "Phương pháp kiểm thử phi chức năng bằng cách đặt hệ thống dưới một lượng tải người dùng đồng thời giả lập để đo lường thông lượng, độ trễ và độ ổn định vận hành.",
+        "domains": [
+          "it/software-engineering/testing"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Thử tải",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "load-testing",
+        "label": "Load testing",
+        "summary": "Phương pháp kiểm thử phi chức năng bằng cách đặt hệ thống dưới một lượng tải người dùng đồng thời giả lập để đo lường thông lượng, độ trễ và độ ổn định vận hành.",
+        "domains": [
+          "it/software-engineering/testing"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
     "key": "Log",
     "match": "any-case",
     "concepts": [
@@ -7424,6 +8164,51 @@
       }
     ],
     "autolink": false
+  },
+  {
+    "key": "Monolithic architecture",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "monolith",
+        "label": "Monolithic architecture",
+        "summary": "Mô hình kiến trúc trong đó toàn bộ tính năng nghiệp vụ, giao diện và logic truy cập dữ liệu được đóng gói và vận hành dưới dạng một hệ thống duy nhất.",
+        "domains": [
+          "it/software-engineering/architecture"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Monolith",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "monolith",
+        "label": "Monolithic architecture",
+        "summary": "Mô hình kiến trúc trong đó toàn bộ tính năng nghiệp vụ, giao diện và logic truy cập dữ liệu được đóng gói và vận hành dưới dạng một hệ thống duy nhất.",
+        "domains": [
+          "it/software-engineering/architecture"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Kiến trúc nguyên khối",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "monolith",
+        "label": "Monolithic architecture",
+        "summary": "Mô hình kiến trúc trong đó toàn bộ tính năng nghiệp vụ, giao diện và logic truy cập dữ liệu được đóng gói và vận hành dưới dạng một hệ thống duy nhất.",
+        "domains": [
+          "it/software-engineering/architecture"
+        ]
+      }
+    ],
+    "autolink": true
   },
   {
     "key": "Monorepo",
@@ -9809,6 +10594,36 @@
     "autolink": true
   },
   {
+    "key": "Reverse proxy",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "reverse-proxy",
+        "label": "Reverse proxy",
+        "summary": "Máy chủ trung gian đứng trước cụm máy chủ nội bộ nhằm tiếp nhận yêu cầu từ client bên ngoài, thực hiện định tuyến, giải mã TLS và cân bằng lưu lượng.",
+        "domains": [
+          "it/infrastructure/networking"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Máy chủ ủy nhiệm ngược",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "reverse-proxy",
+        "label": "Reverse proxy",
+        "summary": "Máy chủ trung gian đứng trước cụm máy chủ nội bộ nhằm tiếp nhận yêu cầu từ client bên ngoài, thực hiện định tuyến, giải mã TLS và cân bằng lưu lượng.",
+        "domains": [
+          "it/infrastructure/networking"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
     "key": "RICE scoring",
     "match": "any-case",
     "concepts": [
@@ -9947,6 +10762,96 @@
     "autolink": true
   },
   {
+    "key": "Recovery Point Objective (RPO)",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "rpo",
+        "label": "Recovery Point Objective (RPO)",
+        "summary": "Khoảng thời gian tối đa mà dữ liệu giao dịch có thể bị mất mát tính từ thời điểm xảy ra sự cố lùi về trước mà doanh nghiệp vẫn có thể chấp nhận được.",
+        "domains": [
+          "it/devops/sre-operations"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "RPO",
+    "match": "exact-case",
+    "concepts": [
+      {
+        "id": "rpo",
+        "label": "Recovery Point Objective (RPO)",
+        "summary": "Khoảng thời gian tối đa mà dữ liệu giao dịch có thể bị mất mát tính từ thời điểm xảy ra sự cố lùi về trước mà doanh nghiệp vẫn có thể chấp nhận được.",
+        "domains": [
+          "it/devops/sre-operations"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Điểm phục hồi mục tiêu",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "rpo",
+        "label": "Recovery Point Objective (RPO)",
+        "summary": "Khoảng thời gian tối đa mà dữ liệu giao dịch có thể bị mất mát tính từ thời điểm xảy ra sự cố lùi về trước mà doanh nghiệp vẫn có thể chấp nhận được.",
+        "domains": [
+          "it/devops/sre-operations"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Recovery Time Objective (RTO)",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "rto",
+        "label": "Recovery Time Objective (RTO)",
+        "summary": "Khoảng thời gian gián đoạn tối đa mà một hệ thống hoặc quy trình nghiệp vụ được phép ngừng hoạt động sau sự cố trước khi gây ra thiệt hại không thể chấp nhận cho doanh nghiệp.",
+        "domains": [
+          "it/devops/sre-operations"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "RTO",
+    "match": "exact-case",
+    "concepts": [
+      {
+        "id": "rto",
+        "label": "Recovery Time Objective (RTO)",
+        "summary": "Khoảng thời gian gián đoạn tối đa mà một hệ thống hoặc quy trình nghiệp vụ được phép ngừng hoạt động sau sự cố trước khi gây ra thiệt hại không thể chấp nhận cho doanh nghiệp.",
+        "domains": [
+          "it/devops/sre-operations"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Thời gian phục hồi mục tiêu",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "rto",
+        "label": "Recovery Time Objective (RTO)",
+        "summary": "Khoảng thời gian gián đoạn tối đa mà một hệ thống hoặc quy trình nghiệp vụ được phép ngừng hoạt động sau sự cố trước khi gây ra thiệt hại không thể chấp nhận cho doanh nghiệp.",
+        "domains": [
+          "it/devops/sre-operations"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
     "key": "Hệ điều hành thời gian thực",
     "match": "any-case",
     "concepts": [
@@ -9971,6 +10876,51 @@
         "summary": "Hệ điều hành được thiết kế chuyên biệt để xử lý các tác vụ với cam kết tính tiền định về mặt thời gian và độ trễ tối thiểu.",
         "domains": [
           "iot/devices-sensors"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Saga pattern",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "saga-pattern",
+        "label": "Saga pattern",
+        "summary": "Mẫu thiết kế quản lý các giao dịch phân tán trải dài trên nhiều dịch vụ độc lập thông qua chuỗi giao dịch cục bộ kèm theo các hành động bù trừ để phục hồi trạng thái khi gặp sự cố.",
+        "domains": [
+          "it/software-engineering/architecture"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Mẫu Saga",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "saga-pattern",
+        "label": "Saga pattern",
+        "summary": "Mẫu thiết kế quản lý các giao dịch phân tán trải dài trên nhiều dịch vụ độc lập thông qua chuỗi giao dịch cục bộ kèm theo các hành động bù trừ để phục hồi trạng thái khi gặp sự cố.",
+        "domains": [
+          "it/software-engineering/architecture"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Giao dịch phân tán Saga",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "saga-pattern",
+        "label": "Saga pattern",
+        "summary": "Mẫu thiết kế quản lý các giao dịch phân tán trải dài trên nhiều dịch vụ độc lập thông qua chuỗi giao dịch cục bộ kèm theo các hành động bù trừ để phục hồi trạng thái khi gặp sự cố.",
+        "domains": [
+          "it/software-engineering/architecture"
         ]
       }
     ],
@@ -10470,6 +11420,51 @@
     "autolink": true
   },
   {
+    "key": "Server-sent events (SSE)",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "server-sent-events",
+        "label": "Server-sent events (SSE)",
+        "summary": "Công nghệ web cho phép máy khách nhận luồng dữ liệu sự kiện cập nhật liên tục từ máy chủ theo thời gian thực qua một kết nối HTTP tiêu chuẩn được mở sẵn.",
+        "domains": [
+          "it/web/api"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "SSE",
+    "match": "exact-case",
+    "concepts": [
+      {
+        "id": "server-sent-events",
+        "label": "Server-sent events (SSE)",
+        "summary": "Công nghệ web cho phép máy khách nhận luồng dữ liệu sự kiện cập nhật liên tục từ máy chủ theo thời gian thực qua một kết nối HTTP tiêu chuẩn được mở sẵn.",
+        "domains": [
+          "it/web/api"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Sự kiện từ máy chủ",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "server-sent-events",
+        "label": "Server-sent events (SSE)",
+        "summary": "Công nghệ web cho phép máy khách nhận luồng dữ liệu sự kiện cập nhật liên tục từ máy chủ theo thời gian thực qua một kết nối HTTP tiêu chuẩn được mở sẵn.",
+        "domains": [
+          "it/web/api"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
     "key": "Serverless",
     "match": "any-case",
     "concepts": [
@@ -10509,6 +11504,36 @@
         "summary": "Mô hình điện toán đám mây trong đó nhà cung cấp tự động quản lý hạ tầng máy chủ và chỉ tính phí theo lượng tài nguyên thực tế tiêu thụ khi mã chạy.",
         "domains": [
           "it/infrastructure/cloud"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Service mesh",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "service-mesh",
+        "label": "Service mesh",
+        "summary": "Lớp hạ tầng chuyên dụng gồm các proxy sidecar đảm nhiệm điều phối, mã hóa an toàn và giám sát lưu lượng giao tiếp giữa các vi dịch vụ mà không can thiệp mã nguồn ứng dụng.",
+        "domains": [
+          "it/software-engineering/architecture"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Lưới dịch vụ",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "service-mesh",
+        "label": "Service mesh",
+        "summary": "Lớp hạ tầng chuyên dụng gồm các proxy sidecar đảm nhiệm điều phối, mã hóa an toàn và giám sát lưu lượng giao tiếp giữa các vi dịch vụ mà không can thiệp mã nguồn ứng dụng.",
+        "domains": [
+          "it/software-engineering/architecture"
         ]
       }
     ],
@@ -10618,6 +11643,51 @@
         "domains": [
           "finance/personal-finance/saving",
           "finance/banking/lending"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Single point of failure (SPOF)",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "single-point-of-failure",
+        "label": "Single point of failure (SPOF)",
+        "summary": "Thành phần hoặc mắt xích đơn lẻ trong một hệ thống mà sự cố của nó sẽ làm toàn bộ hệ thống ngừng hoạt động hoàn toàn do thiếu cơ chế dự phòng thay thế.",
+        "domains": [
+          "it/devops/sre-operations"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "SPOF",
+    "match": "exact-case",
+    "concepts": [
+      {
+        "id": "single-point-of-failure",
+        "label": "Single point of failure (SPOF)",
+        "summary": "Thành phần hoặc mắt xích đơn lẻ trong một hệ thống mà sự cố của nó sẽ làm toàn bộ hệ thống ngừng hoạt động hoàn toàn do thiếu cơ chế dự phòng thay thế.",
+        "domains": [
+          "it/devops/sre-operations"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Điểm lỗi đơn lẻ",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "single-point-of-failure",
+        "label": "Single point of failure (SPOF)",
+        "summary": "Thành phần hoặc mắt xích đơn lẻ trong một hệ thống mà sự cố của nó sẽ làm toàn bộ hệ thống ngừng hoạt động hoàn toàn do thiếu cơ chế dự phòng thay thế.",
+        "domains": [
+          "it/devops/sre-operations"
         ]
       }
     ],
@@ -12525,6 +13595,51 @@
     "autolink": true
   },
   {
+    "key": "Vertical scaling",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "vertical-scaling",
+        "label": "Vertical scaling",
+        "summary": "Biện pháp gia tăng năng lực xử lý của hệ thống bằng cách bổ sung thêm tài nguyên tính toán như bộ xử lý, bộ nhớ RAM hoặc dung lượng ổ đĩa vào một máy chủ duy nhất.",
+        "domains": [
+          "it/infrastructure/cloud"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Scale up",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "vertical-scaling",
+        "label": "Vertical scaling",
+        "summary": "Biện pháp gia tăng năng lực xử lý của hệ thống bằng cách bổ sung thêm tài nguyên tính toán như bộ xử lý, bộ nhớ RAM hoặc dung lượng ổ đĩa vào một máy chủ duy nhất.",
+        "domains": [
+          "it/infrastructure/cloud"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Mở rộng theo chiều dọc",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "vertical-scaling",
+        "label": "Vertical scaling",
+        "summary": "Biện pháp gia tăng năng lực xử lý của hệ thống bằng cách bổ sung thêm tài nguyên tính toán như bộ xử lý, bộ nhớ RAM hoặc dung lượng ổ đĩa vào một máy chủ duy nhất.",
+        "domains": [
+          "it/infrastructure/cloud"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
     "key": "Máy ảo",
     "match": "any-case",
     "concepts": [
@@ -12793,6 +13908,36 @@
         "id": "webhook",
         "label": "Webhook",
         "summary": "Cơ chế gọi ngược HTTP tự động kích hoạt bởi hệ thống nguồn để bắn dữ liệu sự kiện thời gian thực sang máy chủ tiếp nhận.",
+        "domains": [
+          "it/web/api"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "WebSocket",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "websocket",
+        "label": "WebSocket",
+        "summary": "Giao thức truyền thông máy tính cung cấp kênh giao tiếp song công hai chiều toàn phần qua một kết nối TCP duy nhất, được khởi tạo thông qua cái bắt tay nâng cấp từ HTTP.",
+        "domains": [
+          "it/web/api"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Giao thức WebSocket",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "websocket",
+        "label": "WebSocket",
+        "summary": "Giao thức truyền thông máy tính cung cấp kênh giao tiếp song công hai chiều toàn phần qua một kết nối TCP duy nhất, được khởi tạo thông qua cái bắt tay nâng cấp từ HTTP.",
         "domains": [
           "it/web/api"
         ]

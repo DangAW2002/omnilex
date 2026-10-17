@@ -1,12 +1,24 @@
 id: grpc
 domains:
   - it/web/api
-level: 1
+level: 2
 relations:
-  prerequisites: []
-  confusable: []
-  related: []
+  prerequisites:
+    - rest-api
+    - api-endpoint
+  related:
+    - microservices
+    - api-gateway
 status: draft
 provenance:
   drafted_by: ai
-sources: []
+sources:
+  - ref: grpc-docs
+    locator: https://grpc.io/docs/what-is-grpc/introduction/
+    title: Introduction to gRPC | gRPC
+    language: en
+    accessed: '2026-10-17'
+    retrieved_by: ai
+    supports:
+      - definition
+      - summary

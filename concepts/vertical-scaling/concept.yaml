@@ -3,10 +3,22 @@ domains:
   - it/infrastructure/cloud
 level: 1
 relations:
-  prerequisites: []
-  confusable: []
-  related: []
+  prerequisites:
+    - virtual-machine
+  related:
+    - autoscaling
+  confusable:
+    - horizontal-scaling
 status: draft
 provenance:
   drafted_by: ai
-sources: []
+sources:
+  - ref: microsoft-learn
+    locator: https://learn.microsoft.com/en-us/azure/architecture/best-practices/auto-scaling
+    title: Autoscaling Guidance - Azure Architecture Center | Microsoft Learn
+    language: en
+    accessed: '2026-10-17'
+    retrieved_by: ai
+    supports:
+      - definition
+      - summary

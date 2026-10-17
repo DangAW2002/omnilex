@@ -186,6 +186,25 @@
     "status": "draft"
   },
   {
+    "id": "api-gateway",
+    "label": "API gateway",
+    "aliases": [
+      "Gateway routing"
+    ],
+    "loanwords": [],
+    "plain_descriptions": [
+      "single front entrance that directs client requests to appropriate backend services",
+      "entry server handling auth, throttling, and routing for microservices"
+    ],
+    "summary": "An intermediary server pattern that acts as a single point of entry for external clients, routing requests to internal microservices while handling cross-cutting concerns.",
+    "domains": [
+      "it/web/api",
+      "it/software-engineering/architecture"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
     "id": "aspect-ratio",
     "label": "Aspect ratio",
     "aliases": [],
@@ -311,6 +330,25 @@
     "summary": "An incoming hyperlink from an external web domain directing users and web crawlers to a target page on another website.",
     "domains": [
       "media/digital-marketing/seo"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
+    "id": "backpressure",
+    "label": "Backpressure",
+    "aliases": [
+      "Flow control",
+      "Back-pressure"
+    ],
+    "loanwords": [],
+    "plain_descriptions": [
+      "signaling a fast sender to slow down so a slower receiver does not crash",
+      "mechanism where downstream consumers tell producers how much data they can accept"
+    ],
+    "summary": "A flow-control mechanism in asynchronous software pipelines where downstream consumers signal their capacity upstream to prevent producers from overwhelming them with data.",
+    "domains": [
+      "it/software-engineering/architecture"
     ],
     "level": 2,
     "status": "draft"
@@ -740,6 +778,44 @@
     "status": "draft"
   },
   {
+    "id": "circuit-breaker",
+    "label": "Circuit breaker",
+    "qualifier": "(Software)",
+    "aliases": [
+      "Circuit breaker pattern"
+    ],
+    "loanwords": [],
+    "plain_descriptions": [
+      "automatic switch stopping calls to failing services to prevent system crashes",
+      "safety mechanism tripping requests when remote dependencies become unresponsive"
+    ],
+    "summary": "A design pattern that prevents an application from repeatedly attempting an operation likely to fail, tripping to fail fast and recovering automatically when healthy.",
+    "domains": [
+      "it/software-engineering/architecture"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
+    "id": "clean-architecture",
+    "label": "Clean architecture",
+    "aliases": [
+      "Onion architecture",
+      "Hexagonal architecture"
+    ],
+    "loanwords": [],
+    "plain_descriptions": [
+      "layering software so business rules stay independent of frameworks and databases",
+      "code design where internal logic points inward and knows nothing about external tools"
+    ],
+    "summary": "A software architectural paradigm structured in concentric layers where dependencies point strictly inward toward domain logic, decoupling business rules from frameworks and databases.",
+    "domains": [
+      "it/software-engineering/architecture"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
     "id": "coap",
     "label": "Constrained Application Protocol (CoAP)",
     "aliases": [
@@ -812,6 +888,25 @@
     ],
     "level": 1,
     "status": "reviewed"
+  },
+  {
+    "id": "consistent-hashing",
+    "label": "Consistent hashing",
+    "aliases": [
+      "Hash ring",
+      "Ring hashing"
+    ],
+    "loanwords": [],
+    "plain_descriptions": [
+      "hashing technique that minimizes data movement when servers are added or removed",
+      "distributed algorithm mapping keys and nodes onto a circular ring to prevent mass rebalancing"
+    ],
+    "summary": "A distributed hashing algorithm where resizing the bucket array requires only K/N keys to be remapped on average, mapping nodes and data keys onto a circular ring space.",
+    "domains": [
+      "it/software-engineering/architecture"
+    ],
+    "level": 3,
+    "status": "draft"
   },
   {
     "id": "container-image",
@@ -1007,6 +1102,24 @@
       "media/digital-marketing/paid-ads"
     ],
     "level": 2,
+    "status": "draft"
+  },
+  {
+    "id": "cqrs",
+    "label": "Command Query Responsibility Segregation (CQRS)",
+    "aliases": [
+      "CQRS"
+    ],
+    "loanwords": [],
+    "plain_descriptions": [
+      "separating data update logic from data reading logic into distinct models",
+      "architectural pattern using different models to write and read data"
+    ],
+    "summary": "An architectural pattern that separates operations that mutate state from operations that read data into distinct models and pipelines.",
+    "domains": [
+      "it/software-engineering/architecture"
+    ],
+    "level": 3,
     "status": "draft"
   },
   {
@@ -1463,6 +1576,25 @@
     "status": "draft"
   },
   {
+    "id": "dependency-injection",
+    "label": "Dependency injection",
+    "aliases": [
+      "DI",
+      "Inversion of control"
+    ],
+    "loanwords": [],
+    "plain_descriptions": [
+      "passing required objects into a component from outside rather than creating them inside",
+      "supplying dependencies to a class via constructors or setters to improve testability"
+    ],
+    "summary": "A software design pattern where an object receives its dependencies from an external assembler rather than instantiating them internally, implementing inversion of control.",
+    "domains": [
+      "it/software-engineering/programming-concepts"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
     "id": "deprecation",
     "label": "Deprecation",
     "qualifier": "(Software)",
@@ -1549,6 +1681,42 @@
       "iot/industrial"
     ],
     "level": 2,
+    "status": "draft"
+  },
+  {
+    "id": "disaster-recovery",
+    "label": "Disaster recovery (DR)",
+    "aliases": [
+      "DR"
+    ],
+    "loanwords": [],
+    "plain_descriptions": [
+      "plan and technical process to restore systems after a major outage or disaster",
+      "procedures for reviving critical business data and servers following regional catastrophes"
+    ],
+    "summary": "A coordinated set of policies, tools, and technical procedures designed to recover and resume mission-critical technology infrastructure and operations after a catastrophic event.",
+    "domains": [
+      "it/devops/sre-operations"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
+    "id": "distributed-system",
+    "label": "Distributed system",
+    "aliases": [
+      "Distributed architecture"
+    ],
+    "loanwords": [],
+    "plain_descriptions": [
+      "collection of independent computers working together appearing as a single system",
+      "software spread across multiple networked machines communicating to accomplish a task"
+    ],
+    "summary": "A system whose hardware and software components communicate and coordinate their actions over a network, presenting themselves to end users as a unified cohesive computing facility.",
+    "domains": [
+      "it/software-engineering/architecture"
+    ],
+    "level": 1,
     "status": "draft"
   },
   {
@@ -1642,6 +1810,24 @@
       "it/devops/containers"
     ],
     "level": 1,
+    "status": "draft"
+  },
+  {
+    "id": "domain-driven-design",
+    "label": "Domain-driven design (DDD)",
+    "aliases": [
+      "DDD"
+    ],
+    "loanwords": [],
+    "plain_descriptions": [
+      "software design methodology centering code around business models and shared language",
+      "structuring complex enterprise software according to real-world domain rules"
+    ],
+    "summary": "A software architectural methodology centering system design and implementation around core business models, ubiquitous language, and bounded contexts.",
+    "domains": [
+      "it/software-engineering/architecture"
+    ],
+    "level": 2,
     "status": "draft"
   },
   {
@@ -1953,6 +2139,42 @@
     "status": "draft"
   },
   {
+    "id": "event-driven-architecture",
+    "label": "Event-driven architecture",
+    "aliases": [
+      "EDA"
+    ],
+    "loanwords": [],
+    "plain_descriptions": [
+      "system architecture where decoupled services communicate by publishing and consuming events",
+      "software design reacting to state changes instead of making synchronous direct calls"
+    ],
+    "summary": "A software architecture paradigm where decoupled components communicate asynchronously by generating, detecting, and reacting to significant state changes known as events.",
+    "domains": [
+      "it/software-engineering/architecture"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
+    "id": "event-sourcing",
+    "label": "Event sourcing",
+    "aliases": [
+      "Event-sourced persistence"
+    ],
+    "loanwords": [],
+    "plain_descriptions": [
+      "storing every change to application state as an append-only sequence of immutable events",
+      "tracking full history like an accounting ledger rather than only keeping current values"
+    ],
+    "summary": "A persistence design pattern where all state changes are stored as an append-only, ordered sequence of immutable domain events instead of overwriting current entity records.",
+    "domains": [
+      "it/software-engineering/architecture"
+    ],
+    "level": 3,
+    "status": "draft"
+  },
+  {
     "id": "exchange-rate",
     "label": "Exchange rate",
     "aliases": [
@@ -1972,6 +2194,24 @@
     "status": "draft"
   },
   {
+    "id": "exponential-backoff",
+    "label": "Exponential backoff",
+    "aliases": [
+      "Exponential retry"
+    ],
+    "loanwords": [],
+    "plain_descriptions": [
+      "waiting progressively longer between retries when an operation fails",
+      "retry strategy that doubles the sleep interval after each successive error"
+    ],
+    "summary": "An algorithm that progressively multiplies the delay interval between successive retries to prevent overwhelming struggling network services.",
+    "domains": [
+      "it/software-engineering/architecture"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
     "id": "fact-checking",
     "label": "Fact-checking",
     "aliases": [],
@@ -1983,6 +2223,24 @@
     "summary": "The disciplined verification process of assessing factual assertions in published text, speeches, or broadcast reports against reliable primary documentation.",
     "domains": [
       "media/journalism/ethics"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
+    "id": "failover",
+    "label": "Failover",
+    "aliases": [
+      "Automated failover"
+    ],
+    "loanwords": [],
+    "plain_descriptions": [
+      "automatically switching to a backup server when the main server crashes",
+      "seamless transfer of traffic to redundant resources upon primary failure"
+    ],
+    "summary": "An operational procedure that automatically or manually redirects processing tasks and network traffic to a redundant standby system upon failure of the primary component.",
+    "domains": [
+      "it/devops/sre-operations"
     ],
     "level": 2,
     "status": "draft"
@@ -2234,6 +2492,24 @@
     "status": "draft"
   },
   {
+    "id": "grpc",
+    "label": "gRPC",
+    "aliases": [
+      "gRPC Remote Procedure Call"
+    ],
+    "loanwords": [],
+    "plain_descriptions": [
+      "high-speed framework for calling functions on remote servers using Protocol Buffers",
+      "binary RPC framework running over HTTP/2 for efficient microservice communication"
+    ],
+    "summary": "A high-performance, open-source universal RPC framework that uses Protocol Buffers for structured binary serialization and HTTP/2 for efficient multiplexed transport.",
+    "domains": [
+      "it/web/api"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
     "id": "guardrail",
     "label": "Guardrail",
     "qualifier": "(AI)",
@@ -2317,6 +2593,43 @@
     "summary": "The prominent heading positioned above a news article that encapsulates its core subject and catches the reader's attention.",
     "domains": [
       "media/journalism/reporting"
+    ],
+    "level": 1,
+    "status": "draft"
+  },
+  {
+    "id": "high-availability",
+    "label": "High availability (HA)",
+    "aliases": [
+      "HA"
+    ],
+    "loanwords": [],
+    "plain_descriptions": [
+      "building systems that stay online and accessible almost all the time without downtime",
+      "continuous service uptime achieved through redundant components and auto-recovery"
+    ],
+    "summary": "A system design characteristic ensuring operational performance and accessibility over extended periods by minimizing unplanned downtime through redundancy and fault tolerance.",
+    "domains": [
+      "it/devops/sre-operations"
+    ],
+    "level": 1,
+    "status": "draft"
+  },
+  {
+    "id": "horizontal-scaling",
+    "label": "Horizontal scaling",
+    "aliases": [
+      "Scale out",
+      "Scaling out"
+    ],
+    "loanwords": [],
+    "plain_descriptions": [
+      "adding more machines or server instances to share workload",
+      "expanding capacity by running multiple copies of an application across a cluster"
+    ],
+    "summary": "The practice of increasing system capacity and handling greater load by adding more independent compute nodes or instances to a resource pool.",
+    "domains": [
+      "it/infrastructure/cloud"
     ],
     "level": 1,
     "status": "draft"
@@ -3017,6 +3330,24 @@
     "status": "draft"
   },
   {
+    "id": "load-testing",
+    "label": "Load testing",
+    "aliases": [
+      "Performance load testing"
+    ],
+    "loanwords": [],
+    "plain_descriptions": [
+      "testing software by simulating heavy user traffic to verify performance and limits",
+      "generating artificial requests to measure system responsiveness and breaking points"
+    ],
+    "summary": "A non-functional software testing technique that subjects an application or system to simulated concurrent usage to evaluate its throughput, latency, and operational stability.",
+    "domains": [
+      "it/software-engineering/testing"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
     "id": "log",
     "label": "Log",
     "qualifier": "(Software)",
@@ -3397,6 +3728,25 @@
     "summary": "The iterative computational process of calculating errors and adjusting model weights against training data to minimize loss.",
     "domains": [
       "it/ai-ml/foundations"
+    ],
+    "level": 1,
+    "status": "draft"
+  },
+  {
+    "id": "monolith",
+    "label": "Monolithic architecture",
+    "aliases": [
+      "Monolith",
+      "Monolithic system"
+    ],
+    "loanwords": [],
+    "plain_descriptions": [
+      "single software application built and deployed as a unified codebase",
+      "system where all features run inside one process and database"
+    ],
+    "summary": "An architectural model where all business capabilities, user interfaces, and database operations are packaged and deployed as a single combined system.",
+    "domains": [
+      "it/software-engineering/architecture"
     ],
     "level": 1,
     "status": "draft"
@@ -4542,6 +4892,24 @@
     "status": "draft"
   },
   {
+    "id": "reverse-proxy",
+    "label": "Reverse proxy",
+    "aliases": [
+      "Reverse proxy server"
+    ],
+    "loanwords": [],
+    "plain_descriptions": [
+      "server intercepting client traffic to shield and distribute load to origin servers",
+      "front-facing proxy that retrieves resources from internal servers on behalf of clients"
+    ],
+    "summary": "A server sitting in front of web servers that intercepts incoming client requests and routes them to internal targets, providing anonymity, load distribution, and TLS termination.",
+    "domains": [
+      "it/infrastructure/networking"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
     "id": "rice-scoring",
     "label": "RICE scoring",
     "aliases": [
@@ -4600,6 +4968,42 @@
     "status": "draft"
   },
   {
+    "id": "rpo",
+    "label": "Recovery Point Objective (RPO)",
+    "aliases": [
+      "RPO"
+    ],
+    "loanwords": [],
+    "plain_descriptions": [
+      "maximum amount of transactional data measured in time that a business can tolerate losing",
+      "age of the most recent usable backup required after recovering from a disaster"
+    ],
+    "summary": "The maximum acceptable age of data files or transactions that must be recovered from backup storage for normal operations to resume if a computer system crashes.",
+    "domains": [
+      "it/devops/sre-operations"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
+    "id": "rto",
+    "label": "Recovery Time Objective (RTO)",
+    "aliases": [
+      "RTO"
+    ],
+    "loanwords": [],
+    "plain_descriptions": [
+      "maximum acceptable duration a system can be down following a disaster",
+      "target time limit within which business services must be fully restored"
+    ],
+    "summary": "The maximum acceptable length of time that a system, application, or service can remain offline following a disaster or disruption before intolerable business damage occurs.",
+    "domains": [
+      "it/devops/sre-operations"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
     "id": "rtos",
     "label": "Real-time operating system (RTOS)",
     "aliases": [
@@ -4615,6 +5019,24 @@
       "iot/devices-sensors"
     ],
     "level": 2,
+    "status": "draft"
+  },
+  {
+    "id": "saga-pattern",
+    "label": "Saga pattern",
+    "aliases": [
+      "Saga distributed transaction"
+    ],
+    "loanwords": [],
+    "plain_descriptions": [
+      "coordinating distributed transactions across services through a series of local steps",
+      "transaction workflow using compensating actions to undo steps when an error occurs"
+    ],
+    "summary": "A design pattern that manages distributed transactions across multiple microservices using a sequence of local transactions and compensating actions to handle failures.",
+    "domains": [
+      "it/software-engineering/architecture"
+    ],
+    "level": 3,
     "status": "draft"
   },
   {
@@ -4856,6 +5278,25 @@
     "status": "draft"
   },
   {
+    "id": "server-sent-events",
+    "label": "Server-sent events (SSE)",
+    "aliases": [
+      "SSE",
+      "EventSource API"
+    ],
+    "loanwords": [],
+    "plain_descriptions": [
+      "server pushing automatic live text updates to a web browser over a single HTTP connection",
+      "one-way streaming protocol delivering real-time events from server to client"
+    ],
+    "summary": "A web technology where a browser client receives automatic real-time event streams from a server over an open standard HTTP connection.",
+    "domains": [
+      "it/web/api"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
     "id": "serverless",
     "label": "Serverless",
     "aliases": [
@@ -4872,6 +5313,24 @@
       "it/infrastructure/cloud"
     ],
     "level": 2,
+    "status": "draft"
+  },
+  {
+    "id": "service-mesh",
+    "label": "Service mesh",
+    "aliases": [
+      "Sidecar proxy mesh"
+    ],
+    "loanwords": [],
+    "plain_descriptions": [
+      "dedicated infrastructure layer managing network communication between microservices",
+      "network of sidecar proxies securing and observing service-to-service calls"
+    ],
+    "summary": "A dedicated infrastructure layer of networked sidecar proxies that manages, secures, and observes service-to-service communications without modifying application code.",
+    "domains": [
+      "it/software-engineering/architecture"
+    ],
+    "level": 3,
     "status": "draft"
   },
   {
@@ -4926,6 +5385,24 @@
     ],
     "level": 1,
     "status": "reviewed"
+  },
+  {
+    "id": "single-point-of-failure",
+    "label": "Single point of failure (SPOF)",
+    "aliases": [
+      "SPOF"
+    ],
+    "loanwords": [],
+    "plain_descriptions": [
+      "single part of a system whose failure stops the entire system from working",
+      "un-replicated component that can cause total system outage if it breaks"
+    ],
+    "summary": "A potential risk in system architecture where a single component failure will trigger the cessation of the entire system because no redundancy exists.",
+    "domains": [
+      "it/devops/sre-operations"
+    ],
+    "level": 1,
+    "status": "draft"
   },
   {
     "id": "sla",
@@ -5798,6 +6275,25 @@
     "status": "draft"
   },
   {
+    "id": "vertical-scaling",
+    "label": "Vertical scaling",
+    "aliases": [
+      "Scale up",
+      "Scaling up"
+    ],
+    "loanwords": [],
+    "plain_descriptions": [
+      "upgrading an existing server with more CPU, memory, or storage power",
+      "boosting capacity by replacing a machine with a larger hardware specification"
+    ],
+    "summary": "The practice of increasing system capacity by provisioning more compute resources, such as CPU cores, RAM, or storage speed, to a single server instance.",
+    "domains": [
+      "it/infrastructure/cloud"
+    ],
+    "level": 1,
+    "status": "draft"
+  },
+  {
     "id": "virtual-machine",
     "label": "Virtual machine (VM)",
     "aliases": [
@@ -5905,6 +6401,24 @@
       "a reverse phone call where a payment provider rings your app to say money arrived"
     ],
     "summary": "An automated HTTP POST callback triggered by an origin system to deliver real-time event payloads to external receiver endpoints.",
+    "domains": [
+      "it/web/api"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
+    "id": "websocket",
+    "label": "WebSocket",
+    "aliases": [
+      "WebSocket protocol"
+    ],
+    "loanwords": [],
+    "plain_descriptions": [
+      "continuous two-way connection allowing real-time communication between browser and server",
+      "persistent bidirectional network socket initiated via an HTTP handshake"
+    ],
+    "summary": "A computer communications protocol providing full-duplex, bidirectional communication channels over a single persistent TCP connection initiated via an HTTP upgrade handshake.",
     "domains": [
       "it/web/api"
     ],

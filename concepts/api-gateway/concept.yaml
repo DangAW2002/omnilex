@@ -1,12 +1,27 @@
 id: api-gateway
 domains:
   - it/web/api
-level: 1
+  - it/software-engineering/architecture
+level: 2
 relations:
-  prerequisites: []
-  confusable: []
-  related: []
+  prerequisites:
+    - api
+    - reverse-proxy
+  related:
+    - microservices
+    - rate-limiting
+  confusable:
+    - reverse-proxy
 status: draft
 provenance:
   drafted_by: ai
-sources: []
+sources:
+  - ref: aws-docs
+    locator: https://docs.aws.amazon.com/apigateway/latest/developerguide/welcome.html
+    title: What is Amazon API Gateway? - Amazon API Gateway
+    language: en
+    accessed: '2026-10-17'
+    retrieved_by: ai
+    supports:
+      - definition
+      - summary

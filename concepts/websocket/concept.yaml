@@ -1,12 +1,25 @@
 id: websocket
 domains:
   - it/web/api
-level: 1
+level: 2
 relations:
-  prerequisites: []
-  confusable: []
-  related: []
+  prerequisites:
+    - rest-api
+  related:
+    - http-status-code
+    - server-sent-events
+  confusable:
+    - server-sent-events
 status: draft
 provenance:
   drafted_by: ai
-sources: []
+sources:
+  - ref: ietf
+    locator: https://www.rfc-editor.org/rfc/rfc6455.txt
+    title: 'RFC 6455: The WebSocket Protocol'
+    language: en
+    accessed: '2026-10-17'
+    retrieved_by: ai
+    supports:
+      - definition
+      - summary

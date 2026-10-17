@@ -1,12 +1,25 @@
 id: reverse-proxy
 domains:
   - it/infrastructure/networking
-level: 1
+level: 2
 relations:
-  prerequisites: []
-  confusable: []
-  related: []
+  prerequisites:
+    - dns
+  related:
+    - load-balancer
+    - api-gateway
+  confusable:
+    - api-gateway
 status: draft
 provenance:
   drafted_by: ai
-sources: []
+sources:
+  - ref: nginx-docs
+    locator: https://docs.nginx.com/nginx/admin-guide/web-server/reverse-proxy/
+    title: NGINX Reverse Proxy | NGINX Documentation
+    language: en
+    accessed: '2026-10-17'
+    retrieved_by: ai
+    supports:
+      - definition
+      - summary

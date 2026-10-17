@@ -209,6 +209,27 @@
     "status": "draft"
   },
   {
+    "id": "api-gateway",
+    "label": "API gateway",
+    "aliases": [
+      "Cổng API"
+    ],
+    "loanwords": [
+      "api gateway"
+    ],
+    "plain_descriptions": [
+      "cửa ngõ đón mọi yêu cầu từ người dùng rồi phân luồng về các dịch vụ phía sau",
+      "máy chủ trung gian kiểm tra quyền, giới hạn lưu lượng và định tuyến gọi API"
+    ],
+    "summary": "Mẫu máy chủ đóng vai trò cửa ngõ tập trung đón nhận yêu cầu từ client, chuyển tiếp tới các dịch vụ nội bộ phù hợp và thực thi các tác vụ kiểm soát chung.",
+    "domains": [
+      "it/web/api",
+      "it/software-engineering/architecture"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
     "id": "aspect-ratio",
     "label": "Tỷ lệ khung hình",
     "aliases": [
@@ -351,6 +372,27 @@
     "summary": "Liên kết siêu văn bản từ một tên miền bên ngoài trỏ người dùng và bot tìm kiếm về trang đích trên website của bạn.",
     "domains": [
       "media/digital-marketing/seo"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
+    "id": "backpressure",
+    "label": "Backpressure",
+    "aliases": [
+      "Áp lực ngược",
+      "Kiểm soát dòng dữ liệu"
+    ],
+    "loanwords": [
+      "backpressure"
+    ],
+    "plain_descriptions": [
+      "phát tín hiệu yêu cầu nguồn gửi dữ liệu chậm lại để bên nhận không bị quá tải sập nguồn",
+      "cơ chế bên tiêu thụ thông báo số lượng bản ghi có thể xử lý cho bên sản xuất biết"
+    ],
+    "summary": "Cơ chế điều tiết luồng dữ liệu trong các đường ống xử lý bất đồng bộ, trong đó thành phần tiêu thụ gửi tín hiệu ngược về phía sản xuất để giới hạn tốc độ truyền tải tránh gây quá tải bộ nhớ.",
+    "domains": [
+      "it/software-engineering/architecture"
     ],
     "level": 2,
     "status": "draft"
@@ -845,6 +887,48 @@
     "status": "draft"
   },
   {
+    "id": "circuit-breaker",
+    "label": "Circuit breaker",
+    "qualifier": "(Phần mềm)",
+    "aliases": [
+      "Bộ ngắt mạch",
+      "Mẫu ngắt mạch"
+    ],
+    "loanwords": [
+      "circuit breaker"
+    ],
+    "plain_descriptions": [
+      "cầu dao tự động ngắt kết nối tới dịch vụ đang hỏng để cứu cả hệ thống",
+      "cơ chế phản hồi lỗi tức thì khi máy chủ phía sau ngừng tiếp nhận tín hiệu"
+    ],
+    "summary": "Mẫu thiết kế ngăn chặn ứng dụng liên tục gọi một dịch vụ đang gặp sự cố, tự động ngắt mạch để trả về phản hồi lỗi ngay lập tức và tự hồi phục khi đối tác khỏe lại.",
+    "domains": [
+      "it/software-engineering/architecture"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
+    "id": "clean-architecture",
+    "label": "Clean architecture",
+    "aliases": [
+      "Kiến trúc sạch"
+    ],
+    "loanwords": [
+      "clean architecture"
+    ],
+    "plain_descriptions": [
+      "xếp tầng mã nguồn sao cho nghiệp vụ cốt lõi không bị trói buộc vào cơ sở dữ liệu hay thư viện",
+      "cách tổ chức code với các lớp phụ thuộc hướng vào trong để dễ dàng thay đổi công nghệ bên ngoài"
+    ],
+    "summary": "Mô hình kiến trúc phần mềm tổ chức thành các vòng tròn đồng tâm với nguyên tắc phụ thuộc nghiêm ngặt hướng vào trong, giúp lõi nghiệp vụ hoàn toàn độc lập với khung phát triển và giao diện ngoài.",
+    "domains": [
+      "it/software-engineering/architecture"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
     "id": "coap",
     "label": "Constrained Application Protocol (CoAP)",
     "aliases": [
@@ -927,6 +1011,27 @@
     ],
     "level": 1,
     "status": "reviewed"
+  },
+  {
+    "id": "consistent-hashing",
+    "label": "Consistent hashing",
+    "aliases": [
+      "Băm nhất quán",
+      "Vòng băm"
+    ],
+    "loanwords": [
+      "consistent hashing"
+    ],
+    "plain_descriptions": [
+      "kỹ thuật phân bổ dữ liệu giúp hạn chế tối đa việc xáo trộn vị trí khi thêm bớt máy chủ",
+      "thuật toán băm xếp máy chủ và dữ liệu lên một vòng tròn để tránh xáo trộn bộ nhớ đệm"
+    ],
+    "summary": "Thuật toán băm phân tán trong đó việc tăng giảm số lượng nút lưu trữ chỉ làm chuyển dịch trung bình K/N khóa, bằng cách ánh xạ cả máy chủ và dữ liệu lên một không gian vòng tròn định danh.",
+    "domains": [
+      "it/software-engineering/architecture"
+    ],
+    "level": 3,
+    "status": "draft"
   },
   {
     "id": "container-image",
@@ -1150,6 +1255,27 @@
       "media/digital-marketing/paid-ads"
     ],
     "level": 2,
+    "status": "draft"
+  },
+  {
+    "id": "cqrs",
+    "label": "Command Query Responsibility Segregation (CQRS)",
+    "aliases": [
+      "CQRS"
+    ],
+    "loanwords": [
+      "command query responsibility segregation (cqrs)",
+      "cqrs"
+    ],
+    "plain_descriptions": [
+      "tách biệt hoàn toàn nhánh ghi dữ liệu và nhánh đọc dữ liệu thành hai mô hình riêng",
+      "mẫu kiến trúc dùng các luồng khác nhau để thay đổi và tra cứu thông tin"
+    ],
+    "summary": "Mẫu kiến trúc phân chia rạch ròi các thao tác cập nhật trạng thái dữ liệu (lệnh ghi) và các thao tác tra cứu dữ liệu (truy vấn) thành hai mô hình xử lý độc lập.",
+    "domains": [
+      "it/software-engineering/architecture"
+    ],
+    "level": 3,
     "status": "draft"
   },
   {
@@ -1650,6 +1776,28 @@
     "status": "draft"
   },
   {
+    "id": "dependency-injection",
+    "label": "Dependency injection",
+    "aliases": [
+      "DI",
+      "Tiêm phụ thuộc"
+    ],
+    "loanwords": [
+      "dependency injection",
+      "di"
+    ],
+    "plain_descriptions": [
+      "truyền đối tượng cần thiết từ bên ngoài vào thay vì để lớp tự khởi tạo bên trong",
+      "đưa các dịch vụ phụ thuộc vào hàm dựng giúp dễ dàng viết mã kiểm thử"
+    ],
+    "summary": "Mẫu thiết kế phần mềm trong đó một đối tượng nhận các thành phần phụ thuộc của nó từ một bộ cấu hình bên ngoài thay vì tự khởi tạo bên trong, hiện thực hóa nguyên lý đảo ngược điều khiển.",
+    "domains": [
+      "it/software-engineering/programming-concepts"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
     "id": "deprecation",
     "label": "Deprecation",
     "qualifier": "(Phần mềm)",
@@ -1750,6 +1898,49 @@
       "iot/industrial"
     ],
     "level": 2,
+    "status": "draft"
+  },
+  {
+    "id": "disaster-recovery",
+    "label": "Disaster recovery (DR)",
+    "aliases": [
+      "DR",
+      "Khắc phục thảm họa"
+    ],
+    "loanwords": [
+      "disaster recovery (dr)",
+      "dr"
+    ],
+    "plain_descriptions": [
+      "kế hoạch và quy trình khôi phục hệ thống khi xảy ra sự cố nghiêm trọng phá hủy hạ tầng",
+      "các bước cứu vãn dữ liệu và máy chủ sau thảm họa thiên tai hoặc mất điện toàn vùng"
+    ],
+    "summary": "Tập hợp các chính sách, công cụ và quy trình kỹ thuật nhằm khôi phục và duy trì các hạ tầng công nghệ thiết yếu sau một thảm họa diện rộng gây gián đoạn hoàn toàn.",
+    "domains": [
+      "it/devops/sre-operations"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
+    "id": "distributed-system",
+    "label": "Distributed system",
+    "aliases": [
+      "Hệ thống phân tán",
+      "Hệ phân tán"
+    ],
+    "loanwords": [
+      "distributed system"
+    ],
+    "plain_descriptions": [
+      "tập hợp nhiều máy tính riêng lẻ kết nối qua mạng phối hợp làm việc như một máy tính duy nhất",
+      "phần mềm chạy rải rác trên nhiều máy chủ khác nhau cùng xử lý chung một bài toán lớn"
+    ],
+    "summary": "Hệ thống bao gồm nhiều máy tính độc lập được kết nối qua mạng, liên lạc và phối hợp với nhau để xuất hiện trước người dùng như một khối xử lý thống nhất duy nhất.",
+    "domains": [
+      "it/software-engineering/architecture"
+    ],
+    "level": 1,
     "status": "draft"
   },
   {
@@ -1857,6 +2048,28 @@
       "it/devops/containers"
     ],
     "level": 1,
+    "status": "draft"
+  },
+  {
+    "id": "domain-driven-design",
+    "label": "Domain-driven design (DDD)",
+    "aliases": [
+      "DDD",
+      "Thiết kế hướng miền"
+    ],
+    "loanwords": [
+      "domain-driven design (ddd)",
+      "ddd"
+    ],
+    "plain_descriptions": [
+      "phương pháp thiết kế phần mềm lấy mô hình nghiệp vụ thực tế làm trung tâm",
+      "xây dựng mã nguồn xoay quanh ngôn ngữ chung giữa chuyên gia nghiệp vụ và kỹ sư"
+    ],
+    "summary": "Phương pháp phát triển phần mềm đặt trọng tâm kiến trúc và mã nguồn vào việc mô hình hóa chính xác nghiệp vụ thực tế, sử dụng ngôn ngữ chung và phân tách các ngữ cảnh giới hạn.",
+    "domains": [
+      "it/software-engineering/architecture"
+    ],
+    "level": 2,
     "status": "draft"
   },
   {
@@ -2214,6 +2427,48 @@
     "status": "draft"
   },
   {
+    "id": "event-driven-architecture",
+    "label": "Event-driven architecture",
+    "aliases": [
+      "Kiến trúc hướng sự kiện",
+      "EDA"
+    ],
+    "loanwords": [
+      "event-driven architecture",
+      "eda"
+    ],
+    "plain_descriptions": [
+      "kiến trúc phần mềm mà các thành phần trao đổi qua việc phát và bắt sự kiện",
+      "mô hình lập trình phản ứng với các thay đổi trạng thái thay vì chờ nhau hoàn thành"
+    ],
+    "summary": "Mô hình kiến trúc phần mềm trong đó các thành phần tách rời giao tiếp bất đồng bộ thông qua việc phát sinh, truyền tải và xử lý các sự kiện ghi nhận thay đổi trạng thái.",
+    "domains": [
+      "it/software-engineering/architecture"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
+    "id": "event-sourcing",
+    "label": "Event sourcing",
+    "aliases": [
+      "Lưu vết sự kiện"
+    ],
+    "loanwords": [
+      "event sourcing"
+    ],
+    "plain_descriptions": [
+      "lưu toàn bộ lịch sử thay đổi dưới dạng danh sách sự kiện chỉ thêm mà không xóa sửa",
+      "lưu vết biến động như sổ kế toán thay vì chỉ ghi đè giá trị hiện tại"
+    ],
+    "summary": "Mẫu thiết kế lưu trữ dữ liệu trong đó mọi thay đổi trạng thái được ghi nhận thành chuỗi các sự kiện bất biến nối tiếp nhau, thay vì ghi đè lên trạng thái hiện thời của bản ghi.",
+    "domains": [
+      "it/software-engineering/architecture"
+    ],
+    "level": 3,
+    "status": "draft"
+  },
+  {
     "id": "exchange-rate",
     "label": "Tỷ giá hối đoái",
     "aliases": [
@@ -2233,6 +2488,27 @@
     "status": "draft"
   },
   {
+    "id": "exponential-backoff",
+    "label": "Exponential backoff",
+    "aliases": [
+      "Lùi lũy thừa",
+      "Chờ lùi theo hàm mũ"
+    ],
+    "loanwords": [
+      "exponential backoff"
+    ],
+    "plain_descriptions": [
+      "tăng gấp đôi thời gian chờ sau mỗi lần thử lại lệnh bị lỗi",
+      "thuật toán giãn cách thời gian gọi lại để hệ thống đích kịp hồi sức"
+    ],
+    "summary": "Thuật toán tăng dần độ trễ giữa các lần thử lại sau mỗi lần thất bại theo hàm số mũ nhằm tránh gây quá tải dồn dập cho dịch vụ đang nghẽn.",
+    "domains": [
+      "it/software-engineering/architecture"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
     "id": "fact-checking",
     "label": "Kiểm chứng thông tin",
     "aliases": [
@@ -2249,6 +2525,27 @@
     "summary": "Quy trình xác minh độc lập các khẳng định dữ kiện trong văn bản, bài phát biểu hoặc chương trình phát sóng dựa trên tài liệu gốc đáng tin cậy.",
     "domains": [
       "media/journalism/ethics"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
+    "id": "failover",
+    "label": "Failover",
+    "aliases": [
+      "Chuyển đổi dự phòng",
+      "Chuyển giao dự phòng"
+    ],
+    "loanwords": [
+      "failover"
+    ],
+    "plain_descriptions": [
+      "tự động chuyển quyền xử lý sang máy chủ phụ khi máy chủ chính gặp sự cố",
+      "quy trình bàn giao lưu lượng sang nút dự phòng mà người dùng không nhận ra"
+    ],
+    "summary": "Quy trình vận hành tự động hoặc thủ công chuyển tiếp toàn bộ tác vụ xử lý và lưu lượng sang một hệ thống dự phòng đang ở trạng thái sẵn sàng ngay khi hệ thống chính gặp lỗi.",
+    "domains": [
+      "it/devops/sre-operations"
     ],
     "level": 2,
     "status": "draft"
@@ -2538,6 +2835,26 @@
     "status": "draft"
   },
   {
+    "id": "grpc",
+    "label": "gRPC",
+    "aliases": [
+      "Khung RPC của Google"
+    ],
+    "loanwords": [
+      "grpc"
+    ],
+    "plain_descriptions": [
+      "nền tảng gọi hàm từ xa tốc độ cao sử dụng định dạng nhị phân Protocol Buffers",
+      "giao thức gọi dịch vụ truyền dữ liệu nhị phân qua HTTP/2 cho hệ thống vi dịch vụ"
+    ],
+    "summary": "Khung gọi thủ tục từ xa (RPC) mã nguồn mở hiệu năng cao, sử dụng định dạng Protocol Buffers để đóng gói nhị phân và chạy trên nền tảng HTTP/2 để truyền thông đa kênh tối ưu.",
+    "domains": [
+      "it/web/api"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
     "id": "guardrail",
     "label": "Guardrail",
     "qualifier": "(AI)",
@@ -2636,6 +2953,50 @@
     "summary": "Dòng chữ nổi bật đặt ở đầu bài báo nhằm thâu tóm nội dung chính của sự kiện và thu hút sự chú ý của độc giả.",
     "domains": [
       "media/journalism/reporting"
+    ],
+    "level": 1,
+    "status": "draft"
+  },
+  {
+    "id": "high-availability",
+    "label": "High availability (HA)",
+    "aliases": [
+      "HA",
+      "Tính sẵn sàng cao"
+    ],
+    "loanwords": [
+      "high availability (ha)",
+      "ha"
+    ],
+    "plain_descriptions": [
+      "khả năng hệ thống duy trì hoạt động liên tục gần như không có thời gian chết",
+      "thiết kế máy chủ có phương án dự phòng để luôn sẵn sàng phục vụ người dùng"
+    ],
+    "summary": "Đặc tính thiết kế hệ thống đảm bảo ứng dụng vận hành liên tục và ổn định trong thời gian dài bằng cách giảm thiểu tối đa thời gian gián đoạn thông qua các thành phần dự phòng.",
+    "domains": [
+      "it/devops/sre-operations"
+    ],
+    "level": 1,
+    "status": "draft"
+  },
+  {
+    "id": "horizontal-scaling",
+    "label": "Horizontal scaling",
+    "aliases": [
+      "Scale out",
+      "Mở rộng theo chiều ngang"
+    ],
+    "loanwords": [
+      "horizontal scaling",
+      "scale out"
+    ],
+    "plain_descriptions": [
+      "thêm nhiều máy chủ mới vào hệ thống để cùng chia tải công việc",
+      "tăng năng lực xử lý bằng cách chạy nhiều bản sao ứng dụng trên nhiều máy khác nhau"
+    ],
+    "summary": "Biện pháp gia tăng năng lực xử lý của hệ thống bằng cách bổ sung thêm nhiều máy chủ hoặc thực thể tính toán độc lập vào cụm tài nguyên để phân tán tải.",
+    "domains": [
+      "it/infrastructure/cloud"
     ],
     "level": 1,
     "status": "draft"
@@ -3425,6 +3786,27 @@
     "status": "draft"
   },
   {
+    "id": "load-testing",
+    "label": "Load testing",
+    "aliases": [
+      "Kiểm thử tải",
+      "Thử tải"
+    ],
+    "loanwords": [
+      "load testing"
+    ],
+    "plain_descriptions": [
+      "kiểm tra phần mềm bằng cách giả lập lượng người dùng truy cập lớn để xem máy chủ chịu được không",
+      "tạo ra hàng loạt yêu cầu ảo để đo tốc độ phản hồi và giới hạn chịu đựng của hệ thống"
+    ],
+    "summary": "Phương pháp kiểm thử phi chức năng bằng cách đặt hệ thống dưới một lượng tải người dùng đồng thời giả lập để đo lường thông lượng, độ trễ và độ ổn định vận hành.",
+    "domains": [
+      "it/software-engineering/testing"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
     "id": "log",
     "label": "Log",
     "qualifier": "(Phần mềm)",
@@ -3859,6 +4241,28 @@
     "summary": "Quá trình tính toán lặp đi lặp lại nhằm ước lượng sai số và điều chỉnh trọng số mô hình dựa trên dữ liệu để thu nhỏ hàm mất mát.",
     "domains": [
       "it/ai-ml/foundations"
+    ],
+    "level": 1,
+    "status": "draft"
+  },
+  {
+    "id": "monolith",
+    "label": "Monolithic architecture",
+    "aliases": [
+      "Monolith",
+      "Kiến trúc nguyên khối"
+    ],
+    "loanwords": [
+      "monolithic architecture",
+      "monolith"
+    ],
+    "plain_descriptions": [
+      "ứng dụng toàn bộ chạy trong một khối mã nguồn duy nhất",
+      "phần mềm gom mọi tính năng vào một tiến trình và cơ sở dữ liệu chung"
+    ],
+    "summary": "Mô hình kiến trúc trong đó toàn bộ tính năng nghiệp vụ, giao diện và logic truy cập dữ liệu được đóng gói và vận hành dưới dạng một hệ thống duy nhất.",
+    "domains": [
+      "it/software-engineering/architecture"
     ],
     "level": 1,
     "status": "draft"
@@ -5120,6 +5524,26 @@
     "status": "draft"
   },
   {
+    "id": "reverse-proxy",
+    "label": "Reverse proxy",
+    "aliases": [
+      "Máy chủ ủy nhiệm ngược"
+    ],
+    "loanwords": [
+      "reverse proxy"
+    ],
+    "plain_descriptions": [
+      "máy chủ đứng trước che chắn và chia tải cho các máy chủ chứa nội dung thực tế",
+      "trạm trung gian tiếp nhận yêu cầu từ internet rồi chuyển tiếp tới mạng nội bộ"
+    ],
+    "summary": "Máy chủ trung gian đứng trước cụm máy chủ nội bộ nhằm tiếp nhận yêu cầu từ client bên ngoài, thực hiện định tuyến, giải mã TLS và cân bằng lưu lượng.",
+    "domains": [
+      "it/infrastructure/networking"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
     "id": "rice-scoring",
     "label": "RICE scoring",
     "aliases": [
@@ -5186,6 +5610,50 @@
     "status": "draft"
   },
   {
+    "id": "rpo",
+    "label": "Recovery Point Objective (RPO)",
+    "aliases": [
+      "RPO",
+      "Điểm phục hồi mục tiêu"
+    ],
+    "loanwords": [
+      "recovery point objective (rpo)",
+      "rpo"
+    ],
+    "plain_descriptions": [
+      "lượng dữ liệu tối đa tính theo thời gian mà doanh nghiệp chấp nhận bị mất khi có sự cố",
+      "khoảng lùi thời gian của bản sao lưu gần nhất cần khôi phục khi cơ sở dữ liệu hỏng"
+    ],
+    "summary": "Khoảng thời gian tối đa mà dữ liệu giao dịch có thể bị mất mát tính từ thời điểm xảy ra sự cố lùi về trước mà doanh nghiệp vẫn có thể chấp nhận được.",
+    "domains": [
+      "it/devops/sre-operations"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
+    "id": "rto",
+    "label": "Recovery Time Objective (RTO)",
+    "aliases": [
+      "RTO",
+      "Thời gian phục hồi mục tiêu"
+    ],
+    "loanwords": [
+      "recovery time objective (rto)",
+      "rto"
+    ],
+    "plain_descriptions": [
+      "khoảng thời gian tối đa doanh nghiệp chấp nhận để hệ thống sập trước khi bật lại được",
+      "hạn mức thời gian phải đưa dịch vụ trở lại trạng thái phục vụ khách hàng sau thảm họa"
+    ],
+    "summary": "Khoảng thời gian gián đoạn tối đa mà một hệ thống hoặc quy trình nghiệp vụ được phép ngừng hoạt động sau sự cố trước khi gây ra thiệt hại không thể chấp nhận cho doanh nghiệp.",
+    "domains": [
+      "it/devops/sre-operations"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
     "id": "rtos",
     "label": "Hệ điều hành thời gian thực",
     "aliases": [
@@ -5203,6 +5671,27 @@
       "iot/devices-sensors"
     ],
     "level": 2,
+    "status": "draft"
+  },
+  {
+    "id": "saga-pattern",
+    "label": "Saga pattern",
+    "aliases": [
+      "Mẫu Saga",
+      "Giao dịch phân tán Saga"
+    ],
+    "loanwords": [
+      "saga pattern"
+    ],
+    "plain_descriptions": [
+      "xử lý giao dịch qua nhiều dịch vụ bằng chuỗi các bước cục bộ nối tiếp nhau",
+      "quy trình thanh toán nhiều bước tự chạy hành động bù trừ để hoàn tác khi lỗi"
+    ],
+    "summary": "Mẫu thiết kế quản lý các giao dịch phân tán trải dài trên nhiều dịch vụ độc lập thông qua chuỗi giao dịch cục bộ kèm theo các hành động bù trừ để phục hồi trạng thái khi gặp sự cố.",
+    "domains": [
+      "it/software-engineering/architecture"
+    ],
+    "level": 3,
     "status": "draft"
   },
   {
@@ -5480,6 +5969,28 @@
     "status": "draft"
   },
   {
+    "id": "server-sent-events",
+    "label": "Server-sent events (SSE)",
+    "aliases": [
+      "SSE",
+      "Sự kiện từ máy chủ"
+    ],
+    "loanwords": [
+      "server-sent events (sse)",
+      "sse"
+    ],
+    "plain_descriptions": [
+      "máy chủ tự động đẩy các bản tin văn bản mới về trình duyệt qua một kết nối HTTP duy nhất",
+      "luồng truyền một chiều gửi sự kiện trực tiếp từ máy chủ xuống client theo thời gian thực"
+    ],
+    "summary": "Công nghệ web cho phép máy khách nhận luồng dữ liệu sự kiện cập nhật liên tục từ máy chủ theo thời gian thực qua một kết nối HTTP tiêu chuẩn được mở sẵn.",
+    "domains": [
+      "it/web/api"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
     "id": "serverless",
     "label": "Serverless",
     "aliases": [
@@ -5498,6 +6009,26 @@
       "it/infrastructure/cloud"
     ],
     "level": 2,
+    "status": "draft"
+  },
+  {
+    "id": "service-mesh",
+    "label": "Service mesh",
+    "aliases": [
+      "Lưới dịch vụ"
+    ],
+    "loanwords": [
+      "service mesh"
+    ],
+    "plain_descriptions": [
+      "lớp hạ tầng chuyên quản lý kết nối mạng giữa các dịch vụ microservice",
+      "mạng lưới proxy sidecar bảo mật và theo dõi liên lạc nội bộ giữa các dịch vụ"
+    ],
+    "summary": "Lớp hạ tầng chuyên dụng gồm các proxy sidecar đảm nhiệm điều phối, mã hóa an toàn và giám sát lưu lượng giao tiếp giữa các vi dịch vụ mà không can thiệp mã nguồn ứng dụng.",
+    "domains": [
+      "it/software-engineering/architecture"
+    ],
+    "level": 3,
     "status": "draft"
   },
   {
@@ -5562,6 +6093,28 @@
     ],
     "level": 1,
     "status": "reviewed"
+  },
+  {
+    "id": "single-point-of-failure",
+    "label": "Single point of failure (SPOF)",
+    "aliases": [
+      "SPOF",
+      "Điểm lỗi đơn lẻ"
+    ],
+    "loanwords": [
+      "single point of failure (spof)",
+      "spof"
+    ],
+    "plain_descriptions": [
+      "một điểm yếu duy nhất trong hệ thống mà nếu hỏng sẽ khiến toàn bộ dịch vụ sập theo",
+      "linh kiện hoặc máy chủ không có bản sao dự phòng dễ gây ngừng trệ toàn bộ"
+    ],
+    "summary": "Thành phần hoặc mắt xích đơn lẻ trong một hệ thống mà sự cố của nó sẽ làm toàn bộ hệ thống ngừng hoạt động hoàn toàn do thiếu cơ chế dự phòng thay thế.",
+    "domains": [
+      "it/devops/sre-operations"
+    ],
+    "level": 1,
+    "status": "draft"
   },
   {
     "id": "sla",
@@ -6554,6 +7107,28 @@
     "status": "draft"
   },
   {
+    "id": "vertical-scaling",
+    "label": "Vertical scaling",
+    "aliases": [
+      "Scale up",
+      "Mở rộng theo chiều dọc"
+    ],
+    "loanwords": [
+      "vertical scaling",
+      "scale up"
+    ],
+    "plain_descriptions": [
+      "nâng cấp phần cứng mạnh hơn như tăng CPU và RAM cho một máy chủ sẵn có",
+      "nâng dung lượng máy bằng cách chuyển sang gói máy chủ lớn hơn"
+    ],
+    "summary": "Biện pháp gia tăng năng lực xử lý của hệ thống bằng cách bổ sung thêm tài nguyên tính toán như bộ xử lý, bộ nhớ RAM hoặc dung lượng ổ đĩa vào một máy chủ duy nhất.",
+    "domains": [
+      "it/infrastructure/cloud"
+    ],
+    "level": 1,
+    "status": "draft"
+  },
+  {
     "id": "virtual-machine",
     "label": "Máy ảo",
     "aliases": [
@@ -6674,6 +7249,26 @@
       "cơ chế máy chủ tự gọi lại báo tin cho ứng dụng khi người dùng hoàn tất thanh toán"
     ],
     "summary": "Cơ chế gọi ngược HTTP tự động kích hoạt bởi hệ thống nguồn để bắn dữ liệu sự kiện thời gian thực sang máy chủ tiếp nhận.",
+    "domains": [
+      "it/web/api"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
+    "id": "websocket",
+    "label": "WebSocket",
+    "aliases": [
+      "Giao thức WebSocket"
+    ],
+    "loanwords": [
+      "websocket"
+    ],
+    "plain_descriptions": [
+      "đường truyền liên tục hai chiều cho phép máy chủ và trình duyệt trao đổi tức thì",
+      "kết nối mạng duy trì thường trực sau bước nâng cấp từ yêu cầu HTTP"
+    ],
+    "summary": "Giao thức truyền thông máy tính cung cấp kênh giao tiếp song công hai chiều toàn phần qua một kết nối TCP duy nhất, được khởi tạo thông qua cái bắt tay nâng cấp từ HTTP.",
     "domains": [
       "it/web/api"
     ],

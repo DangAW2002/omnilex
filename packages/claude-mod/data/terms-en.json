@@ -280,6 +280,38 @@
     "autolink": true
   },
   {
+    "key": "API gateway",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "api-gateway",
+        "label": "API gateway",
+        "summary": "An intermediary server pattern that acts as a single point of entry for external clients, routing requests to internal microservices while handling cross-cutting concerns.",
+        "domains": [
+          "it/web/api",
+          "it/software-engineering/architecture"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Gateway routing",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "api-gateway",
+        "label": "API gateway",
+        "summary": "An intermediary server pattern that acts as a single point of entry for external clients, routing requests to internal microservices while handling cross-cutting concerns.",
+        "domains": [
+          "it/web/api",
+          "it/software-engineering/architecture"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
     "key": "Aspect ratio",
     "match": "any-case",
     "concepts": [
@@ -534,6 +566,51 @@
         "summary": "An incoming hyperlink from an external web domain directing users and web crawlers to a target page on another website.",
         "domains": [
           "media/digital-marketing/seo"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Backpressure",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "backpressure",
+        "label": "Backpressure",
+        "summary": "A flow-control mechanism in asynchronous software pipelines where downstream consumers signal their capacity upstream to prevent producers from overwhelming them with data.",
+        "domains": [
+          "it/software-engineering/architecture"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Flow control",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "backpressure",
+        "label": "Backpressure",
+        "summary": "A flow-control mechanism in asynchronous software pipelines where downstream consumers signal their capacity upstream to prevent producers from overwhelming them with data.",
+        "domains": [
+          "it/software-engineering/architecture"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Back-pressure",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "backpressure",
+        "label": "Backpressure",
+        "summary": "A flow-control mechanism in asynchronous software pipelines where downstream consumers signal their capacity upstream to prevent producers from overwhelming them with data.",
+        "domains": [
+          "it/software-engineering/architecture"
         ]
       }
     ],
@@ -1321,6 +1398,83 @@
     "autolink": true
   },
   {
+    "key": "Circuit breaker",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "circuit-breaker",
+        "label": "Circuit breaker",
+        "qualifier": "(Software)",
+        "summary": "A design pattern that prevents an application from repeatedly attempting an operation likely to fail, tripping to fail fast and recovering automatically when healthy.",
+        "domains": [
+          "it/software-engineering/architecture"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Circuit breaker pattern",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "circuit-breaker",
+        "label": "Circuit breaker",
+        "qualifier": "(Software)",
+        "summary": "A design pattern that prevents an application from repeatedly attempting an operation likely to fail, tripping to fail fast and recovering automatically when healthy.",
+        "domains": [
+          "it/software-engineering/architecture"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Clean architecture",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "clean-architecture",
+        "label": "Clean architecture",
+        "summary": "A software architectural paradigm structured in concentric layers where dependencies point strictly inward toward domain logic, decoupling business rules from frameworks and databases.",
+        "domains": [
+          "it/software-engineering/architecture"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Onion architecture",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "clean-architecture",
+        "label": "Clean architecture",
+        "summary": "A software architectural paradigm structured in concentric layers where dependencies point strictly inward toward domain logic, decoupling business rules from frameworks and databases.",
+        "domains": [
+          "it/software-engineering/architecture"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Hexagonal architecture",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "clean-architecture",
+        "label": "Clean architecture",
+        "summary": "A software architectural paradigm structured in concentric layers where dependencies point strictly inward toward domain logic, decoupling business rules from frameworks and databases.",
+        "domains": [
+          "it/software-engineering/architecture"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
     "key": "Constrained Application Protocol (CoAP)",
     "match": "any-case",
     "concepts": [
@@ -1437,6 +1591,51 @@
         "domains": [
           "finance/personal-finance/saving",
           "finance/investing/portfolio-risk"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Consistent hashing",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "consistent-hashing",
+        "label": "Consistent hashing",
+        "summary": "A distributed hashing algorithm where resizing the bucket array requires only K/N keys to be remapped on average, mapping nodes and data keys onto a circular ring space.",
+        "domains": [
+          "it/software-engineering/architecture"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Hash ring",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "consistent-hashing",
+        "label": "Consistent hashing",
+        "summary": "A distributed hashing algorithm where resizing the bucket array requires only K/N keys to be remapped on average, mapping nodes and data keys onto a circular ring space.",
+        "domains": [
+          "it/software-engineering/architecture"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Ring hashing",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "consistent-hashing",
+        "label": "Consistent hashing",
+        "summary": "A distributed hashing algorithm where resizing the bucket array requires only K/N keys to be remapped on average, mapping nodes and data keys onto a circular ring space.",
+        "domains": [
+          "it/software-engineering/architecture"
         ]
       }
     ],
@@ -1760,6 +1959,36 @@
         "summary": "An advertising pricing model where the buyer pays a predetermined rate for every one thousand impressions their ad receives.",
         "domains": [
           "media/digital-marketing/paid-ads"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Command Query Responsibility Segregation (CQRS)",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "cqrs",
+        "label": "Command Query Responsibility Segregation (CQRS)",
+        "summary": "An architectural pattern that separates operations that mutate state from operations that read data into distinct models and pipelines.",
+        "domains": [
+          "it/software-engineering/architecture"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "CQRS",
+    "match": "exact-case",
+    "concepts": [
+      {
+        "id": "cqrs",
+        "label": "Command Query Responsibility Segregation (CQRS)",
+        "summary": "An architectural pattern that separates operations that mutate state from operations that read data into distinct models and pipelines.",
+        "domains": [
+          "it/software-engineering/architecture"
         ]
       }
     ],
@@ -2593,6 +2822,51 @@
     "autolink": true
   },
   {
+    "key": "Dependency injection",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "dependency-injection",
+        "label": "Dependency injection",
+        "summary": "A software design pattern where an object receives its dependencies from an external assembler rather than instantiating them internally, implementing inversion of control.",
+        "domains": [
+          "it/software-engineering/programming-concepts"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "DI",
+    "match": "exact-case",
+    "concepts": [
+      {
+        "id": "dependency-injection",
+        "label": "Dependency injection",
+        "summary": "A software design pattern where an object receives its dependencies from an external assembler rather than instantiating them internally, implementing inversion of control.",
+        "domains": [
+          "it/software-engineering/programming-concepts"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Inversion of control",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "dependency-injection",
+        "label": "Dependency injection",
+        "summary": "A software design pattern where an object receives its dependencies from an external assembler rather than instantiating them internally, implementing inversion of control.",
+        "domains": [
+          "it/software-engineering/programming-concepts"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
     "key": "Deprecation",
     "match": "any-case",
     "concepts": [
@@ -2696,6 +2970,66 @@
         "summary": "A virtual representation that serves as the real-time computational counterpart of a physical object, process, or system synchronized through continuous telemetry.",
         "domains": [
           "iot/industrial"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Disaster recovery (DR)",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "disaster-recovery",
+        "label": "Disaster recovery (DR)",
+        "summary": "A coordinated set of policies, tools, and technical procedures designed to recover and resume mission-critical technology infrastructure and operations after a catastrophic event.",
+        "domains": [
+          "it/devops/sre-operations"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "DR",
+    "match": "exact-case",
+    "concepts": [
+      {
+        "id": "disaster-recovery",
+        "label": "Disaster recovery (DR)",
+        "summary": "A coordinated set of policies, tools, and technical procedures designed to recover and resume mission-critical technology infrastructure and operations after a catastrophic event.",
+        "domains": [
+          "it/devops/sre-operations"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Distributed system",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "distributed-system",
+        "label": "Distributed system",
+        "summary": "A system whose hardware and software components communicate and coordinate their actions over a network, presenting themselves to end users as a unified cohesive computing facility.",
+        "domains": [
+          "it/software-engineering/architecture"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Distributed architecture",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "distributed-system",
+        "label": "Distributed system",
+        "summary": "A system whose hardware and software components communicate and coordinate their actions over a network, presenting themselves to end users as a unified cohesive computing facility.",
+        "domains": [
+          "it/software-engineering/architecture"
         ]
       }
     ],
@@ -2891,6 +3225,36 @@
         "summary": "An open commercial platform providing tooling to build, share, package, and execute application containers using host operating system virtualization.",
         "domains": [
           "it/devops/containers"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Domain-driven design (DDD)",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "domain-driven-design",
+        "label": "Domain-driven design (DDD)",
+        "summary": "A software architectural methodology centering system design and implementation around core business models, ubiquitous language, and bounded contexts.",
+        "domains": [
+          "it/software-engineering/architecture"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "DDD",
+    "match": "exact-case",
+    "concepts": [
+      {
+        "id": "domain-driven-design",
+        "label": "Domain-driven design (DDD)",
+        "summary": "A software architectural methodology centering system design and implementation around core business models, ubiquitous language, and bounded contexts.",
+        "domains": [
+          "it/software-engineering/architecture"
         ]
       }
     ],
@@ -3414,6 +3778,66 @@
     "autolink": true
   },
   {
+    "key": "Event-driven architecture",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "event-driven-architecture",
+        "label": "Event-driven architecture",
+        "summary": "A software architecture paradigm where decoupled components communicate asynchronously by generating, detecting, and reacting to significant state changes known as events.",
+        "domains": [
+          "it/software-engineering/architecture"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "EDA",
+    "match": "exact-case",
+    "concepts": [
+      {
+        "id": "event-driven-architecture",
+        "label": "Event-driven architecture",
+        "summary": "A software architecture paradigm where decoupled components communicate asynchronously by generating, detecting, and reacting to significant state changes known as events.",
+        "domains": [
+          "it/software-engineering/architecture"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Event sourcing",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "event-sourcing",
+        "label": "Event sourcing",
+        "summary": "A persistence design pattern where all state changes are stored as an append-only, ordered sequence of immutable domain events instead of overwriting current entity records.",
+        "domains": [
+          "it/software-engineering/architecture"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Event-sourced persistence",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "event-sourcing",
+        "label": "Event sourcing",
+        "summary": "A persistence design pattern where all state changes are stored as an append-only, ordered sequence of immutable domain events instead of overwriting current entity records.",
+        "domains": [
+          "it/software-engineering/architecture"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
     "key": "Exchange rate",
     "match": "any-case",
     "concepts": [
@@ -3459,6 +3883,36 @@
     "autolink": true
   },
   {
+    "key": "Exponential backoff",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "exponential-backoff",
+        "label": "Exponential backoff",
+        "summary": "An algorithm that progressively multiplies the delay interval between successive retries to prevent overwhelming struggling network services.",
+        "domains": [
+          "it/software-engineering/architecture"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Exponential retry",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "exponential-backoff",
+        "label": "Exponential backoff",
+        "summary": "An algorithm that progressively multiplies the delay interval between successive retries to prevent overwhelming struggling network services.",
+        "domains": [
+          "it/software-engineering/architecture"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
     "key": "Fact-checking",
     "match": "any-case",
     "concepts": [
@@ -3468,6 +3922,36 @@
         "summary": "The disciplined verification process of assessing factual assertions in published text, speeches, or broadcast reports against reliable primary documentation.",
         "domains": [
           "media/journalism/ethics"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Failover",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "failover",
+        "label": "Failover",
+        "summary": "An operational procedure that automatically or manually redirects processing tasks and network traffic to a redundant standby system upon failure of the primary component.",
+        "domains": [
+          "it/devops/sre-operations"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Automated failover",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "failover",
+        "label": "Failover",
+        "summary": "An operational procedure that automatically or manually redirects processing tasks and network traffic to a redundant standby system upon failure of the primary component.",
+        "domains": [
+          "it/devops/sre-operations"
         ]
       }
     ],
@@ -3824,6 +4308,36 @@
     "autolink": true
   },
   {
+    "key": "gRPC",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "grpc",
+        "label": "gRPC",
+        "summary": "A high-performance, open-source universal RPC framework that uses Protocol Buffers for structured binary serialization and HTTP/2 for efficient multiplexed transport.",
+        "domains": [
+          "it/web/api"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "gRPC Remote Procedure Call",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "grpc",
+        "label": "gRPC",
+        "summary": "A high-performance, open-source universal RPC framework that uses Protocol Buffers for structured binary serialization and HTTP/2 for efficient multiplexed transport.",
+        "domains": [
+          "it/web/api"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
     "key": "Guardrail",
     "match": "any-case",
     "concepts": [
@@ -3944,6 +4458,81 @@
         "summary": "The prominent heading positioned above a news article that encapsulates its core subject and catches the reader's attention.",
         "domains": [
           "media/journalism/reporting"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "High availability (HA)",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "high-availability",
+        "label": "High availability (HA)",
+        "summary": "A system design characteristic ensuring operational performance and accessibility over extended periods by minimizing unplanned downtime through redundancy and fault tolerance.",
+        "domains": [
+          "it/devops/sre-operations"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "HA",
+    "match": "exact-case",
+    "concepts": [
+      {
+        "id": "high-availability",
+        "label": "High availability (HA)",
+        "summary": "A system design characteristic ensuring operational performance and accessibility over extended periods by minimizing unplanned downtime through redundancy and fault tolerance.",
+        "domains": [
+          "it/devops/sre-operations"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Horizontal scaling",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "horizontal-scaling",
+        "label": "Horizontal scaling",
+        "summary": "The practice of increasing system capacity and handling greater load by adding more independent compute nodes or instances to a resource pool.",
+        "domains": [
+          "it/infrastructure/cloud"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Scale out",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "horizontal-scaling",
+        "label": "Horizontal scaling",
+        "summary": "The practice of increasing system capacity and handling greater load by adding more independent compute nodes or instances to a resource pool.",
+        "domains": [
+          "it/infrastructure/cloud"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Scaling out",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "horizontal-scaling",
+        "label": "Horizontal scaling",
+        "summary": "The practice of increasing system capacity and handling greater load by adding more independent compute nodes or instances to a resource pool.",
+        "domains": [
+          "it/infrastructure/cloud"
         ]
       }
     ],
@@ -5147,6 +5736,36 @@
     "autolink": true
   },
   {
+    "key": "Load testing",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "load-testing",
+        "label": "Load testing",
+        "summary": "A non-functional software testing technique that subjects an application or system to simulated concurrent usage to evaluate its throughput, latency, and operational stability.",
+        "domains": [
+          "it/software-engineering/testing"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Performance load testing",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "load-testing",
+        "label": "Load testing",
+        "summary": "A non-functional software testing technique that subjects an application or system to simulated concurrent usage to evaluate its throughput, latency, and operational stability.",
+        "domains": [
+          "it/software-engineering/testing"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
     "key": "Log",
     "match": "any-case",
     "concepts": [
@@ -5829,6 +6448,51 @@
       }
     ],
     "autolink": false
+  },
+  {
+    "key": "Monolithic architecture",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "monolith",
+        "label": "Monolithic architecture",
+        "summary": "An architectural model where all business capabilities, user interfaces, and database operations are packaged and deployed as a single combined system.",
+        "domains": [
+          "it/software-engineering/architecture"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Monolith",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "monolith",
+        "label": "Monolithic architecture",
+        "summary": "An architectural model where all business capabilities, user interfaces, and database operations are packaged and deployed as a single combined system.",
+        "domains": [
+          "it/software-engineering/architecture"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Monolithic system",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "monolith",
+        "label": "Monolithic architecture",
+        "summary": "An architectural model where all business capabilities, user interfaces, and database operations are packaged and deployed as a single combined system.",
+        "domains": [
+          "it/software-engineering/architecture"
+        ]
+      }
+    ],
+    "autolink": true
   },
   {
     "key": "Monorepo",
@@ -7804,6 +8468,36 @@
     "autolink": true
   },
   {
+    "key": "Reverse proxy",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "reverse-proxy",
+        "label": "Reverse proxy",
+        "summary": "A server sitting in front of web servers that intercepts incoming client requests and routes them to internal targets, providing anonymity, load distribution, and TLS termination.",
+        "domains": [
+          "it/infrastructure/networking"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Reverse proxy server",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "reverse-proxy",
+        "label": "Reverse proxy",
+        "summary": "A server sitting in front of web servers that intercepts incoming client requests and routes them to internal targets, providing anonymity, load distribution, and TLS termination.",
+        "domains": [
+          "it/infrastructure/networking"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
     "key": "RICE scoring",
     "match": "any-case",
     "concepts": [
@@ -7896,6 +8590,66 @@
     "autolink": true
   },
   {
+    "key": "Recovery Point Objective (RPO)",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "rpo",
+        "label": "Recovery Point Objective (RPO)",
+        "summary": "The maximum acceptable age of data files or transactions that must be recovered from backup storage for normal operations to resume if a computer system crashes.",
+        "domains": [
+          "it/devops/sre-operations"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "RPO",
+    "match": "exact-case",
+    "concepts": [
+      {
+        "id": "rpo",
+        "label": "Recovery Point Objective (RPO)",
+        "summary": "The maximum acceptable age of data files or transactions that must be recovered from backup storage for normal operations to resume if a computer system crashes.",
+        "domains": [
+          "it/devops/sre-operations"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Recovery Time Objective (RTO)",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "rto",
+        "label": "Recovery Time Objective (RTO)",
+        "summary": "The maximum acceptable length of time that a system, application, or service can remain offline following a disaster or disruption before intolerable business damage occurs.",
+        "domains": [
+          "it/devops/sre-operations"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "RTO",
+    "match": "exact-case",
+    "concepts": [
+      {
+        "id": "rto",
+        "label": "Recovery Time Objective (RTO)",
+        "summary": "The maximum acceptable length of time that a system, application, or service can remain offline following a disaster or disruption before intolerable business damage occurs.",
+        "domains": [
+          "it/devops/sre-operations"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
     "key": "Real-time operating system (RTOS)",
     "match": "any-case",
     "concepts": [
@@ -7920,6 +8674,36 @@
         "summary": "An operating system designed to execute processes with deterministic timing guarantees and minimal scheduling latency for mission-critical embedded devices.",
         "domains": [
           "iot/devices-sensors"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Saga pattern",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "saga-pattern",
+        "label": "Saga pattern",
+        "summary": "A design pattern that manages distributed transactions across multiple microservices using a sequence of local transactions and compensating actions to handle failures.",
+        "domains": [
+          "it/software-engineering/architecture"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Saga distributed transaction",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "saga-pattern",
+        "label": "Saga pattern",
+        "summary": "A design pattern that manages distributed transactions across multiple microservices using a sequence of local transactions and compensating actions to handle failures.",
+        "domains": [
+          "it/software-engineering/architecture"
         ]
       }
     ],
@@ -8267,6 +9051,51 @@
     "autolink": true
   },
   {
+    "key": "Server-sent events (SSE)",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "server-sent-events",
+        "label": "Server-sent events (SSE)",
+        "summary": "A web technology where a browser client receives automatic real-time event streams from a server over an open standard HTTP connection.",
+        "domains": [
+          "it/web/api"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "SSE",
+    "match": "exact-case",
+    "concepts": [
+      {
+        "id": "server-sent-events",
+        "label": "Server-sent events (SSE)",
+        "summary": "A web technology where a browser client receives automatic real-time event streams from a server over an open standard HTTP connection.",
+        "domains": [
+          "it/web/api"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "EventSource API",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "server-sent-events",
+        "label": "Server-sent events (SSE)",
+        "summary": "A web technology where a browser client receives automatic real-time event streams from a server over an open standard HTTP connection.",
+        "domains": [
+          "it/web/api"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
     "key": "Serverless",
     "match": "any-case",
     "concepts": [
@@ -8306,6 +9135,36 @@
         "summary": "A cloud computing execution model where the cloud provider dynamically manages server infrastructure and charges only for resource consumption during code execution.",
         "domains": [
           "it/infrastructure/cloud"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Service mesh",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "service-mesh",
+        "label": "Service mesh",
+        "summary": "A dedicated infrastructure layer of networked sidecar proxies that manages, secures, and observes service-to-service communications without modifying application code.",
+        "domains": [
+          "it/software-engineering/architecture"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Sidecar proxy mesh",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "service-mesh",
+        "label": "Service mesh",
+        "summary": "A dedicated infrastructure layer of networked sidecar proxies that manages, secures, and observes service-to-service communications without modifying application code.",
+        "domains": [
+          "it/software-engineering/architecture"
         ]
       }
     ],
@@ -8383,6 +9242,36 @@
         "domains": [
           "finance/personal-finance/saving",
           "finance/banking/lending"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Single point of failure (SPOF)",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "single-point-of-failure",
+        "label": "Single point of failure (SPOF)",
+        "summary": "A potential risk in system architecture where a single component failure will trigger the cessation of the entire system because no redundancy exists.",
+        "domains": [
+          "it/devops/sre-operations"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "SPOF",
+    "match": "exact-case",
+    "concepts": [
+      {
+        "id": "single-point-of-failure",
+        "label": "Single point of failure (SPOF)",
+        "summary": "A potential risk in system architecture where a single component failure will trigger the cessation of the entire system because no redundancy exists.",
+        "domains": [
+          "it/devops/sre-operations"
         ]
       }
     ],
@@ -9894,6 +10783,51 @@
     "autolink": true
   },
   {
+    "key": "Vertical scaling",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "vertical-scaling",
+        "label": "Vertical scaling",
+        "summary": "The practice of increasing system capacity by provisioning more compute resources, such as CPU cores, RAM, or storage speed, to a single server instance.",
+        "domains": [
+          "it/infrastructure/cloud"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Scale up",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "vertical-scaling",
+        "label": "Vertical scaling",
+        "summary": "The practice of increasing system capacity by provisioning more compute resources, such as CPU cores, RAM, or storage speed, to a single server instance.",
+        "domains": [
+          "it/infrastructure/cloud"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Scaling up",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "vertical-scaling",
+        "label": "Vertical scaling",
+        "summary": "The practice of increasing system capacity by provisioning more compute resources, such as CPU cores, RAM, or storage speed, to a single server instance.",
+        "domains": [
+          "it/infrastructure/cloud"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
     "key": "Virtual machine (VM)",
     "match": "any-case",
     "concepts": [
@@ -10132,6 +11066,36 @@
         "id": "webhook",
         "label": "Webhook",
         "summary": "An automated HTTP POST callback triggered by an origin system to deliver real-time event payloads to external receiver endpoints.",
+        "domains": [
+          "it/web/api"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "WebSocket",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "websocket",
+        "label": "WebSocket",
+        "summary": "A computer communications protocol providing full-duplex, bidirectional communication channels over a single persistent TCP connection initiated via an HTTP upgrade handshake.",
+        "domains": [
+          "it/web/api"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "WebSocket protocol",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "websocket",
+        "label": "WebSocket",
+        "summary": "A computer communications protocol providing full-duplex, bidirectional communication channels over a single persistent TCP connection initiated via an HTTP upgrade handshake.",
         "domains": [
           "it/web/api"
         ]

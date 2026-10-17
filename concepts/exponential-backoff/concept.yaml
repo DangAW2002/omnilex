@@ -1,12 +1,23 @@
 id: exponential-backoff
 domains:
   - it/software-engineering/architecture
-level: 1
+level: 2
 relations:
-  prerequisites: []
-  confusable: []
-  related: []
+  prerequisites:
+    - latency
+  related:
+    - circuit-breaker
+    - rate-limiting
 status: draft
 provenance:
   drafted_by: ai
-sources: []
+sources:
+  - ref: aws-docs
+    locator: https://docs.aws.amazon.com/sdkref/latest/guide/feature-retry-behavior.html
+    title: Retry behavior - AWS SDKs and Tools
+    language: en
+    accessed: '2026-10-17'
+    retrieved_by: ai
+    supports:
+      - definition
+      - summary

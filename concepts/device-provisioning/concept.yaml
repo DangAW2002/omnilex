@@ -1,0 +1,24 @@
+id: device-provisioning
+domains:
+  - iot/edge-cloud
+level: 2
+relations:
+  prerequisites: []
+  confusable: []
+  related:
+    - iot-platform
+    - ota-update
+    - firmware
+status: draft
+provenance:
+  drafted_by: ai
+sources:
+  - ref: microsoft-learn
+    locator: https://learn.microsoft.com/en-us/azure/iot-dps/about-iot-dps
+    title: "Overview of Azure IoT Hub Device Provisioning Service - Azure IoT Hub Device Provisioning Service | Microsoft Learn"
+    language: en
+    accessed: '2026-10-16'
+    retrieved_by: ai
+    supports:
+      - definition
+      - summary

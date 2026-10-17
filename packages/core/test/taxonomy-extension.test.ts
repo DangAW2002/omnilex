@@ -65,7 +65,7 @@ describe('Taxonomy Expansion (T-V5)', () => {
         en: {
           locale: 'en',
           frontmatter: {
-            label: 'MQTT',
+            label: 'Fixture IoT protocol',
             plain_descriptions: ['lightweight publish subscribe messaging protocol'],
             summary: 'A lightweight messaging protocol for sensors.',
             autolink: { label: 'always' },
@@ -76,10 +76,10 @@ describe('Taxonomy Expansion (T-V5)', () => {
         vi: {
           locale: 'vi',
           frontmatter: {
-            label: 'MQTT',
+            label: 'Fixture IoT protocol',
             plain_descriptions: ['giao thức truyền thông điệp nhẹ cho cảm biến'],
             summary: 'Giao thức truyền thông điệp nhẹ dành cho thiết bị IoT.',
-            loanwords: ['MQTT'],
+            loanwords: [],
           },
           content: 'Giải thích MQTT',
           filePath: '/concepts/mqtt-protocol/vi.md',
@@ -87,6 +87,7 @@ describe('Taxonomy Expansion (T-V5)', () => {
       },
     };
 
+    // Fixture label must not collide with real concepts (the repo has its own `mqtt`).
     repo.concepts.set('mqtt-protocol', iotConcept);
     const report = validateRepository(repo, { checkIndexDrift: false });
 

@@ -1,0 +1,25 @@
+id: opc-ua
+domains:
+  - iot/industrial
+level: 3
+relations:
+  prerequisites: []
+  confusable:
+    - modbus
+  related:
+    - modbus
+    - scada
+    - plc
+status: draft
+provenance:
+  drafted_by: ai
+sources:
+  - ref: opc-foundation
+    locator: https://opcfoundation.org/about/opc-technologies/opc-ua/
+    title: "Unified Architecture - Landingpage - OPC Foundation"
+    language: en
+    accessed: '2026-10-16'
+    retrieved_by: ai
+    supports:
+      - definition
+      - summary

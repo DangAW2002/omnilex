@@ -1,0 +1,25 @@
+id: modbus
+domains:
+  - iot/industrial
+level: 2
+relations:
+  prerequisites: []
+  confusable:
+    - opc-ua
+  related:
+    - plc
+    - scada
+    - opc-ua
+status: draft
+provenance:
+  drafted_by: ai
+sources:
+  - ref: cisco
+    locator: https://www.cisco.com/c/en/us/td/docs/switches/lan/cisco_ie9300/software/17_12/modbus-config-ie93xx.html
+    title: "CIP and MODBUS Configuration Guide, Cisco Catalyst IE9300 Rugged Series Switches"
+    language: en
+    accessed: '2026-10-16'
+    retrieved_by: ai
+    supports:
+      - definition
+      - summary

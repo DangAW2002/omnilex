@@ -25,4 +25,4 @@ Credit bureaus compute this score using standardized models like FICO or Vantage
 A statistically derived, standardized metric quantifying the probability that an obligor will experience a delinquency event or default on contractual credit obligations within a specified forecast horizon.
 
 ## Examples
-Two people apply for the same 30-year mortgage. The one with a 780 score is typically offered a lower interest rate than the one with a 630 score, and over the life of the loan that gap can add up to tens of thousands of dollars in interest.
+Two people apply for the same 30-year mortgage. The one with a 780 score is typically offered a lower interest rate than the one with a 630 score, and across 30 years of repayments that gap can add up to tens of thousands of dollars in interest.

@@ -1,0 +1,23 @@
+id: circuit-breaker
+domains:
+  - it/software-engineering/architecture
+level: 2
+relations:
+  prerequisites:
+    - distributed-system
+  related:
+    - exponential-backoff
+    - failover
+status: draft
+provenance:
+  drafted_by: ai
+sources:
+  - ref: martin-fowler
+    locator: https://martinfowler.com/bliki/CircuitBreaker.html
+    title: Circuit Breaker
+    language: en
+    accessed: '2026-10-17'
+    retrieved_by: ai
+    supports:
+      - definition
+      - summary

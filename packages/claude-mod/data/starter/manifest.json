@@ -13,8 +13,8 @@
       "role": "starter",
       "version": "0.1.0",
       "path": "packs/starter/pack.json",
-      "sha256": "cf35fb9056b347f63559404d617310f52e4b4569012566dd1c406cd6810e4436",
-      "concepts": 148
+      "sha256": "eb323dc1d4a71c4ed2712821e8477f502cc2d3aab0577e70870ada5ad3003374",
+      "concepts": 131
     }
   ],
   "search": {

@@ -1,0 +1,24 @@
+id: load-testing
+domains:
+  - it/software-engineering/testing
+level: 2
+relations:
+  prerequisites:
+    - latency
+    - throughput
+  related:
+    - horizontal-scaling
+    - autoscaling
+status: draft
+provenance:
+  drafted_by: ai
+sources:
+  - ref: microsoft-learn
+    locator: https://learn.microsoft.com/en-us/azure/app-testing/load-testing/overview-what-is-azure-load-testing
+    title: What is Azure Load Testing? | Microsoft Learn
+    language: en
+    accessed: '2026-10-17'
+    retrieved_by: ai
+    supports:
+      - definition
+      - summary

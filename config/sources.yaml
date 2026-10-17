@@ -1554,3 +1554,52 @@ tinyml-org:
   reuse: paraphrase-only
   domains: [iot/edge-cloud, it/ai-ml]
   verified_license_at: "2026-10-17"
+
+# wave3 arch
+grpc-docs:
+  title: gRPC Documentation
+  publisher: gRPC Authors / Cloud Native Computing Foundation
+  url: https://grpc.io/docs/
+  type: docs
+  tier: A
+  languages: [en]
+  license: Apache-2.0
+  reuse: paraphrase-only
+  domains: [it/web, it/software-engineering]
+  verified_license_at: "2026-10-17"
+
+nginx-docs:
+  title: NGINX Documentation
+  publisher: F5, Inc.
+  url: https://docs.nginx.com
+  type: docs
+  tier: B
+  languages: [en]
+  license: all-rights-reserved
+  reuse: paraphrase-only
+  domains: [it/infrastructure, it/web]
+  verified_license_at: "2026-10-17"
+
+cassandra-docs:
+  title: Apache Cassandra Documentation
+  publisher: Apache Software Foundation
+  url: https://cassandra.apache.org/doc/
+  type: docs
+  tier: A
+  languages: [en]
+  license: Apache-2.0
+  reuse: paraphrase-only
+  domains: [it/data, it/software-engineering]
+  verified_license_at: "2026-10-17"
+
+reactive-streams:
+  title: Reactive Streams Specification
+  publisher: Reactive Streams
+  url: https://www.reactive-streams.org/
+  type: spec
+  tier: A
+  languages: [en]
+  license: CC0-1.0
+  reuse: paraphrase-only
+  domains: [it/software-engineering]
+  verified_license_at: "2026-10-17"

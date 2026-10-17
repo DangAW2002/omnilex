@@ -1,0 +1,23 @@
+id: failover
+domains:
+  - it/devops/sre-operations
+level: 2
+relations:
+  prerequisites:
+    - high-availability
+  related:
+    - single-point-of-failure
+    - disaster-recovery
+status: draft
+provenance:
+  drafted_by: ai
+sources:
+  - ref: microsoft-learn
+    locator: https://learn.microsoft.com/en-us/azure/reliability/concept-business-continuity-high-availability-disaster-recovery
+    title: Overview of business continuity, high availability, and disaster recovery
+    language: en
+    accessed: '2026-10-17'
+    retrieved_by: ai
+    supports:
+      - definition
+      - summary

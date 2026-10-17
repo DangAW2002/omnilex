@@ -1,0 +1,23 @@
+id: backpressure
+domains:
+  - it/software-engineering/architecture
+level: 2
+relations:
+  prerequisites:
+    - throughput
+  related:
+    - rate-limiting
+    - message-queue
+status: draft
+provenance:
+  drafted_by: ai
+sources:
+  - ref: reactive-streams
+    locator: https://www.reactive-streams.org/
+    title: Reactive Streams
+    language: en
+    accessed: '2026-10-17'
+    retrieved_by: ai
+    supports:
+      - definition
+      - summary

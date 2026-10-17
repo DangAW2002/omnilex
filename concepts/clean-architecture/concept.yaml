@@ -1,0 +1,23 @@
+id: clean-architecture
+domains:
+  - it/software-engineering/architecture
+level: 2
+relations:
+  prerequisites:
+    - dependency-injection
+  related:
+    - domain-driven-design
+    - monolith
+status: draft
+provenance:
+  drafted_by: ai
+sources:
+  - ref: microsoft-learn
+    locator: https://learn.microsoft.com/en-us/dotnet/architecture/modern-web-apps-azure/common-web-application-architectures
+    title: Common web application architectures - .NET | Microsoft Learn
+    language: en
+    accessed: '2026-10-17'
+    retrieved_by: ai
+    supports:
+      - definition
+      - summary

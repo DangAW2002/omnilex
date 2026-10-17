@@ -31,4 +31,4 @@ Motorola originally designed the Serial Peripheral Interface (SPI) for fast, sho
 A synchronous, full-duplex four-wire serial communication interface using dedicated clock and data lines alongside hardware chip-select signaling to govern byte exchanges between a single controller and peripheral devices.
 
 ## Examples
-An embedded graphics engine transmits full-color frame data to a 320x240 LCD display panel over an SPI bus running at 40 MHz, updating the visual interface sixty times per second.
+An embedded graphics engine transmits full-color frame data to a 320x240 LCD display panel over an SPI bus running at 40 MHz, refreshing the 16-bit image about thirty times per second.

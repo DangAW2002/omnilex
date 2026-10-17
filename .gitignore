@@ -39,3 +39,4 @@ Thumbs.db
 
 # Fetched source texts for tb check overlap (copyrighted, never committed)
 candidates/.sources/
+candidates/.scratch/

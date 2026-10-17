@@ -1,0 +1,25 @@
+id: platform-engineering
+domains:
+  - it/devops/sre-operations
+level: 2
+relations:
+  prerequisites:
+    - devops
+    - infrastructure-as-code
+  confusable: []
+  related:
+    - sre
+    - gitops
+status: draft
+provenance:
+  drafted_by: ai
+sources:
+  - ref: cncf-platforms
+    locator: https://tag-app-delivery.cncf.io/whitepapers/platforms/
+    title: "CNCF Cloud Native Technical Advisory Group App Delivery Platforms White Paper"
+    language: en
+    accessed: '2026-10-17'
+    retrieved_by: ai
+    supports:
+      - definition
+      - summary

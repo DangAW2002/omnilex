@@ -1,0 +1,25 @@
+id: capacity-planning
+domains:
+  - it/devops/sre-operations
+level: 2
+relations:
+  prerequisites:
+    - metric-monitoring
+    - autoscaling
+  confusable: []
+  related:
+    - throughput
+    - latency
+status: draft
+provenance:
+  drafted_by: ai
+sources:
+  - ref: google-sre-book
+    locator: https://sre.google/sre-book/service-best-practices/
+    title: "Service Best Practices"
+    language: en
+    accessed: '2026-10-17'
+    retrieved_by: ai
+    supports:
+      - definition
+      - summary

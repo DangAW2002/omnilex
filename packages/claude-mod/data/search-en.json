@@ -129,6 +129,22 @@
     "status": "draft"
   },
   {
+    "id": "alerting",
+    "label": "Alerting",
+    "aliases": [],
+    "loanwords": [],
+    "plain_descriptions": [
+      "mechanism that pages or notifies engineers when system metrics cross danger thresholds",
+      "automated notification system turning telemetry data into urgent action items for on-call teams"
+    ],
+    "summary": "The automated process of evaluating metrics and logs against rules to notify human operators when unexpected conditions occur.",
+    "domains": [
+      "it/devops/observability"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
     "id": "anonymous-source",
     "label": "Anonymous source",
     "aliases": [
@@ -186,20 +202,24 @@
     "status": "draft"
   },
   {
-    "id": "api-key",
-    "label": "API key",
-    "aliases": [],
-    "loanwords": [],
+    "id": "apm",
+    "label": "Application performance monitoring (APM)",
+    "aliases": [
+      "APM"
+    ],
+    "loanwords": [
+      "application performance monitoring",
+      "apm"
+    ],
     "plain_descriptions": [
-      "a unique secret string that an application sends to identify itself when calling a web service",
-      "a digital password used by programs to track usage and control access to an API"
+      "software that watches web applications from the inside to detect slow database queries and code bottlenecks",
+      "end-to-end monitoring tool that measures user transaction speeds, error rates, and system dependencies"
     ],
-    "summary": "A unique alphanumeric string passed by an application to authenticate the calling program and track its API consumption.",
+    "summary": "The practice and tooling dedicated to observing the availability, software errors, and transaction performance of complex software applications.",
     "domains": [
-      "it/security/authentication",
-      "it/web/api"
+      "it/devops/observability"
     ],
-    "level": 1,
+    "level": 2,
     "status": "draft"
   },
   {
@@ -271,43 +291,6 @@
     "summary": "The total number of distinct, unduplicated individuals or user accounts exposed to a piece of media content or advertisement during a specified period.",
     "domains": [
       "media/digital-marketing/social-media"
-    ],
-    "level": 1,
-    "status": "draft"
-  },
-  {
-    "id": "authentication",
-    "label": "Authentication",
-    "aliases": [
-      "AuthN"
-    ],
-    "loanwords": [],
-    "plain_descriptions": [
-      "verifying that a user or service matches their stated digital identity",
-      "checking user credentials such as passwords or biometrics to prove identity"
-    ],
-    "summary": "The security process of verifying the claimed identity of a user, device, or system.",
-    "domains": [
-      "it/security/authentication"
-    ],
-    "level": 1,
-    "status": "draft"
-  },
-  {
-    "id": "authorization",
-    "label": "Authorization",
-    "qualifier": "(Security)",
-    "aliases": [
-      "AuthZ"
-    ],
-    "loanwords": [],
-    "plain_descriptions": [
-      "deciding what actions an identified user is allowed to perform",
-      "granting specific permissions to access protected resources"
-    ],
-    "summary": "The security process that determines whether an authenticated entity has permission to perform a requested operation or access a resource.",
-    "domains": [
-      "it/security/authentication"
     ],
     "level": 1,
     "status": "draft"
@@ -572,24 +555,6 @@
     "status": "draft"
   },
   {
-    "id": "brute-force-attack",
-    "label": "Brute-force attack",
-    "aliases": [
-      "exhaustive key search"
-    ],
-    "loanwords": [],
-    "plain_descriptions": [
-      "systematically guessing every possible password until the correct one works",
-      "cracking a lock by trying every combination one by one at high speed"
-    ],
-    "summary": "An attack method that systematically checks all possible passwords, keys, or hashes until the correct combination is discovered.",
-    "domains": [
-      "it/security/vulnerabilities"
-    ],
-    "level": 1,
-    "status": "draft"
-  },
-  {
     "id": "budget",
     "label": "Budget",
     "qualifier": "(Personal finance)",
@@ -606,6 +571,23 @@
       "finance/personal-finance/budget"
     ],
     "level": 1,
+    "status": "draft"
+  },
+  {
+    "id": "build-artifact",
+    "label": "Artifact",
+    "qualifier": "(Build)",
+    "aliases": [],
+    "loanwords": [],
+    "plain_descriptions": [
+      "compiled files, binaries, or packages produced by a build pipeline for deployment or storage",
+      "tangible output file generated during compilation that can be tested, shared, or installed"
+    ],
+    "summary": "A file or collection of files produced by a build process that can be archived, distributed, or deployed to target environments.",
+    "domains": [
+      "it/devops/ci-cd"
+    ],
+    "level": 2,
     "status": "draft"
   },
   {
@@ -699,6 +681,22 @@
     "status": "draft"
   },
   {
+    "id": "capacity-planning",
+    "label": "Capacity planning",
+    "aliases": [],
+    "loanwords": [],
+    "plain_descriptions": [
+      "forecasting how much computing power and storage a business will need as user traffic increases",
+      "calculating server and network requirements in advance so infrastructure never runs out of resources"
+    ],
+    "summary": "The disciplined practice of estimating future computing demands to ensure sufficient infrastructure resources exist to support service growth.",
+    "domains": [
+      "it/devops/sre-operations"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
     "id": "cash-flow-statement",
     "label": "Cash flow statement",
     "aliases": [
@@ -735,25 +733,6 @@
     "status": "draft"
   },
   {
-    "id": "certificate-authority",
-    "label": "Certificate authority (CA)",
-    "aliases": [
-      "CA",
-      "certification authority"
-    ],
-    "loanwords": [],
-    "plain_descriptions": [
-      "a trusted organization that issues digital certificates to verify website and entity identities",
-      "the digital passport agency of the internet that signs certificates"
-    ],
-    "summary": "A trusted third-party organization that validates the identity of entities and issues cryptographically signed digital certificates.",
-    "domains": [
-      "it/security/cryptography"
-    ],
-    "level": 2,
-    "status": "draft"
-  },
-  {
     "id": "chain-of-thought",
     "label": "Chain-of-thought prompting",
     "aliases": [
@@ -770,6 +749,22 @@
       "it/ai-ml/llm-agents"
     ],
     "level": 2,
+    "status": "draft"
+  },
+  {
+    "id": "chaos-engineering",
+    "label": "Chaos engineering",
+    "aliases": [],
+    "loanwords": [],
+    "plain_descriptions": [
+      "intentionally breaking parts of a live system to uncover weaknesses before outages happen",
+      "controlled experiments in production to test whether software survives unexpected hardware or network failures"
+    ],
+    "summary": "The systematic practice of injecting controlled turbulence into a software environment to assess its resilience under stress.",
+    "domains": [
+      "it/devops/sre-operations"
+    ],
+    "level": 3,
     "status": "draft"
   },
   {
@@ -903,6 +898,22 @@
     ],
     "level": 1,
     "status": "reviewed"
+  },
+  {
+    "id": "configuration-management",
+    "label": "Configuration management",
+    "aliases": [],
+    "loanwords": [],
+    "plain_descriptions": [
+      "automating the setup, software packages, and system settings across a fleet of servers",
+      "keeping track of system configs using code so environments remain consistent and drift-free"
+    ],
+    "summary": "The automated discipline and toolset used to establish, track, and maintain consistency of system settings and software across infrastructure assets.",
+    "domains": [
+      "it/devops/iac"
+    ],
+    "level": 2,
+    "status": "draft"
   },
   {
     "id": "container-image",
@@ -1312,22 +1323,20 @@
     "status": "draft"
   },
   {
-    "id": "dast",
-    "label": "Dynamic application security testing (DAST)",
-    "aliases": [
-      "DAST",
-      "dynamic vulnerability analysis"
-    ],
+    "id": "dashboard-monitoring",
+    "label": "Dashboard",
+    "qualifier": "(Monitoring)",
+    "aliases": [],
     "loanwords": [],
     "plain_descriptions": [
-      "testing a running web application from the outside by sending simulated malicious requests",
-      "black-box security scanning that probes live applications for exploitable vulnerabilities"
+      "single visual screen combining real-time gauges, graphs, and indicators about system health",
+      "centralized console displaying operational metrics so engineers can assess infrastructure status at a glance"
     ],
-    "summary": "A black-box testing methodology that assesses running applications from the outside by injecting fault payloads to detect runtime security vulnerabilities.",
+    "summary": "A visual interface that consolidates and presents real-time telemetry metrics and system statuses on a single screen for rapid operational evaluation.",
     "domains": [
-      "it/security/vulnerabilities"
+      "it/devops/observability"
     ],
-    "level": 2,
+    "level": 1,
     "status": "draft"
   },
   {
@@ -1499,24 +1508,6 @@
     "status": "draft"
   },
   {
-    "id": "ddos",
-    "label": "Distributed denial-of-service (DDoS)",
-    "aliases": [
-      "DDoS"
-    ],
-    "loanwords": [],
-    "plain_descriptions": [
-      "flooding a website with fake traffic from thousands of computers to knock it offline",
-      "overwhelming a server bandwidth so legitimate visitors cannot access the service"
-    ],
-    "summary": "A cyberattack that coordinates multiple distributed computers to flood a targeted server or network with traffic, rendering it inaccessible to legitimate users.",
-    "domains": [
-      "it/security/vulnerabilities"
-    ],
-    "level": 2,
-    "status": "draft"
-  },
-  {
     "id": "debt-to-equity-ratio",
     "label": "Debt-to-equity ratio (D/E)",
     "aliases": [
@@ -1662,21 +1653,19 @@
     "status": "draft"
   },
   {
-    "id": "digital-signature",
-    "label": "Digital signature",
-    "aliases": [
-      "cryptographic signature"
-    ],
+    "id": "devops",
+    "label": "DevOps",
+    "aliases": [],
     "loanwords": [],
     "plain_descriptions": [
-      "a mathematical stamp that proves who created a file and ensures it was not altered",
-      "an electronic seal providing proof of authorship and data integrity"
+      "working culture and practices that unite software engineers and IT operations to ship updates faster",
+      "blending coding and system administration into automated pipelines that build, test, and release software smoothly"
     ],
-    "summary": "A mathematical scheme that binds an identity to digital data using asymmetric cryptography, providing authentication, data integrity, and non-repudiation.",
+    "summary": "A cultural philosophy, set of practices, and tools that combines software development and IT operations to shorten the development lifecycle and deliver high-quality software continuously.",
     "domains": [
-      "it/security/cryptography"
+      "it/devops/ci-cd"
     ],
-    "level": 2,
+    "level": 1,
     "status": "draft"
   },
   {
@@ -1953,24 +1942,6 @@
     "status": "draft"
   },
   {
-    "id": "end-to-end-encryption",
-    "label": "End-to-end encryption (E2EE)",
-    "aliases": [
-      "E2EE"
-    ],
-    "loanwords": [],
-    "plain_descriptions": [
-      "encrypting messages so only the sender and receiver can read them, locking out servers in between",
-      "private communication where even the messaging company cannot see the plaintext"
-    ],
-    "summary": "A secure communication system where data is encrypted on the sender's device and decrypted only by the intended recipient, preventing intermediate parties from accessing the content.",
-    "domains": [
-      "it/security/cryptography"
-    ],
-    "level": 2,
-    "status": "draft"
-  },
-  {
     "id": "end-to-end-test",
     "label": "End-to-end test",
     "aliases": [
@@ -2077,6 +2048,22 @@
       "finance/corporate-finance/capital-structure"
     ],
     "level": 1,
+    "status": "draft"
+  },
+  {
+    "id": "error-budget",
+    "label": "Error budget",
+    "aliases": [],
+    "loanwords": [],
+    "plain_descriptions": [
+      "allowed amount of downtime or failed requests a service can have before engineers must freeze new releases",
+      "the mathematical cushion between 100% perfection and an agreed reliability objective"
+    ],
+    "summary": "The maximum acceptable amount of service unreliability or downtime permitted by a Service Level Objective during a given time window.",
+    "domains": [
+      "it/devops/sre-operations"
+    ],
+    "level": 2,
     "status": "draft"
   },
   {
@@ -2330,6 +2317,38 @@
     "status": "draft"
   },
   {
+    "id": "github-actions",
+    "label": "GitHub Actions",
+    "aliases": [],
+    "loanwords": [],
+    "plain_descriptions": [
+      "automation tool built into GitHub to run tests and deploy code on every push",
+      "workflow platform that executes custom pipelines inside virtual environments when repository events occur"
+    ],
+    "summary": "An automation engine built into GitHub repositories that runs build, verification, and deployment workflows triggered by repository activity.",
+    "domains": [
+      "it/devops/ci-cd"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
+    "id": "gitops",
+    "label": "GitOps",
+    "aliases": [],
+    "loanwords": [],
+    "plain_descriptions": [
+      "maintaining Git repositories as the authoritative definition of desired cloud infrastructure",
+      "automated reconciliation between declarative version control files and live cluster resources"
+    ],
+    "summary": "An operational paradigm that treats version-controlled Git repositories as the authoritative blueprint for declaring and managing infrastructure state.",
+    "domains": [
+      "it/devops/ci-cd"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
     "id": "gpu",
     "label": "Graphics Processing Unit (GPU)",
     "aliases": [
@@ -2360,6 +2379,22 @@
     "summary": "An iterative optimization algorithm that updates model parameters in the opposite direction of the loss function gradient to minimize prediction error.",
     "domains": [
       "it/ai-ml/foundations"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
+    "id": "grafana",
+    "label": "Grafana",
+    "aliases": [],
+    "loanwords": [],
+    "plain_descriptions": [
+      "web interface with charts and graphs showing how busy and healthy your servers are in real time",
+      "visualization platform that turns database metrics and logs into interactive dashboards"
+    ],
+    "summary": "An open-source analytics and interactive visualization web application that displays metrics, logs, and traces through unified dashboards.",
+    "domains": [
+      "it/devops/observability"
     ],
     "level": 2,
     "status": "draft"
@@ -2486,6 +2521,23 @@
     "status": "draft"
   },
   {
+    "id": "health-check",
+    "label": "Health check",
+    "qualifier": "(Software)",
+    "aliases": [],
+    "loanwords": [],
+    "plain_descriptions": [
+      "periodic ping or request sent to an app to verify whether it is still running properly",
+      "dedicated endpoint like /health that returns status 200 when internal dependencies are functioning"
+    ],
+    "summary": "A diagnostic request executed automatically against a software component to determine its operational status and readiness to serve traffic.",
+    "domains": [
+      "it/devops/sre-operations"
+    ],
+    "level": 1,
+    "status": "draft"
+  },
+  {
     "id": "hotfix",
     "label": "Hotfix",
     "aliases": [],
@@ -2583,6 +2635,22 @@
     "summary": "A computer vision task in which an algorithm analyzes an entire image and assigns it one or more discrete categorical labels from a predefined taxonomy.",
     "domains": [
       "it/ai-ml/computer-vision"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
+    "id": "immutable-infrastructure",
+    "label": "Immutable infrastructure",
+    "aliases": [],
+    "loanwords": [],
+    "plain_descriptions": [
+      "infrastructure practice where servers are never modified in place; instead, they are completely replaced with fresh images",
+      "treating servers like disposable components that are rebuilt from scratch for every deployment"
+    ],
+    "summary": "An infrastructure paradigm where servers, containers, or virtual machines are never modified in place after deployment, but replaced entirely with new versions.",
+    "domains": [
+      "it/devops/iac"
     ],
     "level": 2,
     "status": "draft"
@@ -2790,24 +2858,6 @@
     "status": "reviewed"
   },
   {
-    "id": "intrusion-detection-system",
-    "label": "Intrusion detection system (IDS)",
-    "aliases": [
-      "IDS"
-    ],
-    "loanwords": [],
-    "plain_descriptions": [
-      "a network security alarm system that listens for suspicious activity and alerts defenders",
-      "monitoring software that detects unauthorized access attempts across systems"
-    ],
-    "summary": "A hardware appliance or software application that monitors network or system activities for malicious behaviors or policy violations and produces alert reports.",
-    "domains": [
-      "it/security/vulnerabilities"
-    ],
-    "level": 2,
-    "status": "draft"
-  },
-  {
     "id": "inverted-pyramid",
     "label": "Inverted pyramid",
     "aliases": [],
@@ -2894,6 +2944,22 @@
     "summary": "A prompt designed to make a model ignore its safety guidelines and produce content it is meant to refuse.",
     "domains": [
       "it/ai-ml/ai-safety-governance"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
+    "id": "jenkins",
+    "label": "Jenkins",
+    "aliases": [],
+    "loanwords": [],
+    "plain_descriptions": [
+      "self-hosted automation server widely used for orchestrating build, test, and deployment jobs",
+      "open-source continuous integration tool configured with pipeline scripts and community plugins"
+    ],
+    "summary": "An open-source automation server that provides hundreds of plugins to support building, deploying, and automating software projects.",
+    "domains": [
+      "it/devops/ci-cd"
     ],
     "level": 2,
     "status": "draft"
@@ -3142,6 +3208,22 @@
     "status": "draft"
   },
   {
+    "id": "liveness-probe",
+    "label": "Liveness probe",
+    "aliases": [],
+    "loanwords": [],
+    "plain_descriptions": [
+      "container check that triggers an automatic restart whenever an application freezes or enters an unrecoverable deadlock",
+      "watchdog mechanism in orchestrators like Kubernetes that detects crashed processes and reboots the container"
+    ],
+    "summary": "A diagnostic probe configured in container orchestrators to detect when a containerized process is deadlocked or broken, triggering an automatic restart.",
+    "domains": [
+      "it/devops/containers"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
     "id": "llm",
     "label": "Large Language Model",
     "aliases": [
@@ -3286,24 +3368,6 @@
     "summary": "A branch of artificial intelligence where computer systems detect underlying patterns in data to improve task performance without static rule engines.",
     "domains": [
       "it/ai-ml/foundations"
-    ],
-    "level": 1,
-    "status": "draft"
-  },
-  {
-    "id": "malware",
-    "label": "Malware",
-    "aliases": [
-      "malicious software"
-    ],
-    "loanwords": [],
-    "plain_descriptions": [
-      "harmful software intentionally created to damage computers or steal private data",
-      "umbrella term for computer viruses, spyware, trojans, and worms"
-    ],
-    "summary": "An overarching category of software intentionally developed to disrupt, damage, gain unauthorized access to, or exfiltrate data from a computer system.",
-    "domains": [
-      "it/security/vulnerabilities"
     ],
     "level": 1,
     "status": "draft"
@@ -3676,6 +3740,27 @@
     "status": "draft"
   },
   {
+    "id": "mttr",
+    "label": "Mean time to recovery (MTTR)",
+    "aliases": [
+      "MTTR"
+    ],
+    "loanwords": [
+      "mean time to recovery",
+      "mttr"
+    ],
+    "plain_descriptions": [
+      "average amount of time it takes a team to fix a broken system and restore service",
+      "key operations metric showing how quickly production outages are detected and repaired"
+    ],
+    "summary": "A core operations metric representing the average time required to troubleshoot, fix, and restore a failed system to full functionality.",
+    "domains": [
+      "it/devops/sre-operations"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
     "id": "mutual-fund",
     "label": "Mutual fund",
     "aliases": [
@@ -3938,21 +4023,19 @@
     "status": "draft"
   },
   {
-    "id": "openid-connect",
-    "label": "OpenID Connect (OIDC)",
-    "aliases": [
-      "OIDC"
-    ],
+    "id": "opentelemetry",
+    "label": "OpenTelemetry",
+    "aliases": [],
     "loanwords": [],
     "plain_descriptions": [
-      "an identity layer on top of OAuth that lets apps verify user identity",
-      "signing into websites using an existing Google or Apple account"
+      "standardized open toolkit that collects traces, metrics, and logs across cloud services without vendor lock-in",
+      "universal framework providing code libraries and agents to export telemetry data to any monitoring backend"
     ],
-    "summary": "An identity protocol built on OAuth 2.0 that allows clients to verify user identity and obtain profile information via JSON Web Tokens.",
+    "summary": "An open-source observability framework under the CNCF providing vendor-neutral APIs, SDKs, and tooling to generate and export telemetry data.",
     "domains": [
-      "it/security/authentication"
+      "it/devops/observability"
     ],
-    "level": 2,
+    "level": 3,
     "status": "draft"
   },
   {
@@ -4047,24 +4130,6 @@
     "status": "draft"
   },
   {
-    "id": "owasp-top-10",
-    "label": "OWASP Top 10",
-    "aliases": [
-      "Open Worldwide Application Security Project Top 10"
-    ],
-    "loanwords": [],
-    "plain_descriptions": [
-      "a regularly updated list of the ten most critical security risks facing web applications",
-      "the global industry standard checklist for common web software vulnerabilities"
-    ],
-    "summary": "A regularly updated awareness report curated by the OWASP community outlining the ten most critical security risks facing web applications.",
-    "domains": [
-      "it/security/vulnerabilities"
-    ],
-    "level": 1,
-    "status": "draft"
-  },
-  {
     "id": "pagination",
     "label": "Pagination",
     "aliases": [
@@ -4079,25 +4144,6 @@
     "summary": "A design technique that breaks large data sets into discrete subsets or pages to manage bandwidth and system performance.",
     "domains": [
       "it/web/api"
-    ],
-    "level": 2,
-    "status": "draft"
-  },
-  {
-    "id": "password-salting",
-    "label": "Salt",
-    "qualifier": "(Cryptography)",
-    "aliases": [
-      "cryptographic salt"
-    ],
-    "loanwords": [],
-    "plain_descriptions": [
-      "random data added to a password before hashing to protect against lookup attacks",
-      "an extra secret ingredient mixed into stored passwords so identical passwords produce different hashes"
-    ],
-    "summary": "A non-secret random string appended to a plaintext password before hashing to ensure unique hash values and thwart precomputed table attacks.",
-    "domains": [
-      "it/security/cryptography"
     ],
     "level": 2,
     "status": "draft"
@@ -4143,25 +4189,6 @@
     "status": "draft"
   },
   {
-    "id": "penetration-testing",
-    "label": "Penetration testing",
-    "aliases": [
-      "pentest",
-      "ethical hacking"
-    ],
-    "loanwords": [],
-    "plain_descriptions": [
-      "hiring ethical hackers to break into your system to find weaknesses before criminals do",
-      "authorized simulated cyberattacks to discover and fix security vulnerabilities"
-    ],
-    "summary": "An authorized simulated cyberattack against an organization's computer systems, networks, or applications to evaluate security defenses.",
-    "domains": [
-      "it/security/vulnerabilities"
-    ],
-    "level": 2,
-    "status": "draft"
-  },
-  {
     "id": "personal-income-tax",
     "label": "Personal income tax",
     "aliases": [
@@ -4181,21 +4208,19 @@
     "status": "draft"
   },
   {
-    "id": "phishing",
-    "label": "Phishing",
-    "aliases": [
-      "credential phishing"
-    ],
+    "id": "platform-engineering",
+    "label": "Platform engineering",
+    "aliases": [],
     "loanwords": [],
     "plain_descriptions": [
-      "deceptive messages that trick people into revealing passwords or credit card numbers",
-      "fraudulent emails pretending to come from trustworthy organizations to steal credentials"
+      "building internal self-service developer portals and tools so software engineers can deploy code without filing tickets",
+      "designing an internal cloud platform as a product to reduce cognitive burden on application development teams"
     ],
-    "summary": "A social engineering attack where malicious actors impersonate legitimate organizations to trick victims into disclosing sensitive information or downloading malware.",
+    "summary": "The practice of designing and building internal developer platforms that provide self-service capabilities and standardized workflows to accelerate software delivery.",
     "domains": [
-      "it/security/vulnerabilities"
+      "it/devops/sre-operations"
     ],
-    "level": 1,
+    "level": 2,
     "status": "draft"
   },
   {
@@ -4534,6 +4559,23 @@
     "status": "draft"
   },
   {
+    "id": "prometheus",
+    "label": "Prometheus",
+    "qualifier": "(Monitoring)",
+    "aliases": [],
+    "loanwords": [],
+    "plain_descriptions": [
+      "open-source tool that periodically scrapes and stores performance numbers from servers as time-stamped data",
+      "monitoring engine that collects metrics using a pull model and lets engineers query them with PromQL"
+    ],
+    "summary": "A telemetry storage platform that collects numeric time-series observations from network endpoints and enables real-time diagnostic querying.",
+    "domains": [
+      "it/devops/observability"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
     "id": "prompt",
     "label": "Prompt",
     "aliases": [],
@@ -4577,24 +4619,6 @@
     "summary": "An attack in which crafted input, typed by a user or hidden in content the model reads, overrides the application’s intended instructions.",
     "domains": [
       "it/ai-ml/ai-safety-governance"
-    ],
-    "level": 2,
-    "status": "draft"
-  },
-  {
-    "id": "public-key-cryptography",
-    "label": "Public-key cryptography",
-    "aliases": [
-      "asymmetric cryptography"
-    ],
-    "loanwords": [],
-    "plain_descriptions": [
-      "encryption using a pair of keys where anyone can encrypt but only the private key holder can decrypt",
-      "a two-key security system enabling confidential messaging and digital signatures across open networks"
-    ],
-    "summary": "A cryptographic system that uses mathematically linked key pairs—a public key for encryption or verification and a private key for decryption or signing.",
-    "domains": [
-      "it/security/cryptography"
     ],
     "level": 2,
     "status": "draft"
@@ -4689,24 +4713,6 @@
     "status": "draft"
   },
   {
-    "id": "ransomware",
-    "label": "Ransomware",
-    "aliases": [
-      "extortion malware"
-    ],
-    "loanwords": [],
-    "plain_descriptions": [
-      "malicious software that locks files and demands ransom money to decrypt them",
-      "cyber extortion software that encrypts business databases and holds operations hostage"
-    ],
-    "summary": "A form of malicious software that encrypts a victim's files or locks system access, demanding payment in exchange for decryption keys.",
-    "domains": [
-      "it/security/vulnerabilities"
-    ],
-    "level": 1,
-    "status": "draft"
-  },
-  {
     "id": "rate-limiting",
     "label": "Rate limiting",
     "aliases": [
@@ -4727,19 +4733,17 @@
     "status": "draft"
   },
   {
-    "id": "rbac",
-    "label": "Role-based access control (RBAC)",
-    "aliases": [
-      "RBAC"
-    ],
+    "id": "readiness-probe",
+    "label": "Readiness probe",
+    "aliases": [],
     "loanwords": [],
     "plain_descriptions": [
-      "assigning system permissions to job roles instead of individual people",
-      "managing user access through predefined groups of privileges"
+      "container check that tells the load balancer whether an app has finished booting and is ready for customer requests",
+      "gateway guard that temporarily pauses incoming traffic to a container while it warms up its cache or migrations"
     ],
-    "summary": "An access control model where permissions are grouped into roles and assigned to users based on their organizational responsibilities.",
+    "summary": "A diagnostic probe that determines whether a containerized application is prepared to accept network traffic, removing it from load balancer targets until ready.",
     "domains": [
-      "it/security/authentication"
+      "it/devops/containers"
     ],
     "level": 2,
     "status": "draft"
@@ -4964,6 +4968,22 @@
     "status": "draft"
   },
   {
+    "id": "runbook",
+    "label": "Runbook",
+    "aliases": [],
+    "loanwords": [],
+    "plain_descriptions": [
+      "step-by-step checklist telling engineers how to troubleshoot and resolve a specific system alert",
+      "operational guide documenting routine maintenance tasks and emergency recovery procedures"
+    ],
+    "summary": "A documented set of routine procedures and emergency instructions used by operators to handle system maintenance and incident responses.",
+    "domains": [
+      "it/devops/sre-operations"
+    ],
+    "level": 1,
+    "status": "draft"
+  },
+  {
     "id": "sales-lead",
     "label": "Lead",
     "qualifier": "(Marketing)",
@@ -4981,43 +5001,6 @@
       "media/digital-marketing/metrics-analytics"
     ],
     "level": 1,
-    "status": "draft"
-  },
-  {
-    "id": "saml",
-    "label": "SAML",
-    "aliases": [
-      "Security Assertion Markup Language"
-    ],
-    "loanwords": [],
-    "plain_descriptions": [
-      "an XML-based standard for passing login data between identity systems and websites",
-      "enterprise single sign-on protocol using signed security assertions"
-    ],
-    "summary": "An open XML-based standard for exchanging authentication and authorization data between an identity provider and a service provider.",
-    "domains": [
-      "it/security/authentication"
-    ],
-    "level": 2,
-    "status": "draft"
-  },
-  {
-    "id": "sast",
-    "label": "Static application security testing (SAST)",
-    "aliases": [
-      "SAST",
-      "static code analysis"
-    ],
-    "loanwords": [],
-    "plain_descriptions": [
-      "scanning software source code for security flaws without actually running the program",
-      "automated code review that finds vulnerabilities inside application repositories"
-    ],
-    "summary": "A white-box testing methodology that analyzes source code, byte code, or binaries at rest to detect security vulnerabilities before execution.",
-    "domains": [
-      "it/security/vulnerabilities"
-    ],
-    "level": 2,
     "status": "draft"
   },
   {
@@ -5149,24 +5132,6 @@
       "it/security/authentication"
     ],
     "level": 2,
-    "status": "draft"
-  },
-  {
-    "id": "security-patch",
-    "label": "Security patch",
-    "aliases": [
-      "security update"
-    ],
-    "loanwords": [],
-    "plain_descriptions": [
-      "a software update designed specifically to fix security holes and prevent hacks",
-      "a quick code fix released by vendors to protect systems against known vulnerabilities"
-    ],
-    "summary": "A software update specifically engineered to remediate identified security vulnerabilities and prevent malicious exploitation.",
-    "domains": [
-      "it/security/vulnerabilities"
-    ],
-    "level": 1,
     "status": "draft"
   },
   {
@@ -5312,24 +5277,6 @@
     "status": "draft"
   },
   {
-    "id": "siem",
-    "label": "SIEM",
-    "aliases": [
-      "Security Information and Event Management"
-    ],
-    "loanwords": [],
-    "plain_descriptions": [
-      "a central security hub that collects logs from all servers and spots attack patterns",
-      "enterprise software combining security event monitoring with automated log analysis"
-    ],
-    "summary": "A security software architecture that aggregates, analyzes, and correlates event log data across an enterprise to detect incidents in real time.",
-    "domains": [
-      "it/security/vulnerabilities"
-    ],
-    "level": 2,
-    "status": "draft"
-  },
-  {
     "id": "simple-interest",
     "label": "Simple Interest",
     "aliases": [],
@@ -5414,24 +5361,6 @@
       "iot/devices-sensors"
     ],
     "level": 1,
-    "status": "draft"
-  },
-  {
-    "id": "soc-security",
-    "label": "Security Operations Center (SOC)",
-    "aliases": [
-      "SOC"
-    ],
-    "loanwords": [],
-    "plain_descriptions": [
-      "a dedicated security command room where analysts monitor networks 24/7 to stop attacks",
-      "an organization's central cybersecurity team managing threat detection and incident response"
-    ],
-    "summary": "A centralized command team and facility responsible for continuously monitoring, detecting, analyzing, and responding to cybersecurity incidents.",
-    "domains": [
-      "it/security/vulnerabilities"
-    ],
-    "level": 2,
     "status": "draft"
   },
   {
@@ -5643,19 +5572,22 @@
     "status": "draft"
   },
   {
-    "id": "sso",
-    "label": "Single sign-on (SSO)",
+    "id": "sre",
+    "label": "Site reliability engineering (SRE)",
     "aliases": [
-      "SSO"
+      "SRE"
     ],
-    "loanwords": [],
+    "loanwords": [
+      "site reliability engineering",
+      "sre"
+    ],
     "plain_descriptions": [
-      "logging into multiple applications using just one set of credentials",
-      "signing in once to unlock access across all work tools"
+      "applying software engineering practices to solve IT operations, scaling, and system reliability challenges",
+      "discipline where developers write code and automate tasks to keep massive cloud services online and resilient"
     ],
-    "summary": "An authentication scheme that allows a user to log in once and gain access to multiple connected applications without re-entering credentials.",
+    "summary": "An engineering discipline that applies software development practices to automate operational tasks and maintain service reliability at scale.",
     "domains": [
-      "it/security/authentication"
+      "it/devops/sre-operations"
     ],
     "level": 2,
     "status": "draft"
@@ -5830,25 +5762,6 @@
     "status": "draft"
   },
   {
-    "id": "supply-chain-attack",
-    "label": "Supply chain attack",
-    "qualifier": "(Software)",
-    "aliases": [
-      "third-party software compromise"
-    ],
-    "loanwords": [],
-    "plain_descriptions": [
-      "compromising an upstream software vendor or code library to infect downstream customers",
-      "sneaking malicious code into a trusted software update or package repository"
-    ],
-    "summary": "A cyberattack that targets less secure third-party vendors, libraries, or build pipelines to infiltrate the target organization's systems.",
-    "domains": [
-      "it/security/vulnerabilities"
-    ],
-    "level": 2,
-    "status": "draft"
-  },
-  {
     "id": "system-prompt",
     "label": "System prompt",
     "aliases": [],
@@ -5937,24 +5850,6 @@
     "status": "draft"
   },
   {
-    "id": "threat-modeling",
-    "label": "Threat modeling",
-    "aliases": [
-      "security threat modeling"
-    ],
-    "loanwords": [],
-    "plain_descriptions": [
-      "analyzing a software design to brainstorm how an attacker might exploit it",
-      "a structured exercise to identify security risks and design mitigations early"
-    ],
-    "summary": "A structured engineering practice for identifying, categorizing, and prioritizing potential security threats to an application or system architecture.",
-    "domains": [
-      "it/security/vulnerabilities"
-    ],
-    "level": 2,
-    "status": "draft"
-  },
-  {
     "id": "throughput",
     "label": "Throughput",
     "aliases": [
@@ -5994,21 +5889,18 @@
     "status": "draft"
   },
   {
-    "id": "tls-certificate",
-    "label": "Certificate",
-    "qualifier": "(TLS)",
-    "aliases": [
-      "SSL certificate",
-      "X.509 certificate"
-    ],
+    "id": "toil",
+    "label": "Toil",
+    "qualifier": "(SRE)",
+    "aliases": [],
     "loanwords": [],
     "plain_descriptions": [
-      "a digital identity document that proves a website owns its public key and domain name",
-      "the security credential that enables the padlock icon and HTTPS encryption in browsers"
+      "repetitive, manual operational tasks that grow directly with service size and produce no lasting value",
+      "tedious administrative work like resetting servers or approving tickets that should be automated away by code"
     ],
-    "summary": "A digitally signed data file conforming to X.509 standards that binds a public key to an entity's domain name or identity.",
+    "summary": "Administrative operational effort within SRE comprising routine, automatable tasks that lack permanent architectural value and expand as fleet size increases.",
     "domains": [
-      "it/security/cryptography"
+      "it/devops/sre-operations"
     ],
     "level": 2,
     "status": "draft"
@@ -6120,6 +6012,22 @@
     "summary": "A neural network architecture relying on self-attention mechanisms to process sequence elements in parallel without recurrent connections.",
     "domains": [
       "it/ai-ml/foundations"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
+    "id": "trunk-based-development",
+    "label": "Trunk-based development",
+    "aliases": [],
+    "loanwords": [],
+    "plain_descriptions": [
+      "branching practice where all developers merge small changes frequently into a single central branch",
+      "workflow that eliminates long-lived feature branches by integrating code directly to main every day"
+    ],
+    "summary": "A version control management practice where developers merge frequent, small code updates into a core branch called the trunk.",
+    "domains": [
+      "it/software-engineering/version-control"
     ],
     "level": 2,
     "status": "draft"
@@ -6386,24 +6294,6 @@
     "status": "draft"
   },
   {
-    "id": "waf",
-    "label": "Web application firewall (WAF)",
-    "aliases": [
-      "WAF"
-    ],
-    "loanwords": [],
-    "plain_descriptions": [
-      "a protective shield that filters out malicious web traffic before it reaches your web server",
-      "an application-level firewall that blocks SQL injection, cross-site scripting, and bot spam"
-    ],
-    "summary": "A specialized security appliance or cloud filter that monitors, inspects, and blocks malicious HTTP and HTTPS traffic targeting web applications.",
-    "domains": [
-      "it/security/vulnerabilities"
-    ],
-    "level": 2,
-    "status": "draft"
-  },
-  {
     "id": "web-session",
     "label": "Session",
     "qualifier": "(Web)",
@@ -6472,25 +6362,6 @@
       "sneaking rogue code into public comment sections so readers' login cookies get stolen"
     ],
     "summary": "A web application flaw permitting attackers to embed rogue executable scripts into viewed pages, running unauthorized actions inside visitor browsers.",
-    "domains": [
-      "it/security/vulnerabilities"
-    ],
-    "level": 2,
-    "status": "draft"
-  },
-  {
-    "id": "zero-day",
-    "label": "Zero-day vulnerability",
-    "aliases": [
-      "zero-day",
-      "0-day"
-    ],
-    "loanwords": [],
-    "plain_descriptions": [
-      "a newly discovered software bug that has no official fix or patch yet",
-      "an undisclosed security flaw that attackers exploit before developers know it exists"
-    ],
-    "summary": "A previously undisclosed software vulnerability that is actively exploitable or known to attackers before the vendor has developed and released a security patch.",
     "domains": [
       "it/security/vulnerabilities"
     ],

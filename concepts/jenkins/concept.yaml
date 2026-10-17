@@ -1,0 +1,26 @@
+id: jenkins
+domains:
+  - it/devops/ci-cd
+level: 2
+relations:
+  prerequisites:
+    - ci-cd
+    - ci-pipeline
+  confusable:
+    - github-actions
+  related:
+    - build-artifact
+    - devops
+status: draft
+provenance:
+  drafted_by: ai
+sources:
+  - ref: jenkins-docs
+    locator: https://www.jenkins.io/doc/
+    title: "Jenkins User Documentation"
+    language: en
+    accessed: '2026-10-17'
+    retrieved_by: ai
+    supports:
+      - definition
+      - summary

@@ -171,6 +171,21 @@
     "autolink": true
   },
   {
+    "key": "Alerting",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "alerting",
+        "label": "Alerting",
+        "summary": "The automated process of evaluating metrics and logs against rules to notify human operators when unexpected conditions occur.",
+        "domains": [
+          "it/devops/observability"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
     "key": "Anonymous source",
     "match": "any-case",
     "concepts": [
@@ -280,16 +295,30 @@
     "autolink": true
   },
   {
-    "key": "API key",
+    "key": "Application performance monitoring (APM)",
     "match": "any-case",
     "concepts": [
       {
-        "id": "api-key",
-        "label": "API key",
-        "summary": "A unique alphanumeric string passed by an application to authenticate the calling program and track its API consumption.",
+        "id": "apm",
+        "label": "Application performance monitoring (APM)",
+        "summary": "The practice and tooling dedicated to observing the availability, software errors, and transaction performance of complex software applications.",
         "domains": [
-          "it/security/authentication",
-          "it/web/api"
+          "it/devops/observability"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "APM",
+    "match": "exact-case",
+    "concepts": [
+      {
+        "id": "apm",
+        "label": "Application performance monitoring (APM)",
+        "summary": "The practice and tooling dedicated to observing the availability, software errors, and transaction performance of complex software applications.",
+        "domains": [
+          "it/devops/observability"
         ]
       }
     ],
@@ -415,68 +444,6 @@
         "summary": "The total number of distinct, unduplicated individuals or user accounts exposed to a piece of media content or advertisement during a specified period.",
         "domains": [
           "media/digital-marketing/social-media"
-        ]
-      }
-    ],
-    "autolink": true
-  },
-  {
-    "key": "Authentication",
-    "match": "any-case",
-    "concepts": [
-      {
-        "id": "authentication",
-        "label": "Authentication",
-        "summary": "The security process of verifying the claimed identity of a user, device, or system.",
-        "domains": [
-          "it/security/authentication"
-        ]
-      }
-    ],
-    "autolink": true
-  },
-  {
-    "key": "AuthN",
-    "match": "any-case",
-    "concepts": [
-      {
-        "id": "authentication",
-        "label": "Authentication",
-        "summary": "The security process of verifying the claimed identity of a user, device, or system.",
-        "domains": [
-          "it/security/authentication"
-        ]
-      }
-    ],
-    "autolink": true
-  },
-  {
-    "key": "Authorization",
-    "match": "any-case",
-    "concepts": [
-      {
-        "id": "authorization",
-        "label": "Authorization",
-        "qualifier": "(Security)",
-        "summary": "The security process that determines whether an authenticated entity has permission to perform a requested operation or access a resource.",
-        "domains": [
-          "it/security/authentication"
-        ]
-      }
-    ],
-    "autolink": true
-  },
-  {
-    "key": "AuthZ",
-    "match": "any-case",
-    "concepts": [
-      {
-        "id": "authorization",
-        "label": "Authorization",
-        "qualifier": "(Security)",
-        "summary": "The security process that determines whether an authenticated entity has permission to perform a requested operation or access a resource.",
-        "domains": [
-          "it/security/authentication"
         ]
       }
     ],
@@ -1016,36 +983,6 @@
     "autolink": true
   },
   {
-    "key": "Brute-force attack",
-    "match": "any-case",
-    "concepts": [
-      {
-        "id": "brute-force-attack",
-        "label": "Brute-force attack",
-        "summary": "An attack method that systematically checks all possible passwords, keys, or hashes until the correct combination is discovered.",
-        "domains": [
-          "it/security/vulnerabilities"
-        ]
-      }
-    ],
-    "autolink": true
-  },
-  {
-    "key": "exhaustive key search",
-    "match": "any-case",
-    "concepts": [
-      {
-        "id": "brute-force-attack",
-        "label": "Brute-force attack",
-        "summary": "An attack method that systematically checks all possible passwords, keys, or hashes until the correct combination is discovered.",
-        "domains": [
-          "it/security/vulnerabilities"
-        ]
-      }
-    ],
-    "autolink": true
-  },
-  {
     "key": "Budget",
     "match": "any-case",
     "concepts": [
@@ -1076,6 +1013,22 @@
       }
     ],
     "autolink": true
+  },
+  {
+    "key": "Artifact",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "build-artifact",
+        "label": "Artifact",
+        "qualifier": "(Build)",
+        "summary": "A file or collection of files produced by a build process that can be archived, distributed, or deployed to target environments.",
+        "domains": [
+          "it/devops/ci-cd"
+        ]
+      }
+    ],
+    "autolink": false
   },
   {
     "key": "Burndown chart",
@@ -1216,6 +1169,21 @@
     "autolink": true
   },
   {
+    "key": "Capacity planning",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "capacity-planning",
+        "label": "Capacity planning",
+        "summary": "The disciplined practice of estimating future computing demands to ensure sufficient infrastructure resources exist to support service growth.",
+        "domains": [
+          "it/devops/sre-operations"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
     "key": "Cash flow statement",
     "match": "any-case",
     "concepts": [
@@ -1276,51 +1244,6 @@
     "autolink": true
   },
   {
-    "key": "Certificate authority (CA)",
-    "match": "any-case",
-    "concepts": [
-      {
-        "id": "certificate-authority",
-        "label": "Certificate authority (CA)",
-        "summary": "A trusted third-party organization that validates the identity of entities and issues cryptographically signed digital certificates.",
-        "domains": [
-          "it/security/cryptography"
-        ]
-      }
-    ],
-    "autolink": true
-  },
-  {
-    "key": "CA",
-    "match": "exact-case",
-    "concepts": [
-      {
-        "id": "certificate-authority",
-        "label": "Certificate authority (CA)",
-        "summary": "A trusted third-party organization that validates the identity of entities and issues cryptographically signed digital certificates.",
-        "domains": [
-          "it/security/cryptography"
-        ]
-      }
-    ],
-    "autolink": true
-  },
-  {
-    "key": "certification authority",
-    "match": "any-case",
-    "concepts": [
-      {
-        "id": "certificate-authority",
-        "label": "Certificate authority (CA)",
-        "summary": "A trusted third-party organization that validates the identity of entities and issues cryptographically signed digital certificates.",
-        "domains": [
-          "it/security/cryptography"
-        ]
-      }
-    ],
-    "autolink": true
-  },
-  {
     "key": "Chain-of-thought prompting",
     "match": "any-case",
     "concepts": [
@@ -1364,6 +1287,21 @@
       }
     ],
     "autolink": false
+  },
+  {
+    "key": "Chaos engineering",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "chaos-engineering",
+        "label": "Chaos engineering",
+        "summary": "The systematic practice of injecting controlled turbulence into a software environment to assess its resilience under stress.",
+        "domains": [
+          "it/devops/sre-operations"
+        ]
+      }
+    ],
+    "autolink": true
   },
   {
     "key": "Churn rate",
@@ -1590,6 +1528,21 @@
         "domains": [
           "finance/personal-finance/saving",
           "finance/investing/portfolio-risk"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Configuration management",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "configuration-management",
+        "label": "Configuration management",
+        "summary": "The automated discipline and toolset used to establish, track, and maintain consistency of system settings and software across infrastructure assets.",
+        "domains": [
+          "it/devops/iac"
         ]
       }
     ],
@@ -2296,49 +2249,20 @@
     "autolink": true
   },
   {
-    "key": "Dynamic application security testing (DAST)",
+    "key": "Dashboard",
     "match": "any-case",
     "concepts": [
       {
-        "id": "dast",
-        "label": "Dynamic application security testing (DAST)",
-        "summary": "A black-box testing methodology that assesses running applications from the outside by injecting fault payloads to detect runtime security vulnerabilities.",
+        "id": "dashboard-monitoring",
+        "label": "Dashboard",
+        "qualifier": "(Monitoring)",
+        "summary": "A visual interface that consolidates and presents real-time telemetry metrics and system statuses on a single screen for rapid operational evaluation.",
         "domains": [
-          "it/security/vulnerabilities"
+          "it/devops/observability"
         ]
       }
     ],
-    "autolink": true
-  },
-  {
-    "key": "DAST",
-    "match": "exact-case",
-    "concepts": [
-      {
-        "id": "dast",
-        "label": "Dynamic application security testing (DAST)",
-        "summary": "A black-box testing methodology that assesses running applications from the outside by injecting fault payloads to detect runtime security vulnerabilities.",
-        "domains": [
-          "it/security/vulnerabilities"
-        ]
-      }
-    ],
-    "autolink": true
-  },
-  {
-    "key": "dynamic vulnerability analysis",
-    "match": "any-case",
-    "concepts": [
-      {
-        "id": "dast",
-        "label": "Dynamic application security testing (DAST)",
-        "summary": "A black-box testing methodology that assesses running applications from the outside by injecting fault payloads to detect runtime security vulnerabilities.",
-        "domains": [
-          "it/security/vulnerabilities"
-        ]
-      }
-    ],
-    "autolink": true
+    "autolink": false
   },
   {
     "key": "Data lake",
@@ -2671,36 +2595,6 @@
     "autolink": true
   },
   {
-    "key": "Distributed denial-of-service (DDoS)",
-    "match": "any-case",
-    "concepts": [
-      {
-        "id": "ddos",
-        "label": "Distributed denial-of-service (DDoS)",
-        "summary": "A cyberattack that coordinates multiple distributed computers to flood a targeted server or network with traffic, rendering it inaccessible to legitimate users.",
-        "domains": [
-          "it/security/vulnerabilities"
-        ]
-      }
-    ],
-    "autolink": true
-  },
-  {
-    "key": "DDoS",
-    "match": "any-case",
-    "concepts": [
-      {
-        "id": "ddos",
-        "label": "Distributed denial-of-service (DDoS)",
-        "summary": "A cyberattack that coordinates multiple distributed computers to flood a targeted server or network with traffic, rendering it inaccessible to legitimate users.",
-        "domains": [
-          "it/security/vulnerabilities"
-        ]
-      }
-    ],
-    "autolink": true
-  },
-  {
     "key": "Debt-to-equity ratio (D/E)",
     "match": "any-case",
     "concepts": [
@@ -2915,30 +2809,15 @@
     "autolink": true
   },
   {
-    "key": "Digital signature",
+    "key": "DevOps",
     "match": "any-case",
     "concepts": [
       {
-        "id": "digital-signature",
-        "label": "Digital signature",
-        "summary": "A mathematical scheme that binds an identity to digital data using asymmetric cryptography, providing authentication, data integrity, and non-repudiation.",
+        "id": "devops",
+        "label": "DevOps",
+        "summary": "A cultural philosophy, set of practices, and tools that combines software development and IT operations to shorten the development lifecycle and deliver high-quality software continuously.",
         "domains": [
-          "it/security/cryptography"
-        ]
-      }
-    ],
-    "autolink": true
-  },
-  {
-    "key": "cryptographic signature",
-    "match": "any-case",
-    "concepts": [
-      {
-        "id": "digital-signature",
-        "label": "Digital signature",
-        "summary": "A mathematical scheme that binds an identity to digital data using asymmetric cryptography, providing authentication, data integrity, and non-repudiation.",
-        "domains": [
-          "it/security/cryptography"
+          "it/devops/ci-cd"
         ]
       }
     ],
@@ -3427,36 +3306,6 @@
     "autolink": true
   },
   {
-    "key": "End-to-end encryption (E2EE)",
-    "match": "any-case",
-    "concepts": [
-      {
-        "id": "end-to-end-encryption",
-        "label": "End-to-end encryption (E2EE)",
-        "summary": "A secure communication system where data is encrypted on the sender's device and decrypted only by the intended recipient, preventing intermediate parties from accessing the content.",
-        "domains": [
-          "it/security/cryptography"
-        ]
-      }
-    ],
-    "autolink": true
-  },
-  {
-    "key": "E2EE",
-    "match": "exact-case",
-    "concepts": [
-      {
-        "id": "end-to-end-encryption",
-        "label": "End-to-end encryption (E2EE)",
-        "summary": "A secure communication system where data is encrypted on the sender's device and decrypted only by the intended recipient, preventing intermediate parties from accessing the content.",
-        "domains": [
-          "it/security/cryptography"
-        ]
-      }
-    ],
-    "autolink": true
-  },
-  {
     "key": "End-to-end test",
     "match": "any-case",
     "concepts": [
@@ -3621,6 +3470,21 @@
         "summary": "The residual economic interest in an entity’s assets after deducting all of its liabilities.",
         "domains": [
           "finance/corporate-finance/capital-structure"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Error budget",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "error-budget",
+        "label": "Error budget",
+        "summary": "The maximum acceptable amount of service unreliability or downtime permitted by a Service Level Objective during a given time window.",
+        "domains": [
+          "it/devops/sre-operations"
         ]
       }
     ],
@@ -4034,6 +3898,36 @@
     "autolink": true
   },
   {
+    "key": "GitHub Actions",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "github-actions",
+        "label": "GitHub Actions",
+        "summary": "An automation engine built into GitHub repositories that runs build, verification, and deployment workflows triggered by repository activity.",
+        "domains": [
+          "it/devops/ci-cd"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "GitOps",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "gitops",
+        "label": "GitOps",
+        "summary": "An operational paradigm that treats version-controlled Git repositories as the authoritative blueprint for declaring and managing infrastructure state.",
+        "domains": [
+          "it/devops/ci-cd"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
     "key": "Graphics Processing Unit (GPU)",
     "match": "any-case",
     "concepts": [
@@ -4075,6 +3969,21 @@
         "summary": "An iterative optimization algorithm that updates model parameters in the opposite direction of the loss function gradient to minimize prediction error.",
         "domains": [
           "it/ai-ml/foundations"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Grafana",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "grafana",
+        "label": "Grafana",
+        "summary": "An open-source analytics and interactive visualization web application that displays metrics, logs, and traces through unified dashboards.",
+        "domains": [
+          "it/devops/observability"
         ]
       }
     ],
@@ -4238,6 +4147,22 @@
     "autolink": true
   },
   {
+    "key": "Health check",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "health-check",
+        "label": "Health check",
+        "qualifier": "(Software)",
+        "summary": "A diagnostic request executed automatically against a software component to determine its operational status and readiness to serve traffic.",
+        "domains": [
+          "it/devops/sre-operations"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
     "key": "Hotfix",
     "match": "any-case",
     "concepts": [
@@ -4382,6 +4307,21 @@
         "summary": "A computer vision task in which an algorithm analyzes an entire image and assigns it one or more discrete categorical labels from a predefined taxonomy.",
         "domains": [
           "it/ai-ml/computer-vision"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Immutable infrastructure",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "immutable-infrastructure",
+        "label": "Immutable infrastructure",
+        "summary": "An infrastructure paradigm where servers, containers, or virtual machines are never modified in place after deployment, but replaced entirely with new versions.",
+        "domains": [
+          "it/devops/iac"
         ]
       }
     ],
@@ -4773,36 +4713,6 @@
     "autolink": true
   },
   {
-    "key": "Intrusion detection system (IDS)",
-    "match": "any-case",
-    "concepts": [
-      {
-        "id": "intrusion-detection-system",
-        "label": "Intrusion detection system (IDS)",
-        "summary": "A hardware appliance or software application that monitors network or system activities for malicious behaviors or policy violations and produces alert reports.",
-        "domains": [
-          "it/security/vulnerabilities"
-        ]
-      }
-    ],
-    "autolink": true
-  },
-  {
-    "key": "IDS",
-    "match": "exact-case",
-    "concepts": [
-      {
-        "id": "intrusion-detection-system",
-        "label": "Intrusion detection system (IDS)",
-        "summary": "A hardware appliance or software application that monitors network or system activities for malicious behaviors or policy violations and produces alert reports.",
-        "domains": [
-          "it/security/vulnerabilities"
-        ]
-      }
-    ],
-    "autolink": true
-  },
-  {
     "key": "Inverted pyramid",
     "match": "any-case",
     "concepts": [
@@ -4920,6 +4830,21 @@
         "summary": "A prompt designed to make a model ignore its safety guidelines and produce content it is meant to refuse.",
         "domains": [
           "it/ai-ml/ai-safety-governance"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Jenkins",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "jenkins",
+        "label": "Jenkins",
+        "summary": "An open-source automation server that provides hundreds of plugins to support building, deploying, and automating software projects.",
+        "domains": [
+          "it/devops/ci-cd"
         ]
       }
     ],
@@ -5343,6 +5268,21 @@
     "autolink": true
   },
   {
+    "key": "Liveness probe",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "liveness-probe",
+        "label": "Liveness probe",
+        "summary": "A diagnostic probe configured in container orchestrators to detect when a containerized process is deadlocked or broken, triggering an automatic restart.",
+        "domains": [
+          "it/devops/containers"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
     "key": "Large Language Model",
     "match": "any-case",
     "concepts": [
@@ -5628,36 +5568,6 @@
         "summary": "A branch of artificial intelligence where computer systems detect underlying patterns in data to improve task performance without static rule engines.",
         "domains": [
           "it/ai-ml/foundations"
-        ]
-      }
-    ],
-    "autolink": true
-  },
-  {
-    "key": "Malware",
-    "match": "any-case",
-    "concepts": [
-      {
-        "id": "malware",
-        "label": "Malware",
-        "summary": "An overarching category of software intentionally developed to disrupt, damage, gain unauthorized access to, or exfiltrate data from a computer system.",
-        "domains": [
-          "it/security/vulnerabilities"
-        ]
-      }
-    ],
-    "autolink": true
-  },
-  {
-    "key": "malicious software",
-    "match": "any-case",
-    "concepts": [
-      {
-        "id": "malware",
-        "label": "Malware",
-        "summary": "An overarching category of software intentionally developed to disrupt, damage, gain unauthorized access to, or exfiltrate data from a computer system.",
-        "domains": [
-          "it/security/vulnerabilities"
         ]
       }
     ],
@@ -6284,6 +6194,36 @@
     "autolink": true
   },
   {
+    "key": "Mean time to recovery (MTTR)",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "mttr",
+        "label": "Mean time to recovery (MTTR)",
+        "summary": "A core operations metric representing the average time required to troubleshoot, fix, and restore a failed system to full functionality.",
+        "domains": [
+          "it/devops/sre-operations"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "MTTR",
+    "match": "exact-case",
+    "concepts": [
+      {
+        "id": "mttr",
+        "label": "Mean time to recovery (MTTR)",
+        "summary": "A core operations metric representing the average time required to troubleshoot, fix, and restore a failed system to full functionality.",
+        "domains": [
+          "it/devops/sre-operations"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
     "key": "Mutual fund",
     "match": "any-case",
     "concepts": [
@@ -6730,30 +6670,15 @@
     "autolink": true
   },
   {
-    "key": "OpenID Connect (OIDC)",
+    "key": "OpenTelemetry",
     "match": "any-case",
     "concepts": [
       {
-        "id": "openid-connect",
-        "label": "OpenID Connect (OIDC)",
-        "summary": "An identity protocol built on OAuth 2.0 that allows clients to verify user identity and obtain profile information via JSON Web Tokens.",
+        "id": "opentelemetry",
+        "label": "OpenTelemetry",
+        "summary": "An open-source observability framework under the CNCF providing vendor-neutral APIs, SDKs, and tooling to generate and export telemetry data.",
         "domains": [
-          "it/security/authentication"
-        ]
-      }
-    ],
-    "autolink": true
-  },
-  {
-    "key": "OIDC",
-    "match": "exact-case",
-    "concepts": [
-      {
-        "id": "openid-connect",
-        "label": "OpenID Connect (OIDC)",
-        "summary": "An identity protocol built on OAuth 2.0 that allows clients to verify user identity and obtain profile information via JSON Web Tokens.",
-        "domains": [
-          "it/security/authentication"
+          "it/devops/observability"
         ]
       }
     ],
@@ -6910,36 +6835,6 @@
     "autolink": true
   },
   {
-    "key": "OWASP Top 10",
-    "match": "any-case",
-    "concepts": [
-      {
-        "id": "owasp-top-10",
-        "label": "OWASP Top 10",
-        "summary": "A regularly updated awareness report curated by the OWASP community outlining the ten most critical security risks facing web applications.",
-        "domains": [
-          "it/security/vulnerabilities"
-        ]
-      }
-    ],
-    "autolink": true
-  },
-  {
-    "key": "Open Worldwide Application Security Project Top 10",
-    "match": "any-case",
-    "concepts": [
-      {
-        "id": "owasp-top-10",
-        "label": "OWASP Top 10",
-        "summary": "A regularly updated awareness report curated by the OWASP community outlining the ten most critical security risks facing web applications.",
-        "domains": [
-          "it/security/vulnerabilities"
-        ]
-      }
-    ],
-    "autolink": true
-  },
-  {
     "key": "Pagination",
     "match": "any-case",
     "concepts": [
@@ -6979,38 +6874,6 @@
         "summary": "A design technique that breaks large data sets into discrete subsets or pages to manage bandwidth and system performance.",
         "domains": [
           "it/web/api"
-        ]
-      }
-    ],
-    "autolink": true
-  },
-  {
-    "key": "Salt",
-    "match": "any-case",
-    "concepts": [
-      {
-        "id": "password-salting",
-        "label": "Salt",
-        "qualifier": "(Cryptography)",
-        "summary": "A non-secret random string appended to a plaintext password before hashing to ensure unique hash values and thwart precomputed table attacks.",
-        "domains": [
-          "it/security/cryptography"
-        ]
-      }
-    ],
-    "autolink": false
-  },
-  {
-    "key": "cryptographic salt",
-    "match": "any-case",
-    "concepts": [
-      {
-        "id": "password-salting",
-        "label": "Salt",
-        "qualifier": "(Cryptography)",
-        "summary": "A non-secret random string appended to a plaintext password before hashing to ensure unique hash values and thwart precomputed table attacks.",
-        "domains": [
-          "it/security/cryptography"
         ]
       }
     ],
@@ -7137,51 +7000,6 @@
     "autolink": true
   },
   {
-    "key": "Penetration testing",
-    "match": "any-case",
-    "concepts": [
-      {
-        "id": "penetration-testing",
-        "label": "Penetration testing",
-        "summary": "An authorized simulated cyberattack against an organization's computer systems, networks, or applications to evaluate security defenses.",
-        "domains": [
-          "it/security/vulnerabilities"
-        ]
-      }
-    ],
-    "autolink": true
-  },
-  {
-    "key": "pentest",
-    "match": "any-case",
-    "concepts": [
-      {
-        "id": "penetration-testing",
-        "label": "Penetration testing",
-        "summary": "An authorized simulated cyberattack against an organization's computer systems, networks, or applications to evaluate security defenses.",
-        "domains": [
-          "it/security/vulnerabilities"
-        ]
-      }
-    ],
-    "autolink": true
-  },
-  {
-    "key": "ethical hacking",
-    "match": "any-case",
-    "concepts": [
-      {
-        "id": "penetration-testing",
-        "label": "Penetration testing",
-        "summary": "An authorized simulated cyberattack against an organization's computer systems, networks, or applications to evaluate security defenses.",
-        "domains": [
-          "it/security/vulnerabilities"
-        ]
-      }
-    ],
-    "autolink": true
-  },
-  {
     "key": "Personal income tax",
     "match": "any-case",
     "concepts": [
@@ -7227,30 +7045,15 @@
     "autolink": true
   },
   {
-    "key": "Phishing",
+    "key": "Platform engineering",
     "match": "any-case",
     "concepts": [
       {
-        "id": "phishing",
-        "label": "Phishing",
-        "summary": "A social engineering attack where malicious actors impersonate legitimate organizations to trick victims into disclosing sensitive information or downloading malware.",
+        "id": "platform-engineering",
+        "label": "Platform engineering",
+        "summary": "The practice of designing and building internal developer platforms that provide self-service capabilities and standardized workflows to accelerate software delivery.",
         "domains": [
-          "it/security/vulnerabilities"
-        ]
-      }
-    ],
-    "autolink": true
-  },
-  {
-    "key": "credential phishing",
-    "match": "any-case",
-    "concepts": [
-      {
-        "id": "phishing",
-        "label": "Phishing",
-        "summary": "A social engineering attack where malicious actors impersonate legitimate organizations to trick victims into disclosing sensitive information or downloading malware.",
-        "domains": [
-          "it/security/vulnerabilities"
+          "it/devops/sre-operations"
         ]
       }
     ],
@@ -7823,6 +7626,22 @@
     "autolink": true
   },
   {
+    "key": "Prometheus",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "prometheus",
+        "label": "Prometheus",
+        "qualifier": "(Monitoring)",
+        "summary": "A telemetry storage platform that collects numeric time-series observations from network endpoints and enables real-time diagnostic querying.",
+        "domains": [
+          "it/devops/observability"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
     "key": "Prompt",
     "match": "any-case",
     "concepts": [
@@ -7862,36 +7681,6 @@
         "summary": "An attack in which crafted input, typed by a user or hidden in content the model reads, overrides the application’s intended instructions.",
         "domains": [
           "it/ai-ml/ai-safety-governance"
-        ]
-      }
-    ],
-    "autolink": true
-  },
-  {
-    "key": "Public-key cryptography",
-    "match": "any-case",
-    "concepts": [
-      {
-        "id": "public-key-cryptography",
-        "label": "Public-key cryptography",
-        "summary": "A cryptographic system that uses mathematically linked key pairs—a public key for encryption or verification and a private key for decryption or signing.",
-        "domains": [
-          "it/security/cryptography"
-        ]
-      }
-    ],
-    "autolink": true
-  },
-  {
-    "key": "asymmetric cryptography",
-    "match": "any-case",
-    "concepts": [
-      {
-        "id": "public-key-cryptography",
-        "label": "Public-key cryptography",
-        "summary": "A cryptographic system that uses mathematically linked key pairs—a public key for encryption or verification and a private key for decryption or signing.",
-        "domains": [
-          "it/security/cryptography"
         ]
       }
     ],
@@ -8049,36 +7838,6 @@
     "autolink": true
   },
   {
-    "key": "Ransomware",
-    "match": "any-case",
-    "concepts": [
-      {
-        "id": "ransomware",
-        "label": "Ransomware",
-        "summary": "A form of malicious software that encrypts a victim's files or locks system access, demanding payment in exchange for decryption keys.",
-        "domains": [
-          "it/security/vulnerabilities"
-        ]
-      }
-    ],
-    "autolink": true
-  },
-  {
-    "key": "extortion malware",
-    "match": "any-case",
-    "concepts": [
-      {
-        "id": "ransomware",
-        "label": "Ransomware",
-        "summary": "A form of malicious software that encrypts a victim's files or locks system access, demanding payment in exchange for decryption keys.",
-        "domains": [
-          "it/security/vulnerabilities"
-        ]
-      }
-    ],
-    "autolink": true
-  },
-  {
     "key": "Rate limiting",
     "match": "any-case",
     "concepts": [
@@ -8139,30 +7898,15 @@
     "autolink": true
   },
   {
-    "key": "Role-based access control (RBAC)",
+    "key": "Readiness probe",
     "match": "any-case",
     "concepts": [
       {
-        "id": "rbac",
-        "label": "Role-based access control (RBAC)",
-        "summary": "An access control model where permissions are grouped into roles and assigned to users based on their organizational responsibilities.",
+        "id": "readiness-probe",
+        "label": "Readiness probe",
+        "summary": "A diagnostic probe that determines whether a containerized application is prepared to accept network traffic, removing it from load balancer targets until ready.",
         "domains": [
-          "it/security/authentication"
-        ]
-      }
-    ],
-    "autolink": true
-  },
-  {
-    "key": "RBAC",
-    "match": "exact-case",
-    "concepts": [
-      {
-        "id": "rbac",
-        "label": "Role-based access control (RBAC)",
-        "summary": "An access control model where permissions are grouped into roles and assigned to users based on their organizational responsibilities.",
-        "domains": [
-          "it/security/authentication"
+          "it/devops/containers"
         ]
       }
     ],
@@ -8531,6 +8275,21 @@
     "autolink": true
   },
   {
+    "key": "Runbook",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "runbook",
+        "label": "Runbook",
+        "summary": "A documented set of routine procedures and emergency instructions used by operators to handle system maintenance and incident responses.",
+        "domains": [
+          "it/devops/sre-operations"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
     "key": "Sales lead",
     "match": "any-case",
     "concepts": [
@@ -8557,81 +8316,6 @@
         "summary": "An individual or organization that has expressed interest in a business's products or services and provided contact details for future communication.",
         "domains": [
           "media/digital-marketing/metrics-analytics"
-        ]
-      }
-    ],
-    "autolink": true
-  },
-  {
-    "key": "SAML",
-    "match": "exact-case",
-    "concepts": [
-      {
-        "id": "saml",
-        "label": "SAML",
-        "summary": "An open XML-based standard for exchanging authentication and authorization data between an identity provider and a service provider.",
-        "domains": [
-          "it/security/authentication"
-        ]
-      }
-    ],
-    "autolink": true
-  },
-  {
-    "key": "Security Assertion Markup Language",
-    "match": "any-case",
-    "concepts": [
-      {
-        "id": "saml",
-        "label": "SAML",
-        "summary": "An open XML-based standard for exchanging authentication and authorization data between an identity provider and a service provider.",
-        "domains": [
-          "it/security/authentication"
-        ]
-      }
-    ],
-    "autolink": true
-  },
-  {
-    "key": "Static application security testing (SAST)",
-    "match": "any-case",
-    "concepts": [
-      {
-        "id": "sast",
-        "label": "Static application security testing (SAST)",
-        "summary": "A white-box testing methodology that analyzes source code, byte code, or binaries at rest to detect security vulnerabilities before execution.",
-        "domains": [
-          "it/security/vulnerabilities"
-        ]
-      }
-    ],
-    "autolink": true
-  },
-  {
-    "key": "SAST",
-    "match": "exact-case",
-    "concepts": [
-      {
-        "id": "sast",
-        "label": "Static application security testing (SAST)",
-        "summary": "A white-box testing methodology that analyzes source code, byte code, or binaries at rest to detect security vulnerabilities before execution.",
-        "domains": [
-          "it/security/vulnerabilities"
-        ]
-      }
-    ],
-    "autolink": true
-  },
-  {
-    "key": "static code analysis",
-    "match": "any-case",
-    "concepts": [
-      {
-        "id": "sast",
-        "label": "Static application security testing (SAST)",
-        "summary": "A white-box testing methodology that analyzes source code, byte code, or binaries at rest to detect security vulnerabilities before execution.",
-        "domains": [
-          "it/security/vulnerabilities"
         ]
       }
     ],
@@ -8820,36 +8504,6 @@
         "domains": [
           "it/devops/ci-cd",
           "it/security/authentication"
-        ]
-      }
-    ],
-    "autolink": true
-  },
-  {
-    "key": "Security patch",
-    "match": "any-case",
-    "concepts": [
-      {
-        "id": "security-patch",
-        "label": "Security patch",
-        "summary": "A software update specifically engineered to remediate identified security vulnerabilities and prevent malicious exploitation.",
-        "domains": [
-          "it/security/vulnerabilities"
-        ]
-      }
-    ],
-    "autolink": true
-  },
-  {
-    "key": "security update",
-    "match": "any-case",
-    "concepts": [
-      {
-        "id": "security-patch",
-        "label": "Security patch",
-        "summary": "A software update specifically engineered to remediate identified security vulnerabilities and prevent malicious exploitation.",
-        "domains": [
-          "it/security/vulnerabilities"
         ]
       }
     ],
@@ -9083,36 +8737,6 @@
     "autolink": true
   },
   {
-    "key": "SIEM",
-    "match": "exact-case",
-    "concepts": [
-      {
-        "id": "siem",
-        "label": "SIEM",
-        "summary": "A security software architecture that aggregates, analyzes, and correlates event log data across an enterprise to detect incidents in real time.",
-        "domains": [
-          "it/security/vulnerabilities"
-        ]
-      }
-    ],
-    "autolink": true
-  },
-  {
-    "key": "Security Information and Event Management",
-    "match": "any-case",
-    "concepts": [
-      {
-        "id": "siem",
-        "label": "SIEM",
-        "summary": "A security software architecture that aggregates, analyzes, and correlates event log data across an enterprise to detect incidents in real time.",
-        "domains": [
-          "it/security/vulnerabilities"
-        ]
-      }
-    ],
-    "autolink": true
-  },
-  {
     "key": "Simple Interest",
     "match": "any-case",
     "concepts": [
@@ -9232,36 +8856,6 @@
       }
     ],
     "autolink": true
-  },
-  {
-    "key": "Security Operations Center (SOC)",
-    "match": "any-case",
-    "concepts": [
-      {
-        "id": "soc-security",
-        "label": "Security Operations Center (SOC)",
-        "summary": "A centralized command team and facility responsible for continuously monitoring, detecting, analyzing, and responding to cybersecurity incidents.",
-        "domains": [
-          "it/security/vulnerabilities"
-        ]
-      }
-    ],
-    "autolink": true
-  },
-  {
-    "key": "SOC",
-    "match": "exact-case",
-    "concepts": [
-      {
-        "id": "soc-security",
-        "label": "Security Operations Center (SOC)",
-        "summary": "A centralized command team and facility responsible for continuously monitoring, detecting, analyzing, and responding to cybersecurity incidents.",
-        "domains": [
-          "it/security/vulnerabilities"
-        ]
-      }
-    ],
-    "autolink": false
   },
   {
     "key": "Container",
@@ -9590,30 +9184,30 @@
     "autolink": true
   },
   {
-    "key": "Single sign-on (SSO)",
+    "key": "Site reliability engineering (SRE)",
     "match": "any-case",
     "concepts": [
       {
-        "id": "sso",
-        "label": "Single sign-on (SSO)",
-        "summary": "An authentication scheme that allows a user to log in once and gain access to multiple connected applications without re-entering credentials.",
+        "id": "sre",
+        "label": "Site reliability engineering (SRE)",
+        "summary": "An engineering discipline that applies software development practices to automate operational tasks and maintain service reliability at scale.",
         "domains": [
-          "it/security/authentication"
+          "it/devops/sre-operations"
         ]
       }
     ],
     "autolink": true
   },
   {
-    "key": "SSO",
+    "key": "SRE",
     "match": "exact-case",
     "concepts": [
       {
-        "id": "sso",
-        "label": "Single sign-on (SSO)",
-        "summary": "An authentication scheme that allows a user to log in once and gain access to multiple connected applications without re-entering credentials.",
+        "id": "sre",
+        "label": "Site reliability engineering (SRE)",
+        "summary": "An engineering discipline that applies software development practices to automate operational tasks and maintain service reliability at scale.",
         "domains": [
-          "it/security/authentication"
+          "it/devops/sre-operations"
         ]
       }
     ],
@@ -9954,38 +9548,6 @@
     "autolink": true
   },
   {
-    "key": "Supply chain attack",
-    "match": "any-case",
-    "concepts": [
-      {
-        "id": "supply-chain-attack",
-        "label": "Supply chain attack",
-        "qualifier": "(Software)",
-        "summary": "A cyberattack that targets less secure third-party vendors, libraries, or build pipelines to infiltrate the target organization's systems.",
-        "domains": [
-          "it/security/vulnerabilities"
-        ]
-      }
-    ],
-    "autolink": true
-  },
-  {
-    "key": "third-party software compromise",
-    "match": "any-case",
-    "concepts": [
-      {
-        "id": "supply-chain-attack",
-        "label": "Supply chain attack",
-        "qualifier": "(Software)",
-        "summary": "A cyberattack that targets less secure third-party vendors, libraries, or build pipelines to infiltrate the target organization's systems.",
-        "domains": [
-          "it/security/vulnerabilities"
-        ]
-      }
-    ],
-    "autolink": true
-  },
-  {
     "key": "System prompt",
     "match": "any-case",
     "concepts": [
@@ -10122,36 +9684,6 @@
     "autolink": true
   },
   {
-    "key": "Threat modeling",
-    "match": "any-case",
-    "concepts": [
-      {
-        "id": "threat-modeling",
-        "label": "Threat modeling",
-        "summary": "A structured engineering practice for identifying, categorizing, and prioritizing potential security threats to an application or system architecture.",
-        "domains": [
-          "it/security/vulnerabilities"
-        ]
-      }
-    ],
-    "autolink": true
-  },
-  {
-    "key": "security threat modeling",
-    "match": "any-case",
-    "concepts": [
-      {
-        "id": "threat-modeling",
-        "label": "Threat modeling",
-        "summary": "A structured engineering practice for identifying, categorizing, and prioritizing potential security threats to an application or system architecture.",
-        "domains": [
-          "it/security/vulnerabilities"
-        ]
-      }
-    ],
-    "autolink": true
-  },
-  {
     "key": "Throughput",
     "match": "any-case",
     "concepts": [
@@ -10244,48 +9776,16 @@
     "autolink": true
   },
   {
-    "key": "Certificate",
+    "key": "Toil",
     "match": "any-case",
     "concepts": [
       {
-        "id": "tls-certificate",
-        "label": "Certificate",
-        "qualifier": "(TLS)",
-        "summary": "A digitally signed data file conforming to X.509 standards that binds a public key to an entity's domain name or identity.",
+        "id": "toil",
+        "label": "Toil",
+        "qualifier": "(SRE)",
+        "summary": "Administrative operational effort within SRE comprising routine, automatable tasks that lack permanent architectural value and expand as fleet size increases.",
         "domains": [
-          "it/security/cryptography"
-        ]
-      }
-    ],
-    "autolink": false
-  },
-  {
-    "key": "SSL certificate",
-    "match": "any-case",
-    "concepts": [
-      {
-        "id": "tls-certificate",
-        "label": "Certificate",
-        "qualifier": "(TLS)",
-        "summary": "A digitally signed data file conforming to X.509 standards that binds a public key to an entity's domain name or identity.",
-        "domains": [
-          "it/security/cryptography"
-        ]
-      }
-    ],
-    "autolink": true
-  },
-  {
-    "key": "X.509 certificate",
-    "match": "any-case",
-    "concepts": [
-      {
-        "id": "tls-certificate",
-        "label": "Certificate",
-        "qualifier": "(TLS)",
-        "summary": "A digitally signed data file conforming to X.509 standards that binds a public key to an entity's domain name or identity.",
-        "domains": [
-          "it/security/cryptography"
+          "it/devops/sre-operations"
         ]
       }
     ],
@@ -10464,6 +9964,21 @@
         "summary": "A neural network architecture relying on self-attention mechanisms to process sequence elements in parallel without recurrent connections.",
         "domains": [
           "it/ai-ml/foundations"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Trunk-based development",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "trunk-based-development",
+        "label": "Trunk-based development",
+        "summary": "A version control management practice where developers merge frequent, small code updates into a core branch called the trunk.",
+        "domains": [
+          "it/software-engineering/version-control"
         ]
       }
     ],
@@ -10972,36 +10487,6 @@
     "autolink": true
   },
   {
-    "key": "Web application firewall (WAF)",
-    "match": "any-case",
-    "concepts": [
-      {
-        "id": "waf",
-        "label": "Web application firewall (WAF)",
-        "summary": "A specialized security appliance or cloud filter that monitors, inspects, and blocks malicious HTTP and HTTPS traffic targeting web applications.",
-        "domains": [
-          "it/security/vulnerabilities"
-        ]
-      }
-    ],
-    "autolink": true
-  },
-  {
-    "key": "WAF",
-    "match": "exact-case",
-    "concepts": [
-      {
-        "id": "waf",
-        "label": "Web application firewall (WAF)",
-        "summary": "A specialized security appliance or cloud filter that monitors, inspects, and blocks malicious HTTP and HTTPS traffic targeting web applications.",
-        "domains": [
-          "it/security/vulnerabilities"
-        ]
-      }
-    ],
-    "autolink": true
-  },
-  {
     "key": "Session",
     "match": "any-case",
     "concepts": [
@@ -11147,51 +10632,6 @@
         "id": "xss",
         "label": "Cross-site scripting (XSS)",
         "summary": "A web application flaw permitting attackers to embed rogue executable scripts into viewed pages, running unauthorized actions inside visitor browsers.",
-        "domains": [
-          "it/security/vulnerabilities"
-        ]
-      }
-    ],
-    "autolink": true
-  },
-  {
-    "key": "Zero-day vulnerability",
-    "match": "any-case",
-    "concepts": [
-      {
-        "id": "zero-day",
-        "label": "Zero-day vulnerability",
-        "summary": "A previously undisclosed software vulnerability that is actively exploitable or known to attackers before the vendor has developed and released a security patch.",
-        "domains": [
-          "it/security/vulnerabilities"
-        ]
-      }
-    ],
-    "autolink": true
-  },
-  {
-    "key": "zero-day",
-    "match": "any-case",
-    "concepts": [
-      {
-        "id": "zero-day",
-        "label": "Zero-day vulnerability",
-        "summary": "A previously undisclosed software vulnerability that is actively exploitable or known to attackers before the vendor has developed and released a security patch.",
-        "domains": [
-          "it/security/vulnerabilities"
-        ]
-      }
-    ],
-    "autolink": true
-  },
-  {
-    "key": "0-day",
-    "match": "any-case",
-    "concepts": [
-      {
-        "id": "zero-day",
-        "label": "Zero-day vulnerability",
-        "summary": "A previously undisclosed software vulnerability that is actively exploitable or known to attackers before the vendor has developed and released a security patch.",
         "domains": [
           "it/security/vulnerabilities"
         ]

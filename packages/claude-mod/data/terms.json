@@ -264,6 +264,36 @@
     "autolink": true
   },
   {
+    "key": "Alerting",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "alerting",
+        "label": "Alerting",
+        "summary": "Cơ chế tự động đối soát dữ liệu giám sát với các quy tắc định sẵn để gửi thông báo tức thời cho đội ngũ trực ban khi hệ thống phát sinh sự cố.",
+        "domains": [
+          "it/devops/observability"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Hệ thống cảnh báo",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "alerting",
+        "label": "Alerting",
+        "summary": "Cơ chế tự động đối soát dữ liệu giám sát với các quy tắc định sẵn để gửi thông báo tức thời cho đội ngũ trực ban khi hệ thống phát sinh sự cố.",
+        "domains": [
+          "it/devops/observability"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
     "key": "Nguồn tin ẩn danh",
     "match": "any-case",
     "concepts": [
@@ -405,32 +435,45 @@
     "autolink": true
   },
   {
-    "key": "API key",
+    "key": "Application performance monitoring (APM)",
     "match": "any-case",
     "concepts": [
       {
-        "id": "api-key",
-        "label": "API key",
-        "summary": "Chuỗi ký tự định danh duy nhất do ứng dụng gửi kèm để xác thực chương trình gọi dịch vụ và theo dõi hạn mức sử dụng API.",
+        "id": "apm",
+        "label": "Application performance monitoring (APM)",
+        "summary": "Bộ giải pháp giám sát chuyên sâu nhằm theo dõi tính sẵn sàng, phát hiện lỗi mã nguồn và phân tích độ trễ giao dịch trong các ứng dụng phần mềm.",
         "domains": [
-          "it/security/authentication",
-          "it/web/api"
+          "it/devops/observability"
         ]
       }
     ],
     "autolink": true
   },
   {
-    "key": "khóa API",
+    "key": "APM",
+    "match": "exact-case",
+    "concepts": [
+      {
+        "id": "apm",
+        "label": "Application performance monitoring (APM)",
+        "summary": "Bộ giải pháp giám sát chuyên sâu nhằm theo dõi tính sẵn sàng, phát hiện lỗi mã nguồn và phân tích độ trễ giao dịch trong các ứng dụng phần mềm.",
+        "domains": [
+          "it/devops/observability"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Giám sát hiệu năng ứng dụng",
     "match": "any-case",
     "concepts": [
       {
-        "id": "api-key",
-        "label": "API key",
-        "summary": "Chuỗi ký tự định danh duy nhất do ứng dụng gửi kèm để xác thực chương trình gọi dịch vụ và theo dõi hạn mức sử dụng API.",
+        "id": "apm",
+        "label": "Application performance monitoring (APM)",
+        "summary": "Bộ giải pháp giám sát chuyên sâu nhằm theo dõi tính sẵn sàng, phát hiện lỗi mã nguồn và phân tích độ trễ giao dịch trong các ứng dụng phần mềm.",
         "domains": [
-          "it/security/authentication",
-          "it/web/api"
+          "it/devops/observability"
         ]
       }
     ],
@@ -617,115 +660,6 @@
         "summary": "Tổng số cá nhân hoặc tài khoản người dùng độc lập, không trùng lặp đã tiếp xúc với một nội dung truyền thông hoặc mẩu quảng cáo trong khoảng thời gian xác định.",
         "domains": [
           "media/digital-marketing/social-media"
-        ]
-      }
-    ],
-    "autolink": true
-  },
-  {
-    "key": "Authentication",
-    "match": "any-case",
-    "concepts": [
-      {
-        "id": "authentication",
-        "label": "Authentication",
-        "summary": "Quy trình bảo mật nhằm kiểm tra và xác nhận tính chính xác của danh tính do người dùng, thiết bị hoặc hệ thống tự khai báo.",
-        "domains": [
-          "it/security/authentication"
-        ]
-      }
-    ],
-    "autolink": true
-  },
-  {
-    "key": "AuthN",
-    "match": "any-case",
-    "concepts": [
-      {
-        "id": "authentication",
-        "label": "Authentication",
-        "summary": "Quy trình bảo mật nhằm kiểm tra và xác nhận tính chính xác của danh tính do người dùng, thiết bị hoặc hệ thống tự khai báo.",
-        "domains": [
-          "it/security/authentication"
-        ]
-      }
-    ],
-    "autolink": true
-  },
-  {
-    "key": "xác thực",
-    "match": "any-case",
-    "concepts": [
-      {
-        "id": "authentication",
-        "label": "Authentication",
-        "summary": "Quy trình bảo mật nhằm kiểm tra và xác nhận tính chính xác của danh tính do người dùng, thiết bị hoặc hệ thống tự khai báo.",
-        "domains": [
-          "it/security/authentication"
-        ]
-      }
-    ],
-    "autolink": true
-  },
-  {
-    "key": "Authorization",
-    "match": "any-case",
-    "concepts": [
-      {
-        "id": "authorization",
-        "label": "Authorization",
-        "qualifier": "(Bảo mật)",
-        "summary": "Quy trình bảo mật xác định xem một thực thể đã xác thực danh tính có đủ quyền hạn để thực hiện thao tác hoặc truy cập tài nguyên hay không.",
-        "domains": [
-          "it/security/authentication"
-        ]
-      }
-    ],
-    "autolink": true
-  },
-  {
-    "key": "AuthZ",
-    "match": "any-case",
-    "concepts": [
-      {
-        "id": "authorization",
-        "label": "Authorization",
-        "qualifier": "(Bảo mật)",
-        "summary": "Quy trình bảo mật xác định xem một thực thể đã xác thực danh tính có đủ quyền hạn để thực hiện thao tác hoặc truy cập tài nguyên hay không.",
-        "domains": [
-          "it/security/authentication"
-        ]
-      }
-    ],
-    "autolink": true
-  },
-  {
-    "key": "phân quyền",
-    "match": "any-case",
-    "concepts": [
-      {
-        "id": "authorization",
-        "label": "Authorization",
-        "qualifier": "(Bảo mật)",
-        "summary": "Quy trình bảo mật xác định xem một thực thể đã xác thực danh tính có đủ quyền hạn để thực hiện thao tác hoặc truy cập tài nguyên hay không.",
-        "domains": [
-          "it/security/authentication"
-        ]
-      }
-    ],
-    "autolink": true
-  },
-  {
-    "key": "ủy quyền",
-    "match": "any-case",
-    "concepts": [
-      {
-        "id": "authorization",
-        "label": "Authorization",
-        "qualifier": "(Bảo mật)",
-        "summary": "Quy trình bảo mật xác định xem một thực thể đã xác thực danh tính có đủ quyền hạn để thực hiện thao tác hoặc truy cập tài nguyên hay không.",
-        "domains": [
-          "it/security/authentication"
         ]
       }
     ],
@@ -1398,36 +1332,6 @@
     "autolink": true
   },
   {
-    "key": "Brute-force attack",
-    "match": "any-case",
-    "concepts": [
-      {
-        "id": "brute-force-attack",
-        "label": "Brute-force attack",
-        "summary": "Phương thức tấn công thử sai có hệ thống toàn bộ các mật khẩu, khóa hoặc mã băm khả dĩ cho đến khi tìm thấy kết quả chính xác.",
-        "domains": [
-          "it/security/vulnerabilities"
-        ]
-      }
-    ],
-    "autolink": true
-  },
-  {
-    "key": "tấn công vét cạn",
-    "match": "any-case",
-    "concepts": [
-      {
-        "id": "brute-force-attack",
-        "label": "Brute-force attack",
-        "summary": "Phương thức tấn công thử sai có hệ thống toàn bộ các mật khẩu, khóa hoặc mã băm khả dĩ cho đến khi tìm thấy kết quả chính xác.",
-        "domains": [
-          "it/security/vulnerabilities"
-        ]
-      }
-    ],
-    "autolink": true
-  },
-  {
     "key": "Ngân sách",
     "match": "any-case",
     "concepts": [
@@ -1454,6 +1358,54 @@
         "summary": "Kế hoạch tài chính chi tiết ước tính các khoản thu nhập dự kiến và phân bổ vào chi phí sinh hoạt, tiết kiệm và trả nợ trong một khoảng thời gian nhất định.",
         "domains": [
           "finance/personal-finance/budget"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Artifact",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "build-artifact",
+        "label": "Artifact",
+        "qualifier": "(Build)",
+        "summary": "Tệp hoặc tập hợp các tệp được sinh ra từ quá trình xây dựng mã nguồn nhằm phục vụ lưu trữ, kiểm thử hoặc triển khai vào môi trường vận hành.",
+        "domains": [
+          "it/devops/ci-cd"
+        ]
+      }
+    ],
+    "autolink": false
+  },
+  {
+    "key": "Tạo phẩm đóng gói",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "build-artifact",
+        "label": "Artifact",
+        "qualifier": "(Build)",
+        "summary": "Tệp hoặc tập hợp các tệp được sinh ra từ quá trình xây dựng mã nguồn nhằm phục vụ lưu trữ, kiểm thử hoặc triển khai vào môi trường vận hành.",
+        "domains": [
+          "it/devops/ci-cd"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Thành phẩm build",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "build-artifact",
+        "label": "Artifact",
+        "qualifier": "(Build)",
+        "summary": "Tệp hoặc tập hợp các tệp được sinh ra từ quá trình xây dựng mã nguồn nhằm phục vụ lưu trữ, kiểm thử hoặc triển khai vào môi trường vận hành.",
+        "domains": [
+          "it/devops/ci-cd"
         ]
       }
     ],
@@ -1703,6 +1655,36 @@
     "autolink": true
   },
   {
+    "key": "Capacity planning",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "capacity-planning",
+        "label": "Capacity planning",
+        "summary": "Quy trình ước tính nhu cầu tài nguyên tính toán trong tương lai nhằm chuẩn bị đầy đủ hạ tầng đáp ứng sự gia tăng về lưu lượng và tải công việc.",
+        "domains": [
+          "it/devops/sre-operations"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Quy hoạch năng lực",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "capacity-planning",
+        "label": "Capacity planning",
+        "summary": "Quy trình ước tính nhu cầu tài nguyên tính toán trong tương lai nhằm chuẩn bị đầy đủ hạ tầng đáp ứng sự gia tăng về lưu lượng và tải công việc.",
+        "domains": [
+          "it/devops/sre-operations"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
     "key": "Báo cáo lưu chuyển tiền tệ",
     "match": "any-case",
     "concepts": [
@@ -1778,66 +1760,6 @@
     "autolink": true
   },
   {
-    "key": "Certificate authority (CA)",
-    "match": "any-case",
-    "concepts": [
-      {
-        "id": "certificate-authority",
-        "label": "Certificate authority (CA)",
-        "summary": "Tổ chức bên thứ ba đáng tin cậy chuyên thẩm định danh tính của các thực thể và phát hành chứng chỉ số có chữ ký điện tử.",
-        "domains": [
-          "it/security/cryptography"
-        ]
-      }
-    ],
-    "autolink": true
-  },
-  {
-    "key": "CA",
-    "match": "exact-case",
-    "concepts": [
-      {
-        "id": "certificate-authority",
-        "label": "Certificate authority (CA)",
-        "summary": "Tổ chức bên thứ ba đáng tin cậy chuyên thẩm định danh tính của các thực thể và phát hành chứng chỉ số có chữ ký điện tử.",
-        "domains": [
-          "it/security/cryptography"
-        ]
-      }
-    ],
-    "autolink": true
-  },
-  {
-    "key": "nhà cung cấp chứng thực số",
-    "match": "any-case",
-    "concepts": [
-      {
-        "id": "certificate-authority",
-        "label": "Certificate authority (CA)",
-        "summary": "Tổ chức bên thứ ba đáng tin cậy chuyên thẩm định danh tính của các thực thể và phát hành chứng chỉ số có chữ ký điện tử.",
-        "domains": [
-          "it/security/cryptography"
-        ]
-      }
-    ],
-    "autolink": true
-  },
-  {
-    "key": "tổ chức chứng thực chữ ký số",
-    "match": "any-case",
-    "concepts": [
-      {
-        "id": "certificate-authority",
-        "label": "Certificate authority (CA)",
-        "summary": "Tổ chức bên thứ ba đáng tin cậy chuyên thẩm định danh tính của các thực thể và phát hành chứng chỉ số có chữ ký điện tử.",
-        "domains": [
-          "it/security/cryptography"
-        ]
-      }
-    ],
-    "autolink": true
-  },
-  {
     "key": "Chain-of-thought prompting",
     "match": "any-case",
     "concepts": [
@@ -1881,6 +1803,36 @@
       }
     ],
     "autolink": false
+  },
+  {
+    "key": "Chaos engineering",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "chaos-engineering",
+        "label": "Chaos engineering",
+        "summary": "Phương pháp thực nghiệm có kiểm soát trên hệ thống phân tán nhằm xây dựng niềm tin vào khả năng chịu đựng các sự cố bất ngờ trong môi trường thực tế.",
+        "domains": [
+          "it/devops/sre-operations"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Kỹ thuật hỗn loạn",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "chaos-engineering",
+        "label": "Chaos engineering",
+        "summary": "Phương pháp thực nghiệm có kiểm soát trên hệ thống phân tán nhằm xây dựng niềm tin vào khả năng chịu đựng các sự cố bất ngờ trong môi trường thực tế.",
+        "domains": [
+          "it/devops/sre-operations"
+        ]
+      }
+    ],
+    "autolink": true
   },
   {
     "key": "Churn rate",
@@ -2137,6 +2089,36 @@
         "domains": [
           "finance/personal-finance/saving",
           "finance/investing/portfolio-risk"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Configuration management",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "configuration-management",
+        "label": "Configuration management",
+        "summary": "Phương pháp kỹ thuật và công cụ nhằm thiết lập, theo dõi và duy trì tính nhất quán của các cài đặt phần mềm và cấu hình hệ thống trên toàn bộ hạ tầng.",
+        "domains": [
+          "it/devops/iac"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Quản lý cấu hình",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "configuration-management",
+        "label": "Configuration management",
+        "summary": "Phương pháp kỹ thuật và công cụ nhằm thiết lập, theo dõi và duy trì tính nhất quán của các cài đặt phần mềm và cấu hình hệ thống trên toàn bộ hạ tầng.",
+        "domains": [
+          "it/devops/iac"
         ]
       }
     ],
@@ -2980,45 +2962,32 @@
     "autolink": true
   },
   {
-    "key": "Dynamic application security testing (DAST)",
+    "key": "Dashboard",
     "match": "any-case",
     "concepts": [
       {
-        "id": "dast",
-        "label": "Dynamic application security testing (DAST)",
-        "summary": "Phương pháp kiểm thử hộp đen đánh giá ứng dụng đang vận hành từ bên ngoài bằng cách bơm các tải trọng tấn công thử nghiệm để phát hiện lỗ hổng thời gian chạy.",
+        "id": "dashboard-monitoring",
+        "label": "Dashboard",
+        "qualifier": "(Giám sát)",
+        "summary": "Giao diện trực quan tổng hợp các biểu đồ và chỉ số hiệu năng theo thời gian thực trên một màn hình nhằm giúp kỹ sư nhanh chóng đánh giá tình trạng hoạt động của hệ thống.",
         "domains": [
-          "it/security/vulnerabilities"
+          "it/devops/observability"
         ]
       }
     ],
-    "autolink": true
+    "autolink": false
   },
   {
-    "key": "DAST",
-    "match": "exact-case",
-    "concepts": [
-      {
-        "id": "dast",
-        "label": "Dynamic application security testing (DAST)",
-        "summary": "Phương pháp kiểm thử hộp đen đánh giá ứng dụng đang vận hành từ bên ngoài bằng cách bơm các tải trọng tấn công thử nghiệm để phát hiện lỗ hổng thời gian chạy.",
-        "domains": [
-          "it/security/vulnerabilities"
-        ]
-      }
-    ],
-    "autolink": true
-  },
-  {
-    "key": "kiểm thử bảo mật ứng dụng động",
+    "key": "Bảng điều khiển giám sát",
     "match": "any-case",
     "concepts": [
       {
-        "id": "dast",
-        "label": "Dynamic application security testing (DAST)",
-        "summary": "Phương pháp kiểm thử hộp đen đánh giá ứng dụng đang vận hành từ bên ngoài bằng cách bơm các tải trọng tấn công thử nghiệm để phát hiện lỗ hổng thời gian chạy.",
+        "id": "dashboard-monitoring",
+        "label": "Dashboard",
+        "qualifier": "(Giám sát)",
+        "summary": "Giao diện trực quan tổng hợp các biểu đồ và chỉ số hiệu năng theo thời gian thực trên một màn hình nhằm giúp kỹ sư nhanh chóng đánh giá tình trạng hoạt động của hệ thống.",
         "domains": [
-          "it/security/vulnerabilities"
+          "it/devops/observability"
         ]
       }
     ],
@@ -3370,51 +3339,6 @@
     "autolink": true
   },
   {
-    "key": "Distributed denial-of-service (DDoS)",
-    "match": "any-case",
-    "concepts": [
-      {
-        "id": "ddos",
-        "label": "Distributed denial-of-service (DDoS)",
-        "summary": "Cuộc tấn công mạng sử dụng nhiều máy tính phân tán để làm tràn ngập lưu lượng vào máy chủ hoặc mạng đích, khiến người dùng hợp pháp không thể truy cập.",
-        "domains": [
-          "it/security/vulnerabilities"
-        ]
-      }
-    ],
-    "autolink": true
-  },
-  {
-    "key": "DDoS",
-    "match": "any-case",
-    "concepts": [
-      {
-        "id": "ddos",
-        "label": "Distributed denial-of-service (DDoS)",
-        "summary": "Cuộc tấn công mạng sử dụng nhiều máy tính phân tán để làm tràn ngập lưu lượng vào máy chủ hoặc mạng đích, khiến người dùng hợp pháp không thể truy cập.",
-        "domains": [
-          "it/security/vulnerabilities"
-        ]
-      }
-    ],
-    "autolink": true
-  },
-  {
-    "key": "từ chối dịch vụ phân tán",
-    "match": "any-case",
-    "concepts": [
-      {
-        "id": "ddos",
-        "label": "Distributed denial-of-service (DDoS)",
-        "summary": "Cuộc tấn công mạng sử dụng nhiều máy tính phân tán để làm tràn ngập lưu lượng vào máy chủ hoặc mạng đích, khiến người dùng hợp pháp không thể truy cập.",
-        "domains": [
-          "it/security/vulnerabilities"
-        ]
-      }
-    ],
-    "autolink": true
-  },
-  {
     "key": "Tỷ số nợ trên vốn chủ sở hữu",
     "match": "any-case",
     "concepts": [
@@ -3706,30 +3630,30 @@
     "autolink": true
   },
   {
-    "key": "Chữ ký số",
+    "key": "DevOps",
     "match": "any-case",
     "concepts": [
       {
-        "id": "digital-signature",
-        "label": "Chữ ký số",
-        "summary": "Cơ chế toán học gắn kết danh tính với dữ liệu số bằng mật mã bất đối xứng nhằm bảo đảm tính xác thực, tính toàn vẹn và chống chối bỏ.",
+        "id": "devops",
+        "label": "DevOps",
+        "summary": "Triết lý văn hóa và bộ phương pháp tích hợp chặt chẽ giữa nhóm phát triển phần mềm và nhóm vận hành hệ thống nhằm rút ngắn chu kỳ chuyển giao và tăng độ tin cậy.",
         "domains": [
-          "it/security/cryptography"
+          "it/devops/ci-cd"
         ]
       }
     ],
     "autolink": true
   },
   {
-    "key": "Digital signature",
+    "key": "Phương pháp DevOps",
     "match": "any-case",
     "concepts": [
       {
-        "id": "digital-signature",
-        "label": "Chữ ký số",
-        "summary": "Cơ chế toán học gắn kết danh tính với dữ liệu số bằng mật mã bất đối xứng nhằm bảo đảm tính xác thực, tính toàn vẹn và chống chối bỏ.",
+        "id": "devops",
+        "label": "DevOps",
+        "summary": "Triết lý văn hóa và bộ phương pháp tích hợp chặt chẽ giữa nhóm phát triển phần mềm và nhóm vận hành hệ thống nhằm rút ngắn chu kỳ chuyển giao và tăng độ tin cậy.",
         "domains": [
-          "it/security/cryptography"
+          "it/devops/ci-cd"
         ]
       }
     ],
@@ -4415,51 +4339,6 @@
     "autolink": true
   },
   {
-    "key": "End-to-end encryption (E2EE)",
-    "match": "any-case",
-    "concepts": [
-      {
-        "id": "end-to-end-encryption",
-        "label": "End-to-end encryption (E2EE)",
-        "summary": "Cơ chế bảo mật truyền thông trong đó dữ liệu được mã hóa ngay trên thiết bị người gửi và chỉ được giải mã bởi người nhận đích, ngăn chặn bên trung gian đọc nội dung.",
-        "domains": [
-          "it/security/cryptography"
-        ]
-      }
-    ],
-    "autolink": true
-  },
-  {
-    "key": "E2EE",
-    "match": "exact-case",
-    "concepts": [
-      {
-        "id": "end-to-end-encryption",
-        "label": "End-to-end encryption (E2EE)",
-        "summary": "Cơ chế bảo mật truyền thông trong đó dữ liệu được mã hóa ngay trên thiết bị người gửi và chỉ được giải mã bởi người nhận đích, ngăn chặn bên trung gian đọc nội dung.",
-        "domains": [
-          "it/security/cryptography"
-        ]
-      }
-    ],
-    "autolink": true
-  },
-  {
-    "key": "mã hóa đầu cuối",
-    "match": "any-case",
-    "concepts": [
-      {
-        "id": "end-to-end-encryption",
-        "label": "End-to-end encryption (E2EE)",
-        "summary": "Cơ chế bảo mật truyền thông trong đó dữ liệu được mã hóa ngay trên thiết bị người gửi và chỉ được giải mã bởi người nhận đích, ngăn chặn bên trung gian đọc nội dung.",
-        "domains": [
-          "it/security/cryptography"
-        ]
-      }
-    ],
-    "autolink": true
-  },
-  {
     "key": "End-to-end test",
     "match": "any-case",
     "concepts": [
@@ -4670,6 +4549,36 @@
         "summary": "Phần quyền lợi còn lại trong tài sản của doanh nghiệp sau khi đã trừ đi toàn bộ nghĩa vụ nợ phải trả.",
         "domains": [
           "finance/corporate-finance/capital-structure"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Error budget",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "error-budget",
+        "label": "Error budget",
+        "summary": "Mức độ gián đoạn hoặc tỷ lệ lỗi tối đa được phép xảy ra trong một khoảng thời gian xác định căn cứ theo mục tiêu mức dịch vụ đã thỏa thuận.",
+        "domains": [
+          "it/devops/sre-operations"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Ngân sách lỗi",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "error-budget",
+        "label": "Error budget",
+        "summary": "Mức độ gián đoạn hoặc tỷ lệ lỗi tối đa được phép xảy ra trong một khoảng thời gian xác định căn cứ theo mục tiêu mức dịch vụ đã thỏa thuận.",
+        "domains": [
+          "it/devops/sre-operations"
         ]
       }
     ],
@@ -5205,6 +5114,66 @@
     "autolink": true
   },
   {
+    "key": "GitHub Actions",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "github-actions",
+        "label": "GitHub Actions",
+        "summary": "Nền tảng tích hợp và phân phối liên tục tích hợp sẵn trong GitHub cho phép tự động hóa quy trình xây dựng, kiểm thử và phát hành mã nguồn.",
+        "domains": [
+          "it/devops/ci-cd"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Quy trình tự động hóa GitHub",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "github-actions",
+        "label": "GitHub Actions",
+        "summary": "Nền tảng tích hợp và phân phối liên tục tích hợp sẵn trong GitHub cho phép tự động hóa quy trình xây dựng, kiểm thử và phát hành mã nguồn.",
+        "domains": [
+          "it/devops/ci-cd"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "GitOps",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "gitops",
+        "label": "GitOps",
+        "summary": "Mô hình vận hành dùng kho lưu trữ Git làm nguồn chân lý duy nhất để quản lý hạ tầng khai báo và đồng bộ triển khai ứng dụng tự động.",
+        "domains": [
+          "it/devops/ci-cd"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Vận hành qua Git",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "gitops",
+        "label": "GitOps",
+        "summary": "Mô hình vận hành dùng kho lưu trữ Git làm nguồn chân lý duy nhất để quản lý hạ tầng khai báo và đồng bộ triển khai ứng dụng tự động.",
+        "domains": [
+          "it/devops/ci-cd"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
     "key": "Bộ xử lý đồ họa (GPU)",
     "match": "any-case",
     "concepts": [
@@ -5261,6 +5230,36 @@
         "summary": "Thuật toán tối ưu hóa lặp giúp điều chỉnh tham số mô hình ngược chiều với đạo hàm của hàm mất mát nhằm giảm thiểu sai số dự đoán.",
         "domains": [
           "it/ai-ml/foundations"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Grafana",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "grafana",
+        "label": "Grafana",
+        "summary": "Ứng dụng web mã nguồn mở chuyên về phân tích và trực quan hóa dữ liệu, giúp tổng hợp các chỉ số, nhật ký và dấu vết vào các bảng điều khiển tương tác.",
+        "domains": [
+          "it/devops/observability"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Nền tảng trực quan hóa Grafana",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "grafana",
+        "label": "Grafana",
+        "summary": "Ứng dụng web mã nguồn mở chuyên về phân tích và trực quan hóa dữ liệu, giúp tổng hợp các chỉ số, nhật ký và dấu vết vào các bảng điều khiển tương tác.",
+        "domains": [
+          "it/devops/observability"
         ]
       }
     ],
@@ -5515,6 +5514,38 @@
     "autolink": true
   },
   {
+    "key": "Health check",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "health-check",
+        "label": "Health check",
+        "qualifier": "(Phần mềm)",
+        "summary": "Yêu cầu chẩn đoán được gửi định kỳ tới một dịch vụ phần mềm nhằm xác nhận trạng thái hoạt động và khả năng xử lý yêu cầu của dịch vụ đó.",
+        "domains": [
+          "it/devops/sre-operations"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Kiểm tra sức khỏe dịch vụ",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "health-check",
+        "label": "Health check",
+        "qualifier": "(Phần mềm)",
+        "summary": "Yêu cầu chẩn đoán được gửi định kỳ tới một dịch vụ phần mềm nhằm xác nhận trạng thái hoạt động và khả năng xử lý yêu cầu của dịch vụ đó.",
+        "domains": [
+          "it/devops/sre-operations"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
     "key": "Hotfix",
     "match": "any-case",
     "concepts": [
@@ -5749,6 +5780,36 @@
         "summary": "Tác vụ thị giác máy tính trong đó thuật toán phân tích toàn bộ bức ảnh để gán cho nó một hoặc nhiều nhãn danh mục từ một tập phân loại xác định.",
         "domains": [
           "it/ai-ml/computer-vision"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Immutable infrastructure",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "immutable-infrastructure",
+        "label": "Immutable infrastructure",
+        "summary": "Mô hình quản lý hạ tầng trong đó các máy chủ hoặc vùng chứa không bao giờ bị chỉnh sửa trực tiếp sau khi khởi chạy, mà luôn được thay thế bằng hình ảnh máy mới khi có thay đổi.",
+        "domains": [
+          "it/devops/iac"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Hạ tầng bất biến",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "immutable-infrastructure",
+        "label": "Immutable infrastructure",
+        "summary": "Mô hình quản lý hạ tầng trong đó các máy chủ hoặc vùng chứa không bao giờ bị chỉnh sửa trực tiếp sau khi khởi chạy, mà luôn được thay thế bằng hình ảnh máy mới khi có thay đổi.",
+        "domains": [
+          "it/devops/iac"
         ]
       }
     ],
@@ -6247,51 +6308,6 @@
     "autolink": true
   },
   {
-    "key": "Intrusion detection system (IDS)",
-    "match": "any-case",
-    "concepts": [
-      {
-        "id": "intrusion-detection-system",
-        "label": "Intrusion detection system (IDS)",
-        "summary": "Thiết bị phần cứng hoặc ứng dụng phần mềm giám sát các hoạt động trên mạng hoặc máy chủ nhằm phát hiện các hành vi độc hại và phát tín hiệu cảnh báo.",
-        "domains": [
-          "it/security/vulnerabilities"
-        ]
-      }
-    ],
-    "autolink": true
-  },
-  {
-    "key": "IDS",
-    "match": "exact-case",
-    "concepts": [
-      {
-        "id": "intrusion-detection-system",
-        "label": "Intrusion detection system (IDS)",
-        "summary": "Thiết bị phần cứng hoặc ứng dụng phần mềm giám sát các hoạt động trên mạng hoặc máy chủ nhằm phát hiện các hành vi độc hại và phát tín hiệu cảnh báo.",
-        "domains": [
-          "it/security/vulnerabilities"
-        ]
-      }
-    ],
-    "autolink": true
-  },
-  {
-    "key": "hệ thống phát hiện xâm nhập",
-    "match": "any-case",
-    "concepts": [
-      {
-        "id": "intrusion-detection-system",
-        "label": "Intrusion detection system (IDS)",
-        "summary": "Thiết bị phần cứng hoặc ứng dụng phần mềm giám sát các hoạt động trên mạng hoặc máy chủ nhằm phát hiện các hành vi độc hại và phát tín hiệu cảnh báo.",
-        "domains": [
-          "it/security/vulnerabilities"
-        ]
-      }
-    ],
-    "autolink": true
-  },
-  {
     "key": "Kim tự tháp ngược",
     "match": "any-case",
     "concepts": [
@@ -6455,6 +6471,36 @@
         "summary": "Prompt được soạn để khiến mô hình bỏ qua nguyên tắc an toàn và tạo ra nội dung mà lẽ ra nó phải từ chối.",
         "domains": [
           "it/ai-ml/ai-safety-governance"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Jenkins",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "jenkins",
+        "label": "Jenkins",
+        "summary": "Máy chủ tự động hóa mã nguồn mở độc lập hỗ trợ thiết lập các pipeline xây dựng, kiểm thử và triển khai phần mềm thông qua hệ thống plugin đa dạng.",
+        "domains": [
+          "it/devops/ci-cd"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Máy chủ tự động hóa Jenkins",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "jenkins",
+        "label": "Jenkins",
+        "summary": "Máy chủ tự động hóa mã nguồn mở độc lập hỗ trợ thiết lập các pipeline xây dựng, kiểm thử và triển khai phần mềm thông qua hệ thống plugin đa dạng.",
+        "domains": [
+          "it/devops/ci-cd"
         ]
       }
     ],
@@ -6938,6 +6984,36 @@
     "autolink": true
   },
   {
+    "key": "Liveness probe",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "liveness-probe",
+        "label": "Liveness probe",
+        "summary": "Bộ kiểm tra định kỳ trong hệ thống điều phối container nhằm phát hiện trạng thái treo hoặc chết của tiến trình để kích hoạt cơ chế khởi động lại kịp thời.",
+        "domains": [
+          "it/devops/containers"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Đầu dò hoạt động",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "liveness-probe",
+        "label": "Liveness probe",
+        "summary": "Bộ kiểm tra định kỳ trong hệ thống điều phối container nhằm phát hiện trạng thái treo hoặc chết của tiến trình để kích hoạt cơ chế khởi động lại kịp thời.",
+        "domains": [
+          "it/devops/containers"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
     "key": "Mô hình ngôn ngữ lớn",
     "match": "any-case",
     "concepts": [
@@ -7192,51 +7268,6 @@
         "summary": "Ngành thuộc trí tuệ nhân tạo nơi hệ thống máy tính tự phát hiện quy luật ẩn trong dữ liệu để hoàn thiện tác vụ mà không cần quy tắc cứng.",
         "domains": [
           "it/ai-ml/foundations"
-        ]
-      }
-    ],
-    "autolink": true
-  },
-  {
-    "key": "Malware",
-    "match": "any-case",
-    "concepts": [
-      {
-        "id": "malware",
-        "label": "Malware",
-        "summary": "Thuật ngữ chung chỉ bất kỳ phần mềm nào được cố tình phát triển nhằm phá hoại, đánh cắp thông tin hoặc chiếm đoạt trái phép quyền điều khiển hệ thống máy tính.",
-        "domains": [
-          "it/security/vulnerabilities"
-        ]
-      }
-    ],
-    "autolink": true
-  },
-  {
-    "key": "mã độc",
-    "match": "any-case",
-    "concepts": [
-      {
-        "id": "malware",
-        "label": "Malware",
-        "summary": "Thuật ngữ chung chỉ bất kỳ phần mềm nào được cố tình phát triển nhằm phá hoại, đánh cắp thông tin hoặc chiếm đoạt trái phép quyền điều khiển hệ thống máy tính.",
-        "domains": [
-          "it/security/vulnerabilities"
-        ]
-      }
-    ],
-    "autolink": true
-  },
-  {
-    "key": "phần mềm độc hại",
-    "match": "any-case",
-    "concepts": [
-      {
-        "id": "malware",
-        "label": "Malware",
-        "summary": "Thuật ngữ chung chỉ bất kỳ phần mềm nào được cố tình phát triển nhằm phá hoại, đánh cắp thông tin hoặc chiếm đoạt trái phép quyền điều khiển hệ thống máy tính.",
-        "domains": [
-          "it/security/vulnerabilities"
         ]
       }
     ],
@@ -8047,6 +8078,51 @@
     "autolink": true
   },
   {
+    "key": "Mean time to recovery (MTTR)",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "mttr",
+        "label": "Mean time to recovery (MTTR)",
+        "summary": "Chỉ số vận hành biểu thị thời gian trung bình cần thiết để khắc phục sự cố và khôi phục hệ thống về trạng thái hoạt động bình thường.",
+        "domains": [
+          "it/devops/sre-operations"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "MTTR",
+    "match": "exact-case",
+    "concepts": [
+      {
+        "id": "mttr",
+        "label": "Mean time to recovery (MTTR)",
+        "summary": "Chỉ số vận hành biểu thị thời gian trung bình cần thiết để khắc phục sự cố và khôi phục hệ thống về trạng thái hoạt động bình thường.",
+        "domains": [
+          "it/devops/sre-operations"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Thời gian phục hồi trung bình",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "mttr",
+        "label": "Mean time to recovery (MTTR)",
+        "summary": "Chỉ số vận hành biểu thị thời gian trung bình cần thiết để khắc phục sự cố và khôi phục hệ thống về trạng thái hoạt động bình thường.",
+        "domains": [
+          "it/devops/sre-operations"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
     "key": "Quỹ tương hỗ",
     "match": "any-case",
     "concepts": [
@@ -8645,30 +8721,30 @@
     "autolink": true
   },
   {
-    "key": "OpenID Connect (OIDC)",
+    "key": "OpenTelemetry",
     "match": "any-case",
     "concepts": [
       {
-        "id": "openid-connect",
-        "label": "OpenID Connect (OIDC)",
-        "summary": "Giao thức định danh xây dựng trên nền OAuth 2.0 cho phép ứng dụng xác minh danh tính người dùng và lấy thông tin hồ sơ qua JSON Web Token.",
+        "id": "opentelemetry",
+        "label": "OpenTelemetry",
+        "summary": "Khung làm việc mã nguồn mở trung lập của CNCF cung cấp các bộ API, SDK và công cụ chuẩn hóa nhằm tạo và xuất dữ liệu đo lường từ xa.",
         "domains": [
-          "it/security/authentication"
+          "it/devops/observability"
         ]
       }
     ],
     "autolink": true
   },
   {
-    "key": "OIDC",
-    "match": "exact-case",
+    "key": "Chuẩn thu thập dữ liệu đo lường OpenTelemetry",
+    "match": "any-case",
     "concepts": [
       {
-        "id": "openid-connect",
-        "label": "OpenID Connect (OIDC)",
-        "summary": "Giao thức định danh xây dựng trên nền OAuth 2.0 cho phép ứng dụng xác minh danh tính người dùng và lấy thông tin hồ sơ qua JSON Web Token.",
+        "id": "opentelemetry",
+        "label": "OpenTelemetry",
+        "summary": "Khung làm việc mã nguồn mở trung lập của CNCF cung cấp các bộ API, SDK và công cụ chuẩn hóa nhằm tạo và xuất dữ liệu đo lường từ xa.",
         "domains": [
-          "it/security/authentication"
+          "it/devops/observability"
         ]
       }
     ],
@@ -8855,36 +8931,6 @@
     "autolink": true
   },
   {
-    "key": "OWASP Top 10",
-    "match": "any-case",
-    "concepts": [
-      {
-        "id": "owasp-top-10",
-        "label": "OWASP Top 10",
-        "summary": "Báo cáo nâng cao nhận thức được cộng đồng OWASP cập nhật định kỳ nhằm liệt kê mười nguy cơ an ninh nghiêm trọng nhất đối với các ứng dụng web.",
-        "domains": [
-          "it/security/vulnerabilities"
-        ]
-      }
-    ],
-    "autolink": true
-  },
-  {
-    "key": "10 lỗ hổng bảo mật hàng đầu OWASP",
-    "match": "any-case",
-    "concepts": [
-      {
-        "id": "owasp-top-10",
-        "label": "OWASP Top 10",
-        "summary": "Báo cáo nâng cao nhận thức được cộng đồng OWASP cập nhật định kỳ nhằm liệt kê mười nguy cơ an ninh nghiêm trọng nhất đối với các ứng dụng web.",
-        "domains": [
-          "it/security/vulnerabilities"
-        ]
-      }
-    ],
-    "autolink": true
-  },
-  {
     "key": "Pagination",
     "match": "any-case",
     "concepts": [
@@ -8909,38 +8955,6 @@
         "summary": "Phương pháp phân chia các tập dữ liệu lớn thành từng phần hoặc từng trang nhỏ nhằm tối ưu hiệu năng và băng thông truyền tải.",
         "domains": [
           "it/web/api"
-        ]
-      }
-    ],
-    "autolink": true
-  },
-  {
-    "key": "Salt",
-    "match": "any-case",
-    "concepts": [
-      {
-        "id": "password-salting",
-        "label": "Salt",
-        "qualifier": "(Mật mã học)",
-        "summary": "Chuỗi dữ liệu ngẫu nhiên được ghép nối với mật khẩu bản rõ trước khi băm nhằm tạo ra giá trị băm duy nhất và vô hiệu hóa các bảng tra cứu tính sẵn.",
-        "domains": [
-          "it/security/cryptography"
-        ]
-      }
-    ],
-    "autolink": false
-  },
-  {
-    "key": "muối mật mã",
-    "match": "any-case",
-    "concepts": [
-      {
-        "id": "password-salting",
-        "label": "Salt",
-        "qualifier": "(Mật mã học)",
-        "summary": "Chuỗi dữ liệu ngẫu nhiên được ghép nối với mật khẩu bản rõ trước khi băm nhằm tạo ra giá trị băm duy nhất và vô hiệu hóa các bảng tra cứu tính sẵn.",
-        "domains": [
-          "it/security/cryptography"
         ]
       }
     ],
@@ -9067,66 +9081,6 @@
     "autolink": true
   },
   {
-    "key": "Penetration testing",
-    "match": "any-case",
-    "concepts": [
-      {
-        "id": "penetration-testing",
-        "label": "Penetration testing",
-        "summary": "Quy trình mô phỏng tấn công mạng có ủy quyền vào hệ thống máy tính, mạng hoặc ứng dụng nhằm đánh giá hiệu quả của các biện pháp bảo vệ.",
-        "domains": [
-          "it/security/vulnerabilities"
-        ]
-      }
-    ],
-    "autolink": true
-  },
-  {
-    "key": "pentest",
-    "match": "any-case",
-    "concepts": [
-      {
-        "id": "penetration-testing",
-        "label": "Penetration testing",
-        "summary": "Quy trình mô phỏng tấn công mạng có ủy quyền vào hệ thống máy tính, mạng hoặc ứng dụng nhằm đánh giá hiệu quả của các biện pháp bảo vệ.",
-        "domains": [
-          "it/security/vulnerabilities"
-        ]
-      }
-    ],
-    "autolink": true
-  },
-  {
-    "key": "kiểm thử xâm nhập",
-    "match": "any-case",
-    "concepts": [
-      {
-        "id": "penetration-testing",
-        "label": "Penetration testing",
-        "summary": "Quy trình mô phỏng tấn công mạng có ủy quyền vào hệ thống máy tính, mạng hoặc ứng dụng nhằm đánh giá hiệu quả của các biện pháp bảo vệ.",
-        "domains": [
-          "it/security/vulnerabilities"
-        ]
-      }
-    ],
-    "autolink": true
-  },
-  {
-    "key": "hack đạo đức",
-    "match": "any-case",
-    "concepts": [
-      {
-        "id": "penetration-testing",
-        "label": "Penetration testing",
-        "summary": "Quy trình mô phỏng tấn công mạng có ủy quyền vào hệ thống máy tính, mạng hoặc ứng dụng nhằm đánh giá hiệu quả của các biện pháp bảo vệ.",
-        "domains": [
-          "it/security/vulnerabilities"
-        ]
-      }
-    ],
-    "autolink": true
-  },
-  {
     "key": "Thuế thu nhập cá nhân",
     "match": "any-case",
     "concepts": [
@@ -9157,30 +9111,30 @@
     "autolink": true
   },
   {
-    "key": "Phishing",
+    "key": "Platform engineering",
     "match": "any-case",
     "concepts": [
       {
-        "id": "phishing",
-        "label": "Phishing",
-        "summary": "Hình thức tấn công phi kỹ thuật trong đó kẻ xấu mạo danh các tổ chức đáng tin cậy để lừa nạn nhân tiết lộ thông tin nhạy cảm hoặc tải mã độc.",
+        "id": "platform-engineering",
+        "label": "Platform engineering",
+        "summary": "Hoạt động thiết kế và xây dựng các nền tảng tự phục vụ nội bộ nhằm cung cấp chuỗi công cụ chuẩn hóa giúp các nhóm phát triển phần mềm phát hành ứng dụng độc lập và an toàn.",
         "domains": [
-          "it/security/vulnerabilities"
+          "it/devops/sre-operations"
         ]
       }
     ],
     "autolink": true
   },
   {
-    "key": "tấn công giả mạo",
+    "key": "Kỹ thuật nền tảng",
     "match": "any-case",
     "concepts": [
       {
-        "id": "phishing",
-        "label": "Phishing",
-        "summary": "Hình thức tấn công phi kỹ thuật trong đó kẻ xấu mạo danh các tổ chức đáng tin cậy để lừa nạn nhân tiết lộ thông tin nhạy cảm hoặc tải mã độc.",
+        "id": "platform-engineering",
+        "label": "Platform engineering",
+        "summary": "Hoạt động thiết kế và xây dựng các nền tảng tự phục vụ nội bộ nhằm cung cấp chuỗi công cụ chuẩn hóa giúp các nhóm phát triển phần mềm phát hành ứng dụng độc lập và an toàn.",
         "domains": [
-          "it/security/vulnerabilities"
+          "it/devops/sre-operations"
         ]
       }
     ],
@@ -9891,6 +9845,38 @@
     "autolink": true
   },
   {
+    "key": "Prometheus",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "prometheus",
+        "label": "Prometheus",
+        "qualifier": "(Giám sát)",
+        "summary": "Bộ công cụ giám sát và cảnh báo mã nguồn mở lưu trữ dữ liệu chỉ số theo chuỗi thời gian và hỗ trợ truy vấn đa chiều bằng ngôn ngữ PromQL.",
+        "domains": [
+          "it/devops/observability"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Hệ thống giám sát Prometheus",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "prometheus",
+        "label": "Prometheus",
+        "qualifier": "(Giám sát)",
+        "summary": "Bộ công cụ giám sát và cảnh báo mã nguồn mở lưu trữ dữ liệu chỉ số theo chuỗi thời gian và hỗ trợ truy vấn đa chiều bằng ngôn ngữ PromQL.",
+        "domains": [
+          "it/devops/observability"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
     "key": "Prompt",
     "match": "any-case",
     "concepts": [
@@ -9930,51 +9916,6 @@
         "summary": "Kiểu tấn công dùng đầu vào được soạn sẵn, do người dùng gõ hoặc giấu trong nội dung mô hình đọc, để lấn át chỉ dẫn gốc của ứng dụng.",
         "domains": [
           "it/ai-ml/ai-safety-governance"
-        ]
-      }
-    ],
-    "autolink": true
-  },
-  {
-    "key": "Mật mã hóa khóa công khai",
-    "match": "any-case",
-    "concepts": [
-      {
-        "id": "public-key-cryptography",
-        "label": "Mật mã hóa khóa công khai",
-        "summary": "Hệ thống mật mã sử dụng các cặp khóa liên kết toán học gồm khóa công khai để mã hóa hoặc kiểm tra chữ ký và khóa riêng tư để giải mã hoặc ký số.",
-        "domains": [
-          "it/security/cryptography"
-        ]
-      }
-    ],
-    "autolink": true
-  },
-  {
-    "key": "mật mã bất đối xứng",
-    "match": "any-case",
-    "concepts": [
-      {
-        "id": "public-key-cryptography",
-        "label": "Mật mã hóa khóa công khai",
-        "summary": "Hệ thống mật mã sử dụng các cặp khóa liên kết toán học gồm khóa công khai để mã hóa hoặc kiểm tra chữ ký và khóa riêng tư để giải mã hoặc ký số.",
-        "domains": [
-          "it/security/cryptography"
-        ]
-      }
-    ],
-    "autolink": true
-  },
-  {
-    "key": "Public-key cryptography",
-    "match": "any-case",
-    "concepts": [
-      {
-        "id": "public-key-cryptography",
-        "label": "Mật mã hóa khóa công khai",
-        "summary": "Hệ thống mật mã sử dụng các cặp khóa liên kết toán học gồm khóa công khai để mã hóa hoặc kiểm tra chữ ký và khóa riêng tư để giải mã hoặc ký số.",
-        "domains": [
-          "it/security/cryptography"
         ]
       }
     ],
@@ -10162,36 +10103,6 @@
     "autolink": true
   },
   {
-    "key": "Ransomware",
-    "match": "any-case",
-    "concepts": [
-      {
-        "id": "ransomware",
-        "label": "Ransomware",
-        "summary": "Loại phần mềm độc hại mã hóa dữ liệu của nạn nhân hoặc khóa quyền truy cập hệ thống nhằm đòi tiền chuộc để đổi lấy khóa giải mã.",
-        "domains": [
-          "it/security/vulnerabilities"
-        ]
-      }
-    ],
-    "autolink": true
-  },
-  {
-    "key": "mã độc tống tiền",
-    "match": "any-case",
-    "concepts": [
-      {
-        "id": "ransomware",
-        "label": "Ransomware",
-        "summary": "Loại phần mềm độc hại mã hóa dữ liệu của nạn nhân hoặc khóa quyền truy cập hệ thống nhằm đòi tiền chuộc để đổi lấy khóa giải mã.",
-        "domains": [
-          "it/security/vulnerabilities"
-        ]
-      }
-    ],
-    "autolink": true
-  },
-  {
     "key": "Rate limiting",
     "match": "any-case",
     "concepts": [
@@ -10252,45 +10163,30 @@
     "autolink": true
   },
   {
-    "key": "Role-based access control (RBAC)",
+    "key": "Readiness probe",
     "match": "any-case",
     "concepts": [
       {
-        "id": "rbac",
-        "label": "Role-based access control (RBAC)",
-        "summary": "Mô hình kiểm soát truy cập trong đó các quyền hạn được gom nhóm thành các vai trò và gán cho người dùng dựa trên nhiệm vụ của họ.",
+        "id": "readiness-probe",
+        "label": "Readiness probe",
+        "summary": "Bộ kiểm tra xác định xem container ứng dụng đã hoàn tất quá trình khởi tạo và sẵn sàng nhận lưu lượng truy cập mạng từ bộ cân bằng tải hay chưa.",
         "domains": [
-          "it/security/authentication"
+          "it/devops/containers"
         ]
       }
     ],
     "autolink": true
   },
   {
-    "key": "RBAC",
-    "match": "exact-case",
-    "concepts": [
-      {
-        "id": "rbac",
-        "label": "Role-based access control (RBAC)",
-        "summary": "Mô hình kiểm soát truy cập trong đó các quyền hạn được gom nhóm thành các vai trò và gán cho người dùng dựa trên nhiệm vụ của họ.",
-        "domains": [
-          "it/security/authentication"
-        ]
-      }
-    ],
-    "autolink": true
-  },
-  {
-    "key": "kiểm soát truy cập dựa trên vai trò",
+    "key": "Đầu dò sẵn sàng",
     "match": "any-case",
     "concepts": [
       {
-        "id": "rbac",
-        "label": "Role-based access control (RBAC)",
-        "summary": "Mô hình kiểm soát truy cập trong đó các quyền hạn được gom nhóm thành các vai trò và gán cho người dùng dựa trên nhiệm vụ của họ.",
+        "id": "readiness-probe",
+        "label": "Readiness probe",
+        "summary": "Bộ kiểm tra xác định xem container ứng dụng đã hoàn tất quá trình khởi tạo và sẵn sàng nhận lưu lượng truy cập mạng từ bộ cân bằng tải hay chưa.",
         "domains": [
-          "it/security/authentication"
+          "it/devops/containers"
         ]
       }
     ],
@@ -10765,6 +10661,51 @@
     "autolink": true
   },
   {
+    "key": "Runbook",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "runbook",
+        "label": "Runbook",
+        "summary": "Tài liệu hướng dẫn quy trình từng bước được chuẩn hóa giúp kỹ sư vận hành xử lý sự cố khẩn cấp hoặc thực hiện bảo trì hệ thống an toàn.",
+        "domains": [
+          "it/devops/sre-operations"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Sổ tay vận hành",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "runbook",
+        "label": "Runbook",
+        "summary": "Tài liệu hướng dẫn quy trình từng bước được chuẩn hóa giúp kỹ sư vận hành xử lý sự cố khẩn cấp hoặc thực hiện bảo trì hệ thống an toàn.",
+        "domains": [
+          "it/devops/sre-operations"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Quy trình xử lý sự cố",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "runbook",
+        "label": "Runbook",
+        "summary": "Tài liệu hướng dẫn quy trình từng bước được chuẩn hóa giúp kỹ sư vận hành xử lý sự cố khẩn cấp hoặc thực hiện bảo trì hệ thống an toàn.",
+        "domains": [
+          "it/devops/sre-operations"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
     "key": "Khách hàng tiềm năng",
     "match": "any-case",
     "concepts": [
@@ -10807,96 +10748,6 @@
         "summary": "Cá nhân hoặc tổ chức bày tỏ sự quan tâm đến sản phẩm hoặc dịch vụ của doanh nghiệp và cung cấp thông tin liên hệ để được tư vấn tiếp theo.",
         "domains": [
           "media/digital-marketing/metrics-analytics"
-        ]
-      }
-    ],
-    "autolink": true
-  },
-  {
-    "key": "SAML",
-    "match": "exact-case",
-    "concepts": [
-      {
-        "id": "saml",
-        "label": "SAML",
-        "summary": "Chuẩn mở dựa trên XML để trao đổi dữ liệu xác thực và phân quyền giữa nhà cung cấp định danh và nhà cung cấp dịch vụ.",
-        "domains": [
-          "it/security/authentication"
-        ]
-      }
-    ],
-    "autolink": true
-  },
-  {
-    "key": "Security Assertion Markup Language",
-    "match": "any-case",
-    "concepts": [
-      {
-        "id": "saml",
-        "label": "SAML",
-        "summary": "Chuẩn mở dựa trên XML để trao đổi dữ liệu xác thực và phân quyền giữa nhà cung cấp định danh và nhà cung cấp dịch vụ.",
-        "domains": [
-          "it/security/authentication"
-        ]
-      }
-    ],
-    "autolink": true
-  },
-  {
-    "key": "Static application security testing (SAST)",
-    "match": "any-case",
-    "concepts": [
-      {
-        "id": "sast",
-        "label": "Static application security testing (SAST)",
-        "summary": "Phương pháp kiểm thử hộp trắng phân tích mã nguồn hoặc tệp nhị phân ở trạng thái tĩnh nhằm phát hiện các lỗ hổng bảo mật trước khi phần mềm được thực thi.",
-        "domains": [
-          "it/security/vulnerabilities"
-        ]
-      }
-    ],
-    "autolink": true
-  },
-  {
-    "key": "SAST",
-    "match": "exact-case",
-    "concepts": [
-      {
-        "id": "sast",
-        "label": "Static application security testing (SAST)",
-        "summary": "Phương pháp kiểm thử hộp trắng phân tích mã nguồn hoặc tệp nhị phân ở trạng thái tĩnh nhằm phát hiện các lỗ hổng bảo mật trước khi phần mềm được thực thi.",
-        "domains": [
-          "it/security/vulnerabilities"
-        ]
-      }
-    ],
-    "autolink": true
-  },
-  {
-    "key": "kiểm thử bảo mật ứng dụng tĩnh",
-    "match": "any-case",
-    "concepts": [
-      {
-        "id": "sast",
-        "label": "Static application security testing (SAST)",
-        "summary": "Phương pháp kiểm thử hộp trắng phân tích mã nguồn hoặc tệp nhị phân ở trạng thái tĩnh nhằm phát hiện các lỗ hổng bảo mật trước khi phần mềm được thực thi.",
-        "domains": [
-          "it/security/vulnerabilities"
-        ]
-      }
-    ],
-    "autolink": true
-  },
-  {
-    "key": "phân tích mã nguồn tĩnh",
-    "match": "any-case",
-    "concepts": [
-      {
-        "id": "sast",
-        "label": "Static application security testing (SAST)",
-        "summary": "Phương pháp kiểm thử hộp trắng phân tích mã nguồn hoặc tệp nhị phân ở trạng thái tĩnh nhằm phát hiện các lỗ hổng bảo mật trước khi phần mềm được thực thi.",
-        "domains": [
-          "it/security/vulnerabilities"
         ]
       }
     ],
@@ -11160,51 +11011,6 @@
         "domains": [
           "it/devops/ci-cd",
           "it/security/authentication"
-        ]
-      }
-    ],
-    "autolink": true
-  },
-  {
-    "key": "Security patch",
-    "match": "any-case",
-    "concepts": [
-      {
-        "id": "security-patch",
-        "label": "Security patch",
-        "summary": "Bản cập nhật phần mềm được phát triển chuyên biệt nhằm khắc phục các lỗ hổng bảo mật đã xác định và ngăn ngừa nguy cơ bị tin tặc khai thác.",
-        "domains": [
-          "it/security/vulnerabilities"
-        ]
-      }
-    ],
-    "autolink": true
-  },
-  {
-    "key": "bản vá bảo mật",
-    "match": "any-case",
-    "concepts": [
-      {
-        "id": "security-patch",
-        "label": "Security patch",
-        "summary": "Bản cập nhật phần mềm được phát triển chuyên biệt nhằm khắc phục các lỗ hổng bảo mật đã xác định và ngăn ngừa nguy cơ bị tin tặc khai thác.",
-        "domains": [
-          "it/security/vulnerabilities"
-        ]
-      }
-    ],
-    "autolink": true
-  },
-  {
-    "key": "cập nhật bảo mật",
-    "match": "any-case",
-    "concepts": [
-      {
-        "id": "security-patch",
-        "label": "Security patch",
-        "summary": "Bản cập nhật phần mềm được phát triển chuyên biệt nhằm khắc phục các lỗ hổng bảo mật đã xác định và ngăn ngừa nguy cơ bị tin tặc khai thác.",
-        "domains": [
-          "it/security/vulnerabilities"
         ]
       }
     ],
@@ -11515,51 +11321,6 @@
     "autolink": true
   },
   {
-    "key": "SIEM",
-    "match": "exact-case",
-    "concepts": [
-      {
-        "id": "siem",
-        "label": "SIEM",
-        "summary": "Hệ thống phần mềm bảo mật thu thập, phân tích và tương quan hóa dữ liệu nhật ký sự kiện từ toàn bộ hạ tầng doanh nghiệp để phát hiện sự cố theo thời gian thực.",
-        "domains": [
-          "it/security/vulnerabilities"
-        ]
-      }
-    ],
-    "autolink": true
-  },
-  {
-    "key": "Security Information and Event Management",
-    "match": "any-case",
-    "concepts": [
-      {
-        "id": "siem",
-        "label": "SIEM",
-        "summary": "Hệ thống phần mềm bảo mật thu thập, phân tích và tương quan hóa dữ liệu nhật ký sự kiện từ toàn bộ hạ tầng doanh nghiệp để phát hiện sự cố theo thời gian thực.",
-        "domains": [
-          "it/security/vulnerabilities"
-        ]
-      }
-    ],
-    "autolink": true
-  },
-  {
-    "key": "quản lý sự kiện và thông tin bảo mật",
-    "match": "any-case",
-    "concepts": [
-      {
-        "id": "siem",
-        "label": "SIEM",
-        "summary": "Hệ thống phần mềm bảo mật thu thập, phân tích và tương quan hóa dữ liệu nhật ký sự kiện từ toàn bộ hạ tầng doanh nghiệp để phát hiện sự cố theo thời gian thực.",
-        "domains": [
-          "it/security/vulnerabilities"
-        ]
-      }
-    ],
-    "autolink": true
-  },
-  {
     "key": "Lãi đơn",
     "match": "any-case",
     "concepts": [
@@ -11766,51 +11527,6 @@
         "summary": "Không gian nhà ở được tích hợp các thiết bị điện tử có khả năng kết nối mạng, cho phép tự động hóa sinh hoạt và quản lý tập trung từ xa.",
         "domains": [
           "iot/devices-sensors"
-        ]
-      }
-    ],
-    "autolink": true
-  },
-  {
-    "key": "Security Operations Center (SOC)",
-    "match": "any-case",
-    "concepts": [
-      {
-        "id": "soc-security",
-        "label": "Security Operations Center (SOC)",
-        "summary": "Đơn vị chuyên trách chịu trách nhiệm liên tục giám sát, phát hiện, phân tích và xử lý các sự cố an toàn thông tin của tổ chức suốt 24/7.",
-        "domains": [
-          "it/security/vulnerabilities"
-        ]
-      }
-    ],
-    "autolink": true
-  },
-  {
-    "key": "SOC",
-    "match": "exact-case",
-    "concepts": [
-      {
-        "id": "soc-security",
-        "label": "Security Operations Center (SOC)",
-        "summary": "Đơn vị chuyên trách chịu trách nhiệm liên tục giám sát, phát hiện, phân tích và xử lý các sự cố an toàn thông tin của tổ chức suốt 24/7.",
-        "domains": [
-          "it/security/vulnerabilities"
-        ]
-      }
-    ],
-    "autolink": false
-  },
-  {
-    "key": "trung tâm điều hành an ninh mạng",
-    "match": "any-case",
-    "concepts": [
-      {
-        "id": "soc-security",
-        "label": "Security Operations Center (SOC)",
-        "summary": "Đơn vị chuyên trách chịu trách nhiệm liên tục giám sát, phát hiện, phân tích và xử lý các sự cố an toàn thông tin của tổ chức suốt 24/7.",
-        "domains": [
-          "it/security/vulnerabilities"
         ]
       }
     ],
@@ -12267,45 +11983,45 @@
     "autolink": true
   },
   {
-    "key": "Single sign-on (SSO)",
+    "key": "Site reliability engineering (SRE)",
     "match": "any-case",
     "concepts": [
       {
-        "id": "sso",
-        "label": "Single sign-on (SSO)",
-        "summary": "Cơ chế xác thực cho phép người dùng chỉ cần đăng nhập một lần là có thể truy cập nhiều ứng dụng liên kết mà không phải nhập lại thông tin.",
+        "id": "sre",
+        "label": "Site reliability engineering (SRE)",
+        "summary": "Chuyên ngành kỹ thuật ứng dụng các nguyên lý phát triển phần mềm để tự động hóa hoạt động vận hành và duy trì độ tin cậy cho các hệ thống quy mô lớn.",
         "domains": [
-          "it/security/authentication"
+          "it/devops/sre-operations"
         ]
       }
     ],
     "autolink": true
   },
   {
-    "key": "SSO",
+    "key": "SRE",
     "match": "exact-case",
     "concepts": [
       {
-        "id": "sso",
-        "label": "Single sign-on (SSO)",
-        "summary": "Cơ chế xác thực cho phép người dùng chỉ cần đăng nhập một lần là có thể truy cập nhiều ứng dụng liên kết mà không phải nhập lại thông tin.",
+        "id": "sre",
+        "label": "Site reliability engineering (SRE)",
+        "summary": "Chuyên ngành kỹ thuật ứng dụng các nguyên lý phát triển phần mềm để tự động hóa hoạt động vận hành và duy trì độ tin cậy cho các hệ thống quy mô lớn.",
         "domains": [
-          "it/security/authentication"
+          "it/devops/sre-operations"
         ]
       }
     ],
     "autolink": true
   },
   {
-    "key": "đăng nhập một lần",
+    "key": "Kỹ thuật độ tin cậy hệ thống",
     "match": "any-case",
     "concepts": [
       {
-        "id": "sso",
-        "label": "Single sign-on (SSO)",
-        "summary": "Cơ chế xác thực cho phép người dùng chỉ cần đăng nhập một lần là có thể truy cập nhiều ứng dụng liên kết mà không phải nhập lại thông tin.",
+        "id": "sre",
+        "label": "Site reliability engineering (SRE)",
+        "summary": "Chuyên ngành kỹ thuật ứng dụng các nguyên lý phát triển phần mềm để tự động hóa hoạt động vận hành và duy trì độ tin cậy cho các hệ thống quy mô lớn.",
         "domains": [
-          "it/security/authentication"
+          "it/devops/sre-operations"
         ]
       }
     ],
@@ -12689,38 +12405,6 @@
     "autolink": true
   },
   {
-    "key": "Supply chain attack",
-    "match": "any-case",
-    "concepts": [
-      {
-        "id": "supply-chain-attack",
-        "label": "Supply chain attack",
-        "qualifier": "(Phần mềm)",
-        "summary": "Cuộc tấn công mạng nhắm vào các nhà cung cấp bên thứ ba, thư viện mã nguồn hoặc quy trình đóng gói nhằm xâm nhập vào hệ thống của tổ chức đích.",
-        "domains": [
-          "it/security/vulnerabilities"
-        ]
-      }
-    ],
-    "autolink": true
-  },
-  {
-    "key": "tấn công chuỗi cung ứng",
-    "match": "any-case",
-    "concepts": [
-      {
-        "id": "supply-chain-attack",
-        "label": "Supply chain attack",
-        "qualifier": "(Phần mềm)",
-        "summary": "Cuộc tấn công mạng nhắm vào các nhà cung cấp bên thứ ba, thư viện mã nguồn hoặc quy trình đóng gói nhằm xâm nhập vào hệ thống của tổ chức đích.",
-        "domains": [
-          "it/security/vulnerabilities"
-        ]
-      }
-    ],
-    "autolink": true
-  },
-  {
     "key": "System prompt",
     "match": "any-case",
     "concepts": [
@@ -12873,36 +12557,6 @@
     "autolink": true
   },
   {
-    "key": "Threat modeling",
-    "match": "any-case",
-    "concepts": [
-      {
-        "id": "threat-modeling",
-        "label": "Threat modeling",
-        "summary": "Phương pháp kỹ thuật có cấu trúc nhằm xác định, phân loại và ưu tiên xử lý các mối đe dọa an ninh tiềm ẩn đối với kiến trúc hệ thống.",
-        "domains": [
-          "it/security/vulnerabilities"
-        ]
-      }
-    ],
-    "autolink": true
-  },
-  {
-    "key": "mô hình hóa mối đe dọa",
-    "match": "any-case",
-    "concepts": [
-      {
-        "id": "threat-modeling",
-        "label": "Threat modeling",
-        "summary": "Phương pháp kỹ thuật có cấu trúc nhằm xác định, phân loại và ưu tiên xử lý các mối đe dọa an ninh tiềm ẩn đối với kiến trúc hệ thống.",
-        "domains": [
-          "it/security/vulnerabilities"
-        ]
-      }
-    ],
-    "autolink": true
-  },
-  {
     "key": "Throughput",
     "match": "any-case",
     "concepts": [
@@ -12995,64 +12649,32 @@
     "autolink": true
   },
   {
-    "key": "Certificate",
+    "key": "Toil",
     "match": "any-case",
     "concepts": [
       {
-        "id": "tls-certificate",
-        "label": "Certificate",
-        "qualifier": "(TLS)",
-        "summary": "Tệp dữ liệu số tuân theo chuẩn X.509 có chữ ký số nhằm gắn kết một khóa công khai với tên miền hoặc danh tính của chủ thể.",
+        "id": "toil",
+        "label": "Toil",
+        "qualifier": "(SRE)",
+        "summary": "Trong mô hình SRE, toil là loại công việc vận hành thủ công, lặp lại và có thể tự động hóa, thường tăng tuyến tính theo quy mô của dịch vụ mà không mang lại giá trị bền vững.",
         "domains": [
-          "it/security/cryptography"
-        ]
-      }
-    ],
-    "autolink": false
-  },
-  {
-    "key": "chứng chỉ TLS",
-    "match": "any-case",
-    "concepts": [
-      {
-        "id": "tls-certificate",
-        "label": "Certificate",
-        "qualifier": "(TLS)",
-        "summary": "Tệp dữ liệu số tuân theo chuẩn X.509 có chữ ký số nhằm gắn kết một khóa công khai với tên miền hoặc danh tính của chủ thể.",
-        "domains": [
-          "it/security/cryptography"
+          "it/devops/sre-operations"
         ]
       }
     ],
     "autolink": true
   },
   {
-    "key": "chứng chỉ SSL",
+    "key": "Công việc lao dịch",
     "match": "any-case",
     "concepts": [
       {
-        "id": "tls-certificate",
-        "label": "Certificate",
-        "qualifier": "(TLS)",
-        "summary": "Tệp dữ liệu số tuân theo chuẩn X.509 có chữ ký số nhằm gắn kết một khóa công khai với tên miền hoặc danh tính của chủ thể.",
+        "id": "toil",
+        "label": "Toil",
+        "qualifier": "(SRE)",
+        "summary": "Trong mô hình SRE, toil là loại công việc vận hành thủ công, lặp lại và có thể tự động hóa, thường tăng tuyến tính theo quy mô của dịch vụ mà không mang lại giá trị bền vững.",
         "domains": [
-          "it/security/cryptography"
-        ]
-      }
-    ],
-    "autolink": true
-  },
-  {
-    "key": "chứng chỉ X.509",
-    "match": "any-case",
-    "concepts": [
-      {
-        "id": "tls-certificate",
-        "label": "Certificate",
-        "qualifier": "(TLS)",
-        "summary": "Tệp dữ liệu số tuân theo chuẩn X.509 có chữ ký số nhằm gắn kết một khóa công khai với tên miền hoặc danh tính của chủ thể.",
-        "domains": [
-          "it/security/cryptography"
+          "it/devops/sre-operations"
         ]
       }
     ],
@@ -13246,6 +12868,36 @@
         "summary": "Kiến trúc mạng nơ-ron dựa trên cơ chế tự chú ý giúp xử lý đồng thời mọi phần tử trong chuỗi dữ liệu mà không cần vòng lặp tuần tự.",
         "domains": [
           "it/ai-ml/foundations"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Trunk-based development",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "trunk-based-development",
+        "label": "Trunk-based development",
+        "summary": "Chiến lược quản lý nhánh mã nguồn trong đó các kỹ sư thường xuyên tích hợp những phần thay đổi nhỏ vào một nhánh chính duy nhất nhằm hạn chế xung đột.",
+        "domains": [
+          "it/software-engineering/version-control"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Phát triển dựa trên nhánh chính",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "trunk-based-development",
+        "label": "Trunk-based development",
+        "summary": "Chiến lược quản lý nhánh mã nguồn trong đó các kỹ sư thường xuyên tích hợp những phần thay đổi nhỏ vào một nhánh chính duy nhất nhằm hạn chế xung đột.",
+        "domains": [
+          "it/software-engineering/version-control"
         ]
       }
     ],
@@ -13907,51 +13559,6 @@
     "autolink": true
   },
   {
-    "key": "Web application firewall (WAF)",
-    "match": "any-case",
-    "concepts": [
-      {
-        "id": "waf",
-        "label": "Web application firewall (WAF)",
-        "summary": "Thiết bị hoặc dịch vụ an ninh chuyên dụng giám sát, kiểm tra và ngăn chặn các luồng lưu lượng HTTP/HTTPS độc hại nhắm vào ứng dụng web.",
-        "domains": [
-          "it/security/vulnerabilities"
-        ]
-      }
-    ],
-    "autolink": true
-  },
-  {
-    "key": "WAF",
-    "match": "exact-case",
-    "concepts": [
-      {
-        "id": "waf",
-        "label": "Web application firewall (WAF)",
-        "summary": "Thiết bị hoặc dịch vụ an ninh chuyên dụng giám sát, kiểm tra và ngăn chặn các luồng lưu lượng HTTP/HTTPS độc hại nhắm vào ứng dụng web.",
-        "domains": [
-          "it/security/vulnerabilities"
-        ]
-      }
-    ],
-    "autolink": true
-  },
-  {
-    "key": "tường lửa ứng dụng web",
-    "match": "any-case",
-    "concepts": [
-      {
-        "id": "waf",
-        "label": "Web application firewall (WAF)",
-        "summary": "Thiết bị hoặc dịch vụ an ninh chuyên dụng giám sát, kiểm tra và ngăn chặn các luồng lưu lượng HTTP/HTTPS độc hại nhắm vào ứng dụng web.",
-        "domains": [
-          "it/security/vulnerabilities"
-        ]
-      }
-    ],
-    "autolink": true
-  },
-  {
     "key": "Session",
     "match": "any-case",
     "concepts": [
@@ -14082,51 +13689,6 @@
         "id": "xss",
         "label": "Cross-site scripting (XSS)",
         "summary": "Lỗ hổng tiêm mã độc phía client cho phép tin tặc cài cắm các đoạn mã kịch bản độc hại vào trang web uy tín để thực thi trên trình duyệt của nạn nhân.",
-        "domains": [
-          "it/security/vulnerabilities"
-        ]
-      }
-    ],
-    "autolink": true
-  },
-  {
-    "key": "Zero-day vulnerability",
-    "match": "any-case",
-    "concepts": [
-      {
-        "id": "zero-day",
-        "label": "Zero-day vulnerability",
-        "summary": "Lỗ hổng phần mềm chưa được công bố hoặc chưa có bản sửa lỗi từ nhà sản xuất, khiến người dùng không có thời gian chuẩn bị để phòng vệ.",
-        "domains": [
-          "it/security/vulnerabilities"
-        ]
-      }
-    ],
-    "autolink": true
-  },
-  {
-    "key": "lỗ hổng zero-day",
-    "match": "any-case",
-    "concepts": [
-      {
-        "id": "zero-day",
-        "label": "Zero-day vulnerability",
-        "summary": "Lỗ hổng phần mềm chưa được công bố hoặc chưa có bản sửa lỗi từ nhà sản xuất, khiến người dùng không có thời gian chuẩn bị để phòng vệ.",
-        "domains": [
-          "it/security/vulnerabilities"
-        ]
-      }
-    ],
-    "autolink": true
-  },
-  {
-    "key": "0-day",
-    "match": "any-case",
-    "concepts": [
-      {
-        "id": "zero-day",
-        "label": "Zero-day vulnerability",
-        "summary": "Lỗ hổng phần mềm chưa được công bố hoặc chưa có bản sửa lỗi từ nhà sản xuất, khiến người dùng không có thời gian chuẩn bị để phòng vệ.",
         "domains": [
           "it/security/vulnerabilities"
         ]

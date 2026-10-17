@@ -1,0 +1,25 @@
+id: gitops
+domains:
+  - it/devops/ci-cd
+level: 2
+relations:
+  prerequisites:
+    - ci-cd
+    - git-branch
+  confusable: []
+  related:
+    - devops
+    - infrastructure-as-code
+status: draft
+provenance:
+  drafted_by: ai
+sources:
+  - ref: opengitops
+    locator: https://opengitops.dev/
+    title: "OpenGitOps"
+    language: en
+    accessed: '2026-10-17'
+    retrieved_by: ai
+    supports:
+      - definition
+      - summary

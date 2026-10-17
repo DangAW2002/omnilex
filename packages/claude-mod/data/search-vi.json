@@ -145,6 +145,26 @@
     "status": "draft"
   },
   {
+    "id": "alerting",
+    "label": "Alerting",
+    "aliases": [
+      "Hệ thống cảnh báo"
+    ],
+    "loanwords": [
+      "alerting"
+    ],
+    "plain_descriptions": [
+      "cơ chế tự động gửi tin nhắn hoặc gọi điện cho kỹ sư khi máy chủ gặp sự cố bất thường",
+      "tính năng theo dõi các chỉ số và phát tín hiệu báo động khi vượt qua ngưỡng an toàn"
+    ],
+    "summary": "Cơ chế tự động đối soát dữ liệu giám sát với các quy tắc định sẵn để gửi thông báo tức thời cho đội ngũ trực ban khi hệ thống phát sinh sự cố.",
+    "domains": [
+      "it/devops/observability"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
     "id": "anonymous-source",
     "label": "Nguồn tin ẩn danh",
     "aliases": [
@@ -209,24 +229,25 @@
     "status": "draft"
   },
   {
-    "id": "api-key",
-    "label": "API key",
+    "id": "apm",
+    "label": "Application performance monitoring (APM)",
     "aliases": [
-      "khóa API"
+      "APM",
+      "Giám sát hiệu năng ứng dụng"
     ],
     "loanwords": [
-      "api key"
+      "application performance monitoring",
+      "apm"
     ],
     "plain_descriptions": [
-      "chuỗi ký tự bí mật mà ứng dụng gửi kèm để tự nhận diện khi gọi dịch vụ web",
-      "mật khẩu kỹ thuật số giúp nhà cung cấp theo dõi mức dùng và kiểm soát quyền truy cập API"
+      "công cụ theo dõi hoạt động sâu bên trong ứng dụng giúp tìm ra hàm chạy chậm và lệnh cơ sở dữ liệu bị nghẽn",
+      "giải pháp giám sát toàn diện đo lường thời gian phản hồi, tỷ lệ lỗi và trải nghiệm của người dùng cuối"
     ],
-    "summary": "Chuỗi ký tự định danh duy nhất do ứng dụng gửi kèm để xác thực chương trình gọi dịch vụ và theo dõi hạn mức sử dụng API.",
+    "summary": "Bộ giải pháp giám sát chuyên sâu nhằm theo dõi tính sẵn sàng, phát hiện lỗi mã nguồn và phân tích độ trễ giao dịch trong các ứng dụng phần mềm.",
     "domains": [
-      "it/security/authentication",
-      "it/web/api"
+      "it/devops/observability"
     ],
-    "level": 1,
+    "level": 2,
     "status": "draft"
   },
   {
@@ -308,50 +329,6 @@
     "summary": "Tổng số cá nhân hoặc tài khoản người dùng độc lập, không trùng lặp đã tiếp xúc với một nội dung truyền thông hoặc mẩu quảng cáo trong khoảng thời gian xác định.",
     "domains": [
       "media/digital-marketing/social-media"
-    ],
-    "level": 1,
-    "status": "draft"
-  },
-  {
-    "id": "authentication",
-    "label": "Authentication",
-    "aliases": [
-      "AuthN",
-      "xác thực"
-    ],
-    "loanwords": [
-      "authentication"
-    ],
-    "plain_descriptions": [
-      "kiểm tra xem người dùng hay thiết bị có đúng là đối tượng mà họ tuyên bố hay không",
-      "xác minh thông tin đăng nhập như mật khẩu hoặc sinh trắc học để chứng minh danh tính"
-    ],
-    "summary": "Quy trình bảo mật nhằm kiểm tra và xác nhận tính chính xác của danh tính do người dùng, thiết bị hoặc hệ thống tự khai báo.",
-    "domains": [
-      "it/security/authentication"
-    ],
-    "level": 1,
-    "status": "draft"
-  },
-  {
-    "id": "authorization",
-    "label": "Authorization",
-    "qualifier": "(Bảo mật)",
-    "aliases": [
-      "AuthZ",
-      "phân quyền",
-      "ủy quyền"
-    ],
-    "loanwords": [
-      "authorization"
-    ],
-    "plain_descriptions": [
-      "quyết định người dùng đã đăng nhập được phép thực hiện những thao tác nào",
-      "cấp quyền cụ thể để sử dụng các tài nguyên được bảo vệ"
-    ],
-    "summary": "Quy trình bảo mật xác định xem một thực thể đã xác thực danh tính có đủ quyền hạn để thực hiện thao tác hoặc truy cập tài nguyên hay không.",
-    "domains": [
-      "it/security/authentication"
     ],
     "level": 1,
     "status": "draft"
@@ -657,26 +634,6 @@
     "status": "draft"
   },
   {
-    "id": "brute-force-attack",
-    "label": "Brute-force attack",
-    "aliases": [
-      "tấn công vét cạn"
-    ],
-    "loanwords": [
-      "brute-force attack"
-    ],
-    "plain_descriptions": [
-      "thử lần lượt từng mật khẩu một theo cách thủ công hoặc tự động cho đến khi mở được khóa",
-      "cách bẻ khóa bằng việc thử hết toàn bộ các tổ hợp số và chữ cái có thể có"
-    ],
-    "summary": "Phương thức tấn công thử sai có hệ thống toàn bộ các mật khẩu, khóa hoặc mã băm khả dĩ cho đến khi tìm thấy kết quả chính xác.",
-    "domains": [
-      "it/security/vulnerabilities"
-    ],
-    "level": 1,
-    "status": "draft"
-  },
-  {
     "id": "budget",
     "label": "Ngân sách",
     "qualifier": "(Tài chính cá nhân)",
@@ -695,6 +652,28 @@
       "finance/personal-finance/budget"
     ],
     "level": 1,
+    "status": "draft"
+  },
+  {
+    "id": "build-artifact",
+    "label": "Artifact",
+    "qualifier": "(Build)",
+    "aliases": [
+      "Tạo phẩm đóng gói",
+      "Thành phẩm build"
+    ],
+    "loanwords": [
+      "artifact"
+    ],
+    "plain_descriptions": [
+      "tệp tin nhị phân hoặc gói phần mềm hoàn chỉnh được tạo ra sau khi biên dịch mã nguồn",
+      "sản phẩm đầu ra của quy trình build sẵn sàng để kiểm thử hoặc cài đặt lên máy chủ"
+    ],
+    "summary": "Tệp hoặc tập hợp các tệp được sinh ra từ quá trình xây dựng mã nguồn nhằm phục vụ lưu trữ, kiểm thử hoặc triển khai vào môi trường vận hành.",
+    "domains": [
+      "it/devops/ci-cd"
+    ],
+    "level": 2,
     "status": "draft"
   },
   {
@@ -806,6 +785,26 @@
     "status": "draft"
   },
   {
+    "id": "capacity-planning",
+    "label": "Capacity planning",
+    "aliases": [
+      "Quy hoạch năng lực"
+    ],
+    "loanwords": [
+      "capacity planning"
+    ],
+    "plain_descriptions": [
+      "dự báo trước dung lượng máy chủ và đường truyền mạng cần bổ sung khi lượng người dùng tăng cao",
+      "việc tính toán tài nguyên phần cứng để đảm bảo hệ thống không bị quá tải vào các dịp cao điểm"
+    ],
+    "summary": "Quy trình ước tính nhu cầu tài nguyên tính toán trong tương lai nhằm chuẩn bị đầy đủ hạ tầng đáp ứng sự gia tăng về lưu lượng và tải công việc.",
+    "domains": [
+      "it/devops/sre-operations"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
     "id": "cash-flow-statement",
     "label": "Báo cáo lưu chuyển tiền tệ",
     "aliases": [
@@ -846,28 +845,6 @@
     "status": "draft"
   },
   {
-    "id": "certificate-authority",
-    "label": "Certificate authority (CA)",
-    "aliases": [
-      "CA",
-      "nhà cung cấp chứng thực số",
-      "tổ chức chứng thực chữ ký số"
-    ],
-    "loanwords": [
-      "certificate authority (ca)"
-    ],
-    "plain_descriptions": [
-      "tổ chức uy tín chuyên cấp chứng chỉ số để xác nhận danh tính của các trang web và công ty",
-      "cơ quan cấp hộ chiếu số của thế giới mạng chịu trách nhiệm ký xác thực các chứng chỉ"
-    ],
-    "summary": "Tổ chức bên thứ ba đáng tin cậy chuyên thẩm định danh tính của các thực thể và phát hành chứng chỉ số có chữ ký điện tử.",
-    "domains": [
-      "it/security/cryptography"
-    ],
-    "level": 2,
-    "status": "draft"
-  },
-  {
     "id": "chain-of-thought",
     "label": "Chain-of-thought prompting",
     "aliases": [
@@ -886,6 +863,26 @@
       "it/ai-ml/llm-agents"
     ],
     "level": 2,
+    "status": "draft"
+  },
+  {
+    "id": "chaos-engineering",
+    "label": "Chaos engineering",
+    "aliases": [
+      "Kỹ thuật hỗn loạn"
+    ],
+    "loanwords": [
+      "chaos engineering"
+    ],
+    "plain_descriptions": [
+      "chủ động gây lỗi giả định trên hệ thống đang chạy để kiểm tra khả năng tự phục hồi",
+      "thí nghiệm ngắt kết nối mạng hoặc tắt máy chủ bất ngờ nhằm phát hiện điểm yếu tiềm ẩn"
+    ],
+    "summary": "Phương pháp thực nghiệm có kiểm soát trên hệ thống phân tán nhằm xây dựng niềm tin vào khả năng chịu đựng các sự cố bất ngờ trong môi trường thực tế.",
+    "domains": [
+      "it/devops/sre-operations"
+    ],
+    "level": 3,
     "status": "draft"
   },
   {
@@ -1034,6 +1031,26 @@
     ],
     "level": 1,
     "status": "reviewed"
+  },
+  {
+    "id": "configuration-management",
+    "label": "Configuration management",
+    "aliases": [
+      "Quản lý cấu hình"
+    ],
+    "loanwords": [
+      "configuration management"
+    ],
+    "plain_descriptions": [
+      "việc dùng tập lệnh để tự động thiết lập phần mềm và các tùy chọn hệ thống đồng bộ trên nhiều máy chủ",
+      "phương pháp kiểm soát sự đồng nhất của cài đặt máy chủ bằng mã nguồn để tránh tình trạng sai lệch cấu hình"
+    ],
+    "summary": "Phương pháp kỹ thuật và công cụ nhằm thiết lập, theo dõi và duy trì tính nhất quán của các cài đặt phần mềm và cấu hình hệ thống trên toàn bộ hạ tầng.",
+    "domains": [
+      "it/devops/iac"
+    ],
+    "level": 2,
+    "status": "draft"
   },
   {
     "id": "container-image",
@@ -1492,24 +1509,24 @@
     "status": "draft"
   },
   {
-    "id": "dast",
-    "label": "Dynamic application security testing (DAST)",
+    "id": "dashboard-monitoring",
+    "label": "Dashboard",
+    "qualifier": "(Giám sát)",
     "aliases": [
-      "DAST",
-      "kiểm thử bảo mật ứng dụng động"
+      "Bảng điều khiển giám sát"
     ],
     "loanwords": [
-      "dynamic application security testing (dast)"
+      "dashboard"
     ],
     "plain_descriptions": [
-      "kiểm tra ứng dụng đang chạy thực tế bằng cách gửi các yêu cầu giả lập tấn công từ bên ngoài",
-      "phương pháp quét bảo mật hộp đen kiểm tra điểm yếu của trang web khi đang hoạt động"
+      "màn hình giao diện trực quan tổng hợp các biểu đồ và thông số đo lường tình trạng máy chủ theo thời gian thực",
+      "bảng điều khiển tập trung giúp kỹ sư nhìn lướt qua là nắm được ngay hệ thống đang ổn định hay gặp trục trặc"
     ],
-    "summary": "Phương pháp kiểm thử hộp đen đánh giá ứng dụng đang vận hành từ bên ngoài bằng cách bơm các tải trọng tấn công thử nghiệm để phát hiện lỗ hổng thời gian chạy.",
+    "summary": "Giao diện trực quan tổng hợp các biểu đồ và chỉ số hiệu năng theo thời gian thực trên một màn hình nhằm giúp kỹ sư nhanh chóng đánh giá tình trạng hoạt động của hệ thống.",
     "domains": [
-      "it/security/vulnerabilities"
+      "it/devops/observability"
     ],
-    "level": 2,
+    "level": 1,
     "status": "draft"
   },
   {
@@ -1701,27 +1718,6 @@
     "status": "draft"
   },
   {
-    "id": "ddos",
-    "label": "Distributed denial-of-service (DDoS)",
-    "aliases": [
-      "DDoS",
-      "từ chối dịch vụ phân tán"
-    ],
-    "loanwords": [
-      "distributed denial-of-service (ddos)"
-    ],
-    "plain_descriptions": [
-      "làm sập một trang web bằng cách dồn lượng truy cập ảo khổng lồ từ hàng nghìn máy tính cùng lúc",
-      "làm nghẽn đường truyền máy chủ khiến người dùng thật không thể truy cập dịch vụ"
-    ],
-    "summary": "Cuộc tấn công mạng sử dụng nhiều máy tính phân tán để làm tràn ngập lưu lượng vào máy chủ hoặc mạng đích, khiến người dùng hợp pháp không thể truy cập.",
-    "domains": [
-      "it/security/vulnerabilities"
-    ],
-    "level": 2,
-    "status": "draft"
-  },
-  {
     "id": "debt-to-equity-ratio",
     "label": "Tỷ số nợ trên vốn chủ sở hữu",
     "aliases": [
@@ -1881,23 +1877,23 @@
     "status": "draft"
   },
   {
-    "id": "digital-signature",
-    "label": "Chữ ký số",
+    "id": "devops",
+    "label": "DevOps",
     "aliases": [
-      "Digital signature"
+      "Phương pháp DevOps"
     ],
     "loanwords": [
-      "digital signature"
+      "devops"
     ],
     "plain_descriptions": [
-      "con dấu toán học chứng minh người tạo ra tệp tin và bảo đảm nội dung không bị sửa đổi",
-      "con dấu điện tử chứng thực tác giả và giữ nguyên vẹn tài liệu khi gửi qua mạng"
+      "văn hóa làm việc gắn kết lập trình viên và kỹ sư vận hành để cùng đưa phần mềm lên môi trường thực tế nhanh hơn",
+      "sự kết hợp giữa phát triển phần mềm và quản trị hệ thống thông qua các công cụ tự động hóa kiểm thử và phát hành"
     ],
-    "summary": "Cơ chế toán học gắn kết danh tính với dữ liệu số bằng mật mã bất đối xứng nhằm bảo đảm tính xác thực, tính toàn vẹn và chống chối bỏ.",
+    "summary": "Triết lý văn hóa và bộ phương pháp tích hợp chặt chẽ giữa nhóm phát triển phần mềm và nhóm vận hành hệ thống nhằm rút ngắn chu kỳ chuyển giao và tăng độ tin cậy.",
     "domains": [
-      "it/security/cryptography"
+      "it/devops/ci-cd"
     ],
-    "level": 2,
+    "level": 1,
     "status": "draft"
   },
   {
@@ -2217,27 +2213,6 @@
     "status": "draft"
   },
   {
-    "id": "end-to-end-encryption",
-    "label": "End-to-end encryption (E2EE)",
-    "aliases": [
-      "E2EE",
-      "mã hóa đầu cuối"
-    ],
-    "loanwords": [
-      "end-to-end encryption (e2ee)"
-    ],
-    "plain_descriptions": [
-      "mã hóa tin nhắn để chỉ người gửi và người nhận đọc được, máy chủ trung gian không thể xem",
-      "chế độ nhắn tin bảo mật mà ngay cả công ty cung cấp dịch vụ chat cũng không giải mã được"
-    ],
-    "summary": "Cơ chế bảo mật truyền thông trong đó dữ liệu được mã hóa ngay trên thiết bị người gửi và chỉ được giải mã bởi người nhận đích, ngăn chặn bên trung gian đọc nội dung.",
-    "domains": [
-      "it/security/cryptography"
-    ],
-    "level": 2,
-    "status": "draft"
-  },
-  {
     "id": "end-to-end-test",
     "label": "End-to-end test",
     "aliases": [
@@ -2359,6 +2334,26 @@
       "finance/corporate-finance/capital-structure"
     ],
     "level": 1,
+    "status": "draft"
+  },
+  {
+    "id": "error-budget",
+    "label": "Error budget",
+    "aliases": [
+      "Ngân sách lỗi"
+    ],
+    "loanwords": [
+      "error budget"
+    ],
+    "plain_descriptions": [
+      "hạn mức sự cố hoặc thời gian chết cho phép của dịch vụ trước khi buộc phải dừng ra mắt tính năng mới",
+      "khoảng đệm rủi ro được chấp nhận giữa mức độ hoàn hảo tuyệt đối và cam kết độ tin cậy thực tế"
+    ],
+    "summary": "Mức độ gián đoạn hoặc tỷ lệ lỗi tối đa được phép xảy ra trong một khoảng thời gian xác định căn cứ theo mục tiêu mức dịch vụ đã thỏa thuận.",
+    "domains": [
+      "it/devops/sre-operations"
+    ],
+    "level": 2,
     "status": "draft"
   },
   {
@@ -2647,6 +2642,46 @@
     "status": "draft"
   },
   {
+    "id": "github-actions",
+    "label": "GitHub Actions",
+    "aliases": [
+      "Quy trình tự động hóa GitHub"
+    ],
+    "loanwords": [
+      "github actions"
+    ],
+    "plain_descriptions": [
+      "công cụ tự động chạy kiểm thử và xuất bản phần mềm gắn liền với từng kho chứa GitHub",
+      "nền tảng thực thi chuỗi tác vụ trên máy ảo mỗi khi lập trình viên đẩy mã nguồn mới lên GitHub"
+    ],
+    "summary": "Nền tảng tích hợp và phân phối liên tục tích hợp sẵn trong GitHub cho phép tự động hóa quy trình xây dựng, kiểm thử và phát hành mã nguồn.",
+    "domains": [
+      "it/devops/ci-cd"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
+    "id": "gitops",
+    "label": "GitOps",
+    "aliases": [
+      "Vận hành qua Git"
+    ],
+    "loanwords": [
+      "gitops"
+    ],
+    "plain_descriptions": [
+      "dùng kho chứa Git làm nơi lưu cấu hình chuẩn duy nhất để triển khai hệ thống máy chủ",
+      "công cụ tự động đồng bộ trạng thái thực tế của cụm máy chủ theo mã nguồn trên Git"
+    ],
+    "summary": "Mô hình vận hành dùng kho lưu trữ Git làm nguồn chân lý duy nhất để quản lý hạ tầng khai báo và đồng bộ triển khai ứng dụng tự động.",
+    "domains": [
+      "it/devops/ci-cd"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
     "id": "gpu",
     "label": "Bộ xử lý đồ họa (GPU)",
     "aliases": [
@@ -2684,6 +2719,26 @@
     "summary": "Thuật toán tối ưu hóa lặp giúp điều chỉnh tham số mô hình ngược chiều với đạo hàm của hàm mất mát nhằm giảm thiểu sai số dự đoán.",
     "domains": [
       "it/ai-ml/foundations"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
+    "id": "grafana",
+    "label": "Grafana",
+    "aliases": [
+      "Nền tảng trực quan hóa Grafana"
+    ],
+    "loanwords": [
+      "grafana"
+    ],
+    "plain_descriptions": [
+      "giao diện web hiển thị các biểu đồ trực quan thể hiện tình trạng máy chủ và lưu lượng truy cập theo thời gian thực",
+      "công cụ vẽ bảng thông tin tổng hợp giúp chuyển đổi các con số khô khan thành đồ thị sinh động"
+    ],
+    "summary": "Ứng dụng web mã nguồn mở chuyên về phân tích và trực quan hóa dữ liệu, giúp tổng hợp các chỉ số, nhật ký và dấu vết vào các bảng điều khiển tương tác.",
+    "domains": [
+      "it/devops/observability"
     ],
     "level": 2,
     "status": "draft"
@@ -2831,6 +2886,27 @@
     "status": "draft"
   },
   {
+    "id": "health-check",
+    "label": "Health check",
+    "qualifier": "(Phần mềm)",
+    "aliases": [
+      "Kiểm tra sức khỏe dịch vụ"
+    ],
+    "loanwords": [
+      "health check"
+    ],
+    "plain_descriptions": [
+      "lệnh kiểm tra định kỳ gửi đến máy chủ để biết dịch vụ còn sống và hoạt động bình thường hay không",
+      "đường dẫn chuyên dụng trả về mã thành công khi các thành phần cơ sở dữ liệu và bộ nhớ vẫn ổn định"
+    ],
+    "summary": "Yêu cầu chẩn đoán được gửi định kỳ tới một dịch vụ phần mềm nhằm xác nhận trạng thái hoạt động và khả năng xử lý yêu cầu của dịch vụ đó.",
+    "domains": [
+      "it/devops/sre-operations"
+    ],
+    "level": 1,
+    "status": "draft"
+  },
+  {
     "id": "hotfix",
     "label": "Hotfix",
     "aliases": [
@@ -2948,6 +3024,26 @@
     "summary": "Tác vụ thị giác máy tính trong đó thuật toán phân tích toàn bộ bức ảnh để gán cho nó một hoặc nhiều nhãn danh mục từ một tập phân loại xác định.",
     "domains": [
       "it/ai-ml/computer-vision"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
+    "id": "immutable-infrastructure",
+    "label": "Immutable infrastructure",
+    "aliases": [
+      "Hạ tầng bất biến"
+    ],
+    "loanwords": [
+      "immutable infrastructure"
+    ],
+    "plain_descriptions": [
+      "nguyên tắc không bao giờ chỉnh sửa trực tiếp trên máy chủ đang chạy mà luôn thay thế bằng một máy chủ mới hoàn toàn",
+      "cách vận hành coi máy tính như các linh kiện dùng một lần được đóng gói sẵn và thay mới mỗi khi cập nhật phần mềm"
+    ],
+    "summary": "Mô hình quản lý hạ tầng trong đó các máy chủ hoặc vùng chứa không bao giờ bị chỉnh sửa trực tiếp sau khi khởi chạy, mà luôn được thay thế bằng hình ảnh máy mới khi có thay đổi.",
+    "domains": [
+      "it/devops/iac"
     ],
     "level": 2,
     "status": "draft"
@@ -3184,27 +3280,6 @@
     "status": "reviewed"
   },
   {
-    "id": "intrusion-detection-system",
-    "label": "Intrusion detection system (IDS)",
-    "aliases": [
-      "IDS",
-      "hệ thống phát hiện xâm nhập"
-    ],
-    "loanwords": [
-      "intrusion detection system (ids)"
-    ],
-    "plain_descriptions": [
-      "hệ thống chuông báo động an ninh mạng chuyên phát hiện hành vi đáng ngờ và phát cảnh báo",
-      "phần mềm giám sát tự động phát hiện các nỗ lực xâm nhập trái phép vào máy chủ"
-    ],
-    "summary": "Thiết bị phần cứng hoặc ứng dụng phần mềm giám sát các hoạt động trên mạng hoặc máy chủ nhằm phát hiện các hành vi độc hại và phát tín hiệu cảnh báo.",
-    "domains": [
-      "it/security/vulnerabilities"
-    ],
-    "level": 2,
-    "status": "draft"
-  },
-  {
     "id": "inverted-pyramid",
     "label": "Kim tự tháp ngược",
     "aliases": [
@@ -3299,6 +3374,26 @@
     "summary": "Prompt được soạn để khiến mô hình bỏ qua nguyên tắc an toàn và tạo ra nội dung mà lẽ ra nó phải từ chối.",
     "domains": [
       "it/ai-ml/ai-safety-governance"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
+    "id": "jenkins",
+    "label": "Jenkins",
+    "aliases": [
+      "Máy chủ tự động hóa Jenkins"
+    ],
+    "loanwords": [
+      "jenkins"
+    ],
+    "plain_descriptions": [
+      "máy chủ tự lưu trữ dùng để lên lịch và chạy các bước đóng gói, kiểm thử phần mềm tự động",
+      "công cụ tự động hóa nguồn mở giúp điều phối quy trình phân phối phần mềm qua hàng nghìn plugin"
+    ],
+    "summary": "Máy chủ tự động hóa mã nguồn mở độc lập hỗ trợ thiết lập các pipeline xây dựng, kiểm thử và triển khai phần mềm thông qua hệ thống plugin đa dạng.",
+    "domains": [
+      "it/devops/ci-cd"
     ],
     "level": 2,
     "status": "draft"
@@ -3573,6 +3668,26 @@
     "status": "draft"
   },
   {
+    "id": "liveness-probe",
+    "label": "Liveness probe",
+    "aliases": [
+      "Đầu dò hoạt động"
+    ],
+    "loanwords": [
+      "liveness probe"
+    ],
+    "plain_descriptions": [
+      "cơ chế tự động khởi động lại container khi ứng dụng bên trong bị treo cứng hoặc rơi vào vòng lặp chết",
+      "thiết lập giám sát trong Kubernetes giúp phát hiện tiến trình bị tê liệt để dọn dẹp và bật lại bản mới"
+    ],
+    "summary": "Bộ kiểm tra định kỳ trong hệ thống điều phối container nhằm phát hiện trạng thái treo hoặc chết của tiến trình để kích hoạt cơ chế khởi động lại kịp thời.",
+    "domains": [
+      "it/devops/containers"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
     "id": "llm",
     "label": "Mô hình ngôn ngữ lớn",
     "aliases": [
@@ -3730,27 +3845,6 @@
     "summary": "Ngành thuộc trí tuệ nhân tạo nơi hệ thống máy tính tự phát hiện quy luật ẩn trong dữ liệu để hoàn thiện tác vụ mà không cần quy tắc cứng.",
     "domains": [
       "it/ai-ml/foundations"
-    ],
-    "level": 1,
-    "status": "draft"
-  },
-  {
-    "id": "malware",
-    "label": "Malware",
-    "aliases": [
-      "mã độc",
-      "phần mềm độc hại"
-    ],
-    "loanwords": [
-      "malware"
-    ],
-    "plain_descriptions": [
-      "các chương trình phần mềm nguy hại được tạo ra để phá hoại máy tính hoặc đánh cắp dữ liệu",
-      "tên gọi chung cho virus, trojan, mã độc gián điệp và sâu máy tính"
-    ],
-    "summary": "Thuật ngữ chung chỉ bất kỳ phần mềm nào được cố tình phát triển nhằm phá hoại, đánh cắp thông tin hoặc chiếm đoạt trái phép quyền điều khiển hệ thống máy tính.",
-    "domains": [
-      "it/security/vulnerabilities"
     ],
     "level": 1,
     "status": "draft"
@@ -4177,6 +4271,28 @@
     "status": "draft"
   },
   {
+    "id": "mttr",
+    "label": "Mean time to recovery (MTTR)",
+    "aliases": [
+      "MTTR",
+      "Thời gian phục hồi trung bình"
+    ],
+    "loanwords": [
+      "mean time to recovery",
+      "mttr"
+    ],
+    "plain_descriptions": [
+      "khoảng thời gian trung bình cần thiết để sửa xong một sự cố và đưa hệ thống hoạt động trở lại",
+      "thước đo phản ánh tốc độ khôi phục dịch vụ của đội ngũ kỹ thuật khi xảy ra sự cố ngừng trệ"
+    ],
+    "summary": "Chỉ số vận hành biểu thị thời gian trung bình cần thiết để khắc phục sự cố và khôi phục hệ thống về trạng thái hoạt động bình thường.",
+    "domains": [
+      "it/devops/sre-operations"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
     "id": "mutual-fund",
     "label": "Quỹ tương hỗ",
     "aliases": [
@@ -4469,23 +4585,23 @@
     "status": "draft"
   },
   {
-    "id": "openid-connect",
-    "label": "OpenID Connect (OIDC)",
+    "id": "opentelemetry",
+    "label": "OpenTelemetry",
     "aliases": [
-      "OIDC"
+      "Chuẩn thu thập dữ liệu đo lường OpenTelemetry"
     ],
     "loanwords": [
-      "openid connect (oidc)"
+      "opentelemetry"
     ],
     "plain_descriptions": [
-      "tầng định danh xây trên OAuth giúp ứng dụng biết chính xác người đang đăng nhập là ai",
-      "đăng nhập vào trang web mới bằng tài khoản Google hoặc Apple sẵn có"
+      "bộ tiêu chuẩn chung giúp thu thập dấu vết, chỉ số và nhật ký ứng dụng mà không phụ thuộc vào nhà cung cấp cụ thể",
+      "thư viện lập trình dùng để trích xuất dữ liệu đo lường từ mã nguồn và gửi tới bất kỳ hệ thống phân tích nào"
     ],
-    "summary": "Giao thức định danh xây dựng trên nền OAuth 2.0 cho phép ứng dụng xác minh danh tính người dùng và lấy thông tin hồ sơ qua JSON Web Token.",
+    "summary": "Khung làm việc mã nguồn mở trung lập của CNCF cung cấp các bộ API, SDK và công cụ chuẩn hóa nhằm tạo và xuất dữ liệu đo lường từ xa.",
     "domains": [
-      "it/security/authentication"
+      "it/devops/observability"
     ],
-    "level": 2,
+    "level": 3,
     "status": "draft"
   },
   {
@@ -4591,26 +4707,6 @@
     "status": "draft"
   },
   {
-    "id": "owasp-top-10",
-    "label": "OWASP Top 10",
-    "aliases": [
-      "10 lỗ hổng bảo mật hàng đầu OWASP"
-    ],
-    "loanwords": [
-      "owasp top 10"
-    ],
-    "plain_descriptions": [
-      "danh sách cập nhật định kỳ về mười nguy cơ bảo mật nghiêm trọng nhất mà các ứng dụng web phải đối mặt",
-      "bộ tài liệu tiêu chuẩn quốc tế tổng hợp các lỗ hổng phần mềm phổ biến nhất"
-    ],
-    "summary": "Báo cáo nâng cao nhận thức được cộng đồng OWASP cập nhật định kỳ nhằm liệt kê mười nguy cơ an ninh nghiêm trọng nhất đối với các ứng dụng web.",
-    "domains": [
-      "it/security/vulnerabilities"
-    ],
-    "level": 1,
-    "status": "draft"
-  },
-  {
     "id": "pagination",
     "label": "Pagination",
     "aliases": [
@@ -4626,27 +4722,6 @@
     "summary": "Phương pháp phân chia các tập dữ liệu lớn thành từng phần hoặc từng trang nhỏ nhằm tối ưu hiệu năng và băng thông truyền tải.",
     "domains": [
       "it/web/api"
-    ],
-    "level": 2,
-    "status": "draft"
-  },
-  {
-    "id": "password-salting",
-    "label": "Salt",
-    "qualifier": "(Mật mã học)",
-    "aliases": [
-      "muối mật mã"
-    ],
-    "loanwords": [
-      "salt"
-    ],
-    "plain_descriptions": [
-      "chuỗi dữ liệu ngẫu nhiên trộn vào mật khẩu trước khi băm để chống tấn công tra bảng",
-      "thành phần ngẫu nhiên bổ sung để hai người đặt mật khẩu giống hệt nhau vẫn có chuỗi băm khác nhau"
-    ],
-    "summary": "Chuỗi dữ liệu ngẫu nhiên được ghép nối với mật khẩu bản rõ trước khi băm nhằm tạo ra giá trị băm duy nhất và vô hiệu hóa các bảng tra cứu tính sẵn.",
-    "domains": [
-      "it/security/cryptography"
     ],
     "level": 2,
     "status": "draft"
@@ -4697,28 +4772,6 @@
     "status": "draft"
   },
   {
-    "id": "penetration-testing",
-    "label": "Penetration testing",
-    "aliases": [
-      "pentest",
-      "kiểm thử xâm nhập",
-      "hack đạo đức"
-    ],
-    "loanwords": [
-      "penetration testing"
-    ],
-    "plain_descriptions": [
-      "thuê chuyên gia an ninh mạng giả làm hacker để tìm lỗ hổng trước khi kẻ xấu phát hiện",
-      "mô phỏng các đợt tấn công mạng có kiểm soát để đánh giá độ an toàn của hệ thống"
-    ],
-    "summary": "Quy trình mô phỏng tấn công mạng có ủy quyền vào hệ thống máy tính, mạng hoặc ứng dụng nhằm đánh giá hiệu quả của các biện pháp bảo vệ.",
-    "domains": [
-      "it/security/vulnerabilities"
-    ],
-    "level": 2,
-    "status": "draft"
-  },
-  {
     "id": "personal-income-tax",
     "label": "Thuế thu nhập cá nhân",
     "aliases": [
@@ -4739,23 +4792,23 @@
     "status": "draft"
   },
   {
-    "id": "phishing",
-    "label": "Phishing",
+    "id": "platform-engineering",
+    "label": "Platform engineering",
     "aliases": [
-      "tấn công giả mạo"
+      "Kỹ thuật nền tảng"
     ],
     "loanwords": [
-      "phishing"
+      "platform engineering"
     ],
     "plain_descriptions": [
-      "gửi tin nhắn giả danh tổ chức uy tín để lừa người dùng nhập mật khẩu hoặc số thẻ ngân hàng",
-      "email lừa đảo mạo danh ngân hàng hoặc công ty để đánh cắp thông tin tài khoản"
+      "việc xây dựng các công cụ và cổng thông tin nội bộ giúp lập trình viên tự triển khai dịch vụ mà không cần nhờ cậy bộ phận IT",
+      "thiết kế nền tảng hạ tầng như một sản phẩm phục vụ các nhóm phát triển phần mềm nhằm giảm thiểu rào cản kỹ thuật"
     ],
-    "summary": "Hình thức tấn công phi kỹ thuật trong đó kẻ xấu mạo danh các tổ chức đáng tin cậy để lừa nạn nhân tiết lộ thông tin nhạy cảm hoặc tải mã độc.",
+    "summary": "Hoạt động thiết kế và xây dựng các nền tảng tự phục vụ nội bộ nhằm cung cấp chuỗi công cụ chuẩn hóa giúp các nhóm phát triển phần mềm phát hành ứng dụng độc lập và an toàn.",
     "domains": [
-      "it/security/vulnerabilities"
+      "it/devops/sre-operations"
     ],
-    "level": 1,
+    "level": 2,
     "status": "draft"
   },
   {
@@ -5116,6 +5169,27 @@
     "status": "draft"
   },
   {
+    "id": "prometheus",
+    "label": "Prometheus",
+    "qualifier": "(Giám sát)",
+    "aliases": [
+      "Hệ thống giám sát Prometheus"
+    ],
+    "loanwords": [
+      "prometheus"
+    ],
+    "plain_descriptions": [
+      "phần mềm nguồn mở định kỳ thu thập và lưu trữ các con số đo lường hiệu năng của máy chủ theo dòng thời gian",
+      "công cụ giám sát kéo dữ liệu metric về và cho phép kỹ sư tra cứu bằng ngôn ngữ PromQL"
+    ],
+    "summary": "Bộ công cụ giám sát và cảnh báo mã nguồn mở lưu trữ dữ liệu chỉ số theo chuỗi thời gian và hỗ trợ truy vấn đa chiều bằng ngôn ngữ PromQL.",
+    "domains": [
+      "it/devops/observability"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
     "id": "prompt",
     "label": "Prompt",
     "aliases": [],
@@ -5165,27 +5239,6 @@
     "summary": "Kiểu tấn công dùng đầu vào được soạn sẵn, do người dùng gõ hoặc giấu trong nội dung mô hình đọc, để lấn át chỉ dẫn gốc của ứng dụng.",
     "domains": [
       "it/ai-ml/ai-safety-governance"
-    ],
-    "level": 2,
-    "status": "draft"
-  },
-  {
-    "id": "public-key-cryptography",
-    "label": "Mật mã hóa khóa công khai",
-    "aliases": [
-      "mật mã bất đối xứng",
-      "Public-key cryptography"
-    ],
-    "loanwords": [
-      "public-key cryptography"
-    ],
-    "plain_descriptions": [
-      "hệ thống mã hóa dùng hai chìa khóa khác nhau để người lạ có thể khóa nhưng chỉ chủ nhân mới mở được",
-      "cơ chế bảo mật cho phép trao đổi thư mật an toàn mà không cần gửi chìa khóa bí mật từ trước"
-    ],
-    "summary": "Hệ thống mật mã sử dụng các cặp khóa liên kết toán học gồm khóa công khai để mã hóa hoặc kiểm tra chữ ký và khóa riêng tư để giải mã hoặc ký số.",
-    "domains": [
-      "it/security/cryptography"
     ],
     "level": 2,
     "status": "draft"
@@ -5292,26 +5345,6 @@
     "status": "draft"
   },
   {
-    "id": "ransomware",
-    "label": "Ransomware",
-    "aliases": [
-      "mã độc tống tiền"
-    ],
-    "loanwords": [
-      "ransomware"
-    ],
-    "plain_descriptions": [
-      "phần mềm độc hại tự ý khóa mã hóa toàn bộ dữ liệu máy tính rồi đòi tiền chuộc",
-      "chương trình tống tiền điện tử làm tê liệt hệ thống máy chủ cho đến khi nộp tiền"
-    ],
-    "summary": "Loại phần mềm độc hại mã hóa dữ liệu của nạn nhân hoặc khóa quyền truy cập hệ thống nhằm đòi tiền chuộc để đổi lấy khóa giải mã.",
-    "domains": [
-      "it/security/vulnerabilities"
-    ],
-    "level": 1,
-    "status": "draft"
-  },
-  {
     "id": "rate-limiting",
     "label": "Rate limiting",
     "aliases": [
@@ -5334,22 +5367,21 @@
     "status": "draft"
   },
   {
-    "id": "rbac",
-    "label": "Role-based access control (RBAC)",
+    "id": "readiness-probe",
+    "label": "Readiness probe",
     "aliases": [
-      "RBAC",
-      "kiểm soát truy cập dựa trên vai trò"
+      "Đầu dò sẵn sàng"
     ],
     "loanwords": [
-      "role-based access control (rbac)"
+      "readiness probe"
     ],
     "plain_descriptions": [
-      "gán quyền hạn hệ thống theo vị trí công việc thay vì cấp riêng cho từng nhân viên",
-      "quản lý quyền truy cập của người dùng qua các nhóm vai trò định sẵn"
+      "cơ chế báo cho bộ cân bằng tải biết ứng dụng đã khởi động xong và sẵn sàng tiếp nhận yêu cầu từ người dùng",
+      "bước kiểm tra tạm thời chặn khách truy cập vào máy chủ trong khi dịch vụ đang nạp bộ nhớ đệm hoặc tải dữ liệu"
     ],
-    "summary": "Mô hình kiểm soát truy cập trong đó các quyền hạn được gom nhóm thành các vai trò và gán cho người dùng dựa trên nhiệm vụ của họ.",
+    "summary": "Bộ kiểm tra xác định xem container ứng dụng đã hoàn tất quá trình khởi tạo và sẵn sàng nhận lưu lượng truy cập mạng từ bộ cân bằng tải hay chưa.",
     "domains": [
-      "it/security/authentication"
+      "it/devops/containers"
     ],
     "level": 2,
     "status": "draft"
@@ -5603,6 +5635,27 @@
     "status": "draft"
   },
   {
+    "id": "runbook",
+    "label": "Runbook",
+    "aliases": [
+      "Sổ tay vận hành",
+      "Quy trình xử lý sự cố"
+    ],
+    "loanwords": [
+      "runbook"
+    ],
+    "plain_descriptions": [
+      "tài liệu hướng dẫn từng bước giúp kỹ sư trực ban khắc phục nhanh khi nhận được cảnh báo lỗi",
+      "cẩm nang thao tác kỹ thuật ghi sẵn các bước kiểm tra và xử lý sự cố thường gặp trên máy chủ"
+    ],
+    "summary": "Tài liệu hướng dẫn quy trình từng bước được chuẩn hóa giúp kỹ sư vận hành xử lý sự cố khẩn cấp hoặc thực hiện bảo trì hệ thống an toàn.",
+    "domains": [
+      "it/devops/sre-operations"
+    ],
+    "level": 1,
+    "status": "draft"
+  },
+  {
     "id": "sales-lead",
     "label": "Lead",
     "qualifier": "(Marketing)",
@@ -5623,48 +5676,6 @@
       "media/digital-marketing/metrics-analytics"
     ],
     "level": 1,
-    "status": "draft"
-  },
-  {
-    "id": "saml",
-    "label": "SAML",
-    "aliases": [
-      "Security Assertion Markup Language"
-    ],
-    "loanwords": [
-      "saml"
-    ],
-    "plain_descriptions": [
-      "chuẩn định dạng XML để chuyển dữ liệu đăng nhập giữa hệ thống định danh và trang web",
-      "giao thức đăng nhập một lần cho doanh nghiệp dùng các xác nhận bảo mật có chữ ký số"
-    ],
-    "summary": "Chuẩn mở dựa trên XML để trao đổi dữ liệu xác thực và phân quyền giữa nhà cung cấp định danh và nhà cung cấp dịch vụ.",
-    "domains": [
-      "it/security/authentication"
-    ],
-    "level": 2,
-    "status": "draft"
-  },
-  {
-    "id": "sast",
-    "label": "Static application security testing (SAST)",
-    "aliases": [
-      "SAST",
-      "kiểm thử bảo mật ứng dụng tĩnh",
-      "phân tích mã nguồn tĩnh"
-    ],
-    "loanwords": [
-      "static application security testing (sast)"
-    ],
-    "plain_descriptions": [
-      "quét mã nguồn phần mềm để tìm lỗi bảo mật mà không cần chạy chương trình",
-      "rà soát mã tự động giúp phát hiện sớm các lỗ hổng ngay trong kho lưu trữ mã nguồn"
-    ],
-    "summary": "Phương pháp kiểm thử hộp trắng phân tích mã nguồn hoặc tệp nhị phân ở trạng thái tĩnh nhằm phát hiện các lỗ hổng bảo mật trước khi phần mềm được thực thi.",
-    "domains": [
-      "it/security/vulnerabilities"
-    ],
-    "level": 2,
     "status": "draft"
   },
   {
@@ -5811,27 +5822,6 @@
       "it/security/authentication"
     ],
     "level": 2,
-    "status": "draft"
-  },
-  {
-    "id": "security-patch",
-    "label": "Security patch",
-    "aliases": [
-      "bản vá bảo mật",
-      "cập nhật bảo mật"
-    ],
-    "loanwords": [
-      "security patch"
-    ],
-    "plain_descriptions": [
-      "bản cập nhật phần mềm được tạo riêng để vá các lỗ hổng bảo mật và chống tin tặc",
-      "gói sửa lỗi nhanh do nhà sản xuất phát hành để bít các điểm yếu nguy hiểm"
-    ],
-    "summary": "Bản cập nhật phần mềm được phát triển chuyên biệt nhằm khắc phục các lỗ hổng bảo mật đã xác định và ngăn ngừa nguy cơ bị tin tặc khai thác.",
-    "domains": [
-      "it/security/vulnerabilities"
-    ],
-    "level": 1,
     "status": "draft"
   },
   {
@@ -6003,27 +5993,6 @@
     "status": "draft"
   },
   {
-    "id": "siem",
-    "label": "SIEM",
-    "aliases": [
-      "Security Information and Event Management",
-      "quản lý sự kiện và thông tin bảo mật"
-    ],
-    "loanwords": [
-      "siem"
-    ],
-    "plain_descriptions": [
-      "trung tâm thu thập và phân tích nhật ký hoạt động của mọi máy chủ để tìm dấu hiệu bị tấn công",
-      "phần mềm bảo mật gom toàn bộ dữ liệu log trong công ty để phát hiện sự cố an ninh"
-    ],
-    "summary": "Hệ thống phần mềm bảo mật thu thập, phân tích và tương quan hóa dữ liệu nhật ký sự kiện từ toàn bộ hạ tầng doanh nghiệp để phát hiện sự cố theo thời gian thực.",
-    "domains": [
-      "it/security/vulnerabilities"
-    ],
-    "level": 2,
-    "status": "draft"
-  },
-  {
     "id": "simple-interest",
     "label": "Lãi đơn",
     "aliases": [
@@ -6129,27 +6098,6 @@
       "iot/devices-sensors"
     ],
     "level": 1,
-    "status": "draft"
-  },
-  {
-    "id": "soc-security",
-    "label": "Security Operations Center (SOC)",
-    "aliases": [
-      "SOC",
-      "trung tâm điều hành an ninh mạng"
-    ],
-    "loanwords": [
-      "security operations center (soc)"
-    ],
-    "plain_descriptions": [
-      "trung tâm chỉ huy an ninh mạng có nhân sự túc trực 24/7 để theo dõi và ngăn chặn các đợt tấn công",
-      "đội ngũ an ninh nòng cốt của doanh nghiệp chuyên xử lý sự cố và bảo vệ hạ tầng máy chủ"
-    ],
-    "summary": "Đơn vị chuyên trách chịu trách nhiệm liên tục giám sát, phát hiện, phân tích và xử lý các sự cố an toàn thông tin của tổ chức suốt 24/7.",
-    "domains": [
-      "it/security/vulnerabilities"
-    ],
-    "level": 2,
     "status": "draft"
   },
   {
@@ -6389,22 +6337,23 @@
     "status": "draft"
   },
   {
-    "id": "sso",
-    "label": "Single sign-on (SSO)",
+    "id": "sre",
+    "label": "Site reliability engineering (SRE)",
     "aliases": [
-      "SSO",
-      "đăng nhập một lần"
+      "SRE",
+      "Kỹ thuật độ tin cậy hệ thống"
     ],
     "loanwords": [
-      "single sign-on (sso)"
+      "site reliability engineering",
+      "sre"
     ],
     "plain_descriptions": [
-      "đăng nhập một lần duy nhất để dùng được nhiều ứng dụng khác nhau",
-      "một tài khoản mở khóa toàn bộ các phần mềm làm việc trong ngày"
+      "việc vận dụng kỹ năng lập trình phần mềm để giải quyết các bài toán vận hành và giữ cho hệ thống luôn hoạt động ổn định",
+      "ngành chuyên môn tập trung tự động hóa các thao tác thủ công nhằm đảm bảo dịch vụ trực tuyến không bị gián đoạn"
     ],
-    "summary": "Cơ chế xác thực cho phép người dùng chỉ cần đăng nhập một lần là có thể truy cập nhiều ứng dụng liên kết mà không phải nhập lại thông tin.",
+    "summary": "Chuyên ngành kỹ thuật ứng dụng các nguyên lý phát triển phần mềm để tự động hóa hoạt động vận hành và duy trì độ tin cậy cho các hệ thống quy mô lớn.",
     "domains": [
-      "it/security/authentication"
+      "it/devops/sre-operations"
     ],
     "level": 2,
     "status": "draft"
@@ -6599,27 +6548,6 @@
     "status": "draft"
   },
   {
-    "id": "supply-chain-attack",
-    "label": "Supply chain attack",
-    "qualifier": "(Phần mềm)",
-    "aliases": [
-      "tấn công chuỗi cung ứng"
-    ],
-    "loanwords": [
-      "supply chain attack"
-    ],
-    "plain_descriptions": [
-      "tấn công vào nhà cung cấp phần mềm bên ngoài hoặc thư viện mở để lây nhiễm cho khách hàng",
-      "cài cắm mã độc vào các bản cập nhật phần mềm hoặc kho gói phụ thuộc đáng tin cậy"
-    ],
-    "summary": "Cuộc tấn công mạng nhắm vào các nhà cung cấp bên thứ ba, thư viện mã nguồn hoặc quy trình đóng gói nhằm xâm nhập vào hệ thống của tổ chức đích.",
-    "domains": [
-      "it/security/vulnerabilities"
-    ],
-    "level": 2,
-    "status": "draft"
-  },
-  {
     "id": "system-prompt",
     "label": "System prompt",
     "aliases": [],
@@ -6722,26 +6650,6 @@
     "status": "draft"
   },
   {
-    "id": "threat-modeling",
-    "label": "Threat modeling",
-    "aliases": [
-      "mô hình hóa mối đe dọa"
-    ],
-    "loanwords": [
-      "threat modeling"
-    ],
-    "plain_descriptions": [
-      "phân tích bản thiết kế phần mềm để lường trước các cách mà tin tặc có thể tấn công",
-      "quy trình rà soát kiến trúc hệ thống nhằm tìm ra nguy cơ bảo mật và biện pháp phòng ngừa"
-    ],
-    "summary": "Phương pháp kỹ thuật có cấu trúc nhằm xác định, phân loại và ưu tiên xử lý các mối đe dọa an ninh tiềm ẩn đối với kiến trúc hệ thống.",
-    "domains": [
-      "it/security/vulnerabilities"
-    ],
-    "level": 2,
-    "status": "draft"
-  },
-  {
     "id": "throughput",
     "label": "Throughput",
     "aliases": [
@@ -6785,24 +6693,22 @@
     "status": "draft"
   },
   {
-    "id": "tls-certificate",
-    "label": "Certificate",
-    "qualifier": "(TLS)",
+    "id": "toil",
+    "label": "Toil",
+    "qualifier": "(SRE)",
     "aliases": [
-      "chứng chỉ TLS",
-      "chứng chỉ SSL",
-      "chứng chỉ X.509"
+      "Công việc lao dịch"
     ],
     "loanwords": [
-      "certificate"
+      "toil"
     ],
     "plain_descriptions": [
-      "giấy chứng nhận điện tử chứng minh một trang web sở hữu tên miền và khóa công khai hợp pháp",
-      "chứng thư an toàn giúp kích hoạt biểu tượng ổ khóa và đường truyền HTTPS trên trình duyệt"
+      "các công việc vận hành thủ công lặp đi lặp lại không tạo ra giá trị lâu dài và ngày càng phình to khi dịch vụ mở rộng",
+      "những việc vặt như khởi động lại máy hay duyệt phiếu yêu cầu bằng tay mà lẽ ra phải được viết mã tự động hóa"
     ],
-    "summary": "Tệp dữ liệu số tuân theo chuẩn X.509 có chữ ký số nhằm gắn kết một khóa công khai với tên miền hoặc danh tính của chủ thể.",
+    "summary": "Trong mô hình SRE, toil là loại công việc vận hành thủ công, lặp lại và có thể tự động hóa, thường tăng tuyến tính theo quy mô của dịch vụ mà không mang lại giá trị bền vững.",
     "domains": [
-      "it/security/cryptography"
+      "it/devops/sre-operations"
     ],
     "level": 2,
     "status": "draft"
@@ -6927,6 +6833,26 @@
     "summary": "Kiến trúc mạng nơ-ron dựa trên cơ chế tự chú ý giúp xử lý đồng thời mọi phần tử trong chuỗi dữ liệu mà không cần vòng lặp tuần tự.",
     "domains": [
       "it/ai-ml/foundations"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
+    "id": "trunk-based-development",
+    "label": "Trunk-based development",
+    "aliases": [
+      "Phát triển dựa trên nhánh chính"
+    ],
+    "loanwords": [
+      "trunk-based development"
+    ],
+    "plain_descriptions": [
+      "thói quen gom các đoạn mã nhỏ hợp nhất liên tục vào một nhánh chính duy nhất trong ngày",
+      "phương pháp làm việc bỏ qua các nhánh tính năng kéo dài nhiều tuần để tránh xung đột mã"
+    ],
+    "summary": "Chiến lược quản lý nhánh mã nguồn trong đó các kỹ sư thường xuyên tích hợp những phần thay đổi nhỏ vào một nhánh chính duy nhất nhằm hạn chế xung đột.",
+    "domains": [
+      "it/software-engineering/version-control"
     ],
     "level": 2,
     "status": "draft"
@@ -7226,27 +7152,6 @@
     "status": "draft"
   },
   {
-    "id": "waf",
-    "label": "Web application firewall (WAF)",
-    "aliases": [
-      "WAF",
-      "tường lửa ứng dụng web"
-    ],
-    "loanwords": [
-      "web application firewall (waf)"
-    ],
-    "plain_descriptions": [
-      "tấm lá chắn bảo vệ lọc bỏ các yêu cầu web độc hại trước khi chúng chạm tới máy chủ",
-      "tường lửa tầng ứng dụng chuyên chặn các cuộc tấn công SQL injection và mã độc XSS"
-    ],
-    "summary": "Thiết bị hoặc dịch vụ an ninh chuyên dụng giám sát, kiểm tra và ngăn chặn các luồng lưu lượng HTTP/HTTPS độc hại nhắm vào ứng dụng web.",
-    "domains": [
-      "it/security/vulnerabilities"
-    ],
-    "level": 2,
-    "status": "draft"
-  },
-  {
     "id": "web-session",
     "label": "Session",
     "qualifier": "(Web)",
@@ -7320,27 +7225,6 @@
       "gài mã độc vào phần bình luận của website khiến người đọc bị đánh cắp thông tin đăng nhập"
     ],
     "summary": "Lỗ hổng tiêm mã độc phía client cho phép tin tặc cài cắm các đoạn mã kịch bản độc hại vào trang web uy tín để thực thi trên trình duyệt của nạn nhân.",
-    "domains": [
-      "it/security/vulnerabilities"
-    ],
-    "level": 2,
-    "status": "draft"
-  },
-  {
-    "id": "zero-day",
-    "label": "Zero-day vulnerability",
-    "aliases": [
-      "lỗ hổng zero-day",
-      "0-day"
-    ],
-    "loanwords": [
-      "zero-day vulnerability"
-    ],
-    "plain_descriptions": [
-      "lỗi phần mềm mới bị phát hiện mà nhà sản xuất chưa kịp có bản vá sửa chữa",
-      "lỗ hổng bảo mật bí mật bị tin tặc khai thác trước khi lập trình viên kịp biết đến"
-    ],
-    "summary": "Lỗ hổng phần mềm chưa được công bố hoặc chưa có bản sửa lỗi từ nhà sản xuất, khiến người dùng không có thời gian chuẩn bị để phòng vệ.",
     "domains": [
       "it/security/vulnerabilities"
     ],

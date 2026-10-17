@@ -1747,3 +1747,88 @@ helm-docs:
   reuse: paraphrase-only
   domains: [it/devops]
   verified_license_at: "2026-10-17"
+
+# wave3 ops
+opengitops:
+  title: OpenGitOps Specification
+  publisher: Cloud Native Computing Foundation
+  url: https://opengitops.dev/
+  type: spec
+  tier: A
+  languages: [en]
+  license: Apache-2.0
+  reuse: paraphrase-only
+  domains: [it/devops]
+  verified_license_at: "2026-10-17"
+
+jenkins-docs:
+  title: Jenkins User Documentation
+  publisher: Continuous Delivery Foundation
+  url: https://www.jenkins.io/doc/
+  type: docs
+  tier: A
+  languages: [en]
+  license: CC-BY-SA-4.0
+  reuse: paraphrase-only
+  domains: [it/devops]
+  verified_license_at: "2026-10-17"
+
+trunk-based-dev-site:
+  title: Trunk Based Development Documentation
+  publisher: Paul Hammant
+  url: https://trunkbaseddevelopment.com/
+  type: docs
+  tier: B
+  languages: [en]
+  license: CC-BY-4.0
+  reuse: paraphrase-only
+  domains: [it/software-engineering]
+  verified_license_at: "2026-10-17"
+
+principles-of-chaos:
+  title: Principles of Chaos Engineering
+  publisher: Chaos Community
+  url: https://principlesofchaos.org/
+  type: spec
+  tier: A
+  languages: [en]
+  license: CC-BY-4.0
+  reuse: paraphrase-only
+  domains: [it/devops]
+  verified_license_at: "2026-10-17"
+
+prometheus-docs:
+  title: Prometheus Documentation
+  publisher: Cloud Native Computing Foundation
+  url: https://prometheus.io/docs/
+  type: docs
+  tier: A
+  languages: [en]
+  license: Apache-2.0
+  reuse: paraphrase-only
+  domains: [it/devops]
+  verified_license_at: "2026-10-17"
+
+grafana-docs:
+  title: Grafana Documentation
+  publisher: Grafana Labs
+  url: https://grafana.com/docs/
+  type: docs
+  tier: B
+  languages: [en]
+  license: AGPL-3.0
+  reuse: paraphrase-only
+  domains: [it/devops]
+  verified_license_at: "2026-10-17"
+
+cncf-platforms:
+  title: CNCF Platforms White Paper
+  publisher: Cloud Native Computing Foundation
+  url: https://tag-app-delivery.cncf.io/whitepapers/platforms/
+  type: spec
+  tier: A
+  languages: [en]
+  license: CC-BY-4.0
+  reuse: paraphrase-only
+  domains: [it/devops]
+  verified_license_at: "2026-10-17"

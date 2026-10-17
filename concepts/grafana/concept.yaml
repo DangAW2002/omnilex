@@ -1,0 +1,26 @@
+id: grafana
+domains:
+  - it/devops/observability
+level: 2
+relations:
+  prerequisites:
+    - metric-monitoring
+    - dashboard-monitoring
+  confusable:
+    - prometheus
+  related:
+    - opentelemetry
+    - alerting
+status: draft
+provenance:
+  drafted_by: ai
+sources:
+  - ref: grafana-docs
+    locator: https://grafana.com/docs/grafana/latest/introduction/
+    title: "Introduction to Grafana"
+    language: en
+    accessed: '2026-10-17'
+    retrieved_by: ai
+    supports:
+      - definition
+      - summary

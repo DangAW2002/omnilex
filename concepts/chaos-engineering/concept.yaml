@@ -1,0 +1,25 @@
+id: chaos-engineering
+domains:
+  - it/devops/sre-operations
+level: 3
+relations:
+  prerequisites:
+    - observability
+    - incident
+  confusable: []
+  related:
+    - sre
+    - uptime
+status: draft
+provenance:
+  drafted_by: ai
+sources:
+  - ref: principles-of-chaos
+    locator: https://principlesofchaos.org/
+    title: "Principles of Chaos Engineering"
+    language: en
+    accessed: '2026-10-17'
+    retrieved_by: ai
+    supports:
+      - definition
+      - summary

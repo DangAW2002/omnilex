@@ -1,0 +1,25 @@
+id: apm
+domains:
+  - it/devops/observability
+level: 2
+relations:
+  prerequisites:
+    - metric-monitoring
+    - distributed-tracing
+  confusable: []
+  related:
+    - observability
+    - latency
+status: draft
+provenance:
+  drafted_by: ai
+sources:
+  - ref: microsoft-learn
+    locator: https://learn.microsoft.com/en-us/azure/azure-monitor/app/app-insights-overview
+    title: "Application Insights overview"
+    language: en
+    accessed: '2026-10-17'
+    retrieved_by: ai
+    supports:
+      - definition
+      - summary

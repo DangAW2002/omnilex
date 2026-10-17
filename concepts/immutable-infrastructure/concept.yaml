@@ -1,0 +1,26 @@
+id: immutable-infrastructure
+domains:
+  - it/devops/iac
+level: 2
+relations:
+  prerequisites:
+    - infrastructure-as-code
+    - container-image
+  confusable:
+    - configuration-management
+  related:
+    - blue-green-deployment
+    - virtual-machine
+status: draft
+provenance:
+  drafted_by: ai
+sources:
+  - ref: martin-fowler
+    locator: https://martinfowler.com/bliki/ImmutableServer.html
+    title: "Immutable Server"
+    language: en
+    accessed: '2026-10-17'
+    retrieved_by: ai
+    supports:
+      - definition
+      - summary

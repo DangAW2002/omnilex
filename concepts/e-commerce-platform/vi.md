@@ -17,8 +17,8 @@ translated_from: en
 translated_by: ai
 translated_at: '2026-10-17'
 label_evidence:
-  - ref: wikipedia-vi
-    locator: https://vi.wikipedia.org/wiki/Th%C6%B0%C6%A1ng_m%E1%BA%A1i_%C4%91i%E1%BB%87n_t%E1%BB%AD
+  - ref: lsvn
+    locator: https://lsvn.vn/mot-so-khai-niem-lien-quan-den-thuong-mai-dien-tu-a159548.html
     accessed: '2026-10-17'
 ---
 

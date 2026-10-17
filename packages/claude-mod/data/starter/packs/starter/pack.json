@@ -15,62 +15,62 @@
     "vi"
   ],
   "requires": {},
-  "concepts": 129,
+  "concepts": 136,
   "status": {
-    "draft": 122,
+    "draft": 129,
     "reviewed": 7,
     "verified": 0,
     "deprecated": 0
   },
   "tiers": {
     "terms": {
-      "bytes": 79606,
+      "bytes": 82274,
       "files": {
         "en": {
-          "bytes": 24219,
-          "sha256": "5f51589a39394875378b4573c82034c49f097698ed019babd6b2de00af014999"
+          "bytes": 24785,
+          "sha256": "95cfc66d81eb0b6a56ad7b4a9210825ef35396f714047b9ceef77533de6772ba"
         },
         "ja": {
-          "bytes": 24219,
-          "sha256": "5f51589a39394875378b4573c82034c49f097698ed019babd6b2de00af014999"
+          "bytes": 24785,
+          "sha256": "95cfc66d81eb0b6a56ad7b4a9210825ef35396f714047b9ceef77533de6772ba"
         },
         "vi": {
-          "bytes": 31168,
-          "sha256": "893618b4574461f62ddf63d8a17104bd3f7fac350d4798153be5767092ac859d"
+          "bytes": 32704,
+          "sha256": "55af277f313d9c92a9a1b7a737ed16465a83bf69e5a15084d52e8bb8c3500fe8"
         }
       }
     },
     "cards": {
-      "bytes": 212896,
+      "bytes": 223968,
       "files": {
         "en": {
-          "bytes": 65753,
-          "sha256": "9d9377b034fc64a1f660471a5cd3cdfe261b089a5e34ec2bc82987d0b21053db"
+          "bytes": 69219,
+          "sha256": "761c72525f84dcd359878a30324810703e7092ea79e9609e2ff9b27bbb1164c7"
         },
         "ja": {
-          "bytes": 65753,
-          "sha256": "9d9377b034fc64a1f660471a5cd3cdfe261b089a5e34ec2bc82987d0b21053db"
+          "bytes": 69219,
+          "sha256": "761c72525f84dcd359878a30324810703e7092ea79e9609e2ff9b27bbb1164c7"
         },
         "vi": {
-          "bytes": 81390,
-          "sha256": "87f78ba4ad74d598868c88acb0c94031e40c49090c84816302bb36c7b0a303ef"
+          "bytes": 85530,
+          "sha256": "50424f4d16672f54bf2a28e3d2b69f33f9abe313733a55659db2919222565c20"
         }
       }
     },
     "search": {
-      "bytes": 460655,
+      "bytes": 483287,
       "files": {
         "en": {
-          "bytes": 151659,
-          "sha256": "904cea9f9a52f90bc52a087145851b943f47f8f08fa35d70ddee3c12e5c56b3d"
+          "bytes": 159177,
+          "sha256": "258ca5d180b855b99498e9c646cf3356f2c2e6fc9ed1190d69b30b841fba8c70"
         },
         "ja": {
-          "bytes": 151659,
-          "sha256": "904cea9f9a52f90bc52a087145851b943f47f8f08fa35d70ddee3c12e5c56b3d"
+          "bytes": 159177,
+          "sha256": "258ca5d180b855b99498e9c646cf3356f2c2e6fc9ed1190d69b30b841fba8c70"
         },
         "vi": {
-          "bytes": 157337,
-          "sha256": "9791fd1ce704e031bb80e1ad5cec0c87311008d0fabbb6aa3d21d5e9b13956a6"
+          "bytes": 164933,
+          "sha256": "1e5d0cdb3ea4a95ad9ff2dc366a668ebfeea413bc08c40ea2c1fc504b41e957e"
         }
       },
       "configHash": "18b9a17e6386e5cf"

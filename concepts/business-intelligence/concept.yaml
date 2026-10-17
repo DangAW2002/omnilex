@@ -1,0 +1,24 @@
+id: business-intelligence
+domains:
+  - it/data/analytics
+  - it/business-systems/enterprise-apps
+level: 2
+relations:
+  prerequisites: []
+  confusable: []
+  related:
+    - data-visualization
+    - erp
+status: draft
+provenance:
+  drafted_by: ai
+sources:
+  - ref: aws-docs
+    locator: https://aws.amazon.com/what-is/business-intelligence/
+    title: What is Business Intelligence - AI use in BI explained
+    language: en
+    accessed: '2026-10-17'
+    retrieved_by: ai
+    supports:
+      - definition
+      - summary

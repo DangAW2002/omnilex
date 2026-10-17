@@ -1,0 +1,24 @@
+id: erp
+domains:
+  - it/business-systems/enterprise-apps
+level: 2
+relations:
+  prerequisites: []
+  confusable: []
+  related:
+    - crm
+    - hrm-system
+    - pos-system
+status: draft
+provenance:
+  drafted_by: ai
+sources:
+  - ref: microsoft-learn
+    locator: https://learn.microsoft.com/en-us/dynamics365/business-central/across-business-functionality
+    title: Business functionality supported by Business Central
+    language: en
+    accessed: '2026-10-17'
+    retrieved_by: ai
+    supports:
+      - definition
+      - summary

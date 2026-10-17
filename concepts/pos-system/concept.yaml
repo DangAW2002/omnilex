@@ -1,0 +1,23 @@
+id: pos-system
+domains:
+  - it/business-systems/enterprise-apps
+level: 1
+relations:
+  prerequisites: []
+  confusable: []
+  related:
+    - payment-gateway
+    - erp
+status: draft
+provenance:
+  drafted_by: ai
+sources:
+  - ref: microsoft-learn
+    locator: https://learn.microsoft.com/en-us/dynamics365/commerce/pos-operations
+    title: Online and offline point of sale (POS) operations
+    language: en
+    accessed: '2026-10-17'
+    retrieved_by: ai
+    supports:
+      - definition
+      - summary

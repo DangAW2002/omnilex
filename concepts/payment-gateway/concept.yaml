@@ -1,0 +1,24 @@
+id: payment-gateway
+domains:
+  - it/business-systems/enterprise-apps
+  - finance/banking/payments
+level: 2
+relations:
+  prerequisites: []
+  confusable: []
+  related:
+    - pos-system
+    - e-commerce-platform
+status: draft
+provenance:
+  drafted_by: ai
+sources:
+  - ref: stripe-docs
+    locator: https://docs.stripe.com/payments
+    title: Payments | Stripe Documentation
+    language: en
+    accessed: '2026-10-17'
+    retrieved_by: ai
+    supports:
+      - definition
+      - summary

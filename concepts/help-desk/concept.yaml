@@ -1,0 +1,23 @@
+id: help-desk
+domains:
+  - it/business-systems/enterprise-apps
+level: 1
+relations:
+  prerequisites: []
+  confusable: []
+  related:
+    - itsm
+    - crm
+status: draft
+provenance:
+  drafted_by: ai
+sources:
+  - ref: microsoft-learn
+    locator: https://learn.microsoft.com/en-us/dynamics365/customer-service/implement/overview
+    title: Welcome to Dynamics 365 Customer Service
+    language: en
+    accessed: '2026-10-17'
+    retrieved_by: ai
+    supports:
+      - definition
+      - summary

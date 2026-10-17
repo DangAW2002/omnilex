@@ -1,0 +1,23 @@
+id: crm
+domains:
+  - it/business-systems/enterprise-apps
+level: 1
+relations:
+  prerequisites: []
+  confusable: []
+  related:
+    - erp
+    - help-desk
+status: draft
+provenance:
+  drafted_by: ai
+sources:
+  - ref: microsoft-learn
+    locator: https://learn.microsoft.com/en-us/dynamics365/sales/
+    title: Dynamics 365 Sales documentation
+    language: en
+    accessed: '2026-10-17'
+    retrieved_by: ai
+    supports:
+      - definition
+      - summary

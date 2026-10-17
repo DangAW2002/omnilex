@@ -1,0 +1,23 @@
+id: cms
+domains:
+  - it/business-systems/enterprise-apps
+  - media/publishing/distribution-platforms
+level: 1
+relations:
+  prerequisites: []
+  confusable: []
+  related:
+    - e-commerce-platform
+status: draft
+provenance:
+  drafted_by: ai
+sources:
+  - ref: mdn
+    locator: https://developer.mozilla.org/en-US/docs/Glossary/CMS
+    title: CMS - Glossary
+    language: en
+    accessed: '2026-10-17'
+    retrieved_by: ai
+    supports:
+      - definition
+      - summary

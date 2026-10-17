@@ -1,0 +1,23 @@
+id: low-code
+domains:
+  - it/business-systems/automation
+level: 1
+relations:
+  prerequisites: []
+  confusable: []
+  related:
+    - no-code
+    - workflow-automation
+status: draft
+provenance:
+  drafted_by: ai
+sources:
+  - ref: aws-docs
+    locator: https://aws.amazon.com/what-is/low-code/
+    title: What is Low Code? - Low Code Explained
+    language: en
+    accessed: '2026-10-17'
+    retrieved_by: ai
+    supports:
+      - definition
+      - summary

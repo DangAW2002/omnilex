@@ -63,27 +63,6 @@
     "status": "draft"
   },
   {
-    "id": "acid",
-    "label": "ACID",
-    "qualifier": "(Cơ sở dữ liệu)",
-    "aliases": [
-      "tính chất ACID"
-    ],
-    "loanwords": [
-      "ACID"
-    ],
-    "plain_descriptions": [
-      "bốn nguyên tắc an toàn bảo đảm giao dịch cơ sở dữ liệu luôn hoàn thành trọn vẹn và không bị lỗi",
-      "lời cam kết của hệ thống rằng giao dịch tiền bạc hoặc thành công 100% hoặc không để lại dấu vết"
-    ],
-    "summary": "Bộ bốn đặc tính cơ bản (Nguyên tử, Nhất quán, Cô lập, Bền vững) bảo đảm các giao dịch cơ sở dữ liệu được xử lý an toàn và tin cậy.",
-    "domains": [
-      "it/data/database"
-    ],
-    "level": 2,
-    "status": "draft"
-  },
-  {
     "id": "actuator",
     "label": "Cơ cấu chấp hành",
     "aliases": [
@@ -180,91 +159,6 @@
     "summary": "Người cung cấp thông tin hoặc tài liệu cho phóng viên theo thỏa thuận rằng danh tính cá nhân của họ sẽ được giữ bí mật trên mặt báo.",
     "domains": [
       "media/journalism/ethics"
-    ],
-    "level": 2,
-    "status": "draft"
-  },
-  {
-    "id": "apache-airflow",
-    "label": "Apache Airflow",
-    "aliases": [
-      "Airflow"
-    ],
-    "loanwords": [
-      "Apache Airflow",
-      "Airflow"
-    ],
-    "plain_descriptions": [
-      "công cụ lập lịch và theo dõi đường ống dữ liệu nhiều bước bằng mã nguồn Python",
-      "người điều phối tự động giúp chạy các tác vụ trích xuất và xuất báo cáo dữ liệu theo đúng thứ tự"
-    ],
-    "summary": "Nền tảng mã nguồn mở dùng để lập trình, lập lịch và giám sát các luồng công việc kỹ thuật dữ liệu phức tạp.",
-    "domains": [
-      "it/data/data-engineering"
-    ],
-    "level": 2,
-    "status": "draft"
-  },
-  {
-    "id": "apache-flink",
-    "label": "Apache Flink",
-    "aliases": [
-      "Flink"
-    ],
-    "loanwords": [
-      "Apache Flink",
-      "Flink"
-    ],
-    "plain_descriptions": [
-      "khung phần mềm mã nguồn mở chuyên tính toán thời gian thực trên các dòng dữ liệu liên tục",
-      "công cụ xử lý sự kiện tốc độ cao giúp cập nhật số liệu thống kê liên tục mà không cần dừng lại"
-    ],
-    "summary": "Khung xử lý phân tán mã nguồn mở dành cho các tính toán có trạng thái trên cả luồng dữ liệu vô hạn và hữu hạn.",
-    "domains": [
-      "it/data/data-engineering"
-    ],
-    "level": 2,
-    "status": "draft"
-  },
-  {
-    "id": "apache-kafka",
-    "label": "Apache Kafka",
-    "aliases": [
-      "Kafka"
-    ],
-    "loanwords": [
-      "Apache Kafka",
-      "Kafka"
-    ],
-    "plain_descriptions": [
-      "nền tảng phần mềm phân tán ghi nhận các luồng dữ liệu liên tục qua nhiều máy chủ",
-      "trục truyền tin thời gian thực giúp lưu lịch sử sự kiện an toàn và phát lại khi cần"
-    ],
-    "summary": "Nền tảng luồng sự kiện phân tán dùng cho đường ống dữ liệu hiệu năng cao, phân tích thời gian thực và tích hợp hệ thống.",
-    "domains": [
-      "it/data/data-engineering",
-      "it/web/backend"
-    ],
-    "level": 2,
-    "status": "draft"
-  },
-  {
-    "id": "apache-spark",
-    "label": "Apache Spark",
-    "aliases": [
-      "Spark"
-    ],
-    "loanwords": [
-      "Apache Spark",
-      "Spark"
-    ],
-    "plain_descriptions": [
-      "công cụ điện toán dữ liệu lớn xử lý các tập dữ liệu khổng lồ ngay trong bộ nhớ RAM",
-      "khung phần mềm mã nguồn mở để biến đổi dữ liệu lớn và chạy học máy trên nhiều máy chủ"
-    ],
-    "summary": "Khung điện toán phân tán mã nguồn mở được thiết kế để xử lý nhanh các tập dữ liệu quy mô lớn nhờ cơ chế lưu trữ trên bộ nhớ.",
-    "domains": [
-      "it/data/data-engineering"
     ],
     "level": 2,
     "status": "draft"
@@ -504,26 +398,6 @@
     "status": "draft"
   },
   {
-    "id": "batch-processing",
-    "label": "Batch processing",
-    "aliases": [
-      "xử lý theo lô"
-    ],
-    "loanwords": [
-      "Batch processing"
-    ],
-    "plain_descriptions": [
-      "xử lý các khối dữ liệu gom lại cùng một lúc theo lịch hẹn định kỳ",
-      "chạy tính toán khối lượng lớn vào ban đêm trên toàn bộ doanh số bán hàng của ngày hôm trước"
-    ],
-    "summary": "Việc thực thi chuỗi công việc tính toán tự động trên các khối dữ liệu lớn đã tích lũy mà không cần can thiệp thủ công.",
-    "domains": [
-      "it/data/data-engineering"
-    ],
-    "level": 2,
-    "status": "draft"
-  },
-  {
     "id": "batch-size",
     "label": "Batch size",
     "aliases": [
@@ -760,6 +634,29 @@
     "status": "draft"
   },
   {
+    "id": "business-intelligence",
+    "label": "Kinh doanh thông minh",
+    "aliases": [
+      "Business intelligence",
+      "BI"
+    ],
+    "loanwords": [
+      "BI",
+      "Business intelligence"
+    ],
+    "plain_descriptions": [
+      "công cụ biến bảng tính phức tạp thành biểu đồ theo dõi sức khỏe doanh nghiệp",
+      "hệ thống trích xuất và phân tích số liệu kinh doanh để tìm kiếm xu hướng"
+    ],
+    "summary": "Phương pháp và công nghệ phân tích dữ liệu hoạt động trong quá khứ nhằm hỗ trợ ban lãnh đạo đưa ra quyết định kinh doanh.",
+    "domains": [
+      "it/data/analytics",
+      "it/business-systems/enterprise-apps"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
     "id": "byline",
     "label": "Byline",
     "aliases": [
@@ -847,25 +744,6 @@
     "status": "draft"
   },
   {
-    "id": "cap-theorem",
-    "label": "Định lý CAP",
-    "aliases": [
-      "định lý Brewer",
-      "CAP theorem"
-    ],
-    "loanwords": [],
-    "plain_descriptions": [
-      "nguyên tắc cốt lõi khẳng định hệ thống phân tán chỉ có thể chọn tối đa hai trong ba yếu tố nhất quán, sẵn sàng và chịu lỗi mạng",
-      "quy luật chỉ ra khi mạng đứt, cơ sở dữ liệu buộc phải chọn giữa việc trả lời đúng số liệu mới nhất hay vẫn tiếp tục phục vụ"
-    ],
-    "summary": "Nguyên lý cơ bản của điện toán phân tán khẳng định một kho lưu trữ phân tán chỉ có thể đồng thời đáp ứng tối đa hai trong ba bảo đảm, Nhất quán, Sẵn sàng và Chịu lỗi mạng.",
-    "domains": [
-      "it/data/database"
-    ],
-    "level": 2,
-    "status": "draft"
-  },
-  {
     "id": "cash-flow-statement",
     "label": "Báo cáo lưu chuyển tiền tệ",
     "aliases": [
@@ -922,27 +800,6 @@
     "summary": "Kỹ thuật viết prompt yêu cầu mô hình lập luận qua các bước trung gian trước khi đưa ra câu trả lời cuối cùng.",
     "domains": [
       "it/ai-ml/llm-agents"
-    ],
-    "level": 2,
-    "status": "draft"
-  },
-  {
-    "id": "change-data-capture",
-    "label": "Change data capture (CDC)",
-    "aliases": [
-      "CDC"
-    ],
-    "loanwords": [
-      "Change data capture (CDC)",
-      "Change data capture"
-    ],
-    "plain_descriptions": [
-      "nhận diện và theo dõi các thay đổi dòng trong cơ sở dữ liệu để hệ thống khác tự cập nhật theo",
-      "theo dõi nhật ký giao dịch của cơ sở dữ liệu để đồng bộ dữ liệu sửa đổi sang bộ nhớ đệm và tìm kiếm"
-    ],
-    "summary": "Tập hợp các kỹ thuật và mẫu thiết kế giúp ghi nhận và truyền tải các thao tác sửa đổi dữ liệu cấp dòng ngay khi xảy ra.",
-    "domains": [
-      "it/data/data-engineering"
     ],
     "level": 2,
     "status": "draft"
@@ -1011,6 +868,28 @@
     "status": "draft"
   },
   {
+    "id": "cms",
+    "label": "CMS",
+    "aliases": [
+      "Content management system",
+      "Hệ thống quản lý nội dung"
+    ],
+    "loanwords": [
+      "CMS"
+    ],
+    "plain_descriptions": [
+      "phần mềm tạo và đăng bài viết lên website không cần biết lập trình",
+      "trang quản trị đăng tải tin tức và hình ảnh cho trang web"
+    ],
+    "summary": "Ứng dụng hỗ trợ người dùng biên soạn, chỉnh sửa, lưu trữ và xuất bản nội dung số lên website mà không cần can thiệp mã nguồn.",
+    "domains": [
+      "it/business-systems/enterprise-apps",
+      "media/publishing/distribution-platforms"
+    ],
+    "level": 1,
+    "status": "draft"
+  },
+  {
     "id": "coap",
     "label": "Constrained Application Protocol (CoAP)",
     "aliases": [
@@ -1073,25 +952,6 @@
     "status": "draft"
   },
   {
-    "id": "columnar-storage",
-    "label": "Lưu trữ theo cột",
-    "aliases": [
-      "columnar storage",
-      "cơ sở dữ liệu theo cột"
-    ],
-    "loanwords": [],
-    "plain_descriptions": [
-      "cách sắp xếp dữ liệu trên ổ cứng theo từng cột thay vì theo từng hàng",
-      "gom tất cả giá tiền nằm liền nhau trên ổ đĩa để tính tổng mà không cần đọc tên khách hàng"
-    ],
-    "summary": "Phương pháp lưu trữ cơ sở dữ liệu nhóm các giá trị theo cột thay vì theo hàng trên ổ đĩa, giúp tăng tốc tối đa các truy vấn tổng hợp phân tích.",
-    "domains": [
-      "it/data/database"
-    ],
-    "level": 2,
-    "status": "draft"
-  },
-  {
     "id": "compound-interest",
     "label": "Lãi kép",
     "aliases": [
@@ -1112,27 +972,6 @@
     ],
     "level": 1,
     "status": "reviewed"
-  },
-  {
-    "id": "connection-pool",
-    "label": "Connection pool",
-    "aliases": [
-      "hồ chứa kết nối",
-      "vùng kết nối"
-    ],
-    "loanwords": [
-      "Connection pool"
-    ],
-    "plain_descriptions": [
-      "tập hợp các kết nối cơ sở dữ liệu được mở sẵn để ứng dụng dùng ngay mà không cần kết nối lại",
-      "việc duy trì sẵn các đường truyền tới cơ sở dữ liệu để tránh mất thời gian bắt tay mạng"
-    ],
-    "summary": "Bộ nhớ lưu trữ các kết nối cơ sở dữ liệu mở sẵn và có thể tái sử dụng, giúp ứng dụng tránh chi phí thiết lập kết nối mới cho mỗi yêu cầu.",
-    "domains": [
-      "it/data/database"
-    ],
-    "level": 2,
-    "status": "draft"
   },
   {
     "id": "container-image",
@@ -1436,6 +1275,26 @@
     "status": "draft"
   },
   {
+    "id": "crm",
+    "label": "CRM",
+    "aliases": [
+      "Customer relationship management"
+    ],
+    "loanwords": [
+      "CRM"
+    ],
+    "plain_descriptions": [
+      "phần mềm ghi lại lịch sử trao đổi và hợp đồng của khách hàng",
+      "sổ tay khách hàng dùng chung cho toàn bộ đội bán hàng và hỗ trợ"
+    ],
+    "summary": "Hệ thống phần mềm hợp nhất dữ liệu liên hệ, tiến độ thương vụ và lịch sử tương tác với khách hàng trong một nền tảng.",
+    "domains": [
+      "it/business-systems/enterprise-apps"
+    ],
+    "level": 1,
+    "status": "draft"
+  },
+  {
     "id": "cryptocurrency",
     "label": "Tiền mã hóa",
     "aliases": [
@@ -1591,24 +1450,6 @@
     "status": "draft"
   },
   {
-    "id": "data-governance",
-    "label": "Quản trị dữ liệu",
-    "aliases": [
-      "data governance"
-    ],
-    "loanwords": [],
-    "plain_descriptions": [
-      "các quy định và quy trình bảo đảm dữ liệu của công ty luôn an toàn, chính xác và dùng đúng mục đích",
-      "việc phân công ai là người sở hữu, kiểm soát và được phép truy cập vào các nguồn dữ liệu doanh nghiệp"
-    ],
-    "summary": "Khung quản lý tổng thể về tính sẵn sàng, tính khả dụng, tính toàn vẹn và độ bảo mật của dữ liệu trong doanh nghiệp.",
-    "domains": [
-      "it/data/data-engineering"
-    ],
-    "level": 2,
-    "status": "draft"
-  },
-  {
     "id": "data-lake",
     "label": "Data lake",
     "aliases": [
@@ -1622,48 +1463,6 @@
       "bể chứa dữ liệu linh hoạt chứa cả tệp âm thanh, video, nhật ký hệ thống mà không bắt buộc tạo bảng"
     ],
     "summary": "Kho lưu trữ tập trung có khả năng lưu giữ khối lượng lớn dữ liệu thô ở định dạng nguyên bản, từ dữ liệu có cấu trúc đến phi cấu trúc.",
-    "domains": [
-      "it/data/data-engineering"
-    ],
-    "level": 2,
-    "status": "draft"
-  },
-  {
-    "id": "data-lakehouse",
-    "label": "Data lakehouse",
-    "aliases": [
-      "lakehouse"
-    ],
-    "loanwords": [
-      "Data lakehouse",
-      "lakehouse"
-    ],
-    "plain_descriptions": [
-      "mô hình lưu trữ hiện đại kết hợp chi phí rẻ của kho tệp thô với tốc độ truy vấn của kho dữ liệu",
-      "kiến trúc cho phép chạy báo cáo kinh doanh và huấn luyện học máy trực tiếp trên cùng một nguồn tệp"
-    ],
-    "summary": "Kiến trúc quản lý dữ liệu hiện đại kết hợp khả năng lưu trữ linh hoạt của data lake với tính toàn vẹn ACID của data warehouse.",
-    "domains": [
-      "it/data/data-engineering"
-    ],
-    "level": 2,
-    "status": "draft"
-  },
-  {
-    "id": "data-lineage",
-    "label": "Data lineage",
-    "aliases": [
-      "nguồn gốc dữ liệu",
-      "phả hệ dữ liệu"
-    ],
-    "loanwords": [
-      "Data lineage"
-    ],
-    "plain_descriptions": [
-      "việc truy vết toàn bộ đường đi của dữ liệu từ nơi sinh ra cho đến các bảng báo cáo cuối cùng",
-      "cây phả hệ trực quan cho biết các bản ghi thô đã trải qua những bước biến đổi nào"
-    ],
-    "summary": "Lịch sử và đường đi được ghi nhận của dữ liệu, mô tả chi tiết nguồn gốc, sự di chuyển, các bước biến đổi và đích đến theo thời gian.",
     "domains": [
       "it/data/data-engineering"
     ],
@@ -1691,21 +1490,23 @@
     "status": "draft"
   },
   {
-    "id": "data-quality",
-    "label": "Chất lượng dữ liệu",
+    "id": "data-visualization",
+    "label": "Data visualization",
     "aliases": [
-      "data quality"
+      "Trực quan hóa dữ liệu"
     ],
-    "loanwords": [],
+    "loanwords": [
+      "data visualization"
+    ],
     "plain_descriptions": [
-      "mức độ tin cậy, sạch sẽ và đầy đủ của thông tin trước khi mang ra sử dụng cho công việc",
-      "việc kiểm tra xem các bản ghi có đúng, cập nhật và không bị trùng lặp hay không"
+      "cách vẽ số liệu thành các biểu đồ và hình ảnh dễ nhìn",
+      "trình bày dữ liệu dạng đồ thị hoặc bản đồ nhiệt để người xem dễ hiểu"
     ],
-    "summary": "Thước đo đánh giá mức độ một tập dữ liệu đáp ứng các yêu cầu về tính chính xác, tính đầy đủ, tính nhất quán, tính hợp lệ và độ kịp thời.",
+    "summary": "Kỹ thuật biểu diễn số liệu định lượng thành các đồ thị, biểu đồ và bản đồ trực quan giúp người xem nhận diện xu hướng nhanh chóng.",
     "domains": [
-      "it/data/data-engineering"
+      "it/data/analytics"
     ],
-    "level": 2,
+    "level": 1,
     "status": "draft"
   },
   {
@@ -1766,26 +1567,6 @@
       "tập lệnh thêm cột hoặc tạo bảng mới cho cơ sở dữ liệu đang chạy"
     ],
     "summary": "Tập hợp các đoạn mã được quản lý phiên bản nhằm biến đổi và nâng cấp cấu trúc cơ sở dữ liệu an toàn theo thời gian mà không làm mất dữ liệu hiện có.",
-    "domains": [
-      "it/data/database"
-    ],
-    "level": 2,
-    "status": "draft"
-  },
-  {
-    "id": "database-normalization",
-    "label": "Chuẩn hóa dữ liệu",
-    "qualifier": "(Cơ sở dữ liệu)",
-    "aliases": [
-      "chuẩn hóa cơ sở dữ liệu",
-      "normalization"
-    ],
-    "loanwords": [],
-    "plain_descriptions": [
-      "sắp xếp lại các bảng dữ liệu để loại bỏ việc lưu lặp đi lặp lại cùng một thông tin",
-      "chia tách bảng sao cho mỗi mẩu thông tin chỉ cần lưu ở một nơi duy nhất"
-    ],
-    "summary": "Quá trình tổ chức lại các bảng trong cơ sở dữ liệu quan hệ theo các dạng chuẩn nhằm giảm thiểu dư thừa dữ liệu và nâng cao tính toàn vẹn.",
     "domains": [
       "it/data/database"
     ],
@@ -1874,28 +1655,6 @@
       "it/ai-ml/foundations"
     ],
     "level": 1,
-    "status": "draft"
-  },
-  {
-    "id": "deadlock",
-    "label": "Deadlock",
-    "aliases": [
-      "khóa chết",
-      "bế tắc"
-    ],
-    "loanwords": [
-      "Deadlock"
-    ],
-    "plain_descriptions": [
-      "tình trạng tê liệt khi hai chương trình mải chờ tài nguyên của nhau mà không chịu nhường",
-      "cảnh ùn tắc giao thông trong bộ nhớ khi các giao dịch giữ khóa chặn nhau không thể tiếp tục"
-    ],
-    "summary": "Tình trạng bế tắc vĩnh viễn khi hai hoặc nhiều tiến trình đồng thời cùng giữ một tài nguyên và chờ đợi tài nguyên do tiến trình kia nắm giữ.",
-    "domains": [
-      "it/data/database",
-      "it/software-engineering/programming-concepts"
-    ],
-    "level": 2,
     "status": "draft"
   },
   {
@@ -2058,6 +1817,26 @@
     "status": "draft"
   },
   {
+    "id": "digital-transformation",
+    "label": "Chuyển đổi số",
+    "aliases": [
+      "Digital transformation"
+    ],
+    "loanwords": [
+      "digital transformation"
+    ],
+    "plain_descriptions": [
+      "thay đổi toàn diện cách thức hoạt động của công ty bằng công nghệ số",
+      "thay thế giấy tờ thủ công bằng quy trình phần mềm và điện toán đám mây"
+    ],
+    "summary": "Quá trình tích hợp công nghệ số vào mọi mặt hoạt động của tổ chức nhằm đổi mới căn bản cách thức vận hành và cung cấp giá trị cho khách hàng.",
+    "domains": [
+      "it/business-systems/enterprise-apps"
+    ],
+    "level": 1,
+    "status": "draft"
+  },
+  {
     "id": "digital-twin",
     "label": "Bản sao kỹ thuật số",
     "aliases": [
@@ -2186,27 +1965,6 @@
     "status": "draft"
   },
   {
-    "id": "document-database",
-    "label": "Document database",
-    "aliases": [
-      "cơ sở dữ liệu tài liệu",
-      "document store"
-    ],
-    "loanwords": [
-      "Document database"
-    ],
-    "plain_descriptions": [
-      "cơ sở dữ liệu lưu trữ các bản ghi dưới dạng các tệp tài liệu số tương tự như định dạng JSON",
-      "hệ thống linh hoạt nơi mỗi hồ sơ khách hàng tự chứa danh sách thông tin lồng nhau mà không cần ghép bảng"
-    ],
-    "summary": "Loại cơ sở dữ liệu phi quan hệ được thiết kế để lưu trữ, truy xuất và quản lý dữ liệu bán cấu trúc dưới dạng tài liệu như JSON hoặc BSON.",
-    "domains": [
-      "it/data/database"
-    ],
-    "level": 2,
-    "status": "draft"
-  },
-  {
     "id": "double-entry-bookkeeping",
     "label": "Kế toán kép",
     "aliases": [
@@ -2222,6 +1980,26 @@
     "summary": "Phương pháp ghi chép kế toán phản ánh các nghiệp vụ kinh tế tài chính vào ít nhất hai tài khoản kế toán theo quan hệ đối ứng Nợ và Có.",
     "domains": [
       "finance/accounting/bookkeeping"
+    ],
+    "level": 1,
+    "status": "draft"
+  },
+  {
+    "id": "e-commerce-platform",
+    "label": "Nền tảng thương mại điện tử",
+    "aliases": [
+      "E-commerce platform"
+    ],
+    "loanwords": [
+      "e-commerce platform"
+    ],
+    "plain_descriptions": [
+      "phần mềm tạo website bán hàng có sẵn giỏ hàng và danh mục sản phẩm",
+      "hệ thống quản lý gian hàng trực tuyến từ chọn đồ đến đặt hàng và giao vận"
+    ],
+    "summary": "Bộ giải pháp phần mềm cho phép doanh nghiệp thiết lập cửa hàng trực tuyến, quản lý danh mục sản phẩm, giỏ hàng và xử lý đơn hàng.",
+    "domains": [
+      "it/business-systems/enterprise-apps"
     ],
     "level": 1,
     "status": "draft"
@@ -2305,24 +2083,6 @@
     "summary": "Mô hình tính toán phân tán đưa các tác vụ xử lý tính toán và lưu trữ dữ liệu về gần sát vị trí vật lý nơi thông tin được thu thập nhằm tối ưu độ trễ.",
     "domains": [
       "iot/edge-cloud"
-    ],
-    "level": 2,
-    "status": "draft"
-  },
-  {
-    "id": "elasticsearch",
-    "label": "Elasticsearch",
-    "aliases": [],
-    "loanwords": [
-      "Elasticsearch"
-    ],
-    "plain_descriptions": [
-      "công cụ tìm kiếm và phân tích siêu tốc có thể rà soát hàng triệu tài liệu chỉ trong vài giây",
-      "phần mềm chuyên tìm kiếm bài viết theo từ khóa, lọc sản phẩm và theo dõi lỗi máy chủ"
-    ],
-    "summary": "Công cụ tìm kiếm và phân tích phân tán dựa trên định dạng JSON được xây dựng trên Apache Lucene, tối ưu cho tìm kiếm thời gian thực.",
-    "domains": [
-      "it/data/database"
     ],
     "level": 2,
     "status": "draft"
@@ -2537,6 +2297,27 @@
     "status": "draft"
   },
   {
+    "id": "erp",
+    "label": "ERP",
+    "aliases": [
+      "Enterprise resource planning",
+      "Hoạch định tài nguyên doanh nghiệp"
+    ],
+    "loanwords": [
+      "ERP"
+    ],
+    "plain_descriptions": [
+      "phần mềm tổng quản trị dòng tiền và kho hàng của công ty",
+      "hệ thống kết nối số liệu kế toán với mua hàng và sản xuất"
+    ],
+    "summary": "Bộ phần mềm quản trị tổng thể kết nối tài chính, mua hàng, tồn kho và sản xuất trên một cơ sở dữ liệu chung.",
+    "domains": [
+      "it/business-systems/enterprise-apps"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
     "id": "etf",
     "label": "Quỹ hoán đổi danh mục",
     "aliases": [
@@ -2574,46 +2355,6 @@
     "summary": "Quy trình tích hợp dữ liệu gồm ba bước: trích xuất từ các nguồn khác nhau, biến đổi theo chuẩn phân tích và nạp vào kho dữ liệu đích.",
     "domains": [
       "it/data/data-engineering"
-    ],
-    "level": 2,
-    "status": "draft"
-  },
-  {
-    "id": "event-streaming",
-    "label": "Event streaming",
-    "aliases": [
-      "luồng sự kiện"
-    ],
-    "loanwords": [
-      "Event streaming"
-    ],
-    "plain_descriptions": [
-      "liên tục ghi nhận và xử lý bản ghi kỹ thuật số ngay khi hành động vừa diễn ra",
-      "truyền dữ liệu vận hành tức thời giữa các phần mềm mà không phải đợi kết xuất file ban đêm"
-    ],
-    "summary": "Phương thức thu thập, lưu trữ và phân tích các luồng bản ghi dữ liệu liên tục theo thời gian thực khi sự kiện phát sinh.",
-    "domains": [
-      "it/data/data-engineering"
-    ],
-    "level": 2,
-    "status": "draft"
-  },
-  {
-    "id": "eventual-consistency",
-    "label": "Eventual consistency",
-    "aliases": [
-      "tính nhất quán cuối cùng"
-    ],
-    "loanwords": [
-      "Eventual consistency"
-    ],
-    "plain_descriptions": [
-      "lời cam kết rằng tất cả máy chủ bản sao rồi sẽ có dữ liệu giống nhau nếu không có sửa đổi mới",
-      "cơ chế cho phép bạn bè nhìn thấy bài đăng của bạn trễ hơn vài giây sau khi bạn bấm đăng"
-    ],
-    "summary": "Mô hình nhất quán trong điện toán phân tán bảo đảm rằng mọi bản sao dữ liệu cuối cùng sẽ hội tụ về cùng một giá trị nếu có đủ thời gian và không có thêm cập nhật mới.",
-    "domains": [
-      "it/data/database"
     ],
     "level": 2,
     "status": "draft"
@@ -2757,44 +2498,6 @@
       "iot/devices-sensors"
     ],
     "level": 1,
-    "status": "draft"
-  },
-  {
-    "id": "foreign-key",
-    "label": "Khóa ngoại",
-    "aliases": [
-      "foreign key",
-      "FK"
-    ],
-    "loanwords": [],
-    "plain_descriptions": [
-      "cột dữ liệu trong một bảng trỏ tới mã nhận diện của dòng trong bảng khác để tạo liên kết",
-      "mối liên kết bảo đảm rằng một đơn hàng không thể được tạo cho một khách hàng không tồn tại"
-    ],
-    "summary": "Cột hoặc tập hợp các cột trong bảng cơ sở dữ liệu quan hệ dùng để tạo mối liên kết dữ liệu giữa hai bảng bằng cách tham chiếu tới khóa chính của bảng khác.",
-    "domains": [
-      "it/data/database"
-    ],
-    "level": 1,
-    "status": "draft"
-  },
-  {
-    "id": "full-text-search",
-    "label": "Tìm kiếm toàn văn",
-    "aliases": [
-      "full-text search",
-      "FTS"
-    ],
-    "loanwords": [],
-    "plain_descriptions": [
-      "việc tìm từ và cụm từ bên trong các tài liệu dài thay vì chỉ so khớp mã số chính xác",
-      "kỹ thuật tìm kiếm thông minh hiểu được từ gốc, bỏ qua từ nối thông thường và chấp nhận sai lỗi nhỏ"
-    ],
-    "summary": "Kỹ thuật tìm kiếm các tài liệu văn bản hoặc trường dữ liệu bằng cách so khớp từ ngữ, gốc từ và cụm từ thông qua chỉ mục đảo.",
-    "domains": [
-      "it/data/database"
-    ],
-    "level": 2,
     "status": "draft"
   },
   {
@@ -2942,26 +2645,6 @@
     "status": "draft"
   },
   {
-    "id": "graph-database",
-    "label": "Graph database",
-    "aliases": [
-      "cơ sở dữ liệu đồ thị"
-    ],
-    "loanwords": [
-      "Graph database"
-    ],
-    "plain_descriptions": [
-      "cơ sở dữ liệu chuyên dụng lưu trữ mối quan hệ và sự kết nối giữa các đối tượng một cách trực tiếp",
-      "hệ thống được xây dựng để tìm kiếm đường đi và mối liên kết giữa con người, tuyến đường hay mạng lưới lừa đảo"
-    ],
-    "summary": "Cơ sở dữ liệu sử dụng cấu trúc đồ thị gồm các đỉnh, cạnh và thuộc tính để biểu diễn và lưu trữ dữ liệu có tính liên kết chặt chẽ.",
-    "domains": [
-      "it/data/database"
-    ],
-    "level": 2,
-    "status": "draft"
-  },
-  {
     "id": "graphql",
     "label": "GraphQL",
     "aliases": [],
@@ -3104,6 +2787,26 @@
     "status": "draft"
   },
   {
+    "id": "help-desk",
+    "label": "Help desk",
+    "aliases": [
+      "Bộ phận trợ giúp"
+    ],
+    "loanwords": [
+      "help desk"
+    ],
+    "plain_descriptions": [
+      "phần mềm biến các khiếu nại kỹ thuật thành phiếu yêu cầu xử lý",
+      "đầu mối tiếp nhận và giải quyết trục trặc máy tính cho nhân viên và khách hàng"
+    ],
+    "summary": "Bộ phận chuyên trách và phần mềm hỗ trợ tiếp nhận, phân loại, theo dõi và giải quyết các sự cố kỹ thuật hoặc yêu cầu dịch vụ của người dùng.",
+    "domains": [
+      "it/business-systems/enterprise-apps"
+    ],
+    "level": 1,
+    "status": "draft"
+  },
+  {
     "id": "hotfix",
     "label": "Hotfix",
     "aliases": [
@@ -3122,6 +2825,27 @@
       "it/software-engineering/practices"
     ],
     "level": 2,
+    "status": "draft"
+  },
+  {
+    "id": "hrm-system",
+    "label": "HRMS",
+    "aliases": [
+      "Human resource management system",
+      "Phần mềm quản trị nhân sự"
+    ],
+    "loanwords": [
+      "HRMS"
+    ],
+    "plain_descriptions": [
+      "cổng quản lý hồ sơ nhân viên, ngày phép và tính lương",
+      "phần mềm nội bộ theo dõi chấm công và chế độ phúc lợi của công ty"
+    ],
+    "summary": "Phần mềm số hóa công tác nhân sự, theo dõi hồ sơ lao động, lịch chấm công, tiền lương và chế độ đãi ngộ tập trung.",
+    "domains": [
+      "it/business-systems/enterprise-apps"
+    ],
+    "level": 1,
     "status": "draft"
   },
   {
@@ -3518,6 +3242,27 @@
     "status": "draft"
   },
   {
+    "id": "ipaas",
+    "label": "iPaaS",
+    "aliases": [
+      "Integration platform as a service",
+      "Nền tảng tích hợp dưới dạng dịch vụ"
+    ],
+    "loanwords": [
+      "iPaaS"
+    ],
+    "plain_descriptions": [
+      "dịch vụ đám mây làm cầu nối kết nối các phần mềm doanh nghiệp lại với nhau",
+      "trạm trung chuyển dữ liệu an toàn giữa ứng dụng đám mây và máy chủ nội bộ"
+    ],
+    "summary": "Nền tảng đám mây cung cấp các công cụ và dịch vụ trung gian giúp kết nối, đồng bộ và quản lý luồng dữ liệu giữa các hệ thống phần mềm phân tán.",
+    "domains": [
+      "it/business-systems/automation"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
     "id": "ipo",
     "label": "Phát hành lần đầu ra công chúng",
     "aliases": [
@@ -3532,6 +3277,47 @@
     "summary": "Hoạt động chào bán chứng khoán lần đầu tiên ra công chúng nhằm huy động vốn rộng rãi và đưa cổ phiếu lên giao dịch trên thị trường tập trung.",
     "domains": [
       "finance/corporate-finance/fundraising"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
+    "id": "itil",
+    "label": "ITIL",
+    "aliases": [
+      "Information Technology Infrastructure Library"
+    ],
+    "loanwords": [
+      "ITIL"
+    ],
+    "plain_descriptions": [
+      "bộ cẩm nang quy tắc chuẩn mực quốc tế về vận hành dịch vụ công nghệ",
+      "khung hướng dẫn thực hành tốt nhất cho các đội ngũ quản lý hệ thống CNTT"
+    ],
+    "summary": "Bộ khung hướng dẫn thực hành chuẩn mực quốc tế dành cho việc thiết kế, vận hành và quản trị các dịch vụ công nghệ thông tin.",
+    "domains": [
+      "it/business-systems/enterprise-apps"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
+    "id": "itsm",
+    "label": "ITSM",
+    "aliases": [
+      "IT service management",
+      "Quản trị dịch vụ công nghệ thông tin"
+    ],
+    "loanwords": [
+      "ITSM"
+    ],
+    "plain_descriptions": [
+      "phương pháp quản lý và cung cấp các dịch vụ công nghệ một cách bài bản trong công ty",
+      "quy trình chuẩn hóa việc vận hành máy chủ, cập nhật phần mềm và xử lý sự cố"
+    ],
+    "summary": "Hoạt động quản trị toàn diện việc thiết kế, cung cấp, vận hành và kiểm soát các dịch vụ công nghệ thông tin phục vụ hoạt động doanh nghiệp.",
+    "domains": [
+      "it/business-systems/enterprise-apps"
     ],
     "level": 2,
     "status": "draft"
@@ -3613,27 +3399,6 @@
       "product/agile-scrum"
     ],
     "level": 1,
-    "status": "draft"
-  },
-  {
-    "id": "key-value-store",
-    "label": "Key-value store",
-    "aliases": [
-      "cơ sở dữ liệu khóa - giá trị",
-      "kho khóa - giá trị"
-    ],
-    "loanwords": [
-      "Key-value store"
-    ],
-    "plain_descriptions": [
-      "cơ sở dữ liệu đơn giản và siêu nhanh lưu trữ và tìm kiếm bản ghi dựa vào khóa định danh duy nhất",
-      "kho dữ liệu dạng từ điển nơi bạn đưa ra một từ khóa để nhận lại giá trị tương ứng ngay lập tức"
-    ],
-    "summary": "Loại cơ sở dữ liệu phi quan hệ sử dụng mô hình mảng kết hợp đơn giản, trong đó mỗi phần tử dữ liệu được đánh chỉ mục bằng một khóa riêng biệt.",
-    "domains": [
-      "it/data/database"
-    ],
-    "level": 2,
     "status": "draft"
   },
   {
@@ -3990,6 +3755,26 @@
     "status": "draft"
   },
   {
+    "id": "low-code",
+    "label": "Low-code",
+    "aliases": [
+      "Nền tảng lập trình tinh giản"
+    ],
+    "loanwords": [
+      "low-code"
+    ],
+    "plain_descriptions": [
+      "cách làm ứng dụng bằng thao tác kéo thả và chỉ phải viết rất ít mã nguồn",
+      "nền tảng phát triển phần mềm nhanh dựa trên các khối giao diện dựng sẵn"
+    ],
+    "summary": "Phương pháp phát triển phần mềm sử dụng giao diện trực quan và các khối chức năng dựng sẵn, cho phép viết thêm mã nguồn khi cần tùy biến sâu.",
+    "domains": [
+      "it/business-systems/automation"
+    ],
+    "level": 1,
+    "status": "draft"
+  },
+  {
     "id": "machine-learning",
     "label": "Học máy",
     "aliases": [],
@@ -4070,27 +3855,6 @@
     "summary": "Khung mô hình chiến lược minh họa các giai đoạn tuần tự trong hành trình của khách hàng, từ nhận biết thương hiệu ban đầu, cân nhắc, cho đến quyết định mua hàng và gắn bó.",
     "domains": [
       "media/digital-marketing/metrics-analytics"
-    ],
-    "level": 2,
-    "status": "draft"
-  },
-  {
-    "id": "materialized-view",
-    "label": "Materialized view",
-    "aliases": [
-      "khung nhìn cụ thể hóa",
-      "view vật lý"
-    ],
-    "loanwords": [
-      "Materialized view"
-    ],
-    "plain_descriptions": [
-      "bảng báo cáo cơ sở dữ liệu lưu sẵn kết quả tính toán xuống ổ cứng để xem lại ngay lập tức",
-      "việc chạy trước một phép ghép bảng phức tạp tốn thời gian rồi cất bản kết quả đó lên ổ đĩa"
-    ],
-    "summary": "Đối tượng cơ sở dữ liệu chứa kết quả tính toán sẵn của một câu truy vấn được lưu trữ vật lý trên ổ đĩa để truy xuất tốc độ cao.",
-    "domains": [
-      "it/data/database"
     ],
     "level": 2,
     "status": "draft"
@@ -4369,24 +4133,6 @@
     "status": "draft"
   },
   {
-    "id": "mongodb",
-    "label": "MongoDB",
-    "aliases": [],
-    "loanwords": [
-      "MongoDB"
-    ],
-    "plain_descriptions": [
-      "cơ sở dữ liệu phổ biến lưu trữ bản ghi dưới dạng các tài liệu JSON linh hoạt thay vì các bảng cứng nhắc",
-      "phần mềm cơ sở dữ liệu dạng tài liệu được giới lập trình web yêu thích nhờ khả năng lưu dữ liệu tùy biến dễ dàng"
-    ],
-    "summary": "Cơ sở dữ liệu tài liệu mã nguồn mở phổ biến lưu trữ dữ liệu vận hành dưới dạng các tài liệu BSON linh hoạt tương tự JSON.",
-    "domains": [
-      "it/data/database"
-    ],
-    "level": 2,
-    "status": "draft"
-  },
-  {
     "id": "monorepo",
     "label": "Monorepo",
     "aliases": [
@@ -4595,6 +4341,26 @@
     "status": "draft"
   },
   {
+    "id": "no-code",
+    "label": "No-code",
+    "aliases": [
+      "Nền tảng không cần mã nguồn"
+    ],
+    "loanwords": [
+      "no-code"
+    ],
+    "plain_descriptions": [
+      "công cụ tạo ứng dụng hoàn toàn bằng thao tác trực quan không cần viết một dòng mã nào",
+      "phần mềm cho phép người làm nghiệp vụ tự làm biểu mẫu và quy trình tự động"
+    ],
+    "summary": "Phương pháp xây dựng ứng dụng cho phép người dùng không có chuyên môn lập trình tự tạo phần mềm thông qua giao diện kéo thả trực quan.",
+    "domains": [
+      "it/business-systems/automation"
+    ],
+    "level": 1,
+    "status": "draft"
+  },
+  {
     "id": "north-star-metric",
     "label": "North Star metric",
     "aliases": [
@@ -4612,26 +4378,6 @@
       "product/metrics"
     ],
     "level": 2,
-    "status": "draft"
-  },
-  {
-    "id": "nosql",
-    "label": "NoSQL",
-    "aliases": [
-      "cơ sở dữ liệu phi quan hệ"
-    ],
-    "loanwords": [
-      "NoSQL"
-    ],
-    "plain_descriptions": [
-      "cơ sở dữ liệu hiện đại lưu trữ thông tin linh hoạt mà không cần ép vào các bảng cố định",
-      "hệ thống cơ sở dữ liệu phân tán có khả năng mở rộng dễ dàng trên hàng trăm máy chủ đám mây"
-    ],
-    "summary": "Nhóm các hệ thống quản trị cơ sở dữ liệu phi quan hệ được thiết kế để xử lý các mô hình dữ liệu linh hoạt, tốc độ cao và khả năng mở rộng ngang.",
-    "domains": [
-      "it/data/database"
-    ],
-    "level": 1,
     "status": "draft"
   },
   {
@@ -4716,50 +4462,6 @@
       "product/metrics"
     ],
     "level": 1,
-    "status": "draft"
-  },
-  {
-    "id": "olap",
-    "label": "Online Analytical Processing (OLAP)",
-    "aliases": [
-      "OLAP",
-      "xử lý phân tích trực tuyến"
-    ],
-    "loanwords": [
-      "Online Analytical Processing (OLAP)",
-      "OLAP"
-    ],
-    "plain_descriptions": [
-      "hệ thống phần mềm chuyên phân tích nhanh số liệu kinh doanh lịch sử theo nhiều góc nhìn khác nhau",
-      "cơ sở dữ liệu phục vụ các câu hỏi tổng thể về xu hướng doanh thu qua nhiều năm"
-    ],
-    "summary": "Nhóm công cụ phần mềm và cơ sở dữ liệu được tối ưu hóa để phân tích đa chiều với tốc độ cao trên khối lượng lớn dữ liệu lịch sử.",
-    "domains": [
-      "it/data/analytics"
-    ],
-    "level": 2,
-    "status": "draft"
-  },
-  {
-    "id": "oltp",
-    "label": "Online Transaction Processing (OLTP)",
-    "aliases": [
-      "OLTP",
-      "xử lý giao dịch trực tuyến"
-    ],
-    "loanwords": [
-      "Online Transaction Processing (OLTP)",
-      "OLTP"
-    ],
-    "plain_descriptions": [
-      "hệ thống cơ sở dữ liệu xử lý tức thì hàng nghìn thao tác mua hàng và thanh toán mỗi phút",
-      "phần mềm ghi nhận các giao dịch quẹt thẻ ngân hàng và xác nhận đơn hàng theo thời gian thực"
-    ],
-    "summary": "Nhóm hệ thống xử lý dữ liệu tập trung vào việc thực thi và ghi nhận khối lượng lớn các giao dịch cơ sở dữ liệu ngắn tức thì.",
-    "domains": [
-      "it/data/database"
-    ],
-    "level": 2,
     "status": "draft"
   },
   {
@@ -4946,6 +4648,27 @@
     "status": "draft"
   },
   {
+    "id": "payment-gateway",
+    "label": "Cổng thanh toán",
+    "aliases": [
+      "Payment gateway"
+    ],
+    "loanwords": [
+      "payment gateway"
+    ],
+    "plain_descriptions": [
+      "dịch vụ trực tuyến kết nối website với ngân hàng để trừ tiền thẻ",
+      "cầu nối thanh toán điện tử tiếp nhận và xử lý giao dịch mua hàng qua mạng"
+    ],
+    "summary": "Dịch vụ công nghệ trung gian tiếp nhận, mã hóa và truyền tải thông tin giao dịch giữa website bán lẻ với ngân hàng và mạng lưới thẻ.",
+    "domains": [
+      "it/business-systems/enterprise-apps",
+      "finance/banking/payments"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
     "id": "paywall",
     "label": "Paywall",
     "aliases": [
@@ -5072,24 +4795,24 @@
     "status": "draft"
   },
   {
-    "id": "postgresql",
-    "label": "PostgreSQL",
+    "id": "pos-system",
+    "label": "POS",
     "aliases": [
-      "Postgres"
+      "Point of sale",
+      "Hệ thống điểm bán lẻ"
     ],
     "loanwords": [
-      "PostgreSQL",
-      "Postgres"
+      "POS"
     ],
     "plain_descriptions": [
-      "cơ sở dữ liệu quan hệ mã nguồn mở mạnh mẽ, nổi tiếng về độ tin cậy và tính năng phong phú",
-      "hệ quản trị cơ sở dữ liệu SQL cao cấp hỗ trợ cả tài liệu JSON bên cạnh các bảng truyền thống"
+      "máy thu ngân tính tiền và in hóa đơn tại quầy thanh toán",
+      "thiết bị bán hàng ghi nhận đơn và trừ tồn kho ngay tại cửa hàng"
     ],
-    "summary": "Hệ quản trị cơ sở dữ liệu quan hệ - đối tượng mã nguồn mở mạnh mẽ, nổi tiếng về độ ổn định, tính toàn vẹn và tuân thủ chuẩn SQL.",
+    "summary": "Hệ thống thiết bị và phần mềm đặt tại điểm bán để quét mã hàng, thu tiền và đồng bộ lượng hàng tồn kho.",
     "domains": [
-      "it/data/database"
+      "it/business-systems/enterprise-apps"
     ],
-    "level": 2,
+    "level": 1,
     "status": "draft"
   },
   {
@@ -5213,25 +4936,6 @@
     "summary": "Văn bản tuyên bố chính thức được cơ quan, tổ chức hoặc doanh nghiệp phát hành tới báo chí nhằm cung cấp thông tin chuẩn xác về một sự kiện.",
     "domains": [
       "media/pr-communications/media-relations"
-    ],
-    "level": 1,
-    "status": "draft"
-  },
-  {
-    "id": "primary-key",
-    "label": "Khóa chính",
-    "aliases": [
-      "primary key",
-      "PK"
-    ],
-    "loanwords": [],
-    "plain_descriptions": [
-      "mã định danh duy nhất giúp phân biệt một dòng với toàn bộ các dòng khác trong bảng dữ liệu",
-      "cột nhận diện độc nhất (như số căn cước công dân) để bảo đảm không bao giờ có bản ghi trùng lặp"
-    ],
-    "summary": "Một cột hoặc tập hợp các cột trong bảng cơ sở dữ liệu quan hệ dùng để định danh duy nhất mỗi bản ghi trong bảng đó.",
-    "domains": [
-      "it/data/database"
     ],
     "level": 1,
     "status": "draft"
@@ -5462,30 +5166,6 @@
     "status": "draft"
   },
   {
-    "id": "publish-subscribe",
-    "label": "Publish-subscribe (pub/sub)",
-    "aliases": [
-      "pub/sub",
-      "pub-sub",
-      "xuất bản - đăng ký"
-    ],
-    "loanwords": [
-      "Publish-subscribe (pub/sub)",
-      "pub/sub"
-    ],
-    "plain_descriptions": [
-      "cách truyền tin mà bên gửi phát thông báo mà không cần biết ai sẽ là người nhận cụ thể",
-      "thiết kế liên lạc nơi các ứng dụng tự đăng ký chủ đề để tự động nhận thông báo khi có tin mới"
-    ],
-    "summary": "Mẫu kiến trúc truyền tin bất đồng bộ nơi bên gửi phân loại tin phát mà không gửi trực tiếp đến từng người nhận riêng lẻ.",
-    "domains": [
-      "it/web/backend",
-      "it/data/data-engineering"
-    ],
-    "level": 2,
-    "status": "draft"
-  },
-  {
     "id": "pull-request",
     "label": "Pull request (PR)",
     "aliases": [
@@ -5542,24 +5222,6 @@
     "summary": "Kỹ thuật nén mô hình chuyển đổi các trọng số từ định dạng dấu phẩy động độ chính xác cao sang số nguyên ít bit hơn nhằm giảm tiêu thụ bộ nhớ và tăng tốc suy luận.",
     "domains": [
       "it/ai-ml/mlops"
-    ],
-    "level": 2,
-    "status": "draft"
-  },
-  {
-    "id": "rabbitmq",
-    "label": "RabbitMQ",
-    "aliases": [],
-    "loanwords": [
-      "RabbitMQ"
-    ],
-    "plain_descriptions": [
-      "phần mềm trung gian mã nguồn mở định tuyến công việc chạy ngầm an toàn giữa các chương trình",
-      "bưu tá trung gian tiếp nhận, lưu trữ và chia việc cho các máy chủ xử lý đang rảnh rỗi"
-    ],
-    "summary": "Phần mềm môi giới tin nhắn mã nguồn mở giúp định tuyến thông điệp giữa các ứng dụng phân tán qua giao thức như AMQP.",
-    "domains": [
-      "it/web/backend"
     ],
     "level": 2,
     "status": "draft"
@@ -5666,25 +5328,6 @@
     "status": "draft"
   },
   {
-    "id": "redis",
-    "label": "Redis",
-    "aliases": [],
-    "loanwords": [
-      "Redis"
-    ],
-    "plain_descriptions": [
-      "kho dữ liệu siêu tốc trên bộ nhớ RAM dùng làm bộ đệm để tăng tốc độ trang web",
-      "phần mềm ghi nhớ tức thì các phép đếm và thông tin người dùng chỉ trong một phần nghìn giây"
-    ],
-    "summary": "Kho lưu trữ cấu trúc dữ liệu trên bộ nhớ mã nguồn mở được dùng làm cơ sở dữ liệu tốc độ cao, bộ nhớ đệm, môi giới tin nhắn và công cụ luồng.",
-    "domains": [
-      "it/data/database",
-      "it/web/backend"
-    ],
-    "level": 2,
-    "status": "draft"
-  },
-  {
     "id": "refactoring",
     "label": "Refactoring",
     "aliases": [
@@ -5722,25 +5365,6 @@
       "it/software-engineering/testing"
     ],
     "level": 2,
-    "status": "draft"
-  },
-  {
-    "id": "relational-database",
-    "label": "Cơ sở dữ liệu quan hệ",
-    "aliases": [
-      "RDBMS",
-      "relational database"
-    ],
-    "loanwords": [],
-    "plain_descriptions": [
-      "hệ thống lưu trữ điện tử sắp xếp dữ liệu thành các bảng ngăn nắp liên kết với nhau qua các khóa",
-      "phần mềm cơ sở dữ liệu có cấu trúc dùng lệnh SQL để giữ thông tin kết nối và chính xác tuyệt đối"
-    ],
-    "summary": "Loại cơ sở dữ liệu lưu trữ và quản lý thông tin dưới dạng các bảng có cấu trúc xác định trước và liên kết với nhau qua các mối quan hệ logic.",
-    "domains": [
-      "it/data/database"
-    ],
-    "level": 1,
     "status": "draft"
   },
   {
@@ -5888,6 +5512,27 @@
     "summary": "Hành động vận hành hoàn nguyên ứng dụng, tệp cấu hình hoặc cơ sở dữ liệu về phiên bản ổn định đã được kiểm chứng trước đó.",
     "domains": [
       "it/devops/sre-operations"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
+    "id": "rpa",
+    "label": "RPA",
+    "aliases": [
+      "Robotic process automation",
+      "Tự động hóa quy trình bằng robot"
+    ],
+    "loanwords": [
+      "RPA"
+    ],
+    "plain_descriptions": [
+      "robot phần mềm tự động nhấp chuột và gõ phím bắt chước thao tác người dùng",
+      "công cụ tự động sao chép và nhập liệu giữa các phần mềm kế toán cũ"
+    ],
+    "summary": "Công nghệ tự động hóa sử dụng robot phần mềm để mô phỏng lại các thao tác giao diện người dùng lặp đi lặp lại theo quy tắc định sẵn.",
+    "domains": [
+      "it/business-systems/automation"
     ],
     "level": 2,
     "status": "draft"
@@ -6743,26 +6388,6 @@
     "status": "draft"
   },
   {
-    "id": "stream-processing",
-    "label": "Stream processing",
-    "aliases": [
-      "xử lý luồng"
-    ],
-    "loanwords": [
-      "Stream processing"
-    ],
-    "plain_descriptions": [
-      "phân tích và tính toán dữ liệu tức thì ngay khi từng mẩu tin vừa gửi tới",
-      "tính toán số liệu kinh doanh liên tục mà không cần dừng lại gom thành từng tệp lớn"
-    ],
-    "summary": "Quá trình tiếp nhận và tính toán liên tục trên các bản ghi dữ liệu theo thời gian thực ngay khi chúng vừa phát sinh.",
-    "domains": [
-      "it/data/data-engineering"
-    ],
-    "level": 2,
-    "status": "draft"
-  },
-  {
     "id": "structured-output",
     "label": "Structured output",
     "aliases": [
@@ -6922,28 +6547,6 @@
     "summary": "Tốc độ mà một hệ thống máy tính, kênh truyền thông hoặc ứng dụng xử lý và chuyển giao thành công dữ liệu hoặc giao dịch trong một đơn vị thời gian.",
     "domains": [
       "it/infrastructure/networking"
-    ],
-    "level": 2,
-    "status": "draft"
-  },
-  {
-    "id": "time-series-database",
-    "label": "Time-series database",
-    "aliases": [
-      "cơ sở dữ liệu chuỗi thời gian",
-      "TSDB"
-    ],
-    "loanwords": [
-      "Time-series database"
-    ],
-    "plain_descriptions": [
-      "cơ sở dữ liệu chuyên biệt để theo dõi các chỉ số đo đạc biến đổi theo từng giây, từng giờ và từng ngày",
-      "phần mềm tối ưu cho các tín hiệu cảm biến liên tục, biểu đồ giá chứng khoán và đồ thị máy chủ"
-    ],
-    "summary": "Cơ sở dữ liệu được tối ưu hóa để lưu trữ, truy vấn và phân tích các chuỗi điểm dữ liệu được đánh chỉ mục theo thứ tự thời gian.",
-    "domains": [
-      "it/data/database",
-      "iot/edge-cloud"
     ],
     "level": 2,
     "status": "draft"
@@ -7427,6 +7030,27 @@
       "it/web/api"
     ],
     "level": 2,
+    "status": "draft"
+  },
+  {
+    "id": "workflow-automation",
+    "label": "Tự động hóa quy trình",
+    "aliases": [
+      "Workflow automation",
+      "Tự động hóa quy trình làm việc"
+    ],
+    "loanwords": [
+      "workflow automation"
+    ],
+    "plain_descriptions": [
+      "thiết lập các điều kiện tự động truyền dữ liệu giữa các phần mềm văn phòng",
+      "kết nối các tác vụ hàng ngày để máy tính tự thực hiện thay vì con người bấm tay"
+    ],
+    "summary": "Thiết lập chuỗi các bước công việc tự động kích hoạt và xử lý dữ liệu giữa các ứng dụng nghiệp vụ theo các quy tắc định sẵn.",
+    "domains": [
+      "it/business-systems/automation"
+    ],
+    "level": 1,
     "status": "draft"
   },
   {

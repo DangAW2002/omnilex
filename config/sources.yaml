@@ -1399,3 +1399,25 @@ ocd-vn:
   tier: D
   languages: [vi]
   reuse: cite-only
+
+# wave3 biz
+stripe-docs:
+  title: Stripe Documentation
+  publisher: Stripe, Inc.
+  url: https://docs.stripe.com
+  type: docs
+  tier: B
+  languages: [en]
+  license: all-rights-reserved
+  reuse: paraphrase-only
+  domains: [it/business-systems/enterprise-apps, finance/banking/payments]
+  verified_license_at: "2026-10-17"
+
+lsvn:
+  title: Tạp chí điện tử Luật sư Việt Nam
+  publisher: Liên đoàn Luật sư Việt Nam
+  url: https://lsvn.vn
+  type: news
+  tier: D
+  languages: [vi]
+  reuse: cite-only

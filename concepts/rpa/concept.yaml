@@ -1,0 +1,23 @@
+id: rpa
+domains:
+  - it/business-systems/automation
+level: 2
+relations:
+  prerequisites: []
+  confusable: []
+  related:
+    - workflow-automation
+    - low-code
+status: draft
+provenance:
+  drafted_by: ai
+sources:
+  - ref: microsoft-learn
+    locator: https://learn.microsoft.com/en-us/power-automate/desktop-flows/introduction
+    title: Introduction to desktop flows
+    language: en
+    accessed: '2026-10-17'
+    retrieved_by: ai
+    supports:
+      - definition
+      - summary

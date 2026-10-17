@@ -1,0 +1,23 @@
+id: e-commerce-platform
+domains:
+  - it/business-systems/enterprise-apps
+level: 1
+relations:
+  prerequisites: []
+  confusable: []
+  related:
+    - cms
+    - payment-gateway
+status: draft
+provenance:
+  drafted_by: ai
+sources:
+  - ref: microsoft-learn
+    locator: https://learn.microsoft.com/en-us/dynamics365/commerce/e-commerce-extensibility/overview
+    title: Online channel extensibility - Commerce
+    language: en
+    accessed: '2026-10-17'
+    retrieved_by: ai
+    supports:
+      - definition
+      - summary

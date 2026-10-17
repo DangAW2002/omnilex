@@ -1,0 +1,12 @@
+id: hmi
+domains:
+  - iot/industrial
+level: 1
+relations:
+  prerequisites: []
+  confusable: []
+  related: []
+status: draft
+provenance:
+  drafted_by: ai
+sources: []

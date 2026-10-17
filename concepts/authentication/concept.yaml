@@ -1,0 +1,25 @@
+id: authentication
+domains:
+  - it/security/authentication
+level: 1
+relations:
+  confusable:
+    - authorization
+  related:
+    - mfa
+    - sso
+    - api-key
+    - password-salting
+status: draft
+provenance:
+  drafted_by: ai
+sources:
+  - ref: nist-csrc
+    locator: https://csrc.nist.gov/glossary/term/Authentication
+    title: Authentication - Glossary | CSRC
+    language: en
+    accessed: '2026-10-17'
+    retrieved_by: ai
+    supports:
+      - definition
+      - summary

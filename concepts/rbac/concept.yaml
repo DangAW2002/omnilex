@@ -1,0 +1,22 @@
+id: rbac
+domains:
+  - it/security/authentication
+level: 2
+relations:
+  prerequisites:
+    - authorization
+  related:
+    - least-privilege
+status: draft
+provenance:
+  drafted_by: ai
+sources:
+  - ref: nist-csrc
+    locator: https://csrc.nist.gov/glossary/term/role_based_access_control
+    title: role-based access control - Glossary | CSRC
+    language: en
+    accessed: '2026-10-17'
+    retrieved_by: ai
+    supports:
+      - definition
+      - summary

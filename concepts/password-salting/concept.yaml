@@ -1,0 +1,22 @@
+id: password-salting
+domains:
+  - it/security/cryptography
+level: 2
+relations:
+  prerequisites:
+    - hashing
+  related:
+    - authentication
+status: draft
+provenance:
+  drafted_by: ai
+sources:
+  - ref: nist-csrc
+    locator: https://csrc.nist.gov/glossary/term/salt
+    title: salt - Glossary | CSRC
+    language: en
+    accessed: '2026-10-17'
+    retrieved_by: ai
+    supports:
+      - definition
+      - summary

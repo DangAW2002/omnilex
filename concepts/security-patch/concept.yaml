@@ -1,0 +1,23 @@
+id: security-patch
+domains:
+  - it/security/vulnerabilities
+level: 1
+relations:
+  prerequisites:
+    - hotfix
+  related:
+    - cve
+    - zero-day
+status: draft
+provenance:
+  drafted_by: ai
+sources:
+  - ref: nist-csrc
+    locator: https://csrc.nist.gov/glossary/term/patch
+    title: patch - Glossary | CSRC
+    language: en
+    accessed: '2026-10-17'
+    retrieved_by: ai
+    supports:
+      - definition
+      - summary

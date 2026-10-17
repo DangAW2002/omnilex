@@ -1,0 +1,24 @@
+id: saml
+domains:
+  - it/security/authentication
+level: 2
+relations:
+  prerequisites:
+    - sso
+  confusable:
+    - openid-connect
+  related:
+    - authentication
+status: draft
+provenance:
+  drafted_by: ai
+sources:
+  - ref: nist-csrc
+    locator: https://csrc.nist.gov/glossary/term/security_assertion_markup_language
+    title: Security Assertion Markup Language - Glossary | CSRC
+    language: en
+    accessed: '2026-10-17'
+    retrieved_by: ai
+    supports:
+      - definition
+      - summary

@@ -43,14 +43,16 @@
     "license_evidence": "https://www.nist.gov/oism/copyrights",
     "concepts": [
       "actuator",
+      "authentication",
+      "authorization",
       "encryption",
-      "firewall",
       "firmware",
-      "iaas",
+      "malware",
       "mfa",
       "microcontroller",
-      "paas",
-      "saas",
+      "phishing",
+      "ransomware",
+      "security-patch",
       "sensor",
       "stakeholder"
     ]

@@ -1,0 +1,23 @@
+id: ransomware
+domains:
+  - it/security/vulnerabilities
+level: 1
+relations:
+  prerequisites:
+    - malware
+  related:
+    - encryption
+    - phishing
+status: draft
+provenance:
+  drafted_by: ai
+sources:
+  - ref: nist-csrc
+    locator: https://csrc.nist.gov/pubs/ir/8374/r1/final
+    title: 'NIST IR 8374 Rev. 1: Ransomware Risk Management'
+    language: en
+    accessed: '2026-10-17'
+    retrieved_by: ai
+    supports:
+      - definition
+      - summary

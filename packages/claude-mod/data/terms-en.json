@@ -216,21 +216,6 @@
     "autolink": true
   },
   {
-    "key": "Ansible",
-    "match": "any-case",
-    "concepts": [
-      {
-        "id": "ansible",
-        "label": "Ansible",
-        "summary": "An open-source automation engine that automates cloud provisioning, configuration management, and application deployment without installing agents on managed nodes.",
-        "domains": [
-          "it/devops/iac"
-        ]
-      }
-    ],
-    "autolink": true
-  },
-  {
     "key": "Application Programming Interface (API)",
     "match": "any-case",
     "concepts": [
@@ -288,6 +273,22 @@
         "qualifier": "(API)",
         "summary": "A dedicated network address and URL path exposed by an API where clients access a specific service or resource.",
         "domains": [
+          "it/web/api"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "API key",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "api-key",
+        "label": "API key",
+        "summary": "A unique alphanumeric string passed by an application to authenticate the calling program and track its API consumption.",
+        "domains": [
+          "it/security/authentication",
           "it/web/api"
         ]
       }
@@ -420,6 +421,68 @@
     "autolink": true
   },
   {
+    "key": "Authentication",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "authentication",
+        "label": "Authentication",
+        "summary": "The security process of verifying the claimed identity of a user, device, or system.",
+        "domains": [
+          "it/security/authentication"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "AuthN",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "authentication",
+        "label": "Authentication",
+        "summary": "The security process of verifying the claimed identity of a user, device, or system.",
+        "domains": [
+          "it/security/authentication"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Authorization",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "authorization",
+        "label": "Authorization",
+        "qualifier": "(Security)",
+        "summary": "The security process that determines whether an authenticated entity has permission to perform a requested operation or access a resource.",
+        "domains": [
+          "it/security/authentication"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "AuthZ",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "authorization",
+        "label": "Authorization",
+        "qualifier": "(Security)",
+        "summary": "The security process that determines whether an authenticated entity has permission to perform a requested operation or access a resource.",
+        "domains": [
+          "it/security/authentication"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
     "key": "Autoscaling",
     "match": "any-case",
     "concepts": [
@@ -472,36 +535,6 @@
         "id": "autoscaling",
         "label": "Autoscaling",
         "summary": "A cloud mechanism that automatically adjusts the number of active computing resources up or down based on real-time demand metrics.",
-        "domains": [
-          "it/infrastructure/cloud"
-        ]
-      }
-    ],
-    "autolink": true
-  },
-  {
-    "key": "Availability zone (AZ)",
-    "match": "any-case",
-    "concepts": [
-      {
-        "id": "availability-zone",
-        "label": "Availability zone (AZ)",
-        "summary": "One or more discrete physical data centers within a region with independent power, cooling, and networking designed for fault tolerance.",
-        "domains": [
-          "it/infrastructure/cloud"
-        ]
-      }
-    ],
-    "autolink": true
-  },
-  {
-    "key": "AZ",
-    "match": "exact-case",
-    "concepts": [
-      {
-        "id": "availability-zone",
-        "label": "Availability zone (AZ)",
-        "summary": "One or more discrete physical data centers within a region with independent power, cooling, and networking designed for fault tolerance.",
         "domains": [
           "it/infrastructure/cloud"
         ]
@@ -609,22 +642,6 @@
         "summary": "A core financial statement summarizing an entity’s assets, liabilities, and shareholders’ equity at a specific point in time.",
         "domains": [
           "finance/corporate-finance/financial-statements"
-        ]
-      }
-    ],
-    "autolink": true
-  },
-  {
-    "key": "Bandwidth",
-    "match": "any-case",
-    "concepts": [
-      {
-        "id": "bandwidth",
-        "label": "Bandwidth",
-        "qualifier": "(Network)",
-        "summary": "The maximum rate of data transfer across a given network communication path, typically measured in bits per second.",
-        "domains": [
-          "it/infrastructure/networking"
         ]
       }
     ],
@@ -745,21 +762,6 @@
         "summary": "A power-optimized wireless personal area network technology designed for short-range communication with minimal electrical energy consumption.",
         "domains": [
           "iot/connectivity-protocols"
-        ]
-      }
-    ],
-    "autolink": true
-  },
-  {
-    "key": "Block storage",
-    "match": "any-case",
-    "concepts": [
-      {
-        "id": "block-storage",
-        "label": "Block storage",
-        "summary": "A storage architecture that splits data into evenly sized raw blocks, exposed as virtual disk volumes attached to compute instances for high-speed I/O.",
-        "domains": [
-          "it/infrastructure/cloud"
         ]
       }
     ],
@@ -1014,6 +1016,36 @@
     "autolink": true
   },
   {
+    "key": "Brute-force attack",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "brute-force-attack",
+        "label": "Brute-force attack",
+        "summary": "An attack method that systematically checks all possible passwords, keys, or hashes until the correct combination is discovered.",
+        "domains": [
+          "it/security/vulnerabilities"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "exhaustive key search",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "brute-force-attack",
+        "label": "Brute-force attack",
+        "summary": "An attack method that systematically checks all possible passwords, keys, or hashes until the correct combination is discovered.",
+        "domains": [
+          "it/security/vulnerabilities"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
     "key": "Budget",
     "match": "any-case",
     "concepts": [
@@ -1244,6 +1276,51 @@
     "autolink": true
   },
   {
+    "key": "Certificate authority (CA)",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "certificate-authority",
+        "label": "Certificate authority (CA)",
+        "summary": "A trusted third-party organization that validates the identity of entities and issues cryptographically signed digital certificates.",
+        "domains": [
+          "it/security/cryptography"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "CA",
+    "match": "exact-case",
+    "concepts": [
+      {
+        "id": "certificate-authority",
+        "label": "Certificate authority (CA)",
+        "summary": "A trusted third-party organization that validates the identity of entities and issues cryptographically signed digital certificates.",
+        "domains": [
+          "it/security/cryptography"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "certification authority",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "certificate-authority",
+        "label": "Certificate authority (CA)",
+        "summary": "A trusted third-party organization that validates the identity of entities and issues cryptographically signed digital certificates.",
+        "domains": [
+          "it/security/cryptography"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
     "key": "Chain-of-thought prompting",
     "match": "any-case",
     "concepts": [
@@ -1397,38 +1474,6 @@
     "autolink": true
   },
   {
-    "key": "Instance",
-    "match": "any-case",
-    "concepts": [
-      {
-        "id": "cloud-instance",
-        "label": "Instance",
-        "qualifier": "(Cloud)",
-        "summary": "A virtual compute environment provisioned on cloud infrastructure with dedicated allocations of vCPUs, memory, and network capabilities.",
-        "domains": [
-          "it/infrastructure/cloud"
-        ]
-      }
-    ],
-    "autolink": false
-  },
-  {
-    "key": "Region",
-    "match": "any-case",
-    "concepts": [
-      {
-        "id": "cloud-region",
-        "label": "Region",
-        "qualifier": "(Cloud)",
-        "summary": "A distinct physical geographical area comprising multiple isolated and physically separated availability zones interconnected via private low-latency links.",
-        "domains": [
-          "it/infrastructure/cloud"
-        ]
-      }
-    ],
-    "autolink": false
-  },
-  {
     "key": "Constrained Application Protocol (CoAP)",
     "match": "any-case",
     "concepts": [
@@ -1468,22 +1513,6 @@
         "summary": "A collaborative peer-review practice where software engineers systematically examine proposed code changes to identify defects, enforce architectural standards, and share knowledge.",
         "domains": [
           "it/software-engineering/practices"
-        ]
-      }
-    ],
-    "autolink": true
-  },
-  {
-    "key": "Cold start",
-    "match": "any-case",
-    "concepts": [
-      {
-        "id": "cold-start",
-        "label": "Cold start",
-        "qualifier": "(Serverless)",
-        "summary": "The initial invocation latency experienced in serverless computing when the platform must download code, initialize a container, and boot the runtime.",
-        "domains": [
-          "it/infrastructure/cloud"
         ]
       }
     ],
@@ -1607,21 +1636,6 @@
         "label": "Image",
         "qualifier": "(Container)",
         "summary": "An immutable, read-only package containing application binaries, libraries, configuration files, and metadata required to launch a container.",
-        "domains": [
-          "it/devops/containers"
-        ]
-      }
-    ],
-    "autolink": true
-  },
-  {
-    "key": "Container registry",
-    "match": "any-case",
-    "concepts": [
-      {
-        "id": "container-registry",
-        "label": "Container registry",
-        "summary": "A centralized storage and content delivery system for storing, managing, and distributing container images across development and production environments.",
         "domains": [
           "it/devops/containers"
         ]
@@ -2282,6 +2296,51 @@
     "autolink": true
   },
   {
+    "key": "Dynamic application security testing (DAST)",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "dast",
+        "label": "Dynamic application security testing (DAST)",
+        "summary": "A black-box testing methodology that assesses running applications from the outside by injecting fault payloads to detect runtime security vulnerabilities.",
+        "domains": [
+          "it/security/vulnerabilities"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "DAST",
+    "match": "exact-case",
+    "concepts": [
+      {
+        "id": "dast",
+        "label": "Dynamic application security testing (DAST)",
+        "summary": "A black-box testing methodology that assesses running applications from the outside by injecting fault payloads to detect runtime security vulnerabilities.",
+        "domains": [
+          "it/security/vulnerabilities"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "dynamic vulnerability analysis",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "dast",
+        "label": "Dynamic application security testing (DAST)",
+        "summary": "A black-box testing methodology that assesses running applications from the outside by injecting fault payloads to detect runtime security vulnerabilities.",
+        "domains": [
+          "it/security/vulnerabilities"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
     "key": "Data lake",
     "match": "any-case",
     "concepts": [
@@ -2612,6 +2671,36 @@
     "autolink": true
   },
   {
+    "key": "Distributed denial-of-service (DDoS)",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "ddos",
+        "label": "Distributed denial-of-service (DDoS)",
+        "summary": "A cyberattack that coordinates multiple distributed computers to flood a targeted server or network with traffic, rendering it inaccessible to legitimate users.",
+        "domains": [
+          "it/security/vulnerabilities"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "DDoS",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "ddos",
+        "label": "Distributed denial-of-service (DDoS)",
+        "summary": "A cyberattack that coordinates multiple distributed computers to flood a targeted server or network with traffic, rendering it inaccessible to legitimate users.",
+        "domains": [
+          "it/security/vulnerabilities"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
     "key": "Debt-to-equity ratio (D/E)",
     "match": "any-case",
     "concepts": [
@@ -2826,6 +2915,36 @@
     "autolink": true
   },
   {
+    "key": "Digital signature",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "digital-signature",
+        "label": "Digital signature",
+        "summary": "A mathematical scheme that binds an identity to digital data using asymmetric cryptography, providing authentication, data integrity, and non-repudiation.",
+        "domains": [
+          "it/security/cryptography"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "cryptographic signature",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "digital-signature",
+        "label": "Digital signature",
+        "summary": "A mathematical scheme that binds an identity to digital data using asymmetric cryptography, providing authentication, data integrity, and non-repudiation.",
+        "domains": [
+          "it/security/cryptography"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
     "key": "Digital twin",
     "match": "any-case",
     "concepts": [
@@ -3028,21 +3147,6 @@
         "id": "docker",
         "label": "Docker",
         "summary": "An open commercial platform providing tooling to build, share, package, and execute application containers using host operating system virtualization.",
-        "domains": [
-          "it/devops/containers"
-        ]
-      }
-    ],
-    "autolink": true
-  },
-  {
-    "key": "Docker Compose",
-    "match": "any-case",
-    "concepts": [
-      {
-        "id": "docker-compose",
-        "label": "Docker Compose",
-        "summary": "An orchestration utility that launches and connects groups of containerized application services using centralized declarative YAML specifications.",
         "domains": [
           "it/devops/containers"
         ]
@@ -3315,6 +3419,36 @@
         "id": "encryption",
         "label": "Encryption",
         "summary": "The cryptographic process of encoding plaintext into ciphertext so that only authorized parties with the matching decryption key can read it.",
+        "domains": [
+          "it/security/cryptography"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "End-to-end encryption (E2EE)",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "end-to-end-encryption",
+        "label": "End-to-end encryption (E2EE)",
+        "summary": "A secure communication system where data is encrypted on the sender's device and decrypted only by the intended recipient, preventing intermediate parties from accessing the content.",
+        "domains": [
+          "it/security/cryptography"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "E2EE",
+    "match": "exact-case",
+    "concepts": [
+      {
+        "id": "end-to-end-encryption",
+        "label": "End-to-end encryption (E2EE)",
+        "summary": "A secure communication system where data is encrypted on the sender's device and decrypted only by the intended recipient, preventing intermediate parties from accessing the content.",
         "domains": [
           "it/security/cryptography"
         ]
@@ -3748,37 +3882,6 @@
     "autolink": true
   },
   {
-    "key": "FinOps",
-    "match": "any-case",
-    "concepts": [
-      {
-        "id": "finops",
-        "label": "FinOps",
-        "summary": "An operational cultural framework and discipline that brings financial accountability to the variable spend model of cloud computing.",
-        "domains": [
-          "it/infrastructure/cloud"
-        ]
-      }
-    ],
-    "autolink": true
-  },
-  {
-    "key": "Firewall",
-    "match": "any-case",
-    "concepts": [
-      {
-        "id": "firewall",
-        "label": "Firewall",
-        "summary": "A network security system that monitors and filters incoming and outgoing network traffic based on predetermined security rules.",
-        "domains": [
-          "it/infrastructure/networking",
-          "it/security/vulnerabilities"
-        ]
-      }
-    ],
-    "autolink": true
-  },
-  {
     "key": "Firmware",
     "match": "any-case",
     "concepts": [
@@ -4135,22 +4238,6 @@
     "autolink": true
   },
   {
-    "key": "Helm",
-    "match": "any-case",
-    "concepts": [
-      {
-        "id": "helm",
-        "label": "Helm",
-        "qualifier": "(Kubernetes)",
-        "summary": "The dedicated package manager for Kubernetes that streamlines defining, installing, and upgrading complex container applications using parameterized charts.",
-        "domains": [
-          "it/devops/containers"
-        ]
-      }
-    ],
-    "autolink": true
-  },
-  {
     "key": "Hotfix",
     "match": "any-case",
     "concepts": [
@@ -4211,21 +4298,6 @@
     "autolink": true
   },
   {
-    "key": "Hybrid cloud",
-    "match": "any-case",
-    "concepts": [
-      {
-        "id": "hybrid-cloud",
-        "label": "Hybrid cloud",
-        "summary": "An IT infrastructure design connecting private on-premises data centers with public cloud environments to enable workload and data portability.",
-        "domains": [
-          "it/infrastructure/cloud"
-        ]
-      }
-    ],
-    "autolink": true
-  },
-  {
     "key": "Hyperparameter",
     "match": "any-case",
     "concepts": [
@@ -4235,36 +4307,6 @@
         "summary": "An external configuration setting specified prior to training that governs how the model architecture is structured and optimized.",
         "domains": [
           "it/ai-ml/foundations"
-        ]
-      }
-    ],
-    "autolink": true
-  },
-  {
-    "key": "Infrastructure as a Service (IaaS)",
-    "match": "any-case",
-    "concepts": [
-      {
-        "id": "iaas",
-        "label": "Infrastructure as a Service (IaaS)",
-        "summary": "A cloud computing model where vendors deliver on-demand fundamental compute, network, and storage resources over the internet.",
-        "domains": [
-          "it/infrastructure/cloud"
-        ]
-      }
-    ],
-    "autolink": true
-  },
-  {
-    "key": "IaaS",
-    "match": "any-case",
-    "concepts": [
-      {
-        "id": "iaas",
-        "label": "Infrastructure as a Service (IaaS)",
-        "summary": "A cloud computing model where vendors deliver on-demand fundamental compute, network, and storage resources over the internet.",
-        "domains": [
-          "it/infrastructure/cloud"
         ]
       }
     ],
@@ -4731,6 +4773,36 @@
     "autolink": true
   },
   {
+    "key": "Intrusion detection system (IDS)",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "intrusion-detection-system",
+        "label": "Intrusion detection system (IDS)",
+        "summary": "A hardware appliance or software application that monitors network or system activities for malicious behaviors or policy violations and produces alert reports.",
+        "domains": [
+          "it/security/vulnerabilities"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "IDS",
+    "match": "exact-case",
+    "concepts": [
+      {
+        "id": "intrusion-detection-system",
+        "label": "Intrusion detection system (IDS)",
+        "summary": "A hardware appliance or software application that monitors network or system activities for malicious behaviors or policy violations and produces alert reports.",
+        "domains": [
+          "it/security/vulnerabilities"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
     "key": "Inverted pyramid",
     "match": "any-case",
     "concepts": [
@@ -4787,21 +4859,6 @@
         "summary": "A multi-layered middleware software suite that provides connectivity, fleet device management, data ingestion, and application integration for IoT deployments.",
         "domains": [
           "iot/edge-cloud"
-        ]
-      }
-    ],
-    "autolink": true
-  },
-  {
-    "key": "IP address",
-    "match": "any-case",
-    "concepts": [
-      {
-        "id": "ip-address",
-        "label": "IP address",
-        "summary": "A unique numerical identifier assigned to each device connected to a computer network utilizing the Internet Protocol for communication.",
-        "domains": [
-          "it/infrastructure/networking"
         ]
       }
     ],
@@ -5577,6 +5634,36 @@
     "autolink": true
   },
   {
+    "key": "Malware",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "malware",
+        "label": "Malware",
+        "summary": "An overarching category of software intentionally developed to disrupt, damage, gain unauthorized access to, or exfiltrate data from a computer system.",
+        "domains": [
+          "it/security/vulnerabilities"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "malicious software",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "malware",
+        "label": "Malware",
+        "summary": "An overarching category of software intentionally developed to disrupt, damage, gain unauthorized access to, or exfiltrate data from a computer system.",
+        "domains": [
+          "it/security/vulnerabilities"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
     "key": "Margin",
     "match": "any-case",
     "concepts": [
@@ -6197,21 +6284,6 @@
     "autolink": true
   },
   {
-    "key": "Multi-cloud",
-    "match": "any-case",
-    "concepts": [
-      {
-        "id": "multi-cloud",
-        "label": "Multi-cloud",
-        "summary": "An architectural strategy utilizing cloud services from multiple independent public cloud vendors within a single organization.",
-        "domains": [
-          "it/infrastructure/cloud"
-        ]
-      }
-    ],
-    "autolink": true
-  },
-  {
     "key": "Mutual fund",
     "match": "any-case",
     "concepts": [
@@ -6287,36 +6359,6 @@
     "autolink": true
   },
   {
-    "key": "Network Address Translation (NAT)",
-    "match": "any-case",
-    "concepts": [
-      {
-        "id": "nat",
-        "label": "Network Address Translation (NAT)",
-        "summary": "A networking method that remaps an IP address space into another by modifying network address information in the IP header of packets in transit.",
-        "domains": [
-          "it/infrastructure/networking"
-        ]
-      }
-    ],
-    "autolink": true
-  },
-  {
-    "key": "NAT",
-    "match": "exact-case",
-    "concepts": [
-      {
-        "id": "nat",
-        "label": "Network Address Translation (NAT)",
-        "summary": "A networking method that remaps an IP address space into another by modifying network address information in the IP header of packets in transit.",
-        "domains": [
-          "it/infrastructure/networking"
-        ]
-      }
-    ],
-    "autolink": true
-  },
-  {
     "key": "NB-IoT",
     "match": "any-case",
     "concepts": [
@@ -6330,22 +6372,6 @@
       }
     ],
     "autolink": true
-  },
-  {
-    "key": "Port",
-    "match": "any-case",
-    "concepts": [
-      {
-        "id": "network-port",
-        "label": "Port",
-        "qualifier": "(Networking)",
-        "summary": "A 16-bit unsigned number in transport layer headers that identifies a specific application service or communication endpoint on a host.",
-        "domains": [
-          "it/infrastructure/networking"
-        ]
-      }
-    ],
-    "autolink": false
   },
   {
     "key": "Neural network",
@@ -6539,21 +6565,6 @@
     "autolink": true
   },
   {
-    "key": "Object storage",
-    "match": "any-case",
-    "concepts": [
-      {
-        "id": "object-storage",
-        "label": "Object storage",
-        "summary": "A scalable storage architecture that manages data as distinct objects paired with rich metadata and a unique identifier in a flat address space accessed via HTTP APIs.",
-        "domains": [
-          "it/infrastructure/cloud"
-        ]
-      }
-    ],
-    "autolink": true
-  },
-  {
     "key": "Observability",
     "match": "any-case",
     "concepts": [
@@ -6719,6 +6730,36 @@
     "autolink": true
   },
   {
+    "key": "OpenID Connect (OIDC)",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "openid-connect",
+        "label": "OpenID Connect (OIDC)",
+        "summary": "An identity protocol built on OAuth 2.0 that allows clients to verify user identity and obtain profile information via JSON Web Tokens.",
+        "domains": [
+          "it/security/authentication"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "OIDC",
+    "match": "exact-case",
+    "concepts": [
+      {
+        "id": "openid-connect",
+        "label": "OpenID Connect (OIDC)",
+        "summary": "An identity protocol built on OAuth 2.0 that allows clients to verify user identity and obtain profile information via JSON Web Tokens.",
+        "domains": [
+          "it/security/authentication"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
     "key": "Organic traffic",
     "match": "any-case",
     "concepts": [
@@ -6869,30 +6910,30 @@
     "autolink": true
   },
   {
-    "key": "Platform as a Service (PaaS)",
+    "key": "OWASP Top 10",
     "match": "any-case",
     "concepts": [
       {
-        "id": "paas",
-        "label": "Platform as a Service (PaaS)",
-        "summary": "A cloud delivery model providing a managed execution environment and tooling for developers to deploy applications without operating system administration.",
+        "id": "owasp-top-10",
+        "label": "OWASP Top 10",
+        "summary": "A regularly updated awareness report curated by the OWASP community outlining the ten most critical security risks facing web applications.",
         "domains": [
-          "it/infrastructure/cloud"
+          "it/security/vulnerabilities"
         ]
       }
     ],
     "autolink": true
   },
   {
-    "key": "PaaS",
+    "key": "Open Worldwide Application Security Project Top 10",
     "match": "any-case",
     "concepts": [
       {
-        "id": "paas",
-        "label": "Platform as a Service (PaaS)",
-        "summary": "A cloud delivery model providing a managed execution environment and tooling for developers to deploy applications without operating system administration.",
+        "id": "owasp-top-10",
+        "label": "OWASP Top 10",
+        "summary": "A regularly updated awareness report curated by the OWASP community outlining the ten most critical security risks facing web applications.",
         "domains": [
-          "it/infrastructure/cloud"
+          "it/security/vulnerabilities"
         ]
       }
     ],
@@ -6938,6 +6979,38 @@
         "summary": "A design technique that breaks large data sets into discrete subsets or pages to manage bandwidth and system performance.",
         "domains": [
           "it/web/api"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Salt",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "password-salting",
+        "label": "Salt",
+        "qualifier": "(Cryptography)",
+        "summary": "A non-secret random string appended to a plaintext password before hashing to ensure unique hash values and thwart precomputed table attacks.",
+        "domains": [
+          "it/security/cryptography"
+        ]
+      }
+    ],
+    "autolink": false
+  },
+  {
+    "key": "cryptographic salt",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "password-salting",
+        "label": "Salt",
+        "qualifier": "(Cryptography)",
+        "summary": "A non-secret random string appended to a plaintext password before hashing to ensure unique hash values and thwart precomputed table attacks.",
+        "domains": [
+          "it/security/cryptography"
         ]
       }
     ],
@@ -7064,6 +7137,51 @@
     "autolink": true
   },
   {
+    "key": "Penetration testing",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "penetration-testing",
+        "label": "Penetration testing",
+        "summary": "An authorized simulated cyberattack against an organization's computer systems, networks, or applications to evaluate security defenses.",
+        "domains": [
+          "it/security/vulnerabilities"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "pentest",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "penetration-testing",
+        "label": "Penetration testing",
+        "summary": "An authorized simulated cyberattack against an organization's computer systems, networks, or applications to evaluate security defenses.",
+        "domains": [
+          "it/security/vulnerabilities"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "ethical hacking",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "penetration-testing",
+        "label": "Penetration testing",
+        "summary": "An authorized simulated cyberattack against an organization's computer systems, networks, or applications to evaluate security defenses.",
+        "domains": [
+          "it/security/vulnerabilities"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
     "key": "Personal income tax",
     "match": "any-case",
     "concepts": [
@@ -7103,6 +7221,36 @@
         "summary": "A direct tax levied by governments on the wages, salaries, investment gains, and other financial earnings of individuals.",
         "domains": [
           "finance/personal-finance/tax"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Phishing",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "phishing",
+        "label": "Phishing",
+        "summary": "A social engineering attack where malicious actors impersonate legitimate organizations to trick victims into disclosing sensitive information or downloading malware.",
+        "domains": [
+          "it/security/vulnerabilities"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "credential phishing",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "phishing",
+        "label": "Phishing",
+        "summary": "A social engineering attack where malicious actors impersonate legitimate organizations to trick victims into disclosing sensitive information or downloading malware.",
+        "domains": [
+          "it/security/vulnerabilities"
         ]
       }
     ],
@@ -7720,15 +7868,30 @@
     "autolink": true
   },
   {
-    "key": "Proxy server",
+    "key": "Public-key cryptography",
     "match": "any-case",
     "concepts": [
       {
-        "id": "proxy-server",
-        "label": "Proxy server",
-        "summary": "An intermediary server application that acts as an agent for clients seeking resources from other destination servers.",
+        "id": "public-key-cryptography",
+        "label": "Public-key cryptography",
+        "summary": "A cryptographic system that uses mathematically linked key pairs—a public key for encryption or verification and a private key for decryption or signing.",
         "domains": [
-          "it/infrastructure/networking"
+          "it/security/cryptography"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "asymmetric cryptography",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "public-key-cryptography",
+        "label": "Public-key cryptography",
+        "summary": "A cryptographic system that uses mathematically linked key pairs—a public key for encryption or verification and a private key for decryption or signing.",
+        "domains": [
+          "it/security/cryptography"
         ]
       }
     ],
@@ -7886,6 +8049,36 @@
     "autolink": true
   },
   {
+    "key": "Ransomware",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "ransomware",
+        "label": "Ransomware",
+        "summary": "A form of malicious software that encrypts a victim's files or locks system access, demanding payment in exchange for decryption keys.",
+        "domains": [
+          "it/security/vulnerabilities"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "extortion malware",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "ransomware",
+        "label": "Ransomware",
+        "summary": "A form of malicious software that encrypts a victim's files or locks system access, demanding payment in exchange for decryption keys.",
+        "domains": [
+          "it/security/vulnerabilities"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
     "key": "Rate limiting",
     "match": "any-case",
     "concepts": [
@@ -7940,6 +8133,36 @@
         "summary": "A defensive network control mechanism that caps the number of requests a client can submit to an API or service within a specified time window.",
         "domains": [
           "it/web/api"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Role-based access control (RBAC)",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "rbac",
+        "label": "Role-based access control (RBAC)",
+        "summary": "An access control model where permissions are grouped into roles and assigned to users based on their organizational responsibilities.",
+        "domains": [
+          "it/security/authentication"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "RBAC",
+    "match": "exact-case",
+    "concepts": [
+      {
+        "id": "rbac",
+        "label": "Role-based access control (RBAC)",
+        "summary": "An access control model where permissions are grouped into roles and assigned to users based on their organizational responsibilities.",
+        "domains": [
+          "it/security/authentication"
         ]
       }
     ],
@@ -8308,38 +8531,6 @@
     "autolink": true
   },
   {
-    "key": "Software as a Service (SaaS)",
-    "match": "any-case",
-    "concepts": [
-      {
-        "id": "saas",
-        "label": "Software as a Service (SaaS)",
-        "summary": "A cloud distribution model where complete software applications are hosted by a provider and accessed by consumers over the internet.",
-        "domains": [
-          "it/infrastructure/cloud",
-          "it/business-systems/enterprise-apps"
-        ]
-      }
-    ],
-    "autolink": true
-  },
-  {
-    "key": "SaaS",
-    "match": "any-case",
-    "concepts": [
-      {
-        "id": "saas",
-        "label": "Software as a Service (SaaS)",
-        "summary": "A cloud distribution model where complete software applications are hosted by a provider and accessed by consumers over the internet.",
-        "domains": [
-          "it/infrastructure/cloud",
-          "it/business-systems/enterprise-apps"
-        ]
-      }
-    ],
-    "autolink": true
-  },
-  {
     "key": "Sales lead",
     "match": "any-case",
     "concepts": [
@@ -8366,6 +8557,81 @@
         "summary": "An individual or organization that has expressed interest in a business's products or services and provided contact details for future communication.",
         "domains": [
           "media/digital-marketing/metrics-analytics"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "SAML",
+    "match": "exact-case",
+    "concepts": [
+      {
+        "id": "saml",
+        "label": "SAML",
+        "summary": "An open XML-based standard for exchanging authentication and authorization data between an identity provider and a service provider.",
+        "domains": [
+          "it/security/authentication"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Security Assertion Markup Language",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "saml",
+        "label": "SAML",
+        "summary": "An open XML-based standard for exchanging authentication and authorization data between an identity provider and a service provider.",
+        "domains": [
+          "it/security/authentication"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Static application security testing (SAST)",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "sast",
+        "label": "Static application security testing (SAST)",
+        "summary": "A white-box testing methodology that analyzes source code, byte code, or binaries at rest to detect security vulnerabilities before execution.",
+        "domains": [
+          "it/security/vulnerabilities"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "SAST",
+    "match": "exact-case",
+    "concepts": [
+      {
+        "id": "sast",
+        "label": "Static application security testing (SAST)",
+        "summary": "A white-box testing methodology that analyzes source code, byte code, or binaries at rest to detect security vulnerabilities before execution.",
+        "domains": [
+          "it/security/vulnerabilities"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "static code analysis",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "sast",
+        "label": "Static application security testing (SAST)",
+        "summary": "A white-box testing methodology that analyzes source code, byte code, or binaries at rest to detect security vulnerabilities before execution.",
+        "domains": [
+          "it/security/vulnerabilities"
         ]
       }
     ],
@@ -8560,6 +8826,36 @@
     "autolink": true
   },
   {
+    "key": "Security patch",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "security-patch",
+        "label": "Security patch",
+        "summary": "A software update specifically engineered to remediate identified security vulnerabilities and prevent malicious exploitation.",
+        "domains": [
+          "it/security/vulnerabilities"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "security update",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "security-patch",
+        "label": "Security patch",
+        "summary": "A software update specifically engineered to remediate identified security vulnerabilities and prevent malicious exploitation.",
+        "domains": [
+          "it/security/vulnerabilities"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
     "key": "Semantic versioning",
     "match": "any-case",
     "concepts": [
@@ -8726,21 +9022,6 @@
     "autolink": true
   },
   {
-    "key": "Service discovery",
-    "match": "any-case",
-    "concepts": [
-      {
-        "id": "service-discovery",
-        "label": "Service discovery",
-        "summary": "The automatic detection and location resolution of microservices, instances, and endpoints on a network through a centralized or distributed registry.",
-        "domains": [
-          "it/infrastructure/networking"
-        ]
-      }
-    ],
-    "autolink": true
-  },
-  {
     "key": "Sharding",
     "match": "any-case",
     "concepts": [
@@ -8796,6 +9077,36 @@
         "summary": "Any observable change in program state or interaction with the outside world produced by a function or expression beyond returning its computed value.",
         "domains": [
           "it/software-engineering/programming-concepts"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "SIEM",
+    "match": "exact-case",
+    "concepts": [
+      {
+        "id": "siem",
+        "label": "SIEM",
+        "summary": "A security software architecture that aggregates, analyzes, and correlates event log data across an enterprise to detect incidents in real time.",
+        "domains": [
+          "it/security/vulnerabilities"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Security Information and Event Management",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "siem",
+        "label": "SIEM",
+        "summary": "A security software architecture that aggregates, analyzes, and correlates event log data across an enterprise to detect incidents in real time.",
+        "domains": [
+          "it/security/vulnerabilities"
         ]
       }
     ],
@@ -8921,6 +9232,36 @@
       }
     ],
     "autolink": true
+  },
+  {
+    "key": "Security Operations Center (SOC)",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "soc-security",
+        "label": "Security Operations Center (SOC)",
+        "summary": "A centralized command team and facility responsible for continuously monitoring, detecting, analyzing, and responding to cybersecurity incidents.",
+        "domains": [
+          "it/security/vulnerabilities"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "SOC",
+    "match": "exact-case",
+    "concepts": [
+      {
+        "id": "soc-security",
+        "label": "Security Operations Center (SOC)",
+        "summary": "A centralized command team and facility responsible for continuously monitoring, detecting, analyzing, and responding to cybersecurity incidents.",
+        "domains": [
+          "it/security/vulnerabilities"
+        ]
+      }
+    ],
+    "autolink": false
   },
   {
     "key": "Container",
@@ -9128,21 +9469,6 @@
     "autolink": true
   },
   {
-    "key": "Spot instance",
-    "match": "any-case",
-    "concepts": [
-      {
-        "id": "spot-instance",
-        "label": "Spot instance",
-        "summary": "An unused cloud computing instance available at steep discounts compared to on-demand rates, subject to reclamation when the provider needs capacity.",
-        "domains": [
-          "it/infrastructure/cloud"
-        ]
-      }
-    ],
-    "autolink": true
-  },
-  {
     "key": "Sprint",
     "match": "any-case",
     "concepts": [
@@ -9264,15 +9590,14 @@
     "autolink": true
   },
   {
-    "key": "Secure Shell (SSH)",
+    "key": "Single sign-on (SSO)",
     "match": "any-case",
     "concepts": [
       {
-        "id": "ssh",
-        "label": "Secure Shell (SSH)",
-        "summary": "A cryptographic network protocol for operating network services securely over an unsecured network, most commonly used for remote command-line login.",
+        "id": "sso",
+        "label": "Single sign-on (SSO)",
+        "summary": "An authentication scheme that allows a user to log in once and gain access to multiple connected applications without re-entering credentials.",
         "domains": [
-          "it/infrastructure/networking",
           "it/security/authentication"
         ]
       }
@@ -9280,15 +9605,14 @@
     "autolink": true
   },
   {
-    "key": "SSH",
+    "key": "SSO",
     "match": "exact-case",
     "concepts": [
       {
-        "id": "ssh",
-        "label": "Secure Shell (SSH)",
-        "summary": "A cryptographic network protocol for operating network services securely over an unsecured network, most commonly used for remote command-line login.",
+        "id": "sso",
+        "label": "Single sign-on (SSO)",
+        "summary": "An authentication scheme that allows a user to log in once and gain access to multiple connected applications without re-entering credentials.",
         "domains": [
-          "it/infrastructure/networking",
           "it/security/authentication"
         ]
       }
@@ -9630,15 +9954,32 @@
     "autolink": true
   },
   {
-    "key": "Subnet",
+    "key": "Supply chain attack",
     "match": "any-case",
     "concepts": [
       {
-        "id": "subnet",
-        "label": "Subnet",
-        "summary": "A logical subdivision of an IP network designed to segment broadcast domains, improve routing efficiency, and enforce security boundaries.",
+        "id": "supply-chain-attack",
+        "label": "Supply chain attack",
+        "qualifier": "(Software)",
+        "summary": "A cyberattack that targets less secure third-party vendors, libraries, or build pipelines to infiltrate the target organization's systems.",
         "domains": [
-          "it/infrastructure/networking"
+          "it/security/vulnerabilities"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "third-party software compromise",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "supply-chain-attack",
+        "label": "Supply chain attack",
+        "qualifier": "(Software)",
+        "summary": "A cyberattack that targets less secure third-party vendors, libraries, or build pipelines to infiltrate the target organization's systems.",
+        "domains": [
+          "it/security/vulnerabilities"
         ]
       }
     ],
@@ -9654,36 +9995,6 @@
         "summary": "Instructions placed before the conversation that set the model’s role, rules and style for every later message.",
         "domains": [
           "it/ai-ml/llm-agents"
-        ]
-      }
-    ],
-    "autolink": true
-  },
-  {
-    "key": "Transmission Control Protocol (TCP)",
-    "match": "any-case",
-    "concepts": [
-      {
-        "id": "tcp",
-        "label": "Transmission Control Protocol (TCP)",
-        "summary": "A connection-oriented transport layer protocol that provides reliable, ordered, and error-checked delivery of a stream of data packets.",
-        "domains": [
-          "it/infrastructure/networking"
-        ]
-      }
-    ],
-    "autolink": true
-  },
-  {
-    "key": "TCP",
-    "match": "exact-case",
-    "concepts": [
-      {
-        "id": "tcp",
-        "label": "Transmission Control Protocol (TCP)",
-        "summary": "A connection-oriented transport layer protocol that provides reliable, ordered, and error-checked delivery of a stream of data packets.",
-        "domains": [
-          "it/infrastructure/networking"
         ]
       }
     ],
@@ -9811,15 +10122,30 @@
     "autolink": true
   },
   {
-    "key": "Terraform",
+    "key": "Threat modeling",
     "match": "any-case",
     "concepts": [
       {
-        "id": "terraform",
-        "label": "Terraform",
-        "summary": "An open-source infrastructure as code software tool that enables operators to provision and version multi-cloud data center resources using declarative configuration files.",
+        "id": "threat-modeling",
+        "label": "Threat modeling",
+        "summary": "A structured engineering practice for identifying, categorizing, and prioritizing potential security threats to an application or system architecture.",
         "domains": [
-          "it/devops/iac"
+          "it/security/vulnerabilities"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "security threat modeling",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "threat-modeling",
+        "label": "Threat modeling",
+        "summary": "A structured engineering practice for identifying, categorizing, and prioritizing potential security threats to an application or system architecture.",
+        "domains": [
+          "it/security/vulnerabilities"
         ]
       }
     ],
@@ -9912,6 +10238,54 @@
         "domains": [
           "it/security/cryptography",
           "it/infrastructure/networking"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Certificate",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "tls-certificate",
+        "label": "Certificate",
+        "qualifier": "(TLS)",
+        "summary": "A digitally signed data file conforming to X.509 standards that binds a public key to an entity's domain name or identity.",
+        "domains": [
+          "it/security/cryptography"
+        ]
+      }
+    ],
+    "autolink": false
+  },
+  {
+    "key": "SSL certificate",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "tls-certificate",
+        "label": "Certificate",
+        "qualifier": "(TLS)",
+        "summary": "A digitally signed data file conforming to X.509 standards that binds a public key to an entity's domain name or identity.",
+        "domains": [
+          "it/security/cryptography"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "X.509 certificate",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "tls-certificate",
+        "label": "Certificate",
+        "qualifier": "(TLS)",
+        "summary": "A digitally signed data file conforming to X.509 standards that binds a public key to an entity's domain name or identity.",
+        "domains": [
+          "it/security/cryptography"
         ]
       }
     ],
@@ -10150,36 +10524,6 @@
         "summary": "The art, craft, and technique of selecting and arranging typefaces, font weights, kerning, and spacing to render written language legible, readable, and visually engaging.",
         "domains": [
           "media/content-production/visual-design"
-        ]
-      }
-    ],
-    "autolink": true
-  },
-  {
-    "key": "User Datagram Protocol (UDP)",
-    "match": "any-case",
-    "concepts": [
-      {
-        "id": "udp",
-        "label": "User Datagram Protocol (UDP)",
-        "summary": "A connectionless transport layer protocol that transmits data packets without prior connection handshakes or delivery guarantees, prioritizing speed over reliability.",
-        "domains": [
-          "it/infrastructure/networking"
-        ]
-      }
-    ],
-    "autolink": true
-  },
-  {
-    "key": "UDP",
-    "match": "exact-case",
-    "concepts": [
-      {
-        "id": "udp",
-        "label": "User Datagram Protocol (UDP)",
-        "summary": "A connectionless transport layer protocol that transmits data packets without prior connection handshakes or delivery guarantees, prioritizing speed over reliability.",
-        "domains": [
-          "it/infrastructure/networking"
         ]
       }
     ],
@@ -10628,60 +10972,30 @@
     "autolink": true
   },
   {
-    "key": "Virtual Private Cloud (VPC)",
+    "key": "Web application firewall (WAF)",
     "match": "any-case",
     "concepts": [
       {
-        "id": "vpc",
-        "label": "Virtual Private Cloud (VPC)",
-        "summary": "A logically isolated virtual network dedicated to a cloud account, providing complete control over IP address ranges, subnets, and routing tables.",
+        "id": "waf",
+        "label": "Web application firewall (WAF)",
+        "summary": "A specialized security appliance or cloud filter that monitors, inspects, and blocks malicious HTTP and HTTPS traffic targeting web applications.",
         "domains": [
-          "it/infrastructure/cloud"
+          "it/security/vulnerabilities"
         ]
       }
     ],
     "autolink": true
   },
   {
-    "key": "VPC",
+    "key": "WAF",
     "match": "exact-case",
     "concepts": [
       {
-        "id": "vpc",
-        "label": "Virtual Private Cloud (VPC)",
-        "summary": "A logically isolated virtual network dedicated to a cloud account, providing complete control over IP address ranges, subnets, and routing tables.",
+        "id": "waf",
+        "label": "Web application firewall (WAF)",
+        "summary": "A specialized security appliance or cloud filter that monitors, inspects, and blocks malicious HTTP and HTTPS traffic targeting web applications.",
         "domains": [
-          "it/infrastructure/cloud"
-        ]
-      }
-    ],
-    "autolink": true
-  },
-  {
-    "key": "Virtual Private Network (VPN)",
-    "match": "any-case",
-    "concepts": [
-      {
-        "id": "vpn",
-        "label": "Virtual Private Network (VPN)",
-        "summary": "An encrypted communication channel constructed over a public network infrastructure to provide secure remote access and private site-to-site connectivity.",
-        "domains": [
-          "it/infrastructure/networking"
-        ]
-      }
-    ],
-    "autolink": true
-  },
-  {
-    "key": "VPN",
-    "match": "exact-case",
-    "concepts": [
-      {
-        "id": "vpn",
-        "label": "Virtual Private Network (VPN)",
-        "summary": "An encrypted communication channel constructed over a public network infrastructure to provide secure remote access and private site-to-site connectivity.",
-        "domains": [
-          "it/infrastructure/networking"
+          "it/security/vulnerabilities"
         ]
       }
     ],
@@ -10833,6 +11147,51 @@
         "id": "xss",
         "label": "Cross-site scripting (XSS)",
         "summary": "A web application flaw permitting attackers to embed rogue executable scripts into viewed pages, running unauthorized actions inside visitor browsers.",
+        "domains": [
+          "it/security/vulnerabilities"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Zero-day vulnerability",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "zero-day",
+        "label": "Zero-day vulnerability",
+        "summary": "A previously undisclosed software vulnerability that is actively exploitable or known to attackers before the vendor has developed and released a security patch.",
+        "domains": [
+          "it/security/vulnerabilities"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "zero-day",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "zero-day",
+        "label": "Zero-day vulnerability",
+        "summary": "A previously undisclosed software vulnerability that is actively exploitable or known to attackers before the vendor has developed and released a security patch.",
+        "domains": [
+          "it/security/vulnerabilities"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "0-day",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "zero-day",
+        "label": "Zero-day vulnerability",
+        "summary": "A previously undisclosed software vulnerability that is actively exploitable or known to attackers before the vendor has developed and released a security patch.",
         "domains": [
           "it/security/vulnerabilities"
         ]

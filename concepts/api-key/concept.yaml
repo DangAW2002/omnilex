@@ -1,0 +1,24 @@
+id: api-key
+domains:
+  - it/security/authentication
+  - it/web/api
+level: 1
+relations:
+  prerequisites:
+    - api
+  related:
+    - authentication
+    - token-auth
+status: draft
+provenance:
+  drafted_by: ai
+sources:
+  - ref: google-cloud-docs
+    locator: https://docs.cloud.google.com/endpoints/docs/openapi/when-why-api-key
+    title: Why and When to Use API Keys | Cloud Endpoints with OpenAPI
+    language: en
+    accessed: '2026-10-17'
+    retrieved_by: ai
+    supports:
+      - definition
+      - summary

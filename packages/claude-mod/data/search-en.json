@@ -148,22 +148,6 @@
     "status": "draft"
   },
   {
-    "id": "ansible",
-    "label": "Ansible",
-    "aliases": [],
-    "loanwords": [],
-    "plain_descriptions": [
-      "agentless tool for configuring servers and automating software setups via SSH",
-      "automation engine using YAML playbooks to install and manage software across machines"
-    ],
-    "summary": "An open-source automation engine that automates cloud provisioning, configuration management, and application deployment without installing agents on managed nodes.",
-    "domains": [
-      "it/devops/iac"
-    ],
-    "level": 2,
-    "status": "draft"
-  },
-  {
     "id": "api",
     "label": "Application Programming Interface (API)",
     "aliases": [
@@ -196,6 +180,23 @@
     ],
     "summary": "A dedicated network address and URL path exposed by an API where clients access a specific service or resource.",
     "domains": [
+      "it/web/api"
+    ],
+    "level": 1,
+    "status": "draft"
+  },
+  {
+    "id": "api-key",
+    "label": "API key",
+    "aliases": [],
+    "loanwords": [],
+    "plain_descriptions": [
+      "a unique secret string that an application sends to identify itself when calling a web service",
+      "a digital password used by programs to track usage and control access to an API"
+    ],
+    "summary": "A unique alphanumeric string passed by an application to authenticate the calling program and track its API consumption.",
+    "domains": [
+      "it/security/authentication",
       "it/web/api"
     ],
     "level": 1,
@@ -275,6 +276,43 @@
     "status": "draft"
   },
   {
+    "id": "authentication",
+    "label": "Authentication",
+    "aliases": [
+      "AuthN"
+    ],
+    "loanwords": [],
+    "plain_descriptions": [
+      "verifying that a user or service matches their stated digital identity",
+      "checking user credentials such as passwords or biometrics to prove identity"
+    ],
+    "summary": "The security process of verifying the claimed identity of a user, device, or system.",
+    "domains": [
+      "it/security/authentication"
+    ],
+    "level": 1,
+    "status": "draft"
+  },
+  {
+    "id": "authorization",
+    "label": "Authorization",
+    "qualifier": "(Security)",
+    "aliases": [
+      "AuthZ"
+    ],
+    "loanwords": [],
+    "plain_descriptions": [
+      "deciding what actions an identified user is allowed to perform",
+      "granting specific permissions to access protected resources"
+    ],
+    "summary": "The security process that determines whether an authenticated entity has permission to perform a requested operation or access a resource.",
+    "domains": [
+      "it/security/authentication"
+    ],
+    "level": 1,
+    "status": "draft"
+  },
+  {
     "id": "autoscaling",
     "label": "Autoscaling",
     "aliases": [
@@ -288,24 +326,6 @@
       "the system capability that expands or shrinks computing power based on real-time demand"
     ],
     "summary": "A cloud mechanism that automatically adjusts the number of active computing resources up or down based on real-time demand metrics.",
-    "domains": [
-      "it/infrastructure/cloud"
-    ],
-    "level": 2,
-    "status": "draft"
-  },
-  {
-    "id": "availability-zone",
-    "label": "Availability zone (AZ)",
-    "aliases": [
-      "AZ"
-    ],
-    "loanwords": [],
-    "plain_descriptions": [
-      "isolated data center location within a cloud region with its own power",
-      "discrete fault domain designed to keep systems running if another center fails"
-    ],
-    "summary": "One or more discrete physical data centers within a region with independent power, cooling, and networking designed for fault tolerance.",
     "domains": [
       "it/infrastructure/cloud"
     ],
@@ -368,23 +388,6 @@
     "status": "draft"
   },
   {
-    "id": "bandwidth",
-    "label": "Bandwidth",
-    "qualifier": "(Network)",
-    "aliases": [],
-    "loanwords": [],
-    "plain_descriptions": [
-      "maximum amount of data that can travel through an internet connection per second",
-      "width of a network data highway measured in megabits or gigabits per second"
-    ],
-    "summary": "The maximum rate of data transfer across a given network communication path, typically measured in bits per second.",
-    "domains": [
-      "it/infrastructure/networking"
-    ],
-    "level": 1,
-    "status": "draft"
-  },
-  {
     "id": "bank-transfer",
     "label": "Bank transfer",
     "aliases": [
@@ -437,22 +440,6 @@
     "summary": "A power-optimized wireless personal area network technology designed for short-range communication with minimal electrical energy consumption.",
     "domains": [
       "iot/connectivity-protocols"
-    ],
-    "level": 2,
-    "status": "draft"
-  },
-  {
-    "id": "block-storage",
-    "label": "Block storage",
-    "aliases": [],
-    "loanwords": [],
-    "plain_descriptions": [
-      "raw virtual hard disk volume attached directly to a cloud virtual machine",
-      "high-speed storage split into fixed-size blocks for databases and operating systems"
-    ],
-    "summary": "A storage architecture that splits data into evenly sized raw blocks, exposed as virtual disk volumes attached to compute instances for high-speed I/O.",
-    "domains": [
-      "it/infrastructure/cloud"
     ],
     "level": 2,
     "status": "draft"
@@ -580,6 +567,24 @@
     "summary": "Newly received information about an urgent, ongoing event that warrants immediate public dissemination across news outlets.",
     "domains": [
       "media/journalism/genres"
+    ],
+    "level": 1,
+    "status": "draft"
+  },
+  {
+    "id": "brute-force-attack",
+    "label": "Brute-force attack",
+    "aliases": [
+      "exhaustive key search"
+    ],
+    "loanwords": [],
+    "plain_descriptions": [
+      "systematically guessing every possible password until the correct one works",
+      "cracking a lock by trying every combination one by one at high speed"
+    ],
+    "summary": "An attack method that systematically checks all possible passwords, keys, or hashes until the correct combination is discovered.",
+    "domains": [
+      "it/security/vulnerabilities"
     ],
     "level": 1,
     "status": "draft"
@@ -730,6 +735,25 @@
     "status": "draft"
   },
   {
+    "id": "certificate-authority",
+    "label": "Certificate authority (CA)",
+    "aliases": [
+      "CA",
+      "certification authority"
+    ],
+    "loanwords": [],
+    "plain_descriptions": [
+      "a trusted organization that issues digital certificates to verify website and entity identities",
+      "the digital passport agency of the internet that signs certificates"
+    ],
+    "summary": "A trusted third-party organization that validates the identity of entities and issues cryptographically signed digital certificates.",
+    "domains": [
+      "it/security/cryptography"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
     "id": "chain-of-thought",
     "label": "Chain-of-thought prompting",
     "aliases": [
@@ -807,40 +831,6 @@
     "status": "draft"
   },
   {
-    "id": "cloud-instance",
-    "label": "Instance",
-    "qualifier": "(Cloud)",
-    "aliases": [],
-    "loanwords": [],
-    "plain_descriptions": [
-      "virtual server running in the cloud with assigned CPU and memory",
-      "rented cloud computer instance that you can start or stop on demand"
-    ],
-    "summary": "A virtual compute environment provisioned on cloud infrastructure with dedicated allocations of vCPUs, memory, and network capabilities.",
-    "domains": [
-      "it/infrastructure/cloud"
-    ],
-    "level": 1,
-    "status": "draft"
-  },
-  {
-    "id": "cloud-region",
-    "label": "Region",
-    "qualifier": "(Cloud)",
-    "aliases": [],
-    "loanwords": [],
-    "plain_descriptions": [
-      "separate geographic location where cloud data centers are clustered",
-      "physical territory or city hosting isolated cloud infrastructure"
-    ],
-    "summary": "A distinct physical geographical area comprising multiple isolated and physically separated availability zones interconnected via private low-latency links.",
-    "domains": [
-      "it/infrastructure/cloud"
-    ],
-    "level": 1,
-    "status": "draft"
-  },
-  {
     "id": "coap",
     "label": "Constrained Application Protocol (CoAP)",
     "aliases": [
@@ -874,23 +864,6 @@
       "it/software-engineering/practices"
     ],
     "level": 1,
-    "status": "draft"
-  },
-  {
-    "id": "cold-start",
-    "label": "Cold start",
-    "qualifier": "(Serverless)",
-    "aliases": [],
-    "loanwords": [],
-    "plain_descriptions": [
-      "delay when a serverless function starts up from scratch after idle time",
-      "initial pause while the cloud provider spins up a new container for your code"
-    ],
-    "summary": "The initial invocation latency experienced in serverless computing when the platform must download code, initialize a container, and boot the runtime.",
-    "domains": [
-      "it/infrastructure/cloud"
-    ],
-    "level": 2,
     "status": "draft"
   },
   {
@@ -945,22 +918,6 @@
       "a frozen snapshot of software files, system libraries, and startup commands"
     ],
     "summary": "An immutable, read-only package containing application binaries, libraries, configuration files, and metadata required to launch a container.",
-    "domains": [
-      "it/devops/containers"
-    ],
-    "level": 2,
-    "status": "draft"
-  },
-  {
-    "id": "container-registry",
-    "label": "Container registry",
-    "aliases": [],
-    "loanwords": [],
-    "plain_descriptions": [
-      "storage repository for publishing, sharing, and downloading container images",
-      "app store library where Docker images are stored and pulled by servers"
-    ],
-    "summary": "A centralized storage and content delivery system for storing, managing, and distributing container images across development and production environments.",
     "domains": [
       "it/devops/containers"
     ],
@@ -1355,6 +1312,25 @@
     "status": "draft"
   },
   {
+    "id": "dast",
+    "label": "Dynamic application security testing (DAST)",
+    "aliases": [
+      "DAST",
+      "dynamic vulnerability analysis"
+    ],
+    "loanwords": [],
+    "plain_descriptions": [
+      "testing a running web application from the outside by sending simulated malicious requests",
+      "black-box security scanning that probes live applications for exploitable vulnerabilities"
+    ],
+    "summary": "A black-box testing methodology that assesses running applications from the outside by injecting fault payloads to detect runtime security vulnerabilities.",
+    "domains": [
+      "it/security/vulnerabilities"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
     "id": "data-lake",
     "label": "Data lake",
     "aliases": [
@@ -1523,6 +1499,24 @@
     "status": "draft"
   },
   {
+    "id": "ddos",
+    "label": "Distributed denial-of-service (DDoS)",
+    "aliases": [
+      "DDoS"
+    ],
+    "loanwords": [],
+    "plain_descriptions": [
+      "flooding a website with fake traffic from thousands of computers to knock it offline",
+      "overwhelming a server bandwidth so legitimate visitors cannot access the service"
+    ],
+    "summary": "A cyberattack that coordinates multiple distributed computers to flood a targeted server or network with traffic, rendering it inaccessible to legitimate users.",
+    "domains": [
+      "it/security/vulnerabilities"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
     "id": "debt-to-equity-ratio",
     "label": "Debt-to-equity ratio (D/E)",
     "aliases": [
@@ -1668,6 +1662,24 @@
     "status": "draft"
   },
   {
+    "id": "digital-signature",
+    "label": "Digital signature",
+    "aliases": [
+      "cryptographic signature"
+    ],
+    "loanwords": [],
+    "plain_descriptions": [
+      "a mathematical stamp that proves who created a file and ensures it was not altered",
+      "an electronic seal providing proof of authorship and data integrity"
+    ],
+    "summary": "A mathematical scheme that binds an identity to digital data using asymmetric cryptography, providing authentication, data integrity, and non-repudiation.",
+    "domains": [
+      "it/security/cryptography"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
     "id": "digital-twin",
     "label": "Digital twin",
     "aliases": [],
@@ -1776,22 +1788,6 @@
       "it/devops/containers"
     ],
     "level": 1,
-    "status": "draft"
-  },
-  {
-    "id": "docker-compose",
-    "label": "Docker Compose",
-    "aliases": [],
-    "loanwords": [],
-    "plain_descriptions": [
-      "coordinating interconnected microservice containers from a single project file",
-      "easy way to spin up a web app, database, and cache together using docker-compose.yml"
-    ],
-    "summary": "An orchestration utility that launches and connects groups of containerized application services using centralized declarative YAML specifications.",
-    "domains": [
-      "it/devops/containers"
-    ],
-    "level": 2,
     "status": "draft"
   },
   {
@@ -1954,6 +1950,24 @@
       "it/security/cryptography"
     ],
     "level": 1,
+    "status": "draft"
+  },
+  {
+    "id": "end-to-end-encryption",
+    "label": "End-to-end encryption (E2EE)",
+    "aliases": [
+      "E2EE"
+    ],
+    "loanwords": [],
+    "plain_descriptions": [
+      "encrypting messages so only the sender and receiver can read them, locking out servers in between",
+      "private communication where even the messaging company cannot see the plaintext"
+    ],
+    "summary": "A secure communication system where data is encrypted on the sender's device and decrypted only by the intended recipient, preventing intermediate parties from accessing the content.",
+    "domains": [
+      "it/security/cryptography"
+    ],
+    "level": 2,
     "status": "draft"
   },
   {
@@ -2207,39 +2221,6 @@
       "it/ai-ml/mlops"
     ],
     "level": 2,
-    "status": "draft"
-  },
-  {
-    "id": "finops",
-    "label": "FinOps",
-    "aliases": [],
-    "loanwords": [],
-    "plain_descriptions": [
-      "managing and optimizing cloud spending across engineering and finance teams",
-      "cultural practice ensuring companies get the best business value from their cloud bills"
-    ],
-    "summary": "An operational cultural framework and discipline that brings financial accountability to the variable spend model of cloud computing.",
-    "domains": [
-      "it/infrastructure/cloud"
-    ],
-    "level": 2,
-    "status": "draft"
-  },
-  {
-    "id": "firewall",
-    "label": "Firewall",
-    "aliases": [],
-    "loanwords": [],
-    "plain_descriptions": [
-      "security barrier that blocks unauthorized network traffic into a computer",
-      "digital security guard inspecting incoming and outgoing data packets"
-    ],
-    "summary": "A network security system that monitors and filters incoming and outgoing network traffic based on predetermined security rules.",
-    "domains": [
-      "it/infrastructure/networking",
-      "it/security/vulnerabilities"
-    ],
-    "level": 1,
     "status": "draft"
   },
   {
@@ -2505,23 +2486,6 @@
     "status": "draft"
   },
   {
-    "id": "helm",
-    "label": "Helm",
-    "qualifier": "(Kubernetes)",
-    "aliases": [],
-    "loanwords": [],
-    "plain_descriptions": [
-      "package manager for Kubernetes that bundles complex apps into reusable charts",
-      "tool for installing and upgrading containerized applications on Kubernetes with one command"
-    ],
-    "summary": "The dedicated package manager for Kubernetes that streamlines defining, installing, and upgrading complex container applications using parameterized charts.",
-    "domains": [
-      "it/devops/containers"
-    ],
-    "level": 2,
-    "status": "draft"
-  },
-  {
     "id": "hotfix",
     "label": "Hotfix",
     "aliases": [],
@@ -2557,22 +2521,6 @@
     "status": "draft"
   },
   {
-    "id": "hybrid-cloud",
-    "label": "Hybrid cloud",
-    "aliases": [],
-    "loanwords": [],
-    "plain_descriptions": [
-      "connecting a company private data center with public cloud servers",
-      "combining internal on-premises hardware with public cloud capacity"
-    ],
-    "summary": "An IT infrastructure design connecting private on-premises data centers with public cloud environments to enable workload and data portability.",
-    "domains": [
-      "it/infrastructure/cloud"
-    ],
-    "level": 2,
-    "status": "draft"
-  },
-  {
     "id": "hyperparameter",
     "label": "Hyperparameter",
     "aliases": [],
@@ -2586,24 +2534,6 @@
       "it/ai-ml/foundations"
     ],
     "level": 2,
-    "status": "draft"
-  },
-  {
-    "id": "iaas",
-    "label": "Infrastructure as a Service (IaaS)",
-    "aliases": [
-      "IaaS"
-    ],
-    "loanwords": [],
-    "plain_descriptions": [
-      "renting raw virtual servers and storage over the internet",
-      "paying for computing hardware by the hour instead of buying physical boxes"
-    ],
-    "summary": "A cloud computing model where vendors deliver on-demand fundamental compute, network, and storage resources over the internet.",
-    "domains": [
-      "it/infrastructure/cloud"
-    ],
-    "level": 1,
     "status": "draft"
   },
   {
@@ -2860,6 +2790,24 @@
     "status": "reviewed"
   },
   {
+    "id": "intrusion-detection-system",
+    "label": "Intrusion detection system (IDS)",
+    "aliases": [
+      "IDS"
+    ],
+    "loanwords": [],
+    "plain_descriptions": [
+      "a network security alarm system that listens for suspicious activity and alerts defenders",
+      "monitoring software that detects unauthorized access attempts across systems"
+    ],
+    "summary": "A hardware appliance or software application that monitors network or system activities for malicious behaviors or policy violations and produces alert reports.",
+    "domains": [
+      "it/security/vulnerabilities"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
     "id": "inverted-pyramid",
     "label": "Inverted pyramid",
     "aliases": [],
@@ -2912,22 +2860,6 @@
       "iot/edge-cloud"
     ],
     "level": 2,
-    "status": "draft"
-  },
-  {
-    "id": "ip-address",
-    "label": "IP address",
-    "aliases": [],
-    "loanwords": [],
-    "plain_descriptions": [
-      "unique numerical label assigned to every device connected to a computer network",
-      "digital phone number or postal address identifying a computer on the internet"
-    ],
-    "summary": "A unique numerical identifier assigned to each device connected to a computer network utilizing the Internet Protocol for communication.",
-    "domains": [
-      "it/infrastructure/networking"
-    ],
-    "level": 1,
     "status": "draft"
   },
   {
@@ -3359,6 +3291,24 @@
     "status": "draft"
   },
   {
+    "id": "malware",
+    "label": "Malware",
+    "aliases": [
+      "malicious software"
+    ],
+    "loanwords": [],
+    "plain_descriptions": [
+      "harmful software intentionally created to damage computers or steal private data",
+      "umbrella term for computer viruses, spyware, trojans, and worms"
+    ],
+    "summary": "An overarching category of software intentionally developed to disrupt, damage, gain unauthorized access to, or exfiltrate data from a computer system.",
+    "domains": [
+      "it/security/vulnerabilities"
+    ],
+    "level": 1,
+    "status": "draft"
+  },
+  {
     "id": "margin",
     "label": "Margin",
     "qualifier": "(Trading)",
@@ -3726,22 +3676,6 @@
     "status": "draft"
   },
   {
-    "id": "multi-cloud",
-    "label": "Multi-cloud",
-    "aliases": [],
-    "loanwords": [],
-    "plain_descriptions": [
-      "using more than one public cloud provider at the same time",
-      "spreading workloads across multiple vendors to avoid depending on just one"
-    ],
-    "summary": "An architectural strategy utilizing cloud services from multiple independent public cloud vendors within a single organization.",
-    "domains": [
-      "it/infrastructure/cloud"
-    ],
-    "level": 2,
-    "status": "draft"
-  },
-  {
     "id": "mutual-fund",
     "label": "Mutual fund",
     "aliases": [
@@ -3782,24 +3716,6 @@
     "status": "draft"
   },
   {
-    "id": "nat",
-    "label": "Network Address Translation (NAT)",
-    "aliases": [
-      "NAT"
-    ],
-    "loanwords": [],
-    "plain_descriptions": [
-      "sharing one public internet address among many private home or office devices",
-      "remapping internal private IP addresses to an external internet address"
-    ],
-    "summary": "A networking method that remaps an IP address space into another by modifying network address information in the IP header of packets in transit.",
-    "domains": [
-      "it/infrastructure/networking"
-    ],
-    "level": 2,
-    "status": "draft"
-  },
-  {
     "id": "nb-iot",
     "label": "NB-IoT",
     "aliases": [],
@@ -3815,23 +3731,6 @@
       "iot/connectivity-protocols"
     ],
     "level": 2,
-    "status": "draft"
-  },
-  {
-    "id": "network-port",
-    "label": "Port",
-    "qualifier": "(Networking)",
-    "aliases": [],
-    "loanwords": [],
-    "plain_descriptions": [
-      "numerical channel number directing network data to a specific software program",
-      "software communication door that differentiates web, email, or database traffic on one computer"
-    ],
-    "summary": "A 16-bit unsigned number in transport layer headers that identifies a specific application service or communication endpoint on a host.",
-    "domains": [
-      "it/infrastructure/networking"
-    ],
-    "level": 1,
     "status": "draft"
   },
   {
@@ -3944,22 +3843,6 @@
     "status": "draft"
   },
   {
-    "id": "object-storage",
-    "label": "Object storage",
-    "aliases": [],
-    "loanwords": [],
-    "plain_descriptions": [
-      "flat cloud file storage accessible over web HTTP using unique keys",
-      "storing photos, videos, and backups as discrete objects without directory hierarchies"
-    ],
-    "summary": "A scalable storage architecture that manages data as distinct objects paired with rich metadata and a unique identifier in a flat address space accessed via HTTP APIs.",
-    "domains": [
-      "it/infrastructure/cloud"
-    ],
-    "level": 2,
-    "status": "draft"
-  },
-  {
     "id": "observability",
     "label": "Observability",
     "aliases": [
@@ -4055,6 +3938,24 @@
     "status": "draft"
   },
   {
+    "id": "openid-connect",
+    "label": "OpenID Connect (OIDC)",
+    "aliases": [
+      "OIDC"
+    ],
+    "loanwords": [],
+    "plain_descriptions": [
+      "an identity layer on top of OAuth that lets apps verify user identity",
+      "signing into websites using an existing Google or Apple account"
+    ],
+    "summary": "An identity protocol built on OAuth 2.0 that allows clients to verify user identity and obtain profile information via JSON Web Tokens.",
+    "domains": [
+      "it/security/authentication"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
     "id": "organic-traffic",
     "label": "Organic traffic",
     "aliases": [
@@ -4146,19 +4047,19 @@
     "status": "draft"
   },
   {
-    "id": "paas",
-    "label": "Platform as a Service (PaaS)",
+    "id": "owasp-top-10",
+    "label": "OWASP Top 10",
     "aliases": [
-      "PaaS"
+      "Open Worldwide Application Security Project Top 10"
     ],
     "loanwords": [],
     "plain_descriptions": [
-      "cloud platform where you deploy code without managing servers",
-      "ready-to-use application hosting environment managed by a vendor"
+      "a regularly updated list of the ten most critical security risks facing web applications",
+      "the global industry standard checklist for common web software vulnerabilities"
     ],
-    "summary": "A cloud delivery model providing a managed execution environment and tooling for developers to deploy applications without operating system administration.",
+    "summary": "A regularly updated awareness report curated by the OWASP community outlining the ten most critical security risks facing web applications.",
     "domains": [
-      "it/infrastructure/cloud"
+      "it/security/vulnerabilities"
     ],
     "level": 1,
     "status": "draft"
@@ -4178,6 +4079,25 @@
     "summary": "A design technique that breaks large data sets into discrete subsets or pages to manage bandwidth and system performance.",
     "domains": [
       "it/web/api"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
+    "id": "password-salting",
+    "label": "Salt",
+    "qualifier": "(Cryptography)",
+    "aliases": [
+      "cryptographic salt"
+    ],
+    "loanwords": [],
+    "plain_descriptions": [
+      "random data added to a password before hashing to protect against lookup attacks",
+      "an extra secret ingredient mixed into stored passwords so identical passwords produce different hashes"
+    ],
+    "summary": "A non-secret random string appended to a plaintext password before hashing to ensure unique hash values and thwart precomputed table attacks.",
+    "domains": [
+      "it/security/cryptography"
     ],
     "level": 2,
     "status": "draft"
@@ -4223,6 +4143,25 @@
     "status": "draft"
   },
   {
+    "id": "penetration-testing",
+    "label": "Penetration testing",
+    "aliases": [
+      "pentest",
+      "ethical hacking"
+    ],
+    "loanwords": [],
+    "plain_descriptions": [
+      "hiring ethical hackers to break into your system to find weaknesses before criminals do",
+      "authorized simulated cyberattacks to discover and fix security vulnerabilities"
+    ],
+    "summary": "An authorized simulated cyberattack against an organization's computer systems, networks, or applications to evaluate security defenses.",
+    "domains": [
+      "it/security/vulnerabilities"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
     "id": "personal-income-tax",
     "label": "Personal income tax",
     "aliases": [
@@ -4237,6 +4176,24 @@
     "summary": "A direct tax levied by governments on the wages, salaries, investment gains, and other financial earnings of individuals.",
     "domains": [
       "finance/personal-finance/tax"
+    ],
+    "level": 1,
+    "status": "draft"
+  },
+  {
+    "id": "phishing",
+    "label": "Phishing",
+    "aliases": [
+      "credential phishing"
+    ],
+    "loanwords": [],
+    "plain_descriptions": [
+      "deceptive messages that trick people into revealing passwords or credit card numbers",
+      "fraudulent emails pretending to come from trustworthy organizations to steal credentials"
+    ],
+    "summary": "A social engineering attack where malicious actors impersonate legitimate organizations to trick victims into disclosing sensitive information or downloading malware.",
+    "domains": [
+      "it/security/vulnerabilities"
     ],
     "level": 1,
     "status": "draft"
@@ -4625,17 +4582,19 @@
     "status": "draft"
   },
   {
-    "id": "proxy-server",
-    "label": "Proxy server",
-    "aliases": [],
+    "id": "public-key-cryptography",
+    "label": "Public-key cryptography",
+    "aliases": [
+      "asymmetric cryptography"
+    ],
     "loanwords": [],
     "plain_descriptions": [
-      "middleman server that makes requests on behalf of other computers",
-      "intermediary computer that filters web traffic or caches responses"
+      "encryption using a pair of keys where anyone can encrypt but only the private key holder can decrypt",
+      "a two-key security system enabling confidential messaging and digital signatures across open networks"
     ],
-    "summary": "An intermediary server application that acts as an agent for clients seeking resources from other destination servers.",
+    "summary": "A cryptographic system that uses mathematically linked key pairs—a public key for encryption or verification and a private key for decryption or signing.",
     "domains": [
-      "it/infrastructure/networking"
+      "it/security/cryptography"
     ],
     "level": 2,
     "status": "draft"
@@ -4730,6 +4689,24 @@
     "status": "draft"
   },
   {
+    "id": "ransomware",
+    "label": "Ransomware",
+    "aliases": [
+      "extortion malware"
+    ],
+    "loanwords": [],
+    "plain_descriptions": [
+      "malicious software that locks files and demands ransom money to decrypt them",
+      "cyber extortion software that encrypts business databases and holds operations hostage"
+    ],
+    "summary": "A form of malicious software that encrypts a victim's files or locks system access, demanding payment in exchange for decryption keys.",
+    "domains": [
+      "it/security/vulnerabilities"
+    ],
+    "level": 1,
+    "status": "draft"
+  },
+  {
     "id": "rate-limiting",
     "label": "Rate limiting",
     "aliases": [
@@ -4745,6 +4722,24 @@
     "summary": "A defensive network control mechanism that caps the number of requests a client can submit to an API or service within a specified time window.",
     "domains": [
       "it/web/api"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
+    "id": "rbac",
+    "label": "Role-based access control (RBAC)",
+    "aliases": [
+      "RBAC"
+    ],
+    "loanwords": [],
+    "plain_descriptions": [
+      "assigning system permissions to job roles instead of individual people",
+      "managing user access through predefined groups of privileges"
+    ],
+    "summary": "An access control model where permissions are grouped into roles and assigned to users based on their organizational responsibilities.",
+    "domains": [
+      "it/security/authentication"
     ],
     "level": 2,
     "status": "draft"
@@ -4969,25 +4964,6 @@
     "status": "draft"
   },
   {
-    "id": "saas",
-    "label": "Software as a Service (SaaS)",
-    "aliases": [
-      "SaaS"
-    ],
-    "loanwords": [],
-    "plain_descriptions": [
-      "accessing online software through a browser on subscription",
-      "using cloud applications without installing or maintaining local software"
-    ],
-    "summary": "A cloud distribution model where complete software applications are hosted by a provider and accessed by consumers over the internet.",
-    "domains": [
-      "it/infrastructure/cloud",
-      "it/business-systems/enterprise-apps"
-    ],
-    "level": 1,
-    "status": "draft"
-  },
-  {
     "id": "sales-lead",
     "label": "Lead",
     "qualifier": "(Marketing)",
@@ -5005,6 +4981,43 @@
       "media/digital-marketing/metrics-analytics"
     ],
     "level": 1,
+    "status": "draft"
+  },
+  {
+    "id": "saml",
+    "label": "SAML",
+    "aliases": [
+      "Security Assertion Markup Language"
+    ],
+    "loanwords": [],
+    "plain_descriptions": [
+      "an XML-based standard for passing login data between identity systems and websites",
+      "enterprise single sign-on protocol using signed security assertions"
+    ],
+    "summary": "An open XML-based standard for exchanging authentication and authorization data between an identity provider and a service provider.",
+    "domains": [
+      "it/security/authentication"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
+    "id": "sast",
+    "label": "Static application security testing (SAST)",
+    "aliases": [
+      "SAST",
+      "static code analysis"
+    ],
+    "loanwords": [],
+    "plain_descriptions": [
+      "scanning software source code for security flaws without actually running the program",
+      "automated code review that finds vulnerabilities inside application repositories"
+    ],
+    "summary": "A white-box testing methodology that analyzes source code, byte code, or binaries at rest to detect security vulnerabilities before execution.",
+    "domains": [
+      "it/security/vulnerabilities"
+    ],
+    "level": 2,
     "status": "draft"
   },
   {
@@ -5139,6 +5152,24 @@
     "status": "draft"
   },
   {
+    "id": "security-patch",
+    "label": "Security patch",
+    "aliases": [
+      "security update"
+    ],
+    "loanwords": [],
+    "plain_descriptions": [
+      "a software update designed specifically to fix security holes and prevent hacks",
+      "a quick code fix released by vendors to protect systems against known vulnerabilities"
+    ],
+    "summary": "A software update specifically engineered to remediate identified security vulnerabilities and prevent malicious exploitation.",
+    "domains": [
+      "it/security/vulnerabilities"
+    ],
+    "level": 1,
+    "status": "draft"
+  },
+  {
     "id": "semantic-versioning",
     "label": "Semantic versioning",
     "aliases": [
@@ -5245,22 +5276,6 @@
     "status": "draft"
   },
   {
-    "id": "service-discovery",
-    "label": "Service discovery",
-    "aliases": [],
-    "loanwords": [],
-    "plain_descriptions": [
-      "automatic mechanism for microservices to find each other on dynamic cloud networks",
-      "automated network phonebook that tracks changing server IP addresses in real time"
-    ],
-    "summary": "The automatic detection and location resolution of microservices, instances, and endpoints on a network through a centralized or distributed registry.",
-    "domains": [
-      "it/infrastructure/networking"
-    ],
-    "level": 2,
-    "status": "draft"
-  },
-  {
     "id": "sharding",
     "label": "Sharding",
     "aliases": [
@@ -5292,6 +5307,24 @@
     "summary": "Any observable change in program state or interaction with the outside world produced by a function or expression beyond returning its computed value.",
     "domains": [
       "it/software-engineering/programming-concepts"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
+    "id": "siem",
+    "label": "SIEM",
+    "aliases": [
+      "Security Information and Event Management"
+    ],
+    "loanwords": [],
+    "plain_descriptions": [
+      "a central security hub that collects logs from all servers and spots attack patterns",
+      "enterprise software combining security event monitoring with automated log analysis"
+    ],
+    "summary": "A security software architecture that aggregates, analyzes, and correlates event log data across an enterprise to detect incidents in real time.",
+    "domains": [
+      "it/security/vulnerabilities"
     ],
     "level": 2,
     "status": "draft"
@@ -5381,6 +5414,24 @@
       "iot/devices-sensors"
     ],
     "level": 1,
+    "status": "draft"
+  },
+  {
+    "id": "soc-security",
+    "label": "Security Operations Center (SOC)",
+    "aliases": [
+      "SOC"
+    ],
+    "loanwords": [],
+    "plain_descriptions": [
+      "a dedicated security command room where analysts monitor networks 24/7 to stop attacks",
+      "an organization's central cybersecurity team managing threat detection and incident response"
+    ],
+    "summary": "A centralized command team and facility responsible for continuously monitoring, detecting, analyzing, and responding to cybersecurity incidents.",
+    "domains": [
+      "it/security/vulnerabilities"
+    ],
+    "level": 2,
     "status": "draft"
   },
   {
@@ -5498,22 +5549,6 @@
     "status": "draft"
   },
   {
-    "id": "spot-instance",
-    "label": "Spot instance",
-    "aliases": [],
-    "loanwords": [],
-    "plain_descriptions": [
-      "deeply discounted cloud virtual server that can be interrupted with short notice",
-      "spare cloud computing capacity rented cheaply for non-urgent computations and resilient workloads"
-    ],
-    "summary": "An unused cloud computing instance available at steep discounts compared to on-demand rates, subject to reclamation when the provider needs capacity.",
-    "domains": [
-      "it/infrastructure/cloud"
-    ],
-    "level": 2,
-    "status": "draft"
-  },
-  {
     "id": "sprint-agile",
     "label": "Sprint",
     "qualifier": "(Agile)",
@@ -5608,19 +5643,18 @@
     "status": "draft"
   },
   {
-    "id": "ssh",
-    "label": "Secure Shell (SSH)",
+    "id": "sso",
+    "label": "Single sign-on (SSO)",
     "aliases": [
-      "SSH"
+      "SSO"
     ],
     "loanwords": [],
     "plain_descriptions": [
-      "secure encrypted tool for logging into and running commands on remote servers",
-      "encrypted remote terminal terminal connection replacing insecure Telnet"
+      "logging into multiple applications using just one set of credentials",
+      "signing in once to unlock access across all work tools"
     ],
-    "summary": "A cryptographic network protocol for operating network services securely over an unsecured network, most commonly used for remote command-line login.",
+    "summary": "An authentication scheme that allows a user to log in once and gain access to multiple connected applications without re-entering credentials.",
     "domains": [
-      "it/infrastructure/networking",
       "it/security/authentication"
     ],
     "level": 2,
@@ -5796,17 +5830,20 @@
     "status": "draft"
   },
   {
-    "id": "subnet",
-    "label": "Subnet",
-    "aliases": [],
+    "id": "supply-chain-attack",
+    "label": "Supply chain attack",
+    "qualifier": "(Software)",
+    "aliases": [
+      "third-party software compromise"
+    ],
     "loanwords": [],
     "plain_descriptions": [
-      "smaller segmented portion of a larger IP network range",
-      "dividing a big network into isolated zones for security and organization"
+      "compromising an upstream software vendor or code library to infect downstream customers",
+      "sneaking malicious code into a trusted software update or package repository"
     ],
-    "summary": "A logical subdivision of an IP network designed to segment broadcast domains, improve routing efficiency, and enforce security boundaries.",
+    "summary": "A cyberattack that targets less secure third-party vendors, libraries, or build pipelines to infiltrate the target organization's systems.",
     "domains": [
-      "it/infrastructure/networking"
+      "it/security/vulnerabilities"
     ],
     "level": 2,
     "status": "draft"
@@ -5825,24 +5862,6 @@
       "it/ai-ml/llm-agents"
     ],
     "level": 2,
-    "status": "draft"
-  },
-  {
-    "id": "tcp",
-    "label": "Transmission Control Protocol (TCP)",
-    "aliases": [
-      "TCP"
-    ],
-    "loanwords": [],
-    "plain_descriptions": [
-      "reliable networking protocol that guarantees all data arrives completely and in order",
-      "connection-oriented rulebook ensuring web pages and files download without missing parts"
-    ],
-    "summary": "A connection-oriented transport layer protocol that provides reliable, ordered, and error-checked delivery of a stream of data packets.",
-    "domains": [
-      "it/infrastructure/networking"
-    ],
-    "level": 1,
     "status": "draft"
   },
   {
@@ -5918,17 +5937,19 @@
     "status": "draft"
   },
   {
-    "id": "terraform",
-    "label": "Terraform",
-    "aliases": [],
+    "id": "threat-modeling",
+    "label": "Threat modeling",
+    "aliases": [
+      "security threat modeling"
+    ],
     "loanwords": [],
     "plain_descriptions": [
-      "tool for creating and managing cloud servers using readable code files",
-      "infrastructure as code software that provisions resources on multiple clouds"
+      "analyzing a software design to brainstorm how an attacker might exploit it",
+      "a structured exercise to identify security risks and design mitigations early"
     ],
-    "summary": "An open-source infrastructure as code software tool that enables operators to provision and version multi-cloud data center resources using declarative configuration files.",
+    "summary": "A structured engineering practice for identifying, categorizing, and prioritizing potential security threats to an application or system architecture.",
     "domains": [
-      "it/devops/iac"
+      "it/security/vulnerabilities"
     ],
     "level": 2,
     "status": "draft"
@@ -5968,6 +5989,26 @@
     "domains": [
       "it/security/cryptography",
       "it/infrastructure/networking"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
+    "id": "tls-certificate",
+    "label": "Certificate",
+    "qualifier": "(TLS)",
+    "aliases": [
+      "SSL certificate",
+      "X.509 certificate"
+    ],
+    "loanwords": [],
+    "plain_descriptions": [
+      "a digital identity document that proves a website owns its public key and domain name",
+      "the security credential that enables the padlock icon and HTTPS encryption in browsers"
+    ],
+    "summary": "A digitally signed data file conforming to X.509 standards that binds a public key to an entity's domain name or identity.",
+    "domains": [
+      "it/security/cryptography"
     ],
     "level": 2,
     "status": "draft"
@@ -6114,24 +6155,6 @@
     "summary": "The art, craft, and technique of selecting and arranging typefaces, font weights, kerning, and spacing to render written language legible, readable, and visually engaging.",
     "domains": [
       "media/content-production/visual-design"
-    ],
-    "level": 1,
-    "status": "draft"
-  },
-  {
-    "id": "udp",
-    "label": "User Datagram Protocol (UDP)",
-    "aliases": [
-      "UDP"
-    ],
-    "loanwords": [],
-    "plain_descriptions": [
-      "fast lightweight network protocol that sends data without checking if it arrived",
-      "connectionless protocol used for real-time gaming, video streaming, and DNS"
-    ],
-    "summary": "A connectionless transport layer protocol that transmits data packets without prior connection handshakes or delivery guarantees, prioritizing speed over reliability.",
-    "domains": [
-      "it/infrastructure/networking"
     ],
     "level": 1,
     "status": "draft"
@@ -6363,37 +6386,19 @@
     "status": "draft"
   },
   {
-    "id": "vpc",
-    "label": "Virtual Private Cloud (VPC)",
+    "id": "waf",
+    "label": "Web application firewall (WAF)",
     "aliases": [
-      "VPC"
+      "WAF"
     ],
     "loanwords": [],
     "plain_descriptions": [
-      "isolated private network section inside a public cloud provider",
-      "virtual boundary that protects your cloud servers from public internet access"
+      "a protective shield that filters out malicious web traffic before it reaches your web server",
+      "an application-level firewall that blocks SQL injection, cross-site scripting, and bot spam"
     ],
-    "summary": "A logically isolated virtual network dedicated to a cloud account, providing complete control over IP address ranges, subnets, and routing tables.",
+    "summary": "A specialized security appliance or cloud filter that monitors, inspects, and blocks malicious HTTP and HTTPS traffic targeting web applications.",
     "domains": [
-      "it/infrastructure/cloud"
-    ],
-    "level": 2,
-    "status": "draft"
-  },
-  {
-    "id": "vpn",
-    "label": "Virtual Private Network (VPN)",
-    "aliases": [
-      "VPN"
-    ],
-    "loanwords": [],
-    "plain_descriptions": [
-      "encrypted connection tunnel between your computer and a remote private network",
-      "secure way for employees to access internal company systems from home"
-    ],
-    "summary": "An encrypted communication channel constructed over a public network infrastructure to provide secure remote access and private site-to-site connectivity.",
-    "domains": [
-      "it/infrastructure/networking"
+      "it/security/vulnerabilities"
     ],
     "level": 2,
     "status": "draft"
@@ -6467,6 +6472,25 @@
       "sneaking rogue code into public comment sections so readers' login cookies get stolen"
     ],
     "summary": "A web application flaw permitting attackers to embed rogue executable scripts into viewed pages, running unauthorized actions inside visitor browsers.",
+    "domains": [
+      "it/security/vulnerabilities"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
+    "id": "zero-day",
+    "label": "Zero-day vulnerability",
+    "aliases": [
+      "zero-day",
+      "0-day"
+    ],
+    "loanwords": [],
+    "plain_descriptions": [
+      "a newly discovered software bug that has no official fix or patch yet",
+      "an undisclosed security flaw that attackers exploit before developers know it exists"
+    ],
+    "summary": "A previously undisclosed software vulnerability that is actively exploitable or known to attackers before the vendor has developed and released a security patch.",
     "domains": [
       "it/security/vulnerabilities"
     ],

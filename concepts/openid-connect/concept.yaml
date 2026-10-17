@@ -1,0 +1,26 @@
+id: openid-connect
+domains:
+  - it/security/authentication
+level: 2
+relations:
+  prerequisites:
+    - oauth
+    - authentication
+  confusable:
+    - saml
+  related:
+    - sso
+    - jwt
+status: draft
+provenance:
+  drafted_by: ai
+sources:
+  - ref: nist-csrc
+    locator: https://csrc.nist.gov/glossary/term/OpenID_Connect
+    title: OpenID Connect - Glossary | CSRC
+    language: en
+    accessed: '2026-10-17'
+    retrieved_by: ai
+    supports:
+      - definition
+      - summary

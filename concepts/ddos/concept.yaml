@@ -1,0 +1,21 @@
+id: ddos
+domains:
+  - it/security/vulnerabilities
+level: 2
+relations:
+  related:
+    - rate-limiting
+    - waf
+status: draft
+provenance:
+  drafted_by: ai
+sources:
+  - ref: nist-csrc
+    locator: https://csrc.nist.gov/glossary/term/distributed_denial_of_service
+    title: distributed denial of service - Glossary | CSRC
+    language: en
+    accessed: '2026-10-17'
+    retrieved_by: ai
+    supports:
+      - definition
+      - summary

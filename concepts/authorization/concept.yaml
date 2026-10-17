@@ -1,0 +1,25 @@
+id: authorization
+domains:
+  - it/security/authentication
+level: 1
+relations:
+  prerequisites:
+    - authentication
+  confusable:
+    - authentication
+  related:
+    - rbac
+    - least-privilege
+status: draft
+provenance:
+  drafted_by: ai
+sources:
+  - ref: nist-csrc
+    locator: https://csrc.nist.gov/glossary/term/Authorization
+    title: Authorization - Glossary | CSRC
+    language: en
+    accessed: '2026-10-17'
+    retrieved_by: ai
+    supports:
+      - definition
+      - summary

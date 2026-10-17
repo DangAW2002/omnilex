@@ -1,0 +1,24 @@
+id: digital-signature
+domains:
+  - it/security/cryptography
+level: 2
+relations:
+  prerequisites:
+    - public-key-cryptography
+    - hashing
+  related:
+    - tls-certificate
+    - certificate-authority
+status: draft
+provenance:
+  drafted_by: ai
+sources:
+  - ref: nist-csrc
+    locator: https://csrc.nist.gov/glossary/term/digital_signature
+    title: digital signature - Glossary | CSRC
+    language: en
+    accessed: '2026-10-17'
+    retrieved_by: ai
+    supports:
+      - definition
+      - summary

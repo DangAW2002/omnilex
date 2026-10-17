@@ -1,0 +1,23 @@
+id: public-key-cryptography
+domains:
+  - it/security/cryptography
+level: 2
+relations:
+  prerequisites:
+    - encryption
+  related:
+    - digital-signature
+    - tls-certificate
+status: draft
+provenance:
+  drafted_by: ai
+sources:
+  - ref: nist-csrc
+    locator: https://csrc.nist.gov/glossary/term/public_key_cryptography
+    title: public key cryptography - Glossary | CSRC
+    language: en
+    accessed: '2026-10-17'
+    retrieved_by: ai
+    supports:
+      - definition
+      - summary

@@ -1,0 +1,22 @@
+id: owasp-top-10
+domains:
+  - it/security/vulnerabilities
+level: 1
+relations:
+  related:
+    - sql-injection
+    - xss
+    - threat-modeling
+status: draft
+provenance:
+  drafted_by: ai
+sources:
+  - ref: owasp
+    locator: https://owasp.org/projects/top-ten
+    title: OWASP Top 10 Security Risks | OWASP Foundation
+    language: en
+    accessed: '2026-10-17'
+    retrieved_by: ai
+    supports:
+      - definition
+      - summary

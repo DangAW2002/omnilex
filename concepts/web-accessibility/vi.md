@@ -20,8 +20,8 @@ translated_from: en
 translated_by: ai
 translated_at: '2026-10-17'
 label_evidence:
-  - ref: w3c
-    locator: https://www.w3.org/WAI/fundamentals/accessibility-intro/
+  - ref: vlink-asia
+    locator: https://www.vlink.asia/kb/seo-wiki-viet-nam/technical-seo/wcag-2-1-aa/
     accessed: "2026-10-17"
 ---
 

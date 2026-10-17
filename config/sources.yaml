@@ -1358,3 +1358,12 @@ nginx-docs:
   domains: [it/web, it/infrastructure]
   verified_license_at: "2026-10-17"
 
+
+vlink-asia:
+  title: Vlink SEO Wiki
+  publisher: Vlink Asia
+  url: https://www.vlink.asia
+  type: community
+  tier: D
+  languages: [vi]
+  reuse: cite-only

@@ -20,7 +20,7 @@ translated_by: ai
 translated_at: '2026-10-17'
 label_evidence:
   - ref: viblo
-    locator: https://viblo.asia/p/tong-quan-ve-web-cache-va-caching-chien-luoc-caching-hieu-qua-92G6xyZgV4n
+    locator: https://viblo.asia/p/cache-trong-trinh-duyet-hoat-dong-nhu-the-nao-924lJLymKPM
     accessed: "2026-10-17"
 ---
 

@@ -3,10 +3,22 @@ domains:
   - it/software-engineering/programming-concepts
 level: 1
 relations:
-  prerequisites: []
+  prerequisites:
+    - "algorithm"
+    - "array"
   confusable: []
-  related: []
+  related:
+    - "big-o-notation"
 status: draft
 provenance:
   drafted_by: ai
-sources: []
+sources:
+  - ref: nist-dads
+    locator: https://xlinux.nist.gov/dads/HTML/binarySearch.html
+    title: "binary search"
+    language: en
+    accessed: '2026-10-17'
+    retrieved_by: ai
+    supports:
+      - definition
+      - summary

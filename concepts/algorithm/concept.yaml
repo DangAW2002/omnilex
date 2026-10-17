@@ -5,8 +5,20 @@ level: 1
 relations:
   prerequisites: []
   confusable: []
-  related: []
+  related:
+    - "data-structure"
+    - "big-o-notation"
+    - "binary-search"
 status: draft
 provenance:
   drafted_by: ai
-sources: []
+sources:
+  - ref: nist-csrc
+    locator: https://csrc.nist.gov/glossary/term/algorithm
+    title: "Algorithm - Glossary | CSRC"
+    language: en
+    accessed: '2026-10-17'
+    retrieved_by: ai
+    supports:
+      - definition
+      - summary

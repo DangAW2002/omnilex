@@ -1,12 +1,24 @@
 id: hash-table
 domains:
   - it/software-engineering/programming-concepts
-level: 1
+level: 2
 relations:
-  prerequisites: []
-  confusable: []
-  related: []
+  prerequisites:
+    - "array"
+  confusable:
+    - "array"
+  related:
+    - "data-structure"
 status: draft
 provenance:
   drafted_by: ai
-sources: []
+sources:
+  - ref: microsoft-learn
+    locator: https://learn.microsoft.com/en-us/dotnet/api/system.collections.hashtable?view=net-10.0
+    title: "Hashtable Class (System.Collections) | Microsoft Learn"
+    language: en
+    accessed: '2026-10-17'
+    retrieved_by: ai
+    supports:
+      - definition
+      - summary

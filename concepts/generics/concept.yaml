@@ -1,12 +1,23 @@
 id: generics
 domains:
   - it/software-engineering/programming-concepts
-level: 1
+level: 2
 relations:
-  prerequisites: []
+  prerequisites:
+    - "data-structure"
   confusable: []
-  related: []
+  related:
+    - "class-oop"
 status: draft
 provenance:
   drafted_by: ai
-sources: []
+sources:
+  - ref: microsoft-learn
+    locator: https://learn.microsoft.com/en-us/dotnet/csharp/fundamentals/types/generics
+    title: "Generic types and methods - C# | Microsoft Learn"
+    language: en
+    accessed: '2026-10-17'
+    retrieved_by: ai
+    supports:
+      - definition
+      - summary

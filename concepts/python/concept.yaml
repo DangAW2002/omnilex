@@ -3,10 +3,21 @@ domains:
   - it/software-engineering/programming-concepts
 level: 1
 relations:
-  prerequisites: []
+  prerequisites:
+    - "interpreter"
   confusable: []
-  related: []
+  related:
+    - "function-programming"
 status: draft
 provenance:
   drafted_by: ai
-sources: []
+sources:
+  - ref: python-docs
+    locator: https://docs.python.org/3/
+    title: "3.15.0 Documentation"
+    language: en
+    accessed: '2026-10-17'
+    retrieved_by: ai
+    supports:
+      - definition
+      - summary

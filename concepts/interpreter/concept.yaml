@@ -4,9 +4,20 @@ domains:
 level: 1
 relations:
   prerequisites: []
-  confusable: []
-  related: []
+  confusable:
+    - "compiler"
+  related:
+    - "python"
 status: draft
 provenance:
   drafted_by: ai
-sources: []
+sources:
+  - ref: nist-csrc
+    locator: https://csrc.nist.gov/glossary/term/interpreter
+    title: "Interpreter - Glossary | CSRC"
+    language: en
+    accessed: '2026-10-17'
+    retrieved_by: ai
+    supports:
+      - definition
+      - summary

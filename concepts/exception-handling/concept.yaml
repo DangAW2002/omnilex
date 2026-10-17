@@ -3,10 +3,22 @@ domains:
   - it/software-engineering/programming-concepts
 level: 1
 relations:
-  prerequisites: []
+  prerequisites:
+    - "function-programming"
   confusable: []
-  related: []
+  related:
+    - "stack-trace"
+    - "debugging"
 status: draft
 provenance:
   drafted_by: ai
-sources: []
+sources:
+  - ref: microsoft-learn
+    locator: https://learn.microsoft.com/en-us/dotnet/csharp/fundamentals/exceptions/
+    title: "Exceptions and Exception Handling - C# | Microsoft Learn"
+    language: en
+    accessed: '2026-10-17'
+    retrieved_by: ai
+    supports:
+      - definition
+      - summary

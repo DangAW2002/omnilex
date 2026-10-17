@@ -1,12 +1,23 @@
 id: promise
 domains:
   - it/software-engineering/programming-concepts
-level: 1
+level: 2
 relations:
-  prerequisites: []
+  prerequisites:
+    - "callback"
   confusable: []
-  related: []
+  related:
+    - "async-await"
 status: draft
 provenance:
   drafted_by: ai
-sources: []
+sources:
+  - ref: mdn
+    locator: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise
+    title: "Promise - JavaScript | MDN"
+    language: en
+    accessed: '2026-10-17'
+    retrieved_by: ai
+    supports:
+      - definition
+      - summary

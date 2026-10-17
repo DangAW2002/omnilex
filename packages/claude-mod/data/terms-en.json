@@ -171,6 +171,21 @@
     "autolink": true
   },
   {
+    "key": "Algorithm",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "algorithm",
+        "label": "Algorithm",
+        "summary": "A well-defined, finite sequence of unambiguous instructions designed to perform a specific computational computation or solve a problem.",
+        "domains": [
+          "it/software-engineering/programming-concepts"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
     "key": "Anonymous source",
     "match": "any-case",
     "concepts": [
@@ -280,6 +295,22 @@
     "autolink": true
   },
   {
+    "key": "Array",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "array",
+        "label": "Array",
+        "qualifier": "(Programming)",
+        "summary": "A linear data structure consisting of a collection of elements identified by index or key, stored in contiguous memory locations.",
+        "domains": [
+          "it/software-engineering/programming-concepts"
+        ]
+      }
+    ],
+    "autolink": false
+  },
+  {
     "key": "Aspect ratio",
     "match": "any-case",
     "concepts": [
@@ -321,6 +352,21 @@
         "summary": "A present economic resource controlled by an entity as a result of past events from which future economic benefits are expected to flow.",
         "domains": [
           "finance/accounting/bookkeeping"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Async/await",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "async-await",
+        "label": "Async/await",
+        "summary": "A syntactic abstraction that allows asynchronous, promise-based operations to be written and structured in a readable sequential style.",
+        "domains": [
+          "it/software-engineering/programming-concepts"
         ]
       }
     ],
@@ -660,6 +706,51 @@
     "autolink": true
   },
   {
+    "key": "Big O notation",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "big-o-notation",
+        "label": "Big O notation",
+        "summary": "A mathematical notation used to describe the asymptotic upper bound of an algorithm’s time or memory requirements as the input size approaches infinity.",
+        "domains": [
+          "it/software-engineering/programming-concepts"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Big O",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "big-o-notation",
+        "label": "Big O notation",
+        "summary": "A mathematical notation used to describe the asymptotic upper bound of an algorithm’s time or memory requirements as the input size approaches infinity.",
+        "domains": [
+          "it/software-engineering/programming-concepts"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Binary search",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "binary-search",
+        "label": "Binary search",
+        "summary": "An efficient search algorithm that finds the position of a target value within a sorted array by repeatedly halving the search interval.",
+        "domains": [
+          "it/software-engineering/programming-concepts"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
     "key": "Bluetooth Low Energy (BLE)",
     "match": "any-case",
     "concepts": [
@@ -938,6 +1029,22 @@
     "autolink": true
   },
   {
+    "key": "Breakpoint",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "breakpoint",
+        "label": "Breakpoint",
+        "qualifier": "(Debugging)",
+        "summary": "An intentional stopping point configured in source code or instruction addresses where a debugger suspends execution to allow state inspection.",
+        "domains": [
+          "it/software-engineering/practices"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
     "key": "Budget",
     "match": "any-case",
     "concepts": [
@@ -1072,6 +1179,22 @@
         "summary": "A marketing prompt, button, or statement designed to encourage immediate user response and guide prospects toward a desired action.",
         "domains": [
           "media/digital-marketing/paid-ads"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Callback",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "callback",
+        "label": "Callback",
+        "qualifier": "(Programming)",
+        "summary": "A subroutine delivered as a parameter to another procedure to be called back upon the occurrence of a predefined trigger.",
+        "domains": [
+          "it/software-engineering/programming-concepts"
         ]
       }
     ],
@@ -1321,6 +1444,38 @@
     "autolink": true
   },
   {
+    "key": "Class",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "class-oop",
+        "label": "Class",
+        "qualifier": "(Programming)",
+        "summary": "An extensible code template that defines the state properties and callable behaviors for constructing objects.",
+        "domains": [
+          "it/software-engineering/programming-concepts"
+        ]
+      }
+    ],
+    "autolink": false
+  },
+  {
+    "key": "Closure",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "closure",
+        "label": "Closure",
+        "qualifier": "(Programming)",
+        "summary": "A function packaged with references to its surrounding lexical scope, enabling it to access enclosing variables even after the outer function finishes executing.",
+        "domains": [
+          "it/software-engineering/programming-concepts"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
     "key": "Constrained Application Protocol (CoAP)",
     "match": "any-case",
     "concepts": [
@@ -1411,6 +1566,21 @@
     "autolink": true
   },
   {
+    "key": "Compiler",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "compiler",
+        "label": "Compiler",
+        "summary": "A computer program that translates software source code written in a high-level programming language into machine code or an intermediate representation prior to execution.",
+        "domains": [
+          "it/software-engineering/programming-concepts"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
     "key": "Compound Interest",
     "match": "any-case",
     "concepts": [
@@ -1437,6 +1607,21 @@
         "domains": [
           "finance/personal-finance/saving",
           "finance/investing/portfolio-risk"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Concurrency",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "concurrency",
+        "label": "Concurrency",
+        "summary": "The composition and coordination of multiple computational tasks executing over overlapping time intervals.",
+        "domains": [
+          "it/software-engineering/programming-concepts"
         ]
       }
     ],
@@ -2188,6 +2373,21 @@
     "autolink": true
   },
   {
+    "key": "Data structure",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "data-structure",
+        "label": "Data structure",
+        "summary": "A specialized format for organizing, processing, retrieving, and storing data efficiently within computer systems.",
+        "domains": [
+          "it/software-engineering/programming-concepts"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
     "key": "Data warehouse",
     "match": "any-case",
     "concepts": [
@@ -2512,6 +2712,21 @@
         "summary": "A financial leverage metric calculated by dividing an entity’s total debt obligations by its shareholders’ equity.",
         "domains": [
           "finance/corporate-finance/capital-structure"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Debugging",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "debugging",
+        "label": "Debugging",
+        "summary": "The systematic engineering process of detecting, isolating, and rectifying software defects or anomalies.",
+        "domains": [
+          "it/software-engineering/practices"
         ]
       }
     ],
@@ -3414,6 +3629,22 @@
     "autolink": true
   },
   {
+    "key": "Exception",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "exception-handling",
+        "label": "Exception",
+        "qualifier": "(Programming)",
+        "summary": "An abnormal condition or error event encountered during execution that disrupts normal instruction flow and triggers specialized handling logic.",
+        "domains": [
+          "it/software-engineering/programming-concepts"
+        ]
+      }
+    ],
+    "autolink": false
+  },
+  {
     "key": "Exchange rate",
     "match": "any-case",
     "concepts": [
@@ -3654,6 +3885,52 @@
     "autolink": true
   },
   {
+    "key": "Function",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "function-programming",
+        "label": "Function",
+        "qualifier": "(Programming)",
+        "summary": "A self-contained block of instructions that accepts parameters, executes a computational routine, and optionally returns a result.",
+        "domains": [
+          "it/software-engineering/programming-concepts"
+        ]
+      }
+    ],
+    "autolink": false
+  },
+  {
+    "key": "Functional programming",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "functional-programming",
+        "label": "Functional programming",
+        "summary": "A declarative programming paradigm that treats computation as the evaluation of pure mathematical functions while avoiding mutable state.",
+        "domains": [
+          "it/software-engineering/programming-concepts"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Garbage collection",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "garbage-collection",
+        "label": "Garbage collection",
+        "summary": "An automatic memory management mechanism in a runtime environment that detects and reclaims heap memory occupied by unreachable objects.",
+        "domains": [
+          "it/software-engineering/programming-concepts"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
     "key": "Gross Domestic Product (GDP)",
     "match": "any-case",
     "concepts": [
@@ -3693,6 +3970,22 @@
         "summary": "The total monetary or market value of all final goods and services produced within a country’s domestic borders over a specific timeframe.",
         "domains": [
           "finance/economics/inflation"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Generics",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "generics",
+        "label": "Generics",
+        "qualifier": "(Programming)",
+        "summary": "A language feature that allows algorithms and data structures to be defined with placeholder types, deferred until instantiation or invocation.",
+        "domains": [
+          "it/software-engineering/programming-concepts"
         ]
       }
     ],
@@ -3866,6 +4159,36 @@
         "summary": "Output from a generative model that sounds plausible but is false or unsupported, presented as if it were fact.",
         "domains": [
           "it/ai-ml/llm-agents"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Hash table",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "hash-table",
+        "label": "Hash table",
+        "summary": "A data structure that implements an associative array abstract data type, mapping keys to values using a hashing function.",
+        "domains": [
+          "it/software-engineering/programming-concepts"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Hash map",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "hash-table",
+        "label": "Hash table",
+        "summary": "A data structure that implements an associative array abstract data type, mapping keys to values using a hashing function.",
+        "domains": [
+          "it/software-engineering/programming-concepts"
         ]
       }
     ],
@@ -4094,6 +4417,21 @@
         "summary": "A computer vision task in which an algorithm analyzes an entire image and assigns it one or more discrete categorical labels from a predefined taxonomy.",
         "domains": [
           "it/ai-ml/computer-vision"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Immutability",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "immutability",
+        "label": "Immutability",
+        "summary": "The property of an object or data structure that prevents its state from being altered after it has been created.",
+        "domains": [
+          "it/software-engineering/programming-concepts"
         ]
       }
     ],
@@ -4479,6 +4817,22 @@
         "domains": [
           "finance/economics/interest-rates-monetary-policy",
           "finance/banking/deposits"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Interpreter",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "interpreter",
+        "label": "Interpreter",
+        "qualifier": "(Programming)",
+        "summary": "A computer program that directly executes instructions written in a programming or scripting language without requiring prior compilation into machine code.",
+        "domains": [
+          "it/software-engineering/programming-concepts"
         ]
       }
     ],
@@ -5493,6 +5847,21 @@
     "autolink": true
   },
   {
+    "key": "Memory leak",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "memory-leak",
+        "label": "Memory leak",
+        "summary": "A resource defect occurring when a program fails to release allocated memory that is no longer required, degrading system performance over time.",
+        "domains": [
+          "it/software-engineering/programming-concepts"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
     "key": "Merge conflict",
     "match": "any-case",
     "concepts": [
@@ -6157,6 +6526,36 @@
     "autolink": true
   },
   {
+    "key": "Null reference",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "null-reference",
+        "label": "Null reference",
+        "summary": "A pointer or reference value that signifies the absence of an object or points to an invalid address in memory.",
+        "domains": [
+          "it/software-engineering/programming-concepts"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Null pointer",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "null-reference",
+        "label": "Null reference",
+        "summary": "A pointer or reference value that signifies the absence of an object or points to an invalid address in memory.",
+        "domains": [
+          "it/software-engineering/programming-concepts"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
     "key": "OAuth",
     "match": "any-case",
     "concepts": [
@@ -6211,6 +6610,36 @@
         "summary": "A computer vision technique that simultaneously identifies the semantic class and spatial coordinates of multiple individual objects within an image.",
         "domains": [
           "it/ai-ml/computer-vision"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Object-oriented programming (OOP)",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "object-oriented-programming",
+        "label": "Object-oriented programming (OOP)",
+        "summary": "A paradigm centered on modeling software as collections of cooperating objects that encapsulate state and behavior.",
+        "domains": [
+          "it/software-engineering/programming-concepts"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "OOP",
+    "match": "exact-case",
+    "concepts": [
+      {
+        "id": "object-oriented-programming",
+        "label": "Object-oriented programming (OOP)",
+        "summary": "A paradigm centered on modeling software as collections of cooperating objects that encapsulate state and behavior.",
+        "domains": [
+          "it/software-engineering/programming-concepts"
         ]
       }
     ],
@@ -6442,6 +6871,22 @@
     "autolink": true
   },
   {
+    "key": "Process",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "os-process",
+        "label": "Process",
+        "qualifier": "(Operating system)",
+        "summary": "An executing instance of a computer program allocated its own isolated memory address space and operating system resources.",
+        "domains": [
+          "it/software-engineering/programming-concepts"
+        ]
+      }
+    ],
+    "autolink": false
+  },
+  {
     "key": "Over-the-air update (OTA)",
     "match": "any-case",
     "concepts": [
@@ -6571,6 +7016,22 @@
         "summary": "A design technique that breaks large data sets into discrete subsets or pages to manage bandwidth and system performance.",
         "domains": [
           "it/web/api"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Parallelism",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "parallelism",
+        "label": "Parallelism",
+        "qualifier": "(Computing)",
+        "summary": "The simultaneous physical execution of multiple computations at the exact same instant across distinct hardware processing units.",
+        "domains": [
+          "it/software-engineering/programming-concepts"
         ]
       }
     ],
@@ -7308,6 +7769,22 @@
     "autolink": true
   },
   {
+    "key": "Promise",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "promise",
+        "label": "Promise",
+        "qualifier": "(Programming)",
+        "summary": "A stateful container representing a deferred computational outcome that will eventually yield a value or encounter failure.",
+        "domains": [
+          "it/software-engineering/programming-concepts"
+        ]
+      }
+    ],
+    "autolink": false
+  },
+  {
     "key": "Prompt",
     "match": "any-case",
     "concepts": [
@@ -7392,6 +7869,22 @@
         "summary": "A mechanism in distributed version control platforms that allows a developer to propose changes from a feature branch and request peer review before merging.",
         "domains": [
           "it/software-engineering/version-control"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Python",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "python",
+        "label": "Python",
+        "qualifier": "(Programming language)",
+        "summary": "A high-level, general-purpose programming language characterized by readable syntax, dynamic typing, and comprehensive standard libraries.",
+        "domains": [
+          "it/software-engineering/programming-concepts"
         ]
       }
     ],
@@ -7624,6 +8117,21 @@
     "autolink": true
   },
   {
+    "key": "Recursion",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "recursion",
+        "label": "Recursion",
+        "summary": "A computational technique where a function solves a problem by invoking smaller instances of itself until reaching a terminating base condition.",
+        "domains": [
+          "it/software-engineering/programming-concepts"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
     "key": "Refactoring",
     "match": "any-case",
     "concepts": [
@@ -7648,6 +8156,36 @@
         "summary": "The practice of re-executing test suites against an updated application to ensure that recent code modifications or bug fixes have not disrupted previously working functionality.",
         "domains": [
           "it/software-engineering/testing"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Regular expression (regex)",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "regular-expression",
+        "label": "Regular expression (regex)",
+        "summary": "A sequence of characters defining a search pattern used by string-searching algorithms for matching, validation, and text transformation.",
+        "domains": [
+          "it/software-engineering/programming-concepts"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Regex",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "regular-expression",
+        "label": "Regular expression (regex)",
+        "summary": "A sequence of characters defining a search pattern used by string-searching algorithms for matching, validation, and text transformation.",
+        "domains": [
+          "it/software-engineering/programming-concepts"
         ]
       }
     ],
@@ -8820,6 +9358,37 @@
     "autolink": true
   },
   {
+    "key": "Stack",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "stack-data-structure",
+        "label": "Stack",
+        "qualifier": "(Data structure)",
+        "summary": "A linear collection following the Last-In, First-Out (LIFO) access discipline, restricting insertions and deletions to a single endpoint.",
+        "domains": [
+          "it/software-engineering/programming-concepts"
+        ]
+      }
+    ],
+    "autolink": false
+  },
+  {
+    "key": "Stack trace",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "stack-trace",
+        "label": "Stack trace",
+        "summary": "A diagnostic report detailing the active call stack frames, function names, and file line numbers at a specific moment during execution.",
+        "domains": [
+          "it/software-engineering/programming-concepts"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
     "key": "Staging environment",
     "match": "any-case",
     "concepts": [
@@ -9288,6 +9857,22 @@
       }
     ],
     "autolink": true
+  },
+  {
+    "key": "Thread",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "thread-programming",
+        "label": "Thread",
+        "qualifier": "(Programming)",
+        "summary": "The smallest unit of execution within an operating system process, sharing its parent memory space and resources with other threads.",
+        "domains": [
+          "it/software-engineering/programming-concepts"
+        ]
+      }
+    ],
+    "autolink": false
   },
   {
     "key": "Throughput",
@@ -9768,6 +10353,22 @@
       }
     ],
     "autolink": true
+  },
+  {
+    "key": "Variable",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "variable",
+        "label": "Variable",
+        "qualifier": "(Programming)",
+        "summary": "A named storage location in memory paired with an identifier that holds data a program can manipulate.",
+        "domains": [
+          "it/software-engineering/programming-concepts"
+        ]
+      }
+    ],
+    "autolink": false
   },
   {
     "key": "Value-Added Tax (VAT)",

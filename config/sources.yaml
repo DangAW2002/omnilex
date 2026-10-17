@@ -1284,3 +1284,28 @@ cdc:
   reuse: paraphrase-only
   domains: [media/pr-communications]
   verified_license_at: "2026-10-17"
+
+# wave3 prog
+nist-dads:
+  title: NIST Dictionary of Algorithms and Data Structures
+  publisher: National Institute of Standards and Technology
+  url: https://xlinux.nist.gov/dads/
+  type: glossary
+  tier: A
+  languages: [en]
+  license: public-domain-us-gov
+  reuse: paraphrase-only
+  domains: [it/software-engineering]
+  verified_license_at: "2026-10-17"
+
+python-docs:
+  title: Python 3 Documentation
+  publisher: Python Software Foundation
+  url: https://docs.python.org/3/
+  type: docs
+  tier: A
+  languages: [en]
+  license: Python-2.0
+  reuse: paraphrase-only
+  domains: [it/software-engineering]
+  verified_license_at: "2026-10-17"

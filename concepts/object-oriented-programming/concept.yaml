@@ -3,10 +3,22 @@ domains:
   - it/software-engineering/programming-concepts
 level: 1
 relations:
-  prerequisites: []
-  confusable: []
-  related: []
+  prerequisites:
+    - "class-oop"
+  confusable:
+    - "functional-programming"
+  related:
+    - "immutability"
 status: draft
 provenance:
   drafted_by: ai
-sources: []
+sources:
+  - ref: microsoft-learn
+    locator: https://learn.microsoft.com/en-us/dotnet/csharp/fundamentals/tutorials/oop
+    title: "Object-Oriented Programming - C# | Microsoft Learn"
+    language: en
+    accessed: '2026-10-17'
+    retrieved_by: ai
+    supports:
+      - definition
+      - summary

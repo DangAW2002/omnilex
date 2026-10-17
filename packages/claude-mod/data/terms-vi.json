@@ -264,6 +264,21 @@
     "autolink": true
   },
   {
+    "key": "Thuật toán",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "algorithm",
+        "label": "Thuật toán",
+        "summary": "Dãy hữu hạn các chỉ dẫn rõ ràng, có thứ tự được thiết kế nhằm thực hiện một phép tính hoặc giải quyết một bài toán cụ thể.",
+        "domains": [
+          "it/software-engineering/programming-concepts"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
     "key": "Nguồn tin ẩn danh",
     "match": "any-case",
     "concepts": [
@@ -405,6 +420,38 @@
     "autolink": true
   },
   {
+    "key": "Array",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "array",
+        "label": "Array",
+        "qualifier": "(Lập trình)",
+        "summary": "Cấu trúc dữ liệu tuyến tính lưu trữ tập hợp các phần tử tại các ô nhớ liên tiếp, được định danh thông qua chỉ số vị trí.",
+        "domains": [
+          "it/software-engineering/programming-concepts"
+        ]
+      }
+    ],
+    "autolink": false
+  },
+  {
+    "key": "Mảng",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "array",
+        "label": "Array",
+        "qualifier": "(Lập trình)",
+        "summary": "Cấu trúc dữ liệu tuyến tính lưu trữ tập hợp các phần tử tại các ô nhớ liên tiếp, được định danh thông qua chỉ số vị trí.",
+        "domains": [
+          "it/software-engineering/programming-concepts"
+        ]
+      }
+    ],
+    "autolink": false
+  },
+  {
     "key": "Tỷ lệ khung hình",
     "match": "any-case",
     "concepts": [
@@ -476,6 +523,21 @@
         "summary": "Nguồn lực do doanh nghiệp kiểm soát và có thể thu được lợi ích kinh tế trong tương lai từ các sự kiện đã qua.",
         "domains": [
           "finance/accounting/bookkeeping"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Async/await",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "async-await",
+        "label": "Async/await",
+        "summary": "Cú pháp mở rộng giúp cấu trúc các tác vụ bất đồng bộ dựa trên promise theo phong cách tuần tự, nâng cao tính dễ đọc của mã nguồn.",
+        "domains": [
+          "it/software-engineering/programming-concepts"
         ]
       }
     ],
@@ -876,6 +938,66 @@
     "autolink": true
   },
   {
+    "key": "Big O notation",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "big-o-notation",
+        "label": "Big O notation",
+        "summary": "Ký hiệu toán học dùng để mô tả tiệm cận trên về thời gian thực thi hoặc bộ nhớ tiêu tốn của thuật toán khi kích thước đầu vào tiến dần tới vô cùng.",
+        "domains": [
+          "it/software-engineering/programming-concepts"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Ký hiệu Big O",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "big-o-notation",
+        "label": "Big O notation",
+        "summary": "Ký hiệu toán học dùng để mô tả tiệm cận trên về thời gian thực thi hoặc bộ nhớ tiêu tốn của thuật toán khi kích thước đầu vào tiến dần tới vô cùng.",
+        "domains": [
+          "it/software-engineering/programming-concepts"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Độ phức tạp Big O",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "big-o-notation",
+        "label": "Big O notation",
+        "summary": "Ký hiệu toán học dùng để mô tả tiệm cận trên về thời gian thực thi hoặc bộ nhớ tiêu tốn của thuật toán khi kích thước đầu vào tiến dần tới vô cùng.",
+        "domains": [
+          "it/software-engineering/programming-concepts"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Tìm kiếm nhị phân",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "binary-search",
+        "label": "Tìm kiếm nhị phân",
+        "summary": "Thuật toán tìm kiếm hiệu quả xác định vị trí của giá trị đích trong mảng đã sắp xếp bằng cách liên tục chia đôi phạm vi tìm kiếm.",
+        "domains": [
+          "it/software-engineering/programming-concepts"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
     "key": "Bluetooth Low Energy (BLE)",
     "match": "any-case",
     "concepts": [
@@ -1257,6 +1379,38 @@
     "autolink": true
   },
   {
+    "key": "Breakpoint",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "breakpoint",
+        "label": "Breakpoint",
+        "qualifier": "(Gỡ lỗi)",
+        "summary": "Vị trí dừng có chủ đích được thiết lập trong mã nguồn hoặc địa chỉ lệnh nơi công cụ gỡ lỗi tạm hoãn thực thi để kiểm tra trạng thái bộ nhớ.",
+        "domains": [
+          "it/software-engineering/practices"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Điểm dừng",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "breakpoint",
+        "label": "Breakpoint",
+        "qualifier": "(Gỡ lỗi)",
+        "summary": "Vị trí dừng có chủ đích được thiết lập trong mã nguồn hoặc địa chỉ lệnh nơi công cụ gỡ lỗi tạm hoãn thực thi để kiểm tra trạng thái bộ nhớ.",
+        "domains": [
+          "it/software-engineering/practices"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
     "key": "Ngân sách",
     "match": "any-case",
     "concepts": [
@@ -1481,6 +1635,38 @@
         "summary": "Chỉ dẫn, nút bấm hoặc thông điệp tiếp thị được thiết kế để thôi thúc người dùng phản hồi ngay lập tức và thực hiện một hành động cụ thể.",
         "domains": [
           "media/digital-marketing/paid-ads"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Callback",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "callback",
+        "label": "Callback",
+        "qualifier": "(Lập trình)",
+        "summary": "Hàm được truyền dưới dạng đối số cho một thủ tục khác để được gọi lại khi một sự kiện hoặc tác vụ nhất định hoàn thành.",
+        "domains": [
+          "it/software-engineering/programming-concepts"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Hàm gọi lại",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "callback",
+        "label": "Callback",
+        "qualifier": "(Lập trình)",
+        "summary": "Hàm được truyền dưới dạng đối số cho một thủ tục khác để được gọi lại khi một sự kiện hoặc tác vụ nhất định hoàn thành.",
+        "domains": [
+          "it/software-engineering/programming-concepts"
         ]
       }
     ],
@@ -1775,6 +1961,70 @@
     "autolink": true
   },
   {
+    "key": "Class",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "class-oop",
+        "label": "Class",
+        "qualifier": "(Lập trình)",
+        "summary": "Khuôn mẫu mã nguồn có thể mở rộng, định nghĩa các thuộc tính trạng thái và phương thức hành vi để tạo ra đối tượng.",
+        "domains": [
+          "it/software-engineering/programming-concepts"
+        ]
+      }
+    ],
+    "autolink": false
+  },
+  {
+    "key": "Lớp",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "class-oop",
+        "label": "Class",
+        "qualifier": "(Lập trình)",
+        "summary": "Khuôn mẫu mã nguồn có thể mở rộng, định nghĩa các thuộc tính trạng thái và phương thức hành vi để tạo ra đối tượng.",
+        "domains": [
+          "it/software-engineering/programming-concepts"
+        ]
+      }
+    ],
+    "autolink": false
+  },
+  {
+    "key": "Closure",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "closure",
+        "label": "Closure",
+        "qualifier": "(Lập trình)",
+        "summary": "Hàm được đóng gói cùng môi trường từ vựng xung quanh, cho phép nó truy cập các biến của phạm vi bao bọc bên ngoài ngay cả khi hàm ngoài đã kết thúc.",
+        "domains": [
+          "it/software-engineering/programming-concepts"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Bao đóng",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "closure",
+        "label": "Closure",
+        "qualifier": "(Lập trình)",
+        "summary": "Hàm được đóng gói cùng môi trường từ vựng xung quanh, cho phép nó truy cập các biến của phạm vi bao bọc bên ngoài ngay cả khi hàm ngoài đã kết thúc.",
+        "domains": [
+          "it/software-engineering/programming-concepts"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
     "key": "Constrained Application Protocol (CoAP)",
     "match": "any-case",
     "concepts": [
@@ -1880,6 +2130,21 @@
     "autolink": true
   },
   {
+    "key": "Trình biên dịch",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "compiler",
+        "label": "Trình biên dịch",
+        "summary": "Chương trình máy tính chuyển đổi toàn bộ mã nguồn viết bằng ngôn ngữ bậc cao sang mã máy hoặc dạng trung gian trước khi thực thi.",
+        "domains": [
+          "it/software-engineering/programming-concepts"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
     "key": "Lãi kép",
     "match": "any-case",
     "concepts": [
@@ -1906,6 +2171,51 @@
         "domains": [
           "finance/personal-finance/saving",
           "finance/investing/portfolio-risk"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Concurrency",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "concurrency",
+        "label": "Concurrency",
+        "summary": "Khả năng cấu trúc và điều phối nhiều tác vụ tính toán độc lập cùng tiến triển trong các khoảng thời gian đan xen nhau.",
+        "domains": [
+          "it/software-engineering/programming-concepts"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Xử lý đồng thời",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "concurrency",
+        "label": "Concurrency",
+        "summary": "Khả năng cấu trúc và điều phối nhiều tác vụ tính toán độc lập cùng tiến triển trong các khoảng thời gian đan xen nhau.",
+        "domains": [
+          "it/software-engineering/programming-concepts"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Đồng thời",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "concurrency",
+        "label": "Concurrency",
+        "summary": "Khả năng cấu trúc và điều phối nhiều tác vụ tính toán độc lập cùng tiến triển trong các khoảng thời gian đan xen nhau.",
+        "domains": [
+          "it/software-engineering/programming-concepts"
         ]
       }
     ],
@@ -2809,6 +3119,21 @@
     "autolink": true
   },
   {
+    "key": "Cấu trúc dữ liệu",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "data-structure",
+        "label": "Cấu trúc dữ liệu",
+        "summary": "Định dạng chuyên biệt dùng để tổ chức, xử lý, truy xuất và lưu trữ dữ liệu hiệu quả trong hệ thống máy tính.",
+        "domains": [
+          "it/software-engineering/programming-concepts"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
     "key": "Kho dữ liệu",
     "match": "any-case",
     "concepts": [
@@ -3133,6 +3458,36 @@
         "summary": "Hệ số đòn bẩy tài chính đo lường tỷ lệ giữa tổng số nợ phải trả so với tổng vốn chủ sở hữu của doanh nghiệp.",
         "domains": [
           "finance/corporate-finance/capital-structure"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Debugging",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "debugging",
+        "label": "Debugging",
+        "summary": "Quy trình kỹ thuật bài bản nhằm phát hiện, cô lập và khắc phục các lỗi logic hoặc sự cố bất thường trong phần mềm.",
+        "domains": [
+          "it/software-engineering/practices"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Gỡ lỗi",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "debugging",
+        "label": "Debugging",
+        "summary": "Quy trình kỹ thuật bài bản nhằm phát hiện, cô lập và khắc phục các lỗi logic hoặc sự cố bất thường trong phần mềm.",
+        "domains": [
+          "it/software-engineering/practices"
         ]
       }
     ],
@@ -4355,6 +4710,38 @@
     "autolink": true
   },
   {
+    "key": "Exception",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "exception-handling",
+        "label": "Exception",
+        "qualifier": "(Lập trình)",
+        "summary": "Tình trạng bất thường hoặc lỗi phát sinh trong thời gian chạy làm gián đoạn luồng lệnh thông thường và kích hoạt logic xử lý phục hồi chuyên biệt.",
+        "domains": [
+          "it/software-engineering/programming-concepts"
+        ]
+      }
+    ],
+    "autolink": false
+  },
+  {
+    "key": "Ngoại lệ",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "exception-handling",
+        "label": "Exception",
+        "qualifier": "(Lập trình)",
+        "summary": "Tình trạng bất thường hoặc lỗi phát sinh trong thời gian chạy làm gián đoạn luồng lệnh thông thường và kích hoạt logic xử lý phục hồi chuyên biệt.",
+        "domains": [
+          "it/software-engineering/programming-concepts"
+        ]
+      }
+    ],
+    "autolink": false
+  },
+  {
     "key": "Tỷ giá hối đoái",
     "match": "any-case",
     "concepts": [
@@ -4670,6 +5057,83 @@
     "autolink": true
   },
   {
+    "key": "Function",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "function-programming",
+        "label": "Function",
+        "qualifier": "(Lập trình)",
+        "summary": "Khối câu lệnh độc lập tiếp nhận tham số, thực thi chuỗi thao tác xử lý và có thể trả về một kết quả đầu ra.",
+        "domains": [
+          "it/software-engineering/programming-concepts"
+        ]
+      }
+    ],
+    "autolink": false
+  },
+  {
+    "key": "Hàm",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "function-programming",
+        "label": "Function",
+        "qualifier": "(Lập trình)",
+        "summary": "Khối câu lệnh độc lập tiếp nhận tham số, thực thi chuỗi thao tác xử lý và có thể trả về một kết quả đầu ra.",
+        "domains": [
+          "it/software-engineering/programming-concepts"
+        ]
+      }
+    ],
+    "autolink": false
+  },
+  {
+    "key": "Lập trình hàm",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "functional-programming",
+        "label": "Lập trình hàm",
+        "summary": "Mô hình lập trình khai báo xem việc tính toán là sự ước lượng các hàm toán học thuần khiết và tránh làm thay đổi trạng thái dữ liệu.",
+        "domains": [
+          "it/software-engineering/programming-concepts"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Lập trình chức năng",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "functional-programming",
+        "label": "Lập trình hàm",
+        "summary": "Mô hình lập trình khai báo xem việc tính toán là sự ước lượng các hàm toán học thuần khiết và tránh làm thay đổi trạng thái dữ liệu.",
+        "domains": [
+          "it/software-engineering/programming-concepts"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Thu gom rác",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "garbage-collection",
+        "label": "Thu gom rác",
+        "summary": "Cơ chế quản lý bộ nhớ tự động trong môi trường thực thi giúp phát hiện và thu hồi các vùng nhớ heap không còn được chương trình tham chiếu tới.",
+        "domains": [
+          "it/software-engineering/programming-concepts"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
     "key": "Tổng sản phẩm nội địa (GDP)",
     "match": "any-case",
     "concepts": [
@@ -4709,6 +5173,22 @@
         "summary": "Giá trị thị trường của tất cả hàng hóa và dịch vụ cuối cùng được sản xuất ra trong phạm vi một quốc gia trong một thời kỳ nhất định.",
         "domains": [
           "finance/economics/inflation"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Generics",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "generics",
+        "label": "Generics",
+        "qualifier": "(Lập trình)",
+        "summary": "Tính năng ngôn ngữ cho phép định nghĩa các thuật toán và cấu trúc dữ liệu với kiểu giữ chỗ, chỉ xác định kiểu cụ thể khi sử dụng.",
+        "domains": [
+          "it/software-engineering/programming-concepts"
         ]
       }
     ],
@@ -4960,6 +5440,51 @@
         "summary": "Nội dung do mô hình tạo sinh viết ra nghe có vẻ hợp lý nhưng sai hoặc không có căn cứ, lại được trình bày như sự thật.",
         "domains": [
           "it/ai-ml/llm-agents"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Bảng băm",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "hash-table",
+        "label": "Bảng băm",
+        "summary": "Cấu trúc dữ liệu ánh xạ các khóa thành giá trị bằng thuật toán băm, cho phép tìm kiếm và cập nhật dữ liệu với tốc độ trung bình hằng số.",
+        "domains": [
+          "it/software-engineering/programming-concepts"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Hash map",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "hash-table",
+        "label": "Bảng băm",
+        "summary": "Cấu trúc dữ liệu ánh xạ các khóa thành giá trị bằng thuật toán băm, cho phép tìm kiếm và cập nhật dữ liệu với tốc độ trung bình hằng số.",
+        "domains": [
+          "it/software-engineering/programming-concepts"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Hash table",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "hash-table",
+        "label": "Bảng băm",
+        "summary": "Cấu trúc dữ liệu ánh xạ các khóa thành giá trị bằng thuật toán băm, cho phép tìm kiếm và cập nhật dữ liệu với tốc độ trung bình hằng số.",
+        "domains": [
+          "it/software-engineering/programming-concepts"
         ]
       }
     ],
@@ -5353,6 +5878,36 @@
         "summary": "Tác vụ thị giác máy tính trong đó thuật toán phân tích toàn bộ bức ảnh để gán cho nó một hoặc nhiều nhãn danh mục từ một tập phân loại xác định.",
         "domains": [
           "it/ai-ml/computer-vision"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Immutability",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "immutability",
+        "label": "Immutability",
+        "summary": "Đặc tính của đối tượng hoặc cấu trúc dữ liệu không cho phép trạng thái bên trong bị biến đổi sau khi đã được tạo ra trong bộ nhớ.",
+        "domains": [
+          "it/software-engineering/programming-concepts"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Tính bất biến",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "immutability",
+        "label": "Immutability",
+        "summary": "Đặc tính của đối tượng hoặc cấu trúc dữ liệu không cho phép trạng thái bên trong bị biến đổi sau khi đã được tạo ra trong bộ nhớ.",
+        "domains": [
+          "it/software-engineering/programming-concepts"
         ]
       }
     ],
@@ -5845,6 +6400,22 @@
         "domains": [
           "finance/economics/interest-rates-monetary-policy",
           "finance/banking/deposits"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Trình thông dịch",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "interpreter",
+        "label": "Trình thông dịch",
+        "qualifier": "(Lập trình)",
+        "summary": "Chương trình máy tính trực tiếp thực thi các câu lệnh được viết bằng ngôn ngữ lập trình hoặc kịch bản mà không cần biên dịch trước thành mã máy.",
+        "domains": [
+          "it/software-engineering/programming-concepts"
         ]
       }
     ],
@@ -6964,6 +7535,21 @@
     "autolink": true
   },
   {
+    "key": "Rò rỉ bộ nhớ",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "memory-leak",
+        "label": "Rò rỉ bộ nhớ",
+        "summary": "Lỗi phần mềm xảy ra khi chương trình không giải phóng các vùng nhớ đã cấp phát nhưng không còn dùng tới, làm suy giảm hiệu năng hệ thống.",
+        "domains": [
+          "it/software-engineering/programming-concepts"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
     "key": "Merge conflict",
     "match": "any-case",
     "concepts": [
@@ -7874,6 +8460,66 @@
     "autolink": true
   },
   {
+    "key": "Null reference",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "null-reference",
+        "label": "Null reference",
+        "summary": "Giá trị tham chiếu hoặc con trỏ biểu thị sự vắng mặt của đối tượng hoặc không trỏ tới bất kỳ địa chỉ hợp lệ nào trong bộ nhớ.",
+        "domains": [
+          "it/software-engineering/programming-concepts"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Null pointer",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "null-reference",
+        "label": "Null reference",
+        "summary": "Giá trị tham chiếu hoặc con trỏ biểu thị sự vắng mặt của đối tượng hoặc không trỏ tới bất kỳ địa chỉ hợp lệ nào trong bộ nhớ.",
+        "domains": [
+          "it/software-engineering/programming-concepts"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Tham chiếu null",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "null-reference",
+        "label": "Null reference",
+        "summary": "Giá trị tham chiếu hoặc con trỏ biểu thị sự vắng mặt của đối tượng hoặc không trỏ tới bất kỳ địa chỉ hợp lệ nào trong bộ nhớ.",
+        "domains": [
+          "it/software-engineering/programming-concepts"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Con trỏ null",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "null-reference",
+        "label": "Null reference",
+        "summary": "Giá trị tham chiếu hoặc con trỏ biểu thị sự vắng mặt của đối tượng hoặc không trỏ tới bất kỳ địa chỉ hợp lệ nào trong bộ nhớ.",
+        "domains": [
+          "it/software-engineering/programming-concepts"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
     "key": "OAuth",
     "match": "any-case",
     "concepts": [
@@ -7943,6 +8589,51 @@
         "summary": "Kỹ thuật thị giác máy tính vừa nhận diện nhãn danh mục vừa xác định tọa độ khung bao của từng đối tượng riêng biệt xuất hiện trong một bức ảnh.",
         "domains": [
           "it/ai-ml/computer-vision"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Lập trình hướng đối tượng (OOP)",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "object-oriented-programming",
+        "label": "Lập trình hướng đối tượng (OOP)",
+        "summary": "Mô hình lập trình tổ chức hệ thống thành các đối tượng độc lập có khả năng đóng gói trạng thái và hành vi để phối hợp xử lý.",
+        "domains": [
+          "it/software-engineering/programming-concepts"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "OOP",
+    "match": "exact-case",
+    "concepts": [
+      {
+        "id": "object-oriented-programming",
+        "label": "Lập trình hướng đối tượng (OOP)",
+        "summary": "Mô hình lập trình tổ chức hệ thống thành các đối tượng độc lập có khả năng đóng gói trạng thái và hành vi để phối hợp xử lý.",
+        "domains": [
+          "it/software-engineering/programming-concepts"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Lập trình hướng đối tượng",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "object-oriented-programming",
+        "label": "Lập trình hướng đối tượng (OOP)",
+        "summary": "Mô hình lập trình tổ chức hệ thống thành các đối tượng độc lập có khả năng đóng gói trạng thái và hành vi để phối hợp xử lý.",
+        "domains": [
+          "it/software-engineering/programming-concepts"
         ]
       }
     ],
@@ -8234,6 +8925,38 @@
     "autolink": true
   },
   {
+    "key": "Process",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "os-process",
+        "label": "Process",
+        "qualifier": "(Hệ điều hành)",
+        "summary": "Một thực thể thực thi của chương trình máy tính được hệ điều hành cấp phát không gian địa chỉ bộ nhớ độc lập và tài nguyên riêng.",
+        "domains": [
+          "it/software-engineering/programming-concepts"
+        ]
+      }
+    ],
+    "autolink": false
+  },
+  {
+    "key": "Tiến trình",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "os-process",
+        "label": "Process",
+        "qualifier": "(Hệ điều hành)",
+        "summary": "Một thực thể thực thi của chương trình máy tính được hệ điều hành cấp phát không gian địa chỉ bộ nhớ độc lập và tài nguyên riêng.",
+        "domains": [
+          "it/software-engineering/programming-concepts"
+        ]
+      }
+    ],
+    "autolink": false
+  },
+  {
     "key": "Over-the-air update (OTA)",
     "match": "any-case",
     "concepts": [
@@ -8363,6 +9086,54 @@
         "summary": "Phương pháp phân chia các tập dữ liệu lớn thành từng phần hoặc từng trang nhỏ nhằm tối ưu hiệu năng và băng thông truyền tải.",
         "domains": [
           "it/web/api"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Parallelism",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "parallelism",
+        "label": "Parallelism",
+        "qualifier": "(Điện toán)",
+        "summary": "Việc thực thi đồng thời nhiều phép tính tại đúng cùng một thời điểm vật lý trên các đơn vị xử lý phần cứng khác nhau.",
+        "domains": [
+          "it/software-engineering/programming-concepts"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Tính toán song song",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "parallelism",
+        "label": "Parallelism",
+        "qualifier": "(Điện toán)",
+        "summary": "Việc thực thi đồng thời nhiều phép tính tại đúng cùng một thời điểm vật lý trên các đơn vị xử lý phần cứng khác nhau.",
+        "domains": [
+          "it/software-engineering/programming-concepts"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Xử lý song song",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "parallelism",
+        "label": "Parallelism",
+        "qualifier": "(Điện toán)",
+        "summary": "Việc thực thi đồng thời nhiều phép tính tại đúng cùng một thời điểm vật lý trên các đơn vị xử lý phần cứng khác nhau.",
+        "domains": [
+          "it/software-engineering/programming-concepts"
         ]
       }
     ],
@@ -9223,6 +9994,22 @@
     "autolink": true
   },
   {
+    "key": "Promise",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "promise",
+        "label": "Promise",
+        "qualifier": "(Lập trình)",
+        "summary": "Đối tượng đại diện cho kết quả thành công hoặc thất bại trong tương lai của một tác vụ xử lý bất đồng bộ.",
+        "domains": [
+          "it/software-engineering/programming-concepts"
+        ]
+      }
+    ],
+    "autolink": false
+  },
+  {
     "key": "Prompt",
     "match": "any-case",
     "concepts": [
@@ -9322,6 +10109,22 @@
         "summary": "Cơ chế trên các nền tảng quản lý mã nguồn phân tán cho phép lập trình viên thông báo về các thay đổi trên nhánh làm việc và yêu cầu rà soát trước khi gộp vào nhánh đích.",
         "domains": [
           "it/software-engineering/version-control"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Python",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "python",
+        "label": "Python",
+        "qualifier": "(Ngôn ngữ lập trình)",
+        "summary": "Ngôn ngữ lập trình bậc cao, đa năng, nổi bật với cú pháp dễ đọc, hệ thống định kiểu động và thư viện tiêu chuẩn phong phú.",
+        "domains": [
+          "it/software-engineering/programming-concepts"
         ]
       }
     ],
@@ -9584,6 +10387,21 @@
     "autolink": true
   },
   {
+    "key": "Đệ quy",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "recursion",
+        "label": "Đệ quy",
+        "summary": "Kỹ thuật giải quyết bài toán trong đó một hàm tự gọi lại chính nó với các phiên bản thu nhỏ cho đến khi thỏa mãn điều kiện dừng.",
+        "domains": [
+          "it/software-engineering/programming-concepts"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
     "key": "Refactoring",
     "match": "any-case",
     "concepts": [
@@ -9638,6 +10456,51 @@
         "summary": "Quy trình chạy lại các bộ kiểm thử tự động nhằm đảm bảo những thay đổi mã nguồn hoặc bản vá lỗi mới không làm ảnh hưởng đến các chức năng vốn đang hoạt động bình thường.",
         "domains": [
           "it/software-engineering/testing"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Biểu thức chính quy (regex)",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "regular-expression",
+        "label": "Biểu thức chính quy (regex)",
+        "summary": "Chuỗi các ký tự định nghĩa mẫu tìm kiếm được các giải thuật xử lý văn bản sử dụng để so khớp, kiểm thực và biến đổi chuỗi.",
+        "domains": [
+          "it/software-engineering/programming-concepts"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Regex",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "regular-expression",
+        "label": "Biểu thức chính quy (regex)",
+        "summary": "Chuỗi các ký tự định nghĩa mẫu tìm kiếm được các giải thuật xử lý văn bản sử dụng để so khớp, kiểm thực và biến đổi chuỗi.",
+        "domains": [
+          "it/software-engineering/programming-concepts"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Biểu thức chính quy",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "regular-expression",
+        "label": "Biểu thức chính quy (regex)",
+        "summary": "Chuỗi các ký tự định nghĩa mẫu tìm kiếm được các giải thuật xử lý văn bản sử dụng để so khớp, kiểm thực và biến đổi chuỗi.",
+        "domains": [
+          "it/software-engineering/programming-concepts"
         ]
       }
     ],
@@ -11254,6 +12117,83 @@
     "autolink": true
   },
   {
+    "key": "Stack",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "stack-data-structure",
+        "label": "Stack",
+        "qualifier": "(Cấu trúc dữ liệu)",
+        "summary": "Tập hợp dữ liệu tuyến tính tuân thủ nghiêm ngặt nguyên tắc vào sau, ra trước (LIFO), giới hạn thao tác thêm và xóa tại một đầu duy nhất.",
+        "domains": [
+          "it/software-engineering/programming-concepts"
+        ]
+      }
+    ],
+    "autolink": false
+  },
+  {
+    "key": "Ngăn xếp",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "stack-data-structure",
+        "label": "Stack",
+        "qualifier": "(Cấu trúc dữ liệu)",
+        "summary": "Tập hợp dữ liệu tuyến tính tuân thủ nghiêm ngặt nguyên tắc vào sau, ra trước (LIFO), giới hạn thao tác thêm và xóa tại một đầu duy nhất.",
+        "domains": [
+          "it/software-engineering/programming-concepts"
+        ]
+      }
+    ],
+    "autolink": false
+  },
+  {
+    "key": "Stack trace",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "stack-trace",
+        "label": "Stack trace",
+        "summary": "Bản báo cáo chẩn đoán liệt kê chi tiết các khung ngăn xếp cuộc gọi, tên hàm và số dòng mã nguồn tại một thời điểm thực thi cụ thể.",
+        "domains": [
+          "it/software-engineering/programming-concepts"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Vết ngăn xếp",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "stack-trace",
+        "label": "Stack trace",
+        "summary": "Bản báo cáo chẩn đoán liệt kê chi tiết các khung ngăn xếp cuộc gọi, tên hàm và số dòng mã nguồn tại một thời điểm thực thi cụ thể.",
+        "domains": [
+          "it/software-engineering/programming-concepts"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Dấu vết ngăn xếp",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "stack-trace",
+        "label": "Stack trace",
+        "summary": "Bản báo cáo chẩn đoán liệt kê chi tiết các khung ngăn xếp cuộc gọi, tên hàm và số dòng mã nguồn tại một thời điểm thực thi cụ thể.",
+        "domains": [
+          "it/software-engineering/programming-concepts"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
     "key": "Staging environment",
     "match": "any-case",
     "concepts": [
@@ -11781,6 +12721,54 @@
       }
     ],
     "autolink": true
+  },
+  {
+    "key": "Thread",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "thread-programming",
+        "label": "Thread",
+        "qualifier": "(Lập trình)",
+        "summary": "Đơn vị thực thi nhỏ nhất bên trong một tiến trình hệ điều hành, chia sẻ không gian bộ nhớ và tài nguyên của tiến trình cha với các luồng khác.",
+        "domains": [
+          "it/software-engineering/programming-concepts"
+        ]
+      }
+    ],
+    "autolink": false
+  },
+  {
+    "key": "Luồng",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "thread-programming",
+        "label": "Thread",
+        "qualifier": "(Lập trình)",
+        "summary": "Đơn vị thực thi nhỏ nhất bên trong một tiến trình hệ điều hành, chia sẻ không gian bộ nhớ và tài nguyên của tiến trình cha với các luồng khác.",
+        "domains": [
+          "it/software-engineering/programming-concepts"
+        ]
+      }
+    ],
+    "autolink": false
+  },
+  {
+    "key": "Luồng thực thi",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "thread-programming",
+        "label": "Thread",
+        "qualifier": "(Lập trình)",
+        "summary": "Đơn vị thực thi nhỏ nhất bên trong một tiến trình hệ điều hành, chia sẻ không gian bộ nhớ và tài nguyên của tiến trình cha với các luồng khác.",
+        "domains": [
+          "it/software-engineering/programming-concepts"
+        ]
+      }
+    ],
+    "autolink": false
   },
   {
     "key": "Throughput",
@@ -12351,6 +13339,54 @@
       }
     ],
     "autolink": true
+  },
+  {
+    "key": "Variable",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "variable",
+        "label": "Variable",
+        "qualifier": "(Lập trình)",
+        "summary": "Vùng lưu trữ có định danh trong bộ nhớ dùng để chứa dữ liệu mà chương trình có thể thao tác và cập nhật.",
+        "domains": [
+          "it/software-engineering/programming-concepts"
+        ]
+      }
+    ],
+    "autolink": false
+  },
+  {
+    "key": "Biến",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "variable",
+        "label": "Variable",
+        "qualifier": "(Lập trình)",
+        "summary": "Vùng lưu trữ có định danh trong bộ nhớ dùng để chứa dữ liệu mà chương trình có thể thao tác và cập nhật.",
+        "domains": [
+          "it/software-engineering/programming-concepts"
+        ]
+      }
+    ],
+    "autolink": false
+  },
+  {
+    "key": "Biến số",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "variable",
+        "label": "Variable",
+        "qualifier": "(Lập trình)",
+        "summary": "Vùng lưu trữ có định danh trong bộ nhớ dùng để chứa dữ liệu mà chương trình có thể thao tác và cập nhật.",
+        "domains": [
+          "it/software-engineering/programming-concepts"
+        ]
+      }
+    ],
+    "autolink": false
   },
   {
     "key": "Thuế giá trị gia tăng (VAT)",

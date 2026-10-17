@@ -5,8 +5,21 @@ level: 1
 relations:
   prerequisites: []
   confusable: []
-  related: []
+  related:
+    - "data-structure"
+    - "immutability"
+    - "null-reference"
+    - "function-programming"
 status: draft
 provenance:
   drafted_by: ai
-sources: []
+sources:
+  - ref: mdn
+    locator: https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Scripting/Variables
+    title: "Storing the information you need — Variables - Learn web development | MDN"
+    language: en
+    accessed: '2026-10-17'
+    retrieved_by: ai
+    supports:
+      - definition
+      - summary

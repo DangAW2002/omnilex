@@ -129,6 +129,22 @@
     "status": "draft"
   },
   {
+    "id": "algorithm",
+    "label": "Algorithm",
+    "aliases": [],
+    "loanwords": [],
+    "plain_descriptions": [
+      "unambiguous, step-by-step recipe of instructions designed to solve a specific problem",
+      "computational formula that processes input data and produces a deterministic output"
+    ],
+    "summary": "A well-defined, finite sequence of unambiguous instructions designed to perform a specific computational computation or solve a problem.",
+    "domains": [
+      "it/software-engineering/programming-concepts"
+    ],
+    "level": 1,
+    "status": "draft"
+  },
+  {
     "id": "anonymous-source",
     "label": "Anonymous source",
     "aliases": [
@@ -186,6 +202,23 @@
     "status": "draft"
   },
   {
+    "id": "array",
+    "label": "Array",
+    "qualifier": "(Programming)",
+    "aliases": [],
+    "loanwords": [],
+    "plain_descriptions": [
+      "ordered collection of elements stored at contiguous memory locations accessed by zero-based indices",
+      "basic sequence list where each item is identified by its numerical position"
+    ],
+    "summary": "A linear data structure consisting of a collection of elements identified by index or key, stored in contiguous memory locations.",
+    "domains": [
+      "it/software-engineering/programming-concepts"
+    ],
+    "level": 1,
+    "status": "draft"
+  },
+  {
     "id": "aspect-ratio",
     "label": "Aspect ratio",
     "aliases": [],
@@ -218,6 +251,22 @@
       "finance/accounting/bookkeeping"
     ],
     "level": 1,
+    "status": "draft"
+  },
+  {
+    "id": "async-await",
+    "label": "Async/await",
+    "aliases": [],
+    "loanwords": [],
+    "plain_descriptions": [
+      "syntax that lets developers write asynchronous, non-blocking code that reads like normal sequential instructions",
+      "language keywords used to pause execution until a background operation finishes without freezing the thread"
+    ],
+    "summary": "A syntactic abstraction that allows asynchronous, promise-based operations to be written and structured in a readable sequential style.",
+    "domains": [
+      "it/software-engineering/programming-concepts"
+    ],
+    "level": 2,
     "status": "draft"
   },
   {
@@ -371,6 +420,40 @@
     "status": "draft"
   },
   {
+    "id": "big-o-notation",
+    "label": "Big O notation",
+    "aliases": [
+      "Big O"
+    ],
+    "loanwords": [],
+    "plain_descriptions": [
+      "mathematical shorthand describing how an algorithm’s runtime or memory demand grows as input size gets huge",
+      "metric that classifies algorithm efficiency by focusing on worst-case scaling behavior while ignoring hardware differences"
+    ],
+    "summary": "A mathematical notation used to describe the asymptotic upper bound of an algorithm’s time or memory requirements as the input size approaches infinity.",
+    "domains": [
+      "it/software-engineering/programming-concepts"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
+    "id": "binary-search",
+    "label": "Binary search",
+    "aliases": [],
+    "loanwords": [],
+    "plain_descriptions": [
+      "fast search algorithm that finds an item in a sorted list by repeatedly dividing the search range in half",
+      "lookup technique that compares target values against the middle element of an ordered array"
+    ],
+    "summary": "An efficient search algorithm that finds the position of a target value within a sorted array by repeatedly halving the search interval.",
+    "domains": [
+      "it/software-engineering/programming-concepts"
+    ],
+    "level": 1,
+    "status": "draft"
+  },
+  {
     "id": "ble",
     "label": "Bluetooth Low Energy (BLE)",
     "aliases": [
@@ -518,6 +601,23 @@
     "status": "draft"
   },
   {
+    "id": "breakpoint",
+    "label": "Breakpoint",
+    "qualifier": "(Debugging)",
+    "aliases": [],
+    "loanwords": [],
+    "plain_descriptions": [
+      "intentional pause point placed in code that halts program execution so developers can inspect state",
+      "marker set on a specific line of source code where a debugger suspends the running thread"
+    ],
+    "summary": "An intentional stopping point configured in source code or instruction addresses where a debugger suspends execution to allow state inspection.",
+    "domains": [
+      "it/software-engineering/practices"
+    ],
+    "level": 1,
+    "status": "draft"
+  },
+  {
     "id": "budget",
     "label": "Budget",
     "qualifier": "(Personal finance)",
@@ -606,6 +706,23 @@
       "media/digital-marketing/paid-ads"
     ],
     "level": 1,
+    "status": "draft"
+  },
+  {
+    "id": "callback",
+    "label": "Callback",
+    "qualifier": "(Programming)",
+    "aliases": [],
+    "loanwords": [],
+    "plain_descriptions": [
+      "executable subroutine supplied as an input parameter to be triggered upon task conclusion",
+      "packaged piece of code passed to a recipient procedure to execute when a specific event happens"
+    ],
+    "summary": "A subroutine delivered as a parameter to another procedure to be called back upon the occurrence of a predefined trigger.",
+    "domains": [
+      "it/software-engineering/programming-concepts"
+    ],
+    "level": 2,
     "status": "draft"
   },
   {
@@ -740,6 +857,40 @@
     "status": "draft"
   },
   {
+    "id": "class-oop",
+    "label": "Class",
+    "qualifier": "(Programming)",
+    "aliases": [],
+    "loanwords": [],
+    "plain_descriptions": [
+      "architectural template for manufacturing objects with shared attributes and behaviors",
+      "code blueprint specifying what variables and methods an instantiated entity will possess"
+    ],
+    "summary": "An extensible code template that defines the state properties and callable behaviors for constructing objects.",
+    "domains": [
+      "it/software-engineering/programming-concepts"
+    ],
+    "level": 1,
+    "status": "draft"
+  },
+  {
+    "id": "closure",
+    "label": "Closure",
+    "qualifier": "(Programming)",
+    "aliases": [],
+    "loanwords": [],
+    "plain_descriptions": [
+      "function bundled together with references to its surrounding lexical environment",
+      "inner function that remembers and accesses variables from its enclosing scope even after that parent function has returned"
+    ],
+    "summary": "A function packaged with references to its surrounding lexical scope, enabling it to access enclosing variables even after the outer function finishes executing.",
+    "domains": [
+      "it/software-engineering/programming-concepts"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
     "id": "coap",
     "label": "Constrained Application Protocol (CoAP)",
     "aliases": [
@@ -795,6 +946,22 @@
     "status": "draft"
   },
   {
+    "id": "compiler",
+    "label": "Compiler",
+    "aliases": [],
+    "loanwords": [],
+    "plain_descriptions": [
+      "tool that translates entire source code files into machine code or bytecode before execution",
+      "program that analyzes human-readable code and converts it into a runnable standalone binary"
+    ],
+    "summary": "A computer program that translates software source code written in a high-level programming language into machine code or an intermediate representation prior to execution.",
+    "domains": [
+      "it/software-engineering/programming-concepts"
+    ],
+    "level": 1,
+    "status": "draft"
+  },
+  {
     "id": "compound-interest",
     "label": "Compound Interest",
     "aliases": [
@@ -812,6 +979,22 @@
     ],
     "level": 1,
     "status": "reviewed"
+  },
+  {
+    "id": "concurrency",
+    "label": "Concurrency",
+    "aliases": [],
+    "loanwords": [],
+    "plain_descriptions": [
+      "ability of a system to manage multiple tasks by making progress on them during overlapping time periods",
+      "software structure that interleaves or coordinates several computations without requiring them to run at the exact same physical instant"
+    ],
+    "summary": "The composition and coordination of multiple computational tasks executing over overlapping time intervals.",
+    "domains": [
+      "it/software-engineering/programming-concepts"
+    ],
+    "level": 2,
+    "status": "draft"
   },
   {
     "id": "container-image",
@@ -1255,6 +1438,22 @@
     "status": "draft"
   },
   {
+    "id": "data-structure",
+    "label": "Data structure",
+    "aliases": [],
+    "loanwords": [],
+    "plain_descriptions": [
+      "organized layout for storing and managing information efficiently in computer memory",
+      "specialized format for grouping data items to optimize search, insertion, and retrieval operations"
+    ],
+    "summary": "A specialized format for organizing, processing, retrieving, and storing data efficiently within computer systems.",
+    "domains": [
+      "it/software-engineering/programming-concepts"
+    ],
+    "level": 1,
+    "status": "draft"
+  },
+  {
     "id": "data-warehouse",
     "label": "Data warehouse",
     "aliases": [
@@ -1405,6 +1604,22 @@
       "finance/corporate-finance/capital-structure"
     ],
     "level": 2,
+    "status": "draft"
+  },
+  {
+    "id": "debugging",
+    "label": "Debugging",
+    "aliases": [],
+    "loanwords": [],
+    "plain_descriptions": [
+      "investigative process of identifying, reproducing, and fixing defects in software",
+      "methodical workflow of diagnosing anomalous behavior using logs, assertions, and stepping tools"
+    ],
+    "summary": "The systematic engineering process of detecting, isolating, and rectifying software defects or anomalies.",
+    "domains": [
+      "it/software-engineering/practices"
+    ],
+    "level": 1,
     "status": "draft"
   },
   {
@@ -1953,6 +2168,23 @@
     "status": "draft"
   },
   {
+    "id": "exception-handling",
+    "label": "Exception",
+    "qualifier": "(Programming)",
+    "aliases": [],
+    "loanwords": [],
+    "plain_descriptions": [
+      "unexpected event or runtime failure that interrupts the normal sequence of instructions",
+      "error signaling mechanism that transfers control up the call stack to a recovery block"
+    ],
+    "summary": "An abnormal condition or error event encountered during execution that disrupts normal instruction flow and triggers specialized handling logic.",
+    "domains": [
+      "it/software-engineering/programming-concepts"
+    ],
+    "level": 1,
+    "status": "draft"
+  },
+  {
     "id": "exchange-rate",
     "label": "Exchange rate",
     "aliases": [
@@ -2097,6 +2329,55 @@
     "status": "draft"
   },
   {
+    "id": "function-programming",
+    "label": "Function",
+    "qualifier": "(Programming)",
+    "aliases": [],
+    "loanwords": [],
+    "plain_descriptions": [
+      "reusable block of code designed to perform a dedicated computation",
+      "packaged sequence of instructions that takes inputs and produces an output"
+    ],
+    "summary": "A self-contained block of instructions that accepts parameters, executes a computational routine, and optionally returns a result.",
+    "domains": [
+      "it/software-engineering/programming-concepts"
+    ],
+    "level": 1,
+    "status": "draft"
+  },
+  {
+    "id": "functional-programming",
+    "label": "Functional programming",
+    "aliases": [],
+    "loanwords": [],
+    "plain_descriptions": [
+      "coding style centered on evaluating mathematical functions without changing shared data",
+      "paradigm emphasizing pure functions, immutable values, and declarative transformations"
+    ],
+    "summary": "A declarative programming paradigm that treats computation as the evaluation of pure mathematical functions while avoiding mutable state.",
+    "domains": [
+      "it/software-engineering/programming-concepts"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
+    "id": "garbage-collection",
+    "label": "Garbage collection",
+    "aliases": [],
+    "loanwords": [],
+    "plain_descriptions": [
+      "automatic memory management system that finds and recycles memory occupied by abandoned objects",
+      "runtime engine feature that automatically frees heap space that a program can no longer reach"
+    ],
+    "summary": "An automatic memory management mechanism in a runtime environment that detects and reclaims heap memory occupied by unreachable objects.",
+    "domains": [
+      "it/software-engineering/programming-concepts"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
     "id": "gdp",
     "label": "Gross Domestic Product (GDP)",
     "aliases": [
@@ -2113,6 +2394,23 @@
       "finance/economics/inflation"
     ],
     "level": 1,
+    "status": "draft"
+  },
+  {
+    "id": "generics",
+    "label": "Generics",
+    "qualifier": "(Programming)",
+    "aliases": [],
+    "loanwords": [],
+    "plain_descriptions": [
+      "feature that lets developers write classes and functions with placeholder types supplied later",
+      "code templates that provide strong type safety across different data types without repeating logic"
+    ],
+    "summary": "A language feature that allows algorithms and data structures to be defined with placeholder types, deferred until instantiation or invocation.",
+    "domains": [
+      "it/software-engineering/programming-concepts"
+    ],
+    "level": 2,
     "status": "draft"
   },
   {
@@ -2270,6 +2568,24 @@
     "status": "draft"
   },
   {
+    "id": "hash-table",
+    "label": "Hash table",
+    "aliases": [
+      "Hash map"
+    ],
+    "loanwords": [],
+    "plain_descriptions": [
+      "associative data structure that pairs keys with values for ultra-fast lookups",
+      "dictionary-style storage layout using a mathematical hash function to locate items in constant average time"
+    ],
+    "summary": "A data structure that implements an associative array abstract data type, mapping keys to values using a hashing function.",
+    "domains": [
+      "it/software-engineering/programming-concepts"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
     "id": "hashing",
     "label": "Hashing",
     "qualifier": "(Cryptography)",
@@ -2419,6 +2735,22 @@
     "summary": "A computer vision task in which an algorithm analyzes an entire image and assigns it one or more discrete categorical labels from a predefined taxonomy.",
     "domains": [
       "it/ai-ml/computer-vision"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
+    "id": "immutability",
+    "label": "Immutability",
+    "aliases": [],
+    "loanwords": [],
+    "plain_descriptions": [
+      "characteristic of an object or data structure whose state cannot be changed after creation",
+      "programming design rule where modifications always yield fresh copies rather than updating existing memory"
+    ],
+    "summary": "The property of an object or data structure that prevents its state from being altered after it has been created.",
+    "domains": [
+      "it/software-engineering/programming-concepts"
     ],
     "level": 2,
     "status": "draft"
@@ -2624,6 +2956,23 @@
     ],
     "level": 1,
     "status": "reviewed"
+  },
+  {
+    "id": "interpreter",
+    "label": "Interpreter",
+    "qualifier": "(Programming)",
+    "aliases": [],
+    "loanwords": [],
+    "plain_descriptions": [
+      "program that reads, translates, and executes source code instructions on the fly without producing a binary file",
+      "execution engine that processes code line by line directly at runtime"
+    ],
+    "summary": "A computer program that directly executes instructions written in a programming or scripting language without requiring prior compilation into machine code.",
+    "domains": [
+      "it/software-engineering/programming-concepts"
+    ],
+    "level": 1,
+    "status": "draft"
   },
   {
     "id": "inverted-pyramid",
@@ -3185,6 +3534,22 @@
     "status": "draft"
   },
   {
+    "id": "memory-leak",
+    "label": "Memory leak",
+    "aliases": [],
+    "loanwords": [],
+    "plain_descriptions": [
+      "software defect where heap storage remains allocated despite being abandoned by the application",
+      "gradual consumption of available RAM over time caused by abandoned references that cannot be cleaned up"
+    ],
+    "summary": "A resource defect occurring when a program fails to release allocated memory that is no longer required, degrading system performance over time.",
+    "domains": [
+      "it/software-engineering/programming-concepts"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
     "id": "merge-conflict",
     "label": "Merge conflict",
     "aliases": [],
@@ -3608,6 +3973,24 @@
     "status": "draft"
   },
   {
+    "id": "null-reference",
+    "label": "Null reference",
+    "aliases": [
+      "Null pointer"
+    ],
+    "loanwords": [],
+    "plain_descriptions": [
+      "pointer or variable that deliberately points to no valid memory address or object",
+      "unassigned reference state that triggers runtime crashes if dereferenced without checks"
+    ],
+    "summary": "A pointer or reference value that signifies the absence of an object or points to an invalid address in memory.",
+    "domains": [
+      "it/software-engineering/programming-concepts"
+    ],
+    "level": 1,
+    "status": "draft"
+  },
+  {
     "id": "oauth",
     "label": "OAuth",
     "aliases": [
@@ -3640,6 +4023,24 @@
       "it/ai-ml/computer-vision"
     ],
     "level": 2,
+    "status": "draft"
+  },
+  {
+    "id": "object-oriented-programming",
+    "label": "Object-oriented programming (OOP)",
+    "aliases": [
+      "OOP"
+    ],
+    "loanwords": [],
+    "plain_descriptions": [
+      "programming approach that structures code around self-contained objects holding data and behavior",
+      "software design philosophy based on modeling real world concepts as interacting entities"
+    ],
+    "summary": "A paradigm centered on modeling software as collections of cooperating objects that encapsulate state and behavior.",
+    "domains": [
+      "it/software-engineering/programming-concepts"
+    ],
+    "level": 1,
     "status": "draft"
   },
   {
@@ -3774,6 +4175,23 @@
     "status": "draft"
   },
   {
+    "id": "os-process",
+    "label": "Process",
+    "qualifier": "(Operating system)",
+    "aliases": [],
+    "loanwords": [],
+    "plain_descriptions": [
+      "running instance of a computer program with its own dedicated memory space",
+      "isolated execution environment managed by the operating system containing code, resources, and threads"
+    ],
+    "summary": "An executing instance of a computer program allocated its own isolated memory address space and operating system resources.",
+    "domains": [
+      "it/software-engineering/programming-concepts"
+    ],
+    "level": 1,
+    "status": "draft"
+  },
+  {
     "id": "ota-update",
     "label": "Over-the-air update (OTA)",
     "aliases": [
@@ -3843,6 +4261,23 @@
     "summary": "A design technique that breaks large data sets into discrete subsets or pages to manage bandwidth and system performance.",
     "domains": [
       "it/web/api"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
+    "id": "parallelism",
+    "label": "Parallelism",
+    "qualifier": "(Computing)",
+    "aliases": [],
+    "loanwords": [],
+    "plain_descriptions": [
+      "executing multiple computational tasks at the exact same physical moment across separate processor cores",
+      "splitting a heavy calculation across multiple hardware processing units to finish work faster"
+    ],
+    "summary": "The simultaneous physical execution of multiple computations at the exact same instant across distinct hardware processing units.",
+    "domains": [
+      "it/software-engineering/programming-concepts"
     ],
     "level": 2,
     "status": "draft"
@@ -4242,6 +4677,23 @@
     "status": "draft"
   },
   {
+    "id": "promise",
+    "label": "Promise",
+    "qualifier": "(Programming)",
+    "aliases": [],
+    "loanwords": [],
+    "plain_descriptions": [
+      "stand-in token that holds the pending outcome of an ongoing background calculation",
+      "proxy for a future value that may succeed with data or fail with an error reason"
+    ],
+    "summary": "A stateful container representing a deferred computational outcome that will eventually yield a value or encounter failure.",
+    "domains": [
+      "it/software-engineering/programming-concepts"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
     "id": "prompt",
     "label": "Prompt",
     "aliases": [],
@@ -4304,6 +4756,23 @@
     "summary": "A mechanism in distributed version control platforms that allows a developer to propose changes from a feature branch and request peer review before merging.",
     "domains": [
       "it/software-engineering/version-control"
+    ],
+    "level": 1,
+    "status": "draft"
+  },
+  {
+    "id": "python",
+    "label": "Python",
+    "qualifier": "(Programming language)",
+    "aliases": [],
+    "loanwords": [],
+    "plain_descriptions": [
+      "high-level, dynamically typed programming language famous for readable syntax and indentation",
+      "versatile multi-paradigm language widely used for artificial intelligence, data analysis, and web services"
+    ],
+    "summary": "A high-level, general-purpose programming language characterized by readable syntax, dynamic typing, and comprehensive standard libraries.",
+    "domains": [
+      "it/software-engineering/programming-concepts"
     ],
     "level": 1,
     "status": "draft"
@@ -4434,6 +4903,22 @@
     "status": "draft"
   },
   {
+    "id": "recursion",
+    "label": "Recursion",
+    "aliases": [],
+    "loanwords": [],
+    "plain_descriptions": [
+      "problem-solving method where a function solves smaller chunks of a task by calling itself",
+      "programming technique of repeating operations through self-invoking function calls until hitting a base case"
+    ],
+    "summary": "A computational technique where a function solves a problem by invoking smaller instances of itself until reaching a terminating base condition.",
+    "domains": [
+      "it/software-engineering/programming-concepts"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
     "id": "refactoring",
     "label": "Refactoring",
     "aliases": [],
@@ -4461,6 +4946,25 @@
     "summary": "The practice of re-executing test suites against an updated application to ensure that recent code modifications or bug fixes have not disrupted previously working functionality.",
     "domains": [
       "it/software-engineering/testing"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
+    "id": "regular-expression",
+    "label": "Regular expression (regex)",
+    "aliases": [
+      "Regex",
+      "regex"
+    ],
+    "loanwords": [],
+    "plain_descriptions": [
+      "compact pattern used to search, match, and extract specific character sequences from text",
+      "formal string template describing text rules for validating inputs like emails or phone numbers"
+    ],
+    "summary": "A sequence of characters defining a search pattern used by string-searching algorithms for matching, validation, and text transformation.",
+    "domains": [
+      "it/software-engineering/programming-concepts"
     ],
     "level": 2,
     "status": "draft"
@@ -5206,6 +5710,39 @@
     "status": "draft"
   },
   {
+    "id": "stack-data-structure",
+    "label": "Stack",
+    "qualifier": "(Data structure)",
+    "aliases": [],
+    "loanwords": [],
+    "plain_descriptions": [
+      "last-in, first-out container where items are added and removed strictly from the top",
+      "vertical data structure operating on LIFO order with push and pop operations"
+    ],
+    "summary": "A linear collection following the Last-In, First-Out (LIFO) access discipline, restricting insertions and deletions to a single endpoint.",
+    "domains": [
+      "it/software-engineering/programming-concepts"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
+    "id": "stack-trace",
+    "label": "Stack trace",
+    "aliases": [],
+    "loanwords": [],
+    "plain_descriptions": [
+      "report showing the active sequence of function calls at the moment an error occurred",
+      "diagnostic breadcrumb trail of source files and line numbers where a program crashed"
+    ],
+    "summary": "A diagnostic report detailing the active call stack frames, function names, and file line numbers at a specific moment during execution.",
+    "domains": [
+      "it/software-engineering/programming-concepts"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
     "id": "staging-environment",
     "label": "Staging environment",
     "aliases": [
@@ -5458,6 +5995,23 @@
     "summary": "A fixed-term bank deposit that pays a predetermined rate of interest until a specified maturity date, imposing penalties for early withdrawal.",
     "domains": [
       "finance/banking/deposits"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
+    "id": "thread-programming",
+    "label": "Thread",
+    "qualifier": "(Programming)",
+    "aliases": [],
+    "loanwords": [],
+    "plain_descriptions": [
+      "smallest sequence of programmed instructions that an operating system scheduler can manage independently",
+      "lightweight execution line running inside a process that shares memory with sibling threads"
+    ],
+    "summary": "The smallest unit of execution within an operating system process, sharing its parent memory space and resources with other threads.",
+    "domains": [
+      "it/software-engineering/programming-concepts"
     ],
     "level": 2,
     "status": "draft"
@@ -5721,6 +6275,23 @@
       "media/digital-marketing/metrics-analytics"
     ],
     "level": 2,
+    "status": "draft"
+  },
+  {
+    "id": "variable",
+    "label": "Variable",
+    "qualifier": "(Programming)",
+    "aliases": [],
+    "loanwords": [],
+    "plain_descriptions": [
+      "named container that holds data in memory while a program runs",
+      "symbolic label pointing to a value that can be read or modified"
+    ],
+    "summary": "A named storage location in memory paired with an identifier that holds data a program can manipulate.",
+    "domains": [
+      "it/software-engineering/programming-concepts"
+    ],
+    "level": 1,
     "status": "draft"
   },
   {

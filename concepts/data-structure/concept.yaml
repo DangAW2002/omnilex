@@ -3,10 +3,24 @@ domains:
   - it/software-engineering/programming-concepts
 level: 1
 relations:
-  prerequisites: []
+  prerequisites:
+    - "variable"
   confusable: []
-  related: []
+  related:
+    - "algorithm"
+    - "array"
+    - "hash-table"
+    - "stack-data-structure"
 status: draft
 provenance:
   drafted_by: ai
-sources: []
+sources:
+  - ref: nist-dads
+    locator: https://xlinux.nist.gov/dads/HTML/datastructur.html
+    title: "data structure"
+    language: en
+    accessed: '2026-10-17'
+    retrieved_by: ai
+    supports:
+      - definition
+      - summary

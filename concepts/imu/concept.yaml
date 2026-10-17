@@ -1,0 +1,12 @@
+id: imu
+domains:
+  - iot/devices-sensors
+level: 1
+relations:
+  prerequisites: []
+  confusable: []
+  related: []
+status: draft
+provenance:
+  drafted_by: ai
+sources: []

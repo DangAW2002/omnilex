@@ -1882,14 +1882,3 @@ oma:
   domains: [iot/connectivity-protocols, iot/edge-cloud]
   verified_license_at: "2026-10-17"
 
-vietnamnet:
-  title: Báo VietNamNet
-  publisher: Báo VietNamNet - Bộ Thông tin và Truyền thông
-  url: https://vietnamnet.vn
-  type: news
-  tier: D
-  languages: [vi]
-  license: all-rights-reserved
-  reuse: paraphrase-only
-  domains: [iot/applications, it]
-  verified_license_at: "2026-10-17"

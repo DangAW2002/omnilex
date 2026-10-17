@@ -12,9 +12,7 @@
       "compound-interest",
       "diversification",
       "emergency-fund",
-      "interest-rate",
-      "liability",
-      "liquidity"
+      "interest-rate"
     ]
   },
   {
@@ -37,6 +35,7 @@
     "license": "public-domain-us-gov",
     "license_evidence": "https://www.nist.gov/oism/copyrights",
     "concepts": [
+      "5g",
       "actuator",
       "algorithm",
       "authentication",
@@ -45,7 +44,10 @@
       "encryption",
       "firewall",
       "firmware",
+      "hmi",
       "iaas",
+      "iiot",
+      "industry-4-0",
       "interpreter",
       "malware",
       "mfa",

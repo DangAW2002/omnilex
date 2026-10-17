@@ -112,6 +112,22 @@
     "status": "draft"
   },
   {
+    "id": "ai-alignment",
+    "label": "AI alignment",
+    "aliases": [],
+    "loanwords": [],
+    "plain_descriptions": [
+      "ensuring that artificial intelligence systems act in harmony with human values and intended goals",
+      "designing AI models that do what users genuinely want without causing harmful side effects"
+    ],
+    "summary": "The field of artificial intelligence research dedicated to ensuring that AI systems reliably pursue human goals, ethical principles, and safety boundaries without harmful unintended consequences.",
+    "domains": [
+      "it/ai-ml/ai-safety-governance"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
     "id": "ai-benchmark",
     "label": "Benchmark",
     "qualifier": "(AI)",
@@ -682,6 +698,23 @@
     "status": "draft"
   },
   {
+    "id": "chunking",
+    "label": "Chunking",
+    "qualifier": "(RAG)",
+    "aliases": [],
+    "loanwords": [],
+    "plain_descriptions": [
+      "breaking long documents into smaller meaningful passages before storing them in an AI search database",
+      "splitting text files into bite-sized segments with overlap so language models can search them accurately"
+    ],
+    "summary": "The process of partitioning lengthy documents into smaller, cohesive textual segments to optimize semantic embedding density and retrieval precision in Retrieval-Augmented Generation systems.",
+    "domains": [
+      "it/ai-ml/llm-agents"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
     "id": "churn-rate",
     "label": "Churn rate",
     "aliases": [
@@ -735,6 +768,56 @@
     "summary": "A defined sequential series of automated execution steps that compiles, tests, and packages application updates.",
     "domains": [
       "it/devops/ci-cd"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
+    "id": "classification-ml",
+    "label": "Classification",
+    "aliases": [],
+    "loanwords": [],
+    "plain_descriptions": [
+      "assigning data items into distinct categories such as determining if an email is spam or normal",
+      "machine learning tasks where the predicted outcome is a separate class label"
+    ],
+    "summary": "A supervised machine learning task where an algorithm predicts discrete qualitative class labels or category assignments for given input observations.",
+    "domains": [
+      "it/ai-ml/foundations"
+    ],
+    "level": 1,
+    "status": "draft"
+  },
+  {
+    "id": "clustering",
+    "label": "Clustering",
+    "aliases": [],
+    "loanwords": [],
+    "plain_descriptions": [
+      "grouping similar data points together based on shared characteristics without pre-made tags",
+      "unsupervised partitioning of items into subsets that share close geometrical distances"
+    ],
+    "summary": "An unsupervised machine learning task that groups unlabelled observations into subsets whose member data points share higher similarity to one another than to points in other groups.",
+    "domains": [
+      "it/ai-ml/foundations"
+    ],
+    "level": 1,
+    "status": "draft"
+  },
+  {
+    "id": "cnn",
+    "label": "Convolutional neural network (CNN)",
+    "aliases": [
+      "CNN"
+    ],
+    "loanwords": [],
+    "plain_descriptions": [
+      "a deep neural network specialized in analyzing visual grids such as photos and video frames",
+      "machine learning architectures using sliding filter kernels to recognize visual patterns"
+    ],
+    "summary": "A deep learning architecture that utilizes convolutional layers with weight sharing and pooling mechanisms to extract spatial feature hierarchies from grid-structured data like images.",
+    "domains": [
+      "it/ai-ml/computer-vision"
     ],
     "level": 2,
     "status": "draft"
@@ -812,6 +895,38 @@
     ],
     "level": 1,
     "status": "reviewed"
+  },
+  {
+    "id": "computer-vision",
+    "label": "Computer vision",
+    "aliases": [],
+    "loanwords": [],
+    "plain_descriptions": [
+      "technology that trains computers to interpret and understand visual information from images or video",
+      "computational visual recognition that extracts objects, faces, and patterns from digital cameras"
+    ],
+    "summary": "A domain of artificial intelligence that trains digital systems to identify, process, and derive meaningful insights from digital imagery, video feeds, and visual inputs.",
+    "domains": [
+      "it/ai-ml/computer-vision"
+    ],
+    "level": 1,
+    "status": "draft"
+  },
+  {
+    "id": "confusion-matrix",
+    "label": "Confusion matrix",
+    "aliases": [],
+    "loanwords": [],
+    "plain_descriptions": [
+      "a grid table showing exactly where a classification model made correct predictions and where it got confused",
+      "a matrix comparing true actual labels against predicted model labels across all classes"
+    ],
+    "summary": "A specialized contingency table layout that visually summarizes classification model performance by cross-tabulating actual ground-truth labels against predicted outcomes.",
+    "domains": [
+      "it/ai-ml/mlops"
+    ],
+    "level": 2,
+    "status": "draft"
   },
   {
     "id": "container-image",
@@ -1221,6 +1336,22 @@
     "status": "draft"
   },
   {
+    "id": "data-labeling",
+    "label": "Data labeling",
+    "aliases": [],
+    "loanwords": [],
+    "plain_descriptions": [
+      "the process of tagging raw data like images or text with informative labels so algorithms can learn from them",
+      "adding ground-truth tags and annotations to training samples for supervised machine learning"
+    ],
+    "summary": "The operational process of identifying, annotating, and tagging raw data samples with informative target labels to produce ground-truth training datasets for supervised machine learning.",
+    "domains": [
+      "it/ai-ml/mlops"
+    ],
+    "level": 1,
+    "status": "draft"
+  },
+  {
     "id": "data-lake",
     "label": "Data lake",
     "aliases": [
@@ -1529,6 +1660,22 @@
     "summary": "The automated onboarding process that authenticates, registers, and configures newly deployed hardware devices into a centralized cloud management platform.",
     "domains": [
       "iot/edge-cloud"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
+    "id": "diffusion-model",
+    "label": "Diffusion model",
+    "aliases": [],
+    "loanwords": [],
+    "plain_descriptions": [
+      "generative AI that creates crisp images by progressively cleaning up random visual noise",
+      "machine learning models that learn to reverse a gradual noise destruction process to synthesize pictures"
+    ],
+    "summary": "A class of generative neural networks trained to synthesize high-fidelity data, particularly images, by learning to iteratively reverse a progressive Markovian noise-diffusion process.",
+    "domains": [
+      "it/ai-ml/computer-vision"
     ],
     "level": 2,
     "status": "draft"
@@ -1972,6 +2119,24 @@
     "status": "draft"
   },
   {
+    "id": "f1-score",
+    "label": "F1 score",
+    "aliases": [
+      "F1-score"
+    ],
+    "loanwords": [],
+    "plain_descriptions": [
+      "a single combined score balancing precision and recall into a harmonic average",
+      "a reliable accuracy metric especially useful when dataset classes are heavily imbalanced"
+    ],
+    "summary": "A statistical evaluation metric that calculates the harmonic mean of precision and recall to provide a balanced measure of a classifier’s accuracy.",
+    "domains": [
+      "it/ai-ml/mlops"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
     "id": "fact-checking",
     "label": "Fact-checking",
     "aliases": [],
@@ -2001,6 +2166,22 @@
     "summary": "A legal doctrine permitting limited quotation and borrowing of copyrighted works without permission for purposes such as criticism, news reporting, teaching, or scholarship.",
     "domains": [
       "media/publishing/copyright-licensing"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
+    "id": "feature-engineering",
+    "label": "Feature engineering",
+    "aliases": [],
+    "loanwords": [],
+    "plain_descriptions": [
+      "transforming raw collected data into informative numerical inputs that machine learning models understand",
+      "crafting domain-specific predictive variables to boost the accuracy of an algorithm"
+    ],
+    "summary": "The machine learning practice of selecting, manipulating, and transforming raw dataset attributes into optimized feature representations to maximize algorithm performance.",
+    "domains": [
+      "it/ai-ml/mlops"
     ],
     "level": 2,
     "status": "draft"
@@ -2078,6 +2259,22 @@
     "status": "draft"
   },
   {
+    "id": "foundation-model",
+    "label": "Foundation model",
+    "aliases": [],
+    "loanwords": [],
+    "plain_descriptions": [
+      "a massive AI model trained on broad data that serves as a general base for many specialized applications",
+      "a versatile large-scale neural network that can be adapted to language, vision, or coding tasks"
+    ],
+    "summary": "A large-scale artificial intelligence model trained on vast, broad datasets at scale that can be adapted and fine-tuned across a wide variety of downstream specialized applications.",
+    "domains": [
+      "it/ai-ml/foundations"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
     "id": "function-calling",
     "label": "Function calling",
     "aliases": [
@@ -2111,6 +2308,24 @@
     "summary": "The total monetary or market value of all final goods and services produced within a country’s domestic borders over a specific timeframe.",
     "domains": [
       "finance/economics/inflation"
+    ],
+    "level": 1,
+    "status": "draft"
+  },
+  {
+    "id": "generative-ai",
+    "label": "Generative AI",
+    "aliases": [
+      "GenAI"
+    ],
+    "loanwords": [],
+    "plain_descriptions": [
+      "machine learning systems capable of synthesizing original text, code, imagery, or audio",
+      "automated artificial intelligence that creates brand new media from written user prompts"
+    ],
+    "summary": "A subfield of artificial intelligence focusing on computational models trained to create novel artifacts such as text, images, and audio rather than simply analyzing existing data.",
+    "domains": [
+      "it/ai-ml/foundations"
     ],
     "level": 1,
     "status": "draft"
@@ -3331,6 +3546,22 @@
     "status": "draft"
   },
   {
+    "id": "mlops",
+    "label": "MLOps",
+    "aliases": [],
+    "loanwords": [],
+    "plain_descriptions": [
+      "engineering practices that automate the development, testing, and deployment of machine learning in production",
+      "DevOps principles tailored to managing machine learning models, data pipelines, and continuous monitoring"
+    ],
+    "summary": "A multidisciplinary set of engineering practices that unifies machine learning system development and operations to standardize and automate continuous delivery, testing, and monitoring in production.",
+    "domains": [
+      "it/ai-ml/mlops"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
     "id": "mock-object",
     "label": "Mock",
     "qualifier": "(Testing)",
@@ -3363,6 +3594,22 @@
     "summary": "A de facto industrial request-response communication protocol that reads and writes discrete memory coils and 16-bit numerical registers across serial and Ethernet links.",
     "domains": [
       "iot/industrial"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
+    "id": "model-drift",
+    "label": "Model drift",
+    "aliases": [],
+    "loanwords": [],
+    "plain_descriptions": [
+      "the gradual decline in a deployed AI model’s accuracy as real-world conditions change over time",
+      "when real-world customer habits shift so much that an existing machine learning model becomes outdated"
+    ],
+    "summary": "The operational degradation of a deployed machine learning model’s predictive accuracy over time caused by evolving real-world statistical environments and shifting feature distributions.",
+    "domains": [
+      "it/ai-ml/mlops"
     ],
     "level": 2,
     "status": "draft"
@@ -3476,6 +3723,22 @@
     "status": "draft"
   },
   {
+    "id": "multimodal-model",
+    "label": "Multimodal model",
+    "aliases": [],
+    "loanwords": [],
+    "plain_descriptions": [
+      "an AI system that can understand and combine multiple types of information like text, images, and audio",
+      "a unified model accepting photos and questions together to produce verbal answers"
+    ],
+    "summary": "An artificial intelligence architecture capable of processing, synthesizing, and relating information across multiple sensory data modalities such as text, images, video, and audio.",
+    "domains": [
+      "it/ai-ml/llm-agents"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
     "id": "mutual-fund",
     "label": "Mutual fund",
     "aliases": [
@@ -3511,6 +3774,24 @@
     "summary": "An early iteration of a product incorporating the minimum feature set necessary to validate foundational assumptions with real customers.",
     "domains": [
       "product/product-management"
+    ],
+    "level": 1,
+    "status": "draft"
+  },
+  {
+    "id": "natural-language-processing",
+    "label": "Natural language processing (NLP)",
+    "aliases": [
+      "NLP"
+    ],
+    "loanwords": [],
+    "plain_descriptions": [
+      "computational methods allowing computers to comprehend and produce human language",
+      "software analysis of written sentences, vocabulary, and linguistic intent"
+    ],
+    "summary": "A subdiscipline of artificial intelligence and computational linguistics enabling computer software to analyze, comprehend, and generate natural human speech and text.",
+    "domains": [
+      "it/ai-ml/nlp"
     ],
     "level": 1,
     "status": "draft"
@@ -3661,6 +3942,24 @@
     "status": "draft"
   },
   {
+    "id": "ocr",
+    "label": "Optical character recognition (OCR)",
+    "aliases": [
+      "OCR"
+    ],
+    "loanwords": [],
+    "plain_descriptions": [
+      "software that extracts editable text from scanned documents, receipts, or photos of signs",
+      "computational scanning that turns photographed printed words into machine-readable characters"
+    ],
+    "summary": "A computer vision technology that detects, segments, and converts printed, typed, or handwritten text inside visual images into machine-encoded editable text.",
+    "domains": [
+      "it/ai-ml/computer-vision"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
     "id": "okr",
     "label": "Objectives and Key Results (OKR)",
     "aliases": [
@@ -3735,6 +4034,22 @@
       "iot/industrial"
     ],
     "level": 3,
+    "status": "draft"
+  },
+  {
+    "id": "open-weight-model",
+    "label": "Open-weight model",
+    "aliases": [],
+    "loanwords": [],
+    "plain_descriptions": [
+      "an AI model whose trained parameter weights are freely downloadable to run on your own computers",
+      "a machine learning system where the public can inspect and self-host the learned mathematical weights"
+    ],
+    "summary": "An artificial intelligence model whose learned numerical parameters (weights) are published openly for local deployment, inspection, and fine-tuning, distinguishing it from closed proprietary cloud APIs.",
+    "domains": [
+      "it/ai-ml/llm-agents"
+    ],
+    "level": 2,
     "status": "draft"
   },
   {
@@ -4001,6 +4316,22 @@
     "summary": "A definitive planning document detailing product purpose, target personas, functional requirements, and measurable success criteria for delivery teams.",
     "domains": [
       "product/product-management"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
+    "id": "precision-recall",
+    "label": "Precision and recall",
+    "aliases": [],
+    "loanwords": [],
+    "plain_descriptions": [
+      "two companion metrics tracking how accurate positive predictions are versus how many true positives were captured",
+      "evaluation measurements balancing false alarm rates against missed detection rates in classifiers"
+    ],
+    "summary": "Dual evaluation metrics for classification systems, where precision measures the fraction of positive predictions that are correct, and recall measures the fraction of actual positive instances correctly retrieved.",
+    "domains": [
+      "it/ai-ml/mlops"
     ],
     "level": 2,
     "status": "draft"
@@ -4434,6 +4765,23 @@
     "status": "draft"
   },
   {
+    "id": "red-teaming",
+    "label": "Red teaming",
+    "qualifier": "(AI)",
+    "aliases": [],
+    "loanwords": [],
+    "plain_descriptions": [
+      "structured security testing where friendly experts try to trick an AI into saying harmful or prohibited things",
+      "probing AI systems with adversarial prompts to uncover vulnerabilities and safety flaws before launch"
+    ],
+    "summary": "A disciplined adversarial testing process where internal experts or automated agents simulate malicious attacks and prompt injections to identify model safety vulnerabilities, bias, and policy flaws.",
+    "domains": [
+      "it/ai-ml/ai-safety-governance"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
     "id": "refactoring",
     "label": "Refactoring",
     "aliases": [],
@@ -4450,6 +4798,22 @@
     "status": "draft"
   },
   {
+    "id": "regression-ml",
+    "label": "Regression",
+    "aliases": [],
+    "loanwords": [],
+    "plain_descriptions": [
+      "predicting continuous numerical quantities such as house prices, travel times, or stock values",
+      "statistical machine learning aimed at estimating a numeric score from multiple input variables"
+    ],
+    "summary": "A supervised machine learning problem formulation where the objective is to predict continuous, real-valued numerical variables based on relationships among input features.",
+    "domains": [
+      "it/ai-ml/foundations"
+    ],
+    "level": 1,
+    "status": "draft"
+  },
+  {
     "id": "regression-testing",
     "label": "Regression testing",
     "aliases": [],
@@ -4461,6 +4825,57 @@
     "summary": "The practice of re-executing test suites against an updated application to ensure that recent code modifications or bug fixes have not disrupted previously working functionality.",
     "domains": [
       "it/software-engineering/testing"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
+    "id": "regularization",
+    "label": "Regularization",
+    "qualifier": "(ML)",
+    "aliases": [],
+    "loanwords": [],
+    "plain_descriptions": [
+      "techniques that discourage machine learning models from becoming overly complex or memorizing noise",
+      "adding mathematical penalties to prevent weights from growing excessively large during training"
+    ],
+    "summary": "A set of statistical techniques that penalize model complexity during training to prevent overfitting and improve generalization on unseen test data.",
+    "domains": [
+      "it/ai-ml/foundations"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
+    "id": "reinforcement-learning",
+    "label": "Reinforcement learning",
+    "aliases": [
+      "RL"
+    ],
+    "loanwords": [],
+    "plain_descriptions": [
+      "training an AI agent to make decisions through trial and error guided by rewards and penalties",
+      "machine learning where an algorithm learns optimal behaviors by interacting with an environment"
+    ],
+    "summary": "A machine learning paradigm where an autonomous agent learns to select sequential actions in an environment to maximize cumulative scalar reward signals over time.",
+    "domains": [
+      "it/ai-ml/foundations"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
+    "id": "reranking",
+    "label": "Reranking",
+    "aliases": [],
+    "loanwords": [],
+    "plain_descriptions": [
+      "a second-stage scoring step that re-orders search results to put the most helpful answers at the very top",
+      "using a deep cross-encoder model to re-evaluate the relevance of initial search candidates"
+    ],
+    "summary": "A two-stage information retrieval technique where a computationally intensive secondary model re-evaluates and re-orders a candidate pool of retrieved documents to optimize top-k relevance.",
+    "domains": [
+      "it/ai-ml/llm-agents"
     ],
     "level": 2,
     "status": "draft"
@@ -4558,6 +4973,42 @@
     "summary": "A quantitative prioritization framework that scores potential initiatives by multiplying Reach, Impact, and Confidence and dividing by Effort.",
     "domains": [
       "product/delivery-planning"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
+    "id": "rlhf",
+    "label": "Reinforcement learning from human feedback (RLHF)",
+    "aliases": [
+      "RLHF"
+    ],
+    "loanwords": [],
+    "plain_descriptions": [
+      "tuning language models using human preferences so they produce more helpful and safer responses",
+      "training AI using reward scores derived from human rankings of alternative model answers"
+    ],
+    "summary": "A post-training optimization technique that aligns large language model behaviors with human intentions by training a reward model on human comparative preferences and optimizing policy outputs via reinforcement learning.",
+    "domains": [
+      "it/ai-ml/llm-agents"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
+    "id": "rnn",
+    "label": "Recurrent neural network (RNN)",
+    "aliases": [
+      "RNN"
+    ],
+    "loanwords": [],
+    "plain_descriptions": [
+      "a neural network with memory loops designed to process sequential data like sentences or time series",
+      "deep learning architecture that carries information from past steps into current calculations"
+    ],
+    "summary": "A class of neural networks containing internal cyclical connections that maintain a hidden memory state, enabling the sequential processing of ordered temporal or linguistic data.",
+    "domains": [
+      "it/ai-ml/nlp"
     ],
     "level": 2,
     "status": "draft"
@@ -4764,6 +5215,22 @@
     "domains": [
       "it/devops/ci-cd",
       "it/security/authentication"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
+    "id": "semantic-search",
+    "label": "Semantic search",
+    "aliases": [],
+    "loanwords": [],
+    "plain_descriptions": [
+      "search technology that understands the conceptual meaning of your query rather than matching exact keywords",
+      "retrieving relevant documents based on contextual intent even when different vocabulary is used"
+    ],
+    "summary": "A search methodology that evaluates the contextual intent and semantic meaning behind user queries and documents using vector embeddings rather than relying solely on lexical keyword matching.",
+    "domains": [
+      "it/ai-ml/nlp"
     ],
     "level": 2,
     "status": "draft"
@@ -5093,6 +5560,24 @@
     "status": "draft"
   },
   {
+    "id": "speech-recognition",
+    "label": "Speech recognition",
+    "aliases": [
+      "ASR"
+    ],
+    "loanwords": [],
+    "plain_descriptions": [
+      "software capability that converts spoken words and voice audio into written digital text",
+      "automated voice-to-text transcription technology used in dictation and virtual assistants"
+    ],
+    "summary": "An artificial intelligence capability that processes acoustic audio signals to accurately transcribe human spoken vocabulary into digital text representations.",
+    "domains": [
+      "it/ai-ml/nlp"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
     "id": "spokesperson",
     "label": "Spokesperson",
     "aliases": [
@@ -5375,6 +5860,38 @@
     "status": "draft"
   },
   {
+    "id": "supervised-learning",
+    "label": "Supervised learning",
+    "aliases": [],
+    "loanwords": [],
+    "plain_descriptions": [
+      "training a computer model using examples that already have the correct answers attached",
+      "machine learning where the algorithm learns from paired input features and target labels"
+    ],
+    "summary": "A machine learning approach where an algorithm learns a mapping function from input features to target outputs using training data composed of verified input-label pairs.",
+    "domains": [
+      "it/ai-ml/foundations"
+    ],
+    "level": 1,
+    "status": "draft"
+  },
+  {
+    "id": "synthetic-data",
+    "label": "Synthetic data",
+    "aliases": [],
+    "loanwords": [],
+    "plain_descriptions": [
+      "artificially manufactured information generated by computer algorithms rather than collected from real people",
+      "simulated datasets created by models to train AI without compromising private personal records"
+    ],
+    "summary": "Algorithmically manufactured information engineered by mathematical models or computer simulations to replicate authentic dataset patterns without containing private personal records.",
+    "domains": [
+      "it/ai-ml/mlops"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
     "id": "system-prompt",
     "label": "System prompt",
     "aliases": [],
@@ -5596,6 +6113,22 @@
     "status": "draft"
   },
   {
+    "id": "transfer-learning",
+    "label": "Transfer learning",
+    "aliases": [],
+    "loanwords": [],
+    "plain_descriptions": [
+      "taking a model trained on a huge general dataset and repurposing it for a specific new task",
+      "reusing learned weights and feature representations to train a new AI model with far less data"
+    ],
+    "summary": "A machine learning method where representations and weights learned from a broad primary task are adapted to solve a related target task with substantially reduced training data and computational overhead.",
+    "domains": [
+      "it/ai-ml/foundations"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
     "id": "transformer",
     "label": "Transformer",
     "qualifier": "(AI)",
@@ -5648,6 +6181,22 @@
     "status": "draft"
   },
   {
+    "id": "underfitting",
+    "label": "Underfitting",
+    "aliases": [],
+    "loanwords": [],
+    "plain_descriptions": [
+      "when a machine learning model is too simplistic to capture the basic trends in its training data",
+      "a model performing poorly on both its training examples and new unseen test data"
+    ],
+    "summary": "A modeling pathology where a machine learning algorithm is overly simplistic, failing to capture the underlying structure of the data and exhibiting high loss on both training and test sets.",
+    "domains": [
+      "it/ai-ml/foundations"
+    ],
+    "level": 1,
+    "status": "draft"
+  },
+  {
     "id": "unit-test",
     "label": "Unit test",
     "aliases": [],
@@ -5659,6 +6208,22 @@
     "summary": "An automated test that isolates and verifies the behavioral correctness of the smallest testable component or function of an application.",
     "domains": [
       "it/software-engineering/testing"
+    ],
+    "level": 1,
+    "status": "draft"
+  },
+  {
+    "id": "unsupervised-learning",
+    "label": "Unsupervised learning",
+    "aliases": [],
+    "loanwords": [],
+    "plain_descriptions": [
+      "machine learning that finds hidden patterns in data without pre-assigned labels or answers",
+      "algorithms grouping raw data points based on natural similarities without human guidance"
+    ],
+    "summary": "A category of machine learning where algorithms analyze and group unlabeled data to uncover underlying geometric clusters, manifold distributions, and intrinsic structures.",
+    "domains": [
+      "it/ai-ml/foundations"
     ],
     "level": 1,
     "status": "draft"

@@ -126,6 +126,26 @@
     "status": "draft"
   },
   {
+    "id": "ai-alignment",
+    "label": "AI alignment",
+    "aliases": [
+      "căn chỉnh AI"
+    ],
+    "loanwords": [
+      "AI alignment"
+    ],
+    "plain_descriptions": [
+      "đảm bảo các hệ thống trí tuệ nhân tạo hoạt động phù hợp với mục đích và giá trị của con người",
+      "nghiên cứu giúp AI thực hiện đúng mong muốn thực tế của người dùng mà không gây ra tác hại ngoài ý muốn"
+    ],
+    "summary": "Lĩnh vực nghiên cứu an toàn trí tuệ nhân tạo nhằm đảm bảo các hệ thống tự động hành động trung thực, an toàn và nhất quán với các mục tiêu cũng như giá trị đạo đức của con người.",
+    "domains": [
+      "it/ai-ml/ai-safety-governance"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
     "id": "ai-benchmark",
     "label": "Benchmark",
     "qualifier": "(AI)",
@@ -782,6 +802,27 @@
     "status": "draft"
   },
   {
+    "id": "chunking",
+    "label": "Chunking",
+    "qualifier": "(RAG)",
+    "aliases": [
+      "phân đoạn tài liệu"
+    ],
+    "loanwords": [
+      "chunking"
+    ],
+    "plain_descriptions": [
+      "chia nhỏ các tài liệu dài thành từng đoạn văn ngắn gọn trước khi lưu vào cơ sở dữ liệu tìm kiếm cho AI",
+      "kỹ thuật cắt văn bản thành các khúc vừa vặn có gối đầu để mô hình ngôn ngữ tra cứu chính xác"
+    ],
+    "summary": "Quy trình phân chia các tài liệu dài thành những đoạn văn bản nhỏ gọn, có cấu trúc mạch lạc nhằm tối ưu hóa việc tạo véc-tơ ngữ nghĩa và nâng cao độ chính xác khi truy xuất trong hệ thống RAG.",
+    "domains": [
+      "it/ai-ml/llm-agents"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
     "id": "churn-rate",
     "label": "Churn rate",
     "aliases": [
@@ -840,6 +881,62 @@
     "summary": "Chuỗi các giai đoạn thực thi tự động tuần tự thực hiện biên dịch, kiểm thử và đóng gói các bản cập nhật phần mềm.",
     "domains": [
       "it/devops/ci-cd"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
+    "id": "classification-ml",
+    "label": "Phân loại",
+    "aliases": [],
+    "loanwords": [
+      "classification"
+    ],
+    "plain_descriptions": [
+      "xếp các mục dữ liệu vào các nhóm riêng biệt như xác định email là thư rác hay thư thường",
+      "bài toán máy học trong đó kết quả đầu ra cần dự đoán là các nhãn danh mục rời rạc"
+    ],
+    "summary": "Bài toán học máy có giám sát trong đó thuật toán dự đoán nhãn danh mục rời rạc hoặc xếp các mẫu dữ liệu đầu vào vào các lớp định tính xác định.",
+    "domains": [
+      "it/ai-ml/foundations"
+    ],
+    "level": 1,
+    "status": "draft"
+  },
+  {
+    "id": "clustering",
+    "label": "Phân cụm",
+    "aliases": [],
+    "loanwords": [
+      "clustering"
+    ],
+    "plain_descriptions": [
+      "gom các điểm dữ liệu có đặc điểm tương đồng lại với nhau mà không cần nhãn gắn sẵn",
+      "thuật toán tự động nhóm các đối tượng có khoảng cách gần nhau trong không gian đặc trưng"
+    ],
+    "summary": "Bài toán học máy không giám sát nhằm phân chia các quan sát thành các nhóm sao cho các phần tử trong cùng nhóm có độ tương đồng cao hơn các phần tử thuộc nhóm khác.",
+    "domains": [
+      "it/ai-ml/foundations"
+    ],
+    "level": 1,
+    "status": "draft"
+  },
+  {
+    "id": "cnn",
+    "label": "Mạng nơ-ron tích chập (CNN)",
+    "aliases": [
+      "CNN"
+    ],
+    "loanwords": [
+      "convolutional neural network"
+    ],
+    "plain_descriptions": [
+      "mạng nơ-ron chuyên dụng để nhận diện hình ảnh và xử lý dữ liệu có cấu trúc lưới",
+      "kiến trúc học sâu sử dụng các bộ lọc trượt để tự động trích xuất đặc trưng thị giác"
+    ],
+    "summary": "Kiến trúc học sâu sử dụng các phép toán tích chập và chia sẻ trọng số để tự động trích xuất các tầng đặc trưng không gian phân cấp từ dữ liệu hình ảnh.",
+    "domains": [
+      "it/ai-ml/computer-vision"
     ],
     "level": 2,
     "status": "draft"
@@ -927,6 +1024,44 @@
     ],
     "level": 1,
     "status": "reviewed"
+  },
+  {
+    "id": "computer-vision",
+    "label": "Thị giác máy tính",
+    "aliases": [],
+    "loanwords": [
+      "computer vision"
+    ],
+    "plain_descriptions": [
+      "công nghệ cho phép máy tính nhìn, phân tích và thấu hiểu thông tin từ hình ảnh hoặc video",
+      "hệ thống xử lý hình ảnh số để tự động nhận biết đồ vật, khuôn mặt và chuyển động"
+    ],
+    "summary": "Lĩnh vực trí tuệ nhân tạo nghiên cứu việc thu nhận, xử lý và phân tích hình ảnh hoặc video kỹ thuật số để máy tính đưa ra quyết định dựa trên dữ liệu thị giác.",
+    "domains": [
+      "it/ai-ml/computer-vision"
+    ],
+    "level": 1,
+    "status": "draft"
+  },
+  {
+    "id": "confusion-matrix",
+    "label": "Confusion matrix",
+    "aliases": [
+      "ma trận nhầm lẫn"
+    ],
+    "loanwords": [
+      "confusion matrix"
+    ],
+    "plain_descriptions": [
+      "bảng thống kê đối chiếu giúp thấy rõ mô hình đoán đúng bao nhiêu lần và nhầm lẫn giữa những lớp nào",
+      "ma trận đối sánh giữa nhãn thực tế của dữ liệu và nhãn do mô hình máy học dự đoán"
+    ],
+    "summary": "Bảng thống kê dạng ma trận trực quan hóa hiệu năng của mô hình phân loại bằng cách đối chiếu các nhãn thực tế với các nhãn được mô hình dự đoán.",
+    "domains": [
+      "it/ai-ml/mlops"
+    ],
+    "level": 2,
+    "status": "draft"
   },
   {
     "id": "container-image",
@@ -1385,6 +1520,26 @@
     "status": "draft"
   },
   {
+    "id": "data-labeling",
+    "label": "Data labeling",
+    "aliases": [
+      "gán nhãn dữ liệu"
+    ],
+    "loanwords": [
+      "data labeling"
+    ],
+    "plain_descriptions": [
+      "quá trình đánh dấu và gán thông tin mô tả cho dữ liệu thô để mô hình học máy có thể học được",
+      "việc gắn thẻ kết quả chuẩn cho hình ảnh hoặc văn bản phục vụ việc huấn luyện có giám sát"
+    ],
+    "summary": "Quy trình gán các nhãn chú thích và thẻ thông tin có cấu trúc cho dữ liệu thô như hình ảnh, văn bản hoặc âm thanh nhằm tạo ra tập dữ liệu chân lý để huấn luyện máy học.",
+    "domains": [
+      "it/ai-ml/mlops"
+    ],
+    "level": 1,
+    "status": "draft"
+  },
+  {
     "id": "data-lake",
     "label": "Data lake",
     "aliases": [
@@ -1727,6 +1882,26 @@
     "summary": "Quy trình khởi tạo tự động nhằm xác thực danh tính, đăng ký và thiết lập cấu hình vận hành ban đầu cho thiết bị phần cứng mới kết nối vào nền tảng đám mây.",
     "domains": [
       "iot/edge-cloud"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
+    "id": "diffusion-model",
+    "label": "Diffusion model",
+    "aliases": [
+      "mô hình khuếch tán"
+    ],
+    "loanwords": [
+      "diffusion model"
+    ],
+    "plain_descriptions": [
+      "AI tạo sinh tạo ra tranh ảnh sắc nét bằng cách lọc dần nhiễu ngẫu nhiên qua từng bước",
+      "mô hình máy học học cách đảo ngược quá trình làm mờ nhiễu để tái tạo hình ảnh sống động"
+    ],
+    "summary": "Lớp mô hình tạo sinh trong học sâu tạo ra dữ liệu chất lượng cao, đặc biệt là hình ảnh, bằng cách học cách đảo ngược từng bước quá trình làm nhiễu ngẫu nhiên dữ liệu gốc.",
+    "domains": [
+      "it/ai-ml/computer-vision"
     ],
     "level": 2,
     "status": "draft"
@@ -2233,6 +2408,27 @@
     "status": "draft"
   },
   {
+    "id": "f1-score",
+    "label": "F1 score",
+    "aliases": [
+      "điểm F1",
+      "F1-score"
+    ],
+    "loanwords": [
+      "F1 score"
+    ],
+    "plain_descriptions": [
+      "chỉ số tổng hợp kết hợp độ chính xác precision và độ thu hồi recall thành một điểm số duy nhất",
+      "thước đo hiệu quả phân loại đáng tin cậy ngay cả khi các lớp dữ liệu bị chênh lệch số lượng lớn"
+    ],
+    "summary": "Chỉ số đánh giá thống kê tính trung bình điều hòa giữa precision và recall nhằm mang lại thước đo cân bằng duy nhất cho chất lượng của mô hình phân loại.",
+    "domains": [
+      "it/ai-ml/mlops"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
     "id": "fact-checking",
     "label": "Kiểm chứng thông tin",
     "aliases": [
@@ -2268,6 +2464,26 @@
     "summary": "Học thuyết pháp lý cho phép sử dụng có giới hạn các tư liệu có bản quyền mà không cần xin phép tác giả cho các mục đích như phê bình, bình luận, báo chí hoặc giảng dạy.",
     "domains": [
       "media/publishing/copyright-licensing"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
+    "id": "feature-engineering",
+    "label": "Feature engineering",
+    "aliases": [
+      "kỹ thuật đặc trưng"
+    ],
+    "loanwords": [
+      "feature engineering"
+    ],
+    "plain_descriptions": [
+      "biến đổi dữ liệu thô thu thập được thành các biến số đầu vào hữu ích cho mô hình học máy",
+      "kỹ thuật tạo ra các đặc trưng tính toán mới giúp tăng độ chính xác của thuật toán dự đoán"
+    ],
+    "summary": "Quy trình chọn lọc, xử lý và chuyển đổi các trường dữ liệu thô thành các biến đặc trưng đầu vào tối ưu giúp nâng cao hiệu năng của thuật toán học máy.",
+    "domains": [
+      "it/ai-ml/mlops"
     ],
     "level": 2,
     "status": "draft"
@@ -2355,6 +2571,24 @@
     "status": "draft"
   },
   {
+    "id": "foundation-model",
+    "label": "Foundation model",
+    "aliases": [],
+    "loanwords": [
+      "foundation model"
+    ],
+    "plain_descriptions": [
+      "mô hình AI quy mô lớn được huấn luyện trên lượng dữ liệu khổng lồ làm nền tảng cho nhiều ứng dụng khác nhau",
+      "mạng nơ-ron đa năng có thể tinh chỉnh để giải quyết các bài toán viết văn, lập trình hoặc xử lý ảnh"
+    ],
+    "summary": "Mô hình trí tuệ nhân tạo quy mô lớn được huấn luyện trên các tập dữ liệu diện rộng, có khả năng thích ứng và tinh chỉnh để phục vụ hàng loạt bài toán chuyên biệt khác nhau.",
+    "domains": [
+      "it/ai-ml/foundations"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
     "id": "function-calling",
     "label": "Function calling",
     "aliases": [
@@ -2390,6 +2624,28 @@
     "summary": "Giá trị thị trường của tất cả hàng hóa và dịch vụ cuối cùng được sản xuất ra trong phạm vi một quốc gia trong một thời kỳ nhất định.",
     "domains": [
       "finance/economics/inflation"
+    ],
+    "level": 1,
+    "status": "draft"
+  },
+  {
+    "id": "generative-ai",
+    "label": "Generative AI",
+    "aliases": [
+      "GenAI",
+      "AI tạo sinh"
+    ],
+    "loanwords": [
+      "generative AI",
+      "GenAI"
+    ],
+    "plain_descriptions": [
+      "hệ thống máy học có khả năng tự tạo ra văn bản, hình ảnh, âm thanh hoặc mã nguồn mới",
+      "công nghệ trí tuệ nhân tạo tạo ra nội dung hoàn toàn mới từ các câu lệnh gợi ý"
+    ],
+    "summary": "Phân ngành trí tuệ nhân tạo tập trung vào các mô hình máy học được huấn luyện để sáng tạo các nội dung mới như văn bản, hình ảnh và âm thanh thay vì chỉ phân loại dữ liệu có sẵn.",
+    "domains": [
+      "it/ai-ml/foundations"
     ],
     "level": 1,
     "status": "draft"
@@ -3780,6 +4036,24 @@
     "status": "draft"
   },
   {
+    "id": "mlops",
+    "label": "MLOps",
+    "aliases": [],
+    "loanwords": [
+      "MLOps"
+    ],
+    "plain_descriptions": [
+      "tập hợp quy trình tự động hóa việc phát triển, kiểm thử và vận hành mô hình máy học trong thực tế",
+      "áp dụng các nguyên tắc DevOps vào quản lý vòng đời mô hình học máy và giám sát dữ liệu liên tục"
+    ],
+    "summary": "Tập hợp các phương pháp kỹ thuật kết hợp giữa phát triển mô hình học máy và vận hành hệ thống nhằm tự động hóa quy trình triển khai, kiểm thử và giám sát mô hình liên tục trong môi trường sản xuất.",
+    "domains": [
+      "it/ai-ml/mlops"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
     "id": "mock-object",
     "label": "Mock",
     "qualifier": "(Kiểm thử)",
@@ -3816,6 +4090,26 @@
     "summary": "Giao thức truyền thông công nghiệp theo mô hình chủ - tớ (master/slave) được sử dụng rộng rãi để đọc và ghi các bảng thanh ghi dữ liệu qua đường truyền nối tiếp hoặc mạng Ethernet.",
     "domains": [
       "iot/industrial"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
+    "id": "model-drift",
+    "label": "Model drift",
+    "aliases": [
+      "trôi mô hình"
+    ],
+    "loanwords": [
+      "model drift"
+    ],
+    "plain_descriptions": [
+      "sự suy giảm độ chính xác của mô hình AI khi môi trường thực tế thay đổi theo thời gian",
+      "khi hành vi khách hàng thay đổi khiến mô hình máy học cũ không còn đưa ra dự đoán đúng"
+    ],
+    "summary": "Hiện tượng hiệu năng và độ chính xác của mô hình học máy bị suy giảm dần theo thời gian trong môi trường thực tế do sự thay đổi của phân phối dữ liệu đầu vào hoặc quan hệ mục tiêu.",
+    "domains": [
+      "it/ai-ml/mlops"
     ],
     "level": 2,
     "status": "draft"
@@ -3945,6 +4239,26 @@
     "status": "draft"
   },
   {
+    "id": "multimodal-model",
+    "label": "Multimodal model",
+    "aliases": [
+      "mô hình đa phương thức"
+    ],
+    "loanwords": [
+      "multimodal model"
+    ],
+    "plain_descriptions": [
+      "hệ thống AI có khả năng hiểu và kết hợp đồng thời nhiều dạng dữ liệu như văn bản, hình ảnh và âm thanh",
+      "mô hình trí tuệ nhân tạo có thể vừa nhìn ảnh vừa nghe câu hỏi để đưa ra câu trả lời"
+    ],
+    "summary": "Mô hình trí tuệ nhân tạo có năng lực tiếp nhận, xử lý và tạo ra thông tin từ nhiều phương thức dữ liệu khác nhau như văn bản, hình ảnh, âm thanh và video trong một hệ thống thống nhất.",
+    "domains": [
+      "it/ai-ml/llm-agents"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
     "id": "mutual-fund",
     "label": "Quỹ tương hỗ",
     "aliases": [
@@ -3984,6 +4298,26 @@
     "summary": "Phiên bản sản phẩm sơ khai có vừa đủ tính năng cốt lõi để thu thập phản hồi có kiểm chứng từ người dùng thực tế với nỗ lực kỹ thuật tối thiểu.",
     "domains": [
       "product/product-management"
+    ],
+    "level": 1,
+    "status": "draft"
+  },
+  {
+    "id": "natural-language-processing",
+    "label": "Xử lý ngôn ngữ tự nhiên",
+    "aliases": [
+      "NLP"
+    ],
+    "loanwords": [
+      "natural language processing"
+    ],
+    "plain_descriptions": [
+      "kỹ thuật tính toán cho phép phần mềm máy tính đọc hiểu và tạo ra tiếng nói hay văn bản của con người",
+      "các phương pháp phân tích câu chữ, ngữ pháp và ngữ nghĩa tự nhiên bằng máy móc"
+    ],
+    "summary": "Nhánh khoa học máy tính và trí tuệ nhân tạo nghiên cứu các phương pháp giúp máy móc hiểu, phân tích và sinh ra ngôn ngữ tự nhiên của con người.",
+    "domains": [
+      "it/ai-ml/nlp"
     ],
     "level": 1,
     "status": "draft"
@@ -4154,6 +4488,26 @@
     "status": "draft"
   },
   {
+    "id": "ocr",
+    "label": "Nhận dạng ký tự quang học (OCR)",
+    "aliases": [
+      "OCR"
+    ],
+    "loanwords": [
+      "optical character recognition"
+    ],
+    "plain_descriptions": [
+      "phần mềm trích xuất văn bản có thể chỉnh sửa từ ảnh chụp tài liệu, hóa đơn hoặc văn bản in",
+      "công nghệ quét chữ quang học biến hình ảnh tài liệu giấy thành chữ số hóa"
+    ],
+    "summary": "Công nghệ thị giác máy tính dùng để phát hiện và chuyển đổi chữ viết tay hoặc chữ in trong các hình ảnh quét thành văn bản kỹ thuật số có thể tìm kiếm và chỉnh sửa.",
+    "domains": [
+      "it/ai-ml/computer-vision"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
     "id": "okr",
     "label": "Objectives and Key Results (OKR)",
     "aliases": [
@@ -4234,6 +4588,26 @@
       "iot/industrial"
     ],
     "level": 3,
+    "status": "draft"
+  },
+  {
+    "id": "open-weight-model",
+    "label": "Open-weight model",
+    "aliases": [
+      "mô hình trọng số mở"
+    ],
+    "loanwords": [
+      "open-weight model"
+    ],
+    "plain_descriptions": [
+      "mô hình AI được công khai toàn bộ trọng số tham số để người dùng tải về tự cài đặt trên máy chủ riêng",
+      "hệ thống máy học cho phép cộng đồng tải về nghiên cứu và tinh chỉnh các thông số đã huấn luyện"
+    ],
+    "summary": "Mô hình trí tuệ nhân tạo được công bố công khai các tham số trọng số đã huấn luyện để người dùng có thể tải về, tự vận hành nội bộ và tinh chỉnh mà không phụ thuộc vào dịch vụ đám mây đóng.",
+    "domains": [
+      "it/ai-ml/llm-agents"
+    ],
+    "level": 2,
     "status": "draft"
   },
   {
@@ -4525,6 +4899,26 @@
     "summary": "Tài liệu mô tả đầy đủ mục đích, đối tượng người dùng, yêu cầu chức năng và tiêu chuẩn đo lường thành công của một sản phẩm trước khi xây dựng.",
     "domains": [
       "product/product-management"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
+    "id": "precision-recall",
+    "label": "Precision and recall",
+    "aliases": [
+      "độ chính xác và độ thu hồi"
+    ],
+    "loanwords": [
+      "precision and recall"
+    ],
+    "plain_descriptions": [
+      "cặp chỉ số đo lường tỷ lệ đoán trúng trong các trường hợp dương tính và tỷ lệ tìm đủ mọi trường hợp thực tế",
+      "hai thước đo đánh giá sự cân bằng giữa việc báo động nhầm và việc bỏ sót mục tiêu của mô hình phân loại"
+    ],
+    "summary": "Bộ đôi chỉ số đánh giá mô hình phân loại, trong đó precision đo lường tỷ lệ dự đoán tích cực là đúng, còn recall đo lường tỷ lệ các mẫu tích cực thực tế được phát hiện thành công.",
+    "domains": [
+      "it/ai-ml/mlops"
     ],
     "level": 2,
     "status": "draft"
@@ -4997,6 +5391,25 @@
     "status": "draft"
   },
   {
+    "id": "red-teaming",
+    "label": "Red teaming",
+    "qualifier": "(AI)",
+    "aliases": [],
+    "loanwords": [
+      "red teaming"
+    ],
+    "plain_descriptions": [
+      "hoạt động kiểm thử an toàn trong đó các chuyên gia cố tình thử thách để tìm ra điểm yếu và lỗi của AI",
+      "thử nghiệm tấn công thử bằng các câu lệnh lắt léo để phát hiện nguy cơ bảo mật trước khi phát hành AI"
+    ],
+    "summary": "Quy trình kiểm thử đối kháng có hệ thống trong đó các chuyên gia hoặc công cụ tự động giả lập các hành vi tấn công và gợi ý độc hại để phát hiện các lỗ hổng an toàn và sai lệch của mô hình AI.",
+    "domains": [
+      "it/ai-ml/ai-safety-governance"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
     "id": "refactoring",
     "label": "Refactoring",
     "aliases": [
@@ -5017,6 +5430,24 @@
     "status": "draft"
   },
   {
+    "id": "regression-ml",
+    "label": "Hồi quy",
+    "aliases": [],
+    "loanwords": [
+      "regression"
+    ],
+    "plain_descriptions": [
+      "dự đoán các giá trị số liên tục như giá nhà đất, thời gian di chuyển hoặc doanh thu bán hàng",
+      "phương pháp máy học dùng để ước lượng một con số cụ thể từ nhiều biến số đầu vào"
+    ],
+    "summary": "Dạng bài toán học máy có giám sát nhằm ước tính các giá trị số thực liên tục dựa trên các mối quan hệ thống kê giữa những đặc trưng đầu vào.",
+    "domains": [
+      "it/ai-ml/foundations"
+    ],
+    "level": 1,
+    "status": "draft"
+  },
+  {
     "id": "regression-testing",
     "label": "Regression testing",
     "aliases": [
@@ -5032,6 +5463,68 @@
     "summary": "Quy trình chạy lại các bộ kiểm thử tự động nhằm đảm bảo những thay đổi mã nguồn hoặc bản vá lỗi mới không làm ảnh hưởng đến các chức năng vốn đang hoạt động bình thường.",
     "domains": [
       "it/software-engineering/testing"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
+    "id": "regularization",
+    "label": "Regularization",
+    "qualifier": "(ML)",
+    "aliases": [
+      "chính quy hóa",
+      "điều chuẩn"
+    ],
+    "loanwords": [
+      "regularization"
+    ],
+    "plain_descriptions": [
+      "kỹ thuật kiểm soát giúp mô hình máy học không trở nên quá phức tạp hoặc ghi nhớ nhiễu dữ liệu",
+      "phương pháp áp dụng hình phạt toán học để ngăn chặn trọng số tăng quá mức khi huấn luyện"
+    ],
+    "summary": "Tập hợp các kỹ thuật thống kê nhằm phạt độ phức tạp của mô hình trong quá trình huấn luyện, giúp chống quá khớp và nâng cao năng lực tổng quát hóa.",
+    "domains": [
+      "it/ai-ml/foundations"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
+    "id": "reinforcement-learning",
+    "label": "Học tăng cường",
+    "aliases": [
+      "RL"
+    ],
+    "loanwords": [
+      "reinforcement learning"
+    ],
+    "plain_descriptions": [
+      "huấn luyện AI ra quyết định thông qua thử sai dựa trên hệ thống điểm thưởng và điểm phạt",
+      "phương pháp máy học trong đó thuật toán tự tìm chiến lược tối ưu qua tương tác với môi trường"
+    ],
+    "summary": "Phương pháp máy học trong đó một tác tử tự động học cách lựa chọn chuỗi hành động trong môi trường để tối đa hóa tổng điểm thưởng tích lũy theo thời gian.",
+    "domains": [
+      "it/ai-ml/foundations"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
+    "id": "reranking",
+    "label": "Reranking",
+    "aliases": [
+      "xếp hạng lại"
+    ],
+    "loanwords": [
+      "reranking"
+    ],
+    "plain_descriptions": [
+      "bước chấm điểm lần hai giúp sắp xếp lại các kết quả tìm kiếm để đưa câu trả lời chuẩn nhất lên đầu",
+      "kỹ thuật dùng mô hình học sâu chấm điểm chi tiết độ liên quan của các tài liệu vừa tìm được"
+    ],
+    "summary": "Kỹ thuật truy xuất thông tin hai giai đoạn trong đó một mô hình tính toán chuyên sâu đánh giá lại và sắp xếp lại danh sách các tài liệu ứng viên để tối ưu hóa thứ hạng hiển thị.",
+    "domains": [
+      "it/ai-ml/llm-agents"
     ],
     "level": 2,
     "status": "draft"
@@ -5137,6 +5630,48 @@
     "summary": "Mô hình ưu tiên định lượng chấm điểm các sáng kiến bằng cách nhân độ tiếp cận (Reach), tác động (Impact), mức độ tự tin (Confidence) rồi chia cho nỗ lực (Effort).",
     "domains": [
       "product/delivery-planning"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
+    "id": "rlhf",
+    "label": "Reinforcement learning from human feedback (RLHF)",
+    "aliases": [
+      "RLHF",
+      "học tăng cường từ phản hồi con người"
+    ],
+    "loanwords": [
+      "reinforcement learning from human feedback",
+      "RLHF"
+    ],
+    "plain_descriptions": [
+      "tinh chỉnh mô hình ngôn ngữ dựa trên đánh giá của con người để câu trả lời hữu ích và an toàn hơn",
+      "phương pháp dùng điểm thưởng từ bảng xếp hạng của người đánh giá để hoàn thiện hành vi AI"
+    ],
+    "summary": "Kỹ thuật tinh chỉnh mô hình ngôn ngữ lớn bằng cách huấn luyện mô hình phần thưởng từ các so sánh đánh giá của con người, sau đó dùng học tăng cường để định hướng câu trả lời của mô hình.",
+    "domains": [
+      "it/ai-ml/llm-agents"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
+    "id": "rnn",
+    "label": "Mạng nơ-ron hồi quy (RNN)",
+    "aliases": [
+      "RNN"
+    ],
+    "loanwords": [
+      "recurrent neural network"
+    ],
+    "plain_descriptions": [
+      "mạng nơ-ron có bộ nhớ tạm để xử lý dữ liệu dạng chuỗi tuần tự như câu chữ hay chuỗi thời gian",
+      "kiến trúc học sâu truyền thông tin từ các bước tính toán trước đó vào bước xử lý hiện tại"
+    ],
+    "summary": "Lớp mạng nơ-ron nhân tạo có các kết nối dạng chu trình khép kín giúp lưu trữ trạng thái ẩn, chuyên dùng để xử lý dữ liệu chuỗi tuần tự theo thời gian.",
+    "domains": [
+      "it/ai-ml/nlp"
     ],
     "level": 2,
     "status": "draft"
@@ -5370,6 +5905,26 @@
     "domains": [
       "it/devops/ci-cd",
       "it/security/authentication"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
+    "id": "semantic-search",
+    "label": "Semantic search",
+    "aliases": [
+      "tìm kiếm ngữ nghĩa"
+    ],
+    "loanwords": [
+      "semantic search"
+    ],
+    "plain_descriptions": [
+      "công nghệ tìm kiếm hiểu được ý nghĩa câu hỏi thay vì chỉ so khớp từng chữ cái chính xác",
+      "hệ thống tra cứu tài liệu dựa trên ngữ cảnh và nội dung ngay cả khi dùng các từ đồng nghĩa khác nhau"
+    ],
+    "summary": "Phương pháp tìm kiếm thông tin đánh giá ý định ngữ cảnh và ý nghĩa thực tế đằng sau câu truy vấn và tài liệu thông qua véc-tơ ngữ nghĩa thay vì chỉ so khớp từ khóa văn bản thuần túy.",
+    "domains": [
+      "it/ai-ml/nlp"
     ],
     "level": 2,
     "status": "draft"
@@ -5762,6 +6317,27 @@
     "status": "draft"
   },
   {
+    "id": "speech-recognition",
+    "label": "Nhận dạng tiếng nói",
+    "aliases": [
+      "ASR",
+      "nhận dạng giọng nói"
+    ],
+    "loanwords": [
+      "speech recognition"
+    ],
+    "plain_descriptions": [
+      "công nghệ cho phép máy tính chuyển đổi giọng nói thành văn bản chữ viết",
+      "phần mềm ghi âm và tự động chuyển lời nói của con người thành chữ điện tử"
+    ],
+    "summary": "Khả năng của hệ thống trí tuệ nhân tạo tiếp nhận tín hiệu âm thanh giọng nói và tự động chuyển đổi thành văn bản kỹ thuật số tương ứng.",
+    "domains": [
+      "it/ai-ml/nlp"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
     "id": "spokesperson",
     "label": "Người phát ngôn",
     "aliases": [
@@ -6076,6 +6652,44 @@
     "status": "draft"
   },
   {
+    "id": "supervised-learning",
+    "label": "Học có giám sát",
+    "aliases": [],
+    "loanwords": [
+      "supervised learning"
+    ],
+    "plain_descriptions": [
+      "huấn luyện mô hình máy học bằng tập dữ liệu mẫu đã có sẵn đáp án chính xác",
+      "phương pháp dạy máy tính học từ các cặp dữ liệu đầu vào đi kèm nhãn kết quả"
+    ],
+    "summary": "Phương pháp huấn luyện máy học trong đó thuật toán học hàm ánh xạ từ đặc trưng đầu vào tới kết quả đầu ra dựa trên tập dữ liệu đã có sẵn nhãn chuẩn.",
+    "domains": [
+      "it/ai-ml/foundations"
+    ],
+    "level": 1,
+    "status": "draft"
+  },
+  {
+    "id": "synthetic-data",
+    "label": "Synthetic data",
+    "aliases": [
+      "dữ liệu tổng hợp"
+    ],
+    "loanwords": [
+      "synthetic data"
+    ],
+    "plain_descriptions": [
+      "dữ liệu do thuật toán máy tính tự tạo ra mô phỏng thực tế chứ không phải thu thập từ con người",
+      "các tập dữ liệu nhân tạo giúp huấn luyện AI mà không lo vi phạm quyền riêng tư của khách hàng"
+    ],
+    "summary": "Dữ liệu được tạo ra một cách nhân tạo bằng các thuật toán toán học hoặc mô phỏng kỹ thuật số, phản ánh chính xác các đặc tính thống kê của dữ liệu thực tế mà không chứa thông tin cá nhân nhạy cảm.",
+    "domains": [
+      "it/ai-ml/mlops"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
     "id": "system-prompt",
     "label": "System prompt",
     "aliases": [],
@@ -6326,6 +6940,26 @@
     "status": "draft"
   },
   {
+    "id": "transfer-learning",
+    "label": "Transfer learning",
+    "aliases": [
+      "học chuyển giao"
+    ],
+    "loanwords": [
+      "transfer learning"
+    ],
+    "plain_descriptions": [
+      "tận dụng một mô hình đã học từ lượng dữ liệu khổng lồ để áp dụng vào một nhiệm vụ mới cụ thể",
+      "tái sử dụng tri thức và trọng số có sẵn giúp huấn luyện mô hình mới với ít dữ liệu và thời gian hơn"
+    ],
+    "summary": "Phương pháp học máy trong đó các biểu diễn và trọng số đã học từ một bài toán ban đầu được tái sử dụng và tinh chỉnh để giải quyết một bài toán đích mới liên quan.",
+    "domains": [
+      "it/ai-ml/foundations"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
     "id": "transformer",
     "label": "Transformer",
     "qualifier": "(AI)",
@@ -6387,6 +7021,27 @@
     "status": "draft"
   },
   {
+    "id": "underfitting",
+    "label": "Underfitting",
+    "aliases": [
+      "dưới khớp",
+      "thiếu khớp"
+    ],
+    "loanwords": [
+      "underfitting"
+    ],
+    "plain_descriptions": [
+      "khi mô hình máy học quá đơn giản đến mức không học nổi quy luật cơ bản từ dữ liệu",
+      "hiện tượng mô hình cho kết quả kém ngay trên cả tập luyện tập lẫn tập kiểm tra thực tế"
+    ],
+    "summary": "Hiện tượng mô hình học máy quá đơn giản hoặc chưa được huấn luyện đủ, không nắm bắt được quy luật nội tại của dữ liệu và dẫn tới sai số cao trên cả tập huấn luyện lẫn tập kiểm thử.",
+    "domains": [
+      "it/ai-ml/foundations"
+    ],
+    "level": 1,
+    "status": "draft"
+  },
+  {
     "id": "unit-test",
     "label": "Unit test",
     "aliases": [
@@ -6402,6 +7057,24 @@
     "summary": "Bài kiểm tra tự động nhằm cô lập và xác minh tính đúng đắn của đơn vị mã nguồn nhỏ nhất có thể kiểm thử trong ứng dụng.",
     "domains": [
       "it/software-engineering/testing"
+    ],
+    "level": 1,
+    "status": "draft"
+  },
+  {
+    "id": "unsupervised-learning",
+    "label": "Học không giám sát",
+    "aliases": [],
+    "loanwords": [
+      "unsupervised learning"
+    ],
+    "plain_descriptions": [
+      "máy học tự tìm quy luật ẩn trong dữ liệu mà không cần nhãn phân loại hay đáp án trước",
+      "thuật toán gom nhóm các điểm dữ liệu dựa trên sự tương đồng tự nhiên mà không cần con người chỉ dẫn"
+    ],
+    "summary": "Phương pháp huấn luyện máy học cho phép thuật toán tự động phát hiện cấu trúc tiềm ẩn, cụm mẫu và mối quan hệ nội tại từ tập dữ liệu chưa được gán nhãn.",
+    "domains": [
+      "it/ai-ml/foundations"
     ],
     "level": 1,
     "status": "draft"

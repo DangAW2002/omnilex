@@ -1,12 +1,26 @@
 id: feature-engineering
 domains:
   - it/ai-ml/mlops
-level: 1
+level: 2
 relations:
-  prerequisites: []
+  prerequisites:
+    - dataset
+    - machine-learning
   confusable: []
-  related: []
+  related:
+    - data-labeling
+    - model-drift
+    - mlops
 status: draft
 provenance:
   drafted_by: ai
-sources: []
+sources:
+  - ref: google-ml-glossary
+    locator: https://developers.google.com/machine-learning/glossary#feature-engineering
+    title: "feature engineering"
+    language: en
+    accessed: '2026-10-17'
+    retrieved_by: ai
+    supports:
+      - definition
+      - summary

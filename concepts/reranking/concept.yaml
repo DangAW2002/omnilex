@@ -1,12 +1,24 @@
 id: reranking
 domains:
   - it/ai-ml/llm-agents
-level: 1
+level: 2
 relations:
-  prerequisites: []
+  prerequisites:
+    - semantic-search
   confusable: []
-  related: []
+  related:
+    - rag
+    - vector-database
 status: draft
 provenance:
   drafted_by: ai
-sources: []
+sources:
+  - ref: microsoft-learn
+    locator: https://learn.microsoft.com/en-us/azure/search/semantic-search-overview
+    title: "Semantic ranking in Azure AI Search"
+    language: en
+    accessed: '2026-10-17'
+    retrieved_by: ai
+    supports:
+      - definition
+      - summary

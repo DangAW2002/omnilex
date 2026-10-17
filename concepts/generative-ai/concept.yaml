@@ -3,10 +3,25 @@ domains:
   - it/ai-ml/foundations
 level: 1
 relations:
-  prerequisites: []
+  prerequisites:
+    - machine-learning
+    - deep-learning
   confusable: []
-  related: []
+  related:
+    - llm
+    - diffusion-model
+    - foundation-model
+    - multimodal-model
 status: draft
 provenance:
   drafted_by: ai
-sources: []
+sources:
+  - ref: google-ml-glossary
+    locator: https://developers.google.com/machine-learning/glossary#generative-ai
+    title: "generative AI"
+    language: en
+    accessed: '2026-10-17'
+    retrieved_by: ai
+    supports:
+      - definition
+      - summary

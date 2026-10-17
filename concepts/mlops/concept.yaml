@@ -1,12 +1,26 @@
 id: mlops
 domains:
   - it/ai-ml/mlops
-level: 1
+level: 2
 relations:
-  prerequisites: []
+  prerequisites:
+    - machine-learning
+    - model-training
   confusable: []
-  related: []
+  related:
+    - model-drift
+    - feature-engineering
+    - data-labeling
 status: draft
 provenance:
   drafted_by: ai
-sources: []
+sources:
+  - ref: aws-docs
+    locator: https://aws.amazon.com/what-is/mlops/
+    title: "What is MLOps?"
+    language: en
+    accessed: '2026-10-17'
+    retrieved_by: ai
+    supports:
+      - definition
+      - summary

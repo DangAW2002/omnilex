@@ -1284,3 +1284,17 @@ cdc:
   reuse: paraphrase-only
   domains: [media/pr-communications]
   verified_license_at: "2026-10-17"
+
+# wave3 ml
+stanford-hai:
+  title: Stanford HAI (Human-Centered Artificial Intelligence)
+  publisher: Stanford University
+  url: https://hai.stanford.edu
+  type: docs
+  tier: B
+  languages: [en]
+  license: all-rights-reserved
+  reuse: paraphrase-only
+  domains: [it/ai-ml]
+  verified_license_at: "2026-10-17"
+

@@ -1,12 +1,24 @@
 id: ai-alignment
 domains:
   - it/ai-ml/ai-safety-governance
-level: 1
+level: 2
 relations:
-  prerequisites: []
+  prerequisites:
+    - machine-learning
   confusable: []
-  related: []
+  related:
+    - rlhf
+    - red-teaming
 status: draft
 provenance:
   drafted_by: ai
-sources: []
+sources:
+  - ref: nist-csrc
+    locator: https://airc.nist.gov/airmf-resources/airmf/
+    title: "NIST AI Risk Management Framework"
+    language: en
+    accessed: '2026-10-17'
+    retrieved_by: ai
+    supports:
+      - definition
+      - summary

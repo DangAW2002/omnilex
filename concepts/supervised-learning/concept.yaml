@@ -3,10 +3,25 @@ domains:
   - it/ai-ml/foundations
 level: 1
 relations:
-  prerequisites: []
-  confusable: []
-  related: []
+  prerequisites:
+    - machine-learning
+    - dataset
+  confusable:
+    - unsupervised-learning
+  related:
+    - classification-ml
+    - regression-ml
+    - data-labeling
 status: draft
 provenance:
   drafted_by: ai
-sources: []
+sources:
+  - ref: google-ml-glossary
+    locator: https://developers.google.com/machine-learning/glossary#supervised-machine-learning
+    title: "supervised machine learning"
+    language: en
+    accessed: '2026-10-17'
+    retrieved_by: ai
+    supports:
+      - definition
+      - summary

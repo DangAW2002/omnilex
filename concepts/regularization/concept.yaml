@@ -1,12 +1,25 @@
 id: regularization
 domains:
   - it/ai-ml/foundations
-level: 1
+level: 2
 relations:
-  prerequisites: []
+  prerequisites:
+    - model-training
+    - loss-function
   confusable: []
-  related: []
+  related:
+    - overfitting
+    - underfitting
 status: draft
 provenance:
   drafted_by: ai
-sources: []
+sources:
+  - ref: google-ml-glossary
+    locator: https://developers.google.com/machine-learning/glossary#regularization
+    title: "regularization"
+    language: en
+    accessed: '2026-10-17'
+    retrieved_by: ai
+    supports:
+      - definition
+      - summary

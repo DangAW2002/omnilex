@@ -1,12 +1,25 @@
 id: rnn
 domains:
   - it/ai-ml/nlp
-level: 1
+level: 2
 relations:
-  prerequisites: []
-  confusable: []
-  related: []
+  prerequisites:
+    - neural-network
+  confusable:
+    - cnn
+  related:
+    - natural-language-processing
+    - transformer
 status: draft
 provenance:
   drafted_by: ai
-sources: []
+sources:
+  - ref: google-ml-glossary
+    locator: https://developers.google.com/machine-learning/glossary#rnn
+    title: "RNN"
+    language: en
+    accessed: '2026-10-17'
+    retrieved_by: ai
+    supports:
+      - definition
+      - summary

@@ -1,12 +1,24 @@
 id: open-weight-model
 domains:
   - it/ai-ml/llm-agents
-level: 1
+level: 2
 relations:
-  prerequisites: []
+  prerequisites:
+    - foundation-model
   confusable: []
-  related: []
+  related:
+    - model-parameter
+    - ai-alignment
 status: draft
 provenance:
   drafted_by: ai
-sources: []
+sources:
+  - ref: stanford-hai
+    locator: https://hai.stanford.edu/ai-definitions/what-is-an-open-weight-model
+    title: "What is an Open-Weight Model?"
+    language: en
+    accessed: '2026-10-17'
+    retrieved_by: ai
+    supports:
+      - definition
+      - summary

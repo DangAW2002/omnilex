@@ -1,12 +1,26 @@
 id: semantic-search
 domains:
   - it/ai-ml/nlp
-level: 1
+level: 2
 relations:
-  prerequisites: []
+  prerequisites:
+    - embedding
+    - natural-language-processing
   confusable: []
-  related: []
+  related:
+    - vector-database
+    - reranking
+    - rag
 status: draft
 provenance:
   drafted_by: ai
-sources: []
+sources:
+  - ref: microsoft-learn
+    locator: https://learn.microsoft.com/en-us/azure/search/semantic-search-overview
+    title: "Semantic search in Azure AI Search"
+    language: en
+    accessed: '2026-10-17'
+    retrieved_by: ai
+    supports:
+      - definition
+      - summary

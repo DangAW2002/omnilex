@@ -3,10 +3,23 @@ domains:
   - it/ai-ml/computer-vision
 level: 1
 relations:
-  prerequisites: []
+  prerequisites:
+    - machine-learning
   confusable: []
-  related: []
+  related:
+    - cnn
+    - ocr
+    - diffusion-model
 status: draft
 provenance:
   drafted_by: ai
-sources: []
+sources:
+  - ref: microsoft-learn
+    locator: https://learn.microsoft.com/en-us/azure/ai-services/computer-vision/overview
+    title: "Azure AI Vision overview"
+    language: en
+    accessed: '2026-10-17'
+    retrieved_by: ai
+    supports:
+      - definition
+      - summary

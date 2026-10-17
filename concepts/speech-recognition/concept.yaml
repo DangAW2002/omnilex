@@ -1,12 +1,24 @@
 id: speech-recognition
 domains:
   - it/ai-ml/nlp
-level: 1
+level: 2
 relations:
-  prerequisites: []
+  prerequisites:
+    - machine-learning
   confusable: []
-  related: []
+  related:
+    - natural-language-processing
+    - ocr
 status: draft
 provenance:
   drafted_by: ai
-sources: []
+sources:
+  - ref: microsoft-learn
+    locator: https://learn.microsoft.com/en-us/azure/ai-services/speech-service/speech-to-text
+    title: "Speech-to-text overview"
+    language: en
+    accessed: '2026-10-17'
+    retrieved_by: ai
+    supports:
+      - definition
+      - summary

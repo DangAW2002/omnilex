@@ -1,12 +1,25 @@
 id: reinforcement-learning
 domains:
   - it/ai-ml/foundations
-level: 1
+level: 2
 relations:
-  prerequisites: []
+  prerequisites:
+    - machine-learning
   confusable: []
-  related: []
+  related:
+    - rlhf
+    - supervised-learning
+    - unsupervised-learning
 status: draft
 provenance:
   drafted_by: ai
-sources: []
+sources:
+  - ref: google-ml-glossary
+    locator: https://developers.google.com/machine-learning/glossary#reinforcement-learning-rl
+    title: "reinforcement learning (RL)"
+    language: en
+    accessed: '2026-10-17'
+    retrieved_by: ai
+    supports:
+      - definition
+      - summary

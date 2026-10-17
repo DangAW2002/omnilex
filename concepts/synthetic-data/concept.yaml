@@ -1,12 +1,24 @@
 id: synthetic-data
 domains:
   - it/ai-ml/mlops
-level: 1
+level: 2
 relations:
-  prerequisites: []
+  prerequisites:
+    - dataset
   confusable: []
-  related: []
+  related:
+    - data-labeling
+    - generative-ai
 status: draft
 provenance:
   drafted_by: ai
-sources: []
+sources:
+  - ref: aws-docs
+    locator: https://aws.amazon.com/what-is/synthetic-data/
+    title: "What is Synthetic Data?"
+    language: en
+    accessed: '2026-10-17'
+    retrieved_by: ai
+    supports:
+      - definition
+      - summary

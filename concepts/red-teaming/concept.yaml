@@ -1,12 +1,24 @@
 id: red-teaming
 domains:
   - it/ai-ml/ai-safety-governance
-level: 1
+level: 2
 relations:
-  prerequisites: []
+  prerequisites:
+    - llm
   confusable: []
-  related: []
+  related:
+    - ai-alignment
+    - rlhf
 status: draft
 provenance:
   drafted_by: ai
-sources: []
+sources:
+  - ref: microsoft-learn
+    locator: https://learn.microsoft.com/en-us/azure/foundry/openai/concepts/red-teaming
+    title: "Planning red teaming for large language models"
+    language: en
+    accessed: '2026-10-17'
+    retrieved_by: ai
+    supports:
+      - definition
+      - summary

@@ -155,6 +155,21 @@
     "autolink": true
   },
   {
+    "key": "AI alignment",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "ai-alignment",
+        "label": "AI alignment",
+        "summary": "The field of artificial intelligence research dedicated to ensuring that AI systems reliably pursue human goals, ethical principles, and safety boundaries without harmful unintended consequences.",
+        "domains": [
+          "it/ai-ml/ai-safety-governance"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
     "key": "Benchmark",
     "match": "any-case",
     "concepts": [
@@ -1213,6 +1228,22 @@
     "autolink": false
   },
   {
+    "key": "Chunking",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "chunking",
+        "label": "Chunking",
+        "qualifier": "(RAG)",
+        "summary": "The process of partitioning lengthy documents into smaller, cohesive textual segments to optimize semantic embedding density and retrieval precision in Retrieval-Augmented Generation systems.",
+        "domains": [
+          "it/ai-ml/llm-agents"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
     "key": "Churn rate",
     "match": "any-case",
     "concepts": [
@@ -1319,6 +1350,66 @@
       }
     ],
     "autolink": true
+  },
+  {
+    "key": "Classification",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "classification-ml",
+        "label": "Classification",
+        "summary": "A supervised machine learning task where an algorithm predicts discrete qualitative class labels or category assignments for given input observations.",
+        "domains": [
+          "it/ai-ml/foundations"
+        ]
+      }
+    ],
+    "autolink": false
+  },
+  {
+    "key": "Clustering",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "clustering",
+        "label": "Clustering",
+        "summary": "An unsupervised machine learning task that groups unlabelled observations into subsets whose member data points share higher similarity to one another than to points in other groups.",
+        "domains": [
+          "it/ai-ml/foundations"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Convolutional neural network (CNN)",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "cnn",
+        "label": "Convolutional neural network (CNN)",
+        "summary": "A deep learning architecture that utilizes convolutional layers with weight sharing and pooling mechanisms to extract spatial feature hierarchies from grid-structured data like images.",
+        "domains": [
+          "it/ai-ml/computer-vision"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "CNN",
+    "match": "exact-case",
+    "concepts": [
+      {
+        "id": "cnn",
+        "label": "Convolutional neural network (CNN)",
+        "summary": "A deep learning architecture that utilizes convolutional layers with weight sharing and pooling mechanisms to extract spatial feature hierarchies from grid-structured data like images.",
+        "domains": [
+          "it/ai-ml/computer-vision"
+        ]
+      }
+    ],
+    "autolink": false
   },
   {
     "key": "Constrained Application Protocol (CoAP)",
@@ -1437,6 +1528,36 @@
         "domains": [
           "finance/personal-finance/saving",
           "finance/investing/portfolio-risk"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Computer vision",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "computer-vision",
+        "label": "Computer vision",
+        "summary": "A domain of artificial intelligence that trains digital systems to identify, process, and derive meaningful insights from digital imagery, video feeds, and visual inputs.",
+        "domains": [
+          "it/ai-ml/computer-vision"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Confusion matrix",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "confusion-matrix",
+        "label": "Confusion matrix",
+        "summary": "A specialized contingency table layout that visually summarizes classification model performance by cross-tabulating actual ground-truth labels against predicted outcomes.",
+        "domains": [
+          "it/ai-ml/mlops"
         ]
       }
     ],
@@ -2143,6 +2264,21 @@
     "autolink": true
   },
   {
+    "key": "Data labeling",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "data-labeling",
+        "label": "Data labeling",
+        "summary": "The operational process of identifying, annotating, and tagging raw data samples with informative target labels to produce ground-truth training datasets for supervised machine learning.",
+        "domains": [
+          "it/ai-ml/mlops"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
     "key": "Data lake",
     "match": "any-case",
     "concepts": [
@@ -2681,6 +2817,21 @@
         "summary": "The automated onboarding process that authenticates, registers, and configures newly deployed hardware devices into a centralized cloud management platform.",
         "domains": [
           "iot/edge-cloud"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Diffusion model",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "diffusion-model",
+        "label": "Diffusion model",
+        "summary": "A class of generative neural networks trained to synthesize high-fidelity data, particularly images, by learning to iteratively reverse a progressive Markovian noise-diffusion process.",
+        "domains": [
+          "it/ai-ml/computer-vision"
         ]
       }
     ],
@@ -3459,6 +3610,36 @@
     "autolink": true
   },
   {
+    "key": "F1 score",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "f1-score",
+        "label": "F1 score",
+        "summary": "A statistical evaluation metric that calculates the harmonic mean of precision and recall to provide a balanced measure of a classifier’s accuracy.",
+        "domains": [
+          "it/ai-ml/mlops"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "F1-score",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "f1-score",
+        "label": "F1 score",
+        "summary": "A statistical evaluation metric that calculates the harmonic mean of precision and recall to provide a balanced measure of a classifier’s accuracy.",
+        "domains": [
+          "it/ai-ml/mlops"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
     "key": "Fact-checking",
     "match": "any-case",
     "concepts": [
@@ -3498,6 +3679,21 @@
         "summary": "A legal doctrine permitting limited quotation and borrowing of copyrighted works without permission for purposes such as criticism, news reporting, teaching, or scholarship.",
         "domains": [
           "media/publishing/copyright-licensing"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Feature engineering",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "feature-engineering",
+        "label": "Feature engineering",
+        "summary": "The machine learning practice of selecting, manipulating, and transforming raw dataset attributes into optimized feature representations to maximize algorithm performance.",
+        "domains": [
+          "it/ai-ml/mlops"
         ]
       }
     ],
@@ -3609,6 +3805,21 @@
     "autolink": true
   },
   {
+    "key": "Foundation model",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "foundation-model",
+        "label": "Foundation model",
+        "summary": "A large-scale artificial intelligence model trained on vast, broad datasets at scale that can be adapted and fine-tuned across a wide variety of downstream specialized applications.",
+        "domains": [
+          "it/ai-ml/foundations"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
     "key": "Function calling",
     "match": "any-case",
     "concepts": [
@@ -3693,6 +3904,36 @@
         "summary": "The total monetary or market value of all final goods and services produced within a country’s domestic borders over a specific timeframe.",
         "domains": [
           "finance/economics/inflation"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Generative AI",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "generative-ai",
+        "label": "Generative AI",
+        "summary": "A subfield of artificial intelligence focusing on computational models trained to create novel artifacts such as text, images, and audio rather than simply analyzing existing data.",
+        "domains": [
+          "it/ai-ml/foundations"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "GenAI",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "generative-ai",
+        "label": "Generative AI",
+        "summary": "A subfield of artificial intelligence focusing on computational models trained to create novel artifacts such as text, images, and audio rather than simply analyzing existing data.",
+        "domains": [
+          "it/ai-ml/foundations"
         ]
       }
     ],
@@ -5752,6 +5993,21 @@
     "autolink": false
   },
   {
+    "key": "MLOps",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "mlops",
+        "label": "MLOps",
+        "summary": "A multidisciplinary set of engineering practices that unifies machine learning system development and operations to standardize and automate continuous delivery, testing, and monitoring in production.",
+        "domains": [
+          "it/ai-ml/mlops"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
     "key": "Mock",
     "match": "any-case",
     "concepts": [
@@ -5793,6 +6049,21 @@
         "summary": "A de facto industrial request-response communication protocol that reads and writes discrete memory coils and 16-bit numerical registers across serial and Ethernet links.",
         "domains": [
           "iot/industrial"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Model drift",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "model-drift",
+        "label": "Model drift",
+        "summary": "The operational degradation of a deployed machine learning model’s predictive accuracy over time caused by evolving real-world statistical environments and shifting feature distributions.",
+        "domains": [
+          "it/ai-ml/mlops"
         ]
       }
     ],
@@ -5936,6 +6207,21 @@
     "autolink": true
   },
   {
+    "key": "Multimodal model",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "multimodal-model",
+        "label": "Multimodal model",
+        "summary": "An artificial intelligence architecture capable of processing, synthesizing, and relating information across multiple sensory data modalities such as text, images, video, and audio.",
+        "domains": [
+          "it/ai-ml/llm-agents"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
     "key": "Mutual fund",
     "match": "any-case",
     "concepts": [
@@ -6005,6 +6291,36 @@
         "summary": "An early iteration of a product incorporating the minimum feature set necessary to validate foundational assumptions with real customers.",
         "domains": [
           "product/product-management"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Natural language processing (NLP)",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "natural-language-processing",
+        "label": "Natural language processing (NLP)",
+        "summary": "A subdiscipline of artificial intelligence and computational linguistics enabling computer software to analyze, comprehend, and generate natural human speech and text.",
+        "domains": [
+          "it/ai-ml/nlp"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "NLP",
+    "match": "exact-case",
+    "concepts": [
+      {
+        "id": "natural-language-processing",
+        "label": "Natural language processing (NLP)",
+        "summary": "A subdiscipline of artificial intelligence and computational linguistics enabling computer software to analyze, comprehend, and generate natural human speech and text.",
+        "domains": [
+          "it/ai-ml/nlp"
         ]
       }
     ],
@@ -6247,6 +6563,36 @@
     "autolink": true
   },
   {
+    "key": "Optical character recognition (OCR)",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "ocr",
+        "label": "Optical character recognition (OCR)",
+        "summary": "A computer vision technology that detects, segments, and converts printed, typed, or handwritten text inside visual images into machine-encoded editable text.",
+        "domains": [
+          "it/ai-ml/computer-vision"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "OCR",
+    "match": "exact-case",
+    "concepts": [
+      {
+        "id": "ocr",
+        "label": "Optical character recognition (OCR)",
+        "summary": "A computer vision technology that detects, segments, and converts printed, typed, or handwritten text inside visual images into machine-encoded editable text.",
+        "domains": [
+          "it/ai-ml/computer-vision"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
     "key": "Objectives and Key Results (OKR)",
     "match": "any-case",
     "concepts": [
@@ -6376,6 +6722,21 @@
         "summary": "A platform-independent, service-oriented communication architecture designed for industrial automation that provides rich semantic information modeling and built-in cryptographic security.",
         "domains": [
           "iot/industrial"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Open-weight model",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "open-weight-model",
+        "label": "Open-weight model",
+        "summary": "An artificial intelligence model whose learned numerical parameters (weights) are published openly for local deployment, inspection, and fine-tuning, distinguishing it from closed proprietary cloud APIs.",
+        "domains": [
+          "it/ai-ml/llm-agents"
         ]
       }
     ],
@@ -6934,6 +7295,21 @@
         "summary": "A definitive planning document detailing product purpose, target personas, functional requirements, and measurable success criteria for delivery teams.",
         "domains": [
           "product/product-management"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Precision and recall",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "precision-recall",
+        "label": "Precision and recall",
+        "summary": "Dual evaluation metrics for classification systems, where precision measures the fraction of positive predictions that are correct, and recall measures the fraction of actual positive instances correctly retrieved.",
+        "domains": [
+          "it/ai-ml/mlops"
         ]
       }
     ],
@@ -7624,6 +8000,22 @@
     "autolink": true
   },
   {
+    "key": "Red teaming",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "red-teaming",
+        "label": "Red teaming",
+        "qualifier": "(AI)",
+        "summary": "A disciplined adversarial testing process where internal experts or automated agents simulate malicious attacks and prompt injections to identify model safety vulnerabilities, bias, and policy flaws.",
+        "domains": [
+          "it/ai-ml/ai-safety-governance"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
     "key": "Refactoring",
     "match": "any-case",
     "concepts": [
@@ -7639,6 +8031,21 @@
     "autolink": true
   },
   {
+    "key": "Regression",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "regression-ml",
+        "label": "Regression",
+        "summary": "A supervised machine learning problem formulation where the objective is to predict continuous, real-valued numerical variables based on relationships among input features.",
+        "domains": [
+          "it/ai-ml/foundations"
+        ]
+      }
+    ],
+    "autolink": false
+  },
+  {
     "key": "Regression testing",
     "match": "any-case",
     "concepts": [
@@ -7648,6 +8055,67 @@
         "summary": "The practice of re-executing test suites against an updated application to ensure that recent code modifications or bug fixes have not disrupted previously working functionality.",
         "domains": [
           "it/software-engineering/testing"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Regularization",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "regularization",
+        "label": "Regularization",
+        "qualifier": "(ML)",
+        "summary": "A set of statistical techniques that penalize model complexity during training to prevent overfitting and improve generalization on unseen test data.",
+        "domains": [
+          "it/ai-ml/foundations"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Reinforcement learning",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "reinforcement-learning",
+        "label": "Reinforcement learning",
+        "summary": "A machine learning paradigm where an autonomous agent learns to select sequential actions in an environment to maximize cumulative scalar reward signals over time.",
+        "domains": [
+          "it/ai-ml/foundations"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "RL",
+    "match": "exact-case",
+    "concepts": [
+      {
+        "id": "reinforcement-learning",
+        "label": "Reinforcement learning",
+        "summary": "A machine learning paradigm where an autonomous agent learns to select sequential actions in an environment to maximize cumulative scalar reward signals over time.",
+        "domains": [
+          "it/ai-ml/foundations"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Reranking",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "reranking",
+        "label": "Reranking",
+        "summary": "A two-stage information retrieval technique where a computationally intensive secondary model re-evaluates and re-orders a candidate pool of retrieved documents to optimize top-k relevance.",
+        "domains": [
+          "it/ai-ml/llm-agents"
         ]
       }
     ],
@@ -7828,6 +8296,66 @@
         "summary": "A quantitative prioritization framework that scores potential initiatives by multiplying Reach, Impact, and Confidence and dividing by Effort.",
         "domains": [
           "product/delivery-planning"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Reinforcement learning from human feedback (RLHF)",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "rlhf",
+        "label": "Reinforcement learning from human feedback (RLHF)",
+        "summary": "A post-training optimization technique that aligns large language model behaviors with human intentions by training a reward model on human comparative preferences and optimizing policy outputs via reinforcement learning.",
+        "domains": [
+          "it/ai-ml/llm-agents"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "RLHF",
+    "match": "exact-case",
+    "concepts": [
+      {
+        "id": "rlhf",
+        "label": "Reinforcement learning from human feedback (RLHF)",
+        "summary": "A post-training optimization technique that aligns large language model behaviors with human intentions by training a reward model on human comparative preferences and optimizing policy outputs via reinforcement learning.",
+        "domains": [
+          "it/ai-ml/llm-agents"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Recurrent neural network (RNN)",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "rnn",
+        "label": "Recurrent neural network (RNN)",
+        "summary": "A class of neural networks containing internal cyclical connections that maintain a hidden memory state, enabling the sequential processing of ordered temporal or linguistic data.",
+        "domains": [
+          "it/ai-ml/nlp"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "RNN",
+    "match": "exact-case",
+    "concepts": [
+      {
+        "id": "rnn",
+        "label": "Recurrent neural network (RNN)",
+        "summary": "A class of neural networks containing internal cyclical connections that maintain a hidden memory state, enabling the sequential processing of ordered temporal or linguistic data.",
+        "domains": [
+          "it/ai-ml/nlp"
         ]
       }
     ],
@@ -8140,6 +8668,21 @@
         "domains": [
           "it/devops/ci-cd",
           "it/security/authentication"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Semantic search",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "semantic-search",
+        "label": "Semantic search",
+        "summary": "A search methodology that evaluates the contextual intent and semantic meaning behind user queries and documents using vector embeddings rather than relying solely on lexical keyword matching.",
+        "domains": [
+          "it/ai-ml/nlp"
         ]
       }
     ],
@@ -8654,6 +9197,36 @@
     "autolink": true
   },
   {
+    "key": "Speech recognition",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "speech-recognition",
+        "label": "Speech recognition",
+        "summary": "An artificial intelligence capability that processes acoustic audio signals to accurately transcribe human spoken vocabulary into digital text representations.",
+        "domains": [
+          "it/ai-ml/nlp"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "ASR",
+    "match": "exact-case",
+    "concepts": [
+      {
+        "id": "speech-recognition",
+        "label": "Speech recognition",
+        "summary": "An artificial intelligence capability that processes acoustic audio signals to accurately transcribe human spoken vocabulary into digital text representations.",
+        "domains": [
+          "it/ai-ml/nlp"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
     "key": "Spokesperson",
     "match": "any-case",
     "concepts": [
@@ -9154,6 +9727,36 @@
     "autolink": true
   },
   {
+    "key": "Supervised learning",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "supervised-learning",
+        "label": "Supervised learning",
+        "summary": "A machine learning approach where an algorithm learns a mapping function from input features to target outputs using training data composed of verified input-label pairs.",
+        "domains": [
+          "it/ai-ml/foundations"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Synthetic data",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "synthetic-data",
+        "label": "Synthetic data",
+        "summary": "Algorithmically manufactured information engineered by mathematical models or computer simulations to replicate authentic dataset patterns without containing private personal records.",
+        "domains": [
+          "it/ai-ml/mlops"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
     "key": "System prompt",
     "match": "any-case",
     "concepts": [
@@ -9544,6 +10147,21 @@
     "autolink": true
   },
   {
+    "key": "Transfer learning",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "transfer-learning",
+        "label": "Transfer learning",
+        "summary": "A machine learning method where representations and weights learned from a broad primary task are adapted to solve a related target task with substantially reduced training data and computational overhead.",
+        "domains": [
+          "it/ai-ml/foundations"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
     "key": "Transformer",
     "match": "any-case",
     "concepts": [
@@ -9620,6 +10238,21 @@
     "autolink": true
   },
   {
+    "key": "Underfitting",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "underfitting",
+        "label": "Underfitting",
+        "summary": "A modeling pathology where a machine learning algorithm is overly simplistic, failing to capture the underlying structure of the data and exhibiting high loss on both training and test sets.",
+        "domains": [
+          "it/ai-ml/foundations"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
     "key": "Unit test",
     "match": "any-case",
     "concepts": [
@@ -9629,6 +10262,21 @@
         "summary": "An automated test that isolates and verifies the behavioral correctness of the smallest testable component or function of an application.",
         "domains": [
           "it/software-engineering/testing"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Unsupervised learning",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "unsupervised-learning",
+        "label": "Unsupervised learning",
+        "summary": "A category of machine learning where algorithms analyze and group unlabeled data to uncover underlying geometric clusters, manifold distributions, and intrinsic structures.",
+        "domains": [
+          "it/ai-ml/foundations"
         ]
       }
     ],

@@ -1,0 +1,24 @@
+id: immutability
+domains:
+  - it/software-engineering/programming-concepts
+level: 2
+relations:
+  prerequisites:
+    - "variable"
+  confusable: []
+  related:
+    - "functional-programming"
+    - "concurrency"
+status: draft
+provenance:
+  drafted_by: ai
+sources:
+  - ref: microsoft-learn
+    locator: https://learn.microsoft.com/en-us/dotnet/csharp/fundamentals/types/records
+    title: "C# record types - C# | Microsoft Learn"
+    language: en
+    accessed: '2026-10-17'
+    retrieved_by: ai
+    supports:
+      - definition
+      - summary

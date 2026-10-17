@@ -1,0 +1,24 @@
+id: parallelism
+domains:
+  - it/software-engineering/programming-concepts
+level: 2
+relations:
+  prerequisites:
+    - "thread-programming"
+  confusable:
+    - "concurrency"
+  related:
+    - "os-process"
+status: draft
+provenance:
+  drafted_by: ai
+sources:
+  - ref: microsoft-learn
+    locator: https://learn.microsoft.com/en-us/dotnet/standard/parallel-programming/
+    title: "Parallel Programming in .NET: A guide to the documentation - .NET | Microsoft Learn"
+    language: en
+    accessed: '2026-10-17'
+    retrieved_by: ai
+    supports:
+      - definition
+      - summary

@@ -145,6 +145,24 @@
     "status": "draft"
   },
   {
+    "id": "algorithm",
+    "label": "Thuật toán",
+    "aliases": [],
+    "loanwords": [
+      "algorithm"
+    ],
+    "plain_descriptions": [
+      "tập hợp các bước chỉ dẫn rõ ràng, tuần tự được thiết kế để giải quyết một bài toán cụ thể",
+      "công thức tính toán tiếp nhận dữ liệu đầu vào và cho ra kết quả mong muốn một cách xác định"
+    ],
+    "summary": "Dãy hữu hạn các chỉ dẫn rõ ràng, có thứ tự được thiết kế nhằm thực hiện một phép tính hoặc giải quyết một bài toán cụ thể.",
+    "domains": [
+      "it/software-engineering/programming-concepts"
+    ],
+    "level": 1,
+    "status": "draft"
+  },
+  {
     "id": "anonymous-source",
     "label": "Nguồn tin ẩn danh",
     "aliases": [
@@ -209,6 +227,27 @@
     "status": "draft"
   },
   {
+    "id": "array",
+    "label": "Array",
+    "qualifier": "(Lập trình)",
+    "aliases": [
+      "Mảng"
+    ],
+    "loanwords": [
+      "array"
+    ],
+    "plain_descriptions": [
+      "tập hợp có thứ tự các phần tử được lưu liền kề trong bộ nhớ và truy cập bằng chỉ số",
+      "danh sách tuần tự cơ bản trong đó mỗi phần tử được định vị bằng vị trí số nguyên"
+    ],
+    "summary": "Cấu trúc dữ liệu tuyến tính lưu trữ tập hợp các phần tử tại các ô nhớ liên tiếp, được định danh thông qua chỉ số vị trí.",
+    "domains": [
+      "it/software-engineering/programming-concepts"
+    ],
+    "level": 1,
+    "status": "draft"
+  },
+  {
     "id": "aspect-ratio",
     "label": "Tỷ lệ khung hình",
     "aliases": [
@@ -244,6 +283,24 @@
       "finance/accounting/bookkeeping"
     ],
     "level": 1,
+    "status": "draft"
+  },
+  {
+    "id": "async-await",
+    "label": "Async/await",
+    "aliases": [],
+    "loanwords": [
+      "async/await"
+    ],
+    "plain_descriptions": [
+      "cú pháp giúp viết mã bất đồng bộ trông giống như các câu lệnh tuần tự thông thường",
+      "từ khóa tạm dừng hàm để chờ kết quả từ tác vụ nền mà không làm đơ giao diện hay nghẽn luồng"
+    ],
+    "summary": "Cú pháp mở rộng giúp cấu trúc các tác vụ bất đồng bộ dựa trên promise theo phong cách tuần tự, nâng cao tính dễ đọc của mã nguồn.",
+    "domains": [
+      "it/software-engineering/programming-concepts"
+    ],
+    "level": 2,
     "status": "draft"
   },
   {
@@ -416,6 +473,45 @@
       "it/ai-ml/foundations"
     ],
     "level": 2,
+    "status": "draft"
+  },
+  {
+    "id": "big-o-notation",
+    "label": "Big O notation",
+    "aliases": [
+      "Ký hiệu Big O",
+      "Độ phức tạp Big O"
+    ],
+    "loanwords": [
+      "big o notation"
+    ],
+    "plain_descriptions": [
+      "ký hiệu toán học mô tả thời gian chạy hoặc dung lượng bộ nhớ của thuật toán tăng nhanh cỡ nào khi dữ liệu phình to",
+      "thước đo phân loại hiệu năng thuật toán dựa trên kịch bản xấu nhất mà không phụ thuộc vào tốc độ máy tính"
+    ],
+    "summary": "Ký hiệu toán học dùng để mô tả tiệm cận trên về thời gian thực thi hoặc bộ nhớ tiêu tốn của thuật toán khi kích thước đầu vào tiến dần tới vô cùng.",
+    "domains": [
+      "it/software-engineering/programming-concepts"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
+    "id": "binary-search",
+    "label": "Tìm kiếm nhị phân",
+    "aliases": [],
+    "loanwords": [
+      "binary search"
+    ],
+    "plain_descriptions": [
+      "thuật toán tìm kiếm nhanh trên danh sách đã sắp xếp bằng cách liên tục chia đôi khoảng tìm kiếm",
+      "kỹ thuật tra cứu so sánh giá trị cần tìm với phần tử ở chính giữa mảng có thứ tự"
+    ],
+    "summary": "Thuật toán tìm kiếm hiệu quả xác định vị trí của giá trị đích trong mảng đã sắp xếp bằng cách liên tục chia đôi phạm vi tìm kiếm.",
+    "domains": [
+      "it/software-engineering/programming-concepts"
+    ],
+    "level": 1,
     "status": "draft"
   },
   {
@@ -592,22 +688,22 @@
     "status": "draft"
   },
   {
-    "id": "browser-cache",
-    "label": "Bộ nhớ đệm trình duyệt",
+    "id": "breakpoint",
+    "label": "Breakpoint",
+    "qualifier": "(Gỡ lỗi)",
     "aliases": [
-      "browser cache",
-      "web cache"
+      "Điểm dừng"
     ],
     "loanwords": [
-      "browser cache"
+      "breakpoint"
     ],
     "plain_descriptions": [
-      "ngăn lưu tạm nơi trình duyệt giữ lại hình ảnh và tệp để mở lại trang nhanh hơn",
-      "bộ nhớ tạm lưu các tài nguyên web đã tải giúp tránh việc phải tải lại nhiều lần"
+      "điểm đánh dấu cố ý trong mã nguồn tạm dừng chương trình để lập trình viên kiểm tra dữ liệu",
+      "vị trí chỉ định trên một dòng mã nơi công cụ gỡ lỗi sẽ chặn luồng thực thi lại"
     ],
-    "summary": "Cơ chế lưu trữ tạm thời trong trình duyệt web giúp giữ lại các tài nguyên HTTP đã tải về để tái sử dụng trong các lần truy cập tiếp theo.",
+    "summary": "Vị trí dừng có chủ đích được thiết lập trong mã nguồn hoặc địa chỉ lệnh nơi công cụ gỡ lỗi tạm hoãn thực thi để kiểm tra trạng thái bộ nhớ.",
     "domains": [
-      "it/web/frontend"
+      "it/software-engineering/practices"
     ],
     "level": 1,
     "status": "draft"
@@ -631,29 +727,6 @@
       "finance/personal-finance/budget"
     ],
     "level": 1,
-    "status": "draft"
-  },
-  {
-    "id": "bundler",
-    "label": "Bundler",
-    "qualifier": "(JavaScript)",
-    "aliases": [
-      "module bundler",
-      "bộ đóng gói mã"
-    ],
-    "loanwords": [
-      "Bundler",
-      "module bundler"
-    ],
-    "plain_descriptions": [
-      "công cụ gom hàng trăm tệp mã nguồn nhỏ thành vài tệp gọn gàng để trình duyệt tải nhanh hơn",
-      "chương trình đóng gói và tối ưu hóa các tệp JavaScript, CSS trước khi đưa lên mạng"
-    ],
-    "summary": "Công cụ đóng gói và xử lý các tệp mã nguồn cùng tài nguyên liên quan thành các gói tệp hoàn chỉnh để triển khai lên web.",
-    "domains": [
-      "it/web/frontend"
-    ],
-    "level": 2,
     "status": "draft"
   },
   {
@@ -741,6 +814,27 @@
       "media/digital-marketing/paid-ads"
     ],
     "level": 1,
+    "status": "draft"
+  },
+  {
+    "id": "callback",
+    "label": "Callback",
+    "qualifier": "(Lập trình)",
+    "aliases": [
+      "Hàm gọi lại"
+    ],
+    "loanwords": [
+      "callback"
+    ],
+    "plain_descriptions": [
+      "hàm được truyền làm tham số vào một hàm khác để được gọi chạy vào thời điểm thích hợp",
+      "đoạn mã xử lý giao cho một thủ tục để kích hoạt khi có sự kiện hoặc tác vụ hoàn tất"
+    ],
+    "summary": "Hàm được truyền dưới dạng đối số cho một thủ tục khác để được gọi lại khi một sự kiện hoặc tác vụ nhất định hoàn thành.",
+    "domains": [
+      "it/software-engineering/programming-concepts"
+    ],
+    "level": 2,
     "status": "draft"
   },
   {
@@ -889,6 +983,48 @@
     "status": "draft"
   },
   {
+    "id": "class-oop",
+    "label": "Class",
+    "qualifier": "(Lập trình)",
+    "aliases": [
+      "Lớp"
+    ],
+    "loanwords": [
+      "class"
+    ],
+    "plain_descriptions": [
+      "bản thiết kế mẫu dùng để tạo ra các đối tượng có cùng thuộc tính và hành vi",
+      "khuôn mẫu trong mã nguồn quy định dữ liệu và phương thức của một thực thể"
+    ],
+    "summary": "Khuôn mẫu mã nguồn có thể mở rộng, định nghĩa các thuộc tính trạng thái và phương thức hành vi để tạo ra đối tượng.",
+    "domains": [
+      "it/software-engineering/programming-concepts"
+    ],
+    "level": 1,
+    "status": "draft"
+  },
+  {
+    "id": "closure",
+    "label": "Closure",
+    "qualifier": "(Lập trình)",
+    "aliases": [
+      "Bao đóng"
+    ],
+    "loanwords": [
+      "closure"
+    ],
+    "plain_descriptions": [
+      "hàm đi kèm với các biến thuộc phạm vi bên ngoài nơi nó được sinh ra",
+      "hàm con vẫn ghi nhớ và truy cập được biến của hàm cha ngay cả khi hàm cha đã chạy xong"
+    ],
+    "summary": "Hàm được đóng gói cùng môi trường từ vựng xung quanh, cho phép nó truy cập các biến của phạm vi bao bọc bên ngoài ngay cả khi hàm ngoài đã kết thúc.",
+    "domains": [
+      "it/software-engineering/programming-concepts"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
     "id": "coap",
     "label": "Constrained Application Protocol (CoAP)",
     "aliases": [
@@ -930,27 +1066,6 @@
     "status": "draft"
   },
   {
-    "id": "code-splitting",
-    "label": "Code splitting",
-    "aliases": [
-      "phân tách mã nguồn",
-      "chia nhỏ gói mã"
-    ],
-    "loanwords": [
-      "Code splitting"
-    ],
-    "plain_descriptions": [
-      "chia nhỏ ứng dụng web thành từng phần để chỉ tải về khi người dùng cần",
-      "cắt nhỏ tệp mã lớn thành các gói nhỏ giúp mở trang đầu nhanh hơn"
-    ],
-    "summary": "Kỹ thuật chia nhỏ gói mã nguồn thành nhiều phần nhỏ hơn để tải theo yêu cầu hoặc tải song song nhằm tăng tốc độ tải trang.",
-    "domains": [
-      "it/web/frontend"
-    ],
-    "level": 2,
-    "status": "draft"
-  },
-  {
     "id": "color-grading",
     "label": "Color grading",
     "aliases": [
@@ -969,6 +1084,24 @@
       "media/content-production/editing"
     ],
     "level": 2,
+    "status": "draft"
+  },
+  {
+    "id": "compiler",
+    "label": "Trình biên dịch",
+    "aliases": [],
+    "loanwords": [
+      "compiler"
+    ],
+    "plain_descriptions": [
+      "công cụ dịch toàn bộ tệp mã nguồn sang mã máy hoặc mã byte trước khi chương trình được chạy",
+      "chương trình phân tích mã nguồn và chuyển đổi nó thành tệp thực thi độc lập"
+    ],
+    "summary": "Chương trình máy tính chuyển đổi toàn bộ mã nguồn viết bằng ngôn ngữ bậc cao sang mã máy hoặc dạng trung gian trước khi thực thi.",
+    "domains": [
+      "it/software-engineering/programming-concepts"
+    ],
+    "level": 1,
     "status": "draft"
   },
   {
@@ -992,6 +1125,27 @@
     ],
     "level": 1,
     "status": "reviewed"
+  },
+  {
+    "id": "concurrency",
+    "label": "Concurrency",
+    "aliases": [
+      "Xử lý đồng thời",
+      "Đồng thời"
+    ],
+    "loanwords": [
+      "concurrency"
+    ],
+    "plain_descriptions": [
+      "khả năng hệ thống quản lý nhiều tác vụ cùng lúc bằng cách xen kẽ tiến trình xử lý trong cùng một khoảng thời gian",
+      "cấu trúc phần mềm điều phối nhiều công việc song hành mà không bắt buộc chúng phải chạy tại cùng một tích tắc vật lý"
+    ],
+    "summary": "Khả năng cấu trúc và điều phối nhiều tác vụ tính toán độc lập cùng tiến triển trong các khoảng thời gian đan xen nhau.",
+    "domains": [
+      "it/software-engineering/programming-concepts"
+    ],
+    "level": 2,
+    "status": "draft"
   },
   {
     "id": "container-image",
@@ -1132,29 +1286,6 @@
       "media/publishing/copyright-licensing"
     ],
     "level": 1,
-    "status": "draft"
-  },
-  {
-    "id": "core-web-vitals",
-    "label": "Core Web Vitals",
-    "aliases": [
-      "CWV",
-      "chỉ số hiệu năng web cốt lõi"
-    ],
-    "loanwords": [
-      "Core Web Vitals",
-      "CWV"
-    ],
-    "plain_descriptions": [
-      "bộ tiêu chuẩn của Google đo lường tốc độ, độ nhạy và tính ổn định của trang web",
-      "các chỉ số hiệu năng thực tế quyết định trải nghiệm người dùng và thứ hạng tìm kiếm"
-    ],
-    "summary": "Tập hợp các chỉ số chuẩn hóa do Google đề xuất nhằm đo lường trải nghiệm thực tế của người dùng về tốc độ tải, độ phản hồi và độ ổn định giao diện.",
-    "domains": [
-      "it/web/frontend",
-      "media/digital-marketing/seo"
-    ],
-    "level": 2,
     "status": "draft"
   },
   {
@@ -1361,27 +1492,6 @@
     "status": "draft"
   },
   {
-    "id": "css",
-    "label": "CSS",
-    "aliases": [
-      "Cascading Style Sheets"
-    ],
-    "loanwords": [
-      "CSS",
-      "Cascading Style Sheets"
-    ],
-    "plain_descriptions": [
-      "tập hợp quy tắc quyết định màu sắc, phông chữ và cách căn chỉnh giao diện web",
-      "ngôn ngữ định dạng giúp trang web trở nên đẹp mắt và chuyên nghiệp"
-    ],
-    "summary": "Ngôn ngữ bảng kiểu dùng để định dạng cách trình bày, bố cục và màu sắc của tài liệu HTML.",
-    "domains": [
-      "it/web/frontend"
-    ],
-    "level": 1,
-    "status": "draft"
-  },
-  {
     "id": "ctr",
     "label": "Click-through rate (CTR)",
     "aliases": [
@@ -1531,6 +1641,24 @@
       "it/data/data-engineering"
     ],
     "level": 2,
+    "status": "draft"
+  },
+  {
+    "id": "data-structure",
+    "label": "Cấu trúc dữ liệu",
+    "aliases": [],
+    "loanwords": [
+      "data structure"
+    ],
+    "plain_descriptions": [
+      "cách thức tổ chức và sắp xếp thông tin có bài bản trong bộ nhớ máy tính để sử dụng hiệu quả",
+      "định dạng chuyên biệt gom nhóm các phần tử dữ liệu nhằm tối ưu việc tìm kiếm, thêm mới và truy xuất"
+    ],
+    "summary": "Định dạng chuyên biệt dùng để tổ chức, xử lý, truy xuất và lưu trữ dữ liệu hiệu quả trong hệ thống máy tính.",
+    "domains": [
+      "it/software-engineering/programming-concepts"
+    ],
+    "level": 1,
     "status": "draft"
   },
   {
@@ -1698,6 +1826,26 @@
       "finance/corporate-finance/capital-structure"
     ],
     "level": 2,
+    "status": "draft"
+  },
+  {
+    "id": "debugging",
+    "label": "Debugging",
+    "aliases": [
+      "Gỡ lỗi"
+    ],
+    "loanwords": [
+      "debugging"
+    ],
+    "plain_descriptions": [
+      "quá trình chẩn đoán, tái hiện và sửa chữa các lỗi phát sinh trong phần mềm",
+      "quy trình kỹ thuật điều tra nguyên nhân gây sai lệch dữ liệu bằng nhật ký và công cụ theo dõi"
+    ],
+    "summary": "Quy trình kỹ thuật bài bản nhằm phát hiện, cô lập và khắc phục các lỗi logic hoặc sự cố bất thường trong phần mềm.",
+    "domains": [
+      "it/software-engineering/practices"
+    ],
+    "level": 1,
     "status": "draft"
   },
   {
@@ -1964,27 +2112,6 @@
     "summary": "Nền tảng phần mềm cung cấp công cụ xây dựng, chia sẻ và thực thi các container ứng dụng thông qua cơ chế ảo hóa của hệ điều hành máy chủ.",
     "domains": [
       "it/devops/containers"
-    ],
-    "level": 1,
-    "status": "draft"
-  },
-  {
-    "id": "dom",
-    "label": "Document Object Model (DOM)",
-    "aliases": [
-      "DOM"
-    ],
-    "loanwords": [
-      "Document Object Model (DOM)",
-      "DOM"
-    ],
-    "plain_descriptions": [
-      "cây cấu trúc bên trong trang web cho phép mã lập trình đọc và chỉnh sửa",
-      "mô hình đối tượng đại diện cho các phần tử HTML trên màn hình trình duyệt"
-    ],
-    "summary": "Giao diện lập trình ứng dụng biểu diễn tài liệu HTML dưới dạng cây phân cấp các đối tượng có thể truy xuất và sửa đổi.",
-    "domains": [
-      "it/web/frontend"
     ],
     "level": 1,
     "status": "draft"
@@ -2344,6 +2471,27 @@
     "status": "draft"
   },
   {
+    "id": "exception-handling",
+    "label": "Exception",
+    "qualifier": "(Lập trình)",
+    "aliases": [
+      "Ngoại lệ"
+    ],
+    "loanwords": [
+      "exception"
+    ],
+    "plain_descriptions": [
+      "sự kiện bất thường hoặc lỗi thời gian chạy làm gián đoạn luồng thực thi câu lệnh",
+      "cơ chế báo lỗi đẩy thông tin ngược lên ngăn xếp cuộc gọi để tìm khối xử lý phục hồi"
+    ],
+    "summary": "Tình trạng bất thường hoặc lỗi phát sinh trong thời gian chạy làm gián đoạn luồng lệnh thông thường và kích hoạt logic xử lý phục hồi chuyên biệt.",
+    "domains": [
+      "it/software-engineering/programming-concepts"
+    ],
+    "level": 1,
+    "status": "draft"
+  },
+  {
     "id": "exchange-rate",
     "label": "Tỷ giá hối đoái",
     "aliases": [
@@ -2506,6 +2654,65 @@
     "status": "draft"
   },
   {
+    "id": "function-programming",
+    "label": "Function",
+    "qualifier": "(Lập trình)",
+    "aliases": [
+      "Hàm"
+    ],
+    "loanwords": [
+      "function"
+    ],
+    "plain_descriptions": [
+      "khối mã tái sử dụng được viết để thực hiện một tác vụ tính toán cụ thể",
+      "tập hợp các câu lệnh có nhận tham số đầu vào và trả về kết quả"
+    ],
+    "summary": "Khối câu lệnh độc lập tiếp nhận tham số, thực thi chuỗi thao tác xử lý và có thể trả về một kết quả đầu ra.",
+    "domains": [
+      "it/software-engineering/programming-concepts"
+    ],
+    "level": 1,
+    "status": "draft"
+  },
+  {
+    "id": "functional-programming",
+    "label": "Lập trình hàm",
+    "aliases": [
+      "Lập trình chức năng"
+    ],
+    "loanwords": [
+      "functional programming"
+    ],
+    "plain_descriptions": [
+      "phương pháp lập trình tập trung vào việc áp dụng các hàm toán học mà không làm đổi dữ liệu dùng chung",
+      "mô hình ưu tiên sử dụng hàm thuần khiết, giá trị bất biến và các phép chuyển đổi dữ liệu khai báo"
+    ],
+    "summary": "Mô hình lập trình khai báo xem việc tính toán là sự ước lượng các hàm toán học thuần khiết và tránh làm thay đổi trạng thái dữ liệu.",
+    "domains": [
+      "it/software-engineering/programming-concepts"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
+    "id": "garbage-collection",
+    "label": "Thu gom rác",
+    "aliases": [],
+    "loanwords": [
+      "garbage collection"
+    ],
+    "plain_descriptions": [
+      "hệ thống quản lý bộ nhớ tự động tìm và thu hồi các vùng nhớ của đối tượng không còn dùng nữa",
+      "tính năng của môi trường thực thi tự động giải phóng vùng nhớ heap mà mã nguồn không thể truy cập"
+    ],
+    "summary": "Cơ chế quản lý bộ nhớ tự động trong môi trường thực thi giúp phát hiện và thu hồi các vùng nhớ heap không còn được chương trình tham chiếu tới.",
+    "domains": [
+      "it/software-engineering/programming-concepts"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
     "id": "gdp",
     "label": "Tổng sản phẩm nội địa (GDP)",
     "aliases": [
@@ -2522,6 +2729,25 @@
       "finance/economics/inflation"
     ],
     "level": 1,
+    "status": "draft"
+  },
+  {
+    "id": "generics",
+    "label": "Generics",
+    "qualifier": "(Lập trình)",
+    "aliases": [],
+    "loanwords": [
+      "generics"
+    ],
+    "plain_descriptions": [
+      "tính năng cho phép viết các lớp và hàm dùng kiểu dữ liệu giữ chỗ để người dùng truyền kiểu cụ thể vào sau",
+      "cơ chế khuôn mẫu mang lại sự an toàn kiểu dữ liệu cho nhiều loại đối tượng mà không phải sao chép mã nguồn"
+    ],
+    "summary": "Tính năng ngôn ngữ cho phép định nghĩa các thuật toán và cấu trúc dữ liệu với kiểu giữ chỗ, chỉ xác định kiểu cụ thể khi sử dụng.",
+    "domains": [
+      "it/software-engineering/programming-concepts"
+    ],
+    "level": 2,
     "status": "draft"
   },
   {
@@ -2708,6 +2934,27 @@
     "status": "draft"
   },
   {
+    "id": "hash-table",
+    "label": "Bảng băm",
+    "aliases": [
+      "Hash map",
+      "Hash table"
+    ],
+    "loanwords": [
+      "hash table"
+    ],
+    "plain_descriptions": [
+      "cấu trúc dữ liệu ghép đôi khóa với giá trị để tìm kiếm thông tin cực nhanh",
+      "cách tổ chức lưu trữ dạng từ điển dùng hàm băm để truy xuất dữ liệu trong thời gian hằng số"
+    ],
+    "summary": "Cấu trúc dữ liệu ánh xạ các khóa thành giá trị bằng thuật toán băm, cho phép tìm kiếm và cập nhật dữ liệu với tốc độ trung bình hằng số.",
+    "domains": [
+      "it/software-engineering/programming-concepts"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
     "id": "hashing",
     "label": "Hashing",
     "qualifier": "(Mật mã học)",
@@ -2792,49 +3039,6 @@
     "status": "draft"
   },
   {
-    "id": "html",
-    "label": "HTML",
-    "aliases": [
-      "HyperText Markup Language"
-    ],
-    "loanwords": [
-      "HTML",
-      "HyperText Markup Language"
-    ],
-    "plain_descriptions": [
-      "các thẻ mã dùng để dựng khung bài viết, tiêu đề và liên kết của trang web",
-      "ngôn ngữ đánh dấu cơ bản định hình cấu trúc nội dung của mọi trang web"
-    ],
-    "summary": "Ngôn ngữ đánh dấu tiêu chuẩn dùng để tạo khung cấu trúc và sắp xếp nội dung hiển thị trong trình duyệt web.",
-    "domains": [
-      "it/web/frontend"
-    ],
-    "level": 1,
-    "status": "draft"
-  },
-  {
-    "id": "http",
-    "label": "Hypertext Transfer Protocol (HTTP)",
-    "aliases": [
-      "HTTP"
-    ],
-    "loanwords": [
-      "Hypertext Transfer Protocol (HTTP)",
-      "HTTP"
-    ],
-    "plain_descriptions": [
-      "quy tắc giao tiếp để trình duyệt và máy chủ trao đổi trang web",
-      "giao thức truyền tải yêu cầu và dữ liệu phản hồi trên mạng internet"
-    ],
-    "summary": "Giao thức tầng ứng dụng dùng để truyền tải các tài liệu siêu văn bản giữa trình duyệt và máy chủ web.",
-    "domains": [
-      "it/web/api",
-      "it/infrastructure/networking"
-    ],
-    "level": 1,
-    "status": "draft"
-  },
-  {
     "id": "http-status-code",
     "label": "HTTP status code",
     "aliases": [
@@ -2855,50 +3059,6 @@
       "it/web/api"
     ],
     "level": 1,
-    "status": "draft"
-  },
-  {
-    "id": "https",
-    "label": "HTTPS",
-    "aliases": [
-      "Hypertext Transfer Protocol Secure"
-    ],
-    "loanwords": [
-      "HTTPS",
-      "Hypertext Transfer Protocol Secure"
-    ],
-    "plain_descriptions": [
-      "kết nối web được mã hóa giúp bảo vệ thông tin không bị xem trộm",
-      "phiên bản an toàn của HTTP với biểu tượng ổ khóa trên thanh địa chỉ"
-    ],
-    "summary": "Phiên bản bảo mật của giao thức HTTP sử dụng mã hóa TLS để bảo vệ toàn bộ dữ liệu truyền giữa trình duyệt và máy chủ.",
-    "domains": [
-      "it/web/api"
-    ],
-    "level": 1,
-    "status": "draft"
-  },
-  {
-    "id": "hydration",
-    "label": "Hydration",
-    "qualifier": "(Web)",
-    "aliases": [
-      "bù nước",
-      "client-side hydration"
-    ],
-    "loanwords": [
-      "Hydration",
-      "client-side hydration"
-    ],
-    "plain_descriptions": [
-      "gắn các tính năng tương tác và bấm nút vào trang web tĩnh đã tạo sẵn",
-      "quá trình dùng JavaScript kích hoạt sức sống cho khung HTML máy chủ gửi về"
-    ],
-    "summary": "Quá trình phía trình duyệt kích hoạt mã JavaScript để gắn các sự kiện tương tác vào trang HTML tĩnh do máy chủ gửi về.",
-    "domains": [
-      "it/web/frontend"
-    ],
-    "level": 2,
     "status": "draft"
   },
   {
@@ -2975,6 +3135,26 @@
     "summary": "Tác vụ thị giác máy tính trong đó thuật toán phân tích toàn bộ bức ảnh để gán cho nó một hoặc nhiều nhãn danh mục từ một tập phân loại xác định.",
     "domains": [
       "it/ai-ml/computer-vision"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
+    "id": "immutability",
+    "label": "Immutability",
+    "aliases": [
+      "Tính bất biến"
+    ],
+    "loanwords": [
+      "immutability"
+    ],
+    "plain_descriptions": [
+      "đặc tính của một đối tượng hay dữ liệu mà giá trị không thể bị thay đổi sau khi khởi tạo",
+      "nguyên tắc lập trình quy định mọi sự sửa đổi dữ liệu đều tạo ra bản sao mới thay vì ghi đè lên bộ nhớ cũ"
+    ],
+    "summary": "Đặc tính của đối tượng hoặc cấu trúc dữ liệu không cho phép trạng thái bên trong bị biến đổi sau khi đã được tạo ra trong bộ nhớ.",
+    "domains": [
+      "it/software-engineering/programming-concepts"
     ],
     "level": 2,
     "status": "draft"
@@ -3211,6 +3391,25 @@
     "status": "reviewed"
   },
   {
+    "id": "interpreter",
+    "label": "Trình thông dịch",
+    "qualifier": "(Lập trình)",
+    "aliases": [],
+    "loanwords": [
+      "interpreter"
+    ],
+    "plain_descriptions": [
+      "chương trình đọc, dịch và thực thi trực tiếp từng câu lệnh mã nguồn mà không cần tạo ra tệp nhị phân",
+      "bộ máy thực thi xử lý mã nguồn từng dòng một trực tiếp trong thời gian chạy"
+    ],
+    "summary": "Chương trình máy tính trực tiếp thực thi các câu lệnh được viết bằng ngôn ngữ lập trình hoặc kịch bản mà không cần biên dịch trước thành mã máy.",
+    "domains": [
+      "it/software-engineering/programming-concepts"
+    ],
+    "level": 1,
+    "status": "draft"
+  },
+  {
     "id": "inverted-pyramid",
     "label": "Kim tự tháp ngược",
     "aliases": [
@@ -3307,28 +3506,6 @@
       "it/ai-ml/ai-safety-governance"
     ],
     "level": 2,
-    "status": "draft"
-  },
-  {
-    "id": "javascript",
-    "label": "JavaScript",
-    "aliases": [
-      "JS"
-    ],
-    "loanwords": [
-      "JavaScript",
-      "JS"
-    ],
-    "plain_descriptions": [
-      "ngôn ngữ lập trình giúp trang web có thể tương tác và chuyển động linh hoạt",
-      "ngôn ngữ kịch bản chạy trực tiếp trong mọi trình duyệt web hiện đại"
-    ],
-    "summary": "Ngôn ngữ lập trình thông dịch đa nền tảng, cho phép tạo ra các tính năng tương tác phức tạp trên trang web.",
-    "domains": [
-      "it/web/frontend",
-      "it/software-engineering/programming-concepts"
-    ],
-    "level": 1,
     "status": "draft"
   },
   {
@@ -3520,28 +3697,6 @@
     "status": "draft"
   },
   {
-    "id": "lazy-loading",
-    "label": "Lazy loading",
-    "aliases": [
-      "tải chậm",
-      "tải lười",
-      "tải theo yêu cầu"
-    ],
-    "loanwords": [
-      "Lazy loading"
-    ],
-    "plain_descriptions": [
-      "chờ người dùng cuộn chuột tới nơi mới bắt đầu tải hình ảnh và nội dung về",
-      "trì hoãn việc nạp dữ liệu để tiết kiệm mạng và giúp trang web mở nhanh hơn"
-    ],
-    "summary": "Mô hình tối ưu hóa hiệu năng bằng cách trì hoãn tải các tài nguyên chưa cần thiết cho đến khi người dùng tương tác tới.",
-    "domains": [
-      "it/web/frontend"
-    ],
-    "level": 2,
-    "status": "draft"
-  },
-  {
     "id": "least-privilege",
     "label": "Principle of least privilege",
     "aliases": [
@@ -3683,27 +3838,6 @@
       "it/infrastructure/networking"
     ],
     "level": 2,
-    "status": "draft"
-  },
-  {
-    "id": "local-storage",
-    "label": "localStorage",
-    "aliases": [
-      "Web Storage",
-      "bộ nhớ cục bộ"
-    ],
-    "loanwords": [
-      "localStorage"
-    ],
-    "plain_descriptions": [
-      "ngăn chứa trong trình duyệt nơi trang web ghi nhớ sở thích của bạn vĩnh viễn",
-      "bộ nhớ lưu trữ dữ liệu dạng khóa - giá trị không bị mất đi khi đóng tab"
-    ],
-    "summary": "Giao diện lưu trữ dữ liệu phía trình duyệt cho phép lưu các cặp khóa - giá trị lâu dài theo từng tên miền mà không có thời hạn hết hạn.",
-    "domains": [
-      "it/web/frontend"
-    ],
-    "level": 1,
     "status": "draft"
   },
   {
@@ -3888,6 +4022,24 @@
     "summary": "Giao thức mở chuẩn hóa cách ứng dụng AI kết nối với công cụ, nguồn dữ liệu và quy trình bên ngoài thông qua các MCP server.",
     "domains": [
       "it/ai-ml/llm-agents"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
+    "id": "memory-leak",
+    "label": "Rò rỉ bộ nhớ",
+    "aliases": [],
+    "loanwords": [
+      "memory leak"
+    ],
+    "plain_descriptions": [
+      "lỗi phần mềm khi bộ nhớ đã cấp phát không còn dùng nữa nhưng không bao giờ được giải phóng cho hệ thống",
+      "sự tiêu hao bộ nhớ RAM tăng dần theo thời gian do các tham chiếu bị bỏ quên ngăn cản việc dọn dẹp"
+    ],
+    "summary": "Lỗi phần mềm xảy ra khi chương trình không giải phóng các vùng nhớ đã cấp phát nhưng không còn dùng tới, làm suy giảm hiệu năng hệ thống.",
+    "domains": [
+      "it/software-engineering/programming-concepts"
     ],
     "level": 2,
     "status": "draft"
@@ -4354,49 +4506,6 @@
     "status": "draft"
   },
   {
-    "id": "nginx",
-    "label": "Nginx",
-    "aliases": [
-      "NGINX"
-    ],
-    "loanwords": [
-      "Nginx",
-      "NGINX"
-    ],
-    "plain_descriptions": [
-      "phần mềm máy chủ web hiệu năng cao nổi tiếng chuyên gánh lượng truy cập lớn",
-      "chương trình máy chủ mã nguồn mở chuyên phân phối tải và làm trạm chuyển tiếp proxy"
-    ],
-    "summary": "Phần mềm máy chủ web và trạm chuyển tiếp đảo ngược (reverse proxy) mã nguồn mở nổi tiếng với hiệu năng cao và tiêu tốn ít bộ nhớ.",
-    "domains": [
-      "it/web/backend",
-      "it/infrastructure/networking"
-    ],
-    "level": 2,
-    "status": "draft"
-  },
-  {
-    "id": "nodejs",
-    "label": "Node.js",
-    "aliases": [
-      "Node"
-    ],
-    "loanwords": [
-      "Node.js",
-      "Node"
-    ],
-    "plain_descriptions": [
-      "môi trường cho phép chạy mã JavaScript trực tiếp trên máy chủ thay vì trong trình duyệt",
-      "nền tảng chạy mã JavaScript phía backend giúp xây dựng các dịch vụ web tốc độ cao"
-    ],
-    "summary": "Môi trường thực thi JavaScript đa nền tảng, mã nguồn mở, cho phép chạy mã nguồn JavaScript bên ngoài trình duyệt web.",
-    "domains": [
-      "it/web/backend"
-    ],
-    "level": 2,
-    "status": "draft"
-  },
-  {
     "id": "north-star-metric",
     "label": "North Star metric",
     "aliases": [
@@ -4414,6 +4523,28 @@
       "product/metrics"
     ],
     "level": 2,
+    "status": "draft"
+  },
+  {
+    "id": "null-reference",
+    "label": "Null reference",
+    "aliases": [
+      "Null pointer",
+      "Tham chiếu null",
+      "Con trỏ null"
+    ],
+    "loanwords": [
+      "null reference"
+    ],
+    "plain_descriptions": [
+      "con trỏ hoặc biến cố tình không trỏ tới bất kỳ địa chỉ ô nhớ hay đối tượng hợp lệ nào",
+      "trạng thái tham chiếu rỗng gây sập phần mềm nếu chương trình cố truy cập dữ liệu bên trong mà không kiểm tra"
+    ],
+    "summary": "Giá trị tham chiếu hoặc con trỏ biểu thị sự vắng mặt của đối tượng hoặc không trỏ tới bất kỳ địa chỉ hợp lệ nào trong bộ nhớ.",
+    "domains": [
+      "it/software-engineering/programming-concepts"
+    ],
+    "level": 1,
     "status": "draft"
   },
   {
@@ -4455,6 +4586,28 @@
       "it/ai-ml/computer-vision"
     ],
     "level": 2,
+    "status": "draft"
+  },
+  {
+    "id": "object-oriented-programming",
+    "label": "Lập trình hướng đối tượng (OOP)",
+    "aliases": [
+      "OOP",
+      "Lập trình hướng đối tượng"
+    ],
+    "loanwords": [
+      "object-oriented programming",
+      "oop"
+    ],
+    "plain_descriptions": [
+      "phương pháp lập trình tổ chức mã nguồn xoay quanh các đối tượng chứa dữ liệu và hành động",
+      "triết lý thiết kế phần mềm mô phỏng các thực thể đời thực giao tiếp và tương tác với nhau"
+    ],
+    "summary": "Mô hình lập trình tổ chức hệ thống thành các đối tượng độc lập có khả năng đóng gói trạng thái và hành vi để phối hợp xử lý.",
+    "domains": [
+      "it/software-engineering/programming-concepts"
+    ],
+    "level": 1,
     "status": "draft"
   },
   {
@@ -4603,6 +4756,27 @@
     "status": "draft"
   },
   {
+    "id": "os-process",
+    "label": "Process",
+    "qualifier": "(Hệ điều hành)",
+    "aliases": [
+      "Tiến trình"
+    ],
+    "loanwords": [
+      "process"
+    ],
+    "plain_descriptions": [
+      "một phiên bản đang chạy của chương trình máy tính với không gian bộ nhớ riêng biệt",
+      "môi trường thực thi độc lập do hệ điều hành quản lý chứa mã nguồn, tài nguyên và các luồng"
+    ],
+    "summary": "Một thực thể thực thi của chương trình máy tính được hệ điều hành cấp phát không gian địa chỉ bộ nhớ độc lập và tài nguyên riêng.",
+    "domains": [
+      "it/software-engineering/programming-concepts"
+    ],
+    "level": 1,
+    "status": "draft"
+  },
+  {
     "id": "ota-update",
     "label": "Over-the-air update (OTA)",
     "aliases": [
@@ -4679,6 +4853,28 @@
     "summary": "Phương pháp phân chia các tập dữ liệu lớn thành từng phần hoặc từng trang nhỏ nhằm tối ưu hiệu năng và băng thông truyền tải.",
     "domains": [
       "it/web/api"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
+    "id": "parallelism",
+    "label": "Parallelism",
+    "qualifier": "(Điện toán)",
+    "aliases": [
+      "Tính toán song song",
+      "Xử lý song song"
+    ],
+    "loanwords": [
+      "parallelism"
+    ],
+    "plain_descriptions": [
+      "thực thi nhiều tác vụ tính toán tại cùng một thời điểm vật lý trên các lõi vi xử lý riêng biệt",
+      "chia nhỏ khối lượng tính toán nặng cho nhiều đơn vị phần cứng để hoàn thành nhanh hơn"
+    ],
+    "summary": "Việc thực thi đồng thời nhiều phép tính tại đúng cùng một thời điểm vật lý trên các đơn vị xử lý phần cứng khác nhau.",
+    "domains": [
+      "it/software-engineering/programming-concepts"
     ],
     "level": 2,
     "status": "draft"
@@ -5106,22 +5302,20 @@
     "status": "draft"
   },
   {
-    "id": "progressive-web-app",
-    "label": "Progressive web app (PWA)",
-    "aliases": [
-      "PWA"
-    ],
+    "id": "promise",
+    "label": "Promise",
+    "qualifier": "(Lập trình)",
+    "aliases": [],
     "loanwords": [
-      "Progressive web app (PWA)",
-      "PWA"
+      "promise"
     ],
     "plain_descriptions": [
-      "trang web có thể cài ra màn hình điện thoại và hoạt động khi mất mạng",
-      "ứng dụng web mang trải nghiệm mượt mà và tính năng thông báo như app cài đặt"
+      "đối tượng giữ chỗ đại diện cho kết quả chưa hoàn thành của một tác vụ chạy nền",
+      "vật đại diện cho một giá trị trong tương lai có thể thành công trả về dữ liệu hoặc thất bại vì lỗi"
     ],
-    "summary": "Ứng dụng xây dựng bằng công nghệ web có khả năng cài đặt lên thiết bị, chạy ngoại tuyến và gửi thông báo như ứng dụng gốc.",
+    "summary": "Đối tượng đại diện cho kết quả thành công hoặc thất bại trong tương lai của một tác vụ xử lý bất đồng bộ.",
     "domains": [
-      "it/web/frontend"
+      "it/software-engineering/programming-concepts"
     ],
     "level": 2,
     "status": "draft"
@@ -5199,6 +5393,25 @@
     "summary": "Cơ chế trên các nền tảng quản lý mã nguồn phân tán cho phép lập trình viên thông báo về các thay đổi trên nhánh làm việc và yêu cầu rà soát trước khi gộp vào nhánh đích.",
     "domains": [
       "it/software-engineering/version-control"
+    ],
+    "level": 1,
+    "status": "draft"
+  },
+  {
+    "id": "python",
+    "label": "Python",
+    "qualifier": "(Ngôn ngữ lập trình)",
+    "aliases": [],
+    "loanwords": [
+      "python"
+    ],
+    "plain_descriptions": [
+      "ngôn ngữ lập trình bậc cao với cú pháp sáng sủa sử dụng khoảng thụt đầu dòng để phân chia khối lệnh",
+      "ngôn ngữ đa mô hình phổ biến hàng đầu trong phát triển trí tuệ nhân tạo, phân tích dữ liệu và dịch vụ web"
+    ],
+    "summary": "Ngôn ngữ lập trình bậc cao, đa năng, nổi bật với cú pháp dễ đọc, hệ thống định kiểu động và thư viện tiêu chuẩn phong phú.",
+    "domains": [
+      "it/software-engineering/programming-concepts"
     ],
     "level": 1,
     "status": "draft"
@@ -5304,30 +5517,6 @@
     "status": "draft"
   },
   {
-    "id": "react",
-    "label": "React",
-    "qualifier": "(Thư viện)",
-    "aliases": [
-      "React.js",
-      "ReactJS"
-    ],
-    "loanwords": [
-      "React",
-      "React.js",
-      "ReactJS"
-    ],
-    "plain_descriptions": [
-      "công cụ JavaScript phổ biến giúp lắp ráp giao diện web từ các mảnh ghép thành phần",
-      "thư viện lập trình giao diện theo mô hình thành phần tái sử dụng và cập nhật tự động"
-    ],
-    "summary": "Thư viện JavaScript mã nguồn mở chuyên dùng để xây dựng giao diện người dùng dựa trên các thành phần (component).",
-    "domains": [
-      "it/web/frontend"
-    ],
-    "level": 2,
-    "status": "draft"
-  },
-  {
     "id": "reasoning-model",
     "label": "Reasoning model",
     "aliases": [
@@ -5364,6 +5553,24 @@
       "finance/economics/inflation"
     ],
     "level": 1,
+    "status": "draft"
+  },
+  {
+    "id": "recursion",
+    "label": "Đệ quy",
+    "aliases": [],
+    "loanwords": [
+      "recursion"
+    ],
+    "plain_descriptions": [
+      "phương pháp giải quyết bài toán bằng cách cho hàm tự gọi lại chính nó với kích thước dữ liệu nhỏ hơn",
+      "kỹ thuật lặp trong lập trình sử dụng các lệnh tự gọi hàm cho tới khi gặp điều kiện dừng"
+    ],
+    "summary": "Kỹ thuật giải quyết bài toán trong đó một hàm tự gọi lại chính nó với các phiên bản thu nhỏ cho đến khi thỏa mãn điều kiện dừng.",
+    "domains": [
+      "it/software-engineering/programming-concepts"
+    ],
+    "level": 2,
     "status": "draft"
   },
   {
@@ -5407,24 +5614,26 @@
     "status": "draft"
   },
   {
-    "id": "responsive-design",
-    "label": "Thiết kế web đáp ứng",
+    "id": "regular-expression",
+    "label": "Biểu thức chính quy (regex)",
     "aliases": [
-      "responsive web design",
-      "responsive design"
+      "Regex",
+      "regex",
+      "Biểu thức chính quy"
     ],
     "loanwords": [
-      "responsive design"
+      "regular expression",
+      "regex"
     ],
     "plain_descriptions": [
-      "cách làm web tự động co giãn đẹp mắt trên cả điện thoại, máy tính bảng và laptop",
-      "thiết kế giao diện linh hoạt tự sắp xếp lại bố cục theo kích thước màn hình"
+      "mẫu ký tự cô đọng dùng để tìm kiếm, khớp và trích xuất các chuỗi văn bản theo quy tắc",
+      "khuôn mẫu định dạng kiểm tra tính hợp lệ của dữ liệu đầu vào như địa chỉ email hay số điện thoại"
     ],
-    "summary": "Phương pháp thiết kế giúp giao diện trang web tự động điều chỉnh bố cục phù hợp với mọi kích thước màn hình của thiết bị.",
+    "summary": "Chuỗi các ký tự định nghĩa mẫu tìm kiếm được các giải thuật xử lý văn bản sử dụng để so khớp, kiểm thực và biến đổi chuỗi.",
     "domains": [
-      "it/web/frontend"
+      "it/software-engineering/programming-concepts"
     ],
-    "level": 1,
+    "level": 2,
     "status": "draft"
   },
   {
@@ -5871,27 +6080,6 @@
     "status": "draft"
   },
   {
-    "id": "server-side-rendering",
-    "label": "Server-side rendering (SSR)",
-    "aliases": [
-      "SSR"
-    ],
-    "loanwords": [
-      "Server-side rendering (SSR)",
-      "SSR"
-    ],
-    "plain_descriptions": [
-      "tạo sẵn toàn bộ trang HTML tại máy chủ rồi mới gửi về cho trình duyệt",
-      "kết xuất trang web tại máy chủ giúp nội dung hiển thị nhanh và tối ưu SEO"
-    ],
-    "summary": "Kỹ thuật kết xuất giao diện thành mã HTML hoàn chỉnh trên máy chủ theo từng yêu cầu của người dùng trước khi gửi về trình duyệt.",
-    "domains": [
-      "it/web/frontend"
-    ],
-    "level": 2,
-    "status": "draft"
-  },
-  {
     "id": "serverless",
     "label": "Serverless",
     "aliases": [
@@ -5910,26 +6098,6 @@
       "it/infrastructure/cloud"
     ],
     "level": 2,
-    "status": "draft"
-  },
-  {
-    "id": "service-worker",
-    "label": "Service worker",
-    "aliases": [
-      "tiến trình dịch vụ ngầm"
-    ],
-    "loanwords": [
-      "Service worker"
-    ],
-    "plain_descriptions": [
-      "tệp mã chạy ngầm hoạt động như người gác cổng trung gian giữa trình duyệt và mạng internet",
-      "công nghệ chạy nền giúp trang web hoạt động ngoại tuyến và nhận tin nhắn thông báo"
-    ],
-    "summary": "Kịch bản chạy nền điều khiển sự kiện, đóng vai trò trạm đại diện (proxy) đánh chặn các yêu cầu mạng và quản lý bộ nhớ đệm.",
-    "domains": [
-      "it/web/frontend"
-    ],
-    "level": 3,
     "status": "draft"
   },
   {
@@ -5994,27 +6162,6 @@
     ],
     "level": 1,
     "status": "reviewed"
-  },
-  {
-    "id": "single-page-application",
-    "label": "Single-page application (SPA)",
-    "aliases": [
-      "SPA"
-    ],
-    "loanwords": [
-      "Single-page application (SPA)",
-      "SPA"
-    ],
-    "plain_descriptions": [
-      "trang web đổi nội dung mượt mà mà không bao giờ phải nạp lại toàn bộ trang",
-      "ứng dụng web tải một khung duy nhất và chuyển màn hình bằng JavaScript"
-    ],
-    "summary": "Kiến trúc ứng dụng web tải một trang HTML duy nhất và cập nhật nội dung linh hoạt mà không tải lại toàn trang.",
-    "domains": [
-      "it/web/frontend"
-    ],
-    "level": 2,
-    "status": "draft"
   },
   {
     "id": "sla",
@@ -6340,6 +6487,48 @@
     "status": "draft"
   },
   {
+    "id": "stack-data-structure",
+    "label": "Stack",
+    "qualifier": "(Cấu trúc dữ liệu)",
+    "aliases": [
+      "Ngăn xếp"
+    ],
+    "loanwords": [
+      "stack"
+    ],
+    "plain_descriptions": [
+      "cấu trúc dữ liệu vào sau ra trước trong đó phần tử chỉ được thêm vào và lấy ra ở một đầu đỉnh",
+      "danh sách hoạt động theo nguyên lý LIFO với hai thao tác đẩy vào và rút ra cơ bản"
+    ],
+    "summary": "Tập hợp dữ liệu tuyến tính tuân thủ nghiêm ngặt nguyên tắc vào sau, ra trước (LIFO), giới hạn thao tác thêm và xóa tại một đầu duy nhất.",
+    "domains": [
+      "it/software-engineering/programming-concepts"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
+    "id": "stack-trace",
+    "label": "Stack trace",
+    "aliases": [
+      "Vết ngăn xếp",
+      "Dấu vết ngăn xếp"
+    ],
+    "loanwords": [
+      "stack trace"
+    ],
+    "plain_descriptions": [
+      "báo cáo hiển thị chuỗi các hàm đang hoạt động tại thời điểm phần mềm phát sinh lỗi",
+      "dấu vết chẩn đoán ghi lại tên tệp nguồn và số dòng nơi chương trình gặp sự cố"
+    ],
+    "summary": "Bản báo cáo chẩn đoán liệt kê chi tiết các khung ngăn xếp cuộc gọi, tên hàm và số dòng mã nguồn tại một thời điểm thực thi cụ thể.",
+    "domains": [
+      "it/software-engineering/programming-concepts"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
     "id": "staging-environment",
     "label": "Staging environment",
     "aliases": [
@@ -6397,27 +6586,6 @@
     "summary": "Giá trị doanh nghiệp được xác định và thỏa thuận giữa nhà sáng lập và nhà đầu tư trước khi dòng tiền tài trợ mới được rót vào tài khoản.",
     "domains": [
       "finance/corporate-finance/fundraising"
-    ],
-    "level": 2,
-    "status": "draft"
-  },
-  {
-    "id": "static-site-generation",
-    "label": "Static site generation (SSG)",
-    "aliases": [
-      "SSG"
-    ],
-    "loanwords": [
-      "Static site generation (SSG)",
-      "SSG"
-    ],
-    "plain_descriptions": [
-      "tạo sẵn toàn bộ các tệp trang web từ trước để phát cho người đọc ngay lập tức",
-      "biên dịch bài viết thành các tệp HTML cố định giúp tải trang siêu nhanh qua mạng CDN"
-    ],
-    "summary": "Quy trình tạo sẵn các tệp HTML tĩnh từ lúc biên dịch dự án thay vì chờ người dùng truy cập mới tạo nội dung.",
-    "domains": [
-      "it/web/frontend"
     ],
     "level": 2,
     "status": "draft"
@@ -6652,6 +6820,28 @@
     "status": "draft"
   },
   {
+    "id": "thread-programming",
+    "label": "Thread",
+    "qualifier": "(Lập trình)",
+    "aliases": [
+      "Luồng",
+      "Luồng thực thi"
+    ],
+    "loanwords": [
+      "thread"
+    ],
+    "plain_descriptions": [
+      "đơn vị thực thi nhỏ nhất của một tập lệnh mà bộ điều phối hệ điều hành có thể quản lý độc lập",
+      "nhánh chạy lệnh gọn nhẹ bên trong một tiến trình dùng chung bộ nhớ với các luồng anh em"
+    ],
+    "summary": "Đơn vị thực thi nhỏ nhất bên trong một tiến trình hệ điều hành, chia sẻ không gian bộ nhớ và tài nguyên của tiến trình cha với các luồng khác.",
+    "domains": [
+      "it/software-engineering/programming-concepts"
+    ],
+    "level": 2,
+    "status": "draft"
+  },
+  {
     "id": "throughput",
     "label": "Throughput",
     "aliases": [
@@ -6819,27 +7009,6 @@
     "status": "draft"
   },
   {
-    "id": "tree-shaking",
-    "label": "Tree shaking",
-    "aliases": [
-      "loại bỏ mã thừa",
-      "dead code elimination"
-    ],
-    "loanwords": [
-      "Tree shaking"
-    ],
-    "plain_descriptions": [
-      "lọc bỏ những đoạn mã không dùng đến để tệp tải về nhẹ hơn",
-      "kỹ thuật rung cây rụng lá úa giúp loại bỏ các hàm không bao giờ được gọi tới"
-    ],
-    "summary": "Kỹ thuật tối ưu hóa trong quá trình đóng gói giúp loại bỏ mã nguồn không được sử dụng khỏi sản phẩm cuối cùng.",
-    "domains": [
-      "it/web/frontend"
-    ],
-    "level": 2,
-    "status": "draft"
-  },
-  {
     "id": "type-checking",
     "label": "Type checking",
     "aliases": [
@@ -6854,28 +7023,6 @@
     ],
     "summary": "Quy trình kiểm chứng nhằm xác thực các giá trị dữ liệu gán cho biến hoặc truyền vào hàm có tuân thủ đúng quy tắc hệ thống kiểu của ngôn ngữ lập trình hay không.",
     "domains": [
-      "it/software-engineering/programming-concepts"
-    ],
-    "level": 2,
-    "status": "draft"
-  },
-  {
-    "id": "typescript",
-    "label": "TypeScript",
-    "aliases": [
-      "TS"
-    ],
-    "loanwords": [
-      "TypeScript",
-      "TS"
-    ],
-    "plain_descriptions": [
-      "phiên bản JavaScript bổ sung kiểm tra kiểu dữ liệu để tránh lỗi phần mềm",
-      "ngôn ngữ mở rộng của JavaScript giúp viết mã an toàn và dễ bảo trì hơn"
-    ],
-    "summary": "Ngôn ngữ lập trình mã nguồn mở phát triển từ JavaScript, bổ sung hệ thống kiểu tĩnh giúp phát hiện lỗi sớm trước khi chạy.",
-    "domains": [
-      "it/web/frontend",
       "it/software-engineering/programming-concepts"
     ],
     "level": 2,
@@ -6946,28 +7093,6 @@
     "status": "draft"
   },
   {
-    "id": "url",
-    "label": "URL",
-    "aliases": [
-      "Uniform Resource Locator",
-      "địa chỉ web"
-    ],
-    "loanwords": [
-      "URL",
-      "Uniform Resource Locator"
-    ],
-    "plain_descriptions": [
-      "chuỗi địa chỉ bạn gõ vào thanh tìm kiếm của trình duyệt để vào trang web",
-      "đường link tiêu chuẩn chỉ đúng vị trí của tài liệu trên mạng internet"
-    ],
-    "summary": "Chuỗi định danh tiêu chuẩn chỉ định vị trí cụ thể và phương thức truy cập của một tài nguyên trên mạng.",
-    "domains": [
-      "it/web/frontend"
-    ],
-    "level": 1,
-    "status": "draft"
-  },
-  {
     "id": "user-story",
     "label": "User story",
     "aliases": [
@@ -7010,6 +7135,28 @@
       "media/digital-marketing/metrics-analytics"
     ],
     "level": 2,
+    "status": "draft"
+  },
+  {
+    "id": "variable",
+    "label": "Variable",
+    "qualifier": "(Lập trình)",
+    "aliases": [
+      "Biến",
+      "Biến số"
+    ],
+    "loanwords": [
+      "variable"
+    ],
+    "plain_descriptions": [
+      "hộp chứa có tên để lưu dữ liệu trong bộ nhớ khi phần mềm vận hành",
+      "nhãn đại diện trỏ đến một giá trị có thể đọc hoặc thay đổi trong mã nguồn"
+    ],
+    "summary": "Vùng lưu trữ có định danh trong bộ nhớ dùng để chứa dữ liệu mà chương trình có thể thao tác và cập nhật.",
+    "domains": [
+      "it/software-engineering/programming-concepts"
+    ],
+    "level": 1,
     "status": "draft"
   },
   {
@@ -7175,71 +7322,6 @@
       "finance/investing/portfolio-risk"
     ],
     "level": 2,
-    "status": "draft"
-  },
-  {
-    "id": "wcag",
-    "label": "WCAG",
-    "aliases": [
-      "Web Content Accessibility Guidelines"
-    ],
-    "loanwords": [
-      "WCAG",
-      "Web Content Accessibility Guidelines"
-    ],
-    "plain_descriptions": [
-      "bộ tiêu chuẩn quốc tế chính thức về việc xây dựng trang web thân thiện cho mọi người",
-      "hướng dẫn kỹ thuật đo lường mức độ tiếp cận của nội dung web đối với người khuyết tật"
-    ],
-    "summary": "Bộ hướng dẫn tiếp cận nội dung web do Tổ chức World Wide Web Consortium (W3C) ban hành nhằm chuẩn hóa khả năng tiếp cận kỹ thuật số.",
-    "domains": [
-      "it/web/frontend"
-    ],
-    "level": 2,
-    "status": "draft"
-  },
-  {
-    "id": "web-accessibility",
-    "label": "Khả năng tiếp cận web",
-    "aliases": [
-      "a11y",
-      "web accessibility",
-      "khả năng truy cập web"
-    ],
-    "loanwords": [
-      "a11y",
-      "web accessibility"
-    ],
-    "plain_descriptions": [
-      "làm cho trang web dễ sử dụng với tất cả mọi người, kể cả người khuyết tật",
-      "xây dựng sản phẩm web tương thích tốt với các phần mềm đọc màn hình"
-    ],
-    "summary": "Thực tiễn thiết kế và xây dựng trang web sao cho mọi người, bao gồm người có khiếm khuyết về giác quan hoặc thể chất, đều có thể sử dụng thuận tiện.",
-    "domains": [
-      "it/web/frontend"
-    ],
-    "level": 1,
-    "status": "draft"
-  },
-  {
-    "id": "web-server",
-    "label": "Máy chủ web",
-    "aliases": [
-      "web server",
-      "máy chủ HTTP"
-    ],
-    "loanwords": [
-      "web server"
-    ],
-    "plain_descriptions": [
-      "máy tính và phần mềm chuyên tiếp nhận yêu cầu và gửi trang web cho người dùng",
-      "hệ thống lưu trữ và phân phát các tệp HTML, hình ảnh qua mạng internet"
-    ],
-    "summary": "Hệ thống phần cứng hoặc phần mềm chuyên xử lý các yêu cầu từ máy khách qua giao thức HTTP để cung cấp tài nguyên trang web.",
-    "domains": [
-      "it/web/backend"
-    ],
-    "level": 1,
     "status": "draft"
   },
   {

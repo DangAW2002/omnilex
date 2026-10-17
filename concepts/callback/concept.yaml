@@ -1,0 +1,25 @@
+id: callback
+domains:
+  - it/software-engineering/programming-concepts
+level: 2
+relations:
+  prerequisites:
+    - "function-programming"
+  confusable: []
+  related:
+    - "promise"
+    - "async-await"
+    - "closure"
+status: draft
+provenance:
+  drafted_by: ai
+sources:
+  - ref: mdn
+    locator: https://developer.mozilla.org/en-US/docs/Glossary/Callback_function
+    title: "Callback function - Glossary | MDN"
+    language: en
+    accessed: '2026-10-17'
+    retrieved_by: ai
+    supports:
+      - definition
+      - summary

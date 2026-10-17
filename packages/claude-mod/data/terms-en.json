@@ -171,6 +171,21 @@
     "autolink": true
   },
   {
+    "key": "Algorithm",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "algorithm",
+        "label": "Algorithm",
+        "summary": "A well-defined, finite sequence of unambiguous instructions designed to perform a specific computational computation or solve a problem.",
+        "domains": [
+          "it/software-engineering/programming-concepts"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
     "key": "Anonymous source",
     "match": "any-case",
     "concepts": [
@@ -280,6 +295,22 @@
     "autolink": true
   },
   {
+    "key": "Array",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "array",
+        "label": "Array",
+        "qualifier": "(Programming)",
+        "summary": "A linear data structure consisting of a collection of elements identified by index or key, stored in contiguous memory locations.",
+        "domains": [
+          "it/software-engineering/programming-concepts"
+        ]
+      }
+    ],
+    "autolink": false
+  },
+  {
     "key": "Aspect ratio",
     "match": "any-case",
     "concepts": [
@@ -321,6 +352,21 @@
         "summary": "A present economic resource controlled by an entity as a result of past events from which future economic benefits are expected to flow.",
         "domains": [
           "finance/accounting/bookkeeping"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Async/await",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "async-await",
+        "label": "Async/await",
+        "summary": "A syntactic abstraction that allows asynchronous, promise-based operations to be written and structured in a readable sequential style.",
+        "domains": [
+          "it/software-engineering/programming-concepts"
         ]
       }
     ],
@@ -660,6 +706,51 @@
     "autolink": true
   },
   {
+    "key": "Big O notation",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "big-o-notation",
+        "label": "Big O notation",
+        "summary": "A mathematical notation used to describe the asymptotic upper bound of an algorithm’s time or memory requirements as the input size approaches infinity.",
+        "domains": [
+          "it/software-engineering/programming-concepts"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Big O",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "big-o-notation",
+        "label": "Big O notation",
+        "summary": "A mathematical notation used to describe the asymptotic upper bound of an algorithm’s time or memory requirements as the input size approaches infinity.",
+        "domains": [
+          "it/software-engineering/programming-concepts"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Binary search",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "binary-search",
+        "label": "Binary search",
+        "summary": "An efficient search algorithm that finds the position of a target value within a sorted array by repeatedly halving the search interval.",
+        "domains": [
+          "it/software-engineering/programming-concepts"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
     "key": "Bluetooth Low Energy (BLE)",
     "match": "any-case",
     "concepts": [
@@ -938,45 +1029,16 @@
     "autolink": true
   },
   {
-    "key": "Browser cache",
+    "key": "Breakpoint",
     "match": "any-case",
     "concepts": [
       {
-        "id": "browser-cache",
-        "label": "Browser cache",
-        "summary": "A temporary storage mechanism within a web browser that retains previously fetched HTTP resources to speed up future requests.",
+        "id": "breakpoint",
+        "label": "Breakpoint",
+        "qualifier": "(Debugging)",
+        "summary": "An intentional stopping point configured in source code or instruction addresses where a debugger suspends execution to allow state inspection.",
         "domains": [
-          "it/web/frontend"
-        ]
-      }
-    ],
-    "autolink": true
-  },
-  {
-    "key": "web cache",
-    "match": "any-case",
-    "concepts": [
-      {
-        "id": "browser-cache",
-        "label": "Browser cache",
-        "summary": "A temporary storage mechanism within a web browser that retains previously fetched HTTP resources to speed up future requests.",
-        "domains": [
-          "it/web/frontend"
-        ]
-      }
-    ],
-    "autolink": true
-  },
-  {
-    "key": "HTTP cache",
-    "match": "any-case",
-    "concepts": [
-      {
-        "id": "browser-cache",
-        "label": "Browser cache",
-        "summary": "A temporary storage mechanism within a web browser that retains previously fetched HTTP resources to speed up future requests.",
-        "domains": [
-          "it/web/frontend"
+          "it/software-engineering/practices"
         ]
       }
     ],
@@ -1009,38 +1071,6 @@
         "summary": "An itemised financial plan that estimates anticipated income and allocates it toward expenses, savings, and debt payoff over a set period.",
         "domains": [
           "finance/personal-finance/budget"
-        ]
-      }
-    ],
-    "autolink": true
-  },
-  {
-    "key": "Bundler",
-    "match": "any-case",
-    "concepts": [
-      {
-        "id": "bundler",
-        "label": "Bundler",
-        "qualifier": "(JavaScript)",
-        "summary": "A build tool that traverses project dependencies to combine and optimize multiple code and asset files into production-ready web bundles.",
-        "domains": [
-          "it/web/frontend"
-        ]
-      }
-    ],
-    "autolink": true
-  },
-  {
-    "key": "module bundler",
-    "match": "any-case",
-    "concepts": [
-      {
-        "id": "bundler",
-        "label": "Bundler",
-        "qualifier": "(JavaScript)",
-        "summary": "A build tool that traverses project dependencies to combine and optimize multiple code and asset files into production-ready web bundles.",
-        "domains": [
-          "it/web/frontend"
         ]
       }
     ],
@@ -1149,6 +1179,22 @@
         "summary": "A marketing prompt, button, or statement designed to encourage immediate user response and guide prospects toward a desired action.",
         "domains": [
           "media/digital-marketing/paid-ads"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Callback",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "callback",
+        "label": "Callback",
+        "qualifier": "(Programming)",
+        "summary": "A subroutine delivered as a parameter to another procedure to be called back upon the occurrence of a predefined trigger.",
+        "domains": [
+          "it/software-engineering/programming-concepts"
         ]
       }
     ],
@@ -1398,6 +1444,38 @@
     "autolink": true
   },
   {
+    "key": "Class",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "class-oop",
+        "label": "Class",
+        "qualifier": "(Programming)",
+        "summary": "An extensible code template that defines the state properties and callable behaviors for constructing objects.",
+        "domains": [
+          "it/software-engineering/programming-concepts"
+        ]
+      }
+    ],
+    "autolink": false
+  },
+  {
+    "key": "Closure",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "closure",
+        "label": "Closure",
+        "qualifier": "(Programming)",
+        "summary": "A function packaged with references to its surrounding lexical scope, enabling it to access enclosing variables even after the outer function finishes executing.",
+        "domains": [
+          "it/software-engineering/programming-concepts"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
     "key": "Constrained Application Protocol (CoAP)",
     "match": "any-case",
     "concepts": [
@@ -1437,36 +1515,6 @@
         "summary": "A collaborative peer-review practice where software engineers systematically examine proposed code changes to identify defects, enforce architectural standards, and share knowledge.",
         "domains": [
           "it/software-engineering/practices"
-        ]
-      }
-    ],
-    "autolink": true
-  },
-  {
-    "key": "Code splitting",
-    "match": "any-case",
-    "concepts": [
-      {
-        "id": "code-splitting",
-        "label": "Code splitting",
-        "summary": "A technique of splitting a single application bundle into multiple smaller chunks that can be loaded on demand or in parallel.",
-        "domains": [
-          "it/web/frontend"
-        ]
-      }
-    ],
-    "autolink": true
-  },
-  {
-    "key": "bundle splitting",
-    "match": "any-case",
-    "concepts": [
-      {
-        "id": "code-splitting",
-        "label": "Code splitting",
-        "summary": "A technique of splitting a single application bundle into multiple smaller chunks that can be loaded on demand or in parallel.",
-        "domains": [
-          "it/web/frontend"
         ]
       }
     ],
@@ -1518,6 +1566,21 @@
     "autolink": true
   },
   {
+    "key": "Compiler",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "compiler",
+        "label": "Compiler",
+        "summary": "A computer program that translates software source code written in a high-level programming language into machine code or an intermediate representation prior to execution.",
+        "domains": [
+          "it/software-engineering/programming-concepts"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
     "key": "Compound Interest",
     "match": "any-case",
     "concepts": [
@@ -1544,6 +1607,21 @@
         "domains": [
           "finance/personal-finance/saving",
           "finance/investing/portfolio-risk"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Concurrency",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "concurrency",
+        "label": "Concurrency",
+        "summary": "The composition and coordination of multiple computational tasks executing over overlapping time intervals.",
+        "domains": [
+          "it/software-engineering/programming-concepts"
         ]
       }
     ],
@@ -1730,38 +1808,6 @@
         "summary": "A form of intellectual property law protecting original works of authorship fixed in any tangible medium of expression from unauthorized copying and distribution.",
         "domains": [
           "media/publishing/copyright-licensing"
-        ]
-      }
-    ],
-    "autolink": true
-  },
-  {
-    "key": "Core Web Vitals",
-    "match": "any-case",
-    "concepts": [
-      {
-        "id": "core-web-vitals",
-        "label": "Core Web Vitals",
-        "summary": "A set of standardized metrics established by Google to evaluate real-world user experience across loading speed, responsiveness, and visual stability.",
-        "domains": [
-          "it/web/frontend",
-          "media/digital-marketing/seo"
-        ]
-      }
-    ],
-    "autolink": true
-  },
-  {
-    "key": "CWV",
-    "match": "exact-case",
-    "concepts": [
-      {
-        "id": "core-web-vitals",
-        "label": "Core Web Vitals",
-        "summary": "A set of standardized metrics established by Google to evaluate real-world user experience across loading speed, responsiveness, and visual stability.",
-        "domains": [
-          "it/web/frontend",
-          "media/digital-marketing/seo"
         ]
       }
     ],
@@ -2115,36 +2161,6 @@
     "autolink": true
   },
   {
-    "key": "CSS",
-    "match": "exact-case",
-    "concepts": [
-      {
-        "id": "css",
-        "label": "CSS",
-        "summary": "A declarative styling language for rendering visual layout, typographic formatting, and color palettes on markup documents.",
-        "domains": [
-          "it/web/frontend"
-        ]
-      }
-    ],
-    "autolink": true
-  },
-  {
-    "key": "Cascading Style Sheets",
-    "match": "any-case",
-    "concepts": [
-      {
-        "id": "css",
-        "label": "CSS",
-        "summary": "A declarative styling language for rendering visual layout, typographic formatting, and color palettes on markup documents.",
-        "domains": [
-          "it/web/frontend"
-        ]
-      }
-    ],
-    "autolink": true
-  },
-  {
     "key": "Click-through rate (CTR)",
     "match": "any-case",
     "concepts": [
@@ -2351,6 +2367,21 @@
         "summary": "An automated sequence of processes that ingests, processes, and transfers raw data from source systems to destination storage.",
         "domains": [
           "it/data/data-engineering"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Data structure",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "data-structure",
+        "label": "Data structure",
+        "summary": "A specialized format for organizing, processing, retrieving, and storing data efficiently within computer systems.",
+        "domains": [
+          "it/software-engineering/programming-concepts"
         ]
       }
     ],
@@ -2681,6 +2712,21 @@
         "summary": "A financial leverage metric calculated by dividing an entity’s total debt obligations by its shareholders’ equity.",
         "domains": [
           "finance/corporate-finance/capital-structure"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Debugging",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "debugging",
+        "label": "Debugging",
+        "summary": "The systematic engineering process of detecting, isolating, and rectifying software defects or anomalies.",
+        "domains": [
+          "it/software-engineering/practices"
         ]
       }
     ],
@@ -3060,36 +3106,6 @@
         "summary": "An open commercial platform providing tooling to build, share, package, and execute application containers using host operating system virtualization.",
         "domains": [
           "it/devops/containers"
-        ]
-      }
-    ],
-    "autolink": true
-  },
-  {
-    "key": "Document Object Model (DOM)",
-    "match": "any-case",
-    "concepts": [
-      {
-        "id": "dom",
-        "label": "Document Object Model (DOM)",
-        "summary": "A cross-platform, language-independent programming interface that treats an HTML or XML document as a tree structure of nodes.",
-        "domains": [
-          "it/web/frontend"
-        ]
-      }
-    ],
-    "autolink": true
-  },
-  {
-    "key": "DOM",
-    "match": "exact-case",
-    "concepts": [
-      {
-        "id": "dom",
-        "label": "Document Object Model (DOM)",
-        "summary": "A cross-platform, language-independent programming interface that treats an HTML or XML document as a tree structure of nodes.",
-        "domains": [
-          "it/web/frontend"
         ]
       }
     ],
@@ -3613,6 +3629,22 @@
     "autolink": true
   },
   {
+    "key": "Exception",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "exception-handling",
+        "label": "Exception",
+        "qualifier": "(Programming)",
+        "summary": "An abnormal condition or error event encountered during execution that disrupts normal instruction flow and triggers specialized handling logic.",
+        "domains": [
+          "it/software-engineering/programming-concepts"
+        ]
+      }
+    ],
+    "autolink": false
+  },
+  {
     "key": "Exchange rate",
     "match": "any-case",
     "concepts": [
@@ -3853,6 +3885,52 @@
     "autolink": true
   },
   {
+    "key": "Function",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "function-programming",
+        "label": "Function",
+        "qualifier": "(Programming)",
+        "summary": "A self-contained block of instructions that accepts parameters, executes a computational routine, and optionally returns a result.",
+        "domains": [
+          "it/software-engineering/programming-concepts"
+        ]
+      }
+    ],
+    "autolink": false
+  },
+  {
+    "key": "Functional programming",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "functional-programming",
+        "label": "Functional programming",
+        "summary": "A declarative programming paradigm that treats computation as the evaluation of pure mathematical functions while avoiding mutable state.",
+        "domains": [
+          "it/software-engineering/programming-concepts"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Garbage collection",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "garbage-collection",
+        "label": "Garbage collection",
+        "summary": "An automatic memory management mechanism in a runtime environment that detects and reclaims heap memory occupied by unreachable objects.",
+        "domains": [
+          "it/software-engineering/programming-concepts"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
     "key": "Gross Domestic Product (GDP)",
     "match": "any-case",
     "concepts": [
@@ -3892,6 +3970,22 @@
         "summary": "The total monetary or market value of all final goods and services produced within a country’s domestic borders over a specific timeframe.",
         "domains": [
           "finance/economics/inflation"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Generics",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "generics",
+        "label": "Generics",
+        "qualifier": "(Programming)",
+        "summary": "A language feature that allows algorithms and data structures to be defined with placeholder types, deferred until instantiation or invocation.",
+        "domains": [
+          "it/software-engineering/programming-concepts"
         ]
       }
     ],
@@ -4071,6 +4165,36 @@
     "autolink": true
   },
   {
+    "key": "Hash table",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "hash-table",
+        "label": "Hash table",
+        "summary": "A data structure that implements an associative array abstract data type, mapping keys to values using a hashing function.",
+        "domains": [
+          "it/software-engineering/programming-concepts"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Hash map",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "hash-table",
+        "label": "Hash table",
+        "summary": "A data structure that implements an associative array abstract data type, mapping keys to values using a hashing function.",
+        "domains": [
+          "it/software-engineering/programming-concepts"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
     "key": "Hashing",
     "match": "any-case",
     "concepts": [
@@ -4164,68 +4288,6 @@
     "autolink": true
   },
   {
-    "key": "HTML",
-    "match": "exact-case",
-    "concepts": [
-      {
-        "id": "html",
-        "label": "HTML",
-        "summary": "The standard markup language used to structure documents and content displayed in web browsers.",
-        "domains": [
-          "it/web/frontend"
-        ]
-      }
-    ],
-    "autolink": true
-  },
-  {
-    "key": "HyperText Markup Language",
-    "match": "any-case",
-    "concepts": [
-      {
-        "id": "html",
-        "label": "HTML",
-        "summary": "The standard markup language used to structure documents and content displayed in web browsers.",
-        "domains": [
-          "it/web/frontend"
-        ]
-      }
-    ],
-    "autolink": true
-  },
-  {
-    "key": "Hypertext Transfer Protocol (HTTP)",
-    "match": "any-case",
-    "concepts": [
-      {
-        "id": "http",
-        "label": "Hypertext Transfer Protocol (HTTP)",
-        "summary": "A foundational client-server networking specification governing how web browsers fetch and submit hypermedia assets.",
-        "domains": [
-          "it/web/api",
-          "it/infrastructure/networking"
-        ]
-      }
-    ],
-    "autolink": true
-  },
-  {
-    "key": "HTTP",
-    "match": "exact-case",
-    "concepts": [
-      {
-        "id": "http",
-        "label": "Hypertext Transfer Protocol (HTTP)",
-        "summary": "A foundational client-server networking specification governing how web browsers fetch and submit hypermedia assets.",
-        "domains": [
-          "it/web/api",
-          "it/infrastructure/networking"
-        ]
-      }
-    ],
-    "autolink": true
-  },
-  {
     "key": "HTTP status code",
     "match": "any-case",
     "concepts": [
@@ -4265,68 +4327,6 @@
         "summary": "A standardized three-digit integer returned by a server indicating the outcome of a client’s HTTP request.",
         "domains": [
           "it/web/api"
-        ]
-      }
-    ],
-    "autolink": true
-  },
-  {
-    "key": "HTTPS",
-    "match": "any-case",
-    "concepts": [
-      {
-        "id": "https",
-        "label": "HTTPS",
-        "summary": "An extension of HTTP that encrypts bidirectional communication using Transport Layer Security (TLS).",
-        "domains": [
-          "it/web/api"
-        ]
-      }
-    ],
-    "autolink": true
-  },
-  {
-    "key": "Hypertext Transfer Protocol Secure",
-    "match": "any-case",
-    "concepts": [
-      {
-        "id": "https",
-        "label": "HTTPS",
-        "summary": "An extension of HTTP that encrypts bidirectional communication using Transport Layer Security (TLS).",
-        "domains": [
-          "it/web/api"
-        ]
-      }
-    ],
-    "autolink": true
-  },
-  {
-    "key": "Hydration",
-    "match": "any-case",
-    "concepts": [
-      {
-        "id": "hydration",
-        "label": "Hydration",
-        "qualifier": "(Web)",
-        "summary": "The client-side process where framework JavaScript attaches event listeners and state management to server-rendered HTML markup.",
-        "domains": [
-          "it/web/frontend"
-        ]
-      }
-    ],
-    "autolink": true
-  },
-  {
-    "key": "client-side hydration",
-    "match": "any-case",
-    "concepts": [
-      {
-        "id": "hydration",
-        "label": "Hydration",
-        "qualifier": "(Web)",
-        "summary": "The client-side process where framework JavaScript attaches event listeners and state management to server-rendered HTML markup.",
-        "domains": [
-          "it/web/frontend"
         ]
       }
     ],
@@ -4417,6 +4417,21 @@
         "summary": "A computer vision task in which an algorithm analyzes an entire image and assigns it one or more discrete categorical labels from a predefined taxonomy.",
         "domains": [
           "it/ai-ml/computer-vision"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Immutability",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "immutability",
+        "label": "Immutability",
+        "summary": "The property of an object or data structure that prevents its state from being altered after it has been created.",
+        "domains": [
+          "it/software-engineering/programming-concepts"
         ]
       }
     ],
@@ -4808,6 +4823,22 @@
     "autolink": true
   },
   {
+    "key": "Interpreter",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "interpreter",
+        "label": "Interpreter",
+        "qualifier": "(Programming)",
+        "summary": "A computer program that directly executes instructions written in a programming or scripting language without requiring prior compilation into machine code.",
+        "domains": [
+          "it/software-engineering/programming-concepts"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
     "key": "Inverted pyramid",
     "match": "any-case",
     "concepts": [
@@ -4925,38 +4956,6 @@
         "summary": "A prompt designed to make a model ignore its safety guidelines and produce content it is meant to refuse.",
         "domains": [
           "it/ai-ml/ai-safety-governance"
-        ]
-      }
-    ],
-    "autolink": true
-  },
-  {
-    "key": "JavaScript",
-    "match": "any-case",
-    "concepts": [
-      {
-        "id": "javascript",
-        "label": "JavaScript",
-        "summary": "A dynamic multi-paradigm programming language featuring prototype inheritance that powers client-side web browser behavior.",
-        "domains": [
-          "it/web/frontend",
-          "it/software-engineering/programming-concepts"
-        ]
-      }
-    ],
-    "autolink": true
-  },
-  {
-    "key": "JS",
-    "match": "exact-case",
-    "concepts": [
-      {
-        "id": "javascript",
-        "label": "JavaScript",
-        "summary": "A dynamic multi-paradigm programming language featuring prototype inheritance that powers client-side web browser behavior.",
-        "domains": [
-          "it/web/frontend",
-          "it/software-engineering/programming-concepts"
         ]
       }
     ],
@@ -5240,51 +5239,6 @@
     "autolink": true
   },
   {
-    "key": "Lazy loading",
-    "match": "any-case",
-    "concepts": [
-      {
-        "id": "lazy-loading",
-        "label": "Lazy loading",
-        "summary": "A performance optimization pattern that defers the loading of non-critical resources until they are needed by the user.",
-        "domains": [
-          "it/web/frontend"
-        ]
-      }
-    ],
-    "autolink": true
-  },
-  {
-    "key": "deferred loading",
-    "match": "any-case",
-    "concepts": [
-      {
-        "id": "lazy-loading",
-        "label": "Lazy loading",
-        "summary": "A performance optimization pattern that defers the loading of non-critical resources until they are needed by the user.",
-        "domains": [
-          "it/web/frontend"
-        ]
-      }
-    ],
-    "autolink": true
-  },
-  {
-    "key": "on-demand loading",
-    "match": "any-case",
-    "concepts": [
-      {
-        "id": "lazy-loading",
-        "label": "Lazy loading",
-        "summary": "A performance optimization pattern that defers the loading of non-critical resources until they are needed by the user.",
-        "domains": [
-          "it/web/frontend"
-        ]
-      }
-    ],
-    "autolink": true
-  },
-  {
     "key": "Principle of least privilege",
     "match": "any-case",
     "concepts": [
@@ -5541,36 +5495,6 @@
         "summary": "A networking component that distributes incoming application or network traffic across a pool of backend destination servers.",
         "domains": [
           "it/infrastructure/networking"
-        ]
-      }
-    ],
-    "autolink": true
-  },
-  {
-    "key": "localStorage",
-    "match": "any-case",
-    "concepts": [
-      {
-        "id": "local-storage",
-        "label": "localStorage",
-        "summary": "A Web Storage API mechanism that allows web applications to store persistent key-value pairs locally within the user’s browser.",
-        "domains": [
-          "it/web/frontend"
-        ]
-      }
-    ],
-    "autolink": true
-  },
-  {
-    "key": "Web Storage",
-    "match": "any-case",
-    "concepts": [
-      {
-        "id": "local-storage",
-        "label": "localStorage",
-        "summary": "A Web Storage API mechanism that allows web applications to store persistent key-value pairs locally within the user’s browser.",
-        "domains": [
-          "it/web/frontend"
         ]
       }
     ],
@@ -5917,6 +5841,21 @@
         "summary": "An open protocol that standardises how AI applications connect to external tools, data sources and workflows through MCP servers.",
         "domains": [
           "it/ai-ml/llm-agents"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Memory leak",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "memory-leak",
+        "label": "Memory leak",
+        "summary": "A resource defect occurring when a program fails to release allocated memory that is no longer required, degrading system performance over time.",
+        "domains": [
+          "it/software-engineering/programming-concepts"
         ]
       }
     ],
@@ -6572,52 +6511,6 @@
     "autolink": true
   },
   {
-    "key": "Nginx",
-    "match": "any-case",
-    "concepts": [
-      {
-        "id": "nginx",
-        "label": "Nginx",
-        "summary": "A high-performance HTTP web server, reverse proxy, and load balancer designed for maximum concurrency and low memory usage.",
-        "domains": [
-          "it/web/backend",
-          "it/infrastructure/networking"
-        ]
-      }
-    ],
-    "autolink": true
-  },
-  {
-    "key": "Node.js",
-    "match": "any-case",
-    "concepts": [
-      {
-        "id": "nodejs",
-        "label": "Node.js",
-        "summary": "A standalone server runtime that compiles and executes JavaScript code outside browser sandboxes via Google V8 engine.",
-        "domains": [
-          "it/web/backend"
-        ]
-      }
-    ],
-    "autolink": true
-  },
-  {
-    "key": "Node",
-    "match": "any-case",
-    "concepts": [
-      {
-        "id": "nodejs",
-        "label": "Node.js",
-        "summary": "A standalone server runtime that compiles and executes JavaScript code outside browser sandboxes via Google V8 engine.",
-        "domains": [
-          "it/web/backend"
-        ]
-      }
-    ],
-    "autolink": false
-  },
-  {
     "key": "North Star metric",
     "match": "any-case",
     "concepts": [
@@ -6627,6 +6520,36 @@
         "summary": "The primary operational metric capturing the core value delivered to customers that serves as the leading indicator of sustainable business growth.",
         "domains": [
           "product/metrics"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Null reference",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "null-reference",
+        "label": "Null reference",
+        "summary": "A pointer or reference value that signifies the absence of an object or points to an invalid address in memory.",
+        "domains": [
+          "it/software-engineering/programming-concepts"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Null pointer",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "null-reference",
+        "label": "Null reference",
+        "summary": "A pointer or reference value that signifies the absence of an object or points to an invalid address in memory.",
+        "domains": [
+          "it/software-engineering/programming-concepts"
         ]
       }
     ],
@@ -6687,6 +6610,36 @@
         "summary": "A computer vision technique that simultaneously identifies the semantic class and spatial coordinates of multiple individual objects within an image.",
         "domains": [
           "it/ai-ml/computer-vision"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Object-oriented programming (OOP)",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "object-oriented-programming",
+        "label": "Object-oriented programming (OOP)",
+        "summary": "A paradigm centered on modeling software as collections of cooperating objects that encapsulate state and behavior.",
+        "domains": [
+          "it/software-engineering/programming-concepts"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "OOP",
+    "match": "exact-case",
+    "concepts": [
+      {
+        "id": "object-oriented-programming",
+        "label": "Object-oriented programming (OOP)",
+        "summary": "A paradigm centered on modeling software as collections of cooperating objects that encapsulate state and behavior.",
+        "domains": [
+          "it/software-engineering/programming-concepts"
         ]
       }
     ],
@@ -6918,6 +6871,22 @@
     "autolink": true
   },
   {
+    "key": "Process",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "os-process",
+        "label": "Process",
+        "qualifier": "(Operating system)",
+        "summary": "An executing instance of a computer program allocated its own isolated memory address space and operating system resources.",
+        "domains": [
+          "it/software-engineering/programming-concepts"
+        ]
+      }
+    ],
+    "autolink": false
+  },
+  {
     "key": "Over-the-air update (OTA)",
     "match": "any-case",
     "concepts": [
@@ -7047,6 +7016,22 @@
         "summary": "A design technique that breaks large data sets into discrete subsets or pages to manage bandwidth and system performance.",
         "domains": [
           "it/web/api"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Parallelism",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "parallelism",
+        "label": "Parallelism",
+        "qualifier": "(Computing)",
+        "summary": "The simultaneous physical execution of multiple computations at the exact same instant across distinct hardware processing units.",
+        "domains": [
+          "it/software-engineering/programming-concepts"
         ]
       }
     ],
@@ -7784,34 +7769,20 @@
     "autolink": true
   },
   {
-    "key": "Progressive web app (PWA)",
+    "key": "Promise",
     "match": "any-case",
     "concepts": [
       {
-        "id": "progressive-web-app",
-        "label": "Progressive web app (PWA)",
-        "summary": "A web application built using web technologies that delivers app-like experiences, offline capabilities, and device installation.",
+        "id": "promise",
+        "label": "Promise",
+        "qualifier": "(Programming)",
+        "summary": "A stateful container representing a deferred computational outcome that will eventually yield a value or encounter failure.",
         "domains": [
-          "it/web/frontend"
+          "it/software-engineering/programming-concepts"
         ]
       }
     ],
-    "autolink": true
-  },
-  {
-    "key": "PWA",
-    "match": "exact-case",
-    "concepts": [
-      {
-        "id": "progressive-web-app",
-        "label": "Progressive web app (PWA)",
-        "summary": "A web application built using web technologies that delivers app-like experiences, offline capabilities, and device installation.",
-        "domains": [
-          "it/web/frontend"
-        ]
-      }
-    ],
-    "autolink": true
+    "autolink": false
   },
   {
     "key": "Prompt",
@@ -7898,6 +7869,22 @@
         "summary": "A mechanism in distributed version control platforms that allows a developer to propose changes from a feature branch and request peer review before merging.",
         "domains": [
           "it/software-engineering/version-control"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Python",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "python",
+        "label": "Python",
+        "qualifier": "(Programming language)",
+        "summary": "A high-level, general-purpose programming language characterized by readable syntax, dynamic typing, and comprehensive standard libraries.",
+        "domains": [
+          "it/software-engineering/programming-concepts"
         ]
       }
     ],
@@ -8070,54 +8057,6 @@
     "autolink": true
   },
   {
-    "key": "React",
-    "match": "any-case",
-    "concepts": [
-      {
-        "id": "react",
-        "label": "React",
-        "qualifier": "(Library)",
-        "summary": "A free and open-source front-end JavaScript library for building user interfaces based on components.",
-        "domains": [
-          "it/web/frontend"
-        ]
-      }
-    ],
-    "autolink": false
-  },
-  {
-    "key": "React.js",
-    "match": "any-case",
-    "concepts": [
-      {
-        "id": "react",
-        "label": "React",
-        "qualifier": "(Library)",
-        "summary": "A free and open-source front-end JavaScript library for building user interfaces based on components.",
-        "domains": [
-          "it/web/frontend"
-        ]
-      }
-    ],
-    "autolink": true
-  },
-  {
-    "key": "ReactJS",
-    "match": "any-case",
-    "concepts": [
-      {
-        "id": "react",
-        "label": "React",
-        "qualifier": "(Library)",
-        "summary": "A free and open-source front-end JavaScript library for building user interfaces based on components.",
-        "domains": [
-          "it/web/frontend"
-        ]
-      }
-    ],
-    "autolink": true
-  },
-  {
     "key": "Reasoning model",
     "match": "any-case",
     "concepts": [
@@ -8178,6 +8117,21 @@
     "autolink": true
   },
   {
+    "key": "Recursion",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "recursion",
+        "label": "Recursion",
+        "summary": "A computational technique where a function solves a problem by invoking smaller instances of itself until reaching a terminating base condition.",
+        "domains": [
+          "it/software-engineering/programming-concepts"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
     "key": "Refactoring",
     "match": "any-case",
     "concepts": [
@@ -8208,45 +8162,30 @@
     "autolink": true
   },
   {
-    "key": "Responsive design",
+    "key": "Regular expression (regex)",
     "match": "any-case",
     "concepts": [
       {
-        "id": "responsive-design",
-        "label": "Responsive design",
-        "summary": "An approach to web design that makes web pages render well on a variety of devices and screen window sizes.",
+        "id": "regular-expression",
+        "label": "Regular expression (regex)",
+        "summary": "A sequence of characters defining a search pattern used by string-searching algorithms for matching, validation, and text transformation.",
         "domains": [
-          "it/web/frontend"
+          "it/software-engineering/programming-concepts"
         ]
       }
     ],
     "autolink": true
   },
   {
-    "key": "responsive web design",
+    "key": "Regex",
     "match": "any-case",
     "concepts": [
       {
-        "id": "responsive-design",
-        "label": "Responsive design",
-        "summary": "An approach to web design that makes web pages render well on a variety of devices and screen window sizes.",
+        "id": "regular-expression",
+        "label": "Regular expression (regex)",
+        "summary": "A sequence of characters defining a search pattern used by string-searching algorithms for matching, validation, and text transformation.",
         "domains": [
-          "it/web/frontend"
-        ]
-      }
-    ],
-    "autolink": true
-  },
-  {
-    "key": "RWD",
-    "match": "exact-case",
-    "concepts": [
-      {
-        "id": "responsive-design",
-        "label": "Responsive design",
-        "summary": "An approach to web design that makes web pages render well on a variety of devices and screen window sizes.",
-        "domains": [
-          "it/web/frontend"
+          "it/software-engineering/programming-concepts"
         ]
       }
     ],
@@ -8866,36 +8805,6 @@
     "autolink": true
   },
   {
-    "key": "Server-side rendering (SSR)",
-    "match": "any-case",
-    "concepts": [
-      {
-        "id": "server-side-rendering",
-        "label": "Server-side rendering (SSR)",
-        "summary": "The process of rendering web components into complete HTML strings on the server in response to user requests.",
-        "domains": [
-          "it/web/frontend"
-        ]
-      }
-    ],
-    "autolink": true
-  },
-  {
-    "key": "SSR",
-    "match": "exact-case",
-    "concepts": [
-      {
-        "id": "server-side-rendering",
-        "label": "Server-side rendering (SSR)",
-        "summary": "The process of rendering web components into complete HTML strings on the server in response to user requests.",
-        "domains": [
-          "it/web/frontend"
-        ]
-      }
-    ],
-    "autolink": true
-  },
-  {
     "key": "Serverless",
     "match": "any-case",
     "concepts": [
@@ -8935,36 +8844,6 @@
         "summary": "A cloud computing execution model where the cloud provider dynamically manages server infrastructure and charges only for resource consumption during code execution.",
         "domains": [
           "it/infrastructure/cloud"
-        ]
-      }
-    ],
-    "autolink": true
-  },
-  {
-    "key": "Service worker",
-    "match": "any-case",
-    "concepts": [
-      {
-        "id": "service-worker",
-        "label": "Service worker",
-        "summary": "An event-driven background worker script that intercepts network requests, manages caching strategies, and powers push notifications.",
-        "domains": [
-          "it/web/frontend"
-        ]
-      }
-    ],
-    "autolink": true
-  },
-  {
-    "key": "service workers",
-    "match": "any-case",
-    "concepts": [
-      {
-        "id": "service-worker",
-        "label": "Service worker",
-        "summary": "An event-driven background worker script that intercepts network requests, manages caching strategies, and powers push notifications.",
-        "domains": [
-          "it/web/frontend"
         ]
       }
     ],
@@ -9042,36 +8921,6 @@
         "domains": [
           "finance/personal-finance/saving",
           "finance/banking/lending"
-        ]
-      }
-    ],
-    "autolink": true
-  },
-  {
-    "key": "Single-page application (SPA)",
-    "match": "any-case",
-    "concepts": [
-      {
-        "id": "single-page-application",
-        "label": "Single-page application (SPA)",
-        "summary": "A web application that interacts with the user by dynamically rewriting the current web page rather than loading entire new pages from a server.",
-        "domains": [
-          "it/web/frontend"
-        ]
-      }
-    ],
-    "autolink": true
-  },
-  {
-    "key": "SPA",
-    "match": "exact-case",
-    "concepts": [
-      {
-        "id": "single-page-application",
-        "label": "Single-page application (SPA)",
-        "summary": "A web application that interacts with the user by dynamically rewriting the current web page rather than loading entire new pages from a server.",
-        "domains": [
-          "it/web/frontend"
         ]
       }
     ],
@@ -9509,6 +9358,37 @@
     "autolink": true
   },
   {
+    "key": "Stack",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "stack-data-structure",
+        "label": "Stack",
+        "qualifier": "(Data structure)",
+        "summary": "A linear collection following the Last-In, First-Out (LIFO) access discipline, restricting insertions and deletions to a single endpoint.",
+        "domains": [
+          "it/software-engineering/programming-concepts"
+        ]
+      }
+    ],
+    "autolink": false
+  },
+  {
+    "key": "Stack trace",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "stack-trace",
+        "label": "Stack trace",
+        "summary": "A diagnostic report detailing the active call stack frames, function names, and file line numbers at a specific moment during execution.",
+        "domains": [
+          "it/software-engineering/programming-concepts"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
     "key": "Staging environment",
     "match": "any-case",
     "concepts": [
@@ -9608,36 +9488,6 @@
         "summary": "The agreed valuation of a private enterprise determined prior to receiving an external injection of new investment capital.",
         "domains": [
           "finance/corporate-finance/fundraising"
-        ]
-      }
-    ],
-    "autolink": true
-  },
-  {
-    "key": "Static site generation (SSG)",
-    "match": "any-case",
-    "concepts": [
-      {
-        "id": "static-site-generation",
-        "label": "Static site generation (SSG)",
-        "summary": "A build method that pre-renders full HTML pages at compile time rather than on demand for each user request.",
-        "domains": [
-          "it/web/frontend"
-        ]
-      }
-    ],
-    "autolink": true
-  },
-  {
-    "key": "SSG",
-    "match": "exact-case",
-    "concepts": [
-      {
-        "id": "static-site-generation",
-        "label": "Static site generation (SSG)",
-        "summary": "A build method that pre-renders full HTML pages at compile time rather than on demand for each user request.",
-        "domains": [
-          "it/web/frontend"
         ]
       }
     ],
@@ -10009,6 +9859,22 @@
     "autolink": true
   },
   {
+    "key": "Thread",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "thread-programming",
+        "label": "Thread",
+        "qualifier": "(Programming)",
+        "summary": "The smallest unit of execution within an operating system process, sharing its parent memory space and resources with other threads.",
+        "domains": [
+          "it/software-engineering/programming-concepts"
+        ]
+      }
+    ],
+    "autolink": false
+  },
+  {
     "key": "Throughput",
     "match": "any-case",
     "concepts": [
@@ -10279,36 +10145,6 @@
     "autolink": true
   },
   {
-    "key": "Tree shaking",
-    "match": "any-case",
-    "concepts": [
-      {
-        "id": "tree-shaking",
-        "label": "Tree shaking",
-        "summary": "A dead-code elimination technique commonly used in modern JavaScript bundlers to remove unused exports from final production bundles.",
-        "domains": [
-          "it/web/frontend"
-        ]
-      }
-    ],
-    "autolink": true
-  },
-  {
-    "key": "dead code elimination",
-    "match": "any-case",
-    "concepts": [
-      {
-        "id": "tree-shaking",
-        "label": "Tree shaking",
-        "summary": "A dead-code elimination technique commonly used in modern JavaScript bundlers to remove unused exports from final production bundles.",
-        "domains": [
-          "it/web/frontend"
-        ]
-      }
-    ],
-    "autolink": true
-  },
-  {
     "key": "Type checking",
     "match": "any-case",
     "concepts": [
@@ -10322,38 +10158,6 @@
       }
     ],
     "autolink": true
-  },
-  {
-    "key": "TypeScript",
-    "match": "any-case",
-    "concepts": [
-      {
-        "id": "typescript",
-        "label": "TypeScript",
-        "summary": "A strongly typed programming language that builds on JavaScript, giving developers better tooling and early error detection.",
-        "domains": [
-          "it/web/frontend",
-          "it/software-engineering/programming-concepts"
-        ]
-      }
-    ],
-    "autolink": true
-  },
-  {
-    "key": "TS",
-    "match": "exact-case",
-    "concepts": [
-      {
-        "id": "typescript",
-        "label": "TypeScript",
-        "summary": "A strongly typed programming language that builds on JavaScript, giving developers better tooling and early error detection.",
-        "domains": [
-          "it/web/frontend",
-          "it/software-engineering/programming-concepts"
-        ]
-      }
-    ],
-    "autolink": false
   },
   {
     "key": "Typography",
@@ -10461,51 +10265,6 @@
     "autolink": true
   },
   {
-    "key": "URL",
-    "match": "exact-case",
-    "concepts": [
-      {
-        "id": "url",
-        "label": "URL",
-        "summary": "A structured reference syntax identifying network location coordinates and retrieval protocols for internet resources.",
-        "domains": [
-          "it/web/frontend"
-        ]
-      }
-    ],
-    "autolink": true
-  },
-  {
-    "key": "Uniform Resource Locator",
-    "match": "any-case",
-    "concepts": [
-      {
-        "id": "url",
-        "label": "URL",
-        "summary": "A structured reference syntax identifying network location coordinates and retrieval protocols for internet resources.",
-        "domains": [
-          "it/web/frontend"
-        ]
-      }
-    ],
-    "autolink": true
-  },
-  {
-    "key": "web address",
-    "match": "any-case",
-    "concepts": [
-      {
-        "id": "url",
-        "label": "URL",
-        "summary": "A structured reference syntax identifying network location coordinates and retrieval protocols for internet resources.",
-        "domains": [
-          "it/web/frontend"
-        ]
-      }
-    ],
-    "autolink": true
-  },
-  {
     "key": "User story",
     "match": "any-case",
     "concepts": [
@@ -10594,6 +10353,22 @@
       }
     ],
     "autolink": true
+  },
+  {
+    "key": "Variable",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "variable",
+        "label": "Variable",
+        "qualifier": "(Programming)",
+        "summary": "A named storage location in memory paired with an identifier that holds data a program can manipulate.",
+        "domains": [
+          "it/software-engineering/programming-concepts"
+        ]
+      }
+    ],
+    "autolink": false
   },
   {
     "key": "Value-Added Tax (VAT)",
@@ -10882,111 +10657,6 @@
         "summary": "A statistical measure of the dispersion of returns for a given security or market index over a specified timeframe.",
         "domains": [
           "finance/investing/portfolio-risk"
-        ]
-      }
-    ],
-    "autolink": true
-  },
-  {
-    "key": "WCAG",
-    "match": "exact-case",
-    "concepts": [
-      {
-        "id": "wcag",
-        "label": "WCAG",
-        "summary": "A set of formal web accessibility recommendations published by the W3C Web Accessibility Initiative.",
-        "domains": [
-          "it/web/frontend"
-        ]
-      }
-    ],
-    "autolink": true
-  },
-  {
-    "key": "Web Content Accessibility Guidelines",
-    "match": "any-case",
-    "concepts": [
-      {
-        "id": "wcag",
-        "label": "WCAG",
-        "summary": "A set of formal web accessibility recommendations published by the W3C Web Accessibility Initiative.",
-        "domains": [
-          "it/web/frontend"
-        ]
-      }
-    ],
-    "autolink": true
-  },
-  {
-    "key": "Web accessibility (a11y)",
-    "match": "any-case",
-    "concepts": [
-      {
-        "id": "web-accessibility",
-        "label": "Web accessibility (a11y)",
-        "summary": "The inclusive practice of ensuring there are no barriers that prevent interaction with websites by people with physical, sensory, or cognitive disabilities.",
-        "domains": [
-          "it/web/frontend"
-        ]
-      }
-    ],
-    "autolink": true
-  },
-  {
-    "key": "a11y",
-    "match": "any-case",
-    "concepts": [
-      {
-        "id": "web-accessibility",
-        "label": "Web accessibility (a11y)",
-        "summary": "The inclusive practice of ensuring there are no barriers that prevent interaction with websites by people with physical, sensory, or cognitive disabilities.",
-        "domains": [
-          "it/web/frontend"
-        ]
-      }
-    ],
-    "autolink": true
-  },
-  {
-    "key": "accessibility",
-    "match": "any-case",
-    "concepts": [
-      {
-        "id": "web-accessibility",
-        "label": "Web accessibility (a11y)",
-        "summary": "The inclusive practice of ensuring there are no barriers that prevent interaction with websites by people with physical, sensory, or cognitive disabilities.",
-        "domains": [
-          "it/web/frontend"
-        ]
-      }
-    ],
-    "autolink": true
-  },
-  {
-    "key": "Web server",
-    "match": "any-case",
-    "concepts": [
-      {
-        "id": "web-server",
-        "label": "Web server",
-        "summary": "A computer system or software application that processes incoming network requests over HTTP and serves web content to clients.",
-        "domains": [
-          "it/web/backend"
-        ]
-      }
-    ],
-    "autolink": true
-  },
-  {
-    "key": "HTTP server",
-    "match": "any-case",
-    "concepts": [
-      {
-        "id": "web-server",
-        "label": "Web server",
-        "summary": "A computer system or software application that processes incoming network requests over HTTP and serves web content to clients.",
-        "domains": [
-          "it/web/backend"
         ]
       }
     ],

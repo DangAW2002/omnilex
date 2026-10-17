@@ -1,0 +1,24 @@
+id: class-oop
+domains:
+  - it/software-engineering/programming-concepts
+level: 1
+relations:
+  prerequisites:
+    - "variable"
+    - "function-programming"
+  confusable: []
+  related:
+    - "object-oriented-programming"
+status: draft
+provenance:
+  drafted_by: ai
+sources:
+  - ref: mdn
+    locator: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes
+    title: "Classes - JavaScript | MDN"
+    language: en
+    accessed: '2026-10-17'
+    retrieved_by: ai
+    supports:
+      - definition
+      - summary

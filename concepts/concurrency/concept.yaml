@@ -1,0 +1,24 @@
+id: concurrency
+domains:
+  - it/software-engineering/programming-concepts
+level: 2
+relations:
+  prerequisites:
+    - "thread-programming"
+  confusable:
+    - "parallelism"
+  related:
+    - "async-await"
+status: draft
+provenance:
+  drafted_by: ai
+sources:
+  - ref: microsoft-learn
+    locator: https://learn.microsoft.com/en-us/dotnet/standard/threading/managed-threading-basics
+    title: "Managed Threading Basics - .NET | Microsoft Learn"
+    language: en
+    accessed: '2026-10-17'
+    retrieved_by: ai
+    supports:
+      - definition
+      - summary

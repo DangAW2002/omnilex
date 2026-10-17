@@ -1,0 +1,24 @@
+id: async-await
+domains:
+  - it/software-engineering/programming-concepts
+level: 2
+relations:
+  prerequisites:
+    - "promise"
+  confusable: []
+  related:
+    - "callback"
+    - "concurrency"
+status: draft
+provenance:
+  drafted_by: ai
+sources:
+  - ref: mdn
+    locator: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/async_function
+    title: "async function - JavaScript | MDN"
+    language: en
+    accessed: '2026-10-17'
+    retrieved_by: ai
+    supports:
+      - definition
+      - summary

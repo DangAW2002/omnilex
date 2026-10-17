@@ -1,12 +1,23 @@
 id: sast
 domains:
   - it/security/vulnerabilities
-level: 1
+level: 2
 relations:
-  prerequisites: []
-  confusable: []
-  related: []
+  confusable:
+    - dast
+  related:
+    - ci-cd
+    - penetration-testing
 status: draft
 provenance:
   drafted_by: ai
-sources: []
+sources:
+  - ref: owasp
+    locator: https://community.owasp.org/Source_Code_Analysis_Tools
+    title: Source Code Analysis Tools | OWASP Foundation
+    language: en
+    accessed: '2026-10-17'
+    retrieved_by: ai
+    supports:
+      - definition
+      - summary

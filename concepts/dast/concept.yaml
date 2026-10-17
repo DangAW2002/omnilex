@@ -1,12 +1,23 @@
 id: dast
 domains:
   - it/security/vulnerabilities
-level: 1
+level: 2
 relations:
-  prerequisites: []
-  confusable: []
-  related: []
+  confusable:
+    - sast
+  related:
+    - penetration-testing
+    - waf
 status: draft
 provenance:
   drafted_by: ai
-sources: []
+sources:
+  - ref: owasp
+    locator: https://community.owasp.org/Vulnerability_Scanning_Tools
+    title: Vulnerability Scanning Tools | OWASP Foundation
+    language: en
+    accessed: '2026-10-17'
+    retrieved_by: ai
+    supports:
+      - definition
+      - summary

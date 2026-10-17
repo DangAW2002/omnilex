@@ -1,12 +1,21 @@
 id: supply-chain-attack
 domains:
   - it/security/vulnerabilities
-level: 1
+level: 2
 relations:
-  prerequisites: []
-  confusable: []
-  related: []
+  related:
+    - software-dependency
+    - malware
 status: draft
 provenance:
   drafted_by: ai
-sources: []
+sources:
+  - ref: nist-csrc
+    locator: https://csrc.nist.gov/glossary/term/supply_chain_attack
+    title: supply chain attack - Glossary | CSRC
+    language: en
+    accessed: '2026-10-17'
+    retrieved_by: ai
+    supports:
+      - definition
+      - summary

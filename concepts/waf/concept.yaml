@@ -1,12 +1,23 @@
 id: waf
 domains:
   - it/security/vulnerabilities
-level: 1
+level: 2
 relations:
-  prerequisites: []
-  confusable: []
-  related: []
+  related:
+    - sql-injection
+    - xss
+    - ddos
+    - intrusion-detection-system
 status: draft
 provenance:
   drafted_by: ai
-sources: []
+sources:
+  - ref: owasp
+    locator: https://community.owasp.org/Web_Application_Firewall
+    title: Web Application Firewall | OWASP Foundation
+    language: en
+    accessed: '2026-10-17'
+    retrieved_by: ai
+    supports:
+      - definition
+      - summary

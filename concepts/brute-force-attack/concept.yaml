@@ -3,10 +3,20 @@ domains:
   - it/security/vulnerabilities
 level: 1
 relations:
-  prerequisites: []
-  confusable: []
-  related: []
+  related:
+    - authentication
+    - rate-limiting
+    - mfa
 status: draft
 provenance:
   drafted_by: ai
-sources: []
+sources:
+  - ref: owasp
+    locator: https://community.owasp.org/attacks/Brute_force_attack
+    title: Brute Force Attack | OWASP Foundation
+    language: en
+    accessed: '2026-10-17'
+    retrieved_by: ai
+    supports:
+      - definition
+      - summary

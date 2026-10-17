@@ -1,12 +1,21 @@
 id: zero-day
 domains:
   - it/security/vulnerabilities
-level: 1
+level: 2
 relations:
-  prerequisites: []
-  confusable: []
-  related: []
+  related:
+    - cve
+    - security-patch
 status: draft
 provenance:
   drafted_by: ai
-sources: []
+sources:
+  - ref: nist-csrc
+    locator: https://csrc.nist.gov/glossary/term/zero_day_attack
+    title: zero day attack - Glossary | CSRC
+    language: en
+    accessed: '2026-10-17'
+    retrieved_by: ai
+    supports:
+      - definition
+      - summary

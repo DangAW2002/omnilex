@@ -13,9 +13,9 @@ status: draft
 provenance:
   drafted_by: ai
 sources:
-- ref: prsa
-  locator: https://www.prsa.org/article/a-former-nbc-news-producer-s-top-tips-to-earn-media-attention
-  title: A Former NBC News Producer’s Top Tips to Earn Media Attention
+- ref: cdc
+  locator: https://www.cdc.gov/cerc/media/pdfs/CERC_Spokesperson.pdf
+  title: "CERC: Spokesperson"
   language: en
   accessed: '2026-10-17'
   retrieved_by: ai

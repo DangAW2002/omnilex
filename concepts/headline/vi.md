@@ -1,5 +1,7 @@
 ---
 label: Tiêu đề
+autolink:
+  label: never
 aliases:
 - Tít báo
 - Đầu đề

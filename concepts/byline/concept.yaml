@@ -13,9 +13,9 @@ status: draft
 provenance:
   drafted_by: ai
 sources:
-- ref: journalists-resource
-  locator: https://journalistsresource.org/about/republishing-guidelines/
-  title: "Republication guidelines: The Journalist's Resource"
+- ref: nytimes-standards
+  locator: https://www.nytimes.com/editorial-standards/ethical-journalism.html
+  title: "Ethical Journalism: A Handbook of Values and Practices for the News and Editorial Departments"
   language: en
   accessed: '2026-10-17'
   retrieved_by: ai

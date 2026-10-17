@@ -27,7 +27,7 @@ Fair use is like quoting a single sentence from a famous book in your book revie
 Fair use creates an essential safety valve within copyright law, preserving freedom of expression and academic inquiry. Courts evaluate four statutory factors: the purpose of the use (commercial versus non-profit educational or transformative), the nature of the copyrighted work, the amount and substantiality taken, and the financial impact on the market for the original. Uses that transform borrowed material by adding new commentary or insights are significantly more likely to qualify.
 
 ## Technical definition
-An affirmative legal defense against copyright infringement authorizing unauthorized reproduction of protected expressions for purposes such as commentary, parody, news reporting, and education.
+An affirmative legal defense against copyright infringement that lets people reproduce protected expression without the owner's permission for purposes such as commentary, parody, news reporting, and education.
 
 ## Examples
 A film critic incorporates thirty-second clips from a newly released blockbuster movie into an educational video essay deconstructing the director's camera techniques without paying licensing fees.

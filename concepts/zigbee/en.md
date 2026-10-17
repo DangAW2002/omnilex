@@ -7,7 +7,8 @@ plain_descriptions:
   - low power wireless mesh networking standard commonly used in home automation systems
   - radio protocol that routes sensor messages across interconnected household devices
 summary: A low-power, wireless mesh networking standard built upon IEEE 802.15.4, designed for multi-device home automation and smart energy management.
-confusable_notes: {}
+confusable_notes:
+  z-wave: Zigbee operates predominantly in the globally available 2.4 GHz spectrum sharing frequencies with Wi-Fi and Bluetooth, whereas Z-Wave operates in dedicated sub-GHz radio spectrum without 2.4 GHz interference.
 follow_up_questions:
   - How do Zigbee Coordinators, Routers, and End Devices interact across a mesh topology?
   - How does Zigbee channel management mitigate radio interference with concurrent 2.4 GHz Wi-Fi networks?

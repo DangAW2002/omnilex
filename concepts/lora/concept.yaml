@@ -5,6 +5,8 @@ level: 3
 relations:
   prerequisites:
     - fine-tuning
+  confusable:
+    - lora-radio
   broader:
     - fine-tuning
 status: draft

@@ -2,6 +2,10 @@
 
 Terms sharing a label or alias, distinguished by context:
 
+## LoRA
+- [**Low-Rank Adaptation (AI)**](../../concepts/lora/en.md) [it/ai-ml/mlops]: A parameter-efficient fine-tuning method that freezes the original weights and trains small low-rank matrices that represent the weight update.
+- [**LoRa (IoT)**](../../concepts/lora-radio/en.md) [iot/connectivity-protocols]: A proprietary physical-layer wireless radio frequency modulation technique derived from Chirp Spread Spectrum (CSS) that enables long-range, low-power data communications across license-free sub-gigahertz bands.
+
 ## Margin
 - [**Margin (Trading)**](../../concepts/margin/en.md) [finance/investing/stocks]: Assets in a brokerage account support a loan used to buy securities.
 - [**Profit margin (Accounting)**](../../concepts/profit-margin/en.md) [finance/corporate-finance/financial-statements]: A percentage comparing a specified measure of profit with the corresponding revenue.

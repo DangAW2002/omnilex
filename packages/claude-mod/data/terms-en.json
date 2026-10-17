@@ -32,6 +32,21 @@
     "autolink": true
   },
   {
+    "key": "Accelerometer",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "accelerometer",
+        "label": "Accelerometer",
+        "summary": "An electromechanical sensor that measures proper acceleration—the physical acceleration experienced by an object relative to freefall, including the gravitational vector.",
+        "domains": [
+          "iot/devices-sensors"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
     "key": "Acceptance criteria",
     "match": "any-case",
     "concepts": [
@@ -121,6 +136,36 @@
       }
     ],
     "autolink": false
+  },
+  {
+    "key": "Analog-to-digital converter (ADC)",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "adc",
+        "label": "Analog-to-digital converter (ADC)",
+        "summary": "An electronic circuit system that samples a continuous analog voltage waveform and quantizes it into discrete multi-bit digital numeric values.",
+        "domains": [
+          "iot/devices-sensors"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "ADC",
+    "match": "exact-case",
+    "concepts": [
+      {
+        "id": "adc",
+        "label": "Analog-to-digital converter (ADC)",
+        "summary": "An electronic circuit system that samples a continuous analog voltage waveform and quantizes it into discrete multi-bit digital numeric values.",
+        "domains": [
+          "iot/devices-sensors"
+        ]
+      }
+    ],
+    "autolink": true
   },
   {
     "key": "Agent",
@@ -274,6 +319,21 @@
         "summary": "A dedicated network address and URL path exposed by an API where clients access a specific service or resource.",
         "domains": [
           "it/web/api"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Arduino",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "arduino",
+        "label": "Arduino",
+        "summary": "An open-source electronics prototyping platform encompassing programmable microcontroller hardware boards and a simplified software development environment for controlling physical actuators and sensors.",
+        "domains": [
+          "iot/devices-sensors"
         ]
       }
     ],
@@ -985,38 +1045,6 @@
     "autolink": true
   },
   {
-    "key": "Business intelligence (BI)",
-    "match": "any-case",
-    "concepts": [
-      {
-        "id": "business-intelligence",
-        "label": "Business intelligence (BI)",
-        "summary": "Strategies and software technologies used by enterprises to analyze historical business data and guide operational decision-making.",
-        "domains": [
-          "it/data/analytics",
-          "it/business-systems/enterprise-apps"
-        ]
-      }
-    ],
-    "autolink": true
-  },
-  {
-    "key": "BI",
-    "match": "exact-case",
-    "concepts": [
-      {
-        "id": "business-intelligence",
-        "label": "Business intelligence (BI)",
-        "summary": "Strategies and software technologies used by enterprises to analyze historical business data and guide operational decision-making.",
-        "domains": [
-          "it/data/analytics",
-          "it/business-systems/enterprise-apps"
-        ]
-      }
-    ],
-    "autolink": true
-  },
-  {
     "key": "Byline",
     "match": "any-case",
     "concepts": [
@@ -1347,38 +1375,6 @@
         "summary": "A defined sequential series of automated execution steps that compiles, tests, and packages application updates.",
         "domains": [
           "it/devops/ci-cd"
-        ]
-      }
-    ],
-    "autolink": true
-  },
-  {
-    "key": "Content management system (CMS)",
-    "match": "any-case",
-    "concepts": [
-      {
-        "id": "cms",
-        "label": "Content management system (CMS)",
-        "summary": "Software that lets editors create, format, publish, and organize digital content on the web without editing source code directly.",
-        "domains": [
-          "it/business-systems/enterprise-apps",
-          "media/publishing/distribution-platforms"
-        ]
-      }
-    ],
-    "autolink": true
-  },
-  {
-    "key": "CMS",
-    "match": "exact-case",
-    "concepts": [
-      {
-        "id": "cms",
-        "label": "Content management system (CMS)",
-        "summary": "Software that lets editors create, format, publish, and organize digital content on the web without editing source code directly.",
-        "domains": [
-          "it/business-systems/enterprise-apps",
-          "media/publishing/distribution-platforms"
         ]
       }
     ],
@@ -1965,36 +1961,6 @@
     "autolink": true
   },
   {
-    "key": "Customer relationship management (CRM)",
-    "match": "any-case",
-    "concepts": [
-      {
-        "id": "crm",
-        "label": "Customer relationship management (CRM)",
-        "summary": "A business system that organizes customer details, communications, and sales opportunities in one shared workspace.",
-        "domains": [
-          "it/business-systems/enterprise-apps"
-        ]
-      }
-    ],
-    "autolink": true
-  },
-  {
-    "key": "CRM",
-    "match": "exact-case",
-    "concepts": [
-      {
-        "id": "crm",
-        "label": "Customer relationship management (CRM)",
-        "summary": "A business system that organizes customer details, communications, and sales opportunities in one shared workspace.",
-        "domains": [
-          "it/business-systems/enterprise-apps"
-        ]
-      }
-    ],
-    "autolink": true
-  },
-  {
     "key": "Cryptocurrency",
     "match": "any-case",
     "concepts": [
@@ -2276,21 +2242,6 @@
         "summary": "An automated sequence of processes that ingests, processes, and transfers raw data from source systems to destination storage.",
         "domains": [
           "it/data/data-engineering"
-        ]
-      }
-    ],
-    "autolink": true
-  },
-  {
-    "key": "Data visualization",
-    "match": "any-case",
-    "concepts": [
-      {
-        "id": "data-visualization",
-        "label": "Data visualization",
-        "summary": "The practice of representing quantitative data graphically through charts, maps, and visual plots to communicate insights clearly.",
-        "domains": [
-          "it/data/analytics"
         ]
       }
     ],
@@ -2796,21 +2747,6 @@
     "autolink": true
   },
   {
-    "key": "Digital transformation",
-    "match": "any-case",
-    "concepts": [
-      {
-        "id": "digital-transformation",
-        "label": "Digital transformation",
-        "summary": "The strategic and cultural integration of digital technology across all areas of an organization to fundamentally modernize operations and deliver customer value.",
-        "domains": [
-          "it/business-systems/enterprise-apps"
-        ]
-      }
-    ],
-    "autolink": true
-  },
-  {
     "key": "Digital twin",
     "match": "any-case",
     "concepts": [
@@ -3051,21 +2987,6 @@
     "autolink": true
   },
   {
-    "key": "E-commerce platform",
-    "match": "any-case",
-    "concepts": [
-      {
-        "id": "e-commerce-platform",
-        "label": "E-commerce platform",
-        "summary": "A comprehensive software suite that enables businesses to build online stores, showcase product catalogs, manage shopping carts, and fulfill digital orders.",
-        "domains": [
-          "it/business-systems/enterprise-apps"
-        ]
-      }
-    ],
-    "autolink": true
-  },
-  {
     "key": "E-wallet",
     "match": "any-case",
     "concepts": [
@@ -3182,6 +3103,21 @@
         "summary": "The percentage of successfully delivered emails opened by subscribers, indicating subject line effectiveness and audience engagement.",
         "domains": [
           "media/digital-marketing/email"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Embedded system",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "embedded-system",
+        "label": "Embedded system",
+        "summary": "A dedicated computing assembly combining a microprocessor, firmware, and peripheral interfaces engineered to execute predefined control operations within an encompassing machine.",
+        "domains": [
+          "iot/devices-sensors"
         ]
       }
     ],
@@ -3338,6 +3274,36 @@
     "autolink": true
   },
   {
+    "key": "Energy harvesting",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "energy-harvesting",
+        "label": "Energy harvesting",
+        "summary": "The process of capturing minute quantities of energy from ambient environmental sources—such as light, thermal gradients, mechanical vibrations, or radio waves—and converting it into electrical power for electronics.",
+        "domains": [
+          "iot/devices-sensors"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Power harvesting",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "energy-harvesting",
+        "label": "Energy harvesting",
+        "summary": "The process of capturing minute quantities of energy from ambient environmental sources—such as light, thermal gradients, mechanical vibrations, or radio waves—and converting it into electrical power for electronics.",
+        "domains": [
+          "iot/devices-sensors"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
     "key": "Engagement rate",
     "match": "any-case",
     "concepts": [
@@ -3478,30 +3444,15 @@
     "autolink": true
   },
   {
-    "key": "Enterprise resource planning (ERP)",
+    "key": "ESP32",
     "match": "any-case",
     "concepts": [
       {
-        "id": "erp",
-        "label": "Enterprise resource planning (ERP)",
-        "summary": "An integrated suite of core business applications that synchronizes finance, purchasing, inventory, and production across an organization.",
+        "id": "esp32",
+        "label": "ESP32",
+        "summary": "A low-cost, low-power system on a chip microcontroller series featuring integrated Wi-Fi and dual-mode Bluetooth designed for wireless IoT product engineering.",
         "domains": [
-          "it/business-systems/enterprise-apps"
-        ]
-      }
-    ],
-    "autolink": true
-  },
-  {
-    "key": "ERP",
-    "match": "exact-case",
-    "concepts": [
-      {
-        "id": "erp",
-        "label": "Enterprise resource planning (ERP)",
-        "summary": "An integrated suite of core business applications that synchronizes finance, purchasing, inventory, and production across an organization.",
-        "domains": [
-          "it/business-systems/enterprise-apps"
+          "iot/devices-sensors"
         ]
       }
     ],
@@ -3915,6 +3866,81 @@
     "autolink": true
   },
   {
+    "key": "GNSS",
+    "match": "exact-case",
+    "concepts": [
+      {
+        "id": "gnss",
+        "label": "GNSS",
+        "summary": "The worldwide collection of satellite constellations and augmentation systems that transmit radio signals used by ground receivers to compute autonomous geospatial positioning and atomic time.",
+        "domains": [
+          "iot/devices-sensors"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Global Navigation Satellite System",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "gnss",
+        "label": "GNSS",
+        "summary": "The worldwide collection of satellite constellations and augmentation systems that transmit radio signals used by ground receivers to compute autonomous geospatial positioning and atomic time.",
+        "domains": [
+          "iot/devices-sensors"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "GPS",
+    "match": "exact-case",
+    "concepts": [
+      {
+        "id": "gnss",
+        "label": "GNSS",
+        "summary": "The worldwide collection of satellite constellations and augmentation systems that transmit radio signals used by ground receivers to compute autonomous geospatial positioning and atomic time.",
+        "domains": [
+          "iot/devices-sensors"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "General-purpose input/output (GPIO)",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "gpio",
+        "label": "General-purpose input/output (GPIO)",
+        "summary": "An uncommitted digital signal pin on an integrated circuit whose electrical direction and voltage state can be configured dynamically by software at runtime.",
+        "domains": [
+          "iot/devices-sensors"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "GPIO",
+    "match": "exact-case",
+    "concepts": [
+      {
+        "id": "gpio",
+        "label": "General-purpose input/output (GPIO)",
+        "summary": "An uncommitted digital signal pin on an integrated circuit whose electrical direction and voltage state can be configured dynamically by software at runtime.",
+        "domains": [
+          "iot/devices-sensors"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
     "key": "Graphics Processing Unit (GPU)",
     "match": "any-case",
     "concepts": [
@@ -4119,21 +4145,6 @@
     "autolink": true
   },
   {
-    "key": "Help desk",
-    "match": "any-case",
-    "concepts": [
-      {
-        "id": "help-desk",
-        "label": "Help desk",
-        "summary": "A dedicated support service and software application designed to log, route, track, and resolve user technical problems and service requests.",
-        "domains": [
-          "it/business-systems/enterprise-apps"
-        ]
-      }
-    ],
-    "autolink": true
-  },
-  {
     "key": "Hotfix",
     "match": "any-case",
     "concepts": [
@@ -4143,36 +4154,6 @@
         "summary": "An expedited software patch created and deployed directly to production systems outside standard release cycles to resolve critical defects or security flaws.",
         "domains": [
           "it/software-engineering/practices"
-        ]
-      }
-    ],
-    "autolink": true
-  },
-  {
-    "key": "Human resource management system (HRMS)",
-    "match": "any-case",
-    "concepts": [
-      {
-        "id": "hrm-system",
-        "label": "Human resource management system (HRMS)",
-        "summary": "Software that automates personnel administration by maintaining worker records, attendance tracking, payroll, and benefits in one platform.",
-        "domains": [
-          "it/business-systems/enterprise-apps"
-        ]
-      }
-    ],
-    "autolink": true
-  },
-  {
-    "key": "HRMS",
-    "match": "exact-case",
-    "concepts": [
-      {
-        "id": "hrm-system",
-        "label": "Human resource management system (HRMS)",
-        "summary": "Software that automates personnel administration by maintaining worker records, attendance tracking, payroll, and benefits in one platform.",
-        "domains": [
-          "it/business-systems/enterprise-apps"
         ]
       }
     ],
@@ -4233,6 +4214,51 @@
         "summary": "An external configuration setting specified prior to training that governs how the model architecture is structured and optimized.",
         "domains": [
           "it/ai-ml/foundations"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "I²C",
+    "match": "exact-case",
+    "concepts": [
+      {
+        "id": "i2c",
+        "label": "I²C",
+        "summary": "A synchronous, multi-controller, multi-target serial communication bus that uses two bidirectional open-drain lines (SCL and SDA) pulled high by resistors to network peripheral ICs.",
+        "domains": [
+          "iot/devices-sensors"
+        ]
+      }
+    ],
+    "autolink": false
+  },
+  {
+    "key": "I2C",
+    "match": "exact-case",
+    "concepts": [
+      {
+        "id": "i2c",
+        "label": "I²C",
+        "summary": "A synchronous, multi-controller, multi-target serial communication bus that uses two bidirectional open-drain lines (SCL and SDA) pulled high by resistors to network peripheral ICs.",
+        "domains": [
+          "iot/devices-sensors"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Inter-Integrated Circuit",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "i2c",
+        "label": "I²C",
+        "summary": "A synchronous, multi-controller, multi-target serial communication bus that uses two bidirectional open-drain lines (SCL and SDA) pulled high by resistors to network peripheral ICs.",
+        "domains": [
+          "iot/devices-sensors"
         ]
       }
     ],
@@ -4308,6 +4334,36 @@
         "summary": "A computer vision task in which an algorithm analyzes an entire image and assigns it one or more discrete categorical labels from a predefined taxonomy.",
         "domains": [
           "it/ai-ml/computer-vision"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Inertial measurement unit (IMU)",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "imu",
+        "label": "Inertial measurement unit (IMU)",
+        "summary": "An integrated multi-axis sensor package combining accelerometers, gyroscopes, and frequently magnetometers to measure a body linear acceleration, angular velocity, and heading.",
+        "domains": [
+          "iot/devices-sensors"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "IMU",
+    "match": "exact-case",
+    "concepts": [
+      {
+        "id": "imu",
+        "label": "Inertial measurement unit (IMU)",
+        "summary": "An integrated multi-axis sensor package combining accelerometers, gyroscopes, and frequently magnetometers to measure a body linear acceleration, angular velocity, and heading.",
+        "domains": [
+          "iot/devices-sensors"
         ]
       }
     ],
@@ -4761,36 +4817,6 @@
     "autolink": true
   },
   {
-    "key": "Integration platform as a service (iPaaS)",
-    "match": "any-case",
-    "concepts": [
-      {
-        "id": "ipaas",
-        "label": "Integration platform as a service (iPaaS)",
-        "summary": "A cloud-based suite of services that standardizes, orchestrates, and monitors data integration flows between disparate applications across cloud and on-premises environments.",
-        "domains": [
-          "it/business-systems/automation"
-        ]
-      }
-    ],
-    "autolink": true
-  },
-  {
-    "key": "iPaaS",
-    "match": "any-case",
-    "concepts": [
-      {
-        "id": "ipaas",
-        "label": "Integration platform as a service (iPaaS)",
-        "summary": "A cloud-based suite of services that standardizes, orchestrates, and monitors data integration flows between disparate applications across cloud and on-premises environments.",
-        "domains": [
-          "it/business-systems/automation"
-        ]
-      }
-    ],
-    "autolink": true
-  },
-  {
     "key": "Initial Public Offering (IPO)",
     "match": "any-case",
     "concepts": [
@@ -4830,66 +4856,6 @@
         "summary": "The inaugural public sale of corporate stock on a securities exchange, transforming a private company into a publicly traded entity.",
         "domains": [
           "finance/corporate-finance/fundraising"
-        ]
-      }
-    ],
-    "autolink": true
-  },
-  {
-    "key": "ITIL",
-    "match": "exact-case",
-    "concepts": [
-      {
-        "id": "itil",
-        "label": "ITIL",
-        "summary": "A globally recognized framework of best practices for delivering, supporting, and governing IT service management workflows.",
-        "domains": [
-          "it/business-systems/enterprise-apps"
-        ]
-      }
-    ],
-    "autolink": true
-  },
-  {
-    "key": "Information Technology Infrastructure Library",
-    "match": "any-case",
-    "concepts": [
-      {
-        "id": "itil",
-        "label": "ITIL",
-        "summary": "A globally recognized framework of best practices for delivering, supporting, and governing IT service management workflows.",
-        "domains": [
-          "it/business-systems/enterprise-apps"
-        ]
-      }
-    ],
-    "autolink": true
-  },
-  {
-    "key": "IT service management (ITSM)",
-    "match": "any-case",
-    "concepts": [
-      {
-        "id": "itsm",
-        "label": "IT service management (ITSM)",
-        "summary": "The operational discipline and set of practices through which an organization plans, delivers, operates, and controls information technology services provided to business users.",
-        "domains": [
-          "it/business-systems/enterprise-apps"
-        ]
-      }
-    ],
-    "autolink": true
-  },
-  {
-    "key": "ITSM",
-    "match": "exact-case",
-    "concepts": [
-      {
-        "id": "itsm",
-        "label": "IT service management (ITSM)",
-        "summary": "The operational discipline and set of practices through which an organization plans, delivers, operates, and controls information technology services provided to business users.",
-        "domains": [
-          "it/business-systems/enterprise-apps"
         ]
       }
     ],
@@ -5282,6 +5248,21 @@
     "autolink": true
   },
   {
+    "key": "LiDAR",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "lidar",
+        "label": "LiDAR",
+        "summary": "A remote-sensing method that illuminates a target with pulsed laser light and measures reflected return times to generate high-resolution three-dimensional spatial coordinates.",
+        "domains": [
+          "iot/devices-sensors"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
     "key": "Linter",
     "match": "any-case",
     "concepts": [
@@ -5521,6 +5502,7 @@
       {
         "id": "lora",
         "label": "Low-Rank Adaptation",
+        "qualifier": "(AI)",
         "summary": "A parameter-efficient fine-tuning method that freezes the original weights and trains small low-rank matrices that represent the weight update.",
         "domains": [
           "it/ai-ml/mlops"
@@ -5536,9 +5518,35 @@
       {
         "id": "lora",
         "label": "Low-Rank Adaptation",
+        "qualifier": "(AI)",
         "summary": "A parameter-efficient fine-tuning method that freezes the original weights and trains small low-rank matrices that represent the weight update.",
         "domains": [
           "it/ai-ml/mlops"
+        ]
+      },
+      {
+        "id": "lora-radio",
+        "label": "LoRa",
+        "qualifier": "(IoT)",
+        "summary": "A proprietary physical-layer wireless radio frequency modulation technique derived from Chirp Spread Spectrum (CSS) that enables long-range, low-power data communications across license-free sub-gigahertz bands.",
+        "domains": [
+          "iot/connectivity-protocols"
+        ]
+      }
+    ],
+    "autolink": false
+  },
+  {
+    "key": "Long Range radio",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "lora-radio",
+        "label": "LoRa",
+        "qualifier": "(IoT)",
+        "summary": "A proprietary physical-layer wireless radio frequency modulation technique derived from Chirp Spread Spectrum (CSS) that enables long-range, low-power data communications across license-free sub-gigahertz bands.",
+        "domains": [
+          "iot/connectivity-protocols"
         ]
       }
     ],
@@ -5605,15 +5613,48 @@
     "autolink": true
   },
   {
-    "key": "Low-code",
+    "key": "Sleep mode",
     "match": "any-case",
     "concepts": [
       {
-        "id": "low-code",
-        "label": "Low-code",
-        "summary": "A software development approach combining graphical user interfaces and modular building blocks to construct digital solutions rapidly while accommodating hand-written programming extensions.",
+        "id": "low-power-mode",
+        "label": "Sleep mode",
+        "qualifier": "(Embedded)",
+        "summary": "A reduced-consumption operational state in microcontrollers where clock oscillators, high-speed peripherals, and processing cores are gated off until an external interrupt or timer triggers awakening.",
         "domains": [
-          "it/business-systems/automation"
+          "iot/devices-sensors"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Low-power mode",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "low-power-mode",
+        "label": "Sleep mode",
+        "qualifier": "(Embedded)",
+        "summary": "A reduced-consumption operational state in microcontrollers where clock oscillators, high-speed peripherals, and processing cores are gated off until an external interrupt or timer triggers awakening.",
+        "domains": [
+          "iot/devices-sensors"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Deep sleep",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "low-power-mode",
+        "label": "Sleep mode",
+        "qualifier": "(Embedded)",
+        "summary": "A reduced-consumption operational state in microcontrollers where clock oscillators, high-speed peripherals, and processing cores are gated off until an external interrupt or timer triggers awakening.",
+        "domains": [
+          "iot/devices-sensors"
         ]
       }
     ],
@@ -5776,6 +5817,38 @@
         "summary": "A strategic framework illustrating the progressive stages of a customer's journey, from initial brand awareness through consideration to final purchase and retention.",
         "domains": [
           "media/digital-marketing/metrics-analytics"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Matter",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "matter-iot",
+        "label": "Matter",
+        "qualifier": "(IoT)",
+        "summary": "An open-source, interoperable smart home connectivity standard operating over IP that allows certified devices to communicate seamlessly across Apple Home, Google Home, and Amazon Alexa ecosystems.",
+        "domains": [
+          "iot/connectivity-protocols"
+        ]
+      }
+    ],
+    "autolink": false
+  },
+  {
+    "key": "Matter standard",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "matter-iot",
+        "label": "Matter",
+        "qualifier": "(IoT)",
+        "summary": "An open-source, interoperable smart home connectivity standard operating over IP that allows certified devices to communicate seamlessly across Apple Home, Google Home, and Amazon Alexa ecosystems.",
+        "domains": [
+          "iot/connectivity-protocols"
         ]
       }
     ],
@@ -6461,15 +6534,30 @@
     "autolink": true
   },
   {
-    "key": "No-code",
+    "key": "Near-field communication (NFC)",
     "match": "any-case",
     "concepts": [
       {
-        "id": "no-code",
-        "label": "No-code",
-        "summary": "A software creation method that empowers non-technical users to build functional applications and workflows entirely through graphical drag-and-drop interfaces without writing source code.",
+        "id": "nfc",
+        "label": "Near-field communication (NFC)",
+        "summary": "A short-range, high-frequency standards-based wireless connectivity technology operating at 13.56 MHz that enables intuitive two-way communication when devices are brought within 4 centimeters.",
         "domains": [
-          "it/business-systems/automation"
+          "iot/connectivity-protocols"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "NFC",
+    "match": "exact-case",
+    "concepts": [
+      {
+        "id": "nfc",
+        "label": "Near-field communication (NFC)",
+        "summary": "A short-range, high-frequency standards-based wireless connectivity technology operating at 13.56 MHz that enables intuitive two-way communication when devices are brought within 4 centimeters.",
+        "domains": [
+          "iot/connectivity-protocols"
         ]
       }
     ],
@@ -6911,22 +6999,6 @@
     "autolink": true
   },
   {
-    "key": "Payment gateway",
-    "match": "any-case",
-    "concepts": [
-      {
-        "id": "payment-gateway",
-        "label": "Payment gateway",
-        "summary": "A technology service that authorizes online credit card and digital payment transactions between e-commerce merchants and financial networks.",
-        "domains": [
-          "it/business-systems/enterprise-apps",
-          "finance/banking/payments"
-        ]
-      }
-    ],
-    "autolink": true
-  },
-  {
     "key": "Paywall",
     "match": "any-case",
     "concepts": [
@@ -7210,36 +7282,6 @@
       }
     ],
     "autolink": true
-  },
-  {
-    "key": "Point of sale (POS)",
-    "match": "any-case",
-    "concepts": [
-      {
-        "id": "pos-system",
-        "label": "Point of sale (POS)",
-        "summary": "The combined hardware and software terminal where retail transactions are completed, payments processed, and inventory deducted.",
-        "domains": [
-          "it/business-systems/enterprise-apps"
-        ]
-      }
-    ],
-    "autolink": true
-  },
-  {
-    "key": "POS",
-    "match": "exact-case",
-    "concepts": [
-      {
-        "id": "pos-system",
-        "label": "Point of sale (POS)",
-        "summary": "The combined hardware and software terminal where retail transactions are completed, payments processed, and inventory deducted.",
-        "domains": [
-          "it/business-systems/enterprise-apps"
-        ]
-      }
-    ],
-    "autolink": false
   },
   {
     "key": "Postmortem",
@@ -7778,6 +7820,36 @@
     "autolink": true
   },
   {
+    "key": "Pulse-width modulation (PWM)",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "pwm",
+        "label": "Pulse-width modulation (PWM)",
+        "summary": "A modulation method that regulates the effective average power delivered to a load by varying the duty cycle of a rapid square-wave switching signal.",
+        "domains": [
+          "iot/devices-sensors"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "PWM",
+    "match": "exact-case",
+    "concepts": [
+      {
+        "id": "pwm",
+        "label": "Pulse-width modulation (PWM)",
+        "summary": "A modulation method that regulates the effective average power delivered to a load by varying the duty cycle of a rapid square-wave switching signal.",
+        "domains": [
+          "iot/devices-sensors"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
     "key": "Quantitative easing (QE)",
     "match": "any-case",
     "concepts": [
@@ -7878,6 +7950,36 @@
         "summary": "A technique that retrieves relevant documents when a question arrives and adds them to the prompt so the model answers from them.",
         "domains": [
           "it/ai-ml/llm-agents"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Raspberry Pi",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "raspberry-pi",
+        "label": "Raspberry Pi",
+        "summary": "A widely adopted series of compact, cost-effective ARM-based single-board computers equipped with a standard 40-pin header for peripheral interfacing and education.",
+        "domains": [
+          "iot/devices-sensors"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "RPi",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "raspberry-pi",
+        "label": "Raspberry Pi",
+        "summary": "A widely adopted series of compact, cost-effective ARM-based single-board computers equipped with a standard 40-pin header for peripheral interfacing and education.",
+        "domains": [
+          "iot/devices-sensors"
         ]
       }
     ],
@@ -8184,6 +8286,36 @@
     "autolink": true
   },
   {
+    "key": "Radio-frequency identification (RFID)",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "rfid",
+        "label": "Radio-frequency identification (RFID)",
+        "summary": "A wireless identification technology employing electromagnetic radio frequency fields to automatically detect and read encoded data stored on passive or active electronic tags.",
+        "domains": [
+          "iot/devices-sensors"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "RFID",
+    "match": "exact-case",
+    "concepts": [
+      {
+        "id": "rfid",
+        "label": "Radio-frequency identification (RFID)",
+        "summary": "A wireless identification technology employing electromagnetic radio frequency fields to automatically detect and read encoded data stored on passive or active electronic tags.",
+        "domains": [
+          "iot/devices-sensors"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
     "key": "RICE scoring",
     "match": "any-case",
     "concepts": [
@@ -8270,36 +8402,6 @@
         "summary": "The operational action of reverting an application, configuration, or database deployment to a previously verified stable release.",
         "domains": [
           "it/devops/sre-operations"
-        ]
-      }
-    ],
-    "autolink": true
-  },
-  {
-    "key": "Robotic process automation (RPA)",
-    "match": "any-case",
-    "concepts": [
-      {
-        "id": "rpa",
-        "label": "Robotic process automation (RPA)",
-        "summary": "A business automation technology that uses software bots to mimic rule-based human interactions with graphical computer interfaces.",
-        "domains": [
-          "it/business-systems/automation"
-        ]
-      }
-    ],
-    "autolink": true
-  },
-  {
-    "key": "RPA",
-    "match": "exact-case",
-    "concepts": [
-      {
-        "id": "rpa",
-        "label": "Robotic process automation (RPA)",
-        "summary": "A business automation technology that uses software bots to mimic rule-based human interactions with graphical computer interfaces.",
-        "domains": [
-          "it/business-systems/automation"
         ]
       }
     ],
@@ -8556,6 +8658,22 @@
     "autolink": true
   },
   {
+    "key": "Secure boot",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "secure-boot",
+        "label": "Secure boot",
+        "summary": "A security standard ensuring that an electronic device boots using only firmware and software that is verified and cryptographically signed by trusted manufacturers.",
+        "domains": [
+          "iot/devices-sensors",
+          "it/security/cryptography"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
     "key": "Semantic versioning",
     "match": "any-case",
     "concepts": [
@@ -8799,6 +8917,36 @@
     "autolink": true
   },
   {
+    "key": "Single-board computer (SBC)",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "single-board-computer",
+        "label": "Single-board computer (SBC)",
+        "summary": "A complete functional computer whose microprocessor, system memory, storage interfaces, input-output controllers, and networking ports are assembled onto a single physical printed circuit board.",
+        "domains": [
+          "iot/devices-sensors"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "SBC",
+    "match": "exact-case",
+    "concepts": [
+      {
+        "id": "single-board-computer",
+        "label": "Single-board computer (SBC)",
+        "summary": "A complete functional computer whose microprocessor, system memory, storage interfaces, input-output controllers, and networking ports are assembled onto a single physical printed circuit board.",
+        "domains": [
+          "iot/devices-sensors"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
     "key": "Service Level Agreement (SLA)",
     "match": "any-case",
     "concepts": [
@@ -8896,6 +9044,21 @@
         "id": "smart-home",
         "label": "Smart home",
         "summary": "A residential environment equipped with interconnected electronic devices that automate domestic tasks, optimize utility usage, and enable centralized remote monitoring.",
+        "domains": [
+          "iot/devices-sensors"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Smart meter",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "smart-meter",
+        "label": "Smart meter",
+        "summary": "An advanced electronic utility metering device that records consumption of electric energy, water, or gas in real time and communicates intervals back to the utility provider via automated networks.",
         "domains": [
           "iot/devices-sensors"
         ]
@@ -9058,6 +9221,36 @@
         "summary": "A packaged collection of pre-written functions, classes, and subroutines that developers import and call directly to accomplish specific programmatic tasks.",
         "domains": [
           "it/software-engineering/programming-concepts"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Serial Peripheral Interface (SPI)",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "spi-bus",
+        "label": "Serial Peripheral Interface (SPI)",
+        "summary": "A high-speed, synchronous four-wire serial interface providing full-duplex data transfer between a master device and one or more selected peripheral devices using dedicated chip select lines.",
+        "domains": [
+          "iot/devices-sensors"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "SPI",
+    "match": "exact-case",
+    "concepts": [
+      {
+        "id": "spi-bus",
+        "label": "Serial Peripheral Interface (SPI)",
+        "summary": "A high-speed, synchronous four-wire serial interface providing full-duplex data transfer between a master device and one or more selected peripheral devices using dedicated chip select lines.",
+        "domains": [
+          "iot/devices-sensors"
         ]
       }
     ],
@@ -9700,6 +9893,38 @@
     "autolink": true
   },
   {
+    "key": "Thread",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "thread-iot",
+        "label": "Thread",
+        "qualifier": "(IoT)",
+        "summary": "An IPv6-based, low-power wireless mesh networking protocol built on IEEE 802.15.4 that provides reliable, secure, and self-healing connectivity for smart home devices without requiring a central hub.",
+        "domains": [
+          "iot/connectivity-protocols"
+        ]
+      }
+    ],
+    "autolink": false
+  },
+  {
+    "key": "Thread protocol",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "thread-iot",
+        "label": "Thread",
+        "qualifier": "(IoT)",
+        "summary": "An IPv6-based, low-power wireless mesh networking protocol built on IEEE 802.15.4 that provides reliable, secure, and self-healing connectivity for smart home devices without requiring a central hub.",
+        "domains": [
+          "iot/connectivity-protocols"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
     "key": "Throughput",
     "match": "any-case",
     "concepts": [
@@ -9754,6 +9979,38 @@
         "summary": "The rate at which a computer system, communication channel, or application successfully processes and delivers data or transactions per unit of time.",
         "domains": [
           "it/infrastructure/networking"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "TinyML",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "tinyml",
+        "label": "TinyML",
+        "summary": "A subfield of machine learning focused on optimizing and executing neural network models directly on resource-constrained microcontrollers operating in the milliwatt or microwatt power envelope.",
+        "domains": [
+          "iot/edge-cloud",
+          "it/ai-ml/mlops"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Tiny Machine Learning",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "tinyml",
+        "label": "TinyML",
+        "summary": "A subfield of machine learning focused on optimizing and executing neural network models directly on resource-constrained microcontrollers operating in the milliwatt or microwatt power envelope.",
+        "domains": [
+          "iot/edge-cloud",
+          "it/ai-ml/mlops"
         ]
       }
     ],
@@ -10024,6 +10281,36 @@
         "summary": "The art, craft, and technique of selecting and arranging typefaces, font weights, kerning, and spacing to render written language legible, readable, and visually engaging.",
         "domains": [
           "media/content-production/visual-design"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "UART",
+    "match": "exact-case",
+    "concepts": [
+      {
+        "id": "uart",
+        "label": "UART",
+        "summary": "A physical integrated circuit hardware block that translates parallel computing data into sequential asynchronous serial bitstreams over paired transmit (TX) and receive (RX) wires.",
+        "domains": [
+          "iot/devices-sensors"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Universal Asynchronous Receiver-Transmitter",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "uart",
+        "label": "UART",
+        "summary": "A physical integrated circuit hardware block that translates parallel computing data into sequential asynchronous serial bitstreams over paired transmit (TX) and receive (RX) wires.",
+        "domains": [
+          "iot/devices-sensors"
         ]
       }
     ],
@@ -10472,6 +10759,36 @@
     "autolink": true
   },
   {
+    "key": "Wearable device",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "wearable",
+        "label": "Wearable device",
+        "summary": "A category of compact electronic devices designed to be comfortably worn on the body or clothing, incorporating sensors, processing, and wireless transceivers for continuous biometric tracking.",
+        "domains": [
+          "iot/devices-sensors"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Wearable",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "wearable",
+        "label": "Wearable device",
+        "summary": "A category of compact electronic devices designed to be comfortably worn on the body or clothing, incorporating sensors, processing, and wireless transceivers for continuous biometric tracking.",
+        "domains": [
+          "iot/devices-sensors"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
     "key": "Session",
     "match": "any-case",
     "concepts": [
@@ -10550,15 +10867,48 @@
     "autolink": true
   },
   {
-    "key": "Workflow automation",
+    "key": "Wi-Fi",
     "match": "any-case",
     "concepts": [
       {
-        "id": "workflow-automation",
-        "label": "Workflow automation",
-        "summary": "The design and execution of automated sequences that pass data and trigger tasks across multiple business tools based on defined logical rules.",
+        "id": "wifi",
+        "label": "Wi-Fi",
+        "summary": "A family of wireless network protocols based on the IEEE 802.11 standards used for local area networking of devices and high-speed internet access across licensed-exempt radio bands.",
         "domains": [
-          "it/business-systems/automation"
+          "iot/connectivity-protocols",
+          "it/infrastructure/networking"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "WiFi",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "wifi",
+        "label": "Wi-Fi",
+        "summary": "A family of wireless network protocols based on the IEEE 802.11 standards used for local area networking of devices and high-speed internet access across licensed-exempt radio bands.",
+        "domains": [
+          "iot/connectivity-protocols",
+          "it/infrastructure/networking"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "IEEE 802.11",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "wifi",
+        "label": "Wi-Fi",
+        "summary": "A family of wireless network protocols based on the IEEE 802.11 standards used for local area networking of devices and high-speed internet access across licensed-exempt radio bands.",
+        "domains": [
+          "iot/connectivity-protocols",
+          "it/infrastructure/networking"
         ]
       }
     ],
@@ -10634,6 +10984,21 @@
         "summary": "A web application flaw permitting attackers to embed rogue executable scripts into viewed pages, running unauthorized actions inside visitor browsers.",
         "domains": [
           "it/security/vulnerabilities"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Z-Wave",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "z-wave",
+        "label": "Z-Wave",
+        "summary": "A wireless communications protocol operating in the sub-gigahertz frequency spectrum designed specifically for reliable, interference-free mesh networking in residential home automation.",
+        "domains": [
+          "iot/connectivity-protocols"
         ]
       }
     ],

@@ -1,0 +1,25 @@
+id: uart
+domains:
+  - iot/devices-sensors
+level: 2
+relations:
+  prerequisites:
+    - "gpio"
+  confusable:
+    - "i2c"
+    - "spi-bus"
+  related:
+    - "microcontroller"
+status: draft
+provenance:
+  drafted_by: ai
+sources:
+  - ref: linux-kernel
+    locator: https://docs.kernel.org/driver-api/serial/driver.html
+    title: "Low Level Serial Driver - The Linux Kernel Documentation"
+    language: en
+    accessed: '2026-10-17'
+    retrieved_by: ai
+    supports:
+      - definition
+      - summary

@@ -1,0 +1,25 @@
+id: raspberry-pi
+domains:
+  - iot/devices-sensors
+level: 1
+relations:
+  prerequisites:
+    - "single-board-computer"
+  confusable:
+    - "arduino"
+  related:
+    - "gpio"
+    - "embedded-system"
+status: draft
+provenance:
+  drafted_by: ai
+sources:
+  - ref: ti
+    locator: https://www.ti.com/product-category/microcontrollers-processors/overview.html
+    title: "Microcontrollers & Processors Overview | Texas Instruments"
+    language: en
+    accessed: '2026-10-17'
+    retrieved_by: ai
+    supports:
+      - definition
+      - summary

@@ -1,0 +1,26 @@
+id: i2c
+domains:
+  - iot/devices-sensors
+level: 2
+relations:
+  prerequisites:
+    - "gpio"
+  confusable:
+    - "spi-bus"
+    - "uart"
+  related:
+    - "sensor"
+    - "adc"
+status: draft
+provenance:
+  drafted_by: ai
+sources:
+  - ref: linux-kernel
+    locator: https://docs.kernel.org/i2c/summary.html
+    title: "I2C and SMBus Subsystem - The Linux Kernel Documentation"
+    language: en
+    accessed: '2026-10-17'
+    retrieved_by: ai
+    supports:
+      - definition
+      - summary

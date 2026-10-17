@@ -1,0 +1,25 @@
+id: nfc
+domains:
+  - iot/connectivity-protocols
+level: 1
+relations:
+  prerequisites:
+    - "rfid"
+  confusable:
+    - "rfid"
+  related:
+    - "wearable"
+    - "ble"
+status: draft
+provenance:
+  drafted_by: ai
+sources:
+  - ref: nist-csrc
+    locator: https://csrc.nist.gov/glossary/term/near_field_communication
+    title: "Near Field Communication (NFC) - Glossary | CSRC"
+    language: en
+    accessed: '2026-10-17'
+    retrieved_by: ai
+    supports:
+      - definition
+      - summary

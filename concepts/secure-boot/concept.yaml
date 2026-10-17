@@ -1,0 +1,25 @@
+id: secure-boot
+domains:
+  - iot/devices-sensors
+  - it/security/cryptography
+level: 2
+relations:
+  prerequisites:
+    - "firmware"
+  confusable: []
+  related:
+    - "microcontroller"
+    - "embedded-system"
+status: draft
+provenance:
+  drafted_by: ai
+sources:
+  - ref: microsoft-learn
+    locator: https://learn.microsoft.com/en-us/windows-hardware/design/device-experiences/oem-secure-boot
+    title: "Secure Boot | Microsoft Learn"
+    language: en
+    accessed: '2026-10-17'
+    retrieved_by: ai
+    supports:
+      - definition
+      - summary

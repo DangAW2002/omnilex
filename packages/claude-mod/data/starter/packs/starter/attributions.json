@@ -43,11 +43,15 @@
     "license_evidence": "https://www.nist.gov/oism/copyrights",
     "concepts": [
       "actuator",
+      "embedded-system",
       "encryption",
       "firmware",
       "mfa",
       "microcontroller",
+      "nfc",
+      "rfid",
       "sensor",
+      "smart-meter",
       "stakeholder"
     ]
   },

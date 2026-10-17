@@ -4,7 +4,8 @@ domains:
 level: 2
 relations:
   prerequisites: []
-  confusable: []
+  confusable:
+    - z-wave
   related:
     - mesh-network
     - smart-home

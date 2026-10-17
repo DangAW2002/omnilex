@@ -1,0 +1,24 @@
+id: z-wave
+domains:
+  - iot/connectivity-protocols
+level: 2
+relations:
+  prerequisites:
+    - "mesh-network"
+  confusable:
+    - "zigbee"
+  related:
+    - "smart-home"
+status: draft
+provenance:
+  drafted_by: ai
+sources:
+  - ref: itu
+    locator: https://www.itu.int/rec/T-REC-G.9959/en
+    title: "ITU-T Recommendation G.9959: Short range narrow-band digital radio communication transceivers"
+    language: en
+    accessed: '2026-10-17'
+    retrieved_by: ai
+    supports:
+      - definition
+      - summary

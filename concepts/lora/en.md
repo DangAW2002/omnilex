@@ -1,5 +1,6 @@
 ---
 label: Low-Rank Adaptation
+qualifier: (AI)
 aliases:
   - LoRA
 loanwords: []
@@ -10,7 +11,8 @@ plain_descriptions:
   - a cheap way to fine-tune by training only a small add-on
   - small adapter files that teach a big model a new skill
 summary: A parameter-efficient fine-tuning method that freezes the original weights and trains small low-rank matrices that represent the weight update.
-confusable_notes: {}
+confusable_notes:
+  lora-radio: LoRA (AI) is a parameter-efficient fine-tuning technique for neural networks, whereas LoRa (IoT) is a long-range chirp spread spectrum radio modulation protocol for connected sensors.
 follow_up_questions:
   - Why is a LoRA adapter so much smaller than the base model?
   - Can several LoRA adapters share one base model?

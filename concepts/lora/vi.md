@@ -1,5 +1,6 @@
 ---
 label: Low-Rank Adaptation
+qualifier: (AI)
 aliases:
   - LoRA
 loanwords:
@@ -11,7 +12,8 @@ plain_descriptions:
   - cách fine-tune rẻ bằng cách chỉ huấn luyện một phần gắn thêm nhỏ
   - những tệp adapter nhỏ dạy mô hình lớn một kỹ năng mới
 summary: 'Phương pháp fine-tuning tiết kiệm tham số: giữ nguyên trọng số gốc và chỉ huấn luyện các ma trận hạng thấp nhỏ biểu diễn phần cập nhật trọng số.'
-confusable_notes: {}
+confusable_notes:
+  lora-radio: LoRA (AI) là kỹ thuật thích ứng ma trận hạng thấp để tinh chỉnh mô hình ngôn ngữ lớn, trong khi LoRa (IoT) là công nghệ truyền sóng vô tuyến tầm xa cho cảm biến vạn vật.
 follow_up_questions:
   - Vì sao adapter LoRA nhỏ hơn mô hình gốc rất nhiều?
   - Nhiều adapter LoRA có dùng chung một mô hình gốc được không?

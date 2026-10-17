@@ -9,6 +9,7 @@ plain_descriptions:
 summary: Giao thức mạng diện rộng công suất thấp (LPWAN) cho phép các thiết bị cảm biến chạy pin truyền dữ liệu tầm xa trên các dải tần vô tuyến không cần cấp phép.
 confusable_notes:
   nb-iot: LoRaWAN sử dụng băng tần vô tuyến dưới 1 GHz miễn cấp phép với các trạm gateway do người dùng tự dựng hoặc qua mạng cộng đồng, trong khi NB-IoT chạy trực tiếp trên các dải sóng di động được cấp phép của nhà mạng viễn thông.
+  lora-radio: LoRaWAN là giao thức mạng và quản lý truy cập môi trường ở tầng trên, trong khi LoRa là tầng điều chế sóng vô tuyến vật lý ở bên dưới.
 follow_up_questions:
   - Ba lớp thiết bị Class A, Class B và Class C trong LoRaWAN khác nhau thế nào về khả năng nhận lệnh từ máy chủ?
   - Thuật toán điều chỉnh tốc độ dữ liệu thích ứng (ADR) giúp kéo dài tuổi thọ pin của cảm biến ra sao?

@@ -9,6 +9,7 @@ plain_descriptions:
 summary: A point-to-multipoint Low-Power Wide-Area Network (LPWAN) protocol designed for wireless, battery-operated devices communicating over long distances on unlicensed radio spectrum.
 confusable_notes:
   nb-iot: LoRaWAN operates on unlicensed sub-gigahertz radio spectrum through customer-deployed or community gateways, whereas NB-IoT operates on licensed cellular bands managed exclusively by mobile telecom operators.
+  lora-radio: LoRaWAN is the upper-layer MAC and networking protocol system, whereas LoRa is the physical chirp spread spectrum radio modulation layer underneath.
 follow_up_questions:
   - How do device reception behaviors differ across LoRaWAN Class A, Class B, and Class C operating modes?
   - How does Adaptive Data Rate (ADR) optimize wireless airtime and device battery consumption?

@@ -7,7 +7,8 @@ plain_descriptions:
   - chuẩn sóng không dây tạo mạng lưới liên kết các công tắc và cảm biến trong nhà
   - giao thức mạng lưới tiêu thụ ít điện năng truyền tiếp tín hiệu qua các bóng đèn thông minh
 summary: Chuẩn mạng lưới không dây công suất thấp dựa trên nền tảng IEEE 802.15.4, chuyên dùng cho các thiết bị điều khiển và tự động hóa nhà ở.
-confusable_notes: {}
+confusable_notes:
+  z-wave: Zigbee hoạt động chủ yếu ở dải tần số 2.4 GHz toàn cầu dùng chung với Wi-Fi và Bluetooth, trong khi Z-Wave hoạt động ở dải tần riêng biệt dưới 1 GHz hoàn toàn không bị can nhiễu sóng 2.4 GHz.
 follow_up_questions:
   - Ba vai trò thiết bị gồm Coordinator, Router và End Device phối hợp với nhau ra sao trong mạng Zigbee?
   - Mạng Zigbee dùng thuật toán nào để tự chữa lành đường truyền khi một nút chuyển tiếp bị mất nguồn?

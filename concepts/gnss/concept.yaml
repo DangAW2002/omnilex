@@ -1,0 +1,25 @@
+id: gnss
+domains:
+  - iot/devices-sensors
+level: 2
+relations:
+  prerequisites:
+    - "sensor"
+  confusable: []
+  related:
+    - "imu"
+    - "accelerometer"
+    - "wearable"
+status: draft
+provenance:
+  drafted_by: ai
+sources:
+  - ref: faa-gov
+    locator: https://www.faa.gov/about/office_org/headquarters_offices/ato/service_units/techops/navservices/gnss
+    title: "Global Navigation Satellite System (GNSS) | Federal Aviation Administration"
+    language: en
+    accessed: '2026-10-17'
+    retrieved_by: ai
+    supports:
+      - definition
+      - summary

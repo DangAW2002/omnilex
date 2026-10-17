@@ -48,6 +48,51 @@
     "autolink": true
   },
   {
+    "key": "Accelerometer",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "accelerometer",
+        "label": "Accelerometer",
+        "summary": "Cảm biến cơ điện vi mô đo gia tốc riêng của vật thể—tốc độ thay đổi vận tốc tuyến tính trên các trục tọa độ bao gồm cả trọng lực Trái Đất.",
+        "domains": [
+          "iot/devices-sensors"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Gia tốc kế",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "accelerometer",
+        "label": "Accelerometer",
+        "summary": "Cảm biến cơ điện vi mô đo gia tốc riêng của vật thể—tốc độ thay đổi vận tốc tuyến tính trên các trục tọa độ bao gồm cả trọng lực Trái Đất.",
+        "domains": [
+          "iot/devices-sensors"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Cảm biến gia tốc",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "accelerometer",
+        "label": "Accelerometer",
+        "summary": "Cảm biến cơ điện vi mô đo gia tốc riêng của vật thể—tốc độ thay đổi vận tốc tuyến tính trên các trục tọa độ bao gồm cả trọng lực Trái Đất.",
+        "domains": [
+          "iot/devices-sensors"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
     "key": "Acceptance criteria",
     "match": "any-case",
     "concepts": [
@@ -194,6 +239,51 @@
         "summary": "Chỉ số ghi nhận mỗi lần mẩu quảng cáo được nạp thành công và xuất hiện trong khung nhìn màn hình của người dùng.",
         "domains": [
           "media/digital-marketing/paid-ads"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Analog-to-digital converter (ADC)",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "adc",
+        "label": "Analog-to-digital converter (ADC)",
+        "summary": "Mạch điện tử thực hiện lấy mẫu tín hiệu điện áp tương tự liên tục theo thời gian và lượng tử hóa thành chuỗi các giá trị số nhị phân để máy tính xử lý.",
+        "domains": [
+          "iot/devices-sensors"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "ADC",
+    "match": "exact-case",
+    "concepts": [
+      {
+        "id": "adc",
+        "label": "Analog-to-digital converter (ADC)",
+        "summary": "Mạch điện tử thực hiện lấy mẫu tín hiệu điện áp tương tự liên tục theo thời gian và lượng tử hóa thành chuỗi các giá trị số nhị phân để máy tính xử lý.",
+        "domains": [
+          "iot/devices-sensors"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Bộ chuyển đổi tương tự sang số",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "adc",
+        "label": "Analog-to-digital converter (ADC)",
+        "summary": "Mạch điện tử thực hiện lấy mẫu tín hiệu điện áp tương tự liên tục theo thời gian và lượng tử hóa thành chuỗi các giá trị số nhị phân để máy tính xử lý.",
+        "domains": [
+          "iot/devices-sensors"
         ]
       }
     ],
@@ -399,6 +489,21 @@
         "summary": "Địa chỉ URL cụ thể do hệ thống API mở ra để tiếp nhận các yêu cầu xử lý tài nguyên hoặc dịch vụ nghiệp vụ.",
         "domains": [
           "it/web/api"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Arduino",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "arduino",
+        "label": "Arduino",
+        "summary": "Nền tảng phần cứng và phần mềm mã nguồn mở dựa trên vi điều khiển, được thiết kế để giúp người dùng dễ dàng lập trình và tương tác với các cảm biến, linh kiện điện tử.",
+        "domains": [
+          "iot/devices-sensors"
         ]
       }
     ],
@@ -1334,54 +1439,6 @@
     "autolink": true
   },
   {
-    "key": "Kinh doanh thông minh",
-    "match": "any-case",
-    "concepts": [
-      {
-        "id": "business-intelligence",
-        "label": "Kinh doanh thông minh",
-        "summary": "Phương pháp và công nghệ phân tích dữ liệu hoạt động trong quá khứ nhằm hỗ trợ ban lãnh đạo đưa ra quyết định kinh doanh.",
-        "domains": [
-          "it/data/analytics",
-          "it/business-systems/enterprise-apps"
-        ]
-      }
-    ],
-    "autolink": true
-  },
-  {
-    "key": "Business intelligence",
-    "match": "any-case",
-    "concepts": [
-      {
-        "id": "business-intelligence",
-        "label": "Kinh doanh thông minh",
-        "summary": "Phương pháp và công nghệ phân tích dữ liệu hoạt động trong quá khứ nhằm hỗ trợ ban lãnh đạo đưa ra quyết định kinh doanh.",
-        "domains": [
-          "it/data/analytics",
-          "it/business-systems/enterprise-apps"
-        ]
-      }
-    ],
-    "autolink": true
-  },
-  {
-    "key": "BI",
-    "match": "exact-case",
-    "concepts": [
-      {
-        "id": "business-intelligence",
-        "label": "Kinh doanh thông minh",
-        "summary": "Phương pháp và công nghệ phân tích dữ liệu hoạt động trong quá khứ nhằm hỗ trợ ban lãnh đạo đưa ra quyết định kinh doanh.",
-        "domains": [
-          "it/data/analytics",
-          "it/business-systems/enterprise-apps"
-        ]
-      }
-    ],
-    "autolink": true
-  },
-  {
     "key": "Byline",
     "match": "any-case",
     "concepts": [
@@ -1817,54 +1874,6 @@
         "summary": "Chuỗi các giai đoạn thực thi tự động tuần tự thực hiện biên dịch, kiểm thử và đóng gói các bản cập nhật phần mềm.",
         "domains": [
           "it/devops/ci-cd"
-        ]
-      }
-    ],
-    "autolink": true
-  },
-  {
-    "key": "CMS",
-    "match": "exact-case",
-    "concepts": [
-      {
-        "id": "cms",
-        "label": "CMS",
-        "summary": "Ứng dụng hỗ trợ người dùng biên soạn, chỉnh sửa, lưu trữ và xuất bản nội dung số lên website mà không cần can thiệp mã nguồn.",
-        "domains": [
-          "it/business-systems/enterprise-apps",
-          "media/publishing/distribution-platforms"
-        ]
-      }
-    ],
-    "autolink": true
-  },
-  {
-    "key": "Content management system",
-    "match": "any-case",
-    "concepts": [
-      {
-        "id": "cms",
-        "label": "CMS",
-        "summary": "Ứng dụng hỗ trợ người dùng biên soạn, chỉnh sửa, lưu trữ và xuất bản nội dung số lên website mà không cần can thiệp mã nguồn.",
-        "domains": [
-          "it/business-systems/enterprise-apps",
-          "media/publishing/distribution-platforms"
-        ]
-      }
-    ],
-    "autolink": true
-  },
-  {
-    "key": "Hệ thống quản lý nội dung",
-    "match": "any-case",
-    "concepts": [
-      {
-        "id": "cms",
-        "label": "CMS",
-        "summary": "Ứng dụng hỗ trợ người dùng biên soạn, chỉnh sửa, lưu trữ và xuất bản nội dung số lên website mà không cần can thiệp mã nguồn.",
-        "domains": [
-          "it/business-systems/enterprise-apps",
-          "media/publishing/distribution-platforms"
         ]
       }
     ],
@@ -2511,36 +2520,6 @@
     "autolink": true
   },
   {
-    "key": "CRM",
-    "match": "exact-case",
-    "concepts": [
-      {
-        "id": "crm",
-        "label": "CRM",
-        "summary": "Hệ thống phần mềm hợp nhất dữ liệu liên hệ, tiến độ thương vụ và lịch sử tương tác với khách hàng trong một nền tảng.",
-        "domains": [
-          "it/business-systems/enterprise-apps"
-        ]
-      }
-    ],
-    "autolink": true
-  },
-  {
-    "key": "Customer relationship management",
-    "match": "any-case",
-    "concepts": [
-      {
-        "id": "crm",
-        "label": "CRM",
-        "summary": "Hệ thống phần mềm hợp nhất dữ liệu liên hệ, tiến độ thương vụ và lịch sử tương tác với khách hàng trong một nền tảng.",
-        "domains": [
-          "it/business-systems/enterprise-apps"
-        ]
-      }
-    ],
-    "autolink": true
-  },
-  {
     "key": "Tiền mã hóa",
     "match": "any-case",
     "concepts": [
@@ -2929,36 +2908,6 @@
         "summary": "Chuỗi các quy trình tự động hóa thu thập, xử lý và vận chuyển dữ liệu thô từ các nguồn phát sinh về các hệ thống lưu trữ đích.",
         "domains": [
           "it/data/data-engineering"
-        ]
-      }
-    ],
-    "autolink": true
-  },
-  {
-    "key": "Data visualization",
-    "match": "any-case",
-    "concepts": [
-      {
-        "id": "data-visualization",
-        "label": "Data visualization",
-        "summary": "Kỹ thuật biểu diễn số liệu định lượng thành các đồ thị, biểu đồ và bản đồ trực quan giúp người xem nhận diện xu hướng nhanh chóng.",
-        "domains": [
-          "it/data/analytics"
-        ]
-      }
-    ],
-    "autolink": true
-  },
-  {
-    "key": "Trực quan hóa dữ liệu",
-    "match": "any-case",
-    "concepts": [
-      {
-        "id": "data-visualization",
-        "label": "Data visualization",
-        "summary": "Kỹ thuật biểu diễn số liệu định lượng thành các đồ thị, biểu đồ và bản đồ trực quan giúp người xem nhận diện xu hướng nhanh chóng.",
-        "domains": [
-          "it/data/analytics"
         ]
       }
     ],
@@ -3541,36 +3490,6 @@
     "autolink": true
   },
   {
-    "key": "Chuyển đổi số",
-    "match": "any-case",
-    "concepts": [
-      {
-        "id": "digital-transformation",
-        "label": "Chuyển đổi số",
-        "summary": "Quá trình tích hợp công nghệ số vào mọi mặt hoạt động của tổ chức nhằm đổi mới căn bản cách thức vận hành và cung cấp giá trị cho khách hàng.",
-        "domains": [
-          "it/business-systems/enterprise-apps"
-        ]
-      }
-    ],
-    "autolink": true
-  },
-  {
-    "key": "Digital transformation",
-    "match": "any-case",
-    "concepts": [
-      {
-        "id": "digital-transformation",
-        "label": "Chuyển đổi số",
-        "summary": "Quá trình tích hợp công nghệ số vào mọi mặt hoạt động của tổ chức nhằm đổi mới căn bản cách thức vận hành và cung cấp giá trị cho khách hàng.",
-        "domains": [
-          "it/business-systems/enterprise-apps"
-        ]
-      }
-    ],
-    "autolink": true
-  },
-  {
     "key": "Bản sao kỹ thuật số",
     "match": "any-case",
     "concepts": [
@@ -3916,36 +3835,6 @@
     "autolink": true
   },
   {
-    "key": "Nền tảng thương mại điện tử",
-    "match": "any-case",
-    "concepts": [
-      {
-        "id": "e-commerce-platform",
-        "label": "Nền tảng thương mại điện tử",
-        "summary": "Bộ giải pháp phần mềm cho phép doanh nghiệp thiết lập cửa hàng trực tuyến, quản lý danh mục sản phẩm, giỏ hàng và xử lý đơn hàng.",
-        "domains": [
-          "it/business-systems/enterprise-apps"
-        ]
-      }
-    ],
-    "autolink": true
-  },
-  {
-    "key": "E-commerce platform",
-    "match": "any-case",
-    "concepts": [
-      {
-        "id": "e-commerce-platform",
-        "label": "Nền tảng thương mại điện tử",
-        "summary": "Bộ giải pháp phần mềm cho phép doanh nghiệp thiết lập cửa hàng trực tuyến, quản lý danh mục sản phẩm, giỏ hàng và xử lý đơn hàng.",
-        "domains": [
-          "it/business-systems/enterprise-apps"
-        ]
-      }
-    ],
-    "autolink": true
-  },
-  {
     "key": "Ví điện tử",
     "match": "any-case",
     "concepts": [
@@ -4160,6 +4049,36 @@
     "autolink": true
   },
   {
+    "key": "Hệ thống nhúng",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "embedded-system",
+        "label": "Hệ thống nhúng",
+        "summary": "Tổ hợp tính toán chuyên dụng gồm vi xử lý, phần mềm nhúng và các cổng ngoại vi được thiết kế tối ưu để thực hiện một nhóm chức năng cố định trong một thiết bị lớn hơn.",
+        "domains": [
+          "iot/devices-sensors"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Hệ thống tích hợp",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "embedded-system",
+        "label": "Hệ thống nhúng",
+        "summary": "Tổ hợp tính toán chuyên dụng gồm vi xử lý, phần mềm nhúng và các cổng ngoại vi được thiết kế tối ưu để thực hiện một nhóm chức năng cố định trong một thiết bị lớn hơn.",
+        "domains": [
+          "iot/devices-sensors"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
     "key": "Embedding",
     "match": "any-case",
     "concepts": [
@@ -4319,6 +4238,51 @@
         "summary": "Phương pháp kiểm thử toàn diện mô phỏng luồng thao tác của người dùng từ giao diện đồ họa qua tất cả dịch vụ máy chủ, hạ tầng và cơ sở dữ liệu.",
         "domains": [
           "it/software-engineering/testing"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Energy harvesting",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "energy-harvesting",
+        "label": "Energy harvesting",
+        "summary": "Quá trình thu nhận những lượng năng lượng nhỏ từ môi trường xung quanh như ánh sáng, chênh lệch nhiệt độ hay rung động cơ học để biến đổi thành điện năng nuôi các mạch điện tử.",
+        "domains": [
+          "iot/devices-sensors"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Thu hoạch năng lượng",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "energy-harvesting",
+        "label": "Energy harvesting",
+        "summary": "Quá trình thu nhận những lượng năng lượng nhỏ từ môi trường xung quanh như ánh sáng, chênh lệch nhiệt độ hay rung động cơ học để biến đổi thành điện năng nuôi các mạch điện tử.",
+        "domains": [
+          "iot/devices-sensors"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Thu hồi năng lượng tự nhiên",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "energy-harvesting",
+        "label": "Energy harvesting",
+        "summary": "Quá trình thu nhận những lượng năng lượng nhỏ từ môi trường xung quanh như ánh sáng, chênh lệch nhiệt độ hay rung động cơ học để biến đổi thành điện năng nuôi các mạch điện tử.",
+        "domains": [
+          "iot/devices-sensors"
         ]
       }
     ],
@@ -4496,45 +4460,15 @@
     "autolink": true
   },
   {
-    "key": "ERP",
-    "match": "exact-case",
-    "concepts": [
-      {
-        "id": "erp",
-        "label": "ERP",
-        "summary": "Bộ phần mềm quản trị tổng thể kết nối tài chính, mua hàng, tồn kho và sản xuất trên một cơ sở dữ liệu chung.",
-        "domains": [
-          "it/business-systems/enterprise-apps"
-        ]
-      }
-    ],
-    "autolink": true
-  },
-  {
-    "key": "Enterprise resource planning",
+    "key": "ESP32",
     "match": "any-case",
     "concepts": [
       {
-        "id": "erp",
-        "label": "ERP",
-        "summary": "Bộ phần mềm quản trị tổng thể kết nối tài chính, mua hàng, tồn kho và sản xuất trên một cơ sở dữ liệu chung.",
+        "id": "esp32",
+        "label": "ESP32",
+        "summary": "Dòng vi mạch tích hợp hệ thống trên chip (SoC) giá rẻ, tiêu thụ ít điện năng, tích hợp sẵn Wi-Fi và Bluetooth chuyên dùng để phát triển các thiết bị Internet vạn vật.",
         "domains": [
-          "it/business-systems/enterprise-apps"
-        ]
-      }
-    ],
-    "autolink": true
-  },
-  {
-    "key": "Hoạch định tài nguyên doanh nghiệp",
-    "match": "any-case",
-    "concepts": [
-      {
-        "id": "erp",
-        "label": "ERP",
-        "summary": "Bộ phần mềm quản trị tổng thể kết nối tài chính, mua hàng, tồn kho và sản xuất trên một cơ sở dữ liệu chung.",
-        "domains": [
-          "it/business-systems/enterprise-apps"
+          "iot/devices-sensors"
         ]
       }
     ],
@@ -5070,6 +5004,96 @@
     "autolink": true
   },
   {
+    "key": "GNSS",
+    "match": "exact-case",
+    "concepts": [
+      {
+        "id": "gnss",
+        "label": "GNSS",
+        "summary": "Hệ thống định vị vệ tinh toàn cầu bao gồm các chùm vệ tinh nhân tạo quay quanh Trái Đất, phát tín hiệu vô tuyến để thiết bị mặt đất tính toán tọa độ địa lý và thời gian chính xác.",
+        "domains": [
+          "iot/devices-sensors"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Hệ thống vệ tinh định vị toàn cầu",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "gnss",
+        "label": "GNSS",
+        "summary": "Hệ thống định vị vệ tinh toàn cầu bao gồm các chùm vệ tinh nhân tạo quay quanh Trái Đất, phát tín hiệu vô tuyến để thiết bị mặt đất tính toán tọa độ địa lý và thời gian chính xác.",
+        "domains": [
+          "iot/devices-sensors"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "GPS",
+    "match": "exact-case",
+    "concepts": [
+      {
+        "id": "gnss",
+        "label": "GNSS",
+        "summary": "Hệ thống định vị vệ tinh toàn cầu bao gồm các chùm vệ tinh nhân tạo quay quanh Trái Đất, phát tín hiệu vô tuyến để thiết bị mặt đất tính toán tọa độ địa lý và thời gian chính xác.",
+        "domains": [
+          "iot/devices-sensors"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "General-purpose input/output (GPIO)",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "gpio",
+        "label": "General-purpose input/output (GPIO)",
+        "summary": "Các chân tín hiệu số trên vi mạch tích hợp mà phần mềm có thể linh hoạt lập trình để đóng vai trò làm đầu vào đọc dữ liệu hoặc đầu ra điều khiển thiết bị điện tử.",
+        "domains": [
+          "iot/devices-sensors"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "GPIO",
+    "match": "exact-case",
+    "concepts": [
+      {
+        "id": "gpio",
+        "label": "General-purpose input/output (GPIO)",
+        "summary": "Các chân tín hiệu số trên vi mạch tích hợp mà phần mềm có thể linh hoạt lập trình để đóng vai trò làm đầu vào đọc dữ liệu hoặc đầu ra điều khiển thiết bị điện tử.",
+        "domains": [
+          "iot/devices-sensors"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Chân vào ra đa dụng",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "gpio",
+        "label": "General-purpose input/output (GPIO)",
+        "summary": "Các chân tín hiệu số trên vi mạch tích hợp mà phần mềm có thể linh hoạt lập trình để đóng vai trò làm đầu vào đọc dữ liệu hoặc đầu ra điều khiển thiết bị điện tử.",
+        "domains": [
+          "iot/devices-sensors"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
     "key": "Bộ xử lý đồ họa (GPU)",
     "match": "any-case",
     "concepts": [
@@ -5380,36 +5404,6 @@
     "autolink": true
   },
   {
-    "key": "Help desk",
-    "match": "any-case",
-    "concepts": [
-      {
-        "id": "help-desk",
-        "label": "Help desk",
-        "summary": "Bộ phận chuyên trách và phần mềm hỗ trợ tiếp nhận, phân loại, theo dõi và giải quyết các sự cố kỹ thuật hoặc yêu cầu dịch vụ của người dùng.",
-        "domains": [
-          "it/business-systems/enterprise-apps"
-        ]
-      }
-    ],
-    "autolink": true
-  },
-  {
-    "key": "Bộ phận trợ giúp",
-    "match": "any-case",
-    "concepts": [
-      {
-        "id": "help-desk",
-        "label": "Help desk",
-        "summary": "Bộ phận chuyên trách và phần mềm hỗ trợ tiếp nhận, phân loại, theo dõi và giải quyết các sự cố kỹ thuật hoặc yêu cầu dịch vụ của người dùng.",
-        "domains": [
-          "it/business-systems/enterprise-apps"
-        ]
-      }
-    ],
-    "autolink": true
-  },
-  {
     "key": "Hotfix",
     "match": "any-case",
     "concepts": [
@@ -5449,51 +5443,6 @@
         "summary": "Bản sửa lỗi khẩn cấp được tạo và đưa thẳng lên môi trường sản xuất ngoài quy trình phát hành thông thường nhằm khắc phục các sự cố gián đoạn hoặc lỗ hổng bảo mật nghiêm trọng.",
         "domains": [
           "it/software-engineering/practices"
-        ]
-      }
-    ],
-    "autolink": true
-  },
-  {
-    "key": "HRMS",
-    "match": "exact-case",
-    "concepts": [
-      {
-        "id": "hrm-system",
-        "label": "HRMS",
-        "summary": "Phần mềm số hóa công tác nhân sự, theo dõi hồ sơ lao động, lịch chấm công, tiền lương và chế độ đãi ngộ tập trung.",
-        "domains": [
-          "it/business-systems/enterprise-apps"
-        ]
-      }
-    ],
-    "autolink": true
-  },
-  {
-    "key": "Human resource management system",
-    "match": "any-case",
-    "concepts": [
-      {
-        "id": "hrm-system",
-        "label": "HRMS",
-        "summary": "Phần mềm số hóa công tác nhân sự, theo dõi hồ sơ lao động, lịch chấm công, tiền lương và chế độ đãi ngộ tập trung.",
-        "domains": [
-          "it/business-systems/enterprise-apps"
-        ]
-      }
-    ],
-    "autolink": true
-  },
-  {
-    "key": "Phần mềm quản trị nhân sự",
-    "match": "any-case",
-    "concepts": [
-      {
-        "id": "hrm-system",
-        "label": "HRMS",
-        "summary": "Phần mềm số hóa công tác nhân sự, theo dõi hồ sơ lao động, lịch chấm công, tiền lương và chế độ đãi ngộ tập trung.",
-        "domains": [
-          "it/business-systems/enterprise-apps"
         ]
       }
     ],
@@ -5569,6 +5518,51 @@
         "summary": "Tham số cấu hình bên ngoài được xác lập trước khi huấn luyện nhằm điều phối kiến trúc và quy trình tối ưu hóa của thuật toán.",
         "domains": [
           "it/ai-ml/foundations"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "I²C",
+    "match": "exact-case",
+    "concepts": [
+      {
+        "id": "i2c",
+        "label": "I²C",
+        "summary": "Chuẩn giao tiếp nối tiếp đồng bộ sử dụng hai đường dây hai chiều (SCL và SDA) có điện trở kéo lên nguồn để kết nối vi điều khiển với nhiều vi mạch ngoại vi trên cùng một bo mạch.",
+        "domains": [
+          "iot/devices-sensors"
+        ]
+      }
+    ],
+    "autolink": false
+  },
+  {
+    "key": "I2C",
+    "match": "exact-case",
+    "concepts": [
+      {
+        "id": "i2c",
+        "label": "I²C",
+        "summary": "Chuẩn giao tiếp nối tiếp đồng bộ sử dụng hai đường dây hai chiều (SCL và SDA) có điện trở kéo lên nguồn để kết nối vi điều khiển với nhiều vi mạch ngoại vi trên cùng một bo mạch.",
+        "domains": [
+          "iot/devices-sensors"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Inter-Integrated Circuit",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "i2c",
+        "label": "I²C",
+        "summary": "Chuẩn giao tiếp nối tiếp đồng bộ sử dụng hai đường dây hai chiều (SCL và SDA) có điện trở kéo lên nguồn để kết nối vi điều khiển với nhiều vi mạch ngoại vi trên cùng một bo mạch.",
+        "domains": [
+          "iot/devices-sensors"
         ]
       }
     ],
@@ -5689,6 +5683,51 @@
         "summary": "Tác vụ thị giác máy tính trong đó thuật toán phân tích toàn bộ bức ảnh để gán cho nó một hoặc nhiều nhãn danh mục từ một tập phân loại xác định.",
         "domains": [
           "it/ai-ml/computer-vision"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Inertial measurement unit (IMU)",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "imu",
+        "label": "Inertial measurement unit (IMU)",
+        "summary": "Khối cảm biến tích hợp đa trục kết hợp gia tốc kế, con quay hồi chuyển và từ kế để đo đạc gia tốc tuyến tính, vận tốc góc và hướng không gian của vật thể chuyển động.",
+        "domains": [
+          "iot/devices-sensors"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "IMU",
+    "match": "exact-case",
+    "concepts": [
+      {
+        "id": "imu",
+        "label": "Inertial measurement unit (IMU)",
+        "summary": "Khối cảm biến tích hợp đa trục kết hợp gia tốc kế, con quay hồi chuyển và từ kế để đo đạc gia tốc tuyến tính, vận tốc góc và hướng không gian của vật thể chuyển động.",
+        "domains": [
+          "iot/devices-sensors"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Bộ đo lường quán tính",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "imu",
+        "label": "Inertial measurement unit (IMU)",
+        "summary": "Khối cảm biến tích hợp đa trục kết hợp gia tốc kế, con quay hồi chuyển và từ kế để đo đạc gia tốc tuyến tính, vận tốc góc và hướng không gian của vật thể chuyển động.",
+        "domains": [
+          "iot/devices-sensors"
         ]
       }
     ],
@@ -6295,51 +6334,6 @@
     "autolink": true
   },
   {
-    "key": "iPaaS",
-    "match": "any-case",
-    "concepts": [
-      {
-        "id": "ipaas",
-        "label": "iPaaS",
-        "summary": "Nền tảng đám mây cung cấp các công cụ và dịch vụ trung gian giúp kết nối, đồng bộ và quản lý luồng dữ liệu giữa các hệ thống phần mềm phân tán.",
-        "domains": [
-          "it/business-systems/automation"
-        ]
-      }
-    ],
-    "autolink": true
-  },
-  {
-    "key": "Integration platform as a service",
-    "match": "any-case",
-    "concepts": [
-      {
-        "id": "ipaas",
-        "label": "iPaaS",
-        "summary": "Nền tảng đám mây cung cấp các công cụ và dịch vụ trung gian giúp kết nối, đồng bộ và quản lý luồng dữ liệu giữa các hệ thống phần mềm phân tán.",
-        "domains": [
-          "it/business-systems/automation"
-        ]
-      }
-    ],
-    "autolink": true
-  },
-  {
-    "key": "Nền tảng tích hợp dưới dạng dịch vụ",
-    "match": "any-case",
-    "concepts": [
-      {
-        "id": "ipaas",
-        "label": "iPaaS",
-        "summary": "Nền tảng đám mây cung cấp các công cụ và dịch vụ trung gian giúp kết nối, đồng bộ và quản lý luồng dữ liệu giữa các hệ thống phần mềm phân tán.",
-        "domains": [
-          "it/business-systems/automation"
-        ]
-      }
-    ],
-    "autolink": true
-  },
-  {
     "key": "Phát hành lần đầu ra công chúng",
     "match": "any-case",
     "concepts": [
@@ -6379,81 +6373,6 @@
         "summary": "Hoạt động chào bán chứng khoán lần đầu tiên ra công chúng nhằm huy động vốn rộng rãi và đưa cổ phiếu lên giao dịch trên thị trường tập trung.",
         "domains": [
           "finance/corporate-finance/fundraising"
-        ]
-      }
-    ],
-    "autolink": true
-  },
-  {
-    "key": "ITIL",
-    "match": "exact-case",
-    "concepts": [
-      {
-        "id": "itil",
-        "label": "ITIL",
-        "summary": "Bộ khung hướng dẫn thực hành chuẩn mực quốc tế dành cho việc thiết kế, vận hành và quản trị các dịch vụ công nghệ thông tin.",
-        "domains": [
-          "it/business-systems/enterprise-apps"
-        ]
-      }
-    ],
-    "autolink": true
-  },
-  {
-    "key": "Information Technology Infrastructure Library",
-    "match": "any-case",
-    "concepts": [
-      {
-        "id": "itil",
-        "label": "ITIL",
-        "summary": "Bộ khung hướng dẫn thực hành chuẩn mực quốc tế dành cho việc thiết kế, vận hành và quản trị các dịch vụ công nghệ thông tin.",
-        "domains": [
-          "it/business-systems/enterprise-apps"
-        ]
-      }
-    ],
-    "autolink": true
-  },
-  {
-    "key": "ITSM",
-    "match": "exact-case",
-    "concepts": [
-      {
-        "id": "itsm",
-        "label": "ITSM",
-        "summary": "Hoạt động quản trị toàn diện việc thiết kế, cung cấp, vận hành và kiểm soát các dịch vụ công nghệ thông tin phục vụ hoạt động doanh nghiệp.",
-        "domains": [
-          "it/business-systems/enterprise-apps"
-        ]
-      }
-    ],
-    "autolink": true
-  },
-  {
-    "key": "IT service management",
-    "match": "any-case",
-    "concepts": [
-      {
-        "id": "itsm",
-        "label": "ITSM",
-        "summary": "Hoạt động quản trị toàn diện việc thiết kế, cung cấp, vận hành và kiểm soát các dịch vụ công nghệ thông tin phục vụ hoạt động doanh nghiệp.",
-        "domains": [
-          "it/business-systems/enterprise-apps"
-        ]
-      }
-    ],
-    "autolink": true
-  },
-  {
-    "key": "Quản trị dịch vụ công nghệ thông tin",
-    "match": "any-case",
-    "concepts": [
-      {
-        "id": "itsm",
-        "label": "ITSM",
-        "summary": "Hoạt động quản trị toàn diện việc thiết kế, cung cấp, vận hành và kiểm soát các dịch vụ công nghệ thông tin phục vụ hoạt động doanh nghiệp.",
-        "domains": [
-          "it/business-systems/enterprise-apps"
         ]
       }
     ],
@@ -6891,6 +6810,36 @@
     "autolink": true
   },
   {
+    "key": "LiDAR",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "lidar",
+        "label": "LiDAR",
+        "summary": "Phương pháp viễn thám quang học sử dụng chùm tia laser xung chiếu vào vật thể và đo thời gian phản xạ ánh sáng dội lại để lập bản đồ tọa độ ba chiều với độ chính xác cao.",
+        "domains": [
+          "iot/devices-sensors"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Hệ thống quét laser",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "lidar",
+        "label": "LiDAR",
+        "summary": "Phương pháp viễn thám quang học sử dụng chùm tia laser xung chiếu vào vật thể và đo thời gian phản xạ ánh sáng dội lại để lập bản đồ tọa độ ba chiều với độ chính xác cao.",
+        "domains": [
+          "iot/devices-sensors"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
     "key": "Linter",
     "match": "any-case",
     "concepts": [
@@ -7114,6 +7063,7 @@
       {
         "id": "lora",
         "label": "Low-Rank Adaptation",
+        "qualifier": "(AI)",
         "summary": "Phương pháp fine-tuning tiết kiệm tham số: giữ nguyên trọng số gốc và chỉ huấn luyện các ma trận hạng thấp nhỏ biểu diễn phần cập nhật trọng số.",
         "domains": [
           "it/ai-ml/mlops"
@@ -7129,9 +7079,51 @@
       {
         "id": "lora",
         "label": "Low-Rank Adaptation",
+        "qualifier": "(AI)",
         "summary": "Phương pháp fine-tuning tiết kiệm tham số: giữ nguyên trọng số gốc và chỉ huấn luyện các ma trận hạng thấp nhỏ biểu diễn phần cập nhật trọng số.",
         "domains": [
           "it/ai-ml/mlops"
+        ]
+      },
+      {
+        "id": "lora-radio",
+        "label": "LoRa",
+        "qualifier": "(IoT)",
+        "summary": "Kỹ thuật điều chế sóng vô tuyến tầng vật lý dựa trên công nghệ trải phổ tiếng chim hót (Chirp Spread Spectrum), cho phép truyền dữ liệu khoảng cách xa với công suất tiêu thụ điện cực nhỏ.",
+        "domains": [
+          "iot/connectivity-protocols"
+        ]
+      }
+    ],
+    "autolink": false
+  },
+  {
+    "key": "Công nghệ sóng LoRa",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "lora-radio",
+        "label": "LoRa",
+        "qualifier": "(IoT)",
+        "summary": "Kỹ thuật điều chế sóng vô tuyến tầng vật lý dựa trên công nghệ trải phổ tiếng chim hót (Chirp Spread Spectrum), cho phép truyền dữ liệu khoảng cách xa với công suất tiêu thụ điện cực nhỏ.",
+        "domains": [
+          "iot/connectivity-protocols"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Long Range",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "lora-radio",
+        "label": "LoRa",
+        "qualifier": "(IoT)",
+        "summary": "Kỹ thuật điều chế sóng vô tuyến tầng vật lý dựa trên công nghệ trải phổ tiếng chim hót (Chirp Spread Spectrum), cho phép truyền dữ liệu khoảng cách xa với công suất tiêu thụ điện cực nhỏ.",
+        "domains": [
+          "iot/connectivity-protocols"
         ]
       }
     ],
@@ -7198,30 +7190,64 @@
     "autolink": true
   },
   {
-    "key": "Low-code",
+    "key": "Sleep mode",
     "match": "any-case",
     "concepts": [
       {
-        "id": "low-code",
-        "label": "Low-code",
-        "summary": "Phương pháp phát triển phần mềm sử dụng giao diện trực quan và các khối chức năng dựng sẵn, cho phép viết thêm mã nguồn khi cần tùy biến sâu.",
+        "id": "low-power-mode",
+        "label": "Sleep mode",
+        "qualifier": "(Embedded)",
+        "summary": "Trạng thái vận hành tiết kiệm năng lượng của vi điều khiển, trong đó các nhân xử lý, bộ dao động xung nhịp và mạch ngoại vi được tạm ngắt cho đến khi nhận được tín hiệu đánh thức.",
         "domains": [
-          "it/business-systems/automation"
+          "iot/devices-sensors"
         ]
       }
     ],
     "autolink": true
   },
   {
-    "key": "Nền tảng lập trình tinh giản",
+    "key": "Chế độ ngủ",
     "match": "any-case",
     "concepts": [
       {
-        "id": "low-code",
-        "label": "Low-code",
-        "summary": "Phương pháp phát triển phần mềm sử dụng giao diện trực quan và các khối chức năng dựng sẵn, cho phép viết thêm mã nguồn khi cần tùy biến sâu.",
+        "id": "low-power-mode",
+        "label": "Sleep mode",
+        "qualifier": "(Embedded)",
+        "summary": "Trạng thái vận hành tiết kiệm năng lượng của vi điều khiển, trong đó các nhân xử lý, bộ dao động xung nhịp và mạch ngoại vi được tạm ngắt cho đến khi nhận được tín hiệu đánh thức.",
         "domains": [
-          "it/business-systems/automation"
+          "iot/devices-sensors"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Deep sleep",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "low-power-mode",
+        "label": "Sleep mode",
+        "qualifier": "(Embedded)",
+        "summary": "Trạng thái vận hành tiết kiệm năng lượng của vi điều khiển, trong đó các nhân xử lý, bộ dao động xung nhịp và mạch ngoại vi được tạm ngắt cho đến khi nhận được tín hiệu đánh thức.",
+        "domains": [
+          "iot/devices-sensors"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Chế độ tiết kiệm pin",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "low-power-mode",
+        "label": "Sleep mode",
+        "qualifier": "(Embedded)",
+        "summary": "Trạng thái vận hành tiết kiệm năng lượng của vi điều khiển, trong đó các nhân xử lý, bộ dao động xung nhịp và mạch ngoại vi được tạm ngắt cho đến khi nhận được tín hiệu đánh thức.",
+        "domains": [
+          "iot/devices-sensors"
         ]
       }
     ],
@@ -7414,6 +7440,38 @@
         "summary": "Khung mô hình chiến lược minh họa các giai đoạn tuần tự trong hành trình của khách hàng, từ nhận biết thương hiệu ban đầu, cân nhắc, cho đến quyết định mua hàng và gắn bó.",
         "domains": [
           "media/digital-marketing/metrics-analytics"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Matter",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "matter-iot",
+        "label": "Matter",
+        "qualifier": "(IoT)",
+        "summary": "Tiêu chuẩn kết nối nhà thông minh mã nguồn mở hoạt động trên nền giao thức Internet (IP), cho phép các thiết bị tương thích kết nối mượt mà qua các nền tảng Apple Home, Google Home và Amazon Alexa.",
+        "domains": [
+          "iot/connectivity-protocols"
+        ]
+      }
+    ],
+    "autolink": false
+  },
+  {
+    "key": "Chuẩn Matter",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "matter-iot",
+        "label": "Matter",
+        "qualifier": "(IoT)",
+        "summary": "Tiêu chuẩn kết nối nhà thông minh mã nguồn mở hoạt động trên nền giao thức Internet (IP), cho phép các thiết bị tương thích kết nối mượt mà qua các nền tảng Apple Home, Google Home và Amazon Alexa.",
+        "domains": [
+          "iot/connectivity-protocols"
         ]
       }
     ],
@@ -8330,30 +8388,45 @@
     "autolink": true
   },
   {
-    "key": "No-code",
+    "key": "Near-field communication (NFC)",
     "match": "any-case",
     "concepts": [
       {
-        "id": "no-code",
-        "label": "No-code",
-        "summary": "Phương pháp xây dựng ứng dụng cho phép người dùng không có chuyên môn lập trình tự tạo phần mềm thông qua giao diện kéo thả trực quan.",
+        "id": "nfc",
+        "label": "Near-field communication (NFC)",
+        "summary": "Chuẩn kết nối không dây tầm ngắn tần số cao hoạt động ở băng tần 13.56 MHz, cho phép hai thiết bị trao đổi dữ liệu an toàn khi đặt cách nhau dưới 4 centimet.",
         "domains": [
-          "it/business-systems/automation"
+          "iot/connectivity-protocols"
         ]
       }
     ],
     "autolink": true
   },
   {
-    "key": "Nền tảng không cần mã nguồn",
+    "key": "NFC",
+    "match": "exact-case",
+    "concepts": [
+      {
+        "id": "nfc",
+        "label": "Near-field communication (NFC)",
+        "summary": "Chuẩn kết nối không dây tầm ngắn tần số cao hoạt động ở băng tần 13.56 MHz, cho phép hai thiết bị trao đổi dữ liệu an toàn khi đặt cách nhau dưới 4 centimet.",
+        "domains": [
+          "iot/connectivity-protocols"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Giao tiếp tầm ngắn",
     "match": "any-case",
     "concepts": [
       {
-        "id": "no-code",
-        "label": "No-code",
-        "summary": "Phương pháp xây dựng ứng dụng cho phép người dùng không có chuyên môn lập trình tự tạo phần mềm thông qua giao diện kéo thả trực quan.",
+        "id": "nfc",
+        "label": "Near-field communication (NFC)",
+        "summary": "Chuẩn kết nối không dây tầm ngắn tần số cao hoạt động ở băng tần 13.56 MHz, cho phép hai thiết bị trao đổi dữ liệu an toàn khi đặt cách nhau dưới 4 centimet.",
         "domains": [
-          "it/business-systems/automation"
+          "iot/connectivity-protocols"
         ]
       }
     ],
@@ -8885,38 +8958,6 @@
     "autolink": true
   },
   {
-    "key": "Cổng thanh toán",
-    "match": "any-case",
-    "concepts": [
-      {
-        "id": "payment-gateway",
-        "label": "Cổng thanh toán",
-        "summary": "Dịch vụ công nghệ trung gian tiếp nhận, mã hóa và truyền tải thông tin giao dịch giữa website bán lẻ với ngân hàng và mạng lưới thẻ.",
-        "domains": [
-          "it/business-systems/enterprise-apps",
-          "finance/banking/payments"
-        ]
-      }
-    ],
-    "autolink": true
-  },
-  {
-    "key": "Payment gateway",
-    "match": "any-case",
-    "concepts": [
-      {
-        "id": "payment-gateway",
-        "label": "Cổng thanh toán",
-        "summary": "Dịch vụ công nghệ trung gian tiếp nhận, mã hóa và truyền tải thông tin giao dịch giữa website bán lẻ với ngân hàng và mạng lưới thẻ.",
-        "domains": [
-          "it/business-systems/enterprise-apps",
-          "finance/banking/payments"
-        ]
-      }
-    ],
-    "autolink": true
-  },
-  {
     "key": "Paywall",
     "match": "any-case",
     "concepts": [
@@ -9181,51 +9222,6 @@
         "summary": "Các mức lãi suất do cơ quan quản lý tiền tệ quốc gia công bố nhằm điều tiết thanh khoản hệ thống và định hướng mặt bằng lãi suất thị trường.",
         "domains": [
           "finance/economics/interest-rates-monetary-policy"
-        ]
-      }
-    ],
-    "autolink": true
-  },
-  {
-    "key": "POS",
-    "match": "exact-case",
-    "concepts": [
-      {
-        "id": "pos-system",
-        "label": "POS",
-        "summary": "Hệ thống thiết bị và phần mềm đặt tại điểm bán để quét mã hàng, thu tiền và đồng bộ lượng hàng tồn kho.",
-        "domains": [
-          "it/business-systems/enterprise-apps"
-        ]
-      }
-    ],
-    "autolink": false
-  },
-  {
-    "key": "Point of sale",
-    "match": "any-case",
-    "concepts": [
-      {
-        "id": "pos-system",
-        "label": "POS",
-        "summary": "Hệ thống thiết bị và phần mềm đặt tại điểm bán để quét mã hàng, thu tiền và đồng bộ lượng hàng tồn kho.",
-        "domains": [
-          "it/business-systems/enterprise-apps"
-        ]
-      }
-    ],
-    "autolink": true
-  },
-  {
-    "key": "Hệ thống điểm bán lẻ",
-    "match": "any-case",
-    "concepts": [
-      {
-        "id": "pos-system",
-        "label": "POS",
-        "summary": "Hệ thống thiết bị và phần mềm đặt tại điểm bán để quét mã hàng, thu tiền và đồng bộ lượng hàng tồn kho.",
-        "domains": [
-          "it/business-systems/enterprise-apps"
         ]
       }
     ],
@@ -9921,6 +9917,51 @@
     "autolink": true
   },
   {
+    "key": "Pulse-width modulation (PWM)",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "pwm",
+        "label": "Pulse-width modulation (PWM)",
+        "summary": "Phương pháp điều chế công suất điện cung cấp cho tải bằng cách thay đổi tỷ lệ thời gian đóng và ngắt (chu kỳ nhiệm vụ) của chuỗi xung vuông ở tần số cao.",
+        "domains": [
+          "iot/devices-sensors"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "PWM",
+    "match": "exact-case",
+    "concepts": [
+      {
+        "id": "pwm",
+        "label": "Pulse-width modulation (PWM)",
+        "summary": "Phương pháp điều chế công suất điện cung cấp cho tải bằng cách thay đổi tỷ lệ thời gian đóng và ngắt (chu kỳ nhiệm vụ) của chuỗi xung vuông ở tần số cao.",
+        "domains": [
+          "iot/devices-sensors"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Điều chế độ rộng xung",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "pwm",
+        "label": "Pulse-width modulation (PWM)",
+        "summary": "Phương pháp điều chế công suất điện cung cấp cho tải bằng cách thay đổi tỷ lệ thời gian đóng và ngắt (chu kỳ nhiệm vụ) của chuỗi xung vuông ở tần số cao.",
+        "domains": [
+          "iot/devices-sensors"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
     "key": "Nới lỏng định lượng (QE)",
     "match": "any-case",
     "concepts": [
@@ -10036,6 +10077,36 @@
         "summary": "Kỹ thuật tìm các tài liệu liên quan ngay khi có câu hỏi rồi đưa chúng vào prompt để mô hình trả lời dựa trên đó.",
         "domains": [
           "it/ai-ml/llm-agents"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Raspberry Pi",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "raspberry-pi",
+        "label": "Raspberry Pi",
+        "summary": "Dòng máy tính đơn bo kích thước nhỏ sử dụng vi xử lý kiến trúc ARM rất phổ biến, hỗ trợ hệ điều hành Linux và tích hợp hàng chân cắm GPIO 40 chân để giao tiếp thiết bị.",
+        "domains": [
+          "iot/devices-sensors"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "RPi",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "raspberry-pi",
+        "label": "Raspberry Pi",
+        "summary": "Dòng máy tính đơn bo kích thước nhỏ sử dụng vi xử lý kiến trúc ARM rất phổ biến, hỗ trợ hệ điều hành Linux và tích hợp hàng chân cắm GPIO 40 chân để giao tiếp thiết bị.",
+        "domains": [
+          "iot/devices-sensors"
         ]
       }
     ],
@@ -10402,6 +10473,51 @@
     "autolink": true
   },
   {
+    "key": "Radio-frequency identification (RFID)",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "rfid",
+        "label": "Radio-frequency identification (RFID)",
+        "summary": "Công nghệ nhận dạng và thu thập dữ liệu tự động sử dụng sóng điện từ vô tuyến để đọc thông tin mã hóa được lưu trữ trong các thẻ điện tử từ khoảng cách xa.",
+        "domains": [
+          "iot/devices-sensors"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "RFID",
+    "match": "exact-case",
+    "concepts": [
+      {
+        "id": "rfid",
+        "label": "Radio-frequency identification (RFID)",
+        "summary": "Công nghệ nhận dạng và thu thập dữ liệu tự động sử dụng sóng điện từ vô tuyến để đọc thông tin mã hóa được lưu trữ trong các thẻ điện tử từ khoảng cách xa.",
+        "domains": [
+          "iot/devices-sensors"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Nhận dạng qua tần số vô tuyến",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "rfid",
+        "label": "Radio-frequency identification (RFID)",
+        "summary": "Công nghệ nhận dạng và thu thập dữ liệu tự động sử dụng sóng điện từ vô tuyến để đọc thông tin mã hóa được lưu trữ trong các thẻ điện tử từ khoảng cách xa.",
+        "domains": [
+          "iot/devices-sensors"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
     "key": "RICE scoring",
     "match": "any-case",
     "concepts": [
@@ -10534,51 +10650,6 @@
         "summary": "Hành động vận hành hoàn nguyên ứng dụng, tệp cấu hình hoặc cơ sở dữ liệu về phiên bản ổn định đã được kiểm chứng trước đó.",
         "domains": [
           "it/devops/sre-operations"
-        ]
-      }
-    ],
-    "autolink": true
-  },
-  {
-    "key": "RPA",
-    "match": "exact-case",
-    "concepts": [
-      {
-        "id": "rpa",
-        "label": "RPA",
-        "summary": "Công nghệ tự động hóa sử dụng robot phần mềm để mô phỏng lại các thao tác giao diện người dùng lặp đi lặp lại theo quy tắc định sẵn.",
-        "domains": [
-          "it/business-systems/automation"
-        ]
-      }
-    ],
-    "autolink": true
-  },
-  {
-    "key": "Robotic process automation",
-    "match": "any-case",
-    "concepts": [
-      {
-        "id": "rpa",
-        "label": "RPA",
-        "summary": "Công nghệ tự động hóa sử dụng robot phần mềm để mô phỏng lại các thao tác giao diện người dùng lặp đi lặp lại theo quy tắc định sẵn.",
-        "domains": [
-          "it/business-systems/automation"
-        ]
-      }
-    ],
-    "autolink": true
-  },
-  {
-    "key": "Tự động hóa quy trình bằng robot",
-    "match": "any-case",
-    "concepts": [
-      {
-        "id": "rpa",
-        "label": "RPA",
-        "summary": "Công nghệ tự động hóa sử dụng robot phần mềm để mô phỏng lại các thao tác giao diện người dùng lặp đi lặp lại theo quy tắc định sẵn.",
-        "domains": [
-          "it/business-systems/automation"
         ]
       }
     ],
@@ -10926,6 +10997,54 @@
     "autolink": true
   },
   {
+    "key": "Secure boot",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "secure-boot",
+        "label": "Secure boot",
+        "summary": "Tiêu chuẩn bảo mật phần cứng đảm bảo thiết bị điện tử chỉ khởi động bằng các đoạn mã và phần mềm firmware đã được nhà sản xuất chứng thực và ký số mật mã.",
+        "domains": [
+          "iot/devices-sensors",
+          "it/security/cryptography"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Khởi động an toàn",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "secure-boot",
+        "label": "Secure boot",
+        "summary": "Tiêu chuẩn bảo mật phần cứng đảm bảo thiết bị điện tử chỉ khởi động bằng các đoạn mã và phần mềm firmware đã được nhà sản xuất chứng thực và ký số mật mã.",
+        "domains": [
+          "iot/devices-sensors",
+          "it/security/cryptography"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Quy trình khởi động bảo mật",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "secure-boot",
+        "label": "Secure boot",
+        "summary": "Tiêu chuẩn bảo mật phần cứng đảm bảo thiết bị điện tử chỉ khởi động bằng các đoạn mã và phần mềm firmware đã được nhà sản xuất chứng thực và ký số mật mã.",
+        "domains": [
+          "iot/devices-sensors",
+          "it/security/cryptography"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
     "key": "Semantic versioning",
     "match": "any-case",
     "concepts": [
@@ -11262,6 +11381,51 @@
     "autolink": true
   },
   {
+    "key": "Single-board computer (SBC)",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "single-board-computer",
+        "label": "Single-board computer (SBC)",
+        "summary": "Một chiếc máy tính đầy đủ tính năng có vi xử lý, bộ nhớ RAM, chip quản lý nguồn và các cổng kết nối ngoại vi được gắn liền trên duy nhất một bản mạch in.",
+        "domains": [
+          "iot/devices-sensors"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "SBC",
+    "match": "exact-case",
+    "concepts": [
+      {
+        "id": "single-board-computer",
+        "label": "Single-board computer (SBC)",
+        "summary": "Một chiếc máy tính đầy đủ tính năng có vi xử lý, bộ nhớ RAM, chip quản lý nguồn và các cổng kết nối ngoại vi được gắn liền trên duy nhất một bản mạch in.",
+        "domains": [
+          "iot/devices-sensors"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Máy tính đơn bo",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "single-board-computer",
+        "label": "Single-board computer (SBC)",
+        "summary": "Một chiếc máy tính đầy đủ tính năng có vi xử lý, bộ nhớ RAM, chip quản lý nguồn và các cổng kết nối ngoại vi được gắn liền trên duy nhất một bản mạch in.",
+        "domains": [
+          "iot/devices-sensors"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
     "key": "Service Level Agreement (SLA)",
     "match": "any-case",
     "concepts": [
@@ -11434,6 +11598,51 @@
         "id": "smart-home",
         "label": "Nhà thông minh",
         "summary": "Không gian nhà ở được tích hợp các thiết bị điện tử có khả năng kết nối mạng, cho phép tự động hóa sinh hoạt và quản lý tập trung từ xa.",
+        "domains": [
+          "iot/devices-sensors"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Smart meter",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "smart-meter",
+        "label": "Smart meter",
+        "summary": "Thiết bị đo lường tiện ích điện tử tiên tiến có khả năng tự động ghi nhận lượng tiêu thụ điện, nước hoặc khí đốt theo thời gian thực và truyền dữ liệu về đơn vị cung cấp qua mạng viễn thông.",
+        "domains": [
+          "iot/devices-sensors"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Đồng hồ đo thông minh",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "smart-meter",
+        "label": "Smart meter",
+        "summary": "Thiết bị đo lường tiện ích điện tử tiên tiến có khả năng tự động ghi nhận lượng tiêu thụ điện, nước hoặc khí đốt theo thời gian thực và truyền dữ liệu về đơn vị cung cấp qua mạng viễn thông.",
+        "domains": [
+          "iot/devices-sensors"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Công tơ điện tử thông minh",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "smart-meter",
+        "label": "Smart meter",
+        "summary": "Thiết bị đo lường tiện ích điện tử tiên tiến có khả năng tự động ghi nhận lượng tiêu thụ điện, nước hoặc khí đốt theo thời gian thực và truyền dữ liệu về đơn vị cung cấp qua mạng viễn thông.",
         "domains": [
           "iot/devices-sensors"
         ]
@@ -11644,6 +11853,51 @@
         "summary": "Tập hợp các hàm, lớp và đoạn mã viết sẵn được đóng gói để lập trình viên nhập vào và chủ động gọi thực thi khi cần xử lý các tác vụ chuyên biệt.",
         "domains": [
           "it/software-engineering/programming-concepts"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Serial Peripheral Interface (SPI)",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "spi-bus",
+        "label": "Serial Peripheral Interface (SPI)",
+        "summary": "Chuẩn giao tiếp nối tiếp đồng bộ bốn dây tốc độ cao, hỗ trợ truyền dữ liệu song công toàn phần (full-duplex) giữa chip điều khiển chủ và các thiết bị ngoại vi thông qua chân chọn chip.",
+        "domains": [
+          "iot/devices-sensors"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "SPI",
+    "match": "exact-case",
+    "concepts": [
+      {
+        "id": "spi-bus",
+        "label": "Serial Peripheral Interface (SPI)",
+        "summary": "Chuẩn giao tiếp nối tiếp đồng bộ bốn dây tốc độ cao, hỗ trợ truyền dữ liệu song công toàn phần (full-duplex) giữa chip điều khiển chủ và các thiết bị ngoại vi thông qua chân chọn chip.",
+        "domains": [
+          "iot/devices-sensors"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Giao diện ngoại vi nối tiếp",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "spi-bus",
+        "label": "Serial Peripheral Interface (SPI)",
+        "summary": "Chuẩn giao tiếp nối tiếp đồng bộ bốn dây tốc độ cao, hỗ trợ truyền dữ liệu song công toàn phần (full-duplex) giữa chip điều khiển chủ và các thiết bị ngoại vi thông qua chân chọn chip.",
+        "domains": [
+          "iot/devices-sensors"
         ]
       }
     ],
@@ -12421,6 +12675,38 @@
     "autolink": true
   },
   {
+    "key": "Thread",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "thread-iot",
+        "label": "Thread",
+        "qualifier": "(IoT)",
+        "summary": "Giao thức mạng lưới không dây công suất thấp dựa trên nền tảng địa chỉ IPv6 và chuẩn vô tuyến IEEE 802.15.4, mang lại kết nối tin cậy và tự phục hồi cho các thiết bị nhà thông minh.",
+        "domains": [
+          "iot/connectivity-protocols"
+        ]
+      }
+    ],
+    "autolink": false
+  },
+  {
+    "key": "Giao thức Thread",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "thread-iot",
+        "label": "Thread",
+        "qualifier": "(IoT)",
+        "summary": "Giao thức mạng lưới không dây công suất thấp dựa trên nền tảng địa chỉ IPv6 và chuẩn vô tuyến IEEE 802.15.4, mang lại kết nối tin cậy và tự phục hồi cho các thiết bị nhà thông minh.",
+        "domains": [
+          "iot/connectivity-protocols"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
     "key": "Throughput",
     "match": "any-case",
     "concepts": [
@@ -12475,6 +12761,38 @@
         "summary": "Tốc độ mà một hệ thống máy tính, kênh truyền thông hoặc ứng dụng xử lý và chuyển giao thành công dữ liệu hoặc giao dịch trong một đơn vị thời gian.",
         "domains": [
           "it/infrastructure/networking"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "TinyML",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "tinyml",
+        "label": "TinyML",
+        "summary": "Phân ngành học máy tập trung vào việc tối ưu hóa và thực thi các mô hình mạng nơ-ron trực tiếp trên các chip vi điều khiển có tài nguyên phần cứng hạn chế và mức tiêu thụ điện năng cực thấp.",
+        "domains": [
+          "iot/edge-cloud",
+          "it/ai-ml/mlops"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Học máy trên vi điều khiển",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "tinyml",
+        "label": "TinyML",
+        "summary": "Phân ngành học máy tập trung vào việc tối ưu hóa và thực thi các mô hình mạng nơ-ron trực tiếp trên các chip vi điều khiển có tài nguyên phần cứng hạn chế và mức tiêu thụ điện năng cực thấp.",
+        "domains": [
+          "iot/edge-cloud",
+          "it/ai-ml/mlops"
         ]
       }
     ],
@@ -12790,6 +13108,36 @@
         "summary": "Nghệ thuật và kỹ thuật lựa chọn, sắp xếp các kiểu chữ, độ đậm nhạt, khoảng cách chữ và dòng nhằm giúp văn bản rõ ràng, dễ đọc và truyền tải cảm xúc thị giác.",
         "domains": [
           "media/content-production/visual-design"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "UART",
+    "match": "exact-case",
+    "concepts": [
+      {
+        "id": "uart",
+        "label": "UART",
+        "summary": "Khối phần cứng điện tử chuyển đổi dữ liệu song song nội bộ thành chuỗi bit nối tiếp bất đồng bộ trên hai đường truyền phát (TX) và nhận (RX) độc lập.",
+        "domains": [
+          "iot/devices-sensors"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Bộ thu phát bất đồng bộ vạn năng",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "uart",
+        "label": "UART",
+        "summary": "Khối phần cứng điện tử chuyển đổi dữ liệu song song nội bộ thành chuỗi bit nối tiếp bất đồng bộ trên hai đường truyền phát (TX) và nhận (RX) độc lập.",
+        "domains": [
+          "iot/devices-sensors"
         ]
       }
     ],
@@ -13361,6 +13709,51 @@
     "autolink": true
   },
   {
+    "key": "Wearable device",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "wearable",
+        "label": "Wearable device",
+        "summary": "Nhóm thiết bị điện tử thông minh nhỏ gọn được thiết kế để đeo trên cơ thể hoặc tích hợp vào trang phục, trang bị cảm biến sinh trắc học và kết nối không dây để theo dõi sức khỏe liên tục.",
+        "domains": [
+          "iot/devices-sensors"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Thiết bị đeo",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "wearable",
+        "label": "Wearable device",
+        "summary": "Nhóm thiết bị điện tử thông minh nhỏ gọn được thiết kế để đeo trên cơ thể hoặc tích hợp vào trang phục, trang bị cảm biến sinh trắc học và kết nối không dây để theo dõi sức khỏe liên tục.",
+        "domains": [
+          "iot/devices-sensors"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Thiết bị đeo thông minh",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "wearable",
+        "label": "Wearable device",
+        "summary": "Nhóm thiết bị điện tử thông minh nhỏ gọn được thiết kế để đeo trên cơ thể hoặc tích hợp vào trang phục, trang bị cảm biến sinh trắc học và kết nối không dây để theo dõi sức khỏe liên tục.",
+        "domains": [
+          "iot/devices-sensors"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
     "key": "Session",
     "match": "any-case",
     "concepts": [
@@ -13439,45 +13832,48 @@
     "autolink": true
   },
   {
-    "key": "Tự động hóa quy trình",
+    "key": "Wi-Fi",
     "match": "any-case",
     "concepts": [
       {
-        "id": "workflow-automation",
-        "label": "Tự động hóa quy trình",
-        "summary": "Thiết lập chuỗi các bước công việc tự động kích hoạt và xử lý dữ liệu giữa các ứng dụng nghiệp vụ theo các quy tắc định sẵn.",
+        "id": "wifi",
+        "label": "Wi-Fi",
+        "summary": "Tập hợp các giao thức mạng cục bộ không dây (WLAN) dựa trên bộ tiêu chuẩn IEEE 802.11, cung cấp khả năng kết nối mạng không dây tốc độ cao cho các thiết bị điện tử trong cự ly gần.",
         "domains": [
-          "it/business-systems/automation"
+          "iot/connectivity-protocols",
+          "it/infrastructure/networking"
         ]
       }
     ],
     "autolink": true
   },
   {
-    "key": "Workflow automation",
+    "key": "WiFi",
     "match": "any-case",
     "concepts": [
       {
-        "id": "workflow-automation",
-        "label": "Tự động hóa quy trình",
-        "summary": "Thiết lập chuỗi các bước công việc tự động kích hoạt và xử lý dữ liệu giữa các ứng dụng nghiệp vụ theo các quy tắc định sẵn.",
+        "id": "wifi",
+        "label": "Wi-Fi",
+        "summary": "Tập hợp các giao thức mạng cục bộ không dây (WLAN) dựa trên bộ tiêu chuẩn IEEE 802.11, cung cấp khả năng kết nối mạng không dây tốc độ cao cho các thiết bị điện tử trong cự ly gần.",
         "domains": [
-          "it/business-systems/automation"
+          "iot/connectivity-protocols",
+          "it/infrastructure/networking"
         ]
       }
     ],
     "autolink": true
   },
   {
-    "key": "Tự động hóa quy trình làm việc",
+    "key": "Mạng không dây Wi-Fi",
     "match": "any-case",
     "concepts": [
       {
-        "id": "workflow-automation",
-        "label": "Tự động hóa quy trình",
-        "summary": "Thiết lập chuỗi các bước công việc tự động kích hoạt và xử lý dữ liệu giữa các ứng dụng nghiệp vụ theo các quy tắc định sẵn.",
+        "id": "wifi",
+        "label": "Wi-Fi",
+        "summary": "Tập hợp các giao thức mạng cục bộ không dây (WLAN) dựa trên bộ tiêu chuẩn IEEE 802.11, cung cấp khả năng kết nối mạng không dây tốc độ cao cho các thiết bị điện tử trong cự ly gần.",
         "domains": [
-          "it/business-systems/automation"
+          "iot/connectivity-protocols",
+          "it/infrastructure/networking"
         ]
       }
     ],
@@ -13538,6 +13934,21 @@
         "summary": "Lỗ hổng tiêm mã độc phía client cho phép tin tặc cài cắm các đoạn mã kịch bản độc hại vào trang web uy tín để thực thi trên trình duyệt của nạn nhân.",
         "domains": [
           "it/security/vulnerabilities"
+        ]
+      }
+    ],
+    "autolink": true
+  },
+  {
+    "key": "Z-Wave",
+    "match": "any-case",
+    "concepts": [
+      {
+        "id": "z-wave",
+        "label": "Z-Wave",
+        "summary": "Giao thức truyền thông không dây mạng lưới hoạt động ở dải tần số dưới 1 GHz (sub-GHz), được thiết kế chuyên biệt để tự động hóa nhà ở mà không bị nhiễu sóng bởi mạng Wi-Fi.",
+        "domains": [
+          "iot/connectivity-protocols"
         ]
       }
     ],

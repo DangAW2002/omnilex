@@ -1,0 +1,25 @@
+id: depreciation-accounting
+domains:
+  - finance/accounting/bookkeeping
+level: 2
+relations:
+  prerequisites:
+    - asset
+  confusable: []
+  related:
+    - income-statement
+    - balance-sheet
+    - ebitda
+status: draft
+provenance:
+  drafted_by: ai
+sources:
+  - ref: sec-gov
+    locator: https://www.sec.gov/about/reports-publications/beginners-guide-financial-statements
+    title: Beginners' Guide to Financial Statements
+    language: en
+    accessed: '2026-10-16'
+    retrieved_by: ai
+    supports:
+      - definition
+      - summary

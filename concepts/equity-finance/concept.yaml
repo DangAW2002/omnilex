@@ -1,0 +1,25 @@
+id: equity-finance
+domains:
+  - finance/corporate-finance/capital-structure
+level: 1
+relations:
+  prerequisites: []
+  confusable: []
+  related:
+    - balance-sheet
+    - asset
+    - liability
+    - debt-to-equity-ratio
+status: draft
+provenance:
+  drafted_by: ai
+sources:
+  - ref: sec-gov
+    locator: https://www.sec.gov/about/reports-publications/beginners-guide-financial-statements
+    title: Beginners' Guide to Financial Statements
+    language: en
+    accessed: '2026-10-16'
+    retrieved_by: ai
+    supports:
+      - definition
+      - summary

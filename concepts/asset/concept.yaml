@@ -1,0 +1,25 @@
+id: asset
+domains:
+  - finance/accounting/bookkeeping
+level: 1
+relations:
+  prerequisites: []
+  confusable:
+    - liability
+  related:
+    - balance-sheet
+    - equity-finance
+    - double-entry-bookkeeping
+status: draft
+provenance:
+  drafted_by: ai
+sources:
+  - ref: investor-gov
+    locator: https://www.investor.gov/introduction-investing/investing-basics/glossary/asset
+    title: Asset Definition
+    language: en
+    accessed: '2026-10-16'
+    retrieved_by: ai
+    supports:
+      - definition
+      - summary

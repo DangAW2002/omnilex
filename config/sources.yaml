@@ -934,3 +934,100 @@ cisco:
   reuse: paraphrase-only
   domains: [iot/industrial, it/infrastructure]
   verified_license_at: "2026-10-16"
+
+# wave2 finb
+bank-of-england:
+  title: Bank of England Knowledge Base & Monetary Policy Explainers
+  publisher: Bank of England
+  url: https://www.bankofengland.co.uk
+  type: docs
+  tier: B
+  languages: [en]
+  license: all-rights-reserved
+  reuse: paraphrase-only
+  domains: [finance/economics]
+  verified_license_at: "2026-10-16"
+
+ifrs-org:
+  title: IFRS Foundation Standards & Conceptual Framework
+  publisher: IFRS Foundation
+  url: https://www.ifrs.org
+  type: standard
+  tier: A
+  languages: [en]
+  license: all-rights-reserved
+  reuse: paraphrase-only
+  domains: [finance/accounting]
+  verified_license_at: "2026-10-16"
+
+cornell-wex:
+  title: Wex Legal Dictionary and Encyclopedia
+  publisher: Legal Information Institute, Cornell Law School
+  url: https://www.law.cornell.edu/wex
+  type: glossary
+  tier: B
+  languages: [en]
+  license: CC-BY-NC-SA-2.5
+  reuse: paraphrase-only
+  domains: [finance/accounting, finance/corporate-finance]
+  verified_license_at: "2026-10-16"
+
+gov-uk:
+  title: GOV.UK Guidance and Tax Services
+  publisher: Government Digital Service, UK Government
+  url: https://www.gov.uk
+  type: docs
+  tier: B
+  languages: [en]
+  license: Open-Government-Licence-v3.0
+  reuse: paraphrase-only
+  domains: [finance/accounting, finance/personal-finance]
+  verified_license_at: "2026-10-16"
+
+nber:
+  title: National Bureau of Economic Research Business Cycle Dating
+  publisher: National Bureau of Economic Research
+  url: https://www.nber.org
+  type: docs
+  tier: B
+  languages: [en]
+  license: all-rights-reserved
+  reuse: paraphrase-only
+  domains: [finance/economics]
+  verified_license_at: "2026-10-16"
+
+ecb:
+  title: European Central Bank Statistics and Reference Rates
+  publisher: European Central Bank
+  url: https://www.ecb.europa.eu
+  type: docs
+  tier: B
+  languages: [en]
+  license: all-rights-reserved
+  reuse: paraphrase-only
+  domains: [finance/economics]
+  verified_license_at: "2026-10-16"
+
+cafef:
+  title: CafeF Financial & Economic News Portal
+  publisher: VCCorp Corporation
+  url: https://cafef.vn
+  type: community
+  tier: D
+  languages: [vi]
+  license: community-terms
+  reuse: paraphrase-only
+  domains: [finance]
+  verified_license_at: "2026-10-16"
+
+tapchikinhtetaichinh:
+  title: Tạp chí Kinh tế và Tài chính
+  publisher: Viện Chiến lược và Chính sách tài chính - Bộ Tài chính
+  url: https://tapchikinhtetaichinh.vn
+  type: community
+  tier: D
+  languages: [vi]
+  license: community-terms
+  reuse: paraphrase-only
+  domains: [finance]
+  verified_license_at: "2026-10-16"

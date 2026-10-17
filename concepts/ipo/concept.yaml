@@ -1,0 +1,24 @@
+id: ipo
+domains:
+  - finance/corporate-finance/fundraising
+level: 2
+relations:
+  prerequisites: []
+  confusable: []
+  related:
+    - venture-capital
+    - startup-valuation
+    - equity-finance
+status: draft
+provenance:
+  drafted_by: ai
+sources:
+  - ref: investor-gov
+    locator: https://www.investor.gov/introduction-investing/investing-basics/glossary/initial-public-offering-ipo
+    title: Initial Public Offering (IPO)
+    language: en
+    accessed: '2026-10-16'
+    retrieved_by: ai
+    supports:
+      - definition
+      - summary

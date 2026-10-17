@@ -1,0 +1,23 @@
+id: revenue
+domains:
+  - finance/corporate-finance/financial-statements
+level: 1
+relations:
+  prerequisites: []
+  confusable: []
+  related:
+    - income-statement
+    - ebitda
+status: draft
+provenance:
+  drafted_by: ai
+sources:
+  - ref: investor-gov
+    locator: https://www.investor.gov/introduction-investing/investing-basics/glossary/revenue
+    title: Revenue Definition
+    language: en
+    accessed: '2026-10-16'
+    retrieved_by: ai
+    supports:
+      - definition
+      - summary

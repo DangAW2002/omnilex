@@ -1,0 +1,24 @@
+id: policy-rate
+domains:
+  - finance/economics/interest-rates-monetary-policy
+level: 2
+relations:
+  prerequisites:
+    - interest-rate
+  confusable: []
+  related:
+    - quantitative-easing
+    - inflation
+status: draft
+provenance:
+  drafted_by: ai
+sources:
+  - ref: bank-of-england
+    locator: https://www.bankofengland.co.uk/explainers/what-are-interest-rates
+    title: What are interest rates? - Bank of England
+    language: en
+    accessed: '2026-10-16'
+    retrieved_by: ai
+    supports:
+      - definition
+      - summary

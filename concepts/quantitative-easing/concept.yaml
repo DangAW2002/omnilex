@@ -1,0 +1,24 @@
+id: quantitative-easing
+domains:
+  - finance/economics/interest-rates-monetary-policy
+level: 2
+relations:
+  prerequisites:
+    - policy-rate
+  confusable: []
+  related:
+    - inflation
+    - interest-rate
+status: draft
+provenance:
+  drafted_by: ai
+sources:
+  - ref: bank-of-england
+    locator: https://www.bankofengland.co.uk/monetary-policy/quantitative-easing
+    title: Quantitative Easing - Bank of England
+    language: en
+    accessed: '2026-10-16'
+    retrieved_by: ai
+    supports:
+      - definition
+      - summary

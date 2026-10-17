@@ -1,0 +1,26 @@
+id: accrual-accounting
+domains:
+  - finance/accounting/standards
+level: 2
+relations:
+  prerequisites:
+    - double-entry-bookkeeping
+  confusable: []
+  related:
+    - revenue
+    - ifrs
+    - balance-sheet
+    - income-statement
+status: draft
+provenance:
+  drafted_by: ai
+sources:
+  - ref: cornell-wex
+    locator: https://www.law.cornell.edu/wex/accrual_method_of_accounting
+    title: Accrual Method of Accounting
+    language: en
+    accessed: '2026-10-16'
+    retrieved_by: ai
+    supports:
+      - definition
+      - summary

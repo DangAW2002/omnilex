@@ -1,0 +1,23 @@
+id: gdp
+domains:
+  - finance/economics/inflation
+level: 1
+relations:
+  prerequisites: []
+  confusable: []
+  related:
+    - recession
+    - inflation
+status: draft
+provenance:
+  drafted_by: ai
+sources:
+  - ref: bank-of-england
+    locator: https://www.bankofengland.co.uk/explainers/what-is-gdp
+    title: What is GDP? - Bank of England
+    language: en
+    accessed: '2026-10-16'
+    retrieved_by: ai
+    supports:
+      - definition
+      - summary

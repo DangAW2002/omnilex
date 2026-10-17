@@ -1,0 +1,32 @@
+id: recession
+domains:
+  - finance/economics/inflation
+level: 1
+relations:
+  prerequisites:
+    - gdp
+  confusable: []
+  related:
+    - inflation
+    - deflation
+status: draft
+provenance:
+  drafted_by: ai
+sources:
+  - ref: nber
+    locator: https://www.nber.org/research/business-cycle-dating
+    title: Business Cycle Dating - National Bureau of Economic Research
+    language: en
+    accessed: '2026-10-16'
+    retrieved_by: ai
+    supports:
+      - definition
+      - summary
+  - ref: bank-of-england
+    locator: https://www.bankofengland.co.uk/explainers/what-is-gdp
+    title: What is GDP? - Bank of England
+    language: en
+    accessed: '2026-10-16'
+    retrieved_by: ai
+    supports:
+      - definition

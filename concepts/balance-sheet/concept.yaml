@@ -1,0 +1,26 @@
+id: balance-sheet
+domains:
+  - finance/corporate-finance/financial-statements
+level: 1
+relations:
+  prerequisites: []
+  confusable: []
+  related:
+    - income-statement
+    - cash-flow-statement
+    - asset
+    - liability
+    - equity-finance
+status: draft
+provenance:
+  drafted_by: ai
+sources:
+  - ref: sec-gov
+    locator: https://www.sec.gov/about/reports-publications/beginners-guide-financial-statements
+    title: Beginners' Guide to Financial Statements
+    language: en
+    accessed: '2026-10-16'
+    retrieved_by: ai
+    supports:
+      - definition
+      - summary

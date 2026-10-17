@@ -1,0 +1,23 @@
+id: exchange-rate
+domains:
+  - finance/economics/exchange-rates
+level: 1
+relations:
+  prerequisites: []
+  confusable: []
+  related:
+    - inflation
+    - policy-rate
+status: draft
+provenance:
+  drafted_by: ai
+sources:
+  - ref: ecb
+    locator: https://www.ecb.europa.eu/stats/policy_and_exchange_rates/euro_reference_exchange_rates/html/index.en.html
+    title: Euro foreign exchange reference rates - European Central Bank
+    language: en
+    accessed: '2026-10-16'
+    retrieved_by: ai
+    supports:
+      - definition
+      - summary

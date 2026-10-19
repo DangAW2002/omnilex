@@ -37,4 +37,4 @@ Hệ thống tên miền (DNS) được tổ chức theo cấp bậc hình cây 
 Giao thức tầng ứng dụng và cơ sở dữ liệu phân cấp phân tán ánh xạ các nhãn tên miền dạng chữ sang định danh địa chỉ mạng của thiết bị.
 
 ## Ví dụ
-Khi người dùng nhập `termbridge.org` vào trình duyệt, máy chủ DNS phân giải tên miền này và trả về địa chỉ IP `198.51.100.45` để kết nối.
+Khi người dùng nhập `omnilex.org` vào trình duyệt, máy chủ DNS phân giải tên miền này và trả về địa chỉ IP `198.51.100.45` để kết nối.

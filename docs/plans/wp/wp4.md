@@ -1,4 +1,4 @@
-# Ghi chú thiết kế WP4: Bộ nhận diện trie trong core + sinh hooks/runtime/ cho mod
+﻿# Ghi chú thiết kế WP4: Bộ nhận diện trie trong core + sinh hooks/runtime/ cho mod
 
 ## 1. Phạm vi
 - Cài đặt bộ nhận diện Aho-Corasick Trie đa mẫu (multi-pattern matching) trong `packages/core/src/matcher.ts`, thay thế toàn bộ vòng lặp regex $O(T \cdot L)$ và $O(C \cdot D \cdot L)$.

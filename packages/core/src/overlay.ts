@@ -1,4 +1,4 @@
-// Project overlay (.termbridge/overrides.yaml, Plan 3.7): changes how concepts
+// Project overlay (.omnilex/overrides.yaml, Plan 3.7): changes how concepts
 // are recognised and shown in one project, never their explanations. Pure, so
 // CLI, MCP and the mod apply it the same way.
 import { normalizeSearchTerm } from './matcher.js';

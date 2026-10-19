@@ -1,4 +1,4 @@
-# Termbridge Index: Công nghệ thông tin (vi)
+# OmniLex Index: Công nghệ thông tin (vi)
 
 - [**ACID (Cơ sở dữ liệu)**](../../concepts/acid/vi.md): *bốn nguyên tắc an toàn bảo đảm giao dịch cơ sở dữ liệu luôn hoàn thành trọn vẹn và không bị lỗi; lời cam kết của hệ thống rằng giao dịch tiền bạc hoặc thành công 100% hoặc không để lại dấu vết* — Bộ bốn đặc tính cơ bản (Nguyên tử, Nhất quán, Cô lập, Bền vững) bảo đảm các giao dịch cơ sở dữ liệu được xử lý an toàn và tin cậy.
 - [**Agent (AI)**](../../concepts/ai-agent/vi.md): *hệ thống AI biết tự lập kế hoạch và dùng công cụ để giải quyết trọn vẹn công việc; trợ lý phần mềm tự động quan sát, hành động và hoàn thành mục tiêu được giao* — Hệ thống AI tự chủ có khả năng suy luận mục tiêu, chia nhỏ nhiệm vụ thành các bước tuần tự và sử dụng công cụ để hoàn thành công việc.

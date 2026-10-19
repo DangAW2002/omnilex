@@ -1,4 +1,4 @@
-# Termbridge Index: Internet vạn vật (vi)
+# OmniLex Index: Internet vạn vật (vi)
 
 - [**5G**](../../concepts/5g/vi.md): *công nghệ mạng di động thế hệ thứ năm tốc độ cao và phản hồi tức thì; chuẩn viễn thông không dây hiện đại kết nối đồng thời cả điện thoại lẫn máy móc công nghiệp* — Thế hệ thứ năm của chuẩn mạng viễn thông di động, nổi bật với băng thông siêu rộng, độ trễ cực thấp và khả năng kết nối hàng triệu thiết bị trên mỗi kilômét vuông.
 - [**Accelerometer**](../../concepts/accelerometer/vi.md): *cảm biến nhận biết rung lắc, chuyển động và lực hút trọng lực của Trái Đất; con chip đo lực gia tốc giúp điện thoại tự xoay ngang màn hình khi bạn nghiêng máy* — Cảm biến cơ điện vi mô đo gia tốc riêng của vật thể—tốc độ thay đổi vận tốc tuyến tính trên các trục tọa độ bao gồm cả trọng lực Trái Đất.

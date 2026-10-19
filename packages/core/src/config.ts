@@ -5,7 +5,7 @@ export type ProfileName = 'lite' | 'standard' | 'semantic';
 export type TierMode = 'eager' | 'lazy' | 'remote' | 'off';
 export type LayerKind = 'default' | 'user' | 'project' | 'local' | 'session';
 
-export interface TermbridgeConfig {
+export interface OmniLexConfig {
   root?: boolean;
   locale?: string;
   fallbackLocales?: string[];
@@ -25,7 +25,7 @@ export interface ConfigLayer {
   source: string;
   // directory relative pack sources (dev:, local:) resolve against
   dir?: string;
-  config: TermbridgeConfig;
+  config: OmniLexConfig;
 }
 
 export interface PackSelectOp {
@@ -64,7 +64,7 @@ export interface EffectiveConfig {
   warnings: string[];
 }
 
-export const DEFAULT_CONFIG: TermbridgeConfig = {
+export const DEFAULT_CONFIG: OmniLexConfig = {
   locale: 'vi',
   fallbackLocales: ['en'],
   profile: 'standard',
@@ -80,9 +80,9 @@ const PROFILES = ['lite', 'standard', 'semantic'];
 const TIER_MODES = ['eager', 'lazy', 'remote', 'off'];
 
 // Keeps the keys we understand, with the right types; everything else is a warning.
-export function normalizeConfig(raw: unknown, source: string): { config: TermbridgeConfig; warnings: string[] } {
+export function normalizeConfig(raw: unknown, source: string): { config: OmniLexConfig; warnings: string[] } {
   const warnings: string[] = [];
-  const config: TermbridgeConfig = {};
+  const config: OmniLexConfig = {};
   if (raw === null || raw === undefined) return { config, warnings };
   if (typeof raw !== 'object' || Array.isArray(raw)) {
     return { config, warnings: [`${source}: cấu hình phải là một object / config must be a mapping`] };
@@ -107,7 +107,7 @@ export function normalizeConfig(raw: unknown, source: string): { config: Termbri
   }
   if (value.packsReset !== undefined) typeof value.packsReset === 'boolean' ? (config.packsReset = value.packsReset) : bad('packsReset');
   if (value.tiers !== undefined) {
-    const tiers: TermbridgeConfig['tiers'] = {};
+    const tiers: OmniLexConfig['tiers'] = {};
     if (value.tiers?.explanations !== undefined) {
       TIER_MODES.includes(value.tiers.explanations) ? (tiers.explanations = value.tiers.explanations) : bad('tiers.explanations');
     }
@@ -117,7 +117,7 @@ export function normalizeConfig(raw: unknown, source: string): { config: Termbri
     config.tiers = tiers;
   }
   if (value.limits !== undefined) {
-    const limits: TermbridgeConfig['limits'] = {};
+    const limits: OmniLexConfig['limits'] = {};
     for (const key of ['memoryMB', 'diskMB'] as const) {
       const limit = value.limits?.[key];
       if (limit === undefined) continue;

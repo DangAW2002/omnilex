@@ -1,4 +1,4 @@
-# Báo cáo WP4: Bộ nhận diện Aho-Corasick Trie và Runtime cho Mod
+﻿# Báo cáo WP4: Bộ nhận diện Aho-Corasick Trie và Runtime cho Mod
 
 ## Tóm tắt
 WP4 hoàn thành việc thay thế toàn bộ cơ chế quét regex $O(T \cdot L)$ và $O(C \cdot D \cdot L)$ bằng bộ nhận diện Aho-Corasick Trie đa mẫu hiệu năng cao. Bộ nhận diện hỗ trợ ranh giới từ Unicode `(?<![\p{L}\p{N}])` và `(?![\p{L}\p{N}])`, khớp dài nhất (longest-match), kiểm tra `exact-case`, giữ dấu tiếng Việt (bảo toàn canonical equivalence NFC/NFD), cơ chế bỏ phiếu ngữ cảnh cho từ đồng âm (homonym context voting) và bộ tra ngược `ReverseMatcher` cho `plain_descriptions` (ngưỡng $\ge 12$ ký tự). Quá trình `tb build` tự động sinh mã JS ESM thuần vào `packages/claude-mod/hooks/runtime/matcher.js`, được nạp trực tiếp bởi `register.js` với bộ nhớ đệm theo requestId.
@@ -34,7 +34,7 @@ Tốc độ quét lần đầu ở quy mô 1.000 khái niệm giảm ngoạn m�
 | `pnpm test` | Đạt (exit 0) | `Test Files 13 passed (13) | Tests 53 passed (53)` |
 | `claude plugin test packages/claude-mod` | Đạt (exit 0) | `10 pass, 0 fail. Ran 10 tests across 2 files. [0.73s]` |
 | `pnpm tb validate --strict` | Đạt (exit 0) | `✔ Validation passed successfully!` (0 errors, 0 warnings) |
-| `pnpm --filter @termbridge/site build` | Đạt (exit 0) | `25 page(s) built in 1.24s. Complete!` |
+| `pnpm --filter @omnilex/site build` | Đạt (exit 0) | `25 page(s) built in 1.24s. Complete!` |
 | `pnpm tb build && git diff --exit-code indexes/ llms.txt` | Đạt (exit 0) | Clean diff |
 | `pnpm check:deterministic` | Đạt (exit 0) | `✔ Build is 100% deterministic! All 48 artifacts have identical sha256 hashes across builds.` |
 | `pnpm bench:check` | Đạt (exit 0) | `✔ Scale 1000 PASSED all performance gates.` |
@@ -94,7 +94,7 @@ Tốc độ quét lần đầu ở quy mô 1.000 khái niệm giảm ngoạn m�
 | `packages/core/src/builder.ts` | Sửa | Sinh thêm `hooks/runtime/lookup.js` |
 | `packages/core/src/matcher.ts` | Sửa | `ReverseMatcher.reverseSpans` khớp sau khi bỏ dấu/NFD và ánh xạ offset về chuỗi gốc theo grapheme; hàng đợi BFS không dùng `shift()`; chọn khoảng không chồng lấn O(n) |
 | `packages/claude-mod/hooks/register.js` | Sửa | Dùng `createLookupIndex`; bỏ `normalize` riêng (D-2); cache quét theo requestId có chữ ký nội dung và giới hạn LRU 256; link markdown giữ nguyên khi xuống dòng |
-| `packages/cli/src/index.ts` | Sửa | Import `@termbridge/core` lười trong từng lệnh để giảm thời gian khởi động; `findAction` thành async |
+| `packages/cli/src/index.ts` | Sửa | Import `@omnilex/core` lười trong từng lệnh để giảm thời gian khởi động; `findAction` thành async |
 | `bench/run.ts` | Sửa | Đo trung thực hơn: nạp cả hai locale và dựng chỉ mục như mod; `tb find` lạnh chạy `findAction` thật trên thư mục tạm; thêm thời gian khởi động tiến trình CLI (tham khảo); 10k không áp ngân sách dung lượng 5 MB vì ngân sách đó dành cho profile `lite` một gói |
 
 Lệch hành vi đã biết: trong pane tra cứu, token ngắn hơn 3 ký tự chỉ khớp nguyên từ (trước đây khớp chuỗi con).

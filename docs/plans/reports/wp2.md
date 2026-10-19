@@ -1,7 +1,7 @@
-# Báo cáo WP2: Schema, Validator, Nguồn dẫn chứng và Autolink
+﻿# Báo cáo WP2: Schema, Validator, Nguồn dẫn chứng và Autolink
 
 ## Tóm tắt
-WP2 hoàn thành việc nâng cấp toàn bộ hạ tầng schema và kiểm tra tính toàn vẹn của Termbridge. Mở rộng `concept.schema.json` hỗ trợ các mục nguồn `sources` có cấu trúc (`ref`, `locator`, `title`, `language`, `accessed`, `supports`, `quote`, `archive`) song song với việc giữ tương thích ngược dạng chuỗi URL; mở rộng `locale-entry.schema.json` với cấu hình `autolink`, `label_evidence`, và metadata dịch `translation`. Khởi tạo danh mục 20 nguồn uy tín chuẩn hóa tại `config/sources.yaml` theo đúng Quyết định D12 (xác minh bản quyền, ưu tiên CC BY và public domain). Triển khai 5 luật kiểm tra mới (Rules 14–18) cùng cảnh báo từ phổ thông (`config/common-words.<locale>.txt`). Cung cấp công cụ CLI `tb sources list` và `tb sources migrate` giúp chuyển đổi dữ liệu nguồn an toàn và idempotent. Toàn bộ 11 khái niệm hiện có đã được chuẩn hóa đạt 100% chuẩn kiểm tra `--strict`.
+WP2 hoàn thành việc nâng cấp toàn bộ hạ tầng schema và kiểm tra tính toàn vẹn của OMNILEX. Mở rộng `concept.schema.json` hỗ trợ các mục nguồn `sources` có cấu trúc (`ref`, `locator`, `title`, `language`, `accessed`, `supports`, `quote`, `archive`) song song với việc giữ tương thích ngược dạng chuỗi URL; mở rộng `locale-entry.schema.json` với cấu hình `autolink`, `label_evidence`, và metadata dịch `translation`. Khởi tạo danh mục 20 nguồn uy tín chuẩn hóa tại `config/sources.yaml` theo đúng Quyết định D12 (xác minh bản quyền, ưu tiên CC BY và public domain). Triển khai 5 luật kiểm tra mới (Rules 14–18) cùng cảnh báo từ phổ thông (`config/common-words.<locale>.txt`). Cung cấp công cụ CLI `tb sources list` và `tb sources migrate` giúp chuyển đổi dữ liệu nguồn an toàn và idempotent. Toàn bộ 11 khái niệm hiện có đã được chuẩn hóa đạt 100% chuẩn kiểm tra `--strict`.
 
 ## Thay đổi
 | File | Loại | Ghi chú |
@@ -37,7 +37,7 @@ WP2 hoàn thành việc nâng cấp toàn bộ hạ tầng schema và kiểm tra
 | `pnpm test` | Đạt (exit 0) | `Test Files 11 passed (11) | Tests 42 passed (42)` |
 | `claude plugin test packages/claude-mod` | Đạt (exit 0) | `10 pass, 0 fail Ran 10 tests across 2 files. [0.72s]` |
 | `pnpm tb validate --strict` | Đạt (exit 0) | `✔ Validation passed successfully!` (0 errors, 0 warnings) |
-| `pnpm --filter @termbridge/site build` | Đạt (exit 0) | `[build] 25 page(s) built in 1.01s` |
+| `pnpm --filter @omnilex/site build` | Đạt (exit 0) | `[build] 25 page(s) built in 1.01s` |
 | `pnpm tb build && git diff --exit-code indexes/ llms.txt` | Đạt (exit 0) | Clean diff |
 | `pnpm check:deterministic` | Đạt (exit 0) | `✔ Build is 100% deterministic! All 47 artifacts have identical sha256 hashes across builds.` |
 | `pnpm bench:check` | Đạt (exit 0) | `✔ Scale 1000 PASSED all performance gates.` |

@@ -1,4 +1,4 @@
-# Báo cáo Wave 2, lô ai: Trí tuệ nhân tạo và Học máy (30 khái niệm)
+﻿# Báo cáo Wave 2, lô ai: Trí tuệ nhân tạo và Học máy (30 khái niệm)
 
 Trạng thái: **hoàn thành bản thảo** (2026-10-16). Toàn bộ 30 khái niệm được tạo lập chính xác theo danh sách trong `candidates/wave2/ai.yaml`, giữ nguyên trạng thái `status: draft` và `provenance.drafted_by: ai` theo quy định nghiêm ngặt của dự án.
 

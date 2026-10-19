@@ -1,4 +1,4 @@
-# Termbridge Index: Media (en)
+# OmniLex Index: Media (en)
 
 - [**A/B testing**](../../concepts/ab-testing/en.md): *splitting users between two variants of a screen or feature to see which one performs better; controlled trial where real users are randomly split to measure which design drives higher conversions* — A randomized experimental method where two variants of a digital experience are shown to visitors simultaneously to determine which drives superior outcomes.
 - [**Impression (Ads)**](../../concepts/ad-impression/en.md): *every single time an advertisement appears on someone's screen; the total view count of an ad including repeat sightings by the same person* — A metric recording each individual occurrence of an advertisement being fetched and rendered on a user's viewport screen.

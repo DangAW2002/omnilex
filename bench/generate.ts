@@ -1,5 +1,5 @@
 // bench/generate.ts: Deterministic mock dataset generator with fixed seed
-// Matches real Termbridge characteristics: ~3.8 patterns/concept, Vietnamese diacritics (NFC),
+// Matches real OmniLex characteristics: ~3.8 patterns/concept, Vietnamese diacritics (NFC),
 // exact-case acronyms, homonyms with qualifiers.
 
 export interface ConceptItem {

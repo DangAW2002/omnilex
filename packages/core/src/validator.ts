@@ -589,7 +589,7 @@ export function validateRepository(
 
   // Rule 8: committed discovery files must match a fresh build from source data.
   if (options.checkIndexDrift !== false && !issues.some((issue) => issue.severity === 'error')) {
-    const tempRoot = fs.mkdtempSync(path.join(os.tmpdir(), 'termbridge-validate-'));
+    const tempRoot = fs.mkdtempSync(path.join(os.tmpdir(), 'omnilex-validate-'));
     try {
       const generated = buildArtifacts({ ...repoData, rootDir: tempRoot });
       const expectedPaths = new Set(
@@ -602,7 +602,7 @@ export function validateRepository(
         const actualPath = path.join(rootDir, relativePath);
         if (!fs.existsSync(actualPath) || fs.readFileSync(actualPath, 'utf-8').replace(/\r\n/g, '\n') !== expected) {
           issues.push({ ruleId: 8, severity: 'error', file: actualPath,
-            message: `Generated file '${relativePath}' is missing or out of date; run pnpm tb build` });
+            message: `Generated file '${relativePath}' is missing or out of date; run pnpm ol build` });
         }
       }
 
@@ -616,13 +616,13 @@ export function validateRepository(
             const relativePath = `indexes/${localeDir.name}/${indexFile.name}`;
             if (!expectedPaths.has(relativePath)) {
               issues.push({ ruleId: 8, severity: 'error', file: path.join(rootDir, relativePath),
-                message: `Stale generated file '${relativePath}'; run pnpm tb build` });
+                message: `Stale generated file '${relativePath}'; run pnpm ol build` });
             }
           }
         }
       }
     } finally {
-      if (path.dirname(path.resolve(tempRoot)) === path.resolve(os.tmpdir()) && path.basename(tempRoot).startsWith('termbridge-validate-')) {
+      if (path.dirname(path.resolve(tempRoot)) === path.resolve(os.tmpdir()) && path.basename(tempRoot).startsWith('omnilex-validate-')) {
         fs.rmSync(tempRoot, { recursive: true, force: true });
       }
     }

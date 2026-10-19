@@ -1,4 +1,4 @@
-# Báo cáo WP8, wave 3: mở rộng IT và IoT (323 khái niệm)
+﻿# Báo cáo WP8, wave 3: mở rộng IT và IoT (323 khái niệm)
 
 Trạng thái: **đã commit và merge vào `master`** (tag `wave3-checkpoint-648`). Mọi khái niệm vẫn là `status: draft`, `provenance.drafted_by: ai`; chưa khái niệm nào được nâng trạng thái.
 

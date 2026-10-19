@@ -5,7 +5,7 @@ import { PackStore, PrefetchIO } from './runtime/pack-reader.js'
 import { mergeTerms } from './runtime/pack-format.js'
 import { searchConfigHash } from './runtime/search-config.js'
 
-const PANE_ID = 'termbridge-lookup'
+const PANE_ID = 'omnilex-lookup'
 const MAX_BADGES = 4
 const PROFILES = ['lite', 'standard', 'semantic']
 
@@ -525,14 +525,14 @@ function warmReverse($) {
 function statusText() {
   if (!packs) {
     return [
-      'Termbridge: dữ liệu đóng kèm plugin (data/*.json) / bundled plugin data',
+      'OmniLex: dữ liệu đóng kèm plugin (data/*.json) / bundled plugin data',
       ...notices.map((notice) => `  ⚠ ${notice}`),
     ].join('\n')
   }
   const { ctx } = packs
   const total = ctx.plan.packs.reduce((sum, item) => sum + item.pack.concepts, 0)
   const lines = [
-    `Termbridge: project ${ctx.projectDir || '(none)'} · profile ${ctx.plan.profile} · ${ctx.plan.packs.length} gói / packs · ${total} khái niệm / concepts · ~${ctx.plan.estimateMB.toFixed(1)} MB${ctx.plan.limitMB ? ` / ${ctx.plan.limitMB} MB` : ''}`,
+    `OmniLex: project ${ctx.projectDir || '(none)'} · profile ${ctx.plan.profile} · ${ctx.plan.packs.length} gói / packs · ${total} khái niệm / concepts · ~${ctx.plan.estimateMB.toFixed(1)} MB${ctx.plan.limitMB ? ` / ${ctx.plan.limitMB} MB` : ''}`,
     ...ctx.plan.packs.map(({ pack, tiers }) =>
       `  ${pack.id}@${pack.version} (${pack.sourceId === 'store' ? 'store' : 'dev'}) terms=${tiers.terms} cards=${tiers.cards} search=${tiers.search} explanations=${tiers.explanations}`),
     ...ctx.plan.dropped.map((pack) => `  ${pack.id}: bỏ do giới hạn / dropped by limits`),
@@ -583,13 +583,12 @@ async function ensureExplanations($, loc) {
 
 async function homeDir($) {
   const read = async (get) => { try { return await get() } catch { return undefined } }
-  const explicit = (await read(() => $.env.get('OMNILEX_HOME'))) || (await read(() => $.env.get('TERMBRIDGE_HOME')))
+  const explicit = await read(() => $.env.get('OMNILEX_HOME'))
   if (explicit) return explicit.replace(/\\/g, '/')
   const home = (await read(() => $.env.get('HOME'))) || (await read(() => $.env.get('USERPROFILE'))) || ''
   const base = home.replace(/\\/g, '/').replace(/\/+$/, '')
   try {
     if (await $.fs.exists(`${base}/.omnilex`)) return `${base}/.omnilex`
-    if (await $.fs.exists(`${base}/.termbridge`)) return `${base}/.termbridge`
   } catch {}
   return `${base}/.omnilex`
 }
@@ -648,7 +647,7 @@ async function loadPacks($) {
     session,
     configHash: searchConfigHash(),
   })
-  let ctx = await open(Object.keys(sessionConfig).length ? { source: '/termbridge', config: sessionConfig } : undefined)
+  let ctx = await open(Object.keys(sessionConfig).length ? { source: '/omnilex', config: sessionConfig } : undefined)
   notices = ctx.notices
   if (ctx.plan.packs.length === 0) {
     // No project or store packs: the starter pack the plugin ships (3.9).
@@ -689,7 +688,7 @@ async function loadData($) {
     if (await loadPacks($)) return warmReverse($)
   } catch (error) {
     packs = null
-    $.ui.log(`Termbridge: không đọc được gói, dùng dữ liệu đóng kèm / cannot read packs, using bundled data (${error?.message || error})`)
+    $.ui.log(`OmniLex: không đọc được gói, dùng dữ liệu đóng kèm / cannot read packs, using bundled data (${error?.message || error})`)
   }
   await loadBundled($)
   warmReverse($)
@@ -734,7 +733,7 @@ async function loadBundled($) {
     lookupIndex = null
     explanations = new Map()
     localized = {}
-    $.ui.log('Termbridge: run pnpm tb build to generate mod lookup data')
+    $.ui.log('OmniLex: run pnpm ol build to generate mod lookup data')
   }
 }
 
@@ -869,15 +868,10 @@ export function register(on) {
       name: 'omnilex',
       description: 'Tra thuật ngữ; /omnilex browse [lĩnh vực]; lang vi|en; mode hover|links|badges; packs <id,...>|all; profile lite|standard|semantic; status',
     })
-    await $.command.register({
-      name: 'termbridge',
-      description: 'Alias của /omnilex',
-    })
     return next(e)
   })
 
   on('command.run', { command: 'omnilex' }, handleCommand)
-  on('command.run', { command: 'termbridge' }, handleCommand)
 
   on('ui.render', { component: 'AssistantMessage' }, async ($, e, next) => {
     if (e.props.isSummary) return next(e)
@@ -886,7 +880,7 @@ export function register(on) {
     const openConcept = async (id) => {
       selectedId = id
       query = ''
-      await $.ui.open({ id: PANE_ID, title: 'Termbridge', focus: true, closeOnEscape: true })
+      await $.ui.open({ id: PANE_ID, title: 'OmniLex', focus: true, closeOnEscape: true })
       $.ui.invalidate('ui.render')
     }
     if (mode === 'hover') {
@@ -926,7 +920,7 @@ export function register(on) {
           async (id) => {
             selectedId = id
             query = ''
-            await $.ui.open({ id: PANE_ID, title: 'Termbridge', focus: true, closeOnEscape: true })
+            await $.ui.open({ id: PANE_ID, title: 'OmniLex', focus: true, closeOnEscape: true })
             $.ui.invalidate('ui.render')
           },
         )
@@ -946,7 +940,7 @@ export function register(on) {
             onPress: async () => {
               selectedId = concept.id
               query = ''
-              await $.ui.open({ id: PANE_ID, title: 'Termbridge', focus: true, closeOnEscape: true })
+              await $.ui.open({ id: PANE_ID, title: 'OmniLex', focus: true, closeOnEscape: true })
               $.ui.invalidate('ui.render')
             },
           }),
@@ -979,7 +973,7 @@ export function register(on) {
           async (id) => {
             selectedId = id
             query = ''
-            await $.ui.open({ id: PANE_ID, title: 'Termbridge', focus: true, closeOnEscape: true })
+            await $.ui.open({ id: PANE_ID, title: 'OmniLex', focus: true, closeOnEscape: true })
             $.ui.invalidate('ui.render')
           },
         )
@@ -1002,7 +996,7 @@ export function register(on) {
                 onPress: async () => {
                   selectedId = concept.id
                   query = ''
-                  await $.ui.open({ id: PANE_ID, title: 'Termbridge', focus: true, closeOnEscape: true })
+                  await $.ui.open({ id: PANE_ID, title: 'OmniLex', focus: true, closeOnEscape: true })
                   $.ui.invalidate('ui.render')
                 },
               }),
@@ -1134,7 +1128,7 @@ export function register(on) {
         tabs,
         Text({ bold: true, children: [strings.searchTitle] }),
         Input({
-          key: 'termbridge-query', label: strings.description, value: query,
+          key: 'omnilex-query', label: strings.description, value: query,
           placeholder: strings.placeholder,
           onInput: (value) => { query = value; selectedId = null; redraw() },
           onSubmit: (value) => { query = value; selectedId = null; selectFirstResult = true; redraw() },

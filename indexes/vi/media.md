@@ -1,4 +1,4 @@
-# Termbridge Index: Media (vi)
+# OmniLex Index: Media (vi)
 
 - [**A/B testing**](../../concepts/ab-testing/vi.md): *phương pháp thử nghiệm so sánh hai phiên bản giao diện để xem phiên bản nào đạt hiệu quả cao hơn; thí nghiệm chia ngẫu nhiên người dùng để đo lường xem thay đổi nào giúp tăng tỷ lệ chuyển đổi* — Phương pháp thử nghiệm ngẫu nhiên có đối chứng, trong đó hai biến thể giao diện được hiển thị đồng thời cho các nhóm người dùng khác nhau để tìm ra phương án tối ưu.
 - [**Lượt hiển thị (Quảng cáo)**](../../concepts/ad-impression/vi.md): *mỗi lần một mẫu quảng cáo xuất hiện trên màn hình người dùng; tổng số lượt xem quảng cáo tính cả các lần xem lặp lại của cùng một người* — Chỉ số ghi nhận mỗi lần mẩu quảng cáo được nạp thành công và xuất hiện trong khung nhìn màn hình của người dùng.

@@ -1,4 +1,4 @@
-# Termbridge Index: Internet of Things (en)
+# OmniLex Index: Internet of Things (en)
 
 - [**5G**](../../concepts/5g/en.md): *fifth generation cellular technology delivering high speeds and ultra-responsive connections; advanced telecommunications network standard uniting broadband smartphones and industrial machine connectivity* — The fifth-generation telecommunications standard for broadband cellular networks, defined by enhanced mobile broadband, massive machine connectivity, and ultra-reliable low-latency links.
 - [**Accelerometer**](../../concepts/accelerometer/en.md): *sensor that detects motion, shakes, and the pull of gravity on a device; microchip that measures changes in speed and tells a phone to rotate its screen* — An electromechanical sensor that measures proper acceleration—the physical acceleration experienced by an object relative to freefall, including the gravitational vector.

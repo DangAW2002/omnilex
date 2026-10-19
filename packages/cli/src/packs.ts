@@ -17,24 +17,24 @@ function packList(value?: string): string[] | undefined {
   return packs.length > 0 ? packs : undefined;
 }
 
-// Session layer: --pack replaces the selection, TERMBRIDGE_PACKS adds to it.
+// Session layer: --pack replaces the selection, OMNILEX_PACKS adds to it.
 function sessionLayer(pack?: string) {
   const explicit = packList(pack);
   if (explicit) return { source: '--pack', config: { packsReset: true, packs: explicit } };
-  const fromEnv = packList(process.env.TERMBRIDGE_PACKS);
-  if (fromEnv) return { source: 'TERMBRIDGE_PACKS', config: { packs: fromEnv } };
+  const fromEnv = packList(process.env.OMNILEX_PACKS);
+  if (fromEnv) return { source: 'OMNILEX_PACKS', config: { packs: fromEnv } };
   return undefined;
 }
 
 export async function openCliProject(options: CliProjectOptions = {}) {
-  const [{ openProject }, { nodeProjectFS, termbridgeHome }, { searchConfigHash }] = await Promise.all([
+  const [{ openProject }, { nodeProjectFS, omnilexHome }, { searchConfigHash }] = await Promise.all([
     import('@omnilex/core/dist/project.js'),
     import('@omnilex/core/dist/pack-install.js'),
     import('@omnilex/core/dist/search-config.js'),
   ]);
   const open = () => openProject(nodeProjectFS, {
     cwd: options.cwd || process.cwd(),
-    home: options.home || termbridgeHome(),
+    home: options.home || omnilexHome(),
     surface: 'cli',
     locale: options.locale,
     session: sessionLayer(options.pack),
@@ -64,7 +64,7 @@ export async function openCliStore(options: CliProjectOptions = {}) {
     import('@omnilex/core/dist/pack-install.js'),
   ]);
   const cacheDir = ctx.projectDir
-    ? path.join(ctx.projectDir, '.termbridge', '.cache')
+    ? path.join(ctx.projectDir, '.omnilex', '.cache')
     : path.join(ctx.home, 'cache');
   const store = new PackStore(nodePackIO, (message: string) => console.warn(pc.yellow(`⚠ ${message}`)), {
     manifest: ctx.manifest,
@@ -82,9 +82,9 @@ function fail(message: string): never {
 
 function scopeFile(ctx: any, scope: string | undefined): { scope: 'project' | 'user'; file: string; lockFile: string } {
   const chosen = scope === 'user' || scope === 'project' ? scope : ctx.projectDir ? 'project' : 'user';
-  if (chosen === 'project' && !ctx.projectDir) fail('Không có project (.termbridge/) ở đây; dùng --scope user / no project (.termbridge/) here; use --scope user');
+  if (chosen === 'project' && !ctx.projectDir) fail('Không có project (.omnilex/) ở đây; dùng --scope user / no project (.omnilex/) here; use --scope user');
   return chosen === 'project'
-    ? { scope: 'project', file: path.join(ctx.projectDir, '.termbridge', 'config.yaml'), lockFile: path.join(ctx.projectDir, '.termbridge', 'lock.json') }
+    ? { scope: 'project', file: path.join(ctx.projectDir, '.omnilex', 'config.yaml'), lockFile: path.join(ctx.projectDir, '.omnilex', 'lock.json') }
     : { scope: 'user', file: path.join(ctx.home, 'config.yaml'), lockFile: path.join(ctx.home, 'lock.json') };
 }
 
@@ -194,7 +194,7 @@ export function registerPackCommands(program: Command): void {
     .command('import')
     .description('Import CSV or TBX into concepts/ (always draft, drafted_by: import) or a project glossary')
     .requiredOption('--from <format>', 'csv | tbx')
-    .requiredOption('--into <dir>', 'concepts/ or .termbridge/glossary/')
+    .requiredOption('--into <dir>', 'concepts/ or .omnilex/glossary/')
     .option('--overwrite', 'Replace concept directories that already exist')
     .argument('<file>')
     .action(async (file: string, options: { from: string; into: string; overwrite?: boolean }) => {
@@ -207,13 +207,13 @@ export function registerPackCommands(program: Command): void {
         fail(error.message);
       }
       const target = path.resolve(options.into);
-      const mode = target.split(path.sep).includes('.termbridge') ? 'glossary' : 'repository';
+      const mode = target.split(path.sep).includes('.omnilex') ? 'glossary' : 'repository';
       const result = exchange.writeConcepts(rows, target, { mode, overwrite: options.overwrite });
-      console.log(pc.bold(`\nTermbridge import (${options.from} → ${options.into}, ${mode === 'repository' ? 'draft, drafted_by: import' : 'glossary'}):\n`));
+      console.log(pc.bold(`\nOmniLex import (${options.from} → ${options.into}, ${mode === 'repository' ? 'draft, drafted_by: import' : 'glossary'}):\n`));
       for (const id of result.written) console.log(`  ${pc.green('ghi / wrote')} ${id}`);
       for (const line of result.skipped) console.log(`  ${pc.dim(line)}`);
       for (const line of result.errors) console.log(`  ${pc.red(line)}`);
-      if (mode === 'repository' && result.written.length) console.log(pc.dim('\n  Tiếp theo / next: pnpm tb validate --strict'));
+      if (mode === 'repository' && result.written.length) console.log(pc.dim('\n  Tiếp theo / next: pnpm ol validate --strict'));
       console.log('');
       if (result.errors.length) process.exitCode = 1;
     });
@@ -227,7 +227,7 @@ export function registerPackCommands(program: Command): void {
       const ctx = await openCliProject();
       const overlay = ctx.overlay;
       if (!ctx.overlayPath || (!Object.keys(overlay.concepts).length && !overlay.exclude.length && !Object.keys(overlay.prefer).length)) {
-        console.log(pc.yellow('\nKhông có overlay / no overlay (.termbridge/overrides.yaml)\n'));
+        console.log(pc.yellow('\nKhông có overlay / no overlay (.omnilex/overrides.yaml)\n'));
         return;
       }
       console.log(pc.bold(`\nBản nháp thay đổi cho concepts/ từ ${ctx.overlayPath}:\n`));
@@ -245,7 +245,7 @@ export function registerPackCommands(program: Command): void {
       for (const [key, id] of Object.entries(overlay.prefer)) {
         console.log(`  prefer ${key} → ${id}: cân nhắc qualifier hoặc confusable_notes cho các nghĩa của "${key}" / consider qualifiers or confusable_notes`);
       }
-      console.log(pc.dim('\n  Sửa thủ công rồi chạy pnpm tb validate --strict; khái niệm vẫn ở status hiện tại / edit by hand, then validate\n'));
+      console.log(pc.dim('\n  Sửa thủ công rồi chạy pnpm ol validate --strict; khái niệm vẫn ở status hiện tại / edit by hand, then validate\n'));
     });
 
   program
@@ -269,7 +269,7 @@ export function registerPackCommands(program: Command): void {
       console.log(pc.green(`\n✔ registry.json: ${Object.keys(registry.packs).length} gói / packs → ${path.join(outDir, 'registry.json')}\n`));
     });
 
-  const configCmd = program.command('config').description('Inspect the layered Termbridge configuration');
+  const configCmd = program.command('config').description('Inspect the layered OmniLex configuration');
   configCmd
     .command('explain')
     .description('Print the effective configuration and where every value comes from')
@@ -331,7 +331,7 @@ export function registerPackCommands(program: Command): void {
   packCmd
     .command('add <spec>')
     .description('Add a pack (id[@range], ./x.tbpack or https://…/x.tbpack) to the project or user configuration and install it')
-    .option('-s, --scope <scope>', 'project | user (default: project when .termbridge/ exists)')
+    .option('-s, --scope <scope>', 'project | user (default: project when .omnilex/ exists)')
     .option('-f, --from <dir>', 'Built dist/ directory to install from')
     .action(async (spec: string, options: { scope?: string; from?: string }) => {
       const install = await import('@omnilex/core/dist/pack-install.js');
@@ -340,7 +340,7 @@ export function registerPackCommands(program: Command): void {
       let installed: any[] = [];
       let { id, range } = splitSpec(spec);
       let fromDev = false;
-      if (/\.tbpack$/i.test(spec) || /^https?:\/\//i.test(spec)) {
+      if (/\.(olpack|tbpack)$/i.test(spec) || /^https?:\/\//i.test(spec)) {
         // A .tbpack file or URL: checked and unpacked into the store as is.
         const [{ fetchBytes }, { importTbpack }] = await Promise.all([
           import('@omnilex/core/dist/registry.js'),
@@ -381,7 +381,7 @@ export function registerPackCommands(program: Command): void {
   packCmd
     .command('remove <id>')
     .description('Remove a pack from the project or user configuration')
-    .option('-s, --scope <scope>', 'project | user (default: project when .termbridge/ exists)')
+    .option('-s, --scope <scope>', 'project | user (default: project when .omnilex/ exists)')
     .action(async (id: string, options: { scope?: string }) => {
       const install = await import('@omnilex/core/dist/pack-install.js');
       const ctx = await openCliProject();
@@ -550,8 +550,8 @@ export function registerPackCommands(program: Command): void {
     .description('Delete store copies no registered project references')
     .action(async () => {
       const install = await import('@omnilex/core/dist/pack-install.js');
-      const result = install.pruneStore(install.termbridgeHome());
-      console.log(pc.bold('\nTermbridge pack prune:\n'));
+      const result = install.pruneStore(install.omnilexHome());
+      console.log(pc.bold('\nOmniLex pack prune:\n'));
       for (const name of result.removed) console.log(`  ${pc.red('xóa / removed')} ${name}`);
       for (const name of result.kept) console.log(`  ${pc.green('giữ / kept')} ${name}`);
       for (const dir of result.forgotten) console.log(`  ${pc.dim('bỏ project / forgot')} ${dir}`);

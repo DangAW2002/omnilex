@@ -1,4 +1,4 @@
-# Báo cáo Wave 3: Khái niệm Lập trình và Kỹ thuật Phần mềm (34 khái niệm)
+﻿# Báo cáo Wave 3: Khái niệm Lập trình và Kỹ thuật Phần mềm (34 khái niệm)
 
 Trạng thái: **hoàn tất bản thảo draft** (2026-10-17). Mọi khái niệm đều giữ đúng `status: draft` và `provenance.drafted_by: ai` theo nghiêm ngặt quy định AGENTS.md. Không thực hiện nâng trạng thái lên reviewed/verified.
 

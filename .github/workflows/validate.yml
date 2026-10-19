@@ -35,11 +35,11 @@ jobs:
       - name: Run Unit Tests
         run: pnpm test
 
-      - name: Run Termbridge Validation (Strict)
-        run: pnpm tb validate --strict
+      - name: Run OmniLex Validation (Strict)
+        run: pnpm ol validate --strict
 
       - name: Build site
-        run: pnpm --filter @termbridge/site build
+        run: pnpm --filter @omnilex/site build
 
       - name: Check for uncommitted build drift
         run: |

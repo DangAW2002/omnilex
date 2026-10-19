@@ -1,4 +1,4 @@
-# Ghi chú thiết kế WP2: Schema, Validator, Nguồn dẫn chứng và Autolink
+﻿# Ghi chú thiết kế WP2: Schema, Validator, Nguồn dẫn chứng và Autolink
 
 ## 1. Mục tiêu và phạm vi
 Triển khai hạ tầng schema mới, kiểm tra tính toàn vẹn và nguồn dẫn chứng có cấu trúc:

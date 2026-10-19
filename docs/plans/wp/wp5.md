@@ -1,4 +1,4 @@
-# Ghi chú thiết kế WP5: Định dạng gói + chỉ mục dựng sẵn + manifest
+﻿# Ghi chú thiết kế WP5: Định dạng gói + chỉ mục dựng sẵn + manifest
 
 Tham chiếu: Kế hoạch 1.3, 1.4d, 3.2, 3.10, D5; bàn giao 6.2 (T-S1..T-S4), 6.4 (T-P1, T-P5, T-P8).
 
@@ -136,7 +136,7 @@ export function readExplanation(io: PackIO, id: string, locale: string): Explana
 
 - `findInPacks` nạp shard của từng gói (`loadSearchIndex`) rồi gộp kết quả theo `score`, sau đó áp ngưỡng `≥ 0,35 × điểm cao nhất` và lấy top 5 như hiện tại.
 - Lệch `configHash` (T-S2): dựng lại chỉ mục từ `cards.json` của gói đó và cảnh báo một lần. Không dùng shard lệch.
-- `formatVersion` 0: không có manifest nhưng có `dist/<locale>/search.json`, nên đi đường cũ. `formatVersion` > 1: bỏ qua và báo "cần cập nhật Termbridge" một lần.
+- `formatVersion` 0: không có manifest nhưng có `dist/<locale>/search.json`, nên đi đường cũ. `formatVersion` > 1: bỏ qua và báo "cần cập nhật OMNILEX" một lần.
 - `readExplanation` đọc `dist/<locale>/concepts/<id>.json` (một file nhỏ) thay vì parse cả JSONL. JSONL dành cho kho gói ở WP6, nơi không còn thư mục `concepts/`.
 
 ### 3.7 Bề mặt

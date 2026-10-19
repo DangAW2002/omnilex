@@ -146,7 +146,7 @@ export function buildArtifacts(repoData: RepositoryData): BuildOutputs {
     for (const domain of domainsConfig.domains) {
       const records = domainMap.get(domain.id) || [];
       const domainTitle = domain.name[locale] || domain.name.en || domain.id;
-      let mdContent = `# Termbridge Index: ${domainTitle} (${locale})\n\n`;
+      let mdContent = `# OmniLex Index: ${domainTitle} (${locale})\n\n`;
 
       if (records.length === 0) {
         mdContent += `*No concepts currently indexed in this domain.*\n`;
@@ -167,7 +167,7 @@ export function buildArtifacts(repoData: RepositoryData): BuildOutputs {
     }
 
     // Write indexes/<locale>/_all.md
-    let allMdContent = `# Termbridge Master Index (${locale})\n\n`;
+    let allMdContent = `# OmniLex Master Index (${locale})\n\n`;
     for (const item of allConceptsInLocale) {
       const rec = item.record;
       const e = rec.locales[locale] || rec.locales[localesConfig.pivot];
@@ -339,9 +339,9 @@ export function buildArtifacts(repoData: RepositoryData): BuildOutputs {
   distGenerated.push(graphPath);
 
   // 3. Generate llms.txt at root
-  const llmsTxtContent = `# Termbridge Knowledge Repository Map for LLMs
+  const llmsTxtContent = `# OmniLex Knowledge Repository Map for LLMs
 
-> Termbridge is an open-source multilingual, multi-domain terminology repository.
+> OmniLex is an open-source multilingual, multi-domain terminology repository.
 > Source of truth: YAML/Markdown files in Git.
 > Standard workflow: Read index files first, then open targeted concepts.
 

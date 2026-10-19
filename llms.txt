@@ -1,6 +1,6 @@
-# Termbridge Knowledge Repository Map for LLMs
+# OmniLex Knowledge Repository Map for LLMs
 
-> Termbridge is an open-source multilingual, multi-domain terminology repository.
+> OmniLex is an open-source multilingual, multi-domain terminology repository.
 > Source of truth: YAML/Markdown files in Git.
 > Standard workflow: Read index files first, then open targeted concepts.
 

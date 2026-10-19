@@ -6,11 +6,11 @@ import { fileURLToPath } from 'node:url';
 import { loadAll, buildArtifacts } from '@omnilex/core';
 import { findAction } from '../src/index.js';
 
-// No .termbridge/ above cwd and an empty home: only the layout under test is read.
-const emptyHome = fs.mkdtempSync(path.join(os.tmpdir(), 'tb-cli-home-'));
-process.env.TERMBRIDGE_HOME = emptyHome;
+// No .omnilex/ above cwd and an empty home: only the layout under test is read.
+const emptyHome = fs.mkdtempSync(path.join(os.tmpdir(), 'ol-cli-home-'));
+process.env.OMNILEX_HOME = emptyHome;
 
-describe('T-S3: tb find does not call loadAll() when dist is fresh', () => {
+describe('T-S3: ol find does not call loadAll() when dist is fresh', () => {
   const fakeDocs = [
     {
       id: 'compound-interest',

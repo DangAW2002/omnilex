@@ -1,5 +1,5 @@
 // Node side of the pack store (Plan 3.4): installing into
-// $TERMBRIDGE_HOME/store, lockfiles, the project registry and pruning.
+// $OMNILEX_HOME/store, lockfiles, the project registry and pruning.
 import crypto from 'node:crypto';
 import fs from 'node:fs';
 import os from 'node:os';
@@ -18,16 +18,11 @@ import {
 } from './project.js';
 import { maxSatisfying } from './semver.js';
 
-export function termbridgeHome(env: NodeJS.ProcessEnv = process.env): string {
+export function omnilexHome(env: NodeJS.ProcessEnv = process.env): string {
   if (env.OMNILEX_HOME) return toPosix(env.OMNILEX_HOME);
-  if (env.TERMBRIDGE_HOME) return toPosix(env.TERMBRIDGE_HOME);
   const omnilexPath = path.join(os.homedir(), '.omnilex');
-  const termbridgePath = path.join(os.homedir(), '.termbridge');
-  if (fs.existsSync(omnilexPath)) return toPosix(omnilexPath);
-  if (fs.existsSync(termbridgePath)) return toPosix(termbridgePath);
   return toPosix(omnilexPath);
 }
-export const omnilexHome = termbridgeHome;
 
 export const nodeProjectFS: ProjectFS = {
   async read(file) {
@@ -301,7 +296,7 @@ export function pruneStore(home: string): { removed: string[]; kept: string[]; f
   if (forgotten.length) fs.writeFileSync(file, `${JSON.stringify({ projects: alive }, null, 2)}\n`, 'utf-8');
 
   const referenced = new Set<string>();
-  for (const lockFile of [path.join(home, 'lock.json'), ...alive.map((dir) => path.join(dir, '.termbridge', 'lock.json'))]) {
+  for (const lockFile of [path.join(home, 'lock.json'), ...alive.map((dir) => path.join(dir, '.omnilex', 'lock.json'))]) {
     for (const entry of Object.values(readLockFile(lockFile).packs)) referenced.add(entry.store);
   }
   const storeDir = path.join(home, 'store');

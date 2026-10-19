@@ -1,7 +1,7 @@
-# Báo cáo WP0: Benchmark + ngân sách hiệu năng + test vàng của mod + script check:deterministic
+﻿# Báo cáo WP0: Benchmark + ngân sách hiệu năng + test vàng của mod + script check:deterministic
 
 ## Tóm tắt
-Đã thiết lập toàn bộ hạ tầng đo lường hiệu năng và bảo đảm tính xác định của build cho repo Termbridge. Giải quyết triệt để 3 việc còn mở O-1, O-2, O-3: chốt lệnh test mod là `claude plugin test packages/claude-mod`, chuẩn hóa xuống dòng LF với `.gitattributes` và `git add --renormalize .`, xác nhận nhánh làm việc. Tạo bộ generator mock dataset xác định theo seed và runner benchmark đo đạc các chỉ số theo bảng 1.7, tạo script `check:deterministic` kiểm tra 2 lần build sha256 và xây dựng test suite vàng 30 câu mẫu cho claude-mod.
+Đã thiết lập toàn bộ hạ tầng đo lường hiệu năng và bảo đảm tính xác định của build cho repo OMNILEX. Giải quyết triệt để 3 việc còn mở O-1, O-2, O-3: chốt lệnh test mod là `claude plugin test packages/claude-mod`, chuẩn hóa xuống dòng LF với `.gitattributes` và `git add --renormalize .`, xác nhận nhánh làm việc. Tạo bộ generator mock dataset xác định theo seed và runner benchmark đo đạc các chỉ số theo bảng 1.7, tạo script `check:deterministic` kiểm tra 2 lần build sha256 và xây dựng test suite vàng 30 câu mẫu cho claude-mod.
 
 ## Thay đổi
 | File | Loại | Ghi chú |
@@ -37,7 +37,7 @@
 | `pnpm test` | Pass | `Test Files 5 passed (5) | Tests 29 passed (29)` |
 | `claude plugin test packages/claude-mod` | Pass | `10 pass, 0 fail. Ran 10 tests across 2 files.` |
 | `pnpm tb validate --strict` | Pass | `✔ Validation passed successfully!` |
-| `pnpm --filter @termbridge/site build` | Pass | `25 page(s) built in 1.10s. Complete!` |
+| `pnpm --filter @omnilex/site build` | Pass | `25 page(s) built in 1.10s. Complete!` |
 | `pnpm tb build && git diff --exit-code indexes/ llms.txt` | Pass | Output sạch, không có cảnh báo LF/CRLF và không có drift |
 | `pnpm check:deterministic` | Pass | `✔ Build is 100% deterministic! All 47 artifacts have identical sha256 hashes across builds.` |
 | `pnpm bench:check` | Pass | `✔ Scale 1000 PASSED all performance gates.` |

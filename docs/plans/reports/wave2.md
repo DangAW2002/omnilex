@@ -1,4 +1,4 @@
-# Báo cáo WP8, wave 2: mở rộng mọi lĩnh vực (294 khái niệm)
+﻿# Báo cáo WP8, wave 2: mở rộng mọi lĩnh vực (294 khái niệm)
 
 Trạng thái: **đã commit và merge vào `master`** (tag `wave2-checkpoint-325`). Mọi khái niệm vẫn là `status: draft`, `provenance.drafted_by: ai`; chưa khái niệm nào được nâng trạng thái.
 

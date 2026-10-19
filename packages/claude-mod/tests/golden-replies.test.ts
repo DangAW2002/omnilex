@@ -234,7 +234,7 @@ export const GOLDEN_REPLIES = [
 test('T-X2: Golden Test Suite runs all 30 Claude-style replies in hover mode', async ($, on) => {
   setup(on)
   await $.session.start({ surface: 'terminal', isInteractive: true, cwd: '/work' })
-  await $.command.run({ command: 'termbridge', args: 'mode hover' })
+  await $.command.run({ command: 'omnilex', args: 'mode hover' })
 
   let totalTermsFound = 0
 
@@ -270,7 +270,7 @@ test('T-X2: Golden Test Suite runs all 30 Claude-style replies in hover mode', a
 test('T-X2: Golden Test Suite runs all 30 Claude-style replies in links mode', async ($, on) => {
   setup(on)
   await $.session.start({ surface: 'terminal', isInteractive: true, cwd: '/work' })
-  await $.command.run({ command: 'termbridge', args: 'mode links' })
+  await $.command.run({ command: 'omnilex', args: 'mode links' })
 
   let totalLinks = 0
 
@@ -304,7 +304,7 @@ test('T-X2: Golden Test Suite runs all 30 Claude-style replies in links mode', a
 test('T-X2: Golden Test Suite runs all 30 Claude-style replies in badges mode', async ($, on) => {
   setup(on)
   await $.session.start({ surface: 'terminal', isInteractive: true, cwd: '/work' })
-  await $.command.run({ command: 'termbridge', args: 'mode badges' })
+  await $.command.run({ command: 'omnilex', args: 'mode badges' })
 
   let repliesWithBadges = 0
 

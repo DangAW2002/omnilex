@@ -1,4 +1,4 @@
-# Ghi chú thiết kế WP3: Mở rộng Taxonomy (it, iot, product)
+﻿# Ghi chú thiết kế WP3: Mở rộng Taxonomy (it, iot, product)
 
 ## 1. Mục tiêu và phạm vi
 Triển khai mở rộng phân loại học (taxonomy) chuẩn bị cho việc bổ sung từ vựng công nghệ quy mô lớn (theo Mục 2.1 của Kế hoạch):

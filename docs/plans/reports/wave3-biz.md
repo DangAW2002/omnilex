@@ -1,4 +1,4 @@
-# Báo cáo Wave 3: Lô Biz (18 khái niệm)
+﻿# Báo cáo Wave 3: Lô Biz (18 khái niệm)
 
 Trạng thái: **hoàn thành soạn thảo và vượt qua toàn bộ cổng kiểm thử** (2026-10-17).
 Tất cả 18 khái niệm đều ở `status: draft`, `provenance: { drafted_by: ai }`.

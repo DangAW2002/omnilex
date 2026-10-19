@@ -1,4 +1,4 @@
-# Báo cáo Lô Wave 2: meda — Báo chí và Sản xuất Truyền thông (25 khái niệm)
+﻿# Báo cáo Lô Wave 2: meda — Báo chí và Sản xuất Truyền thông (25 khái niệm)
 
 Trạng thái: **hoàn thành và sẵn sàng duyệt** (2026-10-17). Toàn bộ 25 khái niệm đều tuân thủ nghiêm ngặt `status: draft`, `provenance.drafted_by: ai`.
 

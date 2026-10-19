@@ -31,4 +31,4 @@ HTML sử dụng hệ thống các thẻ được đặt trong dấu ngoặc nh�
 Ngôn ngữ đánh dấu siêu văn bản cung cấp tập hợp phần tử và thuộc tính chuẩn để trình duyệt phân tích thành cấu trúc tài liệu phân cấp.
 
 ## Ví dụ
-Đoạn mã <header><h1>Termbridge</h1><nav><a href="/about">Giới thiệu</a></nav></header> tạo ra phần đầu trang chứa tiêu đề lớn và đường dẫn định hướng.
+Đoạn mã <header><h1>OmniLex</h1><nav><a href="/about">Giới thiệu</a></nav></header> tạo ra phần đầu trang chứa tiêu đề lớn và đường dẫn định hướng.

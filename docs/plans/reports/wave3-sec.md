@@ -1,4 +1,4 @@
-# Báo cáo Wave 3: Lô An toàn thông tin / Security (30 khái niệm)
+﻿# Báo cáo Wave 3: Lô An toàn thông tin / Security (30 khái niệm)
 
 Trạng thái: **hoàn thành soạn thảo và vượt qua toàn bộ cổng kiểm thử** (2026-10-17).  
 Tất cả 30 khái niệm đều ở `status: draft`, `provenance: { drafted_by: ai }`.

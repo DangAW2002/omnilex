@@ -1,4 +1,4 @@
-# Báo cáo WP8, wave 3: Khái niệm Dữ liệu & Cơ sở dữ liệu (37 khái niệm)
+﻿# Báo cáo WP8, wave 3: Khái niệm Dữ liệu & Cơ sở dữ liệu (37 khái niệm)
 
 Trạng thái: **đã soạn xong và vượt qua toàn bộ các cổng kiểm định** (2026-10-17).
 Tất cả khái niệm giữ nguyên `status: draft`, `provenance.drafted_by: ai`.

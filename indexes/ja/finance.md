@@ -1,4 +1,4 @@
-# Termbridge Index: Finance (ja)
+# OmniLex Index: Finance (ja)
 
 - [**Accrual accounting**](../../concepts/accrual-accounting/en.md): *accounting standard recording sales when earned and costs when incurred, not when cash changes hands; financial reporting principle linking revenues with related expenses regardless of payment dates* — The financial reporting method recording revenues when earned and expenses when incurred, regardless of the timing of cash receipts or disbursements.
 - [**Asset (Accounting)**](../../concepts/asset/en.md): *anything of economic value owned or controlled by a person or company; valuable resource expected to generate future financial benefits or cash* — A present economic resource controlled by an entity as a result of past events from which future economic benefits are expected to flow.

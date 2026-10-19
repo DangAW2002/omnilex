@@ -1,6 +1,6 @@
-# Báo cáo Wave 2: Lô medb - Tiếp thị kỹ thuật số và Truyền thông (24 khái niệm)
+﻿# Báo cáo Wave 2: Lô medb - Tiếp thị kỹ thuật số và Truyền thông (24 khái niệm)
 
-Trạng thái: **Hoàn tất biên soạn và vượt qua toàn bộ cổng kiểm tra chất lượng** (2026-10-16). Toàn bộ 24 khái niệm được giữ nguyên ở trạng thái `status: draft`, `provenance.drafted_by: ai` theo đúng quy định phân quyền của Termbridge.
+Trạng thái: **Hoàn tất biên soạn và vượt qua toàn bộ cổng kiểm tra chất lượng** (2026-10-16). Toàn bộ 24 khái niệm được giữ nguyên ở trạng thái `status: draft`, `provenance.drafted_by: ai` theo đúng quy định phân quyền của OMNILEX.
 
 ## Danh sách khái niệm
 | id | Nhóm | Nhãn en | Nhãn vi | Level | Nguồn A/B (definition) | Bằng chứng nhãn vi |

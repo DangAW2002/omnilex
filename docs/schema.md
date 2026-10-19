@@ -1,6 +1,6 @@
-# Termbridge Data Schema Reference
+# OmniLex Data Schema Reference
 
-This document describes the schema specifications for all canonical files in the Termbridge repository.
+This document describes the schema specifications for all canonical files in the OmniLex repository.
 
 ## 1. Concept Definition (`concepts/<id>/concept.yaml`)
 
@@ -18,7 +18,7 @@ Each concept is stored in a flat directory under `concepts/` using its immutable
 | `relations.related` | string[] | No | Other related concepts. |
 | `status` | enum | Yes | `draft` \| `reviewed` \| `verified` \| `deprecated`. |
 | `provenance` | object | Yes | Audit metadata: `drafted_by`; `reviewed_by` and `reviewed_at` are required for `reviewed` or `verified`. Reviewers must be listed for every domain in `config/reviewers.yaml`. |
-| `sources` | (string \| object)[] | Yes | Structured evidence entries referencing `config/sources.yaml` (`ref`, `locator`, `title`, `language`, `accessed`, `supports`, `quote`, `archive`). String URLs are supported for backward compatibility and can be migrated using `tb sources migrate`. |
+| `sources` | (string \| object)[] | Yes | Structured evidence entries referencing `config/sources.yaml` (`ref`, `locator`, `title`, `language`, `accessed`, `supports`, `quote`, `archive`). String URLs are supported for backward compatibility and can be migrated using `ol sources migrate`. |
 | `replaced_by` | string | No | Concept ID pointing to replacement when deprecated. |
 
 ## 2. Localized Content (`concepts/<id>/<locale>.md`)
@@ -71,7 +71,7 @@ Body Sections:
 
 ## 4. Build Packs (`dist/manifest.json`, `dist/packs/<pack-id>/`)
 
-`tb build` splits the built data into packs (Plan 3.2, decision D5). Packs are generated artifacts: never edit them by hand. JSON schemas: `schema/manifest.schema.json`, `schema/pack.schema.json`.
+`ol build` splits the built data into packs (Plan 3.2, decision D5). Packs are generated artifacts: never edit them by hand. JSON schemas: `schema/manifest.schema.json`, `schema/pack.schema.json`.
 
 **Pack ids.** A concept belongs to exactly one content pack, chosen by its primary domain (`domains[0]`):
 
@@ -99,24 +99,24 @@ dist/packs/<pack-id>/<locale>/explanations.jsonl # tier "explanations": one conc
 
 **Readers.** CLI, MCP and site read packs through `PackStore` (`packages/core/src/pack-reader.ts`), which takes an I/O adapter and uses no Node APIs:
 
-- Search uses the combined `dist/<locale>/search-index.json` when every content pack is selected, so ranking matches a single corpus; a subset (`tb find --pack …`) searches the shards of those packs.
+- Search uses the combined `dist/<locale>/search-index.json` when every content pack is selected, so ranking matches a single corpus; a subset (`ol find --pack …`) searches the shards of those packs.
 - Key merging across packs (`mergeTerms`) and the "no autolink for a key with several concepts" rule run at load time.
 - `formatVersion` 1 is read; a missing manifest means the legacy flat layout (`dist/<locale>/search.json`, version 0); a newer version is skipped with one notice.
 - A search index whose `configHash` differs from the current search configuration is rebuilt from `cards.json`, with one notice.
 
-## 5. Project Configuration (`.termbridge/`)
+## 5. Project Configuration (`.omnilex/`)
 
 Layered configuration, lockfile and shared store (Plan 3.3-3.4). Readers resolve it through `openProject` (`packages/core/src/project.ts`), the same code for CLI, MCP and the Claude Code mod.
 
 | File | Committed | Purpose |
 |---|---|---|
-| `.termbridge/config.yaml` | Yes | Project layer. `root: true` stops the upward search. |
-| `.termbridge/config.local.yaml` | No | Personal layer on top of the project. |
-| `.termbridge/lock.json` | Yes | Exact store copies: `version`, `sha256` of `pack.json`, `store` directory, and the sha256 of every tier file per locale. |
-| `.termbridge/.cache/` | No | Search indexes built for a subset of packs. |
-| `$TERMBRIDGE_HOME/config.yaml` | – | User layer (default `~/.termbridge`). |
-| `$TERMBRIDGE_HOME/store/<id>@<version>-<sha8>/` | – | Installed packs, read-only, shared by all projects. |
-| `$TERMBRIDGE_HOME/projects.json` | – | Projects whose locks `tb pack prune` keeps. |
+| `.omnilex/config.yaml` | Yes | Project layer. `root: true` stops the upward search. |
+| `.omnilex/config.local.yaml` | No | Personal layer on top of the project. |
+| `.omnilex/lock.json` | Yes | Exact store copies: `version`, `sha256` of `pack.json`, `store` directory, and the sha256 of every tier file per locale. |
+| `.omnilex/.cache/` | No | Search indexes built for a subset of packs. |
+| `$OMNILEX_HOME/config.yaml` | – | User layer (default `~/.omnilex`). |
+| `$OMNILEX_HOME/store/<id>@<version>-<sha8>/` | – | Installed packs, read-only, shared by all projects. |
+| `$OMNILEX_HOME/projects.json` | – | Projects whose locks `ol pack prune` keeps. |
 
 Config keys: `root`, `locale`, `fallbackLocales`, `profile` (`lite` \| `standard` \| `semantic`), `packs` (`+id[@range]`, `-id`, `id`, `dev:<dist dir>`; `local:<dir>` is reserved for WP7), `packsReset`, `tiers.explanations` (`eager` \| `lazy` \| `remote` \| `off`), `tiers.vectors`, `limits.memoryMB`, `limits.diskMB`, `autoInstall`, `registries`, `overrides`. Unknown keys and invalid values are warnings.
 
@@ -126,11 +126,11 @@ Load plan per profile: `lite` loads terms and cards; `standard` adds the search 
 
 ## 6. Exchange Formats
 
-**`.tbpack`** is a zip of one pack directory: `pack.json` at the root, `attributions.json`, and `<locale>/{terms.json,cards.json,search-index.json,explanations.jsonl}`. Importing refuses anything else: names outside that list, `..`, absolute or drive paths, backslashes, symlink and directory entries, encrypted or ZIP64 entries, entries over 64 MB or packages over 256 MB, sizes that differ from the headers (zip bombs), a `pack.json` that fails `schema/pack.schema.json`, files not declared in `pack.json`, wrong sha256 or byte counts, malformed JSON, and a file sha256 that differs from the registry or lockfile. Files are unpacked into a temporary store directory and renamed into place only after every check.
+**`.olpack` / `.tbpack`** is a zip of one pack directory: `pack.json` at the root, `attributions.json`, and `<locale>/{terms.json,cards.json,search-index.json,explanations.jsonl}`. Importing refuses anything else: names outside that list, `..`, absolute or drive paths, backslashes, symlink and directory entries, encrypted or ZIP64 entries, entries over 64 MB or packages over 256 MB, sizes that differ from the headers (zip bombs), a `pack.json` that fails `schema/pack.schema.json`, files not declared in `pack.json`, wrong sha256 or byte counts, malformed JSON, and a file sha256 that differs from the registry or lockfile. Files are unpacked into a temporary store directory and renamed into place only after every check.
 
 **`attributions.json`** (in every content pack, hashed in `pack.json`): one entry per `reuse: adapt` source the pack's concepts draw on: `ref`, `title`, `publisher`, `url`, `license`, `license_evidence`, `concepts`.
 
-**`registry.json`**: `{ registryVersion: 1, name?, official?, packs: { <id>: { versions: { <version>: { url, sha256, bytes, formatVersion } } } } }`; `url` may be relative to the registry. Lockfile entries installed from a registry or a `.tbpack` record it as `origin`.
+**`registry.json`**: `{ registryVersion: 1, name?, official?, packs: { <id>: { versions: { <version>: { url, sha256, bytes, formatVersion } } } } }`; `url` may be relative to the registry. Lockfile entries installed from a registry or a `.olpack` record it as `origin`.
 
 **CSV** (one row per concept and locale with its own content): `id, locale, label, qualifier, aliases, loanwords, plain_descriptions, summary, domains, level, body, locale_extra, concept_extra`. Lists are separated by ` | `; `locale_extra` and `concept_extra` hold the remaining frontmatter and concept metadata as JSON so a round trip loses nothing. Importing into `concepts/` writes `status: draft` and `provenance: { drafted_by: import }` and refuses concepts without sources (rule 17) or without label, summary and plain descriptions.
 
@@ -138,6 +138,6 @@ Load plan per profile: `lite` loads terms and cards; `standard` adds the search 
 
 **JSONL**: one JSON object per CSV row, for ML/RAG pipelines.
 
-**Overlay** (`.termbridge/overrides.yaml`, or the `overrides` config key): `concepts.<id>.autolink` (`always` | `never` | `auto`), `concepts.<id>.aliases.<locale>` (`+alias` adds, `-alias` removes), `exclude` (ids hidden in the project), `prefer` (key → id for homonyms). Applied when packs load; explanations never change.
+**Overlay** (`.omnilex/overrides.yaml`, or the `overrides` config key): `concepts.<id>.autolink` (`always` | `never` | `auto`), `concepts.<id>.aliases.<locale>` (`+alias` adds, `-alias` removes), `exclude` (ids hidden in the project), `prefer` (key → id for homonyms). Applied when packs load; explanations never change.
 
-**Local glossary**: `packs: [local:<dir>]` builds `<dir>` (concept folders as in `concepts/`) into `.termbridge/.cache/local/<name>/` as pack `local.<name>`, again whenever a file in `<dir>` changes. The mod reads the built copy only.
+**Local glossary**: `packs: [local:<dir>]` builds `<dir>` (concept folders as in `concepts/`) into `.omnilex/.cache/local/<name>/` as pack `local.<name>`, again whenever a file in `<dir>` changes. The mod reads the built copy only.

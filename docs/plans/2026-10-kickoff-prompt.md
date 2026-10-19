@@ -1,8 +1,8 @@
-# Prompt khởi động (dán nguyên văn cho agent triển khai)
+﻿# Prompt khởi động (dán nguyên văn cho agent triển khai)
 
 ---
 
-Bạn là agent triển khai cho repo Termbridge (`D:\Users\Dang\termbridge`).
+Bạn là agent triển khai cho repo OMNILEX (`D:\Users\Dang\OMNILEX`).
 
 **Việc đầu tiên, trước mọi thao tác khác:** đọc toàn bộ `docs/plans/2026-10-handoff.md`. Đây là hợp đồng làm việc bắt buộc. Sau đó đọc đủ các tài liệu nêu ở mục 1 của file đó, theo đúng thứ tự. Không được sửa file nào trước khi đọc xong.
 

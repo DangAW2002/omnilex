@@ -100,12 +100,12 @@ export class PackStore {
       manifest = parseJson(raw);
     }
     if (!manifest || typeof manifest.formatVersion !== 'number' || !Array.isArray(manifest.packs)) {
-      this.notice('Termbridge: dist/manifest.json không hợp lệ, dùng dữ liệu cũ / invalid dist/manifest.json, using legacy data');
+      this.notice('OmniLex: dist/manifest.json không hợp lệ, dùng dữ liệu cũ / invalid dist/manifest.json, using legacy data');
       return;
     }
     this.formatVersion = manifest.formatVersion;
     if (manifest.formatVersion > PACK_FORMAT_VERSION) {
-      this.notice(`Termbridge: dữ liệu dùng formatVersion ${manifest.formatVersion}, cần cập nhật Termbridge / data uses formatVersion ${manifest.formatVersion}, please update Termbridge`);
+      this.notice(`OmniLex: dữ liệu dùng formatVersion ${manifest.formatVersion}, cần cập nhật OmniLex / data uses formatVersion ${manifest.formatVersion}, please update OmniLex`);
       return;
     }
     this.manifest = manifest;
@@ -140,10 +140,10 @@ export class PackStore {
     const pack: PackJson | undefined = entry ? parseJson(this.io.readText(entry.path)) : undefined;
     let result: PackJson | null = pack || null;
     if (pack && pack.formatVersion > PACK_FORMAT_VERSION) {
-      this.notice(`Termbridge: gói ${id} cần Termbridge mới hơn, bỏ qua / pack ${id} needs a newer Termbridge, skipped`);
+      this.notice(`OmniLex: gói ${id} cần OmniLex mới hơn, bỏ qua / pack ${id} needs a newer OmniLex, skipped`);
       result = null;
     } else if (!pack && entry) {
-      this.notice(`Termbridge: không đọc được gói ${id} / cannot read pack ${id}`);
+      this.notice(`OmniLex: không đọc được gói ${id} / cannot read pack ${id}`);
     }
     this.packs.set(id, result);
     return result;
@@ -155,7 +155,7 @@ export class PackStore {
       this.manifest,
       selection,
       (id) => Object.keys(this.pack(id)?.requires || {}),
-      (id) => this.notice(`Termbridge: không có gói ${id} / pack ${id} not found`)
+      (id) => this.notice(`OmniLex: không có gói ${id} / pack ${id} not found`)
     ).filter((id) => this.pack(id) !== null);
   }
 
@@ -203,7 +203,7 @@ export class PackStore {
         }
       }
     } else {
-      this.notice(`Termbridge: chỉ mục của gói ${packId} dựng bằng cấu hình tìm kiếm khác, đang dựng lại / search index of pack ${packId} was built with a different search config, rebuilding`);
+      this.notice(`OmniLex: chỉ mục của gói ${packId} dựng bằng cấu hình tìm kiếm khác, đang dựng lại / search index of pack ${packId} was built with a different search config, rebuilding`);
     }
     if (!index) index = createSearchIndex(this.cards(packId, locale).map(cardToSearchDoc));
     this.indexCache.set(key, index);
@@ -221,7 +221,7 @@ export class PackStore {
     let index: MiniSearch | null = null;
     const file = search.files[locale];
     if (this.manifest!.searchConfigHash !== this.configHash) {
-      this.notice('Termbridge: chỉ mục tìm kiếm dựng bằng cấu hình khác, đang dựng lại / search index was built with a different search config, rebuilding');
+      this.notice('OmniLex: chỉ mục tìm kiếm dựng bằng cấu hình khác, đang dựng lại / search index was built with a different search config, rebuilding');
     } else if (file) {
       const raw = this.io.readText(file.path);
       if (typeof raw === 'string') {

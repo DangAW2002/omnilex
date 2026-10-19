@@ -1,4 +1,4 @@
-# Báo cáo Wave 2, lô finb: Tài chính doanh nghiệp và Kinh tế học vĩ mô (27 khái niệm)
+﻿# Báo cáo Wave 2, lô finb: Tài chính doanh nghiệp và Kinh tế học vĩ mô (27 khái niệm)
 
 Trạng thái: **Đã hoàn thành soạn thảo toàn bộ (drafted by AI)**, sẵn sàng duyệt. Tất cả 27 khái niệm đều tuân thủ nghiêm ngặt quy định: `status: draft`, `provenance.drafted_by: ai`, không tự ý nâng hạng trạng thái.
 

@@ -1,18 +1,16 @@
 {
   "name": "@omnilex/cli",
   "version": "0.1.0",
-  "description": "ol and tb command line tool for OmniLex",
+  "description": "ol command line tool for OmniLex",
   "bin": {
-    "ol": "./dist/index.js",
-    "tb": "./dist/index.js"
+    "ol": "./dist/index.js"
   },
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
   "type": "module",
   "scripts": {
     "build": "tsc",
-    "ol": "node ./dist/index.js",
-    "tb": "node ./dist/index.js"
+    "ol": "node ./dist/index.js"
   },
   "dependencies": {
     "@omnilex/core": "workspace:*",

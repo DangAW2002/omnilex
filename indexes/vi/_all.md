@@ -1,4 +1,4 @@
-# Termbridge Master Index (vi)
+# OmniLex Master Index (vi)
 
 - [**5G**](../../concepts/5g/vi.md) [iot/connectivity-protocols]: *công nghệ mạng di động thế hệ thứ năm tốc độ cao và phản hồi tức thì, chuẩn viễn thông không dây hiện đại kết nối đồng thời cả điện thoại lẫn máy móc công nghiệp* — Thế hệ thứ năm của chuẩn mạng viễn thông di động, nổi bật với băng thông siêu rộng, độ trễ cực thấp và khả năng kết nối hàng triệu thiết bị trên mỗi kilômét vuông.
 - [**A/B testing**](../../concepts/ab-testing/vi.md) [product/metrics, media/digital-marketing/metrics-analytics]: *phương pháp thử nghiệm so sánh hai phiên bản giao diện để xem phiên bản nào đạt hiệu quả cao hơn, thí nghiệm chia ngẫu nhiên người dùng để đo lường xem thay đổi nào giúp tăng tỷ lệ chuyển đổi* — Phương pháp thử nghiệm ngẫu nhiên có đối chứng, trong đó hai biến thể giao diện được hiển thị đồng thời cho các nhóm người dùng khác nhau để tìm ra phương án tối ưu.

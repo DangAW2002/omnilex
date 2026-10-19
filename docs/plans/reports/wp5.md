@@ -1,4 +1,4 @@
-# Báo cáo WP5: Định dạng gói + chỉ mục dựng sẵn + manifest
+﻿# Báo cáo WP5: Định dạng gói + chỉ mục dựng sẵn + manifest
 
 ## Tóm tắt
 `tb build` xuất thêm `dist/manifest.json` và `dist/packs/<id>/`: gói nội dung theo nhánh cấp 2 (D5), `iot`/`product` mỗi gốc một gói, cùng meta-pack `it`, `finance` và `tech`. Mỗi gói có các tier `terms`, `cards`, `search` (chỉ mục MiniSearch dựng sẵn) và `explanations`, mỗi file có sha256 và số byte. CLI (`find`, `show`, thêm `--pack`), MCP và trang tìm kiếm của site giờ đọc gói qua một `PackStore` duy nhất, không gọi `loadAll()`. Ở 10.000 khái niệm, `tb find` lạnh giảm từ 564 ms xuống 99,8 ms (ngân sách ≤ 200 ms). MCP nóng giảm từ 15,9 ms xuống 10,7 ms, **vẫn vượt** ngân sách ≤ 10 ms (xem phần Hiệu năng). Mọi file đầu ra cũ giữ nguyên từng byte (71/71 sha256 khớp).
@@ -18,7 +18,7 @@
 | `packages/mcp/src/index.ts` | Sửa | `createToolHandler(rootDir, opts)`: không `loadAll()` lúc khởi động; một `PackStore` cho mỗi mtime của manifest; thông báo ra stderr |
 | `packages/site/src/pages/[locale]/index.astro` | Sửa | Bỏ JSON nhúng; `fetch` chỉ mục gộp (khi có truy vấn) và `cards.json` (khi duyệt) |
 | `packages/site/src/pages/data/**`, `src/lib/dist.ts` | Mới | Endpoint tĩnh xuất manifest và shard lúc build |
-| `packages/site/scripts/check-output.mjs`, `package.json` | Mới/Sửa | Kiểm T-P8 ngay sau `astro build`; site phụ thuộc workspace `@termbridge/core` |
+| `packages/site/scripts/check-output.mjs`, `package.json` | Mới/Sửa | Kiểm T-P8 ngay sau `astro build`; site phụ thuộc workspace `@omnilex/core` |
 | `bench/run.ts` | Sửa | Ghi dữ liệu bench thành dist dạng gói bằng chính builder; đo MCP qua `PackStore` |
 | `packages/core/test/packs.test.ts`, `search-config.test.ts` | Mới | T-P1, T-P5, T-S1, T-S2, T-S3/T-S4 ở mức store, các test tương đương |
 | `packages/cli/test/find.test.ts`, `packages/mcp/test/cache.test.ts` | Sửa | T-S3 và T-S4 qua gói; vẫn giữ test cho đường cũ |
@@ -37,13 +37,13 @@
 ## Cổng kiểm tra
 | Lệnh | Kết quả | Dòng tóm tắt nguyên văn |
 |---|---|---|
-| `pnpm install --frozen-lockfile` | Đạt | `Done in 297ms using pnpm v11.22.0` (lockfile đổi 3 dòng do thêm dependency workspace `@termbridge/core` cho site; không có thư viện bên ngoài mới) |
+| `pnpm install --frozen-lockfile` | Đạt | `Done in 297ms using pnpm v11.22.0` (lockfile đổi 3 dòng do thêm dependency workspace `@omnilex/core` cho site; không có thư viện bên ngoài mới) |
 | `pnpm typecheck` | Đạt | `$ tsc -b` (exit 0) |
 | `pnpm build` | Đạt | `✔ Successfully generated 22 index files and 140 dist artifacts` |
 | `pnpm test` | Đạt | `Test Files 16 passed (16)` / `Tests 87 passed (87)` |
 | `claude plugin test packages/claude-mod` | Đạt | `10 pass` / `0 fail` |
 | `pnpm tb validate --strict` | Đạt | `✔ Validation passed successfully!` |
-| `pnpm --filter @termbridge/site build` | Đạt | `T-P8: search page reads shards (no embedded search data)` |
+| `pnpm --filter @omnilex/site build` | Đạt | `T-P8: search page reads shards (no embedded search data)` |
 | `pnpm tb build && git diff --exit-code indexes/ llms.txt` | Đạt | diff rỗng (exit 0) |
 | `pnpm check:deterministic` | Đạt | `✔ Build is 100% deterministic! All 147 artifacts have identical sha256 hashes across builds.` |
 | `pnpm bench --sizes 1000 --check` | Đạt | `✔ Scale 1000 PASSED all performance gates.` |

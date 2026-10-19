@@ -172,7 +172,7 @@ export function toTbx(rows: ExchangeRow[], sourceLanguage = 'en'): string {
     `<tbx style="dca" type="TBX-Basic" xml:lang="${xmlEscape(sourceLanguage)}" xmlns="urn:iso:std:iso:30042:ed-2">`,
     '  <tbxHeader>',
     '    <fileDesc>',
-    '      <sourceDesc><p>Termbridge export</p></sourceDesc>',
+    '      <sourceDesc><p>OmniLex export</p></sourceDesc>',
     '    </fileDesc>',
     '  </tbxHeader>',
     '  <text>',

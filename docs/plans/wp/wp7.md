@@ -1,4 +1,4 @@
-# Ghi chú thiết kế WP7: Import/export, glossary local, overlay, attributions, registry, gói starter
+﻿# Ghi chú thiết kế WP7: Import/export, glossary local, overlay, attributions, registry, gói starter
 
 Tham chiếu: Kế hoạch 3.6, 3.7, 3.9, 2.8f, D6; bàn giao 6.5 (T-I1..T-I6), D-9.
 Duyệt: người dùng giao cho agent tự quyết phần còn lại ("bạn hãy quyết định còn lại", 2026-10-15). Mục 6 ghi các quyết định đó.
@@ -16,16 +16,16 @@ Duyệt: người dùng giao cho agent tự quyết phần còn lại ("bạn h�
    - `tb registry build <dir> [--base-url]` ghi `*.tbpack` và `registry.json` (`{ registryVersion: 1, packs: { id: { versions: { v: { url, sha256, bytes, formatVersion } } } } }`);
    - `tb pack add <id>@<range>` tìm trong `registries` của cấu hình (URL `http(s)`, `file:` hoặc đường dẫn local) khi không có nguồn dev/`--from`;
    - gói từ registry ghi `origin` trong lock và hiện "không chính thức" trừ khi registry tự khai `official: true`.
-5. **Export/import CSV, TBX, JSONL** (`tb export --format csv|tbx|jsonl [--pack …] -o`; `tb import --from csv|tbx <file> --into concepts/|.termbridge/glossary/`):
+5. **Export/import CSV, TBX, JSONL** (`tb export --format csv|tbx|jsonl [--pack …] -o`; `tb import --from csv|tbx <file> --into concepts/|.omnilex/glossary/`):
    - CSV: mỗi dòng là một cặp khái niệm × locale. Cột chính dễ sửa trên bảng tính: `id, locale, label, qualifier, aliases, loanwords, plain_descriptions, summary, domains, level, body`, danh sách ngăn bằng `" | "`. Hai cột JSON `locale_extra`, `concept_extra` giữ phần còn lại, để đi vòng không mất.
    - TBX-Basic (ISO 30042): `conceptEntry` → `langSec` → `termSec` (`term`, `termNote` loại `administrativeStatus`), cùng `descrip` loại `definition` (summary) và `subjectField` (domains). Chỉ các trường đó đi vòng.
    - JSONL: mỗi dòng gồm card + bài giải thích, dùng cho pipeline ML/RAG.
    - Import vào `concepts/` luôn đặt `status: draft`, `provenance: { drafted_by: import }` (T-I3), bỏ thông tin duyệt. Dòng thiếu nguồn bị từ chối, vì rule 17 cần ≥ 1 nguồn.
-6. **Glossary local** (3.7): `.termbridge/glossary/<id>/concept.yaml + <locale>.md`, khai báo bằng `packs: [local:./glossary]` → gói `local.<tên thư mục>`.
-   - CLI/MCP dựng gói vào `.termbridge/.cache/packs/` khi dấu vân tay nguồn (đường dẫn + kích thước + mtime) đổi.
+6. **Glossary local** (3.7): `.omnilex/glossary/<id>/concept.yaml + <locale>.md`, khai báo bằng `packs: [local:./glossary]` → gói `local.<tên thư mục>`.
+   - CLI/MCP dựng gói vào `.omnilex/.cache/packs/` khi dấu vân tay nguồn (đường dẫn + kích thước + mtime) đổi.
    - Mod chỉ đọc bản đã dựng; thiếu thì báo một lần.
    - ID trùng với gói đã cài thì cảnh báo.
-7. **Overlay** `.termbridge/overrides.yaml` (khóa `overrides` trong cấu hình; mặc định `.termbridge/overrides.yaml` nếu có), áp lúc nạp bằng hàm thuần `applyOverlay` (T-I4):
+7. **Overlay** `.omnilex/overrides.yaml` (khóa `overrides` trong cấu hình; mặc định `.omnilex/overrides.yaml` nếu có), áp lúc nạp bằng hàm thuần `applyOverlay` (T-I4):
    - `concepts.<id>.autolink: always|never`;
    - `concepts.<id>.aliases.<locale>: ["+x", "-y"]`;
    - `exclude: [id]`;

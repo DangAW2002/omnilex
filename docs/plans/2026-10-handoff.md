@@ -1,4 +1,4 @@
-# Bàn giao triển khai: Termbridge mở rộng quy mô + từ vựng công nghệ
+﻿# Bàn giao triển khai: OMNILEX mở rộng quy mô + từ vựng công nghệ
 
 > Tài liệu này dành cho agent triển khai (Claude Code hoặc agent tương đương). Đây là **hợp đồng làm việc**: các quy tắc dùng từ "PHẢI" và "KHÔNG ĐƯỢC" là bắt buộc. Khi tài liệu này mâu thuẫn với `AGENTS.md`, **`AGENTS.md` thắng**. Khi tài liệu này mâu thuẫn với kế hoạch, tài liệu này thắng, nhưng phải báo lại cho người dùng.
 
@@ -18,7 +18,7 @@ Các quyết định D1–D12 trong Kế hoạch **đã chốt**. KHÔNG ĐƯỢ
 2. Kế hoạch: đọc toàn bộ, đặc biệt các mục 1.4, 1.7, 2.2, 2.8, Phần 3 và bảng quyết định
 3. `docs/schema.md`, `schema/*.schema.json`
 4. `docs/style-guide.vi.md`, `docs/style-guide.en.md`
-5. `skills/termbridge-author/SKILL.md`, `CONTRIBUTING.md`
+5. `skills/OMNILEX-author/SKILL.md`, `CONTRIBUTING.md`
 6. `docs/adr/0001-*.md`, `docs/adr/0002-claude-code-mod-adapter.md`
 7. Code liên quan tới work package (WP) đang làm. Đọc code trước khi đề xuất sửa; không đoán API.
 8. Khi động vào mod (`packages/claude-mod/`): dùng skill `plugin-authoring` để nắm API mod và cách chạy test mod.
@@ -50,7 +50,7 @@ Các quyết định D1–D12 trong Kế hoạch **đã chốt**. KHÔNG ĐƯỢ
 | WP3 | Mở rộng taxonomy, gốc `iot` và `product`, cập nhật config (2.1, D1) | WP2 |
 | WP4 | Bộ nhận diện trie trong core + sinh `hooks/runtime/` cho mod (1.4b, 1.4c, D8) | WP1 |
 | WP5 | Định dạng gói + chỉ mục dựng sẵn + manifest (1.4d, 3.2, D5) | WP4 |
-| WP6 | Resolver, phạm vi cấu hình, kho gói, lockfile, ngân sách tài nguyên, lệnh `tb pack …`, `/termbridge packs/profile` (3.3–3.5, 3.8, D3, D7, D11) | WP5 |
+| WP6 | Resolver, phạm vi cấu hình, kho gói, lockfile, ngân sách tài nguyên, lệnh `tb pack …`, `/OMNILEX packs/profile` (3.3–3.5, 3.8, D3, D7, D11) | WP5 |
 | WP7 | Import/export (`.tbpack`, CSV, TBX, JSONL), glossary local, overlay, `attributions.json`, registry, gói `starter` (3.6, 3.7, 3.9, D6) | WP6, WP2 |
 | WP8 | Nội dung: khai thác ứng viên (D4), `tb ingest`, đợt 1 (2.3–2.7) | WP2, WP3; **đợt 2 cần thêm WP4** |
 | WP9 | Tầng ngữ nghĩa, tùy chọn (1.4e, D2) | WP5 |
@@ -134,7 +134,7 @@ pnpm build
 pnpm test
 claude plugin test packages/claude-mod
 pnpm tb validate --strict
-pnpm --filter @termbridge/site build
+pnpm --filter @omnilex/site build
 pnpm tb build && git diff --exit-code indexes/ llms.txt   # file sinh ra đã commit phải khớp
 pnpm check:deterministic              # từ sau WP0: build 2 lần, so sha256 mọi file trong dist/, packages/claude-mod/data/, hooks/runtime/
 pnpm bench --sizes 1000 --check       # từ sau WP0; fail nếu vượt ngân sách
@@ -224,7 +224,7 @@ Mỗi mục phải có test tự động, trừ khi được ghi rõ là kiểm 
   - hai project dùng chung một bản trong kho.
 - **T-P7** Mod với `$` giả:
   - xác định project từ thư mục khởi động (D11);
-  - `/termbridge packs`, `/termbridge profile`, `/termbridge status` hoạt động;
+  - `/OMNILEX packs`, `/OMNILEX profile`, `/OMNILEX status` hoạt động;
   - đổi locale vẫn đúng;
   - bài giải thích tải lười.
 - **T-P8** Site build được, và trang tìm kiếm đọc shard thay vì JSON nhúng trong HTML (kiểm trên kết quả build).
@@ -317,5 +317,5 @@ Quy tắc chấm điểm: một tiêu chí chỉ được ghi **Đạt** khi có
 2. Ngân sách 1.7 đạt ở 10.000 khái niệm giả (WP4 trở đi), có số đo trong báo cáo.
 3. Toàn bộ ma trận 6.1–6.5, 6.7–6.8 đã đánh dấu ☑, hoặc có lý do được người dùng chấp nhận.
 4. Đợt 1 khoảng 150 khái niệm ở trạng thái `draft`, qua T-C1–T-C5, có báo cáo lô.
-5. Hướng dẫn người dùng: README (vi/en) có mục cài và chọn gói, cấu hình `.termbridge/`, import/export.
+5. Hướng dẫn người dùng: README (vi/en) có mục cài và chọn gói, cấu hình `.omnilex/`, import/export.
 6. Báo cáo tổng `docs/plans/reports/final.md`: tóm tắt các WP, số đo cuối, rủi ro còn lại, đề xuất bước tiếp (WP9, WP10, đợt 2).

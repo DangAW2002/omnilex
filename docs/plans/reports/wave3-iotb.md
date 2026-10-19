@@ -1,4 +1,4 @@
-# Báo cáo Lô Wave 3: IoT-B (30 khái niệm)
+﻿# Báo cáo Lô Wave 3: IoT-B (30 khái niệm)
 
 Trạng thái: **hoàn thành toàn bộ nội dung bản thảo, đã vượt qua mọi cổng kiểm tra** (2026-10-17). Toàn bộ 30 khái niệm tuân thủ nghiêm ngặt `status: draft` và `provenance.drafted_by: ai`.
 
@@ -84,7 +84,7 @@ Nguồn có sẵn được tái sử dụng: `itu` (bậc A), `nist-csrc` (bậc
 
 3. **`pnpm tb report collisions`**:
    ```
-   Termbridge collisions (6):
+   OMNILEX collisions (6):
 
      [en] lead → news-lead, sales-lead
      [en] margin → margin, profit-margin

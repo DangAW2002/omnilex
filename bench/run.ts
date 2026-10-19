@@ -38,7 +38,7 @@ function cleanTranscript(text: string) {
 // Writes the mock dataset as a built dist/ (manifest + packs) with the real
 // pack builder, so cold CLI and MCP measurements read the same files as users.
 function createBenchRoot(dataset: MockDataset, core: any): string {
-  const tempRoot = mkdtempSync(join(tmpdir(), 'termbridge-bench-'));
+  const tempRoot = mkdtempSync(join(tmpdir(), 'omnilex-bench-'));
   mkdirSync(join(tempRoot, 'concepts'), { recursive: true });
   mkdirSync(join(tempRoot, 'taxonomy'), { recursive: true });
 
@@ -93,7 +93,7 @@ function measureCliProcessStartup(tempRoot: string, home: string): number {
     execFileSync(process.execPath, [cliPath, 'find', 'lợi nhuận'], {
       cwd: tempRoot,
       stdio: 'ignore',
-      env: { ...process.env, TERMBRIDGE_HOME: home },
+      env: { ...process.env, OMNILEX_HOME: home },
     });
     samples.push(performance.now() - started);
   }
@@ -321,7 +321,7 @@ async function main() {
   }
 
   console.log(`\n======================================================`);
-  console.log(` Termbridge Benchmark Runner (Table 1.7 Scale Budget) `);
+  console.log(` OmniLex Benchmark Runner (Table 1.7 Scale Budget) `);
   console.log(` Sizes: ${sizes.join(', ')} | Seed: ${seed} | Check: ${check ? 'ON' : 'OFF'}`);
   console.log(`======================================================\n`);
 

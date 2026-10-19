@@ -27,7 +27,7 @@ let dist: string;
 let home: string;
 
 beforeAll(() => {
-  temp = toPosix(fs.mkdtempSync(path.join(os.tmpdir(), 'tb-store-')));
+  temp = toPosix(fs.mkdtempSync(path.join(os.tmpdir(), 'ol-store-')));
   buildArtifacts({ ...loadAll(repoRoot), rootDir: `${temp}/repo` });
   dist = `${temp}/repo/dist`;
   home = `${temp}/home`;
@@ -44,8 +44,8 @@ const lockOf = (installed: ReturnType<typeof installPack>) => ({
 
 function project(name: string, config: string): string {
   const dir = `${temp}/${name}`;
-  fs.mkdirSync(`${dir}/.termbridge`, { recursive: true });
-  fs.writeFileSync(`${dir}/.termbridge/config.yaml`, config);
+  fs.mkdirSync(`${dir}/.omnilex`, { recursive: true });
+  fs.writeFileSync(`${dir}/.omnilex/config.yaml`, config);
   return dir;
 }
 
@@ -98,11 +98,11 @@ describe('T-P6: store and lockfile', () => {
     const b = project('proj-b', 'packs: [+it.web, +iot]\n');
     const web = installPack({ home: sharedHome, sources: [dist], id: 'it.web' });
     const security = installPack({ home: sharedHome, sources: [dist], id: 'it.security' });
-    writeLockFile(`${a}/.termbridge/lock.json`, lockOf(web));
-    writeLockFile(`${b}/.termbridge/lock.json`, lockOf(web));
+    writeLockFile(`${a}/.omnilex/lock.json`, lockOf(web));
+    writeLockFile(`${b}/.omnilex/lock.json`, lockOf(web));
     registerProject(sharedHome, a);
     registerProject(sharedHome, b);
-    expect(readLockFile(`${a}/.termbridge/lock.json`).packs['it.web'].store).toBe(readLockFile(`${b}/.termbridge/lock.json`).packs['it.web'].store);
+    expect(readLockFile(`${a}/.omnilex/lock.json`).packs['it.web'].store).toBe(readLockFile(`${b}/.omnilex/lock.json`).packs['it.web'].store);
     expect(fs.readdirSync(`${sharedHome}/store`)).toHaveLength(2);
 
     const result = pruneStore(sharedHome);
@@ -119,7 +119,7 @@ describe('T-P6: store and lockfile', () => {
   });
 
   it('edits the packs list of a config file', () => {
-    const file = `${temp}/edit/.termbridge/config.yaml`;
+    const file = `${temp}/edit/.omnilex/config.yaml`;
     editConfigPacks(file, (packs) => [...packs, '+it.web']);
     expect(editConfigPacks(file, (packs) => [...packs, '-finance'])).toEqual(['+it.web', '-finance']);
     expect(fs.readFileSync(file, 'utf-8')).toContain('+it.web');
@@ -141,7 +141,7 @@ describe('openProject over dev builds and the store', () => {
     const pinnedHome = `${temp}/home-pinned`;
     const dir = project('proj-store', 'root: true\npacks: [+finance.investing, +media.journalism]\n');
     const installed = installPack({ home: pinnedHome, sources: [dist], id: 'finance.investing' });
-    writeLockFile(`${dir}/.termbridge/lock.json`, lockOf(installed));
+    writeLockFile(`${dir}/.omnilex/lock.json`, lockOf(installed));
     const ctx = await openProject(nodeProjectFS, { cwd: dir, home: pinnedHome, surface: 'cli', configHash: searchConfigHash() });
     expect(ctx.resolved.packs.map((p) => p.id)).toEqual(['finance.investing']);
     expect(ctx.notices.filter((n) => n.includes('media.journalism'))).toHaveLength(1);

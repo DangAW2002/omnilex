@@ -1,4 +1,4 @@
-# Termbridge Master Index (en)
+# OmniLex Master Index (en)
 
 - [**5G**](../../concepts/5g/en.md) [iot/connectivity-protocols]: *fifth generation cellular technology delivering high speeds and ultra-responsive connections, advanced telecommunications network standard uniting broadband smartphones and industrial machine connectivity* — The fifth-generation telecommunications standard for broadband cellular networks, defined by enhanced mobile broadband, massive machine connectivity, and ultra-reliable low-latency links.
 - [**A/B testing**](../../concepts/ab-testing/en.md) [product/metrics, media/digital-marketing/metrics-analytics]: *splitting users between two variants of a screen or feature to see which one performs better, controlled trial where real users are randomly split to measure which design drives higher conversions* — A randomized experimental method where two variants of a digital experience are shown to visitors simultaneously to determine which drives superior outcomes.

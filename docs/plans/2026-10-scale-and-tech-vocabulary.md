@@ -1,4 +1,4 @@
-# Kế hoạch: tra cứu nhanh khi mở rộng + bổ sung từ vựng công nghệ
+﻿# Kế hoạch: tra cứu nhanh khi mở rộng + bổ sung từ vựng công nghệ
 
 Ngày lập: 2026-10-14 · Trạng thái: đã chốt quyết định, chờ triển khai
 
@@ -71,7 +71,7 @@ Gói nên bám theo nhánh taxonomy chứ không chỉ theo gốc, vì `it` sẽ
 | `standard` | + Tầng 2 | Mặc định cho CLI/MCP/site |
 | `semantic` | + Tầng 3 nếu có vectors và provider; nếu không có thì **tự hạ** về `standard` và báo một lần | Người có model local/API |
 
-Lệnh mod mới: `/termbridge packs it/ai-ml,product` · `/termbridge packs all` · `/termbridge profile lite|standard|semantic`.
+Lệnh mod mới: `/OMNILEX packs it/ai-ml,product` · `/OMNILEX packs all` · `/OMNILEX profile lite|standard|semantic`.
 CLI: `tb find "..." --pack it/ai-ml` (thay `--domain` theo kiểu chỉ lọc kết quả, vẫn giữ `--domain` làm alias), `tb find --semantic`.
 
 **Lợi ích phụ: phân nghĩa.** Khi chỉ nạp `it`, chữ "token" chỉ còn `token-llm`/`token-auth` thay vì thêm `token-crypto`. Hiện mod bỏ qua mọi term có >1 khái niệm (`term.concepts.length === 1`). Với gói lĩnh vực và cách "bỏ phiếu theo ngữ cảnh" (1.4c), có thể autolink an toàn hơn.
@@ -146,7 +146,7 @@ Biến phép đo thủ công đã làm thành công cụ cố định:
 | **P1** Thắng nhanh, không đổi định dạng | `conceptsById` Map; cache regex trong `forwardSpans`; normalize sẵn `plain_descriptions` khi nạp; MCP cache MiniSearch; CLI `find` đọc `dist/<locale>/search.json` thay vì `loadAll()`; tải lười bài giải thích trong mod | Lần dò sau nhanh hơn rõ rệt; `tb find` nhanh hơn 2–5 lần | 2–3 ngày |
 | **P2** Bộ nhận diện trie | `core/matcher.ts` + test (ranh giới từ, tiếng Việt có dấu, exact-case, khớp dài nhất, chồng lấn); phát hành vào mod; trie cho tra ngược | Dò lần đầu ≤ 20 ms ở 10k | 3–4 ngày |
 | **P3** Định dạng gói + chỉ mục dựng sẵn | `search-config.ts` dùng chung; builder xuất gói theo định dạng ở 3.2 (manifest, tier, hash); CLI/MCP/site/mod nạp qua `loadJSON`; kiểm tra dữ liệu cũ | `tb find` lạnh ≤ 200 ms | 4–5 ngày |
-| **P4** Resolver + phạm vi cấu hình + kho gói | Phần 3.3–3.5: cấu hình phân lớp, kho dùng chung, lockfile, ngân sách tài nguyên; lệnh `tb pack add/remove/list/status`; `/termbridge packs`, `profile`; site tải gói khi cần; bỏ phiếu ngữ cảnh cho homonym | Mỗi project chọn được gói và tài nguyên riêng | 5–6 ngày |
+| **P4** Resolver + phạm vi cấu hình + kho gói | Phần 3.3–3.5: cấu hình phân lớp, kho dùng chung, lockfile, ngân sách tài nguyên; lệnh `tb pack add/remove/list/status`; `/OMNILEX packs`, `profile`; site tải gói khi cần; bỏ phiếu ngữ cảnh cho homonym | Mỗi project chọn được gói và tài nguyên riêng | 5–6 ngày |
 | **P4b** Import/export + gói local + overlay | Phần 3.6–3.7: `tb pack export/import`, CSV/TBX, thuật ngữ riêng của project, file ghi đè | Nhóm chia sẻ và tùy biến thuật ngữ mà không fork | 4–5 ngày |
 | **P5** Tầng ngữ nghĩa | Interface provider (local onnx / HTTP); `tb build --embed`; `vectors.bin`; RRF; tự hạ cấp; cảnh báo trùng khi soạn | `tb find --semantic`, MCP hybrid | 4–6 ngày |
 | **P6** Site ở quy mô lớn | Trang khái niệm động, chỉ giữ trang tĩnh cho khái niệm `verified` | Thời gian build site gần như không đổi theo C | khi C > 5k |
@@ -202,7 +202,7 @@ autolink:            # mặc định: auto (giữ quy tắc hiện tại)
 - `always` + `exact-case` cho từ viết tắt đã liệt kê (cho phép độ dài ≥ 2).
 - `never` cho nhãn quá chung. Khái niệm vẫn tra được qua `tb find`, pane và tra chính xác, chỉ không bị gạch chân trong câu trả lời.
 - Rule validator mới (cảnh báo): label/alias nằm trong danh sách từ phổ thông (`config/common-words.<locale>.txt`) mà không khai báo `autolink` rõ ràng.
-- Cập nhật `schema/*.schema.json`, `docs/schema.md`, `skills/termbridge-author/SKILL.md`, builder, test.
+- Cập nhật `schema/*.schema.json`, `docs/schema.md`, `skills/OMNILEX-author/SKILL.md`, builder, test.
 
 ### 2.3 Chọn từ dựa trên dữ liệu
 
@@ -237,7 +237,7 @@ Danh sách gợi ý; thứ tự cuối cùng sẽ theo dữ liệu ở 2.3. Ký 
 
 ### 2.5 Quy trình soạn hàng loạt
 
-Tuân thủ `AGENTS.md` và `skills/termbridge-author/SKILL.md`. Các bước:
+Tuân thủ `AGENTS.md` và `skills/OMNILEX-author/SKILL.md`. Các bước:
 
 1. **Chốt danh sách đợt**: 20–30 khái niệm mỗi lô, cùng một nhánh taxonomy (để quan hệ `related`/`prerequisites` nhất quán).
 2. **Chống trùng**: đối chiếu `indexes/<locale>/_all.md` và `_homonyms.md`; khi có Tầng 3 thì dùng cảnh báo cosine.
@@ -277,7 +277,7 @@ Nội dung không được tự sinh mà không có căn cứ. Mỗi khái niệ
 
 #### a. Ràng buộc giấy phép (quan trọng)
 
-Nội dung Termbridge dùng **CC BY 4.0** (`LICENSE-CONTENT`). Nguồn CC BY-SA, ví dụ Wikipedia, MDN, OWASP hay Scrum Guide, buộc tác phẩm phái sinh phải cũng là CC BY-SA, nên **không được chép hay phỏng theo sát**. Chỉ được lấy *sự kiện, khái niệm* rồi viết lại độc lập. Mỗi nguồn trong danh mục được gắn một mức `reuse`:
+Nội dung OMNILEX dùng **CC BY 4.0** (`LICENSE-CONTENT`). Nguồn CC BY-SA, ví dụ Wikipedia, MDN, OWASP hay Scrum Guide, buộc tác phẩm phái sinh phải cũng là CC BY-SA, nên **không được chép hay phỏng theo sát**. Chỉ được lấy *sự kiện, khái niệm* rồi viết lại độc lập. Mỗi nguồn trong danh mục được gắn một mức `reuse`:
 
 | `reuse` | Áp dụng cho | Được làm |
 |---|---|---|
@@ -363,7 +363,7 @@ sources: []                       # nguồn riêng cho locale (nếu có nguồn
 | 17 | Bậc nguồn theo trạng thái: `draft` ≥ 1 nguồn (cảnh báo nếu chỉ có bậc C/D); `reviewed` ≥ 1 nguồn A/B có `supports: definition`; `verified` ≥ 2 nguồn độc lập, trong đó ≥ 1 nguồn bậc A | error |
 | 18 | `translation: translated` thì phải có `translated_from` và `translated_by` | error |
 
-Cập nhật kèm theo: `schema/*.schema.json`, `docs/schema.md`, `CONTRIBUTING.md`, `skills/termbridge-author/SKILL.md`, và câu "13 integrity rules" trong `AGENTS.md`.
+Cập nhật kèm theo: `schema/*.schema.json`, `docs/schema.md`, `CONTRIBUTING.md`, `skills/OMNILEX-author/SKILL.md`, và câu "13 integrity rules" trong `AGENTS.md`.
 
 #### f. Công cụ
 
@@ -436,13 +436,13 @@ Thứ tự từ thấp đến cao; lớp sau ghi đè lớp trước:
 | # | Lớp | Vị trí | Commit vào Git? |
 |---|---|---|---|
 | 1 | Mặc định | đi kèm bản cài | – |
-| 2 | Người dùng | `~/.termbridge/config.yaml` (đổi được bằng `TERMBRIDGE_HOME`) | – |
-| 3 | Workspace / project | mọi `.termbridge/config.yaml` tìm được khi đi ngược từ thư mục hiện tại lên, dừng ở file có `root: true` (giống `.editorconfig`). Monorepo đặt cấu hình chung ở gốc, project con ghi đè. | có |
-| 4 | Cá nhân trong project | `.termbridge/config.local.yaml` | không (gitignore) |
-| 5 | Phiên | `/termbridge packs …`, cờ `--pack`, biến `TERMBRIDGE_PACKS`; chỉ ghi file khi có `--save user\|project` | – |
+| 2 | Người dùng | `~/.omnilex/config.yaml` (đổi được bằng `OMNILEX_HOME`) | – |
+| 3 | Workspace / project | mọi `.omnilex/config.yaml` tìm được khi đi ngược từ thư mục hiện tại lên, dừng ở file có `root: true` (giống `.editorconfig`). Monorepo đặt cấu hình chung ở gốc, project con ghi đè. | có |
+| 4 | Cá nhân trong project | `.omnilex/config.local.yaml` | không (gitignore) |
+| 5 | Phiên | `/OMNILEX packs …`, cờ `--pack`, biến `OMNILEX_PACKS`; chỉ ghi file khi có `--save user\|project` | – |
 
 ```yaml
-# .termbridge/config.yaml
+# .omnilex/config.yaml
 root: false
 locale: vi
 fallbackLocales: [en]
@@ -472,11 +472,11 @@ Quy tắc gộp:
 
 ### 3.4 Kho gói dùng chung và lockfile
 
-- **Kho**: `~/.termbridge/store/<pack-id>@<version>-<sha8>/`, chỉ đọc sau khi cài, dùng chung cho mọi project.
-- **Lockfile** `.termbridge/lock.json` (commit vào Git): phiên bản, sha256 của từng tier và registry đã chọn. `tb pack install --frozen` trong CI bảo đảm cả nhóm dùng đúng một bộ dữ liệu.
-- **Dọn dẹp**: `tb pack prune` xóa phiên bản không còn project nào tham chiếu. Danh sách project nằm trong `~/.termbridge/projects.json`.
+- **Kho**: `~/.omnilex/store/<pack-id>@<version>-<sha8>/`, chỉ đọc sau khi cài, dùng chung cho mọi project.
+- **Lockfile** `.omnilex/lock.json` (commit vào Git): phiên bản, sha256 của từng tier và registry đã chọn. `tb pack install --frozen` trong CI bảo đảm cả nhóm dùng đúng một bộ dữ liệu.
+- **Dọn dẹp**: `tb pack prune` xóa phiên bản không còn project nào tham chiếu. Danh sách project nằm trong `~/.omnilex/projects.json`.
 - **Thiếu gói khi offline**: nạp những gói đang có, cảnh báo một lần, liệt kê các gói thiếu và lệnh cài.
-- **Khi phát triển ngay trong repo này**: `.termbridge/config.yaml` ở gốc repo dùng `packs: [dev:./dist]`, trỏ thẳng tới kết quả `tb build`, nên không cần qua kho.
+- **Khi phát triển ngay trong repo này**: `.omnilex/config.yaml` ở gốc repo dùng `packs: [dev:./dist]`, trỏ thẳng tới kết quả `tb build`, nên không cần qua kho.
 
 ### 3.5 Ngân sách tài nguyên
 
@@ -487,7 +487,7 @@ Resolver tính chi phí từ `pack.json` (số byte của từng tier, bộ nh�
 3. chỉ nạp `search-index` khi có lần tìm đầu tiên;
 4. bỏ các gói có ưu tiên thấp nhất (theo thứ tự trong `packs`).
 
-Mỗi bước hạ cấp đều được báo. `tb pack status` và `/termbridge status` hiển thị từng gói: tier nào đang nạp, bao nhiêu MB, mất bao lâu. Thứ tự gói cũng dùng để phân xử homonym khi việc bỏ phiếu theo ngữ cảnh (1.4c) hòa nhau.
+Mỗi bước hạ cấp đều được báo. `tb pack status` và `/OMNILEX status` hiển thị từng gói: tier nào đang nạp, bao nhiêu MB, mất bao lâu. Thứ tự gói cũng dùng để phân xử homonym khi việc bỏ phiếu theo ngữ cảnh (1.4c) hòa nhau.
 
 ### 3.6 Import / export
 
@@ -500,7 +500,7 @@ tb pack remove | update | list | status | verify | prune
 tb pack install [--frozen]       # cài theo lock.json
 ```
 
-Mặc định `--scope project` nếu đang ở trong một project có `.termbridge/`, ngược lại là `user`.
+Mặc định `--scope project` nếu đang ở trong một project có `.omnilex/`, ngược lại là `user`.
 
 **Export**
 
@@ -519,7 +519,7 @@ tb export --format csv|tbx|jsonl [--pack …] -o out
 
 ```
 tb import --from csv|tbx <file> --into concepts/              # đóng góp vào repo chính
-tb import --from csv|tbx <file> --into .termbridge/glossary/   # thuật ngữ riêng của project
+tb import --from csv|tbx <file> --into .omnilex/glossary/   # thuật ngữ riêng của project
 ```
 
 Import vào `concepts/` luôn tạo `status: draft`, `provenance.drafted_by: import`, đúng theo AGENTS.md. Sau đó chạy `tb validate --strict` như mọi khái niệm khác.
@@ -533,11 +533,11 @@ Import vào `concepts/` luôn tạo `status: draft`, `provenance.drafted_by: imp
 
 ### 3.7 Thuật ngữ riêng của project và overlay
 
-**Glossary local**: `.termbridge/glossary/<id>/concept.yaml + vi.md + en.md`, cùng định dạng với repo chính.
-- Resolver tự build vào `.termbridge/.cache/` (gitignore) khi hash thay đổi.
+**Glossary local**: `.omnilex/glossary/<id>/concept.yaml + vi.md + en.md`, cùng định dạng với repo chính.
+- Resolver tự build vào `.omnilex/.cache/` (gitignore) khi hash thay đổi.
 - Validator cảnh báo nếu ID trùng với khái niệm của gói đã cài.
 
-**Overlay** (`.termbridge/overrides.yaml`) chỉ thay đổi cách nhận diện và hiển thị, không sửa nội dung giải thích, để nội dung gốc luôn có một nguồn chuẩn:
+**Overlay** (`.omnilex/overrides.yaml`) chỉ thay đổi cách nhận diện và hiển thị, không sửa nội dung giải thích, để nội dung gốc luôn có một nguồn chuẩn:
 
 ```yaml
 concepts:
@@ -555,7 +555,7 @@ Muốn sửa nội dung thì đóng góp ngược lên repo chính. Lệnh `tb o
 | Bề mặt | Cách tìm project | Ghi chú |
 |---|---|---|
 | CLI | thư mục hiện tại, đi ngược lên | – |
-| MCP | `roots` do client MCP cung cấp; nếu không có thì dùng cwd của tiến trình hoặc `TERMBRIDGE_PROJECT` | Nạp lại khi `roots` đổi |
+| MCP | `roots` do client MCP cung cấp; nếu không có thì dùng cwd của tiến trình hoặc `OMNILEX_PROJECT` | Nạp lại khi `roots` đổi |
 | Mod | thư mục nơi Claude Code được khởi động (thư mục làm việc của phiên), rồi đi ngược lên như CLI | Đã xác nhận mod lấy được; cấu hình được resolve một lần ở `session.start` |
 | Site | không có project | Chọn gói trên UI, lưu ở `localStorage`; nút "Tải gói" dẫn tới export |
 
@@ -567,7 +567,7 @@ Muốn sửa nội dung thì đóng góp ngược lên repo chính. Lệnh `tb o
 
 ### 3.10 Tương thích phiên bản
 
-- `formatVersion` là số nguyên. Resolver đọc được bản N và N-1. Với bản mới hơn, resolver bỏ qua gói và báo "cần cập nhật Termbridge".
+- `formatVersion` là số nguyên. Resolver đọc được bản N và N-1. Với bản mới hơn, resolver bỏ qua gói và báo "cần cập nhật OMNILEX".
 - Semver của gói:
   - **major**: đổi định dạng, hoặc chuyển khái niệm sang gói khác (gói cũ giữ stub `movedTo`);
   - **minor**: thêm khái niệm;
@@ -602,10 +602,10 @@ Ràng buộc thứ tự:
 | D4 | Khai thác transcript local | **Có, nhưng phải bật bằng `--opt-in`**; chỉ chạy trên máy; chỉ xuất tên thuật ngữ và số lần xuất hiện, không bao giờ xuất câu gốc; `candidates/` không chứa dữ liệu cá nhân | Lấy được tín hiệu ưu tiên từ dữ liệu thật mà không làm lộ nội dung hội thoại |
 | D5 | Mức chia gói | **Theo nhánh cấp 2** (`it.ai-ml`, `it.devops`, `it.software-engineering`, `iot`, `product`, `finance.*`, …) **cộng meta-pack theo gốc** (`it`, `tech`, `finance`). Một gói vượt 2.000 khái niệm thì tách xuống cấp 3 | Cấp gốc quá thô (`it` sẽ rất lớn); cấp 3 quá vụn |
 | D6 | Gói `starter` | **Khoảng 300 từ phổ biến nhất** trên mọi lĩnh vực (xếp hạng theo dữ liệu ở 2.3 và mức độ cơ bản `level: 1`), gồm các tier `terms`, `cards`, `search`; giới hạn 1 MB; ưu tiên khái niệm có nguồn bậc A/B | Đủ dùng offline ngay sau khi cài; plugin nhẹ |
-| D7 | Phạm vi mặc định của `tb pack add` | **Project** nếu đi ngược lên tìm thấy `.termbridge/`, ngược lại là **người dùng**; luôn in ra đã ghi vào file nào | Giống cách `npm`/`git` chọn phạm vi; không bất ngờ |
+| D7 | Phạm vi mặc định của `tb pack add` | **Project** nếu đi ngược lên tìm thấy `.omnilex/`, ngược lại là **người dùng**; luôn in ra đã ghi vào file nào | Giống cách `npm`/`git` chọn phạm vi; không bất ngờ |
 | D8 | Mod import file | **Được phép**; `hooks/runtime/` chứa JS thuần do build sinh ra | Đã xác nhận |
 | D9 | Ngôn ngữ nguồn | **Nguồn đa ngôn ngữ, ưu tiên tiếng Anh**; agent viết `en` từ nguồn rồi dịch sang `vi`, ghi `translated_from`/`translated_by`; nhãn tiếng Việt phải có bằng chứng sử dụng | Nguồn tiếng Anh đầy đủ và chuẩn nhất; agent dịch tốt; nhãn tự chế làm sai lệch thuật ngữ |
-| D10 | Giấy phép khi lấy nội dung | **Theo mức `reuse` của từng nguồn** (2.8a); mặc định `paraphrase-only` khi chưa rõ | Nội dung Termbridge là CC BY 4.0, không tương thích với việc phỏng theo sát nguồn CC BY-SA |
+| D10 | Giấy phép khi lấy nội dung | **Theo mức `reuse` của từng nguồn** (2.8a); mặc định `paraphrase-only` khi chưa rõ | Nội dung OMNILEX là CC BY 4.0, không tương thích với việc phỏng theo sát nguồn CC BY-SA |
 
-| D11 | Cách mod biết project | **Dùng thư mục nơi Claude Code được khởi động**, đi ngược lên tìm `.termbridge/` như CLI | Đã xác nhận mod lấy được thông tin này |
+| D11 | Cách mod biết project | **Dùng thư mục nơi Claude Code được khởi động**, đi ngược lên tìm `.omnilex/` như CLI | Đã xác nhận mod lấy được thông tin này |
 | D12 | Xác minh giấy phép nguồn | Mọi mục trong `config/sources.yaml` phải có `license`, `license_evidence` (URL trang giấy phép), `verified_license_at` và `reuse`. Agent chỉ được **đề xuất** `reuse: adapt` khi trang giấy phép ghi rõ CC0, CC BY hoặc public domain **và áp dụng cho đúng phần nội dung được dùng** (không phải chỉ cho code hay một mục khác). Mục `adapt` phải có `license_verified_by` là người duyệt trong `config/reviewers.yaml` thì `tb ingest` mới được dùng văn bản gốc. Còn thiếu bất kỳ điều kiện nào thì mặc định `paraphrase-only` | `adapt` cho phép phỏng theo sát văn bản, nên rủi ro pháp lý nằm ở đây. Chỉ có một điểm duyệt nhỏ, mỗi nguồn một lần |

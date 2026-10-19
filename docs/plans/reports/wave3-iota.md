@@ -1,4 +1,4 @@
-# Báo cáo Lô iota: Thiết bị và Giao thức IoT (28 khái niệm)
+﻿# Báo cáo Lô iota: Thiết bị và Giao thức IoT (28 khái niệm)
 
 Trạng thái: **Hoàn thành soạn thảo (Draft)** theo chỉ định `candidates/wave3/iota.yaml`. Mọi khái niệm đều tuân thủ chặt chẽ `status: draft` và `provenance.drafted_by: ai`.
 

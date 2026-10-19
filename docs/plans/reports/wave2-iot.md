@@ -1,4 +1,4 @@
-# Báo cáo Lô Wave 2: IoT (Internet of Things) - 25 khái niệm
+﻿# Báo cáo Lô Wave 2: IoT (Internet of Things) - 25 khái niệm
 
 Trạng thái: **hoàn thành toàn bộ nội dung bản thảo, đã vượt qua mọi cổng kiểm tra** (2026-10-16). Toàn bộ 25 khái niệm đều tuân thủ `status: draft`, `provenance.drafted_by: ai`.
 

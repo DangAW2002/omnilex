@@ -54,7 +54,7 @@ test('forward lookup puts a hover target on the term in a short plain reply', as
 test('hover mode lays out prose with terms and leaves code and tables to Markdown', async ($, on) => {
   setup(on)
   await $.session.start({ surface: 'terminal', isInteractive: true, cwd: '/work' })
-  await $.command.run({ command: 'termbridge', args: 'mode hover' })
+  await $.command.run({ command: 'omnilex', args: 'mode hover' })
   const ui = await $.ui.mount({
     plugin: 'omnilex', surface: 'terminal', component: 'AssistantMessage', requestId: 'reply-md',
     viewport: { columns: 40, rows: 30 },
@@ -87,7 +87,7 @@ test('hover mode lays out prose with terms and leaves code and tables to Markdow
 test('links mode keeps one Markdown block and opens the pane from a term link', async ($, on) => {
   setup(on)
   await $.session.start({ surface: 'terminal', isInteractive: true, cwd: '/work' })
-  await $.command.run({ command: 'termbridge', args: 'mode links' })
+  await $.command.run({ command: 'omnilex', args: 'mode links' })
   const ui = await $.ui.mount({
     plugin: 'omnilex', surface: 'terminal', component: 'AssistantMessage', requestId: 'reply-links',
     viewport: { columns: 100, rows: 30 },
@@ -106,7 +106,7 @@ test('links mode keeps one Markdown block and opens the pane from a term link', 
 test('a Markdown reply keeps its native drawing and gets a lookup badge', async ($, on) => {
   setup(on)
   await $.session.start({ surface: 'terminal', isInteractive: true, cwd: '/work' })
-  await $.command.run({ command: 'termbridge', args: 'mode badges' })
+  await $.command.run({ command: 'omnilex', args: 'mode badges' })
   const ui = await $.ui.mount({
     plugin: 'omnilex', surface: 'terminal', component: 'AssistantMessage', requestId: 'reply-markdown',
     viewport: { columns: 100, rows: 30 },
@@ -121,16 +121,16 @@ test('reverse lookup resolves a plain description in the pane', async ($, on) =>
   let filled = ''
   setup(on, (value) => { filled = value })
   await $.session.start({ surface: 'terminal', isInteractive: true, cwd: '/work' })
-  await $.command.run({ command: 'termbridge', args: '' })
+  await $.command.run({ command: 'omnilex', args: '' })
   const ui = await $.ui.mount({
-    plugin: 'omnilex', surface: 'terminal', component: 'Pane', requestId: 'termbridge-lookup',
+    plugin: 'omnilex', surface: 'terminal', component: 'Pane', requestId: 'omnilex-lookup',
     viewport: { columns: 100, rows: 30 },
     props: {
-      title: 'Termbridge', isFocused: true, bodyColumns: 60, placement: 'inline',
+      title: 'OmniLex', isFocused: true, bodyColumns: 60, placement: 'inline',
       scroll: { offset: 0, bodyRows: 10 }, view: {},
     },
   })
-  await ui.input({ key: 'termbridge-query', text: 'tiền lãi lại sinh ra lãi' })
+  await ui.input({ key: 'omnilex-query', text: 'tiền lãi lại sinh ra lãi' })
   expect(await ui.find({ type: 'Text', text: 'Tiền lãi được cộng vào gốc.' })).toBeDefined()
   expect(await ui.find({ key: 'insert-term' })).toBeDefined()
   await ui.press({ key: 'insert-term' })
@@ -142,7 +142,7 @@ test('language command changes hover summaries and reverse lookup to English', a
   let filled = ''
   setup(on, (value) => { filled = value })
   await $.session.start({ surface: 'terminal', isInteractive: true, cwd: '/work' })
-  await $.command.run({ command: 'termbridge', args: 'lang en' })
+  await $.command.run({ command: 'omnilex', args: 'lang en' })
   const reply = await $.ui.mount({
     plugin: 'omnilex', surface: 'terminal', component: 'AssistantMessage', requestId: 'reply-en',
     viewport: { columns: 100, rows: 30 },
@@ -151,7 +151,7 @@ test('language command changes hover summaries and reverse lookup to English', a
   expect(await reply.find({ type: 'Text', text: 'Interest earns more interest.' })).toBeDefined()
   await reply.unmount()
 
-  await $.command.run({ command: 'termbridge', args: 'mode links' })
+  await $.command.run({ command: 'omnilex', args: 'mode links' })
   const linked = await $.ui.mount({
     plugin: 'omnilex', surface: 'terminal', component: 'AssistantMessage', requestId: 'reply-en-link',
     viewport: { columns: 100, rows: 30 },
@@ -160,17 +160,17 @@ test('language command changes hover summaries and reverse lookup to English', a
   expect(JSON.stringify(await linked.drawn())).toContain('/en.md')
   await linked.unmount()
 
-  await $.command.run({ command: 'termbridge', args: '' })
+  await $.command.run({ command: 'omnilex', args: '' })
   const pane = await $.ui.mount({
-    plugin: 'omnilex', surface: 'terminal', component: 'Pane', requestId: 'termbridge-lookup',
+    plugin: 'omnilex', surface: 'terminal', component: 'Pane', requestId: 'omnilex-lookup',
     viewport: { columns: 100, rows: 30 },
     props: {
-      title: 'Termbridge', isFocused: true, bodyColumns: 60, placement: 'inline',
+      title: 'OmniLex', isFocused: true, bodyColumns: 60, placement: 'inline',
       scroll: { offset: 0, bodyRows: 10 }, view: {},
     },
   })
   expect(await pane.find({ type: 'Text', text: 'Reverse lookup: describe the idea in plain words' })).toBeDefined()
-  await pane.input({ key: 'termbridge-query', text: 'money snowballing because earnings get added back to the pile' })
+  await pane.input({ key: 'omnilex-query', text: 'money snowballing because earnings get added back to the pile' })
   expect(await pane.find({ type: 'Text', text: 'Interest earns more interest.' })).toBeDefined()
   await pane.press({ key: 'insert-term' })
   expect(filled).toBe('Compound Interest')
@@ -193,12 +193,12 @@ test('a short colloquial user message has a direct hover target', async ($, on) 
 test('browse view lists concepts by domain and opens one', async ($, on) => {
   setup(on)
   await $.session.start({ surface: 'terminal', isInteractive: true, cwd: '/work' })
-  await $.command.run({ command: 'termbridge', args: 'browse finance/saving' })
+  await $.command.run({ command: 'omnilex', args: 'browse finance/saving' })
   const pane = await $.ui.mount({
-    plugin: 'omnilex', surface: 'terminal', component: 'Pane', requestId: 'termbridge-lookup',
+    plugin: 'omnilex', surface: 'terminal', component: 'Pane', requestId: 'omnilex-lookup',
     viewport: { columns: 100, rows: 30 },
     props: {
-      title: 'Termbridge', isFocused: true, bodyColumns: 60, placement: 'inline',
+      title: 'OmniLex', isFocused: true, bodyColumns: 60, placement: 'inline',
       scroll: { offset: 0, bodyRows: 10 }, view: {},
     },
   })
@@ -211,6 +211,6 @@ test('browse view lists concepts by domain and opens one', async ($, on) => {
   expect(await pane.find({ type: 'Text', text: 'Tiền lãi được cộng vào gốc.' })).toBeDefined()
   await pane.press({ key: 'browse-back' })
   await pane.press({ key: 'tab-search' })
-  expect(await pane.find({ key: 'termbridge-query' })).toBeDefined()
+  expect(await pane.find({ key: 'omnilex-query' })).toBeDefined()
   await pane.unmount()
 })

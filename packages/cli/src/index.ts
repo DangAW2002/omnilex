@@ -20,11 +20,11 @@ function resolveRootDir(): string {
 }
 
 program
-  .name('tb')
-  .description('Termbridge CLI — terminology management and verification engine')
+  .name('ol')
+  .description('OmniLex CLI — terminology management and verification engine')
   .version('0.1.0');
 
-// tb new <id> --domain <path> --locales <locales>
+// ol new <id> --domain <path> --locales <locales>
 program
   .command('new [id]')
   .description('Create a new concept directory from template (or many: --from candidates/<file>.yaml)')
@@ -111,7 +111,7 @@ program
     const repoData = loadAll(rootDir);
     const report = validateRepository(repoData);
 
-    console.log(pc.bold(`\nTermbridge Validation Report (${repoData.concepts.size} concepts loaded):\n`));
+    console.log(pc.bold(`\nOmniLex Validation Report (${repoData.concepts.size} concepts loaded):\n`));
 
     if (report.errors.length > 0) {
       console.log(pc.red(pc.bold(`Errors (${report.errors.length}):`)));
@@ -283,13 +283,13 @@ interface ShowItem {
 function printAmbiguous(target: string, locale: string, items: ShowItem[]): void {
   console.log(pc.yellow(`\n"${target}" có nhiều nghĩa. Hãy chọn một ID:\n`));
   for (const item of items) {
-    console.log(`  pnpm tb show id:${item.id} --locale ${locale} — ${item.label} ${item.qualifier || ''}`);
+    console.log(`  pnpm ol show id:${item.id} --locale ${locale} — ${item.label} ${item.qualifier || ''}`);
     console.log(`    ${item.summary || ''}`);
   }
 }
 
 function printNotFound(target: string, locale: string, suggestions: ShowItem[]): void {
-  console.log(pc.yellow(`\n⚠ Khái niệm "${pc.bold(target)}" chưa có trong Termbridge.\n`));
+  console.log(pc.yellow(`\n⚠ Khái niệm "${pc.bold(target)}" chưa có trong OmniLex.\n`));
 
   // Attempt fuzzy/keyword fallback to suggest related concepts
   if (suggestions.length > 0) {
@@ -376,7 +376,7 @@ reportCmd
     const repoData = loadAll(rootDir);
     const rows = generateLocaleReport(repoData);
 
-    console.log(pc.bold(`\nTermbridge Locale Coverage Report:\n`));
+    console.log(pc.bold(`\nOmniLex Locale Coverage Report:\n`));
     console.table(
       rows.map((r) => {
         const item: any = { Domain: r.domain, 'Total Concepts': r.totalConcepts };
@@ -405,7 +405,7 @@ reportCmd
     console.table(rows);
   });
 
-// tb sources <subcommand>
+// ol sources <subcommand>
 const sourcesCmd = program.command('sources').description('Manage and inspect external evidence sources');
 
 sourcesCmd
@@ -417,7 +417,7 @@ sourcesCmd
     const sourcesConfig = loadSourcesConfig(rootDir);
     const entries = Object.entries(sourcesConfig);
 
-    console.log(pc.bold(`\nTermbridge Registered Sources (${entries.length}):\n`));
+    console.log(pc.bold(`\nOmniLex Registered Sources (${entries.length}):\n`));
     console.table(
       entries.map(([ref, entry]) => ({
         Ref: ref,
@@ -439,7 +439,7 @@ sourcesCmd
     const { migrateAllSources } = await import('@omnilex/core');
     const result = migrateAllSources(rootDir);
 
-    console.log(pc.bold(`\nTermbridge Sources Migration:\n`));
+    console.log(pc.bold(`\nOmniLex Sources Migration:\n`));
     console.log(`- Total concepts inspected: ${result.totalConcepts}`);
     console.log(`- Concepts modified: ${result.migratedConcepts}`);
     console.log(`- Source URLs migrated: ${result.migratedSourcesCount}`);

@@ -1,6 +1,6 @@
-# AGENTS.md — Rules for AI Agents Working with Termbridge
+# AGENTS.md — Rules for AI Agents Working with OmniLex
 
-This file defines the strict operational contract for all autonomous and pair-programming AI agents interacting with the Termbridge repository.
+This file defines the strict operational contract for all autonomous and pair-programming AI agents interacting with the OmniLex repository.
 
 ## 1. Context Consumption Protocol (Progressive Disclosure)
 
@@ -10,7 +10,7 @@ This file defines the strict operational contract for all autonomous and pair-pr
 
 ## 2. Contribution & Authoring Rules
 
-- **Use the skill workflow:** When adding new terms, follow `skills/termbridge-author/SKILL.md`.
+- **Use the skill workflow:** When adding new terms, follow `skills/omnilex-author/SKILL.md`.
 - **Status constraint:** Concepts drafted by AI agents MUST ALWAYS have:
   ```yaml
   status: draft
@@ -24,5 +24,5 @@ This file defines the strict operational contract for all autonomous and pair-pr
 
 ## 3. Tooling & Build Integrity
 
-- **Never edit generated files by hand:** Do NOT edit files under `indexes/`, `dist/`, or `llms.txt` directly. Run `pnpm tb build` to regenerate them deterministically from `concepts/`, `taxonomy/`, and `config/`.
-- **Always validate before finishing:** Run `pnpm tb validate` (or `pnpm tb validate --strict`) to ensure all 18 integrity rules pass cleanly.
+- **Never edit generated files by hand:** Do NOT edit files under `indexes/`, `dist/`, or `llms.txt` directly. Run `pnpm ol build` to regenerate them deterministically from `concepts/`, `taxonomy/`, and `config/`.
+- **Always validate before finishing:** Run `pnpm ol validate` (or `pnpm ol validate --strict`) to ensure all 18 integrity rules pass cleanly.

@@ -1,4 +1,4 @@
-# Báo cáo Wave 3: Web (28 khái niệm)
+﻿# Báo cáo Wave 3: Web (28 khái niệm)
 
 Trạng thái: **hoàn thành bản thảo** (2026-10-17). Mọi khái niệm đều ở `status: draft`, `provenance.drafted_by: ai`.
 

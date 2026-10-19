@@ -106,11 +106,11 @@ export function planLoad(packs, effective, options) {
     const notice = options.notice || (() => { });
     let profile = effective.profile;
     if (profile === 'semantic') {
-        notice('Termbridge: chưa có vectors cho profile semantic, dùng standard / no vectors for the semantic profile yet, using standard');
+        notice('OmniLex: chưa có vectors cho profile semantic, dùng standard / no vectors for the semantic profile yet, using standard');
         profile = 'standard';
     }
     if (effective.tiers.vectors === 'on') {
-        notice('Termbridge: tier vectors chưa được hỗ trợ, bỏ qua / the vectors tier is not supported yet, ignored');
+        notice('OmniLex: tier vectors chưa được hỗ trợ, bỏ qua / the vectors tier is not supported yet, ignored');
     }
     const search = profile === 'lite' ? 'off' : options.surface === 'mod' ? 'lazy' : 'eager';
     const explanations = effective.tiers.explanations || (profile === 'lite' ? 'off' : 'lazy');
@@ -134,7 +134,7 @@ export function planLoad(packs, effective, options) {
             for (const plan of plans)
                 if (plan.tiers.explanations === 'eager')
                     plan.tiers.explanations = 'lazy';
-            step(`Termbridge: vượt ${limitMB} MB, chuyển bài giải thích sang lazy / over ${limitMB} MB, explanations now lazy`);
+            step(`OmniLex: vượt ${limitMB} MB, chuyển bài giải thích sang lazy / over ${limitMB} MB, explanations now lazy`);
         }
     }
     if (over() && plans.some((plan) => plan.tiers.search === 'eager')) {
@@ -142,13 +142,13 @@ export function planLoad(packs, effective, options) {
         for (const plan of plans)
             if (plan.tiers.search === 'eager')
                 plan.tiers.search = 'lazy';
-        step(`Termbridge: vượt ${limitMB} MB, chỉ nạp chỉ mục tìm kiếm khi tìm lần đầu / over ${limitMB} MB, search index loads on first search`);
+        step(`OmniLex: vượt ${limitMB} MB, chỉ nạp chỉ mục tìm kiếm khi tìm lần đầu / over ${limitMB} MB, search index loads on first search`);
     }
     // 4. drop the lowest-priority packs, last in the list first.
     while (over() && plans.length > 0) {
         const removed = plans.pop();
         dropped.push(removed.pack);
-        step(`Termbridge: vượt ${limitMB} MB, bỏ gói ${removed.pack.id} / over ${limitMB} MB, dropped pack ${removed.pack.id}`);
+        step(`OmniLex: vượt ${limitMB} MB, bỏ gói ${removed.pack.id} / over ${limitMB} MB, dropped pack ${removed.pack.id}`);
     }
     return { profile, packs: plans, dropped, estimateMB: estimate(), limitMB, steps };
 }

@@ -29,4 +29,4 @@ DNS organizes the global namespace hierarchically (root zone, top-level domains 
 A distributed hierarchical database and application-layer protocol mapping alphanumeric domain labels to network address identifiers.
 
 ## Examples
-Typing `termbridge.org` into a browser causes the DNS resolver to look up the authoritative nameserver and return the IPv4 address `198.51.100.45`.
+Typing `omnilex.org` into a browser causes the DNS resolver to look up the authoritative nameserver and return the IPv4 address `198.51.100.45`.

@@ -10,7 +10,7 @@ import {
   type ConfigLayer,
   type EffectiveConfig,
   type PackOp,
-  type TermbridgeConfig,
+  type OmniLexConfig,
 } from './config.js';
 import {
   PACK_FORMAT_VERSION,
@@ -112,7 +112,7 @@ export function localPackId(glossaryDir: string): string {
 }
 
 export function localPackCacheDir(projectDir: string, glossaryDir: string): string {
-  return joinPath(projectDir, '.termbridge', '.cache', 'local', localPackId(glossaryDir).slice('local.'.length));
+  return joinPath(projectDir, '.omnilex', '.cache', 'local', localPackId(glossaryDir).slice('local.'.length));
 }
 
 export function storeDirName(id: string, version: string, sha256: string): string {
@@ -126,13 +126,13 @@ export function parseStoreDirName(name: string): { id: string; version: string; 
 
 export interface DiscoveredLayers {
   layers: ConfigLayer[];
-  // nearest directory holding a .termbridge/ folder
+  // nearest directory holding a .omnilex/ folder
   projectDir?: string;
   files: string[];
   warnings: string[];
 }
 
-async function readConfigFile(fs: ProjectFS, file: string, warnings: string[]): Promise<TermbridgeConfig | null> {
+async function readConfigFile(fs: ProjectFS, file: string, warnings: string[]): Promise<OmniLexConfig | null> {
   const text = await fs.read(file);
   if (text === null) return null;
   try {
@@ -147,7 +147,7 @@ async function readConfigFile(fs: ProjectFS, file: string, warnings: string[]): 
 
 export async function discoverLayers(
   fs: ProjectFS,
-  options: { cwd: string; home: string; session?: { source: string; config: TermbridgeConfig } }
+  options: { cwd: string; home: string; session?: { source: string; config: OmniLexConfig } }
 ): Promise<DiscoveredLayers> {
   const home = toPosix(options.home).replace(/\/+$/, '');
   const warnings: string[] = [];
@@ -164,7 +164,7 @@ export async function discoverLayers(
   let projectDir: string | undefined;
   let dir = toPosix(options.cwd);
   for (;;) {
-    const marker = joinPath(dir, '.termbridge');
+    const marker = joinPath(dir, '.omnilex');
     if (marker.replace(/\/+$/, '') !== home && await fs.exists(marker)) {
       projectDir ??= dir;
       const file = joinPath(marker, 'config.yaml');
@@ -182,7 +182,7 @@ export async function discoverLayers(
   layers.push(...projectLayers);
 
   if (projectDir) {
-    const file = joinPath(projectDir, '.termbridge', 'config.local.yaml');
+    const file = joinPath(projectDir, '.omnilex', 'config.local.yaml');
     files.push(file);
     const local = await readConfigFile(fs, file, warnings);
     if (local) layers.push({ kind: 'local', source: file, dir: projectDir, config: local });
@@ -231,12 +231,12 @@ export async function buildCatalog(
     }
     if (!parsed || typeof parsed.formatVersion !== 'number' || !Array.isArray(parsed.packs)) {
       notices.push(local
-        ? `Termbridge: glossary ${spec} chưa được dựng; chạy tb pack status ở project / glossary ${spec} is not built yet; run tb pack status in the project`
-        : `Termbridge: ${dir} chưa có manifest.json, hãy chạy pnpm tb build / ${dir} has no manifest.json, run pnpm tb build`);
+        ? `OmniLex: glossary ${spec} chưa được dựng; chạy ol pack status ở project / glossary ${spec} is not built yet; run ol pack status in the project`
+        : `OmniLex: ${dir} chưa có manifest.json, hãy chạy pnpm ol build / ${dir} has no manifest.json, run pnpm ol build`);
       continue;
     }
     if (parsed.formatVersion > PACK_FORMAT_VERSION) {
-      notices.push(`Termbridge: ${dir} dùng formatVersion ${parsed.formatVersion}, cần cập nhật Termbridge / ${dir} uses formatVersion ${parsed.formatVersion}, please update Termbridge`);
+      notices.push(`OmniLex: ${dir} dùng formatVersion ${parsed.formatVersion}, cần cập nhật OmniLex / ${dir} uses formatVersion ${parsed.formatVersion}, please update OmniLex`);
       continue;
     }
     let stale = false;
@@ -372,7 +372,7 @@ export interface ProjectContext {
   manifest: PackManifest;
   // tiers the plan turned off, for PackStore
   disabled: Record<string, PackTier[]>;
-  // .termbridge/overrides.yaml (or the `overrides` key), empty when absent
+  // .omnilex/overrides.yaml (or the `overrides` key), empty when absent
   overlay: Overlay;
   overlayPath?: string;
   // a dev build older than its concepts/
@@ -390,7 +390,7 @@ export async function openProject(
     home: string;
     surface: LoadSurface;
     locale?: string;
-    session?: { source: string; config: TermbridgeConfig };
+    session?: { source: string; config: OmniLexConfig };
     configHash: string;
   }
 ): Promise<ProjectContext> {
@@ -401,7 +401,7 @@ export async function openProject(
   const ops = normalizeOps(effective.packOps);
 
   const lockPath = discovered.projectDir
-    ? joinPath(discovered.projectDir, '.termbridge', 'lock.json')
+    ? joinPath(discovered.projectDir, '.omnilex', 'lock.json')
     : joinPath(home, 'lock.json');
   const lock = parseLock(await fs.read(lockPath));
   const { catalog, notices: catalogNotices, watch } = await buildCatalog(fs, { ops, home, lock, projectDir: discovered.projectDir, cwd: toPosix(options.cwd) });
@@ -410,7 +410,7 @@ export async function openProject(
   const resolved = resolvePacks(ops, catalog, { packsConfigured: effective.packsConfigured });
   notices.push(...resolved.errors);
   if (resolved.missing.length > 0) {
-    notices.push(`Termbridge: thiếu gói ${resolved.missing.join(', ')}; chạy: tb pack install / missing packs ${resolved.missing.join(', ')}; run: tb pack install`);
+    notices.push(`OmniLex: thiếu gói ${resolved.missing.join(', ')}; chạy: ol pack install / missing packs ${resolved.missing.join(', ')}; run: ol pack install`);
   }
 
   // D3: with nothing configured, the mod asks before loading a large set.
@@ -418,7 +418,7 @@ export async function openProject(
   if (options.surface === 'mod' && !effective.packsConfigured) {
     const total = packs.reduce((sum, pack) => sum + pack.concepts, 0);
     if (total >= D3_PROMPT_THRESHOLD) {
-      notices.push(`Termbridge: đã cài ${total} khái niệm; chọn gói bằng /termbridge packs <id,...>. Tạm thời chỉ nạp ${STARTER_PACK} / ${total} concepts installed; choose packs with /termbridge packs <id,...>. Loading only ${STARTER_PACK} for now`);
+      notices.push(`OmniLex: đã cài ${total} khái niệm; chọn gói bằng /omnilex packs <id,...>. Tạm thời chỉ nạp ${STARTER_PACK} / ${total} concepts installed; choose packs with /omnilex packs <id,...>. Loading only ${STARTER_PACK} for now`);
       packs = catalog.packs.filter((pack) => pack.kind === 'content' && pack.role === 'starter').slice(0, 1);
     }
   }
@@ -439,7 +439,7 @@ export async function openProject(
   const base = discovered.projectDir || toPosix(options.cwd);
   const overlayPath = effective.overrides
     ? resolvePath(base, effective.overrides)
-    : discovered.projectDir ? joinPath(discovered.projectDir, '.termbridge', 'overrides.yaml') : undefined;
+    : discovered.projectDir ? joinPath(discovered.projectDir, '.omnilex', 'overrides.yaml') : undefined;
   let overlay: Overlay = EMPTY_OVERLAY;
   if (overlayPath) {
     const text = await fs.read(overlayPath);

@@ -1,4 +1,4 @@
-# Báo cáo Wave 3: Lô Architecture (28 khái niệm)
+﻿# Báo cáo Wave 3: Lô Architecture (28 khái niệm)
 
 Trạng thái: **hoàn thành soạn thảo và vượt qua toàn bộ cổng kiểm thử** (2026-10-17).
 Tất cả 28 khái niệm đều ở `status: draft`, `provenance: { drafted_by: ai }`.
@@ -76,4 +76,4 @@ Mọi URL của nguồn đều được truy xuất thực tế bằng HTTP GET 
    - Dòng cuối: Sạch hoàn toàn trong toàn bộ 28 khái niệm của đợt `arch` (0 đoạn trùng ≥ 6 từ).
 
 ## Các khái niệm chưa hoàn thành hoặc gặp trở ngại
-Không có. Toàn bộ 28 khái niệm thuộc batch `arch` đã được hoàn thành đầy đủ, đạt chuẩn kỹ thuật cao và vượt qua mọi cổng kiểm thử tự động của kho mã nguồn Termbridge.
+Không có. Toàn bộ 28 khái niệm thuộc batch `arch` đã được hoàn thành đầy đủ, đạt chuẩn kỹ thuật cao và vượt qua mọi cổng kiểm thử tự động của kho mã nguồn OMNILEX.

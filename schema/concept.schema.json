@@ -1,7 +1,7 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "$id": "https://termbridge.org/schema/concept.schema.json",
-  "title": "Termbridge Concept Schema",
+  "$id": "https://omnilex.org/schema/concept.schema.json",
+  "title": "OmniLex Concept Schema",
   "type": "object",
   "required": ["id", "domains", "level", "status", "provenance"],
   "properties": {

@@ -1,6 +1,6 @@
 # Hướng dẫn phong cách biên soạn tiếng Việt (Style Guide)
 
-Tài liệu này quy định chuẩn mực hành văn cho các mục từ tiếng Việt trong Termbridge.
+Tài liệu này quy định chuẩn mực hành văn cho các mục từ tiếng Việt trong OmniLex.
 
 ## 1. Giọng văn và đối tượng độc giả
 

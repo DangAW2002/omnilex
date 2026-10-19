@@ -1,7 +1,7 @@
-# Báo cáo WP3: Mở rộng Taxonomy (it, iot, product)
+﻿# Báo cáo WP3: Mở rộng Taxonomy (it, iot, product)
 
 ## Tóm tắt
-WP3 hoàn thành việc mở rộng hệ thống phân loại học (taxonomy) của Termbridge theo đúng Mục 2.1 của Kế hoạch để chuẩn bị cho việc nạp từ vựng công nghệ. Bao gồm: mở rộng `taxonomy/it.yaml` với các nhánh con `version-control`, `practices`, tách `devops` thành nhánh cấp 2 riêng (`ci-cd`, `containers`, `observability`, `sre-operations`, `iac`), và bổ sung `mlops`, `nlp`, `computer-vision`, `ai-safety-governance` trong `ai-ml`. Khởi tạo 2 miền gốc mới: `taxonomy/iot.yaml` và `taxonomy/product.yaml`. Cập nhật `config/domains.yaml` và `config/reviewers.yaml` với đầy đủ người duyệt phụ trách. Toàn bộ 10 cổng kiểm tra đều vượt qua với 45/45 test pass.
+WP3 hoàn thành việc mở rộng hệ thống phân loại học (taxonomy) của OMNILEX theo đúng Mục 2.1 của Kế hoạch để chuẩn bị cho việc nạp từ vựng công nghệ. Bao gồm: mở rộng `taxonomy/it.yaml` với các nhánh con `version-control`, `practices`, tách `devops` thành nhánh cấp 2 riêng (`ci-cd`, `containers`, `observability`, `sre-operations`, `iac`), và bổ sung `mlops`, `nlp`, `computer-vision`, `ai-safety-governance` trong `ai-ml`. Khởi tạo 2 miền gốc mới: `taxonomy/iot.yaml` và `taxonomy/product.yaml`. Cập nhật `config/domains.yaml` và `config/reviewers.yaml` với đầy đủ người duyệt phụ trách. Toàn bộ 10 cổng kiểm tra đều vượt qua với 45/45 test pass.
 
 ## Thay đổi
 | File | Loại | Ghi chú |
@@ -29,7 +29,7 @@ Không có lệch kế hoạch. Giữ nguyên nhánh `it/software-engineering/de
 | `pnpm test` | Đạt (exit 0) | `Test Files 12 passed (12) | Tests 45 passed (45)` |
 | `claude plugin test packages/claude-mod` | Đạt (exit 0) | `10 pass, 0 fail Ran 10 tests across 2 files. [0.70s]` |
 | `pnpm tb validate --strict` | Đạt (exit 0) | `✔ Validation passed successfully!` (0 errors, 0 warnings) |
-| `pnpm --filter @termbridge/site build` | Đạt (exit 0) | `[build] 25 page(s) built in 1.16s` |
+| `pnpm --filter @omnilex/site build` | Đạt (exit 0) | `[build] 25 page(s) built in 1.16s` |
 | `pnpm tb build && git diff --exit-code indexes/ llms.txt` | Đạt (exit 0) | Clean diff |
 | `pnpm check:deterministic` | Đạt (exit 0) | `✔ Build is 100% deterministic! All 47 artifacts have identical sha256 hashes across builds.` |
 | `pnpm bench:check` | Đạt (exit 0) | `✔ Scale 1000 PASSED all performance gates.` |

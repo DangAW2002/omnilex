@@ -6,8 +6,7 @@
   "types": "./dist/index.d.ts",
   "type": "module",
   "bin": {
-    "omnilex-mcp": "./dist/index.js",
-    "termbridge-mcp": "./dist/index.js"
+    "omnilex-mcp": "./dist/index.js"
   },
   "scripts": {
     "build": "tsc"

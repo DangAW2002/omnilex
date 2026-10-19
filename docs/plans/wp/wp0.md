@@ -1,4 +1,4 @@
-# Ghi chú thiết kế WP0: Benchmark + Ngân sách hiệu năng + Deterministic Build + Mod Golden Tests
+﻿# Ghi chú thiết kế WP0: Benchmark + Ngân sách hiệu năng + Deterministic Build + Mod Golden Tests
 
 ## 1. Phạm vi
 - Giải quyết 3 việc mở O-1, O-2, O-3 (mục 2.1 của Handoff):

@@ -1,4 +1,4 @@
-# Ghi chú thiết kế WP1: Thắng nhanh, không đổi định dạng dữ liệu (P1)
+﻿# Ghi chú thiết kế WP1: Thắng nhanh, không đổi định dạng dữ liệu (P1)
 
 ## 1. Phạm vi
 Thực hiện các tối ưu hóa P1 trong Mục 1.8 của Kế hoạch:

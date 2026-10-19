@@ -1,4 +1,4 @@
-# Báo cáo WP1: Thắng nhanh, không đổi định dạng dữ liệu (P1)
+﻿# Báo cáo WP1: Thắng nhanh, không đổi định dạng dữ liệu (P1)
 
 ## Tóm tắt
 WP1 hoàn thành triển khai toàn bộ các tối ưu hóa P1 trong Mục 1.8 của Kế hoạch mà không thay đổi bất kỳ định dạng dữ liệu nào. Bao gồm: tối ưu hóa thời gian quét và nạp dữ liệu của Claude Mod thông qua tra cứu Map O(1), tái sử dụng regex biên dịch sẵn, chuẩn hóa sẵn mô tả ngắn, và tải lười bài giải thích Markdown; hỗ trợ nạp/xuất MiniSearch index qua `loadJSON`/`toJSON` và cache instance trong core; tăng tốc lệnh CLI `tb find` bằng cách đọc trực tiếp `dist/<locale>/search.json` kèm kiểm tra mtime; và cache chỉ mục MiniSearch trong MCP server để tránh dựng lại ở mỗi tool call. Toàn bộ 10 cổng kiểm tra đều vượt qua, trong đó MCP `find_term` giảm từ ~100ms xuống 1.54ms, và 100% test bộ vàng mod giữ nguyên tính tương thích.
@@ -27,7 +27,7 @@ Không có lệch kế hoạch. Mọi tối ưu hóa đều tuân thủ nguyên 
 | `pnpm test` | Đạt (exit 0) | `Test Files 8 passed (8) | Tests 33 passed (33)` |
 | `claude plugin test packages/claude-mod` | Đạt (exit 0) | `10 pass, 0 fail Ran 10 tests across 2 files. [0.75s]` |
 | `pnpm tb validate --strict` | Đạt (exit 0) | `✔ Validation passed successfully!` |
-| `pnpm --filter @termbridge/site build` | Đạt (exit 0) | `[build] 25 page(s) built in 1.13s` |
+| `pnpm --filter @omnilex/site build` | Đạt (exit 0) | `[build] 25 page(s) built in 1.13s` |
 | `pnpm tb build && git diff --exit-code indexes/ llms.txt` | Đạt (exit 0) | Clean diff |
 | `pnpm check:deterministic` | Đạt (exit 0) | `✔ Build is 100% deterministic! All 47 artifacts have identical sha256 hashes across builds.` |
 | `pnpm bench:check` | Đạt (exit 0) | `✔ Scale 1000 PASSED all performance gates.` |

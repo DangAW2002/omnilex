@@ -1,4 +1,4 @@
-# Báo cáo WP8, lô 1: AI và mô hình ngôn ngữ (20 khái niệm)
+﻿# Báo cáo WP8, lô 1: AI và mô hình ngôn ngữ (20 khái niệm)
 
 Trạng thái: **đã duyệt và commit** (2026-10-16). Người dùng giao cho orchestrator tự chốt các điểm còn mở; quyết định ghi ở cuối báo cáo. Mọi khái niệm vẫn là `status: draft`: duyệt lô để commit không phải là nâng trạng thái.
 

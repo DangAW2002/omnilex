@@ -1,6 +1,6 @@
-// Project glossaries (Plan 3.7): .termbridge/glossary/<id>/concept.yaml and
+// Project glossaries (Plan 3.7): .omnilex/glossary/<id>/concept.yaml and
 // <locale>.md, the same format as concepts/, built into a pack `local.<name>`
-// under .termbridge/.cache/local/<name>/ whenever the sources change.
+// under .omnilex/.cache/local/<name>/ whenever the sources change.
 import crypto from 'node:crypto';
 import fs from 'node:fs';
 import path from 'node:path';
@@ -36,7 +36,7 @@ export function buildLocalPack(glossaryDir: string, cacheDir: string, options: {
   const id = localPackId(glossaryDir);
   const notices: string[] = [];
   if (!fs.existsSync(glossaryDir)) {
-    return { id, dir: cacheDir, rebuilt: false, concepts: 0, notices: [`Termbridge: không có glossary ${toPosix(glossaryDir)} / glossary not found`] };
+    return { id, dir: cacheDir, rebuilt: false, concepts: 0, notices: [`OmniLex: không có glossary ${toPosix(glossaryDir)} / glossary not found`] };
   }
   const print = fingerprint(glossaryDir);
   const stampFile = path.join(cacheDir, 'source.json');
@@ -56,7 +56,7 @@ export function buildLocalPack(glossaryDir: string, cacheDir: string, options: {
   }
   for (const record of records.values()) {
     if (options.knownIds?.has(record.id)) {
-      notices.push(`Termbridge: khái niệm ${record.id} trong ${id} trùng id với một gói đã cài / ${record.id} in ${id} has the same id as an installed pack`);
+      notices.push(`OmniLex: khái niệm ${record.id} trong ${id} trùng id với một gói đã cài / ${record.id} in ${id} has the same id as an installed pack`);
     }
   }
   const name = path.basename(glossaryDir);

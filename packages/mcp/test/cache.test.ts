@@ -7,15 +7,15 @@ import * as core from '@omnilex/core';
 import { createToolHandler, handleToolCall } from '../src/index.js';
 
 const repoRoot = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '../../../');
-// An empty home and a cwd without .termbridge/, so only the dist under test is read.
-const emptyHome = fs.mkdtempSync(path.join(os.tmpdir(), 'tb-mcp-home-'));
-process.env.TERMBRIDGE_HOME = emptyHome;
+// An empty home and a cwd without .omnilex/, so only the dist under test is read.
+const emptyHome = fs.mkdtempSync(path.join(os.tmpdir(), 'ol-mcp-home-'));
+process.env.OMNILEX_HOME = emptyHome;
 
 describe('T-S4: MCP loads each (locale, pack) index once across tool calls', () => {
   let tempRoot: string;
 
   beforeAll(() => {
-    tempRoot = fs.mkdtempSync(path.join(os.tmpdir(), 'tb-mcp-cache-'));
+    tempRoot = fs.mkdtempSync(path.join(os.tmpdir(), 'ol-mcp-cache-'));
     core.buildArtifacts({ ...core.loadAll(repoRoot), rootDir: tempRoot });
   });
 
@@ -110,13 +110,13 @@ describe('T-S4: repository fallback builds the index once per locale', () => {
 
 describe('MCP follows the project configuration (Plan 3.8)', () => {
   it('serves the packs a project selects and reloads when its config changes', async () => {
-    const temp = fs.mkdtempSync(path.join(os.tmpdir(), 'tb-mcp-project-'));
+    const temp = fs.mkdtempSync(path.join(os.tmpdir(), 'ol-mcp-project-'));
     try {
       core.buildArtifacts({ ...core.loadAll(repoRoot), rootDir: path.join(temp, 'repo') });
       const dist = path.join(temp, 'repo', 'dist').split(path.sep).join('/');
       const project = path.join(temp, 'proj');
-      fs.mkdirSync(path.join(project, '.termbridge'), { recursive: true });
-      const config = path.join(project, '.termbridge', 'config.yaml');
+      fs.mkdirSync(path.join(project, '.omnilex'), { recursive: true });
+      const config = path.join(project, '.omnilex', 'config.yaml');
       fs.writeFileSync(config, `root: true\npacks: ['dev:${dist}', -it]\n`);
       const handle = createToolHandler(path.join(temp, 'nowhere'), { cwd: project, home: path.join(temp, 'home') });
       const before = await handle('find_term', { description: 'token', locale: 'en' });

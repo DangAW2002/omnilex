@@ -1,4 +1,4 @@
-# Termbridge Index: Quản trị sản phẩm và dự án (vi)
+# OmniLex Index: Quản trị sản phẩm và dự án (vi)
 
 - [**A/B testing**](../../concepts/ab-testing/vi.md): *phương pháp thử nghiệm so sánh hai phiên bản giao diện để xem phiên bản nào đạt hiệu quả cao hơn; thí nghiệm chia ngẫu nhiên người dùng để đo lường xem thay đổi nào giúp tăng tỷ lệ chuyển đổi* — Phương pháp thử nghiệm ngẫu nhiên có đối chứng, trong đó hai biến thể giao diện được hiển thị đồng thời cho các nhóm người dùng khác nhau để tìm ra phương án tối ưu.
 - [**Acceptance criteria**](../../concepts/acceptance-criteria/vi.md): *danh sách các điều kiện cụ thể mà một tính năng phải vượt qua để được tính là hoàn thành; quy tắc kiểm tra rõ ràng giúp lập trình viên và kiểm thử viên biết tính năng phải chạy đúng như thế nào* — Tập hợp các điều kiện và hành vi bắt buộc mà một user story cụ thể phải thỏa mãn để được Product Owner chấp thuận nghiệm thu.

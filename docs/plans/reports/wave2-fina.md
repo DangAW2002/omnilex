@@ -1,4 +1,4 @@
-# Báo cáo Wave 2, lô fina: Tài chính cá nhân, Ngân hàng và Đầu tư (27 khái niệm)
+﻿# Báo cáo Wave 2, lô fina: Tài chính cá nhân, Ngân hàng và Đầu tư (27 khái niệm)
 
 Trạng thái: **Hoàn thành biên soạn và vượt qua toàn bộ cổng kiểm thử** (2026-10-17). Mọi khái niệm đều ở `status: draft` với `provenance.drafted_by: ai`, tuân thủ nghiêm ngặt quy định không tự nâng cấp trạng thái.
 

@@ -1,11 +1,11 @@
 name: Propose New Term
-description: Propose a new terminology concept to be added to Termbridge
+description: Propose a new terminology concept to be added to OmniLex
 title: "term: [Proposed Concept ID]"
 labels: ["new-term", "needs-triage"]
 body:
   - type: markdown
     attributes:
-      value: Thank you for proposing a new term to Termbridge!
+      value: Thank you for proposing a new term to OmniLex!
   - type: input
     id: concept_id
     attributes:

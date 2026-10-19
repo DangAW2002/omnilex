@@ -178,7 +178,7 @@ export function inspectTbpack(
   }
   const schemaError = schemaCheck(pack!);
   if (schemaError) fail(`pack.json sai schema / pack.json fails the schema: ${schemaError}`);
-  if (pack!.formatVersion > PACK_FORMAT_VERSION) fail(`formatVersion ${pack!.formatVersion} mới hơn bản đang chạy / is newer than this Termbridge`);
+  if (pack!.formatVersion > PACK_FORMAT_VERSION) fail(`formatVersion ${pack!.formatVersion} mới hơn bản đang chạy / is newer than this OmniLex`);
 
   const declared = new Map<string, { bytes: number; sha256: string }>();
   for (const tier of PACK_TIERS) {

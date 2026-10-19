@@ -11,16 +11,16 @@ const layer = (kind: ConfigLayer['kind'], source: string, config: ConfigLayer['c
 describe('T-P2: layered configuration', () => {
   it('lets higher layers win for single values and records where each came from', () => {
     const effective = mergeConfigLayers([
-      layer('user', '~/.termbridge/config.yaml', { locale: 'en', profile: 'lite' }),
-      layer('project', '/p/.termbridge/config.yaml', { locale: 'vi' }),
-      layer('local', '/p/.termbridge/config.local.yaml', { profile: 'standard' }),
+      layer('user', '~/.omnilex/config.yaml', { locale: 'en', profile: 'lite' }),
+      layer('project', '/p/.omnilex/config.yaml', { locale: 'vi' }),
+      layer('local', '/p/.omnilex/config.local.yaml', { profile: 'standard' }),
       layer('session', '--pack', { tiers: { explanations: 'off' } }),
     ]);
     expect(effective.locale).toBe('vi');
     expect(effective.profile).toBe('standard');
     expect(effective.tiers.explanations).toBe('off');
-    expect(effective.origins.locale).toBe('/p/.termbridge/config.yaml');
-    expect(effective.origins.profile).toBe('/p/.termbridge/config.local.yaml');
+    expect(effective.origins.locale).toBe('/p/.omnilex/config.yaml');
+    expect(effective.origins.profile).toBe('/p/.omnilex/config.local.yaml');
     expect(effective.origins['tiers.explanations']).toBe('--pack');
     expect(effective.origins.fallbackLocales).toBe('default');
   });
@@ -49,12 +49,12 @@ describe('T-P2: layered configuration', () => {
 
   it('explains every value with its source', () => {
     const lines = explainConfig(mergeConfigLayers([
-      layer('project', '/p/.termbridge/config.yaml', { locale: 'en', packs: ['+tech'], limits: { memoryMB: 32 } }),
+      layer('project', '/p/.omnilex/config.yaml', { locale: 'en', packs: ['+tech'], limits: { memoryMB: 32 } }),
     ]));
-    expect(lines).toContain('locale = en  # /p/.termbridge/config.yaml');
+    expect(lines).toContain('locale = en  # /p/.omnilex/config.yaml');
     expect(lines).toContain('profile = standard  # default');
-    expect(lines).toContain('limits.memoryMB = 32  # /p/.termbridge/config.yaml');
-    expect(lines).toContain('packs +tech  # /p/.termbridge/config.yaml');
+    expect(lines).toContain('limits.memoryMB = 32  # /p/.omnilex/config.yaml');
+    expect(lines).toContain('packs +tech  # /p/.omnilex/config.yaml');
   });
 
   it('keeps known keys, warns on unknown or invalid ones', () => {
@@ -65,25 +65,25 @@ describe('T-P2: layered configuration', () => {
   });
 
   it('walks up from cwd to the nearest root: true and reads config.local.yaml of the nearest project', async () => {
-    const temp = toPosix(fs.mkdtempSync(path.join(os.tmpdir(), 'tb-config-')));
+    const temp = toPosix(fs.mkdtempSync(path.join(os.tmpdir(), 'ol-config-')));
     try {
       const write = (rel: string, text: string) => {
         fs.mkdirSync(path.dirname(path.join(temp, rel)), { recursive: true });
         fs.writeFileSync(path.join(temp, rel), text);
       };
       write('home/config.yaml', 'locale: en\n');
-      write('outer/.termbridge/config.yaml', 'packs: [+ignored]\n');
-      write('outer/mono/.termbridge/config.yaml', 'root: true\nprofile: lite\n');
-      write('outer/mono/app/.termbridge/config.yaml', 'packs: [+tech]\n');
-      write('outer/mono/app/.termbridge/config.local.yaml', 'profile: standard\n');
+      write('outer/.omnilex/config.yaml', 'packs: [+ignored]\n');
+      write('outer/mono/.omnilex/config.yaml', 'root: true\nprofile: lite\n');
+      write('outer/mono/app/.omnilex/config.yaml', 'packs: [+tech]\n');
+      write('outer/mono/app/.omnilex/config.local.yaml', 'profile: standard\n');
       fs.mkdirSync(path.join(temp, 'outer/mono/app/src'), { recursive: true });
 
       const found = await discoverLayers(nodeProjectFS, { cwd: `${temp}/outer/mono/app/src`, home: `${temp}/home` });
       expect(found.layers.map((item) => [item.kind, item.source.slice(temp.length)])).toEqual([
         ['user', '/home/config.yaml'],
-        ['project', '/outer/mono/.termbridge/config.yaml'],
-        ['project', '/outer/mono/app/.termbridge/config.yaml'],
-        ['local', '/outer/mono/app/.termbridge/config.local.yaml'],
+        ['project', '/outer/mono/.omnilex/config.yaml'],
+        ['project', '/outer/mono/app/.omnilex/config.yaml'],
+        ['local', '/outer/mono/app/.omnilex/config.local.yaml'],
       ]);
       expect(found.projectDir).toBe(`${temp}/outer/mono/app`);
       const effective = mergeConfigLayers(found.layers);

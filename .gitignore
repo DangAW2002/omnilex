@@ -33,10 +33,10 @@ Thumbs.db
 .local/
 .cache/
 
-# Termbridge per-user project files
-.termbridge/config.local.yaml
-.termbridge/.cache/
+# OmniLex per-user project files
+.omnilex/config.local.yaml
+.omnilex/.cache/
 
-# Fetched source texts for tb check overlap (copyrighted, never committed)
+# Fetched source texts for ol check overlap (copyrighted, never committed)
 candidates/.sources/
 candidates/.scratch/

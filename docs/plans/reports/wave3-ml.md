@@ -1,6 +1,6 @@
-# Báo cáo Wave 3, lô ml: Machine Learning và Trí tuệ nhân tạo (34 khái niệm)
+﻿# Báo cáo Wave 3, lô ml: Machine Learning và Trí tuệ nhân tạo (34 khái niệm)
 
-Trạng thái: **hoàn thành bản thảo** (2026-10-17). Toàn bộ 34 khái niệm được tạo lập chính xác theo danh sách trong `candidates/wave3/ml.yaml`, giữ nguyên trạng thái `status: draft` và `provenance.drafted_by: ai` theo quy định nghiêm ngặt của dự án Termbridge.
+Trạng thái: **hoàn thành bản thảo** (2026-10-17). Toàn bộ 34 khái niệm được tạo lập chính xác theo danh sách trong `candidates/wave3/ml.yaml`, giữ nguyên trạng thái `status: draft` và `provenance.drafted_by: ai` theo quy định nghiêm ngặt của dự án OMNILEX.
 
 ## Danh sách khái niệm
 | id | Nhãn en | Nhãn vi | Level | Nguồn A/B (definition) | Bằng chứng nhãn vi |

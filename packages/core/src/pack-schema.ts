@@ -2,8 +2,8 @@
 // outside this repository (D-9). A test keeps the two identical.
 export const PACK_SCHEMA = {
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "$id": "https://termbridge.org/schema/pack.schema.json",
-  "title": "Termbridge Pack Descriptor (pack.json)",
+  "$id": "https://omnilex.org/schema/pack.schema.json",
+  "title": "OmniLex Pack Descriptor (pack.json)",
   "type": "object",
   "required": [
     "id",

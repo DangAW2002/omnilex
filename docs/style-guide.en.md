@@ -1,6 +1,6 @@
-# English Style Guide for Termbridge
+# English Style Guide for OmniLex
 
-This style guide establishes editorial standards for English-language concept documentation in Termbridge.
+This style guide establishes editorial standards for English-language concept documentation in OmniLex.
 
 ## 1. Audience & Voice
 

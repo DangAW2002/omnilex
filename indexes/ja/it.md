@@ -1,4 +1,4 @@
-# Termbridge Index: Information Technology (ja)
+# OmniLex Index: Information Technology (ja)
 
 - [**ACID (Database)**](../../concepts/acid/en.md): *four safety rules guaranteeing that database transactions finish completely without corruption; the core database promise that financial transactions either succeed 100% or leave no trace* — A set of four fundamental properties (Atomicity, Consistency, Isolation, Durability) that guarantee database transactions are processed reliably.
 - [**Agent (AI)**](../../concepts/ai-agent/en.md): *an AI system that plans steps and uses tools to achieve goals independently; a software assistant that observes its environment, takes actions, and completes tasks* — An autonomous AI system that reasons over objectives, breaks goals into sequential steps, and interacts with tools and environments to complete tasks.

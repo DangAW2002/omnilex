@@ -1,4 +1,4 @@
-# Termbridge Index: Product and Project Management (en)
+# OmniLex Index: Product and Project Management (en)
 
 - [**A/B testing**](../../concepts/ab-testing/en.md): *splitting users between two variants of a screen or feature to see which one performs better; controlled trial where real users are randomly split to measure which design drives higher conversions* — A randomized experimental method where two variants of a digital experience are shown to visitors simultaneously to determine which drives superior outcomes.
 - [**Acceptance criteria**](../../concepts/acceptance-criteria/en.md): *specific checklist of conditions that a user story must satisfy before being marked complete; unambiguous rules showing developers and testers exactly how a feature should behave* — A predefined set of conditions, behaviors, and boundary checks that a specific user story must satisfy to be accepted.

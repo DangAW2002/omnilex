@@ -177,11 +177,11 @@ describe('T-I4: overlay', () => {
     expect(overlayTerms(overlay, [], 'vi')).toEqual([]);
   });
 
-  it('is read from .termbridge/overrides.yaml by openProject', async () => {
+  it('is read from .omnilex/overrides.yaml by openProject', async () => {
     const project = path.join(temp, 'proj-overlay');
-    fs.mkdirSync(path.join(project, '.termbridge'), { recursive: true });
-    fs.writeFileSync(path.join(project, '.termbridge', 'config.yaml'), `root: true\npacks: ['dev:${dist.split(path.sep).join('/')}']\n`);
-    fs.writeFileSync(path.join(project, '.termbridge', 'overrides.yaml'), 'exclude: [roi]\nprefer: { token: token-llm }\n');
+    fs.mkdirSync(path.join(project, '.omnilex'), { recursive: true });
+    fs.writeFileSync(path.join(project, '.omnilex', 'config.yaml'), `root: true\npacks: ['dev:${dist.split(path.sep).join('/')}']\n`);
+    fs.writeFileSync(path.join(project, '.omnilex', 'overrides.yaml'), 'exclude: [roi]\nprefer: { token: token-llm }\n');
     const ctx = await openProject(nodeProjectFS, { cwd: project, home: path.join(temp, 'home'), surface: 'cli', configHash: searchConfigHash() });
     expect(ctx.overlay.exclude).toEqual(['roi']);
     expect(ctx.watch.some((file) => file.endsWith('overrides.yaml'))).toBe(true);
@@ -191,10 +191,10 @@ describe('T-I4: overlay', () => {
 describe('local glossary (Plan 3.7)', () => {
   it('builds local.<name>, serves it through local:, and rebuilds when sources change', async () => {
     const project = path.join(temp, 'proj-glossary');
-    const glossary = path.join(project, '.termbridge', 'glossary');
+    const glossary = path.join(project, '.omnilex', 'glossary');
     fs.mkdirSync(glossary, { recursive: true });
     writeConcepts(fromCsv(toCsv(rows.filter((row) => row.id === 'cookie'))).map((row) => ({ ...row, id: 'team-cookie', label: `${row.label} nội bộ` })), glossary, { mode: 'glossary' });
-    fs.writeFileSync(path.join(project, '.termbridge', 'config.yaml'), 'root: true\npacks: [local:./.termbridge/glossary]\n');
+    fs.writeFileSync(path.join(project, '.omnilex', 'config.yaml'), 'root: true\npacks: [local:./.omnilex/glossary]\n');
 
     const open = () => openProject(nodeProjectFS, { cwd: project, home: path.join(temp, 'home-glossary'), surface: 'cli', configHash: searchConfigHash() });
     const before = await open();

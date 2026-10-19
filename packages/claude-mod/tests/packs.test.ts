@@ -1,7 +1,7 @@
 import { expect, test } from 'claude-code/testing'
 
 // T-P7: the mod resolves the project's packs from the session's cwd (D11) over
-// a fake file system: /work/.termbridge/config.yaml points at /work/dist.
+// a fake file system: /work/.omnilex/config.yaml points at /work/dist.
 
 const LOCALES = ['vi', 'en'] as const
 
@@ -40,7 +40,7 @@ function card(id: string, locale: (typeof LOCALES)[number], domain: string) {
 
 function buildFiles(): Record<string, string> {
   const files: Record<string, string> = {
-    '/work/.termbridge/config.yaml': "root: true\npacks: ['dev:./dist']\n",
+    '/work/.omnilex/config.yaml': "root: true\npacks: ['dev:./dist']\n",
   }
   const manifestPacks = []
   for (const pack of PACKS) {
@@ -92,7 +92,7 @@ function setup(on: any, reads: string[] = [], onPrompt?: (value: string) => void
   on('fs.exists', (_: any, e: any) => ({ value: norm(e.path) in files || dirs.has(norm(e.path)) }))
   on('fs.list', () => ({ value: [] }))
   on('fs.stat', () => ({ value: { kind: 'file', size: 1, mtimeMs: 1, isLink: false } }))
-  on('env.get', (_: any, e: any) => ({ value: e.name === 'TERMBRIDGE_HOME' ? '/home/u/.termbridge' : undefined }))
+  on('env.get', (_: any, e: any) => ({ value: e.name === 'OMNILEX_HOME' ? '/home/u/.omnilex' : undefined }))
   on('command.register', () => ({ value: undefined }))
   on('ui.open', () => ({ value: { isPlaced: true } }))
   on('prompt.fill', (_: any, e: any) => {
@@ -105,14 +105,14 @@ function setup(on: any, reads: string[] = [], onPrompt?: (value: string) => void
 }
 
 const PANE_PROPS = {
-  title: 'Termbridge', isFocused: true, bodyColumns: 60, placement: 'inline',
+  title: 'OmniLex', isFocused: true, bodyColumns: 60, placement: 'inline',
   scroll: { offset: 0, bodyRows: 10 }, view: {},
 }
 
 test('T-P7: finds the project from the session cwd and reads its packs', async ($, on) => {
   setup(on)
   await $.session.start({ surface: 'terminal', isInteractive: true, cwd: '/work/app' })
-  const status = await $.command.run({ command: 'termbridge', args: 'status' })
+  const status = await $.command.run({ command: 'omnilex', args: 'status' })
   expect(status.text).toContain('project /work')
   expect(status.text).toContain('finance.personal-finance@0.1.0 (dev)')
   expect(status.text).toContain('it.web@0.1.0 (dev)')
@@ -128,10 +128,10 @@ test('T-P7: finds the project from the session cwd and reads its packs', async (
   await ui.unmount()
 })
 
-test('T-P7: /termbridge packs narrows the selection for the session, and all restores it', async ($, on) => {
+test('T-P7: /omnilex packs narrows the selection for the session, and all restores it', async ($, on) => {
   setup(on)
   await $.session.start({ surface: 'terminal', isInteractive: true, cwd: '/work/app' })
-  const narrowed = await $.command.run({ command: 'termbridge', args: 'packs it.web' })
+  const narrowed = await $.command.run({ command: 'omnilex', args: 'packs it.web' })
   expect(narrowed.text).toContain('it.web@0.1.0')
   expect(narrowed.text).not.toContain('finance.personal-finance')
 
@@ -144,17 +144,17 @@ test('T-P7: /termbridge packs narrows the selection for the session, and all res
   expect(await reply.find({ type: 'Text', text: 'Tiền lãi được cộng vào gốc.' })).toBeUndefined()
   await reply.unmount()
 
-  const restored = await $.command.run({ command: 'termbridge', args: 'packs all' })
+  const restored = await $.command.run({ command: 'omnilex', args: 'packs all' })
   expect(restored.text).toContain('finance.personal-finance@0.1.0')
 })
 
-test('T-P7: /termbridge profile lite turns search and explanations off', async ($, on) => {
+test('T-P7: /omnilex profile lite turns search and explanations off', async ($, on) => {
   setup(on)
   await $.session.start({ surface: 'terminal', isInteractive: true, cwd: '/work/app' })
-  const lite = await $.command.run({ command: 'termbridge', args: 'profile lite' })
+  const lite = await $.command.run({ command: 'omnilex', args: 'profile lite' })
   expect(lite.text).toContain('profile lite')
   expect(lite.text).toContain('search=off explanations=off')
-  const wrong = await $.command.run({ command: 'termbridge', args: 'profile huge' })
+  const wrong = await $.command.run({ command: 'omnilex', args: 'profile huge' })
   expect(wrong.text).toContain('lite, standard, semantic')
 })
 
@@ -165,14 +165,14 @@ test('T-P7: explanations load lazily, only when a concept is opened', async ($, 
   await $.session.start({ surface: 'terminal', isInteractive: true, cwd: '/work/app' })
   expect(reads.some((file) => file.includes('/concepts/') || file.endsWith('explanations.jsonl'))).toBe(false)
 
-  await $.command.run({ command: 'termbridge', args: '' })
-  const pane = await $.ui.mount({ plugin: 'omnilex', surface: 'terminal', component: 'Pane', requestId: 'termbridge-lookup', viewport: { columns: 100, rows: 30 }, props: PANE_PROPS })
+  await $.command.run({ command: 'omnilex', args: '' })
+  const pane = await $.ui.mount({ plugin: 'omnilex', surface: 'terminal', component: 'Pane', requestId: 'omnilex-lookup', viewport: { columns: 100, rows: 30 }, props: PANE_PROPS })
   // Typing searches but opens nothing: no explanation is read yet.
-  await pane.input({ key: 'termbridge-query', text: 'tiền lãi lại sinh ra lãi', kind: 'change' })
+  await pane.input({ key: 'omnilex-query', text: 'tiền lãi lại sinh ra lãi', kind: 'change' })
   expect(await pane.find({ key: 'select-0' })).toBeDefined()
   expect(reads.some((file) => file.includes('/concepts/'))).toBe(false)
   // Enter opens the first result, and only then is its explanation read.
-  await pane.input({ key: 'termbridge-query', text: 'tiền lãi lại sinh ra lãi' })
+  await pane.input({ key: 'omnilex-query', text: 'tiền lãi lại sinh ra lãi' })
   expect(await pane.find({ type: 'Text', text: 'Tiền lãi được cộng vào gốc.' })).toBeDefined()
   await pane.press({ key: 'insert-term' })
   expect(filled).toBe('Lãi kép')
@@ -185,7 +185,7 @@ test('T-P7: switching locale reloads cards and keeps reverse lookup working', as
   let filled = ''
   setup(on, [], (value) => { filled = value })
   await $.session.start({ surface: 'terminal', isInteractive: true, cwd: '/work/app' })
-  await $.command.run({ command: 'termbridge', args: 'lang en' })
+  await $.command.run({ command: 'omnilex', args: 'lang en' })
   const reply = await $.ui.mount({
     plugin: 'omnilex', surface: 'terminal', component: 'AssistantMessage', requestId: 'reply-en',
     viewport: { columns: 100, rows: 30 },
@@ -194,9 +194,9 @@ test('T-P7: switching locale reloads cards and keeps reverse lookup working', as
   expect(await reply.find({ type: 'Text', text: 'Interest earns more interest.' })).toBeDefined()
   await reply.unmount()
 
-  await $.command.run({ command: 'termbridge', args: '' })
-  const pane = await $.ui.mount({ plugin: 'omnilex', surface: 'terminal', component: 'Pane', requestId: 'termbridge-lookup', viewport: { columns: 100, rows: 30 }, props: PANE_PROPS })
-  await pane.input({ key: 'termbridge-query', text: 'money snowballing because earnings get added back to the pile' })
+  await $.command.run({ command: 'omnilex', args: '' })
+  const pane = await $.ui.mount({ plugin: 'omnilex', surface: 'terminal', component: 'Pane', requestId: 'omnilex-lookup', viewport: { columns: 100, rows: 30 }, props: PANE_PROPS })
+  await pane.input({ key: 'omnilex-query', text: 'money snowballing because earnings get added back to the pile' })
   expect(await pane.find({ type: 'Text', text: 'Interest earns more interest.' })).toBeDefined()
   await pane.press({ key: 'insert-term' })
   expect(filled).toBe('Compound Interest')
@@ -210,13 +210,13 @@ test('T-P7: without a project or store the bundled data is used', async ($, on) 
   on('command.register', () => ({ value: undefined }))
   on('session.start', () => ({ cwd: '/elsewhere' }))
   await $.session.start({ surface: 'terminal', isInteractive: true, cwd: '/elsewhere' })
-  const status = await $.command.run({ command: 'termbridge', args: 'status' })
+  const status = await $.command.run({ command: 'omnilex', args: 'status' })
   expect(status.text).toContain('bundled plugin data')
 })
 
 test('T-I4: the project overlay hides excluded concepts and adds aliases in the mod', async ($, on) => {
   setup(on, [], undefined, {
-    '/work/.termbridge/overrides.yaml': [
+    '/work/.omnilex/overrides.yaml': [
       'exclude: [cookie]',
       'concepts:',
       "  compound-interest: { aliases: { vi: ['+lãi mẹ đẻ lãi con'] } }",

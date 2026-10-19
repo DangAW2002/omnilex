@@ -6,18 +6,18 @@ Prototype implemented and validated with Claude Code 2.1.296. Visual placement s
 
 ## Context
 
-Termbridge needs two client-side lookup paths: explain terminology in an assistant reply and suggest terminology for a user's everyday description. The lookup should not consume model tokens.
+OmniLex needs two client-side lookup paths: explain terminology in an assistant reply and suggest terminology for a user's everyday description. The lookup should not consume model tokens.
 
 ## Decision
 
 `packages/claude-mod` is a Claude Code mod loaded with `--plugin-dir`.
 
-1. `tb build` bundles Vietnamese and English term lists, search entries, and layered explanations into the plugin's `data/` directory.
-2. Assistant replies are drawn in one of three modes, switched with `/termbridge mode hover|links|badges` and kept in the plugin store:
+1. `ol build` bundles Vietnamese and English term lists, search entries, and layered explanations into the plugin's `data/` directory.
+2. Assistant replies are drawn in one of three modes, switched with `/omnilex mode hover|links|badges` and kept in the plugin store:
    - `hover` (default): each prose line, heading or list item that holds a term is laid out by the mod with its own word wrap, so the term is a keyed box with an absolutely positioned summary card and a press target that opens the pane. Terms are drawn underlined in the theme's `suggestion` color. Code fences (closed or still streaming), tables, quotes and lines without terms stay in native `Markdown` blocks.
    - `links`: the whole reply is one native `Markdown` block; the first mention of each concept becomes a `file:` link to its `vi.md`, and a plain click in the fullscreen terminal opens the pane through `onLinkPress`.
    - `badges`: short plain replies get direct hover; other replies keep Claude Code's drawing with up to four badges below.
-3. A short, expanded `UserMessage` containing a known plain description similarly makes the description a direct hover target. Other matching messages get a reverse lookup badge. The `/termbridge` command opens a pane where the user can enter any description, inspect candidate terms, and insert the selected label into the prompt. `/termbridge lang vi|en` selects the language of summaries, search, and explanations; the setting persists across sessions.
+3. A short, expanded `UserMessage` containing a known plain description similarly makes the description a direct hover target. Other matching messages get a reverse lookup badge. The `/omnilex` command opens a pane where the user can enter any description, inspect candidate terms, and insert the selected label into the prompt. `/omnilex lang vi|en` selects the language of summaries, search, and explanations; the setting persists across sessions.
 4. Homonyms and broadly ambiguous labels are excluded from automatic badges. The search pane still allows an explicit choice.
 
 ## Limits

@@ -1,7 +1,7 @@
-# Báo cáo WP7: Import/export, glossary local, overlay, attributions, registry, gói starter
+﻿# Báo cáo WP7: Import/export, glossary local, overlay, attributions, registry, gói starter
 
 ## Tóm tắt
-Termbridge giờ chia sẻ và nhận dữ liệu được mà không cần fork repo:
+OMNILEX giờ chia sẻ và nhận dữ liệu được mà không cần fork repo:
 - **`.tbpack`**: zip một gói. Có thể export cả gói, hoặc gói dẫn xuất theo domain/locale/tier, hoặc đúng bộ project đang dùng (`--effective`). Import kiểm đủ các bước của D-9.
 - **Registry**: `registry.json` + các file `.tbpack`; `tb pack add id@range` cài từ registry.
 - **CSV, TBX-Basic, JSONL**: export và import; import vào `concepts/` luôn ra `draft` với `drafted_by: import`.
@@ -26,7 +26,7 @@ Không thêm dependency nào: zip dùng `node:zlib`, XML dùng một bộ phân 
 | `packages/core/src/builder.ts` | Sửa | Dùng `conceptPackData`; xuất `starter` vào `dist/` và vào `packages/claude-mod/data/starter/` |
 | `packages/core/src/pack-format.ts`, `schema/*.schema.json` | Sửa | `role`, `attributions`, `PackAttribution`; lựa chọn mặc định không lấy starter khi có gói khác |
 | `packages/core/src/pack-reader.ts` | Sửa | Áp overlay; khử trùng khái niệm giữa các gói (gói đứng trước thắng) |
-| `packages/core/src/project.ts`, `resolver.ts` | Sửa | Nguồn `local:` (đọc bản dựng trong cache), overlay đọc từ `.termbridge/overrides.yaml` hoặc khóa `overrides`, `origin` trong lock, starter chỉ được chọn khi đứng một mình |
+| `packages/core/src/project.ts`, `resolver.ts` | Sửa | Nguồn `local:` (đọc bản dựng trong cache), overlay đọc từ `.omnilex/overrides.yaml` hoặc khóa `overrides`, `origin` trong lock, starter chỉ được chọn khi đứng một mình |
 | `packages/core/src/loader.ts` | Sửa | `loadConceptsFrom(dir)` |
 | `packages/cli/src/packs.ts` | Sửa | `tb pack add <file|url|id>` (dist → registry), `tb pack export`, `tb registry build`, `tb export`, `tb import`, `tb overlay propose`; `install`/`update` cài được từ registry |
 | `packages/mcp/src/index.ts` | Sửa | Overlay và glossary local |
@@ -58,7 +58,7 @@ Thêm:
 | `pnpm test` | Đạt | `Test Files 21 passed (21)` / `Tests 145 passed (145)` |
 | `claude plugin test packages/claude-mod` | Đạt | `17 pass` / `0 fail` |
 | `pnpm tb validate --strict` | Đạt | `✔ Validation passed successfully!` |
-| `pnpm --filter @termbridge/site build` | Đạt | `T-P8: search page reads shards (no embedded search data)` |
+| `pnpm --filter @omnilex/site build` | Đạt | `T-P8: search page reads shards (no embedded search data)` |
 | `pnpm tb build && git diff --exit-code indexes/ llms.txt` | Đạt | diff rỗng |
 | `pnpm check:deterministic` | Đạt | `✔ Build is 100% deterministic! All 187 artifacts have identical sha256 hashes across builds.` |
 | `pnpm bench --sizes 1000 --check` | Đạt | `✔ Scale 1000 PASSED all performance gates.` |

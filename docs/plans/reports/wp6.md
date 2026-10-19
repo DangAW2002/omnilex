@@ -1,7 +1,7 @@
-# Báo cáo WP6: Resolver, phạm vi cấu hình, kho gói, lockfile, ngân sách tài nguyên
+﻿# Báo cáo WP6: Resolver, phạm vi cấu hình, kho gói, lockfile, ngân sách tài nguyên
 
 ## Tóm tắt
-Mỗi máy, workspace và project giờ tự chọn gói qua `.termbridge/config.yaml` phân lớp (mặc định < người dùng < các project từ trên xuống, dừng ở `root: true` < `config.local` < phiên). Lựa chọn được resolve bằng một resolver chung (semver, meta-pack, phát hiện vòng phụ thuộc, báo gói thiếu) và một kế hoạch nạp tier theo profile và `limits`. Gói được cài vào kho dùng chung `~/.termbridge/store/` (có kiểm sha256), ghi vào `lock.json`, và quản lý bằng `tb pack add|remove|list|status|install [--frozen]|update|verify|prune` cùng `tb config explain`. CLI, MCP và mod đều đọc gói theo cấu hình của project, dùng cùng một code (`project.ts`, được sinh sang `hooks/runtime/`). Ở 10.000 khái niệm, mod nạp giảm từ 1.097 ms xuống 190–219 ms (ngân sách ≤ 300 ms); `tb find` lạnh khoảng 114 ms (≤ 200 ms). **MCP nóng với truy vấn xấu nhất vẫn 11–15 ms, chưa đạt ngân sách ≤ 10 ms.**
+Mỗi máy, workspace và project giờ tự chọn gói qua `.omnilex/config.yaml` phân lớp (mặc định < người dùng < các project từ trên xuống, dừng ở `root: true` < `config.local` < phiên). Lựa chọn được resolve bằng một resolver chung (semver, meta-pack, phát hiện vòng phụ thuộc, báo gói thiếu) và một kế hoạch nạp tier theo profile và `limits`. Gói được cài vào kho dùng chung `~/.omnilex/store/` (có kiểm sha256), ghi vào `lock.json`, và quản lý bằng `tb pack add|remove|list|status|install [--frozen]|update|verify|prune` cùng `tb config explain`. CLI, MCP và mod đều đọc gói theo cấu hình của project, dùng cùng một code (`project.ts`, được sinh sang `hooks/runtime/`). Ở 10.000 khái niệm, mod nạp giảm từ 1.097 ms xuống 190–219 ms (ngân sách ≤ 300 ms); `tb find` lạnh khoảng 114 ms (≤ 200 ms). **MCP nóng với truy vấn xấu nhất vẫn 11–15 ms, chưa đạt ngân sách ≤ 10 ms.**
 
 ## Thay đổi
 | File | Loại | Ghi chú |
@@ -16,9 +16,9 @@ Mỗi máy, workspace và project giờ tự chọn gói qua `.termbridge/config
 | `packages/core/src/builder.ts` | Sửa | Sinh 9 module core + `minisearch.js` + `js-yaml.js` (bản ESM khép kín) vào `hooks/runtime/`, viết lại import bare, bỏ dòng `sourceMappingURL` trỏ tới file `.map` không được chép |
 | `packages/cli/src/packs.ts` | Mới | Lệnh `tb pack …`, `tb config explain`, `openCliStore` |
 | `packages/cli/src/index.ts` | Sửa | `find`/`show` đi theo cấu hình project trước, rồi mới tới dist của repo, `search.json` cũ, `loadAll()` |
-| `packages/mcp/src/index.ts` | Sửa | Handler async; project từ `TERMBRIDGE_PROJECT` hoặc cwd; mở lại khi file cấu hình/lock/manifest/kho đổi; thông báo ra stderr |
-| `packages/claude-mod/hooks/register.js` | Sửa | Project từ `e.cwd` (D11); đọc gói qua `$.fs`; `/termbridge packs|profile|status`; tìm trong pane bằng chỉ mục gói (tải lười); bài giải thích tải lười; reverse matcher dựng sau `session.start`; vẫn rơi về dữ liệu đóng kèm |
-| `.termbridge/config.yaml`, `.gitignore` | Mới/Sửa | Repo dùng `dev:./dist`; bỏ qua `config.local.yaml` và `.cache/` |
+| `packages/mcp/src/index.ts` | Sửa | Handler async; project từ `OMNILEX_PROJECT` hoặc cwd; mở lại khi file cấu hình/lock/manifest/kho đổi; thông báo ra stderr |
+| `packages/claude-mod/hooks/register.js` | Sửa | Project từ `e.cwd` (D11); đọc gói qua `$.fs`; `/OMNILEX packs|profile|status`; tìm trong pane bằng chỉ mục gói (tải lười); bài giải thích tải lười; reverse matcher dựng sau `session.start`; vẫn rơi về dữ liệu đóng kèm |
+| `.omnilex/config.yaml`, `.gitignore` | Mới/Sửa | Repo dùng `dev:./dist`; bỏ qua `config.local.yaml` và `.cache/` |
 | `bench/run.ts` | Sửa | Đo mod nạp theo đường gói; tách phần dựng sau; MCP thêm truy vấn đại diện (tham khảo); cô lập cwd/home khi đo CLI |
 | Test | Mới/Sửa | `config`, `resolver`, `store` (core); `packs` (mod, T-P7); cập nhật `packs`, `search-config`, test CLI/MCP |
 | `README.md`, `README.vi.md`, `packages/claude-mod/README.md`, `docs/schema.md` | Sửa | Hướng dẫn gói và cấu hình project; mục 5 của schema |
@@ -26,12 +26,12 @@ Mỗi máy, workspace và project giờ tự chọn gói qua `.termbridge/config
 ## Quyết định và lệch kế hoạch
 Người dùng giao cho agent tự chốt ("hãy tự chốt cho tôi, và làm luôn"), nên không có điểm dừng duyệt ghi chú. Các quyết định:
 - **Q1–Q5** như ghi trong `docs/plans/wp/wp6.md`: `dev:` vừa là nguồn vừa chọn gói; nguồn cài chỉ gồm `--from` và `dev:` (registry để WP7); tập con dùng chỉ mục dựng từ cards kèm cache; hệ số bộ nhớ ×3/×3/×2/×1,5; pane của mod dùng MiniSearch ở `standard` và tra chính xác ở `lite`.
-- **Lệch 1: `tb find --pack` thay thế lựa chọn** (lớp phiên với `packsReset`), còn `TERMBRIDGE_PACKS` thì cộng thêm. Lý do: `--pack` ở WP5 có nghĩa "chỉ tìm trong các gói này".
+- **Lệch 1: `tb find --pack` thay thế lựa chọn** (lớp phiên với `packsReset`), còn `OMNILEX_PACKS` thì cộng thêm. Lý do: `--pack` ở WP5 có nghĩa "chỉ tìm trong các gói này".
 - **Lệch 2: đổi luật Q4 của WP5**, fuzzy chỉ chạy khi lượt chính xác ra 0 kết quả (trước đây là khi < 5). Đo ở 10k: truy vấn theo nhãn thường chỉ khớp 1–3 khái niệm nên lần nào cũng kéo theo fuzzy (6–10 ms), mô tả dài thì 50–60 ms. Sau khi đổi: nhãn 2–5 ms. Lỗi gõ (0 kết quả chính xác) vẫn được sửa bằng fuzzy, có test.
 - **Lệch 3: reverse matcher dựng ngay sau `session.start`** qua `$.clock.after(0)`, không chặn phiên. Nếu câu trả lời đầu đến trước thì dựng tại chỗ một lần, nên kết quả không đổi. Bench báo riêng phần này (khoảng 95 ms ở 10k).
 - **Lock ghi cả meta-pack** đã cài, để `install --frozen` trên máy mới cài lại được cả `+finance`.
 - **Sửa lỗi có sẵn**: nhánh `catch` của `loadData` trong mod gán vào biến `matchers` không tồn tại. Trước đây nhánh này chưa từng chạy; nay nó là đường fallback nên lỗi lộ ra.
-- MCP chưa dùng `roots` của client (3.8), vì server JSON-RPC tối giản chưa có capability này; tạm dùng `TERMBRIDGE_PROJECT` hoặc cwd.
+- MCP chưa dùng `roots` của client (3.8), vì server JSON-RPC tối giản chưa có capability này; tạm dùng `OMNILEX_PROJECT` hoặc cwd.
 - Ghi `config.yaml` bằng js-yaml làm mất comment khi `tb pack add/remove` sửa file.
 
 ## Cổng kiểm tra
@@ -43,7 +43,7 @@ Người dùng giao cho agent tự chốt ("hãy tự chốt cho tôi, và làm 
 | `pnpm test` | Đạt | `Test Files 19 passed (19)` / `Tests 120 passed (120)` |
 | `claude plugin test packages/claude-mod` | Đạt | `16 pass` / `0 fail` |
 | `pnpm tb validate --strict` | Đạt | `✔ Validation passed successfully!` |
-| `pnpm --filter @termbridge/site build` | Đạt | `T-P8: search page reads shards (no embedded search data)` |
+| `pnpm --filter @omnilex/site build` | Đạt | `T-P8: search page reads shards (no embedded search data)` |
 | `pnpm tb build && git diff --exit-code indexes/ llms.txt` | Đạt | diff rỗng (exit 0) |
 | `pnpm check:deterministic` | Đạt | `✔ Build is 100% deterministic! All 156 artifacts have identical sha256 hashes across builds.` |
 | `pnpm bench --sizes 1000 --check` | Đạt | `✔ Scale 1000 PASSED all performance gates.` |
@@ -71,7 +71,7 @@ Về MCP nóng ở 10k:
 ## Test
 - Thêm ròng 33 test vitest (87 → 120): `config` 7, `resolver` 13, `store` 11, `packs` +1, `cache` (MCP) +1. Thêm 6 test mod (10 → 16).
 - Kiểm tra đột biến: bỏ xử lý `-id` trong resolver thì T-P3 fail; đảo phép so sánh trong `limits` thì T-P2 fail. Đã khôi phục.
-- Chạy thử đầu-cuối trên project tạm với `TERMBRIDGE_HOME` riêng: `pack add finance --from dist` (cài 5 gói), `find`/`show` qua kho, `pack remove`, `install --frozen` trên kho trống (đạt), rồi với lock rỗng (fail, liệt kê đúng 3 gói lệch).
+- Chạy thử đầu-cuối trên project tạm với `OMNILEX_HOME` riêng: `pack add finance --from dist` (cài 5 gói), `find`/`show` qua kho, `pack remove`, `install --frozen` trên kho trống (đạt), rồi với lock rỗng (fail, liệt kê đúng 3 gói lệch).
 - Ma trận:
   - **T-P2** ☑ thứ tự lớp; `root: true` dừng đúng chỗ; `config.local` của project gần nhất; `+`/`-`; `packsReset`; `limits` nhỏ nhất kèm nguồn; explain đúng nguồn; khóa lạ hoặc giá trị sai chỉ cảnh báo; đường dẫn Windows/POSIX.
   - **T-P3** ☑ semver (`^0.x`, `^0.0.x`, `~`, khoảng, pre-release, `||`); meta-pack lồng nhau; ghim từ lock; `-` sau `+`; vòng phụ thuộc báo `a → b → a` và vẫn giữ phần còn lại; gói thiếu được liệt kê; D3 chọn tất cả; dev thắng kho; meta-pack được ghi vào lock.
@@ -80,7 +80,7 @@ Về MCP nóng ở 10k:
   - **T-P6** ☑ cài và kiểm từng tier; dùng lại bản đã cài; meta-pack cài cả gói phụ thuộc; sai hash thì fail và không để lại thư mục dở; bản trong kho bị sửa thì bị phát hiện; `--frozen` fail khi lock lệch hoặc sai sha; hai project dùng chung một bản; `prune` giữ bản đang được tham chiếu và quên project đã xóa; `diskMB`.
   - **T-P7** ☑ (`claude plugin test`, `$` giả):
     - project lấy từ `cwd`;
-    - `/termbridge status`, `packs <id>` / `packs all`, `profile lite` đều chạy đúng;
+    - `/OMNILEX status`, `packs <id>` / `packs all`, `profile lite` đều chạy đúng;
     - bài giải thích không được đọc lúc khởi động hay lúc gõ, chỉ được đọc khi mở khái niệm;
     - `lang en` nạp cards tiếng Anh và tra ngược vẫn đúng;
     - không có project thì dùng dữ liệu đóng kèm.
@@ -92,7 +92,7 @@ Về MCP nóng ở 10k:
 | Tiêu chí | Đạt/Không | Bằng chứng |
 |---|---|---|
 | Đúng chức năng | Đạt | 120/120 vitest, 16/16 test mod, chạy thử đầu-cuối |
-| Tương thích ngược (C-1..3) | Đạt | validate strict pass; T-X2 (30 câu × 3 chế độ) pass trên dữ liệu đóng kèm; không có `.termbridge/` thì CLI/MCP vẫn đi đường WP5 (test CLI/MCP cũ vẫn pass) |
+| Tương thích ngược (C-1..3) | Đạt | validate strict pass; T-X2 (30 câu × 3 chế độ) pass trên dữ liệu đóng kèm; không có `.omnilex/` thì CLI/MCP vẫn đi đường WP5 (test CLI/MCP cũ vẫn pass) |
 | Hiệu năng (P-1, P-2) | Không (một phần) | Mod nạp và `tb find` lạnh ở 10k đạt; MCP nóng 10k chưa đạt; P-2: tra theo id dùng `Map`, các bảng tra được cache theo lựa chọn |
 | Build xác định (D-4) | Đạt | `All 156 artifacts have identical sha256` |
 | Bảo mật/an toàn dữ liệu (D-9, 5.4) | Đạt (phần WP6) | Cài kiểm sha256 từng file trước khi rename; chỉ chép các file tier khai báo trong `pack.json`. Import gói lạ (`..`, symlink, schema) là việc của WP7 |

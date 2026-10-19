@@ -1,7 +1,7 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "$id": "https://termbridge.org/schema/domains.schema.json",
-  "title": "Termbridge Domains Configuration Schema",
+  "$id": "https://omnilex.org/schema/domains.schema.json",
+  "title": "OmniLex Domains Configuration Schema",
   "type": "object",
   "required": ["domains"],
   "properties": {

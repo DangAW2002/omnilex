@@ -14,7 +14,7 @@ import {
   nodeProjectFS,
   nodePackIO,
   fileIndexCache,
-  termbridgeHome,
+  omnilexHome,
   ensureLocalPacks,
   searchConfigHash,
   type PackIO,
@@ -33,8 +33,9 @@ function findRepoRoot(startDir: string): string | null {
 }
 
 function resolveRootDir(): string {
-  if (process.env.TERMBRIDGE_ROOT && fs.existsSync(process.env.TERMBRIDGE_ROOT)) {
-    return process.env.TERMBRIDGE_ROOT;
+  const envRoot = process.env.OMNILEX_ROOT;
+  if (envRoot && fs.existsSync(envRoot)) {
+    return envRoot;
   }
   const fromCwd = findRepoRoot(process.cwd());
   if (fromCwd) return fromCwd;
@@ -88,7 +89,7 @@ const TOOLS = [
 ];
 
 export interface ToolHandlerOptions {
-  // project directory (Plan 3.8): TERMBRIDGE_PROJECT, else the process cwd
+  // project directory (Plan 3.8): OMNILEX_PROJECT, else the process cwd
   cwd?: string;
   home?: string;
   io?: PackIO;
@@ -97,7 +98,7 @@ export interface ToolHandlerOptions {
 }
 
 // Packs are read through one PackStore per manifest version, so every
-// (locale, pack) index is loaded once until `tb build` rewrites the manifest.
+// (locale, pack) index is loaded once until `ol build` rewrites the manifest.
 export function createToolHandler(rootDir: string, options: ToolHandlerOptions = {}) {
   const distDir = path.join(rootDir, 'dist');
   const io: PackIO = options.io || {
@@ -146,8 +147,8 @@ export function createToolHandler(rootDir: string, options: ToolHandlerOptions =
   const projectStore = async (): Promise<{ store: PackStore | null; stale: boolean }> => {
     if (project && signature(project.watch) === project.signature) return project;
     const open = () => openProject(nodeProjectFS, {
-      cwd: options.cwd || process.env.TERMBRIDGE_PROJECT || process.cwd(),
-      home: options.home || termbridgeHome(),
+      cwd: options.cwd || process.env.OMNILEX_PROJECT || process.cwd(),
+      home: options.home || omnilexHome(),
       surface: 'mcp',
       configHash: searchConfigHash(),
     });
@@ -160,7 +161,7 @@ export function createToolHandler(rootDir: string, options: ToolHandlerOptions =
           manifest: ctx.manifest,
           disabled: ctx.disabled,
           overlay: ctx.overlay,
-          cache: fileIndexCache(ctx.projectDir ? path.join(ctx.projectDir, '.termbridge', '.cache') : path.join(ctx.home, 'cache')),
+          cache: fileIndexCache(ctx.projectDir ? path.join(ctx.projectDir, '.omnilex', '.cache') : path.join(ctx.home, 'cache')),
         })
       : null;
     project = { store: store?.available ? store : null, stale: ctx.stale, watch: ctx.watch, signature: signature(ctx.watch) };
@@ -326,7 +327,7 @@ if (!process.env.VITEST) {
         id: msg.id,
         result: {
           protocolVersion: '2024-11-05',
-          serverInfo: { name: 'termbridge-mcp', version: '0.1.0' },
+          serverInfo: { name: 'omnilex-mcp', version: '0.1.0' },
           capabilities: { tools: {} }
         }
       };

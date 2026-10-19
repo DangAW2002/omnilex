@@ -1,4 +1,4 @@
-# Báo cáo Wave 3, lô Cloud (31 khái niệm)
+﻿# Báo cáo Wave 3, lô Cloud (31 khái niệm)
 
 Trạng thái: **Đã hoàn thành toàn bộ nội dung và vượt qua tất cả các cổng kiểm tra** (2026-10-17). Mọi khái niệm đều giữ nguyên trạng thái `status: draft`, `provenance.drafted_by: ai`.
 

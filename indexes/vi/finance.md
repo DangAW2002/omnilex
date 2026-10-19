@@ -1,4 +1,4 @@
-# Termbridge Index: Tài chính (vi)
+# OmniLex Index: Tài chính (vi)
 
 - [**Kế toán dồn tích**](../../concepts/accrual-accounting/vi.md): *nguyên tắc ghi nhận doanh thu khi giao hàng và chi phí khi phát sinh, bất kể tiền đã về túi hay chưa; phương pháp kế toán phản ánh đúng bản chất giao dịch kinh tế thay vì phụ thuộc vào việc chuyển khoản* — Nguyên tắc kế toán quy định mọi nghiệp vụ kinh tế tài chính phải được ghi sổ vào thời điểm phát sinh, không căn cứ vào thời điểm thực tế thu hoặc chi tiền.
 - [**Tài sản (Kế toán)**](../../concepts/asset/vi.md): *mọi thứ có giá trị thuộc quyền sở hữu hoặc kiểm soát của một người hoặc công ty; nguồn lực dự kiến sẽ đem lại tiền bạc hoặc lợi ích kinh tế trong tương lai* — Nguồn lực do doanh nghiệp kiểm soát và có thể thu được lợi ích kinh tế trong tương lai từ các sự kiện đã qua.

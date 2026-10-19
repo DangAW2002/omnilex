@@ -81,7 +81,7 @@ export function registerContentCommands(program: Command, reportCmd: Command, re
       const core = await import('@omnilex/core');
       const repo = core.loadAll(resolveRootDir());
       const rows = core.coverageReport(repo, options.domain);
-      console.log(pc.bold(`\nTermbridge coverage${options.domain ? ` (${options.domain})` : ''}:\n`));
+      console.log(pc.bold(`\nOmniLex coverage${options.domain ? ` (${options.domain})` : ''}:\n`));
       for (const row of rows) {
         const locales = Object.entries(row.locales).map(([code, count]) => `${code} ${Math.round((count / row.concepts) * 100)}%`).join('  ');
         const status = Object.entries(row.status).map(([name, count]) => `${name} ${count}`).join(', ');
@@ -96,7 +96,7 @@ export function registerContentCommands(program: Command, reportCmd: Command, re
     .action(async () => {
       const core = await import('@omnilex/core');
       const rows = core.collisionsReport(core.loadAll(resolveRootDir()));
-      console.log(pc.bold(`\nTermbridge collisions (${rows.length}):\n`));
+      console.log(pc.bold(`\nOmniLex collisions (${rows.length}):\n`));
       for (const row of rows) {
         console.log(`  [${row.locale}] ${pc.bold(row.key)} → ${row.concepts.join(', ')}`);
         for (const problem of row.problems) console.log(`      ${pc.yellow(problem)}`);

@@ -34,10 +34,10 @@ jobs:
       - name: Install dependencies
         run: pnpm install --frozen-lockfile
 
-      - name: Build Termbridge artifacts and Astro site
+      - name: Build OmniLex artifacts and Astro site
         run: |
           pnpm build
-          pnpm --filter @termbridge/site build
+          pnpm --filter @omnilex/site build
 
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3

@@ -1,6 +1,20 @@
-# Termbridge cho Claude Code
+# OmniLex cho Claude Code
 
 Yêu cầu Claude Code 2.1.287 trở lên. Kiểm tra bằng `claude --version`.
+
+### Cài đặt qua Marketplace (Khuyên dùng):
+
+Trong phiên Claude Code:
+```text
+/plugin install omnilex --marketplace <owner>/<repo>
+```
+Hoặc qua CLI:
+```bash
+claude plugin marketplace add <owner>/<repo>
+claude plugin install omnilex
+```
+
+### Chạy thử nghiệm từ mã nguồn:
 
 Trong thư mục gốc của repo:
 
@@ -11,7 +25,7 @@ claude plugin test ./packages/claude-mod
 claude --plugin-dir ./packages/claude-mod
 ```
 
-Để tự nạp mod ở các phiên sau mà không cần `--plugin-dir`, đặt biến môi trường Windows `CLAUDE_CODE_PLUGIN_DIRS` thành đường dẫn tuyệt đối `D:\Users\Dang\termbridge\packages\claude-mod`, rồi mở lại terminal hoặc Claude Desktop. Đây là tùy chọn nạp plugin từ thư mục cục bộ; chưa cần xuất bản marketplace.
+Để tự nạp mod ở các phiên sau mà không cần `--plugin-dir`, đặt biến môi trường Windows `CLAUDE_CODE_PLUGIN_DIRS` thành đường dẫn tuyệt đối đến thư mục `packages/claude-mod`, rồi mở lại terminal hoặc Claude Desktop.
 
 Trong phiên Claude Code:
 
@@ -22,6 +36,7 @@ Trong phiên Claude Code:
   - `hover` (mặc định): dòng văn xuôi hoặc mục list có thuật ngữ được mod tự dàn dòng để hover trực tiếp trên thuật ngữ; code, bảng, trích dẫn và các dòng khác vẫn do Markdown gốc vẽ.
   - `links`: toàn bộ tin nhắn do Markdown gốc vẽ, lần nhắc đầu của mỗi thuật ngữ thành link; nhấn link mở pane (terminal fullscreen), không có thẻ hover.
   - `badges`: giữ cách vẽ gốc và đặt nhãn tra cứu bên dưới tin nhắn.
+- Gõ `/termbridge browse` để duyệt khái niệm theo lĩnh vực: chọn lĩnh vực và nhánh, lật trang bằng **‹ Trước** / **Sau ›**, nhấn một thuật ngữ để xem giải thích, **← Quay lại danh sách** để trở về. `/termbridge browse it/ai-ml` mở thẳng một nhánh. Hai tab **Tìm kiếm** / **Duyệt lĩnh vực** ở đầu pane để chuyển qua lại.
 - Gõ `/termbridge` để nhập mô tả bất kỳ. Chọn kết quả, rồi nhấn **Chèn thuật ngữ vào prompt** để đưa nhãn chuẩn vào ô nhập.
 - Mod đọc cấu hình `.termbridge/` của thư mục nơi bạn khởi động Claude Code (đi ngược lên thư mục cha) và nạp đúng các gói project chọn. Không có project hay gói nào đã cài thì mod dùng gói `starter` đóng kèm (khái niệm cơ bản, ≤ 1 MB). Overlay `.termbridge/overrides.yaml` của project (exclude, prefer, autolink, alias) cũng có hiệu lực trong mod.
 - `/termbridge packs it.ai-ml,finance` chỉ nạp các gói đó trong phiên này; `/termbridge packs all` trở lại lựa chọn của project. `/termbridge profile lite|standard|semantic` đổi profile trong phiên (`lite` không nạp tìm kiếm và bài giải thích). `/termbridge status` cho biết project, profile, các gói, tier đang nạp và cảnh báo.

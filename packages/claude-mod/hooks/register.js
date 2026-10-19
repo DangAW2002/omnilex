@@ -33,6 +33,13 @@ let notices = []
 let paneResults = { key: '', results: [] }
 let selectFirstResult = false
 const explanationCache = new Map()
+// Browse view: the domain tree (data/taxonomy.json) and the path picked in it.
+let taxonomy = []
+let view = 'search'
+let browseDomain = ''
+let browseBranch = ''
+let browsePage = 0
+const BROWSE_PAGE_SIZE = 15
 
 const MODES = ['hover', 'links', 'badges']
 const LOCALES = ['vi', 'en']
@@ -48,6 +55,16 @@ const UI_TEXT = {
     insert: 'Chèn thuật ngữ vào prompt',
     choose: 'Chọn một thuật ngữ để xem giải thích.',
     hint: 'Hover thuật ngữ trong câu trả lời để xem tóm tắt.',
+    searchTab: 'Tìm kiếm',
+    browseTab: 'Duyệt lĩnh vực',
+    domain: 'Lĩnh vực',
+    branch: 'Nhánh',
+    all: 'Tất cả',
+    back: '← Quay lại danh sách',
+    previous: '‹ Trước',
+    next: 'Sau ›',
+    page: (page, pages, count) => `Trang ${page}/${pages} · ${count} khái niệm`,
+    empty: 'Không có khái niệm nào trong nhánh này.',
   },
   en: {
     searchTitle: 'Reverse lookup: describe the idea in plain words',
@@ -56,6 +73,16 @@ const UI_TEXT = {
     insert: 'Insert term into prompt',
     choose: 'Select a term to read its explanation.',
     hint: 'Hover a term in the reply to see its summary.',
+    searchTab: 'Search',
+    browseTab: 'Browse domains',
+    domain: 'Domain',
+    branch: 'Branch',
+    all: 'All',
+    back: '← Back to list',
+    previous: '‹ Previous',
+    next: 'Next ›',
+    page: (page, pages, count) => `Page ${page}/${pages} · ${count} concepts`,
+    empty: 'No concepts in this branch.',
   },
 }
 
@@ -556,10 +583,15 @@ async function ensureExplanations($, loc) {
 
 async function homeDir($) {
   const read = async (get) => { try { return await get() } catch { return undefined } }
-  const explicit = await read(() => $.env.get('TERMBRIDGE_HOME'))
+  const explicit = (await read(() => $.env.get('OMNILEX_HOME'))) || (await read(() => $.env.get('TERMBRIDGE_HOME')))
   if (explicit) return explicit.replace(/\\/g, '/')
   const home = (await read(() => $.env.get('HOME'))) || (await read(() => $.env.get('USERPROFILE'))) || ''
-  return `${home.replace(/\\/g, '/').replace(/\/+$/, '')}/.termbridge`
+  const base = home.replace(/\\/g, '/').replace(/\/+$/, '')
+  try {
+    if (await $.fs.exists(`${base}/.omnilex`)) return `${base}/.omnilex`
+    if (await $.fs.exists(`${base}/.termbridge`)) return `${base}/.termbridge`
+  } catch {}
+  return `${base}/.omnilex`
 }
 
 function projectFs($) {
@@ -706,6 +738,109 @@ async function loadBundled($) {
   }
 }
 
+async function loadTaxonomy($) {
+  try {
+    const parsed = JSON.parse(await $.fs.read(`${$.plugin.root}/data/taxonomy.json`))
+    taxonomy = Array.isArray(parsed) ? parsed.filter((node) => node?.id && node.labels) : []
+  } catch {
+    taxonomy = []
+  }
+}
+
+function inDomain(concept, path) {
+  return !path || (concept.domains || []).some((domain) => domain === path || domain.startsWith(`${path}/`))
+}
+
+function domainLabel(node) {
+  return node.labels?.[locale] || node.labels?.vi || node.id
+}
+
+// Taxonomy nodes holding at least one loaded concept; domains the loaded
+// concepts use but the tree lacks are listed under their bare id.
+function domainOptions(parentPath) {
+  const prefix = parentPath ? `${parentPath}/` : ''
+  const parent = parentPath
+    ? parentPath.split('/').reduce((nodes, id) => nodes?.find((node) => node.id === id)?.children, taxonomy)
+    : taxonomy
+  const nodes = [...(parent || [])]
+  for (const concept of concepts) {
+    for (const domain of concept.domains || []) {
+      if (!domain.startsWith(prefix)) continue
+      const id = domain.slice(prefix.length).split('/')[0]
+      if (id && !nodes.some((node) => node.id === id)) nodes.push({ id, labels: {} })
+    }
+  }
+  return nodes
+    .map((node) => {
+      const path = `${prefix}${node.id}`
+      return { path, label: domainLabel(node), count: concepts.filter((concept) => inDomain(concept, path)).length }
+    })
+    .filter((option) => option.count > 0)
+}
+
+function conceptTitle(concept) {
+  return `${concept.label}${concept.qualifier ? ` ${concept.qualifier}` : ''}`
+}
+
+function browseList() {
+  const path = browseBranch || browseDomain
+  return concepts
+    .filter((concept) => inDomain(concept, path))
+    .sort((a, b) => a.label.localeCompare(b.label, locale))
+}
+
+async function handleCommand($, e) {
+  const [verb, value] = e.args.trim().split(/\s+/)
+  if (verb === 'status') return { text: statusText() }
+  if (verb === 'packs') {
+    if (!value) return { text: statusText() }
+    sessionPacks = value === 'all' ? null : value.split(',').map((item) => item.trim()).filter(Boolean)
+    await loadData($)
+    selectedId = null
+    query = ''
+    $.ui.invalidate('ui.render')
+    return { text: statusText() }
+  }
+  if (verb === 'profile') {
+    if (!PROFILES.includes(value)) return { text: `OmniLex: profile hiện tại là ${packs?.ctx.plan.profile || 'standard'} (lite, standard, semantic)` }
+    sessionProfile = value
+    await loadData($)
+    $.ui.invalidate('ui.render')
+    return { text: statusText() }
+  }
+  if (verb === 'lang' || verb === 'language') {
+    if (!LOCALES.includes(value)) return { text: `OmniLex: ngôn ngữ hiện tại là ${locale} (vi, en)` }
+    try { await loadPackLocale(value) } catch {}
+    if (!selectLocale(value)) return { text: 'OmniLex: thiếu dữ liệu ngôn ngữ; chạy pnpm build rồi nạp lại mod.' }
+    selectedId = null
+    query = ''
+    try { await $.store.set('locale', locale) } catch {}
+    $.ui.invalidate('ui.render')
+    return { text: locale === 'vi' ? 'OmniLex: đã chuyển sang tiếng Việt' : 'OmniLex: switched to English' }
+  }
+  if (verb === 'mode') {
+    if (!MODES.includes(value)) return { text: `OmniLex: chế độ hiện tại là ${mode} (hover, links, badges)` }
+    mode = value
+    try { await $.store.set('mode', mode) } catch {}
+    $.ui.invalidate('ui.render')
+    return { text: `OmniLex: chuyển sang chế độ ${mode}` }
+  }
+  selectedId = null
+  query = ''
+  view = verb === 'browse' ? 'browse' : 'search'
+  if (view === 'browse') {
+    // `/omnilex browse it/ai-ml` opens at that domain and branch.
+    const [top = '', branch = ''] = (value || '').split('/')
+    browseDomain = domainOptions('').some((option) => option.path === top) ? top : ''
+    browseBranch = browseDomain && branch && domainOptions(browseDomain).some((option) => option.path === `${top}/${branch}`)
+      ? `${top}/${branch}` : ''
+    browsePage = 0
+  }
+  await $.ui.open({ id: PANE_ID, title: 'OmniLex', focus: true, closeOnEscape: true })
+  $.ui.invalidate('ui.render')
+  return {}
+}
+
 export function register(on) {
   on('session.start', async ($, e, next) => {
     mode = 'hover'
@@ -714,11 +849,16 @@ export function register(on) {
     sessionCwd = String(e.cwd || '').replace(/\\/g, '/')
     sessionPacks = null
     sessionProfile = null
+    view = 'search'
+    browseDomain = ''
+    browseBranch = ''
+    browsePage = 0
     try {
       const saved = await $.store.get('locale')
       if (LOCALES.includes(saved)) locale = saved
     } catch {}
     await loadData($)
+    await loadTaxonomy($)
     repoRoot = String($.plugin.root).replace(/\\/g, '/').replace(/\/+$/, '').replace(/\/packages\/claude-mod$/, '')
     try {
       const saved = await $.store.get('mode')
@@ -726,53 +866,18 @@ export function register(on) {
     } catch {}
     if (!selectLocale(locale)) selectLocale('vi')
     await $.command.register({
+      name: 'omnilex',
+      description: 'Tra thuật ngữ; /omnilex browse [lĩnh vực]; lang vi|en; mode hover|links|badges; packs <id,...>|all; profile lite|standard|semantic; status',
+    })
+    await $.command.register({
       name: 'termbridge',
-      description: 'Tra thuật ngữ; /termbridge lang vi|en; mode hover|links|badges; packs <id,...>|all; profile lite|standard|semantic; status',
+      description: 'Alias của /omnilex',
     })
     return next(e)
   })
 
-  on('command.run', { command: 'termbridge' }, async ($, e) => {
-    const [verb, value] = e.args.trim().split(/\s+/)
-    if (verb === 'status') return { text: statusText() }
-    if (verb === 'packs') {
-      if (!value) return { text: statusText() }
-      sessionPacks = value === 'all' ? null : value.split(',').map((item) => item.trim()).filter(Boolean)
-      await loadData($)
-      selectedId = null
-      query = ''
-      $.ui.invalidate('ui.render')
-      return { text: statusText() }
-    }
-    if (verb === 'profile') {
-      if (!PROFILES.includes(value)) return { text: `Termbridge: profile hiện tại là ${packs?.ctx.plan.profile || 'standard'} (lite, standard, semantic)` }
-      sessionProfile = value
-      await loadData($)
-      $.ui.invalidate('ui.render')
-      return { text: statusText() }
-    }
-    if (verb === 'lang' || verb === 'language') {
-      if (!LOCALES.includes(value)) return { text: `Termbridge: ngôn ngữ hiện tại là ${locale} (vi, en)` }
-      try { await loadPackLocale(value) } catch {}
-      if (!selectLocale(value)) return { text: 'Termbridge: thiếu dữ liệu ngôn ngữ; chạy pnpm build rồi nạp lại mod.' }
-      selectedId = null
-      query = ''
-      try { await $.store.set('locale', locale) } catch {}
-      $.ui.invalidate('ui.render')
-      return { text: locale === 'vi' ? 'Termbridge: đã chuyển sang tiếng Việt' : 'Termbridge: switched to English' }
-    }
-    if (verb === 'mode') {
-      if (!MODES.includes(value)) return { text: `Termbridge: chế độ hiện tại là ${mode} (hover, links, badges)` }
-      mode = value
-      try { await $.store.set('mode', mode) } catch {}
-      $.ui.invalidate('ui.render')
-      return { text: `Termbridge: chuyển sang chế độ ${mode}` }
-    }
-    selectedId = null
-    query = ''
-    await $.ui.open({ id: PANE_ID, title: 'Termbridge', focus: true, closeOnEscape: true })
-    return {}
-  })
+  on('command.run', { command: 'omnilex' }, handleCommand)
+  on('command.run', { command: 'termbridge' }, handleCommand)
 
   on('ui.render', { component: 'AssistantMessage' }, async ($, e, next) => {
     if (e.props.isSummary) return next(e)
@@ -915,24 +1020,24 @@ export function register(on) {
 
   on('ui.render', { component: 'Pane' }, async ($, e, next) => {
     if (e.requestId !== PANE_ID) return next(e)
-    const { Box, Text, Button, Input, Markdown } = $.ui.resolve(e)
+    const { Box, Text, Button, Input, Select, Markdown } = $.ui.resolve(e)
     const strings = UI_TEXT[locale]
-    const results = await paneSearch(query)
-    if (selectFirstResult) {
+    const redraw = () => $.ui.invalidate('ui.render')
+    const results = view === 'search' ? await paneSearch(query) : []
+    if (view === 'search' && selectFirstResult) {
       selectedId = results[0]?.id || null
       selectFirstResult = false
     }
     const selected = conceptsById.get(selectedId)
     const explanation = selected ? await explanationFor($, selected.id) : ''
-    const redraw = () => $.ui.invalidate('ui.render')
-    const resultRows = results.map((concept, index) =>
+    const conceptRow = (concept, index) =>
       Box({
         key: `result-${index}`,
         position: 'relative',
         children: [
           Button({
             key: `select-${index}`,
-            label: `${concept.label}${concept.qualifier ? ` ${concept.qualifier}` : ''}`,
+            label: conceptTitle(concept),
             plain: true,
             onPress: () => { selectedId = concept.id; redraw() },
           }),
@@ -943,10 +1048,90 @@ export function register(on) {
           }),
         ],
       })
-    )
+    const detail = selected
+      ? Box({ flexDirection: 'column', children: [
+          Text({ children: [' '] }),
+          Text({ bold: true, children: [conceptTitle(selected)] }),
+          Text({ children: [selected.summary] }),
+          Text({ dimColor: true, children: [`${(selected.domains || []).join(', ')} · ${selected.status || 'draft'}`] }),
+          Button({
+            key: 'insert-term', label: strings.insert,
+            onPress: async () => { await $.prompt.fill({ text: selected.label, mode: 'insert' }) },
+          }),
+          ...(explanation
+            ? [Markdown({ text: explanation.slice(0, 10000) })]
+            : []),
+        ] })
+      : null
+    const tabs = Box({
+      flexDirection: 'row', columnGap: 2,
+      children: [['search', strings.searchTab], ['browse', strings.browseTab]].map(([id, label]) => Button({
+        key: `tab-${id}`, plain: true,
+        onPress: () => { view = id; selectedId = null; redraw() },
+        children: [Text({ bold: view === id, underline: view === id, dimColor: view !== id, children: [label] })],
+      })),
+    })
+
+    if (view === 'browse') {
+      if (selected) {
+        return Box({
+          flexDirection: 'column',
+          children: [
+            tabs,
+            Button({ key: 'browse-back', label: strings.back, plain: true, onPress: () => { selectedId = null; redraw() } }),
+            detail,
+          ],
+        })
+      }
+      const domains = domainOptions('')
+      if (!domains.some((option) => option.path === browseDomain)) browseDomain = ''
+      const branches = browseDomain ? domainOptions(browseDomain) : []
+      if (!branches.some((option) => option.path === browseBranch)) browseBranch = ''
+      const list = browseList()
+      const pages = Math.max(1, Math.ceil(list.length / BROWSE_PAGE_SIZE))
+      browsePage = Math.min(browsePage, pages - 1)
+      const shown = list.slice(browsePage * BROWSE_PAGE_SIZE, (browsePage + 1) * BROWSE_PAGE_SIZE)
+      const picker = (key, label, value, options, total, onSelect) => Select({
+        key, label, value,
+        options: [
+          { value: '', label: `${strings.all} (${total})` },
+          ...options.map((option) => ({ value: option.path, label: `${option.label} (${option.count})` })),
+        ],
+        onSelect: (picked) => { onSelect(picked); browsePage = 0; selectedId = null; redraw() },
+      })
+      return Box({
+        flexDirection: 'column',
+        children: [
+          tabs,
+          picker('browse-domain', strings.domain, browseDomain, domains, concepts.length,
+            (picked) => { browseDomain = picked; browseBranch = '' }),
+          ...(branches.length > 1
+            ? [picker('browse-branch', strings.branch, browseBranch, branches,
+                domains.find((option) => option.path === browseDomain).count,
+                (picked) => { browseBranch = picked })]
+            : []),
+          Text({ children: [' '] }),
+          ...(shown.length ? shown.map(conceptRow) : [Text({ dimColor: true, children: [strings.empty] })]),
+          Box({
+            flexDirection: 'row', columnGap: 2,
+            children: [
+              ...(browsePage > 0
+                ? [Button({ key: 'browse-prev', label: strings.previous, plain: true, onPress: () => { browsePage--; redraw() } })]
+                : []),
+              Text({ dimColor: true, children: [strings.page(browsePage + 1, pages, list.length)] }),
+              ...(browsePage < pages - 1
+                ? [Button({ key: 'browse-next', label: strings.next, plain: true, onPress: () => { browsePage++; redraw() } })]
+                : []),
+            ],
+          }),
+        ],
+      })
+    }
+
     return Box({
       flexDirection: 'column',
       children: [
+        tabs,
         Text({ bold: true, children: [strings.searchTitle] }),
         Input({
           key: 'termbridge-query', label: strings.description, value: query,
@@ -954,21 +1139,9 @@ export function register(on) {
           onInput: (value) => { query = value; selectedId = null; redraw() },
           onSubmit: (value) => { query = value; selectedId = null; selectFirstResult = true; redraw() },
         }),
-        ...resultRows,
+        ...results.map(conceptRow),
         selected
-          ? Box({ flexDirection: 'column', children: [
-              Text({ children: [' '] }),
-              Text({ bold: true, children: [`${selected.label}${selected.qualifier ? ` ${selected.qualifier}` : ''}`] }),
-              Text({ children: [selected.summary] }),
-              Text({ dimColor: true, children: [`${selected.domains.join(', ')} · ${selected.status || 'draft'}`] }),
-              Button({
-                key: 'insert-term', label: strings.insert,
-                onPress: async () => { await $.prompt.fill({ text: selected.label, mode: 'insert' }) },
-              }),
-              ...(explanation
-                ? [Markdown({ text: explanation.slice(0, 10000) })]
-                : []),
-            ] })
+          ? detail
           : Text({ dimColor: true, children: [query ? strings.choose : strings.hint] }),
       ],
     })

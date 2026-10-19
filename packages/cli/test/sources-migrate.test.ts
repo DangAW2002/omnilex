@@ -2,7 +2,7 @@ import { describe, it, expect } from 'vitest';
 import fs from 'node:fs';
 import path from 'node:path';
 import os from 'node:os';
-import { migrateAllSources, resolveSourceRef } from '@termbridge/core';
+import { migrateAllSources, resolveSourceRef } from '@omnilex/core';
 
 describe('tb sources migrate (T-V3)', () => {
   it('correctly infers known source refs from URLs', () => {

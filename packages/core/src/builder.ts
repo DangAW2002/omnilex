@@ -255,6 +255,18 @@ export function buildArtifacts(repoData: RepositoryData): BuildOutputs {
     distGenerated.push(...writePackFiles(modStarterDir, files));
   }
 
+  // Domain tree with labels, for the browse views of the site and the mod.
+  const taxonomyJson = JSON.stringify([...repoData.taxonomy.values()], null, 2);
+  const taxonomyDistPath = path.join(distDir, 'taxonomy.json');
+  fs.writeFileSync(taxonomyDistPath, taxonomyJson, 'utf-8');
+  distGenerated.push(taxonomyDistPath);
+  const modDataDir = path.join(rootDir, 'packages', 'claude-mod', 'data');
+  if (fs.existsSync(modDataDir)) {
+    const modTaxonomyPath = path.join(modDataDir, 'taxonomy.json');
+    fs.writeFileSync(modTaxonomyPath, taxonomyJson, 'utf-8');
+    distGenerated.push(modTaxonomyPath);
+  }
+
   // Generate packages/claude-mod/hooks/runtime/: the core modules the mod
   // imports, plus self-contained ESM builds of their two dependencies. Bare
   // imports become relative ones, since the mod has no module resolution.

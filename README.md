@@ -130,6 +130,8 @@ prefer:
 - `packages/mcp`: Model Context Protocol server.
 - `packages/claude-mod`: Claude Code terminal UI adapter.
 
+To browse the terminology locally, run `pnpm build`, then `pnpm site` and open `http://localhost:4321/` (leave the search box empty and pick a domain to list every concept). In Claude Code, `/termbridge browse` opens the same domain browser in a pane.
+
 To use the Claude Code mod, see [its setup guide](packages/claude-mod/README.md).
 
 ## License

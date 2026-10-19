@@ -241,7 +241,7 @@ test('T-X2: Golden Test Suite runs all 30 Claude-style replies in hover mode', a
   for (let i = 0; i < GOLDEN_REPLIES.length; i++) {
     const item = GOLDEN_REPLIES[i]
     const ui = await $.ui.mount({
-      plugin: 'termbridge-mod',
+      plugin: 'omnilex',
       surface: 'terminal',
       component: 'AssistantMessage',
       requestId: `golden-hover-${item.id}`,
@@ -277,7 +277,7 @@ test('T-X2: Golden Test Suite runs all 30 Claude-style replies in links mode', a
   for (let i = 0; i < GOLDEN_REPLIES.length; i++) {
     const item = GOLDEN_REPLIES[i]
     const ui = await $.ui.mount({
-      plugin: 'termbridge-mod',
+      plugin: 'omnilex',
       surface: 'terminal',
       component: 'AssistantMessage',
       requestId: `golden-links-${item.id}`,
@@ -311,7 +311,7 @@ test('T-X2: Golden Test Suite runs all 30 Claude-style replies in badges mode', 
   for (let i = 0; i < GOLDEN_REPLIES.length; i++) {
     const item = GOLDEN_REPLIES[i]
     const ui = await $.ui.mount({
-      plugin: 'termbridge-mod',
+      plugin: 'omnilex',
       surface: 'terminal',
       component: 'AssistantMessage',
       requestId: `golden-badges-${item.id}`,

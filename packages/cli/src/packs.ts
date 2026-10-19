@@ -28,9 +28,9 @@ function sessionLayer(pack?: string) {
 
 export async function openCliProject(options: CliProjectOptions = {}) {
   const [{ openProject }, { nodeProjectFS, termbridgeHome }, { searchConfigHash }] = await Promise.all([
-    import('@termbridge/core/dist/project.js'),
-    import('@termbridge/core/dist/pack-install.js'),
-    import('@termbridge/core/dist/search-config.js'),
+    import('@omnilex/core/dist/project.js'),
+    import('@omnilex/core/dist/pack-install.js'),
+    import('@omnilex/core/dist/search-config.js'),
   ]);
   const open = () => openProject(nodeProjectFS, {
     cwd: options.cwd || process.cwd(),
@@ -43,7 +43,7 @@ export async function openCliProject(options: CliProjectOptions = {}) {
   const ctx = await open();
   if (!ctx.effective.packOps.some((op: any) => op.op === 'local')) return ctx;
   // local: glossaries are built on demand, then the project is read again.
-  const { ensureLocalPacks } = await import('@termbridge/core/dist/glossary.js');
+  const { ensureLocalPacks } = await import('@omnilex/core/dist/glossary.js');
   const built = ensureLocalPacks(ctx);
   for (const notice of built.notices) console.warn(pc.yellow(`⚠ ${notice}`));
   return built.changed ? open() : ctx;
@@ -60,8 +60,8 @@ export async function openCliStore(options: CliProjectOptions = {}) {
     return { ctx, store: null };
   }
   const [{ PackStore }, { nodePackIO, fileIndexCache }] = await Promise.all([
-    import('@termbridge/core/dist/pack-reader.js'),
-    import('@termbridge/core/dist/pack-install.js'),
+    import('@omnilex/core/dist/pack-reader.js'),
+    import('@omnilex/core/dist/pack-install.js'),
   ]);
   const cacheDir = ctx.projectDir
     ? path.join(ctx.projectDir, '.termbridge', '.cache')
@@ -95,7 +95,7 @@ function devSources(ctx: any): string[] {
 // Installs id@range from a built dist (--from, dev sources) or, failing that,
 // from the configured registries. exactSha pins the pack.json of a lock entry.
 async function acquire(ctx: any, options: { id: string; range?: string; from?: string; exactSha?: string }): Promise<any[]> {
-  const install = await import('@termbridge/core/dist/pack-install.js');
+  const install = await import('@omnilex/core/dist/pack-install.js');
   const diskMB = ctx.effective.limits.diskMB;
   const errors: string[] = [];
   const sources = [...(options.from ? [path.resolve(options.from)] : []), ...devSources(ctx)];
@@ -108,7 +108,7 @@ async function acquire(ctx: any, options: { id: string; range?: string; from?: s
   }
   const registries = (ctx.effective.registries as string[]).map((url) => (/^(https?|file):/i.test(url) ? url : path.resolve(ctx.cwd, url)));
   if (registries.length) {
-    const { installFromRegistries } = await import('@termbridge/core/dist/registry.js');
+    const { installFromRegistries } = await import('@omnilex/core/dist/registry.js');
     try {
       const got = await installFromRegistries({ home: ctx.home, registries, id: options.id, range: options.range, diskMB });
       if (options.exactSha && got[0].entry.sha256 !== options.exactSha) {
@@ -132,7 +132,7 @@ const mb = (bytes: number) => `${(bytes / (1024 * 1024)).toFixed(2)} MB`;
 // The lock holds every store pack the project resolves to, plus meta-packs it
 // installed, each with the hashes of its copy.
 async function rewriteLock(lockFile: string, options: { cwd?: string; home?: string; extra?: Array<{ id: string; entry: any }> } = {}) {
-  const install = await import('@termbridge/core/dist/pack-install.js');
+  const install = await import('@omnilex/core/dist/pack-install.js');
   const ctx = await openCliProject({ cwd: options.cwd, home: options.home });
   const previous = install.readLockFile(lockFile);
   const lock = { lockfileVersion: 1 as const, packs: {} as Record<string, any> };
@@ -163,7 +163,7 @@ export function registerPackCommands(program: Command): void {
     .option('-p, --pack <ids>', 'Comma-separated pack ids (default: what the project loads)')
     .option('-l, --locales <locales>', 'Comma-separated locales', 'vi,en')
     .action(async (options: { format: string; out: string; pack?: string; locales: string }) => {
-      const exchange = await import('@termbridge/core/dist/exchange.js');
+      const exchange = await import('@omnilex/core/dist/exchange.js');
       if (!['csv', 'tbx', 'jsonl'].includes(options.format)) fail(`--format phải là csv, tbx hoặc jsonl / must be csv, tbx or jsonl`);
       const { store } = await openCliStore({ pack: options.pack });
       if (!store) fail('Không có gói nào để xuất; chạy pnpm tb build hoặc tb pack add / no packs to export; run pnpm tb build or tb pack add');
@@ -198,7 +198,7 @@ export function registerPackCommands(program: Command): void {
     .option('--overwrite', 'Replace concept directories that already exist')
     .argument('<file>')
     .action(async (file: string, options: { from: string; into: string; overwrite?: boolean }) => {
-      const exchange = await import('@termbridge/core/dist/exchange.js');
+      const exchange = await import('@omnilex/core/dist/exchange.js');
       const text = fs.readFileSync(file, 'utf-8');
       let rows: any[] = [];
       try {
@@ -258,7 +258,7 @@ export function registerPackCommands(program: Command): void {
     .option('--name <name>', 'Registry name')
     .option('--official', 'Mark this registry as official')
     .action(async (outDir: string, options: { dist: string; baseUrl?: string; name?: string; official?: boolean }) => {
-      const { buildRegistry } = await import('@termbridge/core/dist/registry.js');
+      const { buildRegistry } = await import('@omnilex/core/dist/registry.js');
       const registry = buildRegistry({
         distDir: path.resolve(options.dist),
         outDir: path.resolve(outDir),
@@ -275,7 +275,7 @@ export function registerPackCommands(program: Command): void {
     .description('Print the effective configuration and where every value comes from')
     .option('-p, --pack <ids>', 'Session pack selection')
     .action(async (options: { pack?: string }) => {
-      const [{ explainConfig }] = await Promise.all([import('@termbridge/core/dist/config.js')]);
+      const [{ explainConfig }] = await Promise.all([import('@omnilex/core/dist/config.js')]);
       const ctx = await openCliProject({ pack: options.pack });
       console.log(pc.bold('\nCấu hình hiệu lực / effective configuration:\n'));
       for (const line of explainConfig(ctx.effective)) console.log(`  ${line}`);
@@ -334,7 +334,7 @@ export function registerPackCommands(program: Command): void {
     .option('-s, --scope <scope>', 'project | user (default: project when .termbridge/ exists)')
     .option('-f, --from <dir>', 'Built dist/ directory to install from')
     .action(async (spec: string, options: { scope?: string; from?: string }) => {
-      const install = await import('@termbridge/core/dist/pack-install.js');
+      const install = await import('@omnilex/core/dist/pack-install.js');
       const ctx = await openCliProject();
       const target = scopeFile(ctx, options.scope);
       let installed: any[] = [];
@@ -343,8 +343,8 @@ export function registerPackCommands(program: Command): void {
       if (/\.tbpack$/i.test(spec) || /^https?:\/\//i.test(spec)) {
         // A .tbpack file or URL: checked and unpacked into the store as is.
         const [{ fetchBytes }, { importTbpack }] = await Promise.all([
-          import('@termbridge/core/dist/registry.js'),
-          import('@termbridge/core/dist/tbpack.js'),
+          import('@omnilex/core/dist/registry.js'),
+          import('@omnilex/core/dist/tbpack.js'),
         ]);
         try {
           const bytes = await fetchBytes(/^https?:\/\//i.test(spec) ? spec : path.resolve(spec));
@@ -383,7 +383,7 @@ export function registerPackCommands(program: Command): void {
     .description('Remove a pack from the project or user configuration')
     .option('-s, --scope <scope>', 'project | user (default: project when .termbridge/ exists)')
     .action(async (id: string, options: { scope?: string }) => {
-      const install = await import('@termbridge/core/dist/pack-install.js');
+      const install = await import('@omnilex/core/dist/pack-install.js');
       const ctx = await openCliProject();
       const target = scopeFile(ctx, options.scope);
       let removed = false;
@@ -405,7 +405,7 @@ export function registerPackCommands(program: Command): void {
     .option('--frozen', 'Fail instead of changing lock.json; every copy must match it')
     .option('-f, --from <dir>', 'Built dist/ directory to install from')
     .action(async (options: { frozen?: boolean; from?: string }) => {
-      const install = await import('@termbridge/core/dist/pack-install.js');
+      const install = await import('@omnilex/core/dist/pack-install.js');
       const ctx = await openCliProject();
       const lock = install.readLockFile(ctx.lockPath);
       const problems: string[] = [];
@@ -458,7 +458,7 @@ export function registerPackCommands(program: Command): void {
     .description('Install the newest versions the configured ranges allow and rewrite lock.json')
     .option('-f, --from <dir>', 'Built dist/ directory to install from')
     .action(async (options: { from?: string }) => {
-      const install = await import('@termbridge/core/dist/pack-install.js');
+      const install = await import('@omnilex/core/dist/pack-install.js');
       const ctx = await openCliProject();
       const installed: any[] = [];
       for (const op of ctx.effective.packOps as any[]) {
@@ -489,9 +489,9 @@ export function registerPackCommands(program: Command): void {
     .option('--id <id>', 'Pack id of a derived pack (default local.<domain> or local.effective)')
     .action(async (ids: string[], options: { out: string; domain?: string; locales?: string; tiers?: string; effective?: boolean; id?: string }) => {
       const [tbpack, { domainMatches }, { overlayConcepts }] = await Promise.all([
-        import('@termbridge/core/dist/tbpack.js'),
-        import('@termbridge/core/dist/search-config.js'),
-        import('@termbridge/core/dist/overlay.js'),
+        import('@omnilex/core/dist/tbpack.js'),
+        import('@omnilex/core/dist/search-config.js'),
+        import('@omnilex/core/dist/overlay.js'),
       ]);
       const ctx = await openCliProject();
       const known = new Map<string, any>([...ctx.catalog.packs, ...ctx.resolved.packs].map((pack: any) => [pack.id, pack]));
@@ -535,7 +535,7 @@ export function registerPackCommands(program: Command): void {
     .command('verify')
     .description('Check every store copy against its pack.json and lock.json')
     .action(async () => {
-      const install = await import('@termbridge/core/dist/pack-install.js');
+      const install = await import('@omnilex/core/dist/pack-install.js');
       const ctx = await openCliProject();
       const problems = install.verifyLock(ctx.home, install.readLockFile(ctx.lockPath));
       for (const pack of ctx.catalog.packs.filter((item: any) => item.sourceId === 'store')) {
@@ -549,7 +549,7 @@ export function registerPackCommands(program: Command): void {
     .command('prune')
     .description('Delete store copies no registered project references')
     .action(async () => {
-      const install = await import('@termbridge/core/dist/pack-install.js');
+      const install = await import('@omnilex/core/dist/pack-install.js');
       const result = install.pruneStore(install.termbridgeHome());
       console.log(pc.bold('\nTermbridge pack prune:\n'));
       for (const name of result.removed) console.log(`  ${pc.red('xóa / removed')} ${name}`);

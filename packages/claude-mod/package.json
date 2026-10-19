@@ -1,7 +1,7 @@
 {
-  "name": "@termbridge/claude-mod",
+  "name": "@omnilex/claude-mod",
   "version": "0.1.0",
-  "description": "Claude Code UI mod adapter for inline terminology links and pane explanations",
+  "description": "OmniLex Claude Code UI mod adapter for inline terminology links and pane explanations",
   "type": "module",
   "scripts": {
     "validate-plugin": "claude plugin validate"

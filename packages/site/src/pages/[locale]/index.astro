@@ -1,6 +1,7 @@
 ---
 import viI18n from '../../i18n/vi.json';
 import enI18n from '../../i18n/en.json';
+import { readDist } from '../../lib/dist';
 
 export function getStaticPaths() {
   return [{ params: { locale: 'vi' } }, { params: { locale: 'en' } }];
@@ -9,6 +10,44 @@ export function getStaticPaths() {
 const { locale } = Astro.params;
 const strings = locale === 'vi' ? viI18n : enI18n;
 const basePath = import.meta.env.BASE_URL;
+
+// Domain tree from the taxonomy: the sidebar shows each top domain and its
+// direct branches; every path's label goes to the client for the card chips.
+type TaxonomyNode = { id: string; labels: Record<string, string>; children?: TaxonomyNode[] };
+const taxonomy: TaxonomyNode[] = JSON.parse(readDist('taxonomy.json'));
+const nodeLabel = (node: TaxonomyNode) => node.labels[locale!] || node.labels.vi || node.id;
+const labels: Record<string, string> = {};
+const collect = (nodes: TaxonomyNode[], prefix: string) => {
+  for (const node of nodes) {
+    const path = `${prefix}${node.id}`;
+    labels[path] = nodeLabel(node);
+    collect(node.children || [], `${path}/`);
+  }
+};
+collect(taxonomy, '');
+
+const ui = locale === 'vi'
+  ? {
+      tagline: 'Mô tả điều bạn muốn nói để tìm đúng thuật ngữ, hoặc duyệt theo lĩnh vực.',
+      domains: 'Lĩnh vực',
+      all: 'Tất cả lĩnh vực',
+      clear: 'Xóa bộ lọc',
+      more: 'Xem thêm',
+      empty: 'Không tìm thấy khái niệm phù hợp. Thử mô tả khác hoặc bỏ bộ lọc lĩnh vực.',
+      loading: 'Đang tải…',
+      status: { draft: 'Nháp', reviewed: 'Đã duyệt', verified: 'Đã xác nhận', deprecated: 'Ngừng dùng' },
+    }
+  : {
+      tagline: 'Describe an idea in plain words to find the right term, or browse by domain.',
+      domains: 'Domains',
+      all: 'All domains',
+      clear: 'Clear filters',
+      more: 'Show more',
+      empty: 'No matching concepts. Try another description or clear the domain filter.',
+      loading: 'Loading…',
+      status: { draft: 'Draft', reviewed: 'Reviewed', verified: 'Verified', deprecated: 'Deprecated' },
+    };
+const levels = { 1: strings.level_1, 2: strings.level_2, 3: strings.level_3 };
 ---
 
 <!DOCTYPE html>
@@ -17,65 +56,198 @@ const basePath = import.meta.env.BASE_URL;
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>{strings.site_title}</title>
-    <style>
-      :root { font-family: system-ui, sans-serif; color: #e8edf5; background: #0d1524; }
+    <style is:global>
+      :root {
+        --bg: #0b1220; --panel: #111b2e; --card: #14203a; --line: #24344f; --line-hi: #3b5478;
+        --text: #e6ecf5; --muted: #93a4bd; --accent: #6cc8f0; --accent-bg: #16314a;
+        --draft: #f2c27b; --reviewed: #7fd6a4; --verified: #8fb4ff;
+        font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+        color: var(--text); background: var(--bg); color-scheme: dark;
+      }
       * { box-sizing: border-box; }
+      [hidden] { display: none !important; }
       body { margin: 0; }
-      main { max-width: 900px; margin: auto; padding: 2rem 1.25rem 5rem; }
-      nav { display: flex; justify-content: flex-end; gap: 1rem; }
-      a { color: #77d3f5; }
-      nav a[aria-current="page"] { color: white; font-weight: 700; }
-      header { padding: 3rem 0 2rem; }
-      h1 { font-size: clamp(2.5rem, 7vw, 4rem); letter-spacing: -.04em; margin: 0; }
-      header p { max-width: 640px; color: #b7c7d9; font-size: 1.15rem; line-height: 1.6; }
-      .search { display: grid; grid-template-columns: 1fr auto; gap: .75rem; }
-      input, select { background: #17263a; color: white; border: 1px solid #456077; border-radius: .65rem; padding: .85rem 1rem; font: inherit; }
-      input { width: 100%; }
-      input:focus, select:focus { outline: 2px solid #77d3f5; outline-offset: 2px; }
-      .hint { color: #aabdd0; font-size: .9rem; margin: 1rem 0 2rem; }
-      .results { display: grid; gap: .85rem; }
-      .result { display: block; color: inherit; text-decoration: none; background: #17263a; border: 1px solid #334b63; border-radius: .8rem; padding: 1.15rem 1.3rem; }
-      .result:hover, .result:focus { border-color: #77d3f5; }
-      .result h3 { color: #83d8f6; margin: 0 0 .4rem; }
-      .result p { color: #d1dce9; line-height: 1.5; margin: .35rem 0; }
-      .meta { color: #aabdd0; font-size: .85rem; }
-      .draft { color: #ffd18b; }
-      @media (max-width: 600px) { .search { grid-template-columns: 1fr; } header { padding-top: 2rem; } }
+      a { color: var(--accent); }
+      button { font: inherit; color: inherit; }
+
+      .topbar {
+        position: sticky; top: 0; z-index: 10; display: flex; align-items: center; gap: 1.25rem;
+        padding: .75rem clamp(1rem, 3vw, 2rem); background: rgba(11, 18, 32, .92);
+        backdrop-filter: blur(8px); border-bottom: 1px solid var(--line);
+      }
+      .brand { color: var(--text); font-weight: 800; font-size: 1.2rem; letter-spacing: -.02em; text-decoration: none; }
+      .searchbox { position: relative; flex: 1; min-width: 0; max-width: 720px; }
+      .searchbox input {
+        width: 100%; background: var(--panel); color: var(--text); border: 1px solid var(--line);
+        border-radius: .6rem; padding: .65rem 2.6rem .65rem .9rem; font: inherit;
+      }
+      .searchbox input:focus { outline: none; border-color: var(--accent); box-shadow: 0 0 0 3px rgba(108, 200, 240, .18); }
+      .searchbox kbd {
+        position: absolute; right: .6rem; top: 50%; transform: translateY(-50%);
+        color: var(--muted); border: 1px solid var(--line); border-radius: .3rem; padding: 0 .4rem; font-size: .8rem;
+      }
+      .langs { display: flex; gap: .75rem; margin-left: auto; font-size: .9rem; }
+      .langs a { color: var(--muted); text-decoration: none; }
+      .langs a[aria-current="page"] { color: var(--text); font-weight: 600; }
+
+      .layout {
+        display: grid; grid-template-columns: 260px minmax(0, 1fr); gap: 2rem;
+        max-width: 1400px; margin: 0 auto; padding: 1.5rem clamp(1rem, 3vw, 2rem) 4rem;
+      }
+      .sidebar { position: sticky; top: 4.5rem; align-self: start; max-height: calc(100vh - 6rem); overflow-y: auto; }
+      .sidebar h2 { font-size: .75rem; text-transform: uppercase; letter-spacing: .08em; color: var(--muted); margin: 0 0 .5rem .6rem; }
+      .tree { list-style: none; margin: 0; padding: 0; }
+      .tree ul { list-style: none; margin: .1rem 0 .4rem .9rem; padding: 0 0 0 .5rem; border-left: 1px solid var(--line); display: none; }
+      .tree li.open > ul { display: block; }
+      .dom {
+        display: flex; justify-content: space-between; align-items: center; gap: .5rem; width: 100%;
+        background: none; border: 0; border-radius: .45rem; padding: .4rem .6rem; text-align: left; cursor: pointer; color: var(--text);
+      }
+      .tree ul .dom { font-size: .9rem; color: var(--muted); padding: .3rem .6rem; }
+      .dom:hover { background: var(--panel); color: var(--text); }
+      .dom[aria-pressed="true"] { background: var(--accent-bg); color: var(--accent); font-weight: 600; }
+      .dom.empty { display: none; }
+      .count { font-size: .75rem; color: var(--muted); font-variant-numeric: tabular-nums; }
+      .mobile-domain { display: none; }
+
+      main { min-width: 0; }
+      .intro { color: var(--muted); margin: 0 0 1rem; }
+      .toolbar { display: flex; align-items: center; gap: .75rem; flex-wrap: wrap; margin-bottom: 1rem; min-height: 2rem; }
+      #result-count { margin: 0; color: var(--muted); font-size: .9rem; }
+      .filter {
+        display: inline-flex; align-items: center; gap: .4rem; background: var(--accent-bg); color: var(--accent);
+        border: 0; border-radius: 999px; padding: .2rem .7rem; font-size: .85rem; cursor: pointer;
+      }
+
+      .results { display: grid; grid-template-columns: repeat(auto-fill, minmax(290px, 1fr)); gap: .9rem; }
+      .card {
+        display: flex; flex-direction: column; gap: .45rem; color: inherit; text-decoration: none;
+        background: var(--card); border: 1px solid var(--line); border-radius: .75rem; padding: .95rem 1.05rem;
+        transition: border-color .12s, transform .12s;
+      }
+      .card:hover, .card:focus-visible { border-color: var(--line-hi); transform: translateY(-1px); outline: none; }
+      .card:focus-visible { border-color: var(--accent); }
+      .card h3 { margin: 0; font-size: 1.05rem; line-height: 1.3; color: var(--text); }
+      .card h3 .qualifier { color: var(--muted); font-weight: 400; font-size: .9rem; }
+      .card p {
+        margin: 0; color: #c3cfdf; font-size: .92rem; line-height: 1.5;
+        display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden;
+      }
+      .card .meta { display: flex; flex-wrap: wrap; gap: .35rem; margin-top: auto; padding-top: .3rem; }
+      .chip { font-size: .72rem; border-radius: 999px; padding: .12rem .55rem; background: #1b2a44; color: var(--muted); white-space: nowrap; }
+      .chip.draft { color: var(--draft); background: rgba(242, 194, 123, .1); }
+      .chip.reviewed { color: var(--reviewed); background: rgba(127, 214, 164, .1); }
+      .chip.verified { color: var(--verified); background: rgba(143, 180, 255, .1); }
+      mark { background: rgba(108, 200, 240, .22); color: inherit; border-radius: .2rem; }
+
+      .empty-state { color: var(--muted); padding: 3rem 1rem; text-align: center; border: 1px dashed var(--line); border-radius: .75rem; }
+      .more {
+        display: block; margin: 1.5rem auto 0; background: var(--panel); color: var(--accent);
+        border: 1px solid var(--line); border-radius: .6rem; padding: .6rem 1.4rem; cursor: pointer;
+      }
+      .more:hover { border-color: var(--accent); }
+
+      @media (max-width: 860px) {
+        .layout { grid-template-columns: minmax(0, 1fr); gap: 1rem; }
+        .topbar { gap: .75rem; }
+        .results { grid-template-columns: minmax(0, 1fr); }
+        .sidebar { display: none; }
+        .mobile-domain {
+          display: block; width: 100%; background: var(--panel); color: var(--text); border: 1px solid var(--line);
+          border-radius: .6rem; padding: .6rem .8rem; font: inherit; margin-bottom: .75rem;
+        }
+        .searchbox kbd { display: none; }
+        .brand { font-size: 1rem; }
+      }
     </style>
   </head>
   <body>
-    <main id="app" data-locale={locale} data-base={basePath}>
-      <nav aria-label={locale === 'vi' ? 'Ngôn ngữ' : 'Languages'}>
-        <a href={`${basePath}vi/`} aria-current={locale === 'vi' ? 'page' : undefined}>Tiếng Việt</a>
-        <a href={`${basePath}en/`} aria-current={locale === 'en' ? 'page' : undefined}>English</a>
-      </nav>
-      <header>
-        <h1>Termbridge</h1>
-        <p>{locale === 'vi' ? 'Mô tả điều bạn muốn nói để tìm đúng thuật ngữ, hoặc chọn một khái niệm để đọc giải thích.' : 'Describe an idea in plain words to find the right term, or browse a concept to learn more.'}</p>
-      </header>
-      <div class="search">
+    <header class="topbar">
+      <a class="brand" href={`${basePath}${locale}/`}>Termbridge</a>
+      <div class="searchbox">
         <input id="search-input" type="search" autocomplete="off" placeholder={strings.search_placeholder} aria-label={strings.search_button} />
-        <select id="domain-select" aria-label={strings.select_domain}>
-          <option value="">{strings.select_domain}</option>
-          <option value="finance">{locale === 'vi' ? 'Tài chính' : 'Finance'}</option>
-          <option value="media">Media</option>
-          <option value="it">{locale === 'vi' ? 'Công nghệ thông tin' : 'IT'}</option>
-        </select>
+        <kbd>/</kbd>
       </div>
-      <p class="hint" id="result-count" aria-live="polite"></p>
-      <section class="results" id="results" aria-label={locale === 'vi' ? 'Kết quả tra cứu' : 'Search results'}></section>
-    </main>
+      <nav class="langs" aria-label={locale === 'vi' ? 'Ngôn ngữ' : 'Languages'}>
+        <a href={`${basePath}vi/`} data-lang aria-current={locale === 'vi' ? 'page' : undefined}>VI</a>
+        <a href={`${basePath}en/`} data-lang aria-current={locale === 'en' ? 'page' : undefined}>EN</a>
+      </nav>
+    </header>
+
+    <div class="layout" id="app"
+      data-locale={locale} data-base={basePath}
+      data-labels={JSON.stringify(labels)}
+      data-status={JSON.stringify(ui.status)}
+      data-levels={JSON.stringify(levels)}
+      data-text={JSON.stringify({ empty: ui.empty, loading: ui.loading, all: ui.all })}>
+      <aside class="sidebar" aria-label={ui.domains}>
+        <h2>{ui.domains}</h2>
+        <ul class="tree">
+          <li><button class="dom" type="button" data-domain="" aria-pressed="true">{ui.all} <span class="count" data-count=""></span></button></li>
+          {taxonomy.map((node) => (
+            <li data-top={node.id}>
+              <button class="dom" type="button" data-domain={node.id} aria-pressed="false">
+                {nodeLabel(node)} <span class="count" data-count={node.id}></span>
+              </button>
+              {node.children?.length ? (
+                <ul>
+                  {node.children.map((child) => (
+                    <li>
+                      <button class="dom" type="button" data-domain={`${node.id}/${child.id}`} aria-pressed="false">
+                        {nodeLabel(child)} <span class="count" data-count={`${node.id}/${child.id}`}></span>
+                      </button>
+                    </li>
+                  ))}
+                </ul>
+              ) : null}
+            </li>
+          ))}
+        </ul>
+      </aside>
+
+      <main>
+        <p class="intro">{ui.tagline}</p>
+        <select id="domain-select" class="mobile-domain" aria-label={strings.select_domain}>
+          <option value="">{ui.all}</option>
+          {taxonomy.map((node) => (
+            <optgroup label={nodeLabel(node)}>
+              <option value={node.id}>{nodeLabel(node)}</option>
+              {(node.children || []).map((child) => (
+                <option value={`${node.id}/${child.id}`}>{nodeLabel(child)}</option>
+              ))}
+            </optgroup>
+          ))}
+        </select>
+        <div class="toolbar">
+          <p id="result-count" aria-live="polite">{ui.loading}</p>
+          <button class="filter" id="clear" type="button" hidden>{ui.clear} ✕</button>
+        </div>
+        <section class="results" id="results" aria-label={locale === 'vi' ? 'Kết quả tra cứu' : 'Search results'}></section>
+        <button class="more" id="more" type="button" hidden>{ui.more}</button>
+      </main>
+    </div>
+
     <script>
       import type MiniSearch from 'minisearch';
-      import { domainMatches, loadSearchIndex, searchIndexes } from '@termbridge/core/dist/search-config.js';
+      import { domainMatches, loadSearchIndex, searchIndexes } from '@omnilex/core/dist/search-config.js';
 
       const app = document.querySelector<HTMLElement>('#app')!;
       const input = document.querySelector<HTMLInputElement>('#search-input')!;
       const domainSelect = document.querySelector<HTMLSelectElement>('#domain-select')!;
       const results = document.querySelector<HTMLElement>('#results')!;
       const count = document.querySelector<HTMLElement>('#result-count')!;
+      const more = document.querySelector<HTMLButtonElement>('#more')!;
+      const clear = document.querySelector<HTMLButtonElement>('#clear')!;
+      const domainButtons = [...document.querySelectorAll<HTMLButtonElement>('.dom')];
       const locale = app.dataset.locale || 'vi';
       const base = app.dataset.base || '/';
+      const labels: Record<string, string> = JSON.parse(app.dataset.labels || '{}');
+      const statusText: Record<string, string> = JSON.parse(app.dataset.status || '{}');
+      const levelText: Record<string, string> = JSON.parse(app.dataset.levels || '{}');
+      const text: Record<string, string> = JSON.parse(app.dataset.text || '{}');
+      const PAGE_SIZE = 36;
+      let shown = PAGE_SIZE;
+      let domain = '';
 
       // Shards are fetched on first use: the combined index for queries, the
       // cards of every content pack for browsing without a query.
@@ -91,45 +263,151 @@ const basePath = import.meta.env.BASE_URL;
             .filter((pack: any) => pack.kind === 'content')
             .map((pack: any) => fetchText(`packs/${pack.id}/${locale}/cards.json`).then(JSON.parse))
         ))
-        .then((lists) => lists.flat()));
+        // The starter pack repeats concepts of the others: keep one card per id.
+        .then((lists) => [...new Map(lists.flat().map((card: any) => [card.id, card])).values()]));
 
-      let drawId = 0;
+      // The deepest taxonomy label known for a concept's domain path.
+      const domainLabel = (path: string) => {
+        const parts = path.split('/');
+        for (let i = parts.length; i > 0; i--) {
+          const label = labels[parts.slice(0, i).join('/')];
+          if (label) return label;
+        }
+        return path;
+      };
 
-      async function draw() {
-        const current = ++drawId;
-        const query = input.value.trim();
-        const domain = domainSelect.value;
-        const filtered: any[] = query
-          ? searchIndexes([await getIndex()], query, { domain, limit: 10 })
-          : (await getCards())
-              .filter((entry: any) => !domain || entry.domains.some((path: string) => domainMatches(path, domain)))
-              .slice(0, 12);
-        if (current !== drawId) return;
+      const inDomain = (entry: any) => !domain || entry.domains.some((path: string) => domainMatches(path, domain));
 
-        count.textContent = query
-          ? (locale === 'vi' ? `${filtered.length} kết quả phù hợp` : `${filtered.length} matching results`)
-          : (locale === 'vi' ? `${filtered.length} khái niệm` : `${filtered.length} concepts`);
-        results.replaceChildren();
-        for (const entry of filtered) {
-          const link = document.createElement('a');
-          link.className = 'result';
-          link.href = `${base}${locale}/c/${encodeURIComponent(entry.id)}/`;
-          const title = document.createElement('h3');
-          title.textContent = `${entry.label}${entry.qualifier ? ` ${entry.qualifier}` : ''}`;
-          const summary = document.createElement('p');
-          summary.textContent = entry.summary;
-          const meta = document.createElement('div');
-          meta.className = 'meta';
-          meta.textContent = `${entry.domains.join(' · ')} · ${entry.status}`;
-          if (entry.status === 'draft') meta.classList.add('draft');
-          link.append(title, summary, meta);
-          results.append(link);
+      // Counts next to each sidebar entry; branches without concepts are hidden.
+      async function fillCounts() {
+        const all = await getCards();
+        for (const el of document.querySelectorAll<HTMLElement>('[data-count]')) {
+          const path = el.dataset.count || '';
+          const n = path ? all.filter((entry) => entry.domains.some((d: string) => domainMatches(d, path))).length : all.length;
+          el.textContent = String(n);
+          if (path && n === 0) el.closest('.dom')?.classList.add('empty');
         }
       }
 
-      input.addEventListener('input', draw);
-      domainSelect.addEventListener('change', draw);
+      function syncDomainUi() {
+        const top = domain.split('/')[0];
+        for (const button of domainButtons) button.setAttribute('aria-pressed', String(button.dataset.domain === domain));
+        for (const li of document.querySelectorAll<HTMLElement>('[data-top]')) li.classList.toggle('open', li.dataset.top === top);
+        domainSelect.value = domain;
+      }
+
+      function highlight(target: HTMLElement, value: string, query: string) {
+        const words = query.toLowerCase().split(/\s+/).filter((w) => w.length > 1);
+        const lower = value.toLowerCase();
+        let cursor = 0;
+        const ranges: Array<[number, number]> = [];
+        for (const word of words) {
+          let at = lower.indexOf(word);
+          while (at !== -1) { ranges.push([at, at + word.length]); at = lower.indexOf(word, at + word.length); }
+        }
+        ranges.sort((a, b) => a[0] - b[0]);
+        for (const [start, end] of ranges) {
+          if (start < cursor) continue;
+          target.append(value.slice(cursor, start));
+          const mark = document.createElement('mark');
+          mark.textContent = value.slice(start, end);
+          target.append(mark);
+          cursor = end;
+        }
+        target.append(value.slice(cursor));
+      }
+
+      function card(entry: any, query: string) {
+        const link = document.createElement('a');
+        link.className = 'card';
+        link.href = `${base}${locale}/c/${encodeURIComponent(entry.id)}/`;
+        const title = document.createElement('h3');
+        highlight(title, entry.label, query);
+        if (entry.qualifier) {
+          const q = document.createElement('span');
+          q.className = 'qualifier';
+          q.textContent = ` ${entry.qualifier}`;
+          title.append(q);
+        }
+        const summary = document.createElement('p');
+        highlight(summary, entry.summary || '', query);
+        const meta = document.createElement('div');
+        meta.className = 'meta';
+        const chip = (value: string, cls = '') => {
+          const span = document.createElement('span');
+          span.className = `chip ${cls}`.trim();
+          span.textContent = value;
+          meta.append(span);
+        };
+        for (const label of [...new Set<string>(entry.domains.map(domainLabel))].slice(0, 2)) chip(label);
+        if (levelText[entry.level]) chip(levelText[entry.level]);
+        if (entry.status) chip(statusText[entry.status] || entry.status, entry.status);
+        link.append(title, summary, meta);
+        return link;
+      }
+
+      function saveState(query: string) {
+        const params = new URLSearchParams();
+        if (query) params.set('q', query);
+        if (domain) params.set('d', domain);
+        const qs = params.toString();
+        history.replaceState(null, '', qs ? `?${qs}` : location.pathname);
+        // Keep the filters when switching language.
+        for (const a of document.querySelectorAll<HTMLAnchorElement>('[data-lang]')) {
+          a.search = domain ? `?d=${encodeURIComponent(domain)}` : '';
+        }
+      }
+
+      let drawId = 0;
+      async function draw() {
+        const current = ++drawId;
+        const query = input.value.trim();
+        saveState(query);
+        syncDomainUi();
+        clear.hidden = !query && !domain;
+        // Browsing (no query) lists every concept of the domain, A to Z, a page at a time.
+        const matched: any[] = query
+          ? searchIndexes([await getIndex()], query, { domain, limit: 60 })
+          : (await getCards()).filter(inDomain).sort((a: any, b: any) => a.label.localeCompare(b.label, locale));
+        if (current !== drawId) return;
+        const visible = matched.slice(0, shown);
+        more.hidden = visible.length >= matched.length;
+        const scope = domain ? ` · ${domainLabel(domain)}` : '';
+        count.textContent = query
+          ? (locale === 'vi' ? `${matched.length} kết quả${scope}` : `${matched.length} results${scope}`)
+          : (locale === 'vi' ? `${matched.length} khái niệm${scope}` : `${matched.length} concepts${scope}`);
+        if (!visible.length) {
+          const empty = document.createElement('div');
+          empty.className = 'empty-state';
+          empty.textContent = text.empty;
+          results.replaceChildren(empty);
+          return;
+        }
+        results.replaceChildren(...visible.map((entry) => card(entry, query)));
+      }
+
+      let timer: number | undefined;
+      const reset = () => { shown = PAGE_SIZE; draw(); };
+      const setDomain = (value: string) => { domain = value; reset(); window.scrollTo({ top: 0 }); };
+
+      input.addEventListener('input', () => { clearTimeout(timer); timer = window.setTimeout(reset, 120); });
+      input.addEventListener('keydown', (event) => {
+        if (event.key === 'Escape') { input.value = ''; reset(); }
+      });
+      document.addEventListener('keydown', (event) => {
+        if (event.key === '/' && document.activeElement !== input) { event.preventDefault(); input.focus(); }
+      });
+      domainSelect.addEventListener('change', () => setDomain(domainSelect.value));
+      for (const button of domainButtons) button.addEventListener('click', () => setDomain(button.dataset.domain || ''));
+      clear.addEventListener('click', () => { input.value = ''; setDomain(''); });
+      more.addEventListener('click', () => { shown += PAGE_SIZE; draw(); });
+
+      const params = new URLSearchParams(location.search);
+      input.value = params.get('q') || '';
+      const initial = params.get('d') || '';
+      domain = domainButtons.some((button) => button.dataset.domain === initial) || labels[initial] ? initial : '';
       draw();
+      fillCounts();
     </script>
   </body>
 </html>

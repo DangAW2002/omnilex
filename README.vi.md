@@ -116,7 +116,11 @@ prefer:
 
 ### Dùng trong Claude Code
 
-Mod Termbridge thêm nhãn tra cứu và thẻ tóm tắt khi hover dưới câu trả lời hoặc câu hỏi, cùng pane `/termbridge` để tra ngược bằng lời thường. Xem [hướng dẫn cài đặt và giới hạn hiện tại](packages/claude-mod/README.md).
+Mod Termbridge thêm nhãn tra cứu và thẻ tóm tắt khi hover dưới câu trả lời hoặc câu hỏi, cùng pane `/termbridge` để tra ngược bằng lời thường và `/termbridge browse` để duyệt khái niệm theo lĩnh vực. Xem [hướng dẫn cài đặt và giới hạn hiện tại](packages/claude-mod/README.md).
+
+### Xem trên trình duyệt (local)
+
+Sau `pnpm build`, chạy `pnpm site` rồi mở `http://localhost:4321/`: tìm theo mô tả, hoặc để trống ô tìm và chọn lĩnh vực/nhánh để duyệt toàn bộ khái niệm, nhấn một thẻ để đọc giải thích đầy đủ. `pnpm site:build` rồi `pnpm site:preview` để xem bản tĩnh đã build.
 
 ## Giấy phép
 

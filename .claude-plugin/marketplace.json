@@ -1,0 +1,23 @@
+{
+  "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
+  "name": "omnilex",
+  "description": "OmniLex terminology lookup pane and hover summaries for Claude Code",
+  "owner": {
+    "name": "OmniLex contributors"
+  },
+  "plugins": [
+    {
+      "name": "omnilex",
+      "description": "OmniLex terminology lookup pane and hover summaries for Claude Code",
+      "source": "./packages/claude-mod",
+      "category": "productivity",
+      "keywords": [
+        "terminology",
+        "lookup",
+        "hover",
+        "pane",
+        "vietnamese"
+      ]
+    }
+  ]
+}

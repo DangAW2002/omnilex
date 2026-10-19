@@ -1,0 +1,757 @@
+[
+  {
+    "id": "finance",
+    "labels": {
+      "vi": "Tài chính",
+      "en": "Finance"
+    },
+    "children": [
+      {
+        "id": "personal-finance",
+        "labels": {
+          "vi": "Tài chính cá nhân",
+          "en": "Personal finance"
+        },
+        "children": [
+          {
+            "id": "budget",
+            "labels": {
+              "vi": "Ngân sách",
+              "en": "Budget"
+            }
+          },
+          {
+            "id": "saving",
+            "labels": {
+              "vi": "Tiết kiệm",
+              "en": "Saving"
+            }
+          },
+          {
+            "id": "debt-credit",
+            "labels": {
+              "vi": "Nợ và tín dụng",
+              "en": "Debt and credit"
+            }
+          },
+          {
+            "id": "insurance",
+            "labels": {
+              "vi": "Bảo hiểm",
+              "en": "Insurance"
+            }
+          },
+          {
+            "id": "tax",
+            "labels": {
+              "vi": "Thuế cá nhân",
+              "en": "Personal tax"
+            }
+          }
+        ]
+      },
+      {
+        "id": "banking",
+        "labels": {
+          "vi": "Ngân hàng",
+          "en": "Banking"
+        },
+        "children": [
+          {
+            "id": "deposits",
+            "labels": {
+              "vi": "Tiền gửi",
+              "en": "Deposits"
+            }
+          },
+          {
+            "id": "lending",
+            "labels": {
+              "vi": "Cho vay",
+              "en": "Lending"
+            }
+          },
+          {
+            "id": "payments",
+            "labels": {
+              "vi": "Thanh toán",
+              "en": "Payments"
+            }
+          }
+        ]
+      },
+      {
+        "id": "investing",
+        "labels": {
+          "vi": "Đầu tư",
+          "en": "Investing"
+        },
+        "children": [
+          {
+            "id": "stocks",
+            "labels": {
+              "vi": "Cổ phiếu",
+              "en": "Stocks"
+            }
+          },
+          {
+            "id": "bonds",
+            "labels": {
+              "vi": "Trái phiếu",
+              "en": "Bonds"
+            }
+          },
+          {
+            "id": "funds",
+            "labels": {
+              "vi": "Quỹ",
+              "en": "Funds"
+            }
+          },
+          {
+            "id": "digital-assets",
+            "labels": {
+              "vi": "Tài sản số",
+              "en": "Digital assets"
+            }
+          },
+          {
+            "id": "valuation",
+            "labels": {
+              "vi": "Định giá",
+              "en": "Valuation"
+            }
+          },
+          {
+            "id": "portfolio-risk",
+            "labels": {
+              "vi": "Danh mục và rủi ro",
+              "en": "Portfolio and risk"
+            }
+          }
+        ]
+      },
+      {
+        "id": "corporate-finance",
+        "labels": {
+          "vi": "Tài chính doanh nghiệp",
+          "en": "Corporate finance"
+        },
+        "children": [
+          {
+            "id": "financial-statements",
+            "labels": {
+              "vi": "Báo cáo tài chính",
+              "en": "Financial statements"
+            }
+          },
+          {
+            "id": "capital-structure",
+            "labels": {
+              "vi": "Cấu trúc vốn",
+              "en": "Capital structure"
+            }
+          },
+          {
+            "id": "fundraising",
+            "labels": {
+              "vi": "Gọi vốn",
+              "en": "Fundraising"
+            }
+          }
+        ]
+      },
+      {
+        "id": "accounting",
+        "labels": {
+          "vi": "Kế toán",
+          "en": "Accounting"
+        },
+        "children": [
+          {
+            "id": "bookkeeping",
+            "labels": {
+              "vi": "Ghi sổ",
+              "en": "Bookkeeping"
+            }
+          },
+          {
+            "id": "standards",
+            "labels": {
+              "vi": "Chuẩn mực báo cáo",
+              "en": "Accounting standards"
+            }
+          }
+        ]
+      },
+      {
+        "id": "economics",
+        "labels": {
+          "vi": "Kinh tế và thị trường",
+          "en": "Economics and markets"
+        },
+        "children": [
+          {
+            "id": "inflation",
+            "labels": {
+              "vi": "Lạm phát",
+              "en": "Inflation"
+            }
+          },
+          {
+            "id": "interest-rates-monetary-policy",
+            "labels": {
+              "vi": "Lãi suất và chính sách tiền tệ",
+              "en": "Interest rates and monetary policy"
+            }
+          },
+          {
+            "id": "exchange-rates",
+            "labels": {
+              "vi": "Tỷ giá",
+              "en": "Exchange rates"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "iot",
+    "labels": {
+      "vi": "Internet vạn vật",
+      "en": "Internet of Things"
+    },
+    "children": [
+      {
+        "id": "devices-sensors",
+        "labels": {
+          "vi": "Thiết bị và cảm biến",
+          "en": "Devices and sensors"
+        }
+      },
+      {
+        "id": "connectivity-protocols",
+        "labels": {
+          "vi": "Giao thức kết nối",
+          "en": "Connectivity protocols"
+        }
+      },
+      {
+        "id": "edge-cloud",
+        "labels": {
+          "vi": "Biên và đám mây",
+          "en": "Edge and cloud"
+        }
+      },
+      {
+        "id": "industrial",
+        "labels": {
+          "vi": "IoT công nghiệp",
+          "en": "Industrial IoT"
+        }
+      },
+      {
+        "id": "applications",
+        "labels": {
+          "vi": "Ứng dụng IoT",
+          "en": "IoT applications"
+        }
+      }
+    ]
+  },
+  {
+    "id": "it",
+    "labels": {
+      "vi": "Công nghệ thông tin",
+      "en": "Information Technology"
+    },
+    "children": [
+      {
+        "id": "software-engineering",
+        "labels": {
+          "vi": "Kỹ thuật phần mềm",
+          "en": "Software engineering"
+        },
+        "children": [
+          {
+            "id": "programming-concepts",
+            "labels": {
+              "vi": "Khái niệm lập trình",
+              "en": "Programming concepts"
+            }
+          },
+          {
+            "id": "architecture",
+            "labels": {
+              "vi": "Kiến trúc",
+              "en": "Architecture"
+            }
+          },
+          {
+            "id": "testing",
+            "labels": {
+              "vi": "Kiểm thử",
+              "en": "Testing"
+            }
+          },
+          {
+            "id": "version-control",
+            "labels": {
+              "vi": "Quản lý phiên bản",
+              "en": "Version control"
+            }
+          },
+          {
+            "id": "practices",
+            "labels": {
+              "vi": "Thực hành kỹ thuật",
+              "en": "Engineering practices"
+            }
+          },
+          {
+            "id": "devops",
+            "labels": {
+              "vi": "DevOps",
+              "en": "DevOps"
+            }
+          }
+        ]
+      },
+      {
+        "id": "devops",
+        "labels": {
+          "vi": "DevOps",
+          "en": "DevOps"
+        },
+        "children": [
+          {
+            "id": "ci-cd",
+            "labels": {
+              "vi": "CI/CD",
+              "en": "CI/CD"
+            }
+          },
+          {
+            "id": "containers",
+            "labels": {
+              "vi": "Container",
+              "en": "Containers"
+            }
+          },
+          {
+            "id": "observability",
+            "labels": {
+              "vi": "Khả năng quan sát",
+              "en": "Observability"
+            }
+          },
+          {
+            "id": "sre-operations",
+            "labels": {
+              "vi": "Vận hành và SRE",
+              "en": "SRE and operations"
+            }
+          },
+          {
+            "id": "iac",
+            "labels": {
+              "vi": "Hạ tầng dưới dạng mã",
+              "en": "Infrastructure as code"
+            }
+          }
+        ]
+      },
+      {
+        "id": "web",
+        "labels": {
+          "vi": "Web",
+          "en": "Web"
+        },
+        "children": [
+          {
+            "id": "frontend",
+            "labels": {
+              "vi": "Frontend",
+              "en": "Frontend"
+            }
+          },
+          {
+            "id": "backend",
+            "labels": {
+              "vi": "Backend",
+              "en": "Backend"
+            }
+          },
+          {
+            "id": "api",
+            "labels": {
+              "vi": "API",
+              "en": "API"
+            }
+          }
+        ]
+      },
+      {
+        "id": "data",
+        "labels": {
+          "vi": "Dữ liệu",
+          "en": "Data"
+        },
+        "children": [
+          {
+            "id": "database",
+            "labels": {
+              "vi": "Cơ sở dữ liệu",
+              "en": "Databases"
+            }
+          },
+          {
+            "id": "analytics",
+            "labels": {
+              "vi": "Phân tích",
+              "en": "Analytics"
+            }
+          },
+          {
+            "id": "data-engineering",
+            "labels": {
+              "vi": "Kỹ thuật dữ liệu",
+              "en": "Data engineering"
+            }
+          }
+        ]
+      },
+      {
+        "id": "ai-ml",
+        "labels": {
+          "vi": "AI và học máy",
+          "en": "AI and machine learning"
+        },
+        "children": [
+          {
+            "id": "foundations",
+            "labels": {
+              "vi": "Khái niệm nền",
+              "en": "Foundations"
+            }
+          },
+          {
+            "id": "llm-agents",
+            "labels": {
+              "vi": "Mô hình ngôn ngữ và agent",
+              "en": "Language models and agents"
+            }
+          },
+          {
+            "id": "mlops",
+            "labels": {
+              "vi": "MLOps",
+              "en": "MLOps"
+            }
+          },
+          {
+            "id": "nlp",
+            "labels": {
+              "vi": "Xử lý ngôn ngữ tự nhiên",
+              "en": "Natural language processing"
+            }
+          },
+          {
+            "id": "computer-vision",
+            "labels": {
+              "vi": "Thị giác máy tính",
+              "en": "Computer vision"
+            }
+          },
+          {
+            "id": "ai-safety-governance",
+            "labels": {
+              "vi": "An toàn và quản trị AI",
+              "en": "AI safety and governance"
+            }
+          }
+        ]
+      },
+      {
+        "id": "infrastructure",
+        "labels": {
+          "vi": "Hạ tầng và đám mây",
+          "en": "Infrastructure and cloud"
+        },
+        "children": [
+          {
+            "id": "cloud",
+            "labels": {
+              "vi": "Điện toán đám mây",
+              "en": "Cloud computing"
+            }
+          },
+          {
+            "id": "networking",
+            "labels": {
+              "vi": "Mạng",
+              "en": "Networking"
+            }
+          }
+        ]
+      },
+      {
+        "id": "security",
+        "labels": {
+          "vi": "Bảo mật",
+          "en": "Security"
+        },
+        "children": [
+          {
+            "id": "authentication",
+            "labels": {
+              "vi": "Xác thực",
+              "en": "Authentication"
+            }
+          },
+          {
+            "id": "cryptography",
+            "labels": {
+              "vi": "Mã hóa",
+              "en": "Cryptography"
+            }
+          },
+          {
+            "id": "vulnerabilities",
+            "labels": {
+              "vi": "Lỗ hổng",
+              "en": "Vulnerabilities"
+            }
+          }
+        ]
+      },
+      {
+        "id": "business-systems",
+        "labels": {
+          "vi": "Hệ thống doanh nghiệp",
+          "en": "Business systems"
+        },
+        "children": [
+          {
+            "id": "enterprise-apps",
+            "labels": {
+              "vi": "Ứng dụng doanh nghiệp",
+              "en": "Enterprise applications"
+            }
+          },
+          {
+            "id": "automation",
+            "labels": {
+              "vi": "Tự động hóa quy trình",
+              "en": "Process automation"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "media",
+    "labels": {
+      "vi": "Media",
+      "en": "Media"
+    },
+    "children": [
+      {
+        "id": "journalism",
+        "labels": {
+          "vi": "Báo chí",
+          "en": "Journalism"
+        },
+        "children": [
+          {
+            "id": "reporting",
+            "labels": {
+              "vi": "Tác nghiệp",
+              "en": "Reporting"
+            }
+          },
+          {
+            "id": "ethics",
+            "labels": {
+              "vi": "Đạo đức nghề",
+              "en": "Ethics"
+            }
+          },
+          {
+            "id": "genres",
+            "labels": {
+              "vi": "Thể loại",
+              "en": "Genres"
+            }
+          }
+        ]
+      },
+      {
+        "id": "content-production",
+        "labels": {
+          "vi": "Sản xuất nội dung",
+          "en": "Content production"
+        },
+        "children": [
+          {
+            "id": "video",
+            "labels": {
+              "vi": "Video",
+              "en": "Video"
+            }
+          },
+          {
+            "id": "audio-podcasts",
+            "labels": {
+              "vi": "Âm thanh và podcast",
+              "en": "Audio and podcasts"
+            }
+          },
+          {
+            "id": "editing",
+            "labels": {
+              "vi": "Biên tập",
+              "en": "Editing"
+            }
+          },
+          {
+            "id": "visual-design",
+            "labels": {
+              "vi": "Thiết kế hình ảnh",
+              "en": "Visual design"
+            }
+          }
+        ]
+      },
+      {
+        "id": "digital-marketing",
+        "labels": {
+          "vi": "Marketing số",
+          "en": "Digital marketing"
+        },
+        "children": [
+          {
+            "id": "seo",
+            "labels": {
+              "vi": "SEO",
+              "en": "SEO"
+            }
+          },
+          {
+            "id": "social-media",
+            "labels": {
+              "vi": "Mạng xã hội",
+              "en": "Social media"
+            }
+          },
+          {
+            "id": "paid-ads",
+            "labels": {
+              "vi": "Quảng cáo trả phí",
+              "en": "Paid advertising"
+            }
+          },
+          {
+            "id": "metrics-analytics",
+            "labels": {
+              "vi": "Đo lường và chỉ số",
+              "en": "Metrics and analytics"
+            }
+          },
+          {
+            "id": "email",
+            "labels": {
+              "vi": "Email marketing",
+              "en": "Email marketing"
+            }
+          }
+        ]
+      },
+      {
+        "id": "publishing",
+        "labels": {
+          "vi": "Phát hành và bản quyền",
+          "en": "Publishing and copyright"
+        },
+        "children": [
+          {
+            "id": "distribution-platforms",
+            "labels": {
+              "vi": "Nền tảng phân phối",
+              "en": "Distribution platforms"
+            }
+          },
+          {
+            "id": "copyright-licensing",
+            "labels": {
+              "vi": "Bản quyền và cấp phép",
+              "en": "Copyright and licensing"
+            }
+          }
+        ]
+      },
+      {
+        "id": "pr-communications",
+        "labels": {
+          "vi": "Truyền thông và PR",
+          "en": "PR and communications"
+        },
+        "children": [
+          {
+            "id": "media-relations",
+            "labels": {
+              "vi": "Quan hệ báo chí",
+              "en": "Media relations"
+            }
+          },
+          {
+            "id": "crisis-communications",
+            "labels": {
+              "vi": "Khủng hoảng truyền thông",
+              "en": "Crisis communications"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "product",
+    "labels": {
+      "vi": "Quản trị sản phẩm và dự án",
+      "en": "Product and Project Management"
+    },
+    "children": [
+      {
+        "id": "product-management",
+        "labels": {
+          "vi": "Quản lý sản phẩm",
+          "en": "Product management"
+        }
+      },
+      {
+        "id": "agile-scrum",
+        "labels": {
+          "vi": "Agile và Scrum",
+          "en": "Agile and Scrum"
+        }
+      },
+      {
+        "id": "delivery-planning",
+        "labels": {
+          "vi": "Lập kế hoạch bàn giao",
+          "en": "Delivery and planning"
+        }
+      },
+      {
+        "id": "metrics",
+        "labels": {
+          "vi": "Chỉ số đo lường",
+          "en": "Metrics"
+        }
+      }
+    ]
+  }
+]

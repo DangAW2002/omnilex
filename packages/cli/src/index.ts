@@ -34,7 +34,7 @@ program
   .option('--from <file>', 'Scaffold every candidate that has an id and a domain')
   .action(async (id: string | undefined, options: { domain?: string; locales: string; draftedBy: string; from?: string }) => {
     const rootDir = resolveRootDir();
-    const { loadAll, scaffoldConcept, parseYaml } = await import('@termbridge/core');
+    const { loadAll, scaffoldConcept, parseYaml } = await import('@omnilex/core');
     const repoData = loadAll(rootDir);
     const locales = options.locales.split(',').map((s) => s.trim());
     const allowedLocales = new Set(repoData.localesConfig.locales.map((locale) => locale.code));
@@ -107,7 +107,7 @@ program
   .option('-s, --strict', 'Treat warnings as errors', false)
   .action(async (options: { strict: boolean }) => {
     const rootDir = resolveRootDir();
-    const { loadAll, validateRepository } = await import('@termbridge/core');
+    const { loadAll, validateRepository } = await import('@omnilex/core');
     const repoData = loadAll(rootDir);
     const report = validateRepository(repoData);
 
@@ -142,7 +142,7 @@ program
   .description('Generate indexes/, llms.txt, and dist/ artifacts')
   .action(async () => {
     const rootDir = resolveRootDir();
-    const { loadAll, buildArtifacts } = await import('@termbridge/core');
+    const { loadAll, buildArtifacts } = await import('@omnilex/core');
     const repoData = loadAll(rootDir);
     const outputs = buildArtifacts(repoData);
 
@@ -174,7 +174,7 @@ export async function openPackStore(rootDir: string, deps: any = {}): Promise<an
   const filesystem = deps.fs || fs;
   const distDir = path.join(rootDir, 'dist');
   if (freshArtifact(filesystem, path.join(distDir, 'manifest.json'), path.join(rootDir, 'concepts')) !== true) return null;
-  const { PackStore } = deps.PackStore ? deps : await import('@termbridge/core/dist/pack-reader.js');
+  const { PackStore } = deps.PackStore ? deps : await import('@omnilex/core/dist/pack-reader.js');
   const store = new PackStore(
     {
       readText(relPath: string) {
@@ -223,7 +223,7 @@ export async function findAction(
       const docs = JSON.parse(raw);
       const { findConceptsFromDocs } = deps.findConceptsFromDocs
         ? deps
-        : await import('@termbridge/core/dist/query.js');
+        : await import('@omnilex/core/dist/query.js');
       const results = findConceptsFromDocs(docs, query, {
         domain: options.domain,
         cacheKey: `cli-dist:${targetLocale}`,
@@ -236,10 +236,10 @@ export async function findAction(
 
   const { loadAll } = deps.loadAll
     ? deps
-    : await import('@termbridge/core/dist/loader.js');
+    : await import('@omnilex/core/dist/loader.js');
   const { findConcepts } = deps.findConcepts
     ? deps
-    : await import('@termbridge/core/dist/query.js');
+    : await import('@omnilex/core/dist/query.js');
   const repoData = loadAll(rootDir);
   const results = findConcepts(repoData, query, { locale: options.locale, domain: options.domain });
   return { results, usedPrebuilt: false };
@@ -346,7 +346,7 @@ program
       if (record) return printConcept(record.id, record.metadata, record.entry.frontmatter, record.entry.content);
     }
 
-    const { loadAll, findConcepts, lookupConcepts } = await import('@termbridge/core');
+    const { loadAll, findConcepts, lookupConcepts } = await import('@omnilex/core');
     const repoData = loadAll(rootDir);
     const matches = lookupConcepts(repoData, target, { locale: options.locale });
     if (matches.length > 1) {
@@ -372,7 +372,7 @@ reportCmd
   .description('Report terminology coverage across locales and domains')
   .action(async () => {
     const rootDir = resolveRootDir();
-    const { loadAll, generateLocaleReport } = await import('@termbridge/core');
+    const { loadAll, generateLocaleReport } = await import('@omnilex/core');
     const repoData = loadAll(rootDir);
     const rows = generateLocaleReport(repoData);
 
@@ -393,7 +393,7 @@ reportCmd
   .description('List all draft concepts needing review, grouped by domain')
   .action(async () => {
     const rootDir = resolveRootDir();
-    const { loadAll, generateReviewReport } = await import('@termbridge/core');
+    const { loadAll, generateReviewReport } = await import('@omnilex/core');
     const repoData = loadAll(rootDir);
     const rows = generateReviewReport(repoData);
 
@@ -413,7 +413,7 @@ sourcesCmd
   .description('List all registered sources from config/sources.yaml')
   .action(async () => {
     const rootDir = resolveRootDir();
-    const { loadSourcesConfig } = await import('@termbridge/core');
+    const { loadSourcesConfig } = await import('@omnilex/core');
     const sourcesConfig = loadSourcesConfig(rootDir);
     const entries = Object.entries(sourcesConfig);
 
@@ -436,7 +436,7 @@ sourcesCmd
   .description('Migrate string URL sources in concept.yaml files to structured source objects')
   .action(async () => {
     const rootDir = resolveRootDir();
-    const { migrateAllSources } = await import('@termbridge/core');
+    const { migrateAllSources } = await import('@omnilex/core');
     const result = migrateAllSources(rootDir);
 
     console.log(pc.bold(`\nTermbridge Sources Migration:\n`));

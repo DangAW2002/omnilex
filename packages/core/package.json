@@ -1,7 +1,7 @@
 {
-  "name": "@termbridge/core",
+  "name": "@omnilex/core",
   "version": "0.1.0",
-  "description": "Core loader, schema validation engine, index generator, and query processor for Termbridge",
+  "description": "Core loader, schema validation engine, index generator, and query processor for OmniLex",
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
   "type": "module",

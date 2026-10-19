@@ -19,8 +19,15 @@ import {
 import { maxSatisfying } from './semver.js';
 
 export function termbridgeHome(env: NodeJS.ProcessEnv = process.env): string {
-  return toPosix(env.TERMBRIDGE_HOME || path.join(os.homedir(), '.termbridge'));
+  if (env.OMNILEX_HOME) return toPosix(env.OMNILEX_HOME);
+  if (env.TERMBRIDGE_HOME) return toPosix(env.TERMBRIDGE_HOME);
+  const omnilexPath = path.join(os.homedir(), '.omnilex');
+  const termbridgePath = path.join(os.homedir(), '.termbridge');
+  if (fs.existsSync(omnilexPath)) return toPosix(omnilexPath);
+  if (fs.existsSync(termbridgePath)) return toPosix(termbridgePath);
+  return toPosix(omnilexPath);
 }
+export const omnilexHome = termbridgeHome;
 
 export const nodeProjectFS: ProjectFS = {
   async read(file) {

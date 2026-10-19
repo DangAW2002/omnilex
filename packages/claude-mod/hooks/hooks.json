@@ -1,4 +1,4 @@
 {
-  "description": "Termbridge lookup mod",
+  "description": "OmniLex lookup mod",
   "modules": ["./register.js"]
 }

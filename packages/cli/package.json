@@ -1,8 +1,9 @@
 {
-  "name": "@termbridge/cli",
+  "name": "@omnilex/cli",
   "version": "0.1.0",
-  "description": "tb command line tool for Termbridge",
+  "description": "ol and tb command line tool for OmniLex",
   "bin": {
+    "ol": "./dist/index.js",
     "tb": "./dist/index.js"
   },
   "main": "./dist/index.js",
@@ -10,10 +11,11 @@
   "type": "module",
   "scripts": {
     "build": "tsc",
+    "ol": "node ./dist/index.js",
     "tb": "node ./dist/index.js"
   },
   "dependencies": {
-    "@termbridge/core": "workspace:*",
+    "@omnilex/core": "workspace:*",
     "commander": "^13.0.0",
     "picocolors": "^1.1.1"
   },

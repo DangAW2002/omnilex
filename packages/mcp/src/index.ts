@@ -19,7 +19,7 @@ import {
   searchConfigHash,
   type PackIO,
   type RepositoryData,
-} from '@termbridge/core';
+} from '@omnilex/core';
 
 function findRepoRoot(startDir: string): string | null {
   let curr = path.resolve(startDir);

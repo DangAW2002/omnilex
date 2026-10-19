@@ -1,18 +1,19 @@
 {
-  "name": "@termbridge/mcp",
+  "name": "@omnilex/mcp",
   "version": "0.1.0",
-  "description": "Model Context Protocol server for Termbridge",
+  "description": "Model Context Protocol server for OmniLex",
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
   "type": "module",
   "bin": {
+    "omnilex-mcp": "./dist/index.js",
     "termbridge-mcp": "./dist/index.js"
   },
   "scripts": {
     "build": "tsc"
   },
   "dependencies": {
-    "@termbridge/core": "workspace:*"
+    "@omnilex/core": "workspace:*"
   },
   "devDependencies": {
     "@types/node": "^22.10.2",

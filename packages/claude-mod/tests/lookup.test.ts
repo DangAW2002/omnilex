@@ -22,6 +22,8 @@ function setup(on: any, onPrompt?: (value: string) => void) {
     e.path.endsWith('concepts-vi.json') ? [{ id: concept.id, content: '## Giải thích dễ hiểu\nLãi sinh lãi.' }] :
     e.path.endsWith('concepts-en.json') ? [{ id: concept.id, content: '## Easy explanation\nInterest earns interest.' }] :
     e.path.endsWith('search-en.json') ? [englishConcept] :
+    e.path.endsWith('taxonomy.json') ? [{ id: 'finance', labels: { vi: 'Tài chính', en: 'Finance' },
+      children: [{ id: 'saving', labels: { vi: 'Tiết kiệm', en: 'Saving' } }] }] :
     [concept]
   ) }))
   on('command.register', () => ({ value: undefined }))
@@ -38,7 +40,7 @@ test('forward lookup puts a hover target on the term in a short plain reply', as
   setup(on)
   await $.session.start({ surface: 'terminal', isInteractive: true, cwd: '/work' })
   const ui = await $.ui.mount({
-    plugin: 'termbridge-mod', surface: 'terminal', component: 'AssistantMessage', requestId: 'reply-1',
+    plugin: 'omnilex', surface: 'terminal', component: 'AssistantMessage', requestId: 'reply-1',
     viewport: { columns: 100, rows: 30 },
     props: { text: 'Compound interest means Lãi kép.', isFirstOfReply: true },
   })
@@ -54,7 +56,7 @@ test('hover mode lays out prose with terms and leaves code and tables to Markdow
   await $.session.start({ surface: 'terminal', isInteractive: true, cwd: '/work' })
   await $.command.run({ command: 'termbridge', args: 'mode hover' })
   const ui = await $.ui.mount({
-    plugin: 'termbridge-mod', surface: 'terminal', component: 'AssistantMessage', requestId: 'reply-md',
+    plugin: 'omnilex', surface: 'terminal', component: 'AssistantMessage', requestId: 'reply-md',
     viewport: { columns: 40, rows: 30 },
     props: {
       text: [
@@ -87,7 +89,7 @@ test('links mode keeps one Markdown block and opens the pane from a term link', 
   await $.session.start({ surface: 'terminal', isInteractive: true, cwd: '/work' })
   await $.command.run({ command: 'termbridge', args: 'mode links' })
   const ui = await $.ui.mount({
-    plugin: 'termbridge-mod', surface: 'terminal', component: 'AssistantMessage', requestId: 'reply-links',
+    plugin: 'omnilex', surface: 'terminal', component: 'AssistantMessage', requestId: 'reply-links',
     viewport: { columns: 100, rows: 30 },
     props: { text: '## Lãi kép\n\nLãi kép khác `Lãi kép` trong code.', isFirstOfReply: true },
   })
@@ -106,7 +108,7 @@ test('a Markdown reply keeps its native drawing and gets a lookup badge', async 
   await $.session.start({ surface: 'terminal', isInteractive: true, cwd: '/work' })
   await $.command.run({ command: 'termbridge', args: 'mode badges' })
   const ui = await $.ui.mount({
-    plugin: 'termbridge-mod', surface: 'terminal', component: 'AssistantMessage', requestId: 'reply-markdown',
+    plugin: 'omnilex', surface: 'terminal', component: 'AssistantMessage', requestId: 'reply-markdown',
     viewport: { columns: 100, rows: 30 },
     props: { text: '**Lãi kép** tạo thêm lãi.', isFirstOfReply: true },
   })
@@ -121,7 +123,7 @@ test('reverse lookup resolves a plain description in the pane', async ($, on) =>
   await $.session.start({ surface: 'terminal', isInteractive: true, cwd: '/work' })
   await $.command.run({ command: 'termbridge', args: '' })
   const ui = await $.ui.mount({
-    plugin: 'termbridge-mod', surface: 'terminal', component: 'Pane', requestId: 'termbridge-lookup',
+    plugin: 'omnilex', surface: 'terminal', component: 'Pane', requestId: 'termbridge-lookup',
     viewport: { columns: 100, rows: 30 },
     props: {
       title: 'Termbridge', isFocused: true, bodyColumns: 60, placement: 'inline',
@@ -142,7 +144,7 @@ test('language command changes hover summaries and reverse lookup to English', a
   await $.session.start({ surface: 'terminal', isInteractive: true, cwd: '/work' })
   await $.command.run({ command: 'termbridge', args: 'lang en' })
   const reply = await $.ui.mount({
-    plugin: 'termbridge-mod', surface: 'terminal', component: 'AssistantMessage', requestId: 'reply-en',
+    plugin: 'omnilex', surface: 'terminal', component: 'AssistantMessage', requestId: 'reply-en',
     viewport: { columns: 100, rows: 30 },
     props: { text: 'Lãi kép', isFirstOfReply: true },
   })
@@ -151,7 +153,7 @@ test('language command changes hover summaries and reverse lookup to English', a
 
   await $.command.run({ command: 'termbridge', args: 'mode links' })
   const linked = await $.ui.mount({
-    plugin: 'termbridge-mod', surface: 'terminal', component: 'AssistantMessage', requestId: 'reply-en-link',
+    plugin: 'omnilex', surface: 'terminal', component: 'AssistantMessage', requestId: 'reply-en-link',
     viewport: { columns: 100, rows: 30 },
     props: { text: 'Lãi kép', isFirstOfReply: true },
   })
@@ -160,7 +162,7 @@ test('language command changes hover summaries and reverse lookup to English', a
 
   await $.command.run({ command: 'termbridge', args: '' })
   const pane = await $.ui.mount({
-    plugin: 'termbridge-mod', surface: 'terminal', component: 'Pane', requestId: 'termbridge-lookup',
+    plugin: 'omnilex', surface: 'terminal', component: 'Pane', requestId: 'termbridge-lookup',
     viewport: { columns: 100, rows: 30 },
     props: {
       title: 'Termbridge', isFocused: true, bodyColumns: 60, placement: 'inline',
@@ -179,11 +181,36 @@ test('a short colloquial user message has a direct hover target', async ($, on) 
   setup(on)
   await $.session.start({ surface: 'terminal', isInteractive: true, cwd: '/work' })
   const ui = await $.ui.mount({
-    plugin: 'termbridge-mod', surface: 'terminal', component: 'UserMessage', requestId: 'prompt-1',
+    plugin: 'omnilex', surface: 'terminal', component: 'UserMessage', requestId: 'prompt-1',
     viewport: { columns: 100, rows: 30 },
     props: { text: 'Tôi muốn hiểu tiền lãi lại sinh ra lãi.', origin: { kind: 'composer' }, isExpanded: true },
   })
   expect(await ui.find({ key: 'inline-prompt-1-0' })).toBeDefined()
   expect(await ui.find({ type: 'Text', text: 'Lãi kép: Tiền lãi được cộng vào gốc.' })).toBeDefined()
   await ui.unmount()
+})
+
+test('browse view lists concepts by domain and opens one', async ($, on) => {
+  setup(on)
+  await $.session.start({ surface: 'terminal', isInteractive: true, cwd: '/work' })
+  await $.command.run({ command: 'termbridge', args: 'browse finance/saving' })
+  const pane = await $.ui.mount({
+    plugin: 'omnilex', surface: 'terminal', component: 'Pane', requestId: 'termbridge-lookup',
+    viewport: { columns: 100, rows: 30 },
+    props: {
+      title: 'Termbridge', isFocused: true, bodyColumns: 60, placement: 'inline',
+      scroll: { offset: 0, bodyRows: 10 }, view: {},
+    },
+  })
+  const drawn = JSON.stringify(await pane.drawn())
+  expect(drawn).toContain('Tài chính (1)')
+  expect(drawn).toContain('Trang 1/1 · 1 khái niệm')
+  await pane.select({ key: 'browse-domain', value: '' })
+  await pane.press({ key: 'select-0' })
+  expect(await pane.find({ key: 'browse-back' })).toBeDefined()
+  expect(await pane.find({ type: 'Text', text: 'Tiền lãi được cộng vào gốc.' })).toBeDefined()
+  await pane.press({ key: 'browse-back' })
+  await pane.press({ key: 'tab-search' })
+  expect(await pane.find({ key: 'termbridge-query' })).toBeDefined()
+  await pane.unmount()
 })

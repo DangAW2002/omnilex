@@ -3,7 +3,7 @@ import fs from 'node:fs';
 import os from 'node:os';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
-import { loadAll, buildArtifacts } from '@termbridge/core';
+import { loadAll, buildArtifacts } from '@omnilex/core';
 import { findAction } from '../src/index.js';
 
 // No .termbridge/ above cwd and an empty home: only the layout under test is read.

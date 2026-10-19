@@ -25,7 +25,7 @@ export function registerContentCommands(program: Command, reportCmd: Command, re
       if (!options.optIn) {
         fail('Cần --opt-in: lệnh này đọc transcript Claude Code trên máy bạn và chỉ ghi tên thuật ngữ cùng số lần xuất hiện / pass --opt-in: this reads your local Claude Code transcripts and writes only term names and counts');
       }
-      const core = await import('@termbridge/core');
+      const core = await import('@omnilex/core');
       const rootDir = resolveRootDir();
       const repo = core.loadAll(rootDir);
       const common = new Set<string>([...Object.values(repo.commonWords || {})].flatMap((set: any) => [...set]));
@@ -51,7 +51,7 @@ export function registerContentCommands(program: Command, reportCmd: Command, re
     .option('--file <path>', 'Local file or directory instead of the network')
     .option('--adapter <name>', 'Adapter: kubernetes | csv (default: by source id)')
     .action(async (sourceId: string, options: { file?: string; adapter?: string }) => {
-      const core = await import('@termbridge/core');
+      const core = await import('@omnilex/core');
       const rootDir = resolveRootDir();
       const sources = core.loadSourcesConfig(rootDir);
       const source = sources[sourceId];
@@ -78,7 +78,7 @@ export function registerContentCommands(program: Command, reportCmd: Command, re
     .description('Concepts per level-2 branch, locale coverage and status')
     .option('-d, --domain <path>', 'Taxonomy prefix (e.g., it)')
     .action(async (options: { domain?: string }) => {
-      const core = await import('@termbridge/core');
+      const core = await import('@omnilex/core');
       const repo = core.loadAll(resolveRootDir());
       const rows = core.coverageReport(repo, options.domain);
       console.log(pc.bold(`\nTermbridge coverage${options.domain ? ` (${options.domain})` : ''}:\n`));
@@ -94,7 +94,7 @@ export function registerContentCommands(program: Command, reportCmd: Command, re
     .command('collisions')
     .description('Keys shared by several concepts, and the qualifiers or confusable links they lack')
     .action(async () => {
-      const core = await import('@termbridge/core');
+      const core = await import('@omnilex/core');
       const rows = core.collisionsReport(core.loadAll(resolveRootDir()));
       console.log(pc.bold(`\nTermbridge collisions (${rows.length}):\n`));
       for (const row of rows) {
@@ -114,7 +114,7 @@ export function registerContentCommands(program: Command, reportCmd: Command, re
     .option('--size <n>', 'Run length in words', '8')
     .option('--concepts <ids>', 'Only these concept ids')
     .action(async (options: { sources: string; size: string; concepts?: string }) => {
-      const core = await import('@termbridge/core');
+      const core = await import('@omnilex/core');
       const rootDir = resolveRootDir();
       const matches = core.overlapReport(core.loadAll(rootDir), {
         sourcesDir: path.resolve(rootDir, options.sources),

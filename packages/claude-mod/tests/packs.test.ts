@@ -119,7 +119,7 @@ test('T-P7: finds the project from the session cwd and reads its packs', async (
   expect(status.text).toContain('search=lazy')
 
   const ui = await $.ui.mount({
-    plugin: 'termbridge-mod', surface: 'terminal', component: 'AssistantMessage', requestId: 'reply-pack',
+    plugin: 'omnilex', surface: 'terminal', component: 'AssistantMessage', requestId: 'reply-pack',
     viewport: { columns: 100, rows: 30 },
     props: { text: 'Lãi kép và Cookie là hai khái niệm.', isFirstOfReply: true },
   })
@@ -136,7 +136,7 @@ test('T-P7: /termbridge packs narrows the selection for the session, and all res
   expect(narrowed.text).not.toContain('finance.personal-finance')
 
   const reply = await $.ui.mount({
-    plugin: 'termbridge-mod', surface: 'terminal', component: 'AssistantMessage', requestId: 'reply-narrow',
+    plugin: 'omnilex', surface: 'terminal', component: 'AssistantMessage', requestId: 'reply-narrow',
     viewport: { columns: 100, rows: 30 },
     props: { text: 'Lãi kép và Cookie.', isFirstOfReply: true },
   })
@@ -166,7 +166,7 @@ test('T-P7: explanations load lazily, only when a concept is opened', async ($, 
   expect(reads.some((file) => file.includes('/concepts/') || file.endsWith('explanations.jsonl'))).toBe(false)
 
   await $.command.run({ command: 'termbridge', args: '' })
-  const pane = await $.ui.mount({ plugin: 'termbridge-mod', surface: 'terminal', component: 'Pane', requestId: 'termbridge-lookup', viewport: { columns: 100, rows: 30 }, props: PANE_PROPS })
+  const pane = await $.ui.mount({ plugin: 'omnilex', surface: 'terminal', component: 'Pane', requestId: 'termbridge-lookup', viewport: { columns: 100, rows: 30 }, props: PANE_PROPS })
   // Typing searches but opens nothing: no explanation is read yet.
   await pane.input({ key: 'termbridge-query', text: 'tiền lãi lại sinh ra lãi', kind: 'change' })
   expect(await pane.find({ key: 'select-0' })).toBeDefined()
@@ -187,7 +187,7 @@ test('T-P7: switching locale reloads cards and keeps reverse lookup working', as
   await $.session.start({ surface: 'terminal', isInteractive: true, cwd: '/work/app' })
   await $.command.run({ command: 'termbridge', args: 'lang en' })
   const reply = await $.ui.mount({
-    plugin: 'termbridge-mod', surface: 'terminal', component: 'AssistantMessage', requestId: 'reply-en',
+    plugin: 'omnilex', surface: 'terminal', component: 'AssistantMessage', requestId: 'reply-en',
     viewport: { columns: 100, rows: 30 },
     props: { text: 'Lãi kép', isFirstOfReply: true },
   })
@@ -195,7 +195,7 @@ test('T-P7: switching locale reloads cards and keeps reverse lookup working', as
   await reply.unmount()
 
   await $.command.run({ command: 'termbridge', args: '' })
-  const pane = await $.ui.mount({ plugin: 'termbridge-mod', surface: 'terminal', component: 'Pane', requestId: 'termbridge-lookup', viewport: { columns: 100, rows: 30 }, props: PANE_PROPS })
+  const pane = await $.ui.mount({ plugin: 'omnilex', surface: 'terminal', component: 'Pane', requestId: 'termbridge-lookup', viewport: { columns: 100, rows: 30 }, props: PANE_PROPS })
   await pane.input({ key: 'termbridge-query', text: 'money snowballing because earnings get added back to the pile' })
   expect(await pane.find({ type: 'Text', text: 'Interest earns more interest.' })).toBeDefined()
   await pane.press({ key: 'insert-term' })
@@ -225,7 +225,7 @@ test('T-I4: the project overlay hides excluded concepts and adds aliases in the 
   })
   await $.session.start({ surface: 'terminal', isInteractive: true, cwd: '/work/app' })
   const ui = await $.ui.mount({
-    plugin: 'termbridge-mod', surface: 'terminal', component: 'AssistantMessage', requestId: 'reply-overlay',
+    plugin: 'omnilex', surface: 'terminal', component: 'AssistantMessage', requestId: 'reply-overlay',
     viewport: { columns: 100, rows: 30 },
     props: { text: 'Cookie khác với lãi mẹ đẻ lãi con.', isFirstOfReply: true },
   })
